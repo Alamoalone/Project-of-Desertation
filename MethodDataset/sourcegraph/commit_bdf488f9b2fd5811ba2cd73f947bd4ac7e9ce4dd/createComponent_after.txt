@@ -1,0 +1,4 @@
+  public JComponent createComponent() {
+    Disposer.register(project, mySettingsComponent);
+    return mySettingsComponent.getPanel();
+  }

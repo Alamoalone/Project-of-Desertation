@@ -1,0 +1,3 @@
+    private boolean isValidPrefixLocal(final String phoneNumber) {
+        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith("86") && phoneNumber.length() == 9;
+    }

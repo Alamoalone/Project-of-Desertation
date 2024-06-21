@@ -1,0 +1,8 @@
+	public ResponseEntity<?> getOnePerson(@PathVariable String id) {
+		Person personFoundById = personService.getOnePersonById(id);
+		if (personFoundById != null) {
+			return ResponseEntity.status(HttpStatus.OK).body(personFoundById);
+		} else {
+			return  returnResponseEntityEmptyAndCode404();
+		}
+	}

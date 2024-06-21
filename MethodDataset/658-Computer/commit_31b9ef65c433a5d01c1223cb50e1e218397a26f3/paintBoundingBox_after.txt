@@ -1,0 +1,11 @@
+  public void paintBoundingBox(Graphics2D graphics, Viewport viewport)
+  {
+    boundingBox.transform(rotation);
+
+    Int2D p = new Int2D();
+    Int2D s = new Int2D();
+    if (getBoundingBoxInScreenSpace(viewport, p, s))
+    {
+      viewport.paintRectangle(graphics, p.x, p.y, s.x, s.y, viewport.getAbsoluteStroke(1), null, Color.ORANGE);
+    }
+  }

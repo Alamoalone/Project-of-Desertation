@@ -1,0 +1,42 @@
+    public boolean elimina(String username) {
+        String path = "src/main/resources/com/spacca/database/giocatori/user-" + username + ".json";
+
+        File file = new File(path);
+
+        Giocatore giocatoreEliminato = (Giocatore) this.carica(username);
+
+        List<String> listaCodici = giocatoreEliminato.getListaCodiciPartite();
+
+        if (file.exists() && file.isFile()) {
+            if (file.delete()) {
+
+                for (String codice : listaCodici) {
+                    Handler handlerPartita = new PartitaHandler();
+                    // carico la partita con il codice presente nella lista per eliminare il
+                    // giocatore
+                    Partita partita = (Partita) handlerPartita.carica(codice);
+                    // rimuovo il giocatore nella lista dei giocatori della partita
+                    int posizioneVecchioUtente = partita.getListaDeiGiocatori().indexOf(username);
+
+                    // creo un nuovo giocatore stupido e lo sostituisco con un giocatore robot
+                    // stupido
+                    GiocatoreHandler handlerGiocatore = new GiocatoreHandler();
+                    String usernameStupid = "RS-" + username;
+                    AbstractGiocatore giocatoreSostituto = new StupidCPU(usernameStupid);
+
+                    partita.getListaDeiGiocatori().set(posizioneVecchioUtente, usernameStupid);
+                    // salvo su file il nuovo giocatore stupido
+                    handlerGiocatore.salva(giocatoreSostituto, usernameStupid);
+
+                    // salvo la partita modificata
+                    handlerPartita.salva(partita, codice);
+                }
+                return true;
+            } else {
+                System.err.println("Errore durante l'eliminazione del giocatore  " + username);
+            }
+        } else {
+            System.err.println("Il giocatore con username " + username + " non esiste o non è un file.");
+        }
+        return false;
+    }

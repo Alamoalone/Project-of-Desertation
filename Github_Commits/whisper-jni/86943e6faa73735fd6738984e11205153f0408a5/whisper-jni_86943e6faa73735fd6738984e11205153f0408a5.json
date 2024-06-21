@@ -1,0 +1,122 @@
+{
+    "sha": "86943e6faa73735fd6738984e11205153f0408a5",
+    "node_id": "C_kwDOJt1Z4doAKDg2OTQzZTZmYWE3MzczNWZkNjczODk4NGUxMTIwNTE1M2YwNDA4YTU",
+    "commit": {
+        "author": {
+            "name": "Miguel Álvarez",
+            "email": "miguelwork92@gmail.com",
+            "date": "2023-11-11T23:21:27Z"
+        },
+        "committer": {
+            "name": "Miguel Álvarez",
+            "email": "miguelwork92@gmail.com",
+            "date": "2023-11-11T23:21:27Z"
+        },
+        "message": "fix null pointer exception and add load logs",
+        "tree": {
+            "sha": "fe1de01fae89f620721f7254c8b7714e08bd8923",
+            "url": "https://api.github.com/repos/GiviMAD/whisper-jni/git/trees/fe1de01fae89f620721f7254c8b7714e08bd8923"
+        },
+        "url": "https://api.github.com/repos/GiviMAD/whisper-jni/git/commits/86943e6faa73735fd6738984e11205153f0408a5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/GiviMAD/whisper-jni/commits/86943e6faa73735fd6738984e11205153f0408a5",
+    "html_url": "https://github.com/GiviMAD/whisper-jni/commit/86943e6faa73735fd6738984e11205153f0408a5",
+    "comments_url": "https://api.github.com/repos/GiviMAD/whisper-jni/commits/86943e6faa73735fd6738984e11205153f0408a5/comments",
+    "author": {
+        "login": "GiviMAD",
+        "id": 9007708,
+        "node_id": "MDQ6VXNlcjkwMDc3MDg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9007708?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GiviMAD",
+        "html_url": "https://github.com/GiviMAD",
+        "followers_url": "https://api.github.com/users/GiviMAD/followers",
+        "following_url": "https://api.github.com/users/GiviMAD/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GiviMAD/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GiviMAD/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GiviMAD/subscriptions",
+        "organizations_url": "https://api.github.com/users/GiviMAD/orgs",
+        "repos_url": "https://api.github.com/users/GiviMAD/repos",
+        "events_url": "https://api.github.com/users/GiviMAD/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GiviMAD/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "GiviMAD",
+        "id": 9007708,
+        "node_id": "MDQ6VXNlcjkwMDc3MDg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9007708?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GiviMAD",
+        "html_url": "https://github.com/GiviMAD",
+        "followers_url": "https://api.github.com/users/GiviMAD/followers",
+        "following_url": "https://api.github.com/users/GiviMAD/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GiviMAD/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GiviMAD/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GiviMAD/subscriptions",
+        "organizations_url": "https://api.github.com/users/GiviMAD/orgs",
+        "repos_url": "https://api.github.com/users/GiviMAD/repos",
+        "events_url": "https://api.github.com/users/GiviMAD/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GiviMAD/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5d8866f487798622f59b67dad8f9c739b363a61d",
+            "url": "https://api.github.com/repos/GiviMAD/whisper-jni/commits/5d8866f487798622f59b67dad8f9c739b363a61d",
+            "html_url": "https://github.com/GiviMAD/whisper-jni/commit/5d8866f487798622f59b67dad8f9c739b363a61d"
+        }
+    ],
+    "stats": {
+        "total": 56,
+        "additions": 37,
+        "deletions": 19
+    },
+    "files": [
+        {
+            "sha": "cdb2891b3730441e85dfa42ea06a65c2862b4802",
+            "filename": "pom.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/GiviMAD/whisper-jni/blob/86943e6faa73735fd6738984e11205153f0408a5/pom.xml",
+            "raw_url": "https://github.com/GiviMAD/whisper-jni/raw/86943e6faa73735fd6738984e11205153f0408a5/pom.xml",
+            "contents_url": "https://api.github.com/repos/GiviMAD/whisper-jni/contents/pom.xml?ref=86943e6faa73735fd6738984e11205153f0408a5",
+            "patch": "@@ -8,7 +8,7 @@\n     <artifactId>whisper-jni</artifactId>\n     <name>whisper-jni</name>\n     <url>https://github.com/GiviMAD/whisper-jni</url>\n-    <version>1.4.3-0</version>\n+    <version>1.4.3-1</version>\n     <description>A JNI wrapper for [whisper.cpp](https://github.com/ggerganov/whisper.cpp), allows to transcribe speech to text in Java</description>\n     \n     <licenses>"
+        },
+        {
+            "sha": "55d586f8f735f7404d7fceb36f141e27b5c226bb",
+            "filename": "src/main/java/io/github/givimad/whisperjni/WhisperJNI.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 4,
+            "changes": 11,
+            "blob_url": "https://github.com/GiviMAD/whisper-jni/blob/86943e6faa73735fd6738984e11205153f0408a5/src%2Fmain%2Fjava%2Fio%2Fgithub%2Fgivimad%2Fwhisperjni%2FWhisperJNI.java",
+            "raw_url": "https://github.com/GiviMAD/whisper-jni/raw/86943e6faa73735fd6738984e11205153f0408a5/src%2Fmain%2Fjava%2Fio%2Fgithub%2Fgivimad%2Fwhisperjni%2FWhisperJNI.java",
+            "contents_url": "https://api.github.com/repos/GiviMAD/whisper-jni/contents/src%2Fmain%2Fjava%2Fio%2Fgithub%2Fgivimad%2Fwhisperjni%2FWhisperJNI.java?ref=86943e6faa73735fd6738984e11205153f0408a5",
+            "patch": "@@ -308,11 +308,14 @@ public static void loadLibrary() throws IOException {\n      * @throws IOException when unable to load the native library.\n      */\n     public static void loadLibrary(LoadOptions options) throws IOException {\n+        if (libraryLoaded) {\n+            return;\n+        }\n         if (options == null) {\n             options = new LoadOptions();\n         }\n-        if (libraryLoaded) {\n-            return;\n+        if(options.logger == null) {\n+            options.logger = (String ignored) -> { };\n         }\n         LibraryUtils.loadLibrary(options);\n         libraryLoaded = true;\n@@ -345,9 +348,9 @@ public interface LibraryLogger {\n      */\n     public static class LoadOptions {\n         /**\n-         * Optional logs consumer.\n+         * Logs the library registration process (platform detection and library extraction).\n          */\n-        public Consumer<String> logger;\n+        public LibraryLogger logger;\n         /**\n          * Path to whisper jni library (so/dll/dylib).\n          * Takes prevalence over the bundled binary."
+        },
+        {
+            "sha": "8d33cb46abb8f04b6bf980a128c55402b2552ec1",
+            "filename": "src/main/java/io/github/givimad/whisperjni/internal/LibraryUtils.java",
+            "status": "modified",
+            "additions": 29,
+            "deletions": 14,
+            "changes": 43,
+            "blob_url": "https://github.com/GiviMAD/whisper-jni/blob/86943e6faa73735fd6738984e11205153f0408a5/src%2Fmain%2Fjava%2Fio%2Fgithub%2Fgivimad%2Fwhisperjni%2Finternal%2FLibraryUtils.java",
+            "raw_url": "https://github.com/GiviMAD/whisper-jni/raw/86943e6faa73735fd6738984e11205153f0408a5/src%2Fmain%2Fjava%2Fio%2Fgithub%2Fgivimad%2Fwhisperjni%2Finternal%2FLibraryUtils.java",
+            "contents_url": "https://api.github.com/repos/GiviMAD/whisper-jni/contents/src%2Fmain%2Fjava%2Fio%2Fgithub%2Fgivimad%2Fwhisperjni%2Finternal%2FLibraryUtils.java?ref=86943e6faa73735fd6738984e11205153f0408a5",
+            "patch": "@@ -50,16 +50,14 @@ private static void createLibraryFromInputStream(String filename, InputStream is\n      * (restriction of {@link File#createTempFile(java.lang.String, java.lang.String)}).\n      * @throws FileNotFoundException If the file could not be found inside the JAR.\n      */\n-    public static void copyFromSystem(Path path, String filename, Consumer<String> logger) throws IOException {\n+    private static void copyFromSystem(Path path, String filename, WhisperJNI.LibraryLogger logger) throws IOException {\n         if(libraryDir == null) {\n             libraryDir = createTempDirectory(TEMP_FOLDER_PREFIX);\n         }\n         if (null == path) {\n             throw new IllegalArgumentException(\"Missing path.\");\n         }\n-        if(logger != null) {\n-            logger.accept(\"Extracting \"+ path + \" into \" + libraryDir.resolve(filename));\n-        }\n+        logger.log(\"Copping \"+ path + \" into \" + libraryDir.resolve(filename));\n         try (var is = Files.newInputStream(path)) {\n             createLibraryFromInputStream(filename, is);\n         }\n@@ -78,21 +76,16 @@ public static void copyFromSystem(Path path, String filename, Consumer<String> l\n      * (restriction of {@link File#createTempFile(java.lang.String, java.lang.String)}).\n      * @throws FileNotFoundException If the file could not be found inside the JAR.\n      */\n-    public static void extractLibraryFromJar(String path, String filename, Consumer<String> logger) throws IOException {\n+    public static void extractLibraryFromJar(String path, String filename, WhisperJNI.LibraryLogger logger) throws IOException {\n         if(libraryDir == null) {\n             libraryDir = createTempDirectory(TEMP_FOLDER_PREFIX);\n         }\n         if (null == path || !path.startsWith(\"/\")) {\n             throw new IllegalArgumentException(\"The path has to be absolute (start with '/').\");\n         }\n-        if(logger != null) {\n-            logger.accept(\"Extracting \"+ path + \" into \" + libraryDir.resolve(filename));\n-        }\n+        logger.log(\"Extracting \"+ path + \" into \" + libraryDir.resolve(filename));\n         createLibraryFromInputStream(filename, LibraryUtils.class.getResourceAsStream(path));\n     }\n-    public static void load(String filename) {\n-        System.load(libraryDir.resolve(filename).toAbsolutePath().toString());\n-    }\n     private static Path createTempDirectory(String prefix) throws IOException {\n         String tempDir = System.getProperty(\"java.io.tmpdir\");\n         File generatedDir = new File(tempDir, prefix + System.nanoTime());\n@@ -109,22 +102,34 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n         String wrapperLibName;\n         String osName = System.getProperty(\"os.name\").toLowerCase();\n         String osArch = System.getProperty(\"os.arch\").toLowerCase();\n-        if (osName.contains(\"win\")) {\n+        if(options.whisperLib != null && options.whisperJNILib != null) {\n+            options.logger.log(\"Skipping OS detection.\");\n+            wrapperLibName = options.whisperJNILib.getFileName().toString();\n+            LibraryUtils.copyFromSystem(options.whisperJNILib, wrapperLibName, options.logger);\n+            LibraryUtils.copyFromSystem(options.whisperLib, options.whisperLib.getFileName().toString(), options.logger);\n+        } else if (osName.contains(\"win\")) {\n+            options.logger.log(\"OS detected: Windows.\");\n             wrapperLibName = \"whisperjni.dll\";\n             if(osArch.contains(\"amd64\") || osArch.contains(\"x86_64\")) {\n+                options.logger.log(\"Compatible amd64 architecture detected.\");\n                 if(options.whisperJNILib == null){\n-                    options.logger.accept(\"Looking for whisper.dll in $env:PATH.\");\n+                    options.logger.log(\"Looking for whisper.dll in $env:PATH.\");\n                     if(isWhisperDLLInstalled()) {\n+                        options.logger.log(\"File whisper.dll found, it will be used.\");\n                         LibraryUtils.extractLibraryFromJar(\"/win-amd64/whisperjni.dll\", \"whisperjni.dll\", options.logger);\n                     } else {\n+                        options.logger.log(\"File whisper.dll not found, loading full version.\");\n                         LibraryUtils.extractLibraryFromJar(\"/win-amd64/whisperjni_full.dll\", \"whisperjni.dll\", options.logger);\n                     }\n                 } else {\n                     LibraryUtils.copyFromSystem(options.whisperJNILib, \"whisperjni.dll\", options.logger);\n                 }\n+            } else {\n+                throw new IOException(\"Unknown OS architecture\");\n             }\n         } else if (osName.contains(\"nix\") || osName.contains(\"nux\")\n                 || osName.contains(\"aix\")) {\n+            options.logger.log(\"OS detected: Linux.\");\n             wrapperLibName = \"libwhisperjni.so\";\n             String cpuInfo;\n             try {\n@@ -133,6 +138,7 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n                 cpuInfo = \"\";\n             }\n             if(osArch.contains(\"amd64\") || osArch.contains(\"x86_64\")) {\n+                options.logger.log(\"Compatible amd64 architecture detected.\");\n                 if(options.whisperLib == null) {\n                     if(cpuInfo.contains(\"avx2\") && cpuInfo.contains(\"fma\") && cpuInfo.contains(\"f16c\") && cpuInfo.contains(\"avx\")) {\n                         LibraryUtils.extractLibraryFromJar(\"/debian-amd64/libwhisper+mf16c+mfma+mavx+mavx2.so\", \"libwhisper.so\", options.logger);\n@@ -148,6 +154,7 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n                     LibraryUtils.copyFromSystem(options.whisperJNILib, \"libwhisperjni.so\", options.logger);\n                 }\n             } else if(osArch.contains(\"aarch64\") || osArch.contains(\"arm64\")) {\n+                options.logger.log(\"Compatible arm64 architecture detected.\");\n                 if(options.whisperLib == null){\n                     if(cpuInfo.contains(\"fphp\")) {\n                         LibraryUtils.extractLibraryFromJar(\"/debian-arm64/libwhisper+fp16.so\", \"libwhisper.so\", options.logger);\n@@ -163,6 +170,7 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n                     LibraryUtils.copyFromSystem(options.whisperJNILib, \"libwhisperjni.so\", options.logger);\n                 }\n             } else if(osArch.contains(\"armv7\") || osArch.contains(\"arm\")) {\n+                options.logger.log(\"Compatible arm architecture detected.\");\n                 if(options.whisperLib == null){\n                     if(cpuInfo.contains(\"crc32\")) {\n                         LibraryUtils.extractLibraryFromJar(\"/debian-armv7l/libwhisper+crc.so\", \"libwhisper.so\", options.logger);\n@@ -177,10 +185,14 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n                 } else {\n                     LibraryUtils.copyFromSystem(options.whisperJNILib, \"libwhisperjni.so\", options.logger);\n                 }\n+            } else {\n+                throw new IOException(\"Unknown OS architecture\");\n             }\n         } else if (osName.contains(\"mac\") || osName.contains(\"darwin\")) {\n+            options.logger.log(\"OS detected: macOS.\");\n             wrapperLibName = \"libwhisperjni.dylib\";\n             if(osArch.contains(\"amd64\") || osArch.contains(\"x86_64\")) {\n+                options.logger.log(\"Compatible amd64 architecture detected.\");\n                 if(options.whisperLib == null){\n                     LibraryUtils.extractLibraryFromJar( \"/macos-amd64/libwhisper.dylib\", \"libwhisper.dylib\", options.logger);\n                 } else {\n@@ -192,6 +204,7 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n                     LibraryUtils.copyFromSystem(options.whisperJNILib, \"libwhisperjni.dylib\", options.logger);\n                 }\n             } else if(osArch.contains(\"aarch64\") || osArch.contains(\"arm64\")) {\n+                options.logger.log(\"Compatible arm64 architecture detected.\");\n                 if(options.whisperLib == null){\n                     LibraryUtils.extractLibraryFromJar( \"/macos-arm64/libwhisper.dylib\", \"libwhisper.dylib\", options.logger);\n                 } else {\n@@ -202,11 +215,13 @@ public static void loadLibrary(WhisperJNI.LoadOptions options) throws IOExceptio\n                 } else {\n                     LibraryUtils.copyFromSystem(options.whisperJNILib, \"libwhisperjni.dylib\", options.logger);\n                 }\n+            } else {\n+                throw new IOException(\"Unknown OS architecture\");\n             }\n         } else {\n             throw new IOException(\"Unknown OS\");\n         }\n-        LibraryUtils.load(wrapperLibName);\n+        System.load(libraryDir.resolve(wrapperLibName).toAbsolutePath().toString());\n     }\n     private static boolean isWhisperDLLInstalled() {\n         return Arrays"
+        }
+    ]
+}

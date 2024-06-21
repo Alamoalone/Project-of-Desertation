@@ -1,0 +1,2 @@
+setNodeClicked(FxViewPanel view)
+updateGanttChart(ScheduleNode scheduleNode, int numProcessors)

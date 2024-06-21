@@ -1,0 +1,3 @@
+    public void onServiceDisconnected(ComponentName name) {
+        audioService = null;
+    }

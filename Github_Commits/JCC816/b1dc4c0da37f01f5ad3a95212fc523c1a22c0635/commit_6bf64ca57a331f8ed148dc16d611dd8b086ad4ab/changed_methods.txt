@@ -1,0 +1,3 @@
+interpret(Abstract_declaratorContext node)
+getInfo()
+getIdentifier()

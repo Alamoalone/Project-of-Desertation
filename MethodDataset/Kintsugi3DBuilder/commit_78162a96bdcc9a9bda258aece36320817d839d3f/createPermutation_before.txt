@@ -1,0 +1,31 @@
+    public ReadonlyViewSet createPermutation(Collection<Integer> permutationIndices)
+    {
+        ViewSet result = new ViewSet(permutationIndices.size());
+
+        for (int i : permutationIndices)
+        {
+            result.getCameraPoseList().add(this.cameraPoseList.get(i));
+            result.getCameraPoseInvList().add(this.cameraPoseInvList.get(i));
+            result.getCameraProjectionIndexList().add(this.cameraProjectionIndexList.get(i));
+            result.getLightIndexList().add(this.lightIndexList.get(i));
+            result.getImageFileNames().add(this.imageFileNames.get(i));
+        }
+
+        result.getCameraProjectionList().addAll(this.cameraProjectionList);
+        result.getLightIntensityList().addAll(this.lightIntensityList);
+        result.getLightPositionList().addAll(this.lightPositionList);
+
+        result.setTonemapping(this.gamma,
+            Arrays.copyOf(this.linearLuminanceValues, this.linearLuminanceValues.length),
+            Arrays.copyOf(this.encodedLuminanceValues, this.encodedLuminanceValues.length));
+
+        result.setRootDirectory(this.rootDirectory);
+        result.setRelativeImagePathName(this.relativeImagePath);
+        result.setGeometryFileName(this.geometryFileName);
+        result.setInfiniteLightSources(this.infiniteLightSources);
+        result.setRecommendedNearPlane(this.recommendedNearPlane);
+        result.setRecommendedFarPlane(this.recommendedFarPlane);
+        result.setPrimaryView(primaryViewIndex);
+
+        return result;
+    }

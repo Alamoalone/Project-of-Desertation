@@ -1,0 +1,32 @@
+@@ -4,15 +4,28 @@
+ import main.java.local.Casino.Account;
+ 
+ public class Main {
++
+     public static void main(String[] args) {
+ 
+       Casino house = new Casino(10);
+       house.createAccount("Evan R");
++  
++      Account evan = house.getAccount("Evan R");
++
++      if (evan != null) {
+ 
+-      Account evan = house.getAccount("Evan R"); 
+-      int balance = evan.getBalance();
++          System.out.println(evan.getBalance());
++          evan.increaseBalance(100);
++          System.out.println(evan.getBalance());
++          
++      } else {
++          System.out.println("NULL");
++      }
+ 
+-      System.out.println(balance);
++      for (int i = 0; i < 3; i++) {
++          System.out.println(Slots.Symbols.randomLetter());
++      }
+ 
+     }
++    
+ }

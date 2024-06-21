@@ -1,0 +1,38 @@
+    public void CreateProduct_InvalidInput_ReturnsBadRequest() {
+        //Login
+        LoginDTO login = new LoginDTO("admin", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+        assertNotNull(loginResponse.getBody());
+        String jwt = loginResponse.getBody().getJwt();
+
+        // Create a ProductDTO with invalid input
+        ProductRegistrationDTO invalidInput = new ProductRegistrationDTO(
+                "Test Brand",
+                "Test Name",
+                "Test Description",
+                -5,
+                new BigDecimal("19.99")
+        );
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<ProductRegistrationDTO> requestEntity = new HttpEntity<>(invalidInput, headers);
+
+        ResponseEntity<ProductDTO> response = restTemplate.postForEntity(
+                "http://localhost:" + port + "/product/register",
+                requestEntity,
+                ProductDTO.class);
+
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+
+        ProductDTO responseBody = response.getBody();
+        assertNull(responseBody);
+
+    }

@@ -1,0 +1,37 @@
+	public JPanel createFormPanel() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(0, 2));
+		// create the form
+		JComboBox<Referent> referentField = new JComboBox<>();
+		for (Referent referent : Referent.referents) referentField.addItem(referent);
+		panel.add(new JLabel("Referent"));
+		panel.add(referentField);
+		JComboBox<Adresse> adresseSiegeSocialField = new JComboBox<>();
+		for (Adresse adresse : Adresse.adresses) adresseSiegeSocialField.addItem(adresse);
+		panel.add(new JLabel("Adresse Siege Social"));
+		panel.add(adresseSiegeSocialField);
+		JComboBox<Adresse> adresseGestionField = new JComboBox<>();
+		for (Adresse adresse : Adresse.adresses) adresseGestionField.addItem(adresse);
+		panel.add(new JLabel("Adresse Gestion"));
+		panel.add(adresseGestionField);
+	  JTextField nomCommercialField = new JTextField();
+		panel.add(new JLabel("Nom Commercial"));
+		panel.add(nomCommercialField);
+		JTextField raisonSocialeField = new JTextField();
+		panel.add(new JLabel("Raison Sociale"));
+		panel.add(raisonSocialeField);
+		UButton createButton = new UButton("Créer");
+		createButton.addActionListener(e -> {
+			Jardin jardin = new Jardin(
+				(Referent) referentField.getSelectedItem(),
+				(Adresse) adresseSiegeSocialField.getSelectedItem(),
+				(Adresse) adresseGestionField.getSelectedItem(),
+				nomCommercialField.getText(),
+				raisonSocialeField.getText()
+			);
+			Jardin.create(jardin);
+			displayView(false);
+		});
+		panel.add(createButton);
+		return panel;
+	}

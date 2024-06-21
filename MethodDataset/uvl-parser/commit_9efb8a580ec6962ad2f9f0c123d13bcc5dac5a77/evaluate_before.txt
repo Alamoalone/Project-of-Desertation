@@ -1,0 +1,13 @@
+    public double evaluate(final Set<Feature> selectedFeatures) {
+        if (boolValue != null) {
+            return 0d;
+        }
+        final Object attributeValue = this.feature.getAttributes().get(this.attributeName).getValue();
+        if (attributeValue instanceof Integer) {
+            return ((Integer) attributeValue).doubleValue();
+        }
+        if (attributeValue instanceof Long) {
+            return ((Long) attributeValue).doubleValue();
+        }
+        return (double) attributeValue;
+    }

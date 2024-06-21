@@ -1,0 +1,1 @@
+irPantallaPrincipal(Usuario usuarioSesion)

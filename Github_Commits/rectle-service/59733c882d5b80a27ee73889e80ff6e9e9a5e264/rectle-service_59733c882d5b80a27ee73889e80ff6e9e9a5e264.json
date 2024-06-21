@@ -1,0 +1,98 @@
+{
+    "sha": "59733c882d5b80a27ee73889e80ff6e9e9a5e264",
+    "node_id": "C_kwDOIbZe-9oAKDU5NzMzYzg4MmQ1YjgwYTI3ZWU3Mzg4OWU4MGZmNmU5ZTlhNWUyNjQ",
+    "commit": {
+        "author": {
+            "name": "Piotr",
+            "email": "piotrkopecki01@gmail.com",
+            "date": "2023-02-01T17:14:01Z"
+        },
+        "committer": {
+            "name": "Piotr",
+            "email": "piotrkopecki01@gmail.com",
+            "date": "2023-02-01T17:14:01Z"
+        },
+        "message": "there was a bug with null pointer exception",
+        "tree": {
+            "sha": "544e50b9b32ae76f337eadb3bffa83b195c801f4",
+            "url": "https://api.github.com/repos/Rectle/rectle-service/git/trees/544e50b9b32ae76f337eadb3bffa83b195c801f4"
+        },
+        "url": "https://api.github.com/repos/Rectle/rectle-service/git/commits/59733c882d5b80a27ee73889e80ff6e9e9a5e264",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Rectle/rectle-service/commits/59733c882d5b80a27ee73889e80ff6e9e9a5e264",
+    "html_url": "https://github.com/Rectle/rectle-service/commit/59733c882d5b80a27ee73889e80ff6e9e9a5e264",
+    "comments_url": "https://api.github.com/repos/Rectle/rectle-service/commits/59733c882d5b80a27ee73889e80ff6e9e9a5e264/comments",
+    "author": {
+        "login": "PiotrKopecki",
+        "id": 101638407,
+        "node_id": "U_kgDOBg7hBw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101638407?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/PiotrKopecki",
+        "html_url": "https://github.com/PiotrKopecki",
+        "followers_url": "https://api.github.com/users/PiotrKopecki/followers",
+        "following_url": "https://api.github.com/users/PiotrKopecki/following{/other_user}",
+        "gists_url": "https://api.github.com/users/PiotrKopecki/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/PiotrKopecki/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/PiotrKopecki/subscriptions",
+        "organizations_url": "https://api.github.com/users/PiotrKopecki/orgs",
+        "repos_url": "https://api.github.com/users/PiotrKopecki/repos",
+        "events_url": "https://api.github.com/users/PiotrKopecki/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/PiotrKopecki/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "PiotrKopecki",
+        "id": 101638407,
+        "node_id": "U_kgDOBg7hBw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101638407?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/PiotrKopecki",
+        "html_url": "https://github.com/PiotrKopecki",
+        "followers_url": "https://api.github.com/users/PiotrKopecki/followers",
+        "following_url": "https://api.github.com/users/PiotrKopecki/following{/other_user}",
+        "gists_url": "https://api.github.com/users/PiotrKopecki/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/PiotrKopecki/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/PiotrKopecki/subscriptions",
+        "organizations_url": "https://api.github.com/users/PiotrKopecki/orgs",
+        "repos_url": "https://api.github.com/users/PiotrKopecki/repos",
+        "events_url": "https://api.github.com/users/PiotrKopecki/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/PiotrKopecki/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7045ba9f410a5db234f5e8c7b68afbbf3101636a",
+            "url": "https://api.github.com/repos/Rectle/rectle-service/commits/7045ba9f410a5db234f5e8c7b68afbbf3101636a",
+            "html_url": "https://github.com/Rectle/rectle-service/commit/7045ba9f410a5db234f5e8c7b68afbbf3101636a"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 5,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "804c3234177c06b1f02dacf051d2534ebd39b1ff",
+            "filename": "src/main/java/com/rectle/security/filter/TokenFilter.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 1,
+            "changes": 6,
+            "blob_url": "https://github.com/Rectle/rectle-service/blob/59733c882d5b80a27ee73889e80ff6e9e9a5e264/src%2Fmain%2Fjava%2Fcom%2Frectle%2Fsecurity%2Ffilter%2FTokenFilter.java",
+            "raw_url": "https://github.com/Rectle/rectle-service/raw/59733c882d5b80a27ee73889e80ff6e9e9a5e264/src%2Fmain%2Fjava%2Fcom%2Frectle%2Fsecurity%2Ffilter%2FTokenFilter.java",
+            "contents_url": "https://api.github.com/repos/Rectle/rectle-service/contents/src%2Fmain%2Fjava%2Fcom%2Frectle%2Fsecurity%2Ffilter%2FTokenFilter.java?ref=59733c882d5b80a27ee73889e80ff6e9e9a5e264",
+            "patch": "@@ -6,6 +6,7 @@\n import com.fasterxml.jackson.databind.JsonNode;\n import com.fasterxml.jackson.databind.ObjectMapper;\n import com.google.auth.oauth2.TokenVerifier;\n+import lombok.NonNull;\n import lombok.extern.slf4j.Slf4j;\n import org.springframework.http.HttpHeaders;\n import org.springframework.security.authentication.BadCredentialsException;\n@@ -31,7 +32,10 @@ private void verifyToken(String token) throws TokenVerifier.VerificationExceptio\n     }\n \n     @Override\n-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {\n+    protected void doFilterInternal(HttpServletRequest request, @NonNull HttpServletResponse response, @NonNull FilterChain filterChain) throws ServletException, IOException {\n+        if (request.getHeader(HttpHeaders.AUTHORIZATION) == null) {\n+            throw new BadCredentialsException(\"Authorization token is not present\");\n+        }\n         try {\n             verifyToken(request.getHeader(HttpHeaders.AUTHORIZATION));\n             UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = getUserAuthentication(request);"
+        }
+    ]
+}

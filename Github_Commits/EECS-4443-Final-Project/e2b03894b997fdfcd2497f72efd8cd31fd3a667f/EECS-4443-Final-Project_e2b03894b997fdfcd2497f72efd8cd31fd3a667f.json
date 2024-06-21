@@ -1,0 +1,122 @@
+{
+    "sha": "e2b03894b997fdfcd2497f72efd8cd31fd3a667f",
+    "node_id": "C_kwDOLhDv6toAKGUyYjAzODk0Yjk5N2ZkZmNkMjQ5N2Y3MmVmZDhjZDMxZmQzYTY2N2Y",
+    "commit": {
+        "author": {
+            "name": "Omar Ali",
+            "email": "61897650+omar0ali@users.noreply.github.com",
+            "date": "2024-03-20T03:55:48Z"
+        },
+        "committer": {
+            "name": "Omar Ali",
+            "email": "61897650+omar0ali@users.noreply.github.com",
+            "date": "2024-03-20T03:55:48Z"
+        },
+        "message": "Fixes two bugs:\n- Resolves an issue when adding another DigitalInk test.\n- Addresses null pointer exception when the test array is empty.",
+        "tree": {
+            "sha": "e96e7e0500af4edb2e3c095748c11d7f49c97037",
+            "url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/git/trees/e96e7e0500af4edb2e3c095748c11d7f49c97037"
+        },
+        "url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/git/commits/e2b03894b997fdfcd2497f72efd8cd31fd3a667f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/commits/e2b03894b997fdfcd2497f72efd8cd31fd3a667f",
+    "html_url": "https://github.com/ksmarty/EECS-4443-Final-Project/commit/e2b03894b997fdfcd2497f72efd8cd31fd3a667f",
+    "comments_url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/commits/e2b03894b997fdfcd2497f72efd8cd31fd3a667f/comments",
+    "author": {
+        "login": "omar0ali",
+        "id": 61897650,
+        "node_id": "MDQ6VXNlcjYxODk3NjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61897650?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omar0ali",
+        "html_url": "https://github.com/omar0ali",
+        "followers_url": "https://api.github.com/users/omar0ali/followers",
+        "following_url": "https://api.github.com/users/omar0ali/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omar0ali/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omar0ali/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omar0ali/subscriptions",
+        "organizations_url": "https://api.github.com/users/omar0ali/orgs",
+        "repos_url": "https://api.github.com/users/omar0ali/repos",
+        "events_url": "https://api.github.com/users/omar0ali/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omar0ali/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "omar0ali",
+        "id": 61897650,
+        "node_id": "MDQ6VXNlcjYxODk3NjUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61897650?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/omar0ali",
+        "html_url": "https://github.com/omar0ali",
+        "followers_url": "https://api.github.com/users/omar0ali/followers",
+        "following_url": "https://api.github.com/users/omar0ali/following{/other_user}",
+        "gists_url": "https://api.github.com/users/omar0ali/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/omar0ali/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/omar0ali/subscriptions",
+        "organizations_url": "https://api.github.com/users/omar0ali/orgs",
+        "repos_url": "https://api.github.com/users/omar0ali/repos",
+        "events_url": "https://api.github.com/users/omar0ali/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/omar0ali/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e6ed35cf45f04ddebd534eeca4f9a478466f3ba3",
+            "url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/commits/e6ed35cf45f04ddebd534eeca4f9a478466f3ba3",
+            "html_url": "https://github.com/ksmarty/EECS-4443-Final-Project/commit/e6ed35cf45f04ddebd534eeca4f9a478466f3ba3"
+        }
+    ],
+    "stats": {
+        "total": 45,
+        "additions": 17,
+        "deletions": 28
+    },
+    "files": [
+        {
+            "sha": "145535ab34c24306ba30a4875f2fd01b522450c6",
+            "filename": ".idea/deploymentTargetDropDown.xml",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 23,
+            "changes": 23,
+            "blob_url": "https://github.com/ksmarty/EECS-4443-Final-Project/blob/e6ed35cf45f04ddebd534eeca4f9a478466f3ba3/.idea%2FdeploymentTargetDropDown.xml",
+            "raw_url": "https://github.com/ksmarty/EECS-4443-Final-Project/raw/e6ed35cf45f04ddebd534eeca4f9a478466f3ba3/.idea%2FdeploymentTargetDropDown.xml",
+            "contents_url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/contents/.idea%2FdeploymentTargetDropDown.xml?ref=e6ed35cf45f04ddebd534eeca4f9a478466f3ba3",
+            "patch": "@@ -1,23 +0,0 @@\n-<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n-<project version=\"4\">\n-  <component name=\"deploymentTargetDropDown\">\n-    <value>\n-      <entry key=\"app\">\n-        <State>\n-          <runningDeviceTargetSelectedWithDropDown>\n-            <Target>\n-              <type value=\"RUNNING_DEVICE_TARGET\" />\n-              <deviceKey>\n-                <Key>\n-                  <type value=\"SERIAL_NUMBER\" />\n-                  <value value=\"adb-HT6980202964-YxXi5g._adb-tls-connect._tcp.\" />\n-                </Key>\n-              </deviceKey>\n-            </Target>\n-          </runningDeviceTargetSelectedWithDropDown>\n-          <timeTargetWasSelectedWithDropDown value=\"2024-03-15T22:03:18.869975Z\" />\n-        </State>\n-      </entry>\n-    </value>\n-  </component>\n-</project>\n\\ No newline at end of file"
+        },
+        {
+            "sha": "0467768b7c343f8fab15ebc4eef5b20b14d6a91b",
+            "filename": "app/src/main/java/ca/yorku/eecs4443_finalproject_golf/TestingActivity.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 5,
+            "changes": 21,
+            "blob_url": "https://github.com/ksmarty/EECS-4443-Final-Project/blob/e2b03894b997fdfcd2497f72efd8cd31fd3a667f/app%2Fsrc%2Fmain%2Fjava%2Fca%2Fyorku%2Feecs4443_finalproject_golf%2FTestingActivity.java",
+            "raw_url": "https://github.com/ksmarty/EECS-4443-Final-Project/raw/e2b03894b997fdfcd2497f72efd8cd31fd3a667f/app%2Fsrc%2Fmain%2Fjava%2Fca%2Fyorku%2Feecs4443_finalproject_golf%2FTestingActivity.java",
+            "contents_url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/contents/app%2Fsrc%2Fmain%2Fjava%2Fca%2Fyorku%2Feecs4443_finalproject_golf%2FTestingActivity.java?ref=e2b03894b997fdfcd2497f72efd8cd31fd3a667f",
+            "patch": "@@ -1,7 +1,9 @@\n package ca.yorku.eecs4443_finalproject_golf;\n \n import android.annotation.SuppressLint;\n+import android.app.AlertDialog;\n import android.content.Context;\n+import android.content.DialogInterface;\n import android.graphics.Rect;\n import android.os.Bundle;\n import android.os.LocaleList;\n@@ -11,6 +13,7 @@\n import android.widget.Button;\n import android.widget.EditText;\n import android.widget.TextView;\n+import android.widget.Toast;\n \n import androidx.appcompat.app.AppCompatActivity;\n \n@@ -25,6 +28,7 @@\n import digitalink.StrokeManager;\n import digitalink.StrokeManager.LANG;\n \n+import static ca.yorku.eecs4443_finalproject_golf.R.string.test_content_0;\n import static ca.yorku.eecs4443_finalproject_golf.R.string.test_content_1;\n import static ca.yorku.eecs4443_finalproject_golf.TestBundle.TYPE.DIGITALINK;\n import static ca.yorku.eecs4443_finalproject_golf.TestBundle.TYPE.KEYBOARD;\n@@ -82,7 +86,7 @@ private void setupKeyboardListener() {\n     private void continueButtonClicked(View view) {\n         switch (currentView) {\n             case WELCOME -> showTestScreen();\n-            case KEYBOARD_TEST -> testCompleted();\n+            case KEYBOARD_TEST, DIGITALINK_TEST -> testCompleted();\n         }\n     }\n \n@@ -104,10 +108,14 @@ private void recordTest() {\n \n     private void showTestScreen() {\n         // Pop next test from the list\n-        currentTest = allTests.remove(0);\n-\n-        if (currentTest.type == KEYBOARD) setupKeyboard();\n-        else setupDigitalInk();\n+        if(!allTests.isEmpty()){\n+            currentTest = allTests.remove(0);\n+            if (currentTest.type == KEYBOARD) setupKeyboard();\n+            else setupDigitalInk();\n+        }else {\n+            Log.i(\"DEBUG_ING\", \"There are no more tests\");\n+            //We can collect results here and generate a qr code\n+        }\n     }\n \n     @SuppressLint(\"ClickableViewAccessibility\")\n@@ -174,11 +182,14 @@ private void onKeyboardVisibilityChanged(boolean opened) {\n     private void printResults() {\n         String prettyPrint = testResults.stream().map(TestResult::toString).collect(Collectors.joining());\n         Log.i(null, prettyPrint);\n+        Toast.makeText(this, prettyPrint, Toast.LENGTH_LONG).show();\n     }\n \n     private ArrayList<TestBundle> generateTests() {\n         // TODO add more tests\n         return new ArrayList<>(List.of(\n+                new TestBundle(this, KEYBOARD, test_content_0, LANG.ENGLISH),\n+                new TestBundle(this, DIGITALINK, test_content_0, LANG.ENGLISH),\n                 new TestBundle(this, KEYBOARD, test_content_1, LANG.CHINESE),\n                 new TestBundle(this, DIGITALINK, test_content_1, LANG.CHINESE)\n         ));"
+        },
+        {
+            "sha": "a44e8126fbcdea9e6c3a1ff7c066aedfbeadb6f0",
+            "filename": "app/src/main/res/values/tests.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/ksmarty/EECS-4443-Final-Project/blob/e2b03894b997fdfcd2497f72efd8cd31fd3a667f/app%2Fsrc%2Fmain%2Fres%2Fvalues%2Ftests.xml",
+            "raw_url": "https://github.com/ksmarty/EECS-4443-Final-Project/raw/e2b03894b997fdfcd2497f72efd8cd31fd3a667f/app%2Fsrc%2Fmain%2Fres%2Fvalues%2Ftests.xml",
+            "contents_url": "https://api.github.com/repos/ksmarty/EECS-4443-Final-Project/contents/app%2Fsrc%2Fmain%2Fres%2Fvalues%2Ftests.xml?ref=e2b03894b997fdfcd2497f72efd8cd31fd3a667f",
+            "patch": "@@ -2,5 +2,6 @@\n <resources>\n     <string name=\"test_instructions_digital_ink\">Draw the target input in the box and click \\\"Recognize\\\"</string>\n     <string name=\"test_instructions_keyboard\">Type the target input in the box</string>\n+    <string name=\"test_content_0\">Test</string>\n     <string name=\"test_content_1\">好</string>\n </resources>\n\\ No newline at end of file"
+        }
+    ]
+}

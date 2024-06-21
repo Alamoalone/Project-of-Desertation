@@ -1,0 +1,6 @@
+    public List<Alternative> buildAlternatives(
+            final Map<String, RepeatedList> capturingGroupSubstitutions) {
+        final String alternative = capturingGroupSubstitutions.get(name).get();
+        return Collections.singletonList(
+                new Alternative(alternative, Collections.singletonMap(name, alternative)));
+    }

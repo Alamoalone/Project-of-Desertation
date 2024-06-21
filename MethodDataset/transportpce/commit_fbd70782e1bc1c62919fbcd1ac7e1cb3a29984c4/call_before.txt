@@ -1,0 +1,17 @@
+    public Void call() throws Exception {
+        ServicePowerTurndownInput powerTurndownInput = new ServicePowerTurndownInputBuilder()
+                .setNodes(this.powerSetupInput.getNodes())
+                .setServiceName(this.powerSetupInput.getServiceName())
+                .setWaveNumber(this.powerSetupInput.getWaveNumber())
+                .build();
+
+        Future<RpcResult<ServicePowerTurndownOutput>> powerTurndownResultFuture =
+                this.olmService.servicePowerTurndown(powerTurndownInput);
+        RpcResult<ServicePowerTurndownOutput> powerTurndownResult = powerTurndownResultFuture.get();
+        if (FAILED.equals(powerTurndownResult.getResult().getResult())) {
+            LOG.warn("Olmp power setup rollback for {} was not successful!", this.getId());
+        } else {
+            LOG.info("Olm power setup rollback for {} was successful.", this.getId());
+        }
+        return null;
+    }

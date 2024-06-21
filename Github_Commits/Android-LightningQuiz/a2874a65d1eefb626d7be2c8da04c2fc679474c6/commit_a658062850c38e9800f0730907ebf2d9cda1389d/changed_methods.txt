@@ -1,0 +1,2 @@
+updateAnswerContentDescription(View answerLayout, CharSequence baseText, boolean selectAnswer)
+selectAnswer(View answerLayout, boolean selectAnswer)

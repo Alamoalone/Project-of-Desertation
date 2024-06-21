@@ -1,0 +1,5 @@
+	public Person getOnePersonById(String id) {
+		return persons.stream().filter(person -> person.getId().equals(id)).findFirst().map(existingPerson -> {
+			return existingPerson;
+		}).orElse(null);
+	}

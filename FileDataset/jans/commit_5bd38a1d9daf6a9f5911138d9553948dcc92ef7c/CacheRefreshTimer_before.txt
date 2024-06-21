@@ -1,0 +1,73 @@
+	private LdapServerConnection[] prepareLdapServerConnections(CacheRefreshConfiguration cacheRefreshConfiguration,
+			List<GluuLdapConfiguration> ldapConfigurations) {
+		LdapServerConnection[] ldapServerConnections = new LdapServerConnection[ldapConfigurations.size()];
+		for (int i = 0; i < ldapConfigurations.size(); i++) {
+			ldapServerConnections[i] = prepareLdapServerConnection(cacheRefreshConfiguration,
+					ldapConfigurations.get(i));
+			if (ldapServerConnections[i] == null) {
+				return null;
+			}
+		}
+
+		return ldapServerConnections;
+	}
+
+	private boolean isStartCacheRefresh(AppConfiguration currentConfiguration) {
+		if (!currentConfiguration.isLinkEnabled()) {
+			return false;
+		}
+
+		long poolingInterval = StringHelper.toInteger(currentConfiguration.getPollingInterval());
+		if (poolingInterval < 0) {
+			return false;
+		}
+
+		String cacheRefreshServerIpAddress = currentConfiguration.getServerIpAddress();
+		// if (StringHelper.isEmpty(cacheRefreshServerIpAddress)) {
+		// log.debug("There is no master Cache Refresh server");
+		// return false;
+		// }
+
+		// Compare server IP address with cacheRefreshServerIp
+		boolean cacheRefreshServer = false;
+		try {
+			Enumeration<NetworkInterface> nets = NetworkInterface.getNetworkInterfaces();
+			for (NetworkInterface networkInterface : Collections.list(nets)) {
+				Enumeration<InetAddress> inetAddresses = networkInterface.getInetAddresses();
+				for (InetAddress inetAddress : Collections.list(inetAddresses)) {
+					if (StringHelper.equals(cacheRefreshServerIpAddress, inetAddress.getHostAddress())) {
+						cacheRefreshServer = true;
+						break;
+					}
+				}
+
+				if (cacheRefreshServer) {
+					break;
+				}
+			}
+		} catch (SocketException ex) {
+			log.error("Failed to enumerate server IP addresses"+ ex);
+		}
+
+		if (!cacheRefreshServer) {
+			cacheRefreshServer = externalCacheRefreshService.executeExternalIsStartProcessMethods();
+			cacheRefreshServer = true;
+		}
+
+		if (!cacheRefreshServer) {
+			log.info("This server isn't master Cache Refresh server");
+			return false;
+		}
+
+		// Check if cache refresh specific configuration was loaded
+		if (currentConfiguration == null) {
+			log.info("Failed to start cache refresh. Can't loading configuration from oxTrustCacheRefresh.properties");
+			return false;
+		}
+
+		long timeDiffrence = System.currentTimeMillis() - this.lastFinishedTime;
+		timeDiffrence = timeDiffrence/1000;
+
+		return timeDiffrence >= poolingInterval;
+	}
+

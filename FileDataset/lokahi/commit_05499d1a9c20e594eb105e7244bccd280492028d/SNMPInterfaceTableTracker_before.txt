@@ -1,0 +1,14 @@
+        public SnmpInterfaceResult createInterfaceFromRow() {
+            return SnmpInterfaceResult.newBuilder()
+                .setIfIndex(getIfIndex())
+                .setIfAdminStatus(getIfAdminStatus())
+                .setIfAlias(getIfAlias())
+                .setIfDescr(getIfDescr())
+                .setIfName(getIfName())
+                .setIfOperatorStatus(getIfOperStatus())
+                .setIfSpeed(getIfSpeed())
+                .setIfType(getIfType())
+                .setPhysicalAddr(getPhysAddr())
+                .build();
+        }
+

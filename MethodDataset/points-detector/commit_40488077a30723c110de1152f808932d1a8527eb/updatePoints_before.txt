@@ -1,0 +1,64 @@
+	private void updatePoints(boolean force) {
+		Roi roi = getPointsRoi();
+		if (roi == null) {
+			return;
+		}
+		logMethod();
+        int pointRadius = globalParams.pointRadius;
+        int backgroundRadius = globalParams.backgroundStartRadius;
+		Point[] points = roi.getContainedPoints();
+		double[] xx = new double[points.length];
+		double[] yy = new double[points.length];
+		double[][] profileY = new double[Common.MAX_PROFILE_PLOTS][histSize];
+		int plotIndex = 0;
+		int profileIndex = 0;
+		int profileStep = Math.max(1, points.length / Common.MAX_PROFILE_PLOTS);
+		for (int pointIndex = 0; pointIndex < points.length; pointIndex++) {
+			int x = points[pointIndex].x;
+			int y = points[pointIndex].y;
+			if (x < 0 || y < 0 || x >= width || y >= height) continue;
+			int histOffset = histSize * (x + y * width);
+			float firstValue = 0;
+			for (int k = 0; k <= pointRadius; k++) {
+				firstValue += hist[histOffset + k];
+			}
+			firstValue /= (float) (pointRadius + 1);
+			float lastValue = 0;
+			for (int k = backgroundRadius; k < histSize; k++) {
+				lastValue += hist[histOffset + k];
+			}
+			lastValue /= (float) (histSize - backgroundRadius);
+			yy[plotIndex] = firstValue;
+			xx[plotIndex] = lastValue;
+			if (plotIndex % profileStep == 0 && profileIndex < Common.MAX_PROFILE_PLOTS) {
+				for (int k = 0; k < histSize; k++) {
+					profileY[profileIndex][k] = hist[histOffset + k];
+				}
+				profileIndex++;
+			}
+			plotIndex++;
+		}
+		if (plotIndex < xx.length) {
+			xx = Arrays.copyOfRange(xx, 0, plotIndex);
+			yy = Arrays.copyOfRange(yy, 0, plotIndex);
+		}
+		boolean update = true;
+		if (oldPointsX != null && !force && oldPointsX.length == xx.length) {
+			update = false;
+			for (int i = 0; i < xx.length; i++) {
+				if (xx[i] != oldPointsX[i] || yy[i] != oldPointsY[i]) {
+					update = true;
+					break;
+				}
+			}
+		}
+		oldPointsX = xx;
+		oldPointsY = yy;
+		if (update) {
+			plot.setColor(Color.RED);
+			plot.replace(1, "circle", xx, yy);
+			plot.setLimitsToFit(true);
+			updateLimitLine();
+			updateProfilePlot(profileY, profileIndex, true);
+		}
+	}

@@ -1,0 +1,7 @@
+    public double getAlchsPerHour() {
+        Instant now = Instant.now();
+        Duration timeElapsed = Duration.between(startTime, now);
+        double hoursElapsed = timeElapsed.toMillis() / 1000.0 / 60.0 / 60.0;
+
+        return alchsPerformed / hoursElapsed;
+    }

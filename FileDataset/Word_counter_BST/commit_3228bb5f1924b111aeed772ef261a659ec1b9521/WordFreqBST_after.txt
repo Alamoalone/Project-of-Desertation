@@ -1,0 +1,57 @@
+    public void insert(String string, boolean origin) {
+        WordFreqTreeNode newWordNode = new WordFreqTreeNode(string);
+        String newRoot = newWordNode.getWordFreqObj().getRoot();
+
+        if (head == null) {
+            head = newWordNode;
+            if (newRoot != null)
+                WordFreq.rootWords.insertAtBack(newRoot);
+            return ;
+        }
+
+        WordFreqTreeNode nodeIter = head;
+        while (true) {
+            boolean equalsIgnorePostfix = false;
+            if (!origin && nodeIter.getWordFreqObj().getType() != null && newWordNode.getWordFreqObj().getType() != null) {
+                String IterRootSubstring, newRootSubstring;
+                boolean condition = false;
+//                try {
+//                    String nodeIterRoot = nodeIter.getWordFreqObj().getRoot();
+//                    IterRootSubstring = nodeIterRoot.substring(0, nodeIterRoot.length() - 2);
+//                    newRootSubstring = newRoot.substring(0, newRoot.length() - 2);
+//                    condition = (IterRootSubstring.equals(newRootSubstring) && Math.abs(nodeIter.getWordFreqObj().getRoot().length() - newRoot.length()) <= 1 && nodeIter.getWordFreqObj().getRoot().length() > 3);
+//                    System.out.println(" IterRootSubstring equals newRootSubstring?   " + nodeIter.getWordFreqObj().getWord() + " " + string + " condition is: " + condition);
+//                } catch (RuntimeException e) { }
+                if (WordFreq.rootWords.containsString(newRoot) && (nodeIter.getWordFreqObj().getWord().equals(string) || (Objects.equals(nodeIter.getWordFreqObj().getRoot(), newRoot) && string.length() > 3) || condition )
+                        && nodeIter.getWordFreqObj().containsType(newWordNode.getWordFreqObj().getType())) { //nouns and adjectives are being mixed
+                            equalsIgnorePostfix = true;  // the root exist, so we need to increase the frequency
+                }
+            }
+
+            if (nodeIter.compareTo(newWordNode) == 0 || equalsIgnorePostfix) {
+                nodeIter.getWordFreqObj().increaseFrequency();
+                ++totalWords;
+                // if (!nodeIter.getWordFreqObj().getWord().equals(string)) //todo next patch: check for wrong equivalents
+                    //System.out.println(nodeIter.getWordFreqObj().getWord() + "  " + string);
+                return ;
+            } else {
+                WordFreqTreeNode childNode = (nodeIter.compareTo(newWordNode) < 0) ? nodeIter.getRight() : nodeIter.getLeft();
+                if (childNode == null) {
+                    ++totalWords;
+                    if (nodeIter.compareTo(newWordNode) < 0) {
+                        nodeIter.setRight(newWordNode);
+                    } else {
+                        nodeIter.setLeft(newWordNode);
+                    }
+                    newWordNode.setParent(nodeIter);
+                    newWordNode.subtreeIncrease();
+                    if (newRoot != null)
+                        WordFreq.rootWords.insertAtBack(newRoot);   //if the stringRoot has been found but does not exist it must be added to the list
+                    return;
+                } else {
+                    nodeIter = childNode;
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,17 @@
+    private void defCalcArg(Argument _argument, IdMap<RendDynOperationNode, ArgumentsPair> _nodes, ContextEl _context, RendStackCall _rendStack, Argument _out) {
+        Argument out_ = _out;
+        if (!implicits.isEmpty()) {
+            Argument res_ = tryConvert(implicits, out_, _context, _rendStack);
+            if (res_ == null) {
+                return;
+            }
+            out_ = res_;
+        }
+        if (content.getResultClass().isConvertToString()){
+            out_ = processString(_argument, _context, _rendStack);
+            if (_context.callsOrException(_rendStack.getStackCall())) {
+                return;
+            }
+        }
+        calcArg(_nodes, out_);
+    }

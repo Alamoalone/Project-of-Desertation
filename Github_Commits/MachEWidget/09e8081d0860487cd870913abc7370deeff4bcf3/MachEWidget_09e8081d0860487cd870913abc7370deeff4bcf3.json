@@ -1,0 +1,122 @@
+{
+    "sha": "09e8081d0860487cd870913abc7370deeff4bcf3",
+    "node_id": "C_kwDOGsnGN9oAKDA5ZTgwODFkMDg2MDQ4N2NkODcwOTEzYWJjNzM3MGRlZWZmNGJjZjM",
+    "commit": {
+        "author": {
+            "name": "Ken Hughes",
+            "email": "ken.l.hughes@gmail.com",
+            "date": "2023-01-02T17:51:10Z"
+        },
+        "committer": {
+            "name": "Ken Hughes",
+            "email": "ken.l.hughes@gmail.com",
+            "date": "2023-01-02T17:51:10Z"
+        },
+        "message": "Avoid possible null pointer exceptions",
+        "tree": {
+            "sha": "7020116e8065d813ef9f9aac45741d5a85ada0d3",
+            "url": "https://api.github.com/repos/khpylon/MachEWidget/git/trees/7020116e8065d813ef9f9aac45741d5a85ada0d3"
+        },
+        "url": "https://api.github.com/repos/khpylon/MachEWidget/git/commits/09e8081d0860487cd870913abc7370deeff4bcf3",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/khpylon/MachEWidget/commits/09e8081d0860487cd870913abc7370deeff4bcf3",
+    "html_url": "https://github.com/khpylon/MachEWidget/commit/09e8081d0860487cd870913abc7370deeff4bcf3",
+    "comments_url": "https://api.github.com/repos/khpylon/MachEWidget/commits/09e8081d0860487cd870913abc7370deeff4bcf3/comments",
+    "author": {
+        "login": "khpylon",
+        "id": 18265404,
+        "node_id": "MDQ6VXNlcjE4MjY1NDA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18265404?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/khpylon",
+        "html_url": "https://github.com/khpylon",
+        "followers_url": "https://api.github.com/users/khpylon/followers",
+        "following_url": "https://api.github.com/users/khpylon/following{/other_user}",
+        "gists_url": "https://api.github.com/users/khpylon/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/khpylon/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/khpylon/subscriptions",
+        "organizations_url": "https://api.github.com/users/khpylon/orgs",
+        "repos_url": "https://api.github.com/users/khpylon/repos",
+        "events_url": "https://api.github.com/users/khpylon/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/khpylon/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "khpylon",
+        "id": 18265404,
+        "node_id": "MDQ6VXNlcjE4MjY1NDA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/18265404?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/khpylon",
+        "html_url": "https://github.com/khpylon",
+        "followers_url": "https://api.github.com/users/khpylon/followers",
+        "following_url": "https://api.github.com/users/khpylon/following{/other_user}",
+        "gists_url": "https://api.github.com/users/khpylon/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/khpylon/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/khpylon/subscriptions",
+        "organizations_url": "https://api.github.com/users/khpylon/orgs",
+        "repos_url": "https://api.github.com/users/khpylon/repos",
+        "events_url": "https://api.github.com/users/khpylon/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/khpylon/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "196481aa43e8c373b119361e9c78987aad63c49d",
+            "url": "https://api.github.com/repos/khpylon/MachEWidget/commits/196481aa43e8c373b119361e9c78987aad63c49d",
+            "html_url": "https://github.com/khpylon/MachEWidget/commit/196481aa43e8c373b119361e9c78987aad63c49d"
+        }
+    ],
+    "stats": {
+        "total": 18,
+        "additions": 9,
+        "deletions": 9
+    },
+    "files": [
+        {
+            "sha": "b6952f5c4bf5bfd3ea322fa25b09ac588eb14a21",
+            "filename": "app/src/main/java/com/example/khughes/machewidget/CarStatusWidget_1x5.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/khpylon/MachEWidget/blob/09e8081d0860487cd870913abc7370deeff4bcf3/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_1x5.java",
+            "raw_url": "https://github.com/khpylon/MachEWidget/raw/09e8081d0860487cd870913abc7370deeff4bcf3/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_1x5.java",
+            "contents_url": "https://api.github.com/repos/khpylon/MachEWidget/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_1x5.java?ref=09e8081d0860487cd870913abc7370deeff4bcf3",
+            "patch": "@@ -70,7 +70,7 @@ private void updateAppWidget(Context context, AppWidgetManager appWidgetManager,\n                 ));\n         double distanceConversion;\n         String distanceUnits;\n-        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomSpeed().equals(\"MPH\")) || units == Constants.UNITS_IMPERIAL) {\n+        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomSpeed() != null && userInfo.getUomSpeed().equals(\"MPH\")) || units == Constants.UNITS_IMPERIAL) {\n             distanceConversion = Constants.KMTOMILES;\n             distanceUnits = \"miles\";\n         } else {\n@@ -79,10 +79,10 @@ private void updateAppWidget(Context context, AppWidgetManager appWidgetManager,\n         }\n         double pressureConversion;\n         String pressureUnits;\n-        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomPressure().equals(\"PSI\")) || units == Constants.UNITS_IMPERIAL) {\n+        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomPressure() != null && userInfo.getUomPressure().equals(\"PSI\")) || units == Constants.UNITS_IMPERIAL) {\n             pressureConversion = Constants.KPATOPSI;\n             pressureUnits = \"psi\";\n-        } else if (units == Constants.UNITS_SYSTEM && userInfo.getUomPressure().equals(\"BAR\")) {\n+        } else if (units == Constants.UNITS_SYSTEM && userInfo.getUomPressure() != null && userInfo.getUomPressure().equals(\"BAR\")) {\n             pressureConversion = Constants.KPATOBAR;\n             pressureUnits = \"bar\";\n         } else {"
+        },
+        {
+            "sha": "0891feb1f3d9076dfb3ea44ea3909d7bbb14ec29",
+            "filename": "app/src/main/java/com/example/khughes/machewidget/CarStatusWidget_2x5.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/khpylon/MachEWidget/blob/09e8081d0860487cd870913abc7370deeff4bcf3/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_2x5.java",
+            "raw_url": "https://github.com/khpylon/MachEWidget/raw/09e8081d0860487cd870913abc7370deeff4bcf3/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_2x5.java",
+            "contents_url": "https://api.github.com/repos/khpylon/MachEWidget/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_2x5.java?ref=09e8081d0860487cd870913abc7370deeff4bcf3",
+            "patch": "@@ -78,7 +78,7 @@ private void updateAppWidget(Context context, AppWidgetManager appWidgetManager,\n                 ));\n         double distanceConversion;\n         String distanceUnits;\n-        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomSpeed().equals(\"MPH\")) || units == Constants.UNITS_IMPERIAL) {\n+        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomSpeed() != null && userInfo.getUomSpeed().equals(\"MPH\")) || units == Constants.UNITS_IMPERIAL) {\n             distanceConversion = Constants.KMTOMILES;\n             distanceUnits = \"miles\";\n         } else {\n@@ -87,10 +87,10 @@ private void updateAppWidget(Context context, AppWidgetManager appWidgetManager,\n         }\n         double pressureConversion;\n         String pressureUnits;\n-        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomPressure().equals(\"PSI\")) || units == Constants.UNITS_IMPERIAL) {\n+        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomPressure() != null && userInfo.getUomPressure().equals(\"PSI\")) || units == Constants.UNITS_IMPERIAL) {\n             pressureConversion = Constants.KPATOPSI;\n             pressureUnits = \"psi\";\n-        } else if (units == Constants.UNITS_SYSTEM && userInfo.getUomPressure().equals(\"BAR\")) {\n+        } else if (units == Constants.UNITS_SYSTEM && userInfo.getUomPressure() != null && userInfo.getUomPressure().equals(\"BAR\")) {\n             pressureConversion = Constants.KPATOBAR;\n             pressureUnits = \"bar\";\n         } else {"
+        },
+        {
+            "sha": "7fe04ebba4fcab65b1dcee2b225777ce03ffaeae",
+            "filename": "app/src/main/java/com/example/khughes/machewidget/CarStatusWidget_5x5.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/khpylon/MachEWidget/blob/09e8081d0860487cd870913abc7370deeff4bcf3/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_5x5.java",
+            "raw_url": "https://github.com/khpylon/MachEWidget/raw/09e8081d0860487cd870913abc7370deeff4bcf3/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_5x5.java",
+            "contents_url": "https://api.github.com/repos/khpylon/MachEWidget/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fkhughes%2Fmachewidget%2FCarStatusWidget_5x5.java?ref=09e8081d0860487cd870913abc7370deeff4bcf3",
+            "patch": "@@ -188,7 +188,7 @@ private void updateAppWidget(Context context, AppWidgetManager appWidgetManager,\n \n         double distanceConversion;\n         String distanceUnits;\n-        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomSpeed().equals(\"MPH\")) || units == Constants.UNITS_IMPERIAL) {\n+        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomSpeed() != null && userInfo.getUomSpeed().equals(\"MPH\")) || units == Constants.UNITS_IMPERIAL) {\n             distanceConversion = Constants.KMTOMILES;\n             distanceUnits = \"miles\";\n         } else {\n@@ -197,10 +197,10 @@ private void updateAppWidget(Context context, AppWidgetManager appWidgetManager,\n         }\n         double pressureConversion;\n         String pressureUnits;\n-        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomPressure().equals(\"PSI\")) || units == Constants.UNITS_IMPERIAL) {\n+        if ((units == Constants.UNITS_SYSTEM && userInfo.getUomPressure() != null && userInfo.getUomPressure().equals(\"PSI\")) || units == Constants.UNITS_IMPERIAL) {\n             pressureConversion = Constants.KPATOPSI;\n             pressureUnits = \"psi\";\n-        } else if (units == Constants.UNITS_SYSTEM && userInfo.getUomPressure().equals(\"BAR\")) {\n+        } else if (units == Constants.UNITS_SYSTEM && userInfo.getUomPressure() != null && userInfo.getUomPressure().equals(\"BAR\")) {\n             pressureConversion = Constants.KPATOBAR;\n             pressureUnits = \"bar\";\n         } else {"
+        }
+    ]
+}

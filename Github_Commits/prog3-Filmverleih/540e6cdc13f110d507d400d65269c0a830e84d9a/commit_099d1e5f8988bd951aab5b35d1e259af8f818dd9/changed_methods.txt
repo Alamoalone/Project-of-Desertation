@@ -1,0 +1,5 @@
+checkIfCheckBoxesChanged()
+validEntryChecker()
+confirmMovieEdit()
+saveInfosAsNeededDataTypes()
+insertMovieData()

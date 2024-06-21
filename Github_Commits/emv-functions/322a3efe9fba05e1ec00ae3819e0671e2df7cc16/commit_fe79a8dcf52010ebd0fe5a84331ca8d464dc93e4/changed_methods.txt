@@ -1,0 +1,2 @@
+performIsoIec97971Method1Padding(String inputData)
+performIsoIec97971Method2Padding(String inputData)

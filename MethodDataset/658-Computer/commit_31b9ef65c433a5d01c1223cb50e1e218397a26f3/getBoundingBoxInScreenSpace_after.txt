@@ -1,0 +1,9 @@
+  public boolean getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+  {
+    if (boundingBox != null && !boundingBox.isNull())
+    {
+      getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, boundingBox);
+      return true;
+    }
+    return false;
+  }

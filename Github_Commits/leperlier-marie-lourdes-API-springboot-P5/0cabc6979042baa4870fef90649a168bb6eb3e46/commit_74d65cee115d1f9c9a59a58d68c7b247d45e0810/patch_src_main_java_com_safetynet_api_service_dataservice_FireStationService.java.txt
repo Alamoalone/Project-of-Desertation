@@ -1,0 +1,19 @@
+@@ -96,13 +96,15 @@ public boolean deleteFireStationById(String id) throws NullPointerException {
+ 		// log.debug("Deleting medical record for {} {}", firstName, lastName);
+ 		boolean result = false;
+ 		result = fireStations.removeIf(fireStation -> fireStation.getId().equals(id));
+-		// log.info("firestation deleted by id with station number successfully for {}
+-		// {}", id);
++		
+ 		if (!result) {
+ 			// log.error("Failed to delete firestation for {} {}", id);
+ 			throw new NullPointerException("this station number of firestation to remove doesn't exist");
++		}else {
++			// log.info("firestation deleted by id with station number successfully for {}
++			// {}", id);
+ 		}
+-
++		
+ 		return result;
+ 	}
+ 

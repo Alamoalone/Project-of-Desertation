@@ -1,0 +1,98 @@
+{
+    "sha": "f118a17839079e5ba53cf5e3982ce0a3d706f806",
+    "node_id": "C_kwDOK-AXytoAKGYxMThhMTc4MzkwNzllNWJhNTNjZjVlMzk4MmNlMGEzZDcwNmY4MDY",
+    "commit": {
+        "author": {
+            "name": "dawonseo",
+            "email": "oloielo@naver.com",
+            "date": "2024-02-21T14:51:27Z"
+        },
+        "committer": {
+            "name": "dawonseo",
+            "email": "oloielo@naver.com",
+            "date": "2024-02-21T14:51:27Z"
+        },
+        "message": "fix: 할일 추가 null pointer exception 해결",
+        "tree": {
+            "sha": "c1470e969fc7cb0a53c1abeb1b8751618b043564",
+            "url": "https://api.github.com/repos/ToDoMypet/ToDoMyPet_Todo/git/trees/c1470e969fc7cb0a53c1abeb1b8751618b043564"
+        },
+        "url": "https://api.github.com/repos/ToDoMypet/ToDoMyPet_Todo/git/commits/f118a17839079e5ba53cf5e3982ce0a3d706f806",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ToDoMypet/ToDoMyPet_Todo/commits/f118a17839079e5ba53cf5e3982ce0a3d706f806",
+    "html_url": "https://github.com/ToDoMypet/ToDoMyPet_Todo/commit/f118a17839079e5ba53cf5e3982ce0a3d706f806",
+    "comments_url": "https://api.github.com/repos/ToDoMypet/ToDoMyPet_Todo/commits/f118a17839079e5ba53cf5e3982ce0a3d706f806/comments",
+    "author": {
+        "login": "dawonseo",
+        "id": 85838334,
+        "node_id": "MDQ6VXNlcjg1ODM4MzM0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85838334?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dawonseo",
+        "html_url": "https://github.com/dawonseo",
+        "followers_url": "https://api.github.com/users/dawonseo/followers",
+        "following_url": "https://api.github.com/users/dawonseo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dawonseo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dawonseo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dawonseo/subscriptions",
+        "organizations_url": "https://api.github.com/users/dawonseo/orgs",
+        "repos_url": "https://api.github.com/users/dawonseo/repos",
+        "events_url": "https://api.github.com/users/dawonseo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dawonseo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dawonseo",
+        "id": 85838334,
+        "node_id": "MDQ6VXNlcjg1ODM4MzM0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85838334?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dawonseo",
+        "html_url": "https://github.com/dawonseo",
+        "followers_url": "https://api.github.com/users/dawonseo/followers",
+        "following_url": "https://api.github.com/users/dawonseo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dawonseo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dawonseo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dawonseo/subscriptions",
+        "organizations_url": "https://api.github.com/users/dawonseo/orgs",
+        "repos_url": "https://api.github.com/users/dawonseo/repos",
+        "events_url": "https://api.github.com/users/dawonseo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dawonseo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "16f5fcdf70d1e82c97f01282f3d7dead5a818684",
+            "url": "https://api.github.com/repos/ToDoMypet/ToDoMyPet_Todo/commits/16f5fcdf70d1e82c97f01282f3d7dead5a818684",
+            "html_url": "https://github.com/ToDoMypet/ToDoMyPet_Todo/commit/16f5fcdf70d1e82c97f01282f3d7dead5a818684"
+        }
+    ],
+    "stats": {
+        "total": 62,
+        "additions": 25,
+        "deletions": 37
+    },
+    "files": [
+        {
+            "sha": "c8f274add32a35dc82a7c961b0a152f8f50d3006",
+            "filename": "src/main/java/com/todomypet/todoservice/service/TodoServiceImpl.java",
+            "status": "modified",
+            "additions": 25,
+            "deletions": 37,
+            "changes": 62,
+            "blob_url": "https://github.com/ToDoMypet/ToDoMyPet_Todo/blob/f118a17839079e5ba53cf5e3982ce0a3d706f806/src%2Fmain%2Fjava%2Fcom%2Ftodomypet%2Ftodoservice%2Fservice%2FTodoServiceImpl.java",
+            "raw_url": "https://github.com/ToDoMypet/ToDoMyPet_Todo/raw/f118a17839079e5ba53cf5e3982ce0a3d706f806/src%2Fmain%2Fjava%2Fcom%2Ftodomypet%2Ftodoservice%2Fservice%2FTodoServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/ToDoMypet/ToDoMyPet_Todo/contents/src%2Fmain%2Fjava%2Fcom%2Ftodomypet%2Ftodoservice%2Fservice%2FTodoServiceImpl.java?ref=f118a17839079e5ba53cf5e3982ce0a3d706f806",
+            "patch": "@@ -44,8 +44,6 @@ public List<AddTodoResDTO> addTodo(String userId, AddTodoReqDTO todoInfoReqDTO)\n         List<AddTodoResDTO> response = new ArrayList<>();\n         RepeatType repeatType = todoInfoReqDTO.getRepeatInfo().getRepeatType();\n         List<Integer> repeatData = todoInfoReqDTO.getRepeatInfo().getRepeatData();\n-        LocalDate repeatStartDate = todoInfoReqDTO.getRepeatInfo().getRepeatStartDate();\n-        LocalDate repeatEndDate = todoInfoReqDTO.getRepeatInfo().getRepeatEndDate();\n \n         StringBuilder repeatCode = new StringBuilder();\n         Random rnd = new Random();\n@@ -68,44 +66,34 @@ public List<AddTodoResDTO> addTodo(String userId, AddTodoReqDTO todoInfoReqDTO)\n                 throw new CustomException(ErrorCode.WRONG_CATEGORY_ID);\n             };\n \n-            Todo todo;\n-\n-            if (req.getEndedAtDate() == null) {\n-                todo = Todo.builder().id(UlidCreator.getUlid().toString())\n-                    .content(req.getContent())\n-                    .startedAtDate(LocalDate.parse(req.getStartedAtDate()))\n-                    .startedAtTime(LocalTime.parse(req.getStartedAtTime()))\n-                    .receiveAlert(req.isReceiveAlert()).clearYN(false)\n-                    .getExperiencePointOrNot(false).markOnTheCalenderOrNot(req.isMarkOnTheCalenderOrNot())\n-                    .alertAt(req.getAlertAt())\n-                    .alertType(req.getAlertType())\n-                    .repeatType(repeatType)\n-                    .repeatData(repeatData)\n-                    .repeatCode(repeatCode.toString())\n-                    .repeatStartDate(repeatStartDate)\n-                    .repeatEndDate(repeatEndDate)\n-                    .build();\n-            } else {\n-                todo = Todo.builder().id(UlidCreator.getUlid().toString())\n-                    .content(req.getContent())\n-                    .startedAtDate(LocalDate.parse(req.getStartedAtDate()))\n-                    .startedAtTime(LocalTime.parse(req.getStartedAtTime()))\n-                    .endedAtDate(LocalDate.parse(req.getEndedAtDate()))\n-                    .endedAtTime(LocalTime.parse(req.getEndedAtTime()))\n-                    .receiveAlert(req.isReceiveAlert()).clearYN(false)\n-                    .getExperiencePointOrNot(false).markOnTheCalenderOrNot(req.isMarkOnTheCalenderOrNot())\n-                    .alertAt(req.getAlertAt())\n-                    .alertType(req.getAlertType())\n-                    .repeatType(repeatType)\n-                    .repeatData(repeatData)\n-                    .repeatCode(repeatCode.toString())\n-                    .repeatStartDate(repeatStartDate)\n-                    .repeatEndDate(repeatEndDate)\n-                    .build();\n+            Todo.TodoBuilder todoBuilder = Todo.builder().id(UlidCreator.getUlid().toString())\n+                .content(req.getContent())\n+                .startedAtDate(LocalDate.parse(req.getStartedAtDate()))\n+                .receiveAlert(req.isReceiveAlert()).clearYN(false)\n+                .getExperiencePointOrNot(false).markOnTheCalenderOrNot(req.isMarkOnTheCalenderOrNot())\n+                .alertAt(req.getAlertAt())\n+                .alertType(req.getAlertType())\n+                .repeatType(repeatType)\n+                .repeatData(repeatData)\n+                .repeatCode(repeatCode.toString());\n+\n+            if (req.getStartedAtTime() != null) {\n+                todoBuilder.startedAtTime(LocalTime.parse(req.getStartedAtTime()));\n+            }\n+            if (req.getEndedAtTime() != null) {\n+                todoBuilder.endedAtDate(LocalDate.parse(req.getEndedAtDate()))\n+                        .endedAtTime(LocalTime.parse(req.getEndedAtTime()));\n+            }\n+            if (todoInfoReqDTO.getRepeatInfo().getRepeatEndDate() != null) {\n+                todoBuilder.repeatStartDate(todoInfoReqDTO.getRepeatInfo().getRepeatEndDate());\n+            }\n+            if (todoInfoReqDTO.getRepeatInfo().getRepeatStartDate() != null) {\n+                todoBuilder.repeatEndDate(todoInfoReqDTO.getRepeatInfo().getRepeatStartDate());\n             }\n \n-            String todoId = todoRepository.save(todo).getId();\n+            Todo todo = todoBuilder.build();\n \n+            String todoId = todoRepository.save(todo).getId();\n \n             includeRepository.createIncludeRelationshipBetweenCategoryAndTodo(todoId, req.getCategoryId());\n             response.add(AddTodoResDTO.builder().todoId(todoId).build());"
+        }
+    ]
+}

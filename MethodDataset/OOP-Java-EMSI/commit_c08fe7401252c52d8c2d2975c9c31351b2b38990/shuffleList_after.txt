@@ -1,0 +1,3 @@
+	public void shuffleList() {
+		Collections.shuffle(phoneList);
+	}

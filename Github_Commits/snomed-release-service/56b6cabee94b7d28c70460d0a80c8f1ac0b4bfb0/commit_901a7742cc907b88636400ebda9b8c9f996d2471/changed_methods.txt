@@ -1,0 +1,1 @@
+startNewAuthoringCycle(String releaseCenterKey, String productKey, String effectiveTime, String productSource, String dependencyPackage)

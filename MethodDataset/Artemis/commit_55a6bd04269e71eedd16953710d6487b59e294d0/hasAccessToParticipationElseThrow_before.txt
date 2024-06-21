@@ -1,0 +1,8 @@
+    private void hasAccessToParticipationElseThrow(ProgrammingExerciseStudentParticipation participation) {
+        participationAuthCheckService.checkCanAccessParticipationElseThrow(participation);
+        boolean exerciseHasStarted = participation.getExercise().getParticipationStartDate().isBefore(ZonedDateTime.now());
+        boolean isStudent = authCheckService.isOnlyStudentInCourse(participation.getExercise().getCourseViaExerciseGroupOrCourseMember(), null);
+        if (!exerciseHasStarted && isStudent) {
+            throw new AccessForbiddenException("Participation not yet started");
+        }
+    }

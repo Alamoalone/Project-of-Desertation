@@ -1,0 +1,98 @@
+{
+    "sha": "a36fc18ebd66df110da7179700d6f862f541a4a6",
+    "node_id": "C_kwDOJfeg-toAKGEzNmZjMThlYmQ2NmRmMTEwZGE3MTc5NzAwZDZmODYyZjU0MWE0YTY",
+    "commit": {
+        "author": {
+            "name": "CCS\\calxa",
+            "email": "xaviermbcalabia@gmail.com",
+            "date": "2023-05-17T06:48:32Z"
+        },
+        "committer": {
+            "name": "CCS\\calxa",
+            "email": "xaviermbcalabia@gmail.com",
+            "date": "2023-05-17T06:48:32Z"
+        },
+        "message": "fixed null pointer exceptions when turning ratings into dtos and back",
+        "tree": {
+            "sha": "4f3144329577590f164a215515c7db4ca89cb1fd",
+            "url": "https://api.github.com/repos/aldrinlorenzo/errand/git/trees/4f3144329577590f164a215515c7db4ca89cb1fd"
+        },
+        "url": "https://api.github.com/repos/aldrinlorenzo/errand/git/commits/a36fc18ebd66df110da7179700d6f862f541a4a6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/aldrinlorenzo/errand/commits/a36fc18ebd66df110da7179700d6f862f541a4a6",
+    "html_url": "https://github.com/aldrinlorenzo/errand/commit/a36fc18ebd66df110da7179700d6f862f541a4a6",
+    "comments_url": "https://api.github.com/repos/aldrinlorenzo/errand/commits/a36fc18ebd66df110da7179700d6f862f541a4a6/comments",
+    "author": {
+        "login": "staircases",
+        "id": 9337841,
+        "node_id": "MDQ6VXNlcjkzMzc4NDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/staircases",
+        "html_url": "https://github.com/staircases",
+        "followers_url": "https://api.github.com/users/staircases/followers",
+        "following_url": "https://api.github.com/users/staircases/following{/other_user}",
+        "gists_url": "https://api.github.com/users/staircases/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/staircases/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/staircases/subscriptions",
+        "organizations_url": "https://api.github.com/users/staircases/orgs",
+        "repos_url": "https://api.github.com/users/staircases/repos",
+        "events_url": "https://api.github.com/users/staircases/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/staircases/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "staircases",
+        "id": 9337841,
+        "node_id": "MDQ6VXNlcjkzMzc4NDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9337841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/staircases",
+        "html_url": "https://github.com/staircases",
+        "followers_url": "https://api.github.com/users/staircases/followers",
+        "following_url": "https://api.github.com/users/staircases/following{/other_user}",
+        "gists_url": "https://api.github.com/users/staircases/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/staircases/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/staircases/subscriptions",
+        "organizations_url": "https://api.github.com/users/staircases/orgs",
+        "repos_url": "https://api.github.com/users/staircases/repos",
+        "events_url": "https://api.github.com/users/staircases/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/staircases/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c788e60b54f92a702dac52dfa6f275c75487368d",
+            "url": "https://api.github.com/repos/aldrinlorenzo/errand/commits/c788e60b54f92a702dac52dfa6f275c75487368d",
+            "html_url": "https://github.com/aldrinlorenzo/errand/commit/c788e60b54f92a702dac52dfa6f275c75487368d"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 6,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "a3bdbecc0b94d7b887c8f1fae2482db1d2644785",
+            "filename": "src/main/java/com/errand/mapper/RatingMapper.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/aldrinlorenzo/errand/blob/a36fc18ebd66df110da7179700d6f862f541a4a6/src%2Fmain%2Fjava%2Fcom%2Ferrand%2Fmapper%2FRatingMapper.java",
+            "raw_url": "https://github.com/aldrinlorenzo/errand/raw/a36fc18ebd66df110da7179700d6f862f541a4a6/src%2Fmain%2Fjava%2Fcom%2Ferrand%2Fmapper%2FRatingMapper.java",
+            "contents_url": "https://api.github.com/repos/aldrinlorenzo/errand/contents/src%2Fmain%2Fjava%2Fcom%2Ferrand%2Fmapper%2FRatingMapper.java?ref=a36fc18ebd66df110da7179700d6f862f541a4a6",
+            "patch": "@@ -34,6 +34,9 @@ public static RatingDto mapToRatingDtoFromClient(Rating rating){\n         if (rating.getClient() != null){\n             builder.clientDto(mapToClientDto(rating.getClient()));\n         }\n+        if(rating.getServiceProvider() != null){\n+            builder.serviceProviderDto(toServiceProviderDto(rating.getServiceProvider()));\n+        }\n         return builder.build();\n     }\n \n@@ -55,6 +58,9 @@ public static RatingDto maptoRatingDtoFromServiceProvider(Rating rating){\n                 .clientRatingDescription(rating.getClientRatingDescription())\n                 .taskDto(mapToTaskDto(rating.getTask()));\n \n+        if (rating.getClient() != null){\n+            builder.clientDto(mapToClientDto(rating.getClient()));\n+        }\n         if(rating.getServiceProvider() != null){\n             builder.serviceProviderDto(toServiceProviderDto(rating.getServiceProvider()));\n         }"
+        }
+    ]
+}

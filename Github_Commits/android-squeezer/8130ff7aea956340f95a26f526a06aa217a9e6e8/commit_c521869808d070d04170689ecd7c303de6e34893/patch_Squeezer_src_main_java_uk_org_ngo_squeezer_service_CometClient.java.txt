@@ -1,0 +1,11 @@
+@@ -824,7 +824,9 @@ public void handleMessage(android.os.Message msg) {
+                 }
+                 case MSG_MUSIC_CHANGED: {
+                     Player activePlayer = mConnectionState.getActivePlayer();
+-                    mEventBus.postSticky(new MusicChanged(activePlayer, activePlayer.getPlayerState()));
++                    if (activePlayer != null) {
++                        mEventBus.postSticky(new MusicChanged(activePlayer, activePlayer.getPlayerState()));
++                    }
+                     break;
+                 }
+             }

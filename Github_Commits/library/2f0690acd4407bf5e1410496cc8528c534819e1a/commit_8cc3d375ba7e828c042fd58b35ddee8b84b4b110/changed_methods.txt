@@ -1,0 +1,2 @@
+update(int d)
+closeImmediately()

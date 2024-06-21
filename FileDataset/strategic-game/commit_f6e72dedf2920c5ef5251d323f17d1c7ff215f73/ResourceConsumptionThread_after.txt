@@ -1,0 +1,29 @@
+    public void run() {
+        while (!isInterrupted()) {
+            try {
+                Thread.sleep(consumer.getTimeBetweenConsumptions());
+                List<ResourceAmount> consumptionTypes = consumer.getConsumptionType();
+                synchronized (playerResources) {
+                    for (ResourceAmount consumptionType : consumptionTypes) {
+                        for (ResourceAmount resource : playerResources) {
+                            if (resource.getResource() == consumptionType.getResource()) {
+                                int resourceLeft = resource.getAmount() - consumptionType.getAmount();
+                                if (resourceLeft < 0) {
+                                    throw new IllegalStateException("Recursos Insuficientes!");
+                                } else {
+                                    resource.setAmount(resourceLeft);
+                                    System.out.printf("\nTrabalhador consumiu %d de %s%n", consumptionType.getAmount(), consumptionType.getResource().getDescription());
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (InterruptedException | IllegalStateException e) {
+                if (onThreadInterruptedListener != null) {
+                    onThreadInterruptedListener.run();
+                }
+                interrupt();
+            }
+        }
+    }
+

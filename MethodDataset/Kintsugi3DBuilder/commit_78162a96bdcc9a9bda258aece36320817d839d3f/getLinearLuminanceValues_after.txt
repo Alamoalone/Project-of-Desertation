@@ -1,0 +1,4 @@
+    public double[] getLinearLuminanceValues()
+    {
+        return Arrays.copyOf(this.linearLuminanceValues, this.linearLuminanceValues.length);
+    }

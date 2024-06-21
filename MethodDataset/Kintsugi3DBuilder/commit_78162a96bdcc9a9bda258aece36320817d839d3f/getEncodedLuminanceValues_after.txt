@@ -1,0 +1,4 @@
+    public byte[] getEncodedLuminanceValues()
+    {
+        return Arrays.copyOf(this.encodedLuminanceValues, this.encodedLuminanceValues.length);
+    }

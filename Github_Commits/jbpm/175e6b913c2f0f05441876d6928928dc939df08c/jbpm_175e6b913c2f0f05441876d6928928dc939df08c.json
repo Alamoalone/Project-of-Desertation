@@ -1,0 +1,98 @@
+{
+    "sha": "175e6b913c2f0f05441876d6928928dc939df08c",
+    "node_id": "C_kwDOAA4zC9oAKDE3NWU2YjkxM2MyZjBmMDU0NDE4NzZkNjkyODkyOGRjOTM5ZGYwOGM",
+    "commit": {
+        "author": {
+            "name": "Francisco Javier Tirado Sarti",
+            "email": "65240126+fjtirado@users.noreply.github.com",
+            "date": "2023-10-05T09:03:17Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-10-05T09:03:17Z"
+        },
+        "message": "[JBPM-10203] Fixing null pointer exception for cancelActivity (#2342)\n\n* [JBPM-10203] Fixing null pointer exception for cancelActivity\r\n\r\n* Update jbpm-bpmn2/src/main/java/org/jbpm/bpmn2/xml/BoundaryEventHandler.java\r\n\r\nCo-authored-by: Gonzalo Muñoz <gmunozfe@redhat.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Gonzalo Muñoz <gmunozfe@redhat.com>",
+        "tree": {
+            "sha": "108730416c1c27a3476e4fd021d00ab96fb1a81b",
+            "url": "https://api.github.com/repos/kiegroup/jbpm/git/trees/108730416c1c27a3476e4fd021d00ab96fb1a81b"
+        },
+        "url": "https://api.github.com/repos/kiegroup/jbpm/git/commits/175e6b913c2f0f05441876d6928928dc939df08c",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlHnvVCRBK7hj4Ov3rIwAA5+MIAJnu/W1LUdSw7FlMn3rBcufG\n5eQyXTWGqs/2wBPBdfZb0YHahNO0fciNqhF+TqXg886zg5+O4Imsl284GNhoPRd8\nkVslABYGOT3se/4cURnjw/gLhNzsFAU7BxJ6JhH5NGX+kpAjgRoX3BFFwW44eTv0\n7gmxUzv3JbsGCrvGKCOvga6x3tumcnACv1QuT3MuT2lOeRl6FKo8XuLERkAVjph3\nR1daHnwqBfTsJFdPK0yaWB4sO0VTXjyAYs2r5KNRAy3CyCEjt8naL65gsi6NFEXP\npWkhkjgm+3uuemIkh4S776Y5efzrN40PY28kPfRqvFySZfUPd2xr1uCf9KQbmfw=\n=SV99\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 108730416c1c27a3476e4fd021d00ab96fb1a81b\nparent d0e6241dfd9c75fa30e426359f7e73724d23c41a\nauthor Francisco Javier Tirado Sarti <65240126+fjtirado@users.noreply.github.com> 1696496597 +0200\ncommitter GitHub <noreply@github.com> 1696496597 +0200\n\n[JBPM-10203] Fixing null pointer exception for cancelActivity (#2342)\n\n* [JBPM-10203] Fixing null pointer exception for cancelActivity\r\n\r\n* Update jbpm-bpmn2/src/main/java/org/jbpm/bpmn2/xml/BoundaryEventHandler.java\r\n\r\nCo-authored-by: Gonzalo Muñoz <gmunozfe@redhat.com>\r\n\r\n---------\r\n\r\nCo-authored-by: Gonzalo Muñoz <gmunozfe@redhat.com>"
+        }
+    },
+    "url": "https://api.github.com/repos/kiegroup/jbpm/commits/175e6b913c2f0f05441876d6928928dc939df08c",
+    "html_url": "https://github.com/kiegroup/jbpm/commit/175e6b913c2f0f05441876d6928928dc939df08c",
+    "comments_url": "https://api.github.com/repos/kiegroup/jbpm/commits/175e6b913c2f0f05441876d6928928dc939df08c/comments",
+    "author": {
+        "login": "fjtirado",
+        "id": 65240126,
+        "node_id": "MDQ6VXNlcjY1MjQwMTI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65240126?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fjtirado",
+        "html_url": "https://github.com/fjtirado",
+        "followers_url": "https://api.github.com/users/fjtirado/followers",
+        "following_url": "https://api.github.com/users/fjtirado/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fjtirado/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fjtirado/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fjtirado/subscriptions",
+        "organizations_url": "https://api.github.com/users/fjtirado/orgs",
+        "repos_url": "https://api.github.com/users/fjtirado/repos",
+        "events_url": "https://api.github.com/users/fjtirado/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fjtirado/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d0e6241dfd9c75fa30e426359f7e73724d23c41a",
+            "url": "https://api.github.com/repos/kiegroup/jbpm/commits/d0e6241dfd9c75fa30e426359f7e73724d23c41a",
+            "html_url": "https://github.com/kiegroup/jbpm/commit/d0e6241dfd9c75fa30e426359f7e73724d23c41a"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "e62428a2e6dcf80e6474f83c1ee2d42e821b8de1",
+            "filename": "jbpm-bpmn2/src/main/java/org/jbpm/bpmn2/xml/BoundaryEventHandler.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/kiegroup/jbpm/blob/175e6b913c2f0f05441876d6928928dc939df08c/jbpm-bpmn2%2Fsrc%2Fmain%2Fjava%2Forg%2Fjbpm%2Fbpmn2%2Fxml%2FBoundaryEventHandler.java",
+            "raw_url": "https://github.com/kiegroup/jbpm/raw/175e6b913c2f0f05441876d6928928dc939df08c/jbpm-bpmn2%2Fsrc%2Fmain%2Fjava%2Forg%2Fjbpm%2Fbpmn2%2Fxml%2FBoundaryEventHandler.java",
+            "contents_url": "https://api.github.com/repos/kiegroup/jbpm/contents/jbpm-bpmn2%2Fsrc%2Fmain%2Fjava%2Forg%2Fjbpm%2Fbpmn2%2Fxml%2FBoundaryEventHandler.java?ref=175e6b913c2f0f05441876d6928928dc939df08c",
+            "patch": "@@ -59,7 +59,7 @@ public Object end(final String uri, final String localName,\n         Node node = (Node) parser.getCurrent();\n         String attachedTo = element.getAttribute(\"attachedToRef\");\n         Attr cancelActivityAttr = element.getAttributeNode(\"cancelActivity\");\n-        boolean cancelActivity = Boolean.parseBoolean(cancelActivityAttr.getValue());\n+        boolean cancelActivity = cancelActivityAttr == null || Boolean.parseBoolean(cancelActivityAttr.getValue());\n \n         // determine type of event definition, so the correct type of node can be generated\n         org.w3c.dom.Node xmlNode = element.getFirstChild();"
+        }
+    ]
+}

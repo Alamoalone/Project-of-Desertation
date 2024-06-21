@@ -1,0 +1,108 @@
+  public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher, final BuildListener listener)
+          throws InterruptedException, IOException {
+
+      LOG.log(Level.FINE, "Unmodified command line: " + commandLine);
+      LOG.log(Level.FINE, "Regex to kill: " + regexToKill);
+      LOG.log(Level.FINE, "Time allocated before kill: " + timeAllocated);
+
+    final EnvVars env = build.getEnvironment(listener);
+    
+    
+    String cmdLine = convertSeparator(commandLine, (launcher.isUnix() ? UNIX_SEP : WINDOWS_SEP));
+    LOG.log(Level.FINE, "File separators sanitized: " + cmdLine);
+
+    cmdLine = env.expand(cmdLine);
+    
+    LOG.log(Level.FINE, "Expanded build environment vars: " + cmdLine);
+    
+    if (launcher.isUnix()) {
+      cmdLine = convertEnvVarsToUnix(cmdLine);
+    } else {
+      cmdLine = convertEnvVarsToWindows(cmdLine);
+    }
+    LOG.log(Level.FINE, "Environment variables sanitized: " + cmdLine);
+
+    ArgumentListBuilder args = new ArgumentListBuilder();
+    if (cmdLine != null) {
+      args.addTokenized((launcher.isUnix() && executeFromWorkingDir) ? "./" + cmdLine : cmdLine);
+      LOG.log(Level.FINE, "Execute from working directory: " + args.toStringWithQuote());
+    }
+
+    if (!launcher.isUnix()) {
+      args = args.toWindowsCommand();
+      LOG.log(Level.FINE, "Windows command: " + args.toStringWithQuote());
+    }
+
+    env.putAll(build.getBuildVariables());
+
+    // Determine the correct working directory
+    String absWorkingDir;
+    String nonNullWorkingDir = workingDir != null ? workingDir : ".";
+    if (new File(nonNullWorkingDir).isAbsolute()) {
+      absWorkingDir = nonNullWorkingDir;
+    } else {
+      absWorkingDir = build.getWorkspace() + (launcher.isUnix() ? UNIX_SEP : WINDOWS_SEP) + nonNullWorkingDir;
+    }
+
+    LOG.log(Level.FINEST, "Environment variables: " + env.entrySet().toString());
+    LOG.log(Level.FINE, "Command line: " + args.toStringWithQuote());
+    LOG.log(Level.FINE, "Working directory: " + absWorkingDir);
+
+    Pattern r = Pattern.compile(this.regexToKill == null ? "" : this.regexToKill);
+    Long timeAllowed;
+
+    try{
+        timeAllowed = Long.parseLong(this.timeAllocated);
+    }catch(Exception e){
+        timeAllowed = (long) 0;
+    }
+
+    try {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        StreamBuildListener sbl = new StreamBuildListener(baos);
+
+       final Proc child =     launcher.decorateFor(build.getBuiltOn()).launch()
+              .cmds(args).envs(env).stdout(sbl).pwd(absWorkingDir).start();
+
+       Long startTime = System.currentTimeMillis();
+
+       try {
+           while (child.isAlive()) {
+
+               baos.flush();
+               String s = baos.toString();
+               baos.reset();
+
+               listener.getLogger().print(s);
+               listener.getLogger().flush();
+
+               if ((this.regexToKill != null) && (this.regexToKill.length() > 0) && (r.matcher(s).find())) {
+                   LOG.log(Level.FINEST, "Matched failure in log");
+                   child.kill();
+                   listener.getLogger().println("Matched <" + this.regexToKill + "> in output. Terminated");
+               } else if ((timeAllowed > 0) && ((System.currentTimeMillis() - startTime) / 1000) > timeAllowed) {
+                   LOG.log(Level.FINEST, "Timed out");
+                   child.kill();
+                   listener.getLogger().println("Timed out <" + this.timeAllocated + ">. Terminated");
+               } else {
+                   Thread.sleep(2);
+               }
+           }
+      } catch (InterruptedException intEx) {
+           LOG.log(Level.FINEST, "Aborted by user");
+           child.kill();
+           listener.getLogger().println("Aborted by User. Terminated");
+           throw(new InterruptedException("User Aborted"));
+      }
+
+      baos.flush();
+      listener.getLogger().print(baos.toString());
+      listener.getLogger().flush();
+      return child.join() == 0;
+    } catch (final IOException e) {
+      Util.displayIOException(e, listener);
+      final String errorMessage = Messages.XShell_ExecFailed();
+      e.printStackTrace(listener.fatalError(errorMessage));
+      return false;
+    }
+  }

@@ -1,0 +1,17 @@
+    public void handleCollection(@Body HandleCollectionRequest handleCollectionRequest) {
+        List<Post> posts = handleCollectionRequest.getIds() != null ? handleCollectionRequest.getIds()
+            .stream()
+            .map(postRepository::get)
+            .collect(Collectors.toList()) : null;
+        postService.handleCollection(posts);
+    }
+
+    public Post merge(@Nullable @Header("X-User-Id") Long userId, @Body PostMergeRequest postMergeRequest) {
+        Post mergedPost = postService.merge(userId,
+            postRepository.get(postMergeRequest.getId1()),
+            postRepository.get(postMergeRequest.getId2()));
+        return postRepository.save(mergedPost);
+    }
+
+
+

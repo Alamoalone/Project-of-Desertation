@@ -1,0 +1,27 @@
+    private static RendDynOperationNode procOper(OperationNode _anaNode, Forwards _forwards) {
+        if (_anaNode instanceof NumericOperation) {
+            NumericOperation c_ = (NumericOperation) _anaNode;
+            return new RendQuickOperation(new ExecOperationContent(c_.getContent()),new ExecOperatorContent(c_.getOperatorContent()), null, ForwardInfos.oper(c_));
+        }
+        if (_anaNode instanceof NullSafeOperation) {
+            NullSafeOperation n_ = (NullSafeOperation) _anaNode;
+            StringList names_ = _anaNode.getResultClass().getNames();
+            AnaOperatorContent cont_ = new AnaOperatorContent();
+            cont_.setOpOffset(n_.getOpOffset());
+            cont_.setOper("??");
+            return new RendQuickOperation(new ExecOperationContent(n_.getContent()),new ExecOperatorContent(cont_), null,new ExecOperNull(new CommonOperNullSafe(),names_));
+//            return new RendNullSafeOperation(new ExecOperationContent(n_.getContent()),n_.getOpOffset(), names_);
+        }
+        if (_anaNode instanceof QuickOperation) {
+            return quickOperation((QuickOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof CompoundAffectationOperation) {
+            return compound((CompoundAffectationOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof AffectationOperation) {
+            AffectationOperation a_ = (AffectationOperation) _anaNode;
+            StringList names_ = _anaNode.getResultClass().getNames();
+            return new RendAffectationOperation(new ExecOperationContent(a_.getContent()), names_);
+        }
+        return new RendDeclaringOperation(new ExecOperationContent(_anaNode.getContent()));
+    }

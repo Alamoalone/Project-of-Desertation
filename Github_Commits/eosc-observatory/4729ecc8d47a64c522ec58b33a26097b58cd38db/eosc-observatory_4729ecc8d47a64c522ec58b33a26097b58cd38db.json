@@ -1,0 +1,110 @@
+{
+    "sha": "4729ecc8d47a64c522ec58b33a26097b58cd38db",
+    "node_id": "C_kwDOGayHltoAKDQ3MjllY2M4ZDQ3YTY0YzUyMmVjNThiMzNhMjYwOTdiNThjZDM4ZGI",
+    "commit": {
+        "author": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-04-12T12:44:46Z"
+        },
+        "committer": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-04-12T12:44:46Z"
+        },
+        "message": "fixed null pointer exceptions",
+        "tree": {
+            "sha": "5eeda398524c567567fd4fc06735e494a729d106",
+            "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/git/trees/5eeda398524c567567fd4fc06735e494a729d106"
+        },
+        "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/git/commits/4729ecc8d47a64c522ec58b33a26097b58cd38db",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/4729ecc8d47a64c522ec58b33a26097b58cd38db",
+    "html_url": "https://github.com/madgeek-arc/eosc-observatory/commit/4729ecc8d47a64c522ec58b33a26097b58cd38db",
+    "comments_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/4729ecc8d47a64c522ec58b33a26097b58cd38db/comments",
+    "author": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "951a9c7eb00f6346db24f04260f976b67c8bcce6",
+            "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/951a9c7eb00f6346db24f04260f976b67c8bcce6",
+            "html_url": "https://github.com/madgeek-arc/eosc-observatory/commit/951a9c7eb00f6346db24f04260f976b67c8bcce6"
+        }
+    ],
+    "stats": {
+        "total": 27,
+        "additions": 19,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "abf6e7f1c016240937337b93af313f3488509628",
+            "filename": "src/main/java/eu/eosc/observatory/permissions/AuthorizationServiceBridge.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 4,
+            "changes": 12,
+            "blob_url": "https://github.com/madgeek-arc/eosc-observatory/blob/4729ecc8d47a64c522ec58b33a26097b58cd38db/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fpermissions%2FAuthorizationServiceBridge.java",
+            "raw_url": "https://github.com/madgeek-arc/eosc-observatory/raw/4729ecc8d47a64c522ec58b33a26097b58cd38db/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fpermissions%2FAuthorizationServiceBridge.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/contents/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fpermissions%2FAuthorizationServiceBridge.java?ref=4729ecc8d47a64c522ec58b33a26097b58cd38db",
+            "patch": "@@ -135,15 +135,19 @@ public void removeAll(String user, String group) {\n \n     @Override\n     public void removeAll(Collection<String> users) {\n-        for (String user : users) {\n-            this.removeAll(user);\n+        if (users != null) {\n+            for (String user : users) {\n+                this.removeAll(user);\n+            }\n         }\n     }\n \n     @Override\n     public void removeAll(Collection<String> users, String group) {\n-        for (String user : users) {\n-            this.removeAll(user, group);\n+        if (users != null) {\n+            for (String user : users) {\n+                this.removeAll(user, group);\n+            }\n         }\n     }\n "
+        },
+        {
+            "sha": "90b1c7d92042da592281706f2dbf56d21024e6cb",
+            "filename": "src/main/java/eu/eosc/observatory/service/StakeholderServiceImpl.java",
+            "status": "modified",
+            "additions": 11,
+            "deletions": 4,
+            "changes": 15,
+            "blob_url": "https://github.com/madgeek-arc/eosc-observatory/blob/4729ecc8d47a64c522ec58b33a26097b58cd38db/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fservice%2FStakeholderServiceImpl.java",
+            "raw_url": "https://github.com/madgeek-arc/eosc-observatory/raw/4729ecc8d47a64c522ec58b33a26097b58cd38db/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fservice%2FStakeholderServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/contents/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fservice%2FStakeholderServiceImpl.java?ref=4729ecc8d47a64c522ec58b33a26097b58cd38db",
+            "patch": "@@ -122,9 +122,13 @@ private StakeholderMembers getMembers(Stakeholder stakeholder) {\n     public Stakeholder updateContributors(String stakeholderId, Set<String> userIds) {\n         Stakeholder stakeholder = get(stakeholderId);\n         Set<String> previousContributors = stakeholder.getContributors();\n-        for (String contributor : userIds) {\n-            previousContributors.remove(contributor);\n+\n+        if (userIds != null) {\n+            for (String contributor : userIds) {\n+                previousContributors.remove(contributor);\n+            }\n         }\n+\n         permissionService.removeAll(previousContributors, Groups.STAKEHOLDER_CONTRIBUTOR.getKey());\n \n         // read access for all resources\n@@ -176,8 +180,11 @@ public StakeholderMembers removeContributor(String stakeholderId, String userId)\n     public Stakeholder updateManagers(String stakeholderId, Set<String> userIds) {\n         Stakeholder stakeholder = get(stakeholderId);\n         Set<String> previousManagers = stakeholder.getManagers();\n-        for (String manager : userIds) {\n-            previousManagers.remove(manager);\n+\n+        if (userIds != null) {\n+            for (String manager : userIds) {\n+                previousManagers.remove(manager);\n+            }\n         }\n \n         permissionService.removeAll(previousManagers, Groups.STAKEHOLDER_MANAGER.getKey());"
+        }
+    ]
+}

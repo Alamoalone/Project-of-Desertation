@@ -1,0 +1,25 @@
+    public void status() {
+
+        boolean status_east=false, status_west=false;
+        try{
+            // from East -> West, go through eastern entry and end at western entry
+            status_east = isPathValid("WEST", maze.getEEast(), maze.getEWest());
+            
+            //if (status_east); 
+        } catch(IndexOutOfBoundsException e){
+            //logger.info("/!\\No -p arguments given/!\\");
+            System.out.println("Error: East to West path does not work.");
+        }
+
+        try{
+            // from West -> East, go through western entry and end at eastern exit 
+            status_west = isPathValid("EAST", maze.getEWest(), maze.getEEast());
+            
+        
+            //if (status_west){}
+        } catch(IndexOutOfBoundsException e){
+            System.out.println("Error: West to East path does not work.");
+        }
+
+        // print statements if path exists or doesn't
+    }

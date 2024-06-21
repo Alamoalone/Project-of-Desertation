@@ -1,0 +1,37 @@
+    private void insertMovieData() {
+        txf_movieEditID.setText(valueOf(currentMovieId));
+        txf_movieEditName.setText(currentMovieName);
+        txf_movieEditYear.setText(valueOf(currentMovieYear));
+        txf_movieEditLength.setText(valueOf(currentMovieDuration));
+        txf_movieEditFSK.setText(valueOf(currentMovieFSK));
+        txf_movieEditRating.setText(valueOf(currentMovieRating));
+
+        if(currentMovieGenres != null) {
+            txf_movieEditGenre1.setText(genreArray[0]);
+            if(genreArray.length > 1) {
+                txf_movieEditGenre2.setText(genreArray[1]);
+                if (genreArray.length > 2) {
+                    txf_movieEditGenre3.setText(genreArray[2]);
+                }
+            }
+        }
+
+        if(currentMovieDirectors != null) {
+            txf_movieEditDirector1.setText(directorsArray[0]);
+            if(directorsArray.length > 1) {
+                txf_movieEditDirector2.setText(directorsArray[1]);
+                if (directorsArray.length > 2) {
+                    txf_movieEditDirector3.setText(directorsArray[2]);
+                }
+            }
+        }
+
+        txf_movieEditCount.setText(valueOf(currentMovieCount));
+        txf_movieEditStudio.setText(currentMovieStudio);
+        txf_movieEditActors.setText(currentMovieActors);
+        txf_movieEditLinkToCover.setText(currentLinkToCover);               //TODO akzeptierende Regx für URL
+        txa_movieEditComment.setText(currentMovieComment);
+        txa_movieEditComment.setWrapText(true);
+        if(currentMovieType.equals("DVD")) {cbx_movieEditSelDVD.setSelected(true);}
+        if(currentMovieType.equals("Blu-Ray")) {cbx_movieEditSelBluRay.setSelected(true);}
+    }

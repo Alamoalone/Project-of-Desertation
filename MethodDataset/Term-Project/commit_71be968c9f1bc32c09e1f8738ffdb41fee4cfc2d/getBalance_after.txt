@@ -1,0 +1,3 @@
+    public double getBalance() {
+        return bankAccount.getBalance();
+    }

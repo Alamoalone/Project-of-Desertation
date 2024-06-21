@@ -1,0 +1,17 @@
+    private DocumentCheckVerificationResult executeFallbackIfDocumentFailedToVerify(
+            DocumentCheckVerificationResult documentDataVerificationResult,
+            DrivingPermitForm drivingPermitFormData)
+            throws Exception {
+        if (!documentDataVerificationResult.isVerified()
+                || !documentDataVerificationResult.getContraIndicators().isEmpty()) {
+            LOGGER.info(
+                    "Document has been marked unverified during fallback window. Executing request with Direct connection");
+            documentDataVerificationResult = executeFallbackRequest(drivingPermitFormData);
+            if (documentDataVerificationResult.isVerified()) {
+                eventProbe.counterMetric(DL_VERIFICATION_FALLBACK_DEVIATION);
+                LOGGER.warn(
+                        "Document has been verified using DCS that failed verification using Direct connection");
+            }
+        }
+        return documentDataVerificationResult;
+    }

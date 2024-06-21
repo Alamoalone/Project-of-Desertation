@@ -1,0 +1,3 @@
+getDownloadFileSize(String sFileURL)
+main(String args)
+executeDownloadFile(String sFileURL, String sDownloadUser, String sDownloadPassword, String sSaveDirOnServer, ProcessWorkspace oProcessWorkspace, int iMaxRetry)

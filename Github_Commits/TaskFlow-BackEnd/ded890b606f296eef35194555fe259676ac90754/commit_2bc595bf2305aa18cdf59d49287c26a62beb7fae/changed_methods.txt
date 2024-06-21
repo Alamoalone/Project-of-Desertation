@@ -1,0 +1,1 @@
+updateIndexes(CommonPage page, Long taskId, Integer index, Integer columnChaged)

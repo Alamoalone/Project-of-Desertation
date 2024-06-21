@@ -1,0 +1,98 @@
+{
+    "sha": "2e857bf9735294deacba145c98ef2604d2c5d3c5",
+    "node_id": "C_kwDOAJ8hGtoAKDJlODU3YmY5NzM1Mjk0ZGVhY2JhMTQ1Yzk4ZWYyNjA0ZDJjNWQzYzU",
+    "commit": {
+        "author": {
+            "name": "DevDeborah",
+            "email": "softwaredeveloperdeborah@gmail.com",
+            "date": "2023-09-13T03:09:41Z"
+        },
+        "committer": {
+            "name": "DevDeborah",
+            "email": "softwaredeveloperdeborah@gmail.com",
+            "date": "2023-09-13T03:09:41Z"
+        },
+        "message": "Fix null pointer exception.\n\nThis should fix an exception when a player logs out without any companions.",
+        "tree": {
+            "sha": "1974528c0f6fb3ff99973f384c52fa620d01eb99",
+            "url": "https://api.github.com/repos/Runsafe/EntityControl/git/trees/1974528c0f6fb3ff99973f384c52fa620d01eb99"
+        },
+        "url": "https://api.github.com/repos/Runsafe/EntityControl/git/commits/2e857bf9735294deacba145c98ef2604d2c5d3c5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Runsafe/EntityControl/commits/2e857bf9735294deacba145c98ef2604d2c5d3c5",
+    "html_url": "https://github.com/Runsafe/EntityControl/commit/2e857bf9735294deacba145c98ef2604d2c5d3c5",
+    "comments_url": "https://api.github.com/repos/Runsafe/EntityControl/commits/2e857bf9735294deacba145c98ef2604d2c5d3c5/comments",
+    "author": {
+        "login": "DeveloperDeborah",
+        "id": 71165709,
+        "node_id": "MDQ6VXNlcjcxMTY1NzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/71165709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DeveloperDeborah",
+        "html_url": "https://github.com/DeveloperDeborah",
+        "followers_url": "https://api.github.com/users/DeveloperDeborah/followers",
+        "following_url": "https://api.github.com/users/DeveloperDeborah/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DeveloperDeborah/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DeveloperDeborah/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DeveloperDeborah/subscriptions",
+        "organizations_url": "https://api.github.com/users/DeveloperDeborah/orgs",
+        "repos_url": "https://api.github.com/users/DeveloperDeborah/repos",
+        "events_url": "https://api.github.com/users/DeveloperDeborah/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DeveloperDeborah/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "DeveloperDeborah",
+        "id": 71165709,
+        "node_id": "MDQ6VXNlcjcxMTY1NzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/71165709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DeveloperDeborah",
+        "html_url": "https://github.com/DeveloperDeborah",
+        "followers_url": "https://api.github.com/users/DeveloperDeborah/followers",
+        "following_url": "https://api.github.com/users/DeveloperDeborah/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DeveloperDeborah/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DeveloperDeborah/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DeveloperDeborah/subscriptions",
+        "organizations_url": "https://api.github.com/users/DeveloperDeborah/orgs",
+        "repos_url": "https://api.github.com/users/DeveloperDeborah/repos",
+        "events_url": "https://api.github.com/users/DeveloperDeborah/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DeveloperDeborah/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6a479920319c5c4a040cdf16d6b1fc429f290348",
+            "url": "https://api.github.com/repos/Runsafe/EntityControl/commits/6a479920319c5c4a040cdf16d6b1fc429f290348",
+            "html_url": "https://github.com/Runsafe/EntityControl/commit/6a479920319c5c4a040cdf16d6b1fc429f290348"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "a816638a4228bb378d1ebcfa22a95cdf1128e421",
+            "filename": "src/no/runsafe/entitycontrol/pets/CompanionHandler.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/Runsafe/EntityControl/blob/2e857bf9735294deacba145c98ef2604d2c5d3c5/src%2Fno%2Frunsafe%2Fentitycontrol%2Fpets%2FCompanionHandler.java",
+            "raw_url": "https://github.com/Runsafe/EntityControl/raw/2e857bf9735294deacba145c98ef2604d2c5d3c5/src%2Fno%2Frunsafe%2Fentitycontrol%2Fpets%2FCompanionHandler.java",
+            "contents_url": "https://api.github.com/repos/Runsafe/EntityControl/contents/src%2Fno%2Frunsafe%2Fentitycontrol%2Fpets%2FCompanionHandler.java?ref=2e857bf9735294deacba145c98ef2604d2c5d3c5",
+            "patch": "@@ -181,6 +181,9 @@ public void removeSummonedPet(IPlayer player, SummonedPet pet)\n \t */\n \tpublic void removeSummonedPets(IPlayer player)\n \t{\n+\t\tif (summonedPets.get(player.getUniqueId()) == null)\n+\t\t\treturn;\n+\n \t\tfor (SummonedPet pet : summonedPets.get(player.getUniqueId()))\n \t\t\tpet.getPet().remove();\n \t\tsummonedPets.remove(player.getUniqueId());"
+        }
+    ]
+}

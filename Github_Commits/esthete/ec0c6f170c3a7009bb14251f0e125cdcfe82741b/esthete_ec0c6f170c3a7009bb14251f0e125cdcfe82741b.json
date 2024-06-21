@@ -1,0 +1,98 @@
+{
+    "sha": "ec0c6f170c3a7009bb14251f0e125cdcfe82741b",
+    "node_id": "C_kwDOK87Ey9oAKGVjMGM2ZjE3MGMzYTcwMDliYjE0MjUxZjBlMTI1Y2RjZmU4Mjc0MWI",
+    "commit": {
+        "author": {
+            "name": "Hankyul Min",
+            "email": "denirokr22@gmail.com",
+            "date": "2023-12-05T08:19:10Z"
+        },
+        "committer": {
+            "name": "Hankyul Min",
+            "email": "denirokr22@gmail.com",
+            "date": "2023-12-05T08:19:10Z"
+        },
+        "message": "Fix: photoChecksum test controller null pointer exception",
+        "tree": {
+            "sha": "444f7bc0750176a3d44b9b8f75a294eaf137c3bf",
+            "url": "https://api.github.com/repos/dgu-web-t3-blackshoe/esthete/git/trees/444f7bc0750176a3d44b9b8f75a294eaf137c3bf"
+        },
+        "url": "https://api.github.com/repos/dgu-web-t3-blackshoe/esthete/git/commits/ec0c6f170c3a7009bb14251f0e125cdcfe82741b",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/dgu-web-t3-blackshoe/esthete/commits/ec0c6f170c3a7009bb14251f0e125cdcfe82741b",
+    "html_url": "https://github.com/dgu-web-t3-blackshoe/esthete/commit/ec0c6f170c3a7009bb14251f0e125cdcfe82741b",
+    "comments_url": "https://api.github.com/repos/dgu-web-t3-blackshoe/esthete/commits/ec0c6f170c3a7009bb14251f0e125cdcfe82741b/comments",
+    "author": {
+        "login": "roberniro",
+        "id": 113920417,
+        "node_id": "U_kgDOBspJoQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/113920417?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/roberniro",
+        "html_url": "https://github.com/roberniro",
+        "followers_url": "https://api.github.com/users/roberniro/followers",
+        "following_url": "https://api.github.com/users/roberniro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/roberniro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/roberniro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/roberniro/subscriptions",
+        "organizations_url": "https://api.github.com/users/roberniro/orgs",
+        "repos_url": "https://api.github.com/users/roberniro/repos",
+        "events_url": "https://api.github.com/users/roberniro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/roberniro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "roberniro",
+        "id": 113920417,
+        "node_id": "U_kgDOBspJoQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/113920417?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/roberniro",
+        "html_url": "https://github.com/roberniro",
+        "followers_url": "https://api.github.com/users/roberniro/followers",
+        "following_url": "https://api.github.com/users/roberniro/following{/other_user}",
+        "gists_url": "https://api.github.com/users/roberniro/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/roberniro/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/roberniro/subscriptions",
+        "organizations_url": "https://api.github.com/users/roberniro/orgs",
+        "repos_url": "https://api.github.com/users/roberniro/repos",
+        "events_url": "https://api.github.com/users/roberniro/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/roberniro/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8248ee643c49f5d9db034ee82b88518e501613cb",
+            "url": "https://api.github.com/repos/dgu-web-t3-blackshoe/esthete/commits/8248ee643c49f5d9db034ee82b88518e501613cb",
+            "html_url": "https://github.com/dgu-web-t3-blackshoe/esthete/commit/8248ee643c49f5d9db034ee82b88518e501613cb"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "d7bb587e13e3ab22838ab5cb9e1e432110104e1a",
+            "filename": "src/main/java/com/blackshoe/esthetecoreservice/service/PhotoChecksumServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/dgu-web-t3-blackshoe/esthete/blob/ec0c6f170c3a7009bb14251f0e125cdcfe82741b/src%2Fmain%2Fjava%2Fcom%2Fblackshoe%2Festhetecoreservice%2Fservice%2FPhotoChecksumServiceImpl.java",
+            "raw_url": "https://github.com/dgu-web-t3-blackshoe/esthete/raw/ec0c6f170c3a7009bb14251f0e125cdcfe82741b/src%2Fmain%2Fjava%2Fcom%2Fblackshoe%2Festhetecoreservice%2Fservice%2FPhotoChecksumServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/dgu-web-t3-blackshoe/esthete/contents/src%2Fmain%2Fjava%2Fcom%2Fblackshoe%2Festhetecoreservice%2Fservice%2FPhotoChecksumServiceImpl.java?ref=ec0c6f170c3a7009bb14251f0e125cdcfe82741b",
+            "patch": "@@ -66,7 +66,7 @@ public void validatePhotoChecksumExist(MultipartFile file) {\n \n             throw new CopyrightException(\n                     \"이미 업로드된 이미지는 등록할 수 없습니다.\",\n-                    photoChecksum.getPhoto().getPhotoId().toString()\n+                    photoChecksum.getPhoto() != null ? photoChecksum.getPhoto().getPhotoId().toString() : \"\"\n             );\n         }\n     }\n@@ -121,7 +121,7 @@ public void testValidatePhotoChecksumExist(MultipartFile file) {\n \n             throw new CopyrightException(\n                     \"이미 업로드된 이미지는 등록할 수 없습니다.\",\n-                    photoChecksum.getPhoto().getPhotoId().toString()\n+                    photoChecksum.getPhoto() != null ? photoChecksum.getPhoto().getPhotoId().toString() : \"test:\"+UUID.randomUUID().toString()\n             );\n         }\n     }"
+        }
+    ]
+}

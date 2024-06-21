@@ -1,0 +1,7 @@
+    protected CryptogramResponse buildResponseObjectFromDomain(String arqc) {
+        CryptogramResponse cryptogramResponse = new CryptogramResponse();
+        cryptogramResponse.setRequestCryptogram(arqc);
+        // Log domain response object
+        debugLog(cryptogramResponse);
+        return cryptogramResponse;
+    }

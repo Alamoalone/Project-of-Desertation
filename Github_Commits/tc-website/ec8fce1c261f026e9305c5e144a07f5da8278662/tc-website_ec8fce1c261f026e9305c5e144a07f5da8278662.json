@@ -1,0 +1,98 @@
+{
+    "sha": "ec8fce1c261f026e9305c5e144a07f5da8278662",
+    "node_id": "C_kwDOBPx5xtoAKGVjOGZjZTFjMjYxZjAyNmU5MzA1YzVlMTQ0YTA3ZjVkYTgyNzg2NjI",
+    "commit": {
+        "author": {
+            "name": "Rakib Ansary",
+            "email": "rakibansary@gmail.com",
+            "date": "2023-02-15T23:21:08Z"
+        },
+        "committer": {
+            "name": "Rakib Ansary",
+            "email": "rakibansary@gmail.com",
+            "date": "2023-02-15T23:21:08Z"
+        },
+        "message": "fix: null pointer exception due to uninitialized logger",
+        "tree": {
+            "sha": "0df544c71770eda5db75ae16c1bae0ac3fa2905c",
+            "url": "https://api.github.com/repos/topcoder-platform/tc-website/git/trees/0df544c71770eda5db75ae16c1bae0ac3fa2905c"
+        },
+        "url": "https://api.github.com/repos/topcoder-platform/tc-website/git/commits/ec8fce1c261f026e9305c5e144a07f5da8278662",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/topcoder-platform/tc-website/commits/ec8fce1c261f026e9305c5e144a07f5da8278662",
+    "html_url": "https://github.com/topcoder-platform/tc-website/commit/ec8fce1c261f026e9305c5e144a07f5da8278662",
+    "comments_url": "https://api.github.com/repos/topcoder-platform/tc-website/commits/ec8fce1c261f026e9305c5e144a07f5da8278662/comments",
+    "author": {
+        "login": "rakibansary",
+        "id": 1445965,
+        "node_id": "MDQ6VXNlcjE0NDU5NjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1445965?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rakibansary",
+        "html_url": "https://github.com/rakibansary",
+        "followers_url": "https://api.github.com/users/rakibansary/followers",
+        "following_url": "https://api.github.com/users/rakibansary/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rakibansary/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rakibansary/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rakibansary/subscriptions",
+        "organizations_url": "https://api.github.com/users/rakibansary/orgs",
+        "repos_url": "https://api.github.com/users/rakibansary/repos",
+        "events_url": "https://api.github.com/users/rakibansary/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rakibansary/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "rakibansary",
+        "id": 1445965,
+        "node_id": "MDQ6VXNlcjE0NDU5NjU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1445965?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rakibansary",
+        "html_url": "https://github.com/rakibansary",
+        "followers_url": "https://api.github.com/users/rakibansary/followers",
+        "following_url": "https://api.github.com/users/rakibansary/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rakibansary/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rakibansary/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rakibansary/subscriptions",
+        "organizations_url": "https://api.github.com/users/rakibansary/orgs",
+        "repos_url": "https://api.github.com/users/rakibansary/repos",
+        "events_url": "https://api.github.com/users/rakibansary/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rakibansary/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d6f989fffde64739e8500494fd0cfd1bb7f4096e",
+            "url": "https://api.github.com/repos/topcoder-platform/tc-website/commits/d6f989fffde64739e8500494fd0cfd1bb7f4096e",
+            "html_url": "https://github.com/topcoder-platform/tc-website/commit/d6f989fffde64739e8500494fd0cfd1bb7f4096e"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 4,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "19cd07b9ee3155d3699a8e321f177e73cd9d9cf4",
+            "filename": "src/main/com/topcoder/web/tc/controller/PayoneerV4Config.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 11,
+            "changes": 15,
+            "blob_url": "https://github.com/topcoder-platform/tc-website/blob/ec8fce1c261f026e9305c5e144a07f5da8278662/src%2Fmain%2Fcom%2Ftopcoder%2Fweb%2Ftc%2Fcontroller%2FPayoneerV4Config.java",
+            "raw_url": "https://github.com/topcoder-platform/tc-website/raw/ec8fce1c261f026e9305c5e144a07f5da8278662/src%2Fmain%2Fcom%2Ftopcoder%2Fweb%2Ftc%2Fcontroller%2FPayoneerV4Config.java",
+            "contents_url": "https://api.github.com/repos/topcoder-platform/tc-website/contents/src%2Fmain%2Fcom%2Ftopcoder%2Fweb%2Ftc%2Fcontroller%2FPayoneerV4Config.java?ref=ec8fce1c261f026e9305c5e144a07f5da8278662",
+            "patch": "@@ -20,9 +20,9 @@ public enum PayoneerV4Config {\n             PayoneerV4Config.getString(\"v4_login_url\"),\n             Boolean.valueOf(PayoneerV4Config.getString(\"enable_v4\")),\n             Arrays.asList(StringUtils.split(PayoneerV4Config.getString(\"v4_users\"), ',')!=null? StringUtils.split(PayoneerV4Config.getString(\"v4_users\"), ',') :new String[0])\n-    );\n-    protected final Logger log = Logger.getLogger(PayoneerV4Config.class);\n+    );   \n \n+    protected final Logger log = Logger.getLogger(PayoneerV4Config.class);\n     private String baseApiUrl = \"\";\n     private String partnerId = \"\";\n     private String programId = \"\";\n@@ -78,19 +78,12 @@ public List<String> getV4Users() {\n         return v4Users;\n     }\n \n-    private static Logger log2 = Logger.getLogger(PayoneerV4Config.class);\n-\n     private static String getString(String key) {\n-\n         try {\n-            log2.debug(MessageFormat.format(\"PayoneerV4Config value retrieval for key = {0} \", key));\n+            System.out.println(MessageFormat.format(\"PayoneerV4Config value retrieval for key = {0} \", key));\n             return ConfigManager.getInstance().getString(\"com.topcoder.web.tc.controller.PayoneerService\", key);\n         } catch (UnknownNamespaceException e) {\n-            log2.error(\"UnknownNamespaceException while trying to initialize PayoneerConfig singleton\", e);\n-            throw new RuntimeException(e);\n+           throw new RuntimeException(e);\n         }\n-\n     }\n-\n-\n }"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+    public void setRelativeImagePathName(String relativeImagePath)
+    {
+        this.relativeImagePathName = relativeImagePath;
+    }

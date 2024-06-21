@@ -1,0 +1,16 @@
+  public void testRemoveApplication() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    NamespaceId namespaceId = new NamespaceId("account1");
+    ApplicationId appId = namespaceId.app(spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    Assert.assertNotNull(store.getApplication(appId));
+
+    // removing application
+    store.removeApplication(appId);
+
+    Assert.assertNull(store.getApplication(appId));
+  }

@@ -1,0 +1,18 @@
+    public <T> PermissionCheckResult checkPermissionOnContainer(String permissionDefinition, Iterable<T> value, Argument<Iterable<T>> valueType) {
+        if (value == null) {
+            return PermissionCheckResult.ALLOW;
+        }
+        for (T item : value) {
+            switch (checkPermission(permissionDefinition, item, valueType.getTypeParameters()[0])) {
+                case DENY:
+                    return PermissionCheckResult.DENY;
+                case UNKNOWN:
+                    return PermissionCheckResult.UNKNOWN;
+                case ALLOW:
+                default:
+                    // proceed to next item
+            }
+        }
+
+        return PermissionCheckResult.ALLOW;
+    }

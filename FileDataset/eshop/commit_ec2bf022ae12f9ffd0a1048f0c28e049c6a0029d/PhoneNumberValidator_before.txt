@@ -1,0 +1,12 @@
+
+
+    public boolean isValid(String value, ConstraintValidatorContext context) {
+        if (type.equals(PhoneNumberType.GLOBAL)) {
+            return value.startsWith("+370") && value.length() == 12;
+        } else {
+            return value.startsWith("86") && value.length() == 9;
+        }
+    }
+
+
+

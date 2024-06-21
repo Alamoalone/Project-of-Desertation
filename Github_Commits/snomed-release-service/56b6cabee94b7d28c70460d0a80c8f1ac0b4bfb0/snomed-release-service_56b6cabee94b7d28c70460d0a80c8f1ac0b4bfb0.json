@@ -1,0 +1,98 @@
+{
+    "sha": "56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0",
+    "node_id": "C_kwDOAOlCtdoAKDU2YjZjYWJlZTk0YjdkMjhjNzA0NjBkMGE4MGM4ZjFhYzBiNGJmYjA",
+    "commit": {
+        "author": {
+            "name": "Quyen Ly",
+            "email": "quocquyenit@gmail.com",
+            "date": "2023-10-13T04:05:23Z"
+        },
+        "committer": {
+            "name": "Quyen Ly",
+            "email": "quocquyenit@gmail.com",
+            "date": "2023-10-13T07:46:19Z"
+        },
+        "message": "RAP-11 Fixed null pointer exception for dependencyPackage at newAuthoringCycle endpoint",
+        "tree": {
+            "sha": "8b4d931bc1a7b8e6c955b9384b9d99e22862aba0",
+            "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/git/trees/8b4d931bc1a7b8e6c955b9384b9d99e22862aba0"
+        },
+        "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/git/commits/56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/commits/56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0",
+    "html_url": "https://github.com/IHTSDO/snomed-release-service/commit/56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0",
+    "comments_url": "https://api.github.com/repos/IHTSDO/snomed-release-service/commits/56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0/comments",
+    "author": {
+        "login": "QuyenLy87",
+        "id": 28590677,
+        "node_id": "MDQ6VXNlcjI4NTkwNjc3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28590677?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/QuyenLy87",
+        "html_url": "https://github.com/QuyenLy87",
+        "followers_url": "https://api.github.com/users/QuyenLy87/followers",
+        "following_url": "https://api.github.com/users/QuyenLy87/following{/other_user}",
+        "gists_url": "https://api.github.com/users/QuyenLy87/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/QuyenLy87/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/QuyenLy87/subscriptions",
+        "organizations_url": "https://api.github.com/users/QuyenLy87/orgs",
+        "repos_url": "https://api.github.com/users/QuyenLy87/repos",
+        "events_url": "https://api.github.com/users/QuyenLy87/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/QuyenLy87/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "QuyenLy87",
+        "id": 28590677,
+        "node_id": "MDQ6VXNlcjI4NTkwNjc3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28590677?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/QuyenLy87",
+        "html_url": "https://github.com/QuyenLy87",
+        "followers_url": "https://api.github.com/users/QuyenLy87/followers",
+        "following_url": "https://api.github.com/users/QuyenLy87/following{/other_user}",
+        "gists_url": "https://api.github.com/users/QuyenLy87/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/QuyenLy87/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/QuyenLy87/subscriptions",
+        "organizations_url": "https://api.github.com/users/QuyenLy87/orgs",
+        "repos_url": "https://api.github.com/users/QuyenLy87/repos",
+        "events_url": "https://api.github.com/users/QuyenLy87/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/QuyenLy87/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "00fbc0c6c9cb82175fcc87093e4306db3ddea5d3",
+            "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/commits/00fbc0c6c9cb82175fcc87093e4306db3ddea5d3",
+            "html_url": "https://github.com/IHTSDO/snomed-release-service/commit/00fbc0c6c9cb82175fcc87093e4306db3ddea5d3"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "901a7742cc907b88636400ebda9b8c9f996d2471",
+            "filename": "src/main/java/org/ihtsdo/buildcloud/rest/controller/AdminController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/IHTSDO/snomed-release-service/blob/56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0/src%2Fmain%2Fjava%2Forg%2Fihtsdo%2Fbuildcloud%2Frest%2Fcontroller%2FAdminController.java",
+            "raw_url": "https://github.com/IHTSDO/snomed-release-service/raw/56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0/src%2Fmain%2Fjava%2Forg%2Fihtsdo%2Fbuildcloud%2Frest%2Fcontroller%2FAdminController.java",
+            "contents_url": "https://api.github.com/repos/IHTSDO/snomed-release-service/contents/src%2Fmain%2Fjava%2Forg%2Fihtsdo%2Fbuildcloud%2Frest%2Fcontroller%2FAdminController.java?ref=56b6cabee94b7d28c70460d0a80c8f1ac0b4bfb0",
+            "patch": "@@ -52,7 +52,7 @@ public ResponseEntity<Void> startNewAuthoringCycle(@PathVariable String releaseC\n \t\t} catch (final ParseException e) {\n \t\t\tthrow new BadRequestException(\"Invalid effectiveTime format. Expecting format \" + DateFormatUtils.ISO_8601_EXTENDED_DATE_FORMAT.getPattern() + \".\", e);\n \t\t}\n-\t\treleaseService.startNewAuthoringCycle(releaseCenterKey.trim(), productKey.trim(), effectiveTime, productSource.trim(), dependencyPackage.trim());\n+\t\treleaseService.startNewAuthoringCycle(releaseCenterKey.trim(), productKey.trim(), effectiveTime, productSource.trim(), dependencyPackage != null ? dependencyPackage.trim() : null);\n \t\treturn new ResponseEntity<>(HttpStatus.OK);\n \t}\n "
+        }
+    ]
+}

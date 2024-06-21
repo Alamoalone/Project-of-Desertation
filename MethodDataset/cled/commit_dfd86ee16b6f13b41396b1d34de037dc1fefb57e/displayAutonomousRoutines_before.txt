@@ -1,0 +1,16 @@
+    public void displayAutonomousRoutines(List<AutonomousRoutine> routines)
+    {
+        displayAutonomousRoutines("autonomous", routines);
+        autoChooser.onChange(routine -> {
+            if (routine != null)
+            {
+                setCurrentAutonomousRoutine(routine);
+            }
+        });
+        if (autoChooser.getSelected() != null)
+        {
+            
+            setCurrentAutonomousRoutine(autoChooser.getSelected());
+        }
+        displayAutonomousRoutines("autonomous", routines);
+    }

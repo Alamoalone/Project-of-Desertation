@@ -1,0 +1,7 @@
+    private void freeHttpConnectionBackToPool(CloseableHttpResponse httpResponse)
+            throws IOException {
+        if (httpResponse != null) {
+            // Prevent the resource leak
+            httpResponse.close();
+        }
+    }

@@ -1,0 +1,10 @@
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        Customer customer = customerDao.getCustomerByEmail(email);
+
+        if (customer == null) {
+            System.out.println("Customer 404");
+            throw new UsernameNotFoundException("Customer with email [%s] not found".formatted(email));
+        }
+
+        return customer;
+    }

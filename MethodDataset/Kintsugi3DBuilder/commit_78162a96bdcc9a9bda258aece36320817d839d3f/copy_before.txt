@@ -1,0 +1,27 @@
+    public ViewSet copy()
+    {
+        ViewSet result = new ViewSet(this.getCameraPoseCount());
+
+        result.getCameraPoseList().addAll(this.cameraPoseList);
+        result.getCameraPoseInvList().addAll(this.cameraPoseInvList);
+        result.getCameraProjectionList().addAll(this.cameraProjectionList);
+        result.getCameraProjectionIndexList().addAll(this.cameraProjectionIndexList);
+        result.getLightPositionList().addAll(this.lightPositionList);
+        result.getLightIntensityList().addAll(this.lightIntensityList);
+        result.getLightIndexList().addAll(this.lightIndexList);
+        result.getImageFileNames().addAll(this.imageFileNames);
+
+        result.setTonemapping(this.gamma,
+            Arrays.copyOf(this.linearLuminanceValues, this.linearLuminanceValues.length),
+            Arrays.copyOf(this.encodedLuminanceValues, this.encodedLuminanceValues.length));
+
+        result.setRootDirectory(this.rootDirectory);
+        result.setRelativeImagePathName(this.relativeImagePath);
+        result.setGeometryFileName(this.geometryFileName);
+        result.setInfiniteLightSources(this.infiniteLightSources);
+        result.setRecommendedNearPlane(this.recommendedNearPlane);
+        result.setRecommendedFarPlane(this.recommendedFarPlane);
+        result.setPrimaryView(primaryViewIndex);
+
+        return result;
+    }

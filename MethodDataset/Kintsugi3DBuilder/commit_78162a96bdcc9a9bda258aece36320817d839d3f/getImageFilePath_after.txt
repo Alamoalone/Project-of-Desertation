@@ -1,0 +1,4 @@
+    public File getImageFilePath()
+    {
+        return this.relativeImagePathName == null ? this.rootDirectory : new File(this.rootDirectory, relativeImagePathName);
+    }

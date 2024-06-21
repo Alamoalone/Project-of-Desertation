@@ -1,0 +1,3 @@
+initByNotNull(AnaCallFctContent _className, Forwards _fwd)
+build(AnaFormattedRootBlock _implicit, Forwards _fwd)
+build(Forwards _fwd, AnaFormattedRootBlock _implicit)

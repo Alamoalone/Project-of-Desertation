@@ -1,0 +1,34 @@
+@@ -66,6 +66,13 @@ public static void main(String[] args) {
+ 		}
+ 		System.out.println("### Ende Ausgabe der PR Mitarbeiter\n");
+ 
++		System.out.println("### NULL POINTER? Wir holen uns die Mitarbeiterliste aus der PR-Abteilung (ID 1): ");
++		Mitarbeiter[] mitarbeiterPrAbteilung1 = getMitarbeiterListeVonAbteilung(6);
++		for (Mitarbeiter prMitarbeiter1 : mitarbeiterPrAbteilung1) {
++			System.out.println(prMitarbeiter1.ausgabe());
++		}
++		System.out.println("### Ende Ausgabe der PR Mitarbeiter\n");
++
+ 		System.out.println("+++ Wir suchen den Mitarbeiter mit der ID 7. Es sollte Mathis sein.");
+ 		System.out.println(searchMitarbeiterAusFirma(7).ausgabe());
+ 		System.out.println("\n");
+@@ -115,6 +122,10 @@ public static void berechneSummeAlleGehaelter(Mitarbeiter[] mitarbeiter_liste) {
+ 		}
+ 	};
+ 
++	/**
++	 * @param dieserMitarbeiter
++	 * @return
++	 */
+ 	public static double berechneNettoGehalt(Mitarbeiter dieserMitarbeiter) {
+ 		double bruttoBetrag = dieserMitarbeiter.berechneBrutto();
+ 		double steuerBetrag = 0;
+@@ -145,7 +156,7 @@ public static Mitarbeiter[] getMitarbeiterListeVonAbteilung(int abt_id) {
+ 				return dieseAbteilung.getMitarb_liste();
+ 			}
+ 		}
+-		return null;
++		return new Mitarbeiter[0];
+ 	}
+ 
+ 	/**

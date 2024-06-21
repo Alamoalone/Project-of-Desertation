@@ -1,0 +1,42 @@
+
+
+    void controlLoop () {
+        Option option;
+
+        do {
+            printOptions();
+            option = getOption();
+            switch (option) {
+                case ADD_BOOKS:
+                    addBook();
+                    break;
+                case ADD_MAGAZINES:
+                    addMagazines();
+                    break;
+                case PRINT_BOOKS:
+                    printBooks();
+                    break;
+                case PRINT_MAGAZINES:
+                    printMagazines();
+                    break;
+                case DELETE_BOOKS:
+                    deleteBook();
+                    break;
+                case DELETE_MAGAZINES:
+                    deleteMagazine();
+                    break;
+                case ADD_USER:
+                    addUser();
+                    break;
+                case PRINT_USERS:
+                    printUsers();
+                    break;
+                case EXIT:
+                    exit();
+                    break;
+                default:
+                    printer.printLine("Wybrano nieprawidłową opcję, wybierz ponownie");
+            }
+        } while (option != Option.EXIT);
+    }
+

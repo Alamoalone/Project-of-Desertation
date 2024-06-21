@@ -1,0 +1,69 @@
+    public void takeAttendance(Course course, Location studentLocation)
+    {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        CollectionReference classesRef = db.collection("Classes");
+        classesRef.whereEqualTo("course_name", course.getCourseName())
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                // Access the GeoPoint from the Firestore document
+                                GeoPoint geoPoint = document.getGeoPoint("prof_location");
+
+                                if (geoPoint != null) {
+                                    // Extract latitude and longitude
+                                    double latitude = geoPoint.getLatitude();
+                                    double longitude = geoPoint.getLongitude();
+
+                                    // Create an Android Location object
+                                    Location professorLocation = new Location("provider");
+                                    professorLocation.setLatitude(latitude);
+                                    professorLocation.setLongitude(longitude);
+
+                                    double rangeInMeters;
+
+                                    try {
+                                        // Try to retrieve the value from the document
+                                        Double rangeFromDocument = document.getDouble("location_range");
+
+                                        // Check if the value is not null
+                                        if (rangeFromDocument != null) {
+                                            rangeInMeters = rangeFromDocument;
+                                        } else {
+                                            // If the value is null, set a default value of 10
+                                            rangeInMeters = 10;
+                                        }
+                                    } catch (NullPointerException npe) {
+                                        // Handle any potential NullPointerException
+                                        npe.printStackTrace();
+                                        rangeInMeters = 10; // Set a default value if an exception occurs
+                                    }
+
+                                    float distance = studentLocation.distanceTo(professorLocation);
+                                    Log.i("INFO", "Distance: " + distance);
+
+                                    // Check if the distance is within the specified range
+                                    if (professorLocation.getLongitude() != 0.0 && professorLocation.getLongitude() != 0 && distance <= rangeInMeters) {
+                                        // TODO: update student gradebook with 1 to indicate attendance
+                                        markedPresent = true;
+                                        adapter.changeAttendanceButtonToCheckMark(course);
+                                        Toast.makeText(StudentHomePage.this, "You have been marked present", Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        markedPresent = false;
+                                        Toast.makeText(StudentHomePage.this, "Not marked present. Consider moving closer to the front of the room", Toast.LENGTH_LONG).show();
+                                    }
+
+                                } else {
+                                    // Handle the case when prof_location is not available
+                                    Toast.makeText(StudentHomePage.this, "Could not take attendance. Professor location not available", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        } else {
+                            Log.e("Firestore", "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
+
+    }

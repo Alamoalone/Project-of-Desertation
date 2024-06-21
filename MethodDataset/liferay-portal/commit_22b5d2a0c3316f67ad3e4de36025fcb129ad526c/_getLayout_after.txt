@@ -1,0 +1,17 @@
+	private static Layout _getLayout(HttpServletRequest httpServletRequest) {
+		ThemeDisplay themeDisplay =
+			(ThemeDisplay)httpServletRequest.getAttribute(
+				WebKeys.THEME_DISPLAY);
+
+		if (themeDisplay != null) {
+			return themeDisplay.getLayout();
+		}
+
+		long plid = ParamUtil.getLong(httpServletRequest, "plid");
+
+		if (plid > 0) {
+			return LayoutLocalServiceUtil.fetchLayout(plid);
+		}
+
+		return null;
+	}

@@ -1,0 +1,70 @@
+    void testUpdateCustomerDetails_Success() {
+        CustomerRequestDto requestDto = new CustomerRequestDto();
+        when(customerDetailService.updateCustomerDetailsRecord(requestDto)).thenReturn(true);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.updateCustomerDetails(requestDto);
+
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+    }
+
+    void testCreateCustomerDetails_Success() {
+        CustomerRequestDto requestDto = new CustomerRequestDto("zander","zander@gmail.com", LocalDate.of(2000,4,2), Occupation.Developer);
+        doNothing().when(customerDetailService).createCustomerDetailsRecord(requestDto);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.createCustomerDetails(requestDto);
+
+        assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());
+    }
+
+    void testDeleteCustomerByEmail_Failure() {
+        String email = "test@gmail.com";
+        when(customerDetailService.deleteCustomerDetailsByEmail(email)).thenReturn(false);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.deleteCustomerByEmail(email);
+
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+    }
+
+    void testCreateCustomerDetails_AlreadyExists() {
+        CustomerRequestDto requestDto = new CustomerRequestDto();
+        doThrow(new CustomerDetailsAlreadyExistsException("")).when(customerDetailService).createCustomerDetailsRecord(requestDto);
+
+        assertThrows(CustomerDetailsAlreadyExistsException.class, () -> customerDetailsController.createCustomerDetails(requestDto));
+    }
+
+    void testGetCustomerDetailsByEmail_NotFound() {
+        String email = "nonexistent@gamil.com";
+        when(customerDetailService.getCustomerDetailsByEmail(email)).thenThrow(new ResourceNotFoundException("", "", ""));
+
+        assertThrows(ResourceNotFoundException.class, () -> customerDetailsController.getCustomerDetailsByEmail(email));
+    }
+
+    void testUpdateCustomerDetails_Failure() {
+        CustomerRequestDto requestDto = new CustomerRequestDto();
+        when(customerDetailService.updateCustomerDetailsRecord(requestDto)).thenReturn(false);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.updateCustomerDetails(requestDto);
+
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+    }
+
+    void testGetCustomerDetailsByEmail_Success() {
+        String email = "test@gmail.com";
+        CustomerResponseDto responseDto = new CustomerResponseDto();
+        when(customerDetailService.getCustomerDetailsByEmail(email)).thenReturn(responseDto);
+
+        ResponseEntity<CustomerResponseDto> responseEntity = customerDetailsController.getCustomerDetailsByEmail(email);
+
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertNotNull(responseEntity.getBody());
+    }
+
+    void testDeleteCustomerByEmail_Success() {
+        String email = "test@gmail.com";
+        when(customerDetailService.deleteCustomerDetailsByEmail(email)).thenReturn(true);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.deleteCustomerByEmail(email);
+
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+    }
+

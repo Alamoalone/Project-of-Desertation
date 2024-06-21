@@ -1,0 +1,11 @@
+@@ -189,6 +189,10 @@ public void setScroll(int currentScroll, int totalScroll) {
+         mTotalScroll = totalScroll;
+ 
+         int scrollPerPage = totalScroll / (mNumPages - 1);
++        if (scrollPerPage == 0) {
++            return;
++        }
++
+         int pageToLeft = scrollPerPage == 0 ? 0 : currentScroll / scrollPerPage;
+         int pageToLeftScroll = pageToLeft * scrollPerPage;
+         int pageToRightScroll = pageToLeftScroll + scrollPerPage;

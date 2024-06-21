@@ -1,0 +1,98 @@
+{
+    "sha": "177b3e7a4283be92f4347a97a4772c9578794a89",
+    "node_id": "C_kwDOAb50O9oAKDE3N2IzZTdhNDI4M2JlOTJmNDM0N2E5N2E0NzcyYzk1Nzg3OTRhODk",
+    "commit": {
+        "author": {
+            "name": "Nico Stuurman",
+            "email": "oincst@gmail.com",
+            "date": "2024-02-17T20:11:05Z"
+        },
+        "committer": {
+            "name": "Nico Stuurman",
+            "email": "oincst@gmail.com",
+            "date": "2024-02-17T20:11:05Z"
+        },
+        "message": "Studio: AcqEngJ: fixed null pointer exception.",
+        "tree": {
+            "sha": "9d66a9462c739848430cee4d04954ab02337f2f1",
+            "url": "https://api.github.com/repos/micro-manager/micro-manager/git/trees/9d66a9462c739848430cee4d04954ab02337f2f1"
+        },
+        "url": "https://api.github.com/repos/micro-manager/micro-manager/git/commits/177b3e7a4283be92f4347a97a4772c9578794a89",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/micro-manager/micro-manager/commits/177b3e7a4283be92f4347a97a4772c9578794a89",
+    "html_url": "https://github.com/micro-manager/micro-manager/commit/177b3e7a4283be92f4347a97a4772c9578794a89",
+    "comments_url": "https://api.github.com/repos/micro-manager/micro-manager/commits/177b3e7a4283be92f4347a97a4772c9578794a89/comments",
+    "author": {
+        "login": "nicost",
+        "id": 2153771,
+        "node_id": "MDQ6VXNlcjIxNTM3NzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2153771?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nicost",
+        "html_url": "https://github.com/nicost",
+        "followers_url": "https://api.github.com/users/nicost/followers",
+        "following_url": "https://api.github.com/users/nicost/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nicost/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nicost/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nicost/subscriptions",
+        "organizations_url": "https://api.github.com/users/nicost/orgs",
+        "repos_url": "https://api.github.com/users/nicost/repos",
+        "events_url": "https://api.github.com/users/nicost/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nicost/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "nicost",
+        "id": 2153771,
+        "node_id": "MDQ6VXNlcjIxNTM3NzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2153771?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nicost",
+        "html_url": "https://github.com/nicost",
+        "followers_url": "https://api.github.com/users/nicost/followers",
+        "following_url": "https://api.github.com/users/nicost/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nicost/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nicost/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nicost/subscriptions",
+        "organizations_url": "https://api.github.com/users/nicost/orgs",
+        "repos_url": "https://api.github.com/users/nicost/repos",
+        "events_url": "https://api.github.com/users/nicost/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nicost/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5464ca2e2fa37155e0c0abe136edbae3837e0df7",
+            "url": "https://api.github.com/repos/micro-manager/micro-manager/commits/5464ca2e2fa37155e0c0abe136edbae3837e0df7",
+            "html_url": "https://github.com/micro-manager/micro-manager/commit/5464ca2e2fa37155e0c0abe136edbae3837e0df7"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "dd3fdc4936629ee9e96940c30a4ae698468a5f93",
+            "filename": "mmstudio/src/main/java/org/micromanager/acquisition/internal/acqengjcompat/AcqEngJAdapter.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/micro-manager/micro-manager/blob/177b3e7a4283be92f4347a97a4772c9578794a89/mmstudio%2Fsrc%2Fmain%2Fjava%2Forg%2Fmicromanager%2Facquisition%2Finternal%2Facqengjcompat%2FAcqEngJAdapter.java",
+            "raw_url": "https://github.com/micro-manager/micro-manager/raw/177b3e7a4283be92f4347a97a4772c9578794a89/mmstudio%2Fsrc%2Fmain%2Fjava%2Forg%2Fmicromanager%2Facquisition%2Finternal%2Facqengjcompat%2FAcqEngJAdapter.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/micro-manager/contents/mmstudio%2Fsrc%2Fmain%2Fjava%2Forg%2Fmicromanager%2Facquisition%2Finternal%2Facqengjcompat%2FAcqEngJAdapter.java?ref=177b3e7a4283be92f4347a97a4772c9578794a89",
+            "patch": "@@ -734,7 +734,8 @@ public AcquisitionEvent run(AcquisitionEvent event) {\n                         || (Integer) event.getAxisPosition(MDAAcqEventModules.POSITION_AXIS) == 0)\n                   && (event.getAxisPosition(AcqEngMetadata.CHANNEL_AXIS) == null\n                         || (Integer) event.getAxisPosition(AcqEngMetadata.CHANNEL_AXIS) == 0)) {\n-               if (event.getTIndex() != null && event.getTIndex() % skipFrames != 0) {\n+               if (event.getTIndex() != null && skipFrames != 0\n+                       && event.getTIndex() % skipFrames != 0) {\n                   return event;\n                }\n                try {"
+        }
+    ]
+}

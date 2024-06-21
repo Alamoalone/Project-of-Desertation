@@ -1,0 +1,98 @@
+{
+    "sha": "94c8dd377a23d74df1962839d0f110bec9d0c14e",
+    "node_id": "C_kwDOCFbutNoAKDk0YzhkZDM3N2EyM2Q3NGRmMTk2MjgzOWQwZjExMGJlYzlkMGMxNGU",
+    "commit": {
+        "author": {
+            "name": "Jose",
+            "email": "josecarvajalhilario@gmail.com",
+            "date": "2023-05-24T05:02:25Z"
+        },
+        "committer": {
+            "name": "Jose",
+            "email": "josecarvajalhilario@gmail.com",
+            "date": "2023-05-24T05:02:25Z"
+        },
+        "message": "Avoid null pointer exception when resolving generics in RR\n\nThis pull request does not provide support for generics when using sub resources, but avoid giving a null pointer exception.\nI found this issue when looking at https://github.com/quarkusio/quarkus/issues/30127.",
+        "tree": {
+            "sha": "1797ea687962f3417a3461ab700fc034b9566a52",
+            "url": "https://api.github.com/repos/quarkusio/quarkus/git/trees/1797ea687962f3417a3461ab700fc034b9566a52"
+        },
+        "url": "https://api.github.com/repos/quarkusio/quarkus/git/commits/94c8dd377a23d74df1962839d0f110bec9d0c14e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/quarkusio/quarkus/commits/94c8dd377a23d74df1962839d0f110bec9d0c14e",
+    "html_url": "https://github.com/quarkusio/quarkus/commit/94c8dd377a23d74df1962839d0f110bec9d0c14e",
+    "comments_url": "https://api.github.com/repos/quarkusio/quarkus/commits/94c8dd377a23d74df1962839d0f110bec9d0c14e/comments",
+    "author": {
+        "login": "Sgitario",
+        "id": 6310047,
+        "node_id": "MDQ6VXNlcjYzMTAwNDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6310047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sgitario",
+        "html_url": "https://github.com/Sgitario",
+        "followers_url": "https://api.github.com/users/Sgitario/followers",
+        "following_url": "https://api.github.com/users/Sgitario/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sgitario/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sgitario/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sgitario/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sgitario/orgs",
+        "repos_url": "https://api.github.com/users/Sgitario/repos",
+        "events_url": "https://api.github.com/users/Sgitario/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sgitario/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Sgitario",
+        "id": 6310047,
+        "node_id": "MDQ6VXNlcjYzMTAwNDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6310047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sgitario",
+        "html_url": "https://github.com/Sgitario",
+        "followers_url": "https://api.github.com/users/Sgitario/followers",
+        "following_url": "https://api.github.com/users/Sgitario/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sgitario/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sgitario/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sgitario/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sgitario/orgs",
+        "repos_url": "https://api.github.com/users/Sgitario/repos",
+        "events_url": "https://api.github.com/users/Sgitario/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sgitario/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3249613c535f77a0fc62a8b4d7549def12baf9ce",
+            "url": "https://api.github.com/repos/quarkusio/quarkus/commits/3249613c535f77a0fc62a8b4d7549def12baf9ce",
+            "html_url": "https://github.com/quarkusio/quarkus/commit/3249613c535f77a0fc62a8b4d7549def12baf9ce"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "7ccff562b7ee5e6a79a5b80922478a1a91072c97",
+            "filename": "independent-projects/resteasy-reactive/common/processor/src/main/java/org/jboss/resteasy/reactive/common/processor/TypeArgMapper.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/quarkusio/quarkus/blob/94c8dd377a23d74df1962839d0f110bec9d0c14e/independent-projects%2Fresteasy-reactive%2Fcommon%2Fprocessor%2Fsrc%2Fmain%2Fjava%2Forg%2Fjboss%2Fresteasy%2Freactive%2Fcommon%2Fprocessor%2FTypeArgMapper.java",
+            "raw_url": "https://github.com/quarkusio/quarkus/raw/94c8dd377a23d74df1962839d0f110bec9d0c14e/independent-projects%2Fresteasy-reactive%2Fcommon%2Fprocessor%2Fsrc%2Fmain%2Fjava%2Forg%2Fjboss%2Fresteasy%2Freactive%2Fcommon%2Fprocessor%2FTypeArgMapper.java",
+            "contents_url": "https://api.github.com/repos/quarkusio/quarkus/contents/independent-projects%2Fresteasy-reactive%2Fcommon%2Fprocessor%2Fsrc%2Fmain%2Fjava%2Forg%2Fjboss%2Fresteasy%2Freactive%2Fcommon%2Fprocessor%2FTypeArgMapper.java?ref=94c8dd377a23d74df1962839d0f110bec9d0c14e",
+            "patch": "@@ -1,5 +1,7 @@\n package org.jboss.resteasy.reactive.common.processor;\n \n+import static org.jboss.resteasy.reactive.common.processor.ResteasyReactiveDotNames.OBJECT;\n+\n import java.util.List;\n import java.util.function.Function;\n \n@@ -24,7 +26,7 @@ public Type apply(String v) {\n         ClassInfo declarer = declaringClass;\n         int pos = -1;\n         for (;;) {\n-            if (declarer == null) {\n+            if (declarer == null || OBJECT.equals(declarer.name())) {\n                 return null;\n             }\n             List<TypeVariable> typeParameters = declarer.typeParameters();"
+        }
+    ]
+}

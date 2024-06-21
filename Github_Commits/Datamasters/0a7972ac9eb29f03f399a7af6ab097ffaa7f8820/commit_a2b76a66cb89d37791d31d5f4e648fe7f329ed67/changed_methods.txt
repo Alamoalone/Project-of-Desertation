@@ -1,0 +1,5 @@
+getPreparationTimeMinutes()
+orderIsSent(LocalDateTime currentTime)
+toString()
+isCancelable(LocalDateTime currentTime)
+setPreparationTimeMinutes(int preparationTimeMinutes)

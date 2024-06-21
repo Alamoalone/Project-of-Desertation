@@ -1,0 +1,268 @@
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.edit_item_fragment);
+        // set up
+        editTagButton = findViewById(R.id.edit_tag_button);
+        tagDisplay1Button = findViewById(R.id.tag_display_1);
+        tagDisplay2Button = findViewById(R.id.tag_display_2);
+        tagDisplay3Button  =findViewById(R.id.tag_display_3);
+        backButton = findViewById(R.id.edit_activity_back);
+
+        tagDisplay3Button.setVisibility(View.GONE);
+        tagDisplay2Button.setVisibility(View.GONE);
+        tagDisplay1Button.setVisibility(View.GONE);
+
+        nameButton = findViewById(R.id.item_name_button);
+        dateButton = findViewById(R.id.date_button);
+        makeButton = findViewById(R.id.make_button);
+        modelButton = findViewById(R.id.model_button);
+        serialNumButton = findViewById(R.id.serial_number_button);
+        estValButton = findViewById(R.id.estimated_val_button);
+        commentButton = findViewById(R.id.comment_button);
+        photoButton = findViewById(R.id.photo_button);
+        confirmButton = findViewById(R.id.confirm_button);
+
+        mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+        usersRef = db.collection("users");
+
+        Intent intent = getIntent();
+        String mode = intent.getStringExtra("mode");
+        int position = intent.getIntExtra("position", -1);
+        int requestCode = intent.getIntExtra("requestCode", -1);
+        String itemRefID = intent.getStringExtra("itemRefID");
+        Log.d("itemTag", "RefID after opening activity: " + itemRefID);
+
+        try{
+            String serial = intent.getStringExtra("serialNo");
+            serialNumButton.setText(serial);
+        }catch(Exception e){
+            Log.d("D","Serial Number unable to be set when returning from scan activity.");
+        }
+
+        if(mode.equals("add")){
+            serialNumButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ImageButton serial_no_cam = findViewById(R.id.serial_no_cam);
+                    serial_no_cam.setVisibility(View.VISIBLE);
+
+                    serial_no_cam.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent scan_intent  = new Intent(AddEditActivity.this, SerialNumberScan.class);
+                            scan_intent.putExtra("name",nameButton.getText());
+                            scan_intent.putExtra("date",dateButton.getText());
+                            Log.d("Date Test",date.toString());
+                            scan_intent.putExtra("mode", mode);
+                            scan_intent.putExtra("position", position );
+                            scan_intent.putExtra("requestCode", requestCode);
+                            //scan_intent.putExtra("previous name", prevName);
+                            scan_intent.putExtra("itemRefID", itemRefID);
+                            scan_intent.putExtra("tags",tagsToApply);
+                            startActivity(scan_intent);
+                        }
+                    });
+                }
+            });
+
+            nameButton.setText(intent.getStringExtra("name"));
+            makeButton.setText(intent.getStringExtra("make"));
+
+
+        }
+
+        if (mode.equals("edit")){
+            item = (Item) intent.getParcelableExtra("item");
+
+            // fill edit texts with information
+            assert item != null;
+            prevName = item.getDescription();
+            nameButton.setText(prevName);
+            Date date = (Date) intent.getSerializableExtra("date");
+            tagsToApply = intent.getParcelableArrayListExtra("tags");
+            Log.d("# just opened on edit mode", String.valueOf(tagsToApply));
+            if(tagsToApply == null){
+                tagsToApply = new ArrayList<>();
+                Log.d("", "onCreate: SEE HERE 1" + tagsToApply);
+            }
+            Log.d("", "onCreate: SEE HERE " + tagsToApply);
+            item.setTags(tagsToApply);
+            ArrayList<String> alreadyAddedPhotos = intent.getStringArrayListExtra("send_photos");
+            item.setPhotos(alreadyAddedPhotos);
+
+            // Now display any tags that are already applied. Up to 3
+            // Add the Tags indentifiers to the Top right corner of the screen setting up to 3 Tag Names.
+            // If a Item has less than 3 Tags then the remaining unused Tag buttons will be hidden.
+            int numTags = tagsToApply.size();
+            int i = 0;
+            while (i <= 2 || i < numTags){
+                if (i == 3 || i == numTags){
+                    break;
+                }
+                if (i == 0){
+                    tagDisplay1Button.setText(tagsToApply.get(i).getTagName());
+                    tagDisplay1Button.setVisibility(View.VISIBLE);
+                }
+                else if (i == 1){
+                    tagDisplay2Button.setText(tagsToApply.get(i).getTagName());
+                    tagDisplay2Button.setVisibility(View.VISIBLE);
+                }
+                else if(i == 2){
+                    tagDisplay3Button.setText(tagsToApply.get(i).getTagName());
+                    tagDisplay3Button.setVisibility(View.VISIBLE);
+                }
+                i++;
+            }
+
+            assert date != null;
+            SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault());
+            // Format the Date object as a string
+            String strDate = dateFormat.format(date);
+            dateButton.setText(strDate);
+            makeButton.setText(item.getMake());
+            modelButton.setText(item.getModel());
+            serialNumButton.setText(String.valueOf(item.getSerialNumber()));
+            estValButton.setText(String.valueOf(item.getEstValue()));
+            commentButton.setText(item.getComment());
+
+            serialNumButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ImageButton serial_no_cam = findViewById(R.id.serial_no_cam);
+                    serial_no_cam.setVisibility(View.VISIBLE);
+
+                    serial_no_cam.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent scan_intent  = new Intent(AddEditActivity.this, SerialNumberScan.class);
+                            scan_intent.putExtra("item",item);
+                            scan_intent.putExtra("date",date);
+                            Log.d("Date Test",date.toString());
+                            scan_intent.putExtra("mode", mode);
+                            scan_intent.putExtra("position", position );
+                            scan_intent.putExtra("requestCode", requestCode);
+                            scan_intent.putExtra("previous name", prevName);
+                            scan_intent.putExtra("itemRefID", itemRefID);
+                            scan_intent.putExtra("tags",tagsToApply);
+
+                            startActivity(scan_intent);
+                        }
+                    });
+                }
+            });
+        }
+
+        // END IF EDIT //
+
+        editTagButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mode.equals("edit")) {
+                    Log.d("", "onClick: The current tags.." + tagsToApply);
+                    TagFragment newFragment = TagFragment.newInstance(mAuth.getUid(),tagsToApply);
+                    newFragment.show(getSupportFragmentManager(), "TAG_FRAG");
+                }else{
+                    TagFragment newFragment = TagFragment.newInstance(mAuth.getUid());
+                    newFragment.show(getSupportFragmentManager(), "TAG_FRAG");
+                }
+            }
+        });
+
+
+        // These on click listeners display a toast with the tag name
+        tagDisplay1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                produceTagToast("Tag: " + tagDisplay1Button.getText().toString());
+            }
+        });
+
+        tagDisplay2Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                produceTagToast("Tag: " + tagDisplay2Button.getText().toString());
+            }
+        });
+
+        tagDisplay3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                produceTagToast("Tag: " + tagDisplay3Button.getText().toString());
+            }
+        });
+
+
+        confirmButton.setOnClickListener(v -> {
+            // check for valid inputs
+            if (reqInputsValid()){
+                // take info and make item object
+                Log.d("editTag", "before making the new item, date is " + date);
+                ArrayList<String> unedittedPhotos = item.getPhotos();
+                Item item = new Item(name, date, make, model, estValue);
+                if ( tagsToApply == null){
+                    tagsToApply = new ArrayList<>();
+                };
+                Intent intent1 = new Intent();
+
+                item.setTags(tagsToApply);
+                item.setPhotos(photos);
+
+                // put it in intent
+                Intent updatedIntent = new Intent();
+                if(item.getTags() == null){
+                  ArrayList<Tag>  emptyTagSet = new ArrayList<>();
+                  item.setTags(emptyTagSet);
+                }
+
+                if (photos == null || item.getPhotos() == null){
+                    photos = new ArrayList<>();
+                    item.setPhotos(photos);
+                    Log.d("statement", "ENTERED IF STATEMENT" + item.getPhotos());
+                    item.setPhotos(unedittedPhotos);
+                    Log.d("statement", "ENTERED IF STATEMENT2" + item.getPhotos());
+                }
+                if (photos.size() == 0 && unedittedPhotos != null){
+                    item.setPhotos(unedittedPhotos);
+                    Log.d("statement", "ENTERED IF STATEMENT" + item.getPhotos());
+                }
+
+                // go back to main activity
+                updatedIntent.putStringArrayListExtra("applied_photos",item.getPhotos());
+                updatedIntent.putParcelableArrayListExtra("tags",tagsToApply);
+                Log.d("# tag TAg hitting confirm", String.valueOf(tagsToApply));
+                updatedIntent.putExtra("item", item);
+                updatedIntent.putExtra("date", date);
+                updatedIntent.putExtra("mode", mode);
+                updatedIntent.putExtra("position", position );
+                updatedIntent.putExtra("requestCode", requestCode);
+                updatedIntent.putExtra("previous name", prevName);
+                updatedIntent.putExtra("itemRefID", itemRefID);
+                Log.d("itemTag", "RefID coming out of edit activity: " + itemRefID);
+                setResult(818, updatedIntent);
+                Log.d("aeTag", "finishing aeActivity...");
+
+                finish();
+            }
+        });
+
+        photoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mode.equals("add")) {
+                    PhotoFragment photoFrag = PhotoFragment.newInstance(mAuth.getUid());
+                    photoFrag.show(getSupportFragmentManager(),"PHOTO_FRAG");
+                }else{
+                    PhotoFragment photoFrag = PhotoFragment.newInstance(mAuth.getUid(),item.getPhotos());
+                    photoFrag.show(getSupportFragmentManager(),"PHOTO_FRAG");
+                }
+            }
+        });
+
+        backButton.setOnClickListener(v -> {
+            // go back to main activity
+            finish();
+        });
+
+
+    }

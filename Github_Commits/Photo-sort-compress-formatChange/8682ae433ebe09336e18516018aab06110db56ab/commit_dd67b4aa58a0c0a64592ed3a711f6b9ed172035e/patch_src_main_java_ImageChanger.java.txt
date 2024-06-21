@@ -1,0 +1,82 @@
+@@ -38,9 +38,7 @@ public boolean handlePictures() {
+             String format = fileFormat.getFileFormat();
+ 
+             String fileName = getFileName(file.getName());
+-            if (compressionRate > 0) {
+-                compressImage(file, format, fileName);
+-            } else cutImageByPixels(changeFormat, file, format, fileName);
++            cutImageByPixels(changeFormat, file, format, fileName);
+         });
+         return true;
+     }
+@@ -49,8 +47,22 @@ private void cutImageByPixels(boolean changeFormat, File file, String format, St
+         String pathOfNewFile = ""; // for logger
+         try {
+             image = ImageIO.read(file);
+-            image = Scalr.resize(image, width, height);
+ 
++            // changing image
++            if (width > 0 && height > 0) {
++                image = Scalr.resize(image, width, height);
++            }
++
++            if (compressionRate > 0) {
++                height = image.getHeight();
++                width = image.getWidth();
++                double buffer = (double) compressionRate / 100;
++                int newWidth = width - (int) (width * buffer);
++                int newHeight = height - (int) (height * buffer);
++                image = Scalr.resize(image, newWidth, newHeight);
++            }
++
++            // saving image
+             if (changeFormat) {
+                 File newFile = new File(dstFolder + "\\" + fileName + "." + dstFormat.toString());
+                 newFile = escapeDuplicateFiles(newFile, dstFolder, fileName);
+@@ -70,30 +82,6 @@ private void cutImageByPixels(boolean changeFormat, File file, String format, St
+     }
+ 
+ 
+-    private void compressImage(File file, String format, String fileName) {
+-        String pathOfNewFile = ""; // for logger
+-        try {
+-            long size = file.length();
+-            double buffer = (double) compressionRate / 100;
+-            Long newSize = size - (int) (size * buffer);
+-            int targetSize = newSize.intValue() / 1024;
+-
+-            image = ImageIO.read(file);
+-            Scalr.resize(image, targetSize);
+-
+-            File newFile = new File(dstFolder + "\\" + file.getName());
+-            newFile = escapeDuplicateFiles(newFile, dstFolder, fileName);
+-            pathOfNewFile = newFile.getPath();
+-            ImageIO.write(image, format, newFile);
+-            Main.logger.info("обработали файл " + newFile.getName());
+-
+-        } catch (Exception e) {
+-            copyErrorFile(file, format, fileName);
+-            Main.logger.error("Не удалось сохранить файл " + file.getName() + " Путь = " + pathOfNewFile);
+-        }
+-
+-    }
+-
+ 
+     private void copyErrorFile(File file, String format, String fileName) {
+         File folder = new File(errorFolder);
+@@ -108,7 +96,7 @@ private void copyErrorFile(File file, String format, String fileName) {
+             Files.copy(file.toPath(), errorFile.toPath());
+         } catch (IOException e) {
+             Main.logger.error("Не удалось сохранить файл в errorfile!  " + errorFile.getPath()
+-                    + "Сообщение об ошибке: "+ e.getMessage());
++                    + "Сообщение об ошибке: " + e.getMessage());
+         }
+     }
+ 
+@@ -128,4 +116,4 @@ private String getFileName(String fileNameWithFiletype) {
+         int dotIndex = fileNameWithFiletype.lastIndexOf(".");
+         return fileNameWithFiletype.substring(0, dotIndex);
+     }
+-}
++}
+\ No newline at end of file

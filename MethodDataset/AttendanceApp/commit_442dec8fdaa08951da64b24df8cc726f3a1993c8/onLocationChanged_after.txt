@@ -1,0 +1,3 @@
+            public void onLocationChanged(@NonNull Location location) {
+                updateLocationInfo(location);
+            }

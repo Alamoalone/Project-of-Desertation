@@ -1,0 +1,110 @@
+{
+    "sha": "6a22acb1fd1098a9d245af89be3e49ffd400e061",
+    "node_id": "C_kwDOK1jocdoAKDZhMjJhY2IxZmQxMDk4YTlkMjQ1YWY4OWJlM2U0OWZmZDQwMGUwNjE",
+    "commit": {
+        "author": {
+            "name": "zsoltibv",
+            "email": "zsoltibv@gmail.com",
+            "date": "2023-10-27T09:39:16Z"
+        },
+        "committer": {
+            "name": "zsoltibv",
+            "email": "zsoltibv@gmail.com",
+            "date": "2023-10-27T09:39:16Z"
+        },
+        "message": "EXP-48 Treated null pointer exception when expense has no document",
+        "tree": {
+            "sha": "e779b75aca4b380f6627297c9821361ae2808e0f",
+            "url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/git/trees/e779b75aca4b380f6627297c9821361ae2808e0f"
+        },
+        "url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/git/commits/6a22acb1fd1098a9d245af89be3e49ffd400e061",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/commits/6a22acb1fd1098a9d245af89be3e49ffd400e061",
+    "html_url": "https://github.com/zsoltibv/be_expenses_manager/commit/6a22acb1fd1098a9d245af89be3e49ffd400e061",
+    "comments_url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/commits/6a22acb1fd1098a9d245af89be3e49ffd400e061/comments",
+    "author": {
+        "login": "zsoltibv",
+        "id": 65161303,
+        "node_id": "MDQ6VXNlcjY1MTYxMzAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65161303?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zsoltibv",
+        "html_url": "https://github.com/zsoltibv",
+        "followers_url": "https://api.github.com/users/zsoltibv/followers",
+        "following_url": "https://api.github.com/users/zsoltibv/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zsoltibv/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zsoltibv/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zsoltibv/subscriptions",
+        "organizations_url": "https://api.github.com/users/zsoltibv/orgs",
+        "repos_url": "https://api.github.com/users/zsoltibv/repos",
+        "events_url": "https://api.github.com/users/zsoltibv/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zsoltibv/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "zsoltibv",
+        "id": 65161303,
+        "node_id": "MDQ6VXNlcjY1MTYxMzAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65161303?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zsoltibv",
+        "html_url": "https://github.com/zsoltibv",
+        "followers_url": "https://api.github.com/users/zsoltibv/followers",
+        "following_url": "https://api.github.com/users/zsoltibv/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zsoltibv/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zsoltibv/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zsoltibv/subscriptions",
+        "organizations_url": "https://api.github.com/users/zsoltibv/orgs",
+        "repos_url": "https://api.github.com/users/zsoltibv/repos",
+        "events_url": "https://api.github.com/users/zsoltibv/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zsoltibv/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9fe90db6f5af0e8df8427711b40432357c54ed47",
+            "url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/commits/9fe90db6f5af0e8df8427711b40432357c54ed47",
+            "html_url": "https://github.com/zsoltibv/be_expenses_manager/commit/9fe90db6f5af0e8df8427711b40432357c54ed47"
+        }
+    ],
+    "stats": {
+        "total": 13,
+        "additions": 12,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "c0068d17e85a57247e0dd8e5ae5ade2ad656f9ff",
+            "filename": "src/main/java/com/endava/expensesmanager/model/entity/Expense.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/zsoltibv/be_expenses_manager/blob/6a22acb1fd1098a9d245af89be3e49ffd400e061/src%2Fmain%2Fjava%2Fcom%2Fendava%2Fexpensesmanager%2Fmodel%2Fentity%2FExpense.java",
+            "raw_url": "https://github.com/zsoltibv/be_expenses_manager/raw/6a22acb1fd1098a9d245af89be3e49ffd400e061/src%2Fmain%2Fjava%2Fcom%2Fendava%2Fexpensesmanager%2Fmodel%2Fentity%2FExpense.java",
+            "contents_url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/contents/src%2Fmain%2Fjava%2Fcom%2Fendava%2Fexpensesmanager%2Fmodel%2Fentity%2FExpense.java?ref=6a22acb1fd1098a9d245af89be3e49ffd400e061",
+            "patch": "@@ -5,6 +5,7 @@\n import lombok.Setter;\n import java.math.BigDecimal;\n import java.time.LocalDateTime;\n+import java.util.Optional;\n \n @Entity\n @Getter\n@@ -32,4 +33,7 @@ public class Expense {\n     @OneToOne\n     @JoinColumn(name = \"document_id\")\n     private Document document;\n+    public Optional<Document> getDocument() {\n+        return Optional.ofNullable(document);\n+    }\n }"
+        },
+        {
+            "sha": "581bff01cfce0a2e923df5a1d51d2abf2997d1d1",
+            "filename": "src/main/java/com/endava/expensesmanager/model/mapper/ExpenseMapper.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 1,
+            "changes": 9,
+            "blob_url": "https://github.com/zsoltibv/be_expenses_manager/blob/6a22acb1fd1098a9d245af89be3e49ffd400e061/src%2Fmain%2Fjava%2Fcom%2Fendava%2Fexpensesmanager%2Fmodel%2Fmapper%2FExpenseMapper.java",
+            "raw_url": "https://github.com/zsoltibv/be_expenses_manager/raw/6a22acb1fd1098a9d245af89be3e49ffd400e061/src%2Fmain%2Fjava%2Fcom%2Fendava%2Fexpensesmanager%2Fmodel%2Fmapper%2FExpenseMapper.java",
+            "contents_url": "https://api.github.com/repos/zsoltibv/be_expenses_manager/contents/src%2Fmain%2Fjava%2Fcom%2Fendava%2Fexpensesmanager%2Fmodel%2Fmapper%2FExpenseMapper.java?ref=6a22acb1fd1098a9d245af89be3e49ffd400e061",
+            "patch": "@@ -7,6 +7,8 @@\n import com.endava.expensesmanager.model.entity.Expense;\n import com.endava.expensesmanager.model.entity.User;\n \n+import java.util.Optional;\n+\n public class ExpenseMapper {\n \n     public static Expense toExpense(ExpenseDto expenseDto) {\n@@ -33,11 +35,16 @@ public static Expense toExpense(ExpenseDto expenseDto) {\n \n     public static ExpenseDto toDto(Expense expense) {\n         ExpenseDto expenseDto = new ExpenseDto();\n+        expenseDto.setExpenseId(expense.getExpenseId());\n         expenseDto.setDescription(expense.getDescription());\n         expenseDto.setExpenseDate(expense.getExpenseDate());\n         expenseDto.setAmount(expense.getAmount());\n         expenseDto.setUserId(expense.getUser().getUserId());\n-        expenseDto.setDocumentId(expense.getDocument().getDocumentId());\n+        Optional<Document> optionalDocument = expense.getDocument();\n+        if (optionalDocument.isPresent()) {\n+            Document document = optionalDocument.get();\n+            expenseDto.setDocumentId(document.getDocumentId());\n+        }\n         expenseDto.setCategory(expense.getCategory());\n         expenseDto.setCurrency(expense.getCurrency());\n "
+        }
+    ]
+}

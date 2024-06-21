@@ -1,0 +1,12 @@
+    private List<PointHistory> makePointHistories() {
+        pointHistories = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            PointHistory tmp = PointHistory.builder()
+                    .user(user)
+                    .randomDance(randomDance)
+                    .count(0)
+                    .build();
+            pointHistories.add(tmp);
+        }
+        return pointHistories;
+    }

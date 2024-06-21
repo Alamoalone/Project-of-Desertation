@@ -1,0 +1,9 @@
+@@ -22,7 +22,7 @@ public static class Common {
+         public String blockedDimensions;
+ 
+         public String[] getBlockedDimensions() {
+-            return blockedDimensions.split(listDelimiter);
++            return blockedDimensions != null ? blockedDimensions.split(listDelimiter) : new String[0];
+         }
+     }
+ }

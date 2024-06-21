@@ -1,0 +1,4 @@
+roiModified(ImagePlus imp, int id)
+updatePoints(boolean force)
+run()
+closed()

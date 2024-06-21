@@ -1,0 +1,3 @@
+   public void removeContrastControls(String channelName) {
+      sideControls_.removeContrastControls(channelName);
+   }

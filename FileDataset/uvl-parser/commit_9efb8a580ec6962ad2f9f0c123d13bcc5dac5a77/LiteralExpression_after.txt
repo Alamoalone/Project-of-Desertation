@@ -1,0 +1,41 @@
+    public double evaluate(final Set<Feature> selectedFeatures) {
+        if (boolValue != null || !this.feature.getAttributes().containsKey(this.attributeName)) {
+            return 0d;
+        }
+        final Object attributeValue = this.feature.getAttributes().get(this.attributeName).getValue();
+        if (attributeValue instanceof Integer) {
+            return ((Integer) attributeValue).doubleValue();
+        }
+        if (attributeValue instanceof Long) {
+            return ((Long) attributeValue).doubleValue();
+        }
+        return (double) attributeValue;
+    }
+
+    public void replaceExpressionSubPart(final Expression oldSubExpression, final Expression newSubExpression) {
+        if (oldSubExpression instanceof LiteralExpression
+                && ((LiteralExpression) oldSubExpression).getContent().equals(this.content) &&
+                newSubExpression instanceof LiteralExpression) {
+            this.content = ((LiteralExpression) newSubExpression).content;
+            this.featureName = ((LiteralExpression) newSubExpression).featureName;
+            this.attributeName = ((LiteralExpression) newSubExpression).attributeName;
+            this.feature = ((LiteralExpression) newSubExpression).feature;
+        }
+    }
+
+    public String toString(final boolean withSubmodels, final String currentAlias) {
+        if (this.getFeature() == null) {
+            if (boolValue != null) {
+                return String.valueOf(boolValue);
+            }
+            return addNecessaryQuotes(this.getContent());
+        }
+        if (withSubmodels) {
+            return addNecessaryQuotes(this.getFeature().getFullReference()
+                    + (this.getAttributeName() != null ? "." + this.getAttributeName() : ""));
+        }
+        return addNecessaryQuotes(
+                this.feature.getReferenceFromSpecificSubmodel(currentAlias)
+                        + (this.getAttributeName() != null ? "." + this.getAttributeName() : ""));
+    }
+

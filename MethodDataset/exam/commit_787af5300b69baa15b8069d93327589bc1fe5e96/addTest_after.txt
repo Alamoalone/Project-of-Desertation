@@ -1,0 +1,4 @@
+    public void addTest(TestDto dto) {
+        Exam exam = new Exam();
+        exam.setExamTitle(dto.getExamTitle());
+    }

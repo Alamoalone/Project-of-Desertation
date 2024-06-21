@@ -1,0 +1,30 @@
+    public void AddCartItem_InvalidQuantity_ReturnsBadRequest() {
+        // Login as a user
+        LoginDTO login = new LoginDTO("testuser", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+        assertNotNull(loginResponse.getBody());
+        String jwt = loginResponse.getBody().getJwt();
+        // Create a CartRegistrationDTO with an invalid quantity (e.g., a negative quantity)
+        CartRegistrationDTO invalidInput = new CartRegistrationDTO(1L, 90);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<CartRegistrationDTO> requestEntity = new HttpEntity<>(invalidInput, headers);
+        // Perform a POST request to add the cart item with the invalid quantity
+
+        ResponseEntity<CartResponseDTO> response = restTemplate.postForEntity(
+                "http://localhost:" + port + "/cart/add",
+                requestEntity,
+                CartResponseDTO.class
+        );
+        // Assert that the response has status code Bad Request (400) indicating that the quantity is invalid
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
+    }

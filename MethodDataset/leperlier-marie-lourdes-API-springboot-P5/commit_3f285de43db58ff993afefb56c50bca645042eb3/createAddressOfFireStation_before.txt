@@ -1,0 +1,14 @@
+	public ResponseEntity<?> createAddressOfFireStation(@Valid @RequestBody FireStation fireStation,
+			@PathVariable String stationNumber) {
+		FireStation fireStationCreated;
+		
+		try {
+			fireStationCreated = fireStationService.addAddressOfExistingFireStation(fireStation, stationNumber);
+			return ResponseEntity.status(HttpStatus.CREATED).body(fireStationCreated);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+
+		}
+
+	}

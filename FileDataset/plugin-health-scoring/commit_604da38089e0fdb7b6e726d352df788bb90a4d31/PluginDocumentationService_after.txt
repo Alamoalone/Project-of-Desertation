@@ -1,0 +1,21 @@
+    public Map<String, String> fetchPluginDocumentationUrl() {
+        try {
+            final Map<String, Link> documentationUrlsMap = objectMapper.readValue(
+                new URL(configuration.jenkins().documentationUrls()),
+                  new TypeReference<>() {
+                  }
+            );
+            return documentationUrlsMap.entrySet().stream()
+                .collect(Collectors.toMap(
+                    Map.Entry::getKey,
+                    e -> e.getValue() == null || e.getValue().url() == null ? "" : e.getValue().url()
+                ));
+        } catch (MalformedURLException e) {
+            LOGGER.error("URL to documentation link is incorrect.", e);
+            return Map.of();
+        } catch (IOException e) {
+            LOGGER.error("Could not fetch plugin documentation.", e);
+            return Map.of();
+        }
+    }
+

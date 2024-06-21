@@ -1,0 +1,110 @@
+{
+    "sha": "b49c4bbdc18bc458bc00bd232eac5df42e955a14",
+    "node_id": "C_kwDOEFnludoAKGI0OWM0YmJkYzE4YmM0NThiYzAwYmQyMzJlYWM1ZGY0MmU5NTVhMTQ",
+    "commit": {
+        "author": {
+            "name": "Reto",
+            "email": "reto.scheiwiller5@bluewin.ch",
+            "date": "2023-03-24T10:32:05Z"
+        },
+        "committer": {
+            "name": "Reto",
+            "email": "reto.scheiwiller5@bluewin.ch",
+            "date": "2023-03-24T10:32:05Z"
+        },
+        "message": "moved maven db dependencies from EMP to  CFW, fixed null pointer exception",
+        "tree": {
+            "sha": "c85ff652429e823571d56fbe9cde76ff9ef89b4e",
+            "url": "https://api.github.com/repos/xresch/CoreFramework/git/trees/c85ff652429e823571d56fbe9cde76ff9ef89b4e"
+        },
+        "url": "https://api.github.com/repos/xresch/CoreFramework/git/commits/b49c4bbdc18bc458bc00bd232eac5df42e955a14",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/xresch/CoreFramework/commits/b49c4bbdc18bc458bc00bd232eac5df42e955a14",
+    "html_url": "https://github.com/xresch/CoreFramework/commit/b49c4bbdc18bc458bc00bd232eac5df42e955a14",
+    "comments_url": "https://api.github.com/repos/xresch/CoreFramework/commits/b49c4bbdc18bc458bc00bd232eac5df42e955a14/comments",
+    "author": {
+        "login": "xresch",
+        "id": 29665964,
+        "node_id": "MDQ6VXNlcjI5NjY1OTY0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29665964?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xresch",
+        "html_url": "https://github.com/xresch",
+        "followers_url": "https://api.github.com/users/xresch/followers",
+        "following_url": "https://api.github.com/users/xresch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xresch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xresch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xresch/subscriptions",
+        "organizations_url": "https://api.github.com/users/xresch/orgs",
+        "repos_url": "https://api.github.com/users/xresch/repos",
+        "events_url": "https://api.github.com/users/xresch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xresch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "xresch",
+        "id": 29665964,
+        "node_id": "MDQ6VXNlcjI5NjY1OTY0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29665964?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xresch",
+        "html_url": "https://github.com/xresch",
+        "followers_url": "https://api.github.com/users/xresch/followers",
+        "following_url": "https://api.github.com/users/xresch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xresch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xresch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xresch/subscriptions",
+        "organizations_url": "https://api.github.com/users/xresch/orgs",
+        "repos_url": "https://api.github.com/users/xresch/repos",
+        "events_url": "https://api.github.com/users/xresch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xresch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "492d305fcaf56b6a0e43e5bc8084e0688dd8a303",
+            "url": "https://api.github.com/repos/xresch/CoreFramework/commits/492d305fcaf56b6a0e43e5bc8084e0688dd8a303",
+            "html_url": "https://github.com/xresch/CoreFramework/commit/492d305fcaf56b6a0e43e5bc8084e0688dd8a303"
+        }
+    ],
+    "stats": {
+        "total": 34,
+        "additions": 30,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "1e9c5007caacc875d52b5df0a6d6ce62c647b698",
+            "filename": "pom.xml",
+            "status": "modified",
+            "additions": 28,
+            "deletions": 2,
+            "changes": 30,
+            "blob_url": "https://github.com/xresch/CoreFramework/blob/b49c4bbdc18bc458bc00bd232eac5df42e955a14/pom.xml",
+            "raw_url": "https://github.com/xresch/CoreFramework/raw/b49c4bbdc18bc458bc00bd232eac5df42e955a14/pom.xml",
+            "contents_url": "https://api.github.com/repos/xresch/CoreFramework/contents/pom.xml?ref=b49c4bbdc18bc458bc00bd232eac5df42e955a14",
+            "patch": "@@ -18,7 +18,7 @@\n \n \t\t<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n \n-\t\t<jettyVersion>9.4.44.v20210927</jettyVersion>\n+\t\t<jettyVersion>9.4.51.v20230217</jettyVersion>\n \t\t<prometheusVersion>0.9.0</prometheusVersion>\n \t\t<luceneVersion>8.0.0</luceneVersion>\n \n@@ -249,7 +249,33 @@\n \t\t    <artifactId>js-scriptengine</artifactId>\n \t\t    <version>21.2.0</version>\n \t\t</dependency>\n-\t\t\t\t\n+\t\t\n+\t\t<!-- ========================================================================== -->\n+\t\t<!-- ======================= DB EXTENSION DEPENDENCIES ======================== -->\n+\t\t<!-- ========================================================================== -->\t\n+\t\t\n+\t\t<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->\n+\t\t<dependency>\n+\t\t\t<groupId>com.microsoft.sqlserver</groupId>\n+\t\t\t<artifactId>mssql-jdbc</artifactId>\n+\t\t\t<version>8.2.0.jre8</version>\n+\t\t</dependency>\n+\t\t\n+\t\t<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->\n+\t\t<dependency>\n+\t\t    <groupId>mysql</groupId>\n+\t\t    <artifactId>mysql-connector-java</artifactId>\n+\t\t    <version>8.0.23</version>\n+\t\t</dependency>\n+\t\t\n+\n+\t\t<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->\n+\t\t<dependency>\n+\t\t\t<groupId>com.oracle.database.jdbc</groupId>\n+\t\t\t<artifactId>ojdbc8</artifactId>\n+\t\t\t<version>19.6.0.0</version>\n+\t\t</dependency>\n+\t\t\n \n \t\t<!-- ========================================================================== -->\n \t\t<!-- ============================ SCOPE: TESTING ============================== -->"
+        },
+        {
+            "sha": "af351237063954212da0aeb3ac992fb14eeff6e1",
+            "filename": "src/main/java/com/xresch/cfw/features/usermgmt/CFWSessionData.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/xresch/CoreFramework/blob/b49c4bbdc18bc458bc00bd232eac5df42e955a14/src%2Fmain%2Fjava%2Fcom%2Fxresch%2Fcfw%2Ffeatures%2Fusermgmt%2FCFWSessionData.java",
+            "raw_url": "https://github.com/xresch/CoreFramework/raw/b49c4bbdc18bc458bc00bd232eac5df42e955a14/src%2Fmain%2Fjava%2Fcom%2Fxresch%2Fcfw%2Ffeatures%2Fusermgmt%2FCFWSessionData.java",
+            "contents_url": "https://api.github.com/repos/xresch/CoreFramework/contents/src%2Fmain%2Fjava%2Fcom%2Fxresch%2Fcfw%2Ffeatures%2Fusermgmt%2FCFWSessionData.java?ref=b49c4bbdc18bc458bc00bd232eac5df42e955a14",
+            "patch": "@@ -173,9 +173,9 @@ public void loadUserPermissions(int userID) {\n \t\t\tuser.id(userID);\n \t\t}\n \t\t// use putAll() to not clear the HashMaps which are cached in classes CFWDBUserRoleMap/CFWDBRolePermissionMap\n-\t\tthis.userRoles.clear();\n+\t\tthis.userRoles = new HashMap<>();\n \t\tthis.userRoles.putAll( CFW.DB.Users.selectRolesForUser(userID) );\n-\t\tthis.userPermissions.clear();\n+\t\tthis.userPermissions = new HashMap<>();\n \t\tthis.userPermissions.putAll( CFW.DB.Users.selectPermissionsForUser(userID) );\n \t\tloadMenu(true);\n \t}"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "206584e61737b3aa7dce6e82a2f224183bb232fb",
+    "node_id": "C_kwDOAATZv9oAKDIwNjU4NGU2MTczN2IzYWE3ZGNlNmU4MmEyZjIyNDE4M2JiMjMyZmI",
+    "commit": {
+        "author": {
+            "name": "Victor Galan",
+            "email": "victor.galan@liferay.com",
+            "date": "2023-06-13T08:13:05Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-06-14T02:38:25Z"
+        },
+        "message": "LPS-186997 Avoid null pointer exception",
+        "tree": {
+            "sha": "f10f43d8cc4355076364d6ef4058cab25aff3ef5",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/f10f43d8cc4355076364d6ef4058cab25aff3ef5"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/206584e61737b3aa7dce6e82a2f224183bb232fb",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgIcDjNlTxfRgpDVhEm9M0CmMGHg\n8lPcdZvrefGnr7hcIAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQDW2b6tG+I0d5nY6ldMQhp4bXT4RZm2nKJrW2QKy3QX0OqMBfZdONdrc4UCwO4+TWK\n0WZAcGsFxEytrURy3rqw4=\n-----END SSH SIGNATURE-----",
+            "payload": "tree f10f43d8cc4355076364d6ef4058cab25aff3ef5\nparent 9cc434256cef9d15367c7ef75c1475ccb310a833\nauthor Victor Galan <victor.galan@liferay.com> 1686643985 +0200\ncommitter Brian Chan <brian.chan@liferay.com> 1686710305 +0530\n\nLPS-186997 Avoid null pointer exception"
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/206584e61737b3aa7dce6e82a2f224183bb232fb",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/206584e61737b3aa7dce6e82a2f224183bb232fb",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/206584e61737b3aa7dce6e82a2f224183bb232fb/comments",
+    "author": {
+        "login": "victorg1991",
+        "id": 11654230,
+        "node_id": "MDQ6VXNlcjExNjU0MjMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11654230?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/victorg1991",
+        "html_url": "https://github.com/victorg1991",
+        "followers_url": "https://api.github.com/users/victorg1991/followers",
+        "following_url": "https://api.github.com/users/victorg1991/following{/other_user}",
+        "gists_url": "https://api.github.com/users/victorg1991/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/victorg1991/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/victorg1991/subscriptions",
+        "organizations_url": "https://api.github.com/users/victorg1991/orgs",
+        "repos_url": "https://api.github.com/users/victorg1991/repos",
+        "events_url": "https://api.github.com/users/victorg1991/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/victorg1991/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9cc434256cef9d15367c7ef75c1475ccb310a833",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/9cc434256cef9d15367c7ef75c1475ccb310a833",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/9cc434256cef9d15367c7ef75c1475ccb310a833"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "c641ef093e2da5e7217e21ac2af3de949532963b",
+            "filename": "modules/apps/layout/layout-impl/src/main/java/com/liferay/layout/internal/importer/structure/util/FragmentLayoutStructureItemImporter.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/206584e61737b3aa7dce6e82a2f224183bb232fb/modules%2Fapps%2Flayout%2Flayout-impl%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Finternal%2Fimporter%2Fstructure%2Futil%2FFragmentLayoutStructureItemImporter.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/206584e61737b3aa7dce6e82a2f224183bb232fb/modules%2Fapps%2Flayout%2Flayout-impl%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Finternal%2Fimporter%2Fstructure%2Futil%2FFragmentLayoutStructureItemImporter.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Flayout%2Flayout-impl%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Finternal%2Fimporter%2Fstructure%2Futil%2FFragmentLayoutStructureItemImporter.java?ref=206584e61737b3aa7dce6e82a2f224183bb232fb",
+            "patch": "@@ -928,6 +928,10 @@ private JSONObject _toBackgroundImageFragmentEntryProcessorJSONObject(\n \t\tLayoutStructureItemImporterContext layoutStructureItemImporterContext,\n \t\tList<Object> fragmentFields) {\n \n+\t\tif (fragmentFields == null) {\n+\t\t\treturn _jsonFactory.createJSONObject();\n+\t\t}\n+\n \t\tJSONObject backgroundImageFragmentEntryProcessorValuesJSONObject =\n \t\t\t_jsonFactory.createJSONObject();\n "
+        }
+    ]
+}

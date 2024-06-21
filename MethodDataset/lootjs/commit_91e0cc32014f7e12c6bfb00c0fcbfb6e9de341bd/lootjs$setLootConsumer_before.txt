@@ -1,0 +1,3 @@
+    public void lootjs$setLootConsumer(LootConsumer consumer) {
+        lootjs$lootConsumer = consumer;
+    }

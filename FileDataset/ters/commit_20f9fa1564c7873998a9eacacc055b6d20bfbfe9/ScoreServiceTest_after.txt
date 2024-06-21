@@ -1,0 +1,10 @@
+  public void testMergeOneOfTheScoresContainsMissingTeam() {
+    Executable exec = () -> scoreService.merge(Map.of(Team.A, 3), Map.of());
+    assertThrows(NullPointerException.class, exec);
+  }
+
+  public void testMergeTwoEmptyScores() {
+    Executable exec = () -> scoreService.merge(Map.of(), Map.of());
+    assertThrows(NullPointerException.class, exec);
+  }
+

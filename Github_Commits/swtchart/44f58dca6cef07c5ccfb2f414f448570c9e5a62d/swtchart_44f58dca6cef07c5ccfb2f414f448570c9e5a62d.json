@@ -1,0 +1,98 @@
+{
+    "sha": "44f58dca6cef07c5ccfb2f414f448570c9e5a62d",
+    "node_id": "C_kwDOCYJGS9oAKDQ0ZjU4ZGNhNmNlZjA3YzVjY2ZiMmY0MTRmNDQ4NTcwYzllNWE2MmQ",
+    "commit": {
+        "author": {
+            "name": "Matthias Mailänder",
+            "email": "matthias.mailaender@lablicate.com",
+            "date": "2023-01-12T13:26:28Z"
+        },
+        "committer": {
+            "name": "Matthias Mailänder",
+            "email": "matthias.mailaender@lablicate.com",
+            "date": "2023-01-12T13:26:28Z"
+        },
+        "message": "Fix a null pointer exception when label is null.",
+        "tree": {
+            "sha": "d1d46836467509cb5cf185e182e4984571fd7737",
+            "url": "https://api.github.com/repos/eclipse/swtchart/git/trees/d1d46836467509cb5cf185e182e4984571fd7737"
+        },
+        "url": "https://api.github.com/repos/eclipse/swtchart/git/commits/44f58dca6cef07c5ccfb2f414f448570c9e5a62d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/eclipse/swtchart/commits/44f58dca6cef07c5ccfb2f414f448570c9e5a62d",
+    "html_url": "https://github.com/eclipse/swtchart/commit/44f58dca6cef07c5ccfb2f414f448570c9e5a62d",
+    "comments_url": "https://api.github.com/repos/eclipse/swtchart/commits/44f58dca6cef07c5ccfb2f414f448570c9e5a62d/comments",
+    "author": {
+        "login": "Mailaender",
+        "id": 756669,
+        "node_id": "MDQ6VXNlcjc1NjY2OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/756669?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mailaender",
+        "html_url": "https://github.com/Mailaender",
+        "followers_url": "https://api.github.com/users/Mailaender/followers",
+        "following_url": "https://api.github.com/users/Mailaender/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mailaender/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mailaender/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mailaender/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mailaender/orgs",
+        "repos_url": "https://api.github.com/users/Mailaender/repos",
+        "events_url": "https://api.github.com/users/Mailaender/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mailaender/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Mailaender",
+        "id": 756669,
+        "node_id": "MDQ6VXNlcjc1NjY2OQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/756669?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mailaender",
+        "html_url": "https://github.com/Mailaender",
+        "followers_url": "https://api.github.com/users/Mailaender/followers",
+        "following_url": "https://api.github.com/users/Mailaender/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mailaender/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mailaender/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mailaender/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mailaender/orgs",
+        "repos_url": "https://api.github.com/users/Mailaender/repos",
+        "events_url": "https://api.github.com/users/Mailaender/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mailaender/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a87353079da15758369903fb8e9d39c5e4e8dd3e",
+            "url": "https://api.github.com/repos/eclipse/swtchart/commits/a87353079da15758369903fb8e9d39c5e4e8dd3e",
+            "html_url": "https://github.com/eclipse/swtchart/commit/a87353079da15758369903fb8e9d39c5e4e8dd3e"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 5,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "c1dccb3184d0d3ea46e78177abe9edc08ad7464f",
+            "filename": "org.eclipse.swtchart.extensions/src/org/eclipse/swtchart/extensions/internal/marker/SeriesLabelMarker.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 3,
+            "changes": 8,
+            "blob_url": "https://github.com/eclipse/swtchart/blob/44f58dca6cef07c5ccfb2f414f448570c9e5a62d/org.eclipse.swtchart.extensions%2Fsrc%2Forg%2Feclipse%2Fswtchart%2Fextensions%2Finternal%2Fmarker%2FSeriesLabelMarker.java",
+            "raw_url": "https://github.com/eclipse/swtchart/raw/44f58dca6cef07c5ccfb2f414f448570c9e5a62d/org.eclipse.swtchart.extensions%2Fsrc%2Forg%2Feclipse%2Fswtchart%2Fextensions%2Finternal%2Fmarker%2FSeriesLabelMarker.java",
+            "contents_url": "https://api.github.com/repos/eclipse/swtchart/contents/org.eclipse.swtchart.extensions%2Fsrc%2Forg%2Feclipse%2Fswtchart%2Fextensions%2Finternal%2Fmarker%2FSeriesLabelMarker.java?ref=44f58dca6cef07c5ccfb2f414f448570c9e5a62d",
+            "patch": "@@ -1,5 +1,5 @@\n /*******************************************************************************\n- * Copyright (c) 2017, 2022 Lablicate GmbH.\n+ * Copyright (c) 2017, 2023 Lablicate GmbH.\n  *\n  * This program and the accompanying materials are made\n  * available under the terms of the Eclipse Public License 2.0\n@@ -61,8 +61,10 @@ public void paintControl(PaintEvent e) {\n \t\t\t\t\te.gc.setForeground(getForegroundColor());\n \t\t\t\t\tfor(int i = 0; i < serie.getXSeries().length; i++) {\n \t\t\t\t\t\tPoint point = serie.getPixelCoordinates(i);\n-\t\t\t\t\t\tPoint labelSize = e.gc.textExtent(label);\n-\t\t\t\t\t\te.gc.drawText(label, (int)(point.x - labelSize.x / 2.0d), (int)(point.y - labelSize.y - symbolSize / 2.0d), true);\n+\t\t\t\t\t\tif(label != null) {\n+\t\t\t\t\t\t\tPoint labelSize = e.gc.textExtent(label);\n+\t\t\t\t\t\t\te.gc.drawText(label, (int)(point.x - labelSize.x / 2.0d), (int)(point.y - labelSize.y - symbolSize / 2.0d), true);\n+\t\t\t\t\t\t}\n \t\t\t\t\t}\n \t\t\t\t}\n \t\t\t}"
+        }
+    ]
+}

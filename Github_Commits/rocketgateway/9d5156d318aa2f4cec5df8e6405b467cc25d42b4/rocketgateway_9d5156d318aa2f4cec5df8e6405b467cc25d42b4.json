@@ -1,0 +1,98 @@
+{
+    "sha": "9d5156d318aa2f4cec5df8e6405b467cc25d42b4",
+    "node_id": "C_kwDOGQw2F9oAKDlkNTE1NmQzMThhYTJmNGNlYzVkZjhlNjQwNWI0NjdjYzI1ZDQyYjQ",
+    "commit": {
+        "author": {
+            "name": "Stefan Glasenhardt",
+            "email": "stefan@glasen-hardt.de",
+            "date": "2023-11-17T07:13:06Z"
+        },
+        "committer": {
+            "name": "Stefan Glasenhardt",
+            "email": "stefan@glasen-hardt.de",
+            "date": "2023-11-17T07:13:06Z"
+        },
+        "message": "Fixed a null-pointer-exception",
+        "tree": {
+            "sha": "d3dab769741a0b66aaecd2b7088b7d6f99781a3f",
+            "url": "https://api.github.com/repos/glasen/rocketgateway/git/trees/d3dab769741a0b66aaecd2b7088b7d6f99781a3f"
+        },
+        "url": "https://api.github.com/repos/glasen/rocketgateway/git/commits/9d5156d318aa2f4cec5df8e6405b467cc25d42b4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/glasen/rocketgateway/commits/9d5156d318aa2f4cec5df8e6405b467cc25d42b4",
+    "html_url": "https://github.com/glasen/rocketgateway/commit/9d5156d318aa2f4cec5df8e6405b467cc25d42b4",
+    "comments_url": "https://api.github.com/repos/glasen/rocketgateway/commits/9d5156d318aa2f4cec5df8e6405b467cc25d42b4/comments",
+    "author": {
+        "login": "glasen",
+        "id": 1146471,
+        "node_id": "MDQ6VXNlcjExNDY0NzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1146471?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glasen",
+        "html_url": "https://github.com/glasen",
+        "followers_url": "https://api.github.com/users/glasen/followers",
+        "following_url": "https://api.github.com/users/glasen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glasen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glasen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glasen/subscriptions",
+        "organizations_url": "https://api.github.com/users/glasen/orgs",
+        "repos_url": "https://api.github.com/users/glasen/repos",
+        "events_url": "https://api.github.com/users/glasen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glasen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "glasen",
+        "id": 1146471,
+        "node_id": "MDQ6VXNlcjExNDY0NzE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1146471?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/glasen",
+        "html_url": "https://github.com/glasen",
+        "followers_url": "https://api.github.com/users/glasen/followers",
+        "following_url": "https://api.github.com/users/glasen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/glasen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/glasen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/glasen/subscriptions",
+        "organizations_url": "https://api.github.com/users/glasen/orgs",
+        "repos_url": "https://api.github.com/users/glasen/repos",
+        "events_url": "https://api.github.com/users/glasen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/glasen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fa501e0067ce98126cc1d89555c3a7f3113ce3a8",
+            "url": "https://api.github.com/repos/glasen/rocketgateway/commits/fa501e0067ce98126cc1d89555c3a7f3113ce3a8",
+            "html_url": "https://github.com/glasen/rocketgateway/commit/fa501e0067ce98126cc1d89555c3a7f3113ce3a8"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 9,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "34bcad4d5a8491a29c5edb3085fef12d6a25d477",
+            "filename": "src/main/java/rocketgateway/rocketchat/RocketChatAPI.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 1,
+            "changes": 10,
+            "blob_url": "https://github.com/glasen/rocketgateway/blob/9d5156d318aa2f4cec5df8e6405b467cc25d42b4/src%2Fmain%2Fjava%2Frocketgateway%2Frocketchat%2FRocketChatAPI.java",
+            "raw_url": "https://github.com/glasen/rocketgateway/raw/9d5156d318aa2f4cec5df8e6405b467cc25d42b4/src%2Fmain%2Fjava%2Frocketgateway%2Frocketchat%2FRocketChatAPI.java",
+            "contents_url": "https://api.github.com/repos/glasen/rocketgateway/contents/src%2Fmain%2Fjava%2Frocketgateway%2Frocketchat%2FRocketChatAPI.java?ref=9d5156d318aa2f4cec5df8e6405b467cc25d42b4",
+            "patch": "@@ -3,6 +3,7 @@\n import com.google.gson.JsonArray;\n import com.google.gson.JsonElement;\n import com.google.gson.JsonObject;\n+import com.google.gson.JsonPrimitive;\n \n import java.io.IOException;\n import java.util.HashMap;\n@@ -303,7 +304,14 @@ public void getUsers() {\n                 for (JsonElement user : users) {\n                     if (user.isJsonObject()) {\n                         JsonObject userJson = user.getAsJsonObject();\n-                        String username = userJson.get(\"username\").getAsString();\n+                        String username = Optional.ofNullable(userJson.get(\"username\"))\n+                                .orElse(new JsonPrimitive(\"\"))\n+                                .getAsString();\n+\n+                        if (username.isEmpty()) {\n+                            continue;\n+                        }\n+\n                         String id = userJson.get(\"_id\").getAsString();\n                         channelMap.put(username, id);\n "
+        }
+    ]
+}

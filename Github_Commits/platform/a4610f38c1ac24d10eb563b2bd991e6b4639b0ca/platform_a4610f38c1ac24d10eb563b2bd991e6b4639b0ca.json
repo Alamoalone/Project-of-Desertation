@@ -1,0 +1,98 @@
+{
+    "sha": "a4610f38c1ac24d10eb563b2bd991e6b4639b0ca",
+    "node_id": "C_kwDOF2oqhtoAKGE0NjEwZjM4YzFhYzI0ZDEwZWI1NjNiMmJkOTkxZTZiNDYzOWIwY2E",
+    "commit": {
+        "author": {
+            "name": "Eduardo Velasques",
+            "email": "eduveks@gmail.com",
+            "date": "2023-11-05T00:08:15Z"
+        },
+        "committer": {
+            "name": "Eduardo Velasques",
+            "email": "eduveks@gmail.com",
+            "date": "2023-11-05T00:08:15Z"
+        },
+        "message": "Tritao: WebSocket resource avoids null pointer exception on getting all session endpoints.",
+        "tree": {
+            "sha": "b6b0e70c99a0e7119454119cbfda3f3d9150da81",
+            "url": "https://api.github.com/repos/netuno-org/platform/git/trees/b6b0e70c99a0e7119454119cbfda3f3d9150da81"
+        },
+        "url": "https://api.github.com/repos/netuno-org/platform/git/commits/a4610f38c1ac24d10eb563b2bd991e6b4639b0ca",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/netuno-org/platform/commits/a4610f38c1ac24d10eb563b2bd991e6b4639b0ca",
+    "html_url": "https://github.com/netuno-org/platform/commit/a4610f38c1ac24d10eb563b2bd991e6b4639b0ca",
+    "comments_url": "https://api.github.com/repos/netuno-org/platform/commits/a4610f38c1ac24d10eb563b2bd991e6b4639b0ca/comments",
+    "author": {
+        "login": "eduveks",
+        "id": 5670920,
+        "node_id": "MDQ6VXNlcjU2NzA5MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5670920?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eduveks",
+        "html_url": "https://github.com/eduveks",
+        "followers_url": "https://api.github.com/users/eduveks/followers",
+        "following_url": "https://api.github.com/users/eduveks/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eduveks/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eduveks/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eduveks/subscriptions",
+        "organizations_url": "https://api.github.com/users/eduveks/orgs",
+        "repos_url": "https://api.github.com/users/eduveks/repos",
+        "events_url": "https://api.github.com/users/eduveks/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eduveks/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "eduveks",
+        "id": 5670920,
+        "node_id": "MDQ6VXNlcjU2NzA5MjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/5670920?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/eduveks",
+        "html_url": "https://github.com/eduveks",
+        "followers_url": "https://api.github.com/users/eduveks/followers",
+        "following_url": "https://api.github.com/users/eduveks/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eduveks/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/eduveks/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eduveks/subscriptions",
+        "organizations_url": "https://api.github.com/users/eduveks/orgs",
+        "repos_url": "https://api.github.com/users/eduveks/repos",
+        "events_url": "https://api.github.com/users/eduveks/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/eduveks/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "74b536d4a0cbacc9c4f97d695933e09b2b42b876",
+            "url": "https://api.github.com/repos/netuno-org/platform/commits/74b536d4a0cbacc9c4f97d695933e09b2b42b876",
+            "html_url": "https://github.com/netuno-org/platform/commit/74b536d4a0cbacc9c4f97d695933e09b2b42b876"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 4,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "2417a9855cc0898847e36ed2dd1d236899449332",
+            "filename": "netuno.tritao/src/main/java/org/netuno/tritao/resource/WS.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 3,
+            "changes": 7,
+            "blob_url": "https://github.com/netuno-org/platform/blob/a4610f38c1ac24d10eb563b2bd991e6b4639b0ca/netuno.tritao%2Fsrc%2Fmain%2Fjava%2Forg%2Fnetuno%2Ftritao%2Fresource%2FWS.java",
+            "raw_url": "https://github.com/netuno-org/platform/raw/a4610f38c1ac24d10eb563b2bd991e6b4639b0ca/netuno.tritao%2Fsrc%2Fmain%2Fjava%2Forg%2Fnetuno%2Ftritao%2Fresource%2FWS.java",
+            "contents_url": "https://api.github.com/repos/netuno-org/platform/contents/netuno.tritao%2Fsrc%2Fmain%2Fjava%2Forg%2Fnetuno%2Ftritao%2Fresource%2FWS.java?ref=a4610f38c1ac24d10eb563b2bd991e6b4639b0ca",
+            "patch": "@@ -304,9 +304,10 @@ public Values allSessionsEndpoints() {\n     \n     public Values getAllSessionsEndpoints() {\n         try {\n-            return (Values)Class.forName(\"org.netuno.cli.ws.WSEndpoint\")\n-                    .getMethod(\"getEndpointSessions\", String.class)\n-                    .invoke(null, app);\n+            Values sessionsEndPoints = (Values)Class.forName(\"org.netuno.cli.ws.WSEndpoint\")\n+                .getMethod(\"getEndpointSessions\", String.class)\n+                .invoke(null, app);\n+            return sessionsEndPoints == null ? new Values() : sessionsEndPoints;\n         } catch (Exception e) {\n             throw new ResourceException(\"ws.getAllSessions()\", e);\n         }"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+    public SymPair visit(FormalParameterRest n, TypeEnv argu) {
+        return n.f1.accept(this, argu);
+    }
+

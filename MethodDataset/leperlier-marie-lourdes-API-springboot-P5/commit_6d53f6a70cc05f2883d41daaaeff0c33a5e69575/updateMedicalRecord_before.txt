@@ -1,0 +1,13 @@
+    public MedicalRecord updateMedicalRecord (String id, MedicalRecord updatedMedicalRecord) {
+       // log.debug("Updating medical record for: {}", firstName + " " + lastName);
+        return medicalRecords.stream()
+                .filter(medicalRecord -> medicalRecord.getId().equals(id))
+                .findFirst()
+                .map(existingMedicalRecord -> {
+                    existingMedicalRecord.setBirthdate(updatedMedicalRecord.getBirthdate());
+                    existingMedicalRecord.setMedications(updatedMedicalRecord.getMedications());
+                    existingMedicalRecord.setAllergies(updatedMedicalRecord.getAllergies());
+                    return existingMedicalRecord;
+                })
+                .orElse(null);
+    }

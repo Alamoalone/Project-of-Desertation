@@ -1,0 +1,11 @@
+    private static String getString(String key) {
+
+        try {
+            log2.debug(MessageFormat.format("PayoneerV4Config value retrieval for key = {0} ", key));
+            return ConfigManager.getInstance().getString("com.topcoder.web.tc.controller.PayoneerService", key);
+        } catch (UnknownNamespaceException e) {
+            log2.error("UnknownNamespaceException while trying to initialize PayoneerConfig singleton", e);
+            throw new RuntimeException(e);
+        }
+
+    }

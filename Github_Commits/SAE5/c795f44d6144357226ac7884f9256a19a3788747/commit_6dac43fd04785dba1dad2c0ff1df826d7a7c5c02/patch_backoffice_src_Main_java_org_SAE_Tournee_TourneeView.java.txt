@@ -1,0 +1,27 @@
+@@ -24,7 +24,7 @@ protected JPanel createListPanel(Tournee t) {
+ 		JPanel panel = new JPanel();
+ 		panel.setLayout(new GridLayout(1, 2));
+ 		JLabel label = new JLabel(t.toString());
+-		UButton editButton = new UButton("Modifier");
++		UButton editButton = new UButton("Détailler");
+ 		editButton.addActionListener(e -> {
+ 			displayView(true);
+ 			clear();
+@@ -48,6 +48,7 @@ protected JPanel createListPanel(Tournee t) {
+ 		panel.add(label);
+ 		panel.add(editButton);
+ 		panel.add(deleteButton);
++		panel.add(visualiserButton);
+ 		return panel;
+ 	}
+ 	@Override
+@@ -97,7 +98,8 @@ private JPanel getPanel(Tournee tournee) {
+ 		 nomField.setText(tournee.nom);
+ 		}
+ 		else {
+-			tournee = new Tournee(JourSemaine.Lundi, JourSemaine.Lundi, "", "", false);
++			tournee = new Tournee(JourSemaine.Lundi, JourSemaine.Lundi, "", "Rouge", false);
++			Tournee.create(tournee);
+ 		}
+ 		JLabel depotsLabel = new JLabel("Depots");
+ 		panel.add(depotsLabel);

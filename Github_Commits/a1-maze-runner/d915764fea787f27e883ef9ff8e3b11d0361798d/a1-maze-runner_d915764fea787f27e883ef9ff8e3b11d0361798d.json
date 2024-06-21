@@ -1,0 +1,98 @@
+{
+    "sha": "d915764fea787f27e883ef9ff8e3b11d0361798d",
+    "node_id": "C_kwDOLDwvhdoAKGQ5MTU3NjRmZWE3ODdmMjdlODgzZWY5ZmY4ZTNiMTFkMDM2MTc5OGQ",
+    "commit": {
+        "author": {
+            "name": "Varun Pathak",
+            "email": "varun11pathak@gmail.com",
+            "date": "2024-01-26T06:06:30Z"
+        },
+        "committer": {
+            "name": "Varun Pathak",
+            "email": "varun11pathak@gmail.com",
+            "date": "2024-01-26T06:06:30Z"
+        },
+        "message": "Fixed some issues with null pointer exceptions in path checker",
+        "tree": {
+            "sha": "902356d32cf548306b2cb6fceac8cfff51b8a1e8",
+            "url": "https://api.github.com/repos/v5run/a1-maze-runner/git/trees/902356d32cf548306b2cb6fceac8cfff51b8a1e8"
+        },
+        "url": "https://api.github.com/repos/v5run/a1-maze-runner/git/commits/d915764fea787f27e883ef9ff8e3b11d0361798d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/v5run/a1-maze-runner/commits/d915764fea787f27e883ef9ff8e3b11d0361798d",
+    "html_url": "https://github.com/v5run/a1-maze-runner/commit/d915764fea787f27e883ef9ff8e3b11d0361798d",
+    "comments_url": "https://api.github.com/repos/v5run/a1-maze-runner/commits/d915764fea787f27e883ef9ff8e3b11d0361798d/comments",
+    "author": {
+        "login": "v5run",
+        "id": 155014316,
+        "node_id": "U_kgDOCT1UrA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/155014316?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/v5run",
+        "html_url": "https://github.com/v5run",
+        "followers_url": "https://api.github.com/users/v5run/followers",
+        "following_url": "https://api.github.com/users/v5run/following{/other_user}",
+        "gists_url": "https://api.github.com/users/v5run/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/v5run/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/v5run/subscriptions",
+        "organizations_url": "https://api.github.com/users/v5run/orgs",
+        "repos_url": "https://api.github.com/users/v5run/repos",
+        "events_url": "https://api.github.com/users/v5run/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/v5run/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "v5run",
+        "id": 155014316,
+        "node_id": "U_kgDOCT1UrA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/155014316?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/v5run",
+        "html_url": "https://github.com/v5run",
+        "followers_url": "https://api.github.com/users/v5run/followers",
+        "following_url": "https://api.github.com/users/v5run/following{/other_user}",
+        "gists_url": "https://api.github.com/users/v5run/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/v5run/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/v5run/subscriptions",
+        "organizations_url": "https://api.github.com/users/v5run/orgs",
+        "repos_url": "https://api.github.com/users/v5run/repos",
+        "events_url": "https://api.github.com/users/v5run/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/v5run/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "83da8b02341d8057161927a4f03e8e707f1ea148",
+            "url": "https://api.github.com/repos/v5run/a1-maze-runner/commits/83da8b02341d8057161927a4f03e8e707f1ea148",
+            "html_url": "https://github.com/v5run/a1-maze-runner/commit/83da8b02341d8057161927a4f03e8e707f1ea148"
+        }
+    ],
+    "stats": {
+        "total": 24,
+        "additions": 17,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "fc77a158020a209f6f93014cef4ff64874a66add",
+            "filename": "src/main/java/ca/mcmaster/se2aa4/mazerunner/Path.java",
+            "status": "modified",
+            "additions": 17,
+            "deletions": 7,
+            "changes": 24,
+            "blob_url": "https://github.com/v5run/a1-maze-runner/blob/d915764fea787f27e883ef9ff8e3b11d0361798d/src%2Fmain%2Fjava%2Fca%2Fmcmaster%2Fse2aa4%2Fmazerunner%2FPath.java",
+            "raw_url": "https://github.com/v5run/a1-maze-runner/raw/d915764fea787f27e883ef9ff8e3b11d0361798d/src%2Fmain%2Fjava%2Fca%2Fmcmaster%2Fse2aa4%2Fmazerunner%2FPath.java",
+            "contents_url": "https://api.github.com/repos/v5run/a1-maze-runner/contents/src%2Fmain%2Fjava%2Fca%2Fmcmaster%2Fse2aa4%2Fmazerunner%2FPath.java?ref=d915764fea787f27e883ef9ff8e3b11d0361798d",
+            "patch": "@@ -1,9 +1,12 @@\n-//package main.java.ca.mcmaster.se2aa4.mazerunner;\r\n package ca.mcmaster.se2aa4.mazerunner;\r\n import java.io.IOException;\r\n+import org.apache.logging.log4j.LogManager;\r\n+import org.apache.logging.log4j.Logger;\r\n \r\n public class Path {\r\n \r\n+    private static final Logger logger = LogManager.getLogger();\r\n+\r\n     public String user_path;\r\n     private String[] can_path; //CREATE A METHOD TO TURN CMD LINE ARGUMENTS INTO CANONICAL PATH\r\n     public Maze maze;\r\n@@ -16,6 +19,7 @@ public class Path {\n     public Path(String path, Maze maze){\r\n \r\n         this.user_path = path;\r\n+        this.can_path = path.split(\"\");\r\n         this.maze = maze; // calls the string version of the matrix\r\n     }\r\n \r\n@@ -31,7 +35,9 @@ public void status() {\n             // from East -> West, go through eastern entry and end at western entry\r\n             status_east = isPathValid(\"WEST\", maze.getEEast(), maze.getEWest());\r\n             \r\n-            //if (status_east); \r\n+            if (status_east){System.out.println(\"**** Path works from East to West\");}\r\n+            else{System.out.println(\"**** Path failed: East to West\");}\r\n+\r\n         } catch(IndexOutOfBoundsException e){\r\n             //logger.info(\"/!\\\\No -p arguments given/!\\\\\");\r\n             System.out.println(\"Error: East to West path does not work.\");\r\n@@ -42,7 +48,9 @@ public void status() {\n             status_west = isPathValid(\"EAST\", maze.getEWest(), maze.getEEast());\r\n             \r\n         \r\n-            //if (status_west){}\r\n+            if (status_west){System.out.println(\"**** Path works from: West to East\");}\r\n+            else{System.out.println(\"**** Path failed: West to East\");}\r\n+\r\n         } catch(IndexOutOfBoundsException e){\r\n             System.out.println(\"Error: West to East path does not work.\");\r\n         }\r\n@@ -57,11 +65,13 @@ public boolean isPathValid(String d, int[] entry, int[] exit) throws IndexOutOfB\n         //              [x, y] location\r\n         int[] current = start;\r\n \r\n+        logger.info(\"**** Computing provided path\");\r\n+\r\n         for (int i=0; i<can_path.length; i++){\r\n \r\n             if (direction.equals(\"EAST\")){\r\n                 if (can_path[i].equals(\"F\")){\r\n-                    if ((maze.string_matrix)[current[0]][current[1]+1]==\"PASS\"){\r\n+                    if ((\"PASS\").equals((maze.string_matrix)[current[0]][current[1]+1])){\r\n                         current[1] += 1;\r\n                     }\r\n                     else{return false;}\r\n@@ -77,7 +87,7 @@ else if (can_path[i].equals(\"L\")){\n             }\r\n             else if (direction.equals(\"SOUTH\")){\r\n                 if (can_path[i].equals(\"F\")){\r\n-                    if ((maze.string_matrix)[current[0]+1][current[1]]==\"PASS\"){\r\n+                    if ((\"PASS\").equals((maze.string_matrix)[current[0]+1][current[1]])){\r\n                         current[0] += 1;\r\n                     }\r\n                     else{return false;}\r\n@@ -93,7 +103,7 @@ else if (can_path[i].equals(\"L\")){\n             }\r\n             else if (direction.equals(\"NORTH\")){\r\n                 if (can_path[i].equals(\"F\")){\r\n-                    if ((maze.string_matrix)[current[0]-1][current[1]]==\"PASS\"){\r\n+                    if ((\"PASS\").equals((maze.string_matrix)[current[0]-1][current[1]])){\r\n                         current[0] -= 1;\r\n                     }\r\n                     else{return false;}\r\n@@ -109,7 +119,7 @@ else if (can_path[i].equals(\"L\")){\n             }\r\n             else if (direction.equals(\"WEST\")){\r\n                 if (can_path[i].equals(\"F\")){\r\n-                    if ((maze.string_matrix)[current[0]][current[1]-1]==\"PASS\"){\r\n+                    if ((\"PASS\").equals((maze.string_matrix)[current[0]][current[1]-1])){\r\n                         current[1] -= 1;\r\n                     }\r\n                     else{return false;}\r"
+        }
+    ]
+}

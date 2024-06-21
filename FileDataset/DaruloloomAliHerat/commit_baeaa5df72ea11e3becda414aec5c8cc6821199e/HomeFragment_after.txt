@@ -1,0 +1,41 @@
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+       /* outState.putInt("media_player", MEDIA_PLAYER);
+        if (audioService.isPlaying()) {
+            outState.putInt("saveInt1", audioService.getCurrentPosition());
+            outState.putString("saveString1", "playing");
+        } else if (!audioService.isPlaying()) {
+            outState.putString("saveString1", "notPlaying");
+            if (MEDIA_PLAYER > 0) {
+                if (audioService.getCurrentPosition() > 0) {
+                    outState.putInt("saveInt1", audioService.getCurrentPosition());
+                }
+            }
+        }
+
+        ifAudioIsPlaying();*/
+
+    }
+
+    public void onResume() {
+        Intent intent = new Intent(getContext(), AudioService.class);
+        getActivity().bindService(intent, this, Context.BIND_AUTO_CREATE);
+        super.onResume();
+    }
+
+    public void onServiceConnected(ComponentName name, IBinder service) {
+        AudioService.MyBinder myBinder = (AudioService.MyBinder) service;
+        audioService = myBinder.getService();
+        audioService.setCallBack(this);
+    }
+
+    public void onPause() {
+        super.onPause();
+        getActivity().unbindService(this);
+    }
+
+    public void onServiceDisconnected(ComponentName name) {
+        audioService = null;
+    }
+

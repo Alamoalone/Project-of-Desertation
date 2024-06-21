@@ -1,0 +1,19 @@
+    private void displayResourcesAvailableToSearchFor(PlayerService playerService) {
+        System.out.println("Lista de Recursos:");
+
+        int index = 1;
+        List<ResourceType> availableResources = BuildingAndResourceAvailabilityPerLevel.getByLevel(playerService.getPlayer().getEraAge().getLevel()).getAvailableResources();
+        for(ResourceType ct : availableResources) {
+            System.out.printf("%d. %s\n", index, ct.getDescription());
+            index++;
+        }
+
+        int input = scanner.nextInt();
+        if(input < 1 || input > availableResources.size()) {
+            System.out.println(ApplicationConstants.MESSAGE_WRONG_OPTION_TRY_AGAIN);
+            return;
+        }
+        if(playerService.getWorkerAvailable() != null) {
+            playerService.sendWorkersToSearchJob(availableResources.get(input-1));
+        }
+    }

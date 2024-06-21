@@ -1,0 +1,3 @@
+map(CompanyAppointmentDocument companyAppointment, boolean registerView)
+mapDateOfBirth(Instant dob, Integer day)
+mapDateOfBirth(Instant dob, boolean registerView)

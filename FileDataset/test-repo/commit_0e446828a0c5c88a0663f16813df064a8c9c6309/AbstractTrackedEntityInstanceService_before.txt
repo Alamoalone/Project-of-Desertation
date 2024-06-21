@@ -1,0 +1,15 @@
+  private void assignFileResource(
+      TrackedEntityAttribute trackedEntityAttribute,
+      Attribute attribute,
+      String fileResourceOwner) {
+    if (trackedEntityAttribute.getValueType().isFile()) {
+      FileResource fileResource = fileResourceService.getFileResource(attribute.getValue());
+
+      if (!fileResource.isAssigned() || fileResource.getFileResourceOwner() == null) {
+        fileResource.setAssigned(true);
+        fileResource.setFileResourceOwner(fileResourceOwner);
+        fileResourceService.updateFileResource(fileResource);
+      }
+    }
+  }
+

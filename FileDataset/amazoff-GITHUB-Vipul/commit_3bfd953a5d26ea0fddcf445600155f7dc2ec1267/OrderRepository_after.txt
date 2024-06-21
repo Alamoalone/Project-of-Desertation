@@ -1,0 +1,21 @@
+
+
+    public Integer getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId) {
+        String[] temp = time.split(":");
+        int hr = Integer.parseInt(temp[0]);
+        int min = Integer.parseInt(temp[1]);
+        int total = (hr*60)+min;
+        Integer count = 0;
+        if(OrdersPerDeliveryPartner.containsKey(partnerId)){
+            List<String> or = OrdersPerDeliveryPartner.get(partnerId);
+            for(String x:or){
+                Order o = Orders.get(x);
+                if(o.getDeliveryTime()>total){
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+

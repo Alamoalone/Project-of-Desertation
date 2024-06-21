@@ -1,0 +1,14 @@
+    private static ExecCompoundAffectationOperation compound(CompoundAffectationOperation _anaNode, Forwards _forwards) {
+        StringList names_ = _anaNode.getResultClass().getNames();
+        ClassMethodIdMemberIdTypeFct fct_ = _anaNode.getFct();
+        ExecTypeFunction pair_ = FetchMemberUtil.fetchFunctionOpPair(fct_, _forwards);
+        if (pair_.getFct() != null) {
+            return new ExecCompoundAffectationExplicitCustOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(_anaNode.getOperatorContent()), new ExecStaticFctContent(new ExecStaticFctCommonContent("","",-1),new ExecStaticEltContent(fct_, _forwards)), pair_, names_, false);
+        }
+        String oper_ = _anaNode.getOperatorContent().getOper();
+        String op_ = oper_.substring(0, oper_.length() - 1);
+        if (StringExpUtil.isNullSafe(op_)) {
+            return new ExecCompoundAffectationStringOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(_anaNode.getOperatorContent()), names_,new ExecOperNull(_anaNode.getSymbol(),names_), false);
+        }
+        return new ExecCompoundAffectationStringOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(_anaNode.getOperatorContent()), names_,symbol(_anaNode), false);
+    }

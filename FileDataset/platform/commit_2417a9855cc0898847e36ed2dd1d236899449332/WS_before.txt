@@ -1,0 +1,10 @@
+    public Values getAllSessionsEndpoints() {
+        try {
+            return (Values)Class.forName("org.netuno.cli.ws.WSEndpoint")
+                    .getMethod("getEndpointSessions", String.class)
+                    .invoke(null, app);
+        } catch (Exception e) {
+            throw new ResourceException("ws.getAllSessions()", e);
+        }
+    }
+

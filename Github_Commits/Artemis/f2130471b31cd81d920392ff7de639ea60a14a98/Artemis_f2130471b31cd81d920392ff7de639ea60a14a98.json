@@ -1,0 +1,110 @@
+{
+    "sha": "f2130471b31cd81d920392ff7de639ea60a14a98",
+    "node_id": "C_kwDOBCVv29oAKGYyMTMwNDcxYjMxY2Q4MWQ5MjAzOTJmZjdkZTYzOWVhNjBhMTRhOTg",
+    "commit": {
+        "author": {
+            "name": "Mateus Messias Mendes",
+            "email": "120647937+mateusmm01@users.noreply.github.com",
+            "date": "2024-03-11T22:43:24Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-03-11T22:43:24Z"
+        },
+        "message": "Development: Fix null pointer exception when fetching student participation (#8178)",
+        "tree": {
+            "sha": "ef15a2e9bcd125ff933d7213de8b3cb91d7a118f",
+            "url": "https://api.github.com/repos/ls1intum/Artemis/git/trees/ef15a2e9bcd125ff933d7213de8b3cb91d7a118f"
+        },
+        "url": "https://api.github.com/repos/ls1intum/Artemis/git/commits/f2130471b31cd81d920392ff7de639ea60a14a98",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJl74kMCRC1aQ7uu5UhlAAAFyUQAKscPSWjornOir3t+GG9AEpp\nuUA+43GzdvzvCK1p3yYANcuwBUP5ScZoZodRYYqg36VG47Nwexu1CtdE35/08Bej\njOqsHcAiSRzrLkVCZkCZ7/rZRpbYeWBaYzMx9y5iJsjtcQK1nwncjAE4qnw5hB7A\nHvVtgRSDTBoBla+iaCA524E4L2RqZc6k+/RW1f3rbbBc1IuoJB6JG/gtUOQK9OjO\nR46NJCvmbPeDAe5X8kjvSN0SYlC659GH7VOoUjIO2F3v56jj7z60aLX5t2QSbak4\n1myZupr2/sKBL/xRzq+FZQNYqNNDWtDm7hU+OlJIxy6z0t/UV2usMMGw/72hKAwx\nqG3yyXe8C4+fUyqSqMWjEGMINaQiAcH2N6NCSE8W+Vbbf5enx1IoPo5VUKauzwkw\nhlSyEMZglJQlYdFVIi5vmBkhk8DfPbbEpmL0vrwtrlQqzd2y9ts4rA0IeHPg2VbG\nLb1Q/h8WfCWKRRvsOdBWTTHhn4h8Xs3/L6MMTs6k9tbaPmO5FHQs+lRXzauwB19P\nZDyHMxEnkh8xIM5ytdqji6Loutvwh/CaoLXgl9zGiwHigKPpYcgMIb++YmfB5PIw\nEPvIZOoeh5uglclRrFLvECuwNCuwKCNRbSLs4aNtvVoK3eGfCrHcwawgCmMwM9Z0\n8pWprpN95/mYDJ6pz/AU\n=4Jk2\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree ef15a2e9bcd125ff933d7213de8b3cb91d7a118f\nparent 9ae4ac2ac226d2786dead01c31dde109370919ff\nauthor Mateus Messias Mendes <120647937+mateusmm01@users.noreply.github.com> 1710197004 +0100\ncommitter GitHub <noreply@github.com> 1710197004 +0100\n\nDevelopment: Fix null pointer exception when fetching student participation (#8178)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/ls1intum/Artemis/commits/f2130471b31cd81d920392ff7de639ea60a14a98",
+    "html_url": "https://github.com/ls1intum/Artemis/commit/f2130471b31cd81d920392ff7de639ea60a14a98",
+    "comments_url": "https://api.github.com/repos/ls1intum/Artemis/commits/f2130471b31cd81d920392ff7de639ea60a14a98/comments",
+    "author": {
+        "login": "mateusmm01",
+        "id": 120647937,
+        "node_id": "U_kgDOBzDxAQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/120647937?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mateusmm01",
+        "html_url": "https://github.com/mateusmm01",
+        "followers_url": "https://api.github.com/users/mateusmm01/followers",
+        "following_url": "https://api.github.com/users/mateusmm01/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mateusmm01/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mateusmm01/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mateusmm01/subscriptions",
+        "organizations_url": "https://api.github.com/users/mateusmm01/orgs",
+        "repos_url": "https://api.github.com/users/mateusmm01/repos",
+        "events_url": "https://api.github.com/users/mateusmm01/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mateusmm01/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9ae4ac2ac226d2786dead01c31dde109370919ff",
+            "url": "https://api.github.com/repos/ls1intum/Artemis/commits/9ae4ac2ac226d2786dead01c31dde109370919ff",
+            "html_url": "https://github.com/ls1intum/Artemis/commit/9ae4ac2ac226d2786dead01c31dde109370919ff"
+        }
+    ],
+    "stats": {
+        "total": 58,
+        "additions": 40,
+        "deletions": 18
+    },
+    "files": [
+        {
+            "sha": "55a6bd04269e71eedd16953710d6487b59e294d0",
+            "filename": "src/main/java/de/tum/in/www1/artemis/web/rest/ProgrammingExerciseParticipationResource.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 4,
+            "changes": 11,
+            "blob_url": "https://github.com/ls1intum/Artemis/blob/f2130471b31cd81d920392ff7de639ea60a14a98/src%2Fmain%2Fjava%2Fde%2Ftum%2Fin%2Fwww1%2Fartemis%2Fweb%2Frest%2FProgrammingExerciseParticipationResource.java",
+            "raw_url": "https://github.com/ls1intum/Artemis/raw/f2130471b31cd81d920392ff7de639ea60a14a98/src%2Fmain%2Fjava%2Fde%2Ftum%2Fin%2Fwww1%2Fartemis%2Fweb%2Frest%2FProgrammingExerciseParticipationResource.java",
+            "contents_url": "https://api.github.com/repos/ls1intum/Artemis/contents/src%2Fmain%2Fjava%2Fde%2Ftum%2Fin%2Fwww1%2Fartemis%2Fweb%2Frest%2FProgrammingExerciseParticipationResource.java?ref=f2130471b31cd81d920392ff7de639ea60a14a98",
+            "patch": "@@ -313,10 +313,13 @@ public ModelAndView redirectGetParticipationRepositoryFilesForCommitsDetailsView\n      */\n     private void hasAccessToParticipationElseThrow(ProgrammingExerciseStudentParticipation participation) {\n         participationAuthCheckService.checkCanAccessParticipationElseThrow(participation);\n-        boolean exerciseHasStarted = participation.getExercise().getParticipationStartDate().isBefore(ZonedDateTime.now());\n-        boolean isStudent = authCheckService.isOnlyStudentInCourse(participation.getExercise().getCourseViaExerciseGroupOrCourseMember(), null);\n-        if (!exerciseHasStarted && isStudent) {\n-            throw new AccessForbiddenException(\"Participation not yet started\");\n+        ZonedDateTime exerciseStartDate = participation.getExercise().getParticipationStartDate();\n+        if (exerciseStartDate != null) {\n+            boolean isStudent = authCheckService.isOnlyStudentInCourse(participation.getExercise().getCourseViaExerciseGroupOrCourseMember(), null);\n+            boolean exerciseNotStarted = exerciseStartDate.isAfter(ZonedDateTime.now());\n+            if (isStudent && exerciseNotStarted) {\n+                throw new AccessForbiddenException(\"Participation not yet started\");\n+            }\n         }\n     }\n "
+        },
+        {
+            "sha": "15af8591969222892b525047732913aa035bef4e",
+            "filename": "src/test/java/de/tum/in/www1/artemis/exercise/programmingexercise/ProgrammingExerciseParticipationIntegrationTest.java",
+            "status": "modified",
+            "additions": 33,
+            "deletions": 14,
+            "changes": 47,
+            "blob_url": "https://github.com/ls1intum/Artemis/blob/f2130471b31cd81d920392ff7de639ea60a14a98/src%2Ftest%2Fjava%2Fde%2Ftum%2Fin%2Fwww1%2Fartemis%2Fexercise%2Fprogrammingexercise%2FProgrammingExerciseParticipationIntegrationTest.java",
+            "raw_url": "https://github.com/ls1intum/Artemis/raw/f2130471b31cd81d920392ff7de639ea60a14a98/src%2Ftest%2Fjava%2Fde%2Ftum%2Fin%2Fwww1%2Fartemis%2Fexercise%2Fprogrammingexercise%2FProgrammingExerciseParticipationIntegrationTest.java",
+            "contents_url": "https://api.github.com/repos/ls1intum/Artemis/contents/src%2Ftest%2Fjava%2Fde%2Ftum%2Fin%2Fwww1%2Fartemis%2Fexercise%2Fprogrammingexercise%2FProgrammingExerciseParticipationIntegrationTest.java?ref=f2130471b31cd81d920392ff7de639ea60a14a98",
+            "patch": "@@ -84,31 +84,37 @@ void initTestCase() {\n \n     private static Stream<Arguments> argumentsForGetParticipationResults() {\n         ZonedDateTime startDate = ZonedDateTime.now().minusDays(3);\n+        ZonedDateTime releaseDate = ZonedDateTime.now().minusDays(4);\n         ZonedDateTime someDate = ZonedDateTime.now();\n         ZonedDateTime futureDate = ZonedDateTime.now().plusDays(3);\n         ZonedDateTime pastDate = ZonedDateTime.now().minusDays(1);\n         return Stream.of(\n                 // No assessmentType and no completionDate -> notFound\n-                Arguments.of(startDate, null, null, null, false),\n+                Arguments.of(null, null, null, null, null, false),\n                 // Automatic result is always returned\n-                Arguments.of(startDate, AssessmentType.AUTOMATIC, null, null, true), Arguments.of(startDate, AssessmentType.AUTOMATIC, someDate, null, true),\n-                Arguments.of(startDate, AssessmentType.AUTOMATIC, someDate, futureDate, true), Arguments.of(startDate, AssessmentType.AUTOMATIC, someDate, pastDate, true),\n-                Arguments.of(startDate, AssessmentType.AUTOMATIC, null, futureDate, true), Arguments.of(startDate, AssessmentType.AUTOMATIC, null, pastDate, true),\n+                Arguments.of(startDate, releaseDate, AssessmentType.AUTOMATIC, null, null, true),\n+                Arguments.of(startDate, releaseDate, AssessmentType.AUTOMATIC, someDate, null, true),\n+                Arguments.of(startDate, releaseDate, AssessmentType.AUTOMATIC, someDate, futureDate, true),\n+                Arguments.of(startDate, releaseDate, AssessmentType.AUTOMATIC, someDate, pastDate, true),\n+                Arguments.of(startDate, releaseDate, AssessmentType.AUTOMATIC, null, futureDate, true),\n+                Arguments.of(startDate, releaseDate, AssessmentType.AUTOMATIC, null, pastDate, true),\n                 // Manual result without completion date (assessment was only saved but no submitted) is not returned\n-                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, null, null, false), Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, null, futureDate, false),\n-                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, null, pastDate, false),\n+                Arguments.of(startDate, releaseDate, AssessmentType.SEMI_AUTOMATIC, null, null, false),\n+                Arguments.of(startDate, releaseDate, AssessmentType.SEMI_AUTOMATIC, null, futureDate, false),\n+                Arguments.of(startDate, releaseDate, AssessmentType.SEMI_AUTOMATIC, null, pastDate, false),\n                 // Manual result is not returned if completed and assessment due date has not passed\n-                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, someDate, futureDate, false),\n+                Arguments.of(startDate, releaseDate, AssessmentType.SEMI_AUTOMATIC, someDate, futureDate, false),\n                 // Manual result is returned if completed and assessmentDue date has passed\n-                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, someDate, pastDate, true));\n+                Arguments.of(startDate, releaseDate, AssessmentType.SEMI_AUTOMATIC, someDate, pastDate, true));\n     }\n \n     @ParameterizedTest(name = \"{displayName} [{index}] {argumentsWithNames}\")\n     @MethodSource(\"argumentsForGetParticipationResults\")\n     @WithMockUser(username = TEST_PREFIX + \"student1\", roles = \"USER\")\n-    void testGetParticipationWithLatestResultAsAStudent(ZonedDateTime startDate, AssessmentType assessmentType, ZonedDateTime completionDate, ZonedDateTime assessmentDueDate,\n-            boolean expectLastCreatedResult) throws Exception {\n+    void testGetParticipationWithLatestResultAsAStudent(ZonedDateTime startDate, ZonedDateTime releaseDate, AssessmentType assessmentType, ZonedDateTime completionDate,\n+            ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {\n         programmingExercise.setStartDate(startDate);\n+        programmingExercise.setReleaseDate(releaseDate);\n         programmingExercise.setAssessmentDueDate(assessmentDueDate);\n         programmingExerciseRepository.save(programmingExercise);\n         var result = addStudentParticipationWithResult(assessmentType, completionDate);\n@@ -127,9 +133,10 @@ void testGetParticipationWithLatestResultAsAStudent(ZonedDateTime startDate, Ass\n     @ParameterizedTest(name = \"{displayName} [{index}] {argumentsWithNames}\")\n     @MethodSource(\"argumentsForGetParticipationResults\")\n     @WithMockUser(username = TEST_PREFIX + \"student1\", roles = \"USER\")\n-    void testGetParticipationWithLatestResult_multipleResultsAvailable(ZonedDateTime startDate, AssessmentType assessmentType, ZonedDateTime completionDate,\n-            ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {\n+    void testGetParticipationWithLatestResult_multipleResultsAvailable(ZonedDateTime startDate, ZonedDateTime releaseDate, AssessmentType assessmentType,\n+            ZonedDateTime completionDate, ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {\n         programmingExercise.setStartDate(startDate);\n+        programmingExercise.setReleaseDate(releaseDate);\n         // Add an automatic result first\n         var firstResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);\n         programmingExercise.setAssessmentDueDate(assessmentDueDate);\n@@ -207,9 +214,10 @@ void testGetParticipationWithLatestResult_canAccessParticipationIfExerciseNotSta\n     @ParameterizedTest(name = \"{displayName} [{index}] {argumentsWithNames}\")\n     @MethodSource(\"argumentsForGetParticipationResults\")\n     @WithMockUser(username = TEST_PREFIX + \"student1\", roles = \"USER\")\n-    void testGetParticipationWithAllResults(ZonedDateTime startDate, AssessmentType assessmentType, ZonedDateTime completionDate, ZonedDateTime assessmentDueDate,\n-            boolean expectLastCreatedResult) throws Exception {\n+    void testGetParticipationWithAllResults(ZonedDateTime startDate, ZonedDateTime releaseDate, AssessmentType assessmentType, ZonedDateTime completionDate,\n+            ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {\n         programmingExercise.setStartDate(startDate);\n+        programmingExercise.setReleaseDate(releaseDate);\n         // Add an automatic result first\n         var firstResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);\n         programmingExercise.setAssessmentDueDate(assessmentDueDate);\n@@ -297,6 +305,17 @@ void testGetParticipationAllResults_studentCannotAccessParticipationIfExerciseNo\n         request.get(participationsBaseUrl + participation.getId() + \"/student-participation-with-all-results\", HttpStatus.FORBIDDEN, ProgrammingExerciseStudentParticipation.class);\n     }\n \n+    @Test\n+    @WithMockUser(username = TEST_PREFIX + \"student1\", roles = \"USER\")\n+    void testGetParticipationAllResults_studentCanAccessIfNoStartDateSet() throws Exception {\n+        programmingExercise.setStartDate(null);\n+        programmingExercise.setReleaseDate(null);\n+        programmingExerciseRepository.save(programmingExercise);\n+        ProgrammingExerciseStudentParticipation participation = participationUtilService.addStudentParticipationForProgrammingExercise(programmingExercise,\n+                TEST_PREFIX + \"student1\");\n+        request.get(participationsBaseUrl + participation.getId() + \"/student-participation-with-all-results\", HttpStatus.OK, ProgrammingExerciseStudentParticipation.class);\n+    }\n+\n     @Test\n     @WithMockUser(username = TEST_PREFIX + \"tutor1\", roles = \"TA\")\n     void testGetParticipationAllResults_canAccessParticipationIfExerciseNotStartedAndNotStudent() throws Exception {"
+        }
+    ]
+}

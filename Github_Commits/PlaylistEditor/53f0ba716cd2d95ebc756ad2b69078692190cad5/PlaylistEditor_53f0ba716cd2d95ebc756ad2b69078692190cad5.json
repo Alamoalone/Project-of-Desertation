@@ -1,0 +1,98 @@
+{
+    "sha": "53f0ba716cd2d95ebc756ad2b69078692190cad5",
+    "node_id": "C_kwDOFRF8d9oAKDUzZjBiYTcxNmNkMmQ5NWViYzc1NmFkMmI2OTA3ODY5MjE5MGNhZDU",
+    "commit": {
+        "author": {
+            "name": "Baldelli Andrea",
+            "email": "andrea.baldelli2000@gmail.com",
+            "date": "2024-01-05T13:04:59Z"
+        },
+        "committer": {
+            "name": "Baldelli Andrea",
+            "email": "andrea.baldelli2000@gmail.com",
+            "date": "2024-01-05T13:04:59Z"
+        },
+        "message": "Fixed null pointer exceptions",
+        "tree": {
+            "sha": "80928db9471f519141f56175a867e4cb2584fd1d",
+            "url": "https://api.github.com/repos/Baldi00/PlaylistEditor/git/trees/80928db9471f519141f56175a867e4cb2584fd1d"
+        },
+        "url": "https://api.github.com/repos/Baldi00/PlaylistEditor/git/commits/53f0ba716cd2d95ebc756ad2b69078692190cad5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Baldi00/PlaylistEditor/commits/53f0ba716cd2d95ebc756ad2b69078692190cad5",
+    "html_url": "https://github.com/Baldi00/PlaylistEditor/commit/53f0ba716cd2d95ebc756ad2b69078692190cad5",
+    "comments_url": "https://api.github.com/repos/Baldi00/PlaylistEditor/commits/53f0ba716cd2d95ebc756ad2b69078692190cad5/comments",
+    "author": {
+        "login": "Baldi00",
+        "id": 46602744,
+        "node_id": "MDQ6VXNlcjQ2NjAyNzQ0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/46602744?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Baldi00",
+        "html_url": "https://github.com/Baldi00",
+        "followers_url": "https://api.github.com/users/Baldi00/followers",
+        "following_url": "https://api.github.com/users/Baldi00/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Baldi00/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Baldi00/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Baldi00/subscriptions",
+        "organizations_url": "https://api.github.com/users/Baldi00/orgs",
+        "repos_url": "https://api.github.com/users/Baldi00/repos",
+        "events_url": "https://api.github.com/users/Baldi00/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Baldi00/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Baldi00",
+        "id": 46602744,
+        "node_id": "MDQ6VXNlcjQ2NjAyNzQ0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/46602744?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Baldi00",
+        "html_url": "https://github.com/Baldi00",
+        "followers_url": "https://api.github.com/users/Baldi00/followers",
+        "following_url": "https://api.github.com/users/Baldi00/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Baldi00/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Baldi00/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Baldi00/subscriptions",
+        "organizations_url": "https://api.github.com/users/Baldi00/orgs",
+        "repos_url": "https://api.github.com/users/Baldi00/repos",
+        "events_url": "https://api.github.com/users/Baldi00/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Baldi00/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8243c9abbeebf29487d4c7c0838c440dc0d1bebc",
+            "url": "https://api.github.com/repos/Baldi00/PlaylistEditor/commits/8243c9abbeebf29487d4c7c0838c440dc0d1bebc",
+            "html_url": "https://github.com/Baldi00/PlaylistEditor/commit/8243c9abbeebf29487d4c7c0838c440dc0d1bebc"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 5,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "fbc4706cdaafb2ef94c44f82216e5705ba9b9229",
+            "filename": "src/playlisteditor/Song.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 4,
+            "changes": 9,
+            "blob_url": "https://github.com/Baldi00/PlaylistEditor/blob/53f0ba716cd2d95ebc756ad2b69078692190cad5/src%2Fplaylisteditor%2FSong.java",
+            "raw_url": "https://github.com/Baldi00/PlaylistEditor/raw/53f0ba716cd2d95ebc756ad2b69078692190cad5/src%2Fplaylisteditor%2FSong.java",
+            "contents_url": "https://api.github.com/repos/Baldi00/PlaylistEditor/contents/src%2Fplaylisteditor%2FSong.java?ref=53f0ba716cd2d95ebc756ad2b69078692190cad5",
+            "patch": "@@ -79,9 +79,9 @@ public Song(String filePath, String fileName, boolean selected) {\n                 BufferedWriter bw = new BufferedWriter(new FileWriter(tagCache));\r\n                 bw.write(title);\r\n                 bw.newLine();\r\n-                bw.write(artist);\r\n+                bw.write(artist == null ? \"Artista Sconosciuto\" : artist);\r\n                 bw.newLine();\r\n-                bw.write(album);\r\n+                bw.write(album == null ? \"Album Sconosciuto\" : album);\r\n                 bw.newLine();\r\n                 bw.close();\r\n             }       \r\n@@ -107,11 +107,12 @@ public String getTitle() {\n     }\r\n \r\n     public String getArtist() {\r\n-        return artist;\r\n+        return artist == null ? \"Artista Sconosciuto\" : artist;\r\n     }\r\n \r\n     public String getAlbum() {\r\n-        return album.replace(\"?\", \"\");\r\n+        return album == null ? \"Album Sconosciuto\" : album.replace(\"?\", \"\");\r\n+    }\r\n     }\r\n \r\n     public boolean isSelected() {\r"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+@@ -62,7 +62,7 @@ protected JPanel createFormPanel() {
+ 		panel.add(frequenceLivraisonField);
+ 		panel.add(new JLabel("Est actif"));
+ 		panel.add(estActifCheckBox);
+-		JButton createButton = new JButton("Create");
++		JButton createButton = new JButton("Créer");
+ 		createButton.addActionListener(e -> {
+ 			Client client = (Client) clientComboBox.getSelectedItem();
+ 			Panier panier = (Panier) panierComboBox.getSelectedItem();

@@ -1,0 +1,98 @@
+{
+    "sha": "9bc8a6cd8141caaf704d1cde5c7c86387b801a12",
+    "node_id": "C_kwDOKZgITdoAKDliYzhhNmNkODE0MWNhYWY3MDRkMWNkZTVjN2M4NjM4N2I4MDFhMTI",
+    "commit": {
+        "author": {
+            "name": "EdwinBetanc0urt",
+            "email": "EdwinBetanc0urt@outlook.com",
+            "date": "2023-10-16T16:02:48Z"
+        },
+        "committer": {
+            "name": "EdwinBetanc0urt",
+            "email": "EdwinBetanc0urt@outlook.com",
+            "date": "2023-10-16T16:02:48Z"
+        },
+        "message": "fix: Null Pointer Exception on `com.google.protobuf.Timestamp`.",
+        "tree": {
+            "sha": "874c9e5aa98ce69b672f09b54dd88c446f677612",
+            "url": "https://api.github.com/repos/adempiere/adempiere-grpc-utils/git/trees/874c9e5aa98ce69b672f09b54dd88c446f677612"
+        },
+        "url": "https://api.github.com/repos/adempiere/adempiere-grpc-utils/git/commits/9bc8a6cd8141caaf704d1cde5c7c86387b801a12",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/adempiere/adempiere-grpc-utils/commits/9bc8a6cd8141caaf704d1cde5c7c86387b801a12",
+    "html_url": "https://github.com/adempiere/adempiere-grpc-utils/commit/9bc8a6cd8141caaf704d1cde5c7c86387b801a12",
+    "comments_url": "https://api.github.com/repos/adempiere/adempiere-grpc-utils/commits/9bc8a6cd8141caaf704d1cde5c7c86387b801a12/comments",
+    "author": {
+        "login": "EdwinBetanc0urt",
+        "id": 20288327,
+        "node_id": "MDQ6VXNlcjIwMjg4MzI3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20288327?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/EdwinBetanc0urt",
+        "html_url": "https://github.com/EdwinBetanc0urt",
+        "followers_url": "https://api.github.com/users/EdwinBetanc0urt/followers",
+        "following_url": "https://api.github.com/users/EdwinBetanc0urt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/EdwinBetanc0urt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/EdwinBetanc0urt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/EdwinBetanc0urt/subscriptions",
+        "organizations_url": "https://api.github.com/users/EdwinBetanc0urt/orgs",
+        "repos_url": "https://api.github.com/users/EdwinBetanc0urt/repos",
+        "events_url": "https://api.github.com/users/EdwinBetanc0urt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/EdwinBetanc0urt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "EdwinBetanc0urt",
+        "id": 20288327,
+        "node_id": "MDQ6VXNlcjIwMjg4MzI3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20288327?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/EdwinBetanc0urt",
+        "html_url": "https://github.com/EdwinBetanc0urt",
+        "followers_url": "https://api.github.com/users/EdwinBetanc0urt/followers",
+        "following_url": "https://api.github.com/users/EdwinBetanc0urt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/EdwinBetanc0urt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/EdwinBetanc0urt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/EdwinBetanc0urt/subscriptions",
+        "organizations_url": "https://api.github.com/users/EdwinBetanc0urt/orgs",
+        "repos_url": "https://api.github.com/users/EdwinBetanc0urt/repos",
+        "events_url": "https://api.github.com/users/EdwinBetanc0urt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/EdwinBetanc0urt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "edb4414d58357854889ccf470865dce908313a9b",
+            "url": "https://api.github.com/repos/adempiere/adempiere-grpc-utils/commits/edb4414d58357854889ccf470865dce908313a9b",
+            "html_url": "https://github.com/adempiere/adempiere-grpc-utils/commit/edb4414d58357854889ccf470865dce908313a9b"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "681c98f443e7dd29b18d89ef8de1aee41f95aa31",
+            "filename": "src/main/java/org/spin/service/grpc/util/ValueManager.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/adempiere/adempiere-grpc-utils/blob/9bc8a6cd8141caaf704d1cde5c7c86387b801a12/src%2Fmain%2Fjava%2Forg%2Fspin%2Fservice%2Fgrpc%2Futil%2FValueManager.java",
+            "raw_url": "https://github.com/adempiere/adempiere-grpc-utils/raw/9bc8a6cd8141caaf704d1cde5c7c86387b801a12/src%2Fmain%2Fjava%2Forg%2Fspin%2Fservice%2Fgrpc%2Futil%2FValueManager.java",
+            "contents_url": "https://api.github.com/repos/adempiere/adempiere-grpc-utils/contents/src%2Fmain%2Fjava%2Forg%2Fspin%2Fservice%2Fgrpc%2Futil%2FValueManager.java?ref=9bc8a6cd8141caaf704d1cde5c7c86387b801a12",
+            "patch": "@@ -168,7 +168,10 @@ public static Value.Builder getValueFromDate(Timestamp value) {\n \t\n \tpublic static com.google.protobuf.Timestamp getTimestampFromDate(Timestamp value) {\n \t\tif (value == null) {\n-\t\t\treturn null;\n+\t\t\t// return com.google.protobuf.Timestamp.newBuilder().build(); // 1970-01-01T00:00:00Z\n+\t\t\t// return com.google.protobuf.Timestamp.getDefaultInstance(); // 1970-01-01T00:00:00Z\n+\t\t\t// return com.google.protobuf.util.Timestamps.EPOCH; // 1970-01-01T00:00:00Z\n+\t\t\treturn com.google.protobuf.util.Timestamps.MIN_VALUE; // 0001-01-01T00:00:00Z\n \t\t}\n \t\treturn fromMillis(value.getTime());\n \t}"
+        }
+    ]
+}

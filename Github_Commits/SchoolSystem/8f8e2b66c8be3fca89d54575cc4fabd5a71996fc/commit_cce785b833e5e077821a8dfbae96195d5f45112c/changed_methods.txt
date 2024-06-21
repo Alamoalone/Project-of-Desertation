@@ -1,0 +1,8 @@
+addStudent(String lname, String name, String departmentId)
+modifyCourseTeacher(String teacherId, String courseId)
+findCourse(String courseId)
+registerCourse(String studentId, String courseId)
+printDepartment()
+findTeacher(String teacherId)
+findStudent(String studentId)
+hasRegisteredForThisCourse(String studentId, String courseId)

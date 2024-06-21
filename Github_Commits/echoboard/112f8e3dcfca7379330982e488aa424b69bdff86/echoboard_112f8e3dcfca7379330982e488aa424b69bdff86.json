@@ -1,0 +1,98 @@
+{
+    "sha": "112f8e3dcfca7379330982e488aa424b69bdff86",
+    "node_id": "C_kwDOKPFrftoAKDExMmY4ZTNkY2ZjYTczNzkzMzA5ODJlNDg4YWE0MjRiNjliZGZmODY",
+    "commit": {
+        "author": {
+            "name": "Ibrahim",
+            "email": "Ibrahim@ebs.net.pk",
+            "date": "2023-09-25T14:16:55Z"
+        },
+        "committer": {
+            "name": "Ibrahim",
+            "email": "Ibrahim@ebs.net.pk",
+            "date": "2023-09-25T14:16:55Z"
+        },
+        "message": "corrected logic tree so that null pointer exceptions do not happen",
+        "tree": {
+            "sha": "6e45762a9cdb1260f5e02a7931d77becccaa6718",
+            "url": "https://api.github.com/repos/Nameless-Devs/echoboard/git/trees/6e45762a9cdb1260f5e02a7931d77becccaa6718"
+        },
+        "url": "https://api.github.com/repos/Nameless-Devs/echoboard/git/commits/112f8e3dcfca7379330982e488aa424b69bdff86",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unknown_key",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCAAdFiEEtRfeokLJHmebKJmjTuQtX4jhvnMFAmURllcACgkQTuQtX4jh\nvnPb1wwAxg1E1mjeh9yLp3hSwX1Gtck5g30QxikYRajy7nj/DKUxVQccVpyNrFX0\n4EO/xCvh93E9vG/v4oMq/hb+djD+sQweaDSszSPQVeqovue3K6bDkte2Q6ahFu7P\nExFPnt4MNGbBGHfaV5dAbjjnPfXS3Ufp1Ab/6ufhwtzdtYOWO5kWFokJJBQcbR3I\ntr89rLpckG1on8wE91aSOiTH0tbZftS2N/29hRbFVB2J94BAasWegQ/Mcx6f7Lkk\nvShIv2Z4mtRAsgDl1kOp6rD0YX3jTSSnRWdI/YEEDORoFVW2Tl6L8DteE0YWMMcp\ntrsMp0hmgpm5Y06BgGbgehVRDpkBsTIJ4GN8x1lH07J9cK2L4rOzZm5bbt0qf4A4\nJjXuQnWQeY7YkLll37Yo3dZYbZDABFvYuLZIl5Al6aDOj+56esUGTwB3T4mzABXY\nD9kbKuEcb+0N/b5ixHd0wmH/dH6DMDxR9kj45dhtuvLdpT/5EJNUONUiDxwQW+Do\n53ECOgEW\n=zdDH\n-----END PGP SIGNATURE-----",
+            "payload": "tree 6e45762a9cdb1260f5e02a7931d77becccaa6718\nparent 54ae9f083c2969de7272fd86fd27794681ed6db8\nauthor Ibrahim <Ibrahim@ebs.net.pk> 1695651415 +0200\ncommitter Ibrahim <Ibrahim@ebs.net.pk> 1695651415 +0200\n\ncorrected logic tree so that null pointer exceptions do not happen\n"
+        }
+    },
+    "url": "https://api.github.com/repos/Nameless-Devs/echoboard/commits/112f8e3dcfca7379330982e488aa424b69bdff86",
+    "html_url": "https://github.com/Nameless-Devs/echoboard/commit/112f8e3dcfca7379330982e488aa424b69bdff86",
+    "comments_url": "https://api.github.com/repos/Nameless-Devs/echoboard/commits/112f8e3dcfca7379330982e488aa424b69bdff86/comments",
+    "author": {
+        "login": "dIB59",
+        "id": 63118347,
+        "node_id": "MDQ6VXNlcjYzMTE4MzQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63118347?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dIB59",
+        "html_url": "https://github.com/dIB59",
+        "followers_url": "https://api.github.com/users/dIB59/followers",
+        "following_url": "https://api.github.com/users/dIB59/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dIB59/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dIB59/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dIB59/subscriptions",
+        "organizations_url": "https://api.github.com/users/dIB59/orgs",
+        "repos_url": "https://api.github.com/users/dIB59/repos",
+        "events_url": "https://api.github.com/users/dIB59/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dIB59/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dIB59",
+        "id": 63118347,
+        "node_id": "MDQ6VXNlcjYzMTE4MzQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63118347?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dIB59",
+        "html_url": "https://github.com/dIB59",
+        "followers_url": "https://api.github.com/users/dIB59/followers",
+        "following_url": "https://api.github.com/users/dIB59/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dIB59/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dIB59/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dIB59/subscriptions",
+        "organizations_url": "https://api.github.com/users/dIB59/orgs",
+        "repos_url": "https://api.github.com/users/dIB59/repos",
+        "events_url": "https://api.github.com/users/dIB59/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dIB59/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "54ae9f083c2969de7272fd86fd27794681ed6db8",
+            "url": "https://api.github.com/repos/Nameless-Devs/echoboard/commits/54ae9f083c2969de7272fd86fd27794681ed6db8",
+            "html_url": "https://github.com/Nameless-Devs/echoboard/commit/54ae9f083c2969de7272fd86fd27794681ed6db8"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "28c1c4a617a5d3a7f046121d0f3c2617560bc9eb",
+            "filename": "src/main/java/se/salt/echoboard/controller/EchoController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Nameless-Devs/echoboard/blob/112f8e3dcfca7379330982e488aa424b69bdff86/src%2Fmain%2Fjava%2Fse%2Fsalt%2Fechoboard%2Fcontroller%2FEchoController.java",
+            "raw_url": "https://github.com/Nameless-Devs/echoboard/raw/112f8e3dcfca7379330982e488aa424b69bdff86/src%2Fmain%2Fjava%2Fse%2Fsalt%2Fechoboard%2Fcontroller%2FEchoController.java",
+            "contents_url": "https://api.github.com/repos/Nameless-Devs/echoboard/contents/src%2Fmain%2Fjava%2Fse%2Fsalt%2Fechoboard%2Fcontroller%2FEchoController.java?ref=112f8e3dcfca7379330982e488aa424b69bdff86",
+            "patch": "@@ -32,8 +32,8 @@ public ResponseEntity<EchoBoard> getEcho(@PathVariable long id) {\n     public ResponseEntity<List<EchoBoard>> getAllEchoes() {\n \n         List<EchoBoard> echoes = echoService.findAll();\n-        Collections.reverse(echoes);\n         if (echoes != null && !echoes.isEmpty()) {\n+            Collections.reverse(echoes);\n             return ResponseEntity.ok(echoes);\n         }\n         return ResponseEntity.noContent().build();"
+        }
+    ]
+}

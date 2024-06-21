@@ -1,0 +1,84 @@
+{
+    "sha": "438adc8315dc2f575f9128185af601dbb9017dfd",
+    "node_id": "C_kwDOCXVUXNoAKDQzOGFkYzgzMTVkYzJmNTc1ZjkxMjgxODVhZjYwMWRiYjkwMTdkZmQ",
+    "commit": {
+        "author": {
+            "name": "Sven Helmberger",
+            "email": "sven.helmberger@quinscape.de",
+            "date": "2023-06-23T00:22:15Z"
+        },
+        "committer": {
+            "name": "Sven Helmberger",
+            "email": "sven.helmberger@quinscape.de",
+            "date": "2023-06-23T00:22:15Z"
+        },
+        "message": "SchemaReference: Make .get() null-safe\n\nMake sure that we don't run into null-pointer exception when we access\na field whose parent object does not exist / is null.\n\nReturns null if the parent of a field is null.\n\nAdds test case",
+        "tree": {
+            "sha": "8a821345e73a9aaae12dc2d2f61ec6a151ee95c8",
+            "url": "https://api.github.com/repos/quinscape/automaton/git/trees/8a821345e73a9aaae12dc2d2f61ec6a151ee95c8"
+        },
+        "url": "https://api.github.com/repos/quinscape/automaton/git/commits/438adc8315dc2f575f9128185af601dbb9017dfd",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/quinscape/automaton/commits/438adc8315dc2f575f9128185af601dbb9017dfd",
+    "html_url": "https://github.com/quinscape/automaton/commit/438adc8315dc2f575f9128185af601dbb9017dfd",
+    "comments_url": "https://api.github.com/repos/quinscape/automaton/commits/438adc8315dc2f575f9128185af601dbb9017dfd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "2b80252a4ca70b0f6caa78ba447dc06e3809821d",
+            "url": "https://api.github.com/repos/quinscape/automaton/commits/2b80252a4ca70b0f6caa78ba447dc06e3809821d",
+            "html_url": "https://github.com/quinscape/automaton/commit/2b80252a4ca70b0f6caa78ba447dc06e3809821d"
+        }
+    ],
+    "stats": {
+        "total": 21,
+        "additions": 20,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "9c3620a5c33ec9b6c8f191ef2252b653f3c3994c",
+            "filename": "src/main/java/de/quinscape/automaton/runtime/util/SchemaReference.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 1,
+            "changes": 7,
+            "blob_url": "https://github.com/quinscape/automaton/blob/438adc8315dc2f575f9128185af601dbb9017dfd/src%2Fmain%2Fjava%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2FSchemaReference.java",
+            "raw_url": "https://github.com/quinscape/automaton/raw/438adc8315dc2f575f9128185af601dbb9017dfd/src%2Fmain%2Fjava%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2FSchemaReference.java",
+            "contents_url": "https://api.github.com/repos/quinscape/automaton/contents/src%2Fmain%2Fjava%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2FSchemaReference.java?ref=438adc8315dc2f575f9128185af601dbb9017dfd",
+            "patch": "@@ -327,7 +327,12 @@ public <T> T get(Object root)\n         final int last = pathLen - 1;\n         for (int i = 0; i < pathLen; i++)\n         {\n-            String p = path.get(i);\n+            if (current == null)\n+            {\n+                return null;\n+            }\n+\n+            final String p = path.get(i);\n             final Object value = beanUtil.getProperty(current, p);\n \n             if (value instanceof List)"
+        },
+        {
+            "sha": "452532cd11366b67c4d5e600d88f62f418fbf0ab",
+            "filename": "src/test/java/de/quinscape/automaton/runtime/util/SchemaReferenceTest.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 0,
+            "changes": 8,
+            "blob_url": "https://github.com/quinscape/automaton/blob/438adc8315dc2f575f9128185af601dbb9017dfd/src%2Ftest%2Fjava%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2FSchemaReferenceTest.java",
+            "raw_url": "https://github.com/quinscape/automaton/raw/438adc8315dc2f575f9128185af601dbb9017dfd/src%2Ftest%2Fjava%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2FSchemaReferenceTest.java",
+            "contents_url": "https://api.github.com/repos/quinscape/automaton/contents/src%2Ftest%2Fjava%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2FSchemaReferenceTest.java?ref=438adc8315dc2f575f9128185af601dbb9017dfd",
+            "patch": "@@ -132,6 +132,14 @@ void testBeanReading() throws IOException\n             assertThat(root.getField(\"owner.bazes.name\").get(foo), is(Arrays.asList(\"Baz #1\", \"Baz #2\")));\n         }\n \n+        {\n+            Map<String,Object> foo = readTestData(\"foo-without-owner.json\");\n+            final SchemaReference root = SchemaReference.newRef(createDomain(), \"Foo\");\n+\n+            assertThat(root.getField(\"name\").get(foo), is(\"Foo #2\"));\n+            assertThat(root.getField(\"owner.login\").get(foo), is(nullValue()));\n+        }\n+\n     }\n \n "
+        },
+        {
+            "sha": "153b1de4ae6c1f49d6417f91b4a4f4b302278757",
+            "filename": "src/test/resources/de/quinscape/automaton/runtime/util/foo-without-owner.json",
+            "status": "added",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/quinscape/automaton/blob/438adc8315dc2f575f9128185af601dbb9017dfd/src%2Ftest%2Fresources%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2Ffoo-without-owner.json",
+            "raw_url": "https://github.com/quinscape/automaton/raw/438adc8315dc2f575f9128185af601dbb9017dfd/src%2Ftest%2Fresources%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2Ffoo-without-owner.json",
+            "contents_url": "https://api.github.com/repos/quinscape/automaton/contents/src%2Ftest%2Fresources%2Fde%2Fquinscape%2Fautomaton%2Fruntime%2Futil%2Ffoo-without-owner.json?ref=438adc8315dc2f575f9128185af601dbb9017dfd",
+            "patch": "@@ -0,0 +1,6 @@\n+{\n+    \"id\" : \"01386c11-c411-4c59-b3d3-ab7f2382bac1\",\n+    \"name\": \"Foo #2\",\n+    \"num\": 3874,\n+    \"owner\": null\n+}"
+        }
+    ]
+}

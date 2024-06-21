@@ -1,0 +1,15 @@
+    public SHA256Hash getHash() {
+        var digest = new SHA256Digest();
+        var sha256Hash = new SHA256Hash();
+
+        digest.update(to.address, 0, to.address.length);
+        if (!isTransactionFee) {
+            digest.update(from.address, 0, from.address.length);
+        }
+        digest.update(longToBytes(fee.amount()), 0, 8);
+        digest.update(longToBytes(amount.amount()), 0, 8);
+        digest.update(longToBytes(timestamp), 0, 8);
+        digest.doFinal(sha256Hash.hash, 0);
+
+        return sha256Hash;
+    }

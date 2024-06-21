@@ -1,0 +1,49 @@
+            public void actionPerformed(ActionEvent e) {
+                formatJpg.setEnabled(false);
+                formatPng.setEnabled(false);
+                formatWebp.setEnabled(false);
+                compressionRateField.setEnabled(false);
+                widthInPixels.setEnabled(false);
+                heightInPixels.setEnabled(false);
+                sortFotos.setEnabled(false);
+                inputFileTextField.setEnabled(false);
+                inputFileButton.setEnabled(false);
+                outputFileTextField.setEnabled(false);
+                outputFileButton.setEnabled(false);
+
+
+                File srcDir = new File(srcFolder);
+                File[] filesArray = srcDir.listFiles();
+                ArrayList<File> files = Main.listFiles(new ArrayList<>(Arrays.asList(filesArray)));
+
+                boolean isEnd = false;
+                if (changeImages) {
+                    RenameByCreationDate renameByCreationDate = new RenameByCreationDate(files, dstFolder);
+                    isEnd = renameByCreationDate.rename();
+                } else {
+                    ImageChanger imageChanger = new ImageChanger(files, compressionRate, width, height, dstFormat, dstFolder, changeFormatBoolean);
+                    isEnd = imageChanger.handlePictures();
+                }
+
+                while (!isEnd) {
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                JOptionPane.showMessageDialog(mainPanel, "Работа программы завершена", "Успешно!", JOptionPane.PLAIN_MESSAGE);
+                formatJpg.setEnabled(true);
+                formatPng.setEnabled(true);
+                formatWebp.setEnabled(true);
+                compressionRateField.setEnabled(true);
+                widthInPixels.setEnabled(true);
+                heightInPixels.setEnabled(true);
+                sortFotos.setEnabled(true);
+                inputFileTextField.setEnabled(true);
+                inputFileButton.setEnabled(true);
+                outputFileTextField.setEnabled(true);
+                outputFileButton.setEnabled(true);
+
+            }
+

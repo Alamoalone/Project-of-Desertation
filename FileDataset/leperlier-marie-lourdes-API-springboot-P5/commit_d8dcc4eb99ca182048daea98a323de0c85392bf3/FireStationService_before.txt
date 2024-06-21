@@ -1,0 +1,42 @@
+	public List<FireStation> getAllFireStations() throws NullPointerException{
+		if (fireStations.isEmpty()) {
+			throw new NullPointerException("none firestation registered!");
+		}
+		System.out.println("Retrieving all persons" + fireStations);
+		return fireStations;
+	}
+
+	public boolean deleteFireStationById(String id) throws NullPointerException {
+		// log.debug("Deleting medical record for {} {}", firstName, lastName);
+		boolean result = false;
+		result = fireStations.removeIf(fireStation -> fireStation.getId().equals(id));
+		
+		if (!result) {
+			// log.error("Failed to delete firestation for {} {}", id);
+			throw new NullPointerException("this station number of firestation to remove doesn't exist");
+		}else {
+			// log.info("firestation deleted by id with station number successfully for {}
+			// {}", id);
+		}
+		
+		return result;
+	}
+
+	public List<FireStation> getFireStationsById(String id) throws NullPointerException {
+		List<FireStation> fireStationsFoundById = new ArrayList<>();
+		Iterator<FireStation> itrFireStations = fireStations.listIterator();
+		while (itrFireStations.hasNext()) {
+			FireStation itrFireStation = itrFireStations.next();
+			if (itrFireStation.getId().equals(id)) {
+				fireStationsFoundById.add(itrFireStation);
+			}
+		}
+		
+		if (fireStationsFoundById.isEmpty()) {
+			throw new NullPointerException("firestation not found");
+		}
+		System.out.println("fireStationsFoundById" + fireStationsFoundById);
+		return fireStationsFoundById;
+
+	}
+

@@ -1,0 +1,11 @@
+@@ -142,8 +142,8 @@ public void shopFunction() {
+                 }
+             }
+         }
+-        if (!itemType.use().contains("effect") || !onlyInventory) {
+-            if (!buy && !onlyInventory) { //sell
++        if (!onlyInventory) {
++            if (!buy) { //sell
+                 amount = -1;
+             }
+             useDetailButton(amount, usage, null);

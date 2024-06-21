@@ -1,0 +1,98 @@
+{
+    "sha": "f9379fcc369e4f25b2e8eda24badbec77dba2acd",
+    "node_id": "C_kwDOBC3xZNoAKGY5Mzc5ZmNjMzY5ZTRmMjViMmU4ZWRhMjRiYWRiZWM3N2RiYTJhY2Q",
+    "commit": {
+        "author": {
+            "name": "Nick Paul",
+            "email": "nicholas.paul@soartech.com",
+            "date": "2023-05-12T21:35:28Z"
+        },
+        "committer": {
+            "name": "Nick Paul",
+            "email": "nicholas.paul@soartech.com",
+            "date": "2023-05-12T21:35:28Z"
+        },
+        "message": "Fix uncaught null pointer exception in MoveEventsInstruction",
+        "tree": {
+            "sha": "8ba94545cd85de8dcd0bdd086c26397a5845d201",
+            "url": "https://api.github.com/repos/aya-lang/aya/git/trees/8ba94545cd85de8dcd0bdd086c26397a5845d201"
+        },
+        "url": "https://api.github.com/repos/aya-lang/aya/git/commits/f9379fcc369e4f25b2e8eda24badbec77dba2acd",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/aya-lang/aya/commits/f9379fcc369e4f25b2e8eda24badbec77dba2acd",
+    "html_url": "https://github.com/aya-lang/aya/commit/f9379fcc369e4f25b2e8eda24badbec77dba2acd",
+    "comments_url": "https://api.github.com/repos/aya-lang/aya/commits/f9379fcc369e4f25b2e8eda24badbec77dba2acd/comments",
+    "author": {
+        "login": "np-soartech",
+        "id": 136823353,
+        "node_id": "U_kgDOCCfCOQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/136823353?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/np-soartech",
+        "html_url": "https://github.com/np-soartech",
+        "followers_url": "https://api.github.com/users/np-soartech/followers",
+        "following_url": "https://api.github.com/users/np-soartech/following{/other_user}",
+        "gists_url": "https://api.github.com/users/np-soartech/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/np-soartech/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/np-soartech/subscriptions",
+        "organizations_url": "https://api.github.com/users/np-soartech/orgs",
+        "repos_url": "https://api.github.com/users/np-soartech/repos",
+        "events_url": "https://api.github.com/users/np-soartech/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/np-soartech/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "np-soartech",
+        "id": 136823353,
+        "node_id": "U_kgDOCCfCOQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/136823353?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/np-soartech",
+        "html_url": "https://github.com/np-soartech",
+        "followers_url": "https://api.github.com/users/np-soartech/followers",
+        "following_url": "https://api.github.com/users/np-soartech/following{/other_user}",
+        "gists_url": "https://api.github.com/users/np-soartech/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/np-soartech/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/np-soartech/subscriptions",
+        "organizations_url": "https://api.github.com/users/np-soartech/orgs",
+        "repos_url": "https://api.github.com/users/np-soartech/repos",
+        "events_url": "https://api.github.com/users/np-soartech/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/np-soartech/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c6933e438540f7f1142c69931ea4c41b6519137e",
+            "url": "https://api.github.com/repos/aya-lang/aya/commits/c6933e438540f7f1142c69931ea4c41b6519137e",
+            "html_url": "https://github.com/aya-lang/aya/commit/c6933e438540f7f1142c69931ea4c41b6519137e"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 10,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "7854900d8a64c842c5aefbc7059dcceb0b9825e1",
+            "filename": "src/aya/ext/graphics/instruction/cursor/MoveEventsInstruction.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 5,
+            "changes": 15,
+            "blob_url": "https://github.com/aya-lang/aya/blob/f9379fcc369e4f25b2e8eda24badbec77dba2acd/src%2Faya%2Fext%2Fgraphics%2Finstruction%2Fcursor%2FMoveEventsInstruction.java",
+            "raw_url": "https://github.com/aya-lang/aya/raw/f9379fcc369e4f25b2e8eda24badbec77dba2acd/src%2Faya%2Fext%2Fgraphics%2Finstruction%2Fcursor%2FMoveEventsInstruction.java",
+            "contents_url": "https://api.github.com/repos/aya-lang/aya/contents/src%2Faya%2Fext%2Fgraphics%2Finstruction%2Fcursor%2FMoveEventsInstruction.java?ref=f9379fcc369e4f25b2e8eda24badbec77dba2acd",
+            "patch": "@@ -1,5 +1,6 @@\n package aya.ext.graphics.instruction.cursor;\n \n+import aya.exceptions.runtime.ValueError;\n import aya.ext.graphics.Canvas;\n import aya.ext.graphics.CanvasCursorListener;\n import aya.ext.graphics.CanvasTable;\n@@ -16,10 +17,14 @@ public MoveEventsInstruction(CanvasTable canvas_table) {\n \n \t@Override\n \tprotected void doCanvasCommand(Canvas cvs, Block block) {\n-\t\tblock.push(\n-\t\t\t\tcvs.getCursorListener().getMoveHistory().stream()\n-\t\t\t\t\t\t.map(CanvasCursorListener.MoveInfo::toDict)\n-\t\t\t\t\t\t.collect(new ListCollector())\n-\t\t);\n+\t\ttry {\n+\t\t\tblock.push(\n+\t\t\t\t\tcvs.getCursorListener().getMoveHistory().stream()\n+\t\t\t\t\t\t\t.map(CanvasCursorListener.MoveInfo::toDict)\n+\t\t\t\t\t\t\t.collect(new ListCollector())\n+\t\t\t);\n+\t\t} catch (NullPointerException e) {\n+\t\t\tthrow new ValueError(e.getMessage());\n+\t\t}\n \t}\n }"
+        }
+    ]
+}

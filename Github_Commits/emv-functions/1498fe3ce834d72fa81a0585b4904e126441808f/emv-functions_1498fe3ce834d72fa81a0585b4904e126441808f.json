@@ -1,0 +1,122 @@
+{
+    "sha": "1498fe3ce834d72fa81a0585b4904e126441808f",
+    "node_id": "C_kwDOLLRrwtoAKDE0OThmZTNjZTgzNGQ3MmZhODFhMDU4NWI0OTA0ZTEyNjQ0MTgwOGY",
+    "commit": {
+        "author": {
+            "name": "new-to-java",
+            "email": "bijumoncpavanajan@gmail.com",
+            "date": "2024-02-17T18:15:08Z"
+        },
+        "committer": {
+            "name": "new-to-java",
+            "email": "bijumoncpavanajan@gmail.com",
+            "date": "2024-02-17T18:15:08Z"
+        },
+        "message": "Fixed a bug in Visa Cryptogram Service Implementation class, where the IAD parser was retrieving the CVN key from Map, without calling the parseIad method, resulting in null pointer exception.",
+        "tree": {
+            "sha": "aeb9146452ea830a38b3629148ec250516f57dd4",
+            "url": "https://api.github.com/repos/new-to-java/emv-functions/git/trees/aeb9146452ea830a38b3629148ec250516f57dd4"
+        },
+        "url": "https://api.github.com/repos/new-to-java/emv-functions/git/commits/1498fe3ce834d72fa81a0585b4904e126441808f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/new-to-java/emv-functions/commits/1498fe3ce834d72fa81a0585b4904e126441808f",
+    "html_url": "https://github.com/new-to-java/emv-functions/commit/1498fe3ce834d72fa81a0585b4904e126441808f",
+    "comments_url": "https://api.github.com/repos/new-to-java/emv-functions/commits/1498fe3ce834d72fa81a0585b4904e126441808f/comments",
+    "author": {
+        "login": "new-to-java",
+        "id": 106712556,
+        "node_id": "U_kgDOBlxN7A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106712556?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/new-to-java",
+        "html_url": "https://github.com/new-to-java",
+        "followers_url": "https://api.github.com/users/new-to-java/followers",
+        "following_url": "https://api.github.com/users/new-to-java/following{/other_user}",
+        "gists_url": "https://api.github.com/users/new-to-java/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/new-to-java/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/new-to-java/subscriptions",
+        "organizations_url": "https://api.github.com/users/new-to-java/orgs",
+        "repos_url": "https://api.github.com/users/new-to-java/repos",
+        "events_url": "https://api.github.com/users/new-to-java/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/new-to-java/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "new-to-java",
+        "id": 106712556,
+        "node_id": "U_kgDOBlxN7A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106712556?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/new-to-java",
+        "html_url": "https://github.com/new-to-java",
+        "followers_url": "https://api.github.com/users/new-to-java/followers",
+        "following_url": "https://api.github.com/users/new-to-java/following{/other_user}",
+        "gists_url": "https://api.github.com/users/new-to-java/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/new-to-java/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/new-to-java/subscriptions",
+        "organizations_url": "https://api.github.com/users/new-to-java/orgs",
+        "repos_url": "https://api.github.com/users/new-to-java/repos",
+        "events_url": "https://api.github.com/users/new-to-java/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/new-to-java/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8a9e8636f714b6b410b39c6c978cfaf91d453fdd",
+            "url": "https://api.github.com/repos/new-to-java/emv-functions/commits/8a9e8636f714b6b410b39c6c978cfaf91d453fdd",
+            "html_url": "https://github.com/new-to-java/emv-functions/commit/8a9e8636f714b6b410b39c6c978cfaf91d453fdd"
+        }
+    ],
+    "stats": {
+        "total": 196,
+        "additions": 141,
+        "deletions": 55
+    },
+    "files": [
+        {
+            "sha": "b95cc633dc6b53dc0e0173b90a2752804cad7675",
+            "filename": "src/main/java/com/bc/application/port/in/rest/cryptogramfunctions/command/GenerateApplicationCryptogramCommand.java",
+            "status": "modified",
+            "additions": 78,
+            "deletions": 1,
+            "changes": 79,
+            "blob_url": "https://github.com/new-to-java/emv-functions/blob/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fport%2Fin%2Frest%2Fcryptogramfunctions%2Fcommand%2FGenerateApplicationCryptogramCommand.java",
+            "raw_url": "https://github.com/new-to-java/emv-functions/raw/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fport%2Fin%2Frest%2Fcryptogramfunctions%2Fcommand%2FGenerateApplicationCryptogramCommand.java",
+            "contents_url": "https://api.github.com/repos/new-to-java/emv-functions/contents/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fport%2Fin%2Frest%2Fcryptogramfunctions%2Fcommand%2FGenerateApplicationCryptogramCommand.java?ref=1498fe3ce834d72fa81a0585b4904e126441808f",
+            "patch": "@@ -1,12 +1,17 @@\n package com.bc.application.port.in.rest.cryptogramfunctions.command;\n \n+import com.bc.utilities.LoggerUtility;\n import com.bc.utilities.SelfValidator;\n import jakarta.validation.constraints.Pattern;\n+import lombok.extern.slf4j.Slf4j;\n import static com.bc.model.pattern.CommonPattern.*;\n /**\n  * Application Cryptogram Generation command class with selfvalidator.\n  */\n-public class GenerateApplicationCryptogramCommand extends SelfValidator<GenerateApplicationCryptogramCommand> {\n+@Slf4j\n+public class GenerateApplicationCryptogramCommand\n+        extends SelfValidator<GenerateApplicationCryptogramCommand>\n+        implements LoggerUtility {\n     @Pattern(regexp = IS_A_16_DIGIT_HEXADECIMAL_NUMBER)\n     public String pan;\n     @Pattern(regexp = IS_A_1_OR_2_DIGIT_DECIMAL_NUMBER)\n@@ -36,4 +41,76 @@ public class GenerateApplicationCryptogramCommand extends SelfValidator<Generate\n     @Pattern(regexp = IS_VALID_IAD_FORMAT)\n     public String issuerApplicationData;\n \n+    /**\n+     * All args constructor for creating GenerateApplicationCryptogramCommand\n+     * @param pan PAN.\n+     * @param panSequenceNumber PAN Sequence number.\n+     * @param issuerMasterKey Issuer Master Key.\n+     * @param amountAuthorised Amount authorised.\n+     * @param amountOther Amount other.\n+     * @param terminalCountryCode Terminal Country Code.\n+     * @param terminalVerificationResults Terminal Verification Results.\n+     * @param transactionCurrencyCode Transaction Currency Code.\n+     * @param transactionDate Transaction Date.\n+     * @param transactionType Transaction Type.\n+     * @param unpredictableNumber Unpredictable Number.\n+     * @param applicationInterchangeProfile Application Interchange Profile.\n+     * @param applicationTransactionCounter Application Transaction Counter.\n+     * @param issuerApplicationData Issuer Application Data.\n+     */\n+    public GenerateApplicationCryptogramCommand(String pan,\n+                                                String panSequenceNumber,\n+                                                String issuerMasterKey,\n+                                                String amountAuthorised,\n+                                                String amountOther,\n+                                                String terminalCountryCode,\n+                                                String terminalVerificationResults,\n+                                                String transactionCurrencyCode,\n+                                                String transactionDate,\n+                                                String transactionType,\n+                                                String unpredictableNumber,\n+                                                String applicationInterchangeProfile,\n+                                                String applicationTransactionCounter,\n+                                                String issuerApplicationData) {\n+        this.pan = pan;\n+        this.panSequenceNumber = panSequenceNumber;\n+        this.issuerMasterKey = issuerMasterKey;\n+        this.amountAuthorised = amountAuthorised;\n+        this.amountOther = amountOther;\n+        this.terminalCountryCode = terminalCountryCode;\n+        this.terminalVerificationResults = terminalVerificationResults;\n+        this.transactionCurrencyCode = transactionCurrencyCode;\n+        this.transactionDate = transactionDate;\n+        this.transactionType = transactionType;\n+        this.unpredictableNumber = unpredictableNumber;\n+        this.applicationInterchangeProfile = applicationInterchangeProfile;\n+        this.applicationTransactionCounter = applicationTransactionCounter;\n+        this.issuerApplicationData = issuerApplicationData;\n+        logInfo(log, \"Self validation completed!\");\n+    }\n+\n+    /**\n+     * Override method to return a string representation of the class.\n+     * @return Attributes converted to string.\n+     */\n+    @Override\n+    public String toString() {\n+        return \"GenerateApplicationCryptogramCommand{\" +\n+                \"pan='\" + pan + '\\'' +\n+                \", panSequenceNumber='\" + panSequenceNumber + '\\'' +\n+                \", issuerMasterKey='\" + issuerMasterKey + '\\'' +\n+                \", amountAuthorised='\" + amountAuthorised + '\\'' +\n+                \", amountOther='\" + amountOther + '\\'' +\n+                \", terminalCountryCode='\" + terminalCountryCode + '\\'' +\n+                \", terminalVerificationResults='\" + terminalVerificationResults + '\\'' +\n+                \", transactionCurrencyCode='\" + transactionCurrencyCode + '\\'' +\n+                \", transactionDate='\" + transactionDate + '\\'' +\n+                \", transactionType='\" + transactionType + '\\'' +\n+                \", unpredictableNumber='\" + unpredictableNumber + '\\'' +\n+                \", applicationInterchangeProfile='\" + applicationInterchangeProfile + '\\'' +\n+                \", applicationTransactionCounter='\" + applicationTransactionCounter + '\\'' +\n+                \", issuerApplicationData='\" + issuerApplicationData + '\\'' +\n+                '}';\n+    }\n+\n }"
+        },
+        {
+            "sha": "32d3ea580d3dfa1591439c7fb939146fd93f9f64",
+            "filename": "src/main/java/com/bc/application/service/CryptogramFunctionsService.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 5,
+            "changes": 5,
+            "blob_url": "https://github.com/new-to-java/emv-functions/blob/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fservice%2FCryptogramFunctionsService.java",
+            "raw_url": "https://github.com/new-to-java/emv-functions/raw/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fservice%2FCryptogramFunctionsService.java",
+            "contents_url": "https://api.github.com/repos/new-to-java/emv-functions/contents/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fservice%2FCryptogramFunctionsService.java?ref=1498fe3ce834d72fa81a0585b4904e126441808f",
+            "patch": "@@ -60,9 +60,4 @@ protected abstract String getSessionKey(String uniqueDerivationKey, String appli\n     protected abstract String generateCryptogram(CryptogramRequest cryptogramRequest, String sessionKey,\n                                                  CryptogramVersionNumber cryptogramVersionNumber,\n                                                  String cardVerificationResults);\n-    /**\n-     * Method for logging the input data and output data for the CryptogramFunctions service request, when the debug log level is enabled.\n-     */\n-    protected abstract void debugLog(Object object);\n-\n }\n\\ No newline at end of file"
+        },
+        {
+            "sha": "bcb7ccefe5387f983f0132d13d4711833927949c",
+            "filename": "src/main/java/com/bc/application/service/impl/VisaCryptogramServiceImpl.java",
+            "status": "modified",
+            "additions": 63,
+            "deletions": 49,
+            "changes": 112,
+            "blob_url": "https://github.com/new-to-java/emv-functions/blob/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fservice%2Fimpl%2FVisaCryptogramServiceImpl.java",
+            "raw_url": "https://github.com/new-to-java/emv-functions/raw/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fservice%2Fimpl%2FVisaCryptogramServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/new-to-java/emv-functions/contents/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fapplication%2Fservice%2Fimpl%2FVisaCryptogramServiceImpl.java?ref=1498fe3ce834d72fa81a0585b4904e126441808f",
+            "patch": "@@ -12,18 +12,17 @@\n import jakarta.enterprise.context.ApplicationScoped;\n import lombok.extern.slf4j.Slf4j;\n import java.util.Map;\n-\n /**\n  * Core domain service hosting the methods for performing Visa Payment scheme specific cryptogram related functions.\n  */\n @Slf4j\n @ApplicationScoped\n-public class VisaCryptogramServiceImpl extends CryptogramFunctionsService<GenerateApplicationCryptogramCommand,\n-        GenerateACCommandToDomainMapper> {\n-\n+public class VisaCryptogramServiceImpl\n+        extends CryptogramFunctionsService<GenerateApplicationCryptogramCommand,\n+        GenerateACCommandToDomainMapper>\n+        implements LoggerUtility {\n     /**\n      * Driver method for generating an Application Cryptogram.\n-     *\n      * @param command Command object with the Application Cryptogram generation request.\n      * @return CryptogramResponse domain object with the generated cryptogram value.\n      */\n@@ -32,38 +31,55 @@ public CryptogramResponse getApplicationCryptogram(GenerateApplicationCryptogram\n         final String CVN_NAME = \"CVN\";\n         final String CVR_NAME = \"CVR\";\n         // Log command object\n-        debugLog(command);\n+        logDebug(log, \"Command object received: {}.\", command);\n         // Map command to domain\n-        CryptogramRequest cryptogramRequest = commandToDomainMapper.mapGenerateACCommandToDomain(command);\n-        // Log domain request object\n-        debugLog(cryptogramRequest);\n-        // Parse IAD\n-        VisaIADParser visaIADParser = new VisaIADParser(cryptogramRequest.getIssuerApplicationData());\n-        Map<String, String> parsedVisaIad =  visaIADParser.parseIad();\n-        log.debug(\"Parsed IAD ----> {}.\", parsedVisaIad);\n+        CryptogramRequest cryptogramRequest = buildDomainObjectFromCommand(command);\n+        // Parsed Visa IAD\n+        Map<String, String> visaIad =  getParsedVisaIad(cryptogramRequest.getIssuerApplicationData());\n         // Set Cryptogram Version Number\n-        CryptogramVersionNumber cryptogramVersionNumber = CryptogramVersionNumber.valueOf(parsedVisaIad.get(CVN_NAME));\n-        String cardVerificationResults = parsedVisaIad.get(CVR_NAME);\n-        // Extract to a method which will throw runtime exception for unsupported CVN\n-        //IADStaticData visaIADParser = new IADStaticData(cryptogramRequest.getIssuerApplicationData()).parseIad();\n-        // Generate UDK\n-        String uniqueDerivationKey = getUniqueDerivationKey(cryptogramRequest.getIssuerMasterKey(), cryptogramRequest.getPan(),\n-                cryptogramRequest.getPanSequenceNumber(), cryptogramVersionNumber);\n-        // Generate SK\n-        String sessionKey = getSessionKey(uniqueDerivationKey, cryptogramRequest.getApplicationTransactionCounter(),\n-                cryptogramVersionNumber);\n-        return buildResponseObjectFromDomain(generateCryptogram(cryptogramRequest, sessionKey, cryptogramVersionNumber, cardVerificationResults));\n+        log.debug(\"CVN from Parsed IAD: {}.\", visaIad.get(CVN_NAME));\n+        CryptogramVersionNumber cryptogramVersionNumber = CryptogramVersionNumber.valueOf(\n+                visaIad.get(CVN_NAME)\n+        );\n+        String cardVerificationResults = visaIad.get(CVR_NAME);\n+        // Generate Unique Derivation Key\n+        String uniqueDerivationKey = getUniqueDerivationKey(cryptogramRequest.getIssuerMasterKey(),\n+                cryptogramRequest.getPan(),\n+                cryptogramRequest.getPanSequenceNumber(),\n+                cryptogramVersionNumber\n+        );\n+        // Generate Session Key\n+        String sessionKey = getSessionKey(uniqueDerivationKey,\n+                cryptogramRequest.getApplicationTransactionCounter(),\n+                cryptogramVersionNumber\n+        );\n+        // Generate Visa cryptogram, and build and return REST API response object\n+        return buildResponseObjectFromDomain(generateCryptogram(cryptogramRequest,\n+                sessionKey,\n+                cryptogramVersionNumber,\n+                cardVerificationResults)\n+        );\n     }\n     /**\n      * Method to build and map the command object to Cryptogram Request domain object.\n-     *\n      * @param command Application Cryptogram Request command object.\n      * @return CryptogramRequest domain object generated by mapping command object.\n      */\n     @Override\n     protected CryptogramRequest buildDomainObjectFromCommand(GenerateApplicationCryptogramCommand command) {\n         return commandToDomainMapper.mapGenerateACCommandToDomain(command);\n     }\n+\n+    /**\n+     * Call Visa IAD parser with IAD from request as input.\n+     * @param issuerApplicationData IAD from request.\n+     * @return Parsed Visa IAD map.\n+     */\n+    private Map<String, String> getParsedVisaIad(String issuerApplicationData){\n+        return new VisaIADParser(\n+                issuerApplicationData)\n+                .parseIad();\n+    }\n     /**\n      * Method to derive Unique Derivation Key (UDK) from Issuer Master Key (IMK) for cryptogram generation.\n      * @param issuerMasterKey Issuer Master Key from request.\n@@ -73,12 +89,18 @@ protected CryptogramRequest buildDomainObjectFromCommand(GenerateApplicationCryp\n      * @return UDK generated from IMK.\n      */\n     @Override\n-    protected String getUniqueDerivationKey(String issuerMasterKey, String pan, String panSequenceNumber,\n+    protected String getUniqueDerivationKey(String issuerMasterKey,\n+                                            String pan,\n+                                            String panSequenceNumber,\n                                             CryptogramVersionNumber cryptogramVersionNumber) {\n-        EMVUniqueDerivationKeyDerivator emvUdkDerivator = new EMVUniqueDerivationKeyDerivator(issuerMasterKey, pan,\n-                panSequenceNumber, PaymentScheme.VISA, cryptogramVersionNumber, EMVUDKDerivationMethod.METHOD_A);\n+        EMVUniqueDerivationKeyDerivator emvUdkDerivator = new EMVUniqueDerivationKeyDerivator(issuerMasterKey,\n+                pan,\n+                panSequenceNumber,\n+                PaymentScheme.VISA,\n+                cryptogramVersionNumber,\n+                EMVUDKDerivationMethod.METHOD_A\n+        );\n         // The UDK derivation must be enhanced for CVN 22, as CVN 22 uses METHOD_B.\n-\n         return emvUdkDerivator.generateUniqueDerivationKey();\n     }\n     /**\n@@ -89,49 +111,41 @@ protected String getUniqueDerivationKey(String issuerMasterKey, String pan, Stri\n      * @return Session Key generated from UDK.\n      */\n     @Override\n-    protected String getSessionKey(String uniqueDerivationKey, String applicationTransactionCounter,\n+    protected String getSessionKey(String uniqueDerivationKey,\n+                                   String applicationTransactionCounter,\n                                    CryptogramVersionNumber cryptogramVersionNumber) {\n         EMVSessionKeyDerivator emvSessionKeyDerivator = new EMVSessionKeyDerivator(uniqueDerivationKey,\n-                applicationTransactionCounter, cryptogramVersionNumber);\n+                applicationTransactionCounter,\n+                cryptogramVersionNumber\n+        );\n         return emvSessionKeyDerivator.generateSessionKey();\n     }\n     /**\n      * Method to build and map the Cryptogram Response domain object to Response DTO class.\n-     *\n      * @param arqc Application Cryptogram generated.\n      * @return CryptogramResponse object containing generated Application Cryptogram.\n      */\n     @Override\n     protected CryptogramResponse buildResponseObjectFromDomain(String arqc) {\n         CryptogramResponse cryptogramResponse = new CryptogramResponse();\n         cryptogramResponse.setRequestCryptogram(arqc);\n-        // Log domain response object\n-        debugLog(cryptogramResponse);\n         return cryptogramResponse;\n     }\n     /**\n      * Method to call the Payment Scheme specific cryptogram generation request.\n-     *\n      * @param cryptogramRequest Cryptogram Request domain object.\n      * @return Application Cryptogram generated by Payment Scheme specific service.\n      */\n     @Override\n-    protected String generateCryptogram(CryptogramRequest cryptogramRequest, String sessionKey,\n+    protected String generateCryptogram(CryptogramRequest cryptogramRequest,\n+                                        String sessionKey,\n                                         CryptogramVersionNumber cryptogramVersionNumber,\n                                         String cardVerificationResults) {\n         VisaApplicationCryptogramGenerator visaApplicationCryptogramGenerator = new VisaApplicationCryptogramGenerator();\n-        return visaApplicationCryptogramGenerator.generateVisaApplicationCryptogram(cryptogramRequest, sessionKey,\n-                cryptogramVersionNumber, cardVerificationResults);\n-    }\n-    /**\n-     * Method for logging the input data and output data for the CryptogramFunctions service request, when the debug log level is enabled.\n-     * @param object Object to be logged.\n-     */\n-    @Override\n-    protected void debugLog(Object object) {\n-        if (log.isDebugEnabled()){\n-            log.debug(\"Logging object of '\" + object.getClass() + \"'\");\n-            log.debug(\"Data: {}\", object);\n-        }\n+        return visaApplicationCryptogramGenerator.generateVisaApplicationCryptogram(cryptogramRequest,\n+                sessionKey,\n+                cryptogramVersionNumber,\n+                cardVerificationResults\n+        );\n     }\n }\n\\ No newline at end of file"
+        }
+    ]
+}

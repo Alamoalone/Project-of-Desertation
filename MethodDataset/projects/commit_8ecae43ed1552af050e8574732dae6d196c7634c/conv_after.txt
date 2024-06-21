@@ -1,0 +1,7 @@
+    private static ExecTypeFunction conv(String _formatted, MemberId _id, Forwards _forwards) {
+        ExecTypeFunction conv_ = null;
+        if (!_formatted.isEmpty()) {
+            conv_ = fetchOvTypeFunction(_id, _forwards);
+        }
+        return conv_;
+    }

@@ -1,0 +1,22 @@
+  public void createAndConnectComponent(SubcircuitEditor subcircuitEditor,
+                                        CircuitSimulation circuitSimulation,
+                                        TraceLoader traceLoader,
+                                        TraceView traceView)
+  {
+    long[] traceIDs = simulationTraces.get(circuitSimulation.getId());
+    if (traceIDs == null)
+    {
+      throw new SimulatorException("Cannot find trace IDs for Circuit Simulation [%s].", circuitSimulation.getDescription());
+    }
+
+    WireDataHelper.wireConnect(subcircuitEditor,
+                               circuitSimulation,
+                               traceLoader,
+                               traceView,
+                               traceIDs,
+                               selected);
+
+  }
+
+
+

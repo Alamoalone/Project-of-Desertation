@@ -1,0 +1,5 @@
+   public void removeContrastControls(String channelName) {
+      ChannelControlPanel c = ccpList_.remove(channelName);
+      this.remove(c);
+      contrastPanel_.revalidate();
+   }

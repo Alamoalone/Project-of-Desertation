@@ -1,0 +1,16 @@
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        log.info("username: {}" , username);
+
+        UserDto userDto = null;
+        try{
+            userDto = userDtoRepository.findById(username).orElseThrow(NullPointerException::new);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
+
+        UserSecurityDto userSecurityDto = new UserSecurityDto(userDto);
+        log.info("userSecurityDto: {}" , userSecurityDto);
+
+        return userSecurityDto;
+    }
+

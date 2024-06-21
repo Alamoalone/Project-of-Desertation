@@ -1,0 +1,2 @@
+addAttestationProperty(AttestationRequest attestationRequest)
+triggerAttestation(AttestationRequest attestationRequest, AttestationPolicy attestationPolicy)

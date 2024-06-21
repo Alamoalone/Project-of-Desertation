@@ -1,0 +1,98 @@
+{
+    "sha": "1057b661629312c770a68c9f64ac82327b73b126",
+    "node_id": "C_kwDOAATZv9oAKDEwNTdiNjYxNjI5MzEyYzc3MGE2OGM5ZjY0YWM4MjMyN2I3M2IxMjY",
+    "commit": {
+        "author": {
+            "name": "Michael Hashimoto",
+            "email": "michael.hashimoto@liferay.com",
+            "date": "2023-06-03T01:23:57Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-06-07T17:10:15Z"
+        },
+        "message": "LRCI-3616 Avoid null pointer exception when finding files",
+        "tree": {
+            "sha": "cd0aa99649ce9795a0abbac0556eaf7e8617656f",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/cd0aa99649ce9795a0abbac0556eaf7e8617656f"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/1057b661629312c770a68c9f64ac82327b73b126",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgIcDjNlTxfRgpDVhEm9M0CmMGHg\n8lPcdZvrefGnr7hcIAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQHlTOxn17cC54s+YYlR+IGpCEtgXZgO8zELNxFOvtcL8JSXTP7WOEyGcwYvgrcX/3t\nhrAad1gJJv9u6KRZvheQk=\n-----END SSH SIGNATURE-----",
+            "payload": "tree cd0aa99649ce9795a0abbac0556eaf7e8617656f\nparent 630d22d509b1930a631ec652e7101b5e38e463af\nauthor Michael Hashimoto <michael.hashimoto@liferay.com> 1685755437 -0700\ncommitter Brian Chan <brian.chan@liferay.com> 1686157815 +0530\n\nLRCI-3616 Avoid null pointer exception when finding files\n"
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/1057b661629312c770a68c9f64ac82327b73b126",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/1057b661629312c770a68c9f64ac82327b73b126",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/1057b661629312c770a68c9f64ac82327b73b126/comments",
+    "author": {
+        "login": "michaelhashimoto",
+        "id": 863043,
+        "node_id": "MDQ6VXNlcjg2MzA0Mw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/863043?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/michaelhashimoto",
+        "html_url": "https://github.com/michaelhashimoto",
+        "followers_url": "https://api.github.com/users/michaelhashimoto/followers",
+        "following_url": "https://api.github.com/users/michaelhashimoto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/michaelhashimoto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/michaelhashimoto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/michaelhashimoto/subscriptions",
+        "organizations_url": "https://api.github.com/users/michaelhashimoto/orgs",
+        "repos_url": "https://api.github.com/users/michaelhashimoto/repos",
+        "events_url": "https://api.github.com/users/michaelhashimoto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/michaelhashimoto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "630d22d509b1930a631ec652e7101b5e38e463af",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/630d22d509b1930a631ec652e7101b5e38e463af",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/630d22d509b1930a631ec652e7101b5e38e463af"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 7,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "ff7e980a873591ba4dc062bf7ad9e423d8065b55",
+            "filename": "modules/test/jenkins-results-parser/src/main/java/com/liferay/jenkins/results/parser/JenkinsResultsParserUtil.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 1,
+            "changes": 8,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/1057b661629312c770a68c9f64ac82327b73b126/modules%2Ftest%2Fjenkins-results-parser%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fjenkins%2Fresults%2Fparser%2FJenkinsResultsParserUtil.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/1057b661629312c770a68c9f64ac82327b73b126/modules%2Ftest%2Fjenkins-results-parser%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fjenkins%2Fresults%2Fparser%2FJenkinsResultsParserUtil.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Ftest%2Fjenkins-results-parser%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fjenkins%2Fresults%2Fparser%2FJenkinsResultsParserUtil.java?ref=1057b661629312c770a68c9f64ac82327b73b126",
+            "patch": "@@ -899,7 +899,13 @@ public static List<File> findDirs(File baseDir, String regex) {\n \tpublic static List<File> findFiles(File baseDir, String regex) {\n \t\tList<File> files = new ArrayList<>();\n \n-\t\tfor (File file : baseDir.listFiles()) {\n+\t\tFile[] filesArray = baseDir.listFiles();\n+\n+\t\tif (filesArray == null) {\n+\t\t\treturn files;\n+\t\t}\n+\n+\t\tfor (File file : filesArray) {\n \t\t\tString fileName = file.getName();\n \n \t\t\tif (file.isDirectory()) {"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+    public void setup() {
+        objectMapper = new ObjectMapper();
+        mockMvc = MockMvcBuilders.standaloneSetup(this.categoryController).build();
+    }
+

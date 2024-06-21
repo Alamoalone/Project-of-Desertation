@@ -1,0 +1,16 @@
+        public SnmpInterfaceResult createInterfaceFromRow() {
+            SnmpInterfaceResult.Builder builder = SnmpInterfaceResult.newBuilder()
+                .setIfIndex(getIfIndex())
+                .setIfAdminStatus(getIfAdminStatus())
+                .setIfAlias(getIfAlias())
+                .setIfDescr(getIfDescr())
+                .setIfName(getIfName())
+                .setIfOperatorStatus(getIfOperStatus())
+                .setIfSpeed(getIfSpeed())
+                .setIfType(getIfType());
+            if(getPhysAddr() != null) {
+                builder.setPhysicalAddr(getPhysAddr());
+            }
+            return builder.build();
+        }
+

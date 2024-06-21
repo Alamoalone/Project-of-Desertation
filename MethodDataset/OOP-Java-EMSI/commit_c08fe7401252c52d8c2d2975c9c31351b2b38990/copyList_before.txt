@@ -1,0 +1,3 @@
+		public List<Phone> copyList() {
+		        return new ArrayList<>(phoneList);
+		    }

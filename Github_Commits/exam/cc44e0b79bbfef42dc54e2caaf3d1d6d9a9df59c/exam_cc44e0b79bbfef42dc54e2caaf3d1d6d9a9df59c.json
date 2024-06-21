@@ -1,0 +1,98 @@
+{
+    "sha": "cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c",
+    "node_id": "C_kwDOK3w2d9oAKGNjNDRlMGI3OWJiZmVmNDJkYzU0ZTJjYWFmM2QxZDZkOWE5ZGY1OWM",
+    "commit": {
+        "author": {
+            "name": "mightcell",
+            "email": "139125732+ijusthaveto@users.noreply.github.com",
+            "date": "2023-12-22T14:21:55Z"
+        },
+        "committer": {
+            "name": "mightcell",
+            "email": "139125732+ijusthaveto@users.noreply.github.com",
+            "date": "2023-12-22T14:21:55Z"
+        },
+        "message": "fix: Fixed a null pointer exception in answer submission\n\n# Add a non-null judgment for the user's answer attribute",
+        "tree": {
+            "sha": "94d81386b4a277f258d09c4118ef82b6051bb379",
+            "url": "https://api.github.com/repos/ijusthaveto/exam/git/trees/94d81386b4a277f258d09c4118ef82b6051bb379"
+        },
+        "url": "https://api.github.com/repos/ijusthaveto/exam/git/commits/cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ijusthaveto/exam/commits/cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c",
+    "html_url": "https://github.com/ijusthaveto/exam/commit/cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c",
+    "comments_url": "https://api.github.com/repos/ijusthaveto/exam/commits/cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c/comments",
+    "author": {
+        "login": "ijusthaveto",
+        "id": 139125732,
+        "node_id": "U_kgDOCErj5A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139125732?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ijusthaveto",
+        "html_url": "https://github.com/ijusthaveto",
+        "followers_url": "https://api.github.com/users/ijusthaveto/followers",
+        "following_url": "https://api.github.com/users/ijusthaveto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ijusthaveto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ijusthaveto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ijusthaveto/subscriptions",
+        "organizations_url": "https://api.github.com/users/ijusthaveto/orgs",
+        "repos_url": "https://api.github.com/users/ijusthaveto/repos",
+        "events_url": "https://api.github.com/users/ijusthaveto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ijusthaveto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ijusthaveto",
+        "id": 139125732,
+        "node_id": "U_kgDOCErj5A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139125732?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ijusthaveto",
+        "html_url": "https://github.com/ijusthaveto",
+        "followers_url": "https://api.github.com/users/ijusthaveto/followers",
+        "following_url": "https://api.github.com/users/ijusthaveto/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ijusthaveto/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ijusthaveto/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ijusthaveto/subscriptions",
+        "organizations_url": "https://api.github.com/users/ijusthaveto/orgs",
+        "repos_url": "https://api.github.com/users/ijusthaveto/repos",
+        "events_url": "https://api.github.com/users/ijusthaveto/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ijusthaveto/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "145c72f853a8be940de351e755aca1c9c88cca18",
+            "url": "https://api.github.com/repos/ijusthaveto/exam/commits/145c72f853a8be940de351e755aca1c9c88cca18",
+            "html_url": "https://github.com/ijusthaveto/exam/commit/145c72f853a8be940de351e755aca1c9c88cca18"
+        }
+    ],
+    "stats": {
+        "total": 52,
+        "additions": 30,
+        "deletions": 22
+    },
+    "files": [
+        {
+            "sha": "787af5300b69baa15b8069d93327589bc1fe5e96",
+            "filename": "exam-backend/src/main/java/me/ijusthaveto/exam/service/impl/ExamServiceImpl.java",
+            "status": "modified",
+            "additions": 30,
+            "deletions": 22,
+            "changes": 52,
+            "blob_url": "https://github.com/ijusthaveto/exam/blob/cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c/exam-backend%2Fsrc%2Fmain%2Fjava%2Fme%2Fijusthaveto%2Fexam%2Fservice%2Fimpl%2FExamServiceImpl.java",
+            "raw_url": "https://github.com/ijusthaveto/exam/raw/cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c/exam-backend%2Fsrc%2Fmain%2Fjava%2Fme%2Fijusthaveto%2Fexam%2Fservice%2Fimpl%2FExamServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/ijusthaveto/exam/contents/exam-backend%2Fsrc%2Fmain%2Fjava%2Fme%2Fijusthaveto%2Fexam%2Fservice%2Fimpl%2FExamServiceImpl.java?ref=cc44e0b79bbfef42dc54e2caaf3d1d6d9a9df59c",
+            "patch": "@@ -1,9 +1,9 @@\n package me.ijusthaveto.exam.service.impl;\n \n import cn.dev33.satoken.stp.StpUtil;\n-import cn.hutool.core.date.DateTime;\n+import cn.hutool.core.date.DateUtil;\n+import cn.hutool.core.util.StrUtil;\n import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;\n-import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;\n import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;\n import lombok.extern.slf4j.Slf4j;\n import me.ijusthaveto.exam.common.ErrorCode;\n@@ -15,6 +15,7 @@\n import me.ijusthaveto.exam.domain.dto.ExamDto;\n import me.ijusthaveto.exam.domain.dto.QuestionDto;\n import me.ijusthaveto.exam.domain.dto.TaskDto;\n+import me.ijusthaveto.exam.domain.dto.TestDto;\n import me.ijusthaveto.exam.exception.BusinessException;\n import me.ijusthaveto.exam.mapper.*;\n import me.ijusthaveto.exam.service.ExamService;\n@@ -35,14 +36,14 @@\n import static me.ijusthaveto.exam.constant.RoleConstant.DEFAULT_ROLE;\n \n /**\n-* @author 修雯天\n-* @description 针对表【exam】的数据库操作Service实现\n-* @createDate 2023-12-11 12:42:32\n-*/\n+ * @author 修雯天\n+ * @description 针对表【exam】的数据库操作Service实现\n+ * @createDate 2023-12-11 12:42:32\n+ */\n @Service\n @Slf4j\n public class ExamServiceImpl extends ServiceImpl<ExamMapper, Exam>\n-    implements ExamService{\n+        implements ExamService {\n \n     @Resource\n     private StudentexamMapper studentexamMapper;\n@@ -181,27 +182,28 @@ public void auto(List<QuestionDto> single, List<QuestionDto> multiple, List<Ques\n         Integer loginId = (Integer) StpUtil.getSession().get(\"loginId\");\n         Double totalScore = 0.0;\n \n-        if (!Objects.isNull(single)) {\n-            for (QuestionDto question : single) {\n-                if (question.getUserAnswer().equals(question.getCorrectAnswer())) {\n-                    totalScore += singleScore;\n-                }\n+\n+        for (QuestionDto question : single) {\n+            String userAnswer = question.getUserAnswer();\n+            String correctAnswer = question.getCorrectAnswer();\n+            if (StrUtil.isNotBlank(userAnswer)) {\n+                totalScore = userAnswer.equals(correctAnswer) ? totalScore + singleScore : totalScore;\n             }\n         }\n \n-        if (!Objects.isNull(multiple)) {\n-            for (QuestionDto question : multiple) {\n-                if (question.getUserAnswer().equals(question.getCorrectAnswer())) {\n-                    totalScore += multipleScore;\n-                }\n+        for (QuestionDto question : multiple) {\n+            String userAnswer = question.getUserAnswer();\n+            String correctAnswer = question.getCorrectAnswer();\n+            if (StrUtil.isNotBlank(userAnswer)) {\n+                totalScore = userAnswer.equals(correctAnswer) ? totalScore + multipleScore : totalScore;\n             }\n         }\n \n-        if (!Objects.isNull(judge)) {\n-            for (QuestionDto question : judge) {\n-                if (question.getUserAnswer().equals(question.getCorrectAnswer())) {\n-                    totalScore += judgeScore;\n-                }\n+        for (QuestionDto question : judge) {\n+            String userAnswer = question.getUserAnswer();\n+            String correctAnswer = question.getCorrectAnswer();\n+            if (StrUtil.isNotBlank(userAnswer)) {\n+                totalScore = userAnswer.equals(correctAnswer) ? totalScore + judgeScore : totalScore;\n             }\n         }\n \n@@ -212,6 +214,12 @@ public void auto(List<QuestionDto> single, List<QuestionDto> multiple, List<Ques\n         one.setUpdateTime(OwnUtil.getCurrentDate());\n         taskService.updateById(one);\n     }\n+\n+    @Override\n+    public void addTest(TestDto dto) {\n+        Exam exam = new Exam();\n+        exam.setExamTitle(dto.getExamTitle());\n+    }\n }\n \n "
+        }
+    ]
+}

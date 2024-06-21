@@ -1,0 +1,96 @@
+{
+    "sha": "7f0326250974aaec26019d18bb46e8fce3a563b8",
+    "node_id": "C_kwDOEpKmtdoAKDdmMDMyNjI1MDk3NGFhZWMyNjAxOWQxOGJiNDZlOGZjZTNhNTYzYjg",
+    "commit": {
+        "author": {
+            "name": "anan02-admin",
+            "email": "anan02-admin@ASR-NB-LONDON.dfki.net",
+            "date": "2023-02-28T15:31:38Z"
+        },
+        "committer": {
+            "name": "anan02-admin",
+            "email": "anan02-admin@ASR-NB-LONDON.dfki.net",
+            "date": "2023-02-28T15:31:38Z"
+        },
+        "message": "hotfix: null pointer exception handling due to repository error",
+        "tree": {
+            "sha": "f7c9d197759d3bc7965408838aa9f144e8e57578",
+            "url": "https://api.github.com/repos/aantakli/AJAN-service/git/trees/f7c9d197759d3bc7965408838aa9f144e8e57578"
+        },
+        "url": "https://api.github.com/repos/aantakli/AJAN-service/git/commits/7f0326250974aaec26019d18bb46e8fce3a563b8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/aantakli/AJAN-service/commits/7f0326250974aaec26019d18bb46e8fce3a563b8",
+    "html_url": "https://github.com/aantakli/AJAN-service/commit/7f0326250974aaec26019d18bb46e8fce3a563b8",
+    "comments_url": "https://api.github.com/repos/aantakli/AJAN-service/commits/7f0326250974aaec26019d18bb46e8fce3a563b8/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "b8db70c64f76d187047a8e2ed6545cb0541f17a8",
+            "url": "https://api.github.com/repos/aantakli/AJAN-service/commits/b8db70c64f76d187047a8e2ed6545cb0541f17a8",
+            "html_url": "https://github.com/aantakli/AJAN-service/commit/b8db70c64f76d187047a8e2ed6545cb0541f17a8"
+        }
+    ],
+    "stats": {
+        "total": 47,
+        "additions": 30,
+        "deletions": 17
+    },
+    "files": [
+        {
+            "sha": "b2a415efdbec76900a0a95781fc5227390d1c307",
+            "filename": "behaviour/src/main/java/de/dfki/asr/ajan/behaviour/nodes/action/common/ACTNUtil.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 3,
+            "changes": 7,
+            "blob_url": "https://github.com/aantakli/AJAN-service/blob/7f0326250974aaec26019d18bb46e8fce3a563b8/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Faction%2Fcommon%2FACTNUtil.java",
+            "raw_url": "https://github.com/aantakli/AJAN-service/raw/7f0326250974aaec26019d18bb46e8fce3a563b8/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Faction%2Fcommon%2FACTNUtil.java",
+            "contents_url": "https://api.github.com/repos/aantakli/AJAN-service/contents/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Faction%2Fcommon%2FACTNUtil.java?ref=7f0326250974aaec26019d18bb46e8fce3a563b8",
+            "patch": "@@ -32,6 +32,7 @@\n import static de.dfki.asr.ajan.common.AgentUtil.formatForMimeType;\n import de.dfki.asr.ajan.common.SPARQLUtil;\n import static de.dfki.asr.ajan.common.SPARQLUtil.getTupleExpr;\n+import de.dfki.asr.ajan.common.exceptions.TripleStoreException;\n import java.io.ByteArrayOutputStream;\n import java.io.UnsupportedEncodingException;\n import java.net.URISyntaxException;\n@@ -64,7 +65,7 @@ private ACTNUtil() {\n \n \t}\n \n-\tpublic static InputModel getInputModel(final Action action) {\n+\tpublic static InputModel getInputModel(final Action action) throws TripleStoreException {\n \t\treturn getInputModel(action.getInputs(), action.getObject());\n \t}\n \n@@ -83,15 +84,15 @@ public static InputModel getInputModel(final List<BehaviorQuery> inputs, final A\n \t\treturn inputModel;\n \t}\n \n-\tpublic static InputModel getInputModel(final List<BehaviorQuery> inputs, final Repository repo) {\n+\tpublic static InputModel getInputModel(final List<BehaviorQuery> inputs, final Repository repo) throws TripleStoreException {\n \t\tInputModel inputModel = new InputModel();\n \t\tfor (BehaviorQuery input: inputs) {\n \t\t\tinputModel = ACTNUtil.addInputToModel(repo, input, inputModel);\n \t\t}\n \t\treturn inputModel;\n \t}\n \n-\tpublic static InputModel addInputToModel(final Repository repo, final BehaviorQuery input, final InputModel inputModel) {\n+\tpublic static InputModel addInputToModel(final Repository repo, final BehaviorQuery input, final InputModel inputModel) throws TripleStoreException {\n \t\tModel result = (Model) input.getResult(repo);\n \t\tIterator<Statement> itr = result.iterator();\n \t\twhile (itr.hasNext()) {"
+        },
+        {
+            "sha": "a05a4f2cd662ba82ba1d73325fd0d67edaf05e60",
+            "filename": "behaviour/src/main/java/de/dfki/asr/ajan/behaviour/nodes/action/impl/LoadInputModel.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 11,
+            "changes": 27,
+            "blob_url": "https://github.com/aantakli/AJAN-service/blob/7f0326250974aaec26019d18bb46e8fce3a563b8/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Faction%2Fimpl%2FLoadInputModel.java",
+            "raw_url": "https://github.com/aantakli/AJAN-service/raw/7f0326250974aaec26019d18bb46e8fce3a563b8/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Faction%2Fimpl%2FLoadInputModel.java",
+            "contents_url": "https://api.github.com/repos/aantakli/AJAN-service/contents/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Faction%2Fimpl%2FLoadInputModel.java?ref=7f0326250974aaec26019d18bb46e8fce3a563b8",
+            "patch": "@@ -27,6 +27,7 @@\n import de.dfki.asr.ajan.behaviour.nodes.action.TaskStep;\n import de.dfki.asr.ajan.behaviour.nodes.action.common.ACTNUtil;\n import de.dfki.asr.ajan.behaviour.nodes.common.BTVocabulary;\n+import de.dfki.asr.ajan.common.exceptions.TripleStoreException;\n import java.net.MalformedURLException;\n import java.net.URL;\n import org.eclipse.rdf4j.model.Resource;\n@@ -45,19 +46,23 @@ public LoadInputModel(final TaskStep next) {\n \t@Override\n \tpublic Task.Status execute(final TaskContext context) {\n \t\tAction action = context.get(Action.class);\n-\t\tInputModel inputModel = ACTNUtil.getInputModel(action);\n-\t\tif (inputModel == null) {\n+\t\ttry {\n+\t\t\tInputModel inputModel = ACTNUtil.getInputModel(action);\n+\t\t\tif (inputModel == null) {\n+\t\t\t\treturn Task.Status.FAILED;\n+\t\t\t}\n+\t\t\tResource node = vf.createBNode();\n+\t\t\tif (validateURI(action.getUrl(), \"http\")) {\n+\t\t\t\tinputModel.add(node, BTVocabulary.BT_NODE, vf.createIRI(action.getUrl()));\n+\t\t\t} else {\n+\t\t\t\tinputModel.add(node, BTVocabulary.BT_NODE, vf.createBNode());\n+\t\t\t}\n+\t\t\tinputModel.add(node, RDFS.LABEL, vf.createLiteral(action.getLabel()));\n+\t\t\tcontext.put(inputModel);\n+\t\t\treturn executeNext(context);\n+\t\t} catch (TripleStoreException ex) {\n \t\t\treturn Task.Status.FAILED;\n \t\t}\n-\t\tResource node = vf.createBNode();\n-\t\tif (validateURI(action.getUrl(), \"http\")) {\n-\t\t\tinputModel.add(node, BTVocabulary.BT_NODE, vf.createIRI(action.getUrl()));\n-\t\t} else {\n-\t\t\tinputModel.add(node, BTVocabulary.BT_NODE, vf.createBNode());\n-\t\t}\n-\t\tinputModel.add(node, RDFS.LABEL, vf.createLiteral(action.getLabel()));\n-\t\tcontext.put(inputModel);\n-\t\treturn executeNext(context);\n \t}\n \n \tprivate static boolean validateURI(final String uri, final String schema) {"
+        },
+        {
+            "sha": "7438817be311534ca0faba3578107d28285d4067",
+            "filename": "behaviour/src/main/java/de/dfki/asr/ajan/behaviour/nodes/query/BehaviorConstructQuery.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/aantakli/AJAN-service/blob/7f0326250974aaec26019d18bb46e8fce3a563b8/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Fquery%2FBehaviorConstructQuery.java",
+            "raw_url": "https://github.com/aantakli/AJAN-service/raw/7f0326250974aaec26019d18bb46e8fce3a563b8/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Fquery%2FBehaviorConstructQuery.java",
+            "contents_url": "https://api.github.com/repos/aantakli/AJAN-service/contents/behaviour%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fbehaviour%2Fnodes%2Fquery%2FBehaviorConstructQuery.java?ref=7f0326250974aaec26019d18bb46e8fce3a563b8",
+            "patch": "@@ -22,6 +22,7 @@\n import de.dfki.asr.ajan.behaviour.nodes.common.BTUtil;\n import de.dfki.asr.ajan.behaviour.nodes.common.BTVocabulary;\n import de.dfki.asr.ajan.common.SPARQLUtil;\n+import de.dfki.asr.ajan.common.exceptions.TripleStoreException;\n import java.net.URI;\n import lombok.Data;\n import org.cyberborean.rdfbeans.annotations.RDF;\n@@ -50,7 +51,7 @@ public class BehaviorConstructQuery implements BehaviorQuery {\n \tprivate final ValueFactory vf = SimpleValueFactory.getInstance();\n \n \t@Override\n-\tpublic Model getResult(final Repository repo) {\n+\tpublic Model getResult(final Repository repo) throws TripleStoreException {\n \t\treset = false;\n \t\tresult = SPARQLUtil.getNamedGraph(SPARQLUtil.queryRepository(repo, sparql));\n \t\treturn result;"
+        },
+        {
+            "sha": "2c2cbdf998ead64ab4f386fec8550bf14d5649aa",
+            "filename": "common/src/main/java/de/dfki/asr/ajan/common/SPARQLUtil.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 2,
+            "changes": 10,
+            "blob_url": "https://github.com/aantakli/AJAN-service/blob/7f0326250974aaec26019d18bb46e8fce3a563b8/common%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fcommon%2FSPARQLUtil.java",
+            "raw_url": "https://github.com/aantakli/AJAN-service/raw/7f0326250974aaec26019d18bb46e8fce3a563b8/common%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fcommon%2FSPARQLUtil.java",
+            "contents_url": "https://api.github.com/repos/aantakli/AJAN-service/contents/common%2Fsrc%2Fmain%2Fjava%2Fde%2Fdfki%2Fasr%2Fajan%2Fcommon%2FSPARQLUtil.java?ref=7f0326250974aaec26019d18bb46e8fce3a563b8",
+            "patch": "@@ -20,6 +20,7 @@\n package de.dfki.asr.ajan.common;\n \n import de.dfki.asr.ajan.common.exceptions.AdaptSPARQLQueryException;\n+import de.dfki.asr.ajan.common.exceptions.TripleStoreException;\n import java.io.ByteArrayInputStream;\n import java.io.IOException;\n import java.io.InputStream;\n@@ -176,8 +177,13 @@ public static String renderQuery(final ParsedQuery query) throws QueryEvaluation\n \t\treturn renderedQuery;\n \t}\n \n-\tpublic static Model queryRepository(final Repository repo, final String query) {\n-\t\treturn Repositories.graphQuery(repo, query, r -> QueryResults.asModel(r));\n+\t@SuppressWarnings(\"PMD.AvoidCatchingGenericException\")\n+\tpublic static Model queryRepository(final Repository repo, final String query) throws TripleStoreException {\n+\t\ttry {\n+\t\t\treturn Repositories.graphQuery(repo, query, r -> QueryResults.asModel(r));\n+\t\t} catch (Exception ex) {\n+\t\t\tthrow new TripleStoreException(\"Unable to query repository!\", ex);\n+\t\t}\n \t}\n \n \tpublic static TupleExpr getTupleExpr(final String query) {"
+        }
+    ]
+}

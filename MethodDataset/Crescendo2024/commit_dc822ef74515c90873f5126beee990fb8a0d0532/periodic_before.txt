@@ -1,0 +1,38 @@
+  public void periodic() {
+    // This method will be called once per scheduler run
+
+    m_swerveModulePositions = new SwerveModulePosition[] {
+        m_frontLeft.getPosition(),
+        m_frontRight.getPosition(),
+        m_rearLeft.getPosition(),
+        m_rearRight.getPosition()
+    };
+
+    m_poseEstimator.update(Robot.isReal() ? m_gyro.getRotation2d() : new Rotation2d(m_gyroAngle),
+        m_swerveModulePositions);
+
+    Optional<Measurement> latestReading = m_visionSubsystem.getMeasurement();
+
+    // SmartDashboard.putBoolean("reading present", latestReading.isPresent());
+
+    if (latestReading.isPresent()) {
+      m_poseEstimator.addVisionMeasurement(latestReading.get().pose.toPose2d(), latestReading.get().timestamp);
+    }
+
+    m_field.setRobotPose(m_poseEstimator.getEstimatedPosition());
+
+    SmartDashboard.putNumber("gyro angle", m_gyro.getAngle());
+    SmartDashboard.putNumber("odometryX", m_poseEstimator.getEstimatedPosition().getX());
+    SmartDashboard.putNumber("odometryY", m_poseEstimator.getEstimatedPosition().getY());
+
+    // AdvantageScope Logging
+    double[] logData = {
+        m_frontLeft.getPosition().angle.getDegrees(), m_frontLeft.driveOutput,
+        m_frontRight.getPosition().angle.getDegrees(), m_frontRight.driveOutput,
+        m_rearLeft.getPosition().angle.getDegrees(), m_rearLeft.driveOutput,
+        m_rearRight.getPosition().angle.getDegrees(), m_rearRight.driveOutput,
+    };
+    SmartDashboard.putNumberArray("AdvantageScope Swerve States", logData);
+
+    setModuleStates(swerveModuleStates);
+  }

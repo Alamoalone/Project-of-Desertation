@@ -1,0 +1,2 @@
+mapCreateGroup(GroupInput from)
+mapUpdateGroup(UUID uuid, GroupInput from)

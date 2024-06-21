@@ -1,0 +1,185 @@
+	public String executeDownloadFile(String sFileURL, String sDownloadUser, String sDownloadPassword,
+			String sSaveDirOnServer, ProcessWorkspace oProcessWorkspace, int iMaxRetry) throws Exception {
+		// main method. sFileUrl is the url received by the lined data provider. sSaveDirOnServer is the local folder. 
+		// must return the valid file full path or "" if the download was not possible. 
+		
+		WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Execute download for file: " + sFileURL);
+		
+		
+		String sResult = null;
+
+		if (isFileProtocol(m_sDefaultProtocol)) {
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: detected file protocol ");
+
+			String sFilesystemPath = null;
+			if (isFileProtocol(sFileURL)) {
+				sFilesystemPath = removePrefixFile(sFileURL);
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile:  file system path from file protocol " + sFilesystemPath);
+			} else if (isHttpsProtocol(sFileURL)) {
+				sFilesystemPath = extractFilePathFromHttpsUrl(sFileURL);
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile:  file system path from http protocol " + sFilesystemPath);
+			} else {
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: unknown protocol " + sFileURL);
+			}
+
+			if (sFilesystemPath != null) {
+				File oSourceFile = new File(sFilesystemPath);
+
+				if (oSourceFile != null && oSourceFile.exists()) {
+					sResult = copyFile("file:" + sFilesystemPath, sDownloadUser, sDownloadPassword, sSaveDirOnServer, oProcessWorkspace, iMaxRetry);
+					WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: destination file path " + sResult);
+
+					return sResult;
+				}
+			}
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: no operation was effective for file protocol");
+
+		}
+		
+
+		if(isHttpsProtocol(sFileURL)) { 
+			int iAttemptCount = 0;
+			int iWaitDelta = 100;
+			long lLowerWatingTime = 1L;
+			long lUpperWatingTime = 10L;
+			
+			while (iAttemptCount < iMaxRetry) {
+				String sAccessToken = getAuthenticationToken(sDownloadUser, sDownloadPassword);
+				
+				if (Utils.isNullOrEmpty(sAccessToken)) {
+					WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Error retrieving the access token. Impossible to continue.");
+					// TODO: better to return an empty string or null?
+					return "";
+				}
+				
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Access token correctly received.");
+				String sODataDownloadUrl = getODataDownloadUrl(sFileURL);
+//				String sProductId = getProductIdFromURL(sODataDownloadUrl);
+				// with the auth token, we can send the download request
+				String sDownloadUrl = sODataDownloadUrl + SDOWNLOAD_URL_END + sAccessToken;
+				
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Access token correctly received. Download url (withouth accesso token): " + sODataDownloadUrl + SDOWNLOAD_URL_END);
+	
+				
+				// TODO: understand if I should also pass the name of the file - I think no. The method already parses the "File-disposition" attribute in the header. Should also work for Creodias2
+				String sDownloadedFilePath = downloadViaHttp(sDownloadUrl, null, sSaveDirOnServer);
+				
+				if(Utils.isNullOrEmpty(sDownloadedFilePath)) {
+					// we will try again
+					iAttemptCount++;
+					long lRandomWaitSeconds = new SecureRandom().longs(lLowerWatingTime, lUpperWatingTime).findFirst().getAsLong();
+					//prepare to wait longer next time
+					lLowerWatingTime = lRandomWaitSeconds;
+					lUpperWatingTime += iWaitDelta;
+					WasdiLog.warnLog("CreoDias2ProviderAdapter.executeDownloadFile. Download failed. Trying again after waiting  " + lRandomWaitSeconds +" seconds.");
+					TimeUnit.SECONDS.sleep(lRandomWaitSeconds);
+				} else {
+					// download completed
+					WasdiLog.debugLog("CreoDias2ProviderAdapter.executeDownloadFile. Download completed: " + sDownloadedFilePath);
+					return sDownloadedFilePath;
+				}
+			}
+		}
+		// TODO: better to return an empty string or null? 
+		return "";
+	}
+
+	public long getDownloadFileSize(String sFileURL) throws Exception {
+		// receives the file URI and must return the size of the file. Useful to give progress to the user
+		// TODO: are we are talking about the overall file size? or just the size has been downloaded until a certain point?
+		
+		WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Retrieving information for product: " + sFileURL);
+		
+		// create a creodias query like: https://datahub.creodias.eu/odata/v1/Products?$filter=Id eq '79d7807b-66e5-41d2-a586-1628eb82c3e0'&$expand=Attributes
+		
+		
+		long lSizeInBytes = 0L;
+
+		
+		if (isFileProtocol(m_sDefaultProtocol)) {
+			String sPath = null;
+			if (isFileProtocol(sFileURL)) {
+				sPath = removePrefixFile(sFileURL);
+				WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: file protocol detected. File path " + sFileURL);
+			} else if(isHttpsProtocol(sFileURL)) {
+				sPath = extractFilePathFromHttpsUrl(sFileURL);
+				WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: http protocol detected. File path " + sFileURL);
+			} else {
+				WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: unknown protocol " + sFileURL);
+			}
+
+			if (sPath != null) {
+				File oSourceFile = new File(sPath);
+
+				if (oSourceFile != null && oSourceFile.exists()) {
+					lSizeInBytes = getSourceFileLength(oSourceFile);
+					WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: detected file size: " + lSizeInBytes);
+					return lSizeInBytes;
+				}
+			}
+		}
+		
+
+		if (isHttpsProtocol(sFileURL)) {
+			String sDownloadUrl = getODataDownloadUrl(sFileURL);
+			String sProductId = getProductIdFromURL(sDownloadUrl);
+			String sUrl = SCREODIAS_BASE_URL + "$filter=Id eq '" + sProductId + "'&$expand=Attributes";
+			HttpCallResponse sResponse = null;
+			
+			try {
+				sResponse = HttpUtils.httpGet(sUrl);
+				if (sResponse == null || sResponse.getResponseCode() < 200 || sResponse.getResponseCode() > 299 || Utils.isNullOrEmpty(sResponse.getResponseBody())) {
+					WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Error retrieving the information about the product from the provider. " + sUrl);
+					return -1L;
+				}
+			} catch (Exception oEx) {
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. An exception occurred while retrieving the product information from the provider. " + oEx.getMessage());
+				return -1L;
+			}
+			
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Anwer well received from the provider");
+			
+			JSONObject oJsonBody = new JSONObject(sResponse.getResponseBody());
+			JSONArray aoJsonAttributes = oJsonBody.optJSONArray(SODATA_ATTRIBUTES);
+			
+			if (aoJsonAttributes == null) 
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Array of attributes not found for key " + SODATA_ATTRIBUTES);
+			
+			lSizeInBytes = Long.parseLong(getAttribute(aoJsonAttributes, SODATA_SIZE));
+			
+			
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. File size: " + lSizeInBytes);
+	
+			
+		}
+
+		return lSizeInBytes;
+		
+	}
+
+	public static void main(String[]args) throws Exception {
+		String sUrl = "https://identity.cloudferro.com/auth/realms/wekeo-elasticity/protocol/openid-connect/token";
+		URL oURL = new URL(sUrl);
+
+		HttpURLConnection oConnection = (HttpURLConnection) oURL.openConnection();
+		oConnection.setRequestMethod("POST");
+		oConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+		oConnection.setDoOutput(true);
+		String sDownloadPassword = "******";
+		String sDownloadUser = "******";
+		String sPayload = "client_id=CLOUDFERRO_PUBLIC&password=" + sDownloadPassword + "&username=" + sDownloadUser + "&grant_type=password";
+
+		HttpCallResponse oResponse = HttpUtils.httpPost(sUrl, sPayload);
+		System.out.println(oResponse.getResponseBody());
+		JSONObject oResponseBody = new JSONObject(oResponse.getResponseBody());
+		String sAccessToken = oResponseBody.optString("access_token");
+		
+		String otherUrl = "https://zipper.dataspace.copernicus.eu/odata/v1/Products(702b4faf-16d5-4450-9f61-4d0a13f96794)/$value?token=" + sAccessToken;
+		
+		HttpCallResponse oResponse2 = HttpUtils.httpGet(otherUrl);
+		
+		System.out.println(oResponse2);
+
+
+	}
+

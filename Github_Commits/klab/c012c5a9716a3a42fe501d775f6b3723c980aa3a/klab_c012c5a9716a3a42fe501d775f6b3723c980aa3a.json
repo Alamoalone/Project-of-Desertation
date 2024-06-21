@@ -1,0 +1,98 @@
+{
+    "sha": "c012c5a9716a3a42fe501d775f6b3723c980aa3a",
+    "node_id": "C_kwDOGPfWKNoAKGMwMTJjNWE5NzE2YTNhNDJmZTUwMWQ3NzVmNmIzNzIzYzk4MGFhM2E",
+    "commit": {
+        "author": {
+            "name": "Enrico Girotto",
+            "email": "enrico.girotto@bc3research.org",
+            "date": "2023-06-06T14:12:15Z"
+        },
+        "committer": {
+            "name": "Enrico Girotto",
+            "email": "enrico.girotto@bc3research.org",
+            "date": "2023-06-06T14:12:15Z"
+        },
+        "message": "Avoid null pointer exception with old certificates",
+        "tree": {
+            "sha": "2c7b629119eeec1a97da4cf64fac814e41cff5e2",
+            "url": "https://api.github.com/repos/integratedmodelling/klab/git/trees/2c7b629119eeec1a97da4cf64fac814e41cff5e2"
+        },
+        "url": "https://api.github.com/repos/integratedmodelling/klab/git/commits/c012c5a9716a3a42fe501d775f6b3723c980aa3a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/integratedmodelling/klab/commits/c012c5a9716a3a42fe501d775f6b3723c980aa3a",
+    "html_url": "https://github.com/integratedmodelling/klab/commit/c012c5a9716a3a42fe501d775f6b3723c980aa3a",
+    "comments_url": "https://api.github.com/repos/integratedmodelling/klab/commits/c012c5a9716a3a42fe501d775f6b3723c980aa3a/comments",
+    "author": {
+        "login": "euskalhenriko",
+        "id": 1877284,
+        "node_id": "MDQ6VXNlcjE4NzcyODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1877284?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/euskalhenriko",
+        "html_url": "https://github.com/euskalhenriko",
+        "followers_url": "https://api.github.com/users/euskalhenriko/followers",
+        "following_url": "https://api.github.com/users/euskalhenriko/following{/other_user}",
+        "gists_url": "https://api.github.com/users/euskalhenriko/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/euskalhenriko/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/euskalhenriko/subscriptions",
+        "organizations_url": "https://api.github.com/users/euskalhenriko/orgs",
+        "repos_url": "https://api.github.com/users/euskalhenriko/repos",
+        "events_url": "https://api.github.com/users/euskalhenriko/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/euskalhenriko/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "euskalhenriko",
+        "id": 1877284,
+        "node_id": "MDQ6VXNlcjE4NzcyODQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1877284?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/euskalhenriko",
+        "html_url": "https://github.com/euskalhenriko",
+        "followers_url": "https://api.github.com/users/euskalhenriko/followers",
+        "following_url": "https://api.github.com/users/euskalhenriko/following{/other_user}",
+        "gists_url": "https://api.github.com/users/euskalhenriko/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/euskalhenriko/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/euskalhenriko/subscriptions",
+        "organizations_url": "https://api.github.com/users/euskalhenriko/orgs",
+        "repos_url": "https://api.github.com/users/euskalhenriko/repos",
+        "events_url": "https://api.github.com/users/euskalhenriko/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/euskalhenriko/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "195a36767547c325264a67a292ada1e6758cd569",
+            "url": "https://api.github.com/repos/integratedmodelling/klab/commits/195a36767547c325264a67a292ada1e6758cd569",
+            "html_url": "https://github.com/integratedmodelling/klab/commit/195a36767547c325264a67a292ada1e6758cd569"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "6a26338c8f5aec2fc4a1301adb02ca2c6d419137",
+            "filename": "klab.hub/src/main/java/org/integratedmodelling/klab/hub/api/EngineProperties.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/integratedmodelling/klab/blob/c012c5a9716a3a42fe501d775f6b3723c980aa3a/klab.hub%2Fsrc%2Fmain%2Fjava%2Forg%2Fintegratedmodelling%2Fklab%2Fhub%2Fapi%2FEngineProperties.java",
+            "raw_url": "https://github.com/integratedmodelling/klab/raw/c012c5a9716a3a42fe501d775f6b3723c980aa3a/klab.hub%2Fsrc%2Fmain%2Fjava%2Forg%2Fintegratedmodelling%2Fklab%2Fhub%2Fapi%2FEngineProperties.java",
+            "contents_url": "https://api.github.com/repos/integratedmodelling/klab/contents/klab.hub%2Fsrc%2Fmain%2Fjava%2Forg%2Fintegratedmodelling%2Fklab%2Fhub%2Fapi%2FEngineProperties.java?ref=c012c5a9716a3a42fe501d775f6b3723c980aa3a",
+            "patch": "@@ -28,6 +28,10 @@ private void BouncyEngineProperties(ProfileResource profile, Agreement agreement\n         Optional<LocalDateTime> expirationTime = getExpirationTime(agreement);\n         if (expirationTime.isPresent()) {\n             this.properties.setProperty(KlabCertificate.KEY_EXPIRATION, expirationTime.get().toString());\n+        } else {\n+            // solution to avoid null pointer in old implementation\n+            // TODO need to find a better solution and spread into all the project\n+            this.properties.setProperty(KlabCertificate.KEY_EXPIRATION, LocalDateTime.now().plusDays(365).toString());\n         }\n \n \t\tthis.properties.setProperty(KlabCertificate.KEY_USERNAME, profile.getUsername());"
+        }
+    ]
+}

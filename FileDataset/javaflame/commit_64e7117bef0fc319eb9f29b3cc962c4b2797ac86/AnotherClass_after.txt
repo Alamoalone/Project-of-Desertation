@@ -1,0 +1,16 @@
+    public String toString() {
+        return recursive(this) + "xxxxx";
+    }
+
+    private static String recursive(AnotherClass c) {
+        return c.getValue();
+    }
+
+    private int getJ() {
+        int j = 0;
+        for (int i = 0; i < 1000; i++) {
+            j++;
+        }
+        return j;
+    }
+

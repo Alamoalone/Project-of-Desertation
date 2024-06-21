@@ -1,0 +1,110 @@
+{
+    "sha": "d5bea56f96c4ffaf34960cbdadef5f551659dfcb",
+    "node_id": "C_kwDOGX91gdoAKGQ1YmVhNTZmOTZjNGZmYWYzNDk2MGNiZGFkZWY1ZjU1MTY1OWRmY2I",
+    "commit": {
+        "author": {
+            "name": "Neil Penman",
+            "email": "neilpenman@gmail.com",
+            "date": "2023-07-14T23:19:46Z"
+        },
+        "committer": {
+            "name": "Neil Penman",
+            "email": "neilpenman@gmail.com",
+            "date": "2023-07-14T23:19:46Z"
+        },
+        "message": "Throw system exception instead of null pointer if an empty api request is made to update task status",
+        "tree": {
+            "sha": "15465acb16b9d3b4ab4fd907099d27c912a9ebd9",
+            "url": "https://api.github.com/repos/smap-consulting/smapserver2/git/trees/15465acb16b9d3b4ab4fd907099d27c912a9ebd9"
+        },
+        "url": "https://api.github.com/repos/smap-consulting/smapserver2/git/commits/d5bea56f96c4ffaf34960cbdadef5f551659dfcb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/smap-consulting/smapserver2/commits/d5bea56f96c4ffaf34960cbdadef5f551659dfcb",
+    "html_url": "https://github.com/smap-consulting/smapserver2/commit/d5bea56f96c4ffaf34960cbdadef5f551659dfcb",
+    "comments_url": "https://api.github.com/repos/smap-consulting/smapserver2/commits/d5bea56f96c4ffaf34960cbdadef5f551659dfcb/comments",
+    "author": {
+        "login": "nap2000",
+        "id": 1946349,
+        "node_id": "MDQ6VXNlcjE5NDYzNDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1946349?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nap2000",
+        "html_url": "https://github.com/nap2000",
+        "followers_url": "https://api.github.com/users/nap2000/followers",
+        "following_url": "https://api.github.com/users/nap2000/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nap2000/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nap2000/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nap2000/subscriptions",
+        "organizations_url": "https://api.github.com/users/nap2000/orgs",
+        "repos_url": "https://api.github.com/users/nap2000/repos",
+        "events_url": "https://api.github.com/users/nap2000/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nap2000/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "nap2000",
+        "id": 1946349,
+        "node_id": "MDQ6VXNlcjE5NDYzNDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1946349?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nap2000",
+        "html_url": "https://github.com/nap2000",
+        "followers_url": "https://api.github.com/users/nap2000/followers",
+        "following_url": "https://api.github.com/users/nap2000/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nap2000/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nap2000/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nap2000/subscriptions",
+        "organizations_url": "https://api.github.com/users/nap2000/orgs",
+        "repos_url": "https://api.github.com/users/nap2000/repos",
+        "events_url": "https://api.github.com/users/nap2000/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nap2000/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cbfd4da1c0b47851088ab3c0c70eb5c6881b9b7f",
+            "url": "https://api.github.com/repos/smap-consulting/smapserver2/commits/cbfd4da1c0b47851088ab3c0c70eb5c6881b9b7f",
+            "html_url": "https://github.com/smap-consulting/smapserver2/commit/cbfd4da1c0b47851088ab3c0c70eb5c6881b9b7f"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 9,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "cb6d3a4ac369d67ab019b9e1de0a820333f2f2fa",
+            "filename": "sdDAL/src/org/smap/sdal/Utilities/SystemException.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/smap-consulting/smapserver2/blob/d5bea56f96c4ffaf34960cbdadef5f551659dfcb/sdDAL%2Fsrc%2Forg%2Fsmap%2Fsdal%2FUtilities%2FSystemException.java",
+            "raw_url": "https://github.com/smap-consulting/smapserver2/raw/d5bea56f96c4ffaf34960cbdadef5f551659dfcb/sdDAL%2Fsrc%2Forg%2Fsmap%2Fsdal%2FUtilities%2FSystemException.java",
+            "contents_url": "https://api.github.com/repos/smap-consulting/smapserver2/contents/sdDAL%2Fsrc%2Forg%2Fsmap%2Fsdal%2FUtilities%2FSystemException.java?ref=d5bea56f96c4ffaf34960cbdadef5f551659dfcb",
+            "patch": "@@ -20,7 +20,6 @@\n package org.smap.sdal.Utilities;\n \n import javax.ws.rs.WebApplicationException;\n-import javax.ws.rs.core.HttpHeaders;\n import javax.ws.rs.core.Response;\n import javax.ws.rs.core.Response.Status;\n "
+        },
+        {
+            "sha": "a0a874d1af91f12d894d37e587703ed46b2508ab",
+            "filename": "surveyKPI/src/surveyKPI/MyAssignments.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 2,
+            "changes": 11,
+            "blob_url": "https://github.com/smap-consulting/smapserver2/blob/d5bea56f96c4ffaf34960cbdadef5f551659dfcb/surveyKPI%2Fsrc%2FsurveyKPI%2FMyAssignments.java",
+            "raw_url": "https://github.com/smap-consulting/smapserver2/raw/d5bea56f96c4ffaf34960cbdadef5f551659dfcb/surveyKPI%2Fsrc%2FsurveyKPI%2FMyAssignments.java",
+            "contents_url": "https://api.github.com/repos/smap-consulting/smapserver2/contents/surveyKPI%2Fsrc%2FsurveyKPI%2FMyAssignments.java?ref=d5bea56f96c4ffaf34960cbdadef5f551659dfcb",
+            "patch": "@@ -30,11 +30,13 @@\n import javax.ws.rs.core.Context;\r\n import javax.ws.rs.core.Response;\r\n \r\n+import org.smap.sdal.Utilities.ApplicationException;\r\n import org.smap.sdal.Utilities.Authorise;\r\n import org.smap.sdal.Utilities.GeneralUtilityMethods;\r\n import org.smap.sdal.Utilities.JsonAuthorisationException;\r\n import org.smap.sdal.Utilities.ResultsDataSource;\r\n import org.smap.sdal.Utilities.SDDataSource;\r\n+import org.smap.sdal.Utilities.SystemException;\r\n import org.smap.sdal.managers.CaseManager;\r\n import org.smap.sdal.managers.ExternalFileManager;\r\n import org.smap.sdal.managers.LogManager;\r\n@@ -951,8 +953,6 @@ public Response updateTasks(@Context HttpServletRequest request,\n \t\tGson gson = new GsonBuilder().disableHtmlEscaping().setDateFormat(\"yyyy-MM-dd HH:mm\").create();\r\n \t\tTaskResponse tr = gson.fromJson(assignInput, TaskResponse.class);\r\n \r\n-\t\tlog.info(\"Device:\" + tr.deviceId + \" for user \" + userName);\r\n-\r\n \t\t// TODO that the status is valid (A different range of status values depending on the role of the user)\r\n \r\n \t\tPreparedStatement pstmtSetDeleted = null;\r\n@@ -966,6 +966,11 @@ public Response updateTasks(@Context HttpServletRequest request,\n \t\tConnection cResults = ResultsDataSource.getConnection(connectionString);\r\n \t\ttry {\t\r\n \r\n+\t\t\tif(tr == null) {\r\n+\t\t\t\tthrow new ApplicationException(\"Task information was not set\");\r\n+\t\t\t}\t\t\r\n+\t\t\tlog.info(\"Device:\" + tr.deviceId + \" for user \" + userName);\r\n+\t\t\t\r\n \t\t\tLocale locale = new Locale(GeneralUtilityMethods.getUserLanguage(sd, request, request.getRemoteUser()));\r\n \t\t\tResourceBundle localisation = ResourceBundle.getBundle(\"org.smap.sdal.resources.SmapResources\", locale);\r\n \t\t\t\r\n@@ -1067,6 +1072,8 @@ public Response updateTasks(@Context HttpServletRequest request,\n \t\t\tresponse = Response.ok().build();\r\n \t\t\tlog.info(\"Assignments updated\");\t\r\n \r\n+\t\t} catch (ApplicationException e) {\t\t\r\n+\t\t\tthrow new SystemException(e.getMessage());\r\n \t\t} catch (Exception e) {\t\t\r\n \t\t\tresponse = Response.serverError().build();\r\n \t\t\tlog.log(Level.SEVERE,\"Exception\", e);\r"
+        }
+    ]
+}

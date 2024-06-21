@@ -1,0 +1,43 @@
+    private Float getCpuUsageForHigherVersion() {
+        Process process = null;
+        try {
+            process = Runtime.getRuntime().exec("top -n 1");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            int cpuIndex = -1;
+            while ((line = reader.readLine()) != null) {
+                line = line.trim();
+                if (TextUtils.isEmpty(line)) {
+                    continue;
+                }
+                int tempIndex = getCPUIndex(line);
+                if (tempIndex != -1) {
+                    cpuIndex = tempIndex;
+                    continue;
+                }
+                if (line.startsWith(String.valueOf(android.os.Process.myPid()))) {
+                    if (cpuIndex == -1) {
+                        continue;
+                    }
+                    String[] param = line.split("\\s+");
+                    if (param.length <= cpuIndex) {
+                        continue;
+                    }
+                    String cpu = param[cpuIndex];
+                    if (cpu.endsWith("%")) {
+                        cpu = cpu.substring(0, cpu.lastIndexOf("%"));
+                    }
+                    float rate = Float.parseFloat(cpu) / Runtime.getRuntime().availableProcessors();
+                    return rate;
+                }
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (null != process) {
+                process.destroy();
+            }
+        }
+
+        return null;
+    }

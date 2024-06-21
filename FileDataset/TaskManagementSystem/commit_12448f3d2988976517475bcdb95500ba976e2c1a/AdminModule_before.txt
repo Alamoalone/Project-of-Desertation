@@ -1,0 +1,626 @@
+	public void manageUsers() throws IOException
+	{
+		int choice= -1;
+	menu_manageUsers:
+		do
+		{
+			System.out.print("\033[H\033[2J"); System.out.flush();
+			choice= Application.inputInt(
+				"Managing Users..\n"+
+				"1.Add 2.Update 3.Delete 0.Back\n"+
+				"choose>> "
+			);
+			switch(choice)
+			{
+			case 0://Back
+				break;
+			case 1://Add Users
+				{
+					String uname, pword, utype_str;
+					User.utype utype= null;
+					int count_users= Application.userDataHandler.getLength();
+
+					while(true)//employee/admin
+					{
+						utype_str= Application.inputString("User Type [(A)dmin/(E)mployee]: ");
+						if(utype_str.equals("exit"))
+							continue menu_manageUsers;
+						if(utype_str.equals("Admin")||utype_str.equals("admin")||utype_str.equals("A")||utype_str.equals("a"))
+							utype= User.utype.admin;
+						else if(utype_str.equals("Employee")||utype_str.equals("employee")||utype_str.equals("E")||utype_str.equals("e"))
+							utype= User.utype.employee;
+						else
+						{
+							System.err.println("\033[31mInvalid Type! try again or type exit to go back\033[0m\n");
+							continue;
+						}
+						break;
+					}
+					while(true)//username
+					{
+						boolean duplicate= false;
+
+						uname= Application.inputString("Username: ");
+						if(uname.equals("exit"))
+							continue menu_manageUsers;
+						for(int k=0;k<count_users;++k)
+						{
+							User user= Application.userDataHandler.get(k);
+							if(user.getUsername().equals(uname))
+							{
+								duplicate= true;
+								break;
+							}
+						}
+						if(duplicate)
+						{
+							System.err.println("\033[31mUser by that name already exists! try again or type exit to go back\033[0m");
+							continue;
+						}
+						break;
+					}
+					while(true)//password
+					{
+						pword= Application.inputString("Password: ");
+						if(pword.equals("exit"))
+							continue menu_manageUsers;
+						if(pword.length()<8)
+						{
+							System.err.println("\033[31mPassword must be at least 8 character long! try again or type exit to go back\033[0m");
+							continue;
+						}
+						break;
+					}
+					while(true)//confirm password
+					{
+						String cpword= Application.inputString("Confirm Password: ");
+						if(cpword.equals("exit"))
+							continue menu_manageUsers;
+						if(!pword.equals(cpword))
+						{
+							System.err.println("\033[31mPassword Mismatch! try again or type exit to go back\033[0m");
+							continue;
+						}
+						break;
+					}
+					User user= new User(uname, pword, utype);
+					Application.userDataHandler.add(user);
+					System.out.print(
+						"\033[32mSuccessfully added \""+uname+"\"!\033[0m\n"+
+						"Press enter to continue...\n"
+					);
+					Application.input.nextLine();
+				}
+				break;
+			case 2://Update Users
+				{
+					User user= null;
+					int user_idx= -1;
+					int count_users= Application.userDataHandler.getLength();
+
+					if(count_users==0)
+					{
+						System.out.print(
+							"\033[33mNo Registered Users Found!\033[0m\n"+
+							"Press Enter to continue...\n"
+						);
+						Application.input.nextLine();
+						break;
+					}
+					do
+					{
+						System.out.print("\033[H\033[2J"); System.out.flush();
+						System.out.print(
+							"Registered Users:\n"+
+							"IDX\tUSERNAME\tTYPE\n"
+						);
+						for(int k=0;k<count_users;++k)
+						{
+							user= Application.userDataHandler.get(k);
+							System.out.printf("%d.\t%s\t%s\n", k+1, user.getUsername(), user.getUserType());
+						}
+						System.out.println("0. Back");
+						user_idx= Application.inputInt("Update>> ")-1;
+						if(user_idx==-1)
+						 	break;
+						if(user_idx<0||user_idx>=count_users)
+						{
+							System.err.println("\033[31mPlease select a valid number from the users list!\033[0m");
+							continue;
+						}
+						choice= -1;
+						while(user_idx!=-1 && choice!=0)
+						{
+							System.out.print("\033[H\033[2J"); System.out.flush();
+							choice= Application.inputInt(
+								"1. Username: "+user.getUsername()+"\n"+
+								"2. Type:     "+user.getUserType()+"\n"+
+								"3. Password\n"+
+								"0. Cancel\n"+
+								"Modify>> "
+							);
+							switch(choice)
+							{
+							case 0://Cancel
+								break;
+							case 1://modify username
+								while(true)
+								{
+									String newname;
+									Boolean duplicate= false;
+
+									newname= Application.inputString("New Username: ");
+									if(newname.equals("exit"))
+										break;
+									for(int k=0;k<count_users;++k)
+									{
+										User compare= Application.userDataHandler.get(k);
+										if(compare.getUsername().equals(newname))
+										{
+											duplicate= true;
+											break;
+										}
+									}
+									if(duplicate)
+									{
+										System.err.println("\033[31mUser Already Exists! try again or enter exit to go back\033[0m");
+										continue;
+									}
+									user.setUsername(newname);
+									Application.userDataHandler.update(user_idx, user);
+									break;
+								}
+								break;
+							case 2://modify type
+								while(true)
+								{
+									String newtype;
+
+									newtype= Application.inputString("New Type [(A)dmin/(E)mployee]: ");
+									if(newtype.equals("exit"))
+										break;
+									if(newtype.equals("Admin")||newtype.equals("admin")||newtype.equals("A")||newtype.equals("a"))
+										user.setUserType(User.utype.admin);
+									else if(newtype.equals("Employee")||newtype.equals("employee")||newtype.equals("E")||newtype.equals("e"))
+										user.setUserType(User.utype.employee);
+									else
+									{
+										System.out.println("\033[31mInvalid User Type! try again or type \"exit\" to go back\033[0m");
+										continue;
+									}
+									Application.userDataHandler.update(user_idx, user);
+									break;
+								}
+								break;
+							case 3://modify password
+								while(true)
+								{
+									String oldpword, newpword;
+
+									oldpword= Application.inputString("Old Password: ");
+									if(oldpword.equals("exit"))
+										break;
+									if(!oldpword.equals(user.getPassword()))
+									{
+										System.out.println("\033[31mIncorrect Password! try again or type \"exit\" to go back\033[0m");
+										continue;
+									}
+									newpword= Application.inputString("New Password: ");
+									if(newpword.equals("exit"))
+										break;
+									user.setPassword(newpword);
+									Application.userDataHandler.update(user_idx, user);
+									break;
+								}
+								break;
+							default:
+								System.err.println("\033[31mInvalid Operation!\033[0m");
+								break;
+							}
+						}
+					} while(user_idx!=-1);
+				}
+				break;
+			case 3://Delete Users
+				while(true)
+				{
+					User user= null;
+					int user_idx= -1;
+					String uname;
+					int
+						count_users= Application.userDataHandler.getLength(),
+						count_employees= Application.employeeDataHandler.getLength(),//cascade delete
+						count_tasks= Application.taskDataHandler.getLength(),//nullify
+						count_projects= Application.projectDataHandler.getLength();//nullify
+
+					if(count_users==0)
+					{
+						System.out.print(
+							"\033[33mNo Registered Users Found!\033[0m\n"+
+							"Press enter to continue..."
+						);
+						Application.input.nextLine();
+						break;
+					}
+					System.out.print("\033[H\033[2J"); System.out.flush();
+					System.out.print(
+						"Registered Users:\n"+
+						"IDX\tUSERNAME\tTYPE\n"
+					);
+					for(int k=0;k<count_users;++k)
+					{
+						user= Application.userDataHandler.get(k);
+						System.out.printf("%d.\t%s\t%s\n", k+1, user.getUsername(), user.getUserType());
+					}
+					System.out.println("0. Cancel");
+					user_idx= Application.inputInt("Delete>> ")-1;
+					if(user_idx==-1)
+						break;
+					if(user_idx<0||user_idx>=count_users)
+					{
+						System.err.println("\033[31mPlease select a valid number from the users list!\033[0m");
+						continue;
+					}
+					uname= user.getUsername();
+					String confirm= Application.inputString("Are you sure you want to \033[31mDELETE\033[0m \""+uname+"\"? [Y/N]: ");
+					if(!confirm.equals("Y") && !confirm.equals("y"))//don't delete
+						continue;
+					Application.userDataHandler.delete(user_idx);//delete user
+
+					for(int k=0;k<count_employees;++k)//delete from employees
+					{
+						Employee employee= Application.employeeDataHandler.get(k);
+						if(employee.getUsername().equals(uname))
+						{
+							Application.employeeDataHandler.delete(k);
+							break;
+						}
+					}
+					for(int k=0;k<count_tasks;++k)//nullify assigned tasks
+					{
+						Task task= Application.taskDataHandler.get(k);
+						if(task.getAssignedEmployee().getUsername().equals(uname))
+						{
+							task.setAssignedEmployee(null);
+							Application.taskDataHandler.update(k, task);
+						}
+					}
+					for(int k=0;k<count_projects;++k)//nullify any assigned projects 
+					{
+						Project project= Application.projectDataHandler.get(k);
+						if(project.getLeader().getUsername().equals(uname))
+						{
+							project.setLeader(null);
+							Application.projectDataHandler.update(k, project);
+						}
+					}
+				}
+				break;
+			default:
+				System.err.println("\033[31mInvalid Operation!\033[0m");
+			}
+		} while(choice!=0);
+	}
+
+	public void manageEmployees() throws IOException
+	{
+		int choice= 0;
+		do
+		{
+			System.out.print("\033[H\033[2J"); System.out.flush();
+			choice= Application.inputInt(
+				"Managing Employees..\n"+
+				"1.Add  2.Update  3.Delete  0.Back\n"+
+				"choose>> "
+			);
+			switch(choice)
+			{
+			case 1://Add Employees
+				{
+					Employee employee= null;
+					User user= null;
+					String uname= null;
+					int
+						empType_idx= -1,
+						count_users= Application.userDataHandler.getLength(),
+						count_emptypes= Application.empTypeDataHandler.getLength();
+					boolean unregistered= false;
+					
+					if(count_users==0)
+					{
+						System.out.print(
+							"\033[33mNo Registered Users Found!\033[0m\n"+
+							"Press enter to continue...\n"
+						);
+						Application.input.nextLine();
+						break;//back to menu
+					}
+					do
+					{
+						int count_employees= Application.employeeDataHandler.getLength();
+						for(int i=0;i<count_users;i++)
+						{
+							boolean found= false;
+							User user_registered= Application.userDataHandler.get(i);
+
+							if(user_registered.getUserType()!=User.utype.employee)
+								continue;
+							for(int j=0;j<count_employees;j++)
+							{
+								Employee employee_registered= Application.employeeDataHandler.get(j);
+								if(employee_registered.getUsername().equals(user_registered.getUsername()))
+								{
+									found= true;
+									break;
+								}
+							}
+							if(!found)
+							{
+								unregistered= true;
+								break;
+							}
+						}
+						if(!unregistered)
+						{
+							System.out.print(
+								"\033[33mAll employee user accounts have already been registered & approved!\033[0m\n"+
+								"Enter any key to continue...\n"
+							);
+							Application.input.nextLine();
+							break;//back to manageEmployees;
+						}
+						System.out.print("\033[H\033[2J"); System.out.flush();
+						System.out.print(
+							"Registered Accounts:\n"+
+							"USERNAME\tTYPE\n"
+						);
+						for(int k=0;k<count_users;++k)
+						{
+							user= Application.userDataHandler.get(k);
+							if(user.getUserType()!=User.utype.employee)
+								continue;
+
+							unregistered= false;
+							for(int i=0;i<count_employees;++i)
+							{
+								if(Application.employeeDataHandler.get(i).getUsername().equals(user.getUsername()))
+								{
+									unregistered= true;
+									break;
+								}
+							}
+							if(!unregistered)
+								System.out.printf("%s\t%s\n", user.getUsername(), user.getUserType());
+						}
+						System.out.println("\"exit\" to go back");
+						uname= Application.inputString("Choose>> ");
+						if(uname.equals("exit"))
+							break;
+						Boolean found= false;
+						for(int k=0;k<count_users;++k)
+						{
+							user= Application.userDataHandler.get(k);
+							if(user.getUsername().equals(uname))
+							{
+								found= true;
+								break;
+							}
+						}
+						if(!found)
+						{
+							System.err.println("\033[31mPlease select a valid user account from the list!\033[0m");
+							continue;
+						}
+						if(count_emptypes==0)
+						{
+							employee= new Employee(user.getUsername(), user.getPassword(), User.utype.employee, null);
+							Application.employeeDataHandler.add(employee);
+						}
+						else
+						{
+							do
+							{
+								EmpType empType= null;
+
+								System.out.print("\033[H\033[2J"); System.out.flush();
+								System.out.print(
+									"Defined Employee Types:\n"+
+									"IDX\tTYPE\tMANAGER?\n"
+								);
+								for(int k=0;k<count_emptypes;++k)
+								{
+									empType= Application.empTypeDataHandler.get(k);
+									System.out.printf("%d.\t%s\t%s\n", k+1, empType.getName(), empType.isManager()?"Yes":"No");
+								}
+								System.out.print(
+									"0. Cancel\n"+
+									"-1. TBD\n"
+								);
+								empType_idx= Application.inputInt("Choose>> ")-1;
+								if(empType_idx==-1)
+									break;
+								if(empType_idx==-2)
+								{
+									employee= new Employee(user.getUsername(), user.getPassword(), User.utype.employee, null);
+									Application.employeeDataHandler.add(employee);
+									break;
+								}
+								if(empType_idx<0||empType_idx>=count_emptypes)
+								{
+									System.err.println("\033[31mPlease select a valid number from the employee type list!\033[0m");
+									continue;
+								}
+								empType= Application.empTypeDataHandler.get(empType_idx);
+								employee= new Employee(user.getUsername(), user.getPassword(), User.utype.employee, empType);
+								Application.employeeDataHandler.add(employee);
+								break;
+							} while(empType_idx!=-1);
+						}
+					} while(!uname.equals("exit"));
+				}
+				break;
+			case 2://Update Employees
+				{
+					Employee employee= null;
+					int
+						employee_idx= -1,
+						empType_idx= -1,
+						count_employees= Application.employeeDataHandler.getLength();
+						
+					if(count_employees==0)
+					{
+						System.out.print(
+							"\033[33mNo Employees Registered!\033[0m\n"+
+							"Press Enter to continue...\n"
+						);
+						Application.input.nextLine();
+						break;
+					}
+					do
+					{
+						System.out.print("\033[H\033[2J"); System.out.flush();
+						System.out.print(
+							"Registered Employees:\n"+
+							"IDX\tNAME\tPOSITION\n"
+						);
+						for(int k=0;k<count_employees;++k)
+						{
+							employee= Application.employeeDataHandler.get(k);
+							System.out.printf(
+								"%d.\t%s\t%s\n",
+								k+1,
+								employee.getUsername(),
+								employee.getEmpType()==null?"TBD":employee.getEmpType().getName()
+							);
+						}
+						System.out.println("0. Back");
+						employee_idx= Application.inputInt("Update>> ")-1;
+						if(employee_idx==-1)
+						 	break;
+						if(employee_idx<0||employee_idx>=count_employees)
+						{
+							System.err.println("\033[31mPlease select a valid number from the employees list!\033[0m");
+							continue;
+						}
+						do
+						{
+							EmpType empType= null;
+							int count_emptypes= Application.empTypeDataHandler.getLength();
+
+							System.out.print("\033[H\033[2J"); System.out.flush();
+							System.out.print(
+								"Defined Employee Types:\n"+
+								"IDX\tTYPE\tMANAGER?\n"
+							);
+							for(int k=0;k<count_emptypes;++k)
+							{
+								empType= Application.empTypeDataHandler.get(k);
+								System.out.printf("%d.\t%s\t%s\n", k+1, empType.getName(), empType.isManager()?"Yes":"No");
+							}
+							System.out.print(
+								"0. Cancel\n"+
+								"-1. TBD\n"
+							);
+							empType_idx= Application.inputInt("Choose>> ")-1;
+							if(empType_idx==-1)
+								break;
+							if(empType_idx==-2)
+							{
+								employee.setEmpType(null);
+								Application.employeeDataHandler.update(employee_idx, employee);
+								break;
+							}
+							if(empType_idx<0||empType_idx>=count_emptypes)
+							{
+								System.err.println("\033[31mPlease select a valid number from the employee type list!\033[0m");
+								continue;
+							}
+							empType= Application.empTypeDataHandler.get(empType_idx);
+							employee.setEmpType(empType);
+							Application.employeeDataHandler.update(employee_idx, employee);
+							break;
+						} while(empType_idx!=-1);
+					} while(employee_idx!=-1);
+				}
+				break;
+			case 3://Delete Employees
+				while(true)
+				{
+					Employee employee= null;
+					int
+						employee_idx= -1,
+						count_employees= Application.employeeDataHandler.getLength(),
+						count_users= Application.userDataHandler.getLength(),//for cascade deletion
+						count_tasks= Application.taskDataHandler.getLength(),//for nullifying
+						count_projects= Application.projectDataHandler.getLength();//for nullifying
+
+					if(count_employees==0)
+					{
+						System.out.print(
+							"\033[33mNo Employees Yet!\033[0m\n"+
+							"Press enter to continue...\n"
+						);
+						Application.input.nextLine();
+						break;//back to menu
+					}
+					System.out.print("\033[H\033[2J"); System.out.flush();
+					System.out.print(
+						"Registered Employees:\n"+
+						"IDX\tUSERNAME\tTYPE\n"
+					);
+					for(int k=0;k<count_employees;++k)
+					{
+						employee= Application.employeeDataHandler.get(k);
+						System.out.printf("%d.\t%s\t%s\n", k+1, employee.getUsername(), employee.getEmpType()==null?"TBD":employee.getEmpType().getName());
+					}
+					System.out.println("0. Cancel");
+					employee_idx= Application.inputInt("Delete>> ")-1;
+					if(employee_idx==-1)
+						break;
+					if(employee_idx<0||employee_idx>=count_employees)
+					{
+						System.err.println("\033[31mPlease select a valid number from the users list!\033[0m");
+						continue;
+					}
+					employee= Application.employeeDataHandler.get(employee_idx);
+					String confirm= Application.inputString("Are you sure you want to \033[31mDELETE\033[0m \""+employee.getUsername()+"\"? [y/N]: ");
+					if(!confirm.equals("Y") && !confirm.equals("y"))//don't delete
+						continue;
+					Application.employeeDataHandler.delete(employee_idx);//delete employee
+					for(int k=0;k<count_users;++k)
+					{
+						User user= Application.userDataHandler.get(k);
+						if(user.getUsername().equals(employee.getUsername()))//delete user account
+						{
+							Application.userDataHandler.delete(k);
+							break;
+						}
+					}
+					for(int k=0;k<count_tasks;++k)//nullify assigned tasks
+					{
+						Task task= Application.taskDataHandler.get(k);
+						if(task.getAssignedEmployee().getUsername().equals(employee.getUsername()))
+						{
+							task.setAssignedEmployee(null);
+							Application.taskDataHandler.update(k, task);
+						}
+					}
+					for(int k=0;k<count_projects;++k)//nullify any assigned projects 
+					{
+						Project project= Application.projectDataHandler.get(k);
+						if(project.getLeader().getUsername().equals(employee.getUsername()))
+						{
+							project.setLeader(null);
+							Application.projectDataHandler.update(k, project);
+						}
+					}
+				}
+				break;
+			case 4:
+				break;
+			default:
+				System.out.println("\033[31mInvalid Operation!\033[0m");
+			}
+		} while(choice!=0);
+	}
+

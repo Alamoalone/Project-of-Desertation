@@ -1,0 +1,16 @@
+  public void testAddApplicationWithoutMarkingLatest()
+      throws ConflictException {
+    long creationTime = System.currentTimeMillis();
+    String appName = "notLatestApp1";
+    ApplicationId appId = new ApplicationId("account1", appName, "v1");
+    ApplicationMeta appMeta = new ApplicationMeta(appName, Specifications.from(new FooApp()),
+        new ChangeDetail(null, null, null, creationTime), null);
+    store.addApplication(appId, appMeta, false);
+
+    ApplicationMeta storedMeta = store.getApplicationMetadata(appId);
+    Assert.assertEquals(appName, storedMeta.getId());
+    Assert.assertEquals(creationTime, storedMeta.getChange().getCreationTimeMillis());
+
+    ApplicationMeta latestMeta = store.getLatest(appId.getAppReference());
+    Assert.assertNull(latestMeta);
+  }

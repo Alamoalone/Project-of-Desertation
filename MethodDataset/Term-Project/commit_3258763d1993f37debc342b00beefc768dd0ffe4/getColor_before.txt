@@ -1,0 +1,15 @@
+    private Color getColor(){
+        if (300<=scoreNumber && scoreNumber<=579){
+            return Color.RED;    
+        }
+        else if (580<=scoreNumber && scoreNumber<=669){
+            return Color.ORANGE;
+        }
+        else if (670<=scoreNumber && scoreNumber<=739){
+            return Color.YELLOW;
+        }
+        else if (740<=scoreNumber && scoreNumber<=799){
+            return Color.BLUE;
+        }
+        return Color.GREEN;
+    }

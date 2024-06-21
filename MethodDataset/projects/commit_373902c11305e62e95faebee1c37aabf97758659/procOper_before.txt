@@ -1,0 +1,33 @@
+    private static ExecOperationNode procOper(OperationNode _anaNode, Forwards _forwards) {
+        if (_anaNode instanceof NumericOperation) {
+            NumericOperation c_ = (NumericOperation) _anaNode;
+            return new ExecQuickOperation(new ExecOperationContent(c_.getContent()),null, new ExecOperatorContent(c_.getOperatorContent()), oper(c_));
+        }
+        if (_anaNode instanceof QuickOperation) {
+            return quickOp((QuickOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof NullSafeOperation) {
+            NullSafeOperation c_ = (NullSafeOperation) _anaNode;
+            StringList names_ = _anaNode.getResultClass().getNames();
+            AnaOperatorContent cont_ = new AnaOperatorContent();
+            cont_.setOpOffset(c_.getOpOffset());
+            cont_.setOper("??");
+            return new ExecQuickOperation(new ExecOperationContent(c_.getContent()), null, new ExecOperatorContent(cont_), new ExecOperNull(new CommonOperNullSafe(),names_));
+        }
+        if (_anaNode instanceof AssocationOperation) {
+            AssocationOperation c_ = (AssocationOperation) _anaNode;
+            return new ExecAssocationOperation(new ExecOperationContent(c_.getContent()));
+        }
+        if (_anaNode instanceof CompoundAffectationOperation) {
+            return compound((CompoundAffectationOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof AffectationOperation) {
+            AffectationOperation a_ = (AffectationOperation) _anaNode;
+            StringList names_ = _anaNode.getResultClass().getNames();
+            AnaOperatorContent cont_ = new AnaOperatorContent();
+            cont_.setOpOffset(a_.getOpOffset());
+            cont_.setOper("=");
+            return new ExecAffectationOperation(new ExecOperationContent(a_.getContent()), new ExecOperatorContent(cont_), names_);
+        }
+        return new ExecDeclaringOperation(new ExecOperationContent(_anaNode.getContent()));
+    }

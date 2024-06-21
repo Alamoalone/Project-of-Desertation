@@ -1,0 +1,7 @@
+    public void init() {
+        makePointPolicy();
+        makeUser();
+        makePointHistory();
+        makePointUpdateReqeustDto();
+        makeRandomDance();
+    }

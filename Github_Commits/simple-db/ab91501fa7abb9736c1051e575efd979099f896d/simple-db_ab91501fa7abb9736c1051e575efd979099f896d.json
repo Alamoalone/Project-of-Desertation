@@ -1,0 +1,98 @@
+{
+    "sha": "ab91501fa7abb9736c1051e575efd979099f896d",
+    "node_id": "C_kwDOK7vKIdoAKGFiOTE1MDFmYTdhYmI5NzM2YzEwNTFlNTc1ZWZkOTc5MDk5Zjg5NmQ",
+    "commit": {
+        "author": {
+            "name": "lanchuan lin",
+            "email": "lin.lan@northeastern.edu",
+            "date": "2023-12-21T08:31:24Z"
+        },
+        "committer": {
+            "name": "Lan Lin",
+            "email": "lin.lan@northeastern.edu",
+            "date": "2023-12-21T08:33:38Z"
+        },
+        "message": "fix: null pointer exception when initialize AbstractCache",
+        "tree": {
+            "sha": "4f3e1604fd70018f345a1be03d52a11e3201e850",
+            "url": "https://api.github.com/repos/simple-wheel/simple-db/git/trees/4f3e1604fd70018f345a1be03d52a11e3201e850"
+        },
+        "url": "https://api.github.com/repos/simple-wheel/simple-db/git/commits/ab91501fa7abb9736c1051e575efd979099f896d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/simple-wheel/simple-db/commits/ab91501fa7abb9736c1051e575efd979099f896d",
+    "html_url": "https://github.com/simple-wheel/simple-db/commit/ab91501fa7abb9736c1051e575efd979099f896d",
+    "comments_url": "https://api.github.com/repos/simple-wheel/simple-db/commits/ab91501fa7abb9736c1051e575efd979099f896d/comments",
+    "author": {
+        "login": "user1689",
+        "id": 89725525,
+        "node_id": "MDQ6VXNlcjg5NzI1NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89725525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/user1689",
+        "html_url": "https://github.com/user1689",
+        "followers_url": "https://api.github.com/users/user1689/followers",
+        "following_url": "https://api.github.com/users/user1689/following{/other_user}",
+        "gists_url": "https://api.github.com/users/user1689/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/user1689/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/user1689/subscriptions",
+        "organizations_url": "https://api.github.com/users/user1689/orgs",
+        "repos_url": "https://api.github.com/users/user1689/repos",
+        "events_url": "https://api.github.com/users/user1689/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/user1689/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "user1689",
+        "id": 89725525,
+        "node_id": "MDQ6VXNlcjg5NzI1NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89725525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/user1689",
+        "html_url": "https://github.com/user1689",
+        "followers_url": "https://api.github.com/users/user1689/followers",
+        "following_url": "https://api.github.com/users/user1689/following{/other_user}",
+        "gists_url": "https://api.github.com/users/user1689/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/user1689/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/user1689/subscriptions",
+        "organizations_url": "https://api.github.com/users/user1689/orgs",
+        "repos_url": "https://api.github.com/users/user1689/repos",
+        "events_url": "https://api.github.com/users/user1689/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/user1689/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8c639b682187feda0199ccb22bd1835bbe7a4a87",
+            "url": "https://api.github.com/repos/simple-wheel/simple-db/commits/8c639b682187feda0199ccb22bd1835bbe7a4a87",
+            "html_url": "https://github.com/simple-wheel/simple-db/commit/8c639b682187feda0199ccb22bd1835bbe7a4a87"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 3,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "caa755509d1b4c9d3011b088733eca8cd73ec67f",
+            "filename": "src/main/java/com/northeastern/edu/simpledb/backend/common/AbstractCache.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 2,
+            "changes": 5,
+            "blob_url": "https://github.com/simple-wheel/simple-db/blob/ab91501fa7abb9736c1051e575efd979099f896d/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fcommon%2FAbstractCache.java",
+            "raw_url": "https://github.com/simple-wheel/simple-db/raw/ab91501fa7abb9736c1051e575efd979099f896d/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fcommon%2FAbstractCache.java",
+            "contents_url": "https://api.github.com/repos/simple-wheel/simple-db/contents/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fcommon%2FAbstractCache.java?ref=ab91501fa7abb9736c1051e575efd979099f896d",
+            "patch": "@@ -32,14 +32,15 @@ public abstract class AbstractCache<T> {\n \n     private Lock lock;\n \n-    private Condition condition = lock.newCondition();\n+    private Condition condition;\n \n     public AbstractCache(int maxResource) {\n         this.maxResource = maxResource;\n         this.cache = new ConcurrentHashMap<>();\n         this.references = new ConcurrentHashMap<>();\n         this.getting = new ConcurrentHashMap<>();\n-        lock = new ReentrantLock();\n+        this.lock = new ReentrantLock();\n+        this.condition = lock.newCondition();\n     }\n \n     // obtain data based on key"
+        }
+    ]
+}

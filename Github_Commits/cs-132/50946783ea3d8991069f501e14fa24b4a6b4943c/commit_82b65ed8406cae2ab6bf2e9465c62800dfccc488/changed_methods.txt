@@ -1,0 +1,3 @@
+visit(ExpressionRest n, TypeEnv argu)
+visit(MethodDeclaration n, TypeEnv argu)
+visit(MainClass n, TypeEnv argu)

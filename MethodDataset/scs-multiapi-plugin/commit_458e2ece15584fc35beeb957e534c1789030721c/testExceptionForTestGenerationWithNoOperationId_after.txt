@@ -1,0 +1,4 @@
+  void testExceptionForTestGenerationWithNoOperationId() {
+    Assertions.assertThatThrownBy(() -> asyncApiGenerator.processFileSpec(AsyncApiGeneratorFixtures.TEST_GENERATION_WITH_NO_OPERATION_ID))
+      .isInstanceOf(InvalidAPIException.class);
+  }

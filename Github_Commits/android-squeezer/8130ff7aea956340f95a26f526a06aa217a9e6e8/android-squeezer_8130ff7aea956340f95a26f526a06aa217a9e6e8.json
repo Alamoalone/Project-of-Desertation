@@ -1,0 +1,98 @@
+{
+    "sha": "8130ff7aea956340f95a26f526a06aa217a9e6e8",
+    "node_id": "C_kwDOABKUZ9oAKDgxMzBmZjdhZWE5NTYzNDBmOTVhMjZmNTI2YTA2YWEyMTdhOWU2ZTg",
+    "commit": {
+        "author": {
+            "name": "Kurt Aaholst",
+            "email": "kaaholst@gmail.com",
+            "date": "2024-01-02T15:43:59Z"
+        },
+        "committer": {
+            "name": "Kurt Aaholst",
+            "email": "kaaholst@gmail.com",
+            "date": "2024-01-02T15:43:59Z"
+        },
+        "message": "Avoid possible null pointer exception for music changed event",
+        "tree": {
+            "sha": "99b3f80099bd089e73ee0b42aeff63a5f611a2d1",
+            "url": "https://api.github.com/repos/kaaholst/android-squeezer/git/trees/99b3f80099bd089e73ee0b42aeff63a5f611a2d1"
+        },
+        "url": "https://api.github.com/repos/kaaholst/android-squeezer/git/commits/8130ff7aea956340f95a26f526a06aa217a9e6e8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/kaaholst/android-squeezer/commits/8130ff7aea956340f95a26f526a06aa217a9e6e8",
+    "html_url": "https://github.com/kaaholst/android-squeezer/commit/8130ff7aea956340f95a26f526a06aa217a9e6e8",
+    "comments_url": "https://api.github.com/repos/kaaholst/android-squeezer/commits/8130ff7aea956340f95a26f526a06aa217a9e6e8/comments",
+    "author": {
+        "login": "kaaholst",
+        "id": 428304,
+        "node_id": "MDQ6VXNlcjQyODMwNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/428304?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kaaholst",
+        "html_url": "https://github.com/kaaholst",
+        "followers_url": "https://api.github.com/users/kaaholst/followers",
+        "following_url": "https://api.github.com/users/kaaholst/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kaaholst/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kaaholst/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kaaholst/subscriptions",
+        "organizations_url": "https://api.github.com/users/kaaholst/orgs",
+        "repos_url": "https://api.github.com/users/kaaholst/repos",
+        "events_url": "https://api.github.com/users/kaaholst/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kaaholst/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "kaaholst",
+        "id": 428304,
+        "node_id": "MDQ6VXNlcjQyODMwNA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/428304?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kaaholst",
+        "html_url": "https://github.com/kaaholst",
+        "followers_url": "https://api.github.com/users/kaaholst/followers",
+        "following_url": "https://api.github.com/users/kaaholst/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kaaholst/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kaaholst/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kaaholst/subscriptions",
+        "organizations_url": "https://api.github.com/users/kaaholst/orgs",
+        "repos_url": "https://api.github.com/users/kaaholst/repos",
+        "events_url": "https://api.github.com/users/kaaholst/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kaaholst/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4b47e2e494361dd9105300f3f51ce579f9acc531",
+            "url": "https://api.github.com/repos/kaaholst/android-squeezer/commits/4b47e2e494361dd9105300f3f51ce579f9acc531",
+            "html_url": "https://github.com/kaaholst/android-squeezer/commit/4b47e2e494361dd9105300f3f51ce579f9acc531"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "c521869808d070d04170689ecd7c303de6e34893",
+            "filename": "Squeezer/src/main/java/uk/org/ngo/squeezer/service/CometClient.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/kaaholst/android-squeezer/blob/8130ff7aea956340f95a26f526a06aa217a9e6e8/Squeezer%2Fsrc%2Fmain%2Fjava%2Fuk%2Forg%2Fngo%2Fsqueezer%2Fservice%2FCometClient.java",
+            "raw_url": "https://github.com/kaaholst/android-squeezer/raw/8130ff7aea956340f95a26f526a06aa217a9e6e8/Squeezer%2Fsrc%2Fmain%2Fjava%2Fuk%2Forg%2Fngo%2Fsqueezer%2Fservice%2FCometClient.java",
+            "contents_url": "https://api.github.com/repos/kaaholst/android-squeezer/contents/Squeezer%2Fsrc%2Fmain%2Fjava%2Fuk%2Forg%2Fngo%2Fsqueezer%2Fservice%2FCometClient.java?ref=8130ff7aea956340f95a26f526a06aa217a9e6e8",
+            "patch": "@@ -824,7 +824,9 @@ public void handleMessage(android.os.Message msg) {\n                 }\n                 case MSG_MUSIC_CHANGED: {\n                     Player activePlayer = mConnectionState.getActivePlayer();\n-                    mEventBus.postSticky(new MusicChanged(activePlayer, activePlayer.getPlayerState()));\n+                    if (activePlayer != null) {\n+                        mEventBus.postSticky(new MusicChanged(activePlayer, activePlayer.getPlayerState()));\n+                    }\n                     break;\n                 }\n             }"
+        }
+    ]
+}

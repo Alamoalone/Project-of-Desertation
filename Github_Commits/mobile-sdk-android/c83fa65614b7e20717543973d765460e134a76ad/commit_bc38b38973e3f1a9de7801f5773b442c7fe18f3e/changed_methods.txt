@@ -1,0 +1,7 @@
+toggleAutoRefresh()
+resize(int w, int h, int offset_x, int offset_y, MRAIDImplementation custom_close_position, boolean allow_offscreen, MRAIDImplementation caller)
+close(int w, int h, MRAIDImplementation caller)
+processAdLoaded(AdResponse ad)
+run()
+onLayout(boolean changed, int left, int top, int right, int bottom)
+handleBannerOrInterstitialAd(AdResponse ad)

@@ -1,0 +1,25 @@
+  public void testServiceInstances() throws ConflictException {
+    ApplicationSpecification appSpec = Specifications.from(new AppWithServices());
+    ApplicationId appId = NamespaceId.DEFAULT.app(appSpec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addLatestApplication(appId, appMeta);
+
+    // Test setting of service instances
+    ProgramId programId = appId.program(ProgramType.SERVICE, "NoOpService");
+    int count = store.getServiceInstances(programId);
+    Assert.assertEquals(1, count);
+
+    store.setServiceInstances(programId, 10);
+    count = store.getServiceInstances(programId);
+    Assert.assertEquals(10, count);
+
+    ApplicationSpecification newSpec = store.getApplication(appId);
+    Assert.assertNotNull(newSpec);
+    Map<String, ServiceSpecification> services = newSpec.getServices();
+    Assert.assertEquals(1, services.size());
+
+    ServiceSpecification serviceSpec = services.get("NoOpService");
+    Assert.assertEquals(10, serviceSpec.getInstances());
+  }

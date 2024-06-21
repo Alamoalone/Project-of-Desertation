@@ -1,0 +1,3 @@
+	    public void swapElements(int iphone7, int iphone8) {
+	        Collections.swap(phoneList, iphone7, iphone8);
+	    }

@@ -1,0 +1,6 @@
+    public static void main(String[] args) {
+
+        String sentence = null;
+
+        System.out.println(jadenSmithWritingStyle(sentence));
+    }

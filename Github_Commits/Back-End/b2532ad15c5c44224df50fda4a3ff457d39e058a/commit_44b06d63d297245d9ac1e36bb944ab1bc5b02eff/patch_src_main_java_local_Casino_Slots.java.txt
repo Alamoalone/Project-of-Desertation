@@ -1,0 +1,14 @@
+@@ -8,6 +8,7 @@
+ public class Slots {
+ 
+     public enum Symbols {
++
+         DIAMOND,
+         LEMON,
+         WATERMELON,
+@@ -30,4 +31,5 @@ public static Symbols randomLetter()  {
+         }
+ 
+     }
++    
+ }

@@ -1,0 +1,98 @@
+{
+    "sha": "746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9",
+    "node_id": "C_kwDOJOLgXdoAKDc0NmJjMmNjNTRlMjZkZWZkMmQwYTQzMWJmOGRmNWEyMmUyY2E5YTk",
+    "commit": {
+        "author": {
+            "name": "Vincent Lai",
+            "email": "vincentlai91@hotmail.com",
+            "date": "2023-09-22T00:13:59Z"
+        },
+        "committer": {
+            "name": "Vincent Lai",
+            "email": "vincentlai91@hotmail.com",
+            "date": "2023-09-22T00:13:59Z"
+        },
+        "message": "resolved bug on null pointer exception for getting mongodb connection instance",
+        "tree": {
+            "sha": "c1c35f974ee67cea4c729339029648e9d8d7fe98",
+            "url": "https://api.github.com/repos/vincentcalai/OasisBet/git/trees/c1c35f974ee67cea4c729339029648e9d8d7fe98"
+        },
+        "url": "https://api.github.com/repos/vincentcalai/OasisBet/git/commits/746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/vincentcalai/OasisBet/commits/746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9",
+    "html_url": "https://github.com/vincentcalai/OasisBet/commit/746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9",
+    "comments_url": "https://api.github.com/repos/vincentcalai/OasisBet/commits/746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9/comments",
+    "author": {
+        "login": "vincentcalai",
+        "id": 50108422,
+        "node_id": "MDQ6VXNlcjUwMTA4NDIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50108422?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vincentcalai",
+        "html_url": "https://github.com/vincentcalai",
+        "followers_url": "https://api.github.com/users/vincentcalai/followers",
+        "following_url": "https://api.github.com/users/vincentcalai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vincentcalai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vincentcalai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vincentcalai/subscriptions",
+        "organizations_url": "https://api.github.com/users/vincentcalai/orgs",
+        "repos_url": "https://api.github.com/users/vincentcalai/repos",
+        "events_url": "https://api.github.com/users/vincentcalai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vincentcalai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "vincentcalai",
+        "id": 50108422,
+        "node_id": "MDQ6VXNlcjUwMTA4NDIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50108422?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vincentcalai",
+        "html_url": "https://github.com/vincentcalai",
+        "followers_url": "https://api.github.com/users/vincentcalai/followers",
+        "following_url": "https://api.github.com/users/vincentcalai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vincentcalai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vincentcalai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vincentcalai/subscriptions",
+        "organizations_url": "https://api.github.com/users/vincentcalai/orgs",
+        "repos_url": "https://api.github.com/users/vincentcalai/repos",
+        "events_url": "https://api.github.com/users/vincentcalai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vincentcalai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9c3ce2e95a256f70a0842c6a993aa6cedfd4e286",
+            "url": "https://api.github.com/repos/vincentcalai/OasisBet/commits/9c3ce2e95a256f70a0842c6a993aa6cedfd4e286",
+            "html_url": "https://github.com/vincentcalai/OasisBet/commit/9c3ce2e95a256f70a0842c6a993aa6cedfd4e286"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "b645771aa86c51abe56c38f5e90ee0b2c1c44eaf",
+            "filename": "betting/src/main/java/com/oasisbet/betting/odds/service/OddsService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/vincentcalai/OasisBet/blob/746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9/betting%2Fsrc%2Fmain%2Fjava%2Fcom%2Foasisbet%2Fbetting%2Fodds%2Fservice%2FOddsService.java",
+            "raw_url": "https://github.com/vincentcalai/OasisBet/raw/746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9/betting%2Fsrc%2Fmain%2Fjava%2Fcom%2Foasisbet%2Fbetting%2Fodds%2Fservice%2FOddsService.java",
+            "contents_url": "https://api.github.com/repos/vincentcalai/OasisBet/contents/betting%2Fsrc%2Fmain%2Fjava%2Fcom%2Foasisbet%2Fbetting%2Fodds%2Fservice%2FOddsService.java?ref=746bc2cc54e26defd2d0a431bf8df5a22e2ca9a9",
+            "patch": "@@ -36,9 +36,8 @@ public class OddsService {\n \n \tprivate Logger logger = LoggerFactory.getLogger(OddsService.class);\n \n-\tMongoCollection<Document> collection = MongoDBConnection.getInstance().getCollection();\n-\n \tpublic List<BetEvent> retrieveBetEventByCompType(String compType) {\n+\t\tMongoCollection<Document> collection = MongoDBConnection.getInstance().getCollection();\n \n \t\tBson filter = Filters.eq(Constants.COMP_TYPE, compType);\n \t\tFindIterable<Document> results = collection.find(filter);\n@@ -100,6 +99,7 @@ public Long getSequenceValue(MongoCollection<Document> collection, String compTy\n \t}\n \n \tpublic void updateCurrBetEvents(String compType, OddsApiResponse[] results) {\n+\t\tMongoCollection<Document> collection = MongoDBConnection.getInstance().getCollection();\n \t\tArrays.sort(results, Comparator.comparing(OddsApiResponse::getCommence_time,\n \t\t\t\tComparator.nullsFirst(Comparator.naturalOrder())));\n "
+        }
+    ]
+}

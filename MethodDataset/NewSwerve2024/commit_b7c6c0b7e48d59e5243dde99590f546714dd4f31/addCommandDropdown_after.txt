@@ -1,0 +1,10 @@
+  private void addCommandDropdown()
+  {
+    chooser.setDefaultOption("Drive To Distance", new DriveToDistance(Units.feetToMeters(12), m_swerve));
+    chooser.addOption("Turn To Angle", new TurnToAngle(90, m_swerve));
+    chooser.addOption("Shoot and Move", new ShootAndMove(m_shooter, m_swerve));
+    chooser.addOption("Shoot", new ShootMech(m_shooter));
+    chooser.addOption("Move and Amp", new MoveandAmp(m_intake, m_swerve)); 
+
+    SmartDashboard.putData(chooser);
+  }

@@ -1,0 +1,13 @@
+@@ -307,8 +307,10 @@ TaskDefinition registerTemplate(final String cloudName, final ECSTaskTemplate te
+             List<Tag> taskDefinitionTags = new ArrayList<>();
+             taskDefinitionTags.add(jenkinsLabelTag);
+             taskDefinitionTags.add(jenkinsTemplateNameTag);
+-            for (ECSTaskTemplate.Tag tag: template.getTags()) {
+-                taskDefinitionTags.add(new Tag().withKey(tag.name).withValue(tag.value));
++            if (template.getTags() != null) {
++                for (ECSTaskTemplate.Tag tag: template.getTags()) {
++                    taskDefinitionTags.add(new Tag().withKey(tag.name).withValue(tag.value));
++                }
+             }
+ 
+             final RegisterTaskDefinitionRequest request = new RegisterTaskDefinitionRequest()

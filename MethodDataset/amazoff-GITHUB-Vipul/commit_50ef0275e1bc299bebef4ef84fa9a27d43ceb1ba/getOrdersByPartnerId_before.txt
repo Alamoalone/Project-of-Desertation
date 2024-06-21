@@ -1,0 +1,6 @@
+    public ResponseEntity<List<String>> getOrdersByPartnerId(@PathVariable String partnerId){
+        List<String> orders = null;
+        //orders should contain a list of orders by PartnerId
+        orders=orderservice.getOrderByPartnerId(partnerId);
+        return new ResponseEntity<>(orders, HttpStatus.CREATED);
+    }

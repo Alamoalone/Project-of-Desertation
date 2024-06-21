@@ -1,0 +1,6 @@
+    private String assembleSqlFilter(Stream<DimensionConfigHelper> filterStream, String prefix) {
+        StringJoiner where = new StringJoiner("\nAND ", prefix + " ", "");
+        where.setEmptyValue("");
+        filterStream.map(filter2SqlCondtion).filter(e -> e != null).forEach(where::add);
+        return where.toString();
+    }

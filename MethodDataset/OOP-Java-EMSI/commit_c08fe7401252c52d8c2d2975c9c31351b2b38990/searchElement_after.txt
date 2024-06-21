@@ -1,0 +1,3 @@
+	public boolean searchElement(Phone phone) {
+		return phoneList.contains(phone);
+	}

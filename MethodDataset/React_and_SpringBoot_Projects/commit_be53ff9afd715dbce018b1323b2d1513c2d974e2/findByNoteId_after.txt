@@ -1,0 +1,10 @@
+    public Notes findByNoteId(Integer id) {
+        Notes note = notesRepository.findByNoteId(id);
+        try{
+            note.setTitle(encryptionUtil.decrypt(note.getTitle()));
+            note.setDescription(encryptionUtil.decrypt(note.getDescription()));
+        }catch (NullPointerException e){
+            return null;
+        }
+        return note;
+    }

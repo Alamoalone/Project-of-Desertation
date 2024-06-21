@@ -1,0 +1,14 @@
+  private String getOperationId(final JsonNode channel) {
+    if (Objects.isNull(getChannelPayload(channel).get(OPERATION_ID))) {
+      throw new InvalidAsyncAPIException();
+    } else {
+      final String operationId = getChannelPayload(channel).get(OPERATION_ID).asText();
+      if (processedOperationIds.contains(operationId)) {
+        throw new DuplicatedOperationException(operationId);
+      } else {
+        processedOperationIds.add(operationId);
+      }
+      return operationId;
+    }
+  }
+

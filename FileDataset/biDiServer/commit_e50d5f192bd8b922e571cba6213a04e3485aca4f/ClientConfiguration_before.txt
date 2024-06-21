@@ -1,0 +1,12 @@
+	public PublicKey getServerPublicKeyObject() {
+		return serverPublicKeyObject;
+	}
+
+
+
+	public PrivateKey getUserPrivateKeyObject() {
+		return userPrivateKeyObject;
+	}
+
+
+

@@ -1,0 +1,98 @@
+{
+    "sha": "b7bd4029b1ee03a28e5a7cc83d286361e4fce288",
+    "node_id": "C_kwDOK9TNQtoAKGI3YmQ0MDI5YjFlZTAzYTI4ZTVhN2NjODNkMjg2MzYxZTRmY2UyODg",
+    "commit": {
+        "author": {
+            "name": "Youssef434",
+            "email": "fatmi2019py@gmail.com",
+            "date": "2024-01-04T19:44:34Z"
+        },
+        "committer": {
+            "name": "Youssef434",
+            "email": "fatmi2019py@gmail.com",
+            "date": "2024-01-04T19:44:34Z"
+        },
+        "message": "[tests] test merge throws a null pointer exception if map is invalid.",
+        "tree": {
+            "sha": "e20ec821adbfbafce0cbbe92c825e5869ad5bde1",
+            "url": "https://api.github.com/repos/Youssef434/ters/git/trees/e20ec821adbfbafce0cbbe92c825e5869ad5bde1"
+        },
+        "url": "https://api.github.com/repos/Youssef434/ters/git/commits/b7bd4029b1ee03a28e5a7cc83d286361e4fce288",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Youssef434/ters/commits/b7bd4029b1ee03a28e5a7cc83d286361e4fce288",
+    "html_url": "https://github.com/Youssef434/ters/commit/b7bd4029b1ee03a28e5a7cc83d286361e4fce288",
+    "comments_url": "https://api.github.com/repos/Youssef434/ters/commits/b7bd4029b1ee03a28e5a7cc83d286361e4fce288/comments",
+    "author": {
+        "login": "Youssef434",
+        "id": 75096345,
+        "node_id": "MDQ6VXNlcjc1MDk2MzQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75096345?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Youssef434",
+        "html_url": "https://github.com/Youssef434",
+        "followers_url": "https://api.github.com/users/Youssef434/followers",
+        "following_url": "https://api.github.com/users/Youssef434/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Youssef434/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Youssef434/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Youssef434/subscriptions",
+        "organizations_url": "https://api.github.com/users/Youssef434/orgs",
+        "repos_url": "https://api.github.com/users/Youssef434/repos",
+        "events_url": "https://api.github.com/users/Youssef434/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Youssef434/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Youssef434",
+        "id": 75096345,
+        "node_id": "MDQ6VXNlcjc1MDk2MzQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75096345?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Youssef434",
+        "html_url": "https://github.com/Youssef434",
+        "followers_url": "https://api.github.com/users/Youssef434/followers",
+        "following_url": "https://api.github.com/users/Youssef434/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Youssef434/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Youssef434/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Youssef434/subscriptions",
+        "organizations_url": "https://api.github.com/users/Youssef434/orgs",
+        "repos_url": "https://api.github.com/users/Youssef434/repos",
+        "events_url": "https://api.github.com/users/Youssef434/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Youssef434/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8da508cc1124fc72de3d34919973ed66ecb25b3e",
+            "url": "https://api.github.com/repos/Youssef434/ters/commits/8da508cc1124fc72de3d34919973ed66ecb25b3e",
+            "html_url": "https://github.com/Youssef434/ters/commit/8da508cc1124fc72de3d34919973ed66ecb25b3e"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 15,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "20f9fa1564c7873998a9eacacc055b6d20bfbfe9",
+            "filename": "src/test/java/services/ScoreServiceTest.java",
+            "status": "modified",
+            "additions": 15,
+            "deletions": 0,
+            "changes": 15,
+            "blob_url": "https://github.com/Youssef434/ters/blob/b7bd4029b1ee03a28e5a7cc83d286361e4fce288/src%2Ftest%2Fjava%2Fservices%2FScoreServiceTest.java",
+            "raw_url": "https://github.com/Youssef434/ters/raw/b7bd4029b1ee03a28e5a7cc83d286361e4fce288/src%2Ftest%2Fjava%2Fservices%2FScoreServiceTest.java",
+            "contents_url": "https://api.github.com/repos/Youssef434/ters/contents/src%2Ftest%2Fjava%2Fservices%2FScoreServiceTest.java?ref=b7bd4029b1ee03a28e5a7cc83d286361e4fce288",
+            "patch": "@@ -4,12 +4,15 @@\n import org.junit.jupiter.api.BeforeAll;\n import org.junit.jupiter.api.RepeatedTest;\n import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.function.Executable;\n import org.junit.jupiter.params.ParameterizedTest;\n import org.junit.jupiter.params.provider.CsvSource;\n import org.junit.jupiter.params.provider.ValueSource;\n+import players.Team;\n \n import java.util.Arrays;\n import java.util.List;\n+import java.util.Map;\n \n import static cards.CardType.*;\n import static org.junit.jupiter.api.Assertions.*;\n@@ -49,4 +52,16 @@ public void testCountScore(String cardNumbers, String expectedScore) {\n \n     assertEquals(score, Double.parseDouble(expectedScore));\n   }\n+\n+  @Test\n+  public void testMergeTwoEmptyScores() {\n+    Executable exec = () -> scoreService.merge(Map.of(), Map.of());\n+    assertThrows(NullPointerException.class, exec);\n+  }\n+\n+  @Test\n+  public void testMergeOneOfTheScoresContainsMissingTeam() {\n+    Executable exec = () -> scoreService.merge(Map.of(Team.A, 3), Map.of());\n+    assertThrows(NullPointerException.class, exec);\n+  }\n }"
+        }
+    ]
+}

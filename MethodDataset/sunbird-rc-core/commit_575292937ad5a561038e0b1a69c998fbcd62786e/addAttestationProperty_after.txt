@@ -1,0 +1,13 @@
+    private void addAttestationProperty(AttestationRequest attestationRequest) throws Exception {
+        JsonNode existingEntityNode = readEntity(attestationRequest.getUserId(), attestationRequest.getEntityName(),
+                attestationRequest.getEntityId(), false, null, false);
+        JsonNode nodeToUpdate = existingEntityNode.deepCopy();
+        JsonNode parentNode = nodeToUpdate.get(attestationRequest.getEntityName());
+        JsonNode propertyNode = parentNode.get(attestationRequest.getName());
+        ObjectNode attestationJsonNode = (ObjectNode) JSONUtil.convertObjectJsonNode(attestationRequest);
+        if (attestationRequest.getPropertyData() != null) {
+            attestationJsonNode.set("propertyData", JsonNodeFactory.instance.textNode(attestationRequest.getPropertyData().toString()));
+        }
+        createOrUpdateProperty(attestationRequest.getEntityName(), attestationJsonNode, nodeToUpdate, attestationRequest.getName(), (ObjectNode) parentNode, propertyNode);
+        updateEntityAndState(existingEntityNode, nodeToUpdate, attestationRequest.getUserId());
+    }

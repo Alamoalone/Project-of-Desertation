@@ -1,0 +1,98 @@
+{
+    "sha": "b903f351d9876a8e6710f5c164366500b415f6e6",
+    "node_id": "C_kwDOKPFrftoAKGI5MDNmMzUxZDk4NzZhOGU2NzEwZjVjMTY0MzY2NTAwYjQxNWY2ZTY",
+    "commit": {
+        "author": {
+            "name": "Ibrahim",
+            "email": "Ibrahim@ebs.net.pk",
+            "date": "2023-10-17T07:30:47Z"
+        },
+        "committer": {
+            "name": "Ibrahim",
+            "email": "Ibrahim@ebs.net.pk",
+            "date": "2023-10-17T07:30:47Z"
+        },
+        "message": "added null pointer exception handling",
+        "tree": {
+            "sha": "6ac5a7130d481198f1395cfb3948c51a891e8e74",
+            "url": "https://api.github.com/repos/Nameless-Devs/echoboard/git/trees/6ac5a7130d481198f1395cfb3948c51a891e8e74"
+        },
+        "url": "https://api.github.com/repos/Nameless-Devs/echoboard/git/commits/b903f351d9876a8e6710f5c164366500b415f6e6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unknown_key",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCAAdFiEEtRfeokLJHmebKJmjTuQtX4jhvnMFAmUuOCgACgkQTuQtX4jh\nvnNjKgwAtdaRXzB1SyZNGE+irvMUdRaZf52Q4KrpXc0nsLaKwpgl3esWlF5mBEkt\nKVoluOU2C2RkdijwixUjB9K3PecZQ3nup9wLYnoo+YBZbaooxPj0/LLOVSezjcxs\nzQXHoEJx5RV1gq6pGu2Tzepk57uveJQWse8vtAD4ti3kc49pAw/A3c/0LWbwX3Rj\noxhJl0mkV5DivDIHNPSjuM0w7KNlsGKZE8hbVoAnqVnAi/dWlHE0+yRWavjn0fbA\nph6vZIPUyqGvULvAS1TT6Kb/HgFHxj/zY0P/f2yMmPnqdmuwhbnR/gw0axho9K7h\nqO8FqIWd6uXyx8mSxl/nh4ntZtcUag9o5SHZVFo5FBXSsE1lgkiLAsFxP/20V9kd\n4BEMGNLSWaCSVLK6SS/GIZRaypUDxqn6naMIG3oGkyvC9u5tcpvZ0osmqCBT3COJ\nzWvsqF4HA2PaPKtC1Fdko3Wo3L7raQhIEAk66cLM1bGdcPtvJErh44Ge0E+U+HsL\nn3ExaQ1u\n=OVOd\n-----END PGP SIGNATURE-----",
+            "payload": "tree 6ac5a7130d481198f1395cfb3948c51a891e8e74\nparent 6270cf357c6cb39522c038d0caa597b5ddd192af\nauthor Ibrahim <Ibrahim@ebs.net.pk> 1697527847 +0200\ncommitter Ibrahim <Ibrahim@ebs.net.pk> 1697527847 +0200\n\nadded null pointer exception handling\n"
+        }
+    },
+    "url": "https://api.github.com/repos/Nameless-Devs/echoboard/commits/b903f351d9876a8e6710f5c164366500b415f6e6",
+    "html_url": "https://github.com/Nameless-Devs/echoboard/commit/b903f351d9876a8e6710f5c164366500b415f6e6",
+    "comments_url": "https://api.github.com/repos/Nameless-Devs/echoboard/commits/b903f351d9876a8e6710f5c164366500b415f6e6/comments",
+    "author": {
+        "login": "dIB59",
+        "id": 63118347,
+        "node_id": "MDQ6VXNlcjYzMTE4MzQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63118347?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dIB59",
+        "html_url": "https://github.com/dIB59",
+        "followers_url": "https://api.github.com/users/dIB59/followers",
+        "following_url": "https://api.github.com/users/dIB59/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dIB59/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dIB59/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dIB59/subscriptions",
+        "organizations_url": "https://api.github.com/users/dIB59/orgs",
+        "repos_url": "https://api.github.com/users/dIB59/repos",
+        "events_url": "https://api.github.com/users/dIB59/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dIB59/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dIB59",
+        "id": 63118347,
+        "node_id": "MDQ6VXNlcjYzMTE4MzQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63118347?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dIB59",
+        "html_url": "https://github.com/dIB59",
+        "followers_url": "https://api.github.com/users/dIB59/followers",
+        "following_url": "https://api.github.com/users/dIB59/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dIB59/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dIB59/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dIB59/subscriptions",
+        "organizations_url": "https://api.github.com/users/dIB59/orgs",
+        "repos_url": "https://api.github.com/users/dIB59/repos",
+        "events_url": "https://api.github.com/users/dIB59/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dIB59/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6270cf357c6cb39522c038d0caa597b5ddd192af",
+            "url": "https://api.github.com/repos/Nameless-Devs/echoboard/commits/6270cf357c6cb39522c038d0caa597b5ddd192af",
+            "html_url": "https://github.com/Nameless-Devs/echoboard/commit/6270cf357c6cb39522c038d0caa597b5ddd192af"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 7,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "d293e525aa8abd661d4c528b29b2c39944f3208b",
+            "filename": "src/main/java/se/salt/echoboard/exception/GlobalExceptionHandler.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/Nameless-Devs/echoboard/blob/b903f351d9876a8e6710f5c164366500b415f6e6/src%2Fmain%2Fjava%2Fse%2Fsalt%2Fechoboard%2Fexception%2FGlobalExceptionHandler.java",
+            "raw_url": "https://github.com/Nameless-Devs/echoboard/raw/b903f351d9876a8e6710f5c164366500b415f6e6/src%2Fmain%2Fjava%2Fse%2Fsalt%2Fechoboard%2Fexception%2FGlobalExceptionHandler.java",
+            "contents_url": "https://api.github.com/repos/Nameless-Devs/echoboard/contents/src%2Fmain%2Fjava%2Fse%2Fsalt%2Fechoboard%2Fexception%2FGlobalExceptionHandler.java?ref=b903f351d9876a8e6710f5c164366500b415f6e6",
+            "patch": "@@ -26,4 +26,11 @@ public String handleIncorrectSolutionStatus(IllegalSolutionArgumentException ex)\n         log.error(\"Cannot Add Volunteer, Solution Status is not VOLUNTEERS REQUIRED\", ex);\n         return \"Cannot Add Volunteer, Solution Status is not VOLUNTEERS REQUIRED\";\n     }\n+\n+    @ExceptionHandler(NullPointerException.class)\n+    @ResponseStatus(HttpStatus.BAD_REQUEST)\n+    public String handleBadRequest(NullPointerException ex){\n+        log.error(\"Null pointer encountered, went wrong\", ex);\n+        return ex.getMessage();\n+    }\n }"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+	protected JSONObject getClientValue(Object element) throws JSONException {
+		JSONObject s = super.getClientValue(element);
+		AccountHistory gu = (AccountHistory) ((DataNode)element).getInstance();
+		if (gu.getEnd() != null && new Date().after(gu.getEnd()))
+			s.put("$class", "dashed");
+		return s;
+	}

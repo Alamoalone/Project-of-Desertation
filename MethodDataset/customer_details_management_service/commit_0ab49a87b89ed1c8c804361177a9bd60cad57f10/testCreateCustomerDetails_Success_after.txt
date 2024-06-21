@@ -1,0 +1,8 @@
+    void testCreateCustomerDetails_Success() {
+        CustomerRequestDto requestDto = new CustomerRequestDto("zander","zander@gmail.com", LocalDate.of(2000,4,2), Occupation.Developer);
+        doNothing().when(customerDetailService).createCustomerDetailsRecord(requestDto);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.createCustomerDetails(requestDto);
+
+        assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());
+    }

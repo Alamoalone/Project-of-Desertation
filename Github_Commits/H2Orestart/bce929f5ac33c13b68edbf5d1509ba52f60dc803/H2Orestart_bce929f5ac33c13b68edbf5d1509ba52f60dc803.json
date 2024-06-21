@@ -1,0 +1,122 @@
+{
+    "sha": "bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+    "node_id": "C_kwDOJUhRbtoAKGJjZTkyOWY1YWMzM2MxM2I2OGVkYmY1ZDE1MDliYTUyZjYwZGM4MDM",
+    "commit": {
+        "author": {
+            "name": "Heesu Ban",
+            "email": "ebandal@gmail.com",
+            "date": "2023-11-01T13:01:52Z"
+        },
+        "committer": {
+            "name": "Heesu Ban",
+            "email": "ebandal@gmail.com",
+            "date": "2023-11-01T13:01:52Z"
+        },
+        "message": "prevent null pointer exception",
+        "tree": {
+            "sha": "ce35aabe5890eb63796d8cf8dd6c89718f1ba505",
+            "url": "https://api.github.com/repos/ebandal/H2Orestart/git/trees/ce35aabe5890eb63796d8cf8dd6c89718f1ba505"
+        },
+        "url": "https://api.github.com/repos/ebandal/H2Orestart/git/commits/bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ebandal/H2Orestart/commits/bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+    "html_url": "https://github.com/ebandal/H2Orestart/commit/bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+    "comments_url": "https://api.github.com/repos/ebandal/H2Orestart/commits/bce929f5ac33c13b68edbf5d1509ba52f60dc803/comments",
+    "author": {
+        "login": "ebandal",
+        "id": 114871013,
+        "node_id": "U_kgDOBtjK5Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114871013?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ebandal",
+        "html_url": "https://github.com/ebandal",
+        "followers_url": "https://api.github.com/users/ebandal/followers",
+        "following_url": "https://api.github.com/users/ebandal/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ebandal/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ebandal/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ebandal/subscriptions",
+        "organizations_url": "https://api.github.com/users/ebandal/orgs",
+        "repos_url": "https://api.github.com/users/ebandal/repos",
+        "events_url": "https://api.github.com/users/ebandal/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ebandal/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ebandal",
+        "id": 114871013,
+        "node_id": "U_kgDOBtjK5Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114871013?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ebandal",
+        "html_url": "https://github.com/ebandal",
+        "followers_url": "https://api.github.com/users/ebandal/followers",
+        "following_url": "https://api.github.com/users/ebandal/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ebandal/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ebandal/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ebandal/subscriptions",
+        "organizations_url": "https://api.github.com/users/ebandal/orgs",
+        "repos_url": "https://api.github.com/users/ebandal/repos",
+        "events_url": "https://api.github.com/users/ebandal/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ebandal/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "22a05d83182f05b7a799968ada05cbdfa748b8a1",
+            "url": "https://api.github.com/repos/ebandal/H2Orestart/commits/22a05d83182f05b7a799968ada05cbdfa748b8a1",
+            "html_url": "https://github.com/ebandal/H2Orestart/commit/22a05d83182f05b7a799968ada05cbdfa748b8a1"
+        }
+    ],
+    "stats": {
+        "total": 175,
+        "additions": 72,
+        "deletions": 103
+    },
+    "files": [
+        {
+            "sha": "5aa8167cde2eb6d0c93f73c167f5dc3b36c504e4",
+            "filename": "source/HwpDoc/HwpElement/HwpRecord_ParaText.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/ebandal/H2Orestart/blob/bce929f5ac33c13b68edbf5d1509ba52f60dc803/source%2FHwpDoc%2FHwpElement%2FHwpRecord_ParaText.java",
+            "raw_url": "https://github.com/ebandal/H2Orestart/raw/bce929f5ac33c13b68edbf5d1509ba52f60dc803/source%2FHwpDoc%2FHwpElement%2FHwpRecord_ParaText.java",
+            "contents_url": "https://api.github.com/repos/ebandal/H2Orestart/contents/source%2FHwpDoc%2FHwpElement%2FHwpRecord_ParaText.java?ref=bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+            "patch": "@@ -216,7 +216,7 @@ private static String toReadableString(String text) {\n \t\tStringBuffer sb = new StringBuffer();\n \t\tchar extendChar = 0;\n \t\tchar inlineChar = 0;\n-\t\tByteBuffer bb = ByteBuffer.allocate(12).order(ByteOrder.LITTLE_ENDIAN);\n+\t\tByteBuffer bb = ByteBuffer.allocate(text.length()*2).order(ByteOrder.LITTLE_ENDIAN);\n \t\t\n \t\tfor(int i=0;i<text.length();i++) {\n \t\t\tchar c = text.charAt(i);"
+        },
+        {
+            "sha": "7e07d35484bf7766be1cb2ea90c344eac06dc3be",
+            "filename": "source/compare/CompRecurs.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/ebandal/H2Orestart/blob/bce929f5ac33c13b68edbf5d1509ba52f60dc803/source%2Fcompare%2FCompRecurs.java",
+            "raw_url": "https://github.com/ebandal/H2Orestart/raw/bce929f5ac33c13b68edbf5d1509ba52f60dc803/source%2Fcompare%2FCompRecurs.java",
+            "contents_url": "https://api.github.com/repos/ebandal/H2Orestart/contents/source%2Fcompare%2FCompRecurs.java?ref=bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+            "patch": "@@ -109,16 +109,18 @@ public static String getParaString(HwpParagraph para) {\n                         // 그림 개체의 경우  글상자, 캡션만 출력\n                         if (((Ctrl_GeneralShape) ctrl).paras != null) {\n                             String content = ((Ctrl_GeneralShape) ctrl).paras.stream()\n+                                                        .filter(p -> p.p!=null)\n                                                         .flatMap(p -> p.p.stream())\n                                                         .filter(c -> c instanceof ParaText)\n                                                         .map(c -> (ParaText)c)\n                                                         .map(t -> t.text.replaceAll(PATTERN_8BYTES, \"\").replaceAll(\"[\\\\u000a\\\\u000d]\", \"\\\\\\\\n\"))\n                                                         .collect(Collectors.joining(\"\"));\n                             sb.append(\"[\"+content+\"]\");\n                         }\n-        \n+                        \n                         if (((Ctrl_GeneralShape) ctrl).caption != null) {\n                             String caption = ((Ctrl_GeneralShape) ctrl).caption.stream()\n+                                                        .filter(p -> p.p!=null)\n                                                         .flatMap(p -> p.p.stream())\n                                                         .filter(c -> c instanceof ParaText)\n                                                         .map(c -> (ParaText)c)"
+        },
+        {
+            "sha": "d6f1c23bea59f71815ed4d123c78bedc38648b28",
+            "filename": "source/compare/HwpComparer.java",
+            "status": "modified",
+            "additions": 68,
+            "deletions": 101,
+            "changes": 169,
+            "blob_url": "https://github.com/ebandal/H2Orestart/blob/bce929f5ac33c13b68edbf5d1509ba52f60dc803/source%2Fcompare%2FHwpComparer.java",
+            "raw_url": "https://github.com/ebandal/H2Orestart/raw/bce929f5ac33c13b68edbf5d1509ba52f60dc803/source%2Fcompare%2FHwpComparer.java",
+            "contents_url": "https://api.github.com/repos/ebandal/H2Orestart/contents/source%2Fcompare%2FHwpComparer.java?ref=bce929f5ac33c13b68edbf5d1509ba52f60dc803",
+            "patch": "@@ -36,108 +36,35 @@ public class HwpComparer {\n     private static final String PATTERN_STRING = \"[\\\\u0000\\\\u000a\\\\u000d\\\\u0018-\\\\u001f]|[\\\\u0001\\\\u0002-\\\\u0009\\\\u000b-\\\\u000c\\\\u000e-\\\\u0017].{6}[\\\\u0001\\\\u0002-\\\\u0009\\\\u000b-\\\\u000c\\\\u000e-\\\\u0017]\";\n     public static Pattern pattern = Pattern.compile(PATTERN_STRING);\n \n-\n-    public List<ParaNode> loadHwpx(String inputFile) throws HwpDetectException, IOException, ParserConfigurationException, \n-                               SAXException, DataFormatException, OwpmlParseException, HwpParseException, NotImplementedException {\n-        \n-        HwpxFile hwpx = new HwpxFile(inputFile);\n-        hwpx.detect();\n-        hwpx.open();\n-        \n-        List<HwpSection> sections = hwpx.getSections();\n-\n-        for (int i=0; i < hwpx.docInfo.bulletList.size(); i++) {\n-            // Bullet ID는 1부터 시작한다.\n-            CompNumbering.makeCustomBulletStyle(i+1, (HwpRecord_Bullet)hwpx.docInfo.bulletList.get(i));\n-        }\n-        for (int i=0; i < hwpx.docInfo.numberingList.size(); i++) {\n-            // Numbering ID는 1부터 시작한다.\n-            CompNumbering.makeCustomNumberingStyle(i+1, (HwpRecord_Numbering)hwpx.docInfo.numberingList.get(i));\n-        }\n-\n-        for (HwpSection section: sections) {\n-            // 커스톰 PageStyle 생성\n-            Ctrl_SectionDef secd =  (Ctrl_SectionDef)section.paraList.stream()\n-                                                            .filter(p -> p.p!=null)\n-                                                            .flatMap(p -> p.p.stream())\n-                                                            .filter(c -> (c instanceof Ctrl_SectionDef)).findAny().get();\n-            CompPage.makeCustomPageStyle(secd);\n-        }\n-        // 리턴 자료구조\n-        List<ParaNode> paraList = new ArrayList<ParaNode>();\n-        \n-        int secIndex = 0;\n-        for (int i=0; i<sections.size(); i++) {\n-            HwpSection section = sections.get(i);\n-            CompPage.setSectionIndex(secIndex++);\n-            String numberingPrefix = \"\";\n-            \n-            for (HwpParagraph para: section.paraList) {\n-                HwpRecord_ParaShape paraShape = (HwpRecord_ParaShape) hwpx.docInfo.paraShapeList.get(para.paraShapeID);\n-                \n-                boolean showNumberingPrefix = false;\n-                String numberingStyleName = \"\";\n-                HwpRecord_Numbering numberingStyle = null;\n-                switch(paraShape.headingType) {\n-                case NONE:\n-                    break;\n-                case OUTLINE:\n-                    numberingStyleName = CompNumbering.getOutlineStyleName();\n-                    Ctrl_SectionDef secd = CompPage.getCurrentPage();\n-                    numberingStyle = (HwpRecord_Numbering)hwpx.docInfo.numberingList.get(secd.outlineNumberingID-1);\n-                    numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);\n-                    showNumberingPrefix = true;\n-                    break;\n-                case NUMBER:\n-                    log.finest(\"번호문단ID=\"+paraShape.headingIdRef + \",문단수준=\"+paraShape.headingLevel);\n-                    numberingStyleName = CompNumbering.numberingStyleNameMap.get((int)paraShape.headingIdRef-1);\n-                    numberingStyle = (HwpRecord_Numbering)hwpx.docInfo.numberingList.get((int)paraShape.headingIdRef-1);\n-                    numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);\n-                    showNumberingPrefix = true;\n-                    break;\n-                case BULLET:\n-                    log.finest(\"글머리표문단ID=\"+paraShape.headingIdRef + \",문단수준=\"+paraShape.headingLevel);\n-                    numberingStyleName = CompNumbering.bulletStyleNameMap.get((int)paraShape.headingIdRef-1);\n-                    HwpRecord_Bullet bulletStyle = (HwpRecord_Bullet)hwpx.docInfo.bulletList.get((int)paraShape.headingIdRef-1);\n-                    numberingPrefix = Character.toString((char)bulletStyle.bulletChar);\n-                    showNumberingPrefix = true;\n-                    break;\n-                }\n-                String paragraph = CompRecurs.getParaString(para);\n-                \n-                paraList.add(new ParaNode(numberingPrefix, showNumberingPrefix, paragraph));\n-            }\n-        }\n-        \n-        return paraList;\n-    }\n+    private static HwpFile hwp = null;\n+    private static HwpxFile hwpx = null;\n     \n     public List<ParaNode> loadHwp(String inputFile) throws HwpDetectException, CompoundDetectException, NotImplementedException, \n-                                                 IOException, CompoundParseException, DataFormatException, HwpParseException {\n+                                                         IOException, CompoundParseException, DataFormatException, \n+                                                         HwpParseException, ParserConfigurationException, SAXException, OwpmlParseException {\n         String detectingType = detectHancom(inputFile);\n         \n+        if (detectingType==null) {\n+            throw new HwpDetectException();\n+        }\n+        \n         List<HwpSection> sections = null;\n         HwpDocInfo docInfo = null;\n         switch(detectingType) {\n         case \"HWP\":\n-            HwpFile hwp = new HwpFile(inputFile);\n+            hwp = new HwpFile(inputFile);\n             hwp.open();\n             sections = hwp.getSections();\n             docInfo = hwp.getDocInfo();\n             break;\n         case \"HWPX\":\n-            HwpxFile hwpx = new HwpxFile(inputFile);\n-            try {\n-                hwpx.open();\n-            } catch (HwpDetectException | IOException | DataFormatException | ParserConfigurationException\n-                    | SAXException | OwpmlParseException | HwpParseException | NotImplementedException e) {\n-                e.printStackTrace();\n-            }\n+            hwpx = new HwpxFile(inputFile);\n+            hwpx.open();\n             sections = hwpx.getSections();\n             docInfo = hwpx.getDocInfo();\n             break;\n         }\n-            \n+        \n         for (int i=0; i < docInfo.bulletList.size(); i++) {\n             // Bullet ID는 1부터 시작한다.\n             CompNumbering.makeCustomBulletStyle(i+1, (HwpRecord_Bullet)docInfo.bulletList.get(i));\n@@ -177,23 +104,38 @@ public List<ParaNode> loadHwp(String inputFile) throws HwpDetectException, Compo\n                 case OUTLINE:\n                     numberingStyleName = CompNumbering.getOutlineStyleName();\n                     Ctrl_SectionDef secd = CompPage.getCurrentPage();\n-                    numberingStyle = (HwpRecord_Numbering)docInfo.numberingList.get(secd.outlineNumberingID-1);\n-                    numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);\n-                    showNumberingPrefix = true;\n+                    if (secd.outlineNumberingID!=0) {\n+                        if (docInfo.numberingList.size() < secd.outlineNumberingID) {\n+                            throw new HwpParseException();\n+                        }\n+                        numberingStyle = (HwpRecord_Numbering)docInfo.numberingList.get(secd.outlineNumberingID-1);\n+                        numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);\n+                        showNumberingPrefix = true;\n+                    }\n                     break;\n                 case NUMBER:\n                     log.finest(\"번호문단ID=\"+paraShape.headingIdRef + \",문단수준=\"+paraShape.headingLevel);\n-                    numberingStyleName = CompNumbering.numberingStyleNameMap.get((int)paraShape.headingIdRef-1);\n-                    numberingStyle = (HwpRecord_Numbering)docInfo.numberingList.get((int)paraShape.headingIdRef-1);\n-                    numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);\n-                    showNumberingPrefix = true;\n+                    if (paraShape.headingIdRef!=0) {\n+                        numberingStyleName = CompNumbering.numberingStyleNameMap.get((int)paraShape.headingIdRef);\n+                        if (numberingStyleName==null) {\n+                            throw new HwpParseException();\n+                        }\n+                        numberingStyle = (HwpRecord_Numbering)docInfo.numberingList.get((int)paraShape.headingIdRef-1);\n+                        numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);\n+                        showNumberingPrefix = true;\n+                    }\n                     break;\n                 case BULLET:\n                     log.finest(\"글머리표문단ID=\"+paraShape.headingIdRef + \",문단수준=\"+paraShape.headingLevel);\n-                    numberingStyleName = CompNumbering.bulletStyleNameMap.get((int)paraShape.headingIdRef-1);\n-                    HwpRecord_Bullet bulletStyle = (HwpRecord_Bullet)docInfo.bulletList.get((int)paraShape.headingIdRef-1);\n-                    numberingPrefix = Character.toString((char)bulletStyle.bulletChar);\n-                    showNumberingPrefix = true;\n+                    if (paraShape.headingIdRef!=0) {\n+                        if (docInfo.bulletList.size() < paraShape.headingIdRef) {\n+                            throw new HwpParseException();\n+                        }\n+                        numberingStyleName = CompNumbering.bulletStyleNameMap.get((int)paraShape.headingIdRef);\n+                        HwpRecord_Bullet bulletStyle = (HwpRecord_Bullet)docInfo.bulletList.get((int)paraShape.headingIdRef-1);\n+                        numberingPrefix = Character.toString((char)bulletStyle.bulletChar);\n+                        showNumberingPrefix = true;\n+                    }\n                     break;\n                 }\n                 String paragraph = CompRecurs.getParaString(para);\n@@ -204,27 +146,49 @@ public List<ParaNode> loadHwp(String inputFile) throws HwpDetectException, Compo\n         \n         return paraList;\n     }\n+    \n+    public void close() {\n+        try {\n+            if (hwp!=null)\n+                hwp.close();\n+            if (hwpx!=null)\n+                hwpx.close();\n+        } catch(IOException e) {\n+            e.printStackTrace();\n+        }\n+    }\n \n     private static String detectHancom(String inputFile) {\n         String detectingType = null;\n         \n+        HwpxFile hwpxTemp = null;\n         try {\n-            HwpxFile hwpxTemp = new HwpxFile(inputFile);\n+            hwpxTemp = new HwpxFile(inputFile);\n             hwpxTemp.detect();\n             detectingType = \"HWPX\";\n             hwpxTemp.close();\n         } catch (IOException | HwpDetectException | ParserConfigurationException | SAXException | DataFormatException e1) {\n+            try {\n+                hwpxTemp.close();\n+            } catch (IOException e) {\n+                log.severe(e.getMessage());\n+            }\n             \n+            HwpFile hwpTemp = null;\n             try {\n-                HwpFile hwpTemp = new HwpFile(inputFile);\n+                hwpTemp = new HwpFile(inputFile);\n                 hwpTemp.detect();\n                 detectingType = \"HWP\";\n                 hwpTemp.close();\n             } catch (IOException | HwpDetectException | CompoundDetectException | NotImplementedException | CompoundParseException e2) {\n                 log.info(\"file detected neither HWPX nor HWP\");\n+                try {\n+                    hwpTemp.close();\n+                } catch (IOException e) {\n+                    log.severe(e.getMessage());\n+                }\n             }\n         }\n-        \n         return detectingType;\n     }\n     \n@@ -328,7 +292,8 @@ public static void main(String[] args) {\n                     }\n                 }\n             } catch (HwpDetectException | CompoundDetectException | NotImplementedException | IOException | \n-                     CompoundParseException | DataFormatException | HwpParseException e)  {\n+                     CompoundParseException | DataFormatException | HwpParseException | \n+                     ParserConfigurationException | SAXException | OwpmlParseException e)  {\n                 e.printStackTrace();\n             }\n             return;\n@@ -344,13 +309,15 @@ public static void main(String[] args) {\n                     System.out.println(line);\n                 }\n             } catch (HwpDetectException | CompoundDetectException | NotImplementedException | IOException |\n-                     CompoundParseException | DataFormatException | HwpParseException e) {\n+                     CompoundParseException | DataFormatException | HwpParseException | \n+                     ParserConfigurationException | SAXException | OwpmlParseException e) {\n                 e.printStackTrace();\n             }\n         } else {\n             System.out.println(\"Hwp File compare tool ver 0.1  created by heesu.ban@k2web.co.kr\");\n             System.out.println(\"Usage #1 (compare hwp files) : java -jar HwpComparer.jar -diff hwpfile1 hwpfile2\");\n             System.out.println(\"Usage #2 (print hwp content) : java -jar HwpComparer.jar -print hwpfile\");\n         }\n+        comp.close();\n     }\n }"
+        }
+    ]
+}

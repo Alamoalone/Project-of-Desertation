@@ -1,0 +1,3 @@
+	    public boolean compareLists(List<Phone> otherList) {
+	        return phoneList.equals(otherList);
+	    }

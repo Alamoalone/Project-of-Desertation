@@ -1,0 +1,110 @@
+{
+    "sha": "658552efda529b8572e7003a0f21abd15bc602d5",
+    "node_id": "C_kwDOJniDqNoAKDY1ODU1MmVmZGE1MjliODU3MmU3MDAzYTBmMjFhYmQxNWJjNjAyZDU",
+    "commit": {
+        "author": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-07-27T14:51:33Z"
+        },
+        "committer": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-07-27T14:51:33Z"
+        },
+        "message": "fixed mail path and null pointer exceptions when email has null subject or body",
+        "tree": {
+            "sha": "7142479a5b0d3aae9bf314c9a34aa98cb307e82a",
+            "url": "https://api.github.com/repos/madgeek-arc/mailer/git/trees/7142479a5b0d3aae9bf314c9a34aa98cb307e82a"
+        },
+        "url": "https://api.github.com/repos/madgeek-arc/mailer/git/commits/658552efda529b8572e7003a0f21abd15bc602d5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/madgeek-arc/mailer/commits/658552efda529b8572e7003a0f21abd15bc602d5",
+    "html_url": "https://github.com/madgeek-arc/mailer/commit/658552efda529b8572e7003a0f21abd15bc602d5",
+    "comments_url": "https://api.github.com/repos/madgeek-arc/mailer/commits/658552efda529b8572e7003a0f21abd15bc602d5/comments",
+    "author": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7d70056f82d4d3254790d3eeb1d1e579065fd4dd",
+            "url": "https://api.github.com/repos/madgeek-arc/mailer/commits/7d70056f82d4d3254790d3eeb1d1e579065fd4dd",
+            "html_url": "https://github.com/madgeek-arc/mailer/commit/7d70056f82d4d3254790d3eeb1d1e579065fd4dd"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 3,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "f75cee4733b6edf27980c64ef8f295ad52b92998",
+            "filename": "mailer-core/src/main/java/gr/athenarc/messaging/mailer/RelativePaths.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/madgeek-arc/mailer/blob/658552efda529b8572e7003a0f21abd15bc602d5/mailer-core%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2FRelativePaths.java",
+            "raw_url": "https://github.com/madgeek-arc/mailer/raw/658552efda529b8572e7003a0f21abd15bc602d5/mailer-core%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2FRelativePaths.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/mailer/contents/mailer-core%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2FRelativePaths.java?ref=658552efda529b8572e7003a0f21abd15bc602d5",
+            "patch": "@@ -2,7 +2,7 @@\n \n public class RelativePaths {\n \n-    public static final String MAILS = \"mails\";\n+    public static final String MAILS = \"/mails\";\n \n     private RelativePaths() {\n     }"
+        },
+        {
+            "sha": "316ac72a0311fc942a70f8d6667a80fee9c14ad6",
+            "filename": "mailer-service/src/main/java/gr/athenarc/messaging/mailer/service/MailerService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/madgeek-arc/mailer/blob/658552efda529b8572e7003a0f21abd15bc602d5/mailer-service%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2Fservice%2FMailerService.java",
+            "raw_url": "https://github.com/madgeek-arc/mailer/raw/658552efda529b8572e7003a0f21abd15bc602d5/mailer-service%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2Fservice%2FMailerService.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/mailer/contents/mailer-service%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2Fservice%2FMailerService.java?ref=658552efda529b8572e7003a0f21abd15bc602d5",
+            "patch": "@@ -32,8 +32,8 @@ default Message createMessage(EmailMessage emailMessage) {\n             message.setRecipients(Message.RecipientType.CC, toAddressArray(emailMessage.getCc()));\n             message.setRecipients(Message.RecipientType.BCC, toAddressArray(emailMessage.getBcc()));\n \n-            message.setSubject(emailMessage.getSubject());\n-            message.setText(emailMessage.getText());\n+            message.setSubject(emailMessage.getSubject() != null ? emailMessage.getSubject() : \"[No Subject]\");\n+            message.setText(emailMessage.getText() != null ? emailMessage.getText() : \"\");\n         } catch (MessagingException e) {\n             logger.error(e.getMessage(), e);\n         }"
+        }
+    ]
+}

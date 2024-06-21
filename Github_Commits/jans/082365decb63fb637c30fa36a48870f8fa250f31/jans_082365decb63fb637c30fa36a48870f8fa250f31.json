@@ -1,0 +1,98 @@
+{
+    "sha": "082365decb63fb637c30fa36a48870f8fa250f31",
+    "node_id": "C_kwDOEnX34toAKDA4MjM2NWRlY2I2M2ZiNjM3YzMwZmEzNmE0ODg3MGY4ZmEyNTBmMzE",
+    "commit": {
+        "author": {
+            "name": "shekhar16",
+            "email": "shekhar16@users.noreply.github.com",
+            "date": "2023-08-01T19:21:21Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-08-01T19:21:21Z"
+        },
+        "message": "fix(jans-link): fix null pointer exception for sourceConfig #5709 (#5710)",
+        "tree": {
+            "sha": "045ccc0e1407c9033cc21469bce02b1ed728b14a",
+            "url": "https://api.github.com/repos/JanssenProject/jans/git/trees/045ccc0e1407c9033cc21469bce02b1ed728b14a"
+        },
+        "url": "https://api.github.com/repos/JanssenProject/jans/git/commits/082365decb63fb637c30fa36a48870f8fa250f31",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkyVsxCRBK7hj4Ov3rIwAAfcMIAEuwhbeAzJPN7aSCpibZ/Mmh\niof8UOc8RM2/ydsY05/WtfreRSHtc7XVsgpNbX3rL95fc8KkG8IPsVFIhaE4smCF\nA+GS3RmjULS2624Usl+vLGlSorgXwAZybCksPi2uLxoP9jLSfm8+9vVTC+9S0Lee\nK7N1C4gMUbKTpv0/jmQVSj+6wDfshy3wLOJujb3O5kkFHaqpTeUWvGIF2ityFbnL\nBULFrR9CkAc6DUMaQVzH4Ti8gMVUDccwygApMJQYPW38b1FyyLtgljSLUr5Oseqx\nb0SLFkVlyquYWH5PQ6M0WqOwAnOli9Pvn1SgnVXxpkle/nH4YbmSMEC8BTzL9qg=\n=KtIU\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 045ccc0e1407c9033cc21469bce02b1ed728b14a\nparent 1d0bc2c4d165fbd156f94235466cca5776248bd4\nauthor shekhar16 <shekhar16@users.noreply.github.com> 1690917681 +0530\ncommitter GitHub <noreply@github.com> 1690917681 +0300\n\nfix(jans-link): fix null pointer exception for sourceConfig #5709 (#5710)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/JanssenProject/jans/commits/082365decb63fb637c30fa36a48870f8fa250f31",
+    "html_url": "https://github.com/JanssenProject/jans/commit/082365decb63fb637c30fa36a48870f8fa250f31",
+    "comments_url": "https://api.github.com/repos/JanssenProject/jans/commits/082365decb63fb637c30fa36a48870f8fa250f31/comments",
+    "author": {
+        "login": "shekhar16",
+        "id": 15937500,
+        "node_id": "MDQ6VXNlcjE1OTM3NTAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15937500?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shekhar16",
+        "html_url": "https://github.com/shekhar16",
+        "followers_url": "https://api.github.com/users/shekhar16/followers",
+        "following_url": "https://api.github.com/users/shekhar16/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shekhar16/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shekhar16/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shekhar16/subscriptions",
+        "organizations_url": "https://api.github.com/users/shekhar16/orgs",
+        "repos_url": "https://api.github.com/users/shekhar16/repos",
+        "events_url": "https://api.github.com/users/shekhar16/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shekhar16/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1d0bc2c4d165fbd156f94235466cca5776248bd4",
+            "url": "https://api.github.com/repos/JanssenProject/jans/commits/1d0bc2c4d165fbd156f94235466cca5776248bd4",
+            "html_url": "https://github.com/JanssenProject/jans/commit/1d0bc2c4d165fbd156f94235466cca5776248bd4"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 9,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "5bd38a1d9daf6a9f5911138d9553948dcc92ef7c",
+            "filename": "jans-link/server/src/main/java/io/jans/link/timer/CacheRefreshTimer.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 0,
+            "changes": 9,
+            "blob_url": "https://github.com/JanssenProject/jans/blob/082365decb63fb637c30fa36a48870f8fa250f31/jans-link%2Fserver%2Fsrc%2Fmain%2Fjava%2Fio%2Fjans%2Flink%2Ftimer%2FCacheRefreshTimer.java",
+            "raw_url": "https://github.com/JanssenProject/jans/raw/082365decb63fb637c30fa36a48870f8fa250f31/jans-link%2Fserver%2Fsrc%2Fmain%2Fjava%2Fio%2Fjans%2Flink%2Ftimer%2FCacheRefreshTimer.java",
+            "contents_url": "https://api.github.com/repos/JanssenProject/jans/contents/jans-link%2Fserver%2Fsrc%2Fmain%2Fjava%2Fio%2Fjans%2Flink%2Ftimer%2FCacheRefreshTimer.java?ref=082365decb63fb637c30fa36a48870f8fa250f31",
+            "patch": "@@ -219,6 +219,11 @@ private boolean isStartCacheRefresh(AppConfiguration currentConfiguration) {\n \t\t\treturn false;\n \t\t}\n \n+\t\tif(null == currentConfiguration.getSourceConfigs()){\n+\t\t\tlog.info(\"Source Config is null, nothing to load \");\n+\t\t\treturn false;\n+\t\t}\n+\n \t\tString cacheRefreshServerIpAddress = currentConfiguration.getServerIpAddress();\n \t\t// if (StringHelper.isEmpty(cacheRefreshServerIpAddress)) {\n \t\t// log.debug(\"There is no master Cache Refresh server\");\n@@ -1135,6 +1140,10 @@ private Map<CacheCompoundKey, GluuSimplePerson> getSourcePersonCompoundKeyMap(\n \n \tprivate LdapServerConnection[] prepareLdapServerConnections(CacheRefreshConfiguration cacheRefreshConfiguration,\n \t\t\tList<GluuLdapConfiguration> ldapConfigurations) {\n+\t\tif(null == ldapConfigurations ){\n+\t\t\treturn null;\n+\t\t}\n+\n \t\tLdapServerConnection[] ldapServerConnections = new LdapServerConnection[ldapConfigurations.size()];\n \t\tfor (int i = 0; i < ldapConfigurations.size(); i++) {\n \t\t\tldapServerConnections[i] = prepareLdapServerConnection(cacheRefreshConfiguration,"
+        }
+    ]
+}

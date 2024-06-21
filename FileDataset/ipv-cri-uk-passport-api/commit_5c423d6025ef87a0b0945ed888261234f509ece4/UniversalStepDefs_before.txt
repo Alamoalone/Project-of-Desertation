@@ -1,0 +1,8 @@
+    public void setDocumentCheckingRoute() {
+        if (System.getProperty("cucumber.tags").equals("@hmpoDVAD")) {
+            setFeatureSet("hmpoDVAD");
+        }
+    }
+
+
+

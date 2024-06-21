@@ -1,0 +1,7 @@
+    public void partsTokens21() {
+        StringMap<String> src_ = new StringMap<String>();
+        src_.addEntry("src/file.txt", "public annotation pkg.Ex {{$lambda(Ex,field);}}");
+        ResultContext res_ = ctxReadOnlyOk(src_);
+        CustList<SegmentReadOnlyTokenPart> l_ = listTokensAnnotField(res_);
+        assertEq(0,l_.size());
+    }

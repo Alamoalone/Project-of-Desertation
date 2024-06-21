@@ -1,0 +1,29 @@
+  public void paint(Graphics2D graphics, Viewport viewport, long time)
+  {
+    super.paint(graphics, viewport, time);
+
+    Color color = graphics.getColor();
+    Stroke stroke = graphics.getStroke();
+    Font font = graphics.getFont();
+
+    if (textView == null)
+    {
+      createGraphics(graphics, viewport);
+    }
+
+    if (rectangleView != null)
+    {
+      rectangleView.paint(graphics, viewport);
+    }
+
+    if (textView != null)
+    {
+      graphics.setColor(Color.BLACK);
+      textView.paint(graphics, viewport);
+    }
+
+    graphics.setFont(font);
+    graphics.setColor(color);
+    graphics.setStroke(stroke);
+  }
+

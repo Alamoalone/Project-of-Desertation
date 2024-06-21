@@ -1,0 +1,3 @@
+getCPUIndex(String line)
+getCpuUsageForLowerVersion()
+getCpuUsageForHigherVersion()

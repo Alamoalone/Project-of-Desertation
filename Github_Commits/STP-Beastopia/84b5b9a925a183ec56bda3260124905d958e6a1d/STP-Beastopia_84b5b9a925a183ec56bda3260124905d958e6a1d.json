@@ -1,0 +1,98 @@
+{
+    "sha": "84b5b9a925a183ec56bda3260124905d958e6a1d",
+    "node_id": "C_kwDOKMidP9oAKDg0YjViOWE5MjVhMTgzZWM1NmJkYTMyNjAxMjQ5MDVkOTU4ZTZhMWQ",
+    "commit": {
+        "author": {
+            "name": "Luis Schrader",
+            "email": "luisschr@protonmail.com",
+            "date": "2023-08-02T12:21:46Z"
+        },
+        "committer": {
+            "name": "Luis Schrader",
+            "email": "luisschr@protonmail.com",
+            "date": "2023-08-02T12:21:46Z"
+        },
+        "message": "fix: null pointer exception",
+        "tree": {
+            "sha": "d126abcd11133c63fb8b40c0c91f77d1a70d207b",
+            "url": "https://api.github.com/repos/arkozik/STP-Beastopia/git/trees/d126abcd11133c63fb8b40c0c91f77d1a70d207b"
+        },
+        "url": "https://api.github.com/repos/arkozik/STP-Beastopia/git/commits/84b5b9a925a183ec56bda3260124905d958e6a1d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/arkozik/STP-Beastopia/commits/84b5b9a925a183ec56bda3260124905d958e6a1d",
+    "html_url": "https://github.com/arkozik/STP-Beastopia/commit/84b5b9a925a183ec56bda3260124905d958e6a1d",
+    "comments_url": "https://api.github.com/repos/arkozik/STP-Beastopia/commits/84b5b9a925a183ec56bda3260124905d958e6a1d/comments",
+    "author": {
+        "login": "schryxcz",
+        "id": 116948648,
+        "node_id": "U_kgDOBvh-qA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/116948648?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/schryxcz",
+        "html_url": "https://github.com/schryxcz",
+        "followers_url": "https://api.github.com/users/schryxcz/followers",
+        "following_url": "https://api.github.com/users/schryxcz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/schryxcz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/schryxcz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/schryxcz/subscriptions",
+        "organizations_url": "https://api.github.com/users/schryxcz/orgs",
+        "repos_url": "https://api.github.com/users/schryxcz/repos",
+        "events_url": "https://api.github.com/users/schryxcz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/schryxcz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "schryxcz",
+        "id": 116948648,
+        "node_id": "U_kgDOBvh-qA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/116948648?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/schryxcz",
+        "html_url": "https://github.com/schryxcz",
+        "followers_url": "https://api.github.com/users/schryxcz/followers",
+        "following_url": "https://api.github.com/users/schryxcz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/schryxcz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/schryxcz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/schryxcz/subscriptions",
+        "organizations_url": "https://api.github.com/users/schryxcz/orgs",
+        "repos_url": "https://api.github.com/users/schryxcz/repos",
+        "events_url": "https://api.github.com/users/schryxcz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/schryxcz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7b85b1bad80c8e2c25a3f5bbfee07ba85b185898",
+            "url": "https://api.github.com/repos/arkozik/STP-Beastopia/commits/7b85b1bad80c8e2c25a3f5bbfee07ba85b185898",
+            "html_url": "https://github.com/arkozik/STP-Beastopia/commit/7b85b1bad80c8e2c25a3f5bbfee07ba85b185898"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "ec83d9126fd5b44f9968d8489a31ab0ea41fedd2",
+            "filename": "src/main/java/de/uniks/beastopia/teaml/controller/ingame/items/ItemDetailController.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/arkozik/STP-Beastopia/blob/84b5b9a925a183ec56bda3260124905d958e6a1d/src%2Fmain%2Fjava%2Fde%2Funiks%2Fbeastopia%2Fteaml%2Fcontroller%2Fingame%2Fitems%2FItemDetailController.java",
+            "raw_url": "https://github.com/arkozik/STP-Beastopia/raw/84b5b9a925a183ec56bda3260124905d958e6a1d/src%2Fmain%2Fjava%2Fde%2Funiks%2Fbeastopia%2Fteaml%2Fcontroller%2Fingame%2Fitems%2FItemDetailController.java",
+            "contents_url": "https://api.github.com/repos/arkozik/STP-Beastopia/contents/src%2Fmain%2Fjava%2Fde%2Funiks%2Fbeastopia%2Fteaml%2Fcontroller%2Fingame%2Fitems%2FItemDetailController.java?ref=84b5b9a925a183ec56bda3260124905d958e6a1d",
+            "patch": "@@ -142,8 +142,8 @@ public void shopFunction() {\n                 }\n             }\n         }\n-        if (!itemType.use().contains(\"effect\") || !onlyInventory) {\n-            if (!buy && !onlyInventory) { //sell\n+        if (!onlyInventory) {\n+            if (!buy) { //sell\n                 amount = -1;\n             }\n             useDetailButton(amount, usage, null);"
+        }
+    ]
+}

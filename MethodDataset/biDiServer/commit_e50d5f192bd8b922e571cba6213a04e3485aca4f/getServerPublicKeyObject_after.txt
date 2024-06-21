@@ -1,0 +1,9 @@
+	public PublicKey getServerPublicKeyObject() 
+	{
+		if (this.serverPublicKeyObject == null)
+		{
+			this.serverPublicKeyObject = CryptoLib.decodePublicKeyFromBase64(this.serverPublicKey);
+		}
+		
+		return serverPublicKeyObject;
+	}

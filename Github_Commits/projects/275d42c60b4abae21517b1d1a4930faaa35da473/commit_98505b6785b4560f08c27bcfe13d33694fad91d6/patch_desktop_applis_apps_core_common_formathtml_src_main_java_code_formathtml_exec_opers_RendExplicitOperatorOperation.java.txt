@@ -1,0 +1,28 @@
+@@ -22,14 +22,13 @@ public final class RendExplicitOperatorOperation extends RendSettableCallFctOper
+     private final ExecTypeFunction pair;
+     private final ExecStaticFctContent staticFctContent;
+     private final ExecOperatorContent operatorContent;
+-    private final ImplicitMethods converter;
++    private final ImplicitMethods converter = new ImplicitMethods();
+ 
+-    public RendExplicitOperatorOperation(ExecOperationContent _content, boolean _intermediateDottedOperation, ExecStaticFctContent _staticFctContent, ExecTypeFunction _pair, ExecOperatorContent _offsetOper, ExecArrContent _arrContent, ImplicitMethods _converter) {
++    public RendExplicitOperatorOperation(ExecOperationContent _content, boolean _intermediateDottedOperation, ExecStaticFctContent _staticFctContent, ExecTypeFunction _pair, ExecOperatorContent _offsetOper, ExecArrContent _arrContent) {
+         super(_content, _intermediateDottedOperation, _arrContent);
+         staticFctContent = _staticFctContent;
+         pair = _pair;
+         operatorContent = _offsetOper;
+-        converter = _converter;
+     }
+ 
+     @Override
+@@ -54,6 +53,10 @@ static ArgumentWrapper checkParametersOperatorsFormatted(RendMethodOperation _cu
+         return RendDynOperationNode.processCall(Argument.createVoid(), _context, _rendStack);
+     }
+ 
++    public ImplicitMethods getConverter() {
++        return converter;
++    }
++
+     @Override
+     public String getOper() {
+         return operatorContent.getOper();

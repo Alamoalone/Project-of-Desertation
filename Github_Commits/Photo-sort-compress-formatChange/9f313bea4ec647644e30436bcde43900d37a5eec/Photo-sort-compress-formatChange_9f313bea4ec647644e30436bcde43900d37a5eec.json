@@ -1,0 +1,98 @@
+{
+    "sha": "9f313bea4ec647644e30436bcde43900d37a5eec",
+    "node_id": "C_kwDOJ2WJjtoAKDlmMzEzYmVhNGVjNjQ3NjQ0ZTMwNDM2YmNkZTQzOTAwZDM3YTVlZWM",
+    "commit": {
+        "author": {
+            "name": "mptimch",
+            "email": "mptimchenko@mail.ru",
+            "date": "2023-07-01T14:18:00Z"
+        },
+        "committer": {
+            "name": "mptimch",
+            "email": "mptimchenko@mail.ru",
+            "date": "2023-07-01T14:18:00Z"
+        },
+        "message": "GUI with Null Pointer Exception",
+        "tree": {
+            "sha": "6ea354e12d7ae89a4eb73bf564cae0520765914c",
+            "url": "https://api.github.com/repos/mptimch/Photo-sort-compress-formatChange/git/trees/6ea354e12d7ae89a4eb73bf564cae0520765914c"
+        },
+        "url": "https://api.github.com/repos/mptimch/Photo-sort-compress-formatChange/git/commits/9f313bea4ec647644e30436bcde43900d37a5eec",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/mptimch/Photo-sort-compress-formatChange/commits/9f313bea4ec647644e30436bcde43900d37a5eec",
+    "html_url": "https://github.com/mptimch/Photo-sort-compress-formatChange/commit/9f313bea4ec647644e30436bcde43900d37a5eec",
+    "comments_url": "https://api.github.com/repos/mptimch/Photo-sort-compress-formatChange/commits/9f313bea4ec647644e30436bcde43900d37a5eec/comments",
+    "author": {
+        "login": "mptimch",
+        "id": 93775557,
+        "node_id": "U_kgDOBZbmxQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/93775557?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mptimch",
+        "html_url": "https://github.com/mptimch",
+        "followers_url": "https://api.github.com/users/mptimch/followers",
+        "following_url": "https://api.github.com/users/mptimch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mptimch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mptimch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mptimch/subscriptions",
+        "organizations_url": "https://api.github.com/users/mptimch/orgs",
+        "repos_url": "https://api.github.com/users/mptimch/repos",
+        "events_url": "https://api.github.com/users/mptimch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mptimch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "mptimch",
+        "id": 93775557,
+        "node_id": "U_kgDOBZbmxQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/93775557?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mptimch",
+        "html_url": "https://github.com/mptimch",
+        "followers_url": "https://api.github.com/users/mptimch/followers",
+        "following_url": "https://api.github.com/users/mptimch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mptimch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mptimch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mptimch/subscriptions",
+        "organizations_url": "https://api.github.com/users/mptimch/orgs",
+        "repos_url": "https://api.github.com/users/mptimch/repos",
+        "events_url": "https://api.github.com/users/mptimch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mptimch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8682ae433ebe09336e18516018aab06110db56ab",
+            "url": "https://api.github.com/repos/mptimch/Photo-sort-compress-formatChange/commits/8682ae433ebe09336e18516018aab06110db56ab",
+            "html_url": "https://github.com/mptimch/Photo-sort-compress-formatChange/commit/8682ae433ebe09336e18516018aab06110db56ab"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 2,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "985c197ce3deed7e0c2d8c706afbb2b3f8e61413",
+            "filename": "src/main/java/Main.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 5,
+            "changes": 7,
+            "blob_url": "https://github.com/mptimch/Photo-sort-compress-formatChange/blob/9f313bea4ec647644e30436bcde43900d37a5eec/src%2Fmain%2Fjava%2FMain.java",
+            "raw_url": "https://github.com/mptimch/Photo-sort-compress-formatChange/raw/9f313bea4ec647644e30436bcde43900d37a5eec/src%2Fmain%2Fjava%2FMain.java",
+            "contents_url": "https://api.github.com/repos/mptimch/Photo-sort-compress-formatChange/contents/src%2Fmain%2Fjava%2FMain.java?ref=9f313bea4ec647644e30436bcde43900d37a5eec",
+            "patch": "@@ -4,21 +4,18 @@\n import javax.swing.*;\n import java.awt.*;\n import java.io.File;\n-import java.io.FileInputStream;\n import java.io.IOException;\n import java.util.ArrayList;\n import java.util.Arrays;\n-import java.util.Properties;\n \n \n public class Main {\n     public static Logger logger = LogManager.getRootLogger();\n \n-    public static void main(String[] args) throws IOException {\n+    public static void main(String[] args) {\n \n             String srcFolder = \"\";\n             String dstFolder = \"\";\n-\n             ConvertToThisFormats dstFormat;\n \n             JFrame frame = new JFrame(\"My GUI Form\");\n@@ -30,7 +27,7 @@ public static void main(String[] args) throws IOException {\n \n \n          public static ArrayList<File> listFiles (ArrayList < File > src) {\n-            ArrayList files = new ArrayList();\n+            ArrayList <File> files = new ArrayList<>();\n             for (File file : src) {\n                 if (!file.isDirectory()) {\n                     files.add(file);"
+        }
+    ]
+}

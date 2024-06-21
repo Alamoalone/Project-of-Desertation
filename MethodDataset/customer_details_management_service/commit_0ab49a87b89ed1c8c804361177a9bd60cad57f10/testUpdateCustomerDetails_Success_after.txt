@@ -1,0 +1,8 @@
+    void testUpdateCustomerDetails_Success() {
+        CustomerRequestDto requestDto = new CustomerRequestDto();
+        when(customerDetailService.updateCustomerDetailsRecord(requestDto)).thenReturn(true);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.updateCustomerDetails(requestDto);
+
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+    }

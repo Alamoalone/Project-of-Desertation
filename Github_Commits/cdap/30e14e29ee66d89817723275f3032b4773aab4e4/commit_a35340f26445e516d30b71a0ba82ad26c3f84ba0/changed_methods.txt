@@ -1,0 +1,3 @@
+addLatestApplication(ApplicationId id, ApplicationMeta meta)
+addApplication(ApplicationId id, ApplicationMeta meta, boolean isLatest)
+addApplication(ApplicationId id, ApplicationMeta meta)

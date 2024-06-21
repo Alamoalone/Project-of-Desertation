@@ -1,0 +1,14 @@
+	public ResponseEntity<List<CarEntity>> findByNumberModel(@RequestParam(required=false) String filter){
+		if(!filter.isEmpty() && filter.trim().length()!=0) {
+			String filter1=filter;
+			String filter2=filter;
+			try {
+				return ResponseEntity.ok(carEntityService.findByNumberModel(filter1,filter2));
+			} catch (Exception ex) {return new ResponseEntity<>(HttpStatus.NOT_FOUND);}
+		}else {
+			try {
+				return ResponseEntity.ok(carEntityService.getAllCarEntity());
+			} catch (Exception ex) {return new ResponseEntity<>(HttpStatus.NOT_FOUND);}
+		}
+	}
+

@@ -1,0 +1,110 @@
+{
+    "sha": "afefc990b8255e03ccc80fa368d064b01171d059",
+    "node_id": "C_kwDOIkrnQdoAKGFmZWZjOTkwYjgyNTVlMDNjY2M4MGZhMzY4ZDA2NGIwMTE3MWQwNTk",
+    "commit": {
+        "author": {
+            "name": "Jamie Bentham",
+            "email": "jamie.bentham@digital.cabinet-office.gov.uk",
+            "date": "2023-08-15T15:39:27Z"
+        },
+        "committer": {
+            "name": "Jamie Bentham",
+            "email": "jamie.bentham@digital.cabinet-office.gov.uk",
+            "date": "2023-08-15T15:39:32Z"
+        },
+        "message": "LIME-487: Fixing null pointer exception in tests",
+        "tree": {
+            "sha": "e806ad0f3cba5877bdbe70f8534e97e9dbbb9f11",
+            "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/git/trees/e806ad0f3cba5877bdbe70f8534e97e9dbbb9f11"
+        },
+        "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/git/commits/afefc990b8255e03ccc80fa368d064b01171d059",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE4VSBqNHk3IgMLSM3AHAxipKAUEsFAmTbnDYACgkQAHAxipKA\nUEvsUg//ZzNeZjAJA+VMSVIVy3bT7T4JCS8YDmvnVW+YRtJ1gA8il7bmjqimNlK5\neZ2i529iECWxRwD4Oik/+2piCRBYLOXtB/55+pepSu37F88T6OsFxBxTUjpymHFa\n409e/gVengMeQaX3rTST8e1sV5gK7mTTtFgtP2BtUlkZhjlqXs0S/KIGgLzHurRg\nBbnKeFA6WsGBU00q5XjOmZhcyFvkiwsW9YJwwHzd8K5jcTHtXchcOSkymaQnJrgO\n763t+ceMSM0vdxxnN27W3QkqPIM2MSsFf8REohk2q84SEGEO85C7Rf/FtPtwXQZT\n6Td4qBK4moJIn6giOZSFaygsqyG1hcQSdO1J0gbPxCb+a7e/JqH6e1YXVQuXgAIt\no7WpKbkQr/NS64XmpiVd6xTMLuUi/UbCTpes3soc3dXCVuyUWLHmSwzk5KFUkWpr\nzFFMEjTqSI+XA9BdAndIpeCtEEVbvWo8oHpSIW6biflK1GArQt1Vi8zWHOmnzcg5\ng+YAuYLYFiuSmUVImfWOE63mD16NFbt6MPibRcARYotyucf3qTPNVV9FCOJDx3uj\nfLVs972EJQLAHGBD7qg4XhqdygYEpmlMtzVAMM70L3EGpbovrmQuEMlZn1bkOaQo\nmUA7Hyuu8hNA7mQl66PUfDCmvXA4Pl/4rjoET3dw0oWC3MmCuRI=\n=+igD\n-----END PGP SIGNATURE-----",
+            "payload": "tree e806ad0f3cba5877bdbe70f8534e97e9dbbb9f11\nparent 23c40d0fd64fc9e1c1bb11ba4696f3a9d5bba7e7\nauthor Jamie Bentham <jamie.bentham@digital.cabinet-office.gov.uk> 1692113967 +0100\ncommitter Jamie Bentham <jamie.bentham@digital.cabinet-office.gov.uk> 1692113972 +0100\n\nLIME-487: Fixing null pointer exception in tests\n"
+        }
+    },
+    "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/commits/afefc990b8255e03ccc80fa368d064b01171d059",
+    "html_url": "https://github.com/govuk-one-login/ipv-cri-uk-passport-api/commit/afefc990b8255e03ccc80fa368d064b01171d059",
+    "comments_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/commits/afefc990b8255e03ccc80fa368d064b01171d059/comments",
+    "author": {
+        "login": "gds-jbentham",
+        "id": 105647376,
+        "node_id": "U_kgDOBkwNEA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105647376?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gds-jbentham",
+        "html_url": "https://github.com/gds-jbentham",
+        "followers_url": "https://api.github.com/users/gds-jbentham/followers",
+        "following_url": "https://api.github.com/users/gds-jbentham/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gds-jbentham/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gds-jbentham/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gds-jbentham/subscriptions",
+        "organizations_url": "https://api.github.com/users/gds-jbentham/orgs",
+        "repos_url": "https://api.github.com/users/gds-jbentham/repos",
+        "events_url": "https://api.github.com/users/gds-jbentham/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gds-jbentham/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "gds-jbentham",
+        "id": 105647376,
+        "node_id": "U_kgDOBkwNEA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105647376?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gds-jbentham",
+        "html_url": "https://github.com/gds-jbentham",
+        "followers_url": "https://api.github.com/users/gds-jbentham/followers",
+        "following_url": "https://api.github.com/users/gds-jbentham/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gds-jbentham/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gds-jbentham/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gds-jbentham/subscriptions",
+        "organizations_url": "https://api.github.com/users/gds-jbentham/orgs",
+        "repos_url": "https://api.github.com/users/gds-jbentham/repos",
+        "events_url": "https://api.github.com/users/gds-jbentham/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gds-jbentham/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "23c40d0fd64fc9e1c1bb11ba4696f3a9d5bba7e7",
+            "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/commits/23c40d0fd64fc9e1c1bb11ba4696f3a9d5bba7e7",
+            "html_url": "https://github.com/govuk-one-login/ipv-cri-uk-passport-api/commit/23c40d0fd64fc9e1c1bb11ba4696f3a9d5bba7e7"
+        }
+    ],
+    "stats": {
+        "total": 11,
+        "additions": 9,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "e3a42fdfc7d6b8078add788e6f66807779d89ab9",
+            "filename": "acceptance-tests/build.gradle",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-uk-passport-api/blob/afefc990b8255e03ccc80fa368d064b01171d059/acceptance-tests%2Fbuild.gradle",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-uk-passport-api/raw/afefc990b8255e03ccc80fa368d064b01171d059/acceptance-tests%2Fbuild.gradle",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/contents/acceptance-tests%2Fbuild.gradle?ref=afefc990b8255e03ccc80fa368d064b01171d059",
+            "patch": "@@ -106,7 +106,7 @@ tasks.register('cucumber') {\n \tdoLast {\n \t\tjavaexec {\n \t\t\tsystemProperties = [\n-\t\t\t\t\t'cucumber.tags': \"${tags}\"\n+\t\t\t\t'cucumber.tags': \"${tags}\"\n \t\t\t]\n \t\t\tmain = \"io.cucumber.core.cli.Main\"\n \t\t\tclasspath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output"
+        },
+        {
+            "sha": "5c423d6025ef87a0b0945ed888261234f509ece4",
+            "filename": "acceptance-tests/src/test/java/uk/gov/di/ipv/cri/passport/acceptance_tests/step_definitions/UniversalStepDefs.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 1,
+            "changes": 9,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-uk-passport-api/blob/afefc990b8255e03ccc80fa368d064b01171d059/acceptance-tests%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fpassport%2Facceptance_tests%2Fstep_definitions%2FUniversalStepDefs.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-uk-passport-api/raw/afefc990b8255e03ccc80fa368d064b01171d059/acceptance-tests%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fpassport%2Facceptance_tests%2Fstep_definitions%2FUniversalStepDefs.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-uk-passport-api/contents/acceptance-tests%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fpassport%2Facceptance_tests%2Fstep_definitions%2FUniversalStepDefs.java?ref=afefc990b8255e03ccc80fa368d064b01171d059",
+            "patch": "@@ -3,6 +3,8 @@\n import io.cucumber.java.en.And;\n import uk.gov.di.ipv.cri.passport.acceptance_tests.pages.UniversalSteps;\n \n+import java.util.Objects;\n+\n import static uk.gov.di.ipv.cri.passport.acceptance_tests.utilities.BrowserUtils.changeLanguageTo;\n import static uk.gov.di.ipv.cri.passport.acceptance_tests.utilities.BrowserUtils.setFeatureSet;\n \n@@ -20,8 +22,13 @@ public void iAddACookieToChangeTheLanguageToWelsh(String language) {\n \n     @And(\"^I set the document checking route$\")\n     public void setDocumentCheckingRoute() {\n-        if (System.getProperty(\"cucumber.tags\").equals(\"@hmpoDVAD\")) {\n+        if (getProperty(\"cucumber.tags\").equals(\"@hmpoDVAD\")) {\n             setFeatureSet(\"hmpoDVAD\");\n         }\n     }\n+\n+    private static String getProperty(String propertyName) {\n+        String property = System.getProperty(propertyName);\n+        return Objects.requireNonNullElse(property, \"\");\n+    }\n }"
+        }
+    ]
+}

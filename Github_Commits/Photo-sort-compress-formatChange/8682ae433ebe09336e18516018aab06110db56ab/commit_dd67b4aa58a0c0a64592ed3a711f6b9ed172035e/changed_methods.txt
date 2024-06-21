@@ -1,0 +1,4 @@
+cutImageByPixels(boolean changeFormat, File file, String format, String fileName)
+copyErrorFile(File file, String format, String fileName)
+handlePictures()
+compressImage(File file, String format, String fileName)

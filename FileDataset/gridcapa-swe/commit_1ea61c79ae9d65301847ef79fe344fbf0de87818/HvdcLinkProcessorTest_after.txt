@@ -1,0 +1,6 @@
+    void testNoinputFails(String xiidm) {
+        Network network = Network.read("hvdc/TestCase16Nodes.xiidm", getClass().getResourceAsStream(xiidm));
+        Set<HvdcCreationParameters> params = JsonSwePreprocessorImporter.read(getClass().getResourceAsStream("/hvdc/SwePreprocessorParameters_16nodes.json")).getHvdcCreationParametersSet();
+        assertThrows(SweInvalidDataException.class, () -> HvdcLinkProcessor.replaceEquivalentModelByHvdc(network, params));
+    }
+

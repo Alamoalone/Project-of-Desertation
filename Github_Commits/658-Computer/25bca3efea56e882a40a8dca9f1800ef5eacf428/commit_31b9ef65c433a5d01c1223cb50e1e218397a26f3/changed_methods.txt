@@ -1,0 +1,4 @@
+getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+paintSelected(Graphics2D graphics, Viewport viewport, Color color)
+paintBoundingBox(Graphics2D graphics, Viewport viewport)
+getSelectionBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)

@@ -1,0 +1,6 @@
+    public void closeImmediately() throws IOException {
+        if (timer != null)
+            timer.cancel();
+        active = null;
+        super.close();
+    }

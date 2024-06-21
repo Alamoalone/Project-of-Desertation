@@ -1,0 +1,5 @@
+	public ResponseEntity<Long> deleteOnePersonById(@PathVariable String id) {
+		boolean isPersonRemoved = personService.deleteOnePersonById(id);
+		return isPersonRemoved ? new ResponseEntity<Long>(HttpStatus.NO_CONTENT)
+				: new ResponseEntity<Long>(HttpStatus.NOT_FOUND);
+	}

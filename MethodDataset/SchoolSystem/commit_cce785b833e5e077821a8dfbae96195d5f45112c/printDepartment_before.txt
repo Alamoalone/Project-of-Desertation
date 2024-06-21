@@ -1,0 +1,7 @@
+    public void printDepartment() {
+        for (Department department : departments) {
+            if (department != null) {
+                System.out.printf("id: %s, department name : %s ", department.getId(), department.getDepartmentName());
+            }
+        }
+    }

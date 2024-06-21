@@ -1,0 +1,8 @@
+	protected void updateAnswerContentDescription(View answerLayout, @Nullable CharSequence baseText, boolean selectAnswer)
+	{
+		if(baseText == null)
+		{
+			baseText = "";
+		}
+		answerLayout.setContentDescription(baseText + (selectAnswer ? " selected" : " not selected"));
+	}

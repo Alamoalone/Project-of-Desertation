@@ -1,0 +1,158 @@
+{
+    "sha": "9fdf1635fc26673fed69fcc41434f7d451e1a143",
+    "node_id": "C_kwDOISXatdoAKDlmZGYxNjM1ZmMyNjY3M2ZlZDY5ZmNjNDE0MzRmN2Q0NTFlMWExNDM",
+    "commit": {
+        "author": {
+            "name": "Michael Schweitzer",
+            "email": "65272278+spielwitz@users.noreply.github.com",
+            "date": "2024-04-01T06:29:56Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-04-01T06:29:56Z"
+        },
+        "message": "Release 1.1.3 (#11)\n\nBug fixes:\r\n\r\n- When switching between users, notifications could be sent to the wrong user.\r\n- Private key returned as null in certain cases causing null pointer exceptions.\r\n\r\nNew public methods to return the public server key and to change to admin email.",
+        "tree": {
+            "sha": "47ce71723f923a43a96294e18684b7d5458c7460",
+            "url": "https://api.github.com/repos/spielwitz/biDiServer/git/trees/47ce71723f923a43a96294e18684b7d5458c7460"
+        },
+        "url": "https://api.github.com/repos/spielwitz/biDiServer/git/commits/9fdf1635fc26673fed69fcc41434f7d451e1a143",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmClRkCRC1aQ7uu5UhlAAALgQQAE/x3BOMfeiblqtTljk4uTut\nm0vxn2VtNMDnV5lgTAYLlgR/GI9Pu4eZ+xMfdb+93PD0hq7TO1gOqOzos7ypW14Q\nXKYQdNWvp28zhE1t16LJurCU8Ivr2aUt6JK6pmIA2+1FT73MVKaWFd0vTlbzAmi7\nScLLAjbNRfWrz01szAm3jYQVckv2BwDLXapVXigHMhuSIsl4+g6tN3FpO5YvECPQ\nTceQiu77CAEUp/ZYeg213hKhVKEAf6fKicm5ZK+616giUBGpetNBgmBHQdrdHdUU\nOpKIzRXx6m9TYj11xmYisHwqEVPX6JfuiQZ/nk/U9qdAC54ECswzMD1YaIE96ISz\nh6LBgbVGIQ/pr8kWevlWY1dPdEV4HBaROkEYscQbCADzXT+pyqPKrofJu8vr4924\n9jrLRbTUBD+09HF13Pct/Aqknz28FUeITc7Uiy4cbY2pcklwGCcvv2o7OMTAIMdJ\nEF44NfIpWTEcByvLu6EluX45s9moR1jj9XVPhcU5lfP7+pmUDfhq0HhHpHRjyjla\nEiya1PlIV+qwRRQe+1eF6BJ/h8s7Ml5vL3vB2CCyM8R2FcTQss+iLYHXndFam/sh\nfDhdRcYabaeCm1l+YYhIJzcB1RGQp4Kz3YatclyOThHsDpK4GsAIqt6WUCYq0fv/\nlof44w9Dr8JdSKmZPkYZ\n=W5DR\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 47ce71723f923a43a96294e18684b7d5458c7460\nparent d97c843b8de083ef12b71e7368b6f32856b7559f\nauthor Michael Schweitzer <65272278+spielwitz@users.noreply.github.com> 1711952996 +0200\ncommitter GitHub <noreply@github.com> 1711952996 +0200\n\nRelease 1.1.3 (#11)\n\nBug fixes:\r\n\r\n- When switching between users, notifications could be sent to the wrong user.\r\n- Private key returned as null in certain cases causing null pointer exceptions.\r\n\r\nNew public methods to return the public server key and to change to admin email."
+        }
+    },
+    "url": "https://api.github.com/repos/spielwitz/biDiServer/commits/9fdf1635fc26673fed69fcc41434f7d451e1a143",
+    "html_url": "https://github.com/spielwitz/biDiServer/commit/9fdf1635fc26673fed69fcc41434f7d451e1a143",
+    "comments_url": "https://api.github.com/repos/spielwitz/biDiServer/commits/9fdf1635fc26673fed69fcc41434f7d451e1a143/comments",
+    "author": {
+        "login": "spielwitz",
+        "id": 65272278,
+        "node_id": "MDQ6VXNlcjY1MjcyMjc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65272278?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spielwitz",
+        "html_url": "https://github.com/spielwitz",
+        "followers_url": "https://api.github.com/users/spielwitz/followers",
+        "following_url": "https://api.github.com/users/spielwitz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spielwitz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spielwitz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spielwitz/subscriptions",
+        "organizations_url": "https://api.github.com/users/spielwitz/orgs",
+        "repos_url": "https://api.github.com/users/spielwitz/repos",
+        "events_url": "https://api.github.com/users/spielwitz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spielwitz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d97c843b8de083ef12b71e7368b6f32856b7559f",
+            "url": "https://api.github.com/repos/spielwitz/biDiServer/commits/d97c843b8de083ef12b71e7368b6f32856b7559f",
+            "html_url": "https://github.com/spielwitz/biDiServer/commit/d97c843b8de083ef12b71e7368b6f32856b7559f"
+        }
+    ],
+    "stats": {
+        "total": 88,
+        "additions": 68,
+        "deletions": 20
+    },
+    "files": [
+        {
+            "sha": "44fc9cc5295e65fe213c03c16a851cd4bb4417e4",
+            "filename": "resources/TextResources_de_DE.properties",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/spielwitz/biDiServer/blob/9fdf1635fc26673fed69fcc41434f7d451e1a143/resources%2FTextResources_de_DE.properties",
+            "raw_url": "https://github.com/spielwitz/biDiServer/raw/9fdf1635fc26673fed69fcc41434f7d451e1a143/resources%2FTextResources_de_DE.properties",
+            "contents_url": "https://api.github.com/repos/spielwitz/biDiServer/contents/resources%2FTextResources_de_DE.properties?ref=9fdf1635fc26673fed69fcc41434f7d451e1a143",
+            "patch": "@@ -78,11 +78,11 @@ ResponseMessageNotSet = Implementierungsfehler: Die Antwortnachricht ist im Mess\n \n ServerBuildOutdated = Der Server benutzt Build {0}. Ihr Client erwartet einen Server-Build von mindestens {1}.\n \n-ServerNotStarted = Server kann auf Port {0} nicht gestartet werden. Wahrscheinlich ist der Port belegt. Programmende.\n+ServerNotStarted = Server {0}:{1} kann nicht gestartet werden. Wahrscheinlich ist der Port belegt. Programmende.\n \n ServerSocketAcceptError = Fehler beim Annehmen der Socketverbindung: {0}\n \n-ServerStarted = Server auf Port {0} gestartet\n+ServerStarted = Server {0}:{1} gestartet\n \n ShutdownDone = Der Server wurde erfolgreich heruntergefahren.\n "
+        },
+        {
+            "sha": "5e892e2056108df64d575d83456c323f11f62141",
+            "filename": "resources/TextResources_en_US.properties",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/spielwitz/biDiServer/blob/9fdf1635fc26673fed69fcc41434f7d451e1a143/resources%2FTextResources_en_US.properties",
+            "raw_url": "https://github.com/spielwitz/biDiServer/raw/9fdf1635fc26673fed69fcc41434f7d451e1a143/resources%2FTextResources_en_US.properties",
+            "contents_url": "https://api.github.com/repos/spielwitz/biDiServer/contents/resources%2FTextResources_en_US.properties?ref=9fdf1635fc26673fed69fcc41434f7d451e1a143",
+            "patch": "@@ -78,11 +78,11 @@ ResponseMessageNotSet = Implementation error: Response message not set in messag\n \n ServerBuildOutdated = The server is using build {0}. Your client expects a server build of at least {1}.\n \n-ServerNotStarted = Server cannot be started on port {0}. The port might already be in use. Application terminated.\n+ServerNotStarted = Server {0}:{1} cannot be started. The port might already be in use. Application terminated.\n \n ServerSocketAcceptError = Error when accepting the socket connection: {0}\n \n-ServerStarted = Server started on port {0}\n+ServerStarted = Server {0}:{1} started\n \n ShutdownDone = The server was shut down down successfully.\n "
+        },
+        {
+            "sha": "663040becde16d24e95bc1529afe869ad0cb659f",
+            "filename": "src/spielwitz/biDiServer/Client.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 3,
+            "changes": 12,
+            "blob_url": "https://github.com/spielwitz/biDiServer/blob/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FClient.java",
+            "raw_url": "https://github.com/spielwitz/biDiServer/raw/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FClient.java",
+            "contents_url": "https://api.github.com/repos/spielwitz/biDiServer/contents/src%2Fspielwitz%2FbiDiServer%2FClient.java?ref=9fdf1635fc26673fed69fcc41434f7d451e1a143",
+            "patch": "@@ -157,7 +157,13 @@ public void disconnect()\n \t\tif (this.notificationReceiverThread != null)\n \t\t{\n \t\t\tthis.sendRequestMessage(RequestMessageType.DISCONNECT, null);\n-\t\t\tthis.notificationReceiverThread.disconnect();\n+\t\t\t\n+\t\t\tif (this.notificationReceiverThread != null)\n+\t\t\t{\n+\t\t\t\tthis.notificationReceiverThread.interrupt();\n+\t\t\t\tthis.notificationReceiverThread.disconnect();\n+\t\t\t\tthis.notificationReceiverThread = null;\n+\t\t\t}\n \t\t}\n \t\t\n \t\tif (this.reconnectThread != null)\n@@ -559,8 +565,8 @@ protected abstract void onNotificationReceived(\n \t\n \tprivate void establishNotificationSocket(Socket kkSocket)\n \t{\n-\t\tClientNotificationReceiverThread t = this.new ClientNotificationReceiverThread(kkSocket);\n-\t\tt.start();\n+\t\tthis.notificationReceiverThread = this.new ClientNotificationReceiverThread(kkSocket);\n+\t\tthis.notificationReceiverThread.start();\n \t}\n \t\n \t/**"
+        },
+        {
+            "sha": "e50d5f192bd8b922e571cba6213a04e3485aca4f",
+            "filename": "src/spielwitz/biDiServer/ClientConfiguration.java",
+            "status": "modified",
+            "additions": 33,
+            "deletions": 3,
+            "changes": 36,
+            "blob_url": "https://github.com/spielwitz/biDiServer/blob/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FClientConfiguration.java",
+            "raw_url": "https://github.com/spielwitz/biDiServer/raw/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FClientConfiguration.java",
+            "contents_url": "https://api.github.com/repos/spielwitz/biDiServer/contents/src%2Fspielwitz%2FbiDiServer%2FClientConfiguration.java?ref=9fdf1635fc26673fed69fcc41434f7d451e1a143",
+            "patch": "@@ -117,12 +117,27 @@ public String getAdminEmail() {\n \tpublic int getPort() {\n \t\treturn port;\n \t}\n+\t\n+\t/**\n+\t * Get the public RSA key of the server as a base64-encoded string.\n+\t * @return The public RSA key of the server as a base64-encoded string\n+\t */\n+\tpublic String getServerPublicKey()\n+\t{\n+\t\treturn serverPublicKey;\n+\t}\n \n \t/**\n \t * The public RSA key of the server.\n \t * @return Public RSA key\n \t */\n-\tpublic PublicKey getServerPublicKeyObject() {\n+\tpublic PublicKey getServerPublicKeyObject() \n+\t{\n+\t\tif (this.serverPublicKeyObject == null)\n+\t\t{\n+\t\t\tthis.serverPublicKeyObject = CryptoLib.decodePublicKeyFromBase64(this.serverPublicKey);\n+\t\t}\n+\t\t\n \t\treturn serverPublicKeyObject;\n \t}\n \n@@ -154,8 +169,23 @@ public String getUserId() {\n \t * The private RSA key of the user.\n \t * @return Private RSA key\n \t */\n-\tpublic PrivateKey getUserPrivateKeyObject() {\n-\t\treturn userPrivateKeyObject;\n+\tpublic PrivateKey getUserPrivateKeyObject() \n+\t{\n+\t\tif (this.userPrivateKeyObject == null)\n+\t\t{\n+\t\t\tthis.userPrivateKeyObject = CryptoLib.decodePrivateKeyFromBase64(this.userPrivateKey);\n+\t\t}\n+\t\t\n+\t\treturn this.userPrivateKeyObject;\n+\t}\n+\t\n+\t/**\n+\t * Set the e-mail address of the server administrator.\n+\t * @param The e-mail address of the server administrator\n+\t */\n+\tpublic void setAdminEmail(String adminEmail)\n+\t{\n+\t\tthis.adminEmail = adminEmail;\n \t}\n \t\n \t/**"
+        },
+        {
+            "sha": "f7cc5eeafc08ad7305f89eeb2fccca881bc25e75",
+            "filename": "src/spielwitz/biDiServer/Server.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 4,
+            "changes": 20,
+            "blob_url": "https://github.com/spielwitz/biDiServer/blob/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FServer.java",
+            "raw_url": "https://github.com/spielwitz/biDiServer/raw/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FServer.java",
+            "contents_url": "https://api.github.com/repos/spielwitz/biDiServer/contents/src%2Fspielwitz%2FbiDiServer%2FServer.java?ref=9fdf1635fc26673fed69fcc41434f7d451e1a143",
+            "patch": "@@ -122,22 +122,34 @@ public void start()\n \t\t    this.serverSocket = new ServerSocket(this.config.getPort());\n \t\t    \n \t\t    System.out.println(\n-\t\t    \t\tTextProperties.getMessageText(TextProperties.ServerStarted(Integer.toString(this.config.getPort()))));\n+\t\t    \t\tTextProperties.getMessageText(\n+\t\t    \t\t\t\tTextProperties.ServerStarted(\n+\t\t    \t\t\t\t\t\tthis.config.getUrl(),\n+\t\t    \t\t\t\t\t\tInteger.toString(this.config.getPort()))));\n \t\t    \n \t\t    this.log.logMessage(\n \t\t\t\t\tLogEventId.G1,\n \t\t\t\t\tLogLevel.General,\n-\t\t\t\t\tTextProperties.getMessageText(TextProperties.ServerStarted(Integer.toString(this.config.getPort()))));\n+\t\t\t\t\tTextProperties.getMessageText(\n+\t\t\t\t\t\t\tTextProperties.ServerStarted(\n+\t\t\t\t\t\t\t\t\tthis.config.getUrl(),\n+\t\t\t\t\t\t\t\t\tInteger.toString(this.config.getPort()))));\n \t\t}\n \t\tcatch (Exception x)\n \t\t{\n \t\t\tSystem.out.println(\n-\t\t\t\t\tTextProperties.getMessageText(TextProperties.ServerNotStarted(Integer.toString(this.config.getPort()))));\n+\t\t\t\t\tTextProperties.getMessageText(\n+\t\t\t\t\t\t\tTextProperties.ServerNotStarted(\n+\t\t\t\t\t\t\t\t\tthis.config.getUrl(),\n+\t\t\t\t\t\t\t\t\tInteger.toString(this.config.getPort()))));\n \t\t\t\n \t\t\tthis.log.logMessage(\n \t\t\t\t\tLogEventId.C1,\n \t\t\t\t\tLogLevel.Critical,\n-\t\t\t\t\tTextProperties.getMessageText(TextProperties.ServerNotStarted(Integer.toString(this.config.getPort()))));\n+\t\t\t\t\tTextProperties.getMessageText(\n+\t\t\t\t\t\t\tTextProperties.ServerNotStarted(\n+\t\t\t\t\t\t\t\t\tthis.config.getUrl(),\n+\t\t\t\t\t\t\t\t\tInteger.toString(this.config.getPort()))));\n \t\t\treturn;\n \t\t}\n \t\t"
+        },
+        {
+            "sha": "d10be349aa868dd6c8b173685cc2a351d6c70650",
+            "filename": "src/spielwitz/biDiServer/TextProperties.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 6,
+            "changes": 12,
+            "blob_url": "https://github.com/spielwitz/biDiServer/blob/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FTextProperties.java",
+            "raw_url": "https://github.com/spielwitz/biDiServer/raw/9fdf1635fc26673fed69fcc41434f7d451e1a143/src%2Fspielwitz%2FbiDiServer%2FTextProperties.java",
+            "contents_url": "https://api.github.com/repos/spielwitz/biDiServer/contents/src%2Fspielwitz%2FbiDiServer%2FTextProperties.java?ref=9fdf1635fc26673fed69fcc41434f7d451e1a143",
+            "patch": "@@ -312,10 +312,10 @@ static TextProperty ServerBuildOutdated(String arg0, String arg1) {\n \t}\n \n \t/**\n-\t   * Server cannot be started on port {0}. The port might already be in use. Application terminated.\n+\t   * Server {0}:{1} cannot be started. The port might already be in use. Application terminated.\n \t   */\n-\tstatic TextProperty ServerNotStarted(String arg0) {\n-\t\treturn new TextProperty(\"ServerNotStarted\", new String[] {arg0});\n+\tstatic TextProperty ServerNotStarted(String arg0, String arg1) {\n+\t\treturn new TextProperty(\"ServerNotStarted\", new String[] {arg0, arg1});\n \t}\n \n \t/**\n@@ -326,10 +326,10 @@ static TextProperty ServerSocketAcceptError(String arg0) {\n \t}\n \n \t/**\n-\t   * Server started on port {0}\n+\t   * Server {0}:{1} started\n \t   */\n-\tstatic TextProperty ServerStarted(String arg0) {\n-\t\treturn new TextProperty(\"ServerStarted\", new String[] {arg0});\n+\tstatic TextProperty ServerStarted(String arg0, String arg1) {\n+\t\treturn new TextProperty(\"ServerStarted\", new String[] {arg0, arg1});\n \t}\n \n \t/**"
+        }
+    ]
+}

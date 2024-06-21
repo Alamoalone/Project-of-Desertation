@@ -1,0 +1,98 @@
+{
+    "sha": "2130e28cdc81091207aec6bb2616ed4cc5fb32a6",
+    "node_id": "C_kwDOAq-VOdoAKDIxMzBlMjhjZGM4MTA5MTIwN2FlYzZiYjI2MTZlZDRjYzVmYjMyYTY",
+    "commit": {
+        "author": {
+            "name": "jdramsey",
+            "email": "jdramsey@andrew.cmu.edu",
+            "date": "2024-03-19T12:44:56Z"
+        },
+        "committer": {
+            "name": "jdramsey",
+            "email": "jdramsey@andrew.cmu.edu",
+            "date": "2024-03-19T12:44:56Z"
+        },
+        "message": "Initialize bHat matrix and rename its getter in IcaLingam.\n\nThe bHat matrix is now initialized to a zero-sized matrix instead of null to avoid null pointer exceptions. Moreover, the name of the getter method for this matrix is corrected to follow proper camel case syntax, enhancing code readability.",
+        "tree": {
+            "sha": "249cea309f1d4c86a1d7c9b49db7dcc0f2553b43",
+            "url": "https://api.github.com/repos/cmu-phil/tetrad/git/trees/249cea309f1d4c86a1d7c9b49db7dcc0f2553b43"
+        },
+        "url": "https://api.github.com/repos/cmu-phil/tetrad/git/commits/2130e28cdc81091207aec6bb2616ed4cc5fb32a6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/cmu-phil/tetrad/commits/2130e28cdc81091207aec6bb2616ed4cc5fb32a6",
+    "html_url": "https://github.com/cmu-phil/tetrad/commit/2130e28cdc81091207aec6bb2616ed4cc5fb32a6",
+    "comments_url": "https://api.github.com/repos/cmu-phil/tetrad/commits/2130e28cdc81091207aec6bb2616ed4cc5fb32a6/comments",
+    "author": {
+        "login": "jdramsey",
+        "id": 9853255,
+        "node_id": "MDQ6VXNlcjk4NTMyNTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9853255?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdramsey",
+        "html_url": "https://github.com/jdramsey",
+        "followers_url": "https://api.github.com/users/jdramsey/followers",
+        "following_url": "https://api.github.com/users/jdramsey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdramsey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdramsey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdramsey/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdramsey/orgs",
+        "repos_url": "https://api.github.com/users/jdramsey/repos",
+        "events_url": "https://api.github.com/users/jdramsey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdramsey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jdramsey",
+        "id": 9853255,
+        "node_id": "MDQ6VXNlcjk4NTMyNTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9853255?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdramsey",
+        "html_url": "https://github.com/jdramsey",
+        "followers_url": "https://api.github.com/users/jdramsey/followers",
+        "following_url": "https://api.github.com/users/jdramsey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdramsey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdramsey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdramsey/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdramsey/orgs",
+        "repos_url": "https://api.github.com/users/jdramsey/repos",
+        "events_url": "https://api.github.com/users/jdramsey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdramsey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d2874314e835b1becad6d94efed180cd9b090e64",
+            "url": "https://api.github.com/repos/cmu-phil/tetrad/commits/d2874314e835b1becad6d94efed180cd9b090e64",
+            "html_url": "https://github.com/cmu-phil/tetrad/commit/d2874314e835b1becad6d94efed180cd9b090e64"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "04391a06bd4fe3e91d59ff6e4308828a7a321cee",
+            "filename": "tetrad-gui/src/main/java/edu/cmu/tetradapp/Tetrad.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/cmu-phil/tetrad/blob/2130e28cdc81091207aec6bb2616ed4cc5fb32a6/tetrad-gui%2Fsrc%2Fmain%2Fjava%2Fedu%2Fcmu%2Ftetradapp%2FTetrad.java",
+            "raw_url": "https://github.com/cmu-phil/tetrad/raw/2130e28cdc81091207aec6bb2616ed4cc5fb32a6/tetrad-gui%2Fsrc%2Fmain%2Fjava%2Fedu%2Fcmu%2Ftetradapp%2FTetrad.java",
+            "contents_url": "https://api.github.com/repos/cmu-phil/tetrad/contents/tetrad-gui%2Fsrc%2Fmain%2Fjava%2Fedu%2Fcmu%2Ftetradapp%2FTetrad.java?ref=2130e28cdc81091207aec6bb2616ed4cc5fb32a6",
+            "patch": "@@ -77,7 +77,7 @@ public Tetrad() {\n \n     /**\n      * Launches Tetrad as an application. One way to launch Tetrad IV as an application is the following:&gt; 0\n-     * <pre>java -cp jarname.jar INSTANCE.Tetrad</pre>\n+     * <pre>java -jar jarname.jar</pre>\n      * <p>\n      * where \"jarname.jar\" is a jar containing all the classes of Tetrad IV, properly compiled, along with all the\n      * auxiliary jar contents and all the images which Tetrad IV uses, all in their proper relative directories.&gt; 0"
+        }
+    ]
+}

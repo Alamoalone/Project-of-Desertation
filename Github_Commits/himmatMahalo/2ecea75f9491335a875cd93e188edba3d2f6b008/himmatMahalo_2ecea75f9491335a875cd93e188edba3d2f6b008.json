@@ -1,0 +1,134 @@
+{
+    "sha": "2ecea75f9491335a875cd93e188edba3d2f6b008",
+    "node_id": "C_kwDOGi4LFNoAKDJlY2VhNzVmOTQ5MTMzNWE4NzVjZDkzZTE4OGVkYmEzZDJmNmIwMDg",
+    "commit": {
+        "author": {
+            "name": "alexander-newman-brazehzf2qu",
+            "email": "lijunlun235657@126.com",
+            "date": "2024-03-18T01:00:16Z"
+        },
+        "committer": {
+            "name": "alexander-newman-brazehzf2qu",
+            "email": "lijunlun235657@126.com",
+            "date": "2024-03-18T01:00:16Z"
+        },
+        "message": "Kylin DataProvider #73\nSupport pre-define a dynamic time window filter in dataset #90\n\nfix null pointer exception when add pre-define filter\nformat sql",
+        "tree": {
+            "sha": "17193ee8302951f0f84bddb52bb50ed56380a4f0",
+            "url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/git/trees/17193ee8302951f0f84bddb52bb50ed56380a4f0"
+        },
+        "url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/git/commits/2ecea75f9491335a875cd93e188edba3d2f6b008",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/commits/2ecea75f9491335a875cd93e188edba3d2f6b008",
+    "html_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/commit/2ecea75f9491335a875cd93e188edba3d2f6b008",
+    "comments_url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/commits/2ecea75f9491335a875cd93e188edba3d2f6b008/comments",
+    "author": {
+        "login": "alexander-newman-brazehzf2qu",
+        "id": 96280333,
+        "node_id": "U_kgDOBb0fDQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/96280333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alexander-newman-brazehzf2qu",
+        "html_url": "https://github.com/alexander-newman-brazehzf2qu",
+        "followers_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/followers",
+        "following_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/subscriptions",
+        "organizations_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/orgs",
+        "repos_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/repos",
+        "events_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "alexander-newman-brazehzf2qu",
+        "id": 96280333,
+        "node_id": "U_kgDOBb0fDQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/96280333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alexander-newman-brazehzf2qu",
+        "html_url": "https://github.com/alexander-newman-brazehzf2qu",
+        "followers_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/followers",
+        "following_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/subscriptions",
+        "organizations_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/orgs",
+        "repos_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/repos",
+        "events_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alexander-newman-brazehzf2qu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "17727a489ee708aae70e3b944af05718c42dc78d",
+            "url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/commits/17727a489ee708aae70e3b944af05718c42dc78d",
+            "html_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/commit/17727a489ee708aae70e3b944af05718c42dc78d"
+        }
+    ],
+    "stats": {
+        "total": 38,
+        "additions": 21,
+        "deletions": 17
+    },
+    "files": [
+        {
+            "sha": "c94c065951f499015fcc8cc7a3b9bd8da9731485",
+            "filename": "src/main/java/org/cboard/jdbc/JdbcDataProvider.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 7,
+            "changes": 14,
+            "blob_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/blob/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fjava%2Forg%2Fcboard%2Fjdbc%2FJdbcDataProvider.java",
+            "raw_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/raw/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fjava%2Forg%2Fcboard%2Fjdbc%2FJdbcDataProvider.java",
+            "contents_url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/contents/src%2Fmain%2Fjava%2Forg%2Fcboard%2Fjdbc%2FJdbcDataProvider.java?ref=2ecea75f9491335a875cd93e188edba3d2f6b008",
+            "patch": "@@ -257,7 +257,7 @@ public String[][] queryDimVals(Map<String, String> dataSource, Map<String, Strin\n      * @return\n      */\n     private String assembleSqlFilter(Stream<DimensionConfigHelper> filterStream, String prefix) {\n-        StringJoiner where = new StringJoiner(\" AND \", prefix + \" \", \"\");\n+        StringJoiner where = new StringJoiner(\"\\nAND \", prefix + \" \", \"\");\n         where.setEmptyValue(\"\");\n         filterStream.map(filter2SqlCondtion).filter(e -> e != null).forEach(where::add);\n         return where.toString();\n@@ -390,7 +390,7 @@ private String getQueryAggDataSql(Map<String, String> dataSource, Map<String, St\n         }\n \n         String subQuerySql = getAsSubQuery(query.get(SQL));\n-        String fsql = \"\\nSELECT %s FROM (\\n%s\\n) __view__ %s %s\";\n+        String fsql = \"\\nSELECT %s \\n FROM (\\n%s\\n) __view__ \\n %s \\n %s\";\n         String exec = String.format(fsql, selectColsStr, subQuerySql, whereStr, groupByStr);\n         return exec;\n     }\n@@ -403,15 +403,15 @@ public String viewAggDataQuery(Map<String, String> dataSource, Map<String, Strin\n     private Function<ValueConfig, String> toSelect = (config) -> {\n         switch (config.getAggType()) {\n             case \"sum\":\n-                return \"SUM(__view__.\" + config.getColumn() + \") sum\" + config.getColumn();\n+                return \"SUM(__view__.\" + config.getColumn() + \") AS sum_\" + config.getColumn();\n             case \"avg\":\n-                return \"AVG(__view__.\" + config.getColumn() + \") avg\" + config.getColumn();\n+                return \"AVG(__view__.\" + config.getColumn() + \") AS avg_\" + config.getColumn();\n             case \"max\":\n-                return \"MAX(__view__.\" + config.getColumn() + \") max\" + config.getColumn();\n+                return \"MAX(__view__.\" + config.getColumn() + \") AS max_\" + config.getColumn();\n             case \"min\":\n-                return \"MIN(__view__.\" + config.getColumn() + \") min\" + config.getColumn();\n+                return \"MIN(__view__.\" + config.getColumn() + \") AS min_\" + config.getColumn();\n             default:\n-                return \"COUNT(__view__.\" + config.getColumn() + \") count\" + config.getColumn();\n+                return \"COUNT(__view__.\" + config.getColumn() + \") AS count_\" + config.getColumn();\n         }\n     };\n "
+        },
+        {
+            "sha": "ed074ebff51669e0cff8d5d1549749d732844f79",
+            "filename": "src/main/java/org/cboard/kylin/KylinDataProvider.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 9,
+            "changes": 18,
+            "blob_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/blob/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fjava%2Forg%2Fcboard%2Fkylin%2FKylinDataProvider.java",
+            "raw_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/raw/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fjava%2Forg%2Fcboard%2Fkylin%2FKylinDataProvider.java",
+            "contents_url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/contents/src%2Fmain%2Fjava%2Forg%2Fcboard%2Fkylin%2FKylinDataProvider.java?ref=2ecea75f9491335a875cd93e188edba3d2f6b008",
+            "patch": "@@ -213,7 +213,7 @@ public String[][] queryDimVals(Map<String, String> dataSource, Map<String, Strin\n      * @return\n      */\n     private String assembleSqlFilter(Stream<DimensionConfigHelper> filterStream, String prefix, KylinModel model) {\n-        StringJoiner where = new StringJoiner(\" AND \", prefix + \" \", \"\");\n+        StringJoiner where = new StringJoiner(\"\\nAND \", prefix + \" \", \"\");\n         where.setEmptyValue(\"\");\n         filterStream.map(s -> filter2SqlCondtion.apply(s, model)).filter(e -> e != null).forEach(where::add);\n         return where.toString();\n@@ -318,7 +318,7 @@ private String getQueryAggDataSql(Map<String, String> dataSource, Map<String, St\n             selectColsStr.add(aggColsStr);\n         }\n \n-        String fsql = \"\\nSELECT %s FROM \\n%s\\n %s %s\";\n+        String fsql = \"\\nSELECT %s \\nFROM %s\\n %s \\n %s\";\n         String exec = String.format(fsql, selectColsStr, model.geModelSql(), whereStr, groupByStr);\n         return exec;\n     }\n@@ -331,15 +331,15 @@ public String viewAggDataQuery(Map<String, String> dataSource, Map<String, Strin\n     private BiFunction<ValueConfig, KylinModel, String> toSelect = (config, model) -> {\n         switch (config.getAggType()) {\n             case \"sum\":\n-                return \"SUM(\" + model.getColumnAndAlias(config.getColumn()) + \") sum\" + config.getColumn();\n+                return \"SUM(\" + model.getColumnAndAlias(config.getColumn()) + \") AS sum_\" + config.getColumn();\n             case \"avg\":\n-                return \"AVG(\" + model.getColumnAndAlias(config.getColumn()) + \") avg\" + config.getColumn();\n+                return \"AVG(\" + model.getColumnAndAlias(config.getColumn()) + \") AS avg_\" + config.getColumn();\n             case \"max\":\n-                return \"MAX(\" + model.getColumnAndAlias(config.getColumn()) + \") max\" + config.getColumn();\n+                return \"MAX(\" + model.getColumnAndAlias(config.getColumn()) + \") AS max_\" + config.getColumn();\n             case \"min\":\n-                return \"MIN(\" + model.getColumnAndAlias(config.getColumn()) + \") min\" + config.getColumn();\n+                return \"MIN(\" + model.getColumnAndAlias(config.getColumn()) + \") AS min_\" + config.getColumn();\n             default:\n-                return \"COUNT(\" + model.getColumnAndAlias(config.getColumn()) + \") count\" + config.getColumn();\n+                return \"COUNT(\" + model.getColumnAndAlias(config.getColumn()) + \") AS count_\" + config.getColumn();\n         }\n     };\n \n@@ -471,10 +471,10 @@ private String getJoinSql(String factAlias) {\n                 for (int i = 0; i < pk.length; i++) {\n                     on.add(String.format(\"%s.%s = %s.%s\", tableAlias.get(j.getString(\"table\")), pk[i], factAlias, fk[i]));\n                 }\n-                String type = j.getJSONObject(\"join\").getString(\"type\");\n+                String type = j.getJSONObject(\"join\").getString(\"type\").toUpperCase();\n                 String pTable = j.getString(\"table\");\n                 String onStr = on.stream().collect(Collectors.joining(\" \"));\n-                return String.format(\"%s join %s %s ON %s\", type, pTable, tableAlias.get(pTable), onStr);\n+                return String.format(\"\\n %s JOIN %s %s ON %s\", type, pTable, tableAlias.get(pTable), onStr);\n             }).collect(Collectors.joining(\" \"));\n             return s;\n         }"
+        },
+        {
+            "sha": "2c8b68d5813187db48a01c79feba34773137d079",
+            "filename": "src/main/webapp/org/cboard/controller/config/datasetCtrl.js",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/blob/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fwebapp%2Forg%2Fcboard%2Fcontroller%2Fconfig%2FdatasetCtrl.js",
+            "raw_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/raw/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fwebapp%2Forg%2Fcboard%2Fcontroller%2Fconfig%2FdatasetCtrl.js",
+            "contents_url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/contents/src%2Fmain%2Fwebapp%2Forg%2Fcboard%2Fcontroller%2Fconfig%2FdatasetCtrl.js?ref=2ecea75f9491335a875cd93e188edba3d2f6b008",
+            "patch": "@@ -193,6 +193,9 @@ cBoard.controller('datasetCtrl', function ($scope, $http, dataService, $uibModal\n                         col.group = $scope.data.group;\n                         col.filters = $scope.data.filters;\n                     } else {\n+                        if ($scope.$parent.curDataset.data.filters == null) {\n+                            $scope.$parent.curDataset.data.filters = [];\n+                        }\n                         $scope.$parent.curDataset.data.filters.push($scope.data);\n                     }\n                     $uibModalInstance.close();"
+        },
+        {
+            "sha": "0e137afbe95b8261af51d17472cb384df99b15da",
+            "filename": "src/main/webapp/org/cboard/controller/config/widgetCtrl.js",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/blob/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fwebapp%2Forg%2Fcboard%2Fcontroller%2Fconfig%2FwidgetCtrl.js",
+            "raw_url": "https://github.com/alexander-newman-brazehzf2qu/himmatMahalo/raw/2ecea75f9491335a875cd93e188edba3d2f6b008/src%2Fmain%2Fwebapp%2Forg%2Fcboard%2Fcontroller%2Fconfig%2FwidgetCtrl.js",
+            "contents_url": "https://api.github.com/repos/alexander-newman-brazehzf2qu/himmatMahalo/contents/src%2Fmain%2Fwebapp%2Forg%2Fcboard%2Fcontroller%2Fconfig%2FwidgetCtrl.js?ref=2ecea75f9491335a875cd93e188edba3d2f6b008",
+            "patch": "@@ -574,7 +574,8 @@ cBoard.controller('widgetCtrl', function ($scope, $stateParams, $http, $uibModal\n                 query: $scope.curWidget.query,\n                 datasetId: $scope.customDs ? null : $scope.curWidget.datasetId\n             },function (query) {\n-                $('#preview_widget').html(\"<div class='alert alert-info' role='alert' style='text-align: left;'>\"+query+\"</div>\");\n+                var querybr = query.trim().replace(/\\n/g,'<br/>');\n+                $('#preview_widget').html(\"<div class='alert alert-info' role='alert' style='text-align: left;'>\" + querybr + \"</div>\");\n                 $scope.loadingPre = false;\n             });\n         };"
+        }
+    ]
+}

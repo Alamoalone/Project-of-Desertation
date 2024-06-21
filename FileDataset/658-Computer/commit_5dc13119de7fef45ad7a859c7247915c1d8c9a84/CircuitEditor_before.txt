@@ -1,0 +1,33 @@
+  public StaticView<?> getComponentViewInScreenSpace(Viewport viewport, Int2D screenPosition)
+  {
+    List<StaticView<?>> selectedViews = getComponentViewsInScreenSpace(viewport, screenPosition);
+
+    if (selectedViews.size() == 1)
+    {
+      return selectedViews.get(0);
+    }
+    else if (selectedViews.size() == 0)
+    {
+      return null;
+    }
+    else
+    {
+      Int2D boundBoxPosition = new Int2D();
+      Int2D boundBoxDimension = new Int2D();
+      float shortestDistance = Float.MAX_VALUE;
+      StaticView<?> closestView = null;
+      for (StaticView<?> view : selectedViews)
+      {
+        view.getBoundingBoxInScreenSpace(viewport, boundBoxPosition, boundBoxDimension);
+        boundBoxPosition.add(boundBoxDimension.x / 2, boundBoxDimension.y / 2);
+        float distance = BoundingBox.calculateDistance(screenPosition, boundBoxPosition);
+        if (distance < shortestDistance)
+        {
+          closestView = view;
+          shortestDistance = distance;
+        }
+      }
+      return closestView;
+    }
+  }
+

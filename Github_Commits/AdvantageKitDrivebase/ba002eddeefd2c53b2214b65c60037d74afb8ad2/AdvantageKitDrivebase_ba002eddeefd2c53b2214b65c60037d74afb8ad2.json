@@ -1,0 +1,98 @@
+{
+    "sha": "ba002eddeefd2c53b2214b65c60037d74afb8ad2",
+    "node_id": "C_kwDOKv_1P9oAKGJhMDAyZWRkZWVmZDJjNTNiMjIxNGI2NWM2MDAzN2Q3NGFmYjhhZDI",
+    "commit": {
+        "author": {
+            "name": "Dhrish Karangula",
+            "email": "dhrishkarangula@frc4322.com",
+            "date": "2023-11-21T22:22:35Z"
+        },
+        "committer": {
+            "name": "Dhrish Karangula",
+            "email": "dhrishkarangula@frc4322.com",
+            "date": "2023-11-21T22:22:35Z"
+        },
+        "message": "prevent potential Null pointer exception",
+        "tree": {
+            "sha": "a4c8238c3c03e96a5e9bab3b19902c0982c5e479",
+            "url": "https://api.github.com/repos/4322/AdvantageKitDrivebase/git/trees/a4c8238c3c03e96a5e9bab3b19902c0982c5e479"
+        },
+        "url": "https://api.github.com/repos/4322/AdvantageKitDrivebase/git/commits/ba002eddeefd2c53b2214b65c60037d74afb8ad2",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/4322/AdvantageKitDrivebase/commits/ba002eddeefd2c53b2214b65c60037d74afb8ad2",
+    "html_url": "https://github.com/4322/AdvantageKitDrivebase/commit/ba002eddeefd2c53b2214b65c60037d74afb8ad2",
+    "comments_url": "https://api.github.com/repos/4322/AdvantageKitDrivebase/commits/ba002eddeefd2c53b2214b65c60037d74afb8ad2/comments",
+    "author": {
+        "login": "dKarangula",
+        "id": 122748721,
+        "node_id": "U_kgDOB1D_MQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/122748721?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dKarangula",
+        "html_url": "https://github.com/dKarangula",
+        "followers_url": "https://api.github.com/users/dKarangula/followers",
+        "following_url": "https://api.github.com/users/dKarangula/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dKarangula/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dKarangula/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dKarangula/subscriptions",
+        "organizations_url": "https://api.github.com/users/dKarangula/orgs",
+        "repos_url": "https://api.github.com/users/dKarangula/repos",
+        "events_url": "https://api.github.com/users/dKarangula/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dKarangula/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dKarangula",
+        "id": 122748721,
+        "node_id": "U_kgDOB1D_MQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/122748721?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dKarangula",
+        "html_url": "https://github.com/dKarangula",
+        "followers_url": "https://api.github.com/users/dKarangula/followers",
+        "following_url": "https://api.github.com/users/dKarangula/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dKarangula/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dKarangula/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dKarangula/subscriptions",
+        "organizations_url": "https://api.github.com/users/dKarangula/orgs",
+        "repos_url": "https://api.github.com/users/dKarangula/repos",
+        "events_url": "https://api.github.com/users/dKarangula/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dKarangula/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ee82d49be2ae6c72005b050d87b98e4ebcf55400",
+            "url": "https://api.github.com/repos/4322/AdvantageKitDrivebase/commits/ee82d49be2ae6c72005b050d87b98e4ebcf55400",
+            "html_url": "https://github.com/4322/AdvantageKitDrivebase/commit/ee82d49be2ae6c72005b050d87b98e4ebcf55400"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "0fbf7059b1919bc569a7dc5631af8296b413f521",
+            "filename": "src/main/java/frc/robot/subsystems/drive/Drive.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/4322/AdvantageKitDrivebase/blob/ba002eddeefd2c53b2214b65c60037d74afb8ad2/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2Fdrive%2FDrive.java",
+            "raw_url": "https://github.com/4322/AdvantageKitDrivebase/raw/ba002eddeefd2c53b2214b65c60037d74afb8ad2/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2Fdrive%2FDrive.java",
+            "contents_url": "https://api.github.com/repos/4322/AdvantageKitDrivebase/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2Fdrive%2FDrive.java?ref=ba002eddeefd2c53b2214b65c60037d74afb8ad2",
+            "patch": "@@ -32,7 +32,7 @@ public class Drive extends SubsystemBase {\n \n   private GyroIO gyroIO;\n   private GyroIOInputsAutoLogged gyroInputs = new GyroIOInputsAutoLogged();\n-  private Rotation2d gyroYawRotation;\n+  private Rotation2d gyroYawRotation = new Rotation2d();\n \n   private PIDController rotPID;\n \n@@ -273,7 +273,7 @@ public void drive(double driveX, double driveY, double rotate, Translation2d cen\n       } else {\n         var swerveModuleStates =\n             DriveLogic.calcModuleStates(driveX, driveY, rotate, centerOfRotation,\n-                gyro.getRotation2d(), kinematics);\n+                gyroYawRotation, kinematics);\n \n         setModuleStates(swerveModuleStates);\n       }"
+        }
+    ]
+}

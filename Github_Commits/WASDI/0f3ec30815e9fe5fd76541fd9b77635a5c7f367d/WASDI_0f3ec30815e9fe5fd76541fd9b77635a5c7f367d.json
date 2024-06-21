@@ -1,0 +1,110 @@
+{
+    "sha": "0f3ec30815e9fe5fd76541fd9b77635a5c7f367d",
+    "node_id": "C_kwDOBBbrTdoAKDBmM2VjMzA4MTVlOWZlNWZkNzY1NDFmZDliNzc2MzVhNWM3ZjM2N2Q",
+    "commit": {
+        "author": {
+            "name": "leonevalentina",
+            "email": "valentina.leone@wasdi.cloud",
+            "date": "2023-09-01T11:37:54Z"
+        },
+        "committer": {
+            "name": "leonevalentina",
+            "email": "valentina.leone@wasdi.cloud",
+            "date": "2023-09-01T11:37:54Z"
+        },
+        "message": "fix null pointer exception for satellite-sea-surface-temperature in ERA5. Hardcoded values for some parameters.",
+        "tree": {
+            "sha": "5aa9ebb67e763488864d4e73dc6843a16f1292e7",
+            "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/git/trees/5aa9ebb67e763488864d4e73dc6843a16f1292e7"
+        },
+        "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/git/commits/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/commits/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d",
+    "html_url": "https://github.com/fadeoutsoftware/WASDI/commit/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d",
+    "comments_url": "https://api.github.com/repos/fadeoutsoftware/WASDI/commits/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d/comments",
+    "author": {
+        "login": "leonevalentina",
+        "id": 135051102,
+        "node_id": "U_kgDOCAy3Xg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/135051102?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/leonevalentina",
+        "html_url": "https://github.com/leonevalentina",
+        "followers_url": "https://api.github.com/users/leonevalentina/followers",
+        "following_url": "https://api.github.com/users/leonevalentina/following{/other_user}",
+        "gists_url": "https://api.github.com/users/leonevalentina/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/leonevalentina/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/leonevalentina/subscriptions",
+        "organizations_url": "https://api.github.com/users/leonevalentina/orgs",
+        "repos_url": "https://api.github.com/users/leonevalentina/repos",
+        "events_url": "https://api.github.com/users/leonevalentina/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/leonevalentina/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "leonevalentina",
+        "id": 135051102,
+        "node_id": "U_kgDOCAy3Xg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/135051102?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/leonevalentina",
+        "html_url": "https://github.com/leonevalentina",
+        "followers_url": "https://api.github.com/users/leonevalentina/followers",
+        "following_url": "https://api.github.com/users/leonevalentina/following{/other_user}",
+        "gists_url": "https://api.github.com/users/leonevalentina/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/leonevalentina/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/leonevalentina/subscriptions",
+        "organizations_url": "https://api.github.com/users/leonevalentina/orgs",
+        "repos_url": "https://api.github.com/users/leonevalentina/repos",
+        "events_url": "https://api.github.com/users/leonevalentina/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/leonevalentina/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ae3276e88250f789a33581feb3904c5a5e80f595",
+            "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/commits/ae3276e88250f789a33581feb3904c5a5e80f595",
+            "html_url": "https://github.com/fadeoutsoftware/WASDI/commit/ae3276e88250f789a33581feb3904c5a5e80f595"
+        }
+    ],
+    "stats": {
+        "total": 42,
+        "additions": 31,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "0b47b25a5de252d59f1d9dc1fc5c9bcb5bc67bed",
+            "filename": "wrappersnap/launcher/src/main/java/wasdi/dataproviders/CDSProviderAdapter.java",
+            "status": "modified",
+            "additions": 17,
+            "deletions": 4,
+            "changes": 21,
+            "blob_url": "https://github.com/fadeoutsoftware/WASDI/blob/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d/wrappersnap%2Flauncher%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fdataproviders%2FCDSProviderAdapter.java",
+            "raw_url": "https://github.com/fadeoutsoftware/WASDI/raw/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d/wrappersnap%2Flauncher%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fdataproviders%2FCDSProviderAdapter.java",
+            "contents_url": "https://api.github.com/repos/fadeoutsoftware/WASDI/contents/wrappersnap%2Flauncher%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fdataproviders%2FCDSProviderAdapter.java?ref=0f3ec30815e9fe5fd76541fd9b77635a5c7f367d",
+            "patch": "@@ -243,9 +243,12 @@ private static Map<String, Object> prepareCdsPayload(Map<String, String> aoWasdi\n \t\tString sBoundingBox = JsonUtils.getProperty(aoWasdiPayload, \"boundingBox\");\r\n \t\tString sFormat = JsonUtils.getProperty(aoWasdiPayload, \"format\");\r\n \r\n-\t\tList<String> asVariables = Arrays.stream(sVariables.split(\" \"))\r\n-\t\t\t\t.map(CDSProviderAdapter::inflateVariable)\r\n-\t\t\t\t.collect(Collectors.toList());\r\n+\t\tList<String> asVariables = null;\r\n+\t\tif (!Utils.isNullOrEmpty(sVariables)) {\r\n+\t\t\tasVariables = Arrays.stream(sVariables.split(\" \"))\r\n+\t\t\t\t\t.map(CDSProviderAdapter::inflateVariable)\r\n+\t\t\t\t\t.collect(Collectors.toList());\r\n+\t\t}\r\n \r\n \t\tString sYear = \"\";\r\n \t\tString sMonth = \"\";\r\n@@ -271,7 +274,9 @@ private static Map<String, Object> prepareCdsPayload(Map<String, String> aoWasdi\n \r\n \t\tMap<String, Object> aoHashMap = new HashMap<>();\r\n \t\tif (sProductType != null) aoHashMap.put(\"product_type\", sProductType);\r\n-\t\taoHashMap.put(\"variable\", asVariables);\r\n+\t\tif (asVariables != null) {\r\n+\t\t\taoHashMap.put(\"variable\", asVariables);\r\n+\t\t}\r\n \t\taoHashMap.put(\"year\", sYear);\r\n \t\taoHashMap.put(\"month\", sMonth);\r\n \t\taoHashMap.put(\"time\", oaTimeHours);\r\n@@ -297,6 +302,14 @@ private static Map<String, Object> prepareCdsPayload(Map<String, String> aoWasdi\n \r\n \t\t\taoHashMap.put(\"pressure_level\", oaPressureLevels);\r\n \t\t}\r\n+\t\t\r\n+        if (sDataset.equalsIgnoreCase(\"satellite-sea-surface-temperature\")) {\r\n+            aoHashMap.put(\"sensor_on_satellite\", \"combined_product\");\r\n+            aoHashMap.put(\"version\", \"2_1\");\r\n+            aoHashMap.put(\"processinglevel\", \"level_4\");\r\n+            aoHashMap.remove(\"time\");\r\n+            aoHashMap.remove(\"area\");\r\n+        }\r\n \r\n \t\treturn aoHashMap;\r\n \t}\r"
+        },
+        {
+            "sha": "cb129f06807f91d2b33f295203f422d210ad7d30",
+            "filename": "wrappersnap/wasdishared/src/main/java/wasdi/shared/queryexecutors/cds/QueryExecutorCDS.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 7,
+            "changes": 21,
+            "blob_url": "https://github.com/fadeoutsoftware/WASDI/blob/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d/wrappersnap%2Fwasdishared%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fshared%2Fqueryexecutors%2Fcds%2FQueryExecutorCDS.java",
+            "raw_url": "https://github.com/fadeoutsoftware/WASDI/raw/0f3ec30815e9fe5fd76541fd9b77635a5c7f367d/wrappersnap%2Fwasdishared%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fshared%2Fqueryexecutors%2Fcds%2FQueryExecutorCDS.java",
+            "contents_url": "https://api.github.com/repos/fadeoutsoftware/WASDI/contents/wrappersnap%2Fwasdishared%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fshared%2Fqueryexecutors%2Fcds%2FQueryExecutorCDS.java?ref=0f3ec30815e9fe5fd76541fd9b77635a5c7f367d",
+            "patch": "@@ -136,8 +136,12 @@ public List<QueryResultViewModel> executeAndRetrieve(PaginatedQuery oQuery, bool\n \t\t\tString sDataset = oCDSQuery.productName;\r\n \t\t\tString sProductType = oCDSQuery.productType;\r\n \t\t\tString sPresureLevels = oCDSQuery.productLevel;\r\n-\t\t\tString sVariables = oCDSQuery.sensorMode;\r\n-\t\t\tString sFormat = oCDSQuery.timeliness;\r\n+\t\t\tString sVariables = sDataset.contentEquals(s_sSEA_SURFACE_TEMPERATURE_DATASET) \r\n+\t\t\t\t\t? \"all\" \r\n+\t\t\t\t\t: oCDSQuery.sensorMode;\r\n+\t\t\tString sFormat = sDataset.contentEquals(s_sSEA_SURFACE_TEMPERATURE_DATASET) \r\n+\t\t\t\t\t? \"zip\" \r\n+\t\t\t\t\t: oCDSQuery.timeliness;\r\n \t\t\tString sVersion = oCDSQuery.instrument;\r\n \t\t\tString sBoundingBox = oCDSQuery.north + \", \" + oCDSQuery.west + \", \" + oCDSQuery.south + \", \" + oCDSQuery.east;\r\n \t\t\tString sFootPrint = extractFootprint(oQuery.getQuery());\r\n@@ -287,22 +291,25 @@ private QueryResultViewModel getQueryResultViewModel(QueryViewModel oQuery, Stri\n \t\t\tsEndDateTime = TimeEpochUtils.fromEpochToDateString(oEndDate.getTime());\r\n \t\t}\r\n \r\n-\t\tString sExtension = \".\" + oQuery.timeliness;\r\n-\t\tString sFileName = getFileName(oQuery.productName, oQuery.sensorMode, sStartDate, sEndDate, sExtension);\r\n+\t\tString sDataset = oQuery.productName;\r\n+\t\tString sVariables = sDataset.equalsIgnoreCase(s_sSEA_SURFACE_TEMPERATURE_DATASET) ? \"all\" : oQuery.sensorMode;\r\n+\t\tString sExtension = sDataset.equalsIgnoreCase(s_sSEA_SURFACE_TEMPERATURE_DATASET) ? \"zip\" : oQuery.timeliness;\r\n+\t\tString sExtensionWithComma = \".\" +  sExtension;\r\n+\t\tString sFileName = getFileName(oQuery.productName, sVariables, sStartDate, sEndDate, sExtensionWithComma);\r\n \t\tString sUrl = s_oDataProviderConfig.link + \"?payload=\" + sPayload;\r\n \t\tString sEncodedUrl = StringUtils.encodeUrl(sUrl);\r\n \r\n \t\tQueryResultViewModel oResult = new QueryResultViewModel();\r\n \t\toResult.setId(sFileName);\r\n \t\toResult.setTitle(sFileName);\r\n \t\toResult.setLink(sEncodedUrl);\r\n-\t\toResult.setSummary(getSummary(sStartDateTime, sEndDateTime, oQuery.sensorMode, oQuery.timeliness)); \r\n+\t\toResult.setSummary(getSummary(sStartDateTime, sEndDateTime, sVariables, sExtension)); \r\n \t\toResult.setProvider(m_sProvider);\r\n \t\toResult.setFootprint(sFootPrint);\r\n \t\toResult.getProperties().put(\"platformname\", Platforms.ERA5);\r\n \t\toResult.getProperties().put(\"dataset\", oQuery.productName);\r\n-\t\toResult.getProperties().put(\"format\", oQuery.timeliness);\r\n-\t\toResult.getProperties().put(\"variables\", oQuery.sensorMode);\r\n+\t\toResult.getProperties().put(\"variables\", sVariables);\r\n+\t\toResult.getProperties().put(\"format\", sExtension);\r\n \t\toResult.getProperties().put(\"startDate\", sStartDateTime);\r\n \t\toResult.getProperties().put(\"beginposition\", sStartDateTime);\r\n \r"
+        }
+    ]
+}

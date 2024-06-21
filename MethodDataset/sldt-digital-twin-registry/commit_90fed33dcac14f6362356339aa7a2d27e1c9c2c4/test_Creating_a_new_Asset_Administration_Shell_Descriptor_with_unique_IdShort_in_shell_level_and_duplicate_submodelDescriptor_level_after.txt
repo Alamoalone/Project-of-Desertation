@@ -1,0 +1,26 @@
+   public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_level_and_duplicate_submodelDescriptor_level() throws Exception {
+      //Given
+      removedAllShells();
+      AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();
+
+      SubmodelDescriptor submodelDescriptor = new SubmodelDescriptor();
+      //Setting duplicate id short
+      submodelDescriptor.setIdShort(shellPayload.getSubmodelDescriptors().get( 0 ).getIdShort());
+
+      //Adding duplicate submodel which contains duplicate idshort
+      shellPayload.getSubmodelDescriptors().add( submodelDescriptor);
+
+
+      //When & Then
+      mvc.perform(
+                  MockMvcRequestBuilders
+                        .post( SHELL_BASE_PATH )
+                        .accept( MediaType.APPLICATION_JSON )
+                        .contentType( MediaType.APPLICATION_JSON )
+                        .content( mapper.writeValueAsString( shellPayload ) )
+                        .with( jwtTokenFactory.allRoles() )
+            )
+            .andDo( MockMvcResultHandlers.print() )
+            .andExpect( status().isBadRequest() )
+            .andExpect( jsonPath( "$.messages[0].text", is( ShellService.DUPLICATE_SUBMODEL_ID_SHORT_EXCEPTION ) ) );
+   }

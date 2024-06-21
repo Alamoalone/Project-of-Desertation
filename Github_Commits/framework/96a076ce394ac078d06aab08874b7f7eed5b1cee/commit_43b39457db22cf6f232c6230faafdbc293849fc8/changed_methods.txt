@@ -1,0 +1,2 @@
+isAscending(String fieldToSortBy)
+getSortDirection(String fieldToSortBy, String sortValue)

@@ -1,0 +1,24 @@
+  public void testStateRemovedOnRemoveApplication() throws ApplicationNotFoundException, ConflictException {
+    String stateKey = "kafka";
+    byte[] stateValue = ("{\n"
+        + "\"offset\" : 12345\n"
+        + "}").getBytes(StandardCharsets.UTF_8);
+
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    NamespaceId namespaceId = new NamespaceId("account1");
+    ApplicationId appId = namespaceId.app(spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addLatestApplication(appId, appMeta);
+    store.saveState(new AppStateKeyValue(namespaceId, spec.getName(), stateKey, stateValue));
+
+    Assert.assertNotNull(store.getApplication(appId));
+    AppStateKey appStateRequest = new AppStateKey(namespaceId, spec.getName(), stateKey);
+    Assert.assertNotNull(store.getState(appStateRequest));
+
+    // removing application should work successfully
+    store.removeApplication(appId);
+
+    Assert.assertNull(store.getApplication(appId));
+  }

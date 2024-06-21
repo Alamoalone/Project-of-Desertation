@@ -1,0 +1,9 @@
+    public List<MedicalRecord> getAllMedicalRecords() {
+       // log.debug("Retrieving all medical records");
+    	
+    	if(medicalRecords ==null) {
+    		return null;
+    	}
+    	System.out.println("Retrieving all medical records"+medicalRecords);
+        return medicalRecords;
+    }

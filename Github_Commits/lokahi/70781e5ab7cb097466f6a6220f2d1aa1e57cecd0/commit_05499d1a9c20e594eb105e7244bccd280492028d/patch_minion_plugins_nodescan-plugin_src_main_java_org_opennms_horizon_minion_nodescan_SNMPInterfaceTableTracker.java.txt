@@ -1,0 +1,24 @@
+@@ -208,17 +208,19 @@ private String getPhysAddr() {
+         }
+ 
+         public SnmpInterfaceResult createInterfaceFromRow() {
+-            return SnmpInterfaceResult.newBuilder()
++            SnmpInterfaceResult.Builder builder = SnmpInterfaceResult.newBuilder()
+                 .setIfIndex(getIfIndex())
+                 .setIfAdminStatus(getIfAdminStatus())
+                 .setIfAlias(getIfAlias())
+                 .setIfDescr(getIfDescr())
+                 .setIfName(getIfName())
+                 .setIfOperatorStatus(getIfOperStatus())
+                 .setIfSpeed(getIfSpeed())
+-                .setIfType(getIfType())
+-                .setPhysicalAddr(getPhysAddr())
+-                .build();
++                .setIfType(getIfType());
++            if(getPhysAddr() != null) {
++                builder.setPhysicalAddr(getPhysAddr());
++            }
++            return builder.build();
+         }
+ 
+     }

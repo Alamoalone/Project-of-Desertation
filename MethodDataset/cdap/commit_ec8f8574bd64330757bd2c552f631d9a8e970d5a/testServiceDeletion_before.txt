@@ -1,0 +1,21 @@
+  public void testServiceDeletion() throws ConflictException {
+    // Store the application specification
+    AbstractApplication app = new AppWithServices();
+
+    ApplicationSpecification appSpec = Specifications.from(app);
+    ApplicationId appId = NamespaceId.DEFAULT.app(appSpec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    AbstractApplication newApp = new AppWithNoServices();
+
+    // get the delete program specs after deploying AppWithNoServices
+    List<ProgramSpecification> programSpecs = store.getDeletedProgramSpecifications(appId.getAppReference(),
+                                                                                    Specifications.from(newApp));
+
+    //verify the result.
+    Assert.assertEquals(1, programSpecs.size());
+    Assert.assertEquals("NoOpService", programSpecs.get(0).getName());
+  }

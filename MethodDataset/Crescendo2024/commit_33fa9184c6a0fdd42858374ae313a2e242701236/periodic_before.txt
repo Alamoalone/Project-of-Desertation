@@ -1,0 +1,5 @@
+  public void periodic() {
+    // This method will be called once per scheduler run
+
+    SmartDashboard.putBoolean("Limelight Has Target", m_tv.get() == 1);
+  }

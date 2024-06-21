@@ -1,0 +1,8 @@
+    public ResponseEntity<?> createNote(@RequestBody Notes note) throws Exception {
+        Loggers.info("NOTE CREATED");
+        Notes notes = notesService.createNote(note);
+        if (notes == null) {
+            return ResponseEntity.status(200).header("msg", "FIELDS ARE EMPTY").build();
+        }
+        return ResponseEntity.ok(notes);
+    }

@@ -1,0 +1,8 @@
+    public Integer getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId) {
+        return orderrepository.getOrdersLeftAfterGivenTimeByPartnerId(time,partnerId);
+    }
+
+    public String getLastDeliveryTimeByPartnerId(String partnerId) {
+        return orderrepository.getLastDeliveryTimeByPartnerId(partnerId);
+    }
+

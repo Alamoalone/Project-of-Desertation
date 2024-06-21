@@ -1,0 +1,12 @@
+@@ -61,7 +61,10 @@ public void processUpgrade(String oldVersion, String newVersion) {
+ 
+         PluginInfo pluginTypeConfig = findPlugin(pluginType);
+         List<String> usersContexts;
+-
++        if (pluginTypeConfig == null) {
++          LOG.info("=== couldn't initialize the settings of {} , plugin is not found", pluginType);
++          continue;
++        }
+         entityManagerService.startRequest(currentContainer);
+         long startTime = System.currentTimeMillis();
+         do {

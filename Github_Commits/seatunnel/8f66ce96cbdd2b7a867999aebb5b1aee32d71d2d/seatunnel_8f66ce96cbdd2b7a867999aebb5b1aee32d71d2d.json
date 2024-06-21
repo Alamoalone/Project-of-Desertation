@@ -1,0 +1,110 @@
+{
+    "sha": "8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d",
+    "node_id": "C_kwDOBezpVNoAKDhmNjZjZTk2Y2JkZDJiN2E4Njc5OTlhZWJiNWIxYWVlMzJkNzFkMmQ",
+    "commit": {
+        "author": {
+            "name": "FlechazoW",
+            "email": "35768015+FlechazoW@users.noreply.github.com",
+            "date": "2023-05-15T10:24:01Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-05-15T10:24:01Z"
+        },
+        "message": "[Improve][Core] Add check of sink and source config to avoid null pointer exception. (#4734)",
+        "tree": {
+            "sha": "bdd99dd975617b0a64d7795feeef068d9730d6ed",
+            "url": "https://api.github.com/repos/apache/seatunnel/git/trees/bdd99dd975617b0a64d7795feeef068d9730d6ed"
+        },
+        "url": "https://api.github.com/repos/apache/seatunnel/git/commits/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkYghBCRBK7hj4Ov3rIwAAOeAIAJE9/YQWimzYUtnqlDgkOmid\njfy4mlmzgaX3CpKg8DmN0/q63trW/eDObhYukzWCKbIPLLkPf56rH7V+3sVuf8SP\nxrdhg27oXtH5fKXyhj6e7ANUp3Pn5qCep2TMxpRU/0NoxS9hsSa2++FNEs4HBtvH\nZV0HiPTUG+cyf4bI3GQDvXDLUUNMD+2HhmlJj3+e/gCt0KkDBa2jnTYEsGUfhq/e\nX+DSFLMnPCjU4mENC9MG8O90fQKijfxF+5K+Xm+YjIk5oLf6rkbjJq+aK5wjc95B\ny6UWIUxtodKxNS5Z5fKHN+fME/sQyEbk7TtvJMN8JsCNFwF3MjH+49sBIxtIUbc=\n=M+e6\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree bdd99dd975617b0a64d7795feeef068d9730d6ed\nparent 28f23149fc2ab71afe18d5b20757e0533ed45f74\nauthor FlechazoW <35768015+FlechazoW@users.noreply.github.com> 1684146241 +0800\ncommitter GitHub <noreply@github.com> 1684146241 +0800\n\n[Improve][Core] Add check of sink and source config to avoid null pointer exception. (#4734)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/apache/seatunnel/commits/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d",
+    "html_url": "https://github.com/apache/seatunnel/commit/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d",
+    "comments_url": "https://api.github.com/repos/apache/seatunnel/commits/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d/comments",
+    "author": {
+        "login": "FlechazoW",
+        "id": 35768015,
+        "node_id": "MDQ6VXNlcjM1NzY4MDE1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35768015?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/FlechazoW",
+        "html_url": "https://github.com/FlechazoW",
+        "followers_url": "https://api.github.com/users/FlechazoW/followers",
+        "following_url": "https://api.github.com/users/FlechazoW/following{/other_user}",
+        "gists_url": "https://api.github.com/users/FlechazoW/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/FlechazoW/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/FlechazoW/subscriptions",
+        "organizations_url": "https://api.github.com/users/FlechazoW/orgs",
+        "repos_url": "https://api.github.com/users/FlechazoW/repos",
+        "events_url": "https://api.github.com/users/FlechazoW/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/FlechazoW/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "28f23149fc2ab71afe18d5b20757e0533ed45f74",
+            "url": "https://api.github.com/repos/apache/seatunnel/commits/28f23149fc2ab71afe18d5b20757e0533ed45f74",
+            "html_url": "https://github.com/apache/seatunnel/commit/28f23149fc2ab71afe18d5b20757e0533ed45f74"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 12,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "014af151c8e7b695ac77fff7817aa1b4d1cc2075",
+            "filename": "seatunnel-connectors-v2/connector-jdbc/src/main/java/org/apache/seatunnel/connectors/seatunnel/jdbc/catalog/mysql/MySqlCatalogFactory.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/apache/seatunnel/blob/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d/seatunnel-connectors-v2%2Fconnector-jdbc%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fseatunnel%2Fconnectors%2Fseatunnel%2Fjdbc%2Fcatalog%2Fmysql%2FMySqlCatalogFactory.java",
+            "raw_url": "https://github.com/apache/seatunnel/raw/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d/seatunnel-connectors-v2%2Fconnector-jdbc%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fseatunnel%2Fconnectors%2Fseatunnel%2Fjdbc%2Fcatalog%2Fmysql%2FMySqlCatalogFactory.java",
+            "contents_url": "https://api.github.com/repos/apache/seatunnel/contents/seatunnel-connectors-v2%2Fconnector-jdbc%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fseatunnel%2Fconnectors%2Fseatunnel%2Fjdbc%2Fcatalog%2Fmysql%2FMySqlCatalogFactory.java?ref=8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d",
+            "patch": "@@ -17,6 +17,8 @@\n \n package org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.mysql;\n \n+import org.apache.seatunnel.shade.com.google.common.base.Preconditions;\n+\n import org.apache.seatunnel.api.configuration.ReadonlyConfig;\n import org.apache.seatunnel.api.configuration.util.OptionRule;\n import org.apache.seatunnel.api.configuration.util.OptionValidationException;\n@@ -26,6 +28,8 @@\n import org.apache.seatunnel.common.utils.JdbcUrlUtil;\n import org.apache.seatunnel.connectors.seatunnel.jdbc.catalog.JdbcCatalogOptions;\n \n+import org.apache.commons.lang3.StringUtils;\n+\n import com.google.auto.service.AutoService;\n \n import java.util.Optional;\n@@ -41,6 +45,9 @@ public String factoryIdentifier() {\n     @Override\n     public Catalog createCatalog(String catalogName, ReadonlyConfig options) {\n         String urlWithDatabase = options.get(JdbcCatalogOptions.BASE_URL);\n+        Preconditions.checkArgument(\n+                StringUtils.isNoneBlank(urlWithDatabase),\n+                \"Miss config <base-url>! Please check your config.\");\n         JdbcUrlUtil.UrlInfo urlInfo = JdbcUrlUtil.getUrlInfo(urlWithDatabase);\n         Optional<String> defaultDatabase = urlInfo.getDefaultDatabase();\n         if (!defaultDatabase.isPresent()) {"
+        },
+        {
+            "sha": "a1e3dffe01f5648c3397b4ecbc35bc9eca1f37e0",
+            "filename": "seatunnel-core/seatunnel-core-starter/src/main/java/org/apache/seatunnel/core/starter/utils/ConfigShadeUtils.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/apache/seatunnel/blob/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d/seatunnel-core%2Fseatunnel-core-starter%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fseatunnel%2Fcore%2Fstarter%2Futils%2FConfigShadeUtils.java",
+            "raw_url": "https://github.com/apache/seatunnel/raw/8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d/seatunnel-core%2Fseatunnel-core-starter%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fseatunnel%2Fcore%2Fstarter%2Futils%2FConfigShadeUtils.java",
+            "contents_url": "https://api.github.com/repos/apache/seatunnel/contents/seatunnel-core%2Fseatunnel-core-starter%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fseatunnel%2Fcore%2Fstarter%2Futils%2FConfigShadeUtils.java?ref=8f66ce96cbdd2b7a867999aebb5b1aee32d71d2d",
+            "patch": "@@ -18,6 +18,7 @@\n package org.apache.seatunnel.core.starter.utils;\n \n import org.apache.seatunnel.shade.com.fasterxml.jackson.databind.node.ObjectNode;\n+import org.apache.seatunnel.shade.com.google.common.base.Preconditions;\n import org.apache.seatunnel.shade.com.typesafe.config.Config;\n import org.apache.seatunnel.shade.com.typesafe.config.ConfigFactory;\n import org.apache.seatunnel.shade.com.typesafe.config.ConfigRenderOptions;\n@@ -142,6 +143,10 @@ private static Config processConfig(String identifier, Config config, boolean is\n                 (ArrayList<Map<String, Object>>) configMap.get(Constants.SOURCE);\n         List<Map<String, Object>> sinks =\n                 (ArrayList<Map<String, Object>>) configMap.get(Constants.SINK);\n+        Preconditions.checkArgument(\n+                !sources.isEmpty(), \"Miss <Source> config! Please check the config file.\");\n+        Preconditions.checkArgument(\n+                !sinks.isEmpty(), \"Miss <Sink> config! Please check the config file.\");\n         sources.forEach(\n                 source -> {\n                     for (String sensitiveOption : sensitiveOptions) {"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+    private void updateLocationInfo(Location location) {
+        Log.i("INFO", "loctationObtained: " + locationObtained);
+
+        String latitude = String.valueOf(location.getLatitude());
+        String longitude = String.valueOf(location.getLongitude());
+        String accuracy = String.valueOf(location.getAccuracy());
+        Log.i("INFO", "Lat: " + latitude + "\tLong: " + longitude + "\t Accuracy: " + accuracy);
+
+        Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
+
+        try {
+            String address = "Could not find address";
+            List<Address> listAddresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+
+            if (listAddresses != null && listAddresses.size() > 0){
+                Log.i("PlaceInfo", listAddresses.get(0).toString());
+                address = "Address: \n";
+                if (listAddresses.get(0).getSubThoroughfare() != null) {
+                    address += listAddresses.get(0).getSubThoroughfare() + " ";
+                }
+                if (listAddresses.get(0).getThoroughfare() != null) {
+                    address += listAddresses.get(0).getThoroughfare() + " ";
+                }
+                if (listAddresses.get(0).getLocality() != null) {
+                    address += listAddresses.get(0).getLocality() + " ";
+                }
+                if (listAddresses.get(0).getPostalCode() != null) {
+                    address += listAddresses.get(0).getPostalCode() + " ";
+                }
+                if (listAddresses.get(0).getCountryName() != null) {
+                    address += listAddresses.get(0).getCountryName() + " ";
+                }
+            }
+            Log.i("INFO", "Address: " + address);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }

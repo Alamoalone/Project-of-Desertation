@@ -1,0 +1,237 @@
+{
+    "sha": "6bb93af25b034ec8099e44070f3a239f86b56848",
+    "node_id": "C_kwDOI7K9odoAKDZiYjkzYWYyNWIwMzRlYzgwOTllNDQwNzBmM2EyMzlmODZiNTY4NDg",
+    "commit": {
+        "author": {
+            "name": "Nguyen Duc Nam",
+            "email": "namworkmc@gmail.com",
+            "date": "2023-08-13T07:49:06Z"
+        },
+        "committer": {
+            "name": "Nguyen Duc Nam",
+            "email": "namworkmc@gmail.com",
+            "date": "2023-08-13T07:49:06Z"
+        },
+        "message": "Fix MinioService throws null pointer exception when handling exception",
+        "tree": {
+            "sha": "67a96e3365018e55c922ddc0facac4017826beff",
+            "url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/git/trees/67a96e3365018e55c922ddc0facac4017826beff"
+        },
+        "url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/git/commits/6bb93af25b034ec8099e44070f3a239f86b56848",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/commits/6bb93af25b034ec8099e44070f3a239f86b56848",
+    "html_url": "https://github.com/hcmus-k19-doc/doc-file-service/commit/6bb93af25b034ec8099e44070f3a239f86b56848",
+    "comments_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/commits/6bb93af25b034ec8099e44070f3a239f86b56848/comments",
+    "author": {
+        "login": "namworkmc",
+        "id": 66512409,
+        "node_id": "MDQ6VXNlcjY2NTEyNDA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66512409?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namworkmc",
+        "html_url": "https://github.com/namworkmc",
+        "followers_url": "https://api.github.com/users/namworkmc/followers",
+        "following_url": "https://api.github.com/users/namworkmc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namworkmc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namworkmc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namworkmc/subscriptions",
+        "organizations_url": "https://api.github.com/users/namworkmc/orgs",
+        "repos_url": "https://api.github.com/users/namworkmc/repos",
+        "events_url": "https://api.github.com/users/namworkmc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namworkmc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "namworkmc",
+        "id": 66512409,
+        "node_id": "MDQ6VXNlcjY2NTEyNDA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66512409?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namworkmc",
+        "html_url": "https://github.com/namworkmc",
+        "followers_url": "https://api.github.com/users/namworkmc/followers",
+        "following_url": "https://api.github.com/users/namworkmc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namworkmc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namworkmc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namworkmc/subscriptions",
+        "organizations_url": "https://api.github.com/users/namworkmc/orgs",
+        "repos_url": "https://api.github.com/users/namworkmc/repos",
+        "events_url": "https://api.github.com/users/namworkmc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namworkmc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "648c17afc5bf15d8719588f16a4723abeac84b57",
+            "url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/commits/648c17afc5bf15d8719588f16a4723abeac84b57",
+            "html_url": "https://github.com/hcmus-k19-doc/doc-file-service/commit/648c17afc5bf15d8719588f16a4723abeac84b57"
+        }
+    ],
+    "stats": {
+        "total": 71,
+        "additions": 45,
+        "deletions": 26
+    },
+    "files": [
+        {
+            "sha": "e32164f0aebf99ec5cc8547aeb4598a2306352cf",
+            "filename": ".gitignore",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/.gitignore",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/.gitignore",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/.gitignore?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -124,4 +124,4 @@ fabric.properties\n target/\n \n # https://github.com/takari/maven-wrapper#usage-without-binary-jar\n-.mvn/wrapper/maven-wrapper.jar\n\\ No newline at end of file\n+.mvn/wrapper/maven-wrapper.jar"
+        },
+        {
+            "sha": "c4ef8ea6d73256c729d83981759ec9727da457f5",
+            "filename": "etc/docker/docker-compose.yaml",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 7,
+            "changes": 11,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fdocker-compose.yaml",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fdocker-compose.yaml",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fdocker-compose.yaml?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -45,23 +45,20 @@ services:\n       DOC_FILE_SERVICE_AWS_S3_REGION: ap-southeast-1\n       DOC_FILE_SERVICE_AWS_S3_BUCKET_NAME: prj-doc-attachments\n       DOC_FILE_SERVICE_MINIO_URL: http://host.docker.internal:9000\n-      DOC_FILE_SERVICE_MINIO_ACCESS_KEY: BONlv1QPzcVqTwCYqo38\n-      DOC_FILE_SERVICE_MINIO_SECRET_KEY: 6QFApdfd8Py3kYT9mF04GpAXhSGsmDz5bU5uK2JL\n+      DOC_FILE_SERVICE_MINIO_ACCESS_KEY: Mc1Vl3t4QrFK8KJRJnQl\n+      DOC_FILE_SERVICE_MINIO_SECRET_KEY: Swl85NAnLLClcy6OYKAuA5tsYgYegBNJfx8rmj0A\n       DOC_FILE_SERVICE_MINIO_BUCKET_NAME: prj-doc\n       TZ: Asia/Ho_Chi_Minh\n \n   minio:\n-    image: minio/minio\n+    image: minio/minio:RELEASE.2023-08-09T23-30-22Z\n     container_name: doc-minio\n     ports:\n       - \"9000:9000\"\n       - \"9001:9001\"\n     volumes:\n-      - minio_storage:/data\n+      - ./minio/data:/data\n     environment:\n       MINIO_ROOT_USER: admin\n       MINIO_ROOT_PASSWORD: Admin@123\n     command: server --console-address \":9001\" /data\n-\n-volumes:\n-  minio_storage: { }"
+        },
+        {
+            "sha": "db9c9577194fe3a5756eca94af77f38d71be568a",
+            "filename": "etc/docker/minio/.gitignore",
+            "status": "added",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2F.gitignore",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2F.gitignore",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2F.gitignore?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -0,0 +1,4 @@\n+data/prj-doc/*\n+!data/prj-doc/README.md\n+data/.minio.sys/tmp/*\n+data/.minio.sys/buckets/*"
+        },
+        {
+            "sha": "db3229bdd2ef02f3e2190424359ebcaf7116bc92",
+            "filename": "etc/docker/minio/data/.minio.sys/config/config.json/xl.meta",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fconfig.json%2Fxl.meta",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fconfig.json%2Fxl.meta",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fconfig.json%2Fxl.meta?ref=6bb93af25b034ec8099e44070f3a239f86b56848"
+        },
+        {
+            "sha": "3c6dc1d77323d093c08a4f078c4c7ad3c8bc80a3",
+            "filename": "etc/docker/minio/data/.minio.sys/config/iam/format.json/xl.meta",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fformat.json%2Fxl.meta",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fformat.json%2Fxl.meta",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fformat.json%2Fxl.meta?ref=6bb93af25b034ec8099e44070f3a239f86b56848"
+        },
+        {
+            "sha": "559e1ddedebb463287c1fb2e28cdc23715377aca",
+            "filename": "etc/docker/minio/data/.minio.sys/config/iam/service-accounts/VykfpN2OTT6HYp9befvt/identity.json/xl.meta",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fservice-accounts%2FVykfpN2OTT6HYp9befvt%2Fidentity.json%2Fxl.meta",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fservice-accounts%2FVykfpN2OTT6HYp9befvt%2Fidentity.json%2Fxl.meta",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fservice-accounts%2FVykfpN2OTT6HYp9befvt%2Fidentity.json%2Fxl.meta?ref=6bb93af25b034ec8099e44070f3a239f86b56848"
+        },
+        {
+            "sha": "cc0b1c30ba7cf743037c430ea147ab73a5406d55",
+            "filename": "etc/docker/minio/data/.minio.sys/config/iam/sts/DCLFMYNM9RVQN7M038IF/identity.json/xl.meta",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fsts%2FDCLFMYNM9RVQN7M038IF%2Fidentity.json%2Fxl.meta",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fsts%2FDCLFMYNM9RVQN7M038IF%2Fidentity.json%2Fxl.meta",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fsts%2FDCLFMYNM9RVQN7M038IF%2Fidentity.json%2Fxl.meta?ref=6bb93af25b034ec8099e44070f3a239f86b56848"
+        },
+        {
+            "sha": "33c1488af6ab6f073b46f272777930817a5ebe21",
+            "filename": "etc/docker/minio/data/.minio.sys/config/iam/sts/RO33U3BOEAXTS6JEGB5E/identity.json/xl.meta",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fsts%2FRO33U3BOEAXTS6JEGB5E%2Fidentity.json%2Fxl.meta",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fsts%2FRO33U3BOEAXTS6JEGB5E%2Fidentity.json%2Fxl.meta",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fconfig%2Fiam%2Fsts%2FRO33U3BOEAXTS6JEGB5E%2Fidentity.json%2Fxl.meta?ref=6bb93af25b034ec8099e44070f3a239f86b56848"
+        },
+        {
+            "sha": "0326d8773c466b2e5a444a57e9d1ff0f85665f01",
+            "filename": "etc/docker/minio/data/.minio.sys/format.json",
+            "status": "added",
+            "additions": 15,
+            "deletions": 0,
+            "changes": 15,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fformat.json",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fformat.json",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2F.minio.sys%2Fformat.json?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -0,0 +1,15 @@\n+{\n+  \"version\": \"1\",\n+  \"format\": \"xl-single\",\n+  \"id\": \"6655e2cf-7392-4adb-9d09-aacc0f8d7332\",\n+  \"xl\": {\n+    \"version\": \"3\",\n+    \"this\": \"6ab9ca3c-9c40-4ac8-a34a-90913e40a317\",\n+    \"sets\": [\n+      [\n+        \"6ab9ca3c-9c40-4ac8-a34a-90913e40a317\"\n+      ]\n+    ],\n+    \"distributionAlgo\": \"SIPMOD+PARITY\"\n+  }\n+}"
+        },
+        {
+            "sha": "8ee4fe5dc307a8e806c69c6a38abde377ba63cd4",
+            "filename": "etc/docker/minio/data/prj-doc/README.md",
+            "status": "added",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2Fprj-doc%2FREADME.md",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/etc%2Fdocker%2Fminio%2Fdata%2Fprj-doc%2FREADME.md",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/etc%2Fdocker%2Fminio%2Fdata%2Fprj-doc%2FREADME.md?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -0,0 +1 @@\n+Temp to not ignore bucket dir\n\\ No newline at end of file"
+        },
+        {
+            "sha": "b991b80febadbd215b15f92561ca425af151dbff",
+            "filename": "service/src/main/java/edu/hcmus/doc/fileservice/service/impl/MinioServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 15,
+            "changes": 17,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/service%2Fsrc%2Fmain%2Fjava%2Fedu%2Fhcmus%2Fdoc%2Ffileservice%2Fservice%2Fimpl%2FMinioServiceImpl.java",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/service%2Fsrc%2Fmain%2Fjava%2Fedu%2Fhcmus%2Fdoc%2Ffileservice%2Fservice%2Fimpl%2FMinioServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/service%2Fsrc%2Fmain%2Fjava%2Fedu%2Fhcmus%2Fdoc%2Ffileservice%2Fservice%2Fimpl%2FMinioServiceImpl.java?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -6,10 +6,8 @@\n import edu.hcmus.doc.fileservice.model.dto.FileWrapper;\n import edu.hcmus.doc.fileservice.model.enums.ParentFolderEnum;\n import edu.hcmus.doc.fileservice.model.exception.AttachmentNoContentException;\n-import edu.hcmus.doc.fileservice.model.exception.AttachmentNotFoundException;\n import edu.hcmus.doc.fileservice.model.exception.DocFileServiceRuntimeException;\n import edu.hcmus.doc.fileservice.model.exception.FileTypeNotAcceptedException;\n-import edu.hcmus.doc.fileservice.model.exception.ResourceNotFoundException;\n import edu.hcmus.doc.fileservice.service.MinioService;\n import io.minio.GetObjectArgs;\n import io.minio.GetObjectResponse;\n@@ -26,7 +24,6 @@\n import io.minio.messages.Item;\n import java.io.ByteArrayInputStream;\n import java.io.ByteArrayOutputStream;\n-import java.io.FileNotFoundException;\n import java.io.IOException;\n import java.io.InputStream;\n import java.security.InvalidKeyException;\n@@ -43,7 +40,6 @@\n import org.apache.commons.lang3.StringUtils;\n import org.springframework.beans.factory.annotation.Value;\n import org.springframework.core.io.ByteArrayResource;\n-import org.springframework.http.HttpStatus;\n import org.springframework.stereotype.Service;\n import org.springframework.transaction.annotation.Transactional;\n import org.springframework.web.multipart.MultipartFile;\n@@ -175,22 +171,13 @@ public void uploadFile(\n \n   @Override\n   public GetObjectResponse getFile(String key)\n-      throws ServerException, InsufficientDataException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {\n+      throws ServerException, InsufficientDataException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException, ErrorResponseException {\n     GetObjectArgs objectArgs = GetObjectArgs.builder()\n         .bucket(minioBucketName)\n         .object(key)\n         .build();\n \n-    GetObjectResponse response = null;\n-    try {\n-      response = minioClient.getObject(objectArgs);\n-    } catch (ErrorResponseException e) {\n-      if (e.response().code() == HttpStatus.NOT_FOUND.value()) {\n-        throw new AttachmentNotFoundException(\"Attachment not found\");\n-      }\n-    }\n-\n-    return response;\n+    return minioClient.getObject(objectArgs);\n   }\n \n   @Override"
+        },
+        {
+            "sha": "747d1ad37bd6601f771600dff2bac142fd965013",
+            "filename": "service/src/main/resources/application-dev.yaml",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/service%2Fsrc%2Fmain%2Fresources%2Fapplication-dev.yaml",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/service%2Fsrc%2Fmain%2Fresources%2Fapplication-dev.yaml",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/service%2Fsrc%2Fmain%2Fresources%2Fapplication-dev.yaml?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -74,7 +74,7 @@ alfresco:\n minio:\n   url: http://host.docker.internal:9000\n   access:\n-    key: BONlv1QPzcVqTwCYqo38\n-    secret: 6QFApdfd8Py3kYT9mF04GpAXhSGsmDz5bU5uK2JL\n+    key: VykfpN2OTT6HYp9befvt\n+    secret: HhBHZYp1x0wB3izhDYzkbXmQYhjfdIwxbi5Tguph\n   bucket:\n     name: prj-doc"
+        },
+        {
+            "sha": "844169330a8c215bd29e2618f26f272d84c03cfd",
+            "filename": "web/src/main/java/edu/hcmus/doc/fileservice/controller/ExceptionController.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 1,
+            "changes": 17,
+            "blob_url": "https://github.com/hcmus-k19-doc/doc-file-service/blob/6bb93af25b034ec8099e44070f3a239f86b56848/web%2Fsrc%2Fmain%2Fjava%2Fedu%2Fhcmus%2Fdoc%2Ffileservice%2Fcontroller%2FExceptionController.java",
+            "raw_url": "https://github.com/hcmus-k19-doc/doc-file-service/raw/6bb93af25b034ec8099e44070f3a239f86b56848/web%2Fsrc%2Fmain%2Fjava%2Fedu%2Fhcmus%2Fdoc%2Ffileservice%2Fcontroller%2FExceptionController.java",
+            "contents_url": "https://api.github.com/repos/hcmus-k19-doc/doc-file-service/contents/web%2Fsrc%2Fmain%2Fjava%2Fedu%2Fhcmus%2Fdoc%2Ffileservice%2Fcontroller%2FExceptionController.java?ref=6bb93af25b034ec8099e44070f3a239f86b56848",
+            "patch": "@@ -8,6 +8,7 @@\n import edu.hcmus.doc.fileservice.model.exception.FileTypeNotAcceptedException;\n import edu.hcmus.doc.fileservice.model.exception.ResourceAlreadyExistedException;\n import edu.hcmus.doc.fileservice.model.exception.ResourceNotFoundException;\n+import io.minio.errors.ErrorResponseException;\n import lombok.extern.slf4j.Slf4j;\n import org.springframework.http.HttpStatus;\n import org.springframework.http.ResponseEntity;\n@@ -58,9 +59,23 @@ public ResponseEntity<ExceptionDto> handleMaxSizeException() {\n         .body(new ExceptionDto(FILE_TOO_LARGE));\n   }\n \n+  @ExceptionHandler(ErrorResponseException.class)\n+  public ResponseEntity<ExceptionDto> handleMinioErrorResponseException(ErrorResponseException exception) {\n+    log.error(exception.getMessage(), exception);\n+    if (\"NoSuchKey\".equals(exception.errorResponse().code())) {\n+      return ResponseEntity\n+          .status(HttpStatus.NOT_FOUND)\n+          .body(new ExceptionDto(\"Attachment not found\"));\n+    }\n+\n+    return ResponseEntity\n+        .status(HttpStatus.INTERNAL_SERVER_ERROR)\n+        .body(new ExceptionDto(exception.getMessage()));\n+  }\n+\n   @ExceptionHandler(Throwable.class)\n   public ResponseEntity<ExceptionDto> handleInternalErrorException(Throwable throwable) {\n-    log.error(throwable.getMessage());\n+    log.error(throwable.getMessage(), throwable);\n     return ResponseEntity\n         .internalServerError()\n         .body(new ExceptionDto(INTERNAL_SERVER_ERROR));"
+        }
+    ]
+}

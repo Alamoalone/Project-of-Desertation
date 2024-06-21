@@ -1,0 +1,28 @@
+    public ReadonlyNativeVectorBuffer getCameraPoseData()
+    {
+        // Store the poses in a uniform buffer
+        if (!cameraPoseList.isEmpty())
+        {
+            // Flatten the camera pose matrices into 16-component vectors and store them in the vertex list data structure.
+            NativeVectorBuffer cameraPoseData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 16, cameraPoseList.size());
+
+            for (int k = 0; k < cameraPoseList.size(); k++)
+            {
+                int d = 0;
+                for (int col = 0; col < 4; col++) // column
+                {
+                    for (int row = 0; row < 4; row++) // row
+                    {
+                        cameraPoseData.set(k, d, cameraPoseList.get(k).get(row, col));
+                        d++;
+                    }
+                }
+            }
+
+            return cameraPoseData;
+        }
+        else
+        {
+            return null;
+        }
+    }

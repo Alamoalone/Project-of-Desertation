@@ -1,0 +1,3 @@
+    public void nullPointerSpecial2023() {
+        Main.Special(2023);
+    }

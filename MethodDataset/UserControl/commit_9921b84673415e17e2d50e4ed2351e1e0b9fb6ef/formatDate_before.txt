@@ -1,0 +1,4 @@
+	private String formatDate(Instant date)
+	{
+		return date.atZone(ZoneId.systemDefault()).toString().replace("T", " ").substring(0,16);
+	}

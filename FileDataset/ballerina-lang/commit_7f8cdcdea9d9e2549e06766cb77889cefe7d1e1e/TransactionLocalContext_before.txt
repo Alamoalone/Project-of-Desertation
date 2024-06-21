@@ -1,0 +1,6 @@
+    public Object getInfoRecord() {
+        return transactionResourceManager.transactionInfoMap.get(ByteBuffer.wrap(transactionId.getBytes()));
+    }
+
+
+

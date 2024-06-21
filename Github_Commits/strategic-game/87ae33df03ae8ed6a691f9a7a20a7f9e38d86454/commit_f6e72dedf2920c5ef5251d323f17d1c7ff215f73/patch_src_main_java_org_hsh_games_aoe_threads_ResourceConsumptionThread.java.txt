@@ -1,0 +1,9 @@
+@@ -30,7 +30,7 @@ public void run() {
+                                     throw new IllegalStateException("Recursos Insuficientes!");
+                                 } else {
+                                     resource.setAmount(resourceLeft);
+-                                    System.out.printf("Trabalhador consumiu %d de %s%n", consumptionType.getAmount(), consumptionType.getResource().getDescription());
++                                    System.out.printf("\nTrabalhador consumiu %d de %s%n", consumptionType.getAmount(), consumptionType.getResource().getDescription());
+                                 }
+                             }
+                         }

@@ -1,0 +1,1 @@
+getWCListFuzzySearch(SearchCriteria criteria, RequestInfo requestInfo)

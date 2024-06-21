@@ -1,0 +1,25 @@
+
+
+    private Color getColor(){
+        if (300<=scoreNumber && scoreNumber<=629){
+            return Color.RED;    
+        }
+        else if (630<=scoreNumber && scoreNumber<=689){
+            return Color.ORANGE;
+        }
+        else if (690<=scoreNumber && scoreNumber<=719){
+            return Color.YELLOW;
+        }
+        return Color.GREEN;
+    }
+
+    public void setScoreNumber(int scoreNumber){
+        this.scoreNumber = scoreNumber;
+    }
+
+
+
+    public int getScoreNumber(){
+        return scoreNumber;
+    }
+

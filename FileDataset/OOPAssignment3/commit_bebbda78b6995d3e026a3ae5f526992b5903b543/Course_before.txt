@@ -1,0 +1,16 @@
+   public boolean addPrerequisiteCourse(Course prerequisiteCourse){
+       int temp = 0;
+       for(Course c : prerequisiteCourses){
+           if (c != null) {
+               temp += 1;
+           }
+       }
+       if(validateAddPrerequisiteCourse(prerequisiteCourse)){
+           prerequisiteCourses[temp] = prerequisiteCourse;
+           return true;
+       }
+       else{
+           return false;
+       }
+   }
+

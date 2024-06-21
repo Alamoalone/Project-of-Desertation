@@ -1,0 +1,19 @@
+    public void testUpdateGroupNullValue() {
+        var uuid = UUID.randomUUID();
+
+        var input = new GroupInput();
+        input.setName("name");
+        input.setDisplayOrder(10);
+        input.setDescription("description");
+        input.setServices(Collections.singletonList(UUID.randomUUID()));
+        input.display(null);
+        input.setExpanded(null);
+
+        var expectedUuid = UUID.randomUUID();
+
+        Mockito.when(groupService.updateGroup(GroupModel.createInstance(input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(true);
+
+        var result = groupManagementController.v1GroupsUuidPut(uuid, input);
+        assertNotNull(result);
+        assertEquals(201, result.getStatusCode().value());
+    }

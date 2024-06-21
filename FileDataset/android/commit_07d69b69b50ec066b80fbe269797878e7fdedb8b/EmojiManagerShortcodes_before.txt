@@ -1,0 +1,22 @@
+    public static void initEmojiData(Context context) {
+        if (emojiData == null || emojiData.size() < 1) {
+            BufferedReader reader = null;
+            try {
+                Gson gson = new GsonBuilder().enableComplexMapKeySerialization().setLenient().create();
+                reader = new BufferedReader(new InputStreamReader(context.getAssets().open(EMOJI_SHORTCODES)));
+                emojiData = gson.fromJson(reader, new TypeToken<ArrayList<EmojiShortcodes>>() {
+                }.getType());
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if(reader != null) {
+                        reader.close();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,49 @@
+	public WaveBuilder setVelocity(double translationalVelocity) {
+		buildingMotionConstants = new MecanumMotionConstants(
+				Math.min(translationalVelocity, motionConstants.getMaxTranslationalVelocity()),
+				buildingMotionConstants.getMaxRotationalVelocity(),
+				buildingMotionConstants.getMaxTranslationalAcceleration(),
+				buildingMotionConstants.getMaxRotationalAcceleration());
+		if (builder != null) {
+			builder.setMotionConstants(buildingMotionConstants);
+		}
+		return this;
+	}
+
+	public WaveBuilder setAcceleration(double translationalAcceleration) {
+		buildingMotionConstants = new MecanumMotionConstants(
+				buildingMotionConstants.getMaxTranslationalVelocity(),
+				buildingMotionConstants.getMaxRotationalVelocity(),
+				Math.min(translationalAcceleration, motionConstants.getMaxTranslationalAcceleration()),
+				buildingMotionConstants.getMaxRotationalAcceleration());
+		if (builder != null) {
+			builder.setMotionConstants(buildingMotionConstants);
+		}
+		return this;
+	}
+
+	public WaveBuilder resetVelocity() {
+		buildingMotionConstants = new MecanumMotionConstants(
+				motionConstants.getMaxTranslationalVelocity(),
+				buildingMotionConstants.getMaxRotationalVelocity(),
+				buildingMotionConstants.getMaxTranslationalAcceleration(),
+				buildingMotionConstants.getMaxRotationalAcceleration());
+
+		if (builder != null) {
+			builder.setMotionConstants(buildingMotionConstants);
+		}
+		return this;
+	}
+
+	public WaveBuilder resetAcceleration() {
+		buildingMotionConstants = new MecanumMotionConstants(
+				buildingMotionConstants.getMaxTranslationalVelocity(),
+				buildingMotionConstants.getMaxRotationalVelocity(),
+				motionConstants.getMaxTranslationalAcceleration(),
+				buildingMotionConstants.getMaxRotationalAcceleration());
+		if (builder != null) {
+			builder.setMotionConstants(buildingMotionConstants);
+		}
+		return this;
+	}
+

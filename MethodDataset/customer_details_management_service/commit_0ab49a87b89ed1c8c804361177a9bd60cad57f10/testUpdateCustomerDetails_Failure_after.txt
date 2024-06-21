@@ -1,0 +1,8 @@
+    void testUpdateCustomerDetails_Failure() {
+        CustomerRequestDto requestDto = new CustomerRequestDto();
+        when(customerDetailService.updateCustomerDetailsRecord(requestDto)).thenReturn(false);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.updateCustomerDetails(requestDto);
+
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+    }

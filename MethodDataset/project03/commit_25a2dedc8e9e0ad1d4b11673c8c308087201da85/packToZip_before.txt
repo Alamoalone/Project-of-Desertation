@@ -1,0 +1,23 @@
+    public void packToZip(Long id, String reportUrl) throws IOException {
+        List<String> keys = new ArrayList<>();
+        keys.add(reportUrl);
+        
+        AllHistoryResponse allHistoryResponse = getAllHistory(id);
+
+        for (DamagedHistoryResponse damagedHistoryResponse : allHistoryResponse.getHistory()
+                                                                               .getDamaged()) {
+            keys.add(damagedHistoryResponse.getImageUrl());
+        }
+        keys.add(allHistoryResponse.getHistory()
+                                   .getDrawingUrl());
+        for (TodolistWrapperResponse todolistWrapperResponse : allHistoryResponse.getTodolist()) {
+            for (TodolistResponse todolistResponse : todolistWrapperResponse.getTodolist()) {
+                for (TodolistImageResponse todolistImageResponse : todolistResponse.getImages()) {
+                    keys.add(todolistImageResponse.getImageUrl());
+                }
+            }
+        }
+
+        byte[] zip = s3Service.downloadFilesAsZip(keys);
+        uploadZip(id, WebSocketUtils.convertToMultipartFile(zip, "zip.zip"));
+    }

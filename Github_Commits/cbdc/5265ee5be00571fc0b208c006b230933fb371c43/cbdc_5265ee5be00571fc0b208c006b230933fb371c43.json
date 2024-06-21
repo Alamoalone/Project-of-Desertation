@@ -1,0 +1,60 @@
+{
+    "sha": "5265ee5be00571fc0b208c006b230933fb371c43",
+    "node_id": "C_kwDOKqDGVtoAKDUyNjVlZTViZTAwNTcxZmMwYjIwOGMwMDZiMjMwOTMzZmIzNzFjNDM",
+    "commit": {
+        "author": {
+            "name": "Simon",
+            "email": "Simon@DESKTOP-KEIOBOC.fritz.box",
+            "date": "2023-12-09T20:00:34Z"
+        },
+        "committer": {
+            "name": "Simon",
+            "email": "Simon@DESKTOP-KEIOBOC.fritz.box",
+            "date": "2023-12-09T20:00:34Z"
+        },
+        "message": "Caught Null pointer exception in deposit insurance bankruptcy strategy",
+        "tree": {
+            "sha": "3b7c4e0c6300389a37142b9eb3bddee85349b27f",
+            "url": "https://api.github.com/repos/simonhess/cbdc/git/trees/3b7c4e0c6300389a37142b9eb3bddee85349b27f"
+        },
+        "url": "https://api.github.com/repos/simonhess/cbdc/git/commits/5265ee5be00571fc0b208c006b230933fb371c43",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/simonhess/cbdc/commits/5265ee5be00571fc0b208c006b230933fb371c43",
+    "html_url": "https://github.com/simonhess/cbdc/commit/5265ee5be00571fc0b208c006b230933fb371c43",
+    "comments_url": "https://api.github.com/repos/simonhess/cbdc/commits/5265ee5be00571fc0b208c006b230933fb371c43/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "a5e8d1dc68e2b4dbed9d9dbfba4f2607b6695e71",
+            "url": "https://api.github.com/repos/simonhess/cbdc/commits/a5e8d1dc68e2b4dbed9d9dbfba4f2607b6695e71",
+            "html_url": "https://github.com/simonhess/cbdc/commit/a5e8d1dc68e2b4dbed9d9dbfba4f2607b6695e71"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 6,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "06b70961403226504acdd8e6c0234b32020ec54f",
+            "filename": "cbdc/src/cbdc/strategies/BankBankruptcyDepositInsurance.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 1,
+            "changes": 7,
+            "blob_url": "https://github.com/simonhess/cbdc/blob/5265ee5be00571fc0b208c006b230933fb371c43/cbdc%2Fsrc%2Fcbdc%2Fstrategies%2FBankBankruptcyDepositInsurance.java",
+            "raw_url": "https://github.com/simonhess/cbdc/raw/5265ee5be00571fc0b208c006b230933fb371c43/cbdc%2Fsrc%2Fcbdc%2Fstrategies%2FBankBankruptcyDepositInsurance.java",
+            "contents_url": "https://api.github.com/repos/simonhess/cbdc/contents/cbdc%2Fsrc%2Fcbdc%2Fstrategies%2FBankBankruptcyDepositInsurance.java?ref=5265ee5be00571fc0b208c006b230933fb371c43",
+            "patch": "@@ -143,7 +143,12 @@ public void bankrupt() {\n \t\t\n \t\tfor(Map.Entry<Bank, Deposit> dep: DIFund) {\n \t\t\tdepositInsuranceFundSum+=dep.getValue().getValue();\n-\t\t\tsharesOfDIFund.put(dep.getKey().getAgentId(), dep.getValue().getValue()/depositInsuranceFundSum);\n+\t\t\tif(depositInsuranceFundSum==0) {\n+\t\t\t\tsharesOfDIFund.put(dep.getKey().getAgentId(), (double) 0);\n+\t\t\t}\n+\t\t\telse {\n+\t\t\t\tsharesOfDIFund.put(dep.getKey().getAgentId(), dep.getValue().getValue()/depositInsuranceFundSum);\n+\t\t\t}\n \t\t}\n \t\t\n \t\t"
+        }
+    ]
+}

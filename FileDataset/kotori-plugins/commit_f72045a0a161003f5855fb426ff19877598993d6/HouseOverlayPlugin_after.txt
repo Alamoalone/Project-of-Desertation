@@ -1,0 +1,8 @@
+    private void checkWeaponSlot()
+    {
+        ItemContainer itemContainer = client.getItemContainer(InventoryID.EQUIPMENT);
+        Item weaponItem = itemContainer == null ? null : itemContainer.getItem(EquipmentInventorySlot.WEAPON.getSlotIdx());
+        int currentWeapon = weaponItem == null ? -1 : weaponItem.getId();
+        fairy_ring_has_staff = currentWeapon == 772 || currentWeapon == 9084;
+    }
+

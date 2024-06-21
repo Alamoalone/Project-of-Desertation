@@ -1,0 +1,98 @@
+{
+    "sha": "759ed8338f6a5d74aa6704e651974db8fae5905a",
+    "node_id": "C_kwDOHveqK9oAKDc1OWVkODMzOGY2YTVkNzRhYTY3MDRlNjUxOTc0ZGI4ZmFlNTkwNWE",
+    "commit": {
+        "author": {
+            "name": "Héctor Cortez",
+            "email": "updown.input@gmail.com",
+            "date": "2023-12-13T16:21:10Z"
+        },
+        "committer": {
+            "name": "Héctor Cortez",
+            "email": "updown.input@gmail.com",
+            "date": "2023-12-13T16:21:10Z"
+        },
+        "message": "Fix: null pointer exception when list of characters was required at remove and add character methods",
+        "tree": {
+            "sha": "5fce2b681314ef6010bd36db40b0b4fe8efeaf70",
+            "url": "https://api.github.com/repos/CoraYako/disney-api/git/trees/5fce2b681314ef6010bd36db40b0b4fe8efeaf70"
+        },
+        "url": "https://api.github.com/repos/CoraYako/disney-api/git/commits/759ed8338f6a5d74aa6704e651974db8fae5905a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/CoraYako/disney-api/commits/759ed8338f6a5d74aa6704e651974db8fae5905a",
+    "html_url": "https://github.com/CoraYako/disney-api/commit/759ed8338f6a5d74aa6704e651974db8fae5905a",
+    "comments_url": "https://api.github.com/repos/CoraYako/disney-api/commits/759ed8338f6a5d74aa6704e651974db8fae5905a/comments",
+    "author": {
+        "login": "CoraYako",
+        "id": 72366098,
+        "node_id": "MDQ6VXNlcjcyMzY2MDk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/72366098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CoraYako",
+        "html_url": "https://github.com/CoraYako",
+        "followers_url": "https://api.github.com/users/CoraYako/followers",
+        "following_url": "https://api.github.com/users/CoraYako/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CoraYako/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CoraYako/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CoraYako/subscriptions",
+        "organizations_url": "https://api.github.com/users/CoraYako/orgs",
+        "repos_url": "https://api.github.com/users/CoraYako/repos",
+        "events_url": "https://api.github.com/users/CoraYako/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CoraYako/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "CoraYako",
+        "id": 72366098,
+        "node_id": "MDQ6VXNlcjcyMzY2MDk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/72366098?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CoraYako",
+        "html_url": "https://github.com/CoraYako",
+        "followers_url": "https://api.github.com/users/CoraYako/followers",
+        "following_url": "https://api.github.com/users/CoraYako/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CoraYako/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CoraYako/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CoraYako/subscriptions",
+        "organizations_url": "https://api.github.com/users/CoraYako/orgs",
+        "repos_url": "https://api.github.com/users/CoraYako/repos",
+        "events_url": "https://api.github.com/users/CoraYako/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CoraYako/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "52da13cc5396877e71c5f5d552effcd668f70b1c",
+            "url": "https://api.github.com/repos/CoraYako/disney-api/commits/52da13cc5396877e71c5f5d552effcd668f70b1c",
+            "html_url": "https://github.com/CoraYako/disney-api/commit/52da13cc5396877e71c5f5d552effcd668f70b1c"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "cb033745c9793b6474db60ed030f7394eb258a37",
+            "filename": "src/main/java/com/disney/model/entity/Movie.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/CoraYako/disney-api/blob/759ed8338f6a5d74aa6704e651974db8fae5905a/src%2Fmain%2Fjava%2Fcom%2Fdisney%2Fmodel%2Fentity%2FMovie.java",
+            "raw_url": "https://github.com/CoraYako/disney-api/raw/759ed8338f6a5d74aa6704e651974db8fae5905a/src%2Fmain%2Fjava%2Fcom%2Fdisney%2Fmodel%2Fentity%2FMovie.java",
+            "contents_url": "https://api.github.com/repos/CoraYako/disney-api/contents/src%2Fmain%2Fjava%2Fcom%2Fdisney%2Fmodel%2Fentity%2FMovie.java?ref=759ed8338f6a5d74aa6704e651974db8fae5905a",
+            "patch": "@@ -66,12 +66,12 @@ public Set<Character> getCharacters() {\n     }\n \n     public void addCharacterToList(Character character) {\n-        if (Objects.nonNull(character) && !this.characters.contains(character))\n+        if (Objects.nonNull(character) && !getCharacters().contains(character))\n             this.getCharacters().add(character);\n     }\n \n     public void removeCharacterFromList(Character character) {\n-        if (Objects.nonNull(character) && this.characters.contains(character))\n+        if (Objects.nonNull(character) && getCharacters().contains(character))\n             this.getCharacters().remove(character);\n     }\n "
+        }
+    ]
+}

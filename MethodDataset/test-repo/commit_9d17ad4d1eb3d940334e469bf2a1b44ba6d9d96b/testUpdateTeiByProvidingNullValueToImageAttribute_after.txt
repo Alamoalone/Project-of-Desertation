@@ -1,0 +1,16 @@
+  void testUpdateTeiByProvidingNullValueToImageAttribute() {
+    TrackedEntityInstance trackedEntityInstance =
+        trackedEntityInstanceService.getTrackedEntityInstance(maleC.getUid());
+
+    Attribute attribute =
+        trackedEntityInstance.getAttributes().stream()
+            .filter(a -> a.getValueType() == ValueType.IMAGE)
+            .findFirst()
+            .orElse(null);
+    attribute.setValue(null);
+
+    ImportSummary importSummary =
+        trackedEntityInstanceService.updateTrackedEntityInstance(
+            trackedEntityInstance, null, null, true);
+    assertEquals(ImportStatus.SUCCESS, importSummary.getStatus());
+  }

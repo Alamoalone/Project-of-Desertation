@@ -1,0 +1,16 @@
+    private boolean isValidPrefixLocal(final String phoneNumber) {
+        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith("86") && phoneNumber.length() == 9;
+    }
+
+    public boolean isValid(String value, ConstraintValidatorContext context) {
+        if (type.equals(PhoneNumberType.GLOBAL)) {
+            return isValidPrefixGlobal(value);
+        } else {
+            return isValidPrefixLocal(value);
+        }
+    }
+
+    private boolean isValidPrefixGlobal(final String phoneNumber) {
+        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith("+370") && phoneNumber.length() == 12;
+    }
+

@@ -1,0 +1,102 @@
+    public Node[] findPath(Node Nodestart, Node Nodeend) {
+        // find path from start to end
+        // A* would be cool, but would require a direct line of distance to target node geometrically
+        // so we will use Dijkstra's algorithm
+        //https://stackoverflow.com/a/10053969
+        //"""From Introduction to Algorithms (CLRS) second edition, page 581 :
+        //Find a shortest path from u to v for a given vertices u and v.
+        // If we solve the single-source problem with source vertex u, we solve this problem also.
+        // Moreover, no algorithms for this problem are known that run asymptotically faster than the best single-source algorithms in the worst case.
+        //So, stick to Dijkstra's algorithm :)"""
+
+         class DijkstraNode {
+            Node node;
+            int dist;
+            DijkstraNode prev;
+
+        }
+
+        DijkstraNode[] dijkstraNodes = new DijkstraNode[this.nodes.length];
+        for (int i = 0; i < this.nodes.length; i++) {
+            dijkstraNodes[i] = new DijkstraNode();
+            dijkstraNodes[i].node = this.nodes[i];
+            dijkstraNodes[i].dist = Integer.MAX_VALUE;
+            dijkstraNodes[i].prev = null;
+        }
+
+        // find start node TODO extract this to a function
+        DijkstraNode startNode = null;
+        for (DijkstraNode dn : dijkstraNodes) {
+            if (dn.node == Nodestart) {
+                startNode = dn;
+                break;
+            }
+        }
+
+        if (startNode == null) {
+            throw new NullPointerException("Start node not found in network");
+        }
+
+        // find destination node
+        DijkstraNode endNode = null;
+        for (DijkstraNode dn : dijkstraNodes) {
+            if (dn.node == Nodeend) {
+                endNode = dn;
+                break;
+            }
+        }
+        if (endNode == null) {
+            throw new NullPointerException("End node not found in network");
+        }
+
+
+        startNode.dist = 0;
+
+        Arrays.sort(dijkstraNodes, (a, b) -> a.dist - b.dist);
+
+        Node[] path = new Node[0];
+        while (dijkstraNodes.length > 0) {
+            DijkstraNode u = dijkstraNodes[0];
+            for (DijkstraNode dn : dijkstraNodes) {
+                if (dn.dist < u.dist) {
+                    u = dn;
+                }
+            }
+            if (u.node == Nodeend) {
+                break;
+            }
+            DijkstraNode[] temp_Q = new DijkstraNode[dijkstraNodes.length - 1];
+            int temp_Q_index = 0;
+            for (DijkstraNode dn : dijkstraNodes) {
+                if (dn != u) {
+                    temp_Q[temp_Q_index] = dn;
+                    temp_Q_index++;
+                }
+            }
+            dijkstraNodes = temp_Q;
+
+            for (Edge e : u.node.edges) {
+                DijkstraNode v = null;
+                for (DijkstraNode dn : dijkstraNodes) {
+                    if (dn.node == e.end) {
+                        v = dn;
+                        break;
+                    }
+                }
+                int alt = u.dist + e.weight;
+                if (alt < v.dist) {
+                    v.dist = alt;
+                    v.prev = u;
+                }
+            }
+        }
+
+
+        List<Node> pathList = new ArrayList<>();    // TODO URGENT: make this a dynamic array
+        for (DijkstraNode dn = endNode; dn != null; dn = dn.prev) {
+            pathList.add(0, dn.node); // append node to the path
+        }
+
+        return pathList.toArray(new Node[0]);
+    }
+

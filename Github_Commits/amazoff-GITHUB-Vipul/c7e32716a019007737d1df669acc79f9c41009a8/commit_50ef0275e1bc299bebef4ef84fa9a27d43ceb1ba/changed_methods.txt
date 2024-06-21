@@ -1,0 +1,8 @@
+getAllOrders()
+getOrdersByPartnerId(String partnerId)
+getOrderById(String orderId)
+getPartnerById(String partnerId)
+getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId)
+getLastDeliveryTimeByPartnerId(String partnerId)
+getOrderCountByPartnerId(String partnerId)
+getCountOfUnassignedOrders()

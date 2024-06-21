@@ -1,0 +1,98 @@
+{
+    "sha": "b63a613846514742a20ae139d4d508c10882c4a8",
+    "node_id": "C_kwDOGayHltoAKGI2M2E2MTM4NDY1MTQ3NDJhMjBhZTEzOWQ0ZDUwOGMxMDg4MmM0YTg",
+    "commit": {
+        "author": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-07-19T14:46:10Z"
+        },
+        "committer": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-07-19T14:46:10Z"
+        },
+        "message": "fixed null pointer exception when setting email",
+        "tree": {
+            "sha": "1c2ee8e044f4119f0b33300490eb4eea6790488b",
+            "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/git/trees/1c2ee8e044f4119f0b33300490eb4eea6790488b"
+        },
+        "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/git/commits/b63a613846514742a20ae139d4d508c10882c4a8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/b63a613846514742a20ae139d4d508c10882c4a8",
+    "html_url": "https://github.com/madgeek-arc/eosc-observatory/commit/b63a613846514742a20ae139d4d508c10882c4a8",
+    "comments_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/b63a613846514742a20ae139d4d508c10882c4a8/comments",
+    "author": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c6a25855d0a87c05019b6b90128de2b36e81c761",
+            "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/c6a25855d0a87c05019b6b90128de2b36e81c761",
+            "html_url": "https://github.com/madgeek-arc/eosc-observatory/commit/c6a25855d0a87c05019b6b90128de2b36e81c761"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 5,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "2590d8d379fd9a76ca30cd2ebebedf78ce83c24d",
+            "filename": "src/main/java/eu/eosc/observatory/domain/User.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 5,
+            "changes": 10,
+            "blob_url": "https://github.com/madgeek-arc/eosc-observatory/blob/b63a613846514742a20ae139d4d508c10882c4a8/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fdomain%2FUser.java",
+            "raw_url": "https://github.com/madgeek-arc/eosc-observatory/raw/b63a613846514742a20ae139d4d508c10882c4a8/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fdomain%2FUser.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/contents/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fdomain%2FUser.java?ref=b63a613846514742a20ae139d4d508c10882c4a8",
+            "patch": "@@ -49,9 +49,6 @@ public static User of(Authentication auth) {\n         } else {\n             throw new InsufficientAuthenticationException(\"Could not create user. Insufficient user authentication\");\n         }\n-        if (user.getEmail() != null) {\n-            user.setEmail(user.getEmail().toLowerCase());\n-        }\n         logger.debug(String.format(\"UserService from Authentication: %s\", user));\n         return user;\n     }\n@@ -69,7 +66,10 @@ public String getEmail() {\n     }\n \n     public void setEmail(String email) {\n-        this.email = email.toLowerCase();\n+        if (email != null) {\n+            email = email.toLowerCase();\n+        }\n+        this.email = email;\n     }\n \n     public String getName() {\n@@ -135,7 +135,7 @@ public static String getId(Authentication auth) {\n \n     @Override\n     public String getId() {\n-        return this.email.toLowerCase();\n+        return this.email != null ? this.email.toLowerCase() : null;\n     }\n \n     @Override"
+        }
+    ]
+}

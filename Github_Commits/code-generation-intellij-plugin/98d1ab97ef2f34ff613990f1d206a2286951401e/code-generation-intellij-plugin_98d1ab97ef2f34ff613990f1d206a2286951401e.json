@@ -1,0 +1,122 @@
+{
+    "sha": "98d1ab97ef2f34ff613990f1d206a2286951401e",
+    "node_id": "C_kwDOJG8GfdoAKDk4ZDFhYjk3ZWYyZjM0ZmY2MTM5OTBmMWQyMDZhMjI4Njk1MTQwMWU",
+    "commit": {
+        "author": {
+            "name": "Binis",
+            "email": "binisbelev@gmail.com",
+            "date": "2023-07-23T19:56:41Z"
+        },
+        "committer": {
+            "name": "Binis",
+            "email": "binisbelev@gmail.com",
+            "date": "2023-07-23T19:56:41Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "e14c5f7c67b6b6b2d0be968a253da830b7a08419",
+            "url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/git/trees/e14c5f7c67b6b6b2d0be968a253da830b7a08419"
+        },
+        "url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/git/commits/98d1ab97ef2f34ff613990f1d206a2286951401e",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEECynyJy8dqBGcwBbnv6aU3KBXbgIFAmS9hfkACgkQv6aU3KBX\nbgIyVhAAwzZ8MPz+YEIQFTIVFBWoDRG32CAw0/QnLLt7azVeGogRFoB15TdSdZPD\nF0m/Zm9FPgk6eC4FOmIBncj8+zGEQb+6pIb8Me0pQLO8jlRxhoAPAgQlRY/MOHXZ\nipKxun/KgaupDwCyeZng4mrEB6P0GWL9FHMwh8A2fUYr4XOoWMgMTSUzwy8RgXE2\n+wBfhqvrqL21rXNwv8/xxNeB3Q9QDkMMjTukx4hik6Tea7gQXRrG6AvnhnvY/mIN\n1pp7FS1eOCX0jAMZ0vsqKZWLNDZq7FmbLVph9HzU9SSOSqjeNd8RUft+DvokA21r\nPG0TIG2Vun2kKUIK8AzQ33N9NXX1jp+HZaNhvXBFmdmUMcsiJ1L/s1+XsUzgJhE7\nSkp0oG9pKizFsBSay4x9ykjMndudLioCU1ppeS5rWNfnIdwtLC8X9aaeJOaQ3qMh\n8PSGWAMBonspNO4M0dZIpbEkTBOAUp9M2C/LtlVGhXhTzm/LFe81kS3pA/uFQc/u\nOxd9HKpHYBIRmdpBLtCWuIoSYgTDa4pwZLxQzEh1oXw6SAx3T6w8dzzy9OwbleTE\nwjw3JdCtOqnyanMu7IrTv2Mr51MNA8g+KMcAj+SamC5QeM6vmYsIR5rv+/afvwIQ\nOCr3rJFNzktUSCzm+4M6wFrLsHmG+LYjrulfzgMYocbOAKqF2oM=\n=ViO2\n-----END PGP SIGNATURE-----",
+            "payload": "tree e14c5f7c67b6b6b2d0be968a253da830b7a08419\nparent e28dc72a29c283f0ee69487e64b327887ae20652\nauthor Binis <binisbelev@gmail.com> 1690142201 +0300\ncommitter Binis <binisbelev@gmail.com> 1690142201 +0300\n\nFixed null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/commits/98d1ab97ef2f34ff613990f1d206a2286951401e",
+    "html_url": "https://github.com/binis2/code-generation-intellij-plugin/commit/98d1ab97ef2f34ff613990f1d206a2286951401e",
+    "comments_url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/commits/98d1ab97ef2f34ff613990f1d206a2286951401e/comments",
+    "author": {
+        "login": "binis2",
+        "id": 14141153,
+        "node_id": "MDQ6VXNlcjE0MTQxMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14141153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/binis2",
+        "html_url": "https://github.com/binis2",
+        "followers_url": "https://api.github.com/users/binis2/followers",
+        "following_url": "https://api.github.com/users/binis2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/binis2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/binis2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/binis2/subscriptions",
+        "organizations_url": "https://api.github.com/users/binis2/orgs",
+        "repos_url": "https://api.github.com/users/binis2/repos",
+        "events_url": "https://api.github.com/users/binis2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/binis2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "binis2",
+        "id": 14141153,
+        "node_id": "MDQ6VXNlcjE0MTQxMTUz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14141153?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/binis2",
+        "html_url": "https://github.com/binis2",
+        "followers_url": "https://api.github.com/users/binis2/followers",
+        "following_url": "https://api.github.com/users/binis2/following{/other_user}",
+        "gists_url": "https://api.github.com/users/binis2/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/binis2/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/binis2/subscriptions",
+        "organizations_url": "https://api.github.com/users/binis2/orgs",
+        "repos_url": "https://api.github.com/users/binis2/repos",
+        "events_url": "https://api.github.com/users/binis2/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/binis2/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e28dc72a29c283f0ee69487e64b327887ae20652",
+            "url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/commits/e28dc72a29c283f0ee69487e64b327887ae20652",
+            "html_url": "https://github.com/binis2/code-generation-intellij-plugin/commit/e28dc72a29c283f0ee69487e64b327887ae20652"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 2,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "84a0b92f9af2f03c0dda38566ea54e08fd5a28be",
+            "filename": "gradle/wrapper/gradle-wrapper.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/binis2/code-generation-intellij-plugin/blob/98d1ab97ef2f34ff613990f1d206a2286951401e/gradle%2Fwrapper%2Fgradle-wrapper.properties",
+            "raw_url": "https://github.com/binis2/code-generation-intellij-plugin/raw/98d1ab97ef2f34ff613990f1d206a2286951401e/gradle%2Fwrapper%2Fgradle-wrapper.properties",
+            "contents_url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/contents/gradle%2Fwrapper%2Fgradle-wrapper.properties?ref=98d1ab97ef2f34ff613990f1d206a2286951401e",
+            "patch": "@@ -1,5 +1,5 @@\n distributionBase=GRADLE_USER_HOME\n distributionPath=wrapper/dists\n-distributionUrl=https\\://services.gradle.org/distributions/gradle-8.1.1-bin.zip\n+distributionUrl=https\\://services.gradle.org/distributions/gradle-8.2.1-bin.zip\n zipStoreBase=GRADLE_USER_HOME\n zipStorePath=wrapper/dists"
+        },
+        {
+            "sha": "35707b849c655614f1f2362c0b2b72274483d9ec",
+            "filename": "src/main/java/net/binis/intellij/tools/Lookup.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/binis2/code-generation-intellij-plugin/blob/98d1ab97ef2f34ff613990f1d206a2286951401e/src%2Fmain%2Fjava%2Fnet%2Fbinis%2Fintellij%2Ftools%2FLookup.java",
+            "raw_url": "https://github.com/binis2/code-generation-intellij-plugin/raw/98d1ab97ef2f34ff613990f1d206a2286951401e/src%2Fmain%2Fjava%2Fnet%2Fbinis%2Fintellij%2Ftools%2FLookup.java",
+            "contents_url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/contents/src%2Fmain%2Fjava%2Fnet%2Fbinis%2Fintellij%2Ftools%2FLookup.java?ref=98d1ab97ef2f34ff613990f1d206a2286951401e",
+            "patch": "@@ -680,7 +680,7 @@ public static Set<Module> refreshCache(VirtualFile file) {\n                     }\n                 })\n                 .forEach(desc -> {\n-                    if (nonNull(classes.remove(desc.cls.getQualifiedName()))) {\n+                    if (nonNull(withRes(desc.cls.getQualifiedName(), classes::remove))) {\n                         result.add(getModule(desc.cls));\n                     }\n                 });"
+        },
+        {
+            "sha": "5bd5bc51a2cc6d7f05068d18243bc4a6675d3c23",
+            "filename": "src/main/java/net/binis/intellij/usages/CodeGenImplicitUsageProvider.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/binis2/code-generation-intellij-plugin/blob/98d1ab97ef2f34ff613990f1d206a2286951401e/src%2Fmain%2Fjava%2Fnet%2Fbinis%2Fintellij%2Fusages%2FCodeGenImplicitUsageProvider.java",
+            "raw_url": "https://github.com/binis2/code-generation-intellij-plugin/raw/98d1ab97ef2f34ff613990f1d206a2286951401e/src%2Fmain%2Fjava%2Fnet%2Fbinis%2Fintellij%2Fusages%2FCodeGenImplicitUsageProvider.java",
+            "contents_url": "https://api.github.com/repos/binis2/code-generation-intellij-plugin/contents/src%2Fmain%2Fjava%2Fnet%2Fbinis%2Fintellij%2Fusages%2FCodeGenImplicitUsageProvider.java?ref=98d1ab97ef2f34ff613990f1d206a2286951401e",
+            "patch": "@@ -4,7 +4,6 @@\n import com.intellij.openapi.project.IndexNotReadyException;\n import com.intellij.psi.PsiClass;\n import com.intellij.psi.PsiElement;\n-import com.intellij.psi.PsiMethod;\n import com.intellij.psi.util.PsiTreeUtil;\n import net.binis.intellij.tools.Lookup;\n import org.jetbrains.annotations.NotNull;"
+        }
+    ]
+}

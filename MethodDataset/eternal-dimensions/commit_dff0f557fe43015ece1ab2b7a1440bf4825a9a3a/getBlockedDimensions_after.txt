@@ -1,0 +1,3 @@
+        public String[] getBlockedDimensions() {
+            return blockedDimensions != null ? blockedDimensions.split(listDelimiter) : new String[0];
+        }

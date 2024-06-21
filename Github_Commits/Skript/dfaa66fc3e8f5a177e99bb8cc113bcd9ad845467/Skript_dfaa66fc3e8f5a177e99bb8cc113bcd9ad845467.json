@@ -1,0 +1,98 @@
+{
+    "sha": "dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467",
+    "node_id": "C_kwDOAy8M79oAKGRmYWE2NmZjM2U4ZjVhMTc3ZTk5YmI4Y2MxMTNiY2Q5YWQ4NDU0Njc",
+    "commit": {
+        "author": {
+            "name": "LimeGlass",
+            "email": "16087552+TheLimeGlass@users.noreply.github.com",
+            "date": "2024-04-01T09:51:28Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-04-01T09:51:28Z"
+        },
+        "message": "Fix expression null pointer exception on expressions with null return type (#6497)\n\n* Fix null pointer exception and add proper error message\r\n\r\n* Update src/main/java/ch/njol/skript/lang/SkriptParser.java\r\n\r\nCo-authored-by: Ayham Al Ali <20037329+AyhamAl-Ali@users.noreply.github.com>\r\n\r\n* change error message\r\n\r\n---------\r\n\r\nCo-authored-by: Ayham Al Ali <20037329+AyhamAl-Ali@users.noreply.github.com>\r\nCo-authored-by: Moderocky <admin@moderocky.com>",
+        "tree": {
+            "sha": "21a5337463f8b332c25002f6f161ceb8da9e46db",
+            "url": "https://api.github.com/repos/SkriptLang/Skript/git/trees/21a5337463f8b332c25002f6f161ceb8da9e46db"
+        },
+        "url": "https://api.github.com/repos/SkriptLang/Skript/git/commits/dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmCoOgCRC1aQ7uu5UhlAAALo4QABN2cTTmsgPaykxV50IQkQgn\nPa2tWH30Ihm345P7Bdpm8hoGDvANKGxmFL0sIs5tnFsULj1RrgtElIJnU6qeutXm\nCc5aSh1eggYdbc4uYx4p6hVOjVfuMbXzEMA2rsCVNeJ2IzpUiNiuSZr8JPxazMJk\n5bBSz4oQ47foJP3aUS1MJWEd+gZOo3fayT3EBV6kVj9yxzeixS+7UbN/jv6d4KC0\noY6f8yuaBzjxSx51r0hkHzuZLfbf/JdnKGnd78t5Jlv/CIV53ERywO3QobtnJzM8\nuz/EVwYGWkH5A2Rjo+i7Fr8YdJPSkWBYmUTc41/5J35Vo+omyVrDF6wiuAm/gVBP\n4ZMUZp2xQ/ThT016tazJQGfhN/b4e23u7VUa1Sy+CEfpapdCGdSx2bAUhJNX7Sdd\nZbC6HWp3ZJFMUabfb2MvBsVKHFWVYY0tC+u9tZj5NxYXbEaE0ZqYFZA02cXJiFMV\ngXnSdMfkeUBnsDvpd8Ab4pZa26Oz21oHFXB+pq1mn+f3+kzpG5VEBCckwN3dwyu+\nfOaNF09dfjjDG4rqhJwKRTa9QFA4VvcXy/J5Q3/QdC+vJ3PDkCZHfXeLtkGnY8qT\n8PsAMewOy8TzJLTCOvNnjLakZnlY6ltty36OgtiNgKlWxnLFLIcOCAiS8JlwNKcX\nkMBEJY19mmiubP9DtB6C\n=PK5C\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 21a5337463f8b332c25002f6f161ceb8da9e46db\nparent bfdadaa59813b14c113b1fb58b953fb0660610be\nauthor LimeGlass <16087552+TheLimeGlass@users.noreply.github.com> 1711965088 -0600\ncommitter GitHub <noreply@github.com> 1711965088 +0200\n\nFix expression null pointer exception on expressions with null return type (#6497)\n\n* Fix null pointer exception and add proper error message\r\n\r\n* Update src/main/java/ch/njol/skript/lang/SkriptParser.java\r\n\r\nCo-authored-by: Ayham Al Ali <20037329+AyhamAl-Ali@users.noreply.github.com>\r\n\r\n* change error message\r\n\r\n---------\r\n\r\nCo-authored-by: Ayham Al Ali <20037329+AyhamAl-Ali@users.noreply.github.com>\r\nCo-authored-by: Moderocky <admin@moderocky.com>"
+        }
+    },
+    "url": "https://api.github.com/repos/SkriptLang/Skript/commits/dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467",
+    "html_url": "https://github.com/SkriptLang/Skript/commit/dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467",
+    "comments_url": "https://api.github.com/repos/SkriptLang/Skript/commits/dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467/comments",
+    "author": {
+        "login": "TheLimeGlass",
+        "id": 16087552,
+        "node_id": "MDQ6VXNlcjE2MDg3NTUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16087552?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/TheLimeGlass",
+        "html_url": "https://github.com/TheLimeGlass",
+        "followers_url": "https://api.github.com/users/TheLimeGlass/followers",
+        "following_url": "https://api.github.com/users/TheLimeGlass/following{/other_user}",
+        "gists_url": "https://api.github.com/users/TheLimeGlass/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/TheLimeGlass/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/TheLimeGlass/subscriptions",
+        "organizations_url": "https://api.github.com/users/TheLimeGlass/orgs",
+        "repos_url": "https://api.github.com/users/TheLimeGlass/repos",
+        "events_url": "https://api.github.com/users/TheLimeGlass/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/TheLimeGlass/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bfdadaa59813b14c113b1fb58b953fb0660610be",
+            "url": "https://api.github.com/repos/SkriptLang/Skript/commits/bfdadaa59813b14c113b1fb58b953fb0660610be",
+            "html_url": "https://github.com/SkriptLang/Skript/commit/bfdadaa59813b14c113b1fb58b953fb0660610be"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "930c8e0639afcd1d95550f29b94c7be567008af5",
+            "filename": "src/main/java/ch/njol/skript/lang/SkriptParser.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/SkriptLang/Skript/blob/dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467/src%2Fmain%2Fjava%2Fch%2Fnjol%2Fskript%2Flang%2FSkriptParser.java",
+            "raw_url": "https://github.com/SkriptLang/Skript/raw/dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467/src%2Fmain%2Fjava%2Fch%2Fnjol%2Fskript%2Flang%2FSkriptParser.java",
+            "contents_url": "https://api.github.com/repos/SkriptLang/Skript/contents/src%2Fmain%2Fjava%2Fch%2Fnjol%2Fskript%2Flang%2FSkriptParser.java?ref=dfaa66fc3e8f5a177e99bb8cc113bcd9ad845467",
+            "patch": "@@ -531,6 +531,9 @@ private Expression<?> parseSingleExpr(boolean allowUnparsedLiteral, @Nullable Lo\n \t\t\t\tExpression<?> parsedExpression = parseExpression(types, expr);\n \t\t\t\tif (parsedExpression != null) { // Expression/VariableString parsing success\n \t\t\t\t\tClass<?> returnType = parsedExpression.getReturnType(); // Sometimes getReturnType does non-trivial costly operations\n+\t\t\t\t\tif (returnType == null)\n+\t\t\t\t\t\tthrow new SkriptAPIException(\"Expression '\" + expr + \"' returned null for method Expression#getReturnType. Null is not a valid return.\");\n+\n \t\t\t\t\tfor (int i = 0; i < types.length; i++) {\n \t\t\t\t\t\tClass<?> type = types[i];\n \t\t\t\t\t\tif (type == null) // Ignore invalid (null) types"
+        }
+    ]
+}

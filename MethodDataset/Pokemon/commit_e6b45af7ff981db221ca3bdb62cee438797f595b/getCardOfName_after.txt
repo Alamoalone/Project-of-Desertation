@@ -1,0 +1,8 @@
+    public int getCardOfName (String name, boolean firstCard) {
+        if (firstCard) {
+            return cards.indexOf(new Card(name));
+        } else {
+            return cards.lastIndexOf(new Card(name));
+        }
+
+    }

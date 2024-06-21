@@ -1,0 +1,5 @@
+    public ResponseEntity<?> deleteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " DELETED");
+        notesService.deleteById(id);
+        return ResponseEntity.ok().build();
+    }

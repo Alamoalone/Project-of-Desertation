@@ -1,0 +1,23 @@
+@@ -11,16 +11,17 @@
+  */
+ public class Usuario {
+     
+-    private Integer idUsuario;
+-    private Integer idRol;
+-    private Integer idEmpresa;
+-    private String nombre;
+     private String apellidoPaterno;
+     private String apellidoMaterno;
+     private String curp;
+     private String email;
+-    private String username;
++    private Integer idEmpresa;
++    private Integer idRol;
++    private Integer idUsuario;
++    private String nombre;
+     private String password;
++    private String username;
++    
+ 
+     public Usuario() {
+     }

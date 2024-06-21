@@ -1,0 +1,28 @@
+@@ -1,8 +1,11 @@
+ package com.bc.utilities;
+ 
++import lombok.extern.slf4j.Slf4j;
++
+ /**
+  * Class implementing methods as defined by ISO/IEC 9797-1 Padding.
+  */
++@Slf4j
+ public class ISOIEC97971Padding {
+ 
+     /**
+@@ -28,6 +31,7 @@ public static String performIsoIec97971Method1Padding(String inputData){
+                         BLOCK_SIZE)
+                 * BLOCK_SIZE
+         );
++        log.debug("ISO 97971 Padding Method 1, input data: {}.", inputData);
+         // Check if transaction data is multiple of 16, else pad with x"0" chars till the length is a multiple of 16.
+         if (inputDataLength  == requiredInputDataLength){
+             return inputData;
+@@ -66,6 +70,7 @@ public static String performIsoIec97971Method2Padding(String inputData){
+                         BLOCK_SIZE)
+                 * BLOCK_SIZE
+         );
++        log.debug("ISO 97971 Padding Method 2, input data: {}.", inputData);
+         // Check if transaction data is multiple of 16, else pad with x"0" chars till the length is a multiple of 16.
+         if (inputDataLength  == requiredInputDataLength){
+             return inputData;

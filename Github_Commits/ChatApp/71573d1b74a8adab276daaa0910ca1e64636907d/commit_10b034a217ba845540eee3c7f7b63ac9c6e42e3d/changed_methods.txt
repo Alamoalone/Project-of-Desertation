@@ -1,0 +1,1 @@
+getUserImage(String encodeImage)

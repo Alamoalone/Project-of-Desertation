@@ -1,0 +1,27 @@
+    public void modifica(String oldGiocatore, Object newObject) {
+        Giocatore newGiocatore = (Giocatore) newObject;
+        // Percorso del file JSON dell'oldGiocatore
+        String path = "src/main/resources/com/spacca/database/giocatori/user-" + oldGiocatore + ".json";
+
+        // se è stato modificato lo username creo il nuovo file ed elimino il vecchio
+        if (!oldGiocatore.equals(newGiocatore.getUsername())) {
+            salva(newGiocatore, newGiocatore.getUsername());
+            elimina(oldGiocatore);
+        } else { // se non è stato modificato lo username ricarico il file
+            try {
+                Path playerFilePath = Paths.get(path);
+                // Leggi il contenuto del file JSON e deserializza in un oggetto Giocatore
+                Gson gson = new Gson();
+
+                // Sovrascrivi il contenuto del file JSON con il nuovo JSON
+                String updatedJsonContent = gson.toJson(newGiocatore);
+                Files.write(playerFilePath, updatedJsonContent.getBytes());
+            } catch (IOException e) {
+                System.err.println("File non trovato " + e);
+            } catch (Exception e) {
+                System.err.println("Eccezione nella modifica del giocatore handler " + e);
+                e.printStackTrace();
+
+            }
+        }
+    }

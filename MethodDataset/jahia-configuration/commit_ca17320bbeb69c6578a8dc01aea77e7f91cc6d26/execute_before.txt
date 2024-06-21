@@ -1,0 +1,121 @@
+    public void execute() throws MojoExecutionException {
+        long timer = System.currentTimeMillis();
+        if (skipCheckDependencies || !isValidPackaging()) {
+            return;
+        }
+
+        initialize();
+
+        List<PackageInfo> bundlePluginExplicitPackages = null;
+        try {
+            bundlePluginExplicitPackages = new ArrayList<>();
+            getBundlePluginExplicitPackageImports(projectParsingContext, bundlePluginExplicitPackages, originalInstructions);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        int scanned;
+        try {
+            scanClassesBuildDirectory(projectParsingContext);
+
+            getLog().info("Scanned classes directory in " + (System.currentTimeMillis() - timer) + " ms. Found " + projectParsingContext.getLocalPackages().size() + " project packages.");
+
+            scanned = scanDependencies(projectParsingContext);
+        } catch (IOException e) {
+            throw new MojoExecutionException("Error while scanning dependencies", e);
+        } catch (DependencyResolutionRequiredException e) {
+            throw new MojoExecutionException("Error while scanning project packages", e);
+        }
+
+        getLog().info("Scanned " + scanned + " project dependencies in " + (System.currentTimeMillis() - timer) + " ms. Currently we have " + projectParsingContext.getLocalPackages().size() + " project packages.");
+
+        projectParsingContext.postProcess();
+
+        if (!projectParsingContext.getSplitPackages().isEmpty() && failBuildOnSplitPackages) {
+            StringBuilder splitPackageList = new StringBuilder();
+            for (PackageInfo packageInfo : projectParsingContext.getSplitPackages()) {
+                splitPackageList.append("  ");
+                splitPackageList.append(packageInfo.toString());
+                splitPackageList.append(" from locations:\n    ");
+                splitPackageList.append(StringUtils.join(packageInfo.getSourceLocations(), "\n    "));
+                splitPackageList.append("\n");
+            }
+            throw new MojoExecutionException("Detected split packages:\n" + splitPackageList.toString());
+        }
+
+        String extension = project.getPackaging();
+        if ("bundle".equals(extension)) {
+            extension = "jar";
+        }
+        String artifactFilePath = project.getBuild().getDirectory() + "/" + project.getBuild().getFinalName() + "." + extension;
+
+        File artifactFile = new File(artifactFilePath);
+        if (!artifactFile.exists()) {
+            throw new MojoExecutionException("No artifact generated for project, was the goal called in the proper phase (should be verify) ?");
+        }
+
+        Set<String> allPackages = getAvailablePackages();
+        try (Jar jarFile = new Jar(artifactFile)) {
+            // Include all local packages
+            allPackages.addAll(jarFile.getPackages());
+
+            Manifest manifest = jarFile.getManifest();
+            if (manifest.getMainAttributes() == null) {
+                throw new MojoExecutionException("Error reading OSGi bundle manifest data from artifact " + artifactFile);
+            }
+            String importPackageHeaderValue = manifest.getMainAttributes().getValue(Constants.IMPORT_PACKAGE);
+            Set<String> visitedPackageImports = new TreeSet<>();
+            if (importPackageHeaderValue != null) {
+                List<ManifestValueClause> importPackageClauses = BundleUtils.getHeaderClauses(Constants.IMPORT_PACKAGE, importPackageHeaderValue);
+                List<ManifestValueClause> clausesToRemove = new ArrayList<>();
+                boolean modifiedImportPackageClauses = false;
+                for (ManifestValueClause importPackageClause : importPackageClauses) {
+                    for (String importPackagePath : importPackageClause.getPaths()) {
+                        PackageInfo info = getPackageInfo(existingPackageImports, importPackagePath);
+                        if (info == null) {
+                            info = getPackageInfo(bundlePluginExplicitPackages, importPackagePath);
+                        }
+                        if (info != null) {
+                            // the package was explicitely configured either through Maven properties or through
+                            // explicit configuration in the bundle plugin, in this case we will not touch the
+                            // package's resolution directive
+                            getLog().info("Explicit package configuration found for " + importPackagePath + ".");
+                            if (info.getVersion() != null) {
+                                String bndVersion = importPackageClause.getAttributes().get(Constants.VERSION_ATTRIBUTE);
+                                if (!bndVersion.equals(info.getVersion())) {
+                                    getLog().info("Explicit package configuration version" + info.getVersion() + " is different than BND one " + bndVersion + " for " + importPackagePath + ".");
+                                    modifiedImportPackageClauses = true;
+                                }
+                                importPackageClause.getAttributes().put(Constants.VERSION_ATTRIBUTE, info.getVersion());
+                            }
+                            for (Map.Entry<Object, Object> entry : info.getOtherDirectives().entrySet()) {
+                                importPackageClause.getDirectives().put((String) entry.getKey(), (String) entry.getValue());
+                            }
+                        } else if (!"mandatory".equals(importPackageClause.getDirectives().get(Constants.RESOLUTION)) && !allPackages.contains(importPackagePath)) {
+                            importPackageClause.getDirectives().put(Constants.RESOLUTION, Constants.OPTIONAL);
+                            modifiedImportPackageClauses = true;
+                        }
+                        if (visitedPackageImports.contains(importPackagePath)) {
+                            getLog().warn("Duplicate import detected on package " + importPackagePath + ", will remove duplicate. To remove this warning remove the duplicate import (possibly coming from a explicit import in the maven-bundle-plugin instructions)");
+                            clausesToRemove.add(importPackageClause);
+                            modifiedImportPackageClauses = true;
+                        }
+
+                        visitedPackageImports.add(importPackagePath);
+                    }
+                }
+                if (modifiedImportPackageClauses) {
+                    for (ManifestValueClause clauseToRemove : clausesToRemove) {
+                        boolean removeSuccessful = importPackageClauses.remove(clauseToRemove);
+                        if (!removeSuccessful) {
+                            getLog().warn("Removal of clause " + clauseToRemove + " was not successful, duplicates may still remain in Manifest !");
+                        }
+                    }
+                    updateBundle(manifest, importPackageClauses, artifactFile);
+                }
+            }
+        } catch (Exception e) {
+            throw new MojoExecutionException("Error reading OSGi bundle manifest data from artifact " + artifactFile, e);
+        }
+    }

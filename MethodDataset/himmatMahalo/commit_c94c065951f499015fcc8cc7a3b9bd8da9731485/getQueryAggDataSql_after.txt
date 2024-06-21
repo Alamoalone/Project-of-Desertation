@@ -1,0 +1,27 @@
+    private String getQueryAggDataSql(Map<String, String> dataSource, Map<String, String> query, AggConfig config) throws Exception {
+        Stream<DimensionConfig> c = config.getColumns().stream();
+        Stream<DimensionConfig> r = config.getRows().stream();
+        Stream<DimensionConfig> f = config.getFilters().stream();
+        Stream<DimensionConfig> filters = Stream.concat(Stream.concat(c, r), f);
+        Map<String, Integer> types = getColumnType(dataSource, query);
+        Stream<DimensionConfigHelper> predicates = filters.map(fe -> new DimensionConfigHelper(fe, types.get(fe.getColumnName())));
+        Stream<DimensionConfig> dimStream = Stream.concat(config.getColumns().stream(), config.getRows().stream());
+
+        String dimColsStr = assembleDimColumns(dimStream);
+        String aggColsStr = assembleAggValColumns(config.getValues().stream());
+        String whereStr = assembleSqlFilter(predicates, "WHERE");
+        String groupByStr = StringUtils.isBlank(dimColsStr) ? "" : "GROUP BY " + dimColsStr;
+
+        StringJoiner selectColsStr = new StringJoiner(",");
+        if (!StringUtils.isBlank(dimColsStr)) {
+            selectColsStr.add(dimColsStr);
+        }
+        if (!StringUtils.isBlank(aggColsStr)) {
+            selectColsStr.add(aggColsStr);
+        }
+
+        String subQuerySql = getAsSubQuery(query.get(SQL));
+        String fsql = "\nSELECT %s \n FROM (\n%s\n) __view__ \n %s \n %s";
+        String exec = String.format(fsql, selectColsStr, subQuerySql, whereStr, groupByStr);
+        return exec;
+    }

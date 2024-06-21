@@ -1,0 +1,2 @@
+validatePhotoChecksumExist(MultipartFile file)
+testValidatePhotoChecksumExist(MultipartFile file)

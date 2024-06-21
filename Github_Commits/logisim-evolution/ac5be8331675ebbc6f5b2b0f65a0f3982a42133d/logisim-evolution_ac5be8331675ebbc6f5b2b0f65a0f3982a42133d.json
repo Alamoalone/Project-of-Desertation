@@ -1,0 +1,98 @@
+{
+    "sha": "ac5be8331675ebbc6f5b2b0f65a0f3982a42133d",
+    "node_id": "C_kwDOAXGG0toAKGFjNWJlODMzMTY3NWViYmM2ZjViMmIwZjY1YTBmMzk4MmE0MjEzM2Q",
+    "commit": {
+        "author": {
+            "name": "David Hutchens",
+            "email": "David.Hutchens@millersville.edu",
+            "date": "2022-06-25T15:31:44Z"
+        },
+        "committer": {
+            "name": "David Hutchens",
+            "email": "David.Hutchens@millersville.edu",
+            "date": "2023-07-22T18:36:39Z"
+        },
+        "message": "Fix null pointer exception",
+        "tree": {
+            "sha": "7653384c3a4212dda7360b162f1cbe99d307c236",
+            "url": "https://api.github.com/repos/logisim-evolution/logisim-evolution/git/trees/7653384c3a4212dda7360b162f1cbe99d307c236"
+        },
+        "url": "https://api.github.com/repos/logisim-evolution/logisim-evolution/git/commits/ac5be8331675ebbc6f5b2b0f65a0f3982a42133d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/logisim-evolution/logisim-evolution/commits/ac5be8331675ebbc6f5b2b0f65a0f3982a42133d",
+    "html_url": "https://github.com/logisim-evolution/logisim-evolution/commit/ac5be8331675ebbc6f5b2b0f65a0f3982a42133d",
+    "comments_url": "https://api.github.com/repos/logisim-evolution/logisim-evolution/commits/ac5be8331675ebbc6f5b2b0f65a0f3982a42133d/comments",
+    "author": {
+        "login": "davidhutchens",
+        "id": 39312025,
+        "node_id": "MDQ6VXNlcjM5MzEyMDI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39312025?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davidhutchens",
+        "html_url": "https://github.com/davidhutchens",
+        "followers_url": "https://api.github.com/users/davidhutchens/followers",
+        "following_url": "https://api.github.com/users/davidhutchens/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davidhutchens/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davidhutchens/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davidhutchens/subscriptions",
+        "organizations_url": "https://api.github.com/users/davidhutchens/orgs",
+        "repos_url": "https://api.github.com/users/davidhutchens/repos",
+        "events_url": "https://api.github.com/users/davidhutchens/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davidhutchens/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "davidhutchens",
+        "id": 39312025,
+        "node_id": "MDQ6VXNlcjM5MzEyMDI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39312025?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davidhutchens",
+        "html_url": "https://github.com/davidhutchens",
+        "followers_url": "https://api.github.com/users/davidhutchens/followers",
+        "following_url": "https://api.github.com/users/davidhutchens/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davidhutchens/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davidhutchens/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davidhutchens/subscriptions",
+        "organizations_url": "https://api.github.com/users/davidhutchens/orgs",
+        "repos_url": "https://api.github.com/users/davidhutchens/repos",
+        "events_url": "https://api.github.com/users/davidhutchens/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davidhutchens/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3bdb4366a59cd4d5db83cf2cdf43ce1aca537204",
+            "url": "https://api.github.com/repos/logisim-evolution/logisim-evolution/commits/3bdb4366a59cd4d5db83cf2cdf43ce1aca537204",
+            "html_url": "https://github.com/logisim-evolution/logisim-evolution/commit/3bdb4366a59cd4d5db83cf2cdf43ce1aca537204"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 6,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "0dd6877ca29352d8a6b1efcc8295734fc21b8627",
+            "filename": "src/main/java/com/cburch/logisim/analyze/gui/KarnaughMapPanel.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 4,
+            "changes": 10,
+            "blob_url": "https://github.com/logisim-evolution/logisim-evolution/blob/ac5be8331675ebbc6f5b2b0f65a0f3982a42133d/src%2Fmain%2Fjava%2Fcom%2Fcburch%2Flogisim%2Fanalyze%2Fgui%2FKarnaughMapPanel.java",
+            "raw_url": "https://github.com/logisim-evolution/logisim-evolution/raw/ac5be8331675ebbc6f5b2b0f65a0f3982a42133d/src%2Fmain%2Fjava%2Fcom%2Fcburch%2Flogisim%2Fanalyze%2Fgui%2FKarnaughMapPanel.java",
+            "contents_url": "https://api.github.com/repos/logisim-evolution/logisim-evolution/contents/src%2Fmain%2Fjava%2Fcom%2Fcburch%2Flogisim%2Fanalyze%2Fgui%2FKarnaughMapPanel.java?ref=ac5be8331675ebbc6f5b2b0f65a0f3982a42133d",
+            "patch": "@@ -235,10 +235,12 @@ private void computePreferredSize() {\n       var boxHeight = Math.max(linedKMapInfo.getHeight(), numberedKMapInfo.getHeight());\n       linedKMapInfo.calculateOffsets(boxWidth, boxHeight);\n       numberedKMapInfo.calculateOffsets(boxWidth, boxHeight);\n-      final var ctx = g.getFontRenderContext();\n-      int selectedHeight;\n-      final var t1 = new TextLayout(S.get(\"SelectedKmapGroup\"), headerFont, ctx);\n-      selectedHeight = 3 * (int) t1.getBounds().getHeight();\n+      int selectedHeight = 0;\n+      if (g != null) {\n+        final var ctx = g.getFontRenderContext();\n+        final var t1 = new TextLayout(S.get(\"SelectedKmapGroup\"), headerFont, ctx);\n+        selectedHeight = 3 * (int) t1.getBounds().getHeight();\n+      }\n       selInfo = Bounds.create(0, boxHeight, boxWidth, selectedHeight);\n       setPreferredSize(new Dimension(boxWidth, boxHeight + selectedHeight));\n       kMapDim = new Dimension(boxWidth, boxHeight);"
+        }
+    ]
+}

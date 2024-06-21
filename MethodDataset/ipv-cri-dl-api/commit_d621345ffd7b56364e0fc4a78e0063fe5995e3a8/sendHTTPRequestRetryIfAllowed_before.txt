@@ -1,0 +1,90 @@
+    public CloseableHttpResponse sendHTTPRequestRetryIfAllowed(
+            HttpUriRequest request, HttpRetryStatusConfig httpRetryStatusConfig)
+            throws IOException {
+
+        CloseableHttpResponse httpResponse = null;
+
+        // 0 is initial request, > 0 are retries
+        int tryCount = 0;
+        boolean retry = false;
+
+        do {
+            // "If" added for capturing retries
+            if (retry) {
+                eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendRetryMetric());
+            }
+
+            // Wait before sending request (0ms for first try)
+            sleepHelper.busyWaitWithExponentialBackOff(tryCount);
+
+            try {
+                httpResponse = httpClient.execute(request);
+
+                int statusCode = httpResponse.getStatusLine().getStatusCode();
+
+                retry = httpRetryStatusConfig.shouldHttpClientRetry(statusCode);
+
+                if (retry) {
+                    LOGGER.warn("shouldHttpClientRetry statusCode - {}", statusCode);
+                }
+
+                LOGGER.info(
+                        "HTTPRequestRetry - totalRequests {}, retries {}, retryNeeded {}, statusCode {}",
+                        tryCount + 1,
+                        tryCount,
+                        retry,
+                        statusCode);
+
+            } catch (IOException e) {
+                if (!(e instanceof HttpConnectTimeoutException)) {
+                    // Only HttpConnectTimeoutException can be retried, All other IOExceptions are
+                    // not
+                    LOGGER.warn("Failed to send request - reason {}", e.getMessage());
+                    eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendFailMetric(e));
+                    throw e;
+                }
+
+                // For retries (tryCount>0) we want to rethrow only the last
+                // HttpConnectTimeoutException
+                if (tryCount < maxRetries) {
+
+                    LOGGER.info(
+                            "HTTPRequestRetry {} - totalRequests {}, retries {}, retrying {}",
+                            e.getMessage(),
+                            tryCount + 1,
+                            tryCount,
+                            true);
+
+                    retry = true;
+                } else {
+
+                    LOGGER.info(
+                            "HTTPRequestRetry {} - totalRequests {}, retries {}, retrying {}",
+                            e.getMessage(),
+                            tryCount + 1,
+                            tryCount,
+                            false);
+
+                    LOGGER.warn("Failed to send request - reason {}", e.getMessage());
+                    eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendFailMetric(e));
+
+                    throw e;
+                }
+            }
+        } while (retry && (tryCount++ < maxRetries));
+
+        int lastStatusCode = httpResponse.getStatusLine().getStatusCode();
+        LOGGER.info("HTTPRequestRetry Exited lastStatusCode {}", lastStatusCode);
+
+        if (httpRetryStatusConfig.isSuccessStatusCode(lastStatusCode)) {
+            eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendOkMetric());
+        } else if (tryCount < maxRetries) {
+            // Reachable when the remote api responds initially with a retryable status code, then
+            // during a retry with a non-retryable status code.
+            eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendErrorMetric());
+        } else {
+            eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerMaxRetriesMetric());
+        }
+
+        return httpResponse;
+    }

@@ -1,0 +1,146 @@
+{
+    "sha": "e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+    "node_id": "C_kwDOK3oq49oAKGU5MmM0MmY4OWYxZTlhZDQ1NWMxZGU4OGNhNmU4YzQxYWI4NDY5OWY",
+    "commit": {
+        "author": {
+            "name": "marvinkn",
+            "email": "marvin.nyingi97@gmail.com",
+            "date": "2024-02-17T08:15:12Z"
+        },
+        "committer": {
+            "name": "marvinkn",
+            "email": "marvin.nyingi97@gmail.com",
+            "date": "2024-02-17T08:15:12Z"
+        },
+        "message": "handled null pointer exception cases -> Optional<Customer>",
+        "tree": {
+            "sha": "7b3b6a05d79c9d5a0ddd6573f39cc1b3647041f3",
+            "url": "https://api.github.com/repos/marvinkn97/presta-savings/git/trees/7b3b6a05d79c9d5a0ddd6573f39cc1b3647041f3"
+        },
+        "url": "https://api.github.com/repos/marvinkn97/presta-savings/git/commits/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/marvinkn97/presta-savings/commits/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+    "html_url": "https://github.com/marvinkn97/presta-savings/commit/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+    "comments_url": "https://api.github.com/repos/marvinkn97/presta-savings/commits/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/comments",
+    "author": {
+        "login": "marvinkn97",
+        "id": 64038372,
+        "node_id": "MDQ6VXNlcjY0MDM4Mzcy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/64038372?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marvinkn97",
+        "html_url": "https://github.com/marvinkn97",
+        "followers_url": "https://api.github.com/users/marvinkn97/followers",
+        "following_url": "https://api.github.com/users/marvinkn97/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marvinkn97/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marvinkn97/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marvinkn97/subscriptions",
+        "organizations_url": "https://api.github.com/users/marvinkn97/orgs",
+        "repos_url": "https://api.github.com/users/marvinkn97/repos",
+        "events_url": "https://api.github.com/users/marvinkn97/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marvinkn97/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "marvinkn97",
+        "id": 64038372,
+        "node_id": "MDQ6VXNlcjY0MDM4Mzcy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/64038372?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marvinkn97",
+        "html_url": "https://github.com/marvinkn97",
+        "followers_url": "https://api.github.com/users/marvinkn97/followers",
+        "following_url": "https://api.github.com/users/marvinkn97/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marvinkn97/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marvinkn97/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marvinkn97/subscriptions",
+        "organizations_url": "https://api.github.com/users/marvinkn97/orgs",
+        "repos_url": "https://api.github.com/users/marvinkn97/repos",
+        "events_url": "https://api.github.com/users/marvinkn97/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marvinkn97/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "188fb7b97e3a363add759881ce88230afc12b4f7",
+            "url": "https://api.github.com/repos/marvinkn97/presta-savings/commits/188fb7b97e3a363add759881ce88230afc12b4f7",
+            "html_url": "https://github.com/marvinkn97/presta-savings/commit/188fb7b97e3a363add759881ce88230afc12b4f7"
+        }
+    ],
+    "stats": {
+        "total": 52,
+        "additions": 18,
+        "deletions": 34
+    },
+    "files": [
+        {
+            "sha": "5f1125de0afa80e7dd802f535ebc3c9bb5380a67",
+            "filename": "README.md",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 2,
+            "changes": 9,
+            "blob_url": "https://github.com/marvinkn97/presta-savings/blob/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/README.md",
+            "raw_url": "https://github.com/marvinkn97/presta-savings/raw/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/README.md",
+            "contents_url": "https://api.github.com/repos/marvinkn97/presta-savings/contents/README.md?ref=e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+            "patch": "@@ -19,6 +19,7 @@\n        +  Lombok\n        +  Spring Security\n        +  TestContainers for DAO Layer unit testing \n+       +  Flyway for seamless database migrations\n      \n    +    Features\n         +  Customer Management\n@@ -35,6 +36,10 @@\n            +  Record payment (positive adjustment)\n            +  Negative adjustment\n            +  View Payment\n-   \n+        +  Notification Service\n+           +  email notification\n+           +  sms notification\n   +    TODO\n-       +  Implement Testing\n\\ No newline at end of file\n+       +  Implement Testing\n+       +  Implement Security\n+       + Document the APIs using both Postman and Swagger, providing clear descriptions and examples for each endpoint."
+        },
+        {
+            "sha": "cee4ff1e8219235461a76bc5ddad89b4be304c94",
+            "filename": "flow.txt",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 24,
+            "changes": 24,
+            "blob_url": "https://github.com/marvinkn97/presta-savings/blob/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/flow.txt",
+            "raw_url": "https://github.com/marvinkn97/presta-savings/raw/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/flow.txt",
+            "contents_url": "https://api.github.com/repos/marvinkn97/presta-savings/contents/flow.txt?ref=e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+            "patch": "@@ -1,27 +1,3 @@\n-      +  Ensured proper error handling and validation of incoming requests.\n-      +  Implemented unit tests to validate the functionality of the API endpoints.\n-\n-Ensure proper error handling and validation of incoming requests.\n-Implement unit tests to validate the functionality of the API endpoints.\n-Document the APIs using both Postman and Swagger, providing clear descriptions and examples for each endpoint.\n-\n-\n-##########################################\n-\n-notification service that will expose send notification api\n-type: SMS or EMAIL\n-to: 254722XXXXX\n-from: CAKEYARD\n-subject - optional for sms\n-content: Thank you for your business....\n-etc..\n-\n-\n-Send email notification\n-send sms notification - notification service\n-send auth request to the external auth services...\n-send a reequest - payment service\n-\n \n 4.1. Sprint 1 Features\n Feat 1: Authentication requirements"
+        },
+        {
+            "sha": "783af0bbf64a09c977d33d5439011ddfe8791a22",
+            "filename": "src/main/java/dev/marvin/savings/customer/dao/CustomerDao.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/marvinkn97/presta-savings/blob/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fdao%2FCustomerDao.java",
+            "raw_url": "https://github.com/marvinkn97/presta-savings/raw/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fdao%2FCustomerDao.java",
+            "contents_url": "https://api.github.com/repos/marvinkn97/presta-savings/contents/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fdao%2FCustomerDao.java?ref=e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+            "patch": "@@ -12,7 +12,7 @@ public interface CustomerDao {\n \n     Optional<Customer> getCustomerByMemberNumber(String memberNumber);\n \n-    Customer getCustomerByEmail(String email);\n+    Optional<Customer> getCustomerByEmail(String email);\n \n     Boolean updateCustomer(Customer customer);\n "
+        },
+        {
+            "sha": "528602c13e4e3b55d6b14c2aaf6d52a5240ca175",
+            "filename": "src/main/java/dev/marvin/savings/customer/dao/CustomerDaoImpl.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 3,
+            "changes": 7,
+            "blob_url": "https://github.com/marvinkn97/presta-savings/blob/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fdao%2FCustomerDaoImpl.java",
+            "raw_url": "https://github.com/marvinkn97/presta-savings/raw/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fdao%2FCustomerDaoImpl.java",
+            "contents_url": "https://api.github.com/repos/marvinkn97/presta-savings/contents/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fdao%2FCustomerDaoImpl.java?ref=e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+            "patch": "@@ -61,13 +61,14 @@ public Optional<Customer> getCustomerByMemberNumber(String memberNumber) {\n     }\n \n     @Override\n-    public Customer getCustomerByEmail(String email) {\n+    public Optional<Customer> getCustomerByEmail(String email) {\n         String sql = \"\"\"\n                 SELECT member_number, customer_name, email, password, mobile_no, government_id, created_date\n                 FROM t_customer\n                 WHERE email = ?\n                 \"\"\";\n-        return jdbcTemplate.queryForObject(sql, customerRowMapper);\n+        List<Customer> customers = jdbcTemplate.query(sql, customerRowMapper, email);\n+        return customers.isEmpty() ? Optional.empty() : Optional.of(customers.get(0));\n     }\n \n     @Override\n@@ -94,7 +95,7 @@ public Boolean updateCustomer(Customer customer) {\n             log.info(\"CUSTOMER UPDATE EMAIL RESULT = \" + rowsAffected);\n         }\n \n-        if(customer.getMobile() != null){\n+        if (customer.getMobile() != null) {\n             String sql = \"\"\"\n                     UPDATE t_customer\n                     SET mobile_no = ?"
+        },
+        {
+            "sha": "477336e6266cb61d2bc3b19d2f7a1c5c247def0f",
+            "filename": "src/main/java/dev/marvin/savings/customer/service/CustomerServiceImpl.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 4,
+            "changes": 10,
+            "blob_url": "https://github.com/marvinkn97/presta-savings/blob/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fservice%2FCustomerServiceImpl.java",
+            "raw_url": "https://github.com/marvinkn97/presta-savings/raw/e92c42f89f1e9ad455c1de88ca6e8c41ab84699f/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fservice%2FCustomerServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/marvinkn97/presta-savings/contents/src%2Fmain%2Fjava%2Fdev%2Fmarvin%2Fsavings%2Fcustomer%2Fservice%2FCustomerServiceImpl.java?ref=e92c42f89f1e9ad455c1de88ca6e8c41ab84699f",
+            "patch": "@@ -34,14 +34,16 @@ public class CustomerServiceImpl implements CustomerService, UserDetailsService\n \n     @Override\n     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {\n-        Customer customer = customerDao.getCustomerByEmail(email);\n-\n-        if (customer == null) {\n+        Optional<Customer> customer = customerDao.getCustomerByEmail(email);\n+        Customer existingCustomer;\n+        if (customer.isPresent()) {\n+            existingCustomer = customer.get();\n+            return existingCustomer;\n+        } else {\n             System.out.println(\"Customer 404\");\n             throw new UsernameNotFoundException(\"Customer with email [%s] not found\".formatted(email));\n         }\n \n-        return customer;\n     }\n \n     @Override"
+        }
+    ]
+}

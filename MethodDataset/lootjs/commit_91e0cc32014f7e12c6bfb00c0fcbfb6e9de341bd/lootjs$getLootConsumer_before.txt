@@ -1,0 +1,3 @@
+    public LootConsumer lootjs$getLootConsumer() {
+        return lootjs$lootConsumer;
+    }

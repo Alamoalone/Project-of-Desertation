@@ -1,0 +1,36 @@
+    private Float getCpuUsageForLowerVersion() {
+        Long cpuTime = 0L;
+        Long appTime = 0L;
+        Float value = 0.0f;
+        try {
+            if (procStatFile == null || appStatFile == null) {
+                procStatFile = new RandomAccessFile("/proc/stat", "r");
+                appStatFile = new RandomAccessFile("/proc/" + android.os.Process.myPid() + "/stat", "r");
+            } else {
+                procStatFile.seek(0L);
+                appStatFile.seek(0L);
+            }
+
+            String procStatString = procStatFile.readLine();
+            String appStatString = appStatFile.readLine();
+            String[] procStats = procStatString.split(" ");
+            String[] appStats = appStatString.split(" ");
+            cpuTime = Long.parseLong(procStats[2]) + Long.parseLong(procStats[3])
+                    + Long.parseLong(procStats[4]) + Long.parseLong(procStats[5])
+                    + Long.parseLong(procStats[6]) + Long.parseLong(procStats[7])
+                    + Long.parseLong(procStats[8]);
+            appTime = Long.parseLong(appStats[13]) + Long.parseLong(appStats[14]);
+
+            if (lastAppCpuTime == null && lastCpuTime == null) {
+                lastAppCpuTime = appTime;
+                lastCpuTime = cpuTime;
+                return value;
+            }
+            value = (float) (appTime - lastAppCpuTime) / (float) (cpuTime - lastCpuTime) / (float) (appTime - lastAppCpuTime) * 100.0f;
+            lastCpuTime = cpuTime;
+            lastAppCpuTime = appTime;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return value;
+    }

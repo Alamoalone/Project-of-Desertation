@@ -1,0 +1,9 @@
+	public PrivateKey getUserPrivateKeyObject() 
+	{
+		if (this.userPrivateKeyObject == null)
+		{
+			this.userPrivateKeyObject = CryptoLib.decodePrivateKeyFromBase64(this.userPrivateKey);
+		}
+		
+		return this.userPrivateKeyObject;
+	}

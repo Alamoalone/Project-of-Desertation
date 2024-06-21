@@ -1,0 +1,110 @@
+{
+    "sha": "3751a69922b22178a3cef92e9d9993bbaaaf5f8f",
+    "node_id": "C_kwDOKonV29oAKDM3NTFhNjk5MjJiMjIxNzhhM2NlZjkyZTlkOTk5M2JiYWFhZjVmOGY",
+    "commit": {
+        "author": {
+            "name": "Imperial-Slug",
+            "email": "111785134+Imperial-Slug@users.noreply.github.com",
+            "date": "2023-12-16T07:15:03Z"
+        },
+        "committer": {
+            "name": "Imperial-Slug",
+            "email": "111785134+Imperial-Slug@users.noreply.github.com",
+            "date": "2023-12-16T07:15:03Z"
+        },
+        "message": "- ships can now target each other and attack accurately, then switch to t he next target\n- fixed null pointer exception with !=null handling",
+        "tree": {
+            "sha": "a7b0a9b6fadd7a000ce88bdecd6d81e8b0973cdd",
+            "url": "https://api.github.com/repos/Imperial-Slug/vssg/git/trees/a7b0a9b6fadd7a000ce88bdecd6d81e8b0973cdd"
+        },
+        "url": "https://api.github.com/repos/Imperial-Slug/vssg/git/commits/3751a69922b22178a3cef92e9d9993bbaaaf5f8f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Imperial-Slug/vssg/commits/3751a69922b22178a3cef92e9d9993bbaaaf5f8f",
+    "html_url": "https://github.com/Imperial-Slug/vssg/commit/3751a69922b22178a3cef92e9d9993bbaaaf5f8f",
+    "comments_url": "https://api.github.com/repos/Imperial-Slug/vssg/commits/3751a69922b22178a3cef92e9d9993bbaaaf5f8f/comments",
+    "author": {
+        "login": "Imperial-Slug",
+        "id": 111785134,
+        "node_id": "U_kgDOBqm0rg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/111785134?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Imperial-Slug",
+        "html_url": "https://github.com/Imperial-Slug",
+        "followers_url": "https://api.github.com/users/Imperial-Slug/followers",
+        "following_url": "https://api.github.com/users/Imperial-Slug/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Imperial-Slug/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Imperial-Slug/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Imperial-Slug/subscriptions",
+        "organizations_url": "https://api.github.com/users/Imperial-Slug/orgs",
+        "repos_url": "https://api.github.com/users/Imperial-Slug/repos",
+        "events_url": "https://api.github.com/users/Imperial-Slug/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Imperial-Slug/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Imperial-Slug",
+        "id": 111785134,
+        "node_id": "U_kgDOBqm0rg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/111785134?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Imperial-Slug",
+        "html_url": "https://github.com/Imperial-Slug",
+        "followers_url": "https://api.github.com/users/Imperial-Slug/followers",
+        "following_url": "https://api.github.com/users/Imperial-Slug/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Imperial-Slug/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Imperial-Slug/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Imperial-Slug/subscriptions",
+        "organizations_url": "https://api.github.com/users/Imperial-Slug/orgs",
+        "repos_url": "https://api.github.com/users/Imperial-Slug/repos",
+        "events_url": "https://api.github.com/users/Imperial-Slug/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Imperial-Slug/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "69911d81f1092a8e268f58d20d6f461aad9f112f",
+            "url": "https://api.github.com/repos/Imperial-Slug/vssg/commits/69911d81f1092a8e268f58d20d6f461aad9f112f",
+            "html_url": "https://github.com/Imperial-Slug/vssg/commit/69911d81f1092a8e268f58d20d6f461aad9f112f"
+        }
+    ],
+    "stats": {
+        "total": 23,
+        "additions": 17,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "e4e9f9ee49cacb7205e28261d9e95a5a2b149c2d",
+            "filename": "core/src/com/game/vssg/Ship.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 1,
+            "changes": 11,
+            "blob_url": "https://github.com/Imperial-Slug/vssg/blob/3751a69922b22178a3cef92e9d9993bbaaaf5f8f/core%2Fsrc%2Fcom%2Fgame%2Fvssg%2FShip.java",
+            "raw_url": "https://github.com/Imperial-Slug/vssg/raw/3751a69922b22178a3cef92e9d9993bbaaaf5f8f/core%2Fsrc%2Fcom%2Fgame%2Fvssg%2FShip.java",
+            "contents_url": "https://api.github.com/repos/Imperial-Slug/vssg/contents/core%2Fsrc%2Fcom%2Fgame%2Fvssg%2FShip.java?ref=3751a69922b22178a3cef92e9d9993bbaaaf5f8f",
+            "patch": "@@ -345,14 +345,23 @@ public void handleIdle(Ship ship) {\n \n \n     public void handleFire(Ship ship, Texture greenLaserTexture, Texture blueLaserTexture, Texture redLaserTexture, ObjectSet<Laser> lasers, Sound laserBlast) {\n+       Texture texture = null;\n         if (ship.getActionState() == ActionState.FIRE) {\n             if (ship.getActionCounter() <= 100) {\n \n                 actionCounter++;\n \n             } else if (ship.getActionCounter() > 100) {\n \n-                Laser laser = ship.fireLaser(redLaserTexture, ship);\n+                if (ship.faction == Faction.TEAL) {\n+                     texture = redLaserTexture;\n+                }\n+                else if (ship.faction == Faction.PURPLE) {\n+                    \n+                     texture = greenLaserTexture;\n+                } \n+                    \n+                    Laser laser = ship.fireLaser(texture, ship);\n                 laser.setShip(ship);\n                 lasers.add(laser);\n                 laserBlast.play(2f);"
+        },
+        {
+            "sha": "e3196d188ab51bbf641f214eaf587dc78dc3e836",
+            "filename": "core/src/com/game/vssg/VSSG.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 5,
+            "changes": 12,
+            "blob_url": "https://github.com/Imperial-Slug/vssg/blob/3751a69922b22178a3cef92e9d9993bbaaaf5f8f/core%2Fsrc%2Fcom%2Fgame%2Fvssg%2FVSSG.java",
+            "raw_url": "https://github.com/Imperial-Slug/vssg/raw/3751a69922b22178a3cef92e9d9993bbaaaf5f8f/core%2Fsrc%2Fcom%2Fgame%2Fvssg%2FVSSG.java",
+            "contents_url": "https://api.github.com/repos/Imperial-Slug/vssg/contents/core%2Fsrc%2Fcom%2Fgame%2Fvssg%2FVSSG.java?ref=3751a69922b22178a3cef92e9d9993bbaaaf5f8f",
+            "patch": "@@ -288,7 +288,7 @@ private void handleInput() {\n \n             if (!shipSpawnTimeout) {\n                 Vector2 position = new Vector2(camera.position.x, camera.position.y);\n-                CpuShip.ActionState actionState = Ship.ActionState.FIRE;\n+                CpuShip.ActionState actionState = Ship.ActionState.IDLE;\n                 Rectangle hitBox = new Rectangle();\n                 ObjectSet<Ship> targets = new ObjectSet<>();\n                 CpuShip cpuShip = new CpuShip(otherShipTexture, position, 400f, actionState, Ship.ActionState.IDLE, hitBox, actionCounter, Ship.Faction.PURPLE, targets);\n@@ -403,7 +403,7 @@ public void checkObjects(float deltaTime) {\n                         cpuShip.drawBoundingBox();\n                     }\n                 }\n-                cpuShip.setActionState(Ship.ActionState.ATTACK, cpuShip.getActionState());\n+               // cpuShip.setActionState(Ship.ActionState.ATTACK, cpuShip.getActionState());\n \n             }\n \n@@ -441,9 +441,11 @@ public void checkObjects(float deltaTime) {\n             cpuShip.handleActionState(cpuShip, greenLaserTexture, blueLaserTexture, redLaserTexture, lasers, laserBlast2);\n \n             for (Ship target : cpuShip.getTargets()) {\n-                if (!target.isActive()) {\n-                    cpuShip.getTargets().remove(target);\n-                    System.out.println(\"TARGET REMOVED\");\n+                if (target != null) {\n+                    if (!target.isActive()) {\n+                        cpuShip.getTargets().remove(target);\n+                        System.out.println(\"TARGET REMOVED\");\n+                    }\n                 }\n             }\n "
+        }
+    ]
+}

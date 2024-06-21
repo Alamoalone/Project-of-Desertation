@@ -1,0 +1,49 @@
+	protected JPanel createListPanel(T t) {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(1, 2));
+		JLabel label = new JLabel(t.toString());
+		UButton editButton = new UButton("Modifier");
+		editButton.addActionListener(e -> {
+			displayView(true);
+			clear();
+			mainPanel.add(createEditPanel(t));
+			refresh();
+		});
+		UButton deleteButton = new UButton("Supprimer");
+		deleteButton.addActionListener(e -> {
+			t.delete();
+			t.loadFromDatabase();
+			displayView(false);
+		});
+		panel.add(label);
+		panel.add(editButton);
+		panel.add(deleteButton);
+		return panel;
+	}
+
+	public void displayView(boolean isCreateMode) {
+		if (isCreateMode) {
+			clear();
+			JPanel formPanel = createFormPanel();
+			if (formPanel != null) {
+				mainPanel.add(formPanel);
+			}
+			refresh();
+			createButton.setText("Annuler");
+			inCreation = true;
+			return;
+		}
+		clear();
+		// search bar
+		JTextField searchBar = new JTextField();
+		searchBar.setMaximumSize(new Dimension(1000, 30));
+		searchBar.setPreferredSize(new Dimension(1000, 30));
+		searchBar.addActionListener(e -> search(searchBar));
+		topPanel.add(searchBar);
+		searchBar.setText("");
+		search(searchBar);
+		refresh();
+		createButton.setText("Créer " + name);
+		inCreation = false;
+	}
+

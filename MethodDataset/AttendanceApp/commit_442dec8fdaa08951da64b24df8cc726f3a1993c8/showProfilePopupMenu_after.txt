@@ -1,0 +1,21 @@
+    private void showProfilePopupMenu(View view) {
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        MenuInflater inflater = popupMenu.getMenuInflater();
+        inflater.inflate(R.menu.menu_main, popupMenu.getMenu());
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if (item.getItemId() == R.id.action_signout) {
+                    // Handle the "Sign Out" action here using Firebase Authentication
+                    FirebaseAuth.getInstance().signOut();
+                    Intent intent = new Intent(StudentHomePage.this, LoginPage.class);
+                    startActivity(intent);
+                    // You can also navigate the user back to the login screen or perform other actions as needed.
+                    finish();
+                    return true;
+                }
+                return false;
+            }
+        });
+        popupMenu.show();
+    }

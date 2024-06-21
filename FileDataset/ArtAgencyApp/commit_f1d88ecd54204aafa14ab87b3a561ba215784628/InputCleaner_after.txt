@@ -1,0 +1,18 @@
+    public Contact clean(Contact contact){
+        contact.setTitle(contact.getTitle().trim());
+
+        if(contact.getDescription() != null){
+            contact.setDescription(contact.getDescription().trim());
+        }
+        if(contact.getEmail() != null){
+            contact.setEmail(contact.getEmail().trim());
+        }
+        if(contact.getPhone() != null){
+            contact.setPhone(contact.getPhone().trim());
+        }
+        if(contact.getWebPage() != null){
+            contact.setWebPage(contact.getWebPage().trim());
+        }
+        return contact;
+    }
+

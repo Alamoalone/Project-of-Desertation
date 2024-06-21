@@ -1,0 +1,132 @@
+{
+    "sha": "c1d70900473e292ac0a4d5ff4df86222d0db6338",
+    "node_id": "C_kwDOKyQQWtoAKGMxZDcwOTAwNDczZTI5MmFjMGE0ZDVmZjRkZjg2MjIyZDBkYjYzMzg",
+    "commit": {
+        "author": {
+            "name": "josue",
+            "email": "6257586@edu.vaniercollege.qc.ca",
+            "date": "2023-12-09T20:16:23Z"
+        },
+        "committer": {
+            "name": "josue",
+            "email": "6257586@edu.vaniercollege.qc.ca",
+            "date": "2023-12-09T20:16:23Z"
+        },
+        "message": "Tried to fix null pointer exception",
+        "tree": {
+            "sha": "301eb44ead55777bc17ee3b82569d26c2ab3ec23",
+            "url": "https://api.github.com/repos/josuevanier/SchoolSystem/git/trees/301eb44ead55777bc17ee3b82569d26c2ab3ec23"
+        },
+        "url": "https://api.github.com/repos/josuevanier/SchoolSystem/git/commits/c1d70900473e292ac0a4d5ff4df86222d0db6338",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/josuevanier/SchoolSystem/commits/c1d70900473e292ac0a4d5ff4df86222d0db6338",
+    "html_url": "https://github.com/josuevanier/SchoolSystem/commit/c1d70900473e292ac0a4d5ff4df86222d0db6338",
+    "comments_url": "https://api.github.com/repos/josuevanier/SchoolSystem/commits/c1d70900473e292ac0a4d5ff4df86222d0db6338/comments",
+    "author": {
+        "login": "josuevanier",
+        "id": 150824779,
+        "node_id": "U_kgDOCP1nSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150824779?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/josuevanier",
+        "html_url": "https://github.com/josuevanier",
+        "followers_url": "https://api.github.com/users/josuevanier/followers",
+        "following_url": "https://api.github.com/users/josuevanier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/josuevanier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/josuevanier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/josuevanier/subscriptions",
+        "organizations_url": "https://api.github.com/users/josuevanier/orgs",
+        "repos_url": "https://api.github.com/users/josuevanier/repos",
+        "events_url": "https://api.github.com/users/josuevanier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/josuevanier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "josuevanier",
+        "id": 150824779,
+        "node_id": "U_kgDOCP1nSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150824779?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/josuevanier",
+        "html_url": "https://github.com/josuevanier",
+        "followers_url": "https://api.github.com/users/josuevanier/followers",
+        "following_url": "https://api.github.com/users/josuevanier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/josuevanier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/josuevanier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/josuevanier/subscriptions",
+        "organizations_url": "https://api.github.com/users/josuevanier/orgs",
+        "repos_url": "https://api.github.com/users/josuevanier/repos",
+        "events_url": "https://api.github.com/users/josuevanier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/josuevanier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b80ec1f0d9b0b4eb58c2d139c42513b939e12c89",
+            "url": "https://api.github.com/repos/josuevanier/SchoolSystem/commits/b80ec1f0d9b0b4eb58c2d139c42513b939e12c89",
+            "html_url": "https://github.com/josuevanier/SchoolSystem/commit/b80ec1f0d9b0b4eb58c2d139c42513b939e12c89"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 6,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "bfabf15f2ad22ed5f62a37470109d2e119f87c50",
+            "filename": "src/main/java/org/example/Main.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/josuevanier/SchoolSystem/blob/c1d70900473e292ac0a4d5ff4df86222d0db6338/src%2Fmain%2Fjava%2Forg%2Fexample%2FMain.java",
+            "raw_url": "https://github.com/josuevanier/SchoolSystem/raw/c1d70900473e292ac0a4d5ff4df86222d0db6338/src%2Fmain%2Fjava%2Forg%2Fexample%2FMain.java",
+            "contents_url": "https://api.github.com/repos/josuevanier/SchoolSystem/contents/src%2Fmain%2Fjava%2Forg%2Fexample%2FMain.java?ref=c1d70900473e292ac0a4d5ff4df86222d0db6338",
+            "patch": "@@ -33,7 +33,7 @@ public static void main(String[] args) {\n         c1.addCourse(\"Arrays\", 2.0,\"DOO1\");\n \n \n-        c1.hasRegisteredForThisCourse(\"SOO1\", \"COO3\");\n+        c1.hasRegisteredForThisCourse(\"SOO1\", \"COO4\");\n \n     }\n }"
+        },
+        {
+            "sha": "226c1703937bb926e899182597324a509bcf8147",
+            "filename": "src/main/java/org/example/dto/SchoolManagementSystem.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 1,
+            "changes": 6,
+            "blob_url": "https://github.com/josuevanier/SchoolSystem/blob/c1d70900473e292ac0a4d5ff4df86222d0db6338/src%2Fmain%2Fjava%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.java",
+            "raw_url": "https://github.com/josuevanier/SchoolSystem/raw/c1d70900473e292ac0a4d5ff4df86222d0db6338/src%2Fmain%2Fjava%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.java",
+            "contents_url": "https://api.github.com/repos/josuevanier/SchoolSystem/contents/src%2Fmain%2Fjava%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.java?ref=c1d70900473e292ac0a4d5ff4df86222d0db6338",
+            "patch": "@@ -198,9 +198,11 @@ public void registerCourse(String studentId, String courseId){\n      */\n     public Course findCourse(String courseId){\n         for(Course course : courses){\n-            if(courseId != null && course.getId().equals(courseId)){\n+            if((courseId != null) || course.getId() != null && course.getId().equals(courseId)){\n \n                 return course;\n+            }else if(course == null){\n+                System.out.println(\"Course might be null.\");\n             }\n         }\n         System.out.println(\"Course is not found !\");\n@@ -281,6 +283,8 @@ public boolean hasRegisteredForThisCourse(String studentId, String courseId) {\n                     return true;\n                 }\n             }\n+        }else if(course == null || student == null){\n+            System.out.println(\"Course or student was not found \\'Make sure you entered right id\\'\");\n         }\n \n         System.out.println(\"false\");"
+        },
+        {
+            "sha": "4bf552389cf236daec051ee8e885968d21b89381",
+            "filename": "target/classes/org/example/Main.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/josuevanier/SchoolSystem/blob/c1d70900473e292ac0a4d5ff4df86222d0db6338/target%2Fclasses%2Forg%2Fexample%2FMain.class",
+            "raw_url": "https://github.com/josuevanier/SchoolSystem/raw/c1d70900473e292ac0a4d5ff4df86222d0db6338/target%2Fclasses%2Forg%2Fexample%2FMain.class",
+            "contents_url": "https://api.github.com/repos/josuevanier/SchoolSystem/contents/target%2Fclasses%2Forg%2Fexample%2FMain.class?ref=c1d70900473e292ac0a4d5ff4df86222d0db6338"
+        },
+        {
+            "sha": "a91c37d465f7f1e3b11e2c5b6038e628031783b1",
+            "filename": "target/classes/org/example/dto/SchoolManagementSystem.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/josuevanier/SchoolSystem/blob/c1d70900473e292ac0a4d5ff4df86222d0db6338/target%2Fclasses%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.class",
+            "raw_url": "https://github.com/josuevanier/SchoolSystem/raw/c1d70900473e292ac0a4d5ff4df86222d0db6338/target%2Fclasses%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.class",
+            "contents_url": "https://api.github.com/repos/josuevanier/SchoolSystem/contents/target%2Fclasses%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.class?ref=c1d70900473e292ac0a4d5ff4df86222d0db6338"
+        }
+    ]
+}

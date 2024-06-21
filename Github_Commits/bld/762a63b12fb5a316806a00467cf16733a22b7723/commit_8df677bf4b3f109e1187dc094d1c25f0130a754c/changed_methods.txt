@@ -1,0 +1,1 @@
+addDependencies(Template t, Scope scope)

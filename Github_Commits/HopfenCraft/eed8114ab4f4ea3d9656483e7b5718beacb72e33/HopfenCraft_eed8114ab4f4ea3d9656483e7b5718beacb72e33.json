@@ -1,0 +1,98 @@
+{
+    "sha": "eed8114ab4f4ea3d9656483e7b5718beacb72e33",
+    "node_id": "C_kwDOKN6RFdoAKGVlZDgxMTRhYjRmNGVhM2Q5NjU2NDgzZTdiNTcxOGJlYWNiNzJlMzM",
+    "commit": {
+        "author": {
+            "name": "hugorithm",
+            "email": "hugofsilv@gmail.com",
+            "date": "2023-09-11T10:41:44Z"
+        },
+        "committer": {
+            "name": "hugorithm",
+            "email": "hugofsilv@gmail.com",
+            "date": "2023-09-11T10:41:44Z"
+        },
+        "message": "prevent null pointer exception",
+        "tree": {
+            "sha": "69fa4381daccc8f1b45e21abb2ceaa9d7b53419f",
+            "url": "https://api.github.com/repos/hugorithm/HopfenCraft/git/trees/69fa4381daccc8f1b45e21abb2ceaa9d7b53419f"
+        },
+        "url": "https://api.github.com/repos/hugorithm/HopfenCraft/git/commits/eed8114ab4f4ea3d9656483e7b5718beacb72e33",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hugorithm/HopfenCraft/commits/eed8114ab4f4ea3d9656483e7b5718beacb72e33",
+    "html_url": "https://github.com/hugorithm/HopfenCraft/commit/eed8114ab4f4ea3d9656483e7b5718beacb72e33",
+    "comments_url": "https://api.github.com/repos/hugorithm/HopfenCraft/commits/eed8114ab4f4ea3d9656483e7b5718beacb72e33/comments",
+    "author": {
+        "login": "hugorithm",
+        "id": 26043517,
+        "node_id": "MDQ6VXNlcjI2MDQzNTE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26043517?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hugorithm",
+        "html_url": "https://github.com/hugorithm",
+        "followers_url": "https://api.github.com/users/hugorithm/followers",
+        "following_url": "https://api.github.com/users/hugorithm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hugorithm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hugorithm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hugorithm/subscriptions",
+        "organizations_url": "https://api.github.com/users/hugorithm/orgs",
+        "repos_url": "https://api.github.com/users/hugorithm/repos",
+        "events_url": "https://api.github.com/users/hugorithm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hugorithm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "hugorithm",
+        "id": 26043517,
+        "node_id": "MDQ6VXNlcjI2MDQzNTE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26043517?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hugorithm",
+        "html_url": "https://github.com/hugorithm",
+        "followers_url": "https://api.github.com/users/hugorithm/followers",
+        "following_url": "https://api.github.com/users/hugorithm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hugorithm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hugorithm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hugorithm/subscriptions",
+        "organizations_url": "https://api.github.com/users/hugorithm/orgs",
+        "repos_url": "https://api.github.com/users/hugorithm/repos",
+        "events_url": "https://api.github.com/users/hugorithm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hugorithm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "785f012a385984b95032263e245fe174c673fcde",
+            "url": "https://api.github.com/repos/hugorithm/HopfenCraft/commits/785f012a385984b95032263e245fe174c673fcde",
+            "html_url": "https://github.com/hugorithm/HopfenCraft/commit/785f012a385984b95032263e245fe174c673fcde"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 6,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "dafb06d3b69a18b1a8f644b0cf497c8c881358a3",
+            "filename": "src/test/java/com/hugorithm/hopfencraft/integration/ShoppingCartIntegrationTests.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 6,
+            "changes": 12,
+            "blob_url": "https://github.com/hugorithm/HopfenCraft/blob/eed8114ab4f4ea3d9656483e7b5718beacb72e33/src%2Ftest%2Fjava%2Fcom%2Fhugorithm%2Fhopfencraft%2Fintegration%2FShoppingCartIntegrationTests.java",
+            "raw_url": "https://github.com/hugorithm/HopfenCraft/raw/eed8114ab4f4ea3d9656483e7b5718beacb72e33/src%2Ftest%2Fjava%2Fcom%2Fhugorithm%2Fhopfencraft%2Fintegration%2FShoppingCartIntegrationTests.java",
+            "contents_url": "https://api.github.com/repos/hugorithm/HopfenCraft/contents/src%2Ftest%2Fjava%2Fcom%2Fhugorithm%2Fhopfencraft%2Fintegration%2FShoppingCartIntegrationTests.java?ref=eed8114ab4f4ea3d9656483e7b5718beacb72e33",
+            "patch": "@@ -36,7 +36,7 @@ public void AddCartItem_ValidInput_ReturnsCreated() {\n                 LoginResponseDTO.class);\n \n         assertEquals(HttpStatus.OK, loginResponse.getStatusCode());\n-\n+        assertNotNull(loginResponse.getBody());\n         String jwt = loginResponse.getBody().getJwt();\n \n         // Create a CartRegistrationDTO for testing\n@@ -78,7 +78,7 @@ public void GetCartItems_EmptyCart_ReturnsOKWithEmptyList() {\n                 LoginResponseDTO.class);\n \n         assertEquals(HttpStatus.OK, loginResponse.getStatusCode());\n-\n+        assertNotNull(loginResponse.getBody());\n         String jwt = loginResponse.getBody().getJwt();\n \n         // Perform a GET request to retrieve cart items\n@@ -115,7 +115,7 @@ public void RemoveCartItem_ValidInput_ReturnsOK() {\n                 LoginResponseDTO.class);\n \n         assertEquals(HttpStatus.OK, loginResponse.getStatusCode());\n-\n+        assertNotNull(loginResponse.getBody());\n         String jwt = loginResponse.getBody().getJwt();\n \n \n@@ -185,7 +185,7 @@ public void AddCartItem_InvalidProduct_ReturnsBadRequest() {\n                 LoginResponseDTO.class);\n \n         assertEquals(HttpStatus.OK, loginResponse.getStatusCode());\n-\n+        assertNotNull(loginResponse.getBody());\n         String jwt = loginResponse.getBody().getJwt();\n \n         // Create a CartRegistrationDTO with an invalid product ID (e.g., a product ID that doesn't exist)\n@@ -219,7 +219,7 @@ public void AddCartItem_InvalidQuantity_ReturnsBadRequest() {\n                 LoginResponseDTO.class);\n \n         assertEquals(HttpStatus.OK, loginResponse.getStatusCode());\n-\n+        assertNotNull(loginResponse.getBody());\n         String jwt = loginResponse.getBody().getJwt();\n         // Create a CartRegistrationDTO with an invalid quantity (e.g., a negative quantity)\n         CartRegistrationDTO invalidInput = new CartRegistrationDTO(1L, 90);\n@@ -251,7 +251,7 @@ public void RemoveCartItem_NonExistentItem_ReturnsNotFound() {\n                 LoginResponseDTO.class);\n \n         assertEquals(HttpStatus.OK, loginResponse.getStatusCode());\n-\n+        assertNotNull(loginResponse.getBody());\n         String jwt = loginResponse.getBody().getJwt();\n         HttpHeaders headers = new HttpHeaders();\n         headers.set(\"Authorization\", \"Bearer \" + jwt);"
+        }
+    ]
+}

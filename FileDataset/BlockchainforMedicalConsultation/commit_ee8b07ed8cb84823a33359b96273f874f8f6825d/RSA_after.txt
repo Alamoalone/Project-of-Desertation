@@ -1,0 +1,46 @@
+    public static void main(String[] args) {
+        RSA rsa = new RSA();
+
+        // Generate key pair with 2048-bit length
+        rsa.generateKeyPair(2048);
+        String[] arr = FileIO.getPatientMessage();
+        Block(arr[0]);
+        Block(arr[1]);
+        Block(arr[2]);
+        Block(arr[3]);
+        Block(arr[4]);
+    }
+
+    public static  void Block(String originalMessage){
+
+        RSA rsa = new RSA();
+          rsa.generateKeyPair(2048);
+         
+
+        System.out.println("Block #"+ counter);
+        if(counter ==0) System.out.println("Previous Hash:null");
+       // if(counter!=0) System.out.println("Previous Hash:"); 
+        System.out.println("Original message: " + originalMessage);
+
+
+
+        // Encryption
+        BigInteger encryptedMessage = rsa.encrypt(originalMessage);
+        System.out.println("Hash: " + encryptedMessage);
+
+         PreviousHash[j] = encryptedMessage;
+         
+        if (counter !=0){
+            
+            System.out.println("Previous Hash:"+PreviousHash[j-1]);
+
+        }
+
+
+        // Decryption
+        String decryptedMessage = rsa.decrypt(encryptedMessage);
+        System.out.println("Decrypted message: " + decryptedMessage);
+        counter++;
+        j++;
+        }
+

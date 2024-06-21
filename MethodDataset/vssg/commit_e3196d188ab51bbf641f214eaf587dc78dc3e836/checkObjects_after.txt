@@ -1,0 +1,88 @@
+    public void checkObjects(float deltaTime) {
+        for (Laser laser : lasers) {
+            laser.setScale(3);
+            laser.draw(batch);
+            Rectangle laserHitBox = laser.getHitbox();
+            laser.update(deltaTime, WORLD_WIDTH, WORLD_HEIGHT, laser.getDespawnCounter(), laser.getShip());
+            laser.updateHitBox(laser);
+
+            for (CpuShip cpuShip : cpuShips) {
+                Rectangle shipHitBox = cpuShip.getHitbox();
+
+                if (laserHitBox.overlaps(shipHitBox) && laser.getShip().getFaction() != cpuShip.getFaction()) {
+                    Vector2 position = new Vector2(laser.getX(), laser.getY() - 64);
+                    Explosion.explode(camera, explosionTexture1, 0.7f, position, 30, explosions, explosionSound1, 300, 10);
+                    cpuShip.setInactive(cpuShip);
+                    laser.setInactive(laser);
+
+                    if (showHitBoxes) {
+                        cpuShip.getShapeRenderer().setProjectionMatrix(camera.combined);
+                        cpuShip.drawBoundingBox();
+                    }
+                }
+               // cpuShip.setActionState(Ship.ActionState.ATTACK, cpuShip.getActionState());
+
+            }
+
+
+            for (PlayerShip playerShip : playerShips) {
+                Rectangle shipHitBox = playerShip.getHitbox();
+
+                if (laserHitBox.overlaps(shipHitBox) && laser.getShip().getFaction() != playerShip.getFaction()) {
+                    Vector2 position = new Vector2(laser.getX(), laser.getY() - 64);
+                    Explosion.explode(camera, explosionTexture1, 0.7f, position, 30, explosions, explosionSound1, 300, 10);
+                    playerShip.setInactive(playerShip);
+                    laser.setInactive(laser);
+
+                    if (showHitBoxes) {
+                        playerShip.getShapeRenderer().setProjectionMatrix(camera.combined);
+                        playerShip.drawBoundingBox();
+                    }
+                }
+            }
+
+        }
+
+
+        for (PlayerShip playerShip : playerShips) {
+            playerShip.draw(batch);
+            playerShip.update(deltaTime, playerShip, WORLD_WIDTH, WORLD_HEIGHT);
+            playerShip.handleActionState(playerShip, greenLaserTexture, blueLaserTexture, redLaserTexture, lasers, laserBlast2);
+            camera.position.x = playerShip.getX() + 64;
+            camera.position.y = playerShip.getY() + 64;
+        }
+
+        for (CpuShip cpuShip : cpuShips) {
+            cpuShip.draw(batch);
+            cpuShip.update(deltaTime, cpuShip, WORLD_WIDTH, WORLD_HEIGHT);
+            cpuShip.handleActionState(cpuShip, greenLaserTexture, blueLaserTexture, redLaserTexture, lasers, laserBlast2);
+
+            for (Ship target : cpuShip.getTargets()) {
+                if (target != null) {
+                    if (!target.isActive()) {
+                        cpuShip.getTargets().remove(target);
+                        System.out.println("TARGET REMOVED");
+                    }
+                }
+            }
+
+            for (PlayerShip playerShip : playerShips) {
+                cpuShip.detectTargets(playerShip, cpuShip.getTargets());
+            }
+
+            for (CpuShip cpuShip2 : copiedSet) {
+                cpuShip.detectTargets(cpuShip2, cpuShip.getTargets());
+            }
+
+        }
+
+
+
+
+
+        for (Explosion explosion : explosions) {
+            explosion.draw(batch);
+            explosion.update(deltaTime);
+        }
+
+    }

@@ -1,0 +1,35 @@
+    public void GetCartItems_EmptyCart_ReturnsOKWithEmptyList() {
+        // Login as a user with an empty cart
+        LoginDTO login = new LoginDTO("testuser", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+
+        String jwt = loginResponse.getBody().getJwt();
+
+        // Perform a GET request to retrieve cart items
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+
+
+        ResponseEntity<CartResponseDTO> response = restTemplate.exchange(
+                "http://localhost:" + port + "/cart/items",
+                HttpMethod.GET,
+                new HttpEntity<>(headers),
+                CartResponseDTO.class
+        );
+
+        // Assert that the response has status code OK (200) and an empty list of cart items
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+
+        CartResponseDTO responseBody = response.getBody();
+        assertNotNull(responseBody);
+        List<CartItemDTO> cartItems = responseBody.getCartItems();
+        assertTrue(cartItems.isEmpty());
+        // You can check that the cart items list is empty using assertTrue(cartItems.isEmpty());
+    }

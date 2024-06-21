@@ -1,0 +1,110 @@
+{
+    "sha": "cf5717fa9c84134eedf6921e9c5c57bba3f345ef",
+    "node_id": "C_kwDOEVBBsdoAKGNmNTcxN2ZhOWM4NDEzNGVlZGY2OTIxZTljNWM1N2JiYTNmMzQ1ZWY",
+    "commit": {
+        "author": {
+            "name": "cgregoryCH",
+            "email": "cgregory@companieshouse.gov.uk",
+            "date": "2023-10-02T11:31:38Z"
+        },
+        "committer": {
+            "name": "cgregoryCH",
+            "email": "cgregory@companieshouse.gov.uk",
+            "date": "2023-10-02T11:31:38Z"
+        },
+        "message": "DSND-2062: Fix null pointer exception when sensitive data is null",
+        "tree": {
+            "sha": "f465b01c7b396ce92cab9df1d6df93a87f2b7cdb",
+            "url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/git/trees/f465b01c7b396ce92cab9df1d6df93a87f2b7cdb"
+        },
+        "url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/git/commits/cf5717fa9c84134eedf6921e9c5c57bba3f345ef",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/commits/cf5717fa9c84134eedf6921e9c5c57bba3f345ef",
+    "html_url": "https://github.com/companieshouse/company-appointments.api.ch.gov.uk/commit/cf5717fa9c84134eedf6921e9c5c57bba3f345ef",
+    "comments_url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/commits/cf5717fa9c84134eedf6921e9c5c57bba3f345ef/comments",
+    "author": {
+        "login": "cgregoryCH",
+        "id": 84070107,
+        "node_id": "MDQ6VXNlcjg0MDcwMTA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/84070107?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cgregoryCH",
+        "html_url": "https://github.com/cgregoryCH",
+        "followers_url": "https://api.github.com/users/cgregoryCH/followers",
+        "following_url": "https://api.github.com/users/cgregoryCH/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cgregoryCH/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cgregoryCH/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cgregoryCH/subscriptions",
+        "organizations_url": "https://api.github.com/users/cgregoryCH/orgs",
+        "repos_url": "https://api.github.com/users/cgregoryCH/repos",
+        "events_url": "https://api.github.com/users/cgregoryCH/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cgregoryCH/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "cgregoryCH",
+        "id": 84070107,
+        "node_id": "MDQ6VXNlcjg0MDcwMTA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/84070107?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cgregoryCH",
+        "html_url": "https://github.com/cgregoryCH",
+        "followers_url": "https://api.github.com/users/cgregoryCH/followers",
+        "following_url": "https://api.github.com/users/cgregoryCH/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cgregoryCH/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cgregoryCH/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cgregoryCH/subscriptions",
+        "organizations_url": "https://api.github.com/users/cgregoryCH/orgs",
+        "repos_url": "https://api.github.com/users/cgregoryCH/repos",
+        "events_url": "https://api.github.com/users/cgregoryCH/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cgregoryCH/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "645288c66a52c94b6e59f942b359a391a0cbb0c0",
+            "url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/commits/645288c66a52c94b6e59f942b359a391a0cbb0c0",
+            "html_url": "https://github.com/companieshouse/company-appointments.api.ch.gov.uk/commit/645288c66a52c94b6e59f942b359a391a0cbb0c0"
+        }
+    ],
+    "stats": {
+        "total": 38,
+        "additions": 26,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "c9005b3d0a1a778d331ff51d7d3a440191cec923",
+            "filename": "src/main/java/uk/gov/companieshouse/company_appointments/mapper/CompanyAppointmentMapper.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 12,
+            "changes": 22,
+            "blob_url": "https://github.com/companieshouse/company-appointments.api.ch.gov.uk/blob/cf5717fa9c84134eedf6921e9c5c57bba3f345ef/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fcompanieshouse%2Fcompany_appointments%2Fmapper%2FCompanyAppointmentMapper.java",
+            "raw_url": "https://github.com/companieshouse/company-appointments.api.ch.gov.uk/raw/cf5717fa9c84134eedf6921e9c5c57bba3f345ef/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fcompanieshouse%2Fcompany_appointments%2Fmapper%2FCompanyAppointmentMapper.java",
+            "contents_url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fcompanieshouse%2Fcompany_appointments%2Fmapper%2FCompanyAppointmentMapper.java?ref=cf5717fa9c84134eedf6921e9c5c57bba3f345ef",
+            "patch": "@@ -31,6 +31,7 @@\n import uk.gov.companieshouse.company_appointments.model.data.DeltaOfficerData;\n import uk.gov.companieshouse.company_appointments.model.data.DeltaOfficerLinkTypes;\n import uk.gov.companieshouse.company_appointments.model.data.DeltaPrincipalOfficeAddress;\n+import uk.gov.companieshouse.company_appointments.model.data.DeltaSensitiveData;\n import uk.gov.companieshouse.company_appointments.model.data.DeltaServiceAddress;\n import uk.gov.companieshouse.company_appointments.roles.RoleHelper;\n import uk.gov.companieshouse.logging.Logger;\n@@ -63,8 +64,10 @@ public OfficerSummary map(CompanyAppointmentDocument companyAppointment, boolean\n                 .appointedBefore(appointedBefore)\n                 .resignedOn(resignedOn)\n                 .countryOfResidence(isSecretary ? null : data.getCountryOfResidence())\n-                .dateOfBirth(isSecretary ? null\n-                        : mapDateOfBirth(companyAppointment.getSensitiveData().getDateOfBirth(), registerView))\n+                .dateOfBirth(isSecretary ? null : Optional.ofNullable(companyAppointment.getSensitiveData())\n+                        .map(DeltaSensitiveData::getDateOfBirth)\n+                        .map(dob -> mapDateOfBirth(dob, registerView))\n+                        .orElse(null))\n                 .links(mapLinks(data.getLinks()))\n                 .nationality(data.getNationality())\n                 .occupation(data.getOccupation())\n@@ -157,19 +160,14 @@ private ItemLinkTypes mapLinks(DeltaItemLinkTypes itemLinkTypes) {\n     }\n \n     private DateOfBirth mapDateOfBirth(Instant dob, boolean registerView) {\n-        return Optional.ofNullable(dob)\n-                .map(dateOfBirth -> registerView ? mapDateOfBirth(dateOfBirth, dateOfBirth.atZone(UTC).getDayOfMonth())\n-                        : mapDateOfBirth(dateOfBirth, null))\n-                .orElse(null);\n+        return registerView ? mapDateOfBirth(dob, dob.atZone(UTC).getDayOfMonth()) : mapDateOfBirth(dob, null);\n     }\n \n     private DateOfBirth mapDateOfBirth(Instant dob, Integer day) {\n-        return Optional.ofNullable(dob)\n-                .map(dateOfBirth -> new DateOfBirth()\n-                        .day(day)\n-                        .month(dateOfBirth.atZone(UTC).getMonthValue())\n-                        .year(dateOfBirth.atZone(UTC).getYear()))\n-                .orElse(null);\n+        return new DateOfBirth()\n+                .day(day)\n+                .month(dob.atZone(UTC).getMonthValue())\n+                .year(dob.atZone(UTC).getYear());\n     }\n \n     private String mapOfficerName(DeltaOfficerData data) {"
+        },
+        {
+            "sha": "8768e90fc0f6b5af45e80f8e25e313972569c4b5",
+            "filename": "src/test/java/uk/gov/companieshouse/company_appointments/CompanyAppointmentMapperTest.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 0,
+            "changes": 16,
+            "blob_url": "https://github.com/companieshouse/company-appointments.api.ch.gov.uk/blob/cf5717fa9c84134eedf6921e9c5c57bba3f345ef/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fcompanieshouse%2Fcompany_appointments%2FCompanyAppointmentMapperTest.java",
+            "raw_url": "https://github.com/companieshouse/company-appointments.api.ch.gov.uk/raw/cf5717fa9c84134eedf6921e9c5c57bba3f345ef/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fcompanieshouse%2Fcompany_appointments%2FCompanyAppointmentMapperTest.java",
+            "contents_url": "https://api.github.com/repos/companieshouse/company-appointments.api.ch.gov.uk/contents/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fcompanieshouse%2Fcompany_appointments%2FCompanyAppointmentMapperTest.java?ref=cf5717fa9c84134eedf6921e9c5c57bba3f345ef",
+            "patch": "@@ -230,6 +230,22 @@ void testCompanyAppointmentMapperWithoutDateOfBirth() {\n                 .dateOfBirth(null), actual);\n     }\n \n+    @Test\n+    void testCompanyAppointmentMapperWithoutSensitiveData() {\n+        //when\n+        OfficerSummary actual = companyAppointmentMapper.map(\n+                companyAppointmentData(officerData()\n+                        .forename(\"Forename\")\n+                        .surname(\"SURNAME\")\n+                        .build())\n+                        .sensitiveData(null));\n+\n+        //then\n+        assertEquals(expectedCompanyAppointment()\n+                .name(\"SURNAME, Forename\")\n+                .dateOfBirth(null), actual);\n+    }\n+\n     @Test\n     void testCompanyAppointmentMapperDoesNotMapCountryOfResidenceOrDOBForSecretarialRoles() {\n         SecretarialRoles.stream().forEach(secretary -> {"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+deleteOneMedicalRecordById(String id)
+getAllMedicalRecords()
+updateMedicalRecord(String id, MedicalRecord updatedMedicalRecord)
+addMedicalRecord(MedicalRecord medicalRecord)
+getOneMedicalRecordById(String id)

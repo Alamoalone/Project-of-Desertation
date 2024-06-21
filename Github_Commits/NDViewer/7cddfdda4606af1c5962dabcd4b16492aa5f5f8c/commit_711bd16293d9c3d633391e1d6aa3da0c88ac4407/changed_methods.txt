@@ -1,0 +1,2 @@
+makeOrGetImage(DataViewCoords viewCoords)
+removeImageProcessor(String channelName)

@@ -1,0 +1,4 @@
+extractIssnData(String json)
+getJsonDataFromIssnPortal(String issn)
+cleanText(String text)
+getIssnData(String issn)

@@ -1,0 +1,2 @@
+handleRequest(APIGatewayProxyRequestEvent input, Context context)
+executeFallbackIfDocumentFailedToVerify(DocumentCheckVerificationResult documentDataVerificationResult, DrivingPermitForm drivingPermitFormData)

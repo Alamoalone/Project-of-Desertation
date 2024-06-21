@@ -1,0 +1,34 @@
+	public void paintControl(PaintEvent e) {
+
+		if(isDraw()) {
+			BaseChart baseChart = getBaseChart();
+			ISeriesSet seriesSet = baseChart.getSeriesSet();
+			ISeries<?>[] series = seriesSet.getSeries();
+			for(ISeries<?> serie : series) {
+				String id = serie.getId();
+				String label = useDescription ? serie.getDescription() : id;
+				ISeriesSettings seriesSettings = baseChart.getSeriesSettings(id);
+				if(seriesSettings.isVisible()) {
+					/*
+					 * Only draw is series is visible.
+					 */
+					int symbolSize = 1;
+					if(seriesSettings instanceof IPointSeriesSettings) {
+						symbolSize = ((IPointSeriesSettings)seriesSettings).getSymbolSize();
+					}
+					/*
+					 * Draw the label
+					 */
+					e.gc.setForeground(getForegroundColor());
+					for(int i = 0; i < serie.getXSeries().length; i++) {
+						Point point = serie.getPixelCoordinates(i);
+						if(label != null) {
+							Point labelSize = e.gc.textExtent(label);
+							e.gc.drawText(label, (int)(point.x - labelSize.x / 2.0d), (int)(point.y - labelSize.y - symbolSize / 2.0d), true);
+						}
+					}
+				}
+			}
+		}
+	}
+

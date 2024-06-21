@@ -1,0 +1,12 @@
+            public boolean onMenuItemClick(MenuItem item) {
+                if (item.getItemId() == R.id.action_signout) {
+                    // Handle the "Sign Out" action here using Firebase Authentication
+                    FirebaseAuth.getInstance().signOut();
+                    Intent intent = new Intent(StudentHomePage.this, LoginPage.class);
+                    startActivity(intent);
+                    // You can also navigate the user back to the login screen or perform other actions as needed.
+                    finish();
+                    return true;
+                }
+                return false;
+            }

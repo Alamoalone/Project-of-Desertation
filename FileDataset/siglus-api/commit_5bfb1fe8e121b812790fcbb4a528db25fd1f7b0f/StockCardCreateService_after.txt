@@ -1,0 +1,12 @@
+  private UUID getNewSourceId(StockCard stockCard) {
+    Collection<ValidSourceDestinationDto> sourcesForOneProgram = validSourceDestinationService.findSourcesForOneProgram(
+        stockCard.getProgramId(), stockCard.getFacilityId());
+    for (ValidSourceDestinationDto source : sourcesForOneProgram) {
+      Node node = source.getNode();
+      if (node != null && node.isRefDataFacility()) {
+        return node.getId();
+      }
+    }
+    return null;
+  }
+

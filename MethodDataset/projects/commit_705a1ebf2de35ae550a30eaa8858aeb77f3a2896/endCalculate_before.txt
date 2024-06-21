@@ -1,0 +1,11 @@
+    static void endCalculate(RendDynOperationNode _current, IdMap<RendDynOperationNode, ArgumentsPair> _nodes, ContextEl _context, RendStackCall _rendStack, Argument _argres, ImplicitMethods _converter) {
+        Argument argres_ = _argres;
+        if (_converter != null) {
+            Argument res_ = tryConvert(_converter, argres_, _context, _rendStack);
+            if (res_ == null) {
+                return;
+            }
+            argres_ = res_;
+        }
+        _current.setSimpleArgument(argres_, _nodes, _context, _rendStack);
+    }

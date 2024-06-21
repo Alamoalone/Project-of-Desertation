@@ -1,0 +1,1 @@
+doCanvasCommand(Canvas cvs, Block block)

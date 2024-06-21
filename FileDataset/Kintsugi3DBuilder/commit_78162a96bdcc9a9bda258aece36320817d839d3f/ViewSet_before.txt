@@ -1,0 +1,346 @@
+    public File findPrimaryImageFile() throws FileNotFoundException
+    {
+        return findImageFile(getPrimaryViewIndex());
+    }
+
+    public ReadonlyNativeVectorBuffer getLightPositionData()
+    {
+        // Store the light positions in a uniform buffer
+        if (!lightPositionList.isEmpty())
+        {
+            NativeVectorBuffer lightPositionData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 4, lightPositionList.size());
+            for (int k = 0; k < lightPositionList.size(); k++)
+            {
+                lightPositionData.set(k, 0, lightPositionList.get(k).x);
+                lightPositionData.set(k, 1, lightPositionList.get(k).y);
+                lightPositionData.set(k, 2, lightPositionList.get(k).z);
+                lightPositionData.set(k, 3, 1.0f);
+            }
+
+            return lightPositionData;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public ReadonlyViewSet createPermutation(Collection<Integer> permutationIndices)
+    {
+        ViewSet result = new ViewSet(permutationIndices.size());
+
+        for (int i : permutationIndices)
+        {
+            result.getCameraPoseList().add(this.cameraPoseList.get(i));
+            result.getCameraPoseInvList().add(this.cameraPoseInvList.get(i));
+            result.getCameraProjectionIndexList().add(this.cameraProjectionIndexList.get(i));
+            result.getLightIndexList().add(this.lightIndexList.get(i));
+            result.getImageFileNames().add(this.imageFileNames.get(i));
+        }
+
+        result.getCameraProjectionList().addAll(this.cameraProjectionList);
+        result.getLightIntensityList().addAll(this.lightIntensityList);
+        result.getLightPositionList().addAll(this.lightPositionList);
+
+        result.setTonemapping(this.gamma,
+            Arrays.copyOf(this.linearLuminanceValues, this.linearLuminanceValues.length),
+            Arrays.copyOf(this.encodedLuminanceValues, this.encodedLuminanceValues.length));
+
+        result.setRootDirectory(this.rootDirectory);
+        result.setRelativeImagePathName(this.relativeImagePath);
+        result.setGeometryFileName(this.geometryFileName);
+        result.setInfiniteLightSources(this.infiniteLightSources);
+        result.setRecommendedNearPlane(this.recommendedNearPlane);
+        result.setRecommendedFarPlane(this.recommendedFarPlane);
+        result.setPrimaryView(primaryViewIndex);
+
+        return result;
+    }
+
+    public ViewSet copy()
+    {
+        ViewSet result = new ViewSet(this.getCameraPoseCount());
+
+        result.getCameraPoseList().addAll(this.cameraPoseList);
+        result.getCameraPoseInvList().addAll(this.cameraPoseInvList);
+        result.getCameraProjectionList().addAll(this.cameraProjectionList);
+        result.getCameraProjectionIndexList().addAll(this.cameraProjectionIndexList);
+        result.getLightPositionList().addAll(this.lightPositionList);
+        result.getLightIntensityList().addAll(this.lightIntensityList);
+        result.getLightIndexList().addAll(this.lightIndexList);
+        result.getImageFileNames().addAll(this.imageFileNames);
+
+        result.setTonemapping(this.gamma,
+            Arrays.copyOf(this.linearLuminanceValues, this.linearLuminanceValues.length),
+            Arrays.copyOf(this.encodedLuminanceValues, this.encodedLuminanceValues.length));
+
+        result.setRootDirectory(this.rootDirectory);
+        result.setRelativeImagePathName(this.relativeImagePath);
+        result.setGeometryFileName(this.geometryFileName);
+        result.setInfiniteLightSources(this.infiniteLightSources);
+        result.setRecommendedNearPlane(this.recommendedNearPlane);
+        result.setRecommendedFarPlane(this.recommendedFarPlane);
+        result.setPrimaryView(primaryViewIndex);
+
+        return result;
+    }
+
+    public ReadonlyNativeVectorBuffer getCameraPoseData()
+    {
+        // Store the poses in a uniform buffer
+        if (!cameraPoseList.isEmpty())
+        {
+            // Flatten the camera pose matrices into 16-component vectors and store them in the vertex list data structure.
+            NativeVectorBuffer cameraPoseData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 16, cameraPoseList.size());
+
+            for (int k = 0; k < cameraPoseList.size(); k++)
+            {
+                int d = 0;
+                for (int col = 0; col < 4; col++) // column
+                {
+                    for (int row = 0; row < 4; row++) // row
+                    {
+                        cameraPoseData.set(k, d, cameraPoseList.get(k).get(row, col));
+                        d++;
+                    }
+                }
+            }
+
+            return cameraPoseData;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public void writeVSETFileToStream(OutputStream outputStream, Path parentDirectory)
+    {
+        PrintStream out = new PrintStream(outputStream);
+        out.println("# Created by IBRelight");
+
+        if (getGeometryFile() != null)
+        {
+            out.println("\n# Geometry file name (mesh)");
+            out.println("m " + (parentDirectory == null ? geometryFileName : parentDirectory.relativize(getGeometryFile().toPath())));
+        }
+
+        out.println("\n# Image file path");
+        out.println("i " + (parentDirectory == null ? relativeImagePath : parentDirectory.relativize(getImageFilePath().toPath())));
+
+        out.println("\n# Estimated near and far planes");
+        out.printf("c\t%.8f\t%.8f\n", recommendedNearPlane, recommendedFarPlane);
+
+        out.println("\n# " + cameraProjectionList.size() + (cameraProjectionList.size()==1?" Sensor":" Sensors"));
+        for (Projection proj : cameraProjectionList)
+        {
+            out.println(proj.toVSETString());
+        }
+
+        if (linearLuminanceValues != null && encodedLuminanceValues != null)
+        {
+            out.println("\n# Luminance encoding: Munsell 2/3.5/5.6.5/8/9.5");
+            out.println("#\tCIE-Y/100\tEncoded");
+            for(int i = 0; i < linearLuminanceValues.length && i < encodedLuminanceValues.length; i++)
+            {
+                out.printf("e\t%.8f\t\t%3d\n", linearLuminanceValues[i], 0x00FF & encodedLuminanceValues[i]);
+            }
+        }
+
+        out.println("\n# " + cameraPoseList.size() + (cameraPoseList.size()==1?" Camera":" Cameras"));
+        for (Matrix4 pose : cameraPoseList)
+        {
+            // TODO validate quaternion computation
+//            Matrix3 rot = new Matrix3(pose);
+//            if (rot.determinant() == 1.0f)
+//            {
+//                // No scale - use quaternion
+//                Vector4 quat = rot.toQuaternion();
+//                Vector4 loc = pose.getColumn(3);
+//                out.printf("p\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\n",
+//                            loc.x, loc.y, loc.z, quat.x, quat.y, quat.z, quat.w);
+//            }
+//            else
+            //{
+                // Write a general 4x4 matrix
+                out.printf("P\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\n",
+                        pose.get(0, 0), pose.get(0, 1), pose.get(0, 2), pose.get(0, 3),
+                        pose.get(1, 0), pose.get(1, 1), pose.get(1, 2), pose.get(1, 3),
+                        pose.get(2, 0), pose.get(2, 1), pose.get(2, 2), pose.get(2, 3),
+                        pose.get(3, 0), pose.get(3, 1), pose.get(3, 2), pose.get(3, 3));
+            //}
+        }
+
+        if(!lightPositionList.isEmpty())
+        {
+            out.println("\n# " + lightPositionList.size() + (lightPositionList.size()==1?" Light":" Lights"));
+            for (int ID=0; ID < lightPositionList.size(); ID++)
+            {
+                Vector3 pos = lightPositionList.get(ID);
+                Vector3 intensity = lightIntensityList.get(ID);
+                out.printf("l\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\t%.8f\n", pos.x, pos.y, pos.z, intensity.x, intensity.y, intensity.z);
+            }
+        }
+
+        out.println("\n# " + cameraPoseList.size() + (cameraPoseList.size()==1?" View":" Views"));
+
+        // Primary view first (so that next time the view set is loaded it will be index 0)
+        out.printf("v\t%d\t%d\t%d\t%s\n", primaryViewIndex,  cameraProjectionIndexList.get(primaryViewIndex), lightIndexList.get(primaryViewIndex), imageFileNames.get(primaryViewIndex));
+        for (int ID=0; ID<cameraPoseList.size(); ID++)
+        {
+            if (ID != primaryViewIndex)
+            {
+                out.printf("v\t%d\t%d\t%d\t%s\n", ID,  cameraProjectionIndexList.get(ID), lightIndexList.get(ID), imageFileNames.get(ID));
+            }
+        }
+
+        out.close();
+    }
+
+    public String getRelativeImagePathName()
+    {
+        return this.relativeImagePath;
+    }
+
+    public void setRelativeImagePathName(String relativeImagePath)
+    {
+        this.relativeImagePath = relativeImagePath;
+    }
+
+
+
+    public ReadonlyNativeVectorBuffer getLightIndexData()
+    {
+        // Store the light indices in a uniform buffer
+        if (!lightIndexList.isEmpty())
+        {
+            int[] indexArray = new int[lightIndexList.size()];
+            for (int i = 0; i < indexArray.length; i++)
+            {
+                indexArray[i] = lightIndexList.get(i);
+            }
+            return NativeVectorBufferFactory.getInstance().createFromIntArray(false, 1, lightIndexList.size(), indexArray);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public void setPrimaryView(int poseIndex)
+    {
+        this.primaryViewIndex = poseIndex;
+    }
+
+
+
+    public ReadonlyNativeVectorBuffer getCameraProjectionData()
+    {
+        // Store the camera projections in a uniform buffer
+        if (!cameraProjectionList.isEmpty())
+        {
+            // Flatten the camera projection matrices into 16-component vectors and store them in the vertex list data structure.
+            NativeVectorBuffer cameraProjectionData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 16, cameraProjectionList.size());
+
+            for (int k = 0; k < cameraProjectionList.size(); k++)
+            {
+                int d = 0;
+                for (int col = 0; col < 4; col++) // column
+                {
+                    for (int row = 0; row < 4; row++) // row
+                    {
+                        Matrix4 projection = cameraProjectionList.get(k).getProjectionMatrix(recommendedNearPlane, recommendedFarPlane);
+                        cameraProjectionData.set(k, d, projection.get(row, col));
+                        d++;
+                    }
+                }
+            }
+            return cameraProjectionData;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public static ReadonlyViewSet createFromLookAt(List<Vector3> viewDir, Vector3 center, Vector3 up, float distance,
+        float nearPlane, float aspect, float sensorWidth, float focalLength)
+    {
+        ViewSet result = new ViewSet(viewDir.size());
+
+        result.getCameraProjectionList().add(new DistortionProjection(sensorWidth, sensorWidth / aspect, focalLength));
+
+        result.setRecommendedNearPlane(nearPlane);
+        result.setRecommendedFarPlane(2 * distance - nearPlane);
+
+        result.getLightIntensityList().add(new Vector3(distance * distance));
+        result.getLightPositionList().add(Vector3.ZERO);
+
+        for (int i = 0; i < viewDir.size(); i++)
+        {
+            result.getCameraProjectionIndexList().add(0);
+            result.getLightIndexList().add(0);
+            result.getImageFileNames().add(String.format("%04d.png", i + 1));
+
+            Matrix4 cameraPose = Matrix4.lookAt(viewDir.get(i).times(-distance).plus(center), center, up);
+
+            result.getCameraPoseList().add(cameraPose);
+            result.getCameraPoseInvList().add(cameraPose.quickInverse(0.001f));
+        }
+
+        return result;
+    }
+
+    public File getImageFilePath()
+    {
+        return this.relativeImagePath == null ? this.rootDirectory : new File(this.rootDirectory, relativeImagePath);
+    }
+
+    public ReadonlyNativeVectorBuffer getCameraProjectionIndexData()
+    {
+        // Store the camera projection indices in a uniform buffer
+        if (!cameraProjectionIndexList.isEmpty())
+        {
+            int[] indexArray = new int[cameraProjectionIndexList.size()];
+            for (int i = 0; i < indexArray.length; i++)
+            {
+                indexArray[i] = cameraProjectionIndexList.get(i);
+            }
+            return NativeVectorBufferFactory.getInstance().createFromIntArray(false, 1, cameraProjectionIndexList.size(), indexArray);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+
+
+    public ReadonlyNativeVectorBuffer getLightIntensityData()
+    {
+        // Store the light positions in a uniform buffer
+        if (!lightIntensityList.isEmpty())
+        {
+            NativeVectorBuffer lightIntensityData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 4, lightIntensityList.size());
+            for (int k = 0; k < lightPositionList.size(); k++)
+            {
+                lightIntensityData.set(k, 0, lightIntensityList.get(k).x);
+                lightIntensityData.set(k, 1, lightIntensityList.get(k).y);
+                lightIntensityData.set(k, 2, lightIntensityList.get(k).z);
+                lightIntensityData.set(k, 3, 1.0f);
+            }
+            return lightIntensityData;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public void writeVSETFileToStream(OutputStream outputStream)
+    {
+        writeVSETFileToStream(outputStream, null);
+    }
+
+
+

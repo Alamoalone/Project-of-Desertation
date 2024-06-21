@@ -1,0 +1,6 @@
+    private void startListening() {
+        Log.i("INFO", "Start listening. locationObtained: " + locationObtained);
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        }
+    }

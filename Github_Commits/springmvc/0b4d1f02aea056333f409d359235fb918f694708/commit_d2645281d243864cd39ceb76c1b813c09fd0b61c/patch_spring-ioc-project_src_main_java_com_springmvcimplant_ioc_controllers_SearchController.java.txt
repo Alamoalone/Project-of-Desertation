@@ -1,0 +1,16 @@
+@@ -84,13 +84,15 @@ public String NullExceptionHandler(Model m) {
+ 		return "null_error";
+ 	}
+ 	
++	@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)
+ 	@ExceptionHandler({ConversionException.class,NumberFormatException.class})
+ 	public String ConversionExceptionHandler(Model m) {
+ 		System.out.println("Number Format Exception Occurred");
+ 		m.addAttribute("msg","Number Format Exception");
+ 		return "null_error";
+ 	}
+ 	
++	@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)
+ 	@ExceptionHandler({Exception.class})
+ 	public String GenericExceptionHandler(Model m) {
+ 		System.out.println("General Exception Occurred");

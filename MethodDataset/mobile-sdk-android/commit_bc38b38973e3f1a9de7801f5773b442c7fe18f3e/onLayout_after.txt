@@ -1,0 +1,63 @@
+            public void onLayout(boolean changed, int left, int top, int right, int bottom) {
+                int close_button_loc[] = new int[2];
+                this.getLocationOnScreen(close_button_loc);
+
+                //Determine container width and height
+                Point container_size;
+                Point screen_size = new Point(0, 0);
+                Activity a = null;
+                boolean useScreenSizeForAddedAccuracy = true;
+                try {
+                    a = (Activity) caller.owner.getContext();
+                } catch (ClassCastException e) {
+                    useScreenSizeForAddedAccuracy = false;
+                }
+
+                if (useScreenSizeForAddedAccuracy) {
+                    if (Build.VERSION.SDK_INT >= 13) {
+                        a.getWindowManager().getDefaultDisplay().getSize(screen_size);
+                    } else {
+                        screen_size.x = a.getWindowManager().getDefaultDisplay().getWidth();
+                        screen_size.y = a.getWindowManager().getDefaultDisplay().getHeight();
+                    }
+                }
+
+                int adviewLoc[] = new int[2];
+                if (getMediaType() == MediaType.INTERSTITIAL) {
+                    InterstitialAdView.INTERSTITIALADVIEW_TO_USE.measure(MeasureSpec.UNSPECIFIED, MeasureSpec.UNSPECIFIED);
+                    InterstitialAdView.INTERSTITIALADVIEW_TO_USE.getLocationOnScreen(adviewLoc);
+                    container_size = new Point(InterstitialAdView.INTERSTITIALADVIEW_TO_USE.getMeasuredWidth(),
+                            InterstitialAdView.INTERSTITIALADVIEW_TO_USE.getMeasuredHeight());
+                } else {
+                    AdView.this.measure(MeasureSpec.UNSPECIFIED, MeasureSpec.UNSPECIFIED);
+                    AdView.this.getLocationOnScreen(adviewLoc);
+                    container_size = new Point(AdView.this.getMeasuredWidth(),
+                            AdView.this.getMeasuredHeight());
+                }
+                int max_x = (container_size.x - buttonPxSideLength);
+                int max_y = (container_size.y - buttonPxSideLength);
+                int min_x = 0;
+                int min_y = 0;
+
+                if (useScreenSizeForAddedAccuracy) {
+                    max_x = adviewLoc[0] + Math.min(screen_size.x, container_size.x) - buttonPxSideLength;
+                    max_y = adviewLoc[1] + Math.min(screen_size.y, container_size.y) - buttonPxSideLength;
+                    min_x = adviewLoc[0];
+                    min_y = adviewLoc[1];
+                }
+
+                if (close_button_loc[0] + 1 < min_x || close_button_loc[0] - 1 > max_x ||
+                        close_button_loc[1] + 1 < min_y || close_button_loc[1] - 1 > max_y) {
+                    //Button is off screen, and must be relocated on screen
+                    final FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(this.getLayoutParams());
+                    lp.setMargins(0, 0, 0, 0);
+                    lp.gravity = Gravity.TOP | Gravity.LEFT;
+                    this.post(new Runnable() {
+                        public void run() {
+                            setLayoutParams(lp);
+                        }
+                    });
+
+                    ViewUtil.showCloseButton(close_button, false);
+                }
+            }

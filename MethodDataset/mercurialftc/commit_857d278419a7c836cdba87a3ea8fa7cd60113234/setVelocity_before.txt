@@ -1,0 +1,9 @@
+	public WaveBuilder setVelocity(double translationalVelocity) {
+		buildingMotionConstants = new MecanumMotionConstants(
+				Math.min(translationalVelocity, motionConstants.getMaxTranslationalVelocity()),
+				buildingMotionConstants.getMaxRotationalVelocity(),
+				buildingMotionConstants.getMaxTranslationalAcceleration(),
+				buildingMotionConstants.getMaxRotationalAcceleration());
+		builder.setMotionConstants(buildingMotionConstants);
+		return this;
+	}

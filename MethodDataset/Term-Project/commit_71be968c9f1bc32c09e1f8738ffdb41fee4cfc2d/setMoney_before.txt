@@ -1,0 +1,3 @@
+    public void setMoney(double Money) {
+        this.Money = Money;
+    }

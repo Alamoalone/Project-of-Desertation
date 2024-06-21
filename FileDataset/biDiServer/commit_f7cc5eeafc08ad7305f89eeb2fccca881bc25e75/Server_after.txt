@@ -1,0 +1,84 @@
+	public void start()
+	{
+		try
+		{
+		    this.serverSocket = new ServerSocket(this.config.getPort());
+		    
+		    System.out.println(
+		    		TextProperties.getMessageText(
+		    				TextProperties.ServerStarted(
+		    						this.config.getUrl(),
+		    						Integer.toString(this.config.getPort()))));
+		    
+		    this.log.logMessage(
+					LogEventId.G1,
+					LogLevel.General,
+					TextProperties.getMessageText(
+							TextProperties.ServerStarted(
+									this.config.getUrl(),
+									Integer.toString(this.config.getPort()))));
+		}
+		catch (Exception x)
+		{
+			System.out.println(
+					TextProperties.getMessageText(
+							TextProperties.ServerNotStarted(
+									this.config.getUrl(),
+									Integer.toString(this.config.getPort()))));
+			
+			this.log.logMessage(
+					LogEventId.C1,
+					LogLevel.Critical,
+					TextProperties.getMessageText(
+							TextProperties.ServerNotStarted(
+									this.config.getUrl(),
+									Integer.toString(this.config.getPort()))));
+			return;
+		}
+		
+		this.pulseCheckThread = this.new NotificationThreadPulseCheckThread();
+		pulseCheckThread.start();
+		
+		this.startDate = System.currentTimeMillis();
+		
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newCachedThreadPool();
+		executor.setCorePoolSize(SERVER_THREAD_POOL_CORE_SIZE);
+		executor.setMaximumPoolSize(SERVER_THREAD_POOL_MAX_SIZE);
+		
+		while (true)
+		{
+			try
+			{
+			    Socket clientSocket = this.serverSocket.accept();
+			    clientSocket.setSoTimeout(SOCKET_TIMEOUT);
+			    
+			    if (this.shutdown)
+			    {
+			    	clientSocket.close();
+			    	break;
+			    }
+			    
+			    ServerThread serverThread = this.new ServerThread(
+			    									clientSocket,
+			    									clientSocket.getInetAddress().toString());
+
+			    executor.submit(serverThread);
+			}
+			catch (SocketException x)
+			{
+				break;
+			}
+			catch (Exception x)
+			{
+				this.log.logMessage(
+						LogEventId.E1,
+						LogLevel.Error,
+						TextProperties.getMessageText(TextProperties.ServerSocketAcceptError(x.getMessage())));
+				break;
+			}
+		}
+		
+		this.closeServerSocket();
+		System.exit(0);
+	}
+

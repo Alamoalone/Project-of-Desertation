@@ -1,0 +1,79 @@
+{
+    "sha": "24cd4bcc113fd61e908da4849ca7bc0766d695c4",
+    "node_id": "C_kwDOLZ1vY9oAKDI0Y2Q0YmNjMTEzZmQ2MWU5MDhkYTQ4NDljYTdiYzA3NjZkNjk1YzQ",
+    "commit": {
+        "author": {
+            "name": "Niraj kumar Mishra",
+            "email": "nmishr@codeaurora.org",
+            "date": "2017-10-06T12:12:30Z"
+        },
+        "committer": {
+            "name": "janak",
+            "email": "niraulajanak2019@gmail.com",
+            "date": "2024-02-28T12:09:01Z"
+        },
+        "message": "Crash occured due to null pointer exception.\n\nReason: Trying to access remote device\nobject (mobjectdevice)which have been set to NULL before.\n\nFix:Avoid handling state changes for invalid devices(NULL)\n\nCRs-Fixed: 2121814\n\nChange-Id: Ib6429bac9b72e933850e6a0f7f670f1f5b2313f8\nPS2: Kill log spam\nSigned-off-by: Pranav Vashi <neobuddy89@gmail.com>",
+        "tree": {
+            "sha": "e37f62115d34ddaa117af4a1e1f015ac2d10f997",
+            "url": "https://api.github.com/repos/ProjectEverest/frameworks_base/git/trees/e37f62115d34ddaa117af4a1e1f015ac2d10f997"
+        },
+        "url": "https://api.github.com/repos/ProjectEverest/frameworks_base/git/commits/24cd4bcc113fd61e908da4849ca7bc0766d695c4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ProjectEverest/frameworks_base/commits/24cd4bcc113fd61e908da4849ca7bc0766d695c4",
+    "html_url": "https://github.com/ProjectEverest/frameworks_base/commit/24cd4bcc113fd61e908da4849ca7bc0766d695c4",
+    "comments_url": "https://api.github.com/repos/ProjectEverest/frameworks_base/commits/24cd4bcc113fd61e908da4849ca7bc0766d695c4/comments",
+    "author": null,
+    "committer": {
+        "login": "janakniraula",
+        "id": 112856726,
+        "node_id": "U_kgDOBroOlg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/112856726?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/janakniraula",
+        "html_url": "https://github.com/janakniraula",
+        "followers_url": "https://api.github.com/users/janakniraula/followers",
+        "following_url": "https://api.github.com/users/janakniraula/following{/other_user}",
+        "gists_url": "https://api.github.com/users/janakniraula/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/janakniraula/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/janakniraula/subscriptions",
+        "organizations_url": "https://api.github.com/users/janakniraula/orgs",
+        "repos_url": "https://api.github.com/users/janakniraula/repos",
+        "events_url": "https://api.github.com/users/janakniraula/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/janakniraula/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "711297c051a99842a863e6c06e4237ec83b49740",
+            "url": "https://api.github.com/repos/ProjectEverest/frameworks_base/commits/711297c051a99842a863e6c06e4237ec83b49740",
+            "html_url": "https://github.com/ProjectEverest/frameworks_base/commit/711297c051a99842a863e6c06e4237ec83b49740"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 5,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "4a9b68c1e1574ebc3dff75b77c2c7f5339ca861c",
+            "filename": "packages/SettingsLib/src/com/android/settingslib/bluetooth/LocalBluetoothProfileManager.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/ProjectEverest/frameworks_base/blob/24cd4bcc113fd61e908da4849ca7bc0766d695c4/packages%2FSettingsLib%2Fsrc%2Fcom%2Fandroid%2Fsettingslib%2Fbluetooth%2FLocalBluetoothProfileManager.java",
+            "raw_url": "https://github.com/ProjectEverest/frameworks_base/raw/24cd4bcc113fd61e908da4849ca7bc0766d695c4/packages%2FSettingsLib%2Fsrc%2Fcom%2Fandroid%2Fsettingslib%2Fbluetooth%2FLocalBluetoothProfileManager.java",
+            "contents_url": "https://api.github.com/repos/ProjectEverest/frameworks_base/contents/packages%2FSettingsLib%2Fsrc%2Fcom%2Fandroid%2Fsettingslib%2Fbluetooth%2FLocalBluetoothProfileManager.java?ref=24cd4bcc113fd61e908da4849ca7bc0766d695c4",
+            "patch": "@@ -330,6 +330,11 @@ private class StateChangedHandler implements BluetoothEventManager.Handler {\n         }\n \n         public void onReceive(Context context, Intent intent, BluetoothDevice device) {\n+            if (device == null) {\n+                if(DEBUG) Log.d(TAG, \"StateChangedHandler receives state-change for invalid device\");\n+                return;\n+            }\n+\n             CachedBluetoothDevice cachedDevice = mDeviceManager.findDevice(device);\n             if (cachedDevice == null) {\n                 Log.w(TAG, \"StateChangedHandler found new device: \" + device);"
+        }
+    ]
+}

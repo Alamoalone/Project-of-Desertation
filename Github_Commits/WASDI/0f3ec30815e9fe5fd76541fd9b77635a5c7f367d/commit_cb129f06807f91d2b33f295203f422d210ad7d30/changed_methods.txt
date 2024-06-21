@@ -1,0 +1,2 @@
+executeAndRetrieve(PaginatedQuery oQuery, boolean bFullViewModel)
+getQueryResultViewModel(QueryViewModel oQuery, String sPayload, String sFootPrint, Date oStartDate, Date oEndDate)

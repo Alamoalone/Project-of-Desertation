@@ -1,0 +1,27 @@
+@@ -7,6 +7,8 @@
+ import com.endava.expensesmanager.model.entity.Expense;
+ import com.endava.expensesmanager.model.entity.User;
+ 
++import java.util.Optional;
++
+ public class ExpenseMapper {
+ 
+     public static Expense toExpense(ExpenseDto expenseDto) {
+@@ -33,11 +35,16 @@ public static Expense toExpense(ExpenseDto expenseDto) {
+ 
+     public static ExpenseDto toDto(Expense expense) {
+         ExpenseDto expenseDto = new ExpenseDto();
++        expenseDto.setExpenseId(expense.getExpenseId());
+         expenseDto.setDescription(expense.getDescription());
+         expenseDto.setExpenseDate(expense.getExpenseDate());
+         expenseDto.setAmount(expense.getAmount());
+         expenseDto.setUserId(expense.getUser().getUserId());
+-        expenseDto.setDocumentId(expense.getDocument().getDocumentId());
++        Optional<Document> optionalDocument = expense.getDocument();
++        if (optionalDocument.isPresent()) {
++            Document document = optionalDocument.get();
++            expenseDto.setDocumentId(document.getDocumentId());
++        }
+         expenseDto.setCategory(expense.getCategory());
+         expenseDto.setCurrency(expense.getCurrency());
+ 

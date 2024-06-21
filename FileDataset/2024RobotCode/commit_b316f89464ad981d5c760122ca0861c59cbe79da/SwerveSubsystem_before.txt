@@ -1,0 +1,22 @@
+  public void periodic() {
+
+    rawGyroRotation = getHeading();
+
+    poseEstimator.update(rawGyroRotation, getModulePositions());
+
+    addTimestampedVisionPose(aprilTagVision.latestPose);
+    
+  }
+
+ public void addTimestampedVisionPose(Optional<TimestampedVisionPose> visionPose) {
+  if (visionPose.isPresent()) {
+    TimestampedVisionPose realVisionPose = visionPose.get();
+    poseEstimator.addVisionMeasurement(realVisionPose.poseMeters(), realVisionPose.timestampSecs()); 
+  }
+  else {
+    
+  }
+}
+
+
+

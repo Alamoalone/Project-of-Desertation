@@ -1,0 +1,60 @@
+{
+    "sha": "06ab897c2c5742ef07fe5702d2df8571ad339ce8",
+    "node_id": "C_kwDOASQdLNoAKDA2YWI4OTdjMmM1NzQyZWYwN2ZlNTcwMmQyZGY4NTcxYWQzMzljZTg",
+    "commit": {
+        "author": {
+            "name": "Gabriel Buades",
+            "email": "gbuades@soffid.com",
+            "date": "2023-05-05T14:49:57Z"
+        },
+        "committer": {
+            "name": "Gabriel Buades",
+            "email": "gbuades@soffid.com",
+            "date": "2023-05-05T14:51:49Z"
+        },
+        "message": "Fix null pointer exception during login",
+        "tree": {
+            "sha": "7874d1927b0dc41845923f96bfa3a6e1e701e715",
+            "url": "https://api.github.com/repos/SoffidIAM/console/git/trees/7874d1927b0dc41845923f96bfa3a6e1e701e715"
+        },
+        "url": "https://api.github.com/repos/SoffidIAM/console/git/commits/06ab897c2c5742ef07fe5702d2df8571ad339ce8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SoffidIAM/console/commits/06ab897c2c5742ef07fe5702d2df8571ad339ce8",
+    "html_url": "https://github.com/SoffidIAM/console/commit/06ab897c2c5742ef07fe5702d2df8571ad339ce8",
+    "comments_url": "https://api.github.com/repos/SoffidIAM/console/commits/06ab897c2c5742ef07fe5702d2df8571ad339ce8/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "4e1a7d38a7222b527f01f7190fa0a65009cc1652",
+            "url": "https://api.github.com/repos/SoffidIAM/console/commits/4e1a7d38a7222b527f01f7190fa0a65009cc1652",
+            "html_url": "https://github.com/SoffidIAM/console/commit/4e1a7d38a7222b527f01f7190fa0a65009cc1652"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "bcc02a66057a721a9d9dd8defa028276243ff6c3",
+            "filename": "core/src/main/java/com/soffid/iam/service/AuthorizationServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/SoffidIAM/console/blob/06ab897c2c5742ef07fe5702d2df8571ad339ce8/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Fservice%2FAuthorizationServiceImpl.java",
+            "raw_url": "https://github.com/SoffidIAM/console/raw/06ab897c2c5742ef07fe5702d2df8571ad339ce8/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Fservice%2FAuthorizationServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/SoffidIAM/console/contents/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Fservice%2FAuthorizationServiceImpl.java?ref=06ab897c2c5742ef07fe5702d2df8571ad339ce8",
+            "patch": "@@ -207,8 +207,9 @@ private Collection getCodiGrupsFillsGrup(String codiGrup) {\n     private Collection getCodiGrupsParesGrup(String codiGrup) {\n \n         GroupEntity grupAnalitzar = getGroupEntityDao().findByName(codiGrup);\n-\n         Collection totsPares = new HashSet();\n+        if (grupAnalitzar == null)\n+        \treturn totsPares;\n         GroupEntity pare = grupAnalitzar.getParent();\n         while (pare != null) {\n             totsPares.add(pare.getName());"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "985f3152129e769968c5900a77a5286fb3a3896d",
+    "node_id": "C_kwDOJ-sZBdoAKDk4NWYzMTUyMTI5ZTc2OTk2OGM1OTAwYTc3YTUyODZmYjNhMzg5NmQ",
+    "commit": {
+        "author": {
+            "name": "Harsh",
+            "email": "iamhp2k@gmail.com",
+            "date": "2023-03-01T19:22:29Z"
+        },
+        "committer": {
+            "name": "Pranav Vashi",
+            "email": "neobuddy89@gmail.com",
+            "date": "2023-06-22T01:46:41Z"
+        },
+        "message": "Launcher3: PageIndicatorDots: null pointer Exception",
+        "tree": {
+            "sha": "1e1e5072e97a4ff3c4efbd173ecb9d6c81db78ad",
+            "url": "https://api.github.com/repos/ColtOS-beta/packages_apps_Launcher3/git/trees/1e1e5072e97a4ff3c4efbd173ecb9d6c81db78ad"
+        },
+        "url": "https://api.github.com/repos/ColtOS-beta/packages_apps_Launcher3/git/commits/985f3152129e769968c5900a77a5286fb3a3896d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ColtOS-beta/packages_apps_Launcher3/commits/985f3152129e769968c5900a77a5286fb3a3896d",
+    "html_url": "https://github.com/ColtOS-beta/packages_apps_Launcher3/commit/985f3152129e769968c5900a77a5286fb3a3896d",
+    "comments_url": "https://api.github.com/repos/ColtOS-beta/packages_apps_Launcher3/commits/985f3152129e769968c5900a77a5286fb3a3896d/comments",
+    "author": {
+        "login": "hpnightowl",
+        "id": 48650798,
+        "node_id": "MDQ6VXNlcjQ4NjUwNzk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48650798?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hpnightowl",
+        "html_url": "https://github.com/hpnightowl",
+        "followers_url": "https://api.github.com/users/hpnightowl/followers",
+        "following_url": "https://api.github.com/users/hpnightowl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hpnightowl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hpnightowl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hpnightowl/subscriptions",
+        "organizations_url": "https://api.github.com/users/hpnightowl/orgs",
+        "repos_url": "https://api.github.com/users/hpnightowl/repos",
+        "events_url": "https://api.github.com/users/hpnightowl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hpnightowl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "neobuddy89",
+        "id": 1227398,
+        "node_id": "MDQ6VXNlcjEyMjczOTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1227398?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/neobuddy89",
+        "html_url": "https://github.com/neobuddy89",
+        "followers_url": "https://api.github.com/users/neobuddy89/followers",
+        "following_url": "https://api.github.com/users/neobuddy89/following{/other_user}",
+        "gists_url": "https://api.github.com/users/neobuddy89/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/neobuddy89/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/neobuddy89/subscriptions",
+        "organizations_url": "https://api.github.com/users/neobuddy89/orgs",
+        "repos_url": "https://api.github.com/users/neobuddy89/repos",
+        "events_url": "https://api.github.com/users/neobuddy89/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/neobuddy89/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b999923341f5d745f7dab4943e210369977b50d4",
+            "url": "https://api.github.com/repos/ColtOS-beta/packages_apps_Launcher3/commits/b999923341f5d745f7dab4943e210369977b50d4",
+            "html_url": "https://github.com/ColtOS-beta/packages_apps_Launcher3/commit/b999923341f5d745f7dab4943e210369977b50d4"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "2de71f9a8dec62dda6fcd30af9bb32004fafcbbc",
+            "filename": "src/com/android/launcher3/pageindicators/PageIndicatorDots.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/ColtOS-beta/packages_apps_Launcher3/blob/985f3152129e769968c5900a77a5286fb3a3896d/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "raw_url": "https://github.com/ColtOS-beta/packages_apps_Launcher3/raw/985f3152129e769968c5900a77a5286fb3a3896d/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "contents_url": "https://api.github.com/repos/ColtOS-beta/packages_apps_Launcher3/contents/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java?ref=985f3152129e769968c5900a77a5286fb3a3896d",
+            "patch": "@@ -183,6 +183,10 @@ public void setScroll(int currentScroll, int totalScroll) {\n         mTotalScroll = totalScroll;\n \n         int scrollPerPage = totalScroll / (mNumPages - 1);\n+        if (scrollPerPage == 0) {\n+            return;\n+        }\n+\n         int pageToLeft = scrollPerPage == 0 ? 0 : currentScroll / scrollPerPage;\n         int pageToLeftScroll = pageToLeft * scrollPerPage;\n         int pageToRightScroll = pageToLeftScroll + scrollPerPage;"
+        }
+    ]
+}

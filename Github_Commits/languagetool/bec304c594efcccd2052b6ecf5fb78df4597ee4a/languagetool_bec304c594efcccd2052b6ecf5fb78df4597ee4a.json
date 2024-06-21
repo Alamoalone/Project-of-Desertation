@@ -1,0 +1,134 @@
+{
+    "sha": "bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+    "node_id": "C_kwDOALbRWNoAKGJlYzMwNGM1OTRlZmNjY2QyMDUyYjZlY2Y1ZmI3OGRmNDU5N2VlNGE",
+    "commit": {
+        "author": {
+            "name": "Fred Kruse",
+            "email": "f.kruse@freenet.de",
+            "date": "2023-03-24T19:06:56Z"
+        },
+        "committer": {
+            "name": "Fred Kruse",
+            "email": "f.kruse@freenet.de",
+            "date": "2023-03-24T19:06:56Z"
+        },
+        "message": "[LO extension] solves null pointer exception at impress and calc",
+        "tree": {
+            "sha": "15328976fb2156a5ab9ecba8e3c720493de3e157",
+            "url": "https://api.github.com/repos/languagetool-org/languagetool/git/trees/15328976fb2156a5ab9ecba8e3c720493de3e157"
+        },
+        "url": "https://api.github.com/repos/languagetool-org/languagetool/git/commits/bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/languagetool-org/languagetool/commits/bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+    "html_url": "https://github.com/languagetool-org/languagetool/commit/bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+    "comments_url": "https://api.github.com/repos/languagetool-org/languagetool/commits/bec304c594efcccd2052b6ecf5fb78df4597ee4a/comments",
+    "author": {
+        "login": "FredKruse",
+        "id": 23344265,
+        "node_id": "MDQ6VXNlcjIzMzQ0MjY1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23344265?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/FredKruse",
+        "html_url": "https://github.com/FredKruse",
+        "followers_url": "https://api.github.com/users/FredKruse/followers",
+        "following_url": "https://api.github.com/users/FredKruse/following{/other_user}",
+        "gists_url": "https://api.github.com/users/FredKruse/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/FredKruse/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/FredKruse/subscriptions",
+        "organizations_url": "https://api.github.com/users/FredKruse/orgs",
+        "repos_url": "https://api.github.com/users/FredKruse/repos",
+        "events_url": "https://api.github.com/users/FredKruse/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/FredKruse/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "FredKruse",
+        "id": 23344265,
+        "node_id": "MDQ6VXNlcjIzMzQ0MjY1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23344265?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/FredKruse",
+        "html_url": "https://github.com/FredKruse",
+        "followers_url": "https://api.github.com/users/FredKruse/followers",
+        "following_url": "https://api.github.com/users/FredKruse/following{/other_user}",
+        "gists_url": "https://api.github.com/users/FredKruse/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/FredKruse/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/FredKruse/subscriptions",
+        "organizations_url": "https://api.github.com/users/FredKruse/orgs",
+        "repos_url": "https://api.github.com/users/FredKruse/repos",
+        "events_url": "https://api.github.com/users/FredKruse/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/FredKruse/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2a8bd0a3db29f69a643f09760b75bc0578a31341",
+            "url": "https://api.github.com/repos/languagetool-org/languagetool/commits/2a8bd0a3db29f69a643f09760b75bc0578a31341",
+            "html_url": "https://github.com/languagetool-org/languagetool/commit/2a8bd0a3db29f69a643f09760b75bc0578a31341"
+        }
+    ],
+    "stats": {
+        "total": 79,
+        "additions": 50,
+        "deletions": 29
+    },
+    "files": [
+        {
+            "sha": "94cb37c3ca673973262d3e60e154f51348fefea9",
+            "filename": "languagetool-office-extension/src/main/java/org/languagetool/openoffice/MultiDocumentsHandler.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 4,
+            "changes": 16,
+            "blob_url": "https://github.com/languagetool-org/languagetool/blob/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FMultiDocumentsHandler.java",
+            "raw_url": "https://github.com/languagetool-org/languagetool/raw/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FMultiDocumentsHandler.java",
+            "contents_url": "https://api.github.com/repos/languagetool-org/languagetool/contents/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FMultiDocumentsHandler.java?ref=bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+            "patch": "@@ -1301,7 +1301,7 @@ public void deactivateRule(String ruleId, String langcode, boolean reactivate) {\n   /**\n    * reset sorted text level rules\n    */\n-  public void resetSortedTextRules() {\n+  public void resetSortedTextRules(SwJLanguageTool lt) {\n     String langCode = lt.getLanguage().getShortCodeWithCountryAndVariant();\n     sortedTextRules = new SortedTextRules(lt, config, getDisabledRules(langCode), checkImpressDocument);\n   }\n@@ -1996,9 +1996,17 @@ public void run() {\n             return;\n           }\n           currentDocument = getCurrentDocument();\n-          if (currentDocument != null && currentDocument.getDocumentType() == DocumentType.IMPRESS) {\n-            checkImpressDocument = true;\n-            locale = OfficeDrawTools.getDocumentLocale(currentDocument.getXComponent());\n+          if (currentDocument != null && (currentDocument.getDocumentType() == DocumentType.IMPRESS \n+              || currentDocument.getDocumentType() == DocumentType.CALC)) {\n+            if (currentDocument.getDocumentType() == DocumentType.IMPRESS) {\n+              checkImpressDocument = true;\n+              locale = OfficeDrawTools.getDocumentLocale(currentDocument.getXComponent());\n+            } else {\n+              locale = OfficeSpreadsheetTools.getDocumentLocale(currentDocument.getXComponent());\n+            }\n+            if (locale == null) {\n+              locale = new Locale(\"en\",\"US\",\"\");\n+            }\n             MessageHandler.printToLogFile(\"MultiDocumentsHandler: LtHelper: local: \" + OfficeTools.localeToString(locale));\n             langForShortName = getLanguage(locale);\n             docLanguage = langForShortName;"
+        },
+        {
+            "sha": "8489860f5d88613470a04c9c8c3d4f6e35c9abb8",
+            "filename": "languagetool-office-extension/src/main/java/org/languagetool/openoffice/OfficeTools.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/languagetool-org/languagetool/blob/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FOfficeTools.java",
+            "raw_url": "https://github.com/languagetool-org/languagetool/raw/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FOfficeTools.java",
+            "contents_url": "https://api.github.com/repos/languagetool-org/languagetool/contents/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FOfficeTools.java?ref=bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+            "patch": "@@ -111,6 +111,7 @@ public enum RemoteCheck {\n   public static boolean DEBUG_MODE_IO = false;    //  Activate Debug Mode for Cache save to file\n   public static boolean DEBUG_MODE_SR = false;    //  Activate Debug Mode for SortedTextRules\n   public static boolean DEBUG_MODE_TM = false;    //  Activate Debug Mode for time measurements\n+  public static boolean DEVELOP_MODE_ST = false;  //  Activate Development Mode to test sorted text IDs\n   public static boolean DEVELOP_MODE = false;     //  Activate Development Mode\n \n   public  static final String CONFIG_FILE = \"Languagetool.cfg\";\n@@ -727,6 +728,8 @@ static void setLogLevel(String logLevel) {\n               }\n             }\n           }\n+        } else if (level.equals(\"st\")) {\n+          DEVELOP_MODE_ST = true;\n         } else if (level.equals(\"dev\")) {\n           DEVELOP_MODE = true;\n         }"
+        },
+        {
+            "sha": "705126609a838bea8634c48fed35c0d36862a1c9",
+            "filename": "languagetool-office-extension/src/main/java/org/languagetool/openoffice/SingleDocument.java",
+            "status": "modified",
+            "additions": 31,
+            "deletions": 24,
+            "changes": 55,
+            "blob_url": "https://github.com/languagetool-org/languagetool/blob/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FSingleDocument.java",
+            "raw_url": "https://github.com/languagetool-org/languagetool/raw/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FSingleDocument.java",
+            "contents_url": "https://api.github.com/repos/languagetool-org/languagetool/contents/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FSingleDocument.java?ref=bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+            "patch": "@@ -119,6 +119,9 @@ class SingleDocument {\n       XComponent xComp, MultiDocumentsHandler mDH) {\n     debugMode = OfficeTools.DEBUG_MODE_SD;\n     debugModeTm = OfficeTools.DEBUG_MODE_TM;\n+    if (!OfficeTools.DEVELOP_MODE_ST) {\n+      hasSortedTextId = false;\n+    }\n     this.xContext = xContext;\n     this.config = config;\n     this.docID = docID;\n@@ -395,7 +398,7 @@ void setConfigValues(Configuration config) {\n   void setDocumentCacheForTests(List<String> paragraphs, List<List<String>> textParagraphs, List<int[]> footnotes, List<List<Integer>> chapterBegins, Locale locale) {\n     docCache.setForTest(paragraphs, textParagraphs, footnotes, chapterBegins, locale);\n     numParasToCheck = -1;\n-    mDocHandler.resetSortedTextRules();\n+    mDocHandler.resetSortedTextRules(mDocHandler.getLanguageTool());\n   }\n   \n   /** Get LanguageTool menu\n@@ -1279,30 +1282,34 @@ private void addSynonyms(ProofreadingResult paRes, String para, Locale locale, S\n   }\n   \n   private void setDokumentListener(XComponent xComponent) {\n-    if (xComponent != null && eventListener == null) {\n-      eventListener = new LTDokumentEventListener();\n-      XDocumentEventBroadcaster broadcaster = UnoRuntime.queryInterface(XDocumentEventBroadcaster.class, xComponent);\n-      if (broadcaster != null) {\n-        broadcaster.addDocumentEventListener(eventListener);\n-      } else {\n-        MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: Could not add document event listener!\");\n-      }\n-      XModel xModel = UnoRuntime.queryInterface(XModel.class, xComponent);\n-      if (xModel == null) {\n-        MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: XModel not found!\");\n-        return;\n-      }\n-      XController xController = xModel.getCurrentController();\n-      if (xController == null) {\n-        MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: XController not found!\");\n-        return;\n-      }\n-      XUserInputInterception xUserInputInterception = UnoRuntime.queryInterface(XUserInputInterception.class, xController);\n-      if (xUserInputInterception == null) {\n-        MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: XUserInputInterception not found!\");\n-        return;\n+    try {\n+      if (!disposed && xComponent != null && eventListener == null) {\n+        eventListener = new LTDokumentEventListener();\n+        XDocumentEventBroadcaster broadcaster = UnoRuntime.queryInterface(XDocumentEventBroadcaster.class, xComponent);\n+        if (!disposed && broadcaster != null) {\n+          broadcaster.addDocumentEventListener(eventListener);\n+        } else {\n+          MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: Could not add document event listener!\");\n+        }\n+        XModel xModel = UnoRuntime.queryInterface(XModel.class, xComponent);\n+        if (disposed || xModel == null) {\n+          MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: XModel not found!\");\n+          return;\n+        }\n+        XController xController = xModel.getCurrentController();\n+        if (disposed || xController == null) {\n+          MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: XController not found!\");\n+          return;\n+        }\n+        XUserInputInterception xUserInputInterception = UnoRuntime.queryInterface(XUserInputInterception.class, xController);\n+        if (disposed || xUserInputInterception == null) {\n+          MessageHandler.printToLogFile(\"SingleDocument: setDokumentListener: XUserInputInterception not found!\");\n+          return;\n+        }\n+        xUserInputInterception.addMouseClickHandler(eventListener);\n       }\n-      xUserInputInterception.addMouseClickHandler(eventListener);\n+    } catch (Throwable t) {\n+      MessageHandler.printException(t);\n     }\n   }\n   "
+        },
+        {
+            "sha": "c4ae4608ec292633f2f9e5f17416a37fdc3120ad",
+            "filename": "languagetool-office-extension/src/main/java/org/languagetool/openoffice/SpellAndGrammarCheckDialog.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/languagetool-org/languagetool/blob/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FSpellAndGrammarCheckDialog.java",
+            "raw_url": "https://github.com/languagetool-org/languagetool/raw/bec304c594efcccd2052b6ecf5fb78df4597ee4a/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FSpellAndGrammarCheckDialog.java",
+            "contents_url": "https://api.github.com/repos/languagetool-org/languagetool/contents/languagetool-office-extension%2Fsrc%2Fmain%2Fjava%2Forg%2Flanguagetool%2Fopenoffice%2FSpellAndGrammarCheckDialog.java?ref=bec304c594efcccd2052b6ecf5fb78df4597ee4a",
+            "patch": "@@ -194,7 +194,10 @@ public class SpellAndGrammarCheckDialog extends Thread {\n   private void setLangTool(MultiDocumentsHandler documents, Language language) {\n     documents.setCheckImpressDocument(true);\n     lt = documents.initLanguageTool(language, false);\n-    documents.initCheck(lt);\n+    if (lt != null) {\n+      documents.initCheck(lt);\n+      documents.resetSortedTextRules(lt);\n+    }\n     if (debugMode) {\n       for (String id : lt.getDisabledRules()) {\n         MessageHandler.printToLogFile(\"CheckDialog: setLangTool: After init disabled rule: \" + id);"
+        }
+    ]
+}

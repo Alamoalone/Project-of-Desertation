@@ -1,0 +1,122 @@
+{
+    "sha": "3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+    "node_id": "C_kwDOKTDXldoAKDNmODVmMWM1NmM4OTZiN2I0NzgyY2M0ZjlmYTEyN2RjYzU3YTBkZDQ",
+    "commit": {
+        "author": {
+            "name": "marie-lourdes",
+            "email": "marielourdesleperlier64@gmail.com",
+            "date": "2023-10-21T08:35:16Z"
+        },
+        "committer": {
+            "name": "marie-lourdes",
+            "email": "marielourdesleperlier64@gmail.com",
+            "date": "2023-10-21T08:35:16Z"
+        },
+        "message": "refactor method getListOfHouseHoldByStationNumber() with two bloc try/catch , to ctach null pointer exception and message for each request param station and and catch null pointer if none stations found",
+        "tree": {
+            "sha": "4910218c5adb61b57011f823c1882dfb4a01f266",
+            "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/git/trees/4910218c5adb61b57011f823c1882dfb4a01f266"
+        },
+        "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/git/commits/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commits/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+    "html_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commit/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+    "comments_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commits/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/comments",
+    "author": {
+        "login": "marie-lourdes",
+        "id": 101858408,
+        "node_id": "U_kgDOBhI8aA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101858408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marie-lourdes",
+        "html_url": "https://github.com/marie-lourdes",
+        "followers_url": "https://api.github.com/users/marie-lourdes/followers",
+        "following_url": "https://api.github.com/users/marie-lourdes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marie-lourdes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marie-lourdes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marie-lourdes/subscriptions",
+        "organizations_url": "https://api.github.com/users/marie-lourdes/orgs",
+        "repos_url": "https://api.github.com/users/marie-lourdes/repos",
+        "events_url": "https://api.github.com/users/marie-lourdes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marie-lourdes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "marie-lourdes",
+        "id": 101858408,
+        "node_id": "U_kgDOBhI8aA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101858408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marie-lourdes",
+        "html_url": "https://github.com/marie-lourdes",
+        "followers_url": "https://api.github.com/users/marie-lourdes/followers",
+        "following_url": "https://api.github.com/users/marie-lourdes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marie-lourdes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marie-lourdes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marie-lourdes/subscriptions",
+        "organizations_url": "https://api.github.com/users/marie-lourdes/orgs",
+        "repos_url": "https://api.github.com/users/marie-lourdes/repos",
+        "events_url": "https://api.github.com/users/marie-lourdes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marie-lourdes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "45ac42516f90861fec93850a41b073f844dd35ff",
+            "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commits/45ac42516f90861fec93850a41b073f844dd35ff",
+            "html_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commit/45ac42516f90861fec93850a41b073f844dd35ff"
+        }
+    ],
+    "stats": {
+        "total": 59,
+        "additions": 29,
+        "deletions": 30
+    },
+    "files": [
+        {
+            "sha": "e666db86a77003fa9e4dbd78a8ac1be3227967a8",
+            "filename": "src/main/java/com/safetynet/api/controller/AlertsController.java",
+            "status": "modified",
+            "additions": 20,
+            "deletions": 17,
+            "changes": 37,
+            "blob_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/blob/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fcontroller%2FAlertsController.java",
+            "raw_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/raw/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fcontroller%2FAlertsController.java",
+            "contents_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/contents/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fcontroller%2FAlertsController.java?ref=3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+            "patch": "@@ -104,29 +104,32 @@ public ResponseEntity<?> getListOfResidentsAndFireStationNearFire(@RequestParam\n \n \t@GetMapping(\"/flood/stations\")\n \t@ResponseBody\n-\tpublic ResponseEntity<?> getListOfHouseHoldByStationNumberIfFlood(@RequestParam List<String> stations) {\n+\tpublic ResponseEntity<?>getListOfHouseHoldByStationNumber(@RequestParam List<String> stations) {\n \t\tList<Object> listOfHouseHoldByStationNumber = new ArrayList<Object>();\n \t\tList<Object> listOfHouseHoldByStationNumberWithMoreOneRequestParam = new ArrayList<Object>();\n-\t\t\n-\t\t\t\n-\t\t\n-\t\t\t\tfor (String station : stations) {\n-\t\t\t\t\ttry {\n+\t\n+\t\t\tfor (String station : stations) {\n+\t\t\t\ttry {\n \t\t\t\tlistOfHouseHoldByStationNumber = floodService.getListOfHouseHoldByStationNumber(station);\n-\t\t\t\t\n \t\t\t\tlistOfHouseHoldByStationNumberWithMoreOneRequestParam.add(listOfHouseHoldByStationNumber);\n-\t\t\t\t\t}catch (NullPointerException e) {\n-\t\t\t\t\t\t\n-\t\t\t\t\t\tSystem.out.println(e.getMessage());\n-\t\t\t\t\t\treturn returnResponseEntityEmptyAndCode404();\n-\t\t\t\t\t}\n+\t\t\t\tSystem.out.println(\"list Of House Hold found a this firestation \"+station+\" : \"+listOfHouseHoldByStationNumber+\"to prevent for flood\");\n+\t\t\t\t}catch (NullPointerException e) {\n+\t\t\t\t\tSystem.out.println(e.getMessage());\n+\t\t\t\t\t//return returnResponseEntityEmptyAndCode404();\n+\t\t\t\t}\n+\t\t\t}\n+\t\t\ttry {\n+\t\t\t\tif(listOfHouseHoldByStationNumberWithMoreOneRequestParam.isEmpty()) {\n+\t\t\t\t\tthrow new NullPointerException(\"HouseHold not found at this/theses station(s) to prevent for flood\" );\n+\t\t\t\t\n \t\t\t\t}\n-\t\t\t/*\tif(\t\tlistOfHouseHoldByStationNumber==null) {\n-\t\t\t\t\t\n-\t\t\t\t}*/\n-\t\t\t\treturn ResponseEntity.status(HttpStatus.OK).body(listOfHouseHoldByStationNumberWithMoreOneRequestParam);\n+\t\t\t}catch (NullPointerException e) {\n+\t\t\t\tSystem.out.println(e.getMessage());\n+\t\t\t\treturn returnResponseEntityEmptyAndCode404();\n \t\t\t}\n-\t\t//return listOfHouseHoldByStationNumberWithMoreOneRequestParam;\n+\t\t\t\n+\t\treturn ResponseEntity.status(HttpStatus.OK).body(\tlistOfHouseHoldByStationNumberWithMoreOneRequestParam);\n+\t}\n \t\n \n \t@GetMapping(\"/personInfo\")"
+        },
+        {
+            "sha": "0f3446c80992f8c2f523ba36063727864f0eaf46",
+            "filename": "src/main/java/com/safetynet/api/service/alertssafetynetservice/FloodService.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 12,
+            "changes": 20,
+            "blob_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/blob/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Falertssafetynetservice%2FFloodService.java",
+            "raw_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/raw/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Falertssafetynetservice%2FFloodService.java",
+            "contents_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/contents/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Falertssafetynetservice%2FFloodService.java?ref=3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+            "patch": "@@ -17,17 +17,13 @@ public class FloodService {\n \t@Autowired\n \tSearchingFullInfoOfResidentsByAddressWithMedicalRecordImpl searchingFullInfoOfResidentsWithMedicalRecord;\n \n-private List<Object> listOfHouseHoldOfStationNumber = new ArrayList<Object>();\n+\n \n \tpublic List<Object> getListOfHouseHoldByStationNumber(String stationNumber) throws NullPointerException {\n-\t\tList<Map<String, String>> listOfResidentsOfStationNumber =new ArrayList<Map<String, String>>();\n-\ttry {\n-\t\t listOfResidentsOfStationNumber = residentsOfStationNumberService\n-\t\t\t\t.getListOfResidentsOfStationNumber(stationNumber); \n-\t}catch (NullPointerException e) {\n-\t\tthrow new NullPointerException(\"not resident  found  of this firestation \"+stationNumber+\"   to get its HouseHold and  prevent them for flood\");\n-\t}\n-\t\t \n+\t\tList<Object> listOfHouseHoldOfStationNumber = new ArrayList<Object>();\n+\t\tList<Map<String, String>> listOfResidentsOfStationNumber = residentsOfStationNumberService\n+\t\t\t\t.getListOfResidentsOfStationNumber(stationNumber);\n+\t\t\n \n \t\t// creating list of address commun between addresses found in each info of resident\n \t\tListIterator<Map<String, String>> itrResidentsOfStationNumber = listOfResidentsOfStationNumber.listIterator();\n@@ -43,16 +39,16 @@ public List<Object> getListOfHouseHoldByStationNumber(String stationNumber) thro\n \t\t// getting medicalrecords searching with address of each resident\n \t\tfor (String address : listOfAddress) {\n \t\t\tList<Map<String, String>> listOfResidentWithMedicalRecord = new ArrayList<Map<String, String>>();\n-\t\t\t// gathering all HouseHold of firestation by address in list created in each iteration on address of the  list of address\n \t\t\tlistOfResidentWithMedicalRecord = searchingFullInfoOfResidentsWithMedicalRecord\n \t\t\t\t\t.searchInfoOfResident(address);\n-\t\t\t\n \t\t\tlistOfHouseHoldOfStationNumber.add(listOfResidentWithMedicalRecord);\n \n \t\t}\n-\t\tSystem.out.println(\" listOfHouseHoldOfStationNumber\" + listOfHouseHoldOfStationNumber);\n+\t\tSystem.out.println(\" listOfHouseHoldOfStationNumber\" + stationNumber+ listOfHouseHoldOfStationNumber);\n \t\tSystem.out.println(\"listOfAddress\" + listOfAddress);\n \t\t\n+\t\t\n+\n \t\treturn listOfHouseHoldOfStationNumber;\n \t}\n }"
+        },
+        {
+            "sha": "b64d0d219a3a8f445aecf8712fb01eb3d471e569",
+            "filename": "src/main/java/com/safetynet/api/service/alertssafetynetservice/ResidentsOfStationNumberService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/blob/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Falertssafetynetservice%2FResidentsOfStationNumberService.java",
+            "raw_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/raw/3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Falertssafetynetservice%2FResidentsOfStationNumberService.java",
+            "contents_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/contents/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Falertssafetynetservice%2FResidentsOfStationNumberService.java?ref=3f85f1c56c896b7b4782cc4f9fa127dcc57a0dd4",
+            "patch": "@@ -23,7 +23,7 @@ public List<Map<String, String>> getListOfResidentsOfStationNumber(String statio\n \t\t\tlistOfResidentOfStationNumber = new ArrayList<Map<String, String>>();\n \t\t\tlistOfResidentOfStationNumber = infoOfResidentOfStationNumber.searchInfoOfResident(stationNumber);\n \t\t} catch (NullPointerException e) {\n-\t\t\tthrow new NullPointerException(\"Residents not found at this station number\");\n+\t\t\tthrow new NullPointerException(\"Residents not found at this station number \"+stationNumber);\n \t\t}\n \n \t\tfor (Map<String, String> residents : listOfResidentOfStationNumber) {"
+        }
+    ]
+}

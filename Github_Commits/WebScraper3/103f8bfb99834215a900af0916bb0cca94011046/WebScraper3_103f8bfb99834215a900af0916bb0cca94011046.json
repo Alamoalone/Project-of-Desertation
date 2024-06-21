@@ -1,0 +1,110 @@
+{
+    "sha": "103f8bfb99834215a900af0916bb0cca94011046",
+    "node_id": "C_kwDOKoH2fdoAKDEwM2Y4YmZiOTk4MzQyMTVhOTAwYWYwOTE2YmIwY2NhOTQwMTEwNDY",
+    "commit": {
+        "author": {
+            "name": "StephenMiner",
+            "email": "64863697+StephenMiner@users.noreply.github.com",
+            "date": "2023-11-08T00:29:04Z"
+        },
+        "committer": {
+            "name": "StephenMiner",
+            "email": "64863697+StephenMiner@users.noreply.github.com",
+            "date": "2023-11-08T00:29:04Z"
+        },
+        "message": "fix null pointer exception with reflections.",
+        "tree": {
+            "sha": "a0c4d367ebb8c7b4fa47b68f692230a30b2be62c",
+            "url": "https://api.github.com/repos/StephenMiner/WebScraper3/git/trees/a0c4d367ebb8c7b4fa47b68f692230a30b2be62c"
+        },
+        "url": "https://api.github.com/repos/StephenMiner/WebScraper3/git/commits/103f8bfb99834215a900af0916bb0cca94011046",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/StephenMiner/WebScraper3/commits/103f8bfb99834215a900af0916bb0cca94011046",
+    "html_url": "https://github.com/StephenMiner/WebScraper3/commit/103f8bfb99834215a900af0916bb0cca94011046",
+    "comments_url": "https://api.github.com/repos/StephenMiner/WebScraper3/commits/103f8bfb99834215a900af0916bb0cca94011046/comments",
+    "author": {
+        "login": "StephenMiner",
+        "id": 64863697,
+        "node_id": "MDQ6VXNlcjY0ODYzNjk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/64863697?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/StephenMiner",
+        "html_url": "https://github.com/StephenMiner",
+        "followers_url": "https://api.github.com/users/StephenMiner/followers",
+        "following_url": "https://api.github.com/users/StephenMiner/following{/other_user}",
+        "gists_url": "https://api.github.com/users/StephenMiner/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/StephenMiner/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/StephenMiner/subscriptions",
+        "organizations_url": "https://api.github.com/users/StephenMiner/orgs",
+        "repos_url": "https://api.github.com/users/StephenMiner/repos",
+        "events_url": "https://api.github.com/users/StephenMiner/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/StephenMiner/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "StephenMiner",
+        "id": 64863697,
+        "node_id": "MDQ6VXNlcjY0ODYzNjk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/64863697?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/StephenMiner",
+        "html_url": "https://github.com/StephenMiner",
+        "followers_url": "https://api.github.com/users/StephenMiner/followers",
+        "following_url": "https://api.github.com/users/StephenMiner/following{/other_user}",
+        "gists_url": "https://api.github.com/users/StephenMiner/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/StephenMiner/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/StephenMiner/subscriptions",
+        "organizations_url": "https://api.github.com/users/StephenMiner/orgs",
+        "repos_url": "https://api.github.com/users/StephenMiner/repos",
+        "events_url": "https://api.github.com/users/StephenMiner/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/StephenMiner/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d8d6f4723727df008e5ce911e1975f90fceeaed1",
+            "url": "https://api.github.com/repos/StephenMiner/WebScraper3/commits/d8d6f4723727df008e5ce911e1975f90fceeaed1",
+            "html_url": "https://github.com/StephenMiner/WebScraper3/commit/d8d6f4723727df008e5ce911e1975f90fceeaed1"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 5,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "badf219d0e9141e8cb12f28f585709dcabc173e7",
+            "filename": "src/main/java/me/stephenminer/search/ReflectionSearch.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/StephenMiner/WebScraper3/blob/103f8bfb99834215a900af0916bb0cca94011046/src%2Fmain%2Fjava%2Fme%2Fstephenminer%2Fsearch%2FReflectionSearch.java",
+            "raw_url": "https://github.com/StephenMiner/WebScraper3/raw/103f8bfb99834215a900af0916bb0cca94011046/src%2Fmain%2Fjava%2Fme%2Fstephenminer%2Fsearch%2FReflectionSearch.java",
+            "contents_url": "https://api.github.com/repos/StephenMiner/WebScraper3/contents/src%2Fmain%2Fjava%2Fme%2Fstephenminer%2Fsearch%2FReflectionSearch.java?ref=103f8bfb99834215a900af0916bb0cca94011046",
+            "patch": "@@ -12,7 +12,7 @@\n \n public class ReflectionSearch implements Search<HashMap<String,Double>> {\n     private final WebDriver driver;\n-    private HashMap<String, Double> reflectionPoints;\n+    protected HashMap<String, Double> reflectionPoints;\n \n     public ReflectionSearch(WebDriver driver){\n         this.driver = driver;"
+        },
+        {
+            "sha": "c41d1800210eb4db22f098f29ac019ab12abee14",
+            "filename": "src/main/java/me/stephenminer/writers/ScoreWriter.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 6,
+            "changes": 10,
+            "blob_url": "https://github.com/StephenMiner/WebScraper3/blob/103f8bfb99834215a900af0916bb0cca94011046/src%2Fmain%2Fjava%2Fme%2Fstephenminer%2Fwriters%2FScoreWriter.java",
+            "raw_url": "https://github.com/StephenMiner/WebScraper3/raw/103f8bfb99834215a900af0916bb0cca94011046/src%2Fmain%2Fjava%2Fme%2Fstephenminer%2Fwriters%2FScoreWriter.java",
+            "contents_url": "https://api.github.com/repos/StephenMiner/WebScraper3/contents/src%2Fmain%2Fjava%2Fme%2Fstephenminer%2Fwriters%2FScoreWriter.java?ref=103f8bfb99834215a900af0916bb0cca94011046",
+            "patch": "@@ -8,8 +8,6 @@\n import java.util.HashMap;\n \n public class ScoreWriter extends OutputWriter<HashMap<String,Double>> {\n-    private HashMap<String,Double> scores;\n-    private String className;\n     public ScoreWriter(String className, HashMap<String,Double> scores){\n         super(\"reflection-scores\",className,scores);\n     }\n@@ -41,8 +39,8 @@ protected void writeData(File file){\n             BufferedWriter bufferWriter = new BufferedWriter(writer);\n             bufferWriter.write(\"Student-Name,Reflection-Points\");\n             bufferWriter.newLine();\n-            for (String name : scores.keySet()){\n-                double points = scores.get(name);\n+            for (String name : data.keySet()){\n+                double points = data.get(name);\n \n                 bufferWriter.write(name + \",\" + points + \",\");\n                 bufferWriter.newLine();\n@@ -59,8 +57,8 @@ protected void writeData(File file){\n     @Override\n     public String toString(){\n         StringBuilder builder = new StringBuilder();\n-        for (String name : scores.keySet()){\n-            double score = scores.get(name);\n+        for (String name : data.keySet()){\n+            double score = data.get(name);\n             builder.append(name + \",\" + score);\n         }\n         return builder.toString();"
+        }
+    ]
+}

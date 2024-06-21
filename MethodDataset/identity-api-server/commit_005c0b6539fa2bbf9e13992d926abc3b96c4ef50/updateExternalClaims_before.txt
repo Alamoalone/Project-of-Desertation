@@ -1,0 +1,31 @@
+    private void updateExternalClaims(String dialectId, List<ExternalClaimReqDTO> externalClaimReqDTOList,
+                                      Boolean delete) throws ClaimMetadataException {
+
+        if (delete != null && delete) {
+            deleteClaimDialect(dialectId);
+            dialectId = addClaimDialect(base64DecodeId(dialectId));
+            importExternalClaims(dialectId, externalClaimReqDTOList);
+            return;
+        }
+
+        List<ClaimErrorDTO> errors = new ArrayList<>();
+
+        for (ExternalClaimReqDTO externalClaimReqDTO : externalClaimReqDTOList) {
+            String claimId = getResourceId(externalClaimReqDTO.getClaimURI());
+            try {
+                if (isExternalClaimExist(dialectId, claimId)) {
+                    updateExternalClaim(dialectId, claimId, externalClaimReqDTO);
+                } else {
+                    addExternalClaim(dialectId, externalClaimReqDTO);
+                }
+            } catch (APIError e) {
+                ClaimErrorDTO claimErrorDTO = new ClaimErrorDTO(e.getResponseEntity());
+                claimErrorDTO.setClaimURI(externalClaimReqDTO.getClaimURI());
+                errors.add(claimErrorDTO);
+            }
+        }
+        if (!errors.isEmpty()) {
+            throw handleClaimManagementBulkClientError(ERROR_CODE_UPDATING_EXTERNAL_CLAIMS, BAD_REQUEST, errors,
+                    String.valueOf(errors.size()), String.valueOf(externalClaimReqDTOList.size()));
+        }
+    }

@@ -1,0 +1,9 @@
+    public void replaceExpressionSubPart(final Expression oldSubExpression, final Expression newSubExpression) {
+        if (oldSubExpression instanceof LiteralExpression && ((LiteralExpression) oldSubExpression).getContent().equals(this.content) &&
+            newSubExpression instanceof LiteralExpression) {
+            this.content = ((LiteralExpression) newSubExpression).content;
+            this.featureName = ((LiteralExpression) newSubExpression).featureName;
+            this.attributeName = ((LiteralExpression) newSubExpression).attributeName;
+            this.feature = ((LiteralExpression) newSubExpression).feature;
+        }
+    }

@@ -1,0 +1,12 @@
+    private void update(int d) {
+        duration = d;
+        timer.cancel();
+        close();
+    }
+
+    public void closeImmediately() throws IOException {
+        timer.cancel();
+        active = null;
+        super.close();
+    }
+

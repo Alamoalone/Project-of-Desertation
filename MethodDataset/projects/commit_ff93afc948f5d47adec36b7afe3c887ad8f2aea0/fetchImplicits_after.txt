@@ -1,0 +1,13 @@
+    public static ImplicitMethods fetchImplicits(AnaFormattedRootBlock _clMet, MemberId _id, Forwards _forwards) {
+        ExecTypeFunction conv_ = null;
+        if (!_clMet.getFormatted().isEmpty()) {
+            conv_ = fetchOvTypeFunction(_id, _forwards);
+        }
+        if (conv_ != null) {
+            ImplicitMethods converter_ = new ImplicitMethods();
+            converter_.getConverter().add(conv_);
+            converter_.setOwnerClass(new ExecFormattedRootBlock(conv_.getType(),_clMet.getFormatted()));
+            return converter_;
+        }
+        return null;
+    }

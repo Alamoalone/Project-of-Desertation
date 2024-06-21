@@ -1,0 +1,6 @@
+    public void track(GameObject gameObject) {
+        if(this.work){
+            this.gameObjects.add(gameObject);
+        }
+    }
+

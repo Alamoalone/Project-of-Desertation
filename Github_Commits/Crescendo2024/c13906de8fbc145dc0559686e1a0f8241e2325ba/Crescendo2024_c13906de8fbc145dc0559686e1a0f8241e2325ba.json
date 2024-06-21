@@ -1,0 +1,122 @@
+{
+    "sha": "c13906de8fbc145dc0559686e1a0f8241e2325ba",
+    "node_id": "C_kwDOLBkQktoAKGMxMzkwNmRlOGZiYzE0NWRjMDU1OTY4NmUxYTBmODI0MWUyMzI1YmE",
+    "commit": {
+        "author": {
+            "name": "Programming SR",
+            "email": "85456157+ProgrammingSR@users.noreply.github.com",
+            "date": "2024-02-25T00:50:11Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-02-25T00:50:11Z"
+        },
+        "message": "Vision Consumer (#17)\n\n* Added vision consumer to replace Optional framework\r\n\r\n* fixed null pointer exception\r\n\r\n---------\r\n\r\nCo-authored-by: Anay Nagar <anay.nagar@outlook.com>",
+        "tree": {
+            "sha": "4d97db2a2f40f5d883645b91c990c1f497141c9c",
+            "url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/git/trees/4d97db2a2f40f5d883645b91c990c1f497141c9c"
+        },
+        "url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/git/commits/c13906de8fbc145dc0559686e1a0f8241e2325ba",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJl2o7DCRC1aQ7uu5UhlAAAV8oQAD1QpsDdOND6+Sq6n3Kc26gg\neZTDQzKMfE4vWb5mlFTv4Iq76pEgjd8NjWpjgub0jivVFX5K7tNCtXudBvfD2dsv\nojSiTZzpMZz2RV3ZUeoNPky5ZxKr+CVH5LcHkCAbByGC3roxueNraL7LObeVuq7T\n0zHbNkNe2w9hviSWBJ4bxxfS871yci7N4ryMRw9BEgaN8jlJUOKk8Om+4c7hP9av\nkE4/I1JMqHDaISABXFAYGQHDVFmvyKjUWsUyD4MSRRQ5Bj5bXldUkTwLjMk5vf1i\n4vLsC0CRZK4GEMOOh9/JY18Bdf+baST9Sp3Ey00gLjK4YYCTlm13ZVkpbCys6N6Z\n59AAMeELJa2cnalDvFOFT4vtzD1T9r90FDQuNUD3XzglBu2udbWMnxDUQbjFk57I\nySNGbRPTYRuXfCx+spIMeddz4nmyybU2Xchx3uBr/XLnsjKs4QdBEOS74aB0/VGq\n/GEY1dmA8LKh3+KZ7Gl5Lr+ZaGKr+V8lPrdGAWiKPglLiNcbFaIaHyQzK3oKMbx4\n4jfSR0OghPMuphoEeU7Imx2lcZVBbNYA50+8+CzC4WtEBxiaHJ/IzqU8KPwkudc7\nSsMdurgSxY1NiHitxwCjI58DhnCLTS3KRWoOJVvGKsyhfMj2p0YmZbRB7TuFqhOc\ng4PyQLhAGklrBPXjEekl\n=jiBP\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4d97db2a2f40f5d883645b91c990c1f497141c9c\nparent c6bc4bcf0d99fb254d9ebd86d5f6a8612ffa890b\nauthor Programming SR <85456157+ProgrammingSR@users.noreply.github.com> 1708822211 -0800\ncommitter GitHub <noreply@github.com> 1708822211 -0800\n\nVision Consumer (#17)\n\n* Added vision consumer to replace Optional framework\r\n\r\n* fixed null pointer exception\r\n\r\n---------\r\n\r\nCo-authored-by: Anay Nagar <anay.nagar@outlook.com>"
+        }
+    },
+    "url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/commits/c13906de8fbc145dc0559686e1a0f8241e2325ba",
+    "html_url": "https://github.com/SaintsRobotics/Crescendo2024/commit/c13906de8fbc145dc0559686e1a0f8241e2325ba",
+    "comments_url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/commits/c13906de8fbc145dc0559686e1a0f8241e2325ba/comments",
+    "author": {
+        "login": "ProgrammingSR",
+        "id": 85456157,
+        "node_id": "MDQ6VXNlcjg1NDU2MTU3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85456157?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ProgrammingSR",
+        "html_url": "https://github.com/ProgrammingSR",
+        "followers_url": "https://api.github.com/users/ProgrammingSR/followers",
+        "following_url": "https://api.github.com/users/ProgrammingSR/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ProgrammingSR/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ProgrammingSR/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ProgrammingSR/subscriptions",
+        "organizations_url": "https://api.github.com/users/ProgrammingSR/orgs",
+        "repos_url": "https://api.github.com/users/ProgrammingSR/repos",
+        "events_url": "https://api.github.com/users/ProgrammingSR/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ProgrammingSR/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c6bc4bcf0d99fb254d9ebd86d5f6a8612ffa890b",
+            "url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/commits/c6bc4bcf0d99fb254d9ebd86d5f6a8612ffa890b",
+            "html_url": "https://github.com/SaintsRobotics/Crescendo2024/commit/c6bc4bcf0d99fb254d9ebd86d5f6a8612ffa890b"
+        }
+    ],
+    "stats": {
+        "total": 61,
+        "additions": 35,
+        "deletions": 26
+    },
+    "files": [
+        {
+            "sha": "aca4e32c87334bc0a2e5c355d5c75d6ae4d10543",
+            "filename": "src/main/java/frc/robot/RobotContainer.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/SaintsRobotics/Crescendo2024/blob/c13906de8fbc145dc0559686e1a0f8241e2325ba/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FRobotContainer.java",
+            "raw_url": "https://github.com/SaintsRobotics/Crescendo2024/raw/c13906de8fbc145dc0559686e1a0f8241e2325ba/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FRobotContainer.java",
+            "contents_url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FRobotContainer.java?ref=c13906de8fbc145dc0559686e1a0f8241e2325ba",
+            "patch": "@@ -26,6 +26,7 @@\n import frc.robot.subsystems.DriveSubsystem;\n import frc.robot.subsystems.IntakeSubsystem;\n import frc.robot.subsystems.ShooterSubsystem;\n+import frc.robot.subsystems.VisionSubsystem;\n \n /*\n  * This class is where the bulk of the robot should be declared.  Since Command-based is a\n@@ -39,6 +40,7 @@ public class RobotContainer {\n   private final ShooterSubsystem m_shooterSubsystem = new ShooterSubsystem();\n   private final IntakeSubsystem m_intakeSubsystem = new IntakeSubsystem();\n   private final ClimberSubsystem m_climberSubsystem = new ClimberSubsystem();\n+  private final VisionSubsystem m_visionSubsystem = new VisionSubsystem();\n \n   private final XboxController m_driverController = new XboxController(IOConstants.kDriverControllerPort);\n   private final XboxController m_operatorController = new XboxController(IOConstants.kOperatorControllerPort);\n@@ -60,6 +62,8 @@ public RobotContainer() {\n             new ReplanningConfig(true, true)),\n         () -> false, m_robotDrive);\n \n+    m_visionSubsystem.addConsumer(m_robotDrive::addVisionMeasurement);\n+\n     // Configure the trigger bindings\n     configureBindings();\n "
+        },
+        {
+            "sha": "dc822ef74515c90873f5126beee990fb8a0d0532",
+            "filename": "src/main/java/frc/robot/subsystems/DriveSubsystem.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 19,
+            "changes": 26,
+            "blob_url": "https://github.com/SaintsRobotics/Crescendo2024/blob/c13906de8fbc145dc0559686e1a0f8241e2325ba/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FDriveSubsystem.java",
+            "raw_url": "https://github.com/SaintsRobotics/Crescendo2024/raw/c13906de8fbc145dc0559686e1a0f8241e2325ba/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FDriveSubsystem.java",
+            "contents_url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FDriveSubsystem.java?ref=c13906de8fbc145dc0559686e1a0f8241e2325ba",
+            "patch": "@@ -4,8 +4,6 @@\n \n package frc.robot.subsystems;\n \n-import java.util.Optional;\n-\n import com.kauailabs.navx.frc.AHRS;\n \n import edu.wpi.first.math.MathUtil;\n@@ -71,8 +69,6 @@ public class DriveSubsystem extends SubsystemBase {\n       m_gyro.getRotation2d(), m_swerveModulePositions, new Pose2d(), VisionConstants.kOdometrySTDDevs,\n       VisionConstants.kVisionSTDDevs);\n \n-  private final VisionSubsystem m_visionSubsystem = new VisionSubsystem();\n-\n   private final Field2d m_field = new Field2d();\n \n   /** Creates a new DriveSubsystem. */\n@@ -96,14 +92,6 @@ public void periodic() {\n     m_poseEstimator.update(Robot.isReal() ? m_gyro.getRotation2d() : new Rotation2d(m_gyroAngle),\n         m_swerveModulePositions);\n \n-    Optional<Measurement> latestReading = m_visionSubsystem.getMeasurement();\n-\n-    // SmartDashboard.putBoolean(\"reading present\", latestReading.isPresent());\n-\n-    if (latestReading.isPresent()) {\n-      m_poseEstimator.addVisionMeasurement(latestReading.get().pose.toPose2d(), latestReading.get().timestamp);\n-    }\n-\n     m_field.setRobotPose(m_poseEstimator.getEstimatedPosition());\n \n     SmartDashboard.putNumber(\"gyro angle\", m_gyro.getAngle());\n@@ -213,16 +201,20 @@ public void zeroHeading() {\n     m_gyroAngle = 0;\n   }\n \n-  public void addVisionMeasurement(Pose2d pose, double timestamp) {\n-    m_poseEstimator.addVisionMeasurement(pose, timestamp);\n+  public void addVisionMeasurement(Measurement measurement) {\n+    m_poseEstimator.addVisionMeasurement(measurement.pose.toPose2d(), measurement.timestamp);\n+  }\n+\n+  public void autonDrive(ChassisSpeeds desiredChassisSpeeds) {\n+    swerveModuleStates = DriveConstants.kDriveKinematics.toSwerveModuleStates(desiredChassisSpeeds);\n   }\n \n   /**\n    * Sets the swerve ModuleStates. Overloaded for either auton builder or teleop.\n    *\n    * @param desiredStates The desired SwerveModule states.\n    */\n-  public void setModuleStates(SwerveModuleState[] desiredStates) {\n+  private void setModuleStates(SwerveModuleState[] desiredStates) {\n     SwerveDriveKinematics.desaturateWheelSpeeds(desiredStates, DriveConstants.kMaxSpeedMetersPerSecond);\n \n     m_frontLeft.setDesiredState(desiredStates[0]);\n@@ -245,8 +237,4 @@ public void setModuleStates(SwerveModuleState[] desiredStates) {\n         * Robot.kDefaultPeriod;\n   }\n \n-  public void autonDrive(ChassisSpeeds desiredChassisSpeeds) {\n-    swerveModuleStates = DriveConstants.kDriveKinematics.toSwerveModuleStates(desiredChassisSpeeds);\n-  }\n-\n }"
+        },
+        {
+            "sha": "33fa9184c6a0fdd42858374ae313a2e242701236",
+            "filename": "src/main/java/frc/robot/subsystems/VisionSubsystem.java",
+            "status": "modified",
+            "additions": 24,
+            "deletions": 7,
+            "changes": 31,
+            "blob_url": "https://github.com/SaintsRobotics/Crescendo2024/blob/c13906de8fbc145dc0559686e1a0f8241e2325ba/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FVisionSubsystem.java",
+            "raw_url": "https://github.com/SaintsRobotics/Crescendo2024/raw/c13906de8fbc145dc0559686e1a0f8241e2325ba/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FVisionSubsystem.java",
+            "contents_url": "https://api.github.com/repos/SaintsRobotics/Crescendo2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FVisionSubsystem.java?ref=c13906de8fbc145dc0559686e1a0f8241e2325ba",
+            "patch": "@@ -4,8 +4,10 @@\n \n package frc.robot.subsystems;\n \n+import java.util.ArrayList;\n import java.util.Arrays;\n-import java.util.Optional;\n+import java.util.List;\n+import java.util.function.Consumer;\n \n import edu.wpi.first.math.Matrix;\n import edu.wpi.first.math.geometry.Pose3d;\n@@ -49,12 +51,14 @@\n  */\n public class VisionSubsystem extends SubsystemBase {\n \n-  NetworkTable m_visionNetworkTable = NetworkTableInstance.getDefault().getTable(\"limelight\");\n+  private NetworkTable m_visionNetworkTable = NetworkTableInstance.getDefault().getTable(\"limelight\");\n \n   private final DoubleArraySubscriber m_botPose;\n \n   private final IntegerSubscriber m_tv;\n \n+  private List<Consumer<Measurement>> m_consumerList = new ArrayList<>(3);\n+\n   /** Creates a new Limelight. */\n   public VisionSubsystem() {\n     // Provide the limelight with the camera pose relative to the center of the\n@@ -66,28 +70,41 @@ public VisionSubsystem() {\n     m_tv = m_visionNetworkTable.getIntegerTopic(\"tv\").subscribe(0);\n   }\n \n+  /** Add a consumer, which the vision subsystem will push an update to every time there is an updated measurement */\n+  public void addConsumer(Consumer<Measurement> consumer) {\n+    m_consumerList.add(consumer);\n+  }\n+\n   @Override\n   public void periodic() {\n     // This method will be called once per scheduler run\n \n+    Measurement latestMeasurement = getMeasurement();\n+\n+    if (latestMeasurement != null) {\n+      for (Consumer<Measurement> consumer : m_consumerList) {\n+        consumer.accept(latestMeasurement);\n+      }\n+    }\n+\n     SmartDashboard.putBoolean(\"Limelight Has Target\", m_tv.get() == 1);\n   }\n \n-  public Optional<Measurement> getMeasurement() {\n+  public Measurement getMeasurement() {\n     TimestampedDoubleArray[] updates = m_botPose.readQueue();\n \n     // If we have had no updates since the last time this method ran then return\n     // nothing\n     if (updates.length == 0) {\n-      return Optional.empty();\n+      return null;\n     }\n \n     TimestampedDoubleArray update = updates[updates.length - 1];\n \n     // If the latest update is empty or we don't see an april tag then return\n     // nothing\n     if (Arrays.equals(update.value, new double[6]) || m_tv.get() == 0) {\n-      return Optional.empty();\n+      return null;\n     }\n \n     double x = update.value[0];\n@@ -100,10 +117,10 @@ public Optional<Measurement> getMeasurement() {\n     double timestamp = Timer.getFPGATimestamp() - (update.value[6] / 1000.0);\n     Pose3d pose = new Pose3d(new Translation3d(x, y, z), new Rotation3d(roll, pitch, yaw));\n \n-    return Optional.of(new Measurement(\n+    return new Measurement(\n         timestamp,\n         pose,\n-        VisionConstants.kVisionSTDDevs));\n+        VisionConstants.kVisionSTDDevs);\n   }\n \n   public static class Measurement {"
+        }
+    ]
+}

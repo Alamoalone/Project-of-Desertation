@@ -1,0 +1,21 @@
+    public Stakeholder updateContributors(String stakeholderId, Set<String> userIds) {
+        Stakeholder stakeholder = get(stakeholderId);
+        Set<String> previousContributors = stakeholder.getContributors();
+        for (String contributor : userIds) {
+            previousContributors.remove(contributor);
+        }
+        permissionService.removeAll(previousContributors, Groups.STAKEHOLDER_CONTRIBUTOR.getKey());
+
+        // read access for all resources
+        List<SurveyAnswer> answers = surveyService.getAllByStakeholder(stakeholderId);
+        List<String> allResourceIds = getSurveyAnswerIds(answers);
+        addContributorPermissions(userIds, allResourceIds);
+
+        // all contributor permissions for active resource
+        answers = surveyService.getActive(stakeholderId);
+        List<String> resourceIds = getSurveyAnswerIds(answers);
+        addContributorFullPermissions(userIds, resourceIds);
+
+        stakeholder.setContributors(userIds);
+        return update(stakeholderId, stakeholder);
+    }

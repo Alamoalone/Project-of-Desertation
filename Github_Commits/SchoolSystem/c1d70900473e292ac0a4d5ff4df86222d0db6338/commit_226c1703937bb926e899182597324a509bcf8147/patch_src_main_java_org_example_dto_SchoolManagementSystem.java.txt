@@ -1,0 +1,22 @@
+@@ -198,9 +198,11 @@ public void registerCourse(String studentId, String courseId){
+      */
+     public Course findCourse(String courseId){
+         for(Course course : courses){
+-            if(courseId != null && course.getId().equals(courseId)){
++            if((courseId != null) || course.getId() != null && course.getId().equals(courseId)){
+ 
+                 return course;
++            }else if(course == null){
++                System.out.println("Course might be null.");
+             }
+         }
+         System.out.println("Course is not found !");
+@@ -281,6 +283,8 @@ public boolean hasRegisteredForThisCourse(String studentId, String courseId) {
+                     return true;
+                 }
+             }
++        }else if(course == null || student == null){
++            System.out.println("Course or student was not found \'Make sure you entered right id\'");
+         }
+ 
+         System.out.println("false");

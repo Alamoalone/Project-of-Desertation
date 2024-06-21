@@ -1,0 +1,26 @@
+   private boolean validateAddPrerequisiteCourse(Course prerequisiteCourse){
+       boolean valid = true;
+       if(prerequisiteCourse == null){
+           valid = false;
+       }
+       if(prerequisiteCourse.name.equals(this.name) && prerequisiteCourse.program.equals(this.program)){
+           valid = false;
+       }
+       int prerequisiteCoursesInArray = 0;
+       for(int i=0;i<prerequisiteCourses.length;i++){
+           if(prerequisiteCourses[i] != null){
+               prerequisiteCoursesInArray += 1;
+           }
+       }
+       if(prerequisiteCoursesInArray>4){
+           valid = false;
+       }
+       for (Course c : prerequisiteCourses){
+           if (c == prerequisiteCourse) {
+               valid = false;
+               break;
+           }
+       }
+       return valid;
+   }
+

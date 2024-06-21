@@ -1,0 +1,4 @@
+    public Product find(String id) {
+        ProductModel model = productRepository.findById(id).orElse(null);
+        return model == null ? null : model.to();
+    }

@@ -1,0 +1,98 @@
+{
+    "sha": "4a50836dc11f528ae013cb2592fb6bcf72cc3481",
+    "node_id": "C_kwDOHiULCdoAKDRhNTA4MzZkYzExZjUyOGFlMDEzY2IyNTkyZmI2YmNmNzJjYzM0ODE",
+    "commit": {
+        "author": {
+            "name": "auvred",
+            "email": "aauvred@gmail.com",
+            "date": "2024-02-28T17:38:51Z"
+        },
+        "committer": {
+            "name": "auvred",
+            "email": "aauvred@gmail.com",
+            "date": "2024-02-28T17:38:51Z"
+        },
+        "message": "Fix null pointer exception on ClickHouse connection activation failure",
+        "tree": {
+            "sha": "d458209f992077710fa172ebd244ffaedec0c4cf",
+            "url": "https://api.github.com/repos/ClickHouse/clickhouse-kafka-connect/git/trees/d458209f992077710fa172ebd244ffaedec0c4cf"
+        },
+        "url": "https://api.github.com/repos/ClickHouse/clickhouse-kafka-connect/git/commits/4a50836dc11f528ae013cb2592fb6bcf72cc3481",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgpgkIB7bUmsEvfsB+/oziaCF/K5\nGq7JejXRFkaJfu/t8AAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQEnAvrFREa9PtOcSwIWnYtMlZDoBWO67jgjhHn5uTsz62tce3QFFsVLJHuqSMQEhdc\nIRjEnC/6QQtez/VgANlwQ=\n-----END SSH SIGNATURE-----",
+            "payload": "tree d458209f992077710fa172ebd244ffaedec0c4cf\nparent e8403546bcca216a067c04c1f1ca59a9dac09e8f\nauthor auvred <aauvred@gmail.com> 1709141931 +0300\ncommitter auvred <aauvred@gmail.com> 1709141931 +0300\n\nFix null pointer exception on ClickHouse connection activation failure\n"
+        }
+    },
+    "url": "https://api.github.com/repos/ClickHouse/clickhouse-kafka-connect/commits/4a50836dc11f528ae013cb2592fb6bcf72cc3481",
+    "html_url": "https://github.com/ClickHouse/clickhouse-kafka-connect/commit/4a50836dc11f528ae013cb2592fb6bcf72cc3481",
+    "comments_url": "https://api.github.com/repos/ClickHouse/clickhouse-kafka-connect/commits/4a50836dc11f528ae013cb2592fb6bcf72cc3481/comments",
+    "author": {
+        "login": "auvred",
+        "id": 61150013,
+        "node_id": "MDQ6VXNlcjYxMTUwMDEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61150013?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/auvred",
+        "html_url": "https://github.com/auvred",
+        "followers_url": "https://api.github.com/users/auvred/followers",
+        "following_url": "https://api.github.com/users/auvred/following{/other_user}",
+        "gists_url": "https://api.github.com/users/auvred/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/auvred/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/auvred/subscriptions",
+        "organizations_url": "https://api.github.com/users/auvred/orgs",
+        "repos_url": "https://api.github.com/users/auvred/repos",
+        "events_url": "https://api.github.com/users/auvred/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/auvred/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "auvred",
+        "id": 61150013,
+        "node_id": "MDQ6VXNlcjYxMTUwMDEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61150013?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/auvred",
+        "html_url": "https://github.com/auvred",
+        "followers_url": "https://api.github.com/users/auvred/followers",
+        "following_url": "https://api.github.com/users/auvred/following{/other_user}",
+        "gists_url": "https://api.github.com/users/auvred/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/auvred/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/auvred/subscriptions",
+        "organizations_url": "https://api.github.com/users/auvred/orgs",
+        "repos_url": "https://api.github.com/users/auvred/repos",
+        "events_url": "https://api.github.com/users/auvred/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/auvred/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e8403546bcca216a067c04c1f1ca59a9dac09e8f",
+            "url": "https://api.github.com/repos/ClickHouse/clickhouse-kafka-connect/commits/e8403546bcca216a067c04c1f1ca59a9dac09e8f",
+            "html_url": "https://github.com/ClickHouse/clickhouse-kafka-connect/commit/e8403546bcca216a067c04c1f1ca59a9dac09e8f"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "52746eced66984a233fe34be94f015ee4da918f0",
+            "filename": "src/main/java/com/clickhouse/kafka/connect/sink/ClickHouseSinkTask.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/ClickHouse/clickhouse-kafka-connect/blob/4a50836dc11f528ae013cb2592fb6bcf72cc3481/src%2Fmain%2Fjava%2Fcom%2Fclickhouse%2Fkafka%2Fconnect%2Fsink%2FClickHouseSinkTask.java",
+            "raw_url": "https://github.com/ClickHouse/clickhouse-kafka-connect/raw/4a50836dc11f528ae013cb2592fb6bcf72cc3481/src%2Fmain%2Fjava%2Fcom%2Fclickhouse%2Fkafka%2Fconnect%2Fsink%2FClickHouseSinkTask.java",
+            "contents_url": "https://api.github.com/repos/ClickHouse/clickhouse-kafka-connect/contents/src%2Fmain%2Fjava%2Fcom%2Fclickhouse%2Fkafka%2Fconnect%2Fsink%2FClickHouseSinkTask.java?ref=4a50836dc11f528ae013cb2592fb6bcf72cc3481",
+            "patch": "@@ -82,7 +82,9 @@ public void flush(Map<TopicPartition, OffsetAndMetadata> offsets) {\n \n     @Override\n     public void stop() {\n-        this.proxySinkTask.stop();\n+        if (this.proxySinkTask != null) {\n+            this.proxySinkTask.stop();\n+        }\n     }\n \n "
+        }
+    ]
+}

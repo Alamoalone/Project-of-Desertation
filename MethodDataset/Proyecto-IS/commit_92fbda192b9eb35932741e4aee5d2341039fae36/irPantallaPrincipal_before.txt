@@ -1,0 +1,21 @@
+    private void irPantallaPrincipal(Usuario usuarioSesion) {
+
+        try {
+            Stage stagePrincipal = (Stage) tfUsuario.getScene().getWindow();
+
+            FXMLLoader loadVista = new FXMLLoader(getClass().getResource("FXMLHome.fxml"));
+            Parent vista = loadVista.load();
+
+            FXMLHomeController controladorHome = loadVista.getController();
+            controladorHome.inicializarHome(usuarioSesion);
+
+            Scene scene = new Scene(vista);
+            stagePrincipal.setTitle("Inicio");
+            stagePrincipal.setScene(scene);
+            stagePrincipal.show();
+
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLLoginController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }

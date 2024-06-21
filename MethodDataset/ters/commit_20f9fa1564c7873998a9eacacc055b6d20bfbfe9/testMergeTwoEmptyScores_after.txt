@@ -1,0 +1,4 @@
+  public void testMergeTwoEmptyScores() {
+    Executable exec = () -> scoreService.merge(Map.of(), Map.of());
+    assertThrows(NullPointerException.class, exec);
+  }

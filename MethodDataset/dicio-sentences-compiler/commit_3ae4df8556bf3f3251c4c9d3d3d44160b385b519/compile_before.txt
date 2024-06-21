@@ -1,0 +1,12 @@
+    public void compile(final OutputStreamWriter output, final OutputStreamWriter sectionIdsOutput)
+            throws IOException, CompilerError {
+        super.compile(output, sectionIdsOutput);
+
+        final Map<String, JSONObject> results = new HashMap<>();
+        for (final Section section : sections) {
+            results.putAll(section.compileToDataset());
+        }
+
+        new JSONObject(results)
+                .write(output);
+    }

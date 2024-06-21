@@ -1,0 +1,98 @@
+{
+    "sha": "28189049ed5e1ae446880dd7bb70d8992c1d9681",
+    "node_id": "C_kwDODK_jpdoAKDI4MTg5MDQ5ZWQ1ZTFhZTQ0Njg4MGRkN2JiNzBkODk5MmMxZDk2ODE",
+    "commit": {
+        "author": {
+            "name": "Debanjan Chatterjee",
+            "email": "debanjanchatterjee99@gmail.com",
+            "date": "2023-09-21T07:41:04Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-09-21T07:41:04Z"
+        },
+        "message": "fix: null pointer exception in metrics (#315)\n\nfix: null pointer exception in metrics (#315)",
+        "tree": {
+            "sha": "a1d97210574ae6755e8c3bf57cf3728565fa5fc5",
+            "url": "https://api.github.com/repos/rudderlabs/rudder-sdk-android/git/trees/a1d97210574ae6755e8c3bf57cf3728565fa5fc5"
+        },
+        "url": "https://api.github.com/repos/rudderlabs/rudder-sdk-android/git/commits/28189049ed5e1ae446880dd7bb70d8992c1d9681",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlC/OQCRBK7hj4Ov3rIwAAMfEIAHRciqv39RgK+VjQ/IsPFOKC\nKptF/XzMo11gBFcvAlfRt2snM6CuooNGgJQTHwIsPvt5zvUa7D7F+GXh/Z6D55lQ\nfJBC5YN2rgW1e5HI2RTFVLIbYrkMPRvkYBriMinPhZpKxY57lZL4+JseXVK/dZiX\naLEWxbOH4Ux65YI1lIIFfmPivy1OhJtFilEG9wbqH6LwOweRTrAyGRf/Tip5KP0C\n+k/ie9cB88QIEq5GcSxtrVEqCukmW/SbvYPbaey6CDyqegZaWtbPbmNjLsPI/HOs\nbn/02qTQIP5RLEHAurvQJlJ22T6YUGa4IQ/iuuDLCFIb6OgRLCWOfcSbLGpf9vQ=\n=wd3J\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree a1d97210574ae6755e8c3bf57cf3728565fa5fc5\nparent c5602e7a4cee0e485d331beaa979a12eb4614fd2\nauthor Debanjan Chatterjee <debanjanchatterjee99@gmail.com> 1695282064 +0530\ncommitter GitHub <noreply@github.com> 1695282064 +0530\n\nfix: null pointer exception in metrics (#315)\n\nfix: null pointer exception in metrics (#315)"
+        }
+    },
+    "url": "https://api.github.com/repos/rudderlabs/rudder-sdk-android/commits/28189049ed5e1ae446880dd7bb70d8992c1d9681",
+    "html_url": "https://github.com/rudderlabs/rudder-sdk-android/commit/28189049ed5e1ae446880dd7bb70d8992c1d9681",
+    "comments_url": "https://api.github.com/repos/rudderlabs/rudder-sdk-android/commits/28189049ed5e1ae446880dd7bb70d8992c1d9681/comments",
+    "author": {
+        "login": "itsdebs",
+        "id": 11850293,
+        "node_id": "MDQ6VXNlcjExODUwMjkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11850293?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/itsdebs",
+        "html_url": "https://github.com/itsdebs",
+        "followers_url": "https://api.github.com/users/itsdebs/followers",
+        "following_url": "https://api.github.com/users/itsdebs/following{/other_user}",
+        "gists_url": "https://api.github.com/users/itsdebs/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/itsdebs/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/itsdebs/subscriptions",
+        "organizations_url": "https://api.github.com/users/itsdebs/orgs",
+        "repos_url": "https://api.github.com/users/itsdebs/repos",
+        "events_url": "https://api.github.com/users/itsdebs/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/itsdebs/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c5602e7a4cee0e485d331beaa979a12eb4614fd2",
+            "url": "https://api.github.com/repos/rudderlabs/rudder-sdk-android/commits/c5602e7a4cee0e485d331beaa979a12eb4614fd2",
+            "html_url": "https://github.com/rudderlabs/rudder-sdk-android/commit/c5602e7a4cee0e485d331beaa979a12eb4614fd2"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 4,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "8c2de4b2cb854b457fb69af12f1b9b5d7af98698",
+            "filename": "core/src/main/java/com/rudderstack/android/sdk/core/ReportManager.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 3,
+            "changes": 7,
+            "blob_url": "https://github.com/rudderlabs/rudder-sdk-android/blob/28189049ed5e1ae446880dd7bb70d8992c1d9681/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Frudderstack%2Fandroid%2Fsdk%2Fcore%2FReportManager.java",
+            "raw_url": "https://github.com/rudderlabs/rudder-sdk-android/raw/28189049ed5e1ae446880dd7bb70d8992c1d9681/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Frudderstack%2Fandroid%2Fsdk%2Fcore%2FReportManager.java",
+            "contents_url": "https://api.github.com/repos/rudderlabs/rudder-sdk-android/contents/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Frudderstack%2Fandroid%2Fsdk%2Fcore%2FReportManager.java?ref=28189049ed5e1ae446880dd7bb70d8992c1d9681",
+            "patch": "@@ -82,14 +82,15 @@ private ReportManager() {\n     public static final String METADATA_PERSISTENCE_KEY_IS_ENCRYPTED = \"encrypted\";\n     public static final String METADATA_GZIP_KEY_IS_ENABLED = \"enabled\";\n \n-    public static void initiate(Metrics metrics, ErrorClient errorStatsClient) {\n+    public static void initiate(@Nullable Metrics metrics, @Nullable ErrorClient errorStatsClient) {\n         ReportManager.metrics = metrics;\n         ReportManager.errorStatsClient = errorStatsClient;\n-        createCounters(metrics);\n+        if(metrics != null)\n+            createCounters(metrics);\n \n     }\n \n-    private static void createCounters(Metrics metrics) {\n+    private static void createCounters(@NonNull Metrics metrics) {\n         ReportManager.messageCounter = metrics.getLongCounter(EVENTS_SUBMITTED_COUNTER_TAG);\n         ReportManager.discardedCounter = metrics.getLongCounter(EVENTS_DISCARDED_COUNTER_TAG);\n         ReportManager.deviceModeEventCounter = metrics.getLongCounter(DEVICE_MODE_EVENT_COUNTER_TAG);"
+        }
+    ]
+}

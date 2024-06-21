@@ -1,0 +1,4 @@
+sign(Ed25519PublicKeyParameters pubKey, Ed25519PrivateKeyParameters signingKey)
+toWallet()
+fromWallet()
+getHash()

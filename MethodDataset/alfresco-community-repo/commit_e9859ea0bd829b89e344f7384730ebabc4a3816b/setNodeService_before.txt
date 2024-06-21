@@ -1,0 +1,4 @@
+    public void setNodeService(NodeService nodeService)
+    {
+        this.nodeService = nodeService;
+    }

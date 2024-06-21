@@ -1,0 +1,110 @@
+{
+    "sha": "651e093d6c207090224957ae82c482e552acb5a9",
+    "node_id": "C_kwDOICGE_9oAKDY1MWUwOTNkNmMyMDcwOTAyMjQ5NTdhZTgyYzQ4MmU1NTJhY2I1YTk",
+    "commit": {
+        "author": {
+            "name": "hexley21",
+            "email": "a.kupreishvili.21@gmail.com",
+            "date": "2023-04-30T17:03:48Z"
+        },
+        "committer": {
+            "name": "hexley21",
+            "email": "a.kupreishvili.21@gmail.com",
+            "date": "2023-04-30T17:03:48Z"
+        },
+        "message": "refactor(ui/test): add warning suppression on null-pointer-exception",
+        "tree": {
+            "sha": "6b20d1c8493298b9c8245323587f1439327d6f59",
+            "url": "https://api.github.com/repos/hexley21/CoinFuse/git/trees/6b20d1c8493298b9c8245323587f1439327d6f59"
+        },
+        "url": "https://api.github.com/repos/hexley21/CoinFuse/git/commits/651e093d6c207090224957ae82c482e552acb5a9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hexley21/CoinFuse/commits/651e093d6c207090224957ae82c482e552acb5a9",
+    "html_url": "https://github.com/hexley21/CoinFuse/commit/651e093d6c207090224957ae82c482e552acb5a9",
+    "comments_url": "https://api.github.com/repos/hexley21/CoinFuse/commits/651e093d6c207090224957ae82c482e552acb5a9/comments",
+    "author": {
+        "login": "hexley21",
+        "id": 92047667,
+        "node_id": "U_kgDOBXyJMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/92047667?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hexley21",
+        "html_url": "https://github.com/hexley21",
+        "followers_url": "https://api.github.com/users/hexley21/followers",
+        "following_url": "https://api.github.com/users/hexley21/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hexley21/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hexley21/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hexley21/subscriptions",
+        "organizations_url": "https://api.github.com/users/hexley21/orgs",
+        "repos_url": "https://api.github.com/users/hexley21/repos",
+        "events_url": "https://api.github.com/users/hexley21/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hexley21/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "hexley21",
+        "id": 92047667,
+        "node_id": "U_kgDOBXyJMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/92047667?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hexley21",
+        "html_url": "https://github.com/hexley21",
+        "followers_url": "https://api.github.com/users/hexley21/followers",
+        "following_url": "https://api.github.com/users/hexley21/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hexley21/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hexley21/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hexley21/subscriptions",
+        "organizations_url": "https://api.github.com/users/hexley21/orgs",
+        "repos_url": "https://api.github.com/users/hexley21/repos",
+        "events_url": "https://api.github.com/users/hexley21/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hexley21/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "59dadcfec8808f13d327b7c92ddc726eb0264a51",
+            "url": "https://api.github.com/repos/hexley21/CoinFuse/commits/59dadcfec8808f13d327b7c92ddc726eb0264a51",
+            "html_url": "https://github.com/hexley21/CoinFuse/commit/59dadcfec8808f13d327b7c92ddc726eb0264a51"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 2,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "b3c9608266e73fb20f66c9cb147d9129fada2ae4",
+            "filename": "app/src/androidTest/java/com/hxl/cryptonumismatist/navigating/NavigationTest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/hexley21/CoinFuse/blob/651e093d6c207090224957ae82c482e552acb5a9/app%2Fsrc%2FandroidTest%2Fjava%2Fcom%2Fhxl%2Fcryptonumismatist%2Fnavigating%2FNavigationTest.java",
+            "raw_url": "https://github.com/hexley21/CoinFuse/raw/651e093d6c207090224957ae82c482e552acb5a9/app%2Fsrc%2FandroidTest%2Fjava%2Fcom%2Fhxl%2Fcryptonumismatist%2Fnavigating%2FNavigationTest.java",
+            "contents_url": "https://api.github.com/repos/hexley21/CoinFuse/contents/app%2Fsrc%2FandroidTest%2Fjava%2Fcom%2Fhxl%2Fcryptonumismatist%2Fnavigating%2FNavigationTest.java?ref=651e093d6c207090224957ae82c482e552acb5a9",
+            "patch": "@@ -64,6 +64,7 @@ public void tearDown() {\n     }\n \n     @Test\n+    @SuppressWarnings(\"ConstantConditions\")\n     public void testAppNavigation() {\n         // App starts with welcome fragment\n         assertEquals(rootNavController.getCurrentDestination().getId(), R.id.welcomeFragment);"
+        },
+        {
+            "sha": "3ba5b411bc51a70dff41b3e2452f7593e75141d2",
+            "filename": "app/src/androidTest/java/com/hxl/cryptonumismatist/welcome/WelcomeFragmentTest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/hexley21/CoinFuse/blob/651e093d6c207090224957ae82c482e552acb5a9/app%2Fsrc%2FandroidTest%2Fjava%2Fcom%2Fhxl%2Fcryptonumismatist%2Fwelcome%2FWelcomeFragmentTest.java",
+            "raw_url": "https://github.com/hexley21/CoinFuse/raw/651e093d6c207090224957ae82c482e552acb5a9/app%2Fsrc%2FandroidTest%2Fjava%2Fcom%2Fhxl%2Fcryptonumismatist%2Fwelcome%2FWelcomeFragmentTest.java",
+            "contents_url": "https://api.github.com/repos/hexley21/CoinFuse/contents/app%2Fsrc%2FandroidTest%2Fjava%2Fcom%2Fhxl%2Fcryptonumismatist%2Fwelcome%2FWelcomeFragmentTest.java?ref=651e093d6c207090224957ae82c482e552acb5a9",
+            "patch": "@@ -53,6 +53,7 @@ public void setUp() {\n     }\n \n     @Test\n+    @SuppressWarnings(\"ConstantConditions\")\n     public void fragmentBehavesAsExpected() {\n         // Act\n         ActivityScenario<HiltTestActivity> scenario = launchFragmentInHiltContainer(WelcomeFragment.class);"
+        }
+    ]
+}

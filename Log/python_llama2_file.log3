@@ -1,0 +1,11 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/users/pgrad/wangx33/Final_Project/prediction.py", line 6, in <module>
+    ollama.pull('llama2')
+  File "/users/pgrad/wangx33/.venv/lib/python3.9/site-packages/ollama/_client.py", line 220, in pull
+    return self._request_stream(
+  File "/users/pgrad/wangx33/.venv/lib/python3.9/site-packages/ollama/_client.py", line 97, in _request_stream
+    return self._stream(*args, **kwargs) if stream else self._request(*args, **kwargs).json()
+  File "/users/pgrad/wangx33/.venv/lib/python3.9/site-packages/ollama/_client.py", line 73, in _request
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: pull model manifest: Get "https://registry.ollama.ai/v2/library/llama2/manifests/latest": dial tcp: lookup registry.ollama.ai on 134.226.56.13:53: read udp 134.226.38.44:50204->134.226.56.13:53: i/o timeout

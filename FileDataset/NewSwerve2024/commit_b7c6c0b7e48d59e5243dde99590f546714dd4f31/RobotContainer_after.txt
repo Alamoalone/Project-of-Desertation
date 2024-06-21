@@ -1,0 +1,44 @@
+  private void configureButtonBindings() {
+    //DRIVER
+    m_driverController.y().onTrue(new InstantCommand(() -> m_swerve.zeroHeading(), m_swerve));
+    m_driverController.a().onTrue(new InstantCommand(() -> m_swerve.resetEncoders(), m_swerve));
+    m_driverController.x().onTrue(new InstantCommand(() -> m_swerve.setX(), m_swerve));
+
+    // Triggers solenoid on press of button b.
+    m_driverController.b().onTrue(new InstantCommand(() -> m_PneumaticsSubsystem.toggle()));
+   
+
+    //m_operatorController.x().onTrue(new InstantCommand(() -> m_arm.getExtensionEncoder().setPosition(0), m_arm));
+
+    //TODO: Fix Arm Angle Offsets in Arm.java first before uncommenting
+    // m_operatorController.a().onTrue(new MoveToGoal(m_arm, Row.BOTTOM))
+    // .or(m_operatorController.b().onTrue(new MoveToGoal(m_arm, Row.MIDDLE)))
+    // .or(m_operatorController.y().onTrue(new MoveToGoal(m_arm, Row.TOP)));
+    m_winch.setDefaultCommand(new RunCommand(() -> m_winch.winchExtend(m_operatorController)));
+      
+    
+   
+    //onTrue() can be changed to whileTrue() if we were to hold the button to shoot
+    m_operatorController.a().onTrue(new ShootMech(m_shooter));
+    
+
+
+    
+    //slow mode for right bumper, medium slow for left bumper
+    m_driverController.rightBumper().onTrue(new InstantCommand(() -> m_swerve.slowMode(), m_swerve))
+    .or(m_driverController.leftBumper().onTrue(new InstantCommand(() -> m_swerve.mediumMode(), m_swerve)))
+    .onFalse(new InstantCommand(() -> m_swerve.fastMode(), m_swerve));
+    
+  }
+
+  private void addCommandDropdown()
+  {
+    chooser.setDefaultOption("Drive To Distance", new DriveToDistance(Units.feetToMeters(12), m_swerve));
+    chooser.addOption("Turn To Angle", new TurnToAngle(90, m_swerve));
+    chooser.addOption("Shoot and Move", new ShootAndMove(m_shooter, m_swerve));
+    chooser.addOption("Shoot", new ShootMech(m_shooter));
+    chooser.addOption("Move and Amp", new MoveandAmp(m_intake, m_swerve)); 
+
+    SmartDashboard.putData(chooser);
+  }
+

@@ -1,0 +1,3 @@
+    public List<Notes> findAllByUserUserId(Integer userId){
+        return notesRepository.findAllByUserUserId(userId);
+    }

@@ -1,0 +1,8 @@
+    void testCreateCustomerDetails_AlreadyExists() {
+        // Arrange
+        CustomerRequestDto requestDto = new CustomerRequestDto();
+        doThrow(new CustomerDetailsAlreadyExistsException("")).when(customerDetailService).createCustomerDetailsRecord(requestDto);
+
+        // Act and Assert
+        assertThrows(CustomerDetailsAlreadyExistsException.class, () -> customerDetailsController.createCustomerDetails(requestDto));
+    }

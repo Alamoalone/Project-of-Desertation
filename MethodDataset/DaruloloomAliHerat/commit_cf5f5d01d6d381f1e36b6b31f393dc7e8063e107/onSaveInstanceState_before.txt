@@ -1,0 +1,13 @@
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+
+       /* if (WHICH_FRAGMENT == 2){
+            getSupportFragmentManager().beginTransaction().remove(favoriteFragment).commit();
+        }
+        if (WHICH_FRAGMENT == 3){
+            getSupportFragmentManager().beginTransaction().remove(settingsFragment).commit();
+        }
+        outState.putInt("fragmentNumber", WHICH_FRAGMENT);*/
+
+        super.onSaveInstanceState(outState);
+
+    }

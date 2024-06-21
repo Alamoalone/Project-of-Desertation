@@ -1,0 +1,110 @@
+{
+    "sha": "0a7972ac9eb29f03f399a7af6ab097ffaa7f8820",
+    "node_id": "C_kwDOKZn0uNoAKDBhNzk3MmFjOWViMjlmMDNmMzk5YTdhZjZhYjA5N2ZmYWE3Zjg4MjA",
+    "commit": {
+        "author": {
+            "name": "Robert Benavides",
+            "email": "robertbenavidesgomez@gmail.com",
+            "date": "2023-10-29T21:45:46Z"
+        },
+        "committer": {
+            "name": "Robert Benavides",
+            "email": "robertbenavidesgomez@gmail.com",
+            "date": "2023-10-29T21:45:46Z"
+        },
+        "message": "Fixed Item Exception Null pointer",
+        "tree": {
+            "sha": "c571b92a05e72e92024138140e76f2d5171f304a",
+            "url": "https://api.github.com/repos/Warrio111/Datamasters/git/trees/c571b92a05e72e92024138140e76f2d5171f304a"
+        },
+        "url": "https://api.github.com/repos/Warrio111/Datamasters/git/commits/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Warrio111/Datamasters/commits/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820",
+    "html_url": "https://github.com/Warrio111/Datamasters/commit/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820",
+    "comments_url": "https://api.github.com/repos/Warrio111/Datamasters/commits/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820/comments",
+    "author": {
+        "login": "Warrio111",
+        "id": 90751882,
+        "node_id": "MDQ6VXNlcjkwNzUxODgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/90751882?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Warrio111",
+        "html_url": "https://github.com/Warrio111",
+        "followers_url": "https://api.github.com/users/Warrio111/followers",
+        "following_url": "https://api.github.com/users/Warrio111/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Warrio111/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Warrio111/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Warrio111/subscriptions",
+        "organizations_url": "https://api.github.com/users/Warrio111/orgs",
+        "repos_url": "https://api.github.com/users/Warrio111/repos",
+        "events_url": "https://api.github.com/users/Warrio111/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Warrio111/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Warrio111",
+        "id": 90751882,
+        "node_id": "MDQ6VXNlcjkwNzUxODgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/90751882?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Warrio111",
+        "html_url": "https://github.com/Warrio111",
+        "followers_url": "https://api.github.com/users/Warrio111/followers",
+        "following_url": "https://api.github.com/users/Warrio111/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Warrio111/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Warrio111/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Warrio111/subscriptions",
+        "organizations_url": "https://api.github.com/users/Warrio111/orgs",
+        "repos_url": "https://api.github.com/users/Warrio111/repos",
+        "events_url": "https://api.github.com/users/Warrio111/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Warrio111/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "89ae7d67b36934d9dc49f5e9d0cfea0202796951",
+            "url": "https://api.github.com/repos/Warrio111/Datamasters/commits/89ae7d67b36934d9dc49f5e9d0cfea0202796951",
+            "html_url": "https://github.com/Warrio111/Datamasters/commit/89ae7d67b36934d9dc49f5e9d0cfea0202796951"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 8,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "a2b76a66cb89d37791d31d5f4e648fe7f329ed67",
+            "filename": "src/main/java/com/datamasters/modelo/Orders.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 5,
+            "changes": 11,
+            "blob_url": "https://github.com/Warrio111/Datamasters/blob/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820/src%2Fmain%2Fjava%2Fcom%2Fdatamasters%2Fmodelo%2FOrders.java",
+            "raw_url": "https://github.com/Warrio111/Datamasters/raw/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820/src%2Fmain%2Fjava%2Fcom%2Fdatamasters%2Fmodelo%2FOrders.java",
+            "contents_url": "https://api.github.com/repos/Warrio111/Datamasters/contents/src%2Fmain%2Fjava%2Fcom%2Fdatamasters%2Fmodelo%2FOrders.java?ref=0a7972ac9eb29f03f399a7af6ab097ffaa7f8820",
+            "patch": "@@ -16,6 +16,7 @@ public Orders(int orderNumber, Customer customer, Item item, int quantityUnits,\n         this.item = item;\n         this.quantityUnits = quantityUnits;\n         this.orderDateTime = orderDateTime;\n+        this.preparationTimeMinutes = item.getPreparationTimeMinutes()*quantityUnits;\n     }\n     public int getOrderNumber() {\n         return orderNumber;\n@@ -58,11 +59,11 @@ public void setOrderDateTime(LocalDateTime orderDateTime) {\n     }\n \n     public int getPreparationTimeMinutes() {\n-        return item.getPreparationTimeMinutes();\n+        return this.preparationTimeMinutes;\n     }\n \n     public void setPreparationTimeMinutes(int preparationTimeMinutes) {\n-        item.setPreparationTimeMinutes(preparationTimeMinutes);\n+        this.preparationTimeMinutes = preparationTimeMinutes;\n     }\n \n     public double calculateOrderPrice() {\n@@ -75,12 +76,12 @@ public double calculateOrderPrice() {\n     }\n \n     public boolean orderIsSent(LocalDateTime currentTime) {\n-        LocalDateTime cutoffTime = this.orderDateTime.plusMinutes(getPreparationTimeMinutes() * this.quantityUnits);\n+        LocalDateTime cutoffTime = this.orderDateTime.plusMinutes(this.preparationTimeMinutes);\n         return currentTime.isAfter(cutoffTime);\n     }\n \n     public boolean isCancelable(LocalDateTime currentTime) {\n-        LocalDateTime cutoffTime = this.orderDateTime.plusMinutes(getPreparationTimeMinutes() * this.quantityUnits);\n+        LocalDateTime cutoffTime = this.orderDateTime.plusMinutes(this.preparationTimeMinutes);\n         return currentTime.isAfter(cutoffTime);\n     }\n \n@@ -94,7 +95,7 @@ public String toString() {\n                 \", Item price=  \" + item.getSellingPrice()+\n                 \", Order price= \" + calculateOrderPrice() +\n                 \", orderDateTime=\" + orderDateTime +\n-                \", preparationTimeMinutes=\" + getPreparationTimeMinutes()*quantityUnits +\n+                \", preparationTimeMinutes=\" + this.preparationTimeMinutes +\n                 \", orderIsCancelable=\" + isCancelable(LocalDateTime.now()) +\n                 \", shippingCost= \" + item.getShippingCost()+\n                 \", orderIsSent=\" + orderIsSent(LocalDateTime.now()) +"
+        },
+        {
+            "sha": "012e22f86be772a99a41aa689b8aee29ec97fc12",
+            "filename": "src/main/java/com/datamasters/vista/ManageOS.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Warrio111/Datamasters/blob/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820/src%2Fmain%2Fjava%2Fcom%2Fdatamasters%2Fvista%2FManageOS.java",
+            "raw_url": "https://github.com/Warrio111/Datamasters/raw/0a7972ac9eb29f03f399a7af6ab097ffaa7f8820/src%2Fmain%2Fjava%2Fcom%2Fdatamasters%2Fvista%2FManageOS.java",
+            "contents_url": "https://api.github.com/repos/Warrio111/Datamasters/contents/src%2Fmain%2Fjava%2Fcom%2Fdatamasters%2Fvista%2FManageOS.java?ref=0a7972ac9eb29f03f399a7af6ab097ffaa7f8820",
+            "patch": "@@ -219,13 +219,14 @@ private void addOrder() {\n             addCustomer();\n             customer = controller.findCustomerById(customerId);\n         }\n-\n+        scanner.nextLine(); // Consume the newline character\n         System.out.print(\"Enter item code: \");\n         String itemCode = scanner.nextLine();\n         Item item = controller.findItemByCode(itemCode);\n \n         if (item == null) {\n             System.out.println(\"Product not found. Please add the product details.\");\n+            scanner.nextLine(); // Consume the newline character\n             addItems();\n             item = controller.findItemByCode(itemCode);\n         }"
+        }
+    ]
+}

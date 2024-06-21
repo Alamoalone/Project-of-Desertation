@@ -1,0 +1,134 @@
+{
+    "sha": "90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+    "node_id": "C_kwDOHGrjH9oAKDkwNjM4ZGJkYjNjYzQ3OGM3ZDA2MTg3ZTMyMWYxMTQ3ZWMxZmQ5MWM",
+    "commit": {
+        "author": {
+            "name": "RHJ5FE",
+            "email": "shijin.raj@de.bosch.com",
+            "date": "2024-01-11T11:17:40Z"
+        },
+        "committer": {
+            "name": "RHJ5FE",
+            "email": "shijin.raj@de.bosch.com",
+            "date": "2024-01-11T11:17:40Z"
+        },
+        "message": "Fixed idShort null pointer exception",
+        "tree": {
+            "sha": "38592cbed320ae8008a98b1349fddee423279f8d",
+            "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/git/trees/38592cbed320ae8008a98b1349fddee423279f8d"
+        },
+        "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/git/commits/90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/commits/90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+    "html_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/commit/90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+    "comments_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/commits/90638dbdb3cc478c7d06187e321f1147ec1fd91c/comments",
+    "author": {
+        "login": "shijinrajbosch",
+        "id": 136349699,
+        "node_id": "U_kgDOCCCIAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/136349699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shijinrajbosch",
+        "html_url": "https://github.com/shijinrajbosch",
+        "followers_url": "https://api.github.com/users/shijinrajbosch/followers",
+        "following_url": "https://api.github.com/users/shijinrajbosch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shijinrajbosch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shijinrajbosch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shijinrajbosch/subscriptions",
+        "organizations_url": "https://api.github.com/users/shijinrajbosch/orgs",
+        "repos_url": "https://api.github.com/users/shijinrajbosch/repos",
+        "events_url": "https://api.github.com/users/shijinrajbosch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shijinrajbosch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "shijinrajbosch",
+        "id": 136349699,
+        "node_id": "U_kgDOCCCIAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/136349699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shijinrajbosch",
+        "html_url": "https://github.com/shijinrajbosch",
+        "followers_url": "https://api.github.com/users/shijinrajbosch/followers",
+        "following_url": "https://api.github.com/users/shijinrajbosch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shijinrajbosch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shijinrajbosch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shijinrajbosch/subscriptions",
+        "organizations_url": "https://api.github.com/users/shijinrajbosch/orgs",
+        "repos_url": "https://api.github.com/users/shijinrajbosch/repos",
+        "events_url": "https://api.github.com/users/shijinrajbosch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shijinrajbosch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "70510b42679636f9e05f33a51accea32e965caf9",
+            "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/commits/70510b42679636f9e05f33a51accea32e965caf9",
+            "html_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/commit/70510b42679636f9e05f33a51accea32e965caf9"
+        }
+    ],
+    "stats": {
+        "total": 78,
+        "additions": 74,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "24b2f117450235bd4a5d185e2ec99723d70d83d8",
+            "filename": "CHANGELOG.md",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/blob/90638dbdb3cc478c7d06187e321f1147ec1fd91c/CHANGELOG.md",
+            "raw_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/raw/90638dbdb3cc478c7d06187e321f1147ec1fd91c/CHANGELOG.md",
+            "contents_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/contents/CHANGELOG.md?ref=90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+            "patch": "@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0\n - default value for registry authentication has been corrected to 'true' in the documentation\n - Refactored DuplicateKey Exception handling\n - Removed deprecated /query-Endpoint\n-- Mark idShort in openApi mandatory\n+- Fixed idShort null pointer exception\n \n ## 0.3.21\n ### Added"
+        },
+        {
+            "sha": "0c5754515cd95d950a485df0f49ee845afbf2510",
+            "filename": "backend/src/main/java/org/eclipse/tractusx/semantics/registry/service/ShellService.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 2,
+            "changes": 8,
+            "blob_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/blob/90638dbdb3cc478c7d06187e321f1147ec1fd91c/backend%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2Fservice%2FShellService.java",
+            "raw_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/raw/90638dbdb3cc478c7d06187e321f1147ec1fd91c/backend%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2Fservice%2FShellService.java",
+            "contents_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/contents/backend%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2Fservice%2FShellService.java?ref=90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+            "patch": "@@ -32,6 +32,7 @@\n import java.util.stream.Stream;\n \n import org.apache.commons.lang3.BooleanUtils;\n+import org.apache.commons.lang3.StringUtils;\n import org.eclipse.tractusx.semantics.RegistryProperties;\n import org.eclipse.tractusx.semantics.aas.registry.model.GetAllAssetAdministrationShellIdsByAssetLink200Response;\n import org.eclipse.tractusx.semantics.aas.registry.model.PagedResultPagingMetadata;\n@@ -109,8 +110,10 @@ public Shell save(Shell shell) {\n     */\n    private void validateIdShort( Shell shell ) {\n       //Check uniqueness of IdShort in shell level\n-      Optional.ofNullable( shell.getIdShort() ).map( shellRepository::existsByIdShort ).filter( BooleanUtils::isFalse )\n-            .orElseThrow( () -> new DuplicateKeyException( \"An AssetAdministrationShell for the given IdShort already exists.\" ) );\n+      Optional.ofNullable( shell.getIdShort() ).map( shellRepository::existsByIdShort ).filter( BooleanUtils::isTrue )\n+            .ifPresent( aBoolean -> {\n+               throw new DuplicateKeyException( \"An AssetAdministrationShell for the given IdShort already exists.\" );\n+            } );\n \n       checkForDuplicateIdShortWithInSubModels( shell );\n    }\n@@ -121,6 +124,7 @@ private void checkForDuplicateIdShortWithInSubModels( Shell shell ) {\n             .map( Collection::stream )\n             .orElseGet( Stream::empty )\n             .map( Submodel::getIdShort )\n+            .filter( StringUtils::isNotBlank )\n             .map( String::toLowerCase )\n             .toList();\n "
+        },
+        {
+            "sha": "c56f0ab15e9fc43f5f4ad93fa09d44a0566092dd",
+            "filename": "backend/src/main/resources/static/aas-registry-openapi.yaml",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/blob/90638dbdb3cc478c7d06187e321f1147ec1fd91c/backend%2Fsrc%2Fmain%2Fresources%2Fstatic%2Faas-registry-openapi.yaml",
+            "raw_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/raw/90638dbdb3cc478c7d06187e321f1147ec1fd91c/backend%2Fsrc%2Fmain%2Fresources%2Fstatic%2Faas-registry-openapi.yaml",
+            "contents_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/contents/backend%2Fsrc%2Fmain%2Fresources%2Fstatic%2Faas-registry-openapi.yaml?ref=90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+            "patch": "@@ -914,7 +914,6 @@ components:\n     AssetAdministrationShellDescriptor:\n       required:\n         - id\n-        - idShort\n       type: object\n       example: {\"description\":[{\"language\":\"de\",\"text\":\"hello text\"},{\"language\":\"en\",\"text\":\"hello s\"}],\"displayName\":[{\"language\":\"de\",\"text\":\"this is an example description1\"}],\"endpoints\":[{\"interface\":\"interfaceNameExample\",\"protocolInformation\":{\"href\":\"endpointAddressExample\",\"endpointProtocol\":\"endpointProtocolExample\",\"endpointProtocolVersion\":[\"e\"],\"subprotocol\":\"subprotocolExample\",\"subprotocolBody\":\"subprotocolBodyExample\",\"subprotocolBodyEncoding\":\"subprotocolBodyExample\",\"securityAttributes\":[{\"type\":\"NONE\",\"key\": \"Security Attribute key\",\"value\": \"Security Attribute value\"}]}}],\"idShort\":\"idShortExample\",\"id\":\"e1eba3d7-91f0-4dac-a730-eaa1d35e035c\",\"specificAssetIds\":[{\"supplementalSemanticIds\":[{\"type\":\"ExternalReference\",\"keys\":[{\"type\":\"Submodel\",\"value\":\"semanticIdExample\"}]}],\"name\":\"identifier1KeyExample\",\"value\":\"identifier1ValueExample\"},{\"supplementalSemanticIds\":[{\"type\":\"ExternalReference\",\"keys\":[{\"type\":\"Submodel\",\"value\":\"semanticIdExample\"}]}],\"name\":\"identifier2KeyExample\",\"value\":\"identifier2ValueExample\"}],\"submodelDescriptors\":[{\"endpoints\":[{\"interface\":\"interfaceNameExample\",\"protocolInformation\":{\"href\":\"endpointAddressExample\",\"endpointProtocol\":\"endpointProtocolExample\",\"endpointProtocolVersion\":[\"e\"],\"subprotocol\":\"subprotocolExample\",\"subprotocolBody\":\"subprotocolBodyExample\",\"subprotocolBodyEncoding\":\"subprotocolBodyExample\",\"securityAttributes\":[{\"type\":\"NONE\",\"key\": \"Security Attribute key\",\"value\": \"Security Attribute value\"}]}}],\"idShort\":\"idShortExample\",\"id\":\"cd47615b-daf3-4036-8670-d2f89349d388\",\"semanticId\":{\"type\":\"ExternalReference\",\"keys\":[{\"type\":\"Submodel\",\"value\":\"semanticIdExample\"}]},\"description\":[{\"language\":\"de\",\"text\":\"hello text\"},{\"language\":\"en\",\"text\":\"hello s\"}]}]}\n       allOf:"
+        },
+        {
+            "sha": "90fed33dcac14f6362356339aa7a2d27e1c9c2c4",
+            "filename": "backend/src/test/java/org/eclipse/tractusx/semantics/registry/AssetAdministrationShellApiTest.java",
+            "status": "modified",
+            "additions": 67,
+            "deletions": 0,
+            "changes": 67,
+            "blob_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/blob/90638dbdb3cc478c7d06187e321f1147ec1fd91c/backend%2Fsrc%2Ftest%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2FAssetAdministrationShellApiTest.java",
+            "raw_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/raw/90638dbdb3cc478c7d06187e321f1147ec1fd91c/backend%2Fsrc%2Ftest%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2FAssetAdministrationShellApiTest.java",
+            "contents_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/contents/backend%2Fsrc%2Ftest%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2FAssetAdministrationShellApiTest.java?ref=90638dbdb3cc478c7d06187e321f1147ec1fd91c",
+            "patch": "@@ -933,6 +933,7 @@ public void testFetchShellsByMultipleIdentificationsExpectSuccessExpectSuccess()\n    @DisplayName( \"Test creating a new Asset Administration Shell Descriptor with unique IdShort in shell and submodelDescriptor level\" )\n    public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_and_submodelDescriptor_level() throws Exception {\n       //Given\n+      removedAllShells();\n       AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();\n       //When & Then\n       mvc.perform(\n@@ -947,10 +948,71 @@ public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_uniqu\n             .andExpect( status().isCreated());\n    }\n \n+   @Test\n+   @DisplayName( \"Test creating a new Asset Administration Shell Descriptor with empty IdShort in shell and submodelDescriptor level\" )\n+   public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_submodelDescriptor_level() throws Exception {\n+      //Given\n+      removedAllShells();\n+      AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();\n+      shellPayload.setIdShort( null );\n+      shellPayload.getSubmodelDescriptors().get( 0 ).setIdShort( null );\n+      //When & Then\n+      mvc.perform(\n+                  MockMvcRequestBuilders\n+                        .post( SHELL_BASE_PATH )\n+                        .accept( MediaType.APPLICATION_JSON )\n+                        .contentType( MediaType.APPLICATION_JSON )\n+                        .content( mapper.writeValueAsString( shellPayload ) )\n+                        .with( jwtTokenFactory.allRoles() )\n+            )\n+            .andDo( MockMvcResultHandlers.print() )\n+            .andExpect( status().isCreated());\n+   }\n+\n+   @Test\n+   @DisplayName( \"Test creating a new Asset Administration Shell Descriptor with empty IdShort in shell and valid IdShort in submodelDescriptor level\" )\n+   public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_valid_IdShort_in_submodelDescriptor_level() throws Exception {\n+      //Given\n+      removedAllShells();\n+      AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();\n+      shellPayload.setIdShort( null );\n+      //When & Then\n+      mvc.perform(\n+                  MockMvcRequestBuilders\n+                        .post( SHELL_BASE_PATH )\n+                        .accept( MediaType.APPLICATION_JSON )\n+                        .contentType( MediaType.APPLICATION_JSON )\n+                        .content( mapper.writeValueAsString( shellPayload ) )\n+                        .with( jwtTokenFactory.allRoles() )\n+            )\n+            .andDo( MockMvcResultHandlers.print() )\n+            .andExpect( status().isCreated());\n+   }\n+\n+   @Test\n+   @DisplayName( \"Test creating a new Asset Administration Shell Descriptor with valid IdShort in shell and empty IdShort in submodelDescriptor level\" )\n+   public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_valid_IdShort_in_shell_and_empty_IdShort_in_submodelDescriptor_level() throws Exception {\n+      //Given\n+      AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();\n+      shellPayload.getSubmodelDescriptors().get( 0 ).setIdShort( null );\n+      //When & Then\n+      mvc.perform(\n+                  MockMvcRequestBuilders\n+                        .post( SHELL_BASE_PATH )\n+                        .accept( MediaType.APPLICATION_JSON )\n+                        .contentType( MediaType.APPLICATION_JSON )\n+                        .content( mapper.writeValueAsString( shellPayload ) )\n+                        .with( jwtTokenFactory.allRoles() )\n+            )\n+            .andDo( MockMvcResultHandlers.print() )\n+            .andExpect( status().isCreated());\n+   }\n+\n    @Test\n    @DisplayName( \"Test creating a new Asset Administration Shell Descriptor with dupilcate IdShort in shell level\" )\n    public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_Dupilcate_IdShort_in_shell_level() throws Exception {\n       //Given\n+      removedAllShells();\n       //Creates a shell using test data\n       AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();\n       shellPayload.setId( UUID.randomUUID().toString() );\n@@ -976,10 +1038,15 @@ public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_Dupil\n             .andExpect( jsonPath( \"$.messages[0].text\", is( \"An AssetAdministrationShell for the given IdShort already exists.\" ) ) );\n    }\n \n+   private void removedAllShells() {\n+      shellRepository.deleteAll();\n+   }\n+\n    @Test\n    @DisplayName( \"Test Creating a new Asset Administration Shell Descriptor with unique  IdShort in shell level and duplicate IdShort in submodelDescriptor level\" )\n    public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_level_and_duplicate_submodelDescriptor_level() throws Exception {\n       //Given\n+      removedAllShells();\n       AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();\n \n       SubmodelDescriptor submodelDescriptor = new SubmodelDescriptor();"
+        }
+    ]
+}

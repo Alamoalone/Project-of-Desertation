@@ -1,0 +1,3 @@
+    public double averageLongitude() {
+        return points.stream().mapToDouble(Point::getX).average().orElse(DEFAULT_VALUE);
+    }

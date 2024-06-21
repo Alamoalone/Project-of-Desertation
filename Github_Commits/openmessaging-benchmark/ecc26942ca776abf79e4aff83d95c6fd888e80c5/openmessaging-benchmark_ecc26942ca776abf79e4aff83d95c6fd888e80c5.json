@@ -1,0 +1,110 @@
+{
+    "sha": "ecc26942ca776abf79e4aff83d95c6fd888e80c5",
+    "node_id": "C_kwDOKydwatoAKGVjYzI2OTQyY2E3NzZhYmY3OWU0YWZmODNkOTVjNmZkODg4ZTgwYzU",
+    "commit": {
+        "author": {
+            "name": "mu",
+            "email": "59917266+4eUeP@users.noreply.github.com",
+            "date": "2023-11-28T04:34:41Z"
+        },
+        "committer": {
+            "name": "mu",
+            "email": "59917266+4eUeP@users.noreply.github.com",
+            "date": "2023-11-28T05:50:44Z"
+        },
+        "message": "fix: resolve null pointer exception in argument.output",
+        "tree": {
+            "sha": "efc6f1a6d551e6a628be854b0c657094608df815",
+            "url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/git/trees/efc6f1a6d551e6a628be854b0c657094608df815"
+        },
+        "url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/git/commits/ecc26942ca776abf79e4aff83d95c6fd888e80c5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/commits/ecc26942ca776abf79e4aff83d95c6fd888e80c5",
+    "html_url": "https://github.com/hstreamdb/openmessaging-benchmark/commit/ecc26942ca776abf79e4aff83d95c6fd888e80c5",
+    "comments_url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/commits/ecc26942ca776abf79e4aff83d95c6fd888e80c5/comments",
+    "author": {
+        "login": "4eUeP",
+        "id": 59917266,
+        "node_id": "MDQ6VXNlcjU5OTE3MjY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/59917266?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/4eUeP",
+        "html_url": "https://github.com/4eUeP",
+        "followers_url": "https://api.github.com/users/4eUeP/followers",
+        "following_url": "https://api.github.com/users/4eUeP/following{/other_user}",
+        "gists_url": "https://api.github.com/users/4eUeP/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/4eUeP/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/4eUeP/subscriptions",
+        "organizations_url": "https://api.github.com/users/4eUeP/orgs",
+        "repos_url": "https://api.github.com/users/4eUeP/repos",
+        "events_url": "https://api.github.com/users/4eUeP/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/4eUeP/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "4eUeP",
+        "id": 59917266,
+        "node_id": "MDQ6VXNlcjU5OTE3MjY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/59917266?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/4eUeP",
+        "html_url": "https://github.com/4eUeP",
+        "followers_url": "https://api.github.com/users/4eUeP/followers",
+        "following_url": "https://api.github.com/users/4eUeP/following{/other_user}",
+        "gists_url": "https://api.github.com/users/4eUeP/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/4eUeP/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/4eUeP/subscriptions",
+        "organizations_url": "https://api.github.com/users/4eUeP/orgs",
+        "repos_url": "https://api.github.com/users/4eUeP/repos",
+        "events_url": "https://api.github.com/users/4eUeP/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/4eUeP/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bf6d238b5d2645d6a0321d91290d0bc3abbd8227",
+            "url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/commits/bf6d238b5d2645d6a0321d91290d0bc3abbd8227",
+            "html_url": "https://github.com/hstreamdb/openmessaging-benchmark/commit/bf6d238b5d2645d6a0321d91290d0bc3abbd8227"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "741b61bf5b67765038c468aacfc27a628b317710",
+            "filename": ".gitignore",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/hstreamdb/openmessaging-benchmark/blob/ecc26942ca776abf79e4aff83d95c6fd888e80c5/.gitignore",
+            "raw_url": "https://github.com/hstreamdb/openmessaging-benchmark/raw/ecc26942ca776abf79e4aff83d95c6fd888e80c5/.gitignore",
+            "contents_url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/contents/.gitignore?ref=ecc26942ca776abf79e4aff83d95c6fd888e80c5",
+            "patch": "@@ -18,3 +18,5 @@ core/*.json\n # IntelliJ artifacts\n .idea/\n *.iml\n+\n+/local/"
+        },
+        {
+            "sha": "62e78b5bc99fea42c592229636466ad4fdcad518",
+            "filename": "benchmark-framework/src/main/java/io/openmessaging/benchmark/Benchmark.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/hstreamdb/openmessaging-benchmark/blob/ecc26942ca776abf79e4aff83d95c6fd888e80c5/benchmark-framework%2Fsrc%2Fmain%2Fjava%2Fio%2Fopenmessaging%2Fbenchmark%2FBenchmark.java",
+            "raw_url": "https://github.com/hstreamdb/openmessaging-benchmark/raw/ecc26942ca776abf79e4aff83d95c6fd888e80c5/benchmark-framework%2Fsrc%2Fmain%2Fjava%2Fio%2Fopenmessaging%2Fbenchmark%2FBenchmark.java",
+            "contents_url": "https://api.github.com/repos/hstreamdb/openmessaging-benchmark/contents/benchmark-framework%2Fsrc%2Fmain%2Fjava%2Fio%2Fopenmessaging%2Fbenchmark%2FBenchmark.java?ref=ecc26942ca776abf79e4aff83d95c6fd888e80c5",
+            "patch": "@@ -152,7 +152,7 @@ public static void main(String[] args) throws Exception {\n \n                     TestResult result = generator.run();\n \n-                    String fileName = arguments.output.length() > 0 ? arguments.output\n+                    String fileName = (arguments.output != null && arguments.output.length() > 0) ? arguments.output\n                             : String.format(\"%s-%s-%s.json\", workloadName, driverConfiguration.name,\n                                     dateFormat.format(new Date()));\n "
+        }
+    ]
+}

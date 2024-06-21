@@ -1,0 +1,4 @@
+	public void completed ( boolean deserial ) {
+		if ( deserial )
+			finishLoad ( );
+	}

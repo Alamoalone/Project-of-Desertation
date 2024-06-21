@@ -1,0 +1,55 @@
+@@ -117,12 +117,27 @@ public String getAdminEmail() {
+ 	public int getPort() {
+ 		return port;
+ 	}
++	
++	/**
++	 * Get the public RSA key of the server as a base64-encoded string.
++	 * @return The public RSA key of the server as a base64-encoded string
++	 */
++	public String getServerPublicKey()
++	{
++		return serverPublicKey;
++	}
+ 
+ 	/**
+ 	 * The public RSA key of the server.
+ 	 * @return Public RSA key
+ 	 */
+-	public PublicKey getServerPublicKeyObject() {
++	public PublicKey getServerPublicKeyObject() 
++	{
++		if (this.serverPublicKeyObject == null)
++		{
++			this.serverPublicKeyObject = CryptoLib.decodePublicKeyFromBase64(this.serverPublicKey);
++		}
++		
+ 		return serverPublicKeyObject;
+ 	}
+ 
+@@ -154,8 +169,23 @@ public String getUserId() {
+ 	 * The private RSA key of the user.
+ 	 * @return Private RSA key
+ 	 */
+-	public PrivateKey getUserPrivateKeyObject() {
+-		return userPrivateKeyObject;
++	public PrivateKey getUserPrivateKeyObject() 
++	{
++		if (this.userPrivateKeyObject == null)
++		{
++			this.userPrivateKeyObject = CryptoLib.decodePrivateKeyFromBase64(this.userPrivateKey);
++		}
++		
++		return this.userPrivateKeyObject;
++	}
++	
++	/**
++	 * Set the e-mail address of the server administrator.
++	 * @param The e-mail address of the server administrator
++	 */
++	public void setAdminEmail(String adminEmail)
++	{
++		this.adminEmail = adminEmail;
+ 	}
+ 	
+ 	/**

@@ -1,0 +1,7 @@
+    public List<PlateMeasurementDTO> getPlateMeasurements(@Argument long plateId, @Argument boolean active) {
+        if (active) {
+            return List.of(plateMeasurementService.getActivePlateMeasurement(plateId));
+        } else {
+            return plateMeasurementService.getPlateMeasurements(plateId);
+        }
+    }

@@ -1,0 +1,270 @@
+{
+    "sha": "2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+    "node_id": "C_kwDOKt-bCtoAKDJlMTJlYjIzZjRjZTNhY2I2MWJiOWM3MDkzODBkMDA5ZmI4YzdhNGU",
+    "commit": {
+        "author": {
+            "name": "Mattai16",
+            "email": "111460191+Mattai16@users.noreply.github.com",
+            "date": "2023-11-29T05:52:18Z"
+        },
+        "committer": {
+            "name": "Mattai16",
+            "email": "111460191+Mattai16@users.noreply.github.com",
+            "date": "2023-11-29T05:52:18Z"
+        },
+        "message": ":bug: Home exception\n\nNull pointer exception corregido en el objeto usuario",
+        "tree": {
+            "sha": "ff136a42292c8d5b1a6668d1e5f04f572a870136",
+            "url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/git/trees/ff136a42292c8d5b1a6668d1e5f04f572a870136"
+        },
+        "url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/git/commits/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/commits/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+    "html_url": "https://github.com/Marianozuv/Proyecto-IS/commit/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+    "comments_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/commits/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/comments",
+    "author": {
+        "login": "Mattai16",
+        "id": 111460191,
+        "node_id": "U_kgDOBqS_Xw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/111460191?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mattai16",
+        "html_url": "https://github.com/Mattai16",
+        "followers_url": "https://api.github.com/users/Mattai16/followers",
+        "following_url": "https://api.github.com/users/Mattai16/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mattai16/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mattai16/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mattai16/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mattai16/orgs",
+        "repos_url": "https://api.github.com/users/Mattai16/repos",
+        "events_url": "https://api.github.com/users/Mattai16/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mattai16/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Mattai16",
+        "id": 111460191,
+        "node_id": "U_kgDOBqS_Xw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/111460191?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mattai16",
+        "html_url": "https://github.com/Mattai16",
+        "followers_url": "https://api.github.com/users/Mattai16/followers",
+        "following_url": "https://api.github.com/users/Mattai16/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mattai16/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mattai16/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mattai16/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mattai16/orgs",
+        "repos_url": "https://api.github.com/users/Mattai16/repos",
+        "events_url": "https://api.github.com/users/Mattai16/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mattai16/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b11b114906c9c04b8c729134066fd57d45d94b40",
+            "url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/commits/b11b114906c9c04b8c729134066fd57d45d94b40",
+            "html_url": "https://github.com/Marianozuv/Proyecto-IS/commit/b11b114906c9c04b8c729134066fd57d45d94b40"
+        }
+    ],
+    "stats": {
+        "total": 70,
+        "additions": 45,
+        "deletions": 25
+    },
+    "files": [
+        {
+            "sha": "633430fad1b5d80e2f934b975608ab6b51f8156c",
+            "filename": ".DS_Store",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/.DS_Store",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/.DS_Store",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/.DS_Store?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "e8b84a0e51bbc881b727aa411b90c0d342aa66a6",
+            "filename": "APISmartCupon/build/web/WEB-INF/classes/modelo/AutenticacionDAO.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmodelo%2FAutenticacionDAO.class",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmodelo%2FAutenticacionDAO.class",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmodelo%2FAutenticacionDAO.class?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "e8b7e9f5e51f2c2d0d1a81e0e88bbe58d785814a",
+            "filename": "APISmartCupon/build/web/WEB-INF/classes/modelo/pojo/RespuestaLoginEscritorio.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmodelo%2Fpojo%2FRespuestaLoginEscritorio.class",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmodelo%2Fpojo%2FRespuestaLoginEscritorio.class",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmodelo%2Fpojo%2FRespuestaLoginEscritorio.class?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "dacb02cdab742e3c1e681bbdd28db646982ef02c",
+            "filename": "APISmartCupon/build/web/WEB-INF/classes/mybatis/mapper/AutenticacionMapper.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmybatis%2Fmapper%2FAutenticacionMapper.xml",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmybatis%2Fmapper%2FAutenticacionMapper.xml",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/APISmartCupon%2Fbuild%2Fweb%2FWEB-INF%2Fclasses%2Fmybatis%2Fmapper%2FAutenticacionMapper.xml?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -7,7 +7,7 @@ PUBLIC \"-//mybatis.org//DTD Mapper 3.0//EN\"\n <mapper namespace=\"autenticacion\">\n     \n     <select id=\"loginEscritorio\" resultType=\"modelo.pojo.Usuario\" parameterType=\"map\">\n-        SELECT idUsuario, idRol, idEmpresa,nombre, apellidoPaterno, apellidoMaterno, \n+        SELECT idUsuario, idRol, idEmpresa, nombre, apellidoPaterno, apellidoMaterno, \n                curp, email, username, password\n         FROM usuario\n         WHERE username=#{username} AND password=#{password}"
+        },
+        {
+            "sha": "613c9500ecc480cd636f48a9f52954a3a4c1cce9",
+            "filename": "APISmartCupon/src/java/modelo/AutenticacionDAO.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fsrc%2Fjava%2Fmodelo%2FAutenticacionDAO.java",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fsrc%2Fjava%2Fmodelo%2FAutenticacionDAO.java",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/APISmartCupon%2Fsrc%2Fjava%2Fmodelo%2FAutenticacionDAO.java?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -35,7 +35,7 @@ public static RespuestaLoginEscritorio verificarSesionEscritorio(String username\n                 if(usuario != null){\n                     respuesta.setError(false);\n                     respuesta.setContenido(\"Bienvenido al sistema \"+ usuario.getNombre());\n-                    respuesta.setUsuarioSession(usuario);\n+                    respuesta.setUsuarioSesion(usuario);\n                 }else{\n                     respuesta.setContenido(\"Email y/o contraseña incorrectos\");\n                 }"
+        },
+        {
+            "sha": "d91a13f86edeacfcf361563079f3df7db5d38d77",
+            "filename": "APISmartCupon/src/java/modelo/pojo/RespuestaLoginEscritorio.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 9,
+            "changes": 18,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fsrc%2Fjava%2Fmodelo%2Fpojo%2FRespuestaLoginEscritorio.java",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fsrc%2Fjava%2Fmodelo%2Fpojo%2FRespuestaLoginEscritorio.java",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/APISmartCupon%2Fsrc%2Fjava%2Fmodelo%2Fpojo%2FRespuestaLoginEscritorio.java?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -13,15 +13,15 @@ public class RespuestaLoginEscritorio {\n     \n     private boolean error;\n     private String contenido;\n-    private Usuario usuarioSession;\n+    private Usuario usuarioSesion;\n \n     public RespuestaLoginEscritorio() {\n     }\n \n-    public RespuestaLoginEscritorio(boolean error, String contenido, Usuario usuarioSession) {\n+    public RespuestaLoginEscritorio(boolean error, String contenido, Usuario usuarioSesion) {\n         this.error = error;\n         this.contenido = contenido;\n-        this.usuarioSession = usuarioSession;\n+        this.usuarioSesion = usuarioSesion;\n     }\n \n     public boolean isError() {\n@@ -40,14 +40,14 @@ public void setContenido(String contenido) {\n         this.contenido = contenido;\n     }\n \n-    public Usuario getUsuarioSession() {\n-        return usuarioSession;\n+    public Usuario getUsuarioSesion() {\n+        return usuarioSesion;\n     }\n \n-    public void setUsuarioSession(Usuario usuarioSession) {\n-        this.usuarioSession = usuarioSession;\n+    public void setUsuarioSesion(Usuario usuarioSesion) {\n+        this.usuarioSesion = usuarioSesion;\n     }\n-    \n-    \n+\n+\n     \n }"
+        },
+        {
+            "sha": "dacb02cdab742e3c1e681bbdd28db646982ef02c",
+            "filename": "APISmartCupon/src/java/mybatis/mapper/AutenticacionMapper.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fsrc%2Fjava%2Fmybatis%2Fmapper%2FAutenticacionMapper.xml",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/APISmartCupon%2Fsrc%2Fjava%2Fmybatis%2Fmapper%2FAutenticacionMapper.xml",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/APISmartCupon%2Fsrc%2Fjava%2Fmybatis%2Fmapper%2FAutenticacionMapper.xml?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -7,7 +7,7 @@ PUBLIC \"-//mybatis.org//DTD Mapper 3.0//EN\"\n <mapper namespace=\"autenticacion\">\n     \n     <select id=\"loginEscritorio\" resultType=\"modelo.pojo.Usuario\" parameterType=\"map\">\n-        SELECT idUsuario, idRol, idEmpresa,nombre, apellidoPaterno, apellidoMaterno, \n+        SELECT idUsuario, idRol, idEmpresa, nombre, apellidoPaterno, apellidoMaterno, \n                curp, email, username, password\n         FROM usuario\n         WHERE username=#{username} AND password=#{password}"
+        },
+        {
+            "sha": "a90cf25aacfeb5a6c1c54bdc598172b17441c4eb",
+            "filename": "ClienteEscritorioSmartCupon/.DS_Store",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2F.DS_Store",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2F.DS_Store",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2F.DS_Store?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "8c7ab002405cda688a18d35a10c6a6491a2575a8",
+            "filename": "ClienteEscritorioSmartCupon/src/.DS_Store",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2F.DS_Store",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2F.DS_Store",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2F.DS_Store?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "595fbd2c000232cac087b3f0eae183968a95c03f",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/.DS_Store",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2F.DS_Store",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2F.DS_Store",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2F.DS_Store?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "f1b4e1b1b7bb9c135aa92d899b469a9c4f711cb9",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/FXMLHome.fxml",
+            "status": "modified",
+            "additions": 17,
+            "deletions": 2,
+            "changes": 19,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLHome.fxml",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLHome.fxml",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLHome.fxml?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -1,8 +1,23 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n \n+<?import javafx.scene.control.Label?>\n+<?import javafx.scene.image.Image?>\n+<?import javafx.scene.image.ImageView?>\n <?import javafx.scene.layout.AnchorPane?>\n+<?import javafx.scene.text.Font?>\n \n \n-<AnchorPane id=\"AnchorPane\" prefHeight=\"550.0\" prefWidth=\"800.0\" xmlns:fx=\"http://javafx.com/fxml/1\" xmlns=\"http://javafx.com/javafx/19\" fx:controller=\"clienteescritoriosmartcupon.FXMLHomeController\">\n-    \n+<AnchorPane id=\"AnchorPane\" prefHeight=\"550.0\" prefWidth=\"800.0\" xmlns=\"http://javafx.com/javafx/19\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"clienteescritoriosmartcupon.FXMLHomeController\">\n+   <children>\n+      <ImageView fitHeight=\"577.0\" fitWidth=\"800.0\" pickOnBounds=\"true\" preserveRatio=\"true\">\n+         <image>\n+            <Image url=\"@recursos/fondo.png\" />\n+         </image>\n+      </ImageView>\n+      <Label fx:id=\"lbUsuario\" layoutX=\"21.0\" layoutY=\"14.0\" text=\"Nombre\" textFill=\"WHITE\">\n+         <font>\n+            <Font size=\"37.0\" />\n+         </font>\n+      </Label>\n+   </children>\n </AnchorPane>"
+        },
+        {
+            "sha": "44bb53ceca625c8e424702ebf4fcff95286eb039",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/FXMLHomeController.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 5,
+            "changes": 14,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLHomeController.java",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLHomeController.java",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLHomeController.java?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -8,7 +8,9 @@\n import clienteescritoriosmartcupon.modelo.pojo.Usuario;\n import java.net.URL;\n import java.util.ResourceBundle;\n+import javafx.fxml.FXML;\n import javafx.fxml.Initializable;\n+import javafx.scene.control.Label;\n \n /**\n  * FXML Controller class\n@@ -17,7 +19,10 @@\n  */\n public class FXMLHomeController implements Initializable {\n \n-    private Usuario usuario;\n+    private Usuario usuarioSesion;\n+    @FXML\n+    private Label lbUsuario;\n+\n     /**\n      * Initializes the controller class.\n      */\n@@ -26,10 +31,9 @@ public void initialize(URL url, ResourceBundle rb) {\n         // TODO\n     }   \n     \n-    public void inicializarHome(Usuario usuarioSesion) {\n-        \n-        this.usuario = usuarioSesion;\n-        \n+    public void inicializarHome(Usuario usuarioSesion) {  \n+        this.usuarioSesion = usuarioSesion;\n+        lbUsuario.setText(usuarioSesion.getNombre()+ \" \"+usuarioSesion.getApellidoPaterno());\n     }\n     \n }"
+        },
+        {
+            "sha": "92fbda192b9eb35932741e4aee5d2341039fae36",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/FXMLLoginController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLLoginController.java",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLLoginController.java",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2FFXMLLoginController.java?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -104,7 +104,7 @@ private void irPantallaPrincipal(Usuario usuarioSesion) {\n \n             FXMLHomeController controladorHome = loadVista.getController();\n             controladorHome.inicializarHome(usuarioSesion);\n-\n+            \n             Scene scene = new Scene(vista);\n             stagePrincipal.setTitle(\"Inicio\");\n             stagePrincipal.setScene(scene);"
+        },
+        {
+            "sha": "ccaa0af4561c184d74cc857fc07f5e6a48b8c93d",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/modelo/pojo/Usuario.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 5,
+            "changes": 11,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Fmodelo%2Fpojo%2FUsuario.java",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Fmodelo%2Fpojo%2FUsuario.java",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Fmodelo%2Fpojo%2FUsuario.java?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e",
+            "patch": "@@ -11,16 +11,17 @@\n  */\n public class Usuario {\n     \n-    private Integer idUsuario;\n-    private Integer idRol;\n-    private Integer idEmpresa;\n-    private String nombre;\n     private String apellidoPaterno;\n     private String apellidoMaterno;\n     private String curp;\n     private String email;\n-    private String username;\n+    private Integer idEmpresa;\n+    private Integer idRol;\n+    private Integer idUsuario;\n+    private String nombre;\n     private String password;\n+    private String username;\n+    \n \n     public Usuario() {\n     }"
+        },
+        {
+            "sha": "f1139768709cbf9fc08fa1a9f8b490554cfdf69b",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/recursos/.DS_Store",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Frecursos%2F.DS_Store",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Frecursos%2F.DS_Store",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Frecursos%2F.DS_Store?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        },
+        {
+            "sha": "372d02d3c873ca54fe6124c9b0355da6428bcd82",
+            "filename": "ClienteEscritorioSmartCupon/src/clienteescritoriosmartcupon/recursos/fondo.png",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Marianozuv/Proyecto-IS/blob/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Frecursos%2Ffondo.png",
+            "raw_url": "https://github.com/Marianozuv/Proyecto-IS/raw/2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Frecursos%2Ffondo.png",
+            "contents_url": "https://api.github.com/repos/Marianozuv/Proyecto-IS/contents/ClienteEscritorioSmartCupon%2Fsrc%2Fclienteescritoriosmartcupon%2Frecursos%2Ffondo.png?ref=2e12eb23f4ce3acb61bb9c709380d009fb8c7a4e"
+        }
+    ]
+}

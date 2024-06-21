@@ -1,0 +1,12 @@
+	public boolean deleteOnePersonById(String id) throws NullPointerException {
+		// log.debug("Deleting medical record for {} {}", firstName, lastName);
+		boolean result = persons.removeIf(person -> person.getId().equals(id));
+
+		if (!result) {
+			// log.error("Failed to delete person for {} {}", id);
+			throw new NullPointerException("this person to remove doesn't exist");
+		} else {
+			// log.info("Person deleted successfully for {} {}", id);
+		}
+		return result;
+	}

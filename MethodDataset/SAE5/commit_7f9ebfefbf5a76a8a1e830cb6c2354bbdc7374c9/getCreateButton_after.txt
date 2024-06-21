@@ -1,0 +1,9 @@
+	private UButton getCreateButton(JTextField nomField, JTextField telephoneField, JTextField emailField) {
+		UButton createButton = new UButton("Créer");
+		createButton.addActionListener(e -> {
+			Referent r = new Referent(nomField.getText(), telephoneField.getText(), emailField.getText());
+			Referent.create(r);
+			displayView(false);
+		});
+		return createButton;
+	}

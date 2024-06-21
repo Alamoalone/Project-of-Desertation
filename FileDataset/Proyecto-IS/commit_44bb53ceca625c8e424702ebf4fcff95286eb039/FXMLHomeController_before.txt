@@ -1,0 +1,6 @@
+    public void inicializarHome(Usuario usuarioSesion) {
+        
+        this.usuario = usuarioSesion;
+        
+    }
+

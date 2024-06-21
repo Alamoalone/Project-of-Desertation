@@ -1,0 +1,53 @@
+@@ -9,33 +9,31 @@
+ import org.bukkit.scheduler.BukkitRunnable;
+ 
+ import java.time.LocalTime;
+-import java.util.ArrayList;
+-import java.util.List;
+-import java.util.Random;
+-import java.util.UUID;
++import java.util.*;
+ 
+ public class CheckRunnable extends BukkitRunnable {
+     private static final GodOfWealth plugin = GodOfWealth.getInstance();
+     private boolean hasClearedData = false;
+ 
+     private void broadcastSelectedMessage(OfflinePlayer player) {
+-        if (plugin.getConfig().getString("lucky-player-real-name").isEmpty()) {
++        if (Objects.isNull(plugin.getConfig().getString("lucky-player-real-name"))) {
+             return;
+         }
+         String lang = plugin.getConfig().getString("lang.broadcast-selected-player").replaceAll("%player%", player.getName());
+         Bukkit.broadcastMessage(ConfigUtil.color(lang));
+     }
+ 
+-    private void selectLuckyPlayer() {
++    private boolean selectLuckyPlayer() {
+         List<Player> players = new ArrayList<>(Bukkit.getOnlinePlayers());
+         if (players.isEmpty()) {
+             ConfigUtil.clearData();
+-            return;
++            return false;
+         }
+         Random random = new Random();
+         int randomNumber = random.nextInt(players.size());
+         Player player = players.get(randomNumber);
+         ConfigUtil.saveData(player);
++        return true;
+     }
+ 
+     @Override
+@@ -71,9 +69,10 @@ public void run() {
+         }
+         if (isSelectionTime) {
+             hasClearedData = false;
+-            selectLuckyPlayer();
+-            player = Bukkit.getOfflinePlayer(UUID.fromString(plugin.getConfig().getString("lucky-player")));
+-            broadcastSelectedMessage(player);
++            if (selectLuckyPlayer()) {
++                player = Bukkit.getOfflinePlayer(UUID.fromString(plugin.getConfig().getString("lucky-player")));
++                broadcastSelectedMessage(player);
++            }
+         }
+     }
+ }

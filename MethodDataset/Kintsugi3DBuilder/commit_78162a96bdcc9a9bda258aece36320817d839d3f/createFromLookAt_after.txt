@@ -1,0 +1,27 @@
+    public static ReadonlyViewSet createFromLookAt(List<Vector3> viewDir, Vector3 center, Vector3 up, float distance,
+        float nearPlane, float aspect, float sensorWidth, float focalLength)
+    {
+        ViewSet result = new ViewSet(viewDir.size());
+
+        result.cameraProjectionList.add(new DistortionProjection(sensorWidth, sensorWidth / aspect, focalLength));
+
+        result.recommendedNearPlane = nearPlane;
+        result.recommendedFarPlane = 2 * distance - nearPlane;
+
+        result.lightIntensityList.add(new Vector3(distance * distance));
+        result.lightPositionList.add(Vector3.ZERO);
+
+        for (int i = 0; i < viewDir.size(); i++)
+        {
+            result.cameraProjectionIndexList.add(0);
+            result.lightIndexList.add(0);
+            result.imageFileNames.add(String.format("%04d.png", i + 1));
+
+            Matrix4 cameraPose = Matrix4.lookAt(viewDir.get(i).times(-distance).plus(center), center, up);
+
+            result.cameraPoseList.add(cameraPose);
+            result.cameraPoseInvList.add(cameraPose.quickInverse(0.001f));
+        }
+
+        return result;
+    }

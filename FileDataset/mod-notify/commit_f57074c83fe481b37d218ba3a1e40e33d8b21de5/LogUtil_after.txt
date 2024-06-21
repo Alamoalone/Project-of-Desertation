@@ -1,0 +1,12 @@
+  public static String bodyAsString(HttpResponse<Buffer> response) {
+    try {
+      return Optional.ofNullable(response.bodyAsString())
+        .map(LogUtil::crop)
+        .map(str -> str.replaceAll(R_N_LINE_SEPARATOR, R_LINE_SEPARATOR))
+        .orElse(null);
+    } catch (Exception ex) {
+      log.warn("logResponseBody:: Failed to log an HTTP response", ex);
+      return null;
+    }
+  }
+

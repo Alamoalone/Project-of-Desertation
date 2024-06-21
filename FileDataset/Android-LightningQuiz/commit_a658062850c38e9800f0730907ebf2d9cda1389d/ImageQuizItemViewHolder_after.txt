@@ -1,0 +1,33 @@
+	private void selectAnswer(View answerLayout, boolean selectAnswer)
+	{
+		// Set border around image
+		View border = answerLayout.findViewById(R.id.image_border);
+		if (border != null)
+		{
+			border.setVisibility(selectAnswer ? View.VISIBLE : View.INVISIBLE);
+		}
+
+		// Set image label style and its background
+		TextView textView = answerLayout.findViewById(R.id.label);
+		CharSequence labelText = null;
+		if (textView != null)
+		{
+			textView.setTextAppearance(answerLayout.getContext(),
+				selectAnswer ? R.style.QuizImageLabel_Selected : R.style.QuizImageLabel_Unselected);
+			textView.setBackgroundResource(selectAnswer ? R.drawable.quiz_image_label_selected_border : 0);
+			labelText = textView.getText();
+		}
+
+		// Update the content description based on the selected answer and label text
+		updateAnswerContentDescription(answerLayout, labelText, selectAnswer);
+	}
+
+	protected void updateAnswerContentDescription(View answerLayout, @Nullable CharSequence baseText, boolean selectAnswer)
+	{
+		if(baseText == null)
+		{
+			baseText = "";
+		}
+		answerLayout.setContentDescription(baseText + (selectAnswer ? " selected" : " not selected"));
+	}
+

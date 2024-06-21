@@ -1,0 +1,158 @@
+{
+    "sha": "8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+    "node_id": "C_kwDOAhHbBdoAKDhlZTlmYzRiNzVhNzZlOWQ0NDVmNzY0YjhhOTIwMWIwNDYzZmUzYmI",
+    "commit": {
+        "author": {
+            "name": "Cardman",
+            "email": "f.desrochettes@gmail.com",
+            "date": "2023-12-05T10:47:04Z"
+        },
+        "committer": {
+            "name": "Cardman",
+            "email": "f.desrochettes@gmail.com",
+            "date": "2023-12-05T10:47:04Z"
+        },
+        "message": "fix null pointer exception when retrieving errors",
+        "tree": {
+            "sha": "b2b211466935dc22273bf177d68ca4f373f5e36c",
+            "url": "https://api.github.com/repos/Cardman/projects/git/trees/b2b211466935dc22273bf177d68ca4f373f5e36c"
+        },
+        "url": "https://api.github.com/repos/Cardman/projects/git/commits/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Cardman/projects/commits/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+    "html_url": "https://github.com/Cardman/projects/commit/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+    "comments_url": "https://api.github.com/repos/Cardman/projects/commits/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/comments",
+    "author": {
+        "login": "Cardman",
+        "id": 12151671,
+        "node_id": "MDQ6VXNlcjEyMTUxNjcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12151671?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cardman",
+        "html_url": "https://github.com/Cardman",
+        "followers_url": "https://api.github.com/users/Cardman/followers",
+        "following_url": "https://api.github.com/users/Cardman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cardman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cardman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cardman/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cardman/orgs",
+        "repos_url": "https://api.github.com/users/Cardman/repos",
+        "events_url": "https://api.github.com/users/Cardman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cardman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Cardman",
+        "id": 12151671,
+        "node_id": "MDQ6VXNlcjEyMTUxNjcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12151671?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cardman",
+        "html_url": "https://github.com/Cardman",
+        "followers_url": "https://api.github.com/users/Cardman/followers",
+        "following_url": "https://api.github.com/users/Cardman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cardman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cardman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cardman/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cardman/orgs",
+        "repos_url": "https://api.github.com/users/Cardman/repos",
+        "events_url": "https://api.github.com/users/Cardman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cardman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "926d58dd2fb3dd7a61de03acf76659f42b72349f",
+            "url": "https://api.github.com/repos/Cardman/projects/commits/926d58dd2fb3dd7a61de03acf76659f42b72349f",
+            "html_url": "https://github.com/Cardman/projects/commit/926d58dd2fb3dd7a61de03acf76659f42b72349f"
+        }
+    ],
+    "stats": {
+        "total": 46,
+        "additions": 18,
+        "deletions": 28
+    },
+    "files": [
+        {
+            "sha": "9f187a62a5f65c109bc7112c25fbe835af674831",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/analyze/opers/util/ClassMethodIdMemberIdTypeFct.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FClassMethodIdMemberIdTypeFct.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FClassMethodIdMemberIdTypeFct.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FClassMethodIdMemberIdTypeFct.java?ref=8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+            "patch": "@@ -7,7 +7,7 @@\n public final class ClassMethodIdMemberIdTypeFct {\n     private AnaFormattedRootBlock implicit = AnaFormattedRootBlock.defValue();\n     private MemberId memberId = new MemberId();\n-    private AnaTypeFct function;\n+    private AnaTypeFct function = new AnaTypeFct();\n     private CommonOperSymbol symbol;\n \n     public void infos(ClassMethodIdReturn _id) {"
+        },
+        {
+            "sha": "afdea56e3cdb5780b2573c3a732d83a9232d96a2",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/analyze/reach/opers/ReachOperationNode.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/Cardman/projects/blob/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Freach%2Fopers%2FReachOperationNode.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Freach%2Fopers%2FReachOperationNode.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Freach%2Fopers%2FReachOperationNode.java?ref=8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+            "patch": "@@ -52,13 +52,13 @@ public static ReachMethodOperation creatReachOperationNode(OperationNode _oper)\n         }\n         if (_oper instanceof SymbolOperation) {\n             SymbolOperation s_ = (SymbolOperation) _oper;\n-            if (!s_.isOkNum() || s_.getFct().getFunction() != null) {\n+            if (!s_.isOkNum() || LambdaOperation.fct(s_.getFct().getFunction()) != null) {\n                 return new ReachStdOperation(_oper);\n             }\n         }\n         if (_oper instanceof QuickOperation) {\n             QuickOperation s_ = (QuickOperation) _oper;\n-            if (!s_.isOkNum() || s_.getFct().getFunction() != null) {\n+            if (!s_.isOkNum() || LambdaOperation.fct(s_.getFct().getFunction()) != null) {\n                 return new ReachStdOperation(_oper);\n             }\n         }"
+        },
+        {
+            "sha": "0a8ed61187d60288ce41f1091b39ef26bd0c9de9",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/blocks/ForwardInfos.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 3,
+            "changes": 4,
+            "blob_url": "https://github.com/Cardman/projects/blob/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FForwardInfos.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FForwardInfos.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FForwardInfos.java?ref=8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+            "patch": "@@ -7,7 +7,6 @@\n import code.expressionlanguage.analyze.files.ResultParsedAnnots;\n import code.expressionlanguage.analyze.inherits.OverridesTypeUtil;\n import code.expressionlanguage.analyze.opers.*;\n-import code.expressionlanguage.analyze.opers.util.AnaTypeFct;\n import code.expressionlanguage.analyze.opers.util.ClassMethodIdMemberIdTypeFct;\n import code.expressionlanguage.analyze.types.AnaClassArgumentMatching;\n import code.expressionlanguage.analyze.types.GeneStringOverridable;\n@@ -1555,8 +1554,7 @@ private static ExecOperationNode procOperands(OperationNode _anaNode, Forwards _\n         if (_anaNode instanceof SymbolOperation) {\n             SymbolOperation n_ = (SymbolOperation) _anaNode;\n             ClassMethodIdMemberIdTypeFct fct_ = n_.getFct();\n-            AnaTypeFct pair_ = fct_.getFunction();\n-            if (pair_ != null) {\n+            if (LambdaOperation.fct(fct_.getFunction()) != null) {\n                 return new ExecExplicitOperatorOperation(new ExecOperationContent(_anaNode.getContent()),false, new ExecStaticFctContent(new ExecStaticFctCommonContent(\"\",\"\",-1), new ExecStaticEltContent(fct_, _forwards)), FetchMemberUtil.fetchFunctionOpPair(fct_, _forwards), new ExecArrContent(false), new ExecOperatorContent(n_.getOperatorContent()));\n             }\n         }"
+        },
+        {
+            "sha": "8ffa332fe60d060d8f47e8329b6e793052917746",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaCallFctContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaCallFctContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaCallFctContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaCallFctContent.java?ref=8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+            "patch": "@@ -20,7 +20,7 @@ public final class AnaCallFctContent {\n     private int naturalVararg = -1;\n     private MemberId memberId = new MemberId();\n     private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n-    private AnaTypeFct function;\n+    private AnaTypeFct function = new AnaTypeFct();\n     private StandardType standardType;\n     private StandardMethod standardMethod;\n "
+        },
+        {
+            "sha": "932665528921cb00d8a6a29815b351a9b3fbc116",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/linkage/LinkageUtil.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 18,
+            "changes": 30,
+            "blob_url": "https://github.com/Cardman/projects/blob/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Flinkage%2FLinkageUtil.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Flinkage%2FLinkageUtil.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Flinkage%2FLinkageUtil.java?ref=8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+            "patch": "@@ -3495,7 +3495,7 @@ private static void processPreSemiAffectation(VariablesOffsets _vars, int _sum,\n         }\n         boolean err_ = true;\n         AnaTypeFct function_ = par_.getFct().getFunction();\n-        if (function_ != null) {\n+        if (LambdaOperation.fct(function_) != null) {\n             addParts(_vars, function_,\n                     _sum + _val.getIndexInEl()+offsetOp_,1,\n                     _val.getErrs(), _val.getErrs());\n@@ -3563,7 +3563,7 @@ private static void processUnarySymbol(VariablesOffsets _vars, int _sum, Operati\n         if (_val instanceof SymbolOperation && _val.getFirstChild().getNextSibling() == null) {\n             SymbolOperation par_ = (SymbolOperation) _val;\n             AnaTypeFct function_ = par_.getFct().getFunction();\n-            if (function_ != null) {\n+            if (LambdaOperation.fct(function_) != null) {\n                 addParts(_vars, function_,\n                         _sum + _val.getIndexInEl() + par_.getOperatorContent().getOpOffset(), function_.getFunction().getName().length(),\n                         _val.getErrs(), _val.getErrs());\n@@ -3690,7 +3690,7 @@ private static void processCustomOperator(LinkageStackElementIn _in, VariablesOf\n             int sum_ = _in.getBeginBlock() + _parentOp.getIndexInEl();\n             SymbolOperation par_ = (SymbolOperation) _parentOp;\n             AnaTypeFct function_ = par_.getFct().getFunction();\n-            if (function_ != null) {\n+            if (LambdaOperation.fct(function_) != null) {\n                 addParts(_vars, function_,sum_+par_.getOperatorContent().getOpOffset(),par_.getOperatorContent().getOper().length(),_parentOp.getErrs(),_parentOp.getErrs());\n             } else if (_parentOp instanceof NumericOperation && ((NumericOperation)_parentOp).isCatString() && canCallToString(_vars, _curOp, _nextSiblingOp)) {\n                 _vars.addPart(new PartOffset(ExportCst.HEAD_ITALIC, sum_+par_.getOperatorContent().getOpOffset()));\n@@ -3725,7 +3725,7 @@ private static void processCompareReport(LinkageStackElementIn _in, VariablesOff\n             int sum_ = _in.getBeginBlock() + _parent.getIndexInEl();\n             int begin_ = sum_+((SymbolOperation)_parent).getOperatorContent().getOpOffset();\n             int length_ = ((SymbolOperation)_parent).getOperatorContent().getOper().length();\n-            if (((SymbolOperation)_parent).getFct().getFunction() == null) {\n+            if (LambdaOperation.fct(((SymbolOperation)_parent).getFct().getFunction()) == null) {\n                 safeReport(_in, _vars, _parent, _cov, begin_, length_);\n             }\n         }\n@@ -3746,12 +3746,12 @@ private static void processCompoundAffLeftOpError(LinkageStackElementIn _in, Var\n         int sum_ = _in.getBeginBlock() + _parentOp.getIndexInEl();\n         int begin_ = sum_+par_.getOpOffset();\n         int len_ = opDelta_;\n-        if (functionTest_ != null) {\n+        if (LambdaOperation.fct(functionTest_) != null) {\n             addParts(_vars, functionTest_,begin_,1, _parentOp.getErrs(),_parentOp.getErrs());\n             begin_++;\n             len_--;\n         }\n-        if (function_ != null) {\n+        if (LambdaOperation.fct(function_) != null) {\n             addParts(_vars, function_,begin_,len_,_parentOp.getErrs(),_parentOp.getErrs());\n         } else if (hasToCallStringConver(_vars, _nextSiblingOp)){\n             _vars.addPart(new PartOffset(ExportCst.HEAD_ITALIC, begin_));\n@@ -3774,7 +3774,7 @@ private static void processCompoundAffLeftOpReport(LinkageStackElementIn _in, Va\n         int sum_ = _in.getBeginBlock() + _parentOp.getIndexInEl();\n         int begin_ = sum_+par_.getOpOffset();\n         int len_ = opDelta_;\n-        if (functionTest_ != null) {\n+        if (LambdaOperation.fct(functionTest_) != null) {\n             StringList title_ = new StringList();\n             title_.addAllElts(getCoversFoundReport(_in, _vars, _curOp, _cov));\n             addParts(_vars, functionTest_,begin_,1, _parentOp.getErrs(),title_);\n@@ -3798,7 +3798,7 @@ private static void processCompoundAffLeftOpReport(LinkageStackElementIn _in, Va\n             begin_+=2;\n             len_-=2;\n         }\n-        if (function_ != null) {\n+        if (LambdaOperation.fct(function_) != null) {\n             addParts(_vars, function_,begin_,len_,_parentOp.getErrs(),_parentOp.getErrs());\n         } else if (hasToCallStringConver(_vars, _nextSiblingOp)){\n             _vars.addPart(new PartOffset(ExportCst.HEAD_ITALIC, begin_));\n@@ -3840,7 +3840,7 @@ private static void processLogicAndOrOperationReport(LinkageStackElementIn _in,\n             safeReport(_in,_vars,_curOp,_cov, begin_, 1);\n         }\n         AnaTypeFct function_ = q_.getFct().getFunction();\n-        if (function_ != null) {\n+        if (LambdaOperation.fct(function_) != null) {\n             StringList title_ = new StringList();\n             title_.addAllElts(getCoversFoundReport(_in, _vars, _nextSiblingOp, _cov));\n             addParts(_vars, function_,begin_+1,1, errs_,title_);\n@@ -3914,7 +3914,7 @@ private static void processPostIncr(LinkageStackElementIn _in, VariablesOffsets\n                 tryAddMergedParts(_vars,par_.getFunctionTo(), opOff_, new StringList(), new StringList());\n                 boolean err_ = true;\n                 AnaTypeFct function_ = par_.getFct().getFunction();\n-                if (function_ != null) {\n+                if (LambdaOperation.fct(function_) != null) {\n                     addParts(_vars, function_,opOff_,1,_parent.getErrs(),_parent.getErrs());\n                     err_ = false;\n                 }\n@@ -4030,17 +4030,11 @@ private static String classErr(StringList _errors) {\n     }\n \n     private static String getRelativize(FileBlock _block, AnaTypeFct _id) {\n-        if (_id == null) {\n-            return EMPTY;\n-        }\n-        NamedFunctionBlock function_ = _id.getFunction();\n+        NamedFunctionBlock function_ = LambdaOperation.fct(_id);\n         if (function_ == null) {\n             return EMPTY;\n         }\n-        if (function_ instanceof OperatorBlock) {\n-            return ExportCst.href(_block, function_.getFile(), function_.getNameOffset());\n-        }\n-        if (!ContextUtil.isFromCustFile(_id.getType())) {\n+        if (!ContextUtil.isFromCustFile(function_.getFile())) {\n             return EMPTY;\n         }\n         return ExportCst.href(_block, function_.getFile(), function_.getNameOffset());"
+        },
+        {
+            "sha": "b1b6db9b32889842c76794e49ba379c8d9a5221a",
+            "filename": "desktop/applis/apps/core/common/formathtml/src/main/java/code/formathtml/fwd/RendForwardInfos.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 3,
+            "changes": 4,
+            "blob_url": "https://github.com/Cardman/projects/blob/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fformathtml%2Fsrc%2Fmain%2Fjava%2Fcode%2Fformathtml%2Ffwd%2FRendForwardInfos.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fformathtml%2Fsrc%2Fmain%2Fjava%2Fcode%2Fformathtml%2Ffwd%2FRendForwardInfos.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fformathtml%2Fsrc%2Fmain%2Fjava%2Fcode%2Fformathtml%2Ffwd%2FRendForwardInfos.java?ref=8ee9fc4b75a76e9d445f764b8a9201b0463fe3bb",
+            "patch": "@@ -3,7 +3,6 @@\n import code.expressionlanguage.Argument;\n import code.expressionlanguage.analyze.blocks.SwitchMethodBlock;\n import code.expressionlanguage.analyze.opers.*;\n-import code.expressionlanguage.analyze.opers.util.AnaTypeFct;\n import code.expressionlanguage.analyze.opers.util.ClassMethodIdMemberIdTypeFct;\n import code.expressionlanguage.analyze.syntax.ResultExpression;\n import code.expressionlanguage.analyze.types.AnaClassArgumentMatching;\n@@ -797,8 +796,7 @@ private static RendDynOperationNode procOperands(OperationNode _anaNode, Forward\n         if (_anaNode instanceof SymbolOperation) {\n             SymbolOperation n_ = (SymbolOperation) _anaNode;\n             ClassMethodIdMemberIdTypeFct fct_ = n_.getFct();\n-            AnaTypeFct pair_ = fct_.getFunction();\n-            if (pair_ != null) {\n+            if (LambdaOperation.fct(fct_.getFunction()) != null) {\n                 return new RendExplicitOperatorOperation(\n                         new ExecOperationContent(_anaNode.getContent()),\n                         false,"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "b8b38dbe8bed587d14841f7167027dbc5b268978",
+    "node_id": "C_kwDOAS5yZdoAKGI4YjM4ZGJlOGJlZDU4N2QxNDg0MWY3MTY3MDI3ZGJjNWIyNjg5Nzg",
+    "commit": {
+        "author": {
+            "name": "Thomas Gutmann",
+            "email": "41593722+speckyspooky@users.noreply.github.com",
+            "date": "2023-07-15T18:47:20Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-07-15T18:47:20Z"
+        },
+        "message": "Fix align issue of \"inline\" elements (#1372) (#1373)\n\n* Fix align issue of an \"inline\" element to avoid a null pointer exception\r\n(#1372)",
+        "tree": {
+            "sha": "1489f00fda093d1858580e49de622c64a722127f",
+            "url": "https://api.github.com/repos/eclipse-birt/birt/git/trees/1489f00fda093d1858580e49de622c64a722127f"
+        },
+        "url": "https://api.github.com/repos/eclipse-birt/birt/git/commits/b8b38dbe8bed587d14841f7167027dbc5b268978",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJksum4CRBK7hj4Ov3rIwAAUMkIAHP+3mL+XyZNlVoCUV8c4VCb\nJ2QN7ajdgmNaQW0M24BE7I8zpf+Clc8zkKPyWAFvKEh1HyO3ZxFd44tgy4S5k7NM\nwWyZR9onn2Gjt4YndHeT7s2yaL5jNfuIW7+Y3LobZ5/JV9WYCzEZFh97zv2Tp6/t\nsEOn3lq5vQCZU3+4mEw+T/F+XdMUpHSgGwWKkcVbajmNCu0+GCcTm0E5Vlpg31On\ncTxN8haQpBv8+4yI/JcSJUUkJxOcHZdDTU/K6i/OeAJd368AmRV+pTqbIKC7X81r\nNvjuGs7RnyLkpOJjG01z+jM9K1rJxdIdyY9D2aD0XPXK4+DQOFfF8A38oBOaouc=\n=7sCb\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 1489f00fda093d1858580e49de622c64a722127f\nparent 1cc5c322f3b860b2934120ace8bef2ddbb8a2b44\nauthor Thomas Gutmann <41593722+speckyspooky@users.noreply.github.com> 1689446840 +0200\ncommitter GitHub <noreply@github.com> 1689446840 +0200\n\nFix align issue of \"inline\" elements (#1372) (#1373)\n\n* Fix align issue of an \"inline\" element to avoid a null pointer exception\r\n(#1372)"
+        }
+    },
+    "url": "https://api.github.com/repos/eclipse-birt/birt/commits/b8b38dbe8bed587d14841f7167027dbc5b268978",
+    "html_url": "https://github.com/eclipse-birt/birt/commit/b8b38dbe8bed587d14841f7167027dbc5b268978",
+    "comments_url": "https://api.github.com/repos/eclipse-birt/birt/commits/b8b38dbe8bed587d14841f7167027dbc5b268978/comments",
+    "author": {
+        "login": "speckyspooky",
+        "id": 41593722,
+        "node_id": "MDQ6VXNlcjQxNTkzNzIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/41593722?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/speckyspooky",
+        "html_url": "https://github.com/speckyspooky",
+        "followers_url": "https://api.github.com/users/speckyspooky/followers",
+        "following_url": "https://api.github.com/users/speckyspooky/following{/other_user}",
+        "gists_url": "https://api.github.com/users/speckyspooky/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/speckyspooky/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/speckyspooky/subscriptions",
+        "organizations_url": "https://api.github.com/users/speckyspooky/orgs",
+        "repos_url": "https://api.github.com/users/speckyspooky/repos",
+        "events_url": "https://api.github.com/users/speckyspooky/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/speckyspooky/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1cc5c322f3b860b2934120ace8bef2ddbb8a2b44",
+            "url": "https://api.github.com/repos/eclipse-birt/birt/commits/1cc5c322f3b860b2934120ace8bef2ddbb8a2b44",
+            "html_url": "https://github.com/eclipse-birt/birt/commit/1cc5c322f3b860b2934120ace8bef2ddbb8a2b44"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "79873553a2cf7c234d182cf0d9efd5931f853a2d",
+            "filename": "engine/org.eclipse.birt.report.engine/src/org/eclipse/birt/report/engine/nLayout/area/impl/LineArea.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/eclipse-birt/birt/blob/b8b38dbe8bed587d14841f7167027dbc5b268978/engine%2Forg.eclipse.birt.report.engine%2Fsrc%2Forg%2Feclipse%2Fbirt%2Freport%2Fengine%2FnLayout%2Farea%2Fimpl%2FLineArea.java",
+            "raw_url": "https://github.com/eclipse-birt/birt/raw/b8b38dbe8bed587d14841f7167027dbc5b268978/engine%2Forg.eclipse.birt.report.engine%2Fsrc%2Forg%2Feclipse%2Fbirt%2Freport%2Fengine%2FnLayout%2Farea%2Fimpl%2FLineArea.java",
+            "contents_url": "https://api.github.com/repos/eclipse-birt/birt/contents/engine%2Forg.eclipse.birt.report.engine%2Fsrc%2Forg%2Feclipse%2Fbirt%2Freport%2Fengine%2FnLayout%2Farea%2Fimpl%2FLineArea.java?ref=b8b38dbe8bed587d14841f7167027dbc5b268978",
+            "patch": "@@ -145,7 +145,7 @@ public void align(boolean endParagraph, LayoutContext context) {\n \t\t\tjustify(spacing, adjustLeftWhiteSpace, adjustRightWhiteSpace);\n \t\t} else {\n \t\t\t// is left aligned\n-\t\t\tif (!parent.content.isDirectionRTL()) {\n+\t\t\tif (parent.content != null && !parent.content.isDirectionRTL()) {\n \t\t\t\tif (adjustLeftWhiteSpace != 0) {\n \t\t\t\t\tIterator<IArea> iter = getChildren();\n \t\t\t\t\twhile (iter.hasNext()) {"
+        }
+    ]
+}

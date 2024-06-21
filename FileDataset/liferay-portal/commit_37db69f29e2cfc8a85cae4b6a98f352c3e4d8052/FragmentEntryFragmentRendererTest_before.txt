@@ -1,0 +1,22 @@
+	private ThemeDisplay _getThemeDisplay(HttpServletRequest httpServletRequest)
+		throws Exception {
+
+		ThemeDisplay themeDisplay = new ThemeDisplay();
+
+		LayoutSet layoutSet = _group.getPublicLayoutSet();
+
+		themeDisplay.setLookAndFeel(
+			layoutSet.getTheme(), layoutSet.getColorScheme());
+
+		themeDisplay.setLocale(LocaleUtil.US);
+		themeDisplay.setPermissionChecker(
+			PermissionCheckerFactoryUtil.create(TestPropsValues.getUser()));
+		themeDisplay.setRealUser(TestPropsValues.getUser());
+		themeDisplay.setRequest(httpServletRequest);
+		themeDisplay.setUser(TestPropsValues.getUser());
+
+		httpServletRequest.setAttribute(WebKeys.THEME_DISPLAY, themeDisplay);
+
+		return themeDisplay;
+	}
+

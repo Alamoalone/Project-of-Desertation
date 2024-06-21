@@ -1,0 +1,6 @@
+    public static void initiate(Metrics metrics, ErrorClient errorStatsClient) {
+        ReportManager.metrics = metrics;
+        ReportManager.errorStatsClient = errorStatsClient;
+        createCounters(metrics);
+
+    }

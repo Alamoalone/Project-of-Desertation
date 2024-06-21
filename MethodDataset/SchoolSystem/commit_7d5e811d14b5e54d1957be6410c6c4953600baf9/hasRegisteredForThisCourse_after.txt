@@ -1,0 +1,14 @@
+    public boolean hasRegisteredForThisCourse(String studentId, String courseId) {
+        Student student = findStudent(studentId);
+        Course course = findCourse(courseId);
+        if (student != null && course != null) {
+            for (Course registeredCourse : student.getCourses()) {
+                if (registeredCourse != null && registeredCourse.getId().equals(courseId)) {
+                    System.out.println("true");
+                    return true;
+                }
+            }
+        }
+        System.out.println("false");
+        return false;
+    }

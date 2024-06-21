@@ -1,0 +1,98 @@
+{
+    "sha": "f62d6f35ddf95a967f40fc75b2fcf2df343a2768",
+    "node_id": "C_kwDOKlqlZNoAKGY2MmQ2ZjM1ZGRmOTVhOTY3ZjQwZmM3NWIyZmNmMmRmMzQzYTI3Njg",
+    "commit": {
+        "author": {
+            "name": "João Henrique Ferreira de Freitas",
+            "email": "joaohf@gmail.com",
+            "date": "2016-11-04T11:31:43Z"
+        },
+        "committer": {
+            "name": "Pierre Villard",
+            "email": "pierre.villard.fr@gmail.com",
+            "date": "2023-10-27T03:20:26Z"
+        },
+        "message": "NIFI-3013 GetSNMP fix stop and start null pointer exception\n\nThis closes #1195.",
+        "tree": {
+            "sha": "edfda96b362baddd2be34ba8c948046c4285c22d",
+            "url": "https://api.github.com/repos/KavinKarthik-git/637/git/trees/edfda96b362baddd2be34ba8c948046c4285c22d"
+        },
+        "url": "https://api.github.com/repos/KavinKarthik-git/637/git/commits/f62d6f35ddf95a967f40fc75b2fcf2df343a2768",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/KavinKarthik-git/637/commits/f62d6f35ddf95a967f40fc75b2fcf2df343a2768",
+    "html_url": "https://github.com/KavinKarthik-git/637/commit/f62d6f35ddf95a967f40fc75b2fcf2df343a2768",
+    "comments_url": "https://api.github.com/repos/KavinKarthik-git/637/commits/f62d6f35ddf95a967f40fc75b2fcf2df343a2768/comments",
+    "author": {
+        "login": "joaohf",
+        "id": 278690,
+        "node_id": "MDQ6VXNlcjI3ODY5MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/278690?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joaohf",
+        "html_url": "https://github.com/joaohf",
+        "followers_url": "https://api.github.com/users/joaohf/followers",
+        "following_url": "https://api.github.com/users/joaohf/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joaohf/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joaohf/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joaohf/subscriptions",
+        "organizations_url": "https://api.github.com/users/joaohf/orgs",
+        "repos_url": "https://api.github.com/users/joaohf/repos",
+        "events_url": "https://api.github.com/users/joaohf/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joaohf/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "pvillard31",
+        "id": 11541012,
+        "node_id": "MDQ6VXNlcjExNTQxMDEy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11541012?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pvillard31",
+        "html_url": "https://github.com/pvillard31",
+        "followers_url": "https://api.github.com/users/pvillard31/followers",
+        "following_url": "https://api.github.com/users/pvillard31/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pvillard31/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pvillard31/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pvillard31/subscriptions",
+        "organizations_url": "https://api.github.com/users/pvillard31/orgs",
+        "repos_url": "https://api.github.com/users/pvillard31/repos",
+        "events_url": "https://api.github.com/users/pvillard31/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pvillard31/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f23d11f6ff6e15bc436c0717694fd43b0827f6c9",
+            "url": "https://api.github.com/repos/KavinKarthik-git/637/commits/f23d11f6ff6e15bc436c0717694fd43b0827f6c9",
+            "html_url": "https://github.com/KavinKarthik-git/637/commit/f23d11f6ff6e15bc436c0717694fd43b0827f6c9"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 2,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "43a500adeea8eb13637a7883dfff12afa85e53a3",
+            "filename": "nifi-nar-bundles/nifi-snmp-bundle/nifi-snmp-processors/src/main/java/org/apache/nifi/snmp/processors/AbstractSNMPProcessor.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/KavinKarthik-git/637/blob/f62d6f35ddf95a967f40fc75b2fcf2df343a2768/nifi-nar-bundles%2Fnifi-snmp-bundle%2Fnifi-snmp-processors%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fnifi%2Fsnmp%2Fprocessors%2FAbstractSNMPProcessor.java",
+            "raw_url": "https://github.com/KavinKarthik-git/637/raw/f62d6f35ddf95a967f40fc75b2fcf2df343a2768/nifi-nar-bundles%2Fnifi-snmp-bundle%2Fnifi-snmp-processors%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fnifi%2Fsnmp%2Fprocessors%2FAbstractSNMPProcessor.java",
+            "contents_url": "https://api.github.com/repos/KavinKarthik-git/637/contents/nifi-nar-bundles%2Fnifi-snmp-bundle%2Fnifi-snmp-processors%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fnifi%2Fsnmp%2Fprocessors%2FAbstractSNMPProcessor.java?ref=f62d6f35ddf95a967f40fc75b2fcf2df343a2768",
+            "patch": "@@ -361,6 +361,8 @@ private void buildTargetResource(ProcessContext context) {\n         }\n         if (this.snmpTarget == null) {\n             this.snmpTarget = this.createSnmpTarget(context);\n+        }\n+        if (this.targetResource == null) {\n             this.targetResource = this.finishBuildingTargetResource(context);\n         }\n     }"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main2);
+
+        onBackPressedOnce = false;
+
+
+        if (savedInstanceState == null) {
+            homeFragment = new HomeFragment();
+            favoriteFragment = new FavoriteFragment();
+            settingsFragment = new SettingsFragment();
+
+
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, homeFragment).commit();
+        } else {
+//
+        }
+
+
+        bottomBar = findViewById(R.id.bottomBar);
+        bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                String activeFragment = Objects.requireNonNull(getSupportFragmentManager().findFragmentById(R.id.fragment_container)).getClass().getSimpleName();
+
+                if (item.getTitle().equals("خانه")) {
+
+                    checkFavoriteButtons();
+                    try {
+                        getSupportFragmentManager().beginTransaction().remove(favoriteFragment).commit();
+                    } catch (Exception e) {
+
+                    }
+                    try {
+                        getSupportFragmentManager().beginTransaction().remove(settingsFragment).commit();
+                    } catch (Exception e) {
+
+                    }
+
+                    favoriteFragment.closeHomeFragment();
+
+                } else if (item.getTitle().equals("دلخواه")) {
+
+
+                    try {
+                        getSupportFragmentManager().beginTransaction().remove(settingsFragment).commit();
+                    } catch (Exception e) {
+
+                    }
+                    if (!activeFragment.equals(FavoriteFragment.class.getSimpleName())) {
+                        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, favoriteFragment).commit();
+                    }
+
+                } else if (item.getTitle().equals("در باره ما")) {
+
+
+                    try {
+                        getSupportFragmentManager().beginTransaction().remove(favoriteFragment).commit();
+                    } catch (Exception e) {
+
+                    }
+                    if (!activeFragment.equals(SettingsFragment.class.getSimpleName())) {
+                        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, settingsFragment).commit();
+                    }
+
+
+                    favoriteFragment.closeHomeFragment();
+                }
+                return true;
+            }
+        });
+    }

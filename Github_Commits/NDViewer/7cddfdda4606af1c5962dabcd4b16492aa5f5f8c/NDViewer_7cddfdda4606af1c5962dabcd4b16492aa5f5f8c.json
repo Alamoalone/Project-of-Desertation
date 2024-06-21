@@ -1,0 +1,182 @@
+{
+    "sha": "7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+    "node_id": "C_kwDODx36cdoAKDdjZGRmZGRhNDYwNmFmMWM1OTYyZGFiY2Q0YjE2NDkyYWE1ZjVmOGM",
+    "commit": {
+        "author": {
+            "name": "Henry Pinkard",
+            "email": "7969470+henrypinkard@users.noreply.github.com",
+            "date": "2023-01-18T18:41:14Z"
+        },
+        "committer": {
+            "name": "Henry Pinkard",
+            "email": "7969470+henrypinkard@users.noreply.github.com",
+            "date": "2023-01-18T18:41:14Z"
+        },
+        "message": "fix explore acquisition and mysterious null pointer exceptions",
+        "tree": {
+            "sha": "2327b496d06f52abc770394c37dca93d07b31a2d",
+            "url": "https://api.github.com/repos/micro-manager/NDViewer/git/trees/2327b496d06f52abc770394c37dca93d07b31a2d"
+        },
+        "url": "https://api.github.com/repos/micro-manager/NDViewer/git/commits/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/micro-manager/NDViewer/commits/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+    "html_url": "https://github.com/micro-manager/NDViewer/commit/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+    "comments_url": "https://api.github.com/repos/micro-manager/NDViewer/commits/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/comments",
+    "author": {
+        "login": "henrypinkard",
+        "id": 7969470,
+        "node_id": "MDQ6VXNlcjc5Njk0NzA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7969470?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/henrypinkard",
+        "html_url": "https://github.com/henrypinkard",
+        "followers_url": "https://api.github.com/users/henrypinkard/followers",
+        "following_url": "https://api.github.com/users/henrypinkard/following{/other_user}",
+        "gists_url": "https://api.github.com/users/henrypinkard/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/henrypinkard/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/henrypinkard/subscriptions",
+        "organizations_url": "https://api.github.com/users/henrypinkard/orgs",
+        "repos_url": "https://api.github.com/users/henrypinkard/repos",
+        "events_url": "https://api.github.com/users/henrypinkard/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/henrypinkard/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "henrypinkard",
+        "id": 7969470,
+        "node_id": "MDQ6VXNlcjc5Njk0NzA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7969470?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/henrypinkard",
+        "html_url": "https://github.com/henrypinkard",
+        "followers_url": "https://api.github.com/users/henrypinkard/followers",
+        "following_url": "https://api.github.com/users/henrypinkard/following{/other_user}",
+        "gists_url": "https://api.github.com/users/henrypinkard/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/henrypinkard/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/henrypinkard/subscriptions",
+        "organizations_url": "https://api.github.com/users/henrypinkard/orgs",
+        "repos_url": "https://api.github.com/users/henrypinkard/repos",
+        "events_url": "https://api.github.com/users/henrypinkard/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/henrypinkard/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ffb1914a77335581ca38c7a98bbb2fb79abb9d06",
+            "url": "https://api.github.com/repos/micro-manager/NDViewer/commits/ffb1914a77335581ca38c7a98bbb2fb79abb9d06",
+            "html_url": "https://github.com/micro-manager/NDViewer/commit/ffb1914a77335581ca38c7a98bbb2fb79abb9d06"
+        }
+    ],
+    "stats": {
+        "total": 98,
+        "additions": 79,
+        "deletions": 19
+    },
+    "files": [
+        {
+            "sha": "6579ca0dd4060b92cfd0c7c9aefc89846e3ccf98",
+            "filename": "pom.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/pom.xml",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/pom.xml",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/pom.xml?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -2,7 +2,7 @@\n     <modelVersion>4.0.0</modelVersion>\n     <groupId>org.micro-manager.ndviewer</groupId>\n     <artifactId>NDViewer</artifactId>\n-    <version>0.8.0</version>\n+    <version>0.8.1</version>\n     <packaging>jar</packaging>\n     <name>NDViewer image viewer</name>\n     <description>Java-based multidimensional image viewer</description>"
+        },
+        {
+            "sha": "7665183541dfea0f57778be4d228fd0e4b57691a",
+            "filename": "src/main/java/org/micromanager/ndviewer/internal/gui/DisplayWindow.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 2,
+            "changes": 9,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FDisplayWindow.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FDisplayWindow.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FDisplayWindow.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -154,9 +154,14 @@ public boolean contrastControlsInitialized() {\n       return contrastInitilized_;\n    }\n \n-   public void addContrastControls(String channelName) {\n+   public void addContrastControls(String channelName, boolean markInitialized) {\n       sideControls_.addContrastControls(channelName);\n-      contrastInitilized_ = true;\n+      contrastInitilized_ = markInitialized;\n+   }\n+\n+\n+   public void removeContrastControls(String channelName) {\n+      sideControls_.removeContrastControls(channelName);\n    }\n \n    public void collapseOrExpandSideControls(boolean expand) {"
+        },
+        {
+            "sha": "c4c7bf1d2c84ac4b4456d9a2f31108a75027d5d5",
+            "filename": "src/main/java/org/micromanager/ndviewer/internal/gui/DisplayWindowControls.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FDisplayWindowControls.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FDisplayWindowControls.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FDisplayWindowControls.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -63,6 +63,10 @@ public void addContrastControls(String channelName) {\n       cpMagellan_.addContrastControls(channelName);\n    }\n \n+   public void removeContrastControls(String channelName) {\n+      cpMagellan_.removeContrastControls(channelName);\n+   }\n+\n    public MetadataPanel getMetadataPanelMagellan() {\n       return metadataPanelMagellan_;\n    }\n@@ -325,6 +329,8 @@ private void zPositiionCheckBox_ActionPerformed(java.awt.event.ActionEvent evt)\n    private javax.swing.JCheckBox timeCheckBox_;\n    private javax.swing.JPanel topControlPanel_;\n    private javax.swing.JCheckBox zPositiionCheckBox_;\n+\n+\n    // End of variables declaration//GEN-END:variables\n \n }\n\\ No newline at end of file"
+        },
+        {
+            "sha": "711bd16293d9c3d633391e1d6aa3da0c88ac4407",
+            "filename": "src/main/java/org/micromanager/ndviewer/internal/gui/ImageMaker.java",
+            "status": "modified",
+            "additions": 18,
+            "deletions": 6,
+            "changes": 24,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FImageMaker.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FImageMaker.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2FImageMaker.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -80,13 +80,25 @@ private TaggedImage getDisplayImage(HashMap<String, Object> axes,\n               axes, resolutionindex, xOffset, yOffset, imageWidth, imageHeight);\n    }\n \n+   /**\n+    *\n+    */\n+   public void removeImageProcessor(String channelName) {\n+      synchronized (this) {\n+         channelProcessors_.remove(channelName);\n+      }\n+   }\n+\n+\n    /**\n     * Do neccesary calcualtion to get image for display\n     *\n     * @return\n     */\n    public Image makeOrGetImage(DataViewCoords viewCoords) {\n-      boolean remakeDisplayImage = false; //remake the actual Iamge object if size has changed, otherwise just set pixels\n+      try {\n+\n+         boolean remakeDisplayImage = false; //remake the actual Iamge object if size has changed, otherwise just set pixels\n       if (((int) viewCoords.getSourceImageSizeAtResLevel().x) != imageWidth_\n               || ((int)viewCoords.getSourceImageSizeAtResLevel().y) != imageHeight_) {\n          imageWidth_ = (int) viewCoords.getSourceImageSizeAtResLevel().x;\n@@ -137,7 +149,6 @@ public Image makeOrGetImage(DataViewCoords viewCoords) {\n          }\n       }\n \n-      try {\n          boolean firstActive = true;\n          Arrays.fill(rgbPixels_, 0);\n          int redValue, greenValue, blueValue;\n@@ -220,10 +231,7 @@ public Image makeOrGetImage(DataViewCoords viewCoords) {\n             }\n \n          }\n-      } catch (Exception e) {\n-         e.printStackTrace();\n-         throw new RuntimeException(e);\n-      }\n+\n \n       if (imageSource_ == null || remakeDisplayImage) {\n          imageSource_ = new MemoryImageSource(imageWidth_, imageHeight_, rgbCM_, rgbPixels_, 0, imageWidth_);\n@@ -233,6 +241,10 @@ public Image makeOrGetImage(DataViewCoords viewCoords) {\n       } else {\n          imageSource_.newPixels(rgbPixels_, rgbCM_, 0, imageWidth_);\n       }\n+      } catch (Exception e) {\n+         e.printStackTrace();\n+         throw new RuntimeException(e);\n+      }\n       return displayImage_;\n    }\n "
+        },
+        {
+            "sha": "d956b1a5ba429fda603cef06ee56e29eabd81664",
+            "filename": "src/main/java/org/micromanager/ndviewer/internal/gui/contrast/ContrastPanel.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FContrastPanel.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FContrastPanel.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FContrastPanel.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -88,6 +88,10 @@ public void addContrastControls(String channelName) {\n       histograms_.addContrastControls(channelName);\n    }\n \n+   public void removeContrastControls(String channelName) {\n+      histograms_.removeContrastControls(channelName);\n+   }\n+\n    private void initializeHistogramDisplayArea() {\n       histDisplayScrollPane_.setHorizontalScrollBarPolicy(\n             ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);\n@@ -317,4 +321,6 @@ public void updateHistogramData(HashMap<String, int[]> hists) {\n    public void displaySettingsChanged() {\n       histograms_.displaySettingsChanged();\n    }\n+\n+\n }"
+        },
+        {
+            "sha": "4dc8705d79b88fba0c438c0a109641783def28fb",
+            "filename": "src/main/java/org/micromanager/ndviewer/internal/gui/contrast/DisplaySettings.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FDisplaySettings.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FDisplaySettings.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FDisplaySettings.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -180,6 +180,9 @@ public int getContrastMax(String channelName) {\n \r\n    public boolean isActive(String channelName) {\r\n       synchronized (this) {\r\n+         if (channelName.equals(\"\")) {\r\n+            return true; // this is default when no channels present\r\n+         }\r\n          try {\r\n             return json_.getJSONObject(channelName).getBoolean(\"Active\");\r\n          } catch (Exception ex) {\r"
+        },
+        {
+            "sha": "be44268e887069c61f7cb2efcd40827a7fc05410",
+            "filename": "src/main/java/org/micromanager/ndviewer/internal/gui/contrast/MultiChannelHistograms.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 1,
+            "changes": 15,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FMultiChannelHistograms.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FMultiChannelHistograms.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Finternal%2Fgui%2Fcontrast%2FMultiChannelHistograms.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -110,6 +110,13 @@ public void addContrastControls(String channelName) {\n       contrastPanel_.revalidate();\r\n    }\r\n \r\n+\r\n+   public void removeContrastControls(String channelName) {\r\n+      ChannelControlPanel c = ccpList_.remove(channelName);\r\n+      this.remove(c);\r\n+      contrastPanel_.revalidate();\r\n+   }\r\n+\r\n    public void autoscaleAllChannels() {\r\n       if (ccpList_ != null && ccpList_.size() > 0) {\r\n          for (ChannelControlPanel c : ccpList_.values()) {\r\n@@ -131,8 +138,14 @@ public int getNumberOfChannels() {\n    }\r\n \r\n    void updateHistogramData(HashMap<String, int[]> hists) {\r\n+      if (ccpList_ == null || hists == null || ccpList_.size() == 0) {\r\n+         return; // no channels added yet\r\n+      }\r\n       for (String i : hists.keySet()) {\r\n-         ccpList_.get(i).updateHistogram(hists.get(i));\r\n+         ChannelControlPanel c = ccpList_.get(i);\r\n+         int[] hist = hists.get(i);\r\n+         c.updateHistogram(hist);\r\n       }\r\n    }\r\n+\r\n }\r"
+        },
+        {
+            "sha": "537f37bc6c47e0a491b09b1f5b4813af34b20da9",
+            "filename": "src/main/java/org/micromanager/ndviewer/main/NDViewer.java",
+            "status": "modified",
+            "additions": 24,
+            "deletions": 9,
+            "changes": 33,
+            "blob_url": "https://github.com/micro-manager/NDViewer/blob/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Fmain%2FNDViewer.java",
+            "raw_url": "https://github.com/micro-manager/NDViewer/raw/7cddfdda4606af1c5962dabcd4b16492aa5f5f8c/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Fmain%2FNDViewer.java",
+            "contents_url": "https://api.github.com/repos/micro-manager/NDViewer/contents/src%2Fmain%2Fjava%2Forg%2Fmicromanager%2Fndviewer%2Fmain%2FNDViewer.java?ref=7cddfdda4606af1c5962dabcd4b16492aa5f5f8c",
+            "patch": "@@ -81,7 +81,7 @@ public class NDViewer implements ViewerInterface {\n    // Axes may use integer or string positions. Keep track of which\n    // uses which ones do this here, and which string values map to which\n    // Integer positions (because these are needed for display)\n-   private ConcurrentHashMap<String, LinkedList<String>> stringAxes_;\n+   private ConcurrentHashMap<String, LinkedList<String>> stringAxes_ = new ConcurrentHashMap<>();\n \n    private Function<JSONObject, Long> readTimeFunction_ = null;\n    private Function<JSONObject, Double> readZFunction_ = null;\n@@ -116,6 +116,11 @@ public NDViewer(DataSourceInterface cache, ViewerAcquisitionInterface acq, JSONO\n       displayWindow_ = new DisplayWindow(this, acq == null);\n       overlayer_ = new BaseOverlayer(this);\n       imageMaker_ = new ImageMaker(this, cache);\n+\n+      // create a default display channel so something shows (needed for explore acq)\n+         // no channels have been added, so make a default one for monochrome display\n+      displaySettings_.addChannel(\"\", 16); // Guess for now, remove later\n+      displayWindow_.addContrastControls(\"\", false);\n    }\n \n    /**\n@@ -292,13 +297,15 @@ public void onCanvasResize(int w, int h) {\n \n    public void initializeViewerToLoaded(List<String> channelNames, JSONObject dispSettings,\n            HashMap<String, Object> axisMins, HashMap<String, Object> axisMaxs) {\n+      // remove the defaut one added as a placeholder\n+      displayWindow_.removeContrastControls(\"\");\n+      imageMaker_.removeImageProcessor(\"\");\n       displaySettings_ = new DisplaySettings(dispSettings, getPreferences());\n-      stringAxes_ = new ConcurrentHashMap<String, LinkedList<String>>();\n       if (channelNames.size() != 0) {\n          stringAxes_.put(\"channel\", new LinkedList<String>());\n          for (int c = 0; c < channelNames.size(); c++) {\n             stringAxes_.get(\"channel\").add(channelNames.get(c));\n-            displayWindow_.addContrastControls(channelNames.get(c));\n+            displayWindow_.addContrastControls(channelNames.get(c), true);\n             if (c == 0) {\n                axisMins.put(\"channel\", channelNames.get(c));\n             } else if (c == channelNames.size() - 1) {\n@@ -309,7 +316,7 @@ public void initializeViewerToLoaded(List<String> channelNames, JSONObject dispS\n       if (!displayWindow_.contrastControlsInitialized()) {\n          // no channels have been added, so make a default one for monochrome display\n //         displaySettings_.addChannel(\"\");\n-         displayWindow_.addContrastControls(\"\");\n+         displayWindow_.addContrastControls(\"\", true);\n       }\n       //maximum scrollbar extents\n       edtRunnablePool_.invokeLaterWithCoalescence(\n@@ -352,6 +359,12 @@ public void setWindowTitle(String s) {\n     */\n    public void newImageArrived(HashMap<String, Object> axesPositions) {\n       try {\n+         if (!displayWindow_.contrastControlsInitialized()) {\n+            // remove the default one that was added as a placeholder\n+            displayWindow_.removeContrastControls(\"\");\n+            imageMaker_.removeImageProcessor(\"\");\n+         }\n+\n          if (isImageXYBounded()) {\n             int[] newBounds = dataSource_.getBounds();\n             int[] oldBounds = viewCoords_.getBounds();\n@@ -373,9 +386,6 @@ public void newImageArrived(HashMap<String, Object> axesPositions) {\n \n          // Keep track of axes with String values\n          for (String axis : axesPositions.keySet()) {\n-            if (stringAxes_ == null) {\n-               stringAxes_ = new ConcurrentHashMap<String, LinkedList<String>>();\n-            }\n             if (!(axesPositions.get(axis) instanceof String) ) {\n                continue;\n             }\n@@ -389,15 +399,16 @@ public void newImageArrived(HashMap<String, Object> axesPositions) {\n                    int bitDepth = dataSource_.getImageBitDepth(axesPositions);\n                    //Add contrast controls and display settings\n                    displaySettings_.addChannel(channelName, bitDepth);\n-                   displayWindow_.addContrastControls(channelName);\n+                   displayWindow_.addContrastControls(channelName, true);\n                 }\n              }\n          }\n+\n          if (!displayWindow_.contrastControlsInitialized()) {\n             // no channels have been added, so make a default one for monochrome display\n             int bitDepth = dataSource_.getImageBitDepth(axesPositions);\n             displaySettings_.addChannel(\"\", bitDepth);\n-            displayWindow_.addContrastControls(\"\");\n+            displayWindow_.addContrastControls(\"\", true);\n          }\n \n          //expand the scrollbars with new images\n@@ -561,6 +572,10 @@ public void showScaleBar(boolean selected) {\n    }\n \n    public void setCompositeMode(boolean selected) {\n+      if (stringAxes_ == null || stringAxes_.size() == 0) {\n+         // this seems to happen in a not reproducible way. not sure why, but seems safe to ignore\n+         return;\n+      }\n       displaySettings_.setCompositeMode(selected);\n       //select all channels if composite mode is being turned on\n       if (selected) {"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+   public void addContrastControls(String channelName) {
+      sideControls_.addContrastControls(channelName);
+      contrastInitilized_ = true;
+   }

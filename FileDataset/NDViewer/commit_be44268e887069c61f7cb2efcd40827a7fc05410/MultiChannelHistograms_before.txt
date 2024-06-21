@@ -1,0 +1,8 @@
+
+
+   void updateHistogramData(HashMap<String, int[]> hists) {
+      for (String i : hists.keySet()) {
+         ccpList_.get(i).updateHistogram(hists.get(i));
+      }
+   }
+

@@ -1,0 +1,15 @@
+	public ResponseEntity<?> updateOneFireStationById(@RequestBody FireStation firestation, @PathVariable String id) {
+		FireStation firestationFoundById;
+		
+		try {
+			firestationFoundById = fireStationService.updateFireStation(id, firestation);
+			return ResponseEntity.status(HttpStatus.CREATED).body(firestationFoundById);
+		} catch (NullPointerException e) {
+			// e.printStackTrace();
+			// ajouter log error
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+
+		}
+
+	}

@@ -1,0 +1,7 @@
+	public List<FireStation> getAllFireStations() throws NullPointerException{
+		if (fireStations.isEmpty()) {
+			throw new NullPointerException("none firestation registered!");
+		}
+		System.out.println("Retrieving all persons" + fireStations);
+		return fireStations;
+	}

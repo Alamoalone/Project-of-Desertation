@@ -1,0 +1,18 @@
+    public void modifyCourseTeacher(String teacherId, String courseId) {
+        // Find teacher and course
+        Teacher teacherFound = findTeacher(teacherId);
+        Course courseFound = findCourse(courseId);
+
+        if(teacherFound !=null){
+            System.out.println("Teache modified");
+        }else {
+            System.out.println("Can't find teacher");
+        }
+        if(courseFound != null){
+            System.out.println("Course modified");
+            courseFound.setTeacher(teacherFound);
+        }
+        else{
+            System.out.println("Can't find course");
+        }
+    }

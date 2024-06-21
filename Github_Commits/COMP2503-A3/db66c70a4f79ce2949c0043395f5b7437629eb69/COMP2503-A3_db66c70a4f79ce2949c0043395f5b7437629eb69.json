@@ -1,0 +1,98 @@
+{
+    "sha": "db66c70a4f79ce2949c0043395f5b7437629eb69",
+    "node_id": "C_kwDOKtAoSdoAKGRiNjZjNzBhNGY3OWNlMjk0OWMwMDQzMzk1ZjViNzQzNzYyOWViNjk",
+    "commit": {
+        "author": {
+            "name": "Bryce",
+            "email": "51974245+bryce-carson@users.noreply.github.com",
+            "date": "2023-11-24T04:45:54Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-11-24T04:45:54Z"
+        },
+        "message": "Fix null pointer exception in --find(T, BSTNode)",
+        "tree": {
+            "sha": "cd29350088767aa51232dc9770f5956a89e993c2",
+            "url": "https://api.github.com/repos/koddyrae/COMP2503-A3/git/trees/cd29350088767aa51232dc9770f5956a89e993c2"
+        },
+        "url": "https://api.github.com/repos/koddyrae/COMP2503-A3/git/commits/db66c70a4f79ce2949c0043395f5b7437629eb69",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlYCqCCRBK7hj4Ov3rIwAAlX4IAF0UFk8GDKcCpGdFx4o8Oe5T\n2K3yKncQAIrwTDMevgqgg5Q5jirmJf0ham3b7cYxqeNlFIJzuqPmbW0EX41g7xAJ\ns8Xi8m8Ubwz+TiBsFLMy7t5+CNMxPPJCZF4slzb/fetwX67yoHss/MIBoYyJeHAQ\njycOd/Wmsq36xqZ4XchMInJaiHYB5glv6WkA1jWqAEl0nE2X5lhjNzFi/H0E0guK\nJEBfjR8mePlxsRoT6BOdkFn++K8hyqLYU4kGuarytxCEBdrPywvpWb/bGyZ3Jxk1\n+OlLUwxU17SB574kDz+ZWLEEfKmWDcHi+KQW+jpVvivdhvEydxzeC6p5WBOQm0Y=\n=TBIg\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree cd29350088767aa51232dc9770f5956a89e993c2\nparent 6ce7fcb66ea88c9e37dabf0d7c65c53b6263baa6\nauthor Bryce <51974245+bryce-carson@users.noreply.github.com> 1700801154 -0700\ncommitter GitHub <noreply@github.com> 1700801154 -0700\n\nFix null pointer exception in --find(T, BSTNode)"
+        }
+    },
+    "url": "https://api.github.com/repos/koddyrae/COMP2503-A3/commits/db66c70a4f79ce2949c0043395f5b7437629eb69",
+    "html_url": "https://github.com/koddyrae/COMP2503-A3/commit/db66c70a4f79ce2949c0043395f5b7437629eb69",
+    "comments_url": "https://api.github.com/repos/koddyrae/COMP2503-A3/commits/db66c70a4f79ce2949c0043395f5b7437629eb69/comments",
+    "author": {
+        "login": "bryce-carson",
+        "id": 51974245,
+        "node_id": "MDQ6VXNlcjUxOTc0MjQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/51974245?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bryce-carson",
+        "html_url": "https://github.com/bryce-carson",
+        "followers_url": "https://api.github.com/users/bryce-carson/followers",
+        "following_url": "https://api.github.com/users/bryce-carson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bryce-carson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bryce-carson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bryce-carson/subscriptions",
+        "organizations_url": "https://api.github.com/users/bryce-carson/orgs",
+        "repos_url": "https://api.github.com/users/bryce-carson/repos",
+        "events_url": "https://api.github.com/users/bryce-carson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bryce-carson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6ce7fcb66ea88c9e37dabf0d7c65c53b6263baa6",
+            "url": "https://api.github.com/repos/koddyrae/COMP2503-A3/commits/6ce7fcb66ea88c9e37dabf0d7c65c53b6263baa6",
+            "html_url": "https://github.com/koddyrae/COMP2503-A3/commit/6ce7fcb66ea88c9e37dabf0d7c65c53b6263baa6"
+        }
+    ],
+    "stats": {
+        "total": 26,
+        "additions": 5,
+        "deletions": 21
+    },
+    "files": [
+        {
+            "sha": "573266631959d931c28480ae8a3a4218c2e1d3b5",
+            "filename": "src/BST.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 21,
+            "changes": 26,
+            "blob_url": "https://github.com/koddyrae/COMP2503-A3/blob/db66c70a4f79ce2949c0043395f5b7437629eb69/src%2FBST.java",
+            "raw_url": "https://github.com/koddyrae/COMP2503-A3/raw/db66c70a4f79ce2949c0043395f5b7437629eb69/src%2FBST.java",
+            "contents_url": "https://api.github.com/repos/koddyrae/COMP2503-A3/contents/src%2FBST.java?ref=db66c70a4f79ce2949c0043395f5b7437629eb69",
+            "patch": "@@ -162,28 +162,12 @@ public T find(T t) {\n         }\n     }\n \n-    // This is quite dependent on the equality of the types being compared. If\n-    // they are simple base types, it is fine; for the Token class, the tokens\n-    // must be equal based on their string contents.\n     private void find(T t, BSTNode n) {\n-        this.path.push(n);\n-        int c = n.getData().compareTo(t);\n-\n-        /* The base case---in which the node that this call was made with is what\n-         *  we're searching for---has no clause, and as the condition is otherwise\n-         *  an empty if statement; the final if statement is protected as <i>not</i>\n-         *  being the node we are searching for. The void method simply exits without\n-         *  returning anything, but having modified the <code>path</code> suitably.\n-         */\n-        if ((c < 0) && (n.getLeft() != null)) {\n-            // The data should be found to the left of the current node.\n-            find(t, n.getLeft());\n-        } else if ((c > 0) && (n.getRight() != null)) {\n-            // The data should be found to the right of the current node.\n-            find(t, n.getRight());\n-        } else if (c != 0){\n-            // Empty the path because no element in the tree contains the data searched for.\n-            path.empty();\n+        if (n == null) {\n+            this.path.empty();\n+        } else {\n+            this.path.push(n);\n+            ((n.getData().compareTo(t) < 0) ? find(t, n.getLeft()) : find(t, n.getRight()));\n         }\n     }\n "
+        }
+    ]
+}

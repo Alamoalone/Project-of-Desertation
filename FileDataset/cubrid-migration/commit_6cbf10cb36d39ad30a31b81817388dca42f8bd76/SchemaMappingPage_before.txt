@@ -1,0 +1,180 @@
+	private void getSchemaValues() {
+		Catalog targetCatalog = wizard.getTargetCatalog();
+		Catalog sourceCatalog = wizard.getOriginalSourceCatalog();
+		
+		ArrayList<String> dropDownSchemaList = new ArrayList<String>();
+		tarSchemaNameList = new ArrayList<String>();
+		
+		if (targetCatalog.isDbHasUserSchema()) {
+			List<Schema> targetSchemaList = targetCatalog.getSchemas();
+			
+			for (Schema schema : targetSchemaList) {
+				tarSchemaNameList.add(schema.getName());
+				dropDownSchemaList.add(schema.getName());
+			}
+		} else {
+			tarSchemaNameList.add(targetCatalog.getConnectionParameters().getConUser());
+		}
+		
+		if (sourceCatalog.isDbHasUserSchema()) {
+			List<Schema> sourceSchemaList = sourceCatalog.getSchemas();
+			
+			for (Schema schema : sourceSchemaList) {
+				if (tarSchemaNameList.contains(schema.getName().toUpperCase())) {
+					continue;
+				}
+				
+				dropDownSchemaList.add(schema.getName());
+			}
+		} else {
+			tarSchemaNameList.add(sourceCatalog.getConnectionParameters().getConUser());
+		}
+
+		if (targetCatalog.isDBAGroup()) {
+			tarSchemaNameArray = dropDownSchemaList.toArray(new String[] {});
+		} else {
+			tarSchemaNameArray = new String[] {targetCatalog.getConnectionParameters().getConUser()};
+		}
+	}
+
+	private void setOnlineData() {
+		srcCatalog = wizard.getOriginalSourceCatalog().createCatalog();
+		tarCatalog = wizard.getTargetCatalog();
+		
+		srcSchemaList = srcCatalog.getSchemas();
+		tarSchemaList = tarCatalog.getSchemas();
+		
+		Map<String, Schema> scriptSchemaMap = config.getScriptSchemaMapping();
+
+		for (Schema schema : srcSchemaList) {
+			SrcTable srcTable = new SrcTable();
+			srcTable.setSrcDBType(srcCatalog.getDatabaseType().getName());
+			
+			if (srcCatalog.isDbHasUserSchema()) {
+				srcTable.setSrcSchema(schema.getName());
+			} else {
+				srcTable.setSrcSchema(srcCatalog.getConnectionParameters().getConUser());
+			}
+			
+			srcTable.setNote(schema.isGrantorSchema());
+			
+			if (!schema.isGrantorSchema()) {
+				srcTableList.add(0, srcTable);
+			} else {
+				srcTableList.add(srcTable);
+			}
+			
+			srcTable.setTarDBType(tarCatalog.getDatabaseType().getName());
+			
+			if (scriptSchemaMap.size() != 0) {
+				logger.info("script schema");
+				
+				Schema scriptSchema = scriptSchemaMap.get(srcTable.getSrcSchema());
+				String tarSchemaName = null;
+				if (scriptSchema != null) {
+					srcTable.setTarSchema(scriptSchema.getTargetSchemaName().toUpperCase());
+					tarSchemaName = scriptSchema.getTargetSchemaName().toUpperCase();
+					srcTable.setSelected(scriptSchemaMap.get(srcTable.getSrcSchema()).isMigration());
+				}
+				
+				if (tarSchemaName == null || tarSchemaName.isEmpty()) {
+					srcTable.setTarSchema(tarCatalog.getName());
+				}
+				
+				logger.info("srcTable target schema : " + srcTable.getTarSchema());
+			} else {
+				int version = tarCatalog.getVersion().getDbMajorVersion() * 10 + tarCatalog.getVersion().getDbMinorVersion();
+				
+				if (tarCatalog.isDBAGroup() && version >= 112) {
+					srcTable.setTarSchema(srcTable.getSrcSchema());
+				} else {
+					srcTable.setTarSchema(tarCatalog.getConnectionParameters().getConUser());
+				}
+			}
+		}
+	}
+
+	private void setOnlineEditor() {
+		comboEditor = new EditableComboBoxCellEditor(srcTableViewer.getTable(), tarSchemaNameArray, SWT.READ_ONLY);
+		
+		CellEditor[] editors = new CellEditor[] {
+				new CheckboxCellEditorFactory().getCellEditor(srcTableViewer.getTable()),
+				null,
+				null,
+				null,
+				comboEditor,
+				null
+		};
+		
+		srcTableViewer.setCellEditors(editors);
+		srcTableViewer.setCellModifier(new ICellModifier() {
+			
+			@Override
+			public void modify(Object element, String property, Object value) {
+				TableItem tabItem = (TableItem) element;
+				SrcTable srcTable = (SrcTable) tabItem.getData();
+				
+				if (property.equals(propertyList[4])) {
+					srcTable.setTarSchema(returnValue((Integer) value, tabItem));
+					addSelectCheckboxValue();
+					srcTableViewer.refresh();
+				} else if (property.equals(propertyList[0])) {
+					tabItem.setImage(CompositeUtils.getCheckImage(!srcTable.isSelected));
+					srcTable.setSelected(!srcTable.isSelected);
+				}
+			}
+			
+			@Override
+			public Object getValue(Object element, String property) {
+				if (property.equals(propertyList[4])) {
+					return returnIndex(element);
+				} else if (property.equals(propertyList[0])) {
+					return true;
+				} else {
+					return null;
+				}
+			}
+			
+			@Override
+			public boolean canModify(Object element, String property) {
+				if (!tarCatalog.isDbHasUserSchema()) {
+					return false;
+				}
+				
+				if (property.equals(propertyList[4]) || property.equals(propertyList[0])) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			
+			public int returnIndex(Object element) {
+				if (element instanceof SrcTable) {
+					SrcTable srcTable = (SrcTable) element;
+					
+					for (int i = 0; i < tarSchemaNameArray.length; i++) {
+						if (tarSchemaNameArray[i].equals(srcTable.getTarSchema())) {						
+							return i;
+						}
+					}
+				}
+				
+				return 0;
+			}
+			public String returnValue(int index, TableItem item) {
+				return tarSchemaNameArray[index];
+			}
+			
+			private void addSelectCheckboxValue() {
+				TableItem[] tableItems = srcTableViewer.getTable().getItems();
+				for (int i = 0; i < tableItems.length; i++) {
+					if (tableItems[i].getImage().equals(CompositeUtils.CHECK_IMAGE)) {
+						srcTableList.get(i).setSelected(true);
+					} else {
+						srcTableList.get(i).setSelected(false);
+					}
+				}
+			}
+		});
+	}
+

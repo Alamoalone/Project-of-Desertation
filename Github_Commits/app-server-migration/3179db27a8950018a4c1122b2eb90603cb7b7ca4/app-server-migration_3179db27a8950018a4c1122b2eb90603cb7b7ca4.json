@@ -1,0 +1,98 @@
+{
+    "sha": "3179db27a8950018a4c1122b2eb90603cb7b7ca4",
+    "node_id": "C_kwDOLOn-D9oAKDMxNzlkYjI3YTg5NTAwMThhNGMxMTIyYjJlYjkwNjAzY2I3YjdjYTQ",
+    "commit": {
+        "author": {
+            "name": "Aditya Goteti",
+            "email": "agoteti@amazon.com",
+            "date": "2024-01-23T03:06:42Z"
+        },
+        "committer": {
+            "name": "Aditya Goteti",
+            "email": "agoteti@amazon.com",
+            "date": "2024-01-23T03:06:42Z"
+        },
+        "message": "fixed null pointer exception while counting the code units",
+        "tree": {
+            "sha": "756e7f5de1488f78a053d3120bfa0edb422729a3",
+            "url": "https://api.github.com/repos/rohankumardubey/app-server-migration/git/trees/756e7f5de1488f78a053d3120bfa0edb422729a3"
+        },
+        "url": "https://api.github.com/repos/rohankumardubey/app-server-migration/git/commits/3179db27a8950018a4c1122b2eb90603cb7b7ca4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/rohankumardubey/app-server-migration/commits/3179db27a8950018a4c1122b2eb90603cb7b7ca4",
+    "html_url": "https://github.com/rohankumardubey/app-server-migration/commit/3179db27a8950018a4c1122b2eb90603cb7b7ca4",
+    "comments_url": "https://api.github.com/repos/rohankumardubey/app-server-migration/commits/3179db27a8950018a4c1122b2eb90603cb7b7ca4/comments",
+    "author": {
+        "login": "agoteti",
+        "id": 96522288,
+        "node_id": "U_kgDOBcDQMA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/96522288?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/agoteti",
+        "html_url": "https://github.com/agoteti",
+        "followers_url": "https://api.github.com/users/agoteti/followers",
+        "following_url": "https://api.github.com/users/agoteti/following{/other_user}",
+        "gists_url": "https://api.github.com/users/agoteti/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/agoteti/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/agoteti/subscriptions",
+        "organizations_url": "https://api.github.com/users/agoteti/orgs",
+        "repos_url": "https://api.github.com/users/agoteti/repos",
+        "events_url": "https://api.github.com/users/agoteti/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/agoteti/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "agoteti",
+        "id": 96522288,
+        "node_id": "U_kgDOBcDQMA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/96522288?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/agoteti",
+        "html_url": "https://github.com/agoteti",
+        "followers_url": "https://api.github.com/users/agoteti/followers",
+        "following_url": "https://api.github.com/users/agoteti/following{/other_user}",
+        "gists_url": "https://api.github.com/users/agoteti/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/agoteti/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/agoteti/subscriptions",
+        "organizations_url": "https://api.github.com/users/agoteti/orgs",
+        "repos_url": "https://api.github.com/users/agoteti/repos",
+        "events_url": "https://api.github.com/users/agoteti/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/agoteti/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "31d4349ee902198765d98f246028d115e61a84b0",
+            "url": "https://api.github.com/repos/rohankumardubey/app-server-migration/commits/31d4349ee902198765d98f246028d115e61a84b0",
+            "html_url": "https://github.com/rohankumardubey/app-server-migration/commit/31d4349ee902198765d98f246028d115e61a84b0"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 5,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "9ad5f96faf52d2696d478768bc4de3dd80e08b2d",
+            "filename": "src/main/java/com/amazon/aws/am2/appmig/estimate/Plan.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 5,
+            "changes": 10,
+            "blob_url": "https://github.com/rohankumardubey/app-server-migration/blob/3179db27a8950018a4c1122b2eb90603cb7b7ca4/src%2Fmain%2Fjava%2Fcom%2Famazon%2Faws%2Fam2%2Fappmig%2Festimate%2FPlan.java",
+            "raw_url": "https://github.com/rohankumardubey/app-server-migration/raw/3179db27a8950018a4c1122b2eb90603cb7b7ca4/src%2Fmain%2Fjava%2Fcom%2Famazon%2Faws%2Fam2%2Fappmig%2Festimate%2FPlan.java",
+            "contents_url": "https://api.github.com/repos/rohankumardubey/app-server-migration/contents/src%2Fmain%2Fjava%2Fcom%2Famazon%2Faws%2Fam2%2Fappmig%2Festimate%2FPlan.java?ref=3179db27a8950018a4c1122b2eb90603cb7b7ca4",
+            "patch": "@@ -106,7 +106,7 @@ private int findSizeOfDeletions(boolean excludeSQL) {\n         if (this.deletion != null) {\n             if (excludeSQL) {\n                 totalDeletions = (int) this.deletion.stream().\n-                        filter(codeMetaData -> !codeMetaData.getLanguage().equals(IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage())).count();\n+                        filter(codeMetaData -> !IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage().equals(codeMetaData.getLanguage())).count();\n             } else {\n                 totalDeletions = this.deletion.size();\n             }\n@@ -117,9 +117,9 @@ private int findSizeOfDeletions(boolean excludeSQL) {\n     private int findSizeOfModifications(boolean excludeSQL) {\n         int totalModifications = 0;\n         if (this.modifications != null) {\n-            if(excludeSQL) {\n+            if (excludeSQL) {\n                 totalModifications = (int) this.modifications.keySet().stream().\n-                        filter(codeMetaData -> !codeMetaData.getLanguage().equals(IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage())).count();\n+                        filter(codeMetaData -> !IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage().equals(codeMetaData.getLanguage())).count();\n             } else {\n                 totalModifications = this.modifications.size();\n             }\n@@ -130,9 +130,9 @@ private int findSizeOfModifications(boolean excludeSQL) {\n     private int findSizeOfAdditions(boolean excludeSQL) {\n         int totalAdditions = 0;\n         if (this.addition != null) {\n-            if(excludeSQL) {\n+            if (excludeSQL) {\n                 totalAdditions = (int) this.addition.stream().\n-                        filter(codeMetaData -> !codeMetaData.getLanguage().equals(IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage())).count();\n+                        filter(codeMetaData -> !IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage().equals(codeMetaData.getLanguage())).count();\n             } else {\n                 totalAdditions = this.addition.size();\n             }"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+    private static String getRelativize(FileBlock _block, AnaTypeFct _id) {
+        if (_id == null) {
+            return EMPTY;
+        }
+        NamedFunctionBlock function_ = _id.getFunction();
+        if (function_ == null) {
+            return EMPTY;
+        }
+        if (function_ instanceof OperatorBlock) {
+            return ExportCst.href(_block, function_.getFile(), function_.getNameOffset());
+        }
+        if (!ContextUtil.isFromCustFile(_id.getType())) {
+            return EMPTY;
+        }
+        return ExportCst.href(_block, function_.getFile(), function_.getNameOffset());
+    }

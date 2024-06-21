@@ -1,0 +1,58 @@
+   protected AcquisitionHook zPositionHook(SequenceSettings sequenceSettings,
+                                           int when, Integer acqIndex) {
+      return new AcquisitionHook() {
+
+         @Override
+         public AcquisitionEvent run(AcquisitionEvent event) {
+            if (event.isAcquisitionFinishedEvent()) {
+               return event;
+            }
+            // do nothing if this is not our acquisition
+            if (acqIndex != null
+                  && event.getTags().containsKey(ACQ_IDENTIFIER)
+                  && !(Integer.valueOf(event.getTags().get(ACQ_IDENTIFIER)).equals(acqIndex))) {
+               return event;
+            }
+            try {
+               if (when == AcquisitionAPI.BEFORE_HARDWARE_HOOK) {
+                  if (event.isZSequenced() || event.getZIndex() == 0) {
+                     if (!event.isZSequenced() && sequenceSettings.useChannels()
+                             && (sequenceSettings.acqOrderMode()
+                                       == AcqOrderMode.TIME_POS_SLICE_CHANNEL
+                             || sequenceSettings.acqOrderMode()
+                                       == AcqOrderMode.POS_TIME_SLICE_CHANNEL)) {
+                        if ((Integer) event.getAxisPosition(AcqEngMetadata.CHANNEL_AXIS) != 0) {
+                           return event;
+                        }
+                     }
+                     zStagePositionBefore_ = core_.getPosition();
+                  }
+               } else if (when == AcquisitionAPI.AFTER_EXPOSURE_HOOK) {
+                  if (event.isZSequenced() && event.getZIndex() != null
+                        && event.getZIndex() == sequenceSettings.slices().size() - 1) {
+                     if (!event.isZSequenced() && sequenceSettings.useChannels()
+                             && (sequenceSettings.acqOrderMode()
+                                       == AcqOrderMode.TIME_POS_SLICE_CHANNEL
+                             || sequenceSettings.acqOrderMode()
+                                       == AcqOrderMode.POS_TIME_SLICE_CHANNEL)) {
+                        if ((Integer) event.getAxisPosition(AcqEngMetadata.CHANNEL_AXIS)
+                                != getNumChannels(sequenceSettings) - 1) {
+                           return event;
+                        }
+                     }
+                     core_.setPosition(zStagePositionBefore_);
+                  }
+               }
+            } catch (Exception ex) {
+               studio_.logs().logError(ex,
+                     "Failed to return Z Stage to start position after Z Stack");
+            }
+            return event;
+         }
+
+         @Override
+         public void close() {
+            // nothing to do here
+         }
+      };
+   }

@@ -1,0 +1,39 @@
+    private Task<Void> createInsertionSortingTask(Series<String, Number> seriesCur) {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+
+                ObservableList<Data<String, Number>> data = seriesCur.getData();
+                
+                int n = data.size();  
+                for (int j = 1; j < n; j++) {  
+                    Double key = data.get(j).getYValue().doubleValue(); 
+                    int i = j-1; 
+                    
+                    Data<String, Number> first = data.get(j);
+                    Data<String, Number> second = data.get(j - 1);
+
+                   Thread.sleep(50);
+
+     //              first.getNode().setStyle("-fx-background-color: green ;");
+                   //second.getNode().setStyle("-fx-background-color: green ;");
+                   
+                    while ( (i > -1) && (data.get(i).getYValue().doubleValue() > key ) ) { 
+                    	Data<String, Number> currentFirst = data.get(i);
+     //               	currentFirst.getNode().setStyle("-fx-background-color: green ;");
+                    	data.get(i+1).setYValue(data.get(i).getYValue());  
+                        i--;  
+                    }  
+                    
+                    data.get(i+1).setYValue(key);
+                    
+                    Thread.sleep(75);
+                    
+
+                   // second.getNode().setStyle("-fx-background-color: red ;");
+                }  
+                
+                return null;
+            }
+        };
+    }

@@ -1,0 +1,7 @@
+    public Point getAveragePoint() {
+        try {
+            return new Point(averageLongitude(), averageLatitude());
+        } catch (NullPointerException e) {
+            return new Point(DEFAULT_VALUE, DEFAULT_VALUE);
+        }
+    }

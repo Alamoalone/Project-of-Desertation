@@ -1,0 +1,10 @@
+  public JComponent createComponent() {
+    mySettingsComponent = new SettingsComponent(project);
+    Disposer.register(project, mySettingsComponent);
+    return mySettingsComponent.getPanel();
+  }
+
+  public void disposeUIResources() {
+    mySettingsComponent = null;
+  }
+

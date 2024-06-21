@@ -1,0 +1,36 @@
+@@ -2,8 +2,6 @@
+ 
+ import net.logicim.common.SimulatorException;
+ import net.logicim.common.type.Int2D;
+-import net.logicim.data.common.LongArrayData;
+-import net.logicim.data.common.LongData;
+ import net.logicim.data.common.ViewData;
+ import net.logicim.domain.CircuitSimulation;
+ import net.logicim.ui.common.wire.TraceView;
+@@ -60,8 +58,7 @@ public TraceView createAndEnableTraceView(SubcircuitEditor subcircuitEditor)
+     return traceView;
+   }
+ 
+-  public void createAndConnectComponent(SubcircuitEditor subcircuitEditor,
+-                                        CircuitSimulation circuitSimulation,
++  public void createAndConnectComponent(CircuitSimulation circuitSimulation,
+                                         TraceLoader traceLoader,
+                                         TraceView traceView)
+   {
+@@ -71,12 +68,12 @@ public void createAndConnectComponent(SubcircuitEditor subcircuitEditor,
+       throw new SimulatorException("Cannot find trace IDs for Circuit Simulation [%s].", circuitSimulation.getDescription());
+     }
+ 
+-    WireDataHelper.wireConnect(subcircuitEditor,
+-                               circuitSimulation,
++    WireDataHelper.wireConnect(
++        circuitSimulation,
+                                traceLoader,
+                                traceView,
+-                               traceIDs,
+-                               selected);
++                               traceIDs
++    );
+ 
+   }
+ }

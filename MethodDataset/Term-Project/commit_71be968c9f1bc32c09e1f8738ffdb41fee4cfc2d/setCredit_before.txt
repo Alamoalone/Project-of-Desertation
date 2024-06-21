@@ -1,0 +1,3 @@
+    public void setCredit(int Credit) {
+        this.Credit = Credit;
+    }

@@ -1,0 +1,98 @@
+{
+    "sha": "6bedec35c007ff182656e156582abc201d06953a",
+    "node_id": "C_kwDOAATZv9oAKDZiZWRlYzM1YzAwN2ZmMTgyNjU2ZTE1NjU4MmFiYzIwMWQwNjk1M2E",
+    "commit": {
+        "author": {
+            "name": "diegohu97",
+            "email": "diego.hu@liferay.com",
+            "date": "2023-08-11T12:51:38Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-08-29T13:18:51Z"
+        },
+        "message": "LPS-191677 sortingOrder can be null, so prevent null pointer exceptions",
+        "tree": {
+            "sha": "1214503428b8b275f0b1d03df67730814f5ec255",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/1214503428b8b275f0b1d03df67730814f5ec255"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/6bedec35c007ff182656e156582abc201d06953a",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgIcDjNlTxfRgpDVhEm9M0CmMGHg\n8lPcdZvrefGnr7hcIAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQI3bo36C3IAVL4jmW23CpKgkBofWn/SEBzXpy1FFNS1bn7aYBtX8gp/kS7zJXJLc7D\nog27aMbuxgHigFPtGcqgA=\n-----END SSH SIGNATURE-----",
+            "payload": "tree 1214503428b8b275f0b1d03df67730814f5ec255\nparent f5abdcb552b6f69db64101ddcac99595274ffbdb\nauthor diegohu97 <diego.hu@liferay.com> 1691758298 +0200\ncommitter Brian Chan <brian.chan@liferay.com> 1693315131 -0300\n\nLPS-191677 sortingOrder can be null, so prevent null pointer exceptions\n"
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/6bedec35c007ff182656e156582abc201d06953a",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/6bedec35c007ff182656e156582abc201d06953a",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/6bedec35c007ff182656e156582abc201d06953a/comments",
+    "author": {
+        "login": "DiegoHu97",
+        "id": 91208451,
+        "node_id": "MDQ6VXNlcjkxMjA4NDUx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/91208451?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DiegoHu97",
+        "html_url": "https://github.com/DiegoHu97",
+        "followers_url": "https://api.github.com/users/DiegoHu97/followers",
+        "following_url": "https://api.github.com/users/DiegoHu97/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DiegoHu97/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DiegoHu97/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DiegoHu97/subscriptions",
+        "organizations_url": "https://api.github.com/users/DiegoHu97/orgs",
+        "repos_url": "https://api.github.com/users/DiegoHu97/repos",
+        "events_url": "https://api.github.com/users/DiegoHu97/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DiegoHu97/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f5abdcb552b6f69db64101ddcac99595274ffbdb",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/f5abdcb552b6f69db64101ddcac99595274ffbdb",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/f5abdcb552b6f69db64101ddcac99595274ffbdb"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "d7bfa15c4b3de6c278a85422cf69ca770ebde921",
+            "filename": "modules/apps/frontend-taglib/frontend-taglib-clay/src/main/java/com/liferay/frontend/taglib/clay/servlet/taglib/ManagementToolbarTag.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/6bedec35c007ff182656e156582abc201d06953a/modules%2Fapps%2Ffrontend-taglib%2Ffrontend-taglib-clay%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffrontend%2Ftaglib%2Fclay%2Fservlet%2Ftaglib%2FManagementToolbarTag.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/6bedec35c007ff182656e156582abc201d06953a/modules%2Fapps%2Ffrontend-taglib%2Ffrontend-taglib-clay%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffrontend%2Ftaglib%2Fclay%2Fservlet%2Ftaglib%2FManagementToolbarTag.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Ffrontend-taglib%2Ffrontend-taglib-clay%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffrontend%2Ftaglib%2Fclay%2Fservlet%2Ftaglib%2FManagementToolbarTag.java?ref=6bedec35c007ff182656e156582abc201d06953a",
+            "patch": "@@ -933,7 +933,7 @@ protected int processStartTag() throws Exception {\n \n \t\t\tString orderSymbol = \"order-list-down\";\n \n-\t\t\tif (getSortingOrder().equals(\"asc\")) {\n+\t\t\tif (Objects.equals(getSortingOrder(), \"asc\")) {\n \t\t\t\torderSymbol = \"order-list-up\";\n \t\t\t}\n "
+        }
+    ]
+}

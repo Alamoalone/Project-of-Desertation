@@ -1,0 +1,10 @@
+	public boolean deleteOnePersonById(String id) {
+		// log.debug("Deleting medical record for {} {}", firstName, lastName);
+		boolean result = persons.removeIf(person -> person.getId().equals(id));
+		if (result) {
+			// log.info("Person deleted successfully for {} {}", id);
+		} else {
+			// log.error("Failed to delete person for {} {}", id);
+		}
+		return result;
+	}

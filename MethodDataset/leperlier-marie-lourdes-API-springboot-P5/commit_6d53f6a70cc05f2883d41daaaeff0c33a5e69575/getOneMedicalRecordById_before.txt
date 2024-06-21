@@ -1,0 +1,9 @@
+    public MedicalRecord getOneMedicalRecordById(String id) {
+    	  return medicalRecords.stream()
+                  .filter(medicalRecord -> medicalRecord.getId().equals(id))
+                  .findFirst()
+                  .map(existingMedicalRecord -> { 
+                	  return existingMedicalRecord;
+                  } )
+                  .orElse(null);
+     }

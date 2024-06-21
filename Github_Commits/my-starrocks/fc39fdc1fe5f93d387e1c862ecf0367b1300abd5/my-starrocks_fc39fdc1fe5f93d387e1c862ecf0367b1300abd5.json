@@ -1,0 +1,98 @@
+{
+    "sha": "fc39fdc1fe5f93d387e1c862ecf0367b1300abd5",
+    "node_id": "C_kwDOLID-uNoAKGZjMzlmZGMxZmU1ZjkzZDM4N2UxYzg2MmVjZjAzNjdiMTMwMGFiZDU",
+    "commit": {
+        "author": {
+            "name": "zaorangyang",
+            "email": "zaorangy@gmail.com",
+            "date": "2023-09-05T12:42:38Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-09-05T12:42:38Z"
+        },
+        "message": "[BugFix] Fix routine load task info null pointer exception (#29793)",
+        "tree": {
+            "sha": "eed641426a50aac03ddaa995c38d7243dfcb2280",
+            "url": "https://api.github.com/repos/trikker/my-starrocks/git/trees/eed641426a50aac03ddaa995c38d7243dfcb2280"
+        },
+        "url": "https://api.github.com/repos/trikker/my-starrocks/git/commits/fc39fdc1fe5f93d387e1c862ecf0367b1300abd5",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk9yI+CRBK7hj4Ov3rIwAAtA0IAH/9gyna9qqlOy6nqWPJpgJw\nc8/4iLYiN240VLMK3A2qjWor7i/Db+Yneo1/YTS/nx10d9KdgfdFY7z6ITDq+o2P\nzgcTWvZOAFKIHBZjeoFHFTcAjpzekPncS4g+vNd6eWCFe4fLZdSapjk+kYwHDDz4\nbE+k/X9liJE4sifvA/fd/7DdATOC/Pkn78ub2XO6nn/GiqH3U1CAvV3KH/kdoAoc\nDCbsSVkiP4Lz1ZYJ+ZvflaxFo8kCR5wUl3q9r2GqrXxw2QbMGde/gnOt1jYrOkWx\nnSUOy20VQe+wBRB0+YZJocb3Jh78r7IL71/u+qtS+KrV7dufWdPvTCPyWMaKSrg=\n=dfRF\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree eed641426a50aac03ddaa995c38d7243dfcb2280\nparent 0d853532a374f11aefb5cc4b77143556737a80df\nauthor zaorangyang <zaorangy@gmail.com> 1693917758 +0800\ncommitter GitHub <noreply@github.com> 1693917758 +0800\n\n[BugFix] Fix routine load task info null pointer exception (#29793)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/trikker/my-starrocks/commits/fc39fdc1fe5f93d387e1c862ecf0367b1300abd5",
+    "html_url": "https://github.com/trikker/my-starrocks/commit/fc39fdc1fe5f93d387e1c862ecf0367b1300abd5",
+    "comments_url": "https://api.github.com/repos/trikker/my-starrocks/commits/fc39fdc1fe5f93d387e1c862ecf0367b1300abd5/comments",
+    "author": {
+        "login": "zaorangyang",
+        "id": 45813655,
+        "node_id": "MDQ6VXNlcjQ1ODEzNjU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45813655?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zaorangyang",
+        "html_url": "https://github.com/zaorangyang",
+        "followers_url": "https://api.github.com/users/zaorangyang/followers",
+        "following_url": "https://api.github.com/users/zaorangyang/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zaorangyang/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zaorangyang/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zaorangyang/subscriptions",
+        "organizations_url": "https://api.github.com/users/zaorangyang/orgs",
+        "repos_url": "https://api.github.com/users/zaorangyang/repos",
+        "events_url": "https://api.github.com/users/zaorangyang/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zaorangyang/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0d853532a374f11aefb5cc4b77143556737a80df",
+            "url": "https://api.github.com/repos/trikker/my-starrocks/commits/0d853532a374f11aefb5cc4b77143556737a80df",
+            "html_url": "https://github.com/trikker/my-starrocks/commit/0d853532a374f11aefb5cc4b77143556737a80df"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "f4613d81455915a2c740f2ecfe3221ba0559dbb4",
+            "filename": "fe/fe-core/src/main/java/com/starrocks/load/routineload/KafkaTaskInfo.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/trikker/my-starrocks/blob/fc39fdc1fe5f93d387e1c862ecf0367b1300abd5/fe%2Ffe-core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fstarrocks%2Fload%2Froutineload%2FKafkaTaskInfo.java",
+            "raw_url": "https://github.com/trikker/my-starrocks/raw/fc39fdc1fe5f93d387e1c862ecf0367b1300abd5/fe%2Ffe-core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fstarrocks%2Fload%2Froutineload%2FKafkaTaskInfo.java",
+            "contents_url": "https://api.github.com/repos/trikker/my-starrocks/contents/fe%2Ffe-core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fstarrocks%2Fload%2Froutineload%2FKafkaTaskInfo.java?ref=fc39fdc1fe5f93d387e1c862ecf0367b1300abd5",
+            "patch": "@@ -176,7 +176,7 @@ public TRoutineLoadTask createRoutineLoadTask() throws UserException {\n         tRoutineLoadTask.setType(TLoadSourceType.KAFKA);\n         tRoutineLoadTask.setParams(plan(routineLoadJob));\n         // When the transaction times out, we reduce the consumption time to lower the BE load.\n-        if (msg.contains(DatabaseTransactionMgr.TXN_TIMEOUT_BY_MANAGER)) {\n+        if (msg != null && msg.contains(DatabaseTransactionMgr.TXN_TIMEOUT_BY_MANAGER)) {\n             tRoutineLoadTask.setMax_interval_s(routineLoadJob.getTaskConsumeSecond() / 2);\n         } else {\n             tRoutineLoadTask.setMax_interval_s(routineLoadJob.getTaskConsumeSecond());"
+        }
+    ]
+}

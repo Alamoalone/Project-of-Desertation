@@ -1,0 +1,29 @@
+    private void saveInfosAsNeededDataTypes() {
+        this.changedName = txf_movieEditName.getText();
+        this.changedYear = Integer.parseInt(txf_movieEditYear.getText());
+        this.changedLength = Integer.parseInt(txf_movieEditLength.getText());
+        this.changedFsk = Integer.parseInt(txf_movieEditFSK.getText());
+        this.changedRating = BigDecimal.valueOf(Double.parseDouble(txf_movieEditRating.getText()));
+        this.changedGenres = txf_movieEditGenre1.getText();
+        if(!txf_movieEditGenre1.getText().isEmpty() && !txf_movieEditGenre2.getText().isEmpty()) {
+            this.changedGenres = this.changedGenres + ", " + txf_movieEditGenre2.getText();
+            if (!txf_movieEditGenre3.getText().isEmpty()) {
+                this.changedGenres = this.changedGenres + ", " + txf_movieEditGenre3.getText();
+            }
+        }
+        this.changedDirectors = txf_movieEditDirector1.getText();
+        if(!txf_movieEditDirector1.getText().isEmpty() && !txf_movieEditDirector2.getText().isEmpty()) {
+            this.changedDirectors = this.changedDirectors + ", " + txf_movieEditDirector2.getText();
+            if (!txf_movieEditDirector3.getText().isEmpty()) {
+                this.changedDirectors = this.changedDirectors + ", " + txf_movieEditDirector3.getText();
+            }
+        }
+        this.changedCount = Integer.parseInt(txf_movieEditCount.getText());
+        this.changedStudio = txf_movieEditStudio.getText();
+        this.changedActors = txf_movieEditActors.getText();
+        this.changedLinkToCover = txf_movieEditLinkToCover.getText();
+        this.changedComment = txa_movieEditComment.getText();
+        if(cbx_movieEditSelDVD.isSelected()) {
+            this.changedType = "DVD";
+        } else {this.changedType = "BR";}
+    }

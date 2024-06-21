@@ -1,0 +1,31 @@
+	public void roiModified(ImagePlus imp, int id) {
+		if (imp == null)
+			return;
+		logMethod();
+		if (imp == previewImage && globalParams.interactive && id != RoiListener.DELETED) {
+			//IJ.log("ROI MODIFIED - " + id);
+			if (!globalParams.selectNoise) {
+				if (updatePointsTask != null)
+					updatePointsTask.cancel();
+				updatePointsTask = Common.invokeLater(new Runnable() {
+					public void run() {
+						updatePoints(false);
+					}
+				}, 500, 500);
+				updatePoints(true);
+			} else {
+				if (updateNoiseTask != null)
+					updateNoiseTask.cancel();
+				updateNoiseTask = Common.invokeLater(new Runnable() {
+					public void run() {
+						updateNoise();
+					}
+				}, 100, -1);
+			}
+		} else {
+			ImagePlus plotImage = plot.getImagePlus();
+			if (imp == plotImage && id != RoiListener.DELETED) {
+				updateLimitParams();
+			}
+		}
+	}

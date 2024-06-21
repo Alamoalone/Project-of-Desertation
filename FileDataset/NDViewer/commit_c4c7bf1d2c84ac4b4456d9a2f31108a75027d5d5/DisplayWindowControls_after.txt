@@ -1,0 +1,4 @@
+   public void removeContrastControls(String channelName) {
+      cpMagellan_.removeContrastControls(channelName);
+   }
+

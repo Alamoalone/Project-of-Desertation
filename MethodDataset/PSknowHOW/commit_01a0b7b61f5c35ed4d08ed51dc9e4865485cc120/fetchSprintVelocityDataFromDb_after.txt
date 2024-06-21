@@ -1,0 +1,74 @@
+	public Map<String, Object> fetchSprintVelocityDataFromDb(KpiRequest kpiRequest,
+			Map<ObjectId, List<String>> projectWiseSprintsForFilter, List<SprintDetails> sprintDetails) {
+
+		Map<String, List<String>> mapOfFilters = new LinkedHashMap<>();
+		Map<String, Object> resultListMap = new HashMap<>();
+
+		List<String> sprintList = new ArrayList<>();
+		Set<String> basicProjectConfigIds = new HashSet<>();
+
+		projectWiseSprintsForFilter.entrySet().forEach(entry -> {
+			ObjectId basicProjectConfigId = entry.getKey();
+
+			sprintList.addAll(entry.getValue());
+			basicProjectConfigIds.add(basicProjectConfigId.toString());
+
+		});
+
+		List<String> totalIssueIds = new ArrayList<>();
+		if (CollectionUtils.isNotEmpty(sprintDetails)) {
+			Map<ObjectId, List<SprintDetails>> projectWiseTotalSprintDetails = sprintDetails.stream()
+					.collect(Collectors.groupingBy(SprintDetails::getBasicProjectConfigId));
+
+			Map<ObjectId, Set<String>> duplicateIssues = getProjectWiseDuplicateIssueInSprintDetails(
+					projectWiseTotalSprintDetails);
+			Map<ObjectId, Map<String, List<LocalDateTime>>> projectWiseDuplicateIssuesWithMinCloseDate = null;
+			Map<ObjectId, FieldMapping> fieldMappingMap = configHelperService.getFieldMappingMap();
+
+			if (MapUtils.isNotEmpty(fieldMappingMap) && !duplicateIssues.isEmpty()) {
+				Map<ObjectId, List<String>> customFieldMapping = duplicateIssues.keySet().stream()
+						.filter(fieldMappingMap::containsKey).collect(Collectors.toMap(Function.identity(), key -> {
+							FieldMapping fieldMapping = fieldMappingMap.get(key);
+							return Optional.ofNullable(fieldMapping)
+									.map(FieldMapping::getJiraIterationCompletionStatusKpi39)
+									.orElse(Collections.emptyList());
+						}));
+				projectWiseDuplicateIssuesWithMinCloseDate = getMinimumClosedDateFromConfiguration(duplicateIssues,
+						customFieldMapping);
+			}
+
+			Map<ObjectId, Map<String, List<LocalDateTime>>> finalProjectWiseDuplicateIssuesWithMinCloseDate = projectWiseDuplicateIssuesWithMinCloseDate;
+			sprintDetails.stream().forEach(dbSprintDetail -> {
+				FieldMapping fieldMapping = fieldMappingMap
+						.get(dbSprintDetail.getBasicProjectConfigId());
+				// to modify sprintdetails on the basis of configuration for the project
+				SprintDetails sprintDetail=KpiDataHelper.processSprintBasedOnFieldMappings(Collections.singletonList(dbSprintDetail),
+						new ArrayList<>(),
+						fieldMapping.getJiraIterationCompletionStatusKpi39(), finalProjectWiseDuplicateIssuesWithMinCloseDate).get(0);
+				if (CollectionUtils.isNotEmpty(sprintDetail.getCompletedIssues())) {
+					List<String> sprintWiseIssueIds = KpiDataHelper
+							.getIssuesIdListBasedOnTypeFromSprintDetails(sprintDetail, CommonConstant.COMPLETED_ISSUES);
+					totalIssueIds.addAll(sprintWiseIssueIds);
+				}
+			});
+			mapOfFilters.put(JiraFeature.ISSUE_NUMBER.getFieldValueInFeature(),
+					totalIssueIds.stream().distinct().collect(Collectors.toList()));
+		}
+
+		/** additional filter **/
+		KpiDataHelper.createAdditionalFilterMap(kpiRequest, mapOfFilters, Constant.SCRUM, DEV, flterHelperService);
+
+		mapOfFilters.put(JiraFeature.BASIC_PROJECT_CONFIG_ID.getFieldValueInFeature(),
+				basicProjectConfigIds.stream().distinct().collect(Collectors.toList()));
+
+		if (CollectionUtils.isNotEmpty(totalIssueIds)) {
+			List<JiraIssue> sprintVelocityList = jiraIssueRepository.findIssuesBySprintAndType(mapOfFilters,
+					new HashMap<>());
+
+			resultListMap.put(SPRINTVELOCITYKEY, sprintVelocityList);
+			resultListMap.put(SPRINT_WISE_SPRINTDETAILS, sprintDetails);
+
+		}
+
+		return resultListMap;
+	}

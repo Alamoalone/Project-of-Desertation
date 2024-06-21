@@ -1,0 +1,3 @@
+    public void track(GameObject gameObject) {
+        this.gameObjects.add(gameObject);
+    }

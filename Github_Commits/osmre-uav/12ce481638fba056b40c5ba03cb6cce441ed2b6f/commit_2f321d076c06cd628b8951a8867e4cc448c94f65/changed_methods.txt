@@ -1,0 +1,3 @@
+truthy(Boolean b)
+cleanExistingProduct()
+processProduct(Product product, StatusMonitorIF monitor, CloseableFile unzippedParentFolder)

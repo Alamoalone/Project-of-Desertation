@@ -1,0 +1,6 @@
+    private static String formatted(CustList<AnaFormattedRootBlock> _i) {
+        if (_i.isEmpty()) {
+            return "";
+        }
+        return _i.first().getFormatted();
+    }

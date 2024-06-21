@@ -1,0 +1,22 @@
+    public void teleport() {
+        Location flagLoc = flag.getLocation().clone();
+        int x = -4;
+        int z = -4;
+        for(CTFPlayer ctfp : playerList.values()) {
+            flagLoc.add(x+0.5, 0, z+0.5);
+            ctfp.getPlayer().teleport(flagLoc);
+            ctfp.getPlayer().setHealth(20);
+            ctfp.getPlayer().setSaturation(20);
+
+            x++;
+            if(x > 4) {
+                x = -4;
+                z++;
+            }
+            if(z > 4) {
+                x = -4;
+                z = -4;
+            }
+        }
+    }
+

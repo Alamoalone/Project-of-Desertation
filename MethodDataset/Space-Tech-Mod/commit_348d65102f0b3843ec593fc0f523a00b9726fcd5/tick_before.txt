@@ -1,0 +1,14 @@
+    public static void tick(Level level, BlockPos pos, BlockState state, SculkHeartBlockEntity entity) {
+        if(timer >= 40) {
+            level.playSound(level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z), entity.x, entity.y, entity.z, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 2.0f, 2.0f);
+        }
+        if(timer >= 80) {
+            entity.targetPlayer = level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z);
+            level.playSound(level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z), entity.x, entity.y, entity.z, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 2.0f, 2.0f);
+            entity.targetPlayer.addEffect(new MobEffectInstance(entity.getMobEffect(), 200, 1));
+            timer = 0;
+        }
+        else {
+            timer++;
+        }
+    }

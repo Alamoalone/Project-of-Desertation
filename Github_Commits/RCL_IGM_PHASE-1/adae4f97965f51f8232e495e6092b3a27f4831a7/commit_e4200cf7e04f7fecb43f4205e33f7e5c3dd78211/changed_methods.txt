@@ -1,0 +1,1 @@
+mapRow(ResultSet rs, int row)

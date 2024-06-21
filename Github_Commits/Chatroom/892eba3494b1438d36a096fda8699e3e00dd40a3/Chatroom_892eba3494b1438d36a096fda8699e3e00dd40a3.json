@@ -1,0 +1,98 @@
+{
+    "sha": "892eba3494b1438d36a096fda8699e3e00dd40a3",
+    "node_id": "C_kwDOKrgpI9oAKDg5MmViYTM0OTRiMTQzOGQzNmEwOTZmZGE4Njk5ZTNlMDBkZDQwYTM",
+    "commit": {
+        "author": {
+            "name": "Nathan-Hutton",
+            "email": "nathan.d.hutton@gmail.com",
+            "date": "2023-11-13T18:09:25Z"
+        },
+        "committer": {
+            "name": "Nathan-Hutton",
+            "email": "nathan.d.hutton@gmail.com",
+            "date": "2023-11-13T18:09:25Z"
+        },
+        "message": "Fixed null pointer exception when user ctrl+c when prompted for a username",
+        "tree": {
+            "sha": "1d2ebe2748e3ff27e41f47cd66c727463a814425",
+            "url": "https://api.github.com/repos/Nathan-Hutton/Chatroom/git/trees/1d2ebe2748e3ff27e41f47cd66c727463a814425"
+        },
+        "url": "https://api.github.com/repos/Nathan-Hutton/Chatroom/git/commits/892eba3494b1438d36a096fda8699e3e00dd40a3",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Nathan-Hutton/Chatroom/commits/892eba3494b1438d36a096fda8699e3e00dd40a3",
+    "html_url": "https://github.com/Nathan-Hutton/Chatroom/commit/892eba3494b1438d36a096fda8699e3e00dd40a3",
+    "comments_url": "https://api.github.com/repos/Nathan-Hutton/Chatroom/commits/892eba3494b1438d36a096fda8699e3e00dd40a3/comments",
+    "author": {
+        "login": "Nathan-Hutton",
+        "id": 109482458,
+        "node_id": "U_kgDOBoaR2g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/109482458?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Nathan-Hutton",
+        "html_url": "https://github.com/Nathan-Hutton",
+        "followers_url": "https://api.github.com/users/Nathan-Hutton/followers",
+        "following_url": "https://api.github.com/users/Nathan-Hutton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Nathan-Hutton/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Nathan-Hutton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Nathan-Hutton/subscriptions",
+        "organizations_url": "https://api.github.com/users/Nathan-Hutton/orgs",
+        "repos_url": "https://api.github.com/users/Nathan-Hutton/repos",
+        "events_url": "https://api.github.com/users/Nathan-Hutton/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Nathan-Hutton/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Nathan-Hutton",
+        "id": 109482458,
+        "node_id": "U_kgDOBoaR2g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/109482458?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Nathan-Hutton",
+        "html_url": "https://github.com/Nathan-Hutton",
+        "followers_url": "https://api.github.com/users/Nathan-Hutton/followers",
+        "following_url": "https://api.github.com/users/Nathan-Hutton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Nathan-Hutton/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Nathan-Hutton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Nathan-Hutton/subscriptions",
+        "organizations_url": "https://api.github.com/users/Nathan-Hutton/orgs",
+        "repos_url": "https://api.github.com/users/Nathan-Hutton/repos",
+        "events_url": "https://api.github.com/users/Nathan-Hutton/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Nathan-Hutton/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c128368d95be6ce590367e1b14c6c7e76df31c44",
+            "url": "https://api.github.com/repos/Nathan-Hutton/Chatroom/commits/c128368d95be6ce590367e1b14c6c7e76df31c44",
+            "html_url": "https://github.com/Nathan-Hutton/Chatroom/commit/c128368d95be6ce590367e1b14c6c7e76df31c44"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "534a5e04371b1232bb4749ee860d9cddb880fcc0",
+            "filename": "src/Handler.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Nathan-Hutton/Chatroom/blob/892eba3494b1438d36a096fda8699e3e00dd40a3/src%2FHandler.java",
+            "raw_url": "https://github.com/Nathan-Hutton/Chatroom/raw/892eba3494b1438d36a096fda8699e3e00dd40a3/src%2FHandler.java",
+            "contents_url": "https://api.github.com/repos/Nathan-Hutton/Chatroom/contents/src%2FHandler.java?ref=892eba3494b1438d36a096fda8699e3e00dd40a3",
+            "patch": "@@ -9,7 +9,7 @@ public class Handler {\n     private Socket clientSocket = null;\n     private BufferedReader fromClient = null;\n     private PrintWriter toClient = null;\n-    private String username = null;\n+    private String username = \"\";\n     private static ConcurrentHashMap<String, PrintWriter> userMap = new ConcurrentHashMap<String, PrintWriter>();\n \n     public void process(Socket clientSocket) throws IOException {"
+        }
+    ]
+}

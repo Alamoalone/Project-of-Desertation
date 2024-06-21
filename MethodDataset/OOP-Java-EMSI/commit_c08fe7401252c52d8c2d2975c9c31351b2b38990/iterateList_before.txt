@@ -1,0 +1,6 @@
+	    public void iterateList() {
+	        Iterator<Phone> iterator = phoneList.iterator();
+	        while (iterator.hasNext()) {
+	            
+	        }
+	    }

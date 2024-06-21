@@ -1,0 +1,8 @@
+@@ -444,6 +444,7 @@ public KPolygon addReactionFigure(KNode node, ReactionInstance reaction) {
+     // optional code content
+     boolean hasCode =
+         getBooleanValue(LinguaFrancaSynthesis.SHOW_REACTION_CODE)
++            && reaction.getDefinition().getCode() != null
+             && !StringExtensions.isNullOrEmpty(reaction.getDefinition().getCode().getBody());
+     if (hasCode) {
+       KText hasCodeText =

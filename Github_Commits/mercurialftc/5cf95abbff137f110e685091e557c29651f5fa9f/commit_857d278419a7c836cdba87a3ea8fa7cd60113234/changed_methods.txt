@@ -1,0 +1,4 @@
+resetAcceleration()
+setAcceleration(double translationalAcceleration)
+resetVelocity()
+setVelocity(double translationalVelocity)

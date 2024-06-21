@@ -1,0 +1,3 @@
+    private String cleanText(String text) {
+        return text.replaceAll("\\p{C}", "").replaceAll(START_OF_STRING, "").replaceAll(STRING_TERMINATOR, "");
+    }

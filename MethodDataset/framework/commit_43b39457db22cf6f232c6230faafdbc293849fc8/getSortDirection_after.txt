@@ -1,0 +1,6 @@
+    private boolean getSortDirection(String fieldToSortBy, String sortValue) {
+        boolean isAscending = false;
+        String[] split = sortValue.split(":");
+            isAscending = sortDirectionMap.get(split[1].toLowerCase());
+        return isAscending;
+    }

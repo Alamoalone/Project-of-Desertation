@@ -1,0 +1,4 @@
+    public void writeVSETFileToStream(OutputStream outputStream)
+    {
+        writeVSETFileToStream(outputStream, null);
+    }

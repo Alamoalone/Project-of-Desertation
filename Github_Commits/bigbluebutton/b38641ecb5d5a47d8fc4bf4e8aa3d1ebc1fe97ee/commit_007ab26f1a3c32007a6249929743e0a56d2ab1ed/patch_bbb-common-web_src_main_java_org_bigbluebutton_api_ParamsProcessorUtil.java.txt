@@ -1,0 +1,12 @@
+@@ -1152,6 +1152,11 @@ public boolean isPostChecksumSame(String apiCall, Map<String, String[]> params)
+ 		return true;
+ 	}
+ 
++    public boolean parentMeetingExists(String parentMeetingId) {
++        Meeting meeting = ServiceUtils.findMeetingFromMeetingID(parentMeetingId);
++        return meeting != null;
++    }
++
+ 	/*************************************************
+ 	 * Setters
+ 	 ************************************************/

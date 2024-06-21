@@ -1,0 +1,35 @@
+    public void updateMessageReading(Message message, boolean isAnimated) {
+        if (!isSelfMessage) return;
+        if (message.getMessageReadingList() != null && messageBackground.getBackground() != null) {
+            if (message.getMessageReadingList().size() == 0) {
+                messageBackground.getBackground().setColorFilter(
+                        Theme.getColor(messageAdapterContract.getContext(),
+                                R.color.unread_message_background), PorterDuff.Mode.SRC_IN);
+            } else {
+                if (!isAnimated) {
+                    messageBackground.getBackground().setColorFilter(
+                            Color.TRANSPARENT, PorterDuff.Mode.SRC_IN);
+                    return;
+                }
+
+                if (messageBackgroundAnimator != null) {
+                    if (messageBackgroundAnimator.isRunning()) {
+                        messageBackgroundAnimator.end();
+                    }
+                }
+                int colorFrom = Theme.getColor(itemView.getContext(),
+                        R.color.unread_message_background);
+                int colorTo = Color.TRANSPARENT;
+
+                ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
+                colorAnimation.setDuration(600); // milliseconds
+                colorAnimation.addUpdateListener((animator) -> {
+                    messageBackground.getBackground().setColorFilter((Integer)
+                            animator.getAnimatedValue(), PorterDuff.Mode.SRC_IN);
+                });
+
+                messageBackgroundAnimator = colorAnimation;
+                colorAnimation.start();
+            }
+        }
+    }

@@ -1,0 +1,122 @@
+{
+    "sha": "639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+    "node_id": "C_kwDOHeCvANoAKDYzOWQ5MmZmOGMyMzEwOTlhYzJiYTE3ZTAxYWVjZTZjNmE4MmI2YzU",
+    "commit": {
+        "author": {
+            "name": "Adrien Lecharpentier",
+            "email": "alecharpentier@cloudbees.com",
+            "date": "2023-10-12T10:33:26Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-10-12T10:33:26Z"
+        },
+        "message": "Protects documentation service against potential null pointer exception (#383)",
+        "tree": {
+            "sha": "05a9387be0f24417142ef61be0d8b56a0c12b307",
+            "url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/git/trees/05a9387be0f24417142ef61be0d8b56a0c12b307"
+        },
+        "url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/git/commits/639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlJ8t2CRBK7hj4Ov3rIwAA5qMIADE9LfBZ2lO9gLhA8R/wlFJr\n3YZGgnId5P0pX3SJd3TLkG5KMXdCKOYiPQ8Zb/WlCht8oFz2jVLvxogsABScVHy/\nmMd3sPhKdeqaUxomuApR6sCHlSk8w7XF8K1ky5okAMJCzWDFEbkIRdIv8bOn2vyX\nfYpIvifzBSh12K73CDMLkuNtp9sGaZwzInkXtyGnyJ1quu311hxCGSksQ8VvLXgw\nW/XrbyZJJiXwdtd3Pe+bzQYRDoAY/l53lGVl+jAv8Xmw8wlSk9I3iwcDmXn6xkDN\n6BzpGsesmFT6r8h5/SSthw/LAq1NhfXEIfkvXJ+XGB6RD/kpEQb3SpfwXQNDGx8=\n=+mTC\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 05a9387be0f24417142ef61be0d8b56a0c12b307\nparent b65ffa6acc82e1c6e24bf611d8c288a19a7ffdea\nauthor Adrien Lecharpentier <alecharpentier@cloudbees.com> 1697106806 +0200\ncommitter GitHub <noreply@github.com> 1697106806 +0200\n\nProtects documentation service against potential null pointer exception (#383)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/commits/639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+    "html_url": "https://github.com/jenkins-infra/plugin-health-scoring/commit/639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+    "comments_url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/commits/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/comments",
+    "author": {
+        "login": "alecharp",
+        "id": 985955,
+        "node_id": "MDQ6VXNlcjk4NTk1NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/985955?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alecharp",
+        "html_url": "https://github.com/alecharp",
+        "followers_url": "https://api.github.com/users/alecharp/followers",
+        "following_url": "https://api.github.com/users/alecharp/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alecharp/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alecharp/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alecharp/subscriptions",
+        "organizations_url": "https://api.github.com/users/alecharp/orgs",
+        "repos_url": "https://api.github.com/users/alecharp/repos",
+        "events_url": "https://api.github.com/users/alecharp/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alecharp/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b65ffa6acc82e1c6e24bf611d8c288a19a7ffdea",
+            "url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/commits/b65ffa6acc82e1c6e24bf611d8c288a19a7ffdea",
+            "html_url": "https://github.com/jenkins-infra/plugin-health-scoring/commit/b65ffa6acc82e1c6e24bf611d8c288a19a7ffdea"
+        }
+    ],
+    "stats": {
+        "total": 38,
+        "additions": 35,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "604da38089e0fdb7b6e726d352df788bb90a4d31",
+            "filename": "war/src/main/java/io/jenkins/pluginhealth/scoring/service/PluginDocumentationService.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 3,
+            "changes": 10,
+            "blob_url": "https://github.com/jenkins-infra/plugin-health-scoring/blob/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/war%2Fsrc%2Fmain%2Fjava%2Fio%2Fjenkins%2Fpluginhealth%2Fscoring%2Fservice%2FPluginDocumentationService.java",
+            "raw_url": "https://github.com/jenkins-infra/plugin-health-scoring/raw/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/war%2Fsrc%2Fmain%2Fjava%2Fio%2Fjenkins%2Fpluginhealth%2Fscoring%2Fservice%2FPluginDocumentationService.java",
+            "contents_url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/contents/war%2Fsrc%2Fmain%2Fjava%2Fio%2Fjenkins%2Fpluginhealth%2Fscoring%2Fservice%2FPluginDocumentationService.java?ref=639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+            "patch": "@@ -52,11 +52,15 @@ public PluginDocumentationService(ObjectMapper objectMapper, ApplicationConfigur\n \n     public Map<String, String> fetchPluginDocumentationUrl() {\n         try {\n-            final Map<String, Link> foo = objectMapper.readValue(new URL(configuration.jenkins().documentationUrls()), new TypeReference<>() {});\n-            return foo.entrySet().stream()\n+            final Map<String, Link> documentationUrlsMap = objectMapper.readValue(\n+                new URL(configuration.jenkins().documentationUrls()),\n+                  new TypeReference<>() {\n+                  }\n+            );\n+            return documentationUrlsMap.entrySet().stream()\n                 .collect(Collectors.toMap(\n                     Map.Entry::getKey,\n-                    e -> e.getValue().url()\n+                    e -> e.getValue() == null || e.getValue().url() == null ? \"\" : e.getValue().url()\n                 ));\n         } catch (MalformedURLException e) {\n             LOGGER.error(\"URL to documentation link is incorrect.\", e);"
+        },
+        {
+            "sha": "2ffee24b56c399e7d4875b0aa938ad94b0a29e67",
+            "filename": "war/src/test/java/io/jenkins/pluginhealth/scoring/service/PluginDocumentationServiceTest.java",
+            "status": "modified",
+            "additions": 18,
+            "deletions": 0,
+            "changes": 18,
+            "blob_url": "https://github.com/jenkins-infra/plugin-health-scoring/blob/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/war%2Fsrc%2Ftest%2Fjava%2Fio%2Fjenkins%2Fpluginhealth%2Fscoring%2Fservice%2FPluginDocumentationServiceTest.java",
+            "raw_url": "https://github.com/jenkins-infra/plugin-health-scoring/raw/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/war%2Fsrc%2Ftest%2Fjava%2Fio%2Fjenkins%2Fpluginhealth%2Fscoring%2Fservice%2FPluginDocumentationServiceTest.java",
+            "contents_url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/contents/war%2Fsrc%2Ftest%2Fjava%2Fio%2Fjenkins%2Fpluginhealth%2Fscoring%2Fservice%2FPluginDocumentationServiceTest.java?ref=639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+            "patch": "@@ -59,6 +59,24 @@ void shouldBeAbleToParseAvailableFile() {\n             .contains(entry(\"bar\", \"https://github.com/jenkinsci/bar-plugin\"));\n     }\n \n+    @Test\n+    void shouldBeAbleToParseFileWithNullValue() {\n+        final URL url = PluginDocumentationService.class.getResource(\"/documentation-urls/plugin-documentation-urls-with-nulls.json\");\n+        assertThat(url).isNotNull();\n+\n+        final ApplicationConfiguration config = new ApplicationConfiguration(\n+            new ApplicationConfiguration.Jenkins(\"foo\", url.toString()),\n+            new ApplicationConfiguration.GitHub(\"foo\", null, \"bar\")\n+        );\n+\n+        final PluginDocumentationService service = new PluginDocumentationService(objectMapper, config);\n+        final Map<String, String> map = service.fetchPluginDocumentationUrl();\n+\n+        assertThat(map)\n+            .contains(entry(\"foo\", \"https://wiki.jenkins-ci.org/display/JENKINS/foo+plugin\"))\n+            .contains(entry(\"bar\", \"https://github.com/jenkinsci/bar-plugin\"));\n+    }\n+\n     @Test\n     void shouldSurviveIncorrectlyConfiguredDocumentationURL() {\n         final ApplicationConfiguration config = new ApplicationConfiguration("
+        },
+        {
+            "sha": "c147f5e1ba72ea81e6c3243ad5e35af05920b2ee",
+            "filename": "war/src/test/resources/documentation-urls/plugin-documentation-urls-with-nulls.json",
+            "status": "added",
+            "additions": 10,
+            "deletions": 0,
+            "changes": 10,
+            "blob_url": "https://github.com/jenkins-infra/plugin-health-scoring/blob/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/war%2Fsrc%2Ftest%2Fresources%2Fdocumentation-urls%2Fplugin-documentation-urls-with-nulls.json",
+            "raw_url": "https://github.com/jenkins-infra/plugin-health-scoring/raw/639d92ff8c231099ac2ba17e01aece6c6a82b6c5/war%2Fsrc%2Ftest%2Fresources%2Fdocumentation-urls%2Fplugin-documentation-urls-with-nulls.json",
+            "contents_url": "https://api.github.com/repos/jenkins-infra/plugin-health-scoring/contents/war%2Fsrc%2Ftest%2Fresources%2Fdocumentation-urls%2Fplugin-documentation-urls-with-nulls.json?ref=639d92ff8c231099ac2ba17e01aece6c6a82b6c5",
+            "patch": "@@ -0,0 +1,10 @@\n+{\n+  \"foo\": {\n+    \"url\": \"https://wiki.jenkins-ci.org/display/JENKINS/foo+plugin\"\n+  },\n+  \"bar\": {\n+    \"url\": \"https://github.com/jenkinsci/bar-plugin\"\n+  },\n+  \"test\": {\n+  }\n+}"
+        }
+    ]
+}

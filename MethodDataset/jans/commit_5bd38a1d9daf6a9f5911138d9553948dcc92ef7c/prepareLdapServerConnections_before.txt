@@ -1,0 +1,13 @@
+	private LdapServerConnection[] prepareLdapServerConnections(CacheRefreshConfiguration cacheRefreshConfiguration,
+			List<GluuLdapConfiguration> ldapConfigurations) {
+		LdapServerConnection[] ldapServerConnections = new LdapServerConnection[ldapConfigurations.size()];
+		for (int i = 0; i < ldapConfigurations.size(); i++) {
+			ldapServerConnections[i] = prepareLdapServerConnection(cacheRefreshConfiguration,
+					ldapConfigurations.get(i));
+			if (ldapServerConnections[i] == null) {
+				return null;
+			}
+		}
+
+		return ldapServerConnections;
+	}

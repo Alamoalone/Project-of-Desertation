@@ -1,0 +1,81 @@
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        ConnectViewModel connectViewModel =
+                new ViewModelProvider(this).get(ConnectViewModel.class);
+
+        binding = FragmentLogInBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+        Objects.requireNonNull(((AppCompatActivity) Objects.requireNonNull(getActivity())).getSupportActionBar()).hide();
+
+
+        // Addition Text Here
+        auth = FirebaseAuth.getInstance();
+        user_Email = root.findViewById(R.id.username_log_in);
+        user_Password = root.findViewById(R.id.user_password);
+        sharedPreferences = getActivity().getSharedPreferences("user_Login", Context.MODE_PRIVATE);
+
+        ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if(result.getResultCode() == RESULT_OK){
+                    Intent data = result.getData();
+                    Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+                    handleResult(task);
+                }
+            }
+        });
+
+        //google one tap sign in setup
+        options = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.web_client_id))
+                .requestEmail()
+                .build();
+        client = GoogleSignIn.getClient(this.requireContext(), options);
+        Button google = root.findViewById(R.id.button_google_signIn);
+        google.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = client.getSignInIntent();
+                launcher.launch(intent);
+            }
+        });
+
+
+
+        Button logInButton = root.findViewById(R.id.button_log_in);
+        logInButton.setOnClickListener(v -> {
+
+            //firebase authentication method
+            validate();
+        });
+
+        ForgotButton = root.findViewById(R.id.button_forgot_pass);
+        ForgotButton.setOnClickListener(v->{
+            Navigation.findNavController(v).navigate(R.id.action_navigation_log_in_to_navigation_forgot);
+        });
+
+        visible = root.findViewById(R.id.view_password);
+        visible.setOnClickListener(v-> {
+
+            if(visible.getVisibility() == View.VISIBLE)
+            {
+                visible.setVisibility(View.INVISIBLE);
+                invisible.setVisibility(View.VISIBLE);
+                user_Password.setInputType(View.VISIBLE);
+
+            }
+        });
+
+        invisible = root.findViewById(R.id.invisible_password);
+        invisible.setOnClickListener(v-> {
+            if(invisible.getVisibility() == View.VISIBLE)
+            {
+                invisible.setVisibility(View.INVISIBLE);
+                visible.setVisibility(View.VISIBLE);
+                user_Password.setTransformationMethod(new PasswordTransformationMethod());
+            }
+        });
+        //End
+        return root;
+    }
+

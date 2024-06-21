@@ -1,0 +1,66 @@
+	public List<TrxHistVO> retrieveTrxHist(Long accId, String type, String period) {
+		String typeCd = "";
+		if (Constants.DEPOSIT_CD.equals(type)) {
+			typeCd = Constants.TRX_TYPE_DEPOSIT;
+		} else if (Constants.WITHDRAWAL_CD.equals(type)) {
+			typeCd = Constants.TRX_TYPE_WITHDRAWAL;
+		} else if (Constants.FUNDS_CD.equals(type)) {
+			typeCd = Constants.TRX_TYPE_ALL_FUNDS;
+		} else if (Constants.SPORTS_BET_CD.equals(type)) {
+			typeCd = Constants.TRX_TYPE_SPORTS_BET;
+		}
+
+		Date startDate = genStartDate(period);
+
+		List<AccountOtherTrxView> otherTrxView = null;
+		List<AccountBetTrxView> betTrxView = null;
+		List<Object[]> allFundsTrx = null;
+		List<TrxHistVO> trxHistList = new ArrayList<>();
+
+		if (Constants.TRX_TYPE_ALL_FUNDS.equals(typeCd)) {
+			allFundsTrx = this.accountOtherTrxDao.getAllFundsInOutTrx(accId, startDate);
+
+			if (allFundsTrx != null && allFundsTrx.size() > 0) {
+				allFundsTrx.forEach(trx -> {
+					TrxHistVO trxHistVo = new TrxHistVO();
+					trxHistVo.setDateTime((Date) trx[0]);
+					trxHistVo.setDesc((String) trx[1]);
+					trxHistVo.setAmount((Double) trx[2]);
+					trxHistList.add(trxHistVo);
+				});
+			}
+		} else if (Constants.TRX_TYPE_SPORTS_BET.equals(typeCd)) {
+			betTrxView = this.accountBetTrxDao.getByDateRange(accId, startDate);
+
+			if (betTrxView != null && betTrxView.size() > 0) {
+				betTrxView.forEach(trx -> {
+					TrxHistVO trxHistVo = new TrxHistVO();
+					trxHistVo.setDateTime(trx.getTrxDateTime());
+					trxHistVo.setDesc(trx.getEventDesc());
+					trxHistVo.setAmount(trx.getBetAmount());
+					trxHistList.add(trxHistVo);
+				});
+			}
+		} else {
+			otherTrxView = this.accountOtherTrxDao.getByTypeByDateRange(accId, typeCd, startDate);
+
+			if (otherTrxView != null && otherTrxView.size() > 0) {
+				otherTrxView.forEach(trx -> {
+					Double amt = trx.getAmount();
+					String fullDesc = trx.getType().equals("D")
+							? Constants.DEPOSIT_DESC + Constants.SPACE + Constants.DOLLAR_SIGN
+									+ String.format("%.2f", amt)
+							: Constants.WITHDRAWAL_DESC + Constants.SPACE + Constants.DOLLAR_SIGN
+									+ String.format("%.2f", amt);
+					TrxHistVO trxHistVo = new TrxHistVO();
+					trxHistVo.setAmount(amt);
+					trxHistVo.setDateTime(trx.getTrxDt());
+					trxHistVo.setDesc(fullDesc);
+					trxHistList.add(trxHistVo);
+				});
+			}
+		}
+
+		return trxHistList;
+	}
+

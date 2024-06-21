@@ -1,0 +1,1 @@
+onVisibilityStateChange(PlayerVanishStateChangeEvent e)

@@ -1,0 +1,98 @@
+{
+    "sha": "bb348269a83f71bf1ccc7dee38f2417d88b52c38",
+    "node_id": "C_kwDOJniDqNoAKGJiMzQ4MjY5YTgzZjcxYmYxY2NjN2RlZTM4ZjI0MTdkODhiNTJjMzg",
+    "commit": {
+        "author": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-09-11T16:25:24Z"
+        },
+        "committer": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-09-11T16:25:24Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "b1fb56743d9cba26c81544b2dce0106022dc1453",
+            "url": "https://api.github.com/repos/madgeek-arc/mailer/git/trees/b1fb56743d9cba26c81544b2dce0106022dc1453"
+        },
+        "url": "https://api.github.com/repos/madgeek-arc/mailer/git/commits/bb348269a83f71bf1ccc7dee38f2417d88b52c38",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/madgeek-arc/mailer/commits/bb348269a83f71bf1ccc7dee38f2417d88b52c38",
+    "html_url": "https://github.com/madgeek-arc/mailer/commit/bb348269a83f71bf1ccc7dee38f2417d88b52c38",
+    "comments_url": "https://api.github.com/repos/madgeek-arc/mailer/commits/bb348269a83f71bf1ccc7dee38f2417d88b52c38/comments",
+    "author": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c02915c4542713e4272b75fedba76ca61cce7cd9",
+            "url": "https://api.github.com/repos/madgeek-arc/mailer/commits/c02915c4542713e4272b75fedba76ca61cce7cd9",
+            "html_url": "https://github.com/madgeek-arc/mailer/commit/c02915c4542713e4272b75fedba76ca61cce7cd9"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "1a5f7ccf940f6862bcddf1b935dbd0a6be4a0433",
+            "filename": "mailer-service/src/main/java/gr/athenarc/messaging/mailer/service/MultiMailerServiceService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/madgeek-arc/mailer/blob/bb348269a83f71bf1ccc7dee38f2417d88b52c38/mailer-service%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2Fservice%2FMultiMailerServiceService.java",
+            "raw_url": "https://github.com/madgeek-arc/mailer/raw/bb348269a83f71bf1ccc7dee38f2417d88b52c38/mailer-service%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2Fservice%2FMultiMailerServiceService.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/mailer/contents/mailer-service%2Fsrc%2Fmain%2Fjava%2Fgr%2Fathenarc%2Fmessaging%2Fmailer%2Fservice%2FMultiMailerServiceService.java?ref=bb348269a83f71bf1ccc7dee38f2417d88b52c38",
+            "patch": "@@ -46,7 +46,7 @@ public Session getSession(String mailer) {\n     @Override\n     public Session getSessionFromHost(EmailMessage emailMessage) {\n         for (Map.Entry<String, Session> entry : sessionMap.entrySet()) {\n-            String from = entry.getValue().getProperties().get(\"mail.from\").toString();\n+            String from = (String) entry.getValue().getProperties().get(\"mail.from\");\n             if (from != null && from.equals(emailMessage.getFrom())) {\n                 return entry.getValue();\n             } else if (emailMessage.getFrom().contains(entry.getKey())) {"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+@@ -26,7 +26,8 @@ public void setSentence(SentenceNode sentence) {
+ 
+     @Override
+     protected void checkSelf() throws CompilerException {
+-        sentence.check();
++        if(sentence != SEMICOLON_SENTENCE)
++            sentence.check();
+     }
+ 
+     public String toString() {

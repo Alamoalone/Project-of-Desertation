@@ -1,0 +1,13 @@
+	public void onAfterIncrement(ViewCountEntry viewCountEntry) {
+		try {
+			Indexer<DLFileEntry> indexer =
+				IndexerRegistryUtil.nullSafeGetIndexer(DLFileEntry.class);
+
+			indexer.reindex(
+				_dlFileEntryLocalService.fetchDLFileEntry(
+					viewCountEntry.getClassPK()));
+		}
+		catch (SearchException searchException) {
+			ReflectionUtil.throwException(searchException);
+		}
+	}

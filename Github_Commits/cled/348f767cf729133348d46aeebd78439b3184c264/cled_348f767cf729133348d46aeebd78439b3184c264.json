@@ -1,0 +1,110 @@
+{
+    "sha": "348f767cf729133348d46aeebd78439b3184c264",
+    "node_id": "C_kwDOLau8mNoAKDM0OGY3NjdjZjcyOTEzMzM0OGQ0NmFlZWJkNzg0MzliMzE4NGMyNjQ",
+    "commit": {
+        "author": {
+            "name": "cml1010101",
+            "email": "115354809+cml1010101@users.noreply.github.com",
+            "date": "2024-02-22T23:04:02Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-02-22T23:04:02Z"
+        },
+        "message": "Fix/auto chooser (#116)\n\n* Move startPeriodic() to avoid null pointer exception\r\n\r\n* Remove extra command in swervy dashboard",
+        "tree": {
+            "sha": "f72cccdcb82b36b667c171fa33b69fea0b09fe92",
+            "url": "https://api.github.com/repos/Paradox0100/cled/git/trees/f72cccdcb82b36b667c171fa33b69fea0b09fe92"
+        },
+        "url": "https://api.github.com/repos/Paradox0100/cled/git/commits/348f767cf729133348d46aeebd78439b3184c264",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJl19LiCRC1aQ7uu5UhlAAAq4QQACDIaxHnneP0/0BGcnFvEDJa\n9paKvfI7v+dq1cSjGr5WbBuwCXbMnC+0n3kQ9A3fMi+VyrRv74PWuz2bKxuSa8Od\nS9CSwkVXre+IDohDDpPTnyjNTkiht17MDB/mw2Ofk7tW9HfZX+sGtNXp3ngjYBiY\nBtSlVDEoht7ExLfnn2kO+OEA5skqkCPGKHYJO9rgMYooeDRyHq/A1FvpJsV5boub\n+D0DsbiYxJ+MN60cfkTFnpptoVhuxXPJAACPam/c4y9sin5Md2sBAPoKWLcD+64s\nqw9y+8EVhTTkwj8oTX2fgtoTxd5vp7fU5w3apyiVg7/R4Anp/G0LjVQTsFguAZb5\ns4hiOcsNHKAqNGOUWYdszNlCuLSfNU06xAcRxqOgPP8WxsJILPYbEiwTFyrq4gWH\nbkCufWqg6azpcrMhcc0b5B+NBeXHIsp75FGJYoA2f1yf6E5G33mq5ZG8IBie4W69\n9BLctAK12fHsXgRpLZF6918aXQqBN1P4x/Otttxn6oQGkR05Nxs3aD8WeIaNCf0g\nUiHTPR0rMvWhkWuV6mA3fVBbEkUFd+BfTptYSWQHvS21oBqZLl0fTqx1LDm6sZhI\ni+qetpKWLP58p+IGY9QTbsusys3R4XLWXxvNaKpQgEu2RsSQaq+/GX4/+BlUnmFB\nwYL9ZvSZJWORtKF452l1\n=9PvV\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree f72cccdcb82b36b667c171fa33b69fea0b09fe92\nparent 56ea4bf45908fbe4ce2cb9e55d46979a3b68534d\nauthor cml1010101 <115354809+cml1010101@users.noreply.github.com> 1708643042 -0500\ncommitter GitHub <noreply@github.com> 1708643042 -0500\n\nFix/auto chooser (#116)\n\n* Move startPeriodic() to avoid null pointer exception\r\n\r\n* Remove extra command in swervy dashboard"
+        }
+    },
+    "url": "https://api.github.com/repos/Paradox0100/cled/commits/348f767cf729133348d46aeebd78439b3184c264",
+    "html_url": "https://github.com/Paradox0100/cled/commit/348f767cf729133348d46aeebd78439b3184c264",
+    "comments_url": "https://api.github.com/repos/Paradox0100/cled/commits/348f767cf729133348d46aeebd78439b3184c264/comments",
+    "author": {
+        "login": "cml1010101",
+        "id": 115354809,
+        "node_id": "U_kgDOBuAsuQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115354809?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cml1010101",
+        "html_url": "https://github.com/cml1010101",
+        "followers_url": "https://api.github.com/users/cml1010101/followers",
+        "following_url": "https://api.github.com/users/cml1010101/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cml1010101/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cml1010101/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cml1010101/subscriptions",
+        "organizations_url": "https://api.github.com/users/cml1010101/orgs",
+        "repos_url": "https://api.github.com/users/cml1010101/repos",
+        "events_url": "https://api.github.com/users/cml1010101/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cml1010101/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "56ea4bf45908fbe4ce2cb9e55d46979a3b68534d",
+            "url": "https://api.github.com/repos/Paradox0100/cled/commits/56ea4bf45908fbe4ce2cb9e55d46979a3b68534d",
+            "html_url": "https://github.com/Paradox0100/cled/commit/56ea4bf45908fbe4ce2cb9e55d46979a3b68534d"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 1,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "e5777d825b0758622e92d180f4b84d7f380f8def",
+            "filename": "src/main/java/frc/robot/dashboard/Dashboard.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Paradox0100/cled/blob/348f767cf729133348d46aeebd78439b3184c264/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fdashboard%2FDashboard.java",
+            "raw_url": "https://github.com/Paradox0100/cled/raw/348f767cf729133348d46aeebd78439b3184c264/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fdashboard%2FDashboard.java",
+            "contents_url": "https://api.github.com/repos/Paradox0100/cled/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fdashboard%2FDashboard.java?ref=348f767cf729133348d46aeebd78439b3184c264",
+            "patch": "@@ -35,13 +35,13 @@ public Dashboard(String tablePath)\n         table = NetworkTableInstance.getDefault().getTable(tablePath);\n         autoChooser = new SendableChooser<>();\n         sendables = new HashMap<>();\n-        notifier.startPeriodic(0.02);\n         infos = new HashMap<>();\n         warnings = new HashMap<>();\n         errors = new HashMap<>();\n         infoPublishers = table.getStringArrayTopic(\"infos\").publish();\n         warningPublishers = table.getStringArrayTopic(\"warnings\").publish();\n         errorPublishers = table.getStringArrayTopic(\"errors\").publish();\n+        notifier.startPeriodic(0.02);\n     }\n     /**\n      * Adds a sendable to the dashboard"
+        },
+        {
+            "sha": "dfd86ee16b6f13b41396b1d34de037dc1fefb57e",
+            "filename": "src/main/java/frc/robot/dashboard/SwervyDashboard.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/Paradox0100/cled/blob/348f767cf729133348d46aeebd78439b3184c264/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fdashboard%2FSwervyDashboard.java",
+            "raw_url": "https://github.com/Paradox0100/cled/raw/348f767cf729133348d46aeebd78439b3184c264/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fdashboard%2FSwervyDashboard.java",
+            "contents_url": "https://api.github.com/repos/Paradox0100/cled/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fdashboard%2FSwervyDashboard.java?ref=348f767cf729133348d46aeebd78439b3184c264",
+            "patch": "@@ -47,7 +47,6 @@ public void displayAutonomousRoutines(List<AutonomousRoutine> routines)\n             \n             setCurrentAutonomousRoutine(autoChooser.getSelected());\n         }\n-        displayAutonomousRoutines(\"autonomous\", routines);\n     }\n     public void setCurrentAutonomousRoutine(AutonomousRoutine routine)\n     {"
+        }
+    ]
+}

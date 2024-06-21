@@ -1,0 +1,31 @@
+    public void getUsers() {
+        try (RocketConnection rocketConnection = new RocketConnection(this.serverURL)) {
+            rocketConnection.open(HTTPMethods.GET, getApiPath("users.list"), RequestType.JSON);
+            rocketConnection.setAuthHeader(this.loginData);
+            JsonObject json = rocketConnection.getResponseJSON();
+
+            if (checkStatus(rocketConnection, json)) {
+                JsonArray users = json.getAsJsonArray("users");
+
+                for (JsonElement user : users) {
+                    if (user.isJsonObject()) {
+                        JsonObject userJson = user.getAsJsonObject();
+                        String username = userJson.get("username").getAsString();
+                        String id = userJson.get("_id").getAsString();
+                        channelMap.put(username, id);
+
+                        JsonArray emails = Optional.ofNullable(userJson.getAsJsonArray("emails"))
+                                .orElse(new JsonArray());
+
+                        for (JsonElement email : emails) {
+                            if (email.isJsonObject()) {
+                                String address = email.getAsJsonObject().get("address").getAsString();
+                                eMailUserMap.put(address, username);
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (IOException ignore) {
+        }
+    }

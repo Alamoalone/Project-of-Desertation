@@ -1,0 +1,15 @@
+    private String getHostString(InetSocketAddress socketAddress) {
+        if (socketAddress.getHostName() != null) {
+            return socketAddress.getHostName();
+        }
+        if (socketAddress.getAddress() != null) {
+            InetAddress address = socketAddress.getAddress();
+
+            if (address.getHostName() != null) {
+                return address.getHostName();
+            } else
+                return address.getHostAddress();
+        }
+        return null;
+    }
+

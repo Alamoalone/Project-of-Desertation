@@ -1,0 +1,134 @@
+{
+    "sha": "b2532ad15c5c44224df50fda4a3ff457d39e058a",
+    "node_id": "C_kwDOLFyKkNoAKGIyNTMyYWQxNWM1YzQ0MjI0ZGY1MGZkYTRhM2ZmNDU3ZDM5ZTA1OGE",
+    "commit": {
+        "author": {
+            "name": "flof",
+            "email": "evanrose99@gmail.com",
+            "date": "2024-01-17T23:40:14Z"
+        },
+        "committer": {
+            "name": "flof",
+            "email": "evanrose99@gmail.com",
+            "date": "2024-01-17T23:40:14Z"
+        },
+        "message": "fixed null pointer exception (wasn't inserting usernames into hashset)",
+        "tree": {
+            "sha": "68dce2c98e107f5c9851b87576d1864e53d37b4f",
+            "url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/git/trees/68dce2c98e107f5c9851b87576d1864e53d37b4f"
+        },
+        "url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/git/commits/b2532ad15c5c44224df50fda4a3ff457d39e058a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/commits/b2532ad15c5c44224df50fda4a3ff457d39e058a",
+    "html_url": "https://github.com/ECE-366-Final-Project/Back-End/commit/b2532ad15c5c44224df50fda4a3ff457d39e058a",
+    "comments_url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/commits/b2532ad15c5c44224df50fda4a3ff457d39e058a/comments",
+    "author": {
+        "login": "evanrcooper",
+        "id": 112594333,
+        "node_id": "U_kgDOBrYNnQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/112594333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/evanrcooper",
+        "html_url": "https://github.com/evanrcooper",
+        "followers_url": "https://api.github.com/users/evanrcooper/followers",
+        "following_url": "https://api.github.com/users/evanrcooper/following{/other_user}",
+        "gists_url": "https://api.github.com/users/evanrcooper/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/evanrcooper/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/evanrcooper/subscriptions",
+        "organizations_url": "https://api.github.com/users/evanrcooper/orgs",
+        "repos_url": "https://api.github.com/users/evanrcooper/repos",
+        "events_url": "https://api.github.com/users/evanrcooper/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/evanrcooper/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "evanrcooper",
+        "id": 112594333,
+        "node_id": "U_kgDOBrYNnQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/112594333?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/evanrcooper",
+        "html_url": "https://github.com/evanrcooper",
+        "followers_url": "https://api.github.com/users/evanrcooper/followers",
+        "following_url": "https://api.github.com/users/evanrcooper/following{/other_user}",
+        "gists_url": "https://api.github.com/users/evanrcooper/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/evanrcooper/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/evanrcooper/subscriptions",
+        "organizations_url": "https://api.github.com/users/evanrcooper/orgs",
+        "repos_url": "https://api.github.com/users/evanrcooper/repos",
+        "events_url": "https://api.github.com/users/evanrcooper/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/evanrcooper/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "373269cdeceb18f55409394962e42b4ae64ba1f4",
+            "url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/commits/373269cdeceb18f55409394962e42b4ae64ba1f4",
+            "html_url": "https://github.com/ECE-366-Final-Project/Back-End/commit/373269cdeceb18f55409394962e42b4ae64ba1f4"
+        }
+    ],
+    "stats": {
+        "total": 26,
+        "additions": 22,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "ec0004084721a17518f9c0865e76a1156468159c",
+            "filename": "src/main/java/local/Casino/Account.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/ECE-366-Final-Project/Back-End/blob/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FCasino%2FAccount.java",
+            "raw_url": "https://github.com/ECE-366-Final-Project/Back-End/raw/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FCasino%2FAccount.java",
+            "contents_url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/contents/src%2Fmain%2Fjava%2Flocal%2FCasino%2FAccount.java?ref=b2532ad15c5c44224df50fda4a3ff457d39e058a",
+            "patch": "@@ -32,4 +32,5 @@ public int decreaseBalance(int dec) {\n         balance -= dec;\n         return balance;\n     } \n+    \n }"
+        },
+        {
+            "sha": "57ee94811ab326188265900199e2d3e99c15718e",
+            "filename": "src/main/java/local/Casino/Casino.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/ECE-366-Final-Project/Back-End/blob/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FCasino%2FCasino.java",
+            "raw_url": "https://github.com/ECE-366-Final-Project/Back-End/raw/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FCasino%2FCasino.java",
+            "contents_url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/contents/src%2Fmain%2Fjava%2Flocal%2FCasino%2FCasino.java?ref=b2532ad15c5c44224df50fda4a3ff457d39e058a",
+            "patch": "@@ -11,7 +11,7 @@ public class Casino {\n     private int numAccounts = 0;\n     private int maxAccounts;\n     private int nextID = 0;\n-    private Set<String> usernames;\n+    private HashSet<String> usernames;\n     private HashMap<String, Integer> userIndex;\n \n     public Casino(int maxAccounts){\n@@ -41,6 +41,7 @@ public int createAccount(String username) {\n             return 2;\n         }\n         accounts[numAccounts] = new Account(getNextID(), username);\n+        usernames.add(username);\n         userIndex.put(username, numAccounts);\n         numAccounts++;\n         return 0;\n@@ -57,4 +58,5 @@ public Account getAccount(String username) {\n         }\n         return null;\n     }\n+\n }"
+        },
+        {
+            "sha": "44b06d63d297245d9ac1e36bb944ab1bc5b02eff",
+            "filename": "src/main/java/local/Casino/Slots.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/ECE-366-Final-Project/Back-End/blob/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FCasino%2FSlots.java",
+            "raw_url": "https://github.com/ECE-366-Final-Project/Back-End/raw/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FCasino%2FSlots.java",
+            "contents_url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/contents/src%2Fmain%2Fjava%2Flocal%2FCasino%2FSlots.java?ref=b2532ad15c5c44224df50fda4a3ff457d39e058a",
+            "patch": "@@ -8,6 +8,7 @@\n public class Slots {\n \n     public enum Symbols {\n+\n         DIAMOND,\n         LEMON,\n         WATERMELON,\n@@ -30,4 +31,5 @@ public static Symbols randomLetter()  {\n         }\n \n     }\n+    \n }"
+        },
+        {
+            "sha": "431b992718316c138e6aa424dc14746d6d52985c",
+            "filename": "src/main/java/local/Main.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 3,
+            "changes": 19,
+            "blob_url": "https://github.com/ECE-366-Final-Project/Back-End/blob/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FMain.java",
+            "raw_url": "https://github.com/ECE-366-Final-Project/Back-End/raw/b2532ad15c5c44224df50fda4a3ff457d39e058a/src%2Fmain%2Fjava%2Flocal%2FMain.java",
+            "contents_url": "https://api.github.com/repos/ECE-366-Final-Project/Back-End/contents/src%2Fmain%2Fjava%2Flocal%2FMain.java?ref=b2532ad15c5c44224df50fda4a3ff457d39e058a",
+            "patch": "@@ -4,15 +4,28 @@\n import main.java.local.Casino.Account;\n \n public class Main {\n+\n     public static void main(String[] args) {\n \n       Casino house = new Casino(10);\n       house.createAccount(\"Evan R\");\n+  \n+      Account evan = house.getAccount(\"Evan R\");\n+\n+      if (evan != null) {\n \n-      Account evan = house.getAccount(\"Evan R\"); \n-      int balance = evan.getBalance();\n+          System.out.println(evan.getBalance());\n+          evan.increaseBalance(100);\n+          System.out.println(evan.getBalance());\n+          \n+      } else {\n+          System.out.println(\"NULL\");\n+      }\n \n-      System.out.println(balance);\n+      for (int i = 0; i < 3; i++) {\n+          System.out.println(Slots.Symbols.randomLetter());\n+      }\n \n     }\n+    \n }"
+        }
+    ]
+}

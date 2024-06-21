@@ -1,0 +1,32 @@
+    private Task<Void> createBubbleSortingTask(Series<String, Number> seriesCur) {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+
+                ObservableList<Data<String, Number>> data = seriesCur.getData();
+                for (int i = data.size() - 1; i >= 0; i--) {
+                    for (int j = 0 ; j < i; j++) {
+
+                        Data<String, Number> first = data.get(j);
+                        Data<String, Number> second = data.get(j + 1);
+
+
+//                       first.getNode().setStyle("-fx-background-color: green ;");
+//                       second.getNode().setStyle("-fx-background-color: green ;");
+                       
+                        if (first.getYValue().doubleValue() > second.getYValue().doubleValue()) {
+                            Number temp = first.getYValue().doubleValue();
+                            first.setYValue(second.getYValue().doubleValue());
+                            second.setYValue(temp);
+                        }
+                        Thread.sleep(75);
+                        
+  //                      first.getNode().setStyle("-fx-background-color: red ;");
+  //                      second.getNode().setStyle("-fx-background-color: red ;");
+
+                    }
+                }
+                return null;
+            }
+        };
+    }

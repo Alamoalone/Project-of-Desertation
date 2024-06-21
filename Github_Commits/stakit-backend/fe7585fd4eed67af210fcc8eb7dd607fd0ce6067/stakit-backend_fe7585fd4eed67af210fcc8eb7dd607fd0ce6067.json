@@ -1,0 +1,110 @@
+{
+    "sha": "fe7585fd4eed67af210fcc8eb7dd607fd0ce6067",
+    "node_id": "C_kwDOIf_QHdoAKGZlNzU4NWZkNGVlZDY3YWYyMTBmY2M4ZWI3ZGQ2MDdmZDBjZTYwNjc",
+    "commit": {
+        "author": {
+            "name": "Jonas Pedersen",
+            "email": "jpe@kvalitetsit.dk",
+            "date": "2023-05-08T07:17:23Z"
+        },
+        "committer": {
+            "name": "Jonas Pedersen",
+            "email": "jpe@kvalitetsit.dk",
+            "date": "2023-05-08T07:17:23Z"
+        },
+        "message": "Fix null pointer exception in create group.",
+        "tree": {
+            "sha": "7ef23cad8385e989e7ebdd27fed0a0d8bec7ec08",
+            "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/git/trees/7ef23cad8385e989e7ebdd27fed0a0d8bec7ec08"
+        },
+        "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/git/commits/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/commits/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067",
+    "html_url": "https://github.com/KvalitetsIT/stakit-backend/commit/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067",
+    "comments_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/commits/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067/comments",
+    "author": {
+        "login": "JonasPed",
+        "id": 45563709,
+        "node_id": "MDQ6VXNlcjQ1NTYzNzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45563709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JonasPed",
+        "html_url": "https://github.com/JonasPed",
+        "followers_url": "https://api.github.com/users/JonasPed/followers",
+        "following_url": "https://api.github.com/users/JonasPed/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JonasPed/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JonasPed/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JonasPed/subscriptions",
+        "organizations_url": "https://api.github.com/users/JonasPed/orgs",
+        "repos_url": "https://api.github.com/users/JonasPed/repos",
+        "events_url": "https://api.github.com/users/JonasPed/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JonasPed/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "JonasPed",
+        "id": 45563709,
+        "node_id": "MDQ6VXNlcjQ1NTYzNzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45563709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JonasPed",
+        "html_url": "https://github.com/JonasPed",
+        "followers_url": "https://api.github.com/users/JonasPed/followers",
+        "following_url": "https://api.github.com/users/JonasPed/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JonasPed/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JonasPed/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JonasPed/subscriptions",
+        "organizations_url": "https://api.github.com/users/JonasPed/orgs",
+        "repos_url": "https://api.github.com/users/JonasPed/repos",
+        "events_url": "https://api.github.com/users/JonasPed/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JonasPed/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "81410a37fb8b196f3aa41f93b37870ca594eaac7",
+            "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/commits/81410a37fb8b196f3aa41f93b37870ca594eaac7",
+            "html_url": "https://github.com/KvalitetsIT/stakit-backend/commit/81410a37fb8b196f3aa41f93b37870ca594eaac7"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 4,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "f90bee695b7880708af9596abc7d7fafa082d030",
+            "filename": "service/src/main/java/dk/kvalitetsit/stakit/controller/mapper/GroupMapper.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/KvalitetsIT/stakit-backend/blob/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067/service%2Fsrc%2Fmain%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2Fmapper%2FGroupMapper.java",
+            "raw_url": "https://github.com/KvalitetsIT/stakit-backend/raw/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067/service%2Fsrc%2Fmain%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2Fmapper%2FGroupMapper.java",
+            "contents_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/contents/service%2Fsrc%2Fmain%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2Fmapper%2FGroupMapper.java?ref=fe7585fd4eed67af210fcc8eb7dd607fd0ce6067",
+            "patch": "@@ -12,11 +12,11 @@\n \n public class GroupMapper {\n     public static GroupModel mapCreateGroup(GroupInput from) {\n-        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null || from.getExpanded());\n+        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());\n     }\n \n     public static GroupModel mapUpdateGroup(UUID uuid, GroupInput from) {\n-        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null || from.getExpanded());\n+        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());\n     }\n \n     public static List<org.openapitools.model.Group> mapGetGroups(List<GroupGetModel> from) {"
+        },
+        {
+            "sha": "618ff74a5301d5a51566377b72c64893df9477d9",
+            "filename": "service/src/test/java/dk/kvalitetsit/stakit/controller/GroupManagementControllerTest.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 4,
+            "changes": 6,
+            "blob_url": "https://github.com/KvalitetsIT/stakit-backend/blob/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067/service%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2FGroupManagementControllerTest.java",
+            "raw_url": "https://github.com/KvalitetsIT/stakit-backend/raw/fe7585fd4eed67af210fcc8eb7dd607fd0ce6067/service%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2FGroupManagementControllerTest.java",
+            "contents_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/contents/service%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2FGroupManagementControllerTest.java?ref=fe7585fd4eed67af210fcc8eb7dd607fd0ce6067",
+            "patch": "@@ -326,12 +326,10 @@ public void testUpdateGroupNullValue() {\n         input.display(null);\n         input.setExpanded(null);\n \n-        var expectedUuid = UUID.randomUUID();\n-\n-        Mockito.when(groupService.updateGroup(GroupModel.createInstance(input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(true);\n+        Mockito.when(groupService.updateGroup(new GroupModel(uuid, input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(true);\n \n         var result = groupManagementController.v1GroupsUuidPut(uuid, input);\n         assertNotNull(result);\n-        assertEquals(201, result.getStatusCode().value());\n+        assertEquals(200, result.getStatusCode().value());\n     }\n }"
+        }
+    ]
+}

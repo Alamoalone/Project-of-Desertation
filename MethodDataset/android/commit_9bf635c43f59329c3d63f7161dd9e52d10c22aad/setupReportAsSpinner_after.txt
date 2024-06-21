@@ -1,0 +1,34 @@
+    private void setupReportAsSpinner() {
+        // report as current user
+        if (user != null && user.getEmail() != null) {
+            reportAsLabels.add(user.getFullName());
+            reportAsIds.add(0);
+        } else {
+            reportAsSelected = -1;
+        }
+
+        // report anonymously
+        reportAsLabels.add(getString(R.string.trash_anonymous));
+        reportAsIds.add(-1);
+
+        // report as organization
+        if (user != null && user.getOrganizations() != null) {
+            for (Organization organization : user.getOrganizations()) {
+                reportAsLabels.add(organization.getName());
+                reportAsIds.add(organization.getId());
+            }
+        }
+
+        // set adapter
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, reportAsLabels);
+        trashReportAsSpinner.setAdapter(adapter);
+        trashReportAsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                reportAsSelected = reportAsIds.get(i);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {}
+        });
+    }

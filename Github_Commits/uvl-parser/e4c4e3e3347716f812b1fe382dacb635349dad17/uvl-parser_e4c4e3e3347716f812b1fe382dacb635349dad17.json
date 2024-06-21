@@ -1,0 +1,98 @@
+{
+    "sha": "e4c4e3e3347716f812b1fe382dacb635349dad17",
+    "node_id": "C_kwDOHnceR9oAKGU0YzRlM2UzMzQ3NzE2ZjgxMmIxZmUzODJkYWNiNjM1MzQ5ZGFkMTc",
+    "commit": {
+        "author": {
+            "name": "Chico Sundermann",
+            "email": "chico.sundermann@uni-ulm.de",
+            "date": "2023-08-29T10:01:04Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-08-29T10:01:04Z"
+        },
+        "message": "Fixes #36: prevents null pointer exception in evlauate (#37)",
+        "tree": {
+            "sha": "739ba35a2cf051109c9a8cf6a320e2bdc3110bce",
+            "url": "https://api.github.com/repos/Universal-Variability-Language/uvl-parser/git/trees/739ba35a2cf051109c9a8cf6a320e2bdc3110bce"
+        },
+        "url": "https://api.github.com/repos/Universal-Variability-Language/uvl-parser/git/commits/e4c4e3e3347716f812b1fe382dacb635349dad17",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk7cHgCRBK7hj4Ov3rIwAAxgYIAHmsMDExaDcBV9wWGNG2s36L\ngAKxMf9lUYulE1dJBk5Sc73StvRZ6taoK0r7j7JmDWSmso8t0kLvMvhvWPHDXD48\nHJ02Tdh3B3MaL02NNoeqVjcTyqdGXqfgixyvviMhtBPAf9ChTF5kyo+IP/A2Of1n\nEVhBlry9/RIaWTGDNEuWwRA/47U7nqj0z1ozmbTHL+mInEhOEmgnqWkVOHeDF85a\n7Z7bY0/Q8tWzHtGjtqr6qg6tVSjhf2bi+ICmtJ7ICFozoUo5aNTG5R0mCSAiNVGp\n/szfC70ZlTxZynDxjGsekk5n7TGd4RsD/LsDIXzhq3z0AXhLuXwcXiGIwmZTOOw=\n=5ieX\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 739ba35a2cf051109c9a8cf6a320e2bdc3110bce\nparent 07f84149b1c0db67ec581ddb94d30d3ab59d88a1\nauthor Chico Sundermann <chico.sundermann@uni-ulm.de> 1693303264 +0200\ncommitter GitHub <noreply@github.com> 1693303264 +0200\n\nFixes #36: prevents null pointer exception in evlauate (#37)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/Universal-Variability-Language/uvl-parser/commits/e4c4e3e3347716f812b1fe382dacb635349dad17",
+    "html_url": "https://github.com/Universal-Variability-Language/uvl-parser/commit/e4c4e3e3347716f812b1fe382dacb635349dad17",
+    "comments_url": "https://api.github.com/repos/Universal-Variability-Language/uvl-parser/commits/e4c4e3e3347716f812b1fe382dacb635349dad17/comments",
+    "author": {
+        "login": "SundermannC",
+        "id": 24757266,
+        "node_id": "MDQ6VXNlcjI0NzU3MjY2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24757266?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SundermannC",
+        "html_url": "https://github.com/SundermannC",
+        "followers_url": "https://api.github.com/users/SundermannC/followers",
+        "following_url": "https://api.github.com/users/SundermannC/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SundermannC/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SundermannC/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SundermannC/subscriptions",
+        "organizations_url": "https://api.github.com/users/SundermannC/orgs",
+        "repos_url": "https://api.github.com/users/SundermannC/repos",
+        "events_url": "https://api.github.com/users/SundermannC/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SundermannC/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "07f84149b1c0db67ec581ddb94d30d3ab59d88a1",
+            "url": "https://api.github.com/repos/Universal-Variability-Language/uvl-parser/commits/07f84149b1c0db67ec581ddb94d30d3ab59d88a1",
+            "html_url": "https://github.com/Universal-Variability-Language/uvl-parser/commit/07f84149b1c0db67ec581ddb94d30d3ab59d88a1"
+        }
+    ],
+    "stats": {
+        "total": 13,
+        "additions": 8,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "9efb8a580ec6962ad2f9f0c123d13bcc5dac5a77",
+            "filename": "src/main/java/de/vill/model/expression/LiteralExpression.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 5,
+            "changes": 13,
+            "blob_url": "https://github.com/Universal-Variability-Language/uvl-parser/blob/e4c4e3e3347716f812b1fe382dacb635349dad17/src%2Fmain%2Fjava%2Fde%2Fvill%2Fmodel%2Fexpression%2FLiteralExpression.java",
+            "raw_url": "https://github.com/Universal-Variability-Language/uvl-parser/raw/e4c4e3e3347716f812b1fe382dacb635349dad17/src%2Fmain%2Fjava%2Fde%2Fvill%2Fmodel%2Fexpression%2FLiteralExpression.java",
+            "contents_url": "https://api.github.com/repos/Universal-Variability-Language/uvl-parser/contents/src%2Fmain%2Fjava%2Fde%2Fvill%2Fmodel%2Fexpression%2FLiteralExpression.java?ref=e4c4e3e3347716f812b1fe382dacb635349dad17",
+            "patch": "@@ -77,10 +77,12 @@ public String toString(final boolean withSubmodels, final String currentAlias) {\n             return addNecessaryQuotes(this.getContent());\n         }\n         if (withSubmodels) {\n-            return addNecessaryQuotes(this.getFeature().getFullReference() + (this.getAttributeName() != null ? \".\" + this.getAttributeName() : \"\"));\n+            return addNecessaryQuotes(this.getFeature().getFullReference()\n+                    + (this.getAttributeName() != null ? \".\" + this.getAttributeName() : \"\"));\n         }\n         return addNecessaryQuotes(\n-            this.feature.getReferenceFromSpecificSubmodel(currentAlias) + (this.getAttributeName() != null ? \".\" + this.getAttributeName() : \"\"));\n+                this.feature.getReferenceFromSpecificSubmodel(currentAlias)\n+                        + (this.getAttributeName() != null ? \".\" + this.getAttributeName() : \"\"));\n     }\n \n     @Override\n@@ -109,8 +111,9 @@ public List<Expression> getExpressionSubParts() {\n \n     @Override\n     public void replaceExpressionSubPart(final Expression oldSubExpression, final Expression newSubExpression) {\n-        if (oldSubExpression instanceof LiteralExpression && ((LiteralExpression) oldSubExpression).getContent().equals(this.content) &&\n-            newSubExpression instanceof LiteralExpression) {\n+        if (oldSubExpression instanceof LiteralExpression\n+                && ((LiteralExpression) oldSubExpression).getContent().equals(this.content) &&\n+                newSubExpression instanceof LiteralExpression) {\n             this.content = ((LiteralExpression) newSubExpression).content;\n             this.featureName = ((LiteralExpression) newSubExpression).featureName;\n             this.attributeName = ((LiteralExpression) newSubExpression).attributeName;\n@@ -120,7 +123,7 @@ public void replaceExpressionSubPart(final Expression oldSubExpression, final Ex\n \n     @Override\n     public double evaluate(final Set<Feature> selectedFeatures) {\n-        if (boolValue != null) {\n+        if (boolValue != null || !this.feature.getAttributes().containsKey(this.attributeName)) {\n             return 0d;\n         }\n         final Object attributeValue = this.feature.getAttributes().get(this.attributeName).getValue();"
+        }
+    ]
+}

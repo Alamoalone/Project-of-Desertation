@@ -1,0 +1,3 @@
+    private MobEffect getMobEffect() {
+        return ModLists.SCULK_HEART_EFFECT_LIST.get(random.nextInt(0, 8));
+    }

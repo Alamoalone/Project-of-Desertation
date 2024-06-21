@@ -1,0 +1,10 @@
+@@ -51,7 +51,8 @@ public static Move giveMove(Board board, Options options) {
+                         // Squaring the random number to control which items are more probable.
+                         // A higher exponent makes the front items of the list more probable.
+                         // Because the front moves should be the better ones, this makes the engine more difficult.
+-                        Math.pow(Math.random(), DIFFICULTY) * moves.size())
++                        // The modulo 1 is needed to prevent values greater than 1 if the difficulty is less than 0.
++                        Math.pow(Math.random(), DIFFICULTY) % 1 * moves.size())
+                 );
+             }
+         }

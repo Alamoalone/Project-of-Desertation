@@ -1,0 +1,98 @@
+{
+    "sha": "e33b738b4161c3ca31f938caae289c33736ab8db",
+    "node_id": "C_kwDOIXpQANoAKGUzM2I3MzhiNDE2MWMzY2EzMWY5MzhjYWFlMjg5YzMzNzM2YWI4ZGI",
+    "commit": {
+        "author": {
+            "name": "joschne",
+            "email": "jonas.schneider@balcab.ch",
+            "date": "2023-02-24T09:50:14Z"
+        },
+        "committer": {
+            "name": "joschne",
+            "email": "jonas.schneider@balcab.ch",
+            "date": "2023-02-24T09:50:14Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "6b2e674e0009554c672aca1585341490057d9379",
+            "url": "https://api.github.com/repos/geovistory/toolbox-streams/git/trees/6b2e674e0009554c672aca1585341490057d9379"
+        },
+        "url": "https://api.github.com/repos/geovistory/toolbox-streams/git/commits/e33b738b4161c3ca31f938caae289c33736ab8db",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/geovistory/toolbox-streams/commits/e33b738b4161c3ca31f938caae289c33736ab8db",
+    "html_url": "https://github.com/geovistory/toolbox-streams/commit/e33b738b4161c3ca31f938caae289c33736ab8db",
+    "comments_url": "https://api.github.com/repos/geovistory/toolbox-streams/commits/e33b738b4161c3ca31f938caae289c33736ab8db/comments",
+    "author": {
+        "login": "joschne",
+        "id": 10991869,
+        "node_id": "MDQ6VXNlcjEwOTkxODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10991869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joschne",
+        "html_url": "https://github.com/joschne",
+        "followers_url": "https://api.github.com/users/joschne/followers",
+        "following_url": "https://api.github.com/users/joschne/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joschne/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joschne/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joschne/subscriptions",
+        "organizations_url": "https://api.github.com/users/joschne/orgs",
+        "repos_url": "https://api.github.com/users/joschne/repos",
+        "events_url": "https://api.github.com/users/joschne/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joschne/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "joschne",
+        "id": 10991869,
+        "node_id": "MDQ6VXNlcjEwOTkxODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10991869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joschne",
+        "html_url": "https://github.com/joschne",
+        "followers_url": "https://api.github.com/users/joschne/followers",
+        "following_url": "https://api.github.com/users/joschne/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joschne/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joschne/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joschne/subscriptions",
+        "organizations_url": "https://api.github.com/users/joschne/orgs",
+        "repos_url": "https://api.github.com/users/joschne/repos",
+        "events_url": "https://api.github.com/users/joschne/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joschne/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+            "url": "https://api.github.com/repos/geovistory/toolbox-streams/commits/8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+            "html_url": "https://github.com/geovistory/toolbox-streams/commit/8113f10ab69e91deea372c72176b9b4f52c9ee7f"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 0,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "2bde2a885e0e3804f521df005976976875334818",
+            "filename": "app-1-base-config/src/main/java/org/geovistory/toolbox/streams/base/config/processors/ProjectClass.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/geovistory/toolbox-streams/blob/e33b738b4161c3ca31f938caae289c33736ab8db/app-1-base-config%2Fsrc%2Fmain%2Fjava%2Forg%2Fgeovistory%2Ftoolbox%2Fstreams%2Fbase%2Fconfig%2Fprocessors%2FProjectClass.java",
+            "raw_url": "https://github.com/geovistory/toolbox-streams/raw/e33b738b4161c3ca31f938caae289c33736ab8db/app-1-base-config%2Fsrc%2Fmain%2Fjava%2Forg%2Fgeovistory%2Ftoolbox%2Fstreams%2Fbase%2Fconfig%2Fprocessors%2FProjectClass.java",
+            "contents_url": "https://api.github.com/repos/geovistory/toolbox-streams/contents/app-1-base-config%2Fsrc%2Fmain%2Fjava%2Forg%2Fgeovistory%2Ftoolbox%2Fstreams%2Fbase%2Fconfig%2Fprocessors%2FProjectClass.java?ref=e33b738b4161c3ca31f938caae289c33736ab8db",
+            "patch": "@@ -129,7 +129,6 @@ public static ProjectClassReturnValue addProcessors(\n                                             return KeyValue.pair(k, projectClassValue);\n                                         }\n                                 ).toList();\n-\n                             } catch (RuntimeException e) {\n                                 return new LinkedList<>();\n                             }"
+        }
+    ]
+}

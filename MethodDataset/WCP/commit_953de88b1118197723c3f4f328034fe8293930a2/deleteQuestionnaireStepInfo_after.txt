@@ -1,0 +1,138 @@
+  public void deleteQuestionnaireStepInfo(
+      HttpServletRequest request, HttpServletResponse response) {
+    logger.info("StudyQuestionnaireController - deleteQuestionnaireStepInfo - Starts");
+    JSONObject jsonobject = new JSONObject();
+    PrintWriter out = null;
+    String message = FdahpStudyDesignerConstants.FAILURE;
+    QuestionnaireBo questionnaireBo = null;
+    Map<Integer, QuestionnaireStepBean> qTreeMap = new TreeMap<Integer, QuestionnaireStepBean>();
+    ObjectMapper mapper = new ObjectMapper();
+    JSONObject questionnaireJsonObject = null;
+    String customStudyId = "";
+    boolean isAnchorQuestionnaire = false;
+    try {
+      SessionObject sesObj =
+          (SessionObject)
+              request.getSession().getAttribute(FdahpStudyDesignerConstants.SESSION_OBJECT);
+      Integer sessionStudyCount =
+          StringUtils.isNumeric(request.getParameter("_S"))
+              ? Integer.parseInt(request.getParameter("_S"))
+              : 0;
+      if (sesObj != null
+          && sesObj.getStudySession() != null
+          && sesObj.getStudySession().contains(sessionStudyCount)) {
+        customStudyId =
+            (String)
+                request
+                    .getSession()
+                    .getAttribute(sessionStudyCount + FdahpStudyDesignerConstants.CUSTOM_STUDY_ID);
+        String stepId =
+            FdahpStudyDesignerUtil.isEmpty(request.getParameter("stepId"))
+                ? ""
+                : request.getParameter("stepId");
+        String deletionStepId =
+                FdahpStudyDesignerUtil.isEmpty(request.getParameter("deletionId"))
+                        ? ""
+                        : request.getParameter("deletionId");
+        String stepType =
+            FdahpStudyDesignerUtil.isEmpty(request.getParameter("stepType"))
+                ? ""
+                : request.getParameter("stepType");
+        String questionnaireId =
+            FdahpStudyDesignerUtil.isEmpty(request.getParameter("questionnaireId"))
+                ? ""
+                : request.getParameter("questionnaireId");
+        //getting groupId by sending stepId
+        List<GroupMappingBo> groupMappingBo = null;
+        Integer groupId = studyQuestionnaireService.getGroupId(stepId);
+        if(groupId != null) {
+          //getting noOfstepsCount by sending groupId
+          groupMappingBo = studyQuestionnaireService.getStepId(String.valueOf(groupId), questionnaireId);
+        }
+        //writing conditon for checking the count
+        if (!stepId.isEmpty() && !questionnaireId.isEmpty() && !stepType.isEmpty()) {
+          if(groupMappingBo == null || groupMappingBo.size() > 2){
+          String msgg = studyQuestionnaireService.deleteStepBasedOnStepId(stepId);
+          message =
+              studyQuestionnaireService.deleteQuestionnaireStep(
+                  Integer.valueOf(stepId),
+                  Integer.valueOf(questionnaireId),
+                  stepType,
+                  sesObj,
+                  customStudyId,
+                  Integer.valueOf(deletionStepId)
+              );
+          if (message.equalsIgnoreCase(FdahpStudyDesignerConstants.SUCCESS)) {
+            questionnaireBo =
+                studyQuestionnaireService.getQuestionnaireById(
+                    Integer.valueOf(questionnaireId), customStudyId);
+            if (questionnaireBo != null) {
+              questionnaireBo.setStatus(false);
+              questionnaireBo.setType(FdahpStudyDesignerConstants.CONTENT);
+              studyQuestionnaireService.saveOrUpdateQuestionnaire(
+                  questionnaireBo, sesObj, customStudyId, null);
+              qTreeMap =
+                  studyQuestionnaireService.getQuestionnaireStepList(questionnaireBo.getId());
+              questionnaireJsonObject = new JSONObject(mapper.writeValueAsString(qTreeMap));
+              jsonobject.put("questionnaireJsonObject", questionnaireJsonObject);
+              if (qTreeMap != null) {
+                boolean isDone = true;
+                for (Entry<Integer, QuestionnaireStepBean> entry : qTreeMap.entrySet()) {
+                  QuestionnaireStepBean questionnaireStepBean = entry.getValue();
+                  if (questionnaireStepBean.getStatus() != null
+                      && !questionnaireStepBean.getStatus()) {
+                    isDone = false;
+                    break;
+                  }
+                  if (entry.getValue().getFromMap() != null) {
+                    if (!entry.getValue().getFromMap().isEmpty()) {
+                      for (Entry<Integer, QuestionnaireStepBean> entryKey :
+                          entry.getValue().getFromMap().entrySet()) {
+                        if (!entryKey.getValue().getStatus()) {
+                          isDone = false;
+                          break;
+                        }
+                      }
+                    } else {
+                      isDone = false;
+                      break;
+                    }
+                  }
+                }
+                jsonobject.put("isDone", isDone);
+              }
+              isAnchorQuestionnaire =
+                  studyQuestionnaireService.isAnchorDateExistByQuestionnaire(
+                      Integer.valueOf(questionnaireId));
+              jsonobject.put("isAnchorQuestionnaire", isAnchorQuestionnaire);
+            }
+            String studyId =
+                (String)
+                    request
+                        .getSession()
+                        .getAttribute(sessionStudyCount + FdahpStudyDesignerConstants.STUDY_ID);
+            if (StringUtils.isNotEmpty(studyId)) {
+              studyService.markAsCompleted(
+                  Integer.valueOf(studyId),
+                  FdahpStudyDesignerConstants.QUESTIONNAIRE,
+                  false,
+                  sesObj,
+                  customStudyId);
+            }
+            jsonobject.put("allowReorder", studyQuestionnaireService.isPreloadLogicAndPipingEnabled(
+                    questionnaireBo != null ? questionnaireBo.getId() : null));
+          }
+        }else{
+            message = FdahpStudyDesignerConstants.DELETE_ASSIGNSTEP_FAILURE;
+        }
+        }
+      }
+      jsonobject.put("message", message);
+      response.setContentType("application/json");
+      out = response.getWriter();
+      out.print(jsonobject);
+    } catch (Exception e) {
+      logger.error("StudyQuestionnaireController - deleteQuestionnaireStepInfo - ERROR", e);
+    }
+    logger.info("StudyQuestionnaireController - deleteQuestionnaireStepInfo - Ends");
+  }

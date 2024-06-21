@@ -1,0 +1,122 @@
+{
+    "sha": "f51cd288c62e477353d0735709c282c67b9c78fd",
+    "node_id": "C_kwDOAhHbBdoAKGY1MWNkMjg4YzYyZTQ3NzM1M2QwNzM1NzA5YzI4MmM2N2I5Yzc4ZmQ",
+    "commit": {
+        "author": {
+            "name": "Cardman",
+            "email": "f.desrochettes@gmail.com",
+            "date": "2023-12-04T10:30:31Z"
+        },
+        "committer": {
+            "name": "Cardman",
+            "email": "f.desrochettes@gmail.com",
+            "date": "2023-12-04T10:30:31Z"
+        },
+        "message": "fix null pointer exception when retrieving errors",
+        "tree": {
+            "sha": "d38ba13a9eb68f20a175fab15e1953d73176c37d",
+            "url": "https://api.github.com/repos/Cardman/projects/git/trees/d38ba13a9eb68f20a175fab15e1953d73176c37d"
+        },
+        "url": "https://api.github.com/repos/Cardman/projects/git/commits/f51cd288c62e477353d0735709c282c67b9c78fd",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Cardman/projects/commits/f51cd288c62e477353d0735709c282c67b9c78fd",
+    "html_url": "https://github.com/Cardman/projects/commit/f51cd288c62e477353d0735709c282c67b9c78fd",
+    "comments_url": "https://api.github.com/repos/Cardman/projects/commits/f51cd288c62e477353d0735709c282c67b9c78fd/comments",
+    "author": {
+        "login": "Cardman",
+        "id": 12151671,
+        "node_id": "MDQ6VXNlcjEyMTUxNjcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12151671?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cardman",
+        "html_url": "https://github.com/Cardman",
+        "followers_url": "https://api.github.com/users/Cardman/followers",
+        "following_url": "https://api.github.com/users/Cardman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cardman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cardman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cardman/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cardman/orgs",
+        "repos_url": "https://api.github.com/users/Cardman/repos",
+        "events_url": "https://api.github.com/users/Cardman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cardman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Cardman",
+        "id": 12151671,
+        "node_id": "MDQ6VXNlcjEyMTUxNjcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12151671?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cardman",
+        "html_url": "https://github.com/Cardman",
+        "followers_url": "https://api.github.com/users/Cardman/followers",
+        "following_url": "https://api.github.com/users/Cardman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cardman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cardman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cardman/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cardman/orgs",
+        "repos_url": "https://api.github.com/users/Cardman/repos",
+        "events_url": "https://api.github.com/users/Cardman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cardman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b5c64287f9f7d473b9098f2ae8e22577ba5e8065",
+            "url": "https://api.github.com/repos/Cardman/projects/commits/b5c64287f9f7d473b9098f2ae8e22577ba5e8065",
+            "html_url": "https://github.com/Cardman/projects/commit/b5c64287f9f7d473b9098f2ae8e22577ba5e8065"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 10,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "a24c82b923d30ca829162440f9dd9a111078dfd4",
+            "filename": "desktop/applis/apps/apps_util/expressionlanguageadv/src/test/java/code/expressionlanguage/adv/DbgSyntaxColoringTest.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 0,
+            "changes": 8,
+            "blob_url": "https://github.com/Cardman/projects/blob/f51cd288c62e477353d0735709c282c67b9c78fd/desktop%2Fapplis%2Fapps%2Fapps_util%2Fexpressionlanguageadv%2Fsrc%2Ftest%2Fjava%2Fcode%2Fexpressionlanguage%2Fadv%2FDbgSyntaxColoringTest.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/f51cd288c62e477353d0735709c282c67b9c78fd/desktop%2Fapplis%2Fapps%2Fapps_util%2Fexpressionlanguageadv%2Fsrc%2Ftest%2Fjava%2Fcode%2Fexpressionlanguage%2Fadv%2FDbgSyntaxColoringTest.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fapps_util%2Fexpressionlanguageadv%2Fsrc%2Ftest%2Fjava%2Fcode%2Fexpressionlanguage%2Fadv%2FDbgSyntaxColoringTest.java?ref=f51cd288c62e477353d0735709c282c67b9c78fd",
+            "patch": "@@ -869,6 +869,14 @@ public void partsTokens20() {\n         assertEq(0,l_.size());\n     }\n \n+    @Test\n+    public void partsTokens21() {\n+        StringMap<String> src_ = new StringMap<String>();\n+        src_.addEntry(\"src/file.txt\", \"public annotation pkg.Ex {{$lambda(Ex,field);}}\");\n+        ResultContext res_ = ctxReadOnlyOk(src_);\n+        CustList<SegmentReadOnlyTokenPart> l_ = listTokensAnnotField(res_);\n+        assertEq(0,l_.size());\n+    }\n     private CustList<SegmentReadOnlyPart> list(ResultContext _res) {\n         IdMap<FileBlock,CustList<SegmentReadOnlyPart>> s_ = DbgSyntaxColoring.partsBpMpWp(_res);\n         return s_.getVal(_res.getPageEl().getPreviousFilesBodies().getVal(\"src/file.txt\"));"
+        },
+        {
+            "sha": "4d04b4dd2e36ec9d5f7f89f6b89c421855f823b0",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaCallFctContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/f51cd288c62e477353d0735709c282c67b9c78fd/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaCallFctContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/f51cd288c62e477353d0735709c282c67b9c78fd/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaCallFctContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaCallFctContent.java?ref=f51cd288c62e477353d0735709c282c67b9c78fd",
+            "patch": "@@ -19,7 +19,7 @@ public final class AnaCallFctContent {\n \n     private int naturalVararg = -1;\n     private MemberId memberId = new MemberId();\n-    private AnaFormattedRootBlock formattedType;\n+    private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n     private AnaTypeFct function;\n     private StandardType standardType;\n     private StandardMethod standardMethod;"
+        },
+        {
+            "sha": "53c63118d6562994b409dda760d3b09df2acb2ac",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaLambdaCommonContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/f51cd288c62e477353d0735709c282c67b9c78fd/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaLambdaCommonContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/f51cd288c62e477353d0735709c282c67b9c78fd/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaLambdaCommonContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaLambdaCommonContent.java?ref=f51cd288c62e477353d0735709c282c67b9c78fd",
+            "patch": "@@ -10,7 +10,7 @@ public final class AnaLambdaCommonContent {\n     private String fileName = \"\";\n     private boolean shiftArgument;\n     private int ancestor;\n-    private AnaFormattedRootBlock foundFormatted;\n+    private AnaFormattedRootBlock foundFormatted = AnaFormattedRootBlock.defValue();\n     private String result = \"\";\n \n     public boolean isIntermediate() {"
+        }
+    ]
+}

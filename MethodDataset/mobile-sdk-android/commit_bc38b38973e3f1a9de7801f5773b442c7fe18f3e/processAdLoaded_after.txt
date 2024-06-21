@@ -1,0 +1,11 @@
+        private void processAdLoaded(AdResponse ad) {
+            isFetching = false;
+            if (ad.getMediaType() == MediaType.BANNER || ad.getMediaType() == MediaType.INTERSTITIAL) {
+                handleBannerOrInterstitialAd(ad);
+            } else if (ad.getMediaType() == MediaType.NATIVE) {
+                handleNativeAd(ad);
+            } else {
+                Clog.e(Clog.baseLogTag, "UNKNOWN media type::" + ad.getMediaType());
+                onAdFailed(ResultCode.getNewInstance(ResultCode.INTERNAL_ERROR), null);
+            }
+        }

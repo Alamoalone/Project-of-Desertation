@@ -1,0 +1,33 @@
+@@ -18,18 +18,17 @@ public final class RendQuickOperation extends RendMethodOperation implements Ren
+ 
+     private final ExecOperatorContent operatorContent;
+     private final ExecOperSymbol operSymbol;
+-    private final ImplicitMethods conv;
++    private final ImplicitMethods conv = new ImplicitMethods();
+ 
+-    public RendQuickOperation(ExecOperationContent _content, ExecOperatorContent _off, ImplicitMethods _converter, ExecOperSymbol _op) {
++    public RendQuickOperation(ExecOperationContent _content, ExecOperatorContent _off, ExecOperSymbol _op) {
+         super(_content);
+         operatorContent = _off;
+-        conv = _converter;
+         operSymbol = _op;
+     }
+ 
+     static void endCalculate(RendDynOperationNode _current, IdMap<RendDynOperationNode, ArgumentsPair> _nodes, ContextEl _context, RendStackCall _rendStack, Argument _argres, ImplicitMethods _converter) {
+         Argument argres_ = _argres;
+-        if (_converter != null) {
++        if (!_converter.isEmpty()) {
+             Argument res_ = tryConvert(_converter, argres_, _context, _rendStack);
+             if (res_ == null) {
+                 return;
+@@ -57,6 +56,10 @@ public void calculate(IdMap<RendDynOperationNode, ArgumentsPair> _nodes, Context
+         endCalculate(this,_nodes,_context,_rendStack,arg_,conv);
+     }
+ 
++    public ImplicitMethods getConv() {
++        return conv;
++    }
++
+     @Override
+     public String getOper() {
+         return operatorContent.getOper();

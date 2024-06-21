@@ -1,0 +1,120 @@
+	private void generateApproveApplicationRow(Listbox lb, int i, RoleRequestInfo grant) throws InternalErrorException {
+		Security.nestedLogin(Security.ALL_PERMISSIONS);
+		try
+		{
+			boolean showBoxes = true;
+			String user = (String) grant.getUserName();
+			if (user == null)
+				user = (String) getVariables().get("userName");
+			
+			User u = ServiceLocator.instance().getUserService().findUserByUserName(user);
+
+			String fullName = "";
+			if (u == null) {
+				String fn = (String) getVariables().get("firstName");
+				String ln = (String) getVariables().get("lastName");
+				if (fn != null && ln != null)
+					fullName = fn+ " "+ln;
+			} else {
+				fullName = u.getFullName();
+			}
+			
+			Listitem item = new Listitem();
+			lb.getItems().add(item);
+
+			if (grant.getParentRole() == null)
+				item.appendChild( new Listcell(user));
+			else
+				item.appendChild(new Listcell());
+			if (grant.getParentRole() == null) {
+				Listcell listCell = new Listcell(fullName);
+				item.appendChild( listCell);
+				if (u != null)
+					addIconPermissions(listCell, u);
+			} else {
+				item.appendChild(new Listcell());
+			}
+			
+			Listcell permsCell = new Listcell();
+			item.appendChild(permsCell);
+			Long roleId = (Long) grant.getRoleId();
+			Long previousRoleId = (Long) grant.getPreviousRoleId();
+			if (roleId != null && previousRoleId == null)
+			{
+				addRisk (permsCell, grant);
+				Role role = ServiceLocator.instance().getApplicationService().findRoleById(roleId);
+				final Label l = new Label(role.getName()+": "+role.getDescription());
+				l.setStyle("white-space: normal");
+				permsCell.appendChild(l);
+				if (grant.getParentRole() == null) {
+					generateApproveChildRoles(grant, lb, i, roleId, l);
+				}
+				else if (grant.isMandatory())
+					showBoxes = false;
+			}
+			else if (roleId != null)
+			{
+				addRisk (permsCell, grant);
+				// New role
+				Role role = ServiceLocator.instance().getApplicationService().findRoleById(roleId);
+				Div d = new Div();
+				d.setStyle("display: inline-block; max-width: calc( 100% - 48px)");
+				final Label l = new Label(role.getName()+": "+role.getDescription());
+				l.setStyle("white-space: normal");
+				d.appendChild(l);
+				permsCell.appendChild(d);
+				
+				if (! roleId.equals(grant.getPreviousRoleId())) {
+					// Provious role
+					role = ServiceLocator.instance().getApplicationService().findRoleById(previousRoleId);
+					Label label = new Label(String.format ( Labels.getLabel("bpm.previouslyAssigned"), role.getName()+": "+role.getDescription()));
+					label.setStyle("color: blue");
+					d = new Div();
+					d.appendChild(label);
+					permsCell.appendChild(d);
+					if (grant.getParentRole() == null)
+						generateApproveChildRoles(grant, lb, i, roleId, l);
+				} else {
+					showBoxes = false;
+					grant.setApproved(true);
+					grant.setDenied(false);
+				}
+			}
+			else
+			{
+				Role role = ServiceLocator.instance().getApplicationService().findRoleById(previousRoleId);
+				Label label = new Label(String.format ( Labels.getLabel("bpm.remove"), role.getName()+": "+role.getDescription()));
+				label.setStyle("color: red");
+				permsCell.appendChild(label);
+			}
+			if (grant.getComments() != null && ! grant.getComments().trim().isEmpty()) {
+				Label l = new Label(grant.getComments());
+				permsCell.appendChild(l);
+				l.setStyle("display: block; padding-left: 24px");
+			}
+			
+			if (showBoxes) {
+				Listcell c = new Listcell();
+				item.appendChild(c);
+				Checkbox cb = new Checkbox();
+				cb.setDisabled( grantsReadOnly || ! showBoxes);
+				cb.addEventListener("onCheck", onApprove);
+				c.appendChild(cb);
+				cb.setChecked( grant.isApproved());
+				cb.setSclass("custom-checkbox-green custom-checkbox");
+		
+				c = new Listcell();
+				item.appendChild(c);
+				cb = new Checkbox();
+				cb.setDisabled( grantsReadOnly || ! showBoxes);
+				cb.addEventListener("onCheck", onDeny);
+				c.appendChild(cb);
+				cb.setChecked(grant.isDenied());
+				cb.setSclass("custom-checkbox-red custom-checkbox");
+			}			
+			item.setValue(grant);
+	
+		} finally {
+			Security.nestedLogoff();
+		}
+	}

@@ -1,0 +1,8 @@
+@@ -69,6 +69,7 @@ protected void doCall(HealthCheckResultBuilder builder, Map<String, Object> opti
+     if (httpResponseBodiesAndStatuses.stream()
+         .map(Map::values)
+         .flatMap(Collection::stream)
++        .filter(providerStatus -> Objects.nonNull(providerStatus.getCode()))
+         .anyMatch(providerDetails -> providerDetails.getCode() < 400 && providerDetails.getOk())) {
+       builder.up();
+ 

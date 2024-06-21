@@ -1,0 +1,6 @@
+    public Post compare(@Nullable @Header("X-User-Id") Long userId, @Body PostMergeRequest postMergeRequest) {
+        Post mergedPost = postService.merge(userId,
+            postRepository.get(postMergeRequest.getId1()),
+            postRepository.get(postMergeRequest.getId2()));
+        return postRepository.save(mergedPost);
+    }

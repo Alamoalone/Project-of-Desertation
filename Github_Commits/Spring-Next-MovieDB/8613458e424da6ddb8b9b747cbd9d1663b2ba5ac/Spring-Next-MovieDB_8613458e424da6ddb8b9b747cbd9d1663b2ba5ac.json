@@ -1,0 +1,98 @@
+{
+    "sha": "8613458e424da6ddb8b9b747cbd9d1663b2ba5ac",
+    "node_id": "C_kwDOKeZ8SdoAKDg2MTM0NThlNDI0ZGE2ZGRiOGI5Yjc0N2NiZDlkMTY2M2IyYmE1YWM",
+    "commit": {
+        "author": {
+            "name": "Michał Toczek",
+            "email": "toczekmj@gmail.com",
+            "date": "2023-10-15T00:58:34Z"
+        },
+        "committer": {
+            "name": "Michał Toczek",
+            "email": "toczekmj@gmail.com",
+            "date": "2023-10-15T00:58:34Z"
+        },
+        "message": "fix for null pointer exception when rating new movie",
+        "tree": {
+            "sha": "313ec2acea435e70426b2c0a7f90b8bf5c524c0e",
+            "url": "https://api.github.com/repos/toczekmj/Spring-Next-MovieDB/git/trees/313ec2acea435e70426b2c0a7f90b8bf5c524c0e"
+        },
+        "url": "https://api.github.com/repos/toczekmj/Spring-Next-MovieDB/git/commits/8613458e424da6ddb8b9b747cbd9d1663b2ba5ac",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unknown_key",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEMlQy6JzQGCd3B7PA7+yVhMhz5ZQFAmUrOToACgkQ7+yVhMhz\n5ZThpxAAlm2MXeTws1dZGXCGNfqXzZoAeumFeJuvt8gfRQgeL3m79jeEoeCXsx5y\nc9DqjesJH4sah0+RDA08rUN7uSZWaEGy4duWfDoUg5ScA5rqwNSkvGzwI3WunZoO\nb478KSISUjrANiBvzK3T6O8YetTqbEDcDZt4cf32WyyOOaxkIlPrm7qm0ZliPu2v\n+bE9RBHrjKDpCzlnKStYb3oOKG4wj/+TZpBqi7SfmgqzAFN9sEox2C32TptBa9U2\ntB70ecgpL6qYnPoAiCgtnwPg2Cu9NJhQ7fFu5yY4IcbXLDKm0lD8BTc/GwYlQgu2\nDVkq9WFAnhdvDB7NZ99GHE80Zr+0dxIai3mIyYuAZghzdUs9ubNjlXxLBjXcFOw+\nOnKvNsseumWgK1mkK/VQpI7prg0U8suKHEqt0+BPXEF4D+6RvpxOiS/JrKvz/NRi\nkuGSnjynOMfjnmnTKXMbZY2crweDxEZdIU8POV5RTFUpZE5GM5jHfQ/dJJYfAnLx\nvrz/qwN8N4+jRB9w0qtueBhZmlOWcSdFTtJ5I6BK+AA+j9wIeARboaGKhBDZhBRP\nIlVNk77chBrGLrO9HddX3L3oQS6ofoOZShQaTzRF7JRaD++4B7Xj9mriM5W8ebWo\n7CN2kx+GuLxkOPer2RuLzbpuZCAPf3pc3WT9NY/1ZstoKhyq110=\n=gsJe\n-----END PGP SIGNATURE-----",
+            "payload": "tree 313ec2acea435e70426b2c0a7f90b8bf5c524c0e\nparent cdb39699494eaff6e9168dc39dd9d20fe129d67c\nauthor Michał Toczek <toczekmj@gmail.com> 1697331514 +0200\ncommitter Michał Toczek <toczekmj@gmail.com> 1697331514 +0200\n\nfix for null pointer exception when rating new movie\n"
+        }
+    },
+    "url": "https://api.github.com/repos/toczekmj/Spring-Next-MovieDB/commits/8613458e424da6ddb8b9b747cbd9d1663b2ba5ac",
+    "html_url": "https://github.com/toczekmj/Spring-Next-MovieDB/commit/8613458e424da6ddb8b9b747cbd9d1663b2ba5ac",
+    "comments_url": "https://api.github.com/repos/toczekmj/Spring-Next-MovieDB/commits/8613458e424da6ddb8b9b747cbd9d1663b2ba5ac/comments",
+    "author": {
+        "login": "toczekmj",
+        "id": 13023170,
+        "node_id": "MDQ6VXNlcjEzMDIzMTcw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13023170?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/toczekmj",
+        "html_url": "https://github.com/toczekmj",
+        "followers_url": "https://api.github.com/users/toczekmj/followers",
+        "following_url": "https://api.github.com/users/toczekmj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/toczekmj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/toczekmj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/toczekmj/subscriptions",
+        "organizations_url": "https://api.github.com/users/toczekmj/orgs",
+        "repos_url": "https://api.github.com/users/toczekmj/repos",
+        "events_url": "https://api.github.com/users/toczekmj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/toczekmj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "toczekmj",
+        "id": 13023170,
+        "node_id": "MDQ6VXNlcjEzMDIzMTcw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13023170?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/toczekmj",
+        "html_url": "https://github.com/toczekmj",
+        "followers_url": "https://api.github.com/users/toczekmj/followers",
+        "following_url": "https://api.github.com/users/toczekmj/following{/other_user}",
+        "gists_url": "https://api.github.com/users/toczekmj/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/toczekmj/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/toczekmj/subscriptions",
+        "organizations_url": "https://api.github.com/users/toczekmj/orgs",
+        "repos_url": "https://api.github.com/users/toczekmj/repos",
+        "events_url": "https://api.github.com/users/toczekmj/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/toczekmj/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cdb39699494eaff6e9168dc39dd9d20fe129d67c",
+            "url": "https://api.github.com/repos/toczekmj/Spring-Next-MovieDB/commits/cdb39699494eaff6e9168dc39dd9d20fe129d67c",
+            "html_url": "https://github.com/toczekmj/Spring-Next-MovieDB/commit/cdb39699494eaff6e9168dc39dd9d20fe129d67c"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 8,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "ffa011b530772b4bf3651eba14776e98986154c4",
+            "filename": "InterfejsyGraficzne/src/main/java/pl/interfejsygraficzne/Service/RatingService.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 0,
+            "changes": 8,
+            "blob_url": "https://github.com/toczekmj/Spring-Next-MovieDB/blob/8613458e424da6ddb8b9b747cbd9d1663b2ba5ac/InterfejsyGraficzne%2Fsrc%2Fmain%2Fjava%2Fpl%2Finterfejsygraficzne%2FService%2FRatingService.java",
+            "raw_url": "https://github.com/toczekmj/Spring-Next-MovieDB/raw/8613458e424da6ddb8b9b747cbd9d1663b2ba5ac/InterfejsyGraficzne%2Fsrc%2Fmain%2Fjava%2Fpl%2Finterfejsygraficzne%2FService%2FRatingService.java",
+            "contents_url": "https://api.github.com/repos/toczekmj/Spring-Next-MovieDB/contents/InterfejsyGraficzne%2Fsrc%2Fmain%2Fjava%2Fpl%2Finterfejsygraficzne%2FService%2FRatingService.java?ref=8613458e424da6ddb8b9b747cbd9d1663b2ba5ac",
+            "patch": "@@ -21,6 +21,14 @@ public Movie addRating(Long movieid, Rating rating){\n \n         Movie movie = movieRepository.findById(movieid).orElseThrow(MovieNotFoundException::new);\n         Rating currentRating = movie.getRating();\n+        if(currentRating == null){\n+            currentRating = new Rating();\n+            currentRating.setMovieId(movie.getMovieId());\n+            currentRating.setPlot(0);\n+            currentRating.setScenography(0);\n+            currentRating.setActing(0);\n+            currentRating.setVotesCount(0);\n+        }\n \n         currentRating.setPlot(rating.getPlot()+currentRating.getPlot());\n         currentRating.setActing(rating.getActing()+currentRating.getActing());"
+        }
+    ]
+}

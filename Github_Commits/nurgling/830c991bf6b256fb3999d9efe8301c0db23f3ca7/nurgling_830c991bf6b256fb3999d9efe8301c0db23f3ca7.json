@@ -1,0 +1,98 @@
+{
+    "sha": "830c991bf6b256fb3999d9efe8301c0db23f3ca7",
+    "node_id": "C_kwDOIh-YrtoAKDgzMGM5OTFiZjZiMjU2ZmIzOTk5ZDllZmU4MzAxYzBkYjIzZjNjYTc",
+    "commit": {
+        "author": {
+            "name": "Fredrik Tolf",
+            "email": "fredrik@dolda2000.com",
+            "date": "2023-04-07T20:55:06Z"
+        },
+        "committer": {
+            "name": "Fredrik Tolf",
+            "email": "fredrik@dolda2000.com",
+            "date": "2023-04-07T20:55:06Z"
+        },
+        "message": "Split up surface-getz to debug a weird null-pointer exception.",
+        "tree": {
+            "sha": "15a5ae7363cc9f785c5e341028d830e8e6acdf22",
+            "url": "https://api.github.com/repos/Katodiy/nurgling/git/trees/15a5ae7363cc9f785c5e341028d830e8e6acdf22"
+        },
+        "url": "https://api.github.com/repos/Katodiy/nurgling/git/commits/830c991bf6b256fb3999d9efe8301c0db23f3ca7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Katodiy/nurgling/commits/830c991bf6b256fb3999d9efe8301c0db23f3ca7",
+    "html_url": "https://github.com/Katodiy/nurgling/commit/830c991bf6b256fb3999d9efe8301c0db23f3ca7",
+    "comments_url": "https://api.github.com/repos/Katodiy/nurgling/commits/830c991bf6b256fb3999d9efe8301c0db23f3ca7/comments",
+    "author": {
+        "login": "dolda2000",
+        "id": 86895,
+        "node_id": "MDQ6VXNlcjg2ODk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/86895?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dolda2000",
+        "html_url": "https://github.com/dolda2000",
+        "followers_url": "https://api.github.com/users/dolda2000/followers",
+        "following_url": "https://api.github.com/users/dolda2000/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dolda2000/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dolda2000/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dolda2000/subscriptions",
+        "organizations_url": "https://api.github.com/users/dolda2000/orgs",
+        "repos_url": "https://api.github.com/users/dolda2000/repos",
+        "events_url": "https://api.github.com/users/dolda2000/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dolda2000/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dolda2000",
+        "id": 86895,
+        "node_id": "MDQ6VXNlcjg2ODk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/86895?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dolda2000",
+        "html_url": "https://github.com/dolda2000",
+        "followers_url": "https://api.github.com/users/dolda2000/followers",
+        "following_url": "https://api.github.com/users/dolda2000/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dolda2000/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dolda2000/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dolda2000/subscriptions",
+        "organizations_url": "https://api.github.com/users/dolda2000/orgs",
+        "repos_url": "https://api.github.com/users/dolda2000/repos",
+        "events_url": "https://api.github.com/users/dolda2000/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dolda2000/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4f3dcc7f37ee18c9bf24ee883355cc57f4451134",
+            "url": "https://api.github.com/repos/Katodiy/nurgling/commits/4f3dcc7f37ee18c9bf24ee883355cc57f4451134",
+            "html_url": "https://github.com/Katodiy/nurgling/commit/4f3dcc7f37ee18c9bf24ee883355cc57f4451134"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "02288eee6a8dda35e94fdde9e2f75c832141bb68",
+            "filename": "src/haven/MCache.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Katodiy/nurgling/blob/830c991bf6b256fb3999d9efe8301c0db23f3ca7/src%2Fhaven%2FMCache.java",
+            "raw_url": "https://github.com/Katodiy/nurgling/raw/830c991bf6b256fb3999d9efe8301c0db23f3ca7/src%2Fhaven%2FMCache.java",
+            "contents_url": "https://api.github.com/repos/Katodiy/nurgling/contents/src%2Fhaven%2FMCache.java?ref=830c991bf6b256fb3999d9efe8301c0db23f3ca7",
+            "patch": "@@ -833,7 +833,8 @@ public double getz(SurfaceID id, Coord2d pc) {\n \tGrid g = getgridt(tc);\n \tMapMesh cut = g.getcut(tc.sub(g.ul).div(cutsz));\n \tTiler t = tiler(g.gettile(tc.sub(g.ul)));\n-\treturn(cut.getsurf(id, t).getz(pc));\n+\tZSurface surf = cut.getsurf(id, t);\n+\treturn(surf.getz(pc));\n     }\n \n     public Coord3f getzp(SurfaceID id, Coord2d pc) {"
+        }
+    ]
+}

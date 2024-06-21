@@ -1,0 +1,122 @@
+{
+    "sha": "95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+    "node_id": "C_kwDOJYBtKNoAKDk1ZGJmNzhjZGFhMjU0M2Y4NWNkYTllYWUwZjdmNjkzYjExNDllZDc",
+    "commit": {
+        "author": {
+            "name": "Puszmen",
+            "email": "piotr.zatorski91@gmail.com",
+            "date": "2023-12-12T18:23:49Z"
+        },
+        "committer": {
+            "name": "Puszmen",
+            "email": "piotr.zatorski91@gmail.com",
+            "date": "2023-12-12T18:23:49Z"
+        },
+        "message": "app updated to v3.0, added Optional class to LibraryControl to find publications by their title(avoided null pointer exception)",
+        "tree": {
+            "sha": "e3ec30852484f202e75e507e2b584302435c9da1",
+            "url": "https://api.github.com/repos/Puszmen/JAVA/git/trees/e3ec30852484f202e75e507e2b584302435c9da1"
+        },
+        "url": "https://api.github.com/repos/Puszmen/JAVA/git/commits/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Puszmen/JAVA/commits/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+    "html_url": "https://github.com/Puszmen/JAVA/commit/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+    "comments_url": "https://api.github.com/repos/Puszmen/JAVA/commits/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/comments",
+    "author": {
+        "login": "Puszmen",
+        "id": 123985448,
+        "node_id": "U_kgDOB2PeKA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123985448?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Puszmen",
+        "html_url": "https://github.com/Puszmen",
+        "followers_url": "https://api.github.com/users/Puszmen/followers",
+        "following_url": "https://api.github.com/users/Puszmen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Puszmen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Puszmen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Puszmen/subscriptions",
+        "organizations_url": "https://api.github.com/users/Puszmen/orgs",
+        "repos_url": "https://api.github.com/users/Puszmen/repos",
+        "events_url": "https://api.github.com/users/Puszmen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Puszmen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Puszmen",
+        "id": 123985448,
+        "node_id": "U_kgDOB2PeKA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123985448?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Puszmen",
+        "html_url": "https://github.com/Puszmen",
+        "followers_url": "https://api.github.com/users/Puszmen/followers",
+        "following_url": "https://api.github.com/users/Puszmen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Puszmen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Puszmen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Puszmen/subscriptions",
+        "organizations_url": "https://api.github.com/users/Puszmen/orgs",
+        "repos_url": "https://api.github.com/users/Puszmen/repos",
+        "events_url": "https://api.github.com/users/Puszmen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Puszmen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fa0d9e04373ea5f24395741167eee8888576bb59",
+            "url": "https://api.github.com/repos/Puszmen/JAVA/commits/fa0d9e04373ea5f24395741167eee8888576bb59",
+            "html_url": "https://github.com/Puszmen/JAVA/commit/fa0d9e04373ea5f24395741167eee8888576bb59"
+        }
+    ],
+    "stats": {
+        "total": 22,
+        "additions": 20,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "b9e169a5ec7e7ae4d75b599aa3349ab8c3d6bab4",
+            "filename": "APP/library/src/pl/javastart/library/app/LibraryApp.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Puszmen/JAVA/blob/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fapp%2FLibraryApp.java",
+            "raw_url": "https://github.com/Puszmen/JAVA/raw/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fapp%2FLibraryApp.java",
+            "contents_url": "https://api.github.com/repos/Puszmen/JAVA/contents/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fapp%2FLibraryApp.java?ref=95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+            "patch": "@@ -1,7 +1,7 @@\n package pl.javastart.library.app;\n \n public class LibraryApp {\n-    private static final String APP_NAME = \"Biblioteka v2.2\";\n+    private static final String APP_NAME = \"Biblioteka v3.0\";\n     public static void main(String[] args) {\n         System.out.println(APP_NAME);\n         LibraryControl libraryControl = new LibraryControl();"
+        },
+        {
+            "sha": "7b5fc5ee69f1eab958da74eaecca35733cfbaddb",
+            "filename": "APP/library/src/pl/javastart/library/app/LibraryControl.java",
+            "status": "modified",
+            "additions": 15,
+            "deletions": 1,
+            "changes": 16,
+            "blob_url": "https://github.com/Puszmen/JAVA/blob/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fapp%2FLibraryControl.java",
+            "raw_url": "https://github.com/Puszmen/JAVA/raw/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fapp%2FLibraryControl.java",
+            "contents_url": "https://api.github.com/repos/Puszmen/JAVA/contents/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fapp%2FLibraryControl.java?ref=95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+            "patch": "@@ -9,6 +9,7 @@\n \n import java.util.Comparator;\n import java.util.InputMismatchException;\n+import java.util.Optional;\n \n public class LibraryControl {\n \n@@ -60,6 +61,9 @@ void controlLoop () {\n                 case PRINT_USERS:\n                     printUsers();\n                     break;\n+                case FIND_BOOK:\n+                    findBook();\n+                    break;\n                 case EXIT:\n                     exit();\n                     break;\n@@ -69,6 +73,15 @@ void controlLoop () {\n         } while (option != Option.EXIT);\n     }\n \n+    private void findBook() {\n+        printer.printLine(\"Podaj tytuł publikacji:\");\n+        String title = dataReader.getString();\n+        String notFoundMessage = \"Brak publikacji o podanym tytule\";\n+        library.findPublicationByTitle(title)\n+                .map(Publication::toString)\n+                .ifPresentOrElse(System.out::println, () -> System.out.println(notFoundMessage));\n+    }\n+\n     private void printUsers() {\n         printer.printUsers(library.getSortedUsers(\n                 Comparator.comparing(User::getLastName, String.CASE_INSENSITIVE_ORDER)\n@@ -186,7 +199,8 @@ private enum Option {\n         DELETE_BOOKS (5, \"usuń książkę\"),\n         DELETE_MAGAZINES (6, \"usuń magazyn\"),\n         ADD_USER(7, \"dodaj czytelnika\"),\n-        PRINT_USERS(8, \"wyświetl czytelników\");\n+        PRINT_USERS(8, \"wyświetl czytelników\"),\n+        FIND_BOOK(9, \"wyszukaj książkę\");\n \n         private final int value;\n         private final String description;"
+        },
+        {
+            "sha": "0430c3af54af3ddbe1e057fefee8a8bb8b5c6626",
+            "filename": "APP/library/src/pl/javastart/library/model/Library.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/Puszmen/JAVA/blob/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fmodel%2FLibrary.java",
+            "raw_url": "https://github.com/Puszmen/JAVA/raw/95dbf78cdaa2543f85cda9eae0f7f693b1149ed7/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fmodel%2FLibrary.java",
+            "contents_url": "https://api.github.com/repos/Puszmen/JAVA/contents/APP%2Flibrary%2Fsrc%2Fpl%2Fjavastart%2Flibrary%2Fmodel%2FLibrary.java?ref=95dbf78cdaa2543f85cda9eae0f7f693b1149ed7",
+            "patch": "@@ -16,6 +16,10 @@ public Collection<Publication> getSortedPublications(Comparator<Publication> com\n         return list;\n     }\n \n+    public Optional<Publication> findPublicationByTitle(String title) {\n+        return Optional.ofNullable(publications.get(title));\n+    }\n+\n     public Map<String, Publication> getPublications() {\n         return publications;\n     }"
+        }
+    ]
+}

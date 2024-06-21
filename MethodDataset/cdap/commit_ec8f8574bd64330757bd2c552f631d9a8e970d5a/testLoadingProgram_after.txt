@@ -1,0 +1,14 @@
+  public void testLoadingProgram() throws Exception {
+    ApplicationSpecification appSpec = Specifications.from(new FooApp());
+    ApplicationId appId = NamespaceId.DEFAULT.app(appSpec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addLatestApplication(appId, appMeta);
+
+    ProgramDescriptor descriptor = store.loadProgram(appId.mr("mrJob1"));
+    Assert.assertNotNull(descriptor);
+    MapReduceSpecification mrSpec = descriptor.getSpecification();
+    Assert.assertEquals("mrJob1", mrSpec.getName());
+    Assert.assertEquals(FooMapReduceJob.class.getName(), mrSpec.getClassName());
+  }

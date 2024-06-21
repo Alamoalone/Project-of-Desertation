@@ -1,0 +1,13 @@
+    public String toString(final boolean withSubmodels, final String currentAlias) {
+        if (this.getFeature() == null) {
+            if (boolValue != null) {
+                return String.valueOf(boolValue);
+            }
+            return addNecessaryQuotes(this.getContent());
+        }
+        if (withSubmodels) {
+            return addNecessaryQuotes(this.getFeature().getFullReference() + (this.getAttributeName() != null ? "." + this.getAttributeName() : ""));
+        }
+        return addNecessaryQuotes(
+            this.feature.getReferenceFromSpecificSubmodel(currentAlias) + (this.getAttributeName() != null ? "." + this.getAttributeName() : ""));
+    }

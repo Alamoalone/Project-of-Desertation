@@ -1,0 +1,2 @@
+forAll(Predicate p)
+forall(Predicate p)

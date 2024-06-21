@@ -1,0 +1,55 @@
+    public Object end(final String uri, final String localName,
+                      final ExtensibleXmlParser parser) throws SAXException {
+        final Element element = parser.endElementBuilder();
+        Node node = (Node) parser.getCurrent();
+        String attachedTo = element.getAttribute("attachedToRef");
+        Attr cancelActivityAttr = element.getAttributeNode("cancelActivity");
+        boolean cancelActivity = cancelActivityAttr == null || Boolean.parseBoolean(cancelActivityAttr.getValue());
+
+        // determine type of event definition, so the correct type of node can be generated
+        org.w3c.dom.Node xmlNode = element.getFirstChild();
+        while (xmlNode != null) {
+            String nodeName = xmlNode.getNodeName();
+            if ("escalationEventDefinition".equals(nodeName)) {
+                // reuse already created EventNode
+                handleEscalationNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            } else if ("errorEventDefinition".equals(nodeName)) {
+                // reuse already created EventNode
+                handleErrorNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            } else if ("timerEventDefinition".equals(nodeName)) {
+                // reuse already created EventNode
+                handleTimerNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            } else if ("compensateEventDefinition".equals(nodeName)) {
+                // reuse already created EventNode
+                handleCompensationNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            } else if ("signalEventDefinition".equals(nodeName)) {
+                // reuse already created EventNode
+                handleSignalNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            } else if ("conditionalEventDefinition".equals(nodeName)) {
+                handleConditionNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            } else if ("messageEventDefinition".equals(nodeName)) {
+                handleMessageNode(node, element, uri, localName, parser, attachedTo, cancelActivity);
+                break;
+            }
+            xmlNode = xmlNode.getNextSibling();
+        }
+
+        List<DataAssociation> dataAssociations = ((BoundaryEventNode) parser.getCurrent()).getOutAssociations();
+        if(!dataAssociations.isEmpty()) {
+            // this is for backward compatibility
+            // the first one is related to the variable 
+            ((BoundaryEventNode) parser.getCurrent()).setVariableName(dataAssociations.get(0).getTarget());
+        }
+
+        NodeContainer nodeContainer = (NodeContainer) parser.getParent();
+        nodeContainer.addNode(node);
+        ((ProcessBuildData) parser.getData()).addNode(node);
+        return node;
+    }
+

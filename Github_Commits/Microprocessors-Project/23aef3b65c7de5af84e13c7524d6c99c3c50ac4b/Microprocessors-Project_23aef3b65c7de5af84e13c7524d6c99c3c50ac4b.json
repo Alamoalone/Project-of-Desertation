@@ -1,0 +1,60 @@
+{
+    "sha": "23aef3b65c7de5af84e13c7524d6c99c3c50ac4b",
+    "node_id": "C_kwDOKzJ4jtoAKDIzYWVmM2I2NWM3ZGU1YWY4NGUxM2M3NTI0ZDZjOTljM2M1MGFjNGI",
+    "commit": {
+        "author": {
+            "name": "Seif Hossam",
+            "email": "seif.hossam26092002@gamil.com",
+            "date": "2023-12-05T03:27:08Z"
+        },
+        "committer": {
+            "name": "Seif Hossam",
+            "email": "seif.hossam26092002@gamil.com",
+            "date": "2023-12-05T03:27:08Z"
+        },
+        "message": "Fix null pointer exception and update\nfileOfRegisters queue",
+        "tree": {
+            "sha": "3f67e3bc9244bbd6439d3a69de6ab072b2f11c0d",
+            "url": "https://api.github.com/repos/seifhossam2002/Microprocessors-Project/git/trees/3f67e3bc9244bbd6439d3a69de6ab072b2f11c0d"
+        },
+        "url": "https://api.github.com/repos/seifhossam2002/Microprocessors-Project/git/commits/23aef3b65c7de5af84e13c7524d6c99c3c50ac4b",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/seifhossam2002/Microprocessors-Project/commits/23aef3b65c7de5af84e13c7524d6c99c3c50ac4b",
+    "html_url": "https://github.com/seifhossam2002/Microprocessors-Project/commit/23aef3b65c7de5af84e13c7524d6c99c3c50ac4b",
+    "comments_url": "https://api.github.com/repos/seifhossam2002/Microprocessors-Project/commits/23aef3b65c7de5af84e13c7524d6c99c3c50ac4b/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "a608c55d2e4027491fa68363ae00901e5d5a3b01",
+            "url": "https://api.github.com/repos/seifhossam2002/Microprocessors-Project/commits/a608c55d2e4027491fa68363ae00901e5d5a3b01",
+            "html_url": "https://github.com/seifhossam2002/Microprocessors-Project/commit/a608c55d2e4027491fa68363ae00901e5d5a3b01"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 13,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "321759e8928a74b10616e9360d576e41d796174c",
+            "filename": "main.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 2,
+            "changes": 15,
+            "blob_url": "https://github.com/seifhossam2002/Microprocessors-Project/blob/23aef3b65c7de5af84e13c7524d6c99c3c50ac4b/main.java",
+            "raw_url": "https://github.com/seifhossam2002/Microprocessors-Project/raw/23aef3b65c7de5af84e13c7524d6c99c3c50ac4b/main.java",
+            "contents_url": "https://api.github.com/repos/seifhossam2002/Microprocessors-Project/contents/main.java?ref=23aef3b65c7de5af84e13c7524d6c99c3c50ac4b",
+            "patch": "@@ -119,7 +119,7 @@ public static void fetch() {\n \n     public static void issue() {\n         // before I continue I need to check if the pointer is equal to the size of the memory for null pointer exception\n-        if(pointerCache == memory.counter)\n+        if(pointerCache == memory.counter+1)\n             return;\n         // Instruction instruction = cache.get(pointerCache - 1);\n         Instruction instruction = queueInstructions.peek();\n@@ -235,7 +235,18 @@ public static void issue() {\n         if (isIssued) {\n             for(int i=0;i<fileOfRegisters.size();i++){\n                 if(fileOfRegisters.get(i).getName().equals(instruction.dest)){\n-                    fileOfRegisters.get(i).setQueue(instruction.opcode.charAt(0)+\"\"+indexReservation);\n+                    String reservationString = \"\";\n+                    if(instruction.opcode.charAt(0) == 'S')\n+                        reservationString = \"S\"+indexReservation;\n+                    else if(instruction.opcode.charAt(0) == 'L')\n+                        reservationString = \"L\"+indexReservation;\n+                    else if(instruction.opcode.charAt(0) == 'A')\n+                        reservationString = \"A\"+indexReservation;\n+                    else if(instruction.opcode.charAt(0) == 'M')\n+                        reservationString = \"M\"+indexReservation;\n+                    else if(instruction.opcode.charAt(0) == 'D')\n+                        reservationString = \"D\"+indexReservation;\n+                    fileOfRegisters.get(i).setQueue(reservationString);\n                     break;\n                 }\n             }"
+        }
+    ]
+}

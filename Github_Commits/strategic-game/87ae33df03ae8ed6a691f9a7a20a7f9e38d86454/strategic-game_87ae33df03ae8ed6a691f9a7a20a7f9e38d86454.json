@@ -1,0 +1,134 @@
+{
+    "sha": "87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+    "node_id": "C_kwDOLE4OONoAKDg3YWUzM2RmMDNhZThlZDZhNjkxZjlhN2EyMGE3ZjllMzhkODY0NTQ",
+    "commit": {
+        "author": {
+            "name": "kori91",
+            "email": "testeves_260@hotmail.com",
+            "date": "2024-02-11T17:10:42Z"
+        },
+        "committer": {
+            "name": "kori91",
+            "email": "testeves_260@hotmail.com",
+            "date": "2024-02-11T17:10:42Z"
+        },
+        "message": "Fixed Null pointer exception in resource choise",
+        "tree": {
+            "sha": "3de3b268a03f5cddc0e131aa0d03ce9e20d443ee",
+            "url": "https://api.github.com/repos/relentlessEnigma/strategic-game/git/trees/3de3b268a03f5cddc0e131aa0d03ce9e20d443ee"
+        },
+        "url": "https://api.github.com/repos/relentlessEnigma/strategic-game/git/commits/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/relentlessEnigma/strategic-game/commits/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+    "html_url": "https://github.com/relentlessEnigma/strategic-game/commit/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+    "comments_url": "https://api.github.com/repos/relentlessEnigma/strategic-game/commits/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/comments",
+    "author": {
+        "login": "relentlessEnigma",
+        "id": 61918822,
+        "node_id": "MDQ6VXNlcjYxOTE4ODIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61918822?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/relentlessEnigma",
+        "html_url": "https://github.com/relentlessEnigma",
+        "followers_url": "https://api.github.com/users/relentlessEnigma/followers",
+        "following_url": "https://api.github.com/users/relentlessEnigma/following{/other_user}",
+        "gists_url": "https://api.github.com/users/relentlessEnigma/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/relentlessEnigma/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/relentlessEnigma/subscriptions",
+        "organizations_url": "https://api.github.com/users/relentlessEnigma/orgs",
+        "repos_url": "https://api.github.com/users/relentlessEnigma/repos",
+        "events_url": "https://api.github.com/users/relentlessEnigma/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/relentlessEnigma/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "relentlessEnigma",
+        "id": 61918822,
+        "node_id": "MDQ6VXNlcjYxOTE4ODIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61918822?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/relentlessEnigma",
+        "html_url": "https://github.com/relentlessEnigma",
+        "followers_url": "https://api.github.com/users/relentlessEnigma/followers",
+        "following_url": "https://api.github.com/users/relentlessEnigma/following{/other_user}",
+        "gists_url": "https://api.github.com/users/relentlessEnigma/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/relentlessEnigma/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/relentlessEnigma/subscriptions",
+        "organizations_url": "https://api.github.com/users/relentlessEnigma/orgs",
+        "repos_url": "https://api.github.com/users/relentlessEnigma/repos",
+        "events_url": "https://api.github.com/users/relentlessEnigma/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/relentlessEnigma/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ccd5393aa161af1426aad24f1636e07fa18f0953",
+            "url": "https://api.github.com/repos/relentlessEnigma/strategic-game/commits/ccd5393aa161af1426aad24f1636e07fa18f0953",
+            "html_url": "https://github.com/relentlessEnigma/strategic-game/commit/ccd5393aa161af1426aad24f1636e07fa18f0953"
+        }
+    ],
+    "stats": {
+        "total": 58,
+        "additions": 31,
+        "deletions": 27
+    },
+    "files": [
+        {
+            "sha": "91c9fa06877cd4c51598ae98091925886a0ba83c",
+            "filename": "src/main/java/org/hsh/games/aoe/GameOfStrategy.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/relentlessEnigma/strategic-game/blob/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/src%2Fmain%2Fjava%2Forg%2Fhsh%2Fgames%2Faoe%2FGameOfStrategy.java",
+            "raw_url": "https://github.com/relentlessEnigma/strategic-game/raw/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/src%2Fmain%2Fjava%2Forg%2Fhsh%2Fgames%2Faoe%2FGameOfStrategy.java",
+            "contents_url": "https://api.github.com/repos/relentlessEnigma/strategic-game/contents/src%2Fmain%2Fjava%2Forg%2Fhsh%2Fgames%2Faoe%2FGameOfStrategy.java?ref=87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+            "patch": "@@ -75,6 +75,10 @@ private void displayResourcesAvailableToSearchFor(PlayerService playerService) {\n         }\n \n         int input = scanner.nextInt();\n+        if(input < 1 || input > availableResources.size()) {\n+            System.out.println(ApplicationConstants.MESSAGE_WRONG_OPTION_TRY_AGAIN);\n+            return;\n+        }\n         if(playerService.getWorkerAvailable() != null) {\n             playerService.sendWorkersToSearchJob(availableResources.get(input-1));\n         }"
+        },
+        {
+            "sha": "f6e72dedf2920c5ef5251d323f17d1c7ff215f73",
+            "filename": "src/main/java/org/hsh/games/aoe/threads/ResourceConsumptionThread.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/relentlessEnigma/strategic-game/blob/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/src%2Fmain%2Fjava%2Forg%2Fhsh%2Fgames%2Faoe%2Fthreads%2FResourceConsumptionThread.java",
+            "raw_url": "https://github.com/relentlessEnigma/strategic-game/raw/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/src%2Fmain%2Fjava%2Forg%2Fhsh%2Fgames%2Faoe%2Fthreads%2FResourceConsumptionThread.java",
+            "contents_url": "https://api.github.com/repos/relentlessEnigma/strategic-game/contents/src%2Fmain%2Fjava%2Forg%2Fhsh%2Fgames%2Faoe%2Fthreads%2FResourceConsumptionThread.java?ref=87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+            "patch": "@@ -30,7 +30,7 @@ public void run() {\n                                     throw new IllegalStateException(\"Recursos Insuficientes!\");\n                                 } else {\n                                     resource.setAmount(resourceLeft);\n-                                    System.out.printf(\"Trabalhador consumiu %d de %s%n\", consumptionType.getAmount(), consumptionType.getResource().getDescription());\n+                                    System.out.printf(\"\\nTrabalhador consumiu %d de %s%n\", consumptionType.getAmount(), consumptionType.getResource().getDescription());\n                                 }\n                             }\n                         }"
+        },
+        {
+            "sha": "bf311785458e60e92f107092744b0af61d899e59",
+            "filename": "target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/relentlessEnigma/strategic-game/blob/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/target%2Fmaven-status%2Fmaven-compiler-plugin%2Fcompile%2Fdefault-compile%2FcreatedFiles.lst",
+            "raw_url": "https://github.com/relentlessEnigma/strategic-game/raw/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/target%2Fmaven-status%2Fmaven-compiler-plugin%2Fcompile%2Fdefault-compile%2FcreatedFiles.lst",
+            "contents_url": "https://api.github.com/repos/relentlessEnigma/strategic-game/contents/target%2Fmaven-status%2Fmaven-compiler-plugin%2Fcompile%2Fdefault-compile%2FcreatedFiles.lst?ref=87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+            "patch": "@@ -6,14 +6,14 @@ org/hsh/games/aoe/ConstructionProcess.class\n org/hsh/games/aoe/entities/ConstructionType.class\n org/hsh/games/aoe/threads/ResourceConsumptionThread.class\n org/hsh/games/aoe/entities/Worker.class\n-org/hsh/games/aoe/entities/BuildingAndResourceAvailabilityPerLevel.class\n org/hsh/games/aoe/entities/Consumer.class\n+org/hsh/games/aoe/entities/BuildingAndResourceAvailabilityPerLevel.class\n org/hsh/games/aoe/Resource.class\n org/hsh/games/aoe/threads/ResourceGeneratorThread.class\n-org/hsh/games/aoe/ResourceAmount.class\n-org/hsh/games/aoe/threads/ConstructionBuildingThread.class\n org/hsh/games/aoe/Game.class\n org/hsh/games/aoe/PlayerService.class\n+org/hsh/games/aoe/ResourceAmount.class\n+org/hsh/games/aoe/threads/ConstructionBuildingThread.class\n org/hsh/games/aoe/GameOfStrategy.class\n org/hsh/games/aoe/entities/ResourceType$1.class\n org/hsh/games/aoe/Building.class"
+        },
+        {
+            "sha": "be6f7874ae9a86d21aedb47a8111922445f63481",
+            "filename": "target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst",
+            "status": "modified",
+            "additions": 23,
+            "deletions": 23,
+            "changes": 46,
+            "blob_url": "https://github.com/relentlessEnigma/strategic-game/blob/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/target%2Fmaven-status%2Fmaven-compiler-plugin%2Fcompile%2Fdefault-compile%2FinputFiles.lst",
+            "raw_url": "https://github.com/relentlessEnigma/strategic-game/raw/87ae33df03ae8ed6a691f9a7a20a7f9e38d86454/target%2Fmaven-status%2Fmaven-compiler-plugin%2Fcompile%2Fdefault-compile%2FinputFiles.lst",
+            "contents_url": "https://api.github.com/repos/relentlessEnigma/strategic-game/contents/target%2Fmaven-status%2Fmaven-compiler-plugin%2Fcompile%2Fdefault-compile%2FinputFiles.lst?ref=87ae33df03ae8ed6a691f9a7a20a7f9e38d86454",
+            "patch": "@@ -1,23 +1,23 @@\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/EraAge.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/Building.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/Resource.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ConstructionProcess.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/ResourceType.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ApplicationConstants.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/BuildingAndResourceAvailabilityPerLevel.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ThreadUtils.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/SearchResourcesThread.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/Game.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ResourceAmount.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/ConstructionType.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ConstructionBuildingThread.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ConstructionUpdatingThread.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/GameOfStrategy.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Difficulty.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ConsoleUtils.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Player.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ResourceGeneratorThread.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/PlayerService.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Consumer.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ResourceConsumptionThread.java\n-/home/tiago/Desktop/repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Worker.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/Resource.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ResourceGeneratorThread.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/SearchResourcesThread.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/EraAge.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Difficulty.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/Building.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/ResourceType.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ApplicationConstants.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ResourceConsumptionThread.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Consumer.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ConsoleUtils.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ThreadUtils.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/PlayerService.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/Game.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ResourceAmount.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ConstructionBuildingThread.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/GameOfStrategy.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/ConstructionType.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Worker.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/Player.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/ConstructionProcess.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/entities/BuildingAndResourceAvailabilityPerLevel.java\n+/Users/tiagoesteves/Desktop/Repos/github/strategic-game/src/main/java/org/hsh/games/aoe/threads/ConstructionUpdatingThread.java"
+        }
+    ]
+}

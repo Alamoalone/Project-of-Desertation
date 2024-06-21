@@ -1,0 +1,18 @@
+@@ -21,7 +21,7 @@
+  */
+ 
+ @Service
+-public class NoteServiceImpl implements NoteService {
++public class NoteServiceImpl implements NotesService {
+ 
+ 	@Autowired
+ 	private NoteDao noteDao;
+@@ -80,7 +80,7 @@ public NoteDto updateNote(NoteDto note) {
+ 	public List<NoteDto> getNotes() {
+ 		return noteDao
+ 				.getNotes()
+-				.parallelStream()
++				.stream()
+ 				.map(n -> modelMapper.map(n, NoteDto.class))
+ 				.collect(Collectors.toList());
+ 	}

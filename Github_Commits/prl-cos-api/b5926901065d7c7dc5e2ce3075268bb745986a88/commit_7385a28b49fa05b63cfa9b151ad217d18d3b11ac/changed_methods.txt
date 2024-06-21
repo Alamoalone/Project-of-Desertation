@@ -1,0 +1,1 @@
+updateCaseDetails(String authToken, String caseId, String eventId, UpdateCaseData updateCaseData)

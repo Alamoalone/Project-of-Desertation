@@ -1,0 +1,18 @@
+  public void testWorkerInstances() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new AppWithWorker());
+    ApplicationId appId = NamespaceId.DEFAULT.app(spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addLatestApplication(appId, appMeta);
+
+    ProgramId programId = appId.worker(AppWithWorker.WORKER);
+    int instancesFromSpec = spec.getWorkers().get(AppWithWorker.WORKER).getInstances();
+    Assert.assertEquals(1, instancesFromSpec);
+    int instances = store.getWorkerInstances(programId);
+    Assert.assertEquals(instancesFromSpec, instances);
+
+    store.setWorkerInstances(programId, 9);
+    instances = store.getWorkerInstances(programId);
+    Assert.assertEquals(9, instances);
+  }

@@ -1,0 +1,42 @@
+
+
+    public void auto(List<QuestionDto> single, List<QuestionDto> multiple, List<QuestionDto> judge, Integer examId) {
+        Exam exam = baseMapper.selectById(examId);
+        Double singleScore = exam.getSingleScore();
+        Double multipleScore = exam.getMultipleScore();
+        Double judgeScore = exam.getBoolScore();
+        Integer loginId = (Integer) StpUtil.getSession().get("loginId");
+        Double totalScore = 0.0;
+
+        if (!Objects.isNull(single)) {
+            for (QuestionDto question : single) {
+                if (question.getUserAnswer().equals(question.getCorrectAnswer())) {
+                    totalScore += singleScore;
+                }
+            }
+        }
+
+        if (!Objects.isNull(multiple)) {
+            for (QuestionDto question : multiple) {
+                if (question.getUserAnswer().equals(question.getCorrectAnswer())) {
+                    totalScore += multipleScore;
+                }
+            }
+        }
+
+        if (!Objects.isNull(judge)) {
+            for (QuestionDto question : judge) {
+                if (question.getUserAnswer().equals(question.getCorrectAnswer())) {
+                    totalScore += judgeScore;
+                }
+            }
+        }
+
+        LambdaQueryWrapper<Task> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Task::getExamId, examId).eq(Task::getUserId, loginId);
+        Task one = taskService.getOne(queryWrapper);
+        one.setScore(totalScore);
+        one.setUpdateTime(OwnUtil.getCurrentDate());
+        taskService.updateById(one);
+    }
+

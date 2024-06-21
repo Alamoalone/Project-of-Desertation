@@ -1,0 +1,29 @@
+    public void reconstructionViewSetButtonAction()
+    {
+        this.fileChooser.setTitle("Choose an view set for image reconstruction");
+        this.fileChooser.setSelectedExtensionFilter( // Doesn't work; not sure why.
+            new FileChooser.ExtensionFilter("View Set files", "*.vset"));
+        if (reconstructionViewSetField.getText().isEmpty())
+        {
+            // Default for when the text field is empty.
+            if (lastViewSet != null)
+            {
+                // There was a previously selected view set, use that one.
+                this.fileChooser.setInitialDirectory(lastViewSet.getParentFile());
+                this.fileChooser.setInitialFileName(lastViewSet.getName());
+            }
+        }
+        else
+        {
+            // If the text field is not empty, use the current value as the starting directory in the file dialog.
+            File currentValue = new File(reconstructionViewSetField.getText());
+            this.fileChooser.setInitialDirectory(currentValue.getParentFile());
+            this.fileChooser.setInitialFileName(currentValue.getName());
+        }
+        File file = this.fileChooser.showOpenDialog(stage.getOwner());
+        if (file != null)
+        {
+            reconstructionViewSetField.setText(file.toString());
+            lastViewSet = file;
+        }
+    }

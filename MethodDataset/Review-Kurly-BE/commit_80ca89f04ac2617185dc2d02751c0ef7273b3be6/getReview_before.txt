@@ -1,0 +1,4 @@
+    public ApiResponse<ReviewsDetailsResponseDto> getReview(@PathVariable Long reviewId,
+                                                            @Parameter(hidden = true) @AuthenticationPrincipal UserDetailsImpl userDetails) throws AccessDeniedException {
+        return ApiResponse.successOf(HttpStatus.CREATED,reviewService.getReview(reviewId, userDetails.getUsername()));
+    }

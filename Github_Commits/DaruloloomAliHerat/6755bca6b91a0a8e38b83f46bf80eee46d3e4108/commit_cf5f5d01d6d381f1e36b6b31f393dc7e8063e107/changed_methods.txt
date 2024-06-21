@@ -1,0 +1,6 @@
+checkFavoriteButtons()
+onCreate(Bundle savedInstanceState)
+onDestroy()
+onSaveInstanceState(Bundle outState)
+onBackPressed()
+onNavigationItemSelected(MenuItem item)

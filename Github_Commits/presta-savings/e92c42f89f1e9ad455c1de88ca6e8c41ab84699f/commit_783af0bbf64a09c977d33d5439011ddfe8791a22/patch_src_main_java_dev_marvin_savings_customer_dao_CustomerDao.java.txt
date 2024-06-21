@@ -1,0 +1,9 @@
+@@ -12,7 +12,7 @@ public interface CustomerDao {
+ 
+     Optional<Customer> getCustomerByMemberNumber(String memberNumber);
+ 
+-    Customer getCustomerByEmail(String email);
++    Optional<Customer> getCustomerByEmail(String email);
+ 
+     Boolean updateCustomer(Customer customer);
+ 

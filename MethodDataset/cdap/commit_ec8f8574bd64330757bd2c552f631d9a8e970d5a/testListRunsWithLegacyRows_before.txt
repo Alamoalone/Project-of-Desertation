@@ -1,0 +1,62 @@
+  public void testListRunsWithLegacyRows() throws ConflictException {
+    String appName = "application1";
+    ApplicationId appId = NamespaceId.DEFAULT.app(appName);
+    ArtifactId artifactId = NamespaceId.DEFAULT.artifact("testArtifact", "1.0").toApiArtifactId();
+    ApplicationSpecification spec = createDummyAppSpec(appId.getApplication(), appId.getVersion(), artifactId);
+    ApplicationMeta appMeta = new ApplicationMeta(appId.getApplication(), spec, null);
+    List<ApplicationId> expectedApps = new ArrayList<>();
+
+    // Insert a row that is null for changeDetail
+    store.addApplication(appId, appMeta);
+    expectedApps.add(appId);
+
+    ApplicationId newVersionAppId = appId.getAppReference().app("new_version");
+    spec = createDummyAppSpec(newVersionAppId.getApplication(), newVersionAppId.getVersion(), artifactId);
+    long currentTime = System.currentTimeMillis();
+
+    ApplicationMeta newAppMeta = new ApplicationMeta(newVersionAppId.getApplication(), spec,
+                                                     new ChangeDetail(null, null,
+                                                                      null, currentTime));
+    // Insert a second version
+    store.addApplication(newVersionAppId, newAppMeta);
+    expectedApps.add(newVersionAppId);
+
+    // Insert a third version
+    ApplicationId anotherVersionAppId = appId.getAppReference().app("another_version");
+    spec = createDummyAppSpec(anotherVersionAppId.getApplication(), anotherVersionAppId.getVersion(), artifactId);
+    ApplicationMeta anotherAppMeta = new ApplicationMeta(anotherVersionAppId.getApplication(), spec,
+                                                         new ChangeDetail(null, null,
+                                                                          null, currentTime + 1000));
+    store.addApplication(anotherVersionAppId, anotherAppMeta);
+    expectedApps.add(anotherVersionAppId);
+
+    // Reverse it because we want DESC order
+    Collections.reverse(expectedApps);
+
+    List<ApplicationId> actualApps = new ArrayList<>();
+    List<Long> creationTimes = new ArrayList<>();
+    AtomicInteger latestVersionCount = new AtomicInteger();
+    AtomicReference<ApplicationId> latestAppId = new AtomicReference<>();
+
+    ScanApplicationsRequest request = ScanApplicationsRequest.builder()
+      .setNamespaceId(NamespaceId.DEFAULT)
+      .setSortOrder(SortOrder.DESC)
+      .setSortCreationTime(true)
+      .setLimit(10)
+      .build();
+
+    Assert.assertFalse(store.scanApplications(request, 20, (id, appSpec) -> {
+      actualApps.add(id);
+      creationTimes.add(appSpec.getChange().getCreationTimeMillis());
+      if (Boolean.TRUE.equals(appSpec.getChange().getLatest())) {
+        latestVersionCount.getAndIncrement();
+        latestAppId.set(id);
+      }
+    }));
+
+    Assert.assertEquals(expectedApps, actualApps);
+    Assert.assertEquals(creationTimes.size(), 3);
+    Assert.assertEquals(creationTimes.get(1) - 1000, (long) creationTimes.get(2));
+    Assert.assertEquals(latestVersionCount.get(), 1);
+    Assert.assertEquals(latestAppId.get(), actualApps.get(0));
+  }

@@ -1,0 +1,5 @@
+    private void update(int d) {
+        duration = d;
+        timer.cancel();
+        close();
+    }

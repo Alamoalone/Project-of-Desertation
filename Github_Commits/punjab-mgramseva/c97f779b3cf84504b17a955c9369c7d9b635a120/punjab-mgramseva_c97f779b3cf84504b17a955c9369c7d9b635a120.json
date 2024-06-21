@@ -1,0 +1,98 @@
+{
+    "sha": "c97f779b3cf84504b17a955c9369c7d9b635a120",
+    "node_id": "C_kwDOFwVactoAKGM5N2Y3NzliM2NmODQ1MDRiMTdhOTU1YzkzNjljN2Q5YjYzNWExMjA",
+    "commit": {
+        "author": {
+            "name": "Saloni-041",
+            "email": "103189799+Saloni-eGov@users.noreply.github.com",
+            "date": "2023-08-03T08:45:19Z"
+        },
+        "committer": {
+            "name": "Saloni-041",
+            "email": "103189799+Saloni-eGov@users.noreply.github.com",
+            "date": "2023-08-03T08:45:19Z"
+        },
+        "message": "PFM-4251 null pointer exception",
+        "tree": {
+            "sha": "91cf1b3ef0c385e71decb51989e31ec23e67c1c4",
+            "url": "https://api.github.com/repos/egovernments/punjab-mgramseva/git/trees/91cf1b3ef0c385e71decb51989e31ec23e67c1c4"
+        },
+        "url": "https://api.github.com/repos/egovernments/punjab-mgramseva/git/commits/c97f779b3cf84504b17a955c9369c7d9b635a120",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/egovernments/punjab-mgramseva/commits/c97f779b3cf84504b17a955c9369c7d9b635a120",
+    "html_url": "https://github.com/egovernments/punjab-mgramseva/commit/c97f779b3cf84504b17a955c9369c7d9b635a120",
+    "comments_url": "https://api.github.com/repos/egovernments/punjab-mgramseva/commits/c97f779b3cf84504b17a955c9369c7d9b635a120/comments",
+    "author": {
+        "login": "saloni041",
+        "id": 103189799,
+        "node_id": "U_kgDOBiaNJw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/103189799?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/saloni041",
+        "html_url": "https://github.com/saloni041",
+        "followers_url": "https://api.github.com/users/saloni041/followers",
+        "following_url": "https://api.github.com/users/saloni041/following{/other_user}",
+        "gists_url": "https://api.github.com/users/saloni041/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/saloni041/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/saloni041/subscriptions",
+        "organizations_url": "https://api.github.com/users/saloni041/orgs",
+        "repos_url": "https://api.github.com/users/saloni041/repos",
+        "events_url": "https://api.github.com/users/saloni041/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/saloni041/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "saloni041",
+        "id": 103189799,
+        "node_id": "U_kgDOBiaNJw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/103189799?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/saloni041",
+        "html_url": "https://github.com/saloni041",
+        "followers_url": "https://api.github.com/users/saloni041/followers",
+        "following_url": "https://api.github.com/users/saloni041/following{/other_user}",
+        "gists_url": "https://api.github.com/users/saloni041/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/saloni041/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/saloni041/subscriptions",
+        "organizations_url": "https://api.github.com/users/saloni041/orgs",
+        "repos_url": "https://api.github.com/users/saloni041/repos",
+        "events_url": "https://api.github.com/users/saloni041/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/saloni041/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "545d4ad1a406f9239d85c80685a9cf2171894a89",
+            "url": "https://api.github.com/repos/egovernments/punjab-mgramseva/commits/545d4ad1a406f9239d85c80685a9cf2171894a89",
+            "html_url": "https://github.com/egovernments/punjab-mgramseva/commit/545d4ad1a406f9239d85c80685a9cf2171894a89"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 6,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "4b3e7951c339ca11cb16d002cc452226ef05359d",
+            "filename": "municipal-services/ws-services/src/main/java/org/egov/waterconnection/service/WaterServiceImpl.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 1,
+            "changes": 7,
+            "blob_url": "https://github.com/egovernments/punjab-mgramseva/blob/c97f779b3cf84504b17a955c9369c7d9b635a120/municipal-services%2Fws-services%2Fsrc%2Fmain%2Fjava%2Forg%2Fegov%2Fwaterconnection%2Fservice%2FWaterServiceImpl.java",
+            "raw_url": "https://github.com/egovernments/punjab-mgramseva/raw/c97f779b3cf84504b17a955c9369c7d9b635a120/municipal-services%2Fws-services%2Fsrc%2Fmain%2Fjava%2Forg%2Fegov%2Fwaterconnection%2Fservice%2FWaterServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/egovernments/punjab-mgramseva/contents/municipal-services%2Fws-services%2Fsrc%2Fmain%2Fjava%2Forg%2Fegov%2Fwaterconnection%2Fservice%2FWaterServiceImpl.java?ref=c97f779b3cf84504b17a955c9369c7d9b635a120",
+            "patch": "@@ -605,7 +605,12 @@ public RevenueDashboard getRevenueDashboardData(@Valid SearchCriteria criteria,\n \t@Override\n \tpublic WaterConnectionResponse getWCListFuzzySearch(SearchCriteria criteria, RequestInfo requestInfo) {\n \n-\t\tcriteria.setName(criteria.getName().trim());\n+\t\tif(criteria!=null && criteria.getTextSearch()!=null){\n+\t\t\tcriteria.setTextSearch(criteria.getTextSearch().trim());\n+\t\t}\n+\t\tif(criteria!=null && criteria.getName()!=null){\n+\t\t\tcriteria.setName(criteria.getName().trim());\n+\t\t}\n \n \t\tList<String> idsfromDB = waterDao.getWCListFuzzySearch(criteria);\n "
+        }
+    ]
+}

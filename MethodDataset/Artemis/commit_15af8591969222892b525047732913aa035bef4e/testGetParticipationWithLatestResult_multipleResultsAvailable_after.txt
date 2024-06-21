@@ -1,0 +1,34 @@
+    void testGetParticipationWithLatestResult_multipleResultsAvailable(ZonedDateTime startDate, ZonedDateTime releaseDate, AssessmentType assessmentType,
+            ZonedDateTime completionDate, ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {
+        programmingExercise.setStartDate(startDate);
+        programmingExercise.setReleaseDate(releaseDate);
+        // Add an automatic result first
+        var firstResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        // Add a parameterized second result
+        var secondResult = participationUtilService.addResultToParticipation(assessmentType, completionDate, programmingExerciseParticipation);
+        StudentParticipation participation = (StudentParticipation) secondResult.getParticipation();
+
+        // Expect the request to always be ok because it should at least return the first automatic result
+        var requestedParticipation = request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-latest-result-and-feedbacks", HttpStatus.OK,
+                ProgrammingExerciseStudentParticipation.class);
+
+        assertThat(requestedParticipation.getResults()).hasSize(1);
+        var requestedResult = requestedParticipation.getResults().iterator().next();
+
+        assertThat(requestedResult.getFeedbacks()).noneMatch(Feedback::isInvisible);
+        assertThat(requestedResult.getFeedbacks()).noneMatch(Feedback::isAfterDueDate);
+
+        // Depending on the parameters we expect to get the first or the second created result from the server
+        if (expectLastCreatedResult) {
+            secondResult.filterSensitiveInformation();
+            secondResult.filterSensitiveFeedbacks(true);
+            assertThat(requestedResult).isEqualTo(secondResult);
+        }
+        else {
+            firstResult.filterSensitiveInformation();
+            firstResult.filterSensitiveFeedbacks(true);
+            assertThat(requestedResult).isEqualTo(firstResult);
+        }
+    }

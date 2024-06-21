@@ -1,0 +1,8 @@
+@@ -17,6 +17,6 @@ public DoublyNode(int data, DoublyNode previous, DoublyNode next) {
+ 	
+ 	@Override
+ 	public String toString() {
+-		return "{" + previous.data + " <--> " + this.data + "<-->" + next.data + "}";
++		return "{" + previous + " <--> " + this.data + " <--> " + next + "}";
+ 	}
+ }

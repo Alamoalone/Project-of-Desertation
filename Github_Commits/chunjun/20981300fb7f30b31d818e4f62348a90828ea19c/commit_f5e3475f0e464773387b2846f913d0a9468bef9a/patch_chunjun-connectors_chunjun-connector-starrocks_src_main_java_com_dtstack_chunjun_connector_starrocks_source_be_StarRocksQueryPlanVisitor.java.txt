@@ -1,0 +1,9 @@
+@@ -86,7 +86,7 @@ private static void allocateTabletsEqually(
+         int tabletCount = Integer.MAX_VALUE;
+         String currentBeNode = "";
+         // Allocate tablets equally for all BeNodes
+-        for (String beNode : tablet.getRouting()) {
++        for (String beNode : tablet.getRoutings()) {
+             if (!beXTablets.containsKey(beNode)) {
+                 beXTablets.put(beNode, new HashSet<>());
+                 currentBeNode = beNode;

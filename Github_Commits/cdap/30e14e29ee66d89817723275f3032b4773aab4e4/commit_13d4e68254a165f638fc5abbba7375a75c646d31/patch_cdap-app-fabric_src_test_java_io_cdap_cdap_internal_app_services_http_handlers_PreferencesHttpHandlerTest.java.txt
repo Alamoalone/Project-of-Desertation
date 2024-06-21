@@ -1,0 +1,9 @@
+@@ -55,7 +55,7 @@ private void addApplication(String namespace, Application app) throws ConflictEx
+     ApplicationMeta meta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                                new ChangeDetail(null, null, null,
+                                                                 System.currentTimeMillis()));
+-    store.addApplication(new ApplicationId(namespace, appSpec.getName()), meta);
++    store.addLatestApplication(new ApplicationId(namespace, appSpec.getName()), meta);
+   }
+ 
+   @Test

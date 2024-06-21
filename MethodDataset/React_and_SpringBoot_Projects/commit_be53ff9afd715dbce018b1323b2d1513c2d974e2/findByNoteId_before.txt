@@ -1,0 +1,3 @@
+    public Notes findByNoteId(Integer id) {
+        return notesRepository.findByNoteId(id);
+    }

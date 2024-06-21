@@ -1,0 +1,79 @@
+@@ -35,51 +35,57 @@ public void actionPerformed(ActionEvent e) {
+             vistaAdd.establecerListeners(this);
+             vistaAdd.getCampoNombre().requestFocus();
+         }
++		
+ 		//Al pulsar boton OK de añadir contacto, añade nombre y telefono a la tabla
+ 		//else if (vistaAdd != null && e.getSource() == vistaAdd.getBotonOk()) {
+-		else if (e.getSource() == vistaAdd.getBotonOk()) {
++		if (vistaAdd != null && e.getSource() == vistaAdd.getBotonOk()) {
+             addDatosTabla();
+           //  vistaAdd.setVisible(false);
+         }
++		
+ 		//Al pulsar cancelar de añadir contacto cierra y queda la principal
+ 		//else if (vistaAdd != null && e.getSource() == vistaAdd.getBotonCancel()) {
+-		else if (e.getSource() == vistaAdd.getBotonCancel()) {
++		if (vistaAdd != null && e.getSource() == vistaAdd.getBotonCancel()) {
+            // vistaAdd.setVisible(false);
+             vistaAdd.dispose();
+-        } 
++        }
++		
+ 		//Al pulsar el boton editar de la tabla principal
+-		else if (e.getSource() == vistaPrincipal.getBotonEdit()) {
++		if (e.getSource() == vistaPrincipal.getBotonEdit()) {
+ 			
+             //vistaEditar.getCampoNombre().requestFocus();
+             int selectedRow = vistaPrincipal.obtenerFilaSeleccionada();
+-
++            
+     		if (selectedRow >= 0) {
+-    			vistaEditar = new VistaEditar(this);
+-                vistaEditar.establecerListeners(this);
++			    vistaEditar = new VistaEditar(this);
++			    vistaEditar.establecerListeners(this);
+     			ponerDatosVistaEditar();
+     		}else {
+     			JOptionPane.showMessageDialog(null,"Tiene que seleccionar una fila", "Aviso", JOptionPane.INFORMATION_MESSAGE);	
+     		}
+                 
+         }
++		
+ 		//Al pulsar boton OK edita contacto, cambia nombre y/o telefono a la tabla
+ 		//else if (vistaEditar != null && e.getSource() == vistaEditar.getBotonOk()) {
+-		else if (e.getSource() == vistaEditar.getBotonOk()) {
++		if (vistaEditar != null && e.getSource() == vistaEditar.getBotonOk()) {
+             //metodo editar
+ 			vistaEditar.establecerListeners(this);
+ 			editDatosTabla();
+ 			vistaEditar.setVisible(false);
+         }
++		
+ 		//Al pulsar cancelar de la vista editar, añadir contacto cierra y queda la principal
+ 		//else if (vistaEditar != null && e.getSource() == vistaEditar.getBotonCancel()) {
+-		else if (e.getSource() == vistaEditar.getBotonCancel()) {
++		if (vistaEditar != null && e.getSource() == vistaEditar.getBotonCancel()) {
+            // vistaAdd.setVisible(false);
+ 			vistaEditar.establecerListeners(this);
+ 			vistaEditar.dispose();
+ 			//vistaAdd.setVisible(false);
+         }
++		
+ 		//Al pulsar el boton borrar de la tabla principal
+-		else if (e.getSource() == vistaPrincipal.getBotonDelete()) {
++		if (e.getSource() == vistaPrincipal.getBotonDelete()) {
+             vistaPrincipal.establecerListeners(this);
+             eliminarContacto();
+         }
+@@ -154,6 +160,10 @@ public void eliminarContacto() {
+ 			DefaultTableModel tableModel = vistaPrincipal.getTableModel();
+ 			tableModel.removeRow(filaSeleccionada);
+ 		}
++		else {
++            // Mostrar un mensaje al usuario indicando que no hay fila seleccionada.
++            JOptionPane.showMessageDialog(vistaPrincipal, "Selecciona un contacto para editar.", "Sin selección", JOptionPane.INFORMATION_MESSAGE);
++        }
+ 		
+ 	}
+ 	 

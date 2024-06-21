@@ -1,0 +1,18 @@
+@@ -73,6 +73,7 @@
+ import java.util.List;
+ import java.util.Map;
+ import java.util.UUID;
++import java.util.Objects;
+ import java.util.concurrent.TimeUnit;
+ import java.util.concurrent.TimeoutException;
+ import java.util.concurrent.atomic.AtomicBoolean;
+@@ -509,7 +510,9 @@ private RunStepResponse runIngester(RunStepResponse runStepResponse, Collection<
+                 runStepResponse.withStepOutput(
+                         errorListener
+                                 .getThrowables().stream()
++                                .filter(Objects::nonNull)
+                                 .map(Throwable::toString)
++                                .filter(Objects::nonNull)
+                                 .collect(Collectors.toList())
+                 );
+                 errorListener.getThrowables().clear();

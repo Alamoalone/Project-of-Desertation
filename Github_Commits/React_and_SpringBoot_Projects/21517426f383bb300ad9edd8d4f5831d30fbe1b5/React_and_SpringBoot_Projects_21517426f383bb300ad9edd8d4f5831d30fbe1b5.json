@@ -1,0 +1,167 @@
+{
+    "sha": "21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+    "node_id": "C_kwDOKSmoUNoAKDIxNTE3NDI2ZjM4M2JiMzAwYWQ5ZWRkOGQ0ZjU4MzFkMzBmYmUxYjU",
+    "commit": {
+        "author": {
+            "name": "sushant0999",
+            "email": "sushantraj215@gmail.com",
+            "date": "2023-10-04T06:20:59Z"
+        },
+        "committer": {
+            "name": "sushant0999",
+            "email": "sushantraj215@gmail.com",
+            "date": "2023-10-04T06:20:59Z"
+        },
+        "message": "fixed null pointer exception in backend",
+        "tree": {
+            "sha": "b281dbfbce9cdefd3b1b8a676af79187f0524e74",
+            "url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/git/trees/b281dbfbce9cdefd3b1b8a676af79187f0524e74"
+        },
+        "url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/git/commits/21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/commits/21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+    "html_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/commit/21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+    "comments_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/commits/21517426f383bb300ad9edd8d4f5831d30fbe1b5/comments",
+    "author": {
+        "login": "Sushant0999",
+        "id": 66193982,
+        "node_id": "MDQ6VXNlcjY2MTkzOTgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66193982?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sushant0999",
+        "html_url": "https://github.com/Sushant0999",
+        "followers_url": "https://api.github.com/users/Sushant0999/followers",
+        "following_url": "https://api.github.com/users/Sushant0999/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sushant0999/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sushant0999/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sushant0999/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sushant0999/orgs",
+        "repos_url": "https://api.github.com/users/Sushant0999/repos",
+        "events_url": "https://api.github.com/users/Sushant0999/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sushant0999/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Sushant0999",
+        "id": 66193982,
+        "node_id": "MDQ6VXNlcjY2MTkzOTgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66193982?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sushant0999",
+        "html_url": "https://github.com/Sushant0999",
+        "followers_url": "https://api.github.com/users/Sushant0999/followers",
+        "following_url": "https://api.github.com/users/Sushant0999/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sushant0999/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sushant0999/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sushant0999/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sushant0999/orgs",
+        "repos_url": "https://api.github.com/users/Sushant0999/repos",
+        "events_url": "https://api.github.com/users/Sushant0999/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sushant0999/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4104f67cb29298cb30f8530067d16484315f66e8",
+            "url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/commits/4104f67cb29298cb30f8530067d16484315f66e8",
+            "html_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/commit/4104f67cb29298cb30f8530067d16484315f66e8"
+        }
+    ],
+    "stats": {
+        "total": 87,
+        "additions": 51,
+        "deletions": 36
+    },
+    "files": [
+        {
+            "sha": "55d9cbcf87f46feef242bb9c7192079ef1b1b7fe",
+            "filename": "google_keep_clone/src/api/NoteData.jsx",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/google_keep_clone%2Fsrc%2Fapi%2FNoteData.jsx",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/google_keep_clone%2Fsrc%2Fapi%2FNoteData.jsx",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/google_keep_clone%2Fsrc%2Fapi%2FNoteData.jsx?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+            "patch": "@@ -7,6 +7,9 @@ export const getData = async () => {\n \n     try {\n         const response = await fetch(url);\n+\n+        console.log(response);\n+\n         if (!response.ok) {\n             throw new Error('Network response was not ok');\n         }"
+        },
+        {
+            "sha": "8aea8134dafcc51ae1adaaf6e11c601e1b4547ca",
+            "filename": "google_keep_clone/src/component/Note.jsx",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 2,
+            "changes": 2,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/google_keep_clone%2Fsrc%2Fcomponent%2FNote.jsx",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/google_keep_clone%2Fsrc%2Fcomponent%2FNote.jsx",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/google_keep_clone%2Fsrc%2Fcomponent%2FNote.jsx?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+            "patch": "@@ -52,8 +52,6 @@ export default function Note() {\n     };\n \n     useEffect(() => {\n-        // console.log('noteTitle:', noteTitle);\n-        // console.log('noteDescription:', noteDescription);\n     }, [noteTitle, noteDescription]);\n \n "
+        },
+        {
+            "sha": "cd3f17a2b0ef8c71537ec7b52e00316fcfe734c1",
+            "filename": "keep/src/main/java/com/notes/keep/controller/NotesController.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 11,
+            "changes": 27,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnotes%2Fkeep%2Fcontroller%2FNotesController.java",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnotes%2Fkeep%2Fcontroller%2FNotesController.java",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/keep%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnotes%2Fkeep%2Fcontroller%2FNotesController.java?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+            "patch": "@@ -22,20 +22,19 @@ public class NotesController {\n     @PostMapping(\"/add\")\n     public ResponseEntity<?> createNote(@RequestBody Notes note) throws Exception {\n         Loggers.info(\"NOTE CREATED\");\n-        System.out.println(note);\n         Notes notes = notesService.createNote(note);\n         if (notes == null) {\n-            return ResponseEntity.status(500).header(\"msg\", \"SOMETHING WENT WRONG\").build();\n+            return ResponseEntity.status(200).header(\"msg\", \"FIELDS ARE EMPTY\").build();\n         }\n-        return ResponseEntity.ok(notesService.createNote(note));\n+        return ResponseEntity.ok(notes);\n     }\n \n     @GetMapping(\"/getAll\")\n-    public ResponseEntity<?> getAllNotes() {\n+    public ResponseEntity<?> getAllNotes() throws NullPointerException {\n         Loggers.info(\"ALL NOTE FETCHED\");\n         List<Notes> notesList = notesService.notesList();\n         if(notesList.isEmpty()){\n-            return ResponseEntity.status(204).header(\"msg\", \"NOTES LIST IS EMPTY\").build();\n+            return ResponseEntity.noContent().header(\"msg\", \"NO NOTE FOUND\").build();\n         }\n         return ResponseEntity.ok(notesList);\n     }\n@@ -46,34 +45,40 @@ public ResponseEntity<?> getNoteById(@PathVariable Integer id) {\n         Loggers.info(\"NOTE WITH ID \" + id + \" REQUESTED\");\n         Notes note = notesService.findByNoteId(id);\n         if(note == null){\n-            return ResponseEntity.status(204).header(\"msg\", \"NO NOTE FOUND WITH THIS ID\").build();\n+            return ResponseEntity.noContent().header(\"msg\", \"NO NOTE FOUND WITH THIS ID\").build();\n         }\n-        return ResponseEntity.ok(notesService.findByNoteId(id));\n+        return ResponseEntity.ok(note);\n     }\n \n     @PutMapping(\"/noteId/{id}\")\n     public ResponseEntity<?> updateNoteById(@PathVariable Integer id, @RequestBody Notes notes) {\n         Loggers.info(\"NOTE WITH ID \" + id + \" UPDATED\");\n-        if(notesService.updateNoteById(id, notes) == null){\n+        Notes note = notesService.updateNoteById(id, notes);\n+        if(note == null){\n             return ResponseEntity.status(400).header(\"msg\", \"BAD REQUEST\").build();\n         }\n-        return ResponseEntity.ok(notesService.updateNoteById(id, notes));\n+        return ResponseEntity.ok(note);\n     }\n \n     @DeleteMapping(\"/delete/{id}\")\n     public ResponseEntity<?> deleteById(@PathVariable Integer id) {\n         Loggers.info(\"NOTE WITH ID \" + id + \" DELETED\");\n+        Notes note = notesService.findByNoteId(id);\n+        if(note == null){\n+            return ResponseEntity.noContent().header(\"msg\", \"NO CONTENT DELETED BECAUSE IT DOESN'T EXIST\").build();\n+        }\n         notesService.deleteById(id);\n         return ResponseEntity.ok().build();\n     }\n \n     @GetMapping(\"/getByTitle/{title}\")\n     public ResponseEntity<?> findByTitle(@PathVariable String title) {\n         Loggers.info(\"NOTE WITH TITLE \" + title + \" REQUESTED\");\n-        if (notesService.findByTitle(title) == null) {\n+        List<Notes> notesList = notesService.findByTitle(title);\n+        if (notesList == null) {\n             return ResponseEntity.status(204).header(\"msg\", \"NO NOTES FOUND WITH THIS TITLE\").build();\n         }\n-        return ResponseEntity.ok(notesService.findByTitle(title));\n+        return ResponseEntity.ok(notesList);\n     }\n \n     @GetMapping(\"/userId/{id}\")"
+        },
+        {
+            "sha": "be53ff9afd715dbce018b1323b2d1513c2d974e2",
+            "filename": "keep/src/main/java/com/notes/keep/service/NotesService.java",
+            "status": "modified",
+            "additions": 32,
+            "deletions": 23,
+            "changes": 55,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnotes%2Fkeep%2Fservice%2FNotesService.java",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnotes%2Fkeep%2Fservice%2FNotesService.java",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/keep%2Fsrc%2Fmain%2Fjava%2Fcom%2Fnotes%2Fkeep%2Fservice%2FNotesService.java?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5",
+            "patch": "@@ -10,64 +10,73 @@\n import org.springframework.beans.factory.annotation.Autowired;\n import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;\n import org.springframework.stereotype.Service;\n+\n+import java.util.ArrayList;\n+import java.util.Iterator;\n import java.util.List;\n import java.util.Optional;\n+import java.util.function.Consumer;\n import java.util.stream.Collectors;\n \n @Service\n public class NotesService {\n     private final NotesRepository notesRepository;\n-\n+    public BCryptPasswordEncoder encoder;\n     @Autowired\n     private UserRepository userRepository;\n-\n-    public BCryptPasswordEncoder encoder;\n-\n+    @Autowired\n+    private EncryptionUtil encryptionUtil;\n \n     @Autowired\n     public NotesService(NotesRepository notesRepository) {\n         this.notesRepository = notesRepository;\n     }\n \n-    @Autowired\n-    private EncryptionUtil encryptionUtil;\n-\n-\n     public Notes createNote(Notes note) throws Exception {\n-        try{\n+        try {\n             Optional<User> user = userRepository.findById(note.getUser().getUserId());\n             note.setUser(user.get());\n             note.setDate(FormatDateTime.parseStandardDate(note.getDate()));\n             note.setTitle(encryptionUtil.encrypt(note.getTitle()));\n             note.setDescription(encryptionUtil.encrypt(note.getDescription()));\n-        }catch (Exception e){\n+        } catch (Exception e) {\n             throw new Exception(e);\n         }\n         return notesRepository.save(note);\n     }\n \n     public List<Notes> notesList() {\n         List<Notes> notesList = notesRepository.findAll();\n+        List<Notes> collected = new ArrayList<>();\n+\n+        try {\n+            collected = notesList.stream()\n+                    .peek(note -> {\n+                        note.setTitle(encryptionUtil.decrypt(note.getTitle()));\n+                        note.setDescription(encryptionUtil.decrypt(note.getDescription()));\n+                    })\n+                    .toList();\n+        } catch (NullPointerException e) {\n+            throw new NullPointerException(\"LIST IS EMPTY\");\n+        }\n \n-//        notesList.stream()\n-//                .forEach(ele -> ele.setTitle(encryptionUtil.decrypt(ele.getTitle())));\n-//\n-//        notesList.forEach(System.out::println);\n-\n-        Notes notes = notesList.get(0);\n-        System.out.println(encryptionUtil.decrypt(notes.getTitle() + \" \" + encryptionUtil.decrypt(notes.getDescription())));\n-\n-        List<Notes> collected = null;\n         return collected;\n     }\n \n     public Notes findByNoteId(Integer id) {\n-        return notesRepository.findByNoteId(id);\n+        Notes note = notesRepository.findByNoteId(id);\n+        try{\n+            note.setTitle(encryptionUtil.decrypt(note.getTitle()));\n+            note.setDescription(encryptionUtil.decrypt(note.getDescription()));\n+        }catch (NullPointerException e){\n+            return null;\n+        }\n+        return note;\n     }\n \n     public Notes updateNoteById(Integer id, Notes notes) {\n         Notes oldNote = notesRepository.findByNoteId(id);\n-        if(oldNote == null){\n+        if (oldNote == null) {\n             return null;\n         }\n //        oldNote.setColor(notes.getColor());\n@@ -83,12 +92,12 @@ public void deleteById(Integer id) {\n         notesRepository.deleteById(id);\n     }\n \n-    public List<Notes> findByTitle(String title){\n+    public List<Notes> findByTitle(String title) {\n         return notesRepository.findByTitle(title);\n     }\n \n \n-    public List<Notes> findAllByUserUserId(Integer userId){\n+    public List<Notes> findAllByUserUserId(Integer userId) {\n         return notesRepository.findAllByUserUserId(userId);\n     }\n }"
+        },
+        {
+            "sha": "240370d03549181c9095504a9cf17c1f2b816a30",
+            "filename": "keep/target/classes/com/notes/keep/controller/NotesController.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Fcontroller%2FNotesController.class",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Fcontroller%2FNotesController.class",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Fcontroller%2FNotesController.class?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5"
+        },
+        {
+            "sha": "155f2d31016866c1e056e5c5600e12267c9a90f9",
+            "filename": "keep/target/classes/com/notes/keep/service/NotesService.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Fservice%2FNotesService.class",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Fservice%2FNotesService.class",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Fservice%2FNotesService.class?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5"
+        },
+        {
+            "sha": "3ef4a22ac34b0fa145fac8dc15276cef5a5f5aff",
+            "filename": "keep/target/classes/com/notes/keep/utils/EncryptionUtil.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/blob/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Futils%2FEncryptionUtil.class",
+            "raw_url": "https://github.com/Sushant0999/React_and_SpringBoot_Projects/raw/21517426f383bb300ad9edd8d4f5831d30fbe1b5/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Futils%2FEncryptionUtil.class",
+            "contents_url": "https://api.github.com/repos/Sushant0999/React_and_SpringBoot_Projects/contents/keep%2Ftarget%2Fclasses%2Fcom%2Fnotes%2Fkeep%2Futils%2FEncryptionUtil.class?ref=21517426f383bb300ad9edd8d4f5831d30fbe1b5"
+        }
+    ]
+}

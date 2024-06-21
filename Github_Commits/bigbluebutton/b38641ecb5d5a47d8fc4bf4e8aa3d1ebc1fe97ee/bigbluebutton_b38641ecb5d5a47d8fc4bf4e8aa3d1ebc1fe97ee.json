@@ -1,0 +1,110 @@
+{
+    "sha": "b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee",
+    "node_id": "C_kwDOAApxXtoAKGIzODY0MWVjYjVkNWE0N2Q4ZmM0YmY0ZThhYTNkMWViYzFmZTk3ZWU",
+    "commit": {
+        "author": {
+            "name": "Paul Trudel",
+            "email": "35616208+paultrudel@users.noreply.github.com",
+            "date": "2023-11-16T12:44:55Z"
+        },
+        "committer": {
+            "name": "André",
+            "email": "andrezero@live.com",
+            "date": "2023-11-16T12:44:55Z"
+        },
+        "message": "fix (bbb-web): Null pointer exception when parent meeting does not exist",
+        "tree": {
+            "sha": "5bda4a6452205779cb0dc18e0e1b02935281af9c",
+            "url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/git/trees/5bda4a6452205779cb0dc18e0e1b02935281af9c"
+        },
+        "url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/git/commits/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/commits/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee",
+    "html_url": "https://github.com/bigbluebutton/bigbluebutton/commit/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee",
+    "comments_url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/commits/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee/comments",
+    "author": {
+        "login": "paultrudel",
+        "id": 35616208,
+        "node_id": "MDQ6VXNlcjM1NjE2MjA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/35616208?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paultrudel",
+        "html_url": "https://github.com/paultrudel",
+        "followers_url": "https://api.github.com/users/paultrudel/followers",
+        "following_url": "https://api.github.com/users/paultrudel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paultrudel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paultrudel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paultrudel/subscriptions",
+        "organizations_url": "https://api.github.com/users/paultrudel/orgs",
+        "repos_url": "https://api.github.com/users/paultrudel/repos",
+        "events_url": "https://api.github.com/users/paultrudel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paultrudel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Scroody",
+        "id": 36093456,
+        "node_id": "MDQ6VXNlcjM2MDkzNDU2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36093456?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Scroody",
+        "html_url": "https://github.com/Scroody",
+        "followers_url": "https://api.github.com/users/Scroody/followers",
+        "following_url": "https://api.github.com/users/Scroody/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Scroody/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Scroody/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Scroody/subscriptions",
+        "organizations_url": "https://api.github.com/users/Scroody/orgs",
+        "repos_url": "https://api.github.com/users/Scroody/repos",
+        "events_url": "https://api.github.com/users/Scroody/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Scroody/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a18adb0b3895225f1386744ee3922d03f7fb6da8",
+            "url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/commits/a18adb0b3895225f1386744ee3922d03f7fb6da8",
+            "html_url": "https://github.com/bigbluebutton/bigbluebutton/commit/a18adb0b3895225f1386744ee3922d03f7fb6da8"
+        }
+    ],
+    "stats": {
+        "total": 22,
+        "additions": 19,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "007ab26f1a3c32007a6249929743e0a56d2ab1ed",
+            "filename": "bbb-common-web/src/main/java/org/bigbluebutton/api/ParamsProcessorUtil.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/bigbluebutton/bigbluebutton/blob/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee/bbb-common-web%2Fsrc%2Fmain%2Fjava%2Forg%2Fbigbluebutton%2Fapi%2FParamsProcessorUtil.java",
+            "raw_url": "https://github.com/bigbluebutton/bigbluebutton/raw/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee/bbb-common-web%2Fsrc%2Fmain%2Fjava%2Forg%2Fbigbluebutton%2Fapi%2FParamsProcessorUtil.java",
+            "contents_url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/contents/bbb-common-web%2Fsrc%2Fmain%2Fjava%2Forg%2Fbigbluebutton%2Fapi%2FParamsProcessorUtil.java?ref=b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee",
+            "patch": "@@ -1152,6 +1152,11 @@ public boolean isPostChecksumSame(String apiCall, Map<String, String[]> params)\n \t\treturn true;\r\n \t}\r\n \r\n+    public boolean parentMeetingExists(String parentMeetingId) {\r\n+        Meeting meeting = ServiceUtils.findMeetingFromMeetingID(parentMeetingId);\r\n+        return meeting != null;\r\n+    }\r\n+\r\n \t/*************************************************\r\n \t * Setters\r\n \t ************************************************/\r"
+        },
+        {
+            "sha": "4bae5b7714730661e45af2e88f2d57b4cea253ee",
+            "filename": "bigbluebutton-web/grails-app/controllers/org/bigbluebutton/web/controllers/ApiController.groovy",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 3,
+            "changes": 17,
+            "blob_url": "https://github.com/bigbluebutton/bigbluebutton/blob/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee/bigbluebutton-web%2Fgrails-app%2Fcontrollers%2Forg%2Fbigbluebutton%2Fweb%2Fcontrollers%2FApiController.groovy",
+            "raw_url": "https://github.com/bigbluebutton/bigbluebutton/raw/b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee/bigbluebutton-web%2Fgrails-app%2Fcontrollers%2Forg%2Fbigbluebutton%2Fweb%2Fcontrollers%2FApiController.groovy",
+            "contents_url": "https://api.github.com/repos/bigbluebutton/bigbluebutton/contents/bigbluebutton-web%2Fgrails-app%2Fcontrollers%2Forg%2Fbigbluebutton%2Fweb%2Fcontrollers%2FApiController.groovy?ref=b38641ecb5d5a47d8fc4bf4e8aa3d1ebc1fe97ee",
+            "patch": "@@ -130,9 +130,20 @@ class ApiController {\n       return\n     }\n \n-    if(params.isBreakout == \"true\" && !params.parentMeetingID) {\n-      invalid(\"parentMeetingIDMissing\", \"No parent meeting ID was provided for the breakout room\")\n-      return\n+    Boolean isBreakoutRoom = false\n+    if (!StringUtils.isEmpty(params.isBreakout)) {\n+      isBreakoutRoom = Boolean.parseBoolean(params.isBreakout)\n+    }\n+\n+    if(isBreakoutRoom) {\n+      if(StringUtils.isEmpty(params.parentMeetingID)) {\n+        invalid(\"parentMeetingIDMissing\", \"No parent meeting ID was provided for the breakout room\")\n+        return\n+      }\n+      if(!paramsProcessorUtil.parentMeetingExists(params.parentMeetingID)) {\n+        invalid(\"parentMeetingDoesNotExist\", \"No parent meeting exists for the breakout room\")\n+        return\n+      }\n     }\n \n     // Ensure unique TelVoice. Uniqueness is not guaranteed by paramsProcessorUtil."
+        }
+    ]
+}

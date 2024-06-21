@@ -1,0 +1,2 @@
+mapToRatingDtoFromClient(Rating rating)
+maptoRatingDtoFromServiceProvider(Rating rating)

@@ -1,0 +1,7 @@
+  private void maybeChangeLeadershipForPartition(Set<Replica> leaderReplicas, Set<TopicPartition> partitionsToMove) {
+    // If the leader replica's partition is currently under replicated and _skipUrpDemotion is true, skip leadership
+    // change operation.
+    leaderReplicas.stream()
+                  .filter(r -> !(_skipUrpDemotion && isPartitionUnderReplicated(_kafkaCluster, r.topicPartition())))
+                  .forEach(r -> partitionsToMove.add(r.topicPartition()));
+  }

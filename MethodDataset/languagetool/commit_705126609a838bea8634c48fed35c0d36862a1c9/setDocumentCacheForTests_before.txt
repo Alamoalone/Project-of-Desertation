@@ -1,0 +1,5 @@
+  void setDocumentCacheForTests(List<String> paragraphs, List<List<String>> textParagraphs, List<int[]> footnotes, List<List<Integer>> chapterBegins, Locale locale) {
+    docCache.setForTest(paragraphs, textParagraphs, footnotes, chapterBegins, locale);
+    numParasToCheck = -1;
+    mDocHandler.resetSortedTextRules();
+  }

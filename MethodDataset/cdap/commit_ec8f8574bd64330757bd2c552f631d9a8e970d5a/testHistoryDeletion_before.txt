@@ -1,0 +1,67 @@
+  public void testHistoryDeletion() throws ConflictException {
+
+    // Deploy two apps, write some history for programs
+    // Remove application using accountId, AppId and verify
+    // Remove all from accountId and verify
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    NamespaceId namespaceId = new NamespaceId("testDeleteAll");
+    ApplicationId appId1 = namespaceId.app(spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId1, appMeta);
+
+    spec = Specifications.from(new AppWithServices());
+    ApplicationId appId2 = namespaceId.app(spec.getName());
+    appMeta = new ApplicationMeta(spec.getName(), spec,
+                                  new ChangeDetail(null, null, null,
+                                                   System.currentTimeMillis()));
+    store.addApplication(appId2, appMeta);
+
+    ArtifactId artifactId = appId1.getNamespaceId().artifact("testArtifact", "1.0").toApiArtifactId();
+
+    Assert.assertNotNull(store.getApplication(appId1));
+    Assert.assertNotNull(store.getApplication(appId2));
+
+    long now = System.currentTimeMillis();
+    ProgramId mapreduceProgramId1 = appId1.mr("NoOpMR");
+    ProgramId workflowProgramId1 = appId1.workflow("NoOpWorkflow");
+
+    ProgramRunId mapreduceProgramRunId1 = mapreduceProgramId1.run(RunIds.generate(now - 1000));
+    setStartAndRunning(mapreduceProgramRunId1, artifactId);
+    store.setStop(mapreduceProgramRunId1, now, ProgramController.State.COMPLETED.getRunStatus(),
+                  AppFabricTestHelper.createSourceId(++sourceId));
+
+    RunId runId = RunIds.generate(now - 1000);
+    setStartAndRunning(workflowProgramId1.run(runId.getId()), artifactId);
+    store.setStop(workflowProgramId1.run(runId.getId()), now, ProgramController.State.COMPLETED.getRunStatus(),
+                  AppFabricTestHelper.createSourceId(++sourceId));
+
+    ProgramId serviceId = appId2.service(AppWithServices.SERVICE_NAME);
+    ProgramRunId serviceRunId = serviceId.run(RunIds.generate(now - 1000));
+    setStartAndRunning(serviceRunId, artifactId);
+    store.setStop(serviceRunId, now, ProgramController.State.COMPLETED.getRunStatus(),
+                  AppFabricTestHelper.createSourceId(++sourceId));
+
+    verifyRunHistory(mapreduceProgramId1, 1);
+    verifyRunHistory(workflowProgramId1, 1);
+
+    verifyRunHistory(serviceId, 1);
+
+    // removing application
+    store.removeApplication(appId1);
+
+    Assert.assertNull(store.getApplication(appId1));
+    Assert.assertNotNull(store.getApplication(appId2));
+
+    verifyRunHistory(mapreduceProgramId1, 0);
+    verifyRunHistory(workflowProgramId1, 0);
+
+    // Check to see if the history of second app is not deleted
+    verifyRunHistory(serviceId, 1);
+
+    // remove all
+    store.removeAll(namespaceId);
+
+    verifyRunHistory(serviceId, 0);
+  }

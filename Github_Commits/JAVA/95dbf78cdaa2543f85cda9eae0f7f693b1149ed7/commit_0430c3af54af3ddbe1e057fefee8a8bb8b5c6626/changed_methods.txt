@@ -1,0 +1,1 @@
+findPublicationByTitle(String title)

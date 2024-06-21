@@ -1,0 +1,9 @@
+    public ResponseEntity<Integer> getOrdersLeftAfterGivenTimeByPartnerId(@PathVariable String time, @PathVariable String partnerId){
+
+
+
+        //countOfOrders that are left after a particular time of a DeliveryPartner
+       Integer countOfOrders=orderservice.getOrdersLeftAfterGivenTimeByPartnerId(time,partnerId);
+
+        return new ResponseEntity<>(countOfOrders, HttpStatus.CREATED);
+    }

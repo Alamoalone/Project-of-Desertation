@@ -1,0 +1,1 @@
+addPrerequisiteCourse(Course prerequisiteCourse)

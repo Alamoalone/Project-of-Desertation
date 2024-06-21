@@ -1,0 +1,11 @@
+@@ -32,8 +32,8 @@ default Message createMessage(EmailMessage emailMessage) {
+             message.setRecipients(Message.RecipientType.CC, toAddressArray(emailMessage.getCc()));
+             message.setRecipients(Message.RecipientType.BCC, toAddressArray(emailMessage.getBcc()));
+ 
+-            message.setSubject(emailMessage.getSubject());
+-            message.setText(emailMessage.getText());
++            message.setSubject(emailMessage.getSubject() != null ? emailMessage.getSubject() : "[No Subject]");
++            message.setText(emailMessage.getText() != null ? emailMessage.getText() : "");
+         } catch (MessagingException e) {
+             logger.error(e.getMessage(), e);
+         }

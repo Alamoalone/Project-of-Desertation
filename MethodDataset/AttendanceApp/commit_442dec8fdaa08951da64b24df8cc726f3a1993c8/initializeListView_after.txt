@@ -1,0 +1,10 @@
+    private void initializeListView() {
+        listView = findViewById(R.id.class_list);
+        listViewAll = findViewById(R.id.class_list_all);
+        classList = new ArrayList<>();
+        classListAll = new ArrayList<>();
+        adapter = new CourseAdapter(this, classList, this::onCourseClick);
+        adapter_all = new CourseAdapter(this, classListAll, this::onCourseClick);
+        listView.setAdapter(adapter);
+        listViewAll.setAdapter(adapter_all);
+    }

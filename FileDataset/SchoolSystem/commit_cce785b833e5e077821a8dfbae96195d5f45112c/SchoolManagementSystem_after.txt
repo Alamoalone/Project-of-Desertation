@@ -1,0 +1,111 @@
+    public void modifyCourseTeacher(String teacherId, String courseId) {
+        // Find teacher and course
+        Teacher teacherFound = findTeacher(teacherId);
+        Course courseFound = findCourse(courseId);
+
+        if(teacherFound !=null){
+            System.out.println("Teache modified");
+        }else {
+            System.out.println("Can't find teacher");
+        }
+        if(courseFound != null){
+            System.out.println("Course modified");
+            courseFound.setTeacher(teacherFound);
+        }
+        else{
+            System.out.println("Can't find course");
+        }
+    }
+
+    public Course findCourse(String courseId){
+        for(Course course : courses){
+            if( course != null && course.getId() != null && course.getId().equals(courseId)){
+                return course;
+            }
+        }
+        System.out.println("Course is not found !");
+        return null;
+    }
+
+    public void printDepartment() {
+        for (Department department : departments) {
+            if (department != null) {
+                System.out.printf("id: %s, department name : %s ", department.getId(), department.getDepartmentName());
+            }
+        }
+        System.out.println("Can't find department");
+    }
+
+    public Student findStudent(String studentId){
+        for(Student student : students){
+            if(student != null && student.getStudentId().equals(studentId)){
+                return student;
+            }
+        }
+        System.out.println("Student can't be found!");
+        return null;
+    }
+
+    public boolean hasRegisteredForThisCourse(String studentId, String courseId) {
+        Student student = findStudent(studentId);
+        Course course = findCourse(courseId);
+        if (student != null && course != null) {
+            for (Course registeredCourse : student.getCourses()) {
+                if (registeredCourse != null && registeredCourse.getId().equals(courseId)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void addStudent(String lname, String name, String departmentId) {
+        if (studentCount < MAX_STUDENTS) {
+            Department department = findDepartment(departmentId);
+            if(department != null) {
+                Student newStudent = new Student(lname, name, department);
+                students[studentCount++] = newStudent;
+                System.out.println(newStudent);
+            }
+            else{
+                System.out.println("Department was not found, enter proper department");
+            }
+        }
+        else {
+            System.out.println("Student max has been reach.");
+        }
+    }
+
+    public Teacher findTeacher(String teacherId) {
+        for (Teacher teacher : teachers) {
+            if (teacher != null && teacher.getTeacherId().equals(teacherId)) {
+                return teacher;
+            }
+        }
+        System.out.println("Teacher can't be found !");
+        return null;
+    }
+
+    public void registerCourse(String studentId, String courseId) {
+        Student student = findStudent(studentId);
+        Course course = findCourse(courseId);
+        if (student != null && course != null) {
+            if (!hasRegisteredForThisCourse(studentId, courseId)) {
+                if (student.getCourseNum() < MAX_REGISTERED_COURSES) {
+                    if (student.getCourses() == null) {
+                        student.setCourses(new Course[MAX_REGISTERED_COURSES]);
+                    }
+                    student.getCourses()[student.getCourseNum()] = course;
+                    student.setCourseNum(student.getCourseNum() + 1);
+                    System.out.printf(course.toString());
+                } else {
+                    System.out.println("Max registered Course");
+                }
+            } else {
+                System.out.printf("Student %s is already in the course \'%s\'", student.getStudentId(), course.getCourseName());
+             }
+        } else {
+            System.out.println("Student or department was not found : input again");
+        }
+    }
+

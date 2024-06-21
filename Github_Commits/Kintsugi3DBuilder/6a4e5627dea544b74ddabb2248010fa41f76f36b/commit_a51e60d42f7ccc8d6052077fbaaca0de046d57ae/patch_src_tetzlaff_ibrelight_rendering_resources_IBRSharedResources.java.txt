@@ -1,0 +1,9 @@
+@@ -133,7 +133,7 @@ public IBRSharedResources(ContextType context, ViewSet viewSet, VertexGeometry g
+         }
+         else
+         {
+-            luminanceMapResources = null;
++            luminanceMapResources = LuminanceMapResources.createNull(context);
+         }
+ 
+         if (geometry != null)

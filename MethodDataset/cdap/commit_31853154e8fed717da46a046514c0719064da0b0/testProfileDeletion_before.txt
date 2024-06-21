@@ -1,0 +1,97 @@
+  public void testProfileDeletion() throws Exception {
+    ProfileId myProfile = NamespaceId.DEFAULT.profile("MyProfile");
+    ProfileId myProfile2 = NamespaceId.DEFAULT.profile("MyProfile2");
+    Profile profile1 = new Profile("MyProfile", Profile.NATIVE.getLabel(), Profile.NATIVE.getDescription(),
+                                   Profile.NATIVE.getScope(), Profile.NATIVE.getProvisioner());
+    Profile profile2 = new Profile("MyProfile2", Profile.NATIVE.getLabel(), Profile.NATIVE.getDescription(),
+                                   Profile.NATIVE.getScope(), ProfileStatus.DISABLED, Profile.NATIVE.getProvisioner());
+    profileService.saveProfile(myProfile, profile1);
+    // add profile2 and disable it, profile2 can get deleted at any time
+    profileService.saveProfile(myProfile2, profile2);
+    profileService.disableProfile(myProfile2);
+
+    // Should not be able to delete because the profile is by default enabled
+    try {
+      profileService.deleteProfile(myProfile);
+      Assert.fail();
+    } catch (ProfileConflictException e) {
+      // expected
+    }
+
+    try {
+      profileService.deleteAllProfiles(NamespaceId.DEFAULT);
+      Assert.fail();
+    } catch (ProfileConflictException e) {
+      // expected and check profile 2 is not getting deleted
+      Assert.assertEquals(profile2, profileService.getProfile(myProfile2));
+    }
+
+    // add assignment and disable it, deletion should also fail
+    profileService.addProfileAssignment(myProfile, NamespaceId.DEFAULT);
+    profileService.disableProfile(myProfile);
+
+    try {
+      profileService.deleteProfile(myProfile);
+      Assert.fail();
+    } catch (ProfileConflictException e) {
+      // expected
+    }
+
+    try {
+      profileService.deleteAllProfiles(NamespaceId.DEFAULT);
+      Assert.fail();
+    } catch (ProfileConflictException e) {
+      // expected and check profile 2 is not getting deleted
+      Assert.assertEquals(profile2, profileService.getProfile(myProfile2));
+    }
+
+    profileService.removeProfileAssignment(myProfile, NamespaceId.DEFAULT);
+
+    // add an active record to DefaultStore, deletion should still fail
+    Store store = getDefaultStore();
+
+    ApplicationSpecification appSpec = Specifications.from(new AppWithWorkflow());
+    ApplicationId appId = NamespaceId.DEFAULT.app(appSpec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    ProgramId programId = NamespaceId.DEFAULT.app(appSpec.getName()).workflow(SampleWorkflow.NAME);
+    ArtifactId artifactId = NamespaceId.DEFAULT.artifact("testArtifact", "1.0").toApiArtifactId();
+    RunId runId = RunIds.generate(System.currentTimeMillis());
+    ProgramRunId programRunId = programId.run(runId.getId());
+    Map<String, String> systemArgs = Collections.singletonMap(SystemArguments.PROFILE_NAME, myProfile.getScopedName());
+    int sourceId = 0;
+    store.setProvisioning(programRunId, Collections.emptyMap(), systemArgs,
+                          AppFabricTestHelper.createSourceId(++sourceId), artifactId);
+    store.setProvisioned(programRunId, 0, AppFabricTestHelper.createSourceId(++sourceId));
+    store.setStart(programRunId, null, systemArgs, AppFabricTestHelper.createSourceId(++sourceId));
+
+    try {
+      profileService.deleteProfile(myProfile);
+      Assert.fail();
+    } catch (ProfileConflictException e) {
+      // expected
+    }
+
+    try {
+      profileService.deleteAllProfiles(NamespaceId.DEFAULT);
+      Assert.fail();
+    } catch (ProfileConflictException e) {
+      // expected and check profile 2 is not getting deleted
+      Assert.assertEquals(profile2, profileService.getProfile(myProfile2));
+    }
+
+    // set the run to stopped then deletion should work
+    store.setStop(programRunId, System.currentTimeMillis() + 1000,
+                  ProgramController.State.ERROR.getRunStatus(), AppFabricTestHelper.createSourceId(++sourceId));
+
+    // now profile deletion should succeed
+    profileService.deleteProfile(myProfile);
+    Assert.assertEquals(Collections.singletonList(profile2), profileService.getProfiles(NamespaceId.DEFAULT, false));
+    profileService.saveProfile(myProfile, profile1);
+    profileService.disableProfile(myProfile);
+    profileService.deleteAllProfiles(NamespaceId.DEFAULT);
+    Assert.assertEquals(Collections.emptyList(), profileService.getProfiles(NamespaceId.DEFAULT, false));
+  }

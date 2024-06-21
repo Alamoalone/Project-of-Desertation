@@ -1,0 +1,8 @@
+    public Object getTransactionRecord(BArray xid) {
+        synchronized (transactionInfoMap) {
+            if (transactionInfoMap.containsKey(ByteBuffer.wrap(xid.getBytes()))) {
+                return transactionInfoMap.get(ByteBuffer.wrap(xid.getBytes()));
+            }
+            return null;
+        }
+    }

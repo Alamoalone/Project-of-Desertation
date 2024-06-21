@@ -1,0 +1,16 @@
+    private void copyErrorFile(File file, String format, String fileName) {
+        File folder = new File(errorFolder);
+        folder.mkdir();
+        File errorFile = new File(errorFolder + "\\" + file.getName());
+        while (errorFile.exists()) {
+            errorFile = new File(errorFolder + "\\" + fileName + exceptions + "." + format);
+            exceptions++;
+        }
+
+        try {
+            Files.copy(file.toPath(), errorFile.toPath());
+        } catch (IOException e) {
+            Main.logger.error("Не удалось сохранить файл в errorfile!  " + errorFile.getPath()
+                    + "Сообщение об ошибке: "+ e.getMessage());
+        }
+    }

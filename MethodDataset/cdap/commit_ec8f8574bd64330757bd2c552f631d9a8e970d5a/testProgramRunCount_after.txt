@@ -1,0 +1,51 @@
+  public void testProgramRunCount() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    ApplicationId appId = NamespaceId.DEFAULT.app(spec.getName());
+    ArtifactId testArtifact = NamespaceId.DEFAULT.artifact("testArtifact", "1.0").toApiArtifactId();
+    ProgramId workflowId = appId.workflow(AllProgramsApp.NoOpWorkflow.NAME);
+    ProgramId serviceId = appId.service(AllProgramsApp.NoOpService.NAME);
+    ProgramId nonExistingAppProgramId = NamespaceId.DEFAULT.app("nonExisting").workflow("test");
+    ProgramId nonExistingProgramId = appId.workflow("nonExisting");
+
+    // add the application
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addLatestApplication(appId, appMeta);
+
+    // add some run records to workflow and service
+    for (int i = 0; i < 5; i++) {
+      setStart(workflowId.run(RunIds.generate()), Collections.emptyMap(), Collections.emptyMap(), testArtifact);
+      setStart(serviceId.run(RunIds.generate()), Collections.emptyMap(), Collections.emptyMap(), testArtifact);
+    }
+
+    List<RunCountResult> result =
+      store.getProgramTotalRunCounts(ImmutableList.of(workflowId.getProgramReference(),
+                                                 serviceId.getProgramReference(),
+                                                 nonExistingAppProgramId.getProgramReference(),
+                                                 nonExistingProgramId.getProgramReference()));
+
+    // compare the result
+    Assert.assertEquals(4, result.size());
+    for (RunCountResult runCountResult : result) {
+      ProgramReference programReference = runCountResult.getProgramReference();
+      Long count = runCountResult.getCount();
+      if (programReference.equals(nonExistingAppProgramId.getProgramReference())
+          || programReference.equals(nonExistingProgramId.getProgramReference())) {
+        Assert.assertNull(count);
+        Assert.assertTrue(runCountResult.getException() instanceof NotFoundException);
+      } else {
+        Assert.assertNotNull(count);
+        Assert.assertEquals(5L, count.longValue());
+      }
+    }
+
+    // remove the app should remove all run count
+    store.removeApplication(appId);
+    for (RunCountResult runCountResult :
+      store.getProgramTotalRunCounts(ImmutableList.of(workflowId.getProgramReference(),
+                                                      serviceId.getProgramReference()))) {
+      Assert.assertNull(runCountResult.getCount());
+      Assert.assertTrue(runCountResult.getException() instanceof NotFoundException);
+    }
+  }

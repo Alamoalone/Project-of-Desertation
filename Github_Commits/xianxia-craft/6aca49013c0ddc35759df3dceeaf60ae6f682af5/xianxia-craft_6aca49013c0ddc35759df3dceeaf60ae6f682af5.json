@@ -1,0 +1,110 @@
+{
+    "sha": "6aca49013c0ddc35759df3dceeaf60ae6f682af5",
+    "node_id": "C_kwDOJuHbatoAKDZhY2E0OTAxM2MwZGRjMzU3NTlkZjNkY2VlYWY2MGFlNmY2ODJhZjU",
+    "commit": {
+        "author": {
+            "name": "Daniel Henderson",
+            "email": "dhendinfo@gmail.com",
+            "date": "2023-06-20T05:43:18Z"
+        },
+        "committer": {
+            "name": "Daniel Henderson",
+            "email": "dhendinfo@gmail.com",
+            "date": "2023-06-20T05:43:18Z"
+        },
+        "message": "Took care of some warnings about possible null pointer exceptions.",
+        "tree": {
+            "sha": "d1a03f3536dbf34d267f2dd73180aa9c1893e22f",
+            "url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/git/trees/d1a03f3536dbf34d267f2dd73180aa9c1893e22f"
+        },
+        "url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/git/commits/6aca49013c0ddc35759df3dceeaf60ae6f682af5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/commits/6aca49013c0ddc35759df3dceeaf60ae6f682af5",
+    "html_url": "https://github.com/HendersonDaniel/xianxia-craft/commit/6aca49013c0ddc35759df3dceeaf60ae6f682af5",
+    "comments_url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/commits/6aca49013c0ddc35759df3dceeaf60ae6f682af5/comments",
+    "author": {
+        "login": "HendersonDaniel",
+        "id": 134973091,
+        "node_id": "U_kgDOCAuGow",
+        "avatar_url": "https://avatars.githubusercontent.com/u/134973091?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HendersonDaniel",
+        "html_url": "https://github.com/HendersonDaniel",
+        "followers_url": "https://api.github.com/users/HendersonDaniel/followers",
+        "following_url": "https://api.github.com/users/HendersonDaniel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HendersonDaniel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HendersonDaniel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HendersonDaniel/subscriptions",
+        "organizations_url": "https://api.github.com/users/HendersonDaniel/orgs",
+        "repos_url": "https://api.github.com/users/HendersonDaniel/repos",
+        "events_url": "https://api.github.com/users/HendersonDaniel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HendersonDaniel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "HendersonDaniel",
+        "id": 134973091,
+        "node_id": "U_kgDOCAuGow",
+        "avatar_url": "https://avatars.githubusercontent.com/u/134973091?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HendersonDaniel",
+        "html_url": "https://github.com/HendersonDaniel",
+        "followers_url": "https://api.github.com/users/HendersonDaniel/followers",
+        "following_url": "https://api.github.com/users/HendersonDaniel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HendersonDaniel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HendersonDaniel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HendersonDaniel/subscriptions",
+        "organizations_url": "https://api.github.com/users/HendersonDaniel/orgs",
+        "repos_url": "https://api.github.com/users/HendersonDaniel/repos",
+        "events_url": "https://api.github.com/users/HendersonDaniel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HendersonDaniel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "01be8cdb319e531f5a40d2517825e9f260cf112c",
+            "url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/commits/01be8cdb319e531f5a40d2517825e9f260cf112c",
+            "html_url": "https://github.com/HendersonDaniel/xianxia-craft/commit/01be8cdb319e531f5a40d2517825e9f260cf112c"
+        }
+    ],
+    "stats": {
+        "total": 35,
+        "additions": 19,
+        "deletions": 16
+    },
+    "files": [
+        {
+            "sha": "6bf835d670cb615b8b8d8b1344644002dfbd94d9",
+            "filename": "xianxiacraft/xianxiacraft/XianxiaCraft.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 15,
+            "changes": 28,
+            "blob_url": "https://github.com/HendersonDaniel/xianxia-craft/blob/6aca49013c0ddc35759df3dceeaf60ae6f682af5/xianxiacraft%2Fxianxiacraft%2FXianxiaCraft.java",
+            "raw_url": "https://github.com/HendersonDaniel/xianxia-craft/raw/6aca49013c0ddc35759df3dceeaf60ae6f682af5/xianxiacraft%2Fxianxiacraft%2FXianxiaCraft.java",
+            "contents_url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/contents/xianxiacraft%2Fxianxiacraft%2FXianxiaCraft.java?ref=6aca49013c0ddc35759df3dceeaf60ae6f682af5",
+            "patch": "@@ -5,7 +5,6 @@\n import org.bukkit.Material;\n import org.bukkit.entity.Player;\n import org.bukkit.plugin.java.JavaPlugin;\n-import org.bukkit.potion.PotionEffect;\n import org.bukkit.potion.PotionEffectType;\n import org.bukkit.scheduler.BukkitRunnable;\n import xianxiacraft.xianxiacraft.customItems.ToolItems;\n@@ -21,7 +20,7 @@\n \n import java.util.ArrayList;\n import java.util.List;\n-import java.util.UUID;\n+import java.util.Objects;\n \n import static xianxiacraft.xianxiacraft.QiManagers.ManualManager.getManual;\n import static xianxiacraft.xianxiacraft.QiManagers.ManualManager.getManualQiRegen;\n@@ -37,7 +36,6 @@ public final class XianxiaCraft extends JavaPlugin {\n     ManualManager manualManager;\n     QiManager qiManager;\n \n-    private int taskId;\n     @Override\n     public void onEnable() {\n         // Plugin startup logic\n@@ -61,20 +59,20 @@ public void onEnable() {\n \n         //command logic\n         CultPassiveCommandExecutor cultPassiveCommandExecutor = new CultPassiveCommandExecutor();\n-        getCommand(\"qipunch\").setExecutor(cultPassiveCommandExecutor);\n-        getCommand(\"cultutorial\").setExecutor(cultPassiveCommandExecutor);\n-        getCommand(\"qimine\").setExecutor(cultPassiveCommandExecutor);\n-        getCommand(\"qimove\").setExecutor(cultPassiveCommandExecutor);\n-        getCommand(\"detonate\").setExecutor(cultPassiveCommandExecutor);\n+        Objects.requireNonNull(getCommand(\"qipunch\")).setExecutor(cultPassiveCommandExecutor);\n+        Objects.requireNonNull(getCommand(\"cultutorial\")).setExecutor(cultPassiveCommandExecutor);\n+        Objects.requireNonNull(getCommand(\"qimine\")).setExecutor(cultPassiveCommandExecutor);\n+        Objects.requireNonNull(getCommand(\"qimove\")).setExecutor(cultPassiveCommandExecutor);\n+        Objects.requireNonNull(getCommand(\"detonate\")).setExecutor(cultPassiveCommandExecutor);\n \n         OperatorCommands operatorCommands = new OperatorCommands();\n-        getCommand(\"addstage\").setExecutor(operatorCommands);\n-        getCommand(\"checkstats\").setExecutor(operatorCommands);\n-        getCommand(\"obtain\").setExecutor(operatorCommands);\n+        Objects.requireNonNull(getCommand(\"addstage\")).setExecutor(operatorCommands);\n+        Objects.requireNonNull(getCommand(\"checkstats\")).setExecutor(operatorCommands);\n+        Objects.requireNonNull(getCommand(\"obtain\")).setExecutor(operatorCommands);\n \n \n         //custom tools using PersistentDataContainer\n-        ToolItems toolItems = new ToolItems(this);\n+        new ToolItems(this);\n         //item adding logic\n         ManualItems.init();\n         ToolItems.init2();\n@@ -107,8 +105,8 @@ public void onEnable() {\n         manualList.add(lightningManual);\n \n \n-\n-        taskId = new BukkitRunnable() {\n+        // Code to be executed every 3 seconds\n+        int taskId = new BukkitRunnable() {\n             @Override\n             public void run() {\n                 // Code to be executed every 3 seconds\n@@ -136,7 +134,7 @@ public void onDisable() {\n \n     private void updateQiLevels(List<Object> manualList) {\n         for (Player player : Bukkit.getOnlinePlayers()) {\n-            UUID playerId = player.getUniqueId();\n+\n             String playerManual = getManual(player);\n \n             if (!(playerManual.equals(\"none\"))) {"
+        },
+        {
+            "sha": "aee98fc8d5157e2104129e1fe5573453eeb91db5",
+            "filename": "xianxiacraft/xianxiacraft/commands/CultPassiveCommandExecutor.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 1,
+            "changes": 7,
+            "blob_url": "https://github.com/HendersonDaniel/xianxia-craft/blob/6aca49013c0ddc35759df3dceeaf60ae6f682af5/xianxiacraft%2Fxianxiacraft%2Fcommands%2FCultPassiveCommandExecutor.java",
+            "raw_url": "https://github.com/HendersonDaniel/xianxia-craft/raw/6aca49013c0ddc35759df3dceeaf60ae6f682af5/xianxiacraft%2Fxianxiacraft%2Fcommands%2FCultPassiveCommandExecutor.java",
+            "contents_url": "https://api.github.com/repos/HendersonDaniel/xianxia-craft/contents/xianxiacraft%2Fxianxiacraft%2Fcommands%2FCultPassiveCommandExecutor.java?ref=6aca49013c0ddc35759df3dceeaf60ae6f682af5",
+            "patch": "@@ -94,7 +94,12 @@ public boolean onCommand(CommandSender commandSender, Command command, String s,\n                 sender.removePotionEffect(PotionEffectType.FAST_DIGGING);\n             } else {\n                 sender.sendMessage(ChatColor.GOLD + \"QiMine: Active\");\n-                sender.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, Integer.MAX_VALUE,(int) (getStage(sender)/2.0)-1,false,false,false));\n+                //max haste is 4 because any higher causes glitches\n+                int amplifier = (int) (getStage(sender)/2.0)-1;\n+                if (amplifier > 4){\n+                    amplifier = 4;\n+                }\n+                sender.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, Integer.MAX_VALUE,amplifier,false,false,false));\n             }\n \n             TechniqueManager.setMineBool(sender,!currentMineBool);"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "fc5deeefe68ea1608f49cd822e552d963e1f722c",
+    "node_id": "C_kwDOKv0-lNoAKGZjNWRlZWVmZTY4ZWExNjA4ZjQ5Y2Q4MjJlNTUyZDk2M2UxZjcyMmM",
+    "commit": {
+        "author": {
+            "name": "owm",
+            "email": "enless143@gmail.com",
+            "date": "2023-12-15T17:00:40Z"
+        },
+        "committer": {
+            "name": "owm",
+            "email": "enless143@gmail.com",
+            "date": "2023-12-15T17:00:40Z"
+        },
+        "message": "FIXED: some null pointer exceptions in delete user & delete employee",
+        "tree": {
+            "sha": "f1361ed417c961d861edc06b97629ef47289e408",
+            "url": "https://api.github.com/repos/3ab3z2/TaskManagementSystem/git/trees/f1361ed417c961d861edc06b97629ef47289e408"
+        },
+        "url": "https://api.github.com/repos/3ab3z2/TaskManagementSystem/git/commits/fc5deeefe68ea1608f49cd822e552d963e1f722c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/3ab3z2/TaskManagementSystem/commits/fc5deeefe68ea1608f49cd822e552d963e1f722c",
+    "html_url": "https://github.com/3ab3z2/TaskManagementSystem/commit/fc5deeefe68ea1608f49cd822e552d963e1f722c",
+    "comments_url": "https://api.github.com/repos/3ab3z2/TaskManagementSystem/commits/fc5deeefe68ea1608f49cd822e552d963e1f722c/comments",
+    "author": {
+        "login": "o4096",
+        "id": 131772024,
+        "node_id": "U_kgDOB9queA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/131772024?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/o4096",
+        "html_url": "https://github.com/o4096",
+        "followers_url": "https://api.github.com/users/o4096/followers",
+        "following_url": "https://api.github.com/users/o4096/following{/other_user}",
+        "gists_url": "https://api.github.com/users/o4096/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/o4096/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/o4096/subscriptions",
+        "organizations_url": "https://api.github.com/users/o4096/orgs",
+        "repos_url": "https://api.github.com/users/o4096/repos",
+        "events_url": "https://api.github.com/users/o4096/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/o4096/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "o4096",
+        "id": 131772024,
+        "node_id": "U_kgDOB9queA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/131772024?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/o4096",
+        "html_url": "https://github.com/o4096",
+        "followers_url": "https://api.github.com/users/o4096/followers",
+        "following_url": "https://api.github.com/users/o4096/following{/other_user}",
+        "gists_url": "https://api.github.com/users/o4096/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/o4096/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/o4096/subscriptions",
+        "organizations_url": "https://api.github.com/users/o4096/orgs",
+        "repos_url": "https://api.github.com/users/o4096/repos",
+        "events_url": "https://api.github.com/users/o4096/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/o4096/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "71b7e54f2a22f2cf991b0f879f022639cc58e4f3",
+            "url": "https://api.github.com/repos/3ab3z2/TaskManagementSystem/commits/71b7e54f2a22f2cf991b0f879f022639cc58e4f3",
+            "html_url": "https://github.com/3ab3z2/TaskManagementSystem/commit/71b7e54f2a22f2cf991b0f879f022639cc58e4f3"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 8,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "12448f3d2988976517475bcdb95500ba976e2c1a",
+            "filename": "AdminModule.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 0,
+            "changes": 8,
+            "blob_url": "https://github.com/3ab3z2/TaskManagementSystem/blob/fc5deeefe68ea1608f49cd822e552d963e1f722c/AdminModule.java",
+            "raw_url": "https://github.com/3ab3z2/TaskManagementSystem/raw/fc5deeefe68ea1608f49cd822e552d963e1f722c/AdminModule.java",
+            "contents_url": "https://api.github.com/repos/3ab3z2/TaskManagementSystem/contents/AdminModule.java?ref=fc5deeefe68ea1608f49cd822e552d963e1f722c",
+            "patch": "@@ -328,6 +328,8 @@ else if(newtype.equals(\"Employee\")||newtype.equals(\"employee\")||newtype.equals(\"\n \t\t\t\t\tfor(int k=0;k<count_tasks;++k)//nullify assigned tasks\r\n \t\t\t\t\t{\r\n \t\t\t\t\t\tTask task= Application.taskDataHandler.get(k);\r\n+\t\t\t\t\t\tif(task.getAssignedEmployee()==null)\r\n+\t\t\t\t\t\t\tcontinue;\r\n \t\t\t\t\t\tif(task.getAssignedEmployee().getUsername().equals(uname))\r\n \t\t\t\t\t\t{\r\n \t\t\t\t\t\t\ttask.setAssignedEmployee(null);\r\n@@ -337,6 +339,8 @@ else if(newtype.equals(\"Employee\")||newtype.equals(\"employee\")||newtype.equals(\"\n \t\t\t\t\tfor(int k=0;k<count_projects;++k)//nullify any assigned projects \r\n \t\t\t\t\t{\r\n \t\t\t\t\t\tProject project= Application.projectDataHandler.get(k);\r\n+\t\t\t\t\t\tif(project.getLeader()==null)\r\n+\t\t\t\t\t\t\tcontinue;\r\n \t\t\t\t\t\tif(project.getLeader().getUsername().equals(uname))\r\n \t\t\t\t\t\t{\r\n \t\t\t\t\t\t\tproject.setLeader(null);\r\n@@ -647,6 +651,8 @@ public void manageEmployees() throws IOException\n \t\t\t\t\tfor(int k=0;k<count_tasks;++k)//nullify assigned tasks\r\n \t\t\t\t\t{\r\n \t\t\t\t\t\tTask task= Application.taskDataHandler.get(k);\r\n+\t\t\t\t\t\tif(task.getAssignedEmployee()==null)\r\n+\t\t\t\t\t\t\tcontinue;\r\n \t\t\t\t\t\tif(task.getAssignedEmployee().getUsername().equals(employee.getUsername()))\r\n \t\t\t\t\t\t{\r\n \t\t\t\t\t\t\ttask.setAssignedEmployee(null);\r\n@@ -656,6 +662,8 @@ public void manageEmployees() throws IOException\n \t\t\t\t\tfor(int k=0;k<count_projects;++k)//nullify any assigned projects \r\n \t\t\t\t\t{\r\n \t\t\t\t\t\tProject project= Application.projectDataHandler.get(k);\r\n+\t\t\t\t\t\tif(project.getLeader()==null)\r\n+\t\t\t\t\t\t\tcontinue;\r\n \t\t\t\t\t\tif(project.getLeader().getUsername().equals(employee.getUsername()))\r\n \t\t\t\t\t\t{\r\n \t\t\t\t\t\t\tproject.setLeader(null);\r"
+        }
+    ]
+}

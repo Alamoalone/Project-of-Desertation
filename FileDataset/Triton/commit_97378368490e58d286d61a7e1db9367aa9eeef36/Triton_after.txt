@@ -1,0 +1,6 @@
+    public void refreshPlayers() {
+        playerManager.getAll().stream()
+                .filter(Objects::nonNull)
+                .forEach(LanguagePlayer::refreshAll);
+    }
+

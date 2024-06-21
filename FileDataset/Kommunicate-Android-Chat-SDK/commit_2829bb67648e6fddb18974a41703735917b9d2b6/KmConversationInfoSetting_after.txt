@@ -1,0 +1,14 @@
+    public Float getToolbarSubtitleRating(){
+        if (sharedPreferences != null){
+            return sharedPreferences.getFloat(AGENT_RATING,-1.0F);
+        }
+        return null;
+    }
+
+    public String getToolbarAgentExperience() {
+        if (sharedPreferences != null) {
+            return sharedPreferences.getString(AGENT_EXPERIENCE, "");
+        }
+        return null;
+    }
+

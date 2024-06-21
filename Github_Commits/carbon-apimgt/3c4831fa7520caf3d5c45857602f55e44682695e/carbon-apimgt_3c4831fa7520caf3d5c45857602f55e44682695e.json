@@ -1,0 +1,98 @@
+{
+    "sha": "3c4831fa7520caf3d5c45857602f55e44682695e",
+    "node_id": "C_kwDOAQZ6UNoAKDNjNDgzMWZhNzUyMGNhZjNkNWM0NTg1NzYwMmY1NWU0NDY4MjY5NWU",
+    "commit": {
+        "author": {
+            "name": "shnrndk",
+            "email": "shnrndk@gmail.com",
+            "date": "2023-04-26T05:07:15Z"
+        },
+        "committer": {
+            "name": "shnrndk",
+            "email": "shnrndk@gmail.com",
+            "date": "2023-05-19T01:58:42Z"
+        },
+        "message": "remove all external stores at the same time null pointer exception fixed.",
+        "tree": {
+            "sha": "13f15d0cb7cbecffb1ddd350aba8addb36309443",
+            "url": "https://api.github.com/repos/wso2/carbon-apimgt/git/trees/13f15d0cb7cbecffb1ddd350aba8addb36309443"
+        },
+        "url": "https://api.github.com/repos/wso2/carbon-apimgt/git/commits/3c4831fa7520caf3d5c45857602f55e44682695e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/wso2/carbon-apimgt/commits/3c4831fa7520caf3d5c45857602f55e44682695e",
+    "html_url": "https://github.com/wso2/carbon-apimgt/commit/3c4831fa7520caf3d5c45857602f55e44682695e",
+    "comments_url": "https://api.github.com/repos/wso2/carbon-apimgt/commits/3c4831fa7520caf3d5c45857602f55e44682695e/comments",
+    "author": {
+        "login": "shnrndk",
+        "id": 43110114,
+        "node_id": "MDQ6VXNlcjQzMTEwMTE0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/43110114?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shnrndk",
+        "html_url": "https://github.com/shnrndk",
+        "followers_url": "https://api.github.com/users/shnrndk/followers",
+        "following_url": "https://api.github.com/users/shnrndk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shnrndk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shnrndk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shnrndk/subscriptions",
+        "organizations_url": "https://api.github.com/users/shnrndk/orgs",
+        "repos_url": "https://api.github.com/users/shnrndk/repos",
+        "events_url": "https://api.github.com/users/shnrndk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shnrndk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "shnrndk",
+        "id": 43110114,
+        "node_id": "MDQ6VXNlcjQzMTEwMTE0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/43110114?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shnrndk",
+        "html_url": "https://github.com/shnrndk",
+        "followers_url": "https://api.github.com/users/shnrndk/followers",
+        "following_url": "https://api.github.com/users/shnrndk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shnrndk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shnrndk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shnrndk/subscriptions",
+        "organizations_url": "https://api.github.com/users/shnrndk/orgs",
+        "repos_url": "https://api.github.com/users/shnrndk/repos",
+        "events_url": "https://api.github.com/users/shnrndk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shnrndk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fb35b75772d2b9e92594bbfd3331eb17b23d83bd",
+            "url": "https://api.github.com/repos/wso2/carbon-apimgt/commits/fb35b75772d2b9e92594bbfd3331eb17b23d83bd",
+            "html_url": "https://github.com/wso2/carbon-apimgt/commit/fb35b75772d2b9e92594bbfd3331eb17b23d83bd"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 6,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "966ddf1b136960d27b1137e086f206132338bb95",
+            "filename": "components/apimgt/org.wso2.carbon.apimgt.rest.api.publisher.v1/src/main/java/org/wso2/carbon/apimgt/rest/api/publisher/v1/impl/ApisApiServiceImpl.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 1,
+            "changes": 7,
+            "blob_url": "https://github.com/wso2/carbon-apimgt/blob/3c4831fa7520caf3d5c45857602f55e44682695e/components%2Fapimgt%2Forg.wso2.carbon.apimgt.rest.api.publisher.v1%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fcarbon%2Fapimgt%2Frest%2Fapi%2Fpublisher%2Fv1%2Fimpl%2FApisApiServiceImpl.java",
+            "raw_url": "https://github.com/wso2/carbon-apimgt/raw/3c4831fa7520caf3d5c45857602f55e44682695e/components%2Fapimgt%2Forg.wso2.carbon.apimgt.rest.api.publisher.v1%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fcarbon%2Fapimgt%2Frest%2Fapi%2Fpublisher%2Fv1%2Fimpl%2FApisApiServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/wso2/carbon-apimgt/contents/components%2Fapimgt%2Forg.wso2.carbon.apimgt.rest.api.publisher.v1%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fcarbon%2Fapimgt%2Frest%2Fapi%2Fpublisher%2Fv1%2Fimpl%2FApisApiServiceImpl.java?ref=3c4831fa7520caf3d5c45857602f55e44682695e",
+            "patch": "@@ -2182,7 +2182,12 @@ public Response publishAPIToExternalStores(String apiId, String externalStoreIds\n         String organization = RestApiUtil.getValidatedOrganization(messageContext);\n         APIProvider apiProvider = RestApiCommonUtil.getLoggedInUserProvider();\n         API api = null;\n-        List<String> externalStoreIdList = Arrays.asList(externalStoreIds.split(\"\\\\s*,\\\\s*\"));\n+        List<String> externalStoreIdList;\n+        if (externalStoreIds != null) {\n+            externalStoreIdList = Arrays.asList(externalStoreIds.split(\"\\\\s*,\\\\s*\"));\n+        } else {\n+            externalStoreIdList = new ArrayList<>();\n+        }\n         try {\n             APIIdentifier apiIdentifier = APIMappingUtil.getAPIIdentifierFromUUID(apiId);\n             if (apiIdentifier == null) {"
+        }
+    ]
+}

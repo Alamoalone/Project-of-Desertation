@@ -1,0 +1,72 @@
+{
+    "sha": "ef9bcae5910eca13ef9156134066577e21e3e80a",
+    "node_id": "C_kwDOE8pCG9oAKGVmOWJjYWU1OTEwZWNhMTNlZjkxNTYxMzQwNjY1NzdlMjFlM2U4MGE",
+    "commit": {
+        "author": {
+            "name": "Gabriel Buades",
+            "email": "gbuades@soffid.com",
+            "date": "2023-10-24T13:09:03Z"
+        },
+        "committer": {
+            "name": "Gabriel Buades",
+            "email": "gbuades@soffid.com",
+            "date": "2023-10-24T13:09:03Z"
+        },
+        "message": "Prevent null pointer exception",
+        "tree": {
+            "sha": "9b50b24e076a80cf28afb38a957b923e950ac0fe",
+            "url": "https://api.github.com/repos/SoffidIAM/addon-bpm/git/trees/9b50b24e076a80cf28afb38a957b923e950ac0fe"
+        },
+        "url": "https://api.github.com/repos/SoffidIAM/addon-bpm/git/commits/ef9bcae5910eca13ef9156134066577e21e3e80a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SoffidIAM/addon-bpm/commits/ef9bcae5910eca13ef9156134066577e21e3e80a",
+    "html_url": "https://github.com/SoffidIAM/addon-bpm/commit/ef9bcae5910eca13ef9156134066577e21e3e80a",
+    "comments_url": "https://api.github.com/repos/SoffidIAM/addon-bpm/commits/ef9bcae5910eca13ef9156134066577e21e3e80a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "f63b118f2e88a5a51221cf269e3a6cbab8cb33aa",
+            "url": "https://api.github.com/repos/SoffidIAM/addon-bpm/commits/f63b118f2e88a5a51221cf269e3a6cbab8cb33aa",
+            "html_url": "https://github.com/SoffidIAM/addon-bpm/commit/f63b118f2e88a5a51221cf269e3a6cbab8cb33aa"
+        }
+    ],
+    "stats": {
+        "total": 35,
+        "additions": 23,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "1e5446039dcb04deaa10322880548f1766370c6d",
+            "filename": "bpm-web-common/src/main/java/com/soffid/iam/addons/bpm/ui/StandardUserWindow.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/SoffidIAM/addon-bpm/blob/ef9bcae5910eca13ef9156134066577e21e3e80a/bpm-web-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Faddons%2Fbpm%2Fui%2FStandardUserWindow.java",
+            "raw_url": "https://github.com/SoffidIAM/addon-bpm/raw/ef9bcae5910eca13ef9156134066577e21e3e80a/bpm-web-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Faddons%2Fbpm%2Fui%2FStandardUserWindow.java",
+            "contents_url": "https://api.github.com/repos/SoffidIAM/addon-bpm/contents/bpm-web-common%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Faddons%2Fbpm%2Fui%2FStandardUserWindow.java?ref=ef9bcae5910eca13ef9156134066577e21e3e80a",
+            "patch": "@@ -1189,7 +1189,8 @@ private void generateApproveApplicationRow(Listbox lb, int i, RoleRequestInfo gr\n \t\t\tif (grant.getParentRole() == null) {\n \t\t\t\tListcell listCell = new Listcell(fullName);\n \t\t\t\titem.appendChild( listCell);\n-\t\t\t\taddIconPermissions(listCell, u);\n+\t\t\t\tif (u != null)\n+\t\t\t\t\taddIconPermissions(listCell, u);\n \t\t\t} else {\n \t\t\t\titem.appendChild(new Listcell());\n \t\t\t}"
+        },
+        {
+            "sha": "f4f74b06f2f5c3f0482ce757d79a7456ebd38bca",
+            "filename": "web/.settings/org.eclipse.wst.common.component",
+            "status": "modified",
+            "additions": 21,
+            "deletions": 11,
+            "changes": 32,
+            "blob_url": "https://github.com/SoffidIAM/addon-bpm/blob/ef9bcae5910eca13ef9156134066577e21e3e80a/web%2F.settings%2Forg.eclipse.wst.common.component",
+            "raw_url": "https://github.com/SoffidIAM/addon-bpm/raw/ef9bcae5910eca13ef9156134066577e21e3e80a/web%2F.settings%2Forg.eclipse.wst.common.component",
+            "contents_url": "https://api.github.com/repos/SoffidIAM/addon-bpm/contents/web%2F.settings%2Forg.eclipse.wst.common.component?ref=ef9bcae5910eca13ef9156134066577e21e3e80a",
+            "patch": "@@ -1,5 +1,6 @@\n <?xml version=\"1.0\" encoding=\"UTF-8\"?><project-modules id=\"moduleCoreId\" project-version=\"1.5.0\">\n-                                                                                                        \n+                                                                                                            \n+    \n     \n     \n     \n@@ -25,7 +26,8 @@\n     \n     \n     <wb-module deploy-name=\"bpm-web-2.0.7-SNAPSHOT\">\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -51,7 +53,8 @@\n         \n         \n         <wb-resource deploy-path=\"/\" source-path=\"/target/m2e-wtp/web-resources\"/>\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -77,7 +80,8 @@\n         \n         \n         <wb-resource deploy-path=\"/\" source-path=\"/src/main/webapp\" tag=\"defaultRootSource\"/>\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -103,7 +107,8 @@\n         \n         \n         <wb-resource deploy-path=\"/WEB-INF/classes\" source-path=\"/src/main/resources\"/>\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -129,7 +134,8 @@\n         \n         \n         <wb-resource deploy-path=\"/WEB-INF/classes\" source-path=\"/src/main/webapp\"/>\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -155,10 +161,11 @@\n         \n         \n         <wb-resource deploy-path=\"/WEB-INF/classes\" source-path=\"/src/main/java\"/>\n-        <dependent-module archiveName=\"bpm-web-common-3.1.25-SNAPSHOT.jar\" deploy-path=\"/WEB-INF/lib\" handle=\"module:/resource/bpm-web-common/bpm-web-common\">\n+        <dependent-module archiveName=\"bpm-web-common-3.1.26-SNAPSHOT.jar\" deploy-path=\"/WEB-INF/lib\" handle=\"module:/resource/bpm-web-common/bpm-web-common\">\n             <dependency-type>uses</dependency-type>\n         </dependent-module>\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -184,7 +191,8 @@\n         \n         \n         <property name=\"java-output-path\" value=\"/recertification-web/target/classes\"/>\n-                                                                                                                                                                                                                \n+                                                                                                                                                                                                                        \n+        \n         \n         \n         \n@@ -210,7 +218,8 @@\n         \n         \n         <property name=\"context-root\" value=\"bpm-web\"/>\n-                                                                                                                                                                                                            \n+                                                                                                                                                                                                                    \n+    \n     \n     \n     \n@@ -236,7 +245,8 @@\n     \n     \n     </wb-module>\n-                                                                                                    \n+                                                                                                        \n+\n \n \n "
+        }
+    ]
+}

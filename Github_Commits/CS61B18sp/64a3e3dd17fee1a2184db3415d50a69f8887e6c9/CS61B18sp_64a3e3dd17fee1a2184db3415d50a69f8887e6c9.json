@@ -1,0 +1,122 @@
+{
+    "sha": "64a3e3dd17fee1a2184db3415d50a69f8887e6c9",
+    "node_id": "C_kwDOJ8iTudoAKDY0YTNlM2RkMTdmZWUxYTIxODRkYjM0MTVkNTBhNjlmODg4N2U2Yzk",
+    "commit": {
+        "author": {
+            "name": "红豆刨冰",
+            "email": "114462966+KingofKanya@users.noreply.github.com",
+            "date": "2023-09-16T11:25:46Z"
+        },
+        "committer": {
+            "name": "红豆刨冰",
+            "email": "114462966+KingofKanya@users.noreply.github.com",
+            "date": "2023-09-16T11:25:46Z"
+        },
+        "message": "lab2:handle null pointer exception",
+        "tree": {
+            "sha": "952f2f2fa7397aa6b19f8927468c039f774241c7",
+            "url": "https://api.github.com/repos/KingofKanya/CS61B18sp/git/trees/952f2f2fa7397aa6b19f8927468c039f774241c7"
+        },
+        "url": "https://api.github.com/repos/KingofKanya/CS61B18sp/git/commits/64a3e3dd17fee1a2184db3415d50a69f8887e6c9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/KingofKanya/CS61B18sp/commits/64a3e3dd17fee1a2184db3415d50a69f8887e6c9",
+    "html_url": "https://github.com/KingofKanya/CS61B18sp/commit/64a3e3dd17fee1a2184db3415d50a69f8887e6c9",
+    "comments_url": "https://api.github.com/repos/KingofKanya/CS61B18sp/commits/64a3e3dd17fee1a2184db3415d50a69f8887e6c9/comments",
+    "author": {
+        "login": "KingofKanya",
+        "id": 114462966,
+        "node_id": "U_kgDOBtKQ9g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114462966?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KingofKanya",
+        "html_url": "https://github.com/KingofKanya",
+        "followers_url": "https://api.github.com/users/KingofKanya/followers",
+        "following_url": "https://api.github.com/users/KingofKanya/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KingofKanya/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KingofKanya/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KingofKanya/subscriptions",
+        "organizations_url": "https://api.github.com/users/KingofKanya/orgs",
+        "repos_url": "https://api.github.com/users/KingofKanya/repos",
+        "events_url": "https://api.github.com/users/KingofKanya/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KingofKanya/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "KingofKanya",
+        "id": 114462966,
+        "node_id": "U_kgDOBtKQ9g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114462966?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KingofKanya",
+        "html_url": "https://github.com/KingofKanya",
+        "followers_url": "https://api.github.com/users/KingofKanya/followers",
+        "following_url": "https://api.github.com/users/KingofKanya/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KingofKanya/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KingofKanya/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KingofKanya/subscriptions",
+        "organizations_url": "https://api.github.com/users/KingofKanya/orgs",
+        "repos_url": "https://api.github.com/users/KingofKanya/repos",
+        "events_url": "https://api.github.com/users/KingofKanya/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KingofKanya/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7c86bd7990fc662ae0e580d39031b056093d4cab",
+            "url": "https://api.github.com/repos/KingofKanya/CS61B18sp/commits/7c86bd7990fc662ae0e580d39031b056093d4cab",
+            "html_url": "https://github.com/KingofKanya/CS61B18sp/commit/7c86bd7990fc662ae0e580d39031b056093d4cab"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 6,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "13566b81b018ad684f3a35fee301741b2734c8f4",
+            "filename": "lab2/.idea/.gitignore",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 8,
+            "changes": 8,
+            "blob_url": "https://github.com/KingofKanya/CS61B18sp/blob/7c86bd7990fc662ae0e580d39031b056093d4cab/lab2%2F.idea%2F.gitignore",
+            "raw_url": "https://github.com/KingofKanya/CS61B18sp/raw/7c86bd7990fc662ae0e580d39031b056093d4cab/lab2%2F.idea%2F.gitignore",
+            "contents_url": "https://api.github.com/repos/KingofKanya/CS61B18sp/contents/lab2%2F.idea%2F.gitignore?ref=7c86bd7990fc662ae0e580d39031b056093d4cab",
+            "patch": "@@ -1,8 +0,0 @@\n-# Default ignored files\n-/shelf/\n-/workspace.xml\n-# Editor-based HTTP Client requests\n-/httpRequests/\n-# Datasource local storage ignored files\n-/dataSources/\n-/dataSources.local.xml"
+        },
+        {
+            "sha": "43cf4866ba696c5b6cdeb1665777f8edb9d078d4",
+            "filename": "lab2/Intlist/IntList.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/KingofKanya/CS61B18sp/blob/64a3e3dd17fee1a2184db3415d50a69f8887e6c9/lab2%2FIntlist%2FIntList.java",
+            "raw_url": "https://github.com/KingofKanya/CS61B18sp/raw/64a3e3dd17fee1a2184db3415d50a69f8887e6c9/lab2%2FIntlist%2FIntList.java",
+            "contents_url": "https://api.github.com/repos/KingofKanya/CS61B18sp/contents/lab2%2FIntlist%2FIntList.java?ref=64a3e3dd17fee1a2184db3415d50a69f8887e6c9",
+            "patch": "@@ -84,6 +84,9 @@ public static IntList dcatenate(IntList A, IntList B) {\n         //TODO:  fill in method\n \n         //using iteration\n+        if(A == null){\n+            return B;\n+        }\n         IntList t = A;\n         while(t.rest != null){\n             t = t.rest;\n@@ -103,6 +106,9 @@ public static IntList catenate(IntList A, IntList B) {\n         //TODO:  fill in method\n \n         //using recursion\n+        if(A == null){\n+            return B;\n+        }\n         if(A.rest == null){\n             return new IntList(A.first, B);\n         }"
+        },
+        {
+            "sha": "13566b81b018ad684f3a35fee301741b2734c8f4",
+            "filename": "proj0/.idea/.gitignore",
+            "status": "renamed",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/KingofKanya/CS61B18sp/blob/64a3e3dd17fee1a2184db3415d50a69f8887e6c9/proj0%2F.idea%2F.gitignore",
+            "raw_url": "https://github.com/KingofKanya/CS61B18sp/raw/64a3e3dd17fee1a2184db3415d50a69f8887e6c9/proj0%2F.idea%2F.gitignore",
+            "contents_url": "https://api.github.com/repos/KingofKanya/CS61B18sp/contents/proj0%2F.idea%2F.gitignore?ref=64a3e3dd17fee1a2184db3415d50a69f8887e6c9",
+            "previous_filename": ".idea/.gitignore"
+        }
+    ]
+}

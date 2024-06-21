@@ -1,0 +1,98 @@
+{
+    "sha": "0de129baef3b2c8e17d51e17824db8a5348dcabf",
+    "node_id": "C_kwDOE-FFH9oAKDBkZTEyOWJhZWYzYjJjOGUxN2Q1MWUxNzgyNGRiOGE1MzQ4ZGNhYmY",
+    "commit": {
+        "author": {
+            "name": "George V",
+            "email": "georgev22.github@gmail.com",
+            "date": "2023-09-09T17:22:21Z"
+        },
+        "committer": {
+            "name": "George V",
+            "email": "georgev22.github@gmail.com",
+            "date": "2023-09-09T17:22:21Z"
+        },
+        "message": "refactor: code clean up and fix null pointer exception",
+        "tree": {
+            "sha": "523d06ce733a5c81f4ce9f8445eac2349a92e64d",
+            "url": "https://api.github.com/repos/GeorgeV220/MartexLibrary/git/trees/523d06ce733a5c81f4ce9f8445eac2349a92e64d"
+        },
+        "url": "https://api.github.com/repos/GeorgeV220/MartexLibrary/git/commits/0de129baef3b2c8e17d51e17824db8a5348dcabf",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEg3VsJaNMxsfLlT/GxdvzSO+1Gp4FAmT8qc0ACgkQxdvzSO+1\nGp4LOxAAzngvTREQkOrP0CZKvOQ1zQO0WumYubsB/96mDRTWBnPnZ05kc7Jtz6AG\neaMkgjFgXBuBOAll9TCvGQOEpdmNu5LnGoPBXTxPvj6RDOgyMGvlMvch0DTHNee2\n3tnPfTKi3bRoDBUIXJidonVnxdPeJvR9p/s/UK5aPO+k947ftjRtWQdLe2FaQTqt\nJ947DPB2aygIXsWolUD03yaMUFZRsRJ1BbyGUun7OVO0yjsEZuiGjdpdOfKfIDhk\nidVRLMJtOiiFlEWO5HqTr3pvgDUr9g3Q0IRTmsJO+X1a1ZiF4LcR6JgHWL7iARyL\nOAFQYUDBH5MKCf+oe9d+m8RQFsx+xruBayTsD05rRaGJKrZ+LzyEVgKLvUERiUhy\negmXFheSokwYjgm8X6Ku7HkOBfyJgx/QdVC0/Ft3aSk979/U6BrV/Lp8LSikwq7E\nbzKoVjCglhoxuMe0VRJxyXrSmML2wtc6rDOh6dvOiy9hlyz2tffm7acBeSfW2I2Q\nIndtb3XUN6QtqRKkAAgt6NNmTTI1RR78yGxhzDtR+TH8dd7f3liBqXnXCRfjItTY\nrgjT9BmWYLVSghv3lKxhR6YKdpG3LmTxHtraPeCQ1fXcmr9gWruKYsNfoJW/DE+g\n77x1ZAoPJcIr57d+E3zQcpPKb4RLWlLx8wLFJoWNcUPGBzArqjA=\n=DJEU\n-----END PGP SIGNATURE-----",
+            "payload": "tree 523d06ce733a5c81f4ce9f8445eac2349a92e64d\nparent 3685281e3f5e1bd39a0a6d7f9dcc318967beb4b2\nauthor George V. <georgev22.github@gmail.com> 1694280141 +0300\ncommitter George V. <georgev22.github@gmail.com> 1694280141 +0300\n\nrefactor: code clean up and fix null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/GeorgeV220/MartexLibrary/commits/0de129baef3b2c8e17d51e17824db8a5348dcabf",
+    "html_url": "https://github.com/GeorgeV220/MartexLibrary/commit/0de129baef3b2c8e17d51e17824db8a5348dcabf",
+    "comments_url": "https://api.github.com/repos/GeorgeV220/MartexLibrary/commits/0de129baef3b2c8e17d51e17824db8a5348dcabf/comments",
+    "author": {
+        "login": "GeorgeV220",
+        "id": 30936682,
+        "node_id": "MDQ6VXNlcjMwOTM2Njgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30936682?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GeorgeV220",
+        "html_url": "https://github.com/GeorgeV220",
+        "followers_url": "https://api.github.com/users/GeorgeV220/followers",
+        "following_url": "https://api.github.com/users/GeorgeV220/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GeorgeV220/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GeorgeV220/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GeorgeV220/subscriptions",
+        "organizations_url": "https://api.github.com/users/GeorgeV220/orgs",
+        "repos_url": "https://api.github.com/users/GeorgeV220/repos",
+        "events_url": "https://api.github.com/users/GeorgeV220/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GeorgeV220/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "GeorgeV220",
+        "id": 30936682,
+        "node_id": "MDQ6VXNlcjMwOTM2Njgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30936682?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GeorgeV220",
+        "html_url": "https://github.com/GeorgeV220",
+        "followers_url": "https://api.github.com/users/GeorgeV220/followers",
+        "following_url": "https://api.github.com/users/GeorgeV220/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GeorgeV220/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GeorgeV220/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GeorgeV220/subscriptions",
+        "organizations_url": "https://api.github.com/users/GeorgeV220/orgs",
+        "repos_url": "https://api.github.com/users/GeorgeV220/repos",
+        "events_url": "https://api.github.com/users/GeorgeV220/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GeorgeV220/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3685281e3f5e1bd39a0a6d7f9dcc318967beb4b2",
+            "url": "https://api.github.com/repos/GeorgeV220/MartexLibrary/commits/3685281e3f5e1bd39a0a6d7f9dcc318967beb4b2",
+            "html_url": "https://github.com/GeorgeV220/MartexLibrary/commit/3685281e3f5e1bd39a0a6d7f9dcc318967beb4b2"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 9,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "e484121be5f26acc17c3b25d839dbc288e8261ac",
+            "filename": "minecraft/bukkit/src/main/java/com/georgev22/library/minecraft/inventory/PagedInventory.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 5,
+            "changes": 14,
+            "blob_url": "https://github.com/GeorgeV220/MartexLibrary/blob/0de129baef3b2c8e17d51e17824db8a5348dcabf/minecraft%2Fbukkit%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgeorgev22%2Flibrary%2Fminecraft%2Finventory%2FPagedInventory.java",
+            "raw_url": "https://github.com/GeorgeV220/MartexLibrary/raw/0de129baef3b2c8e17d51e17824db8a5348dcabf/minecraft%2Fbukkit%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgeorgev22%2Flibrary%2Fminecraft%2Finventory%2FPagedInventory.java",
+            "contents_url": "https://api.github.com/repos/GeorgeV220/MartexLibrary/contents/minecraft%2Fbukkit%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgeorgev22%2Flibrary%2Fminecraft%2Finventory%2FPagedInventory.java?ref=0de129baef3b2c8e17d51e17824db8a5348dcabf",
+            "patch": "@@ -31,6 +31,7 @@\n \n import java.io.IOException;\n import java.util.*;\n+import java.util.logging.Level;\n \n public class PagedInventory implements IPagedInventory {\n \n@@ -231,7 +232,7 @@ public boolean open(Player player, int index, boolean animated) {\n \n         ObjectMap<Integer, Integer> slotFrame = ObjectMap.newConcurrentObjectMap();\n \n-        if (player.getOpenInventory().getTopInventory() != null && player.getOpenInventory().getTopInventory().equals(openInventory)) {\n+        if (player.getOpenInventory().getTopInventory().equals(openInventory)) {\n             for (int slot = 0; slot < openInventory.getSize(); ++slot) {\n                 ItemStack itemStack = openInventory.getItem(slot);\n \n@@ -245,7 +246,7 @@ public boolean open(Player player, int index, boolean animated) {\n             }\n         }\n         playerSchedulerFramesMap.append(player, minecraftScheduler.createRepeatingTask(registrar.getPlugin(), () -> {\n-            if (player.getOpenInventory().getTopInventory() != null && player.getOpenInventory().getTopInventory().equals(openInventory)) {\n+            if (player.getOpenInventory().getTopInventory().equals(openInventory)) {\n                 for (int i = 0; i < openInventory.getSize(); ++i) {\n \n                     ItemStack itemStack = openInventory.getItem(i);\n@@ -258,7 +259,10 @@ public boolean open(Player player, int index, boolean animated) {\n \n                     List<ItemStack> itemStacks = BukkitMinecraftUtils.itemStackListFromBase64(nbtItem.getString(\"frames\"));\n \n-                    int size = itemStacks.size() - 1;\n+                    int size = 0;\n+                    if (itemStacks != null) {\n+                        size = itemStacks.size() - 1;\n+                    }\n                     if (size > 0 & slotFrame.get(i) <= size) {\n                         ItemStack item = itemStacks.get(slotFrame.get(i));\n                         item.setItemMeta(itemStack.getItemMeta());\n@@ -276,7 +280,7 @@ public boolean open(Player player, int index, boolean animated) {\n         }, 1L, 20L));\n         if (animated) {\n             playerSchedulerAnimatedMap.append(player, minecraftScheduler.createRepeatingTask(registrar.getPlugin(), () -> {\n-                if (player.getOpenInventory().getTopInventory() != null && player.getOpenInventory().getTopInventory().equals(openInventory)) {\n+                if (player.getOpenInventory().getTopInventory().equals(openInventory)) {\n                     for (int i = 0; i < openInventory.getSize(); i++) {\n                         ItemStack itemStack = openInventory.getItem(i);\n \n@@ -297,7 +301,7 @@ public boolean open(Player player, int index, boolean animated) {\n                             try {\n                                 color = (List<String>) Utils.deserializeObjectFromString(nbtItem.getString(\"colors\"));\n                             } catch (IOException | ClassNotFoundException e) {\n-                                e.printStackTrace();\n+                                registrar.getPlugin().getLogger().log(Level.SEVERE, \"Error: \", e);\n                                 color = Lists.newArrayList();\n                             }\n                         }"
+        }
+    ]
+}

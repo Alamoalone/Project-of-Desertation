@@ -1,0 +1,6 @@
+    protected void debugLog(Object object) {
+        if (log.isDebugEnabled()){
+            log.debug("Logging object of '" + object.getClass() + "'");
+            log.debug("Data: {}", object);
+        }
+    }

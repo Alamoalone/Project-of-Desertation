@@ -1,0 +1,8 @@
+    public boolean isAllowed(Object ...data) {
+        Item itemClickedOn = (Item) data[0];
+
+        if(state) return true; //User is allowed to Interact with Blocks, we can just skip unnecessary checks
+
+        //Go through filters to know if we can just allow it.
+        return Allowed_Clickable_Blocks.contains(itemClickedOn);
+    }

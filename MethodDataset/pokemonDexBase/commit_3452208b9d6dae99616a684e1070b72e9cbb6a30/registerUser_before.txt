@@ -1,0 +1,10 @@
+    public ResponseEntity<?> registerUser(@RequestBody UserDto userDto) {
+        try {
+            User user = userService.registerNewUser(userDto);
+            UserDto responseDto = convertToDto(user);
+            return new ResponseEntity<>(responseDto, HttpStatus.CREATED);
+        } catch (UserAlreadyExistsException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+        // Include more exception handling as needed
+    }

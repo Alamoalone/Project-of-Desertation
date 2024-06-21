@@ -1,0 +1,44 @@
+    public void CreateProduct_ValidInput_ReturnsCreated() {
+        //Login
+        LoginDTO login = new LoginDTO("admin", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+
+        String jwt = loginResponse.getBody().getJwt();
+
+        // Create a ProductDTO for testing
+        ProductRegistrationDTO validInput3 = new ProductRegistrationDTO(
+                "Test Brand",
+                "Test Name",
+                "Test Description",
+                10,
+                new BigDecimal("19.99")
+        );
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<ProductRegistrationDTO> requestEntity = new HttpEntity<>(validInput3, headers);
+
+        ResponseEntity<ProductDTO> response2 = restTemplate.postForEntity(
+                "http://localhost:" + port + "/product/register",
+                requestEntity,
+                ProductDTO.class
+        );
+
+        assertEquals(HttpStatus.OK, response2.getStatusCode());
+
+        ProductDTO responseBody2 = response2.getBody();
+        assertNotNull(responseBody2);
+
+        assertEquals("Test Brand", responseBody2.getBrand());
+        assertEquals("Test Name", responseBody2.getName());
+        assertEquals("Test Description", responseBody2.getDescription());
+        assertEquals(10, responseBody2.getQuantity());
+        assertEquals(new BigDecimal("19.99"), responseBody2.getPrice());
+    }

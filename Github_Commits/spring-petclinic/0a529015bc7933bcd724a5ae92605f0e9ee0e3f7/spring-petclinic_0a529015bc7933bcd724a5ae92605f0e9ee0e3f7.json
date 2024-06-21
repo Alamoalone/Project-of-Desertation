@@ -1,0 +1,98 @@
+{
+    "sha": "0a529015bc7933bcd724a5ae92605f0e9ee0e3f7",
+    "node_id": "C_kwDOKXm1FNoAKDBhNTI5MDE1YmM3OTMzYmNkNzI0YTVhZTkyNjA1ZjBlOWVlMGUzZjc",
+    "commit": {
+        "author": {
+            "name": "bijomutta",
+            "email": "bijomutta@gmail.com",
+            "date": "2023-07-14T09:21:07Z"
+        },
+        "committer": {
+            "name": "Dave Syer",
+            "email": "david_syer@hotmail.com",
+            "date": "2023-07-14T09:27:01Z"
+        },
+        "message": "handling Null pointer Exception on OwnerID",
+        "tree": {
+            "sha": "5f4a319316981daaf1ede1ca56ab278b66895665",
+            "url": "https://api.github.com/repos/juananmora/spring-petclinic/git/trees/5f4a319316981daaf1ede1ca56ab278b66895665"
+        },
+        "url": "https://api.github.com/repos/juananmora/spring-petclinic/git/commits/0a529015bc7933bcd724a5ae92605f0e9ee0e3f7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/juananmora/spring-petclinic/commits/0a529015bc7933bcd724a5ae92605f0e9ee0e3f7",
+    "html_url": "https://github.com/juananmora/spring-petclinic/commit/0a529015bc7933bcd724a5ae92605f0e9ee0e3f7",
+    "comments_url": "https://api.github.com/repos/juananmora/spring-petclinic/commits/0a529015bc7933bcd724a5ae92605f0e9ee0e3f7/comments",
+    "author": {
+        "login": "bijomutta",
+        "id": 130010797,
+        "node_id": "U_kgDOB7_OrQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/130010797?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bijomutta",
+        "html_url": "https://github.com/bijomutta",
+        "followers_url": "https://api.github.com/users/bijomutta/followers",
+        "following_url": "https://api.github.com/users/bijomutta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bijomutta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bijomutta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bijomutta/subscriptions",
+        "organizations_url": "https://api.github.com/users/bijomutta/orgs",
+        "repos_url": "https://api.github.com/users/bijomutta/repos",
+        "events_url": "https://api.github.com/users/bijomutta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bijomutta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dsyer",
+        "id": 124075,
+        "node_id": "MDQ6VXNlcjEyNDA3NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/124075?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dsyer",
+        "html_url": "https://github.com/dsyer",
+        "followers_url": "https://api.github.com/users/dsyer/followers",
+        "following_url": "https://api.github.com/users/dsyer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dsyer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dsyer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dsyer/subscriptions",
+        "organizations_url": "https://api.github.com/users/dsyer/orgs",
+        "repos_url": "https://api.github.com/users/dsyer/repos",
+        "events_url": "https://api.github.com/users/dsyer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dsyer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3a6127557dc05d9a6462fcea67d0f329e7286245",
+            "url": "https://api.github.com/repos/juananmora/spring-petclinic/commits/3a6127557dc05d9a6462fcea67d0f329e7286245",
+            "html_url": "https://github.com/juananmora/spring-petclinic/commit/3a6127557dc05d9a6462fcea67d0f329e7286245"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 12,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "0c0058f3a797641dc70eb1288eda6c4f3b58b667",
+            "filename": "src/main/java/org/springframework/samples/petclinic/owner/PetController.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 2,
+            "changes": 14,
+            "blob_url": "https://github.com/juananmora/spring-petclinic/blob/0a529015bc7933bcd724a5ae92605f0e9ee0e3f7/src%2Fmain%2Fjava%2Forg%2Fspringframework%2Fsamples%2Fpetclinic%2Fowner%2FPetController.java",
+            "raw_url": "https://github.com/juananmora/spring-petclinic/raw/0a529015bc7933bcd724a5ae92605f0e9ee0e3f7/src%2Fmain%2Fjava%2Forg%2Fspringframework%2Fsamples%2Fpetclinic%2Fowner%2FPetController.java",
+            "contents_url": "https://api.github.com/repos/juananmora/spring-petclinic/contents/src%2Fmain%2Fjava%2Forg%2Fspringframework%2Fsamples%2Fpetclinic%2Fowner%2FPetController.java?ref=0a529015bc7933bcd724a5ae92605f0e9ee0e3f7",
+            "patch": "@@ -56,13 +56,23 @@ public Collection<PetType> populatePetTypes() {\n \n \t@ModelAttribute(\"owner\")\n \tpublic Owner findOwner(@PathVariable(\"ownerId\") int ownerId) {\n-\t\treturn this.owners.findById(ownerId);\n+\n+\t\tOwner owner = this.owners.findById(ownerId);\n+\t\tif (owner == null) {\n+\t\t\tthrow new IllegalArgumentException(\"Owner ID not found: \" + ownerId);\n+\t\t}\n+\t\treturn owner;\n \t}\n \n \t@ModelAttribute(\"pet\")\n \tpublic Pet findPet(@PathVariable(\"ownerId\") int ownerId,\n \t\t\t@PathVariable(name = \"petId\", required = false) Integer petId) {\n-\t\treturn petId == null ? new Pet() : this.owners.findById(ownerId).getPet(petId);\n+\n+\t\tOwner owner = this.owners.findById(ownerId);\n+\t\tif (owner == null) {\n+\t\t\tthrow new IllegalArgumentException(\"Owner ID not found: \" + ownerId);\n+\t\t}\n+\t\treturn petId == null ? new Pet() : owner.getPet(petId);\n \t}\n \n \t@InitBinder(\"owner\")"
+        }
+    ]
+}

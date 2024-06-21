@@ -1,0 +1,98 @@
+{
+    "sha": "0b24e294d6714fabb8e0a07c5de62a55cba31844",
+    "node_id": "C_kwDOGjl7CtoAKDBiMjRlMjk0ZDY3MTRmYWJiOGUwYTA3YzVkZTYyYTU1Y2JhMzE4NDQ",
+    "commit": {
+        "author": {
+            "name": "fayer3",
+            "email": "fayer3@users.noreply.github.com",
+            "date": "2023-05-12T22:54:41Z"
+        },
+        "committer": {
+            "name": "fayer3",
+            "email": "fayer3@users.noreply.github.com",
+            "date": "2023-05-12T22:54:41Z"
+        },
+        "message": "prevent null pointer exception, if a player has no playerstate data",
+        "tree": {
+            "sha": "35c75d04c403c76fca1584e0da222e239d5ee29e",
+            "url": "https://api.github.com/repos/Vivecraft/VivecraftMod/git/trees/35c75d04c403c76fca1584e0da222e239d5ee29e"
+        },
+        "url": "https://api.github.com/repos/Vivecraft/VivecraftMod/git/commits/0b24e294d6714fabb8e0a07c5de62a55cba31844",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Vivecraft/VivecraftMod/commits/0b24e294d6714fabb8e0a07c5de62a55cba31844",
+    "html_url": "https://github.com/Vivecraft/VivecraftMod/commit/0b24e294d6714fabb8e0a07c5de62a55cba31844",
+    "comments_url": "https://api.github.com/repos/Vivecraft/VivecraftMod/commits/0b24e294d6714fabb8e0a07c5de62a55cba31844/comments",
+    "author": {
+        "login": "fayer3",
+        "id": 8282299,
+        "node_id": "MDQ6VXNlcjgyODIyOTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8282299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fayer3",
+        "html_url": "https://github.com/fayer3",
+        "followers_url": "https://api.github.com/users/fayer3/followers",
+        "following_url": "https://api.github.com/users/fayer3/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fayer3/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fayer3/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fayer3/subscriptions",
+        "organizations_url": "https://api.github.com/users/fayer3/orgs",
+        "repos_url": "https://api.github.com/users/fayer3/repos",
+        "events_url": "https://api.github.com/users/fayer3/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fayer3/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "fayer3",
+        "id": 8282299,
+        "node_id": "MDQ6VXNlcjgyODIyOTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8282299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fayer3",
+        "html_url": "https://github.com/fayer3",
+        "followers_url": "https://api.github.com/users/fayer3/followers",
+        "following_url": "https://api.github.com/users/fayer3/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fayer3/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fayer3/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fayer3/subscriptions",
+        "organizations_url": "https://api.github.com/users/fayer3/orgs",
+        "repos_url": "https://api.github.com/users/fayer3/repos",
+        "events_url": "https://api.github.com/users/fayer3/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fayer3/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ed159e8e3b05b87f2977b93890a7d4c7e54fb4c3",
+            "url": "https://api.github.com/repos/Vivecraft/VivecraftMod/commits/ed159e8e3b05b87f2977b93890a7d4c7e54fb4c3",
+            "html_url": "https://github.com/Vivecraft/VivecraftMod/commit/ed159e8e3b05b87f2977b93890a7d4c7e54fb4c3"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "d39762e732abc3ce53aa13b79064935d199cfe13",
+            "filename": "common/src/main/java/org/vivecraft/api/CommonNetworkHelper.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Vivecraft/VivecraftMod/blob/0b24e294d6714fabb8e0a07c5de62a55cba31844/common%2Fsrc%2Fmain%2Fjava%2Forg%2Fvivecraft%2Fapi%2FCommonNetworkHelper.java",
+            "raw_url": "https://github.com/Vivecraft/VivecraftMod/raw/0b24e294d6714fabb8e0a07c5de62a55cba31844/common%2Fsrc%2Fmain%2Fjava%2Forg%2Fvivecraft%2Fapi%2FCommonNetworkHelper.java",
+            "contents_url": "https://api.github.com/repos/Vivecraft/VivecraftMod/contents/common%2Fsrc%2Fmain%2Fjava%2Forg%2Fvivecraft%2Fapi%2FCommonNetworkHelper.java?ref=0b24e294d6714fabb8e0a07c5de62a55cba31844",
+            "patch": "@@ -35,7 +35,7 @@ public static void sendVrPlayerStateToClients(ServerPlayer vrPlayerEntity) {\n         if (vivePlayer.player == null || vivePlayer.player.hasDisconnected()) {\n             playersWithVivecraft.remove(vrPlayerEntity.getUUID());\n         }\n-        if (!vivePlayer.isVR()) {\n+        if (!vivePlayer.isVR() || vivePlayer.vrPlayerState == null) {\n             return;\n         }\n         for (var trackingPlayer : ServerNetworking.getTrackingPlayers(vrPlayerEntity)) {"
+        }
+    ]
+}

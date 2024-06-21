@@ -1,0 +1,6 @@
+	public void removeSummonedPets(IPlayer player)
+	{
+		for (SummonedPet pet : summonedPets.get(player.getUniqueId()))
+			pet.getPet().remove();
+		summonedPets.remove(player.getUniqueId());
+	}

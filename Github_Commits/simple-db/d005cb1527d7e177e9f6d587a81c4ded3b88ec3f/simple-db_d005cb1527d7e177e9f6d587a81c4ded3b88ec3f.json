@@ -1,0 +1,98 @@
+{
+    "sha": "d005cb1527d7e177e9f6d587a81c4ded3b88ec3f",
+    "node_id": "C_kwDOK7vKIdoAKGQwMDVjYjE1MjdkN2UxNzdlOWY2ZDU4N2E4MWM0ZGVkM2I4OGVjM2Y",
+    "commit": {
+        "author": {
+            "name": "lan lin",
+            "email": "lin.lan@northeastern.edu",
+            "date": "2024-01-06T01:25:33Z"
+        },
+        "committer": {
+            "name": "Lan Lin",
+            "email": "lin.lan@northeastern.edu",
+            "date": "2024-01-06T06:36:48Z"
+        },
+        "message": "fix: null pointer exception",
+        "tree": {
+            "sha": "328614efba289bb52ad301722307da82f472805e",
+            "url": "https://api.github.com/repos/simple-wheel/simple-db/git/trees/328614efba289bb52ad301722307da82f472805e"
+        },
+        "url": "https://api.github.com/repos/simple-wheel/simple-db/git/commits/d005cb1527d7e177e9f6d587a81c4ded3b88ec3f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/simple-wheel/simple-db/commits/d005cb1527d7e177e9f6d587a81c4ded3b88ec3f",
+    "html_url": "https://github.com/simple-wheel/simple-db/commit/d005cb1527d7e177e9f6d587a81c4ded3b88ec3f",
+    "comments_url": "https://api.github.com/repos/simple-wheel/simple-db/commits/d005cb1527d7e177e9f6d587a81c4ded3b88ec3f/comments",
+    "author": {
+        "login": "user1689",
+        "id": 89725525,
+        "node_id": "MDQ6VXNlcjg5NzI1NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89725525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/user1689",
+        "html_url": "https://github.com/user1689",
+        "followers_url": "https://api.github.com/users/user1689/followers",
+        "following_url": "https://api.github.com/users/user1689/following{/other_user}",
+        "gists_url": "https://api.github.com/users/user1689/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/user1689/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/user1689/subscriptions",
+        "organizations_url": "https://api.github.com/users/user1689/orgs",
+        "repos_url": "https://api.github.com/users/user1689/repos",
+        "events_url": "https://api.github.com/users/user1689/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/user1689/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "user1689",
+        "id": 89725525,
+        "node_id": "MDQ6VXNlcjg5NzI1NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89725525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/user1689",
+        "html_url": "https://github.com/user1689",
+        "followers_url": "https://api.github.com/users/user1689/followers",
+        "following_url": "https://api.github.com/users/user1689/following{/other_user}",
+        "gists_url": "https://api.github.com/users/user1689/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/user1689/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/user1689/subscriptions",
+        "organizations_url": "https://api.github.com/users/user1689/orgs",
+        "repos_url": "https://api.github.com/users/user1689/repos",
+        "events_url": "https://api.github.com/users/user1689/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/user1689/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c9f7ab87ea1b52b6a4ea93d7f33a2599d2d30217",
+            "url": "https://api.github.com/repos/simple-wheel/simple-db/commits/c9f7ab87ea1b52b6a4ea93d7f33a2599d2d30217",
+            "html_url": "https://github.com/simple-wheel/simple-db/commit/c9f7ab87ea1b52b6a4ea93d7f33a2599d2d30217"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 7,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "e2efef6ea47a77d46be7ce28089482e34612a782",
+            "filename": "src/main/java/com/northeastern/edu/simpledb/backend/vm/Visibility.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 2,
+            "changes": 9,
+            "blob_url": "https://github.com/simple-wheel/simple-db/blob/d005cb1527d7e177e9f6d587a81c4ded3b88ec3f/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fvm%2FVisibility.java",
+            "raw_url": "https://github.com/simple-wheel/simple-db/raw/d005cb1527d7e177e9f6d587a81c4ded3b88ec3f/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fvm%2FVisibility.java",
+            "contents_url": "https://api.github.com/repos/simple-wheel/simple-db/contents/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fvm%2FVisibility.java?ref=d005cb1527d7e177e9f6d587a81c4ded3b88ec3f",
+            "patch": "@@ -4,18 +4,23 @@\n \n public class Visibility {\n \n+    /**\n+     * version skip happens when e has been updated by t1 from v0\n+     * to v1, but t1 can't be seen by t2, and t2 try to update e,\n+     * the version of it will transfer from v0 to v2, skipping v1\n+     */\n     public static boolean isVersionSkip(TransactionManager tm, Transaction t, Entry e) {\n         long xmax = e.getXmax();\n         if (t.level == 0) return false;\n         else return tm.isCommitted(xmax) && (xmax > t.xid || t.isInSnapShot(xmax));\n     }\n \n-    public static boolean isVisible(TransactionManager tm, Transaction t, Entry e) {\n+    // determine if record(e) is visible to transaction(t) based on isolation level\n+    protected static boolean isVisible(TransactionManager tm, Transaction t, Entry e) {\n         if(t.level == 0) return readCommitted(tm, t, e);\n         else return repeatableRead(tm, t, e);\n     }\n \n-    // determine if record(e) is visible to transaction(t)\n     private static boolean readCommitted(TransactionManager tm, Transaction t, Entry e) {\n         long xid = t.xid;\n         long xmin = e.getXmin();"
+        }
+    ]
+}

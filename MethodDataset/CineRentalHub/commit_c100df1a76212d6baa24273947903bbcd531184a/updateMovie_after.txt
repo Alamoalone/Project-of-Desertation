@@ -1,0 +1,35 @@
+  public static dto.MovieDTO updateMovie(Integer movieId, MoviePostPutDTO movieDTO) throws Exception {
+    EntityManager em = MariaDB.getEntityManager();
+    try {
+      em.getTransaction().begin();
+
+      StoredProcedureQuery query = em.createStoredProcedureQuery("update_movie")
+              // Register parameters and set values here as in addMovie
+              .registerStoredProcedureParameter("movie_id", Integer.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("title", String.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("release_date", java.sql.Date.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("description", String.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("daily_rental_price", java.math.BigDecimal.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("purchase_price", java.math.BigDecimal.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("link", String.class, ParameterMode.IN)
+              .setParameter("movie_id", movieId)
+              .setParameter("title", movieDTO.getTitle())
+              .setParameter("release_date", movieDTO.getRelease_date())
+              .setParameter("description", movieDTO.getDescription())
+              .setParameter("daily_rental_price", movieDTO.getDaily_rental_price())
+              .setParameter("purchase_price", movieDTO.getPurchase_price())
+              .setParameter("link", movieDTO.getLink());
+
+      query.execute();
+      em.getTransaction().commit();
+      return new dto.MovieDTO(em.find(MoviesPojo.class, movieId));
+    } catch (PersistenceException e) {
+      if (em.getTransaction().isActive()) {
+        em.getTransaction().rollback();
+      }
+      ModelUtils.generateException(e);
+      return null;
+    } finally {
+      em.close();
+    }
+  }

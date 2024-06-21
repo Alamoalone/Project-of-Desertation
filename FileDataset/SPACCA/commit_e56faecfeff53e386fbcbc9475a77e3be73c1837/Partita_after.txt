@@ -1,0 +1,4 @@
+    public void fine() throws FileNotFoundException {
+        this.handlerPartita.elimina(this.codice);
+    }
+

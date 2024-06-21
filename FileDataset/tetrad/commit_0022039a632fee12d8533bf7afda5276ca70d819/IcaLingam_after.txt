@@ -1,0 +1,6 @@
+
+
+    public Matrix getBHat() {
+        return bHat;
+    }
+

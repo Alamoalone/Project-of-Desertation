@@ -1,0 +1,6 @@
+    public ResponseEntity<List<String>> getAllOrders(){
+
+         List<String> orders=orderservice.getAllOrders();
+        //Get all orders
+        return new ResponseEntity<>(orders, HttpStatus.CREATED);
+    }

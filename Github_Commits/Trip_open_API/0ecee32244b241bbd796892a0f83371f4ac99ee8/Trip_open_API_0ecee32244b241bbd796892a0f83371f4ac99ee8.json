@@ -1,0 +1,84 @@
+{
+    "sha": "0ecee32244b241bbd796892a0f83371f4ac99ee8",
+    "node_id": "C_kwDOK0egtNoAKDBlY2VlMzIyNDRiMjQxYmJkNzk2ODkyYTBmODMzNzFmNGFjOTllZTg",
+    "commit": {
+        "author": {
+            "name": "bro jjun",
+            "email": "wjd5126@koreatech.ac.kr",
+            "date": "2023-11-16T13:24:55Z"
+        },
+        "committer": {
+            "name": "bro jjun",
+            "email": "wjd5126@koreatech.ac.kr",
+            "date": "2023-11-16T13:25:06Z"
+        },
+        "message": "fix : add null pointer exception\n\n\nFormer-commit-id: 042a7ca52240f3ebf332f688878a55195457de6e",
+        "tree": {
+            "sha": "7e25865d11a357940ec333eb6821aac84f71f992",
+            "url": "https://api.github.com/repos/izzy80/Trip_open_API/git/trees/7e25865d11a357940ec333eb6821aac84f71f992"
+        },
+        "url": "https://api.github.com/repos/izzy80/Trip_open_API/git/commits/0ecee32244b241bbd796892a0f83371f4ac99ee8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/izzy80/Trip_open_API/commits/0ecee32244b241bbd796892a0f83371f4ac99ee8",
+    "html_url": "https://github.com/izzy80/Trip_open_API/commit/0ecee32244b241bbd796892a0f83371f4ac99ee8",
+    "comments_url": "https://api.github.com/repos/izzy80/Trip_open_API/commits/0ecee32244b241bbd796892a0f83371f4ac99ee8/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "de8d989dfc82413939d11c5aa75d1afec5f230ee",
+            "url": "https://api.github.com/repos/izzy80/Trip_open_API/commits/de8d989dfc82413939d11c5aa75d1afec5f230ee",
+            "html_url": "https://github.com/izzy80/Trip_open_API/commit/de8d989dfc82413939d11c5aa75d1afec5f230ee"
+        }
+    ],
+    "stats": {
+        "total": 24,
+        "additions": 17,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "beeab1201f6b1f802e9cd6a694a47d4f144e81b7",
+            "filename": "backend/src/main/java/com/ssafy/i5i/hotelAPI/domain/food/service/FoodServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/izzy80/Trip_open_API/blob/0ecee32244b241bbd796892a0f83371f4ac99ee8/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Ffood%2Fservice%2FFoodServiceImpl.java",
+            "raw_url": "https://github.com/izzy80/Trip_open_API/raw/0ecee32244b241bbd796892a0f83371f4ac99ee8/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Ffood%2Fservice%2FFoodServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/izzy80/Trip_open_API/contents/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Ffood%2Fservice%2FFoodServiceImpl.java?ref=0ecee32244b241bbd796892a0f83371f4ac99ee8",
+            "patch": "@@ -1,3 +1,3 @@\n version https://git-lfs.github.com/spec/v1\n-oid sha256:21d743582d3878e545056fde6ccb774fb0c3e41b5e56f7002ed567945b4ccc62\n-size 7889\n+oid sha256:8103d20f2b30d82d0bae62243db35a66a63660296edc6047f354282a6c3a8d46\n+size 8069"
+        },
+        {
+            "sha": "671fbbee62e2964958e85ed86f4ecfa10dd39323",
+            "filename": "backend/src/main/java/com/ssafy/i5i/hotelAPI/domain/hotel/repository/AttractionRepository.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 3,
+            "changes": 16,
+            "blob_url": "https://github.com/izzy80/Trip_open_API/blob/0ecee32244b241bbd796892a0f83371f4ac99ee8/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Fhotel%2Frepository%2FAttractionRepository.java",
+            "raw_url": "https://github.com/izzy80/Trip_open_API/raw/0ecee32244b241bbd796892a0f83371f4ac99ee8/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Fhotel%2Frepository%2FAttractionRepository.java",
+            "contents_url": "https://api.github.com/repos/izzy80/Trip_open_API/contents/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Fhotel%2Frepository%2FAttractionRepository.java?ref=0ecee32244b241bbd796892a0f83371f4ac99ee8",
+            "patch": "@@ -1,3 +1,13 @@\n-version https://git-lfs.github.com/spec/v1\n-oid sha256:2433cfdf9a2240ecbe0f227afbc0b7086acbad07ed4ba16e24f67e004b895fc3\n-size 538\n+package com.ssafy.i5i.hotelAPI.domain.hotel.repository;\n+\n+import com.ssafy.i5i.hotelAPI.domain.hotel.entity.Attraction;\n+import org.springframework.data.jpa.repository.JpaRepository;\n+import org.springframework.data.jpa.repository.Query;\n+import org.springframework.data.repository.query.Param;\n+\n+import java.util.Optional;\n+\n+public interface AttractionRepository extends JpaRepository<Attraction, Long> {\n+\n+    Optional<Attraction> findTopByTitle(@Param(\"title\") String title);\n+}"
+        },
+        {
+            "sha": "6a498b50a7d9045a0d39aa833fbbba78ec31a616",
+            "filename": "backend/src/main/java/com/ssafy/i5i/hotelAPI/domain/hotel/service/AccommodationService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/izzy80/Trip_open_API/blob/0ecee32244b241bbd796892a0f83371f4ac99ee8/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Fhotel%2Fservice%2FAccommodationService.java",
+            "raw_url": "https://github.com/izzy80/Trip_open_API/raw/0ecee32244b241bbd796892a0f83371f4ac99ee8/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Fhotel%2Fservice%2FAccommodationService.java",
+            "contents_url": "https://api.github.com/repos/izzy80/Trip_open_API/contents/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fi5i%2FhotelAPI%2Fdomain%2Fhotel%2Fservice%2FAccommodationService.java?ref=0ecee32244b241bbd796892a0f83371f4ac99ee8",
+            "patch": "@@ -1,3 +1,3 @@\n version https://git-lfs.github.com/spec/v1\n-oid sha256:d6075f84875c96df0d4556ef5aed32220f83d53ef168267d9e7d3469c5dd51ba\n-size 10058\n+oid sha256:c495c53352e1a35200ef01bdbb8cf37fb07e9afaddd0e71793a38dff631c3578\n+size 10352"
+        }
+    ]
+}

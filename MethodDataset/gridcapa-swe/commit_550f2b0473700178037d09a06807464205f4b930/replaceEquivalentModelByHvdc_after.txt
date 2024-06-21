@@ -1,0 +1,8 @@
+    public static void replaceEquivalentModelByHvdc(Network network, Set<HvdcCreationParameters> creationParametersSet) {
+        // Sort HvdcCreationParameters to ensure repeatability
+        List<HvdcCreationParameters> sortedHvdcCreationParameters = creationParametersSet.stream()
+                .sorted(Comparator.comparing(HvdcCreationParameters::getId)).toList();
+        for (HvdcCreationParameters parameter : sortedHvdcCreationParameters) {
+            replaceEquivalentModelByHvdc(network, parameter);
+        }
+    }

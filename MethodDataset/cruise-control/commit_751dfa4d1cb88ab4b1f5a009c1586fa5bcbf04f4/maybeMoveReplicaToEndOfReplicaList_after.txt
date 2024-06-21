@@ -1,0 +1,12 @@
+  private void maybeMoveReplicaToEndOfReplicaList(Replica replica, ClusterModel clusterModel) {
+    // There are three scenarios where replica swap operation is skipped:
+    // 1.the replica is not leader replica and _excludeFollowerDemotion is true.
+    // 2.the replica's partition is currently under replicated and _skipUrpDemotion is true.
+    // 3.the replica doesn't exist.
+    boolean skipReplicaMove = shouldSkipOperationOnURP(replica.topicPartition(), "replica move");
+    if (!skipReplicaMove
+        && !(_excludeFollowerDemotion && !replica.isLeader())) {
+      Partition p = clusterModel.partition(replica.topicPartition());
+      p.moveReplicaToEnd(replica);
+    }
+  }

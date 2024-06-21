@@ -1,0 +1,7 @@
+    public void increaseScoreNumber(int amount){
+        this.scoreNumber = this.scoreNumber + amount;
+        
+        creditscoreImage.clear();
+        creditscoreImage.drawString("Credit Score: \n      "+ this.scoreNumber, 0, 20);
+        setImage(creditscoreImage);
+    }

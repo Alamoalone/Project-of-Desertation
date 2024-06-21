@@ -1,0 +1,3 @@
+    public static ExecStaticEltContent initByNotNull(AnaCallFctContent _className, Forwards _fwd) {
+        return new ExecStaticEltContent(MethodId.getKind(((NamedCalledFunctionBlock)_className.getFunction().getFunction()).getModifier()),ExecStaticEltContent.build(_className.getFormattedType(), _fwd));
+    }

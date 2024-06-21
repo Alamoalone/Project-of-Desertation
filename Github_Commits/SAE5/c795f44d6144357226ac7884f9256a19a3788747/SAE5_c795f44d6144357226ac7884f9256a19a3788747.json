@@ -1,0 +1,254 @@
+{
+    "sha": "c795f44d6144357226ac7884f9256a19a3788747",
+    "node_id": "C_kwDOKl7FHNoAKGM3OTVmNDRkNjE0NDM1NzIyNmFjNzg4NGY5MjU2YTE5YTM3ODg3NDc",
+    "commit": {
+        "author": {
+            "name": "Lucas",
+            "email": "75908397+Sacus1@users.noreply.github.com",
+            "date": "2024-01-11T09:47:16Z"
+        },
+        "committer": {
+            "name": "Lucas",
+            "email": "75908397+Sacus1@users.noreply.github.com",
+            "date": "2024-01-11T09:47:16Z"
+        },
+        "message": "Fix null pointer exception and update button labels",
+        "tree": {
+            "sha": "7ddc1c4cd7afeeac2152d4f55ab3e97154fccb89",
+            "url": "https://api.github.com/repos/Sacus1/SAE5/git/trees/7ddc1c4cd7afeeac2152d4f55ab3e97154fccb89"
+        },
+        "url": "https://api.github.com/repos/Sacus1/SAE5/git/commits/c795f44d6144357226ac7884f9256a19a3788747",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Sacus1/SAE5/commits/c795f44d6144357226ac7884f9256a19a3788747",
+    "html_url": "https://github.com/Sacus1/SAE5/commit/c795f44d6144357226ac7884f9256a19a3788747",
+    "comments_url": "https://api.github.com/repos/Sacus1/SAE5/commits/c795f44d6144357226ac7884f9256a19a3788747/comments",
+    "author": {
+        "login": "Sacus1",
+        "id": 75908397,
+        "node_id": "MDQ6VXNlcjc1OTA4Mzk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75908397?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sacus1",
+        "html_url": "https://github.com/Sacus1",
+        "followers_url": "https://api.github.com/users/Sacus1/followers",
+        "following_url": "https://api.github.com/users/Sacus1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sacus1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sacus1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sacus1/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sacus1/orgs",
+        "repos_url": "https://api.github.com/users/Sacus1/repos",
+        "events_url": "https://api.github.com/users/Sacus1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sacus1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Sacus1",
+        "id": 75908397,
+        "node_id": "MDQ6VXNlcjc1OTA4Mzk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75908397?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sacus1",
+        "html_url": "https://github.com/Sacus1",
+        "followers_url": "https://api.github.com/users/Sacus1/followers",
+        "following_url": "https://api.github.com/users/Sacus1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sacus1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sacus1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sacus1/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sacus1/orgs",
+        "repos_url": "https://api.github.com/users/Sacus1/repos",
+        "events_url": "https://api.github.com/users/Sacus1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sacus1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1e2628ab4f664317dfdbcdd4238fc8a42cc37181",
+            "url": "https://api.github.com/repos/Sacus1/SAE5/commits/1e2628ab4f664317dfdbcdd4238fc8a42cc37181",
+            "html_url": "https://github.com/Sacus1/SAE5/commit/1e2628ab4f664317dfdbcdd4238fc8a42cc37181"
+        }
+    ],
+    "stats": {
+        "total": 135,
+        "additions": 83,
+        "deletions": 52
+    },
+    "files": [
+        {
+            "sha": "10604ef6f60aca22554f9a7f04b9fdb1aff8a5a8",
+            "filename": "backoffice/pom.xml",
+            "status": "modified",
+            "additions": 43,
+            "deletions": 2,
+            "changes": 45,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fpom.xml",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fpom.xml",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fpom.xml?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -15,8 +15,8 @@\n     </properties>\n     <dependencies>\n         <dependency>\n-            <groupId>mysql</groupId>\n-            <artifactId>mysql-connector-java</artifactId>\n+            <groupId>com.mysql</groupId>\n+            <artifactId>mysql-connector-j</artifactId>\n             <version>8.0.33</version>\n         </dependency>\n         <dependency>\n@@ -52,4 +52,45 @@\n             <version>0.0.20131108.vaadin1</version>\n         </dependency>\n     </dependencies>\n+    <build>\n+        <plugins>\n+            <plugin>\n+                <groupId>org.apache.maven.plugins</groupId>\n+                <artifactId>maven-jar-plugin</artifactId>\n+                <version>3.2.0</version>\n+                <configuration>\n+                    <archive>\n+                        <manifest>\n+                            <addClasspath>true</addClasspath>\n+                            <mainClass>org.SAE.Main.Main</mainClass>\n+                        </manifest>\n+                    </archive>\n+                </configuration>\n+            </plugin>\n+            <plugin>\n+                <groupId>org.apache.maven.plugins</groupId>\n+                <artifactId>maven-assembly-plugin</artifactId>\n+                <version>3.6.0</version>\n+                <configuration>\n+                    <archive>\n+                        <manifest>\n+                            <mainClass>org.SAE.Main.Main</mainClass>\n+                        </manifest>\n+                    </archive>\n+                    <descriptorRefs>\n+                        <descriptorRef>jar-with-dependencies</descriptorRef>\n+                    </descriptorRefs>\n+                </configuration>\n+                <executions>\n+                    <execution>\n+                        <id>make-assembly</id>\n+                        <phase>package</phase>\n+                        <goals>\n+                            <goal>single</goal>\n+                        </goals>\n+                    </execution>\n+                </executions>\n+            </plugin>\n+        </plugins>\n+    </build>\n </project>"
+        },
+        {
+            "sha": "ef4cda991529a016adab85ef74b69933e83428e6",
+            "filename": "backoffice/src/Main/java/org/SAE/Abonnement/Abonnement.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 3,
+            "changes": 5,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAbonnement%2FAbonnement.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAbonnement%2FAbonnement.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAbonnement%2FAbonnement.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -33,6 +33,7 @@ public class Abonnement extends Base {\n \tAbonnement(Client client, Panier panier, Date debut, Date fin,\n \t           int frequenceLivraison,\n \t           boolean estActif) {\n+\t\tid = Main.sql.getNextId(TABLE_NAME);\n \t\tthis.client = client;\n \t\tthis.panier = panier;\n \t\tthis.debut = debut;\n@@ -128,19 +129,17 @@ static void create(Abonnement abonnement) {\n \t\t\t\t\t\tnew Object[]{abonnement.client.id, abonnement.panier.id, abonnement.debut, abonnement.fin, abonnement.estActif,\n \t\t\t\t\t\t\t\t\t\tabonnement.frequenceLivraison}))\n \t\t\tLogger.error(\"Can't create abonnement\");\n-\t\tgetFromDatabase();\n \t\tabonnement.updateLivraison();\n+\t\tgetFromDatabase();\n \t}\n \n \tvoid updateLivraison() {\n \t\tlong frequence = (long) frequenceLivraison * 24 * 60 * 60 * 1000;\n \t\tDate[] datesLivraison = new Date[(int) ((fin.getTime()-debut.getTime()) / frequence + 1)];\n \t\tDate date = debut;\n-\t\tSystem.out.println((fin.getTime()-debut.getTime()) / frequence);\n \t\tfor (int i = 0; i < datesLivraison.length; i++) {\n \t\t\tdatesLivraison[i] = date;\n \t\t\tdate = new Date(date.getTime() + (long) frequenceLivraison * 24 * 60 * 60 * 1000);\n-\t\t\tSystem.out.println(date);\n \t\t}\n \t\t// delete old livraisons\n \t\tfor (Livraison livraison : Livraison.livraisons) {"
+        },
+        {
+            "sha": "bdec6f74f7d86e788917845f02b1313a83f1e480",
+            "filename": "backoffice/src/Main/java/org/SAE/Abonnement/AbonnementView.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAbonnement%2FAbonnementView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAbonnement%2FAbonnementView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAbonnement%2FAbonnementView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -62,7 +62,7 @@ protected JPanel createFormPanel() {\n \t\tpanel.add(frequenceLivraisonField);\n \t\tpanel.add(new JLabel(\"Est actif\"));\n \t\tpanel.add(estActifCheckBox);\n-\t\tJButton createButton = new JButton(\"Create\");\n+\t\tJButton createButton = new JButton(\"Créer\");\n \t\tcreateButton.addActionListener(e -> {\n \t\t\tClient client = (Client) clientComboBox.getSelectedItem();\n \t\t\tPanier panier = (Panier) panierComboBox.getSelectedItem();"
+        },
+        {
+            "sha": "2b9f33570f63e812f1f6151dcf15fefcc5bc741d",
+            "filename": "backoffice/src/Main/java/org/SAE/Adresse/Adresse.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAdresse%2FAdresse.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAdresse%2FAdresse.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FAdresse%2FAdresse.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -120,7 +120,7 @@ public static void getFromDatabase() {\n \tstatic void create(Adresse adresse) {\n \t\tString[] tableColumns = {\"idAdresse\"};\n \t\tfor (String column : TABLE_COLUMNS) tableColumns = Main.addStringToArray(tableColumns, column);\n-\t\tif (Main.sql.createPrepareStatement(TABLE_NAME, tableColumns,\n+\t\tif (!Main.sql.createPrepareStatement(TABLE_NAME, tableColumns,\n \t\t\t\t\t\tnew Object[]{adresse.id, adresse.rue, adresse.ville, adresse.codePostal}))\n \t\t\torg.SAE.Main.Logger.log(\"Create failed\");\n \t\tgetFromDatabase();"
+        },
+        {
+            "sha": "739bfb0d55c5ed72527570fe2e30b3ad35ab4990",
+            "filename": "backoffice/src/Main/java/org/SAE/Depot/Depot.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FDepot%2FDepot.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FDepot%2FDepot.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FDepot%2FDepot.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -141,6 +141,7 @@ static void update(Depot depot) {\n \t}\n \n \tprivate static void insertDeliveryDays(Depot depot) {\n+\t\tif (depot.jourLivraison == null) return;\n \t\tfor (JourSemaine jour : depot.jourLivraison) {\n \t\t\tif (!Main.sql.createPrepareStatement(\"JourOuvrable\", new String[]{\"Depot_idDepot\", \"JourSemaine_idJourSemaine\"},\n \t\t\t\t\t\t\tnew Object[]{depot.id, jour.ordinal()+1}))"
+        },
+        {
+            "sha": "00c83638c39c4db07c799b9c32412b71e28a8f98",
+            "filename": "backoffice/src/Main/java/org/SAE/Depot/DepotView.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FDepot%2FDepotView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FDepot%2FDepotView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FDepot%2FDepotView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -63,7 +63,7 @@ protected JPanel createListPanel(Depot t) {\n \t\tJPanel panel = new JPanel();\n \t\tpanel.setLayout(new GridLayout(1, 4));\n \t\tpanel.add(new Label(t.toString()));\n-\t\tUButton editButton = new UButton(\"Modifier\");\n+\t\tUButton editButton = new UButton(\"Détailler\");\n \t\teditButton.addActionListener(e -> {\n \t\t\tdisplayView(true);\n \t\t\tclear();\n@@ -103,7 +103,7 @@ protected JPanel createFormPanel() {\n \t\t\tdepotFormComponents.panel.add(depotFormComponents.fieldPanels[i]);\n \t\t}\n \t\tdepotFormComponents.panel.setLayout(new GridLayout(depotFormComponents.fieldPanels.length / 2 + 2, 2));\n-\t\tUButton createButton = new UButton(\"Create\");\n+\t\tUButton createButton = new UButton(\"Créer\");\n \t\tcreateButton.addActionListener(e -> createDepot(depotFormComponents.fieldPanels, depotFormComponents.joursLivraisons, depotFormComponents.image.get(),\n \t\t\t\t\t\tdepotFormComponents.addressChoice, depotFormComponents.referentChoice));\n \t\tdepotFormComponents.panel.add(createButton);\n@@ -181,7 +181,7 @@ protected JPanel createEditPanel(Depot depotToEdit) {\n \t\t\t}\n \t\t}\n \t\tperiodesNonLivrables.add(addPeriode);\n-\t\tUButton createButton = new UButton(\"Modifier\");\n+\t\tUButton createButton = new UButton(\"Détailler\");\n \t\tcreateButton.addActionListener(e -> {\n \t\t\tString[] values = getValues(depotFormComponents.fieldPanels(), depotFormComponents.addressChoice(), depotFormComponents.referentChoice());\n \t\t\tif (values.length == 0) return;"
+        },
+        {
+            "sha": "59c206f2e15a2d178fb1c0e84bfd0aef05c4c011",
+            "filename": "backoffice/src/Main/java/org/SAE/Jardin/JardinView.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FJardin%2FJardinView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FJardin%2FJardinView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FJardin%2FJardinView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -50,7 +50,7 @@ public JPanel createFormPanel() {\n \t\tJTextField raisonSocialeField = new JTextField();\n \t\tpanel.add(new JLabel(\"Raison Sociale\"));\n \t\tpanel.add(raisonSocialeField);\n-\t\tUButton createButton = new UButton(\"Create\");\n+\t\tUButton createButton = new UButton(\"Créer\");\n \t\tcreateButton.addActionListener(e -> {\n \t\t\tJardin jardin = new Jardin(\n \t\t\t\t(Referent) referentField.getSelectedItem(),"
+        },
+        {
+            "sha": "e4c59e6f52cb9ff26d00bfc673d965a9cf0f2cfe",
+            "filename": "backoffice/src/Main/java/org/SAE/Main/BaseView.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 4,
+            "changes": 13,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FMain%2FBaseView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FMain%2FBaseView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FMain%2FBaseView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -15,6 +15,7 @@ public abstract class BaseView<T extends Base> extends JPanel {\n \tprotected static JPanel topPanel;\n \tprotected static JPanel bottomPanel;\n \tprivate String name;\n+\tprivate JTextField searchBar;\n \n \t/**\n \t * Constructor for BaseView.\n@@ -58,17 +59,21 @@ public void displayView(boolean isCreateMode) {\n \t\tif (isCreateMode) {\n \t\t\tclear();\n \t\t\tJPanel formPanel = createFormPanel();\n-\t\t\tif (formPanel != null) {\n-\t\t\t\tmainPanel.add(formPanel);\n+\t\t\tif (formPanel == null) {\n+\t\t\t\tdisplayView(false);\n+\t\t\t\treturn;\n \t\t\t}\n+\t\t\tmainPanel.add(formPanel);\n \t\t\trefresh();\n \t\t\tcreateButton.setText(\"Annuler\");\n+\t\t\t// hide search bar\n+\t\t\ttopPanel.remove(searchBar);\n \t\t\tinCreation = true;\n \t\t\treturn;\n \t\t}\n \t\tclear();\n \t\t// search bar\n-\t\tJTextField searchBar = new JTextField();\n+\t\tsearchBar = new JTextField();\n \t\tsearchBar.setMaximumSize(new Dimension(1000, 30));\n \t\tsearchBar.setPreferredSize(new Dimension(1000, 30));\n \t\tsearchBar.addActionListener(e -> search(searchBar));\n@@ -121,7 +126,7 @@ protected JPanel createListPanel(T t) {\n \t\tJPanel panel = new JPanel();\n \t\tpanel.setLayout(new GridLayout(1, 2));\n \t\tJLabel label = new JLabel(t.toString());\n-\t\tUButton editButton = new UButton(\"Modifier\");\n+\t\tUButton editButton = new UButton(\"Détailler\");\n \t\teditButton.addActionListener(e -> {\n \t\t\tdisplayView(true);\n \t\t\tclear();"
+        },
+        {
+            "sha": "c8bc181df5a5b7d13e831b0702cc72f55b0fdd3e",
+            "filename": "backoffice/src/Main/java/org/SAE/Panier/PanierView.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FPanier%2FPanierView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FPanier%2FPanierView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FPanier%2FPanierView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -35,7 +35,7 @@ protected JPanel createListPanel(Panier panier) {\n \t\tJPanel panel = new JPanel();\n \t\tpanel.setLayout(new GridLayout(1, 3));\n \t\tJLabel label = new JLabel(panier.toString());\n-\t\tUButton editButton = new UButton(\"Modifier\");\n+\t\tUButton editButton = new UButton(\"Détailler\");\n \t\teditButton.addActionListener(e -> {\n \t\t\tdisplayView(true);\n \t\t\tclear();"
+        },
+        {
+            "sha": "a21fd7a8bec48285dcf00b5f9a2feef8b99b2f1c",
+            "filename": "backoffice/src/Main/java/org/SAE/Produit/ProduitView.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 1,
+            "changes": 14,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FProduit%2FProduitView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FProduit%2FProduitView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FProduit%2FProduitView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -27,6 +27,10 @@ protected ArrayList<Produit> getList() {\n \n \t@Override\n \tprotected JPanel createFormPanel() {\n+\t\tif (Unite.unites.size() == 0) {\n+\t\t\tJOptionPane.showMessageDialog(this, \"Veuillez créer une unité avant de créer un produit\");\n+\t\t\treturn null;\n+\t\t}\n \t\tJPanel panel = new JPanel();\n \t\tpanel.setLayout(new GridLayout(6, 1));\n \t\t// create the form\n@@ -53,8 +57,16 @@ protected JPanel createFormPanel() {\n \t\t});\n \t\tpanel.add(imageButton);\n \t\t// create a button to create the produit\n-\t\tUButton createButton = new UButton(\"Create\");\n+\t\tUButton createButton = new UButton(\"Créer\");\n \t\tcreateButton.addActionListener(e -> {\n+\t\t\tif (nomField.getText().equals(\"\")) {\n+\t\t\t\tJOptionPane.showMessageDialog(this, \"Veuillez entrer un nom\");\n+\t\t\t\treturn;\n+\t\t\t}\n+\t\t\tif (descriptionField.getText().equals(\"\")) {\n+\t\t\t\tJOptionPane.showMessageDialog(this, \"Veuillez entrer une description\");\n+\t\t\t\treturn;\n+\t\t\t}\n \t\t\tProduit produit = new Produit(nomField.getText(), descriptionField.getText(), Unite.unites.get(uniteChoice.getSelectedIndex()).id, image.get());\n \t\t\tProduit.create(produit);\n \t\t\tdisplayView(false);"
+        },
+        {
+            "sha": "7f9ebfefbf5a76a8a1e830cb6c2354bbdc7374c9",
+            "filename": "backoffice/src/Main/java/org/SAE/Referent/ReferentView.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FReferent%2FReferentView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FReferent%2FReferentView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FReferent%2FReferentView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -48,7 +48,7 @@ protected JPanel createFormPanel() {\n \t}\n \n \tprivate UButton getCreateButton(JTextField nomField, JTextField telephoneField, JTextField emailField) {\n-\t\tUButton createButton = new UButton(\"Create\");\n+\t\tUButton createButton = new UButton(\"Créer\");\n \t\tcreateButton.addActionListener(e -> {\n \t\t\tReferent r = new Referent(nomField.getText(), telephoneField.getText(), emailField.getText());\n \t\t\tReferent.create(r);\n@@ -77,7 +77,7 @@ protected JPanel createEditPanel(Referent referent) {\n \t\tpanel.add(emailLabel);\n \t\tpanel.add(emailField);\n \t\t// add a button to create the referent\n-\t\tUButton createButton = new UButton(\"Modifier\");\n+\t\tUButton createButton = new UButton(\"Détailler\");\n \t\tcreateButton.addActionListener(e -> {\n \n \t\t\treferent.nom = nomField.getText();"
+        },
+        {
+            "sha": "6dac43fd04785dba1dad2c0ff1df826d7a7c5c02",
+            "filename": "backoffice/src/Main/java/org/SAE/Tournee/TourneeView.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FTournee%2FTourneeView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FTournee%2FTourneeView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FTournee%2FTourneeView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -24,7 +24,7 @@ protected JPanel createListPanel(Tournee t) {\n \t\tJPanel panel = new JPanel();\n \t\tpanel.setLayout(new GridLayout(1, 2));\n \t\tJLabel label = new JLabel(t.toString());\n-\t\tUButton editButton = new UButton(\"Modifier\");\n+\t\tUButton editButton = new UButton(\"Détailler\");\n \t\teditButton.addActionListener(e -> {\n \t\t\tdisplayView(true);\n \t\t\tclear();\n@@ -48,6 +48,7 @@ protected JPanel createListPanel(Tournee t) {\n \t\tpanel.add(label);\n \t\tpanel.add(editButton);\n \t\tpanel.add(deleteButton);\n+\t\tpanel.add(visualiserButton);\n \t\treturn panel;\n \t}\n \t@Override\n@@ -97,7 +98,8 @@ private JPanel getPanel(Tournee tournee) {\n \t\t nomField.setText(tournee.nom);\n \t\t}\n \t\telse {\n-\t\t\ttournee = new Tournee(JourSemaine.Lundi, JourSemaine.Lundi, \"\", \"\", false);\n+\t\t\ttournee = new Tournee(JourSemaine.Lundi, JourSemaine.Lundi, \"\", \"Rouge\", false);\n+\t\t\tTournee.create(tournee);\n \t\t}\n \t\tJLabel depotsLabel = new JLabel(\"Depots\");\n \t\tpanel.add(depotsLabel);"
+        },
+        {
+            "sha": "693926a3c9fec2dbe8d8b80913ca4a6539e222be",
+            "filename": "backoffice/src/Main/java/org/SAE/Tournee/TourneeVisualisation.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 30,
+            "changes": 31,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FTournee%2FTourneeVisualisation.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FTournee%2FTourneeVisualisation.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FTournee%2FTourneeVisualisation.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -33,7 +33,6 @@ public class TourneeVisualisation extends JXMapViewer {\n \tpublic TourneeVisualisation() {\n \t\tsuper();\n \t\tJFrame frame = new JFrame(\"JXMapviewer2 Example 1\");\n-\t\tframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n \n \t\tframe.add(this, BorderLayout.CENTER);\n \t\tsetTileFactory(new DefaultTileFactory(new OSMTileFactoryInfo()));\n@@ -56,34 +55,6 @@ public TourneeVisualisation() {\n \t}\n \n \n-\tpublic TourneeVisualisation(double lat, double lon) {\n-\t\tthis();\n-\t\t// Set the focus\n-\t\tGeoPosition geoPosition = new GeoPosition(lat, lon);\n-\t\tsetZoom(5);\n-\t\tsetAddressLocation(geoPosition);\n-\n-\t\tUButton button = new UButton(\"Save as image\");\n-\t\tbutton.addActionListener(e -> {\n-\t\t\ttry {\n-\t\t\t\tImage image = createImage(getWidth(), getHeight());\n-\t\t\t\tGraphics g = image.getGraphics();\n-\t\t\t\tpaint(g);\n-\t\t\t\tImageIO.write((RenderedImage) image, \"png\", new File(\"map.png\"));\n-\t\t\t} catch (IOException ex) {\n-\t\t\t\tex.printStackTrace();\n-\t\t\t}\n-\t\t});\n-\t\trepaint();\n-\t}\n-\n-\tpublic TourneeVisualisation(Adresse address) {\n-\t\tthis(Objects.requireNonNull(getGeo(String.valueOf(address))));\n-\t}\n-\n-\tpublic TourneeVisualisation(double[] geo) {\n-\t\tthis(geo[0], geo[1]);\n-\t}\n \tpublic static double[] getGeo(String address) {\n \t\ttry {\n \t\t\tString apiURL = \"https://nominatim.openstreetmap.org/search?format=json&q=\" + address.replace(\" \", \"+\");\n@@ -163,7 +134,7 @@ public void addMarker(){\n \t\tlatCenter /= points.size();\n \t\tlonCenter /= points.size();\n \t\tsetAddressLocation(new GeoPosition(latCenter, lonCenter));\n-\t\tsetZoom((int) (Math.log10(maxDistance) * 2.5));\n+\t\tsetZoom((int) (Math.log10(maxDistance) * 2));\n \t\trepaint();\n \t}\n \tpublic void addMarker(double lat, double lon) {"
+        },
+        {
+            "sha": "3e2d98350c5b4568176a3586730d2019a542a41f",
+            "filename": "backoffice/src/Main/java/org/SAE/Unite/UniteView.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Sacus1/SAE5/blob/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FUnite%2FUniteView.java",
+            "raw_url": "https://github.com/Sacus1/SAE5/raw/c795f44d6144357226ac7884f9256a19a3788747/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FUnite%2FUniteView.java",
+            "contents_url": "https://api.github.com/repos/Sacus1/SAE5/contents/backoffice%2Fsrc%2FMain%2Fjava%2Forg%2FSAE%2FUnite%2FUniteView.java?ref=c795f44d6144357226ac7884f9256a19a3788747",
+            "patch": "@@ -53,7 +53,7 @@ protected JPanel createFormPanel() {\n \t\tTextField nomField = new TextField();\n \t\tpanel.add(nomField);\n \t\t// create button\n-\t\tUButton createButton = new UButton(\"Create\");\n+\t\tUButton createButton = new UButton(\"Créer\");\n \t\tcreateButton.addActionListener(e -> {\n \t\t\tUnite unite = new Unite(nomField.getText());\n \t\t\tUnite.create(unite);"
+        }
+    ]
+}

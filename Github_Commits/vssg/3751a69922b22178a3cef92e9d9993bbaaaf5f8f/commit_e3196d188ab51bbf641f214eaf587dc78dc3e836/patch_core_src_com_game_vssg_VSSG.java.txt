@@ -1,0 +1,33 @@
+@@ -288,7 +288,7 @@ private void handleInput() {
+ 
+             if (!shipSpawnTimeout) {
+                 Vector2 position = new Vector2(camera.position.x, camera.position.y);
+-                CpuShip.ActionState actionState = Ship.ActionState.FIRE;
++                CpuShip.ActionState actionState = Ship.ActionState.IDLE;
+                 Rectangle hitBox = new Rectangle();
+                 ObjectSet<Ship> targets = new ObjectSet<>();
+                 CpuShip cpuShip = new CpuShip(otherShipTexture, position, 400f, actionState, Ship.ActionState.IDLE, hitBox, actionCounter, Ship.Faction.PURPLE, targets);
+@@ -403,7 +403,7 @@ public void checkObjects(float deltaTime) {
+                         cpuShip.drawBoundingBox();
+                     }
+                 }
+-                cpuShip.setActionState(Ship.ActionState.ATTACK, cpuShip.getActionState());
++               // cpuShip.setActionState(Ship.ActionState.ATTACK, cpuShip.getActionState());
+ 
+             }
+ 
+@@ -441,9 +441,11 @@ public void checkObjects(float deltaTime) {
+             cpuShip.handleActionState(cpuShip, greenLaserTexture, blueLaserTexture, redLaserTexture, lasers, laserBlast2);
+ 
+             for (Ship target : cpuShip.getTargets()) {
+-                if (!target.isActive()) {
+-                    cpuShip.getTargets().remove(target);
+-                    System.out.println("TARGET REMOVED");
++                if (target != null) {
++                    if (!target.isActive()) {
++                        cpuShip.getTargets().remove(target);
++                        System.out.println("TARGET REMOVED");
++                    }
+                 }
+             }
+ 

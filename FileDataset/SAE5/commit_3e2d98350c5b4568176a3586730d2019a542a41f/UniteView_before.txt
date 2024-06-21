@@ -1,0 +1,19 @@
+	protected JPanel createFormPanel() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(2, 2));
+		// nom
+		Label nomLabel = new Label("nom");
+		panel.add(nomLabel);
+		TextField nomField = new TextField();
+		panel.add(nomField);
+		// create button
+		UButton createButton = new UButton("Create");
+		createButton.addActionListener(e -> {
+			Unite unite = new Unite(nomField.getText());
+			Unite.create(unite);
+			displayView(false);
+		});
+		panel.add(createButton);
+		return panel;
+	}
+

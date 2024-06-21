@@ -1,0 +1,1 @@
+checkIfUserMustReceiveTheCard(JSONObject cardOperation, CurrentUserWithPerimeters currentUserWithPerimeters)

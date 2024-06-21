@@ -1,0 +1,98 @@
+{
+    "sha": "eda76054d5d1f571a91c4aa7868b7bbb5f834beb",
+    "node_id": "C_kwDOC-y3f9oAKGVkYTc2MDU0ZDVkMWY1NzFhOTFjNGFhNzg2OGI3YmJiNWY4MzRiZWI",
+    "commit": {
+        "author": {
+            "name": "Aman Prashant",
+            "email": "aman.prashant@broadcom.com",
+            "date": "2024-01-29T13:22:11Z"
+        },
+        "committer": {
+            "name": "Aman Prashant",
+            "email": "aman.prashant@broadcom.com",
+            "date": "2024-01-29T15:50:09Z"
+        },
+        "message": "fix: fix probable Null pointer exception\n\nSigned-off-by: Aman Prashant <aman.prashant@broadcom.com>",
+        "tree": {
+            "sha": "6ba915cca36512625c008f73d93221df7609e587",
+            "url": "https://api.github.com/repos/eclipse-che4z/che-che4z-lsp-for-cobol/git/trees/6ba915cca36512625c008f73d93221df7609e587"
+        },
+        "url": "https://api.github.com/repos/eclipse-che4z/che-che4z-lsp-for-cobol/git/commits/eda76054d5d1f571a91c4aa7868b7bbb5f834beb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/eclipse-che4z/che-che4z-lsp-for-cobol/commits/eda76054d5d1f571a91c4aa7868b7bbb5f834beb",
+    "html_url": "https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol/commit/eda76054d5d1f571a91c4aa7868b7bbb5f834beb",
+    "comments_url": "https://api.github.com/repos/eclipse-che4z/che-che4z-lsp-for-cobol/commits/eda76054d5d1f571a91c4aa7868b7bbb5f834beb/comments",
+    "author": {
+        "login": "ap891843",
+        "id": 69206564,
+        "node_id": "MDQ6VXNlcjY5MjA2NTY0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/69206564?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ap891843",
+        "html_url": "https://github.com/ap891843",
+        "followers_url": "https://api.github.com/users/ap891843/followers",
+        "following_url": "https://api.github.com/users/ap891843/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ap891843/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ap891843/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ap891843/subscriptions",
+        "organizations_url": "https://api.github.com/users/ap891843/orgs",
+        "repos_url": "https://api.github.com/users/ap891843/repos",
+        "events_url": "https://api.github.com/users/ap891843/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ap891843/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ap891843",
+        "id": 69206564,
+        "node_id": "MDQ6VXNlcjY5MjA2NTY0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/69206564?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ap891843",
+        "html_url": "https://github.com/ap891843",
+        "followers_url": "https://api.github.com/users/ap891843/followers",
+        "following_url": "https://api.github.com/users/ap891843/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ap891843/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ap891843/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ap891843/subscriptions",
+        "organizations_url": "https://api.github.com/users/ap891843/orgs",
+        "repos_url": "https://api.github.com/users/ap891843/repos",
+        "events_url": "https://api.github.com/users/ap891843/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ap891843/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c4e7f6424d5dd6e667cba1912ac6138ccb445599",
+            "url": "https://api.github.com/repos/eclipse-che4z/che-che4z-lsp-for-cobol/commits/c4e7f6424d5dd6e667cba1912ac6138ccb445599",
+            "html_url": "https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol/commit/c4e7f6424d5dd6e667cba1912ac6138ccb445599"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "dec1494a420951a7798c135580c0cbd18be5c17e",
+            "filename": "server/engine/src/main/java/org/eclipse/lsp/cobol/lsp/AsyncAnalysisService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol/blob/eda76054d5d1f571a91c4aa7868b7bbb5f834beb/server%2Fengine%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Flsp%2Fcobol%2Flsp%2FAsyncAnalysisService.java",
+            "raw_url": "https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol/raw/eda76054d5d1f571a91c4aa7868b7bbb5f834beb/server%2Fengine%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Flsp%2Fcobol%2Flsp%2FAsyncAnalysisService.java",
+            "contents_url": "https://api.github.com/repos/eclipse-che4z/che-che4z-lsp-for-cobol/contents/server%2Fengine%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Flsp%2Fcobol%2Flsp%2FAsyncAnalysisService.java?ref=eda76054d5d1f571a91c4aa7868b7bbb5f834beb",
+            "patch": "@@ -179,6 +179,7 @@ public void reanalyseOpenedPrograms() throws InterruptedException {\n       analysisInProgress = openDocuments.stream()\n               .filter(model -> model.getLastAnalysisResult() != null)\n               .map(model -> makeId(model.getUri(), analysisResultsRevisions.get(model.getUri())))\n+              .filter(analysisResults::containsKey)\n               .anyMatch(id -> !analysisResults.get(id).isDone());\n       LOG.debug(\" re-analysis is waiting for prev analysis to finish\");\n       TimeUnit.MILLISECONDS.sleep(100);"
+        }
+    ]
+}

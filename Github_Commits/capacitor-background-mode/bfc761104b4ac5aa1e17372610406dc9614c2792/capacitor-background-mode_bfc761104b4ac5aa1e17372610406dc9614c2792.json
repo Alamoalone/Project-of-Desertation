@@ -1,0 +1,60 @@
+{
+    "sha": "bfc761104b4ac5aa1e17372610406dc9614c2792",
+    "node_id": "C_kwDOJcnUcNoAKGJmYzc2MTEwNGI0YWM1YWExZTE3MzcyNjEwNDA2ZGM5NjE0YzI3OTI",
+    "commit": {
+        "author": {
+            "name": "Angelo Raso",
+            "email": "araso@anura.com.ar",
+            "date": "2023-06-26T17:14:42Z"
+        },
+        "committer": {
+            "name": "Angelo Raso",
+            "email": "araso@anura.com.ar",
+            "date": "2023-06-26T17:14:42Z"
+        },
+        "message": "Fix null pointer exception",
+        "tree": {
+            "sha": "e5095cd32b977f11d9fefc68fb507def1f24d918",
+            "url": "https://api.github.com/repos/angeloraso/capacitor-background-mode/git/trees/e5095cd32b977f11d9fefc68fb507def1f24d918"
+        },
+        "url": "https://api.github.com/repos/angeloraso/capacitor-background-mode/git/commits/bfc761104b4ac5aa1e17372610406dc9614c2792",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/angeloraso/capacitor-background-mode/commits/bfc761104b4ac5aa1e17372610406dc9614c2792",
+    "html_url": "https://github.com/angeloraso/capacitor-background-mode/commit/bfc761104b4ac5aa1e17372610406dc9614c2792",
+    "comments_url": "https://api.github.com/repos/angeloraso/capacitor-background-mode/commits/bfc761104b4ac5aa1e17372610406dc9614c2792/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "e387c57f24c142ad9c8857d4298c2a7407368990",
+            "url": "https://api.github.com/repos/angeloraso/capacitor-background-mode/commits/e387c57f24c142ad9c8857d4298c2a7407368990",
+            "html_url": "https://github.com/angeloraso/capacitor-background-mode/commit/e387c57f24c142ad9c8857d4298c2a7407368990"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "1e0433dd542212ca3a4a16452a9056e8fbb742a6",
+            "filename": "android/src/main/java/ar/com/anura/plugins/backgroundmode/BackgroundMode.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/angeloraso/capacitor-background-mode/blob/bfc761104b4ac5aa1e17372610406dc9614c2792/android%2Fsrc%2Fmain%2Fjava%2Far%2Fcom%2Fanura%2Fplugins%2Fbackgroundmode%2FBackgroundMode.java",
+            "raw_url": "https://github.com/angeloraso/capacitor-background-mode/raw/bfc761104b4ac5aa1e17372610406dc9614c2792/android%2Fsrc%2Fmain%2Fjava%2Far%2Fcom%2Fanura%2Fplugins%2Fbackgroundmode%2FBackgroundMode.java",
+            "contents_url": "https://api.github.com/repos/angeloraso/capacitor-background-mode/contents/android%2Fsrc%2Fmain%2Fjava%2Far%2Fcom%2Fanura%2Fplugins%2Fbackgroundmode%2FBackgroundMode.java?ref=bfc761104b4ac5aa1e17372610406dc9614c2792",
+            "patch": "@@ -175,7 +175,7 @@ public BackgroundModeSettings getSettings() {\n \n     public void setSettings(BackgroundModeSettings settings) {\n         mSettings = settings;\n-        if (mInBackground && mShouldUnbind) {\n+        if (mInBackground && mShouldUnbind && foregroundService != null) {\n             foregroundService.updateNotification(settings);\n         }\n     }"
+        }
+    ]
+}

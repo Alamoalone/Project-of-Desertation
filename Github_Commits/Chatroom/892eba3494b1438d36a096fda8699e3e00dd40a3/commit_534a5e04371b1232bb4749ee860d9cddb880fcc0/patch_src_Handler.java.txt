@@ -1,0 +1,9 @@
+@@ -9,7 +9,7 @@ public class Handler {
+     private Socket clientSocket = null;
+     private BufferedReader fromClient = null;
+     private PrintWriter toClient = null;
+-    private String username = null;
++    private String username = "";
+     private static ConcurrentHashMap<String, PrintWriter> userMap = new ConcurrentHashMap<String, PrintWriter>();
+ 
+     public void process(Socket clientSocket) throws IOException {

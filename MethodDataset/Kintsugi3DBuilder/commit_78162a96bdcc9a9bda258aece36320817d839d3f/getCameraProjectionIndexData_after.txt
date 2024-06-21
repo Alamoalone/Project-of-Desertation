@@ -1,0 +1,14 @@
+    public ReadonlyNativeVectorBuffer getCameraProjectionIndexData()
+    {
+        // Store the camera projection indices in a uniform buffer
+        if (cameraProjectionIndexList.isEmpty())
+        {
+            return null;
+        }
+        else
+        {
+            int[] indexArray = new int[cameraProjectionIndexList.size()];
+            Arrays.setAll(indexArray, cameraProjectionIndexList::get);
+            return NativeVectorBufferFactory.getInstance().createFromIntArray(false, 1, cameraProjectionIndexList.size(), indexArray);
+        }
+    }

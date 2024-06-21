@@ -1,0 +1,32 @@
+    private void checkFavoriteButtons() {
+        if (Global.getStat(MainActivity2.this,"favorite_state1").equals("border")){
+            homeFragment.favoriteButton1.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state2").equals("border")){
+            homeFragment.favoriteButton2.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state3").equals("border")){
+            homeFragment.favoriteButton3.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state4").equals("border")){
+            homeFragment.favoriteButton4.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state5").equals("border")){
+            homeFragment.favoriteButton5.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state6").equals("border")){
+            homeFragment.favoriteButton6.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state7").equals("border")){
+            homeFragment.favoriteButton7.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state8").equals("border")){
+            homeFragment.favoriteButton8.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state9").equals("border")){
+            homeFragment.favoriteButton9.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+        if (Global.getStat(MainActivity2.this,"favorite_state10").equals("border")){
+            homeFragment.favoriteButton10.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+        }
+    }

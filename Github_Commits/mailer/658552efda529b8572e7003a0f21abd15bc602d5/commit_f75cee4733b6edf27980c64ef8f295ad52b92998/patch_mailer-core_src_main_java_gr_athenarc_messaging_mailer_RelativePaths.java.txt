@@ -1,0 +1,9 @@
+@@ -2,7 +2,7 @@
+ 
+ public class RelativePaths {
+ 
+-    public static final String MAILS = "mails";
++    public static final String MAILS = "/mails";
+ 
+     private RelativePaths() {
+     }

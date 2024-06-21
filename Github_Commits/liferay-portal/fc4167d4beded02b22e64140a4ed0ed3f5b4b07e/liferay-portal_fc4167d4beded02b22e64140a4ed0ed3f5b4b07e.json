@@ -1,0 +1,98 @@
+{
+    "sha": "fc4167d4beded02b22e64140a4ed0ed3f5b4b07e",
+    "node_id": "C_kwDOAATZv9oAKGZjNDE2N2Q0YmVkZWQwMmIyMmU2NDE0MGE0ZWQwZWQzZjViNGIwN2U",
+    "commit": {
+        "author": {
+            "name": "Eudaldo Alonso",
+            "email": "eudaldo.alonso@liferay.com",
+            "date": "2023-09-04T09:22:01Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-09-12T23:56:45Z"
+        },
+        "message": "LPS-195202 Prevent null pointer exception using pageContext.getServletContext() instead of WebKeys.CTX, since in some situations it is null",
+        "tree": {
+            "sha": "ed51a79c9abc93dbd6efbf9ddd5ebb1be548cdfe",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/ed51a79c9abc93dbd6efbf9ddd5ebb1be548cdfe"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/fc4167d4beded02b22e64140a4ed0ed3f5b4b07e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/fc4167d4beded02b22e64140a4ed0ed3f5b4b07e",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/fc4167d4beded02b22e64140a4ed0ed3f5b4b07e",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/fc4167d4beded02b22e64140a4ed0ed3f5b4b07e/comments",
+    "author": {
+        "login": "ealonso",
+        "id": 922631,
+        "node_id": "MDQ6VXNlcjkyMjYzMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/922631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ealonso",
+        "html_url": "https://github.com/ealonso",
+        "followers_url": "https://api.github.com/users/ealonso/followers",
+        "following_url": "https://api.github.com/users/ealonso/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ealonso/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ealonso/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ealonso/subscriptions",
+        "organizations_url": "https://api.github.com/users/ealonso/orgs",
+        "repos_url": "https://api.github.com/users/ealonso/repos",
+        "events_url": "https://api.github.com/users/ealonso/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ealonso/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "147bef3ba3243ef3cb379544ec85b34d46142acc",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/147bef3ba3243ef3cb379544ec85b34d46142acc",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/147bef3ba3243ef3cb379544ec85b34d46142acc"
+        }
+    ],
+    "stats": {
+        "total": 31,
+        "additions": 21,
+        "deletions": 10
+    },
+    "files": [
+        {
+            "sha": "781afdfe724d8845388ecd2ae15bb30d6c9b21f9",
+            "filename": "util-taglib/src/com/liferay/taglib/ui/IconMenuTag.java",
+            "status": "modified",
+            "additions": 21,
+            "deletions": 10,
+            "changes": 31,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/fc4167d4beded02b22e64140a4ed0ed3f5b4b07e/util-taglib%2Fsrc%2Fcom%2Fliferay%2Ftaglib%2Fui%2FIconMenuTag.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/fc4167d4beded02b22e64140a4ed0ed3f5b4b07e/util-taglib%2Fsrc%2Fcom%2Fliferay%2Ftaglib%2Fui%2FIconMenuTag.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/util-taglib%2Fsrc%2Fcom%2Fliferay%2Ftaglib%2Fui%2FIconMenuTag.java?ref=fc4167d4beded02b22e64140a4ed0ed3f5b4b07e",
+            "patch": "@@ -7,6 +7,7 @@\n \n import com.liferay.petra.string.StringPool;\n import com.liferay.portal.kernel.language.LanguageUtil;\n+import com.liferay.portal.kernel.servlet.DirectRequestDispatcherFactoryUtil;\n import com.liferay.portal.kernel.servlet.FileAvailabilityUtil;\n import com.liferay.portal.kernel.servlet.taglib.aui.ScriptData;\n import com.liferay.portal.kernel.theme.PortletDisplay;\n@@ -20,13 +21,13 @@\n import com.liferay.portal.kernel.util.WebKeys;\n import com.liferay.taglib.BaseBodyTagSupport;\n import com.liferay.taglib.aui.ScriptTag;\n-import com.liferay.taglib.util.PortalIncludeUtil;\n+import com.liferay.taglib.servlet.PipingServletResponseFactory;\n import com.liferay.taglib.util.TagResourceBundleUtil;\n \n import java.util.Map;\n import java.util.Objects;\n \n-import javax.servlet.ServletContext;\n+import javax.servlet.RequestDispatcher;\n import javax.servlet.http.HttpServletRequest;\n import javax.servlet.jsp.JspException;\n import javax.servlet.jsp.JspWriter;\n@@ -293,9 +294,7 @@ protected int processEndTag() throws Exception {\n \t\t\t((singleIcon == null) || _showWhenSingleIcon)) {\n \n \t\t\tif (!FileAvailabilityUtil.isAvailable(\n-\t\t\t\t\t(ServletContext)httpServletRequest.getAttribute(\n-\t\t\t\t\t\tWebKeys.CTX),\n-\t\t\t\t\tgetStartPage()) ||\n+\t\t\t\t\tpageContext.getServletContext(), getStartPage()) ||\n \t\t\t\t!Objects.equals(_markupView, \"lexicon\")) {\n \n \t\t\t\tif (_showExpanded) {\n@@ -424,7 +423,14 @@ protected int processEndTag() throws Exception {\n \t\t\telse {\n \t\t\t\tsetAttributes();\n \n-\t\t\t\tPortalIncludeUtil.include(pageContext, getStartPage());\n+\t\t\t\tRequestDispatcher requestDispatcher =\n+\t\t\t\t\tDirectRequestDispatcherFactoryUtil.getRequestDispatcher(\n+\t\t\t\t\t\tpageContext.getServletContext(), getStartPage());\n+\n+\t\t\t\trequestDispatcher.include(\n+\t\t\t\t\thttpServletRequest,\n+\t\t\t\t\tPipingServletResponseFactory.createPipingServletResponse(\n+\t\t\t\t\t\tpageContext));\n \t\t\t}\n \t\t}\n \n@@ -434,9 +440,7 @@ protected int processEndTag() throws Exception {\n \t\t\t((singleIcon == null) || _showWhenSingleIcon)) {\n \n \t\t\tif (!FileAvailabilityUtil.isAvailable(\n-\t\t\t\t\t(ServletContext)httpServletRequest.getAttribute(\n-\t\t\t\t\t\tWebKeys.CTX),\n-\t\t\t\t\tgetEndPage()) ||\n+\t\t\t\t\tpageContext.getServletContext(), getEndPage()) ||\n \t\t\t\t!Objects.equals(_markupView, \"lexicon\")) {\n \n \t\t\t\tjspWriter.write(\"</ul>\");\n@@ -452,7 +456,14 @@ protected int processEndTag() throws Exception {\n \t\t\t\t}\n \t\t\t}\n \t\t\telse {\n-\t\t\t\tPortalIncludeUtil.include(pageContext, getEndPage());\n+\t\t\t\tRequestDispatcher requestDispatcher =\n+\t\t\t\t\tDirectRequestDispatcherFactoryUtil.getRequestDispatcher(\n+\t\t\t\t\t\tpageContext.getServletContext(), getEndPage());\n+\n+\t\t\t\trequestDispatcher.include(\n+\t\t\t\t\thttpServletRequest,\n+\t\t\t\t\tPipingServletResponseFactory.createPipingServletResponse(\n+\t\t\t\t\t\tpageContext));\n \t\t\t}\n \t\t}\n "
+        }
+    ]
+}

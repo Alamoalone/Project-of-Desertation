@@ -1,0 +1,4 @@
+    public void eliminaPartita() {
+        partita.fine();
+        eliminaPartitaButton.setVisible(false);
+    }

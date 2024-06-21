@@ -1,0 +1,22 @@
+    private void exportDirectoryButtonAction()
+    {
+        this.directoryChooser.setTitle("Choose an export directory");
+        if (exportDirectoryField.getText().isEmpty())
+        {
+            if (lastDirectory != null)
+            {
+                this.directoryChooser.setInitialDirectory(lastDirectory);
+            }
+        }
+        else
+        {
+            File currentValue = new File(exportDirectoryField.getText());
+            this.directoryChooser.setInitialDirectory(currentValue);
+        }
+        File file = this.directoryChooser.showDialog(stage.getOwner());
+        if (file != null)
+        {
+            exportDirectoryField.setText(file.toString());
+            lastDirectory = file;
+        }
+    }

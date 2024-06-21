@@ -1,0 +1,8 @@
+    private static String getString(String key) {
+        try {
+            System.out.println(MessageFormat.format("PayoneerV4Config value retrieval for key = {0} ", key));
+            return ConfigManager.getInstance().getString("com.topcoder.web.tc.controller.PayoneerService", key);
+        } catch (UnknownNamespaceException e) {
+           throw new RuntimeException(e);
+        }
+    }

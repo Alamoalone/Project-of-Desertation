@@ -1,0 +1,110 @@
+{
+    "sha": "21848a9d6d1be672e2f418f7f588ff664ed90295",
+    "node_id": "C_kwDOAyfiFNoAKDIxODQ4YTlkNmQxYmU2NzJlMmY0MThmN2Y1ODhmZjY2NGVkOTAyOTU",
+    "commit": {
+        "author": {
+            "name": "KangBu Jeong",
+            "email": "54855268+Kang-dot@users.noreply.github.com",
+            "date": "2023-10-13T08:04:27Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-10-13T08:04:27Z"
+        },
+        "message": "[TOOLS-4530] Fix null pointer exception after TOOLS-4519 changes has applied (#120)\n\n- fix nullpointer exception\r\n- fix TOOLS-4519's wrong changes",
+        "tree": {
+            "sha": "0e14f134cbc4b6e89c94f04733574c3fe1f9aed5",
+            "url": "https://api.github.com/repos/CUBRID/cubrid-migration/git/trees/0e14f134cbc4b6e89c94f04733574c3fe1f9aed5"
+        },
+        "url": "https://api.github.com/repos/CUBRID/cubrid-migration/git/commits/21848a9d6d1be672e2f418f7f588ff664ed90295",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlKPoMCRBK7hj4Ov3rIwAAJwIIADmAFOSFe9haT9RxFhs0AAXA\nGTmX+jPSjS3g+L/ahMPDyaYqy6BiPZSq1sUIhpF6WApo1j+M6WZBRjdpmenUmT5q\namGniffeue5q0ac62eIgFug1Yc5S7W74VTkj2Sew7lxqgTiIkE6oI0QkIAsbsjpH\nXD3WwXLsGdrR4e6ce0IAJlseL35UhXAmc5orXUDHSN5AGxc1ClqnScgac0qEWV08\nnF4H9Xp27MbPTSd5ODyRrAQkp3InIkaXuToxlUlTqKXKIBe6pbh5t1oUCNGpkYF2\nLtMA2vI6qXW/BM2CFhV+m+L4xmzHyxqGC6XSUIbsJ4/flkQqXUx08NdlEq3NGM4=\n=5TnC\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0e14f134cbc4b6e89c94f04733574c3fe1f9aed5\nparent e819ac28e2c0f7d656df86f621c68caf3714529b\nauthor KangBu Jeong <54855268+Kang-dot@users.noreply.github.com> 1697184267 +0900\ncommitter GitHub <noreply@github.com> 1697184267 +0900\n\n[TOOLS-4530] Fix null pointer exception after TOOLS-4519 changes has applied (#120)\n\n- fix nullpointer exception\r\n- fix TOOLS-4519's wrong changes"
+        }
+    },
+    "url": "https://api.github.com/repos/CUBRID/cubrid-migration/commits/21848a9d6d1be672e2f418f7f588ff664ed90295",
+    "html_url": "https://github.com/CUBRID/cubrid-migration/commit/21848a9d6d1be672e2f418f7f588ff664ed90295",
+    "comments_url": "https://api.github.com/repos/CUBRID/cubrid-migration/commits/21848a9d6d1be672e2f418f7f588ff664ed90295/comments",
+    "author": {
+        "login": "Kang-dot",
+        "id": 54855268,
+        "node_id": "MDQ6VXNlcjU0ODU1MjY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/54855268?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Kang-dot",
+        "html_url": "https://github.com/Kang-dot",
+        "followers_url": "https://api.github.com/users/Kang-dot/followers",
+        "following_url": "https://api.github.com/users/Kang-dot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Kang-dot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Kang-dot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Kang-dot/subscriptions",
+        "organizations_url": "https://api.github.com/users/Kang-dot/orgs",
+        "repos_url": "https://api.github.com/users/Kang-dot/repos",
+        "events_url": "https://api.github.com/users/Kang-dot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Kang-dot/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e819ac28e2c0f7d656df86f621c68caf3714529b",
+            "url": "https://api.github.com/repos/CUBRID/cubrid-migration/commits/e819ac28e2c0f7d656df86f621c68caf3714529b",
+            "html_url": "https://github.com/CUBRID/cubrid-migration/commit/e819ac28e2c0f7d656df86f621c68caf3714529b"
+        }
+    ],
+    "stats": {
+        "total": 57,
+        "additions": 17,
+        "deletions": 40
+    },
+    "files": [
+        {
+            "sha": "1b2091ad9f71d74dd89b1fe44aa9d3723310409a",
+            "filename": "com.cubrid.cubridmigration.core/src/com/cubrid/cubridmigration/cubrid/meta/CUBRIDSchemaFetcher.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 5,
+            "changes": 5,
+            "blob_url": "https://github.com/CUBRID/cubrid-migration/blob/21848a9d6d1be672e2f418f7f588ff664ed90295/com.cubrid.cubridmigration.core%2Fsrc%2Fcom%2Fcubrid%2Fcubridmigration%2Fcubrid%2Fmeta%2FCUBRIDSchemaFetcher.java",
+            "raw_url": "https://github.com/CUBRID/cubrid-migration/raw/21848a9d6d1be672e2f418f7f588ff664ed90295/com.cubrid.cubridmigration.core%2Fsrc%2Fcom%2Fcubrid%2Fcubridmigration%2Fcubrid%2Fmeta%2FCUBRIDSchemaFetcher.java",
+            "contents_url": "https://api.github.com/repos/CUBRID/cubrid-migration/contents/com.cubrid.cubridmigration.core%2Fsrc%2Fcom%2Fcubrid%2Fcubridmigration%2Fcubrid%2Fmeta%2FCUBRIDSchemaFetcher.java?ref=21848a9d6d1be672e2f418f7f588ff664ed90295",
+            "patch": "@@ -2280,15 +2280,10 @@ protected List<String> getSchemaNames(Connection conn, ConnParameters cp) throws\n \t\tInteger ver = Integer.parseInt(\"\" + conn.getMetaData().getDatabaseMajorVersion() \n \t\t\t\t+ conn.getMetaData().getDatabaseMinorVersion());\n \t\t\n-\t\tif (ver < 112) {\n-\t\t\treturn super.getSchemaNames(conn, cp);\n-\t\t}\n-\t\t\n \t\tif (!getPrivilege(conn, cp)) {\n \t\t\treturn getUserSchemaNames(conn, cp);\n \t\t}\n \t\t\n-\t\t\n \t\tList<String> schemaNames = new ArrayList<String>();\n \t\tPreparedStatement stmt = null;\n \t\tResultSet rs = null;"
+        },
+        {
+            "sha": "6cbf10cb36d39ad30a31b81817388dca42f8bd76",
+            "filename": "com.cubrid.cubridmigration.ui/src/com/cubrid/cubridmigration/ui/wizard/page/SchemaMappingPage.java",
+            "status": "modified",
+            "additions": 17,
+            "deletions": 35,
+            "changes": 52,
+            "blob_url": "https://github.com/CUBRID/cubrid-migration/blob/21848a9d6d1be672e2f418f7f588ff664ed90295/com.cubrid.cubridmigration.ui%2Fsrc%2Fcom%2Fcubrid%2Fcubridmigration%2Fui%2Fwizard%2Fpage%2FSchemaMappingPage.java",
+            "raw_url": "https://github.com/CUBRID/cubrid-migration/raw/21848a9d6d1be672e2f418f7f588ff664ed90295/com.cubrid.cubridmigration.ui%2Fsrc%2Fcom%2Fcubrid%2Fcubridmigration%2Fui%2Fwizard%2Fpage%2FSchemaMappingPage.java",
+            "contents_url": "https://api.github.com/repos/CUBRID/cubrid-migration/contents/com.cubrid.cubridmigration.ui%2Fsrc%2Fcom%2Fcubrid%2Fcubridmigration%2Fui%2Fwizard%2Fpage%2FSchemaMappingPage.java?ref=21848a9d6d1be672e2f418f7f588ff664ed90295",
+            "patch": "@@ -331,36 +331,28 @@ private void getSchemaValues() {\n \t\tCatalog targetCatalog = wizard.getTargetCatalog();\r\n \t\tCatalog sourceCatalog = wizard.getOriginalSourceCatalog();\r\n \t\t\r\n-\t\tArrayList<String> dropDownSchemaList = new ArrayList<String>();\r\n+\t\tList<Schema> targetSchemaList = targetCatalog.getSchemas();\r\n+\t\tList<Schema> sourceSchemaList = sourceCatalog.getSchemas();\r\n+\r\n \t\ttarSchemaNameList = new ArrayList<String>();\r\n+\t\tArrayList<String> dropDownSchemaList = new ArrayList<String>();\r\n \t\t\r\n-\t\tif (targetCatalog.isDbHasUserSchema()) {\r\n-\t\t\tList<Schema> targetSchemaList = targetCatalog.getSchemas();\r\n-\t\t\t\r\n-\t\t\tfor (Schema schema : targetSchemaList) {\r\n-\t\t\t\ttarSchemaNameList.add(schema.getName());\r\n-\t\t\t\tdropDownSchemaList.add(schema.getName());\r\n-\t\t\t}\r\n-\t\t} else {\r\n-\t\t\ttarSchemaNameList.add(targetCatalog.getConnectionParameters().getConUser());\r\n+\t\tfor (Schema schema : targetSchemaList) {\r\n+\t\t\ttarSchemaNameList.add(schema.getName());\r\n+\t\t\tdropDownSchemaList.add(schema.getName());\r\n \t\t}\r\n \t\t\r\n-\t\tif (sourceCatalog.isDbHasUserSchema()) {\r\n-\t\t\tList<Schema> sourceSchemaList = sourceCatalog.getSchemas();\r\n-\t\t\t\r\n-\t\t\tfor (Schema schema : sourceSchemaList) {\r\n-\t\t\t\tif (tarSchemaNameList.contains(schema.getName().toUpperCase())) {\r\n-\t\t\t\t\tcontinue;\r\n-\t\t\t\t}\r\n-\t\t\t\t\r\n-\t\t\t\tdropDownSchemaList.add(schema.getName());\r\n+\t\tfor (Schema schema : sourceSchemaList) {\r\n+\t\t\tif (tarSchemaNameList.contains(schema.getName().toUpperCase())) {\r\n+\t\t\t\tcontinue;\r\n \t\t\t}\r\n-\t\t} else {\r\n-\t\t\ttarSchemaNameList.add(sourceCatalog.getConnectionParameters().getConUser());\r\n+\t\t\t\r\n+\t\t\tdropDownSchemaList.add(schema.getName());\r\n \t\t}\r\n-\r\n+\t\t\r\n \t\tif (targetCatalog.isDBAGroup()) {\r\n \t\t\ttarSchemaNameArray = dropDownSchemaList.toArray(new String[] {});\r\n+\t\t\t\r\n \t\t} else {\r\n \t\t\ttarSchemaNameArray = new String[] {targetCatalog.getConnectionParameters().getConUser()};\r\n \t\t}\r\n@@ -409,10 +401,6 @@ public Object getValue(Object element, String property) {\n \t\t\t\r\n \t\t\t@Override\r\n \t\t\tpublic boolean canModify(Object element, String property) {\r\n-\t\t\t\tif (!tarCatalog.isDbHasUserSchema()) {\r\n-\t\t\t\t\treturn false;\r\n-\t\t\t\t}\r\n-\t\t\t\t\r\n \t\t\t\tif (property.equals(propertyList[4]) || property.equals(propertyList[0])) {\r\n \t\t\t\t\treturn true;\r\n \t\t\t\t} else {\r\n@@ -582,17 +570,11 @@ private void setOnlineData() {\n \t\ttarSchemaList = tarCatalog.getSchemas();\r\n \t\t\r\n \t\tMap<String, Schema> scriptSchemaMap = config.getScriptSchemaMapping();\r\n-\r\n+\t\t\r\n \t\tfor (Schema schema : srcSchemaList) {\r\n \t\t\tSrcTable srcTable = new SrcTable();\r\n \t\t\tsrcTable.setSrcDBType(srcCatalog.getDatabaseType().getName());\r\n-\t\t\t\r\n-\t\t\tif (srcCatalog.isDbHasUserSchema()) {\r\n-\t\t\t\tsrcTable.setSrcSchema(schema.getName());\r\n-\t\t\t} else {\r\n-\t\t\t\tsrcTable.setSrcSchema(srcCatalog.getConnectionParameters().getConUser());\r\n-\t\t\t}\r\n-\t\t\t\r\n+\t\t\tsrcTable.setSrcSchema(schema.getName());\r\n \t\t\tsrcTable.setNote(schema.isGrantorSchema());\r\n \t\t\t\r\n \t\t\tif (!schema.isGrantorSchema()) {\r\n@@ -625,7 +607,7 @@ private void setOnlineData() {\n \t\t\t\tif (tarCatalog.isDBAGroup() && version >= 112) {\r\n \t\t\t\t\tsrcTable.setTarSchema(srcTable.getSrcSchema());\r\n \t\t\t\t} else {\r\n-\t\t\t\t\tsrcTable.setTarSchema(tarCatalog.getConnectionParameters().getConUser());\r\n+\t\t\t\t\tsrcTable.setTarSchema(tarCatalog.getSchemas().get(0).getName());\r\n \t\t\t\t}\r\n \t\t\t}\r\n \t\t}\r"
+        }
+    ]
+}

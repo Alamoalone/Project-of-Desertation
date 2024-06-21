@@ -1,0 +1,110 @@
+{
+    "sha": "0385631ba095eef1f749cae9d329c37703065812",
+    "node_id": "C_kwDOKjKHE9oAKDAzODU2MzFiYTA5NWVlZjFmNzQ5Y2FlOWQzMjljMzc3MDMwNjU4MTI",
+    "commit": {
+        "author": {
+            "name": "Sergey Pavlov",
+            "email": "s.a.pavlov@mail.ru",
+            "date": "2023-01-15T03:39:51Z"
+        },
+        "committer": {
+            "name": "Sergey Pavlov",
+            "email": "s.a.pavlov@mail.ru",
+            "date": "2023-01-15T03:39:51Z"
+        },
+        "message": "fix problem null pointer exception",
+        "tree": {
+            "sha": "94be74a7529d33c78a094c3e95844b62ecd1a174",
+            "url": "https://api.github.com/repos/SrgyPvlv/staffnew/git/trees/94be74a7529d33c78a094c3e95844b62ecd1a174"
+        },
+        "url": "https://api.github.com/repos/SrgyPvlv/staffnew/git/commits/0385631ba095eef1f749cae9d329c37703065812",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SrgyPvlv/staffnew/commits/0385631ba095eef1f749cae9d329c37703065812",
+    "html_url": "https://github.com/SrgyPvlv/staffnew/commit/0385631ba095eef1f749cae9d329c37703065812",
+    "comments_url": "https://api.github.com/repos/SrgyPvlv/staffnew/commits/0385631ba095eef1f749cae9d329c37703065812/comments",
+    "author": {
+        "login": "SrgyPvlv",
+        "id": 83947437,
+        "node_id": "MDQ6VXNlcjgzOTQ3NDM3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/83947437?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SrgyPvlv",
+        "html_url": "https://github.com/SrgyPvlv",
+        "followers_url": "https://api.github.com/users/SrgyPvlv/followers",
+        "following_url": "https://api.github.com/users/SrgyPvlv/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SrgyPvlv/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SrgyPvlv/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SrgyPvlv/subscriptions",
+        "organizations_url": "https://api.github.com/users/SrgyPvlv/orgs",
+        "repos_url": "https://api.github.com/users/SrgyPvlv/repos",
+        "events_url": "https://api.github.com/users/SrgyPvlv/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SrgyPvlv/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "SrgyPvlv",
+        "id": 83947437,
+        "node_id": "MDQ6VXNlcjgzOTQ3NDM3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/83947437?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SrgyPvlv",
+        "html_url": "https://github.com/SrgyPvlv",
+        "followers_url": "https://api.github.com/users/SrgyPvlv/followers",
+        "following_url": "https://api.github.com/users/SrgyPvlv/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SrgyPvlv/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SrgyPvlv/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SrgyPvlv/subscriptions",
+        "organizations_url": "https://api.github.com/users/SrgyPvlv/orgs",
+        "repos_url": "https://api.github.com/users/SrgyPvlv/repos",
+        "events_url": "https://api.github.com/users/SrgyPvlv/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SrgyPvlv/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "863960675717704ec99b9c8340cb2cc827b56af4",
+            "url": "https://api.github.com/repos/SrgyPvlv/staffnew/commits/863960675717704ec99b9c8340cb2cc827b56af4",
+            "html_url": "https://github.com/SrgyPvlv/staffnew/commit/863960675717704ec99b9c8340cb2cc827b56af4"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "09dc0ff2650ec5342fc5edbf39d9f16b3ddba49e",
+            "filename": "src/main/java/com/example/staff/controller/CarEntityController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/SrgyPvlv/staffnew/blob/0385631ba095eef1f749cae9d329c37703065812/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fstaff%2Fcontroller%2FCarEntityController.java",
+            "raw_url": "https://github.com/SrgyPvlv/staffnew/raw/0385631ba095eef1f749cae9d329c37703065812/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fstaff%2Fcontroller%2FCarEntityController.java",
+            "contents_url": "https://api.github.com/repos/SrgyPvlv/staffnew/contents/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fstaff%2Fcontroller%2FCarEntityController.java?ref=0385631ba095eef1f749cae9d329c37703065812",
+            "patch": "@@ -39,7 +39,7 @@ public ResponseEntity<CarEntity> getCarEntityById(@PathVariable Long id){\n \t\t\n \t@GetMapping(\"/cars\")\n \tpublic ResponseEntity<List<CarEntity>> findByNumberModel(@RequestParam(required=false) String filter){\n-\t\tif(!filter.isEmpty() && filter.trim().length()!=0) {\n+\t\tif(filter!=null && filter.trim().length()!=0) {\n \t\t\tString filter1=filter;\n \t\t\tString filter2=filter;\n \t\t\ttry {"
+        },
+        {
+            "sha": "1e38f5c1d63298777ba35ff1b2a0016123c38d76",
+            "filename": "src/main/java/com/example/staff/controller/EmployeeEntityController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/SrgyPvlv/staffnew/blob/0385631ba095eef1f749cae9d329c37703065812/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fstaff%2Fcontroller%2FEmployeeEntityController.java",
+            "raw_url": "https://github.com/SrgyPvlv/staffnew/raw/0385631ba095eef1f749cae9d329c37703065812/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fstaff%2Fcontroller%2FEmployeeEntityController.java",
+            "contents_url": "https://api.github.com/repos/SrgyPvlv/staffnew/contents/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fstaff%2Fcontroller%2FEmployeeEntityController.java?ref=0385631ba095eef1f749cae9d329c37703065812",
+            "patch": "@@ -39,7 +39,7 @@ public ResponseEntity<EmployeeEntity> getEmployeeEntityById(@PathVariable Long i\n \t@GetMapping(\"/employees\")\n \tpublic ResponseEntity<List<EmployeeEntity>> findByNameMobilePosition(@RequestParam(required=false) String filter){\n \t\t\n-\t\tif(!filter.isEmpty() && filter.trim().length()!=0) {\n+\t\tif(filter!=null && filter.trim().length()!=0) {\n \t\t\tString filter1=filter;\n \t\t\tString filter2=filter;\n \t\t\tString filter3=filter;"
+        }
+    ]
+}

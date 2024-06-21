@@ -1,0 +1,4 @@
+updateOneFireStationById(FireStation firestation, String id)
+createStationNumberOfFireStation(FireStation fireStation, String address)
+getAllFireStations()
+createAddressOfFireStation(FireStation fireStation, String stationNumber)

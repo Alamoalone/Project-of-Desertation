@@ -1,0 +1,1 @@
+retrieveTrxHist(Long accId, String type, String period)

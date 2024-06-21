@@ -1,0 +1,15 @@
+    private JsonObject loadTopic(CouchDbClient client, String[] dirs) {
+        View view = client.view("net/byTopic")
+                .key(dirs[0], dirs[1], dirs[2])
+                .reduce(false)
+                .includeDocs(true);
+        List<JsonObject> objects = view.query(JsonObject.class);
+        JsonObject o = objects.size() == 1 ? objects.get(0) : null;
+        JsonArray attachments = o.getAsJsonArray("attachments");
+        JsonObject _attachments = o.getAsJsonObject("_attachments");
+        o.add("attachments", amendAttachments(attachments, _attachments));
+        fixAttachments(attachments, dirs[0], string(o, "chapter"), string(o, "topic"));
+        //o.remove("_attachments");
+        return o;
+    }
+

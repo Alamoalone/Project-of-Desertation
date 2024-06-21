@@ -1,0 +1,61 @@
+    public Map<String, Object> generateDraftDocumentsForRespondent(CallbackRequest callbackRequest, String authorisation) throws Exception {
+
+        Element<PartyDetails> solicitorRepresentedRespondent = findSolicitorRepresentedRespondents(callbackRequest);
+        Response response = solicitorRepresentedRespondent.getValue().getResponse();
+
+        Map<String, Object> dataMap = new HashMap<>();
+        dataMap.put("courtName", callbackRequest.getCaseDetails().getData().get(COURT_NAME).toString());
+        dataMap.put("caseNumber", callbackRequest.getCaseDetails().getId());
+        dataMap.put("fullName", response.getCitizenDetails()
+            .getFirstName() + " " + response.getCitizenDetails()
+            .getLastName());
+        dataMap.put("dob", response.getCitizenDetails().getDateOfBirth());
+        dataMap.put("repFirstName", solicitorRepresentedRespondent.getValue().getRepresentativeFirstName());
+        dataMap.put("repLastName", solicitorRepresentedRespondent.getValue().getRepresentativeLastName());
+        if (solicitorRepresentedRespondent.getValue().getSolicitorAddress().getAddressLine1() != null) {
+            dataMap.put("repAddressLine1", solicitorRepresentedRespondent.getValue().getSolicitorAddress().getAddressLine1());
+        }
+        if (solicitorRepresentedRespondent.getValue().getSolicitorAddress().getAddressLine2() != null) {
+            dataMap.put("repAddressLine2", solicitorRepresentedRespondent.getValue().getSolicitorAddress().getAddressLine2());
+        }
+        if (solicitorRepresentedRespondent.getValue().getSolicitorAddress().getAddressLine3() != null) {
+            dataMap.put("repAddressLine3", solicitorRepresentedRespondent.getValue().getSolicitorAddress().getAddressLine3());
+        }
+        if (solicitorRepresentedRespondent.getValue().getSolicitorAddress().getPostCode() != null) {
+            dataMap.put("repPostcode", solicitorRepresentedRespondent.getValue().getSolicitorAddress().getPostCode());
+        }
+        dataMap.put("repEmail", solicitorRepresentedRespondent.getValue().getSolicitorEmail());
+        if (solicitorRepresentedRespondent.getValue().getDxNumber() != null) {
+            dataMap.put("dxNumber", solicitorRepresentedRespondent.getValue().getDxNumber());
+        } else {
+            dataMap.put("organisationInfo", solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation().toString());
+        }
+        dataMap.put("repReference", solicitorRepresentedRespondent.getValue().getSolicitorReference());
+
+        Map<String, Object> caseDataUpdated = callbackRequest.getCaseDetails().getData();
+
+        CaseData caseData = CaseUtils.getCaseData(callbackRequest.getCaseDetails(), objectMapper);
+        setActiveRespondent(callbackRequest, caseData);
+        Document document = documentGenService.generateSingleDocument(
+            authorisation,
+            caseData,
+            SOLICITOR_C7_DRAFT_DOCUMENT,
+            false,
+            dataMap
+        );
+        caseDataUpdated.put("draftC7ResponseDoc", document);
+
+        if (Yes.equals(caseData.getRespondentAohYesNo())) {
+            Document documentForC1A = documentGenService.generateSingleDocument(
+                authorisation,
+                caseData,
+                SOLICITOR_C1A_DRAFT_DOCUMENT,
+                false,
+                dataMap
+            );
+            caseDataUpdated.put("draftC1ADoc", documentForC1A);
+        }
+
+        return caseDataUpdated;
+    }
+

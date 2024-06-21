@@ -1,0 +1,3 @@
+    public Object getTransactionRecord(BArray xid) {
+        return transactionInfoMap.get(ByteBuffer.wrap(xid.getBytes()));
+    }

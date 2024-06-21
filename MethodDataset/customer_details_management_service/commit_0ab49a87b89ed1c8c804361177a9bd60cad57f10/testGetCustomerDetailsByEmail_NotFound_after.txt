@@ -1,0 +1,6 @@
+    void testGetCustomerDetailsByEmail_NotFound() {
+        String email = "nonexistent@gamil.com";
+        when(customerDetailService.getCustomerDetailsByEmail(email)).thenThrow(new ResourceNotFoundException("", "", ""));
+
+        assertThrows(ResourceNotFoundException.class, () -> customerDetailsController.getCustomerDetailsByEmail(email));
+    }

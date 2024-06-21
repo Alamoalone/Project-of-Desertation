@@ -1,0 +1,10 @@
+    public boolean deleteOneMedicalRecordById(String id) {
+     //   log.debug("Deleting medical record for {} {}", id);
+        boolean result = medicalRecords.removeIf(medicalRecord -> medicalRecord.getId().equals(id) );
+        if (result) {
+         //   log.info("Medical record deleted successfully for {} {}", id);
+        } else {
+           // log.error("Failed to delete medical record for {} {}", id);
+        }
+        return result;
+    }

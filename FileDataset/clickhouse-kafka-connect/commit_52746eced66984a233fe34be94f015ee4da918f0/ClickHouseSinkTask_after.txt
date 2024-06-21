@@ -1,0 +1,6 @@
+    public void stop() {
+        if (this.proxySinkTask != null) {
+            this.proxySinkTask.stop();
+        }
+    }
+

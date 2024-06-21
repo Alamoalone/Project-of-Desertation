@@ -1,0 +1,3 @@
+    public Product find(String id) {
+        return productRepository.findById(id).orElse(null).to();
+    }

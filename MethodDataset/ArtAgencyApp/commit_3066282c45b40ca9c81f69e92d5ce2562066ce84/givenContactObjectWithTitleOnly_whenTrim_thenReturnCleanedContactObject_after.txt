@@ -1,0 +1,13 @@
+    public void givenContactObjectWithTitleOnly_whenTrim_thenReturnCleanedContactObject() {
+        //given - precondition or setup
+        Contact contact = Contact.builder()
+                .title(" DK Chotomów  ")
+                .build();
+
+        //when - action or the behavior that we are going to test
+        Contact cleanedContact = inputCleaner.clean(contact);
+
+        //then - verify the output
+        assertNotNull(cleanedContact);
+        assertEquals("DK Chotomów", cleanedContact.getTitle());
+    }

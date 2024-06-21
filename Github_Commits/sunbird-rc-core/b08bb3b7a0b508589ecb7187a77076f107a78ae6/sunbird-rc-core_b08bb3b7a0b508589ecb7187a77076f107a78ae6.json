@@ -1,0 +1,98 @@
+{
+    "sha": "b08bb3b7a0b508589ecb7187a77076f107a78ae6",
+    "node_id": "C_kwDOFOApHdoAKGIwOGJiM2I3YTBiNTA4NTg5ZWNiNzE4N2E3NzA3NmYxMDdhNzhhZTY",
+    "commit": {
+        "author": {
+            "name": "Holash Chand",
+            "email": "holash.c@beehyv.com",
+            "date": "2023-11-04T14:43:06Z"
+        },
+        "committer": {
+            "name": "Holash Chand",
+            "email": "holash.c@beehyv.com",
+            "date": "2023-11-04T14:43:06Z"
+        },
+        "message": "fixed elocker null pointer exception",
+        "tree": {
+            "sha": "bbd647e95ffb92b5369ee4ac077aba7056644c24",
+            "url": "https://api.github.com/repos/Sunbird-RC/sunbird-rc-core/git/trees/bbd647e95ffb92b5369ee4ac077aba7056644c24"
+        },
+        "url": "https://api.github.com/repos/Sunbird-RC/sunbird-rc-core/git/commits/b08bb3b7a0b508589ecb7187a77076f107a78ae6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Sunbird-RC/sunbird-rc-core/commits/b08bb3b7a0b508589ecb7187a77076f107a78ae6",
+    "html_url": "https://github.com/Sunbird-RC/sunbird-rc-core/commit/b08bb3b7a0b508589ecb7187a77076f107a78ae6",
+    "comments_url": "https://api.github.com/repos/Sunbird-RC/sunbird-rc-core/commits/b08bb3b7a0b508589ecb7187a77076f107a78ae6/comments",
+    "author": {
+        "login": "holashchand",
+        "id": 132540997,
+        "node_id": "U_kgDOB-ZqRQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132540997?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/holashchand",
+        "html_url": "https://github.com/holashchand",
+        "followers_url": "https://api.github.com/users/holashchand/followers",
+        "following_url": "https://api.github.com/users/holashchand/following{/other_user}",
+        "gists_url": "https://api.github.com/users/holashchand/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/holashchand/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/holashchand/subscriptions",
+        "organizations_url": "https://api.github.com/users/holashchand/orgs",
+        "repos_url": "https://api.github.com/users/holashchand/repos",
+        "events_url": "https://api.github.com/users/holashchand/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/holashchand/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "holashchand",
+        "id": 132540997,
+        "node_id": "U_kgDOB-ZqRQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132540997?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/holashchand",
+        "html_url": "https://github.com/holashchand",
+        "followers_url": "https://api.github.com/users/holashchand/followers",
+        "following_url": "https://api.github.com/users/holashchand/following{/other_user}",
+        "gists_url": "https://api.github.com/users/holashchand/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/holashchand/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/holashchand/subscriptions",
+        "organizations_url": "https://api.github.com/users/holashchand/orgs",
+        "repos_url": "https://api.github.com/users/holashchand/repos",
+        "events_url": "https://api.github.com/users/holashchand/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/holashchand/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "44199e48790aa638acab3068d9164307ba729b52",
+            "url": "https://api.github.com/repos/Sunbird-RC/sunbird-rc-core/commits/44199e48790aa638acab3068d9164307ba729b52",
+            "html_url": "https://github.com/Sunbird-RC/sunbird-rc-core/commit/44199e48790aa638acab3068d9164307ba729b52"
+        }
+    ],
+    "stats": {
+        "total": 11,
+        "additions": 9,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "575292937ad5a561038e0b1a69c998fbcd62786e",
+            "filename": "java/registry/src/main/java/dev/sunbirdrc/registry/helper/RegistryHelper.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 2,
+            "changes": 11,
+            "blob_url": "https://github.com/Sunbird-RC/sunbird-rc-core/blob/b08bb3b7a0b508589ecb7187a77076f107a78ae6/java%2Fregistry%2Fsrc%2Fmain%2Fjava%2Fdev%2Fsunbirdrc%2Fregistry%2Fhelper%2FRegistryHelper.java",
+            "raw_url": "https://github.com/Sunbird-RC/sunbird-rc-core/raw/b08bb3b7a0b508589ecb7187a77076f107a78ae6/java%2Fregistry%2Fsrc%2Fmain%2Fjava%2Fdev%2Fsunbirdrc%2Fregistry%2Fhelper%2FRegistryHelper.java",
+            "contents_url": "https://api.github.com/repos/Sunbird-RC/sunbird-rc-core/contents/java%2Fregistry%2Fsrc%2Fmain%2Fjava%2Fdev%2Fsunbirdrc%2Fregistry%2Fhelper%2FRegistryHelper.java?ref=b08bb3b7a0b508589ecb7187a77076f107a78ae6",
+            "patch": "@@ -432,8 +432,13 @@ public String triggerAttestation(AttestationRequest attestationRequest, Attestat\n \n         updateGetFileUrl(attestationRequest.getAdditionalInput());\n \n+        String propertyData = null;\n+        if (attestationRequest.getPropertyData() != null) {\n+            propertyData = attestationRequest.getPropertyData().toString();\n+        }\n+\n         PluginRequestMessage message = PluginRequestMessageCreator.create(\n-                attestationRequest.getPropertyData().toString(), condition, attestationOSID, attestationRequest.getEntityName(),\n+                propertyData, condition, attestationOSID, attestationRequest.getEntityName(),\n                 attestationRequest.getEmailId(), attestationRequest.getEntityId(), attestationRequest.getAdditionalInput(),\n                 Action.RAISE_CLAIM.name(), attestationPolicy.getName(), attestationPolicy.getAttestorPlugin(),\n                 attestationPolicy.getAttestorEntity(), attestationPolicy.getAttestorSignin(),\n@@ -482,7 +487,9 @@ private void addAttestationProperty(AttestationRequest attestationRequest) throw\n         JsonNode parentNode = nodeToUpdate.get(attestationRequest.getEntityName());\n         JsonNode propertyNode = parentNode.get(attestationRequest.getName());\n         ObjectNode attestationJsonNode = (ObjectNode) JSONUtil.convertObjectJsonNode(attestationRequest);\n-        attestationJsonNode.set(\"propertyData\", JsonNodeFactory.instance.textNode(attestationRequest.getPropertyData().toString()));\n+        if (attestationRequest.getPropertyData() != null) {\n+            attestationJsonNode.set(\"propertyData\", JsonNodeFactory.instance.textNode(attestationRequest.getPropertyData().toString()));\n+        }\n         createOrUpdateProperty(attestationRequest.getEntityName(), attestationJsonNode, nodeToUpdate, attestationRequest.getName(), (ObjectNode) parentNode, propertyNode);\n         updateEntityAndState(existingEntityNode, nodeToUpdate, attestationRequest.getUserId());\n     }"
+        }
+    ]
+}

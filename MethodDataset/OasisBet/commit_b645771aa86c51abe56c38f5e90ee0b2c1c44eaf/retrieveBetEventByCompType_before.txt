@@ -1,0 +1,33 @@
+	public List<BetEvent> retrieveBetEventByCompType(String compType) {
+
+		Bson filter = Filters.eq(Constants.COMP_TYPE, compType);
+		FindIterable<Document> results = collection.find(filter);
+
+		List<BetEvent> betEventList = new ArrayList<>();
+		for (Document result : results) {
+			Long eventId = result.getLong(Constants.EVENT_ID);
+			double homeOdds = result.getDouble(Constants.HOME_ODDS);
+			double awayOdds = result.getDouble(Constants.AWAY_ODDS);
+			double drawOdds = result.getDouble(Constants.DRAW_ODDS);
+			H2HEventOdds h2hEventOdds = new H2HEventOdds(homeOdds, drawOdds, awayOdds);
+			h2hEventOdds.setEventId(eventId);
+
+			Date startTime = result.getDate(Constants.COMMENCE_TIME);
+
+			String homeTeam = result.getString(Constants.HOME_TEAM);
+			String awayTeam = result.getString(Constants.AWAY_TEAM);
+
+			TeamsDetails teamDetails = new TeamsDetails(homeTeam, awayTeam);
+
+			String eventDesc = homeTeam + " vs " + awayTeam;
+			String competition = Constants.API_SOURCE_COMP_TYPE_MAP.getOrDefault(compType, Constants.EMPTY_STRING);
+			BetEvent event = new BetEvent(competition, eventDesc, startTime, teamDetails, h2hEventOdds);
+			event.setEventId(eventId);
+			betEventList.add(event);
+		}
+
+		betEventList = betEventList.stream().sorted(Comparator.comparing(BetEvent::getStartTime))
+				.collect(Collectors.toList());
+		return betEventList;
+
+	}

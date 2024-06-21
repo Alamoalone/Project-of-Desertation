@@ -1,0 +1,3 @@
+    public void setUsuarioSesion(Usuario usuarioSesion) {
+        this.usuarioSesion = usuarioSesion;
+    }

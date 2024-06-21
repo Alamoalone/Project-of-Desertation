@@ -1,0 +1,3 @@
+    public boolean isInStalemate(TeamColor teamColor) {
+        return !isInCheck(teamColor);
+    }

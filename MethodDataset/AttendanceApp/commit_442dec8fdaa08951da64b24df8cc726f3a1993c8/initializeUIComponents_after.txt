@@ -1,0 +1,6 @@
+    private void initializeUIComponents() {
+        ImageView profileIcon = findViewById(R.id.profile_icon);
+        profileIcon.setOnClickListener(this::showProfilePopupMenu);
+        addCourseStudentButton = findViewById(R.id.plusButton);
+        mAuth = FirebaseAuth.getInstance();
+    }

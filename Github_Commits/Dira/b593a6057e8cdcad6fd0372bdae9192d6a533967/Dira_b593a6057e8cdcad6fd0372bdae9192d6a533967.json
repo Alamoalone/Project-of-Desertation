@@ -1,0 +1,122 @@
+{
+    "sha": "b593a6057e8cdcad6fd0372bdae9192d6a533967",
+    "node_id": "C_kwDOJJlI6toAKGI1OTNhNjA1N2U4Y2RjYWQ2ZmQwMzcyYmRhZTkxOTJkNmE1MzM5Njc",
+    "commit": {
+        "author": {
+            "name": "DanilaKisikov",
+            "email": "kisikov03@mail.ru",
+            "date": "2023-10-26T22:49:34Z"
+        },
+        "committer": {
+            "name": "DanilaKisikov",
+            "email": "kisikov03@mail.ru",
+            "date": "2023-10-26T22:49:34Z"
+        },
+        "message": "Fix arrow pressed bug, fix updateMessageReading null pointer exception",
+        "tree": {
+            "sha": "cc463c85d5dfb5b8d6f53ee9a6af65985eecf4f4",
+            "url": "https://api.github.com/repos/eternity-software/Dira/git/trees/cc463c85d5dfb5b8d6f53ee9a6af65985eecf4f4"
+        },
+        "url": "https://api.github.com/repos/eternity-software/Dira/git/commits/b593a6057e8cdcad6fd0372bdae9192d6a533967",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/eternity-software/Dira/commits/b593a6057e8cdcad6fd0372bdae9192d6a533967",
+    "html_url": "https://github.com/eternity-software/Dira/commit/b593a6057e8cdcad6fd0372bdae9192d6a533967",
+    "comments_url": "https://api.github.com/repos/eternity-software/Dira/commits/b593a6057e8cdcad6fd0372bdae9192d6a533967/comments",
+    "author": {
+        "login": "danyachka",
+        "id": 114114788,
+        "node_id": "U_kgDOBs1A5A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114114788?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danyachka",
+        "html_url": "https://github.com/danyachka",
+        "followers_url": "https://api.github.com/users/danyachka/followers",
+        "following_url": "https://api.github.com/users/danyachka/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danyachka/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danyachka/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danyachka/subscriptions",
+        "organizations_url": "https://api.github.com/users/danyachka/orgs",
+        "repos_url": "https://api.github.com/users/danyachka/repos",
+        "events_url": "https://api.github.com/users/danyachka/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danyachka/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "danyachka",
+        "id": 114114788,
+        "node_id": "U_kgDOBs1A5A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114114788?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danyachka",
+        "html_url": "https://github.com/danyachka",
+        "followers_url": "https://api.github.com/users/danyachka/followers",
+        "following_url": "https://api.github.com/users/danyachka/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danyachka/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danyachka/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danyachka/subscriptions",
+        "organizations_url": "https://api.github.com/users/danyachka/orgs",
+        "repos_url": "https://api.github.com/users/danyachka/repos",
+        "events_url": "https://api.github.com/users/danyachka/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danyachka/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2433f732833d45c2a23085a7c87c2de664d84963",
+            "url": "https://api.github.com/repos/eternity-software/Dira/commits/2433f732833d45c2a23085a7c87c2de664d84963",
+            "html_url": "https://github.com/eternity-software/Dira/commit/2433f732833d45c2a23085a7c87c2de664d84963"
+        }
+    ],
+    "stats": {
+        "total": 19,
+        "additions": 11,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "d07a1aa82214a12906be68143caadfa89a8d080b",
+            "filename": "app/src/main/java/com/diraapp/ui/activities/room/RoomActivity.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/eternity-software/Dira/blob/b593a6057e8cdcad6fd0372bdae9192d6a533967/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Factivities%2Froom%2FRoomActivity.java",
+            "raw_url": "https://github.com/eternity-software/Dira/raw/b593a6057e8cdcad6fd0372bdae9192d6a533967/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Factivities%2Froom%2FRoomActivity.java",
+            "contents_url": "https://api.github.com/repos/eternity-software/Dira/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Factivities%2Froom%2FRoomActivity.java?ref=b593a6057e8cdcad6fd0372bdae9192d6a533967",
+            "patch": "@@ -708,7 +708,7 @@ public void updateScrollArrowIndicator() {\n             return;\n         }\n \n-        if (!isScrollIndicatorShown) {\n+        if (getRoom().getUnreadMessagesIds().size() != 0 && !isScrollIndicatorShown) {\n             performScaleAnimation(0, 1, binding.scrollArrowUnreadIndicator);\n             isScrollIndicatorShown = true;\n         }"
+        },
+        {
+            "sha": "4bea6b5cea8ab253e4bc9d0fad68b28fc1c090e8",
+            "filename": "app/src/main/java/com/diraapp/ui/activities/room/RoomActivityPresenter.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 7,
+            "changes": 15,
+            "blob_url": "https://github.com/eternity-software/Dira/blob/b593a6057e8cdcad6fd0372bdae9192d6a533967/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Factivities%2Froom%2FRoomActivityPresenter.java",
+            "raw_url": "https://github.com/eternity-software/Dira/raw/b593a6057e8cdcad6fd0372bdae9192d6a533967/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Factivities%2Froom%2FRoomActivityPresenter.java",
+            "contents_url": "https://api.github.com/repos/eternity-software/Dira/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Factivities%2Froom%2FRoomActivityPresenter.java?ref=b593a6057e8cdcad6fd0372bdae9192d6a533967",
+            "patch": "@@ -129,11 +129,6 @@ public void onUpdate(Update update) {\n             if (thisMessage == null) return;\n             if (((MessageReadUpdate) update).getUserId().equals(selfId)) {\n \n-                if (lastReadMessage == null) lastReadMessage = thisMessage;\n-                else if (thisMessage.getTime() > lastReadMessage.getTime()) {\n-                    lastReadMessage = thisMessage;\n-                }\n-\n                 int pos = room.getUnreadMessagesIds().indexOf(thisMessage.getId());\n \n                 ArrayList<String> toDelete = new ArrayList<>();\n@@ -142,6 +137,11 @@ else if (thisMessage.getTime() > lastReadMessage.getTime()) {\n                         toDelete.add(room.getUnreadMessagesIds().get(i));\n                     }\n                     room.removeFromUnreadMessages(toDelete);\n+\n+                    if (lastReadMessage == null) lastReadMessage = thisMessage;\n+                    else if (thisMessage.getTime() > lastReadMessage.getTime()) {\n+                        lastReadMessage = thisMessage;\n+                    }\n                 }\n \n                 view.updateScrollArrowIndicator();\n@@ -561,9 +561,10 @@ public void onScrollArrowPressed() {\n             if (messageList.size() == 0) return;\n \n             MessageDao messageDao = view.getMessagesDatabase().getMessageDao();\n+            int unreadMessagesSize = room.getUnreadMessagesIds().size();\n             if (lastReadMessage == null) {\n                 String lastReadMessageId;\n-                if (room.getUnreadMessagesIds().size() > 0) {\n+                if (unreadMessagesSize > 0) {\n                     lastReadMessageId = room.getUnreadMessagesIds().get(0);\n                 } else {\n                     lastReadMessageId = room.getLastMessageId();\n@@ -596,7 +597,7 @@ public void onScrollArrowPressed() {\n             }\n \n             // if lastReadMessage is loaded\n-            if (room.getUnreadMessagesIds().size() > 0 && view.isMessageVisible(position)) {\n+            if (unreadMessagesSize > 0 && view.isMessageVisible(position)) {\n                 if (isNewestMessagesLoaded) view.smoothScrollTo(0);\n                 else loadRoomBottomMessages();\n                 return;"
+        },
+        {
+            "sha": "4006933a767bf30c024c44b25187f80387111564",
+            "filename": "app/src/main/java/com/diraapp/ui/adapters/messages/views/BaseMessageViewHolder.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/eternity-software/Dira/blob/b593a6057e8cdcad6fd0372bdae9192d6a533967/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Fadapters%2Fmessages%2Fviews%2FBaseMessageViewHolder.java",
+            "raw_url": "https://github.com/eternity-software/Dira/raw/b593a6057e8cdcad6fd0372bdae9192d6a533967/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Fadapters%2Fmessages%2Fviews%2FBaseMessageViewHolder.java",
+            "contents_url": "https://api.github.com/repos/eternity-software/Dira/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdiraapp%2Fui%2Fadapters%2Fmessages%2Fviews%2FBaseMessageViewHolder.java?ref=b593a6057e8cdcad6fd0372bdae9192d6a533967",
+            "patch": "@@ -252,6 +252,8 @@ protected void postInflateReplyViews() throws AlreadyInitializedException {\n     }\n \n     public void updateMessageReading(Message message, boolean isAnimated) {\n+        if (!isInitialized) return;\n+        if (!message.hasAuthor()) return;\n         if (!isSelfMessage) return;\n         if (message.getMessageReadingList() != null && messageBackground.getBackground() != null) {\n             if (message.getMessageReadingList().size() == 0) {"
+        }
+    ]
+}

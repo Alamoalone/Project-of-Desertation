@@ -1,0 +1,13 @@
+    public ResponseEntity<UserDto> createUserAccount(UserDto userDto) {
+        if(userDto!=null && (StringUtils.isEmpty(userDto.getPhoneNo()) || StringUtils.isEmpty(userDto.getEmail()))) {
+            throw new BadRequestException("Missing phone no. or email");
+        }
+        SellerEntity sellerEntity = new SellerEntity();
+        createSellerEntityFromSellerDto(sellerEntity, userDto);
+
+        sellerEntity = sellerRepository.save(sellerEntity);
+
+        createSellerDtoFromSellerEntity(sellerEntity, userDto);
+        return new ResponseEntity<>(userDto, HttpStatus.CREATED);
+    }
+

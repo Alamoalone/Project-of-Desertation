@@ -1,0 +1,18 @@
+                                        public void onComplete(@NonNull Task<QuerySnapshot> studentTask) {
+                                            if (studentTask.isSuccessful()) {
+                                                for (QueryDocumentSnapshot studentDocument : studentTask.getResult()) {
+                                                    studentEmails.add(studentDocument.getId());
+                                                }
+                                                Course course = new Course(className, timeRange, classDocumentId, daysOfWeek, startDate, endDate);
+                                                if (studentEmails.contains(userEmail)) {
+                                                    classListAll.add(course);
+                                                    adapter_all.notifyDataSetChanged();
+
+                                                    // Check if the class is scheduled for the current day
+                                                    if (course.isCourseScheduledToday()) {
+                                                            classList.add(course);
+                                                            adapter.notifyDataSetChanged(); // Notify the adapter that data has changed
+                                                        }
+                                                }
+                                              }
+                                            }

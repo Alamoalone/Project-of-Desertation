@@ -1,0 +1,41 @@
+    public String createRequest(SpendingCreateRequestDto dto) {
+        String authId = validateUserRoleAndRetrieveAuthId(dto.getToken(), PERSONNEL_ROLE);
+        GetPersonnelIdAndCompanyIdForSpendingRequestModel responseModel = getPersonnelIdAndCompanyIdForSpendingRequestProducer.getPersonnelIdAndCompanyIdFromPersonnelService(authId);
+        String personnelId = responseModel.getPersonnelId();
+        String companyId = responseModel.getCompanyId();
+        List<Spending> personnelPendingRequests = spendingRepository.findAllByPersonnelIdAndRequestStatus(personnelId, ERequestStatus.PENDING);
+        if(!personnelPendingRequests.isEmpty()) throw new SpendingServiceException(ErrorType.PENDING_REQUEST_EXISTS);
+        Spending spending = Spending.builder()
+                .personnelId(personnelId)
+                .companyId(companyId)
+                .reason(EReason.valueOf(dto.getReason()))
+                .description(dto.getDescription())
+                .amount(dto.getAmount())
+                .currency(ECurrency.valueOf(dto.getCurrency()))
+                .spendingDate(LocalDate.parse(dto.getSpendingDate(), DateTimeFormatter.ofPattern("EEE MMM dd yyyy HH:mm:ss 'GMT'Z (z)", Locale.ENGLISH)))
+                .build();
+        if(Optional.ofNullable(dto.getAttachments()).isPresent()){
+            List<Attachment> attachments = new ArrayList<>();
+            long time = System.currentTimeMillis();
+            dto.getAttachments().forEach(multipartFile -> {
+                try {
+                    byte[] fileBytes = multipartFile.getBytes();
+                    Map<?, ?> response = cloudinary.uploader().upload(fileBytes, ObjectUtils.emptyMap());
+                    String url = (String) response.get("url");
+                    attachments.add(Attachment.builder()
+                            .spending(spending)
+                            .fileUrl(url)
+                            .createdAt(time)
+                            .updatedAt(time)
+                            .status(true)
+                            .build());
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            spending.setAttachments(attachments);
+        }
+        save(spending);
+        return "Request Created!";
+    }
+

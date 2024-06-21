@@ -1,0 +1,55 @@
+    public ResponseEntity<?> getNoteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " REQUESTED");
+        Notes note = notesService.findByNoteId(id);
+        if(note == null){
+            return ResponseEntity.noContent().header("msg", "NO NOTE FOUND WITH THIS ID").build();
+        }
+        return ResponseEntity.ok(note);
+    }
+
+    public ResponseEntity<?> getAllNotes() throws NullPointerException {
+        Loggers.info("ALL NOTE FETCHED");
+        List<Notes> notesList = notesService.notesList();
+        if(notesList.isEmpty()){
+            return ResponseEntity.noContent().header("msg", "NO NOTE FOUND").build();
+        }
+        return ResponseEntity.ok(notesList);
+    }
+
+    public ResponseEntity<?> createNote(@RequestBody Notes note) throws Exception {
+        Loggers.info("NOTE CREATED");
+        Notes notes = notesService.createNote(note);
+        if (notes == null) {
+            return ResponseEntity.status(200).header("msg", "FIELDS ARE EMPTY").build();
+        }
+        return ResponseEntity.ok(notes);
+    }
+
+    public ResponseEntity<?> findByTitle(@PathVariable String title) {
+        Loggers.info("NOTE WITH TITLE " + title + " REQUESTED");
+        List<Notes> notesList = notesService.findByTitle(title);
+        if (notesList == null) {
+            return ResponseEntity.status(204).header("msg", "NO NOTES FOUND WITH THIS TITLE").build();
+        }
+        return ResponseEntity.ok(notesList);
+    }
+
+    public ResponseEntity<?> deleteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " DELETED");
+        Notes note = notesService.findByNoteId(id);
+        if(note == null){
+            return ResponseEntity.noContent().header("msg", "NO CONTENT DELETED BECAUSE IT DOESN'T EXIST").build();
+        }
+        notesService.deleteById(id);
+        return ResponseEntity.ok().build();
+    }
+
+    public ResponseEntity<?> updateNoteById(@PathVariable Integer id, @RequestBody Notes notes) {
+        Loggers.info("NOTE WITH ID " + id + " UPDATED");
+        Notes note = notesService.updateNoteById(id, notes);
+        if(note == null){
+            return ResponseEntity.status(400).header("msg", "BAD REQUEST").build();
+        }
+        return ResponseEntity.ok(note);
+    }
+

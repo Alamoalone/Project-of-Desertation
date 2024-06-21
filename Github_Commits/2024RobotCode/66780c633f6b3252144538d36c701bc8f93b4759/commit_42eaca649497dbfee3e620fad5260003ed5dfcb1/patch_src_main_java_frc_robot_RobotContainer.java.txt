@@ -1,0 +1,27 @@
+@@ -24,6 +24,8 @@
+ //import frc.robot.subsystems.vision.AprilTagVision;
+ //import frc.robot.utils.vision.VisionPoseAcceptor;
+ //import swervelib.SwerveDrive;
++import frc.robot.subsystems.vision.AprilTagVision;
++import frc.robot.utils.vision.VisionPoseAcceptor;
+ 
+ import java.io.File;
+ 
+@@ -53,7 +55,7 @@ public class RobotContainer
+ 
+   private final SendableChooser<Command> autoChooser;
+ 
+-  //public final AprilTagVision aprilTagVision;
++  //public AprilTagVision aprilTagVision;
+ 
+   public RobotContainer()
+   {
+@@ -95,7 +97,7 @@ public RobotContainer()
+ 
+     drivebase.setDefaultCommand(!RobotBase.isSimulation() ? closedAbsoluteDrive : closedFieldAbsoluteDrive);
+   
+-    
++    //aprilTagVision = AprilTagVision.createAprilTagVision(drivebase::addTimestampedVisionPose, new VisionPoseAcceptor(drivebase::getRobotVelocity));
+ 
+     autoChooser = AutoBuilder.buildAutoChooser(); //default auto will be "Commands.non()"
+     SmartDashboard.putData("Auto Chooser", autoChooser);

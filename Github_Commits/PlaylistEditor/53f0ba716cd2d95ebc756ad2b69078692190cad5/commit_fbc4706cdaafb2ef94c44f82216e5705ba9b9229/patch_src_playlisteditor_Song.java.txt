@@ -1,0 +1,27 @@
+@@ -79,9 +79,9 @@ public Song(String filePath, String fileName, boolean selected) {
+                 BufferedWriter bw = new BufferedWriter(new FileWriter(tagCache));
+                 bw.write(title);
+                 bw.newLine();
+-                bw.write(artist);
++                bw.write(artist == null ? "Artista Sconosciuto" : artist);
+                 bw.newLine();
+-                bw.write(album);
++                bw.write(album == null ? "Album Sconosciuto" : album);
+                 bw.newLine();
+                 bw.close();
+             }       
+@@ -107,11 +107,12 @@ public String getTitle() {
+     }
+ 
+     public String getArtist() {
+-        return artist;
++        return artist == null ? "Artista Sconosciuto" : artist;
+     }
+ 
+     public String getAlbum() {
+-        return album.replace("?", "");
++        return album == null ? "Album Sconosciuto" : album.replace("?", "");
++    }
+     }
+ 
+     public boolean isSelected() {

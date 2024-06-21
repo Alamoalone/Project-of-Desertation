@@ -1,0 +1,12 @@
+@@ -168,7 +168,10 @@ public static Value.Builder getValueFromDate(Timestamp value) {
+ 	
+ 	public static com.google.protobuf.Timestamp getTimestampFromDate(Timestamp value) {
+ 		if (value == null) {
+-			return null;
++			// return com.google.protobuf.Timestamp.newBuilder().build(); // 1970-01-01T00:00:00Z
++			// return com.google.protobuf.Timestamp.getDefaultInstance(); // 1970-01-01T00:00:00Z
++			// return com.google.protobuf.util.Timestamps.EPOCH; // 1970-01-01T00:00:00Z
++			return com.google.protobuf.util.Timestamps.MIN_VALUE; // 0001-01-01T00:00:00Z
+ 		}
+ 		return fromMillis(value.getTime());
+ 	}

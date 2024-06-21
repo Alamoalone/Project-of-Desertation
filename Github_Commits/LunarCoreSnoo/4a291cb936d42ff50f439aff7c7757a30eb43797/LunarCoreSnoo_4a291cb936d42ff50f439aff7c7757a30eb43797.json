@@ -1,0 +1,122 @@
+{
+    "sha": "4a291cb936d42ff50f439aff7c7757a30eb43797",
+    "node_id": "C_kwDOK4Fyt9oAKDRhMjkxY2I5MzZkNDJmZjUwZjQzOWFmZjdjNzc1N2EzMGViNDM3OTc",
+    "commit": {
+        "author": {
+            "name": "Melledy",
+            "email": "121644117+Melledy@users.noreply.github.com",
+            "date": "2023-12-06T06:09:08Z"
+        },
+        "committer": {
+            "name": "Melledy",
+            "email": "121644117+Melledy@users.noreply.github.com",
+            "date": "2023-12-06T06:09:08Z"
+        },
+        "message": "Fix null pointer exception that occurs when certain items are added",
+        "tree": {
+            "sha": "882898291ec808f56726d1a6733e2394493860a6",
+            "url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/git/trees/882898291ec808f56726d1a6733e2394493860a6"
+        },
+        "url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/git/commits/4a291cb936d42ff50f439aff7c7757a30eb43797",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/commits/4a291cb936d42ff50f439aff7c7757a30eb43797",
+    "html_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/commit/4a291cb936d42ff50f439aff7c7757a30eb43797",
+    "comments_url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/commits/4a291cb936d42ff50f439aff7c7757a30eb43797/comments",
+    "author": {
+        "login": "Melledy",
+        "id": 121644117,
+        "node_id": "U_kgDOB0AkVQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/121644117?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Melledy",
+        "html_url": "https://github.com/Melledy",
+        "followers_url": "https://api.github.com/users/Melledy/followers",
+        "following_url": "https://api.github.com/users/Melledy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Melledy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Melledy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Melledy/subscriptions",
+        "organizations_url": "https://api.github.com/users/Melledy/orgs",
+        "repos_url": "https://api.github.com/users/Melledy/repos",
+        "events_url": "https://api.github.com/users/Melledy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Melledy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Melledy",
+        "id": 121644117,
+        "node_id": "U_kgDOB0AkVQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/121644117?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Melledy",
+        "html_url": "https://github.com/Melledy",
+        "followers_url": "https://api.github.com/users/Melledy/followers",
+        "following_url": "https://api.github.com/users/Melledy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Melledy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Melledy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Melledy/subscriptions",
+        "organizations_url": "https://api.github.com/users/Melledy/orgs",
+        "repos_url": "https://api.github.com/users/Melledy/repos",
+        "events_url": "https://api.github.com/users/Melledy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Melledy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d82cfd4586b8f7ce990efa1aa578078c699ad92f",
+            "url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/commits/d82cfd4586b8f7ce990efa1aa578078c699ad92f",
+            "html_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/commit/d82cfd4586b8f7ce990efa1aa578078c699ad92f"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 9,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "60cc13046a997ac0300d1d1744bd965dbe9ad11a",
+            "filename": "src/main/java/emu/lunarcore/game/enums/ItemMainType.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/blob/4a291cb936d42ff50f439aff7c7757a30eb43797/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fgame%2Fenums%2FItemMainType.java",
+            "raw_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/raw/4a291cb936d42ff50f439aff7c7757a30eb43797/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fgame%2Fenums%2FItemMainType.java",
+            "contents_url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/contents/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fgame%2Fenums%2FItemMainType.java?ref=4a291cb936d42ff50f439aff7c7757a30eb43797",
+            "patch": "@@ -19,7 +19,7 @@ public enum ItemMainType {\n     private InventoryTabType tabType;\n \n     private ItemMainType(int value) {\n-        this.val = value;\n+        this(value, InventoryTabType.NONE);\n     }\n     \n     private ItemMainType(int value, InventoryTabType tabType) {"
+        },
+        {
+            "sha": "6309e213e462faff5da90c2cf6bfd011332142e1",
+            "filename": "src/main/java/emu/lunarcore/game/inventory/Inventory.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/blob/4a291cb936d42ff50f439aff7c7757a30eb43797/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fgame%2Finventory%2FInventory.java",
+            "raw_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/raw/4a291cb936d42ff50f439aff7c7757a30eb43797/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fgame%2Finventory%2FInventory.java",
+            "contents_url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/contents/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fgame%2Finventory%2FInventory.java?ref=4a291cb936d42ff50f439aff7c7757a30eb43797",
+            "patch": "@@ -62,7 +62,10 @@ public InventoryTab getTabByItemType(ItemMainType type) {\n     }\n     \n     public InventoryTab getTab(InventoryTabType type) {\n-        if (type == null) return null;\n+        if (type == null || type == InventoryTabType.NONE) {\n+            return null;\n+        }\n+        \n         return this.inventoryTypes.get(type.getVal());\n     }\n "
+        },
+        {
+            "sha": "a23651218c7894e5ec5ea4755a1594fa3606a021",
+            "filename": "src/main/java/emu/lunarcore/server/packet/send/PacketPlayerSyncScNotify.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/blob/4a291cb936d42ff50f439aff7c7757a30eb43797/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fserver%2Fpacket%2Fsend%2FPacketPlayerSyncScNotify.java",
+            "raw_url": "https://github.com/snoobi-seggs/LunarCoreSnoo/raw/4a291cb936d42ff50f439aff7c7757a30eb43797/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fserver%2Fpacket%2Fsend%2FPacketPlayerSyncScNotify.java",
+            "contents_url": "https://api.github.com/repos/snoobi-seggs/LunarCoreSnoo/contents/src%2Fmain%2Fjava%2Femu%2Flunarcore%2Fserver%2Fpacket%2Fsend%2FPacketPlayerSyncScNotify.java?ref=4a291cb936d42ff50f439aff7c7757a30eb43797",
+            "patch": "@@ -103,6 +103,9 @@ public PacketPlayerSyncScNotify(Collection<GameItem> items) {\n \n     private void addItemToProto(PlayerSyncScNotify data, GameItem item) {\n         switch (item.getExcel().getItemMainType().getTabType()) {\n+            case MATERIAL -> {\n+                data.addMaterialList(item.toMaterialProto());\n+            }\n             case RELIC -> {\n                 if (item.getCount() > 0) {\n                     data.addRelicList(item.toRelicProto());\n@@ -118,7 +121,7 @@ private void addItemToProto(PlayerSyncScNotify data, GameItem item) {\n                 }\n             }\n             default -> {\n-                data.addMaterialList(item.toMaterialProto());\n+                // Skip\n             }\n         }\n     }"
+        }
+    ]
+}

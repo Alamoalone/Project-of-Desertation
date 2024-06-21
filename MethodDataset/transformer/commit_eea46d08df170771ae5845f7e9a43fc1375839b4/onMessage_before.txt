@@ -1,0 +1,45 @@
+    public void onMessage() {
+        reactiveKafkaReceiver
+                .doOnNext(new Consumer<ReceiverRecord<String, String>>() {
+                    @Override
+                    public void accept(ReceiverRecord<String, String> stringMessage) {
+                        final long startTime = System.nanoTime();
+                        try {
+                            XMessage msg = XMessageParser.parse(new ByteArrayInputStream(stringMessage.value().getBytes()));
+                            logTimeTaken(startTime, 1);
+                            transform(msg)
+                                    .subscribe(new Consumer<XMessage>() {
+                                        @Override
+                                        public void accept(XMessage transformedMessage) {
+                                            logTimeTaken(startTime, 2);
+                                            if (transformedMessage != null) {
+                                                try {
+                                                    kafkaProducer.send(processOutboundTopic, transformedMessage.toXML());
+                                                    long endTime = System.nanoTime();
+                                                    long duration = (endTime - startTime);
+                                                    log.error("Total time spent in processing form: " + duration / 1000000);
+                                                } catch (JAXBException e) {
+                                                    e.printStackTrace();
+                                                }
+                                            }
+                                        }
+                                    });
+                        } catch (JAXBException e) {
+                            e.printStackTrace();
+                        } catch (NullPointerException e) {
+                            log.error("An error occured : " + e.getMessage() + " at line no : " + e.getStackTrace()[0].getLineNumber()
+                                    + " in class : " + e.getStackTrace()[0].getClassName());
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                })
+                .doOnError(new Consumer<Throwable>() {
+                    @Override
+                    public void accept(Throwable e) {
+                        System.out.println(e.getMessage());
+                        log.error("KafkaFlux exception", e);
+                    }
+                }).subscribe();
+
+    }

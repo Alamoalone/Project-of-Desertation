@@ -1,0 +1,110 @@
+{
+    "sha": "3536536a7c7999e4bea84dc74a6bf60e78faf109",
+    "node_id": "C_kwDOEBYkp9oAKDM1MzY1MzZhN2M3OTk5ZTRiZWE4NGRjNzRhNmJmNjBlNzhmYWYxMDk",
+    "commit": {
+        "author": {
+            "name": "pankajjangid05",
+            "email": "pankaj.jangid@aurigait.com",
+            "date": "2023-02-27T12:46:42Z"
+        },
+        "committer": {
+            "name": "pankajjangid05",
+            "email": "pankaj.jangid@aurigait.com",
+            "date": "2023-02-27T12:46:42Z"
+        },
+        "message": "Doubtnut - Fixed tara bot hop null pointer exception",
+        "tree": {
+            "sha": "fcc0e8561fb1e852a7ae89da53be0b165e0aa904",
+            "url": "https://api.github.com/repos/samagra-comms/transformer/git/trees/fcc0e8561fb1e852a7ae89da53be0b165e0aa904"
+        },
+        "url": "https://api.github.com/repos/samagra-comms/transformer/git/commits/3536536a7c7999e4bea84dc74a6bf60e78faf109",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/samagra-comms/transformer/commits/3536536a7c7999e4bea84dc74a6bf60e78faf109",
+    "html_url": "https://github.com/samagra-comms/transformer/commit/3536536a7c7999e4bea84dc74a6bf60e78faf109",
+    "comments_url": "https://api.github.com/repos/samagra-comms/transformer/commits/3536536a7c7999e4bea84dc74a6bf60e78faf109/comments",
+    "author": {
+        "login": "pankajjangid05",
+        "id": 103931276,
+        "node_id": "U_kgDOBjHdjA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/103931276?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pankajjangid05",
+        "html_url": "https://github.com/pankajjangid05",
+        "followers_url": "https://api.github.com/users/pankajjangid05/followers",
+        "following_url": "https://api.github.com/users/pankajjangid05/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pankajjangid05/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pankajjangid05/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pankajjangid05/subscriptions",
+        "organizations_url": "https://api.github.com/users/pankajjangid05/orgs",
+        "repos_url": "https://api.github.com/users/pankajjangid05/repos",
+        "events_url": "https://api.github.com/users/pankajjangid05/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pankajjangid05/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "pankajjangid05",
+        "id": 103931276,
+        "node_id": "U_kgDOBjHdjA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/103931276?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pankajjangid05",
+        "html_url": "https://github.com/pankajjangid05",
+        "followers_url": "https://api.github.com/users/pankajjangid05/followers",
+        "following_url": "https://api.github.com/users/pankajjangid05/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pankajjangid05/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pankajjangid05/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pankajjangid05/subscriptions",
+        "organizations_url": "https://api.github.com/users/pankajjangid05/orgs",
+        "repos_url": "https://api.github.com/users/pankajjangid05/repos",
+        "events_url": "https://api.github.com/users/pankajjangid05/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pankajjangid05/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "30b51e5d43edcffa70dca6373a1e0ea71008626c",
+            "url": "https://api.github.com/repos/samagra-comms/transformer/commits/30b51e5d43edcffa70dca6373a1e0ea71008626c",
+            "html_url": "https://github.com/samagra-comms/transformer/commit/30b51e5d43edcffa70dca6373a1e0ea71008626c"
+        }
+    ],
+    "stats": {
+        "total": 66,
+        "additions": 53,
+        "deletions": 13
+    },
+    "files": [
+        {
+            "sha": "e98561f3ae9deeec39cf76f19a7321e6ef67f150",
+            "filename": "src/main/java/com/uci/transformer/generic/GenericTransformerConsumer.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 2,
+            "changes": 2,
+            "blob_url": "https://github.com/samagra-comms/transformer/blob/3536536a7c7999e4bea84dc74a6bf60e78faf109/src%2Fmain%2Fjava%2Fcom%2Fuci%2Ftransformer%2Fgeneric%2FGenericTransformerConsumer.java",
+            "raw_url": "https://github.com/samagra-comms/transformer/raw/3536536a7c7999e4bea84dc74a6bf60e78faf109/src%2Fmain%2Fjava%2Fcom%2Fuci%2Ftransformer%2Fgeneric%2FGenericTransformerConsumer.java",
+            "contents_url": "https://api.github.com/repos/samagra-comms/transformer/contents/src%2Fmain%2Fjava%2Fcom%2Fuci%2Ftransformer%2Fgeneric%2FGenericTransformerConsumer.java?ref=3536536a7c7999e4bea84dc74a6bf60e78faf109",
+            "patch": "@@ -119,9 +119,7 @@ public void onMessage(@Payload String stringMessage) {\n                             public Boolean apply(GenericMessageResponse response) {\n                                 if (response != null && (response.getMeta() != null && response.getMeta().getCode() != null && response.getMeta().getCode().equals(\"200\"))\n                                         && (response.getData() != null && response.getData().getAnswers() != null && response.getData().getAnswers().length > 0)) {\n-                                    log.info(\"Response : \" + response.getData().getAnswers());\n                                     XMessagePayload payload = msg.getPayload();\n-\n                                     for (String answer : response.getData().getAnswers()) {\n                                         payload.setMedia(null);\n                                         payload.setText(answer);"
+        },
+        {
+            "sha": "eea46d08df170771ae5845f7e9a43fc1375839b4",
+            "filename": "src/main/java/com/uci/transformer/odk/ODKConsumerReactive.java",
+            "status": "modified",
+            "additions": 53,
+            "deletions": 11,
+            "changes": 64,
+            "blob_url": "https://github.com/samagra-comms/transformer/blob/3536536a7c7999e4bea84dc74a6bf60e78faf109/src%2Fmain%2Fjava%2Fcom%2Fuci%2Ftransformer%2Fodk%2FODKConsumerReactive.java",
+            "raw_url": "https://github.com/samagra-comms/transformer/raw/3536536a7c7999e4bea84dc74a6bf60e78faf109/src%2Fmain%2Fjava%2Fcom%2Fuci%2Ftransformer%2Fodk%2FODKConsumerReactive.java",
+            "contents_url": "https://api.github.com/repos/samagra-comms/transformer/contents/src%2Fmain%2Fjava%2Fcom%2Fuci%2Ftransformer%2Fodk%2FODKConsumerReactive.java?ref=3536536a7c7999e4bea84dc74a6bf60e78faf109",
+            "patch": "@@ -177,7 +177,14 @@ public void accept(XMessage transformedMessage) {\n                                             logTimeTaken(startTime, 2);\n                                             if (transformedMessage != null) {\n                                                 try {\n-                                                    kafkaProducer.send(processOutboundTopic, transformedMessage.toXML());\n+                                                    if(transformedMessage.getTransformers() != null && transformedMessage.getTransformers().get(0) != null\n+                                                        && transformedMessage.getTransformers().get(0).getMetaData() != null && transformedMessage.getTransformers().get(0).getMetaData().get(\"type\") != null\n+                                                        && transformedMessage.getTransformers().get(0).getMetaData().get(\"type\").equals(\"generic\")) {\n+                                                        kafkaProducer.send(genericTransformer, transformedMessage.toXML());\n+\n+                                                    } else {\n+                                                        kafkaProducer.send(processOutboundTopic, transformedMessage.toXML());\n+                                                    }\n                                                     long endTime = System.nanoTime();\n                                                     long duration = (endTime - startTime);\n                                                     log.error(\"Total time spent in processing form: \" + duration / 1000000);\n@@ -363,29 +370,64 @@ public Mono<Mono<XMessage>> apply(FormManagerParams previousMeta) {\n                                 );\n \n \n-\n-                        /** This is for doubtnut hop bot hardcode\n-                            TODO set transformer as we have done in orchestrator, owner id, owner orgid\n+                        /**\n+                         *  This is for doubtnut hop bot hardcode\n                          **/\n                         if (response[0].currentIndex.contains(\"eof__\") && response[0].currentIndex.contains(\"doubtnut\")) {\n                             String nextBotID = mm.getNextBotID(response[0].currentIndex);\n                             return campaignService.getCampaignFromID(nextBotID).map(new Function<JsonNode, Mono<XMessage>>() {\n                                 @Override\n                                 public Mono<XMessage> apply(JsonNode jsonNode) {\n                                     JsonNode data = jsonNode.get(\"data\");\n+                                    ArrayList<Transformer> transformers = new ArrayList<Transformer>();\n+                                    ArrayList transformerList = (ArrayList) data.findValues(\"transformers\");\n+\n+                                    transformerList.forEach(transformerTmp -> {\n+                                        JsonNode transformerNode = (JsonNode) transformerTmp;\n+                                        int i = 0;\n+                                        while (transformerNode.get(i) != null) {\n+                                            JsonNode transformer = transformerNode.get(i);\n+                                            log.info(\"transformer:\" + transformer);\n+\n+                                            HashMap<String, String> metaData = new HashMap<String, String>();\n+                                            if (data.findValue(\"ownerID\").asText().equals(\"null\")) {\n+                                                metaData.put(\"botOwnerID\", \"\");\n+                                            } else {\n+                                                metaData.put(\"botOwnerID\", data.findValue(\"ownerID\").asText());\n+                                            }\n+                                            if (data.findValue(\"ownerOrgID\").asText().equals(\"null\")) {\n+                                                metaData.put(\"botOwnerOrgID\", \"\");\n+                                            } else {\n+                                                metaData.put(\"botOwnerOrgID\", data.findValue(\"ownerOrgID\").asText());\n+                                            }\n+                                            metaData.put(\"startingMessage\", data.findValue(\"startingMessage\").asText());\n+                                            metaData.put(\"type\", \"generic\");\n+\n+                                            Transformer transf = new Transformer();\n+                                            transf.setId(transformer.get(\"id\").asText());\n+                                            transf.setMetaData(metaData);\n+                                            transformers.add(transf);\n+                                            i++;\n+                                        }\n+                                    });\n+                                    xMessage.setTransformers(transformers);\n                                     XMessagePayload payload = xMessage.getPayload();\n                                     payload.setText(data.path(\"startingMessage\").asText());\n                                     xMessage.setPayload(payload);\n                                     xMessage.setApp(data.path(\"name\").asText());\n-                                    xMessage.setTransformers(null);\n+                                    if (data.findValue(\"ownerID\") != null && !data.findValue(\"ownerID\").asText().equals(\"null\")) {\n+                                        xMessage.setOwnerId(data.findValue(\"ownerID\").asText());\n+                                    } else {\n+                                        xMessage.setOwnerId(\"\");\n+                                    }\n+                                    if (data.findValue(\"ownerOrgID\") != null && !data.findValue(\"ownerOrgID\").asText().equals(\"null\")) {\n+                                        xMessage.setOwnerOrgId(data.findValue(\"ownerOrgID\").asText());\n+                                    } else {\n+                                        xMessage.setOwnerOrgId(\"\");\n+                                    }\n                                     xMessage.setBotId(UUID.fromString(data.path(\"id\").asText()));\n                                     xMessage.setSessionId(UUID.randomUUID());\n-                                    try {\n-                                        kafkaProducer.send(genericTransformer, xMessage.toXML());\n-                                    } catch (JAXBException e) {\n-                                        throw new RuntimeException(e);\n-                                    }\n-                                    return null;\n+                                    return Mono.just(xMessage);\n                                 }\n                             });\n                         }"
+        }
+    ]
+}

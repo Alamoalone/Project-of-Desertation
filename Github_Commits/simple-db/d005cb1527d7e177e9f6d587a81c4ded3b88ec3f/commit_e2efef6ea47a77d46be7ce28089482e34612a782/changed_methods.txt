@@ -1,0 +1,1 @@
+isVisible(TransactionManager tm, Transaction t, Entry e)

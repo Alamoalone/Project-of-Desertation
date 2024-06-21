@@ -1,0 +1,8 @@
+	static void create(Abonnement abonnement) {
+		if (!Main.sql.createPrepareStatement(TABLE_NAME, dbFields,
+						new Object[]{abonnement.client.id, abonnement.panier.id, abonnement.debut, abonnement.fin, abonnement.estActif,
+										abonnement.frequenceLivraison}))
+			Logger.error("Can't create abonnement");
+		abonnement.updateLivraison();
+		getFromDatabase();
+	}

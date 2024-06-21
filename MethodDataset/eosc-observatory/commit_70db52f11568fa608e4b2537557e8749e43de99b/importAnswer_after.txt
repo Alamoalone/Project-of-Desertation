@@ -1,0 +1,19 @@
+    public SurveyAnswer importAnswer(String surveyAnswerId, String modelFrom, Authentication authentication) throws ResourceNotFoundException {
+        Date date = new Date();
+        Model modelToImport = modelService.get(modelFrom);
+        SurveyAnswer surveyAnswer = surveyAnswerCrudService.get(surveyAnswerId);
+
+        validateImportable(surveyAnswer.getSurveyId(), modelToImport);
+
+        SurveyAnswer previous = getLatest(modelFrom, surveyAnswer.getStakeholderId());
+
+        User user = User.of(authentication);
+        String userRole = getUserRole(authentication, surveyAnswer.getStakeholderId());
+
+        surveyAnswer.setAnswer(previous != null ? previous.getAnswer() : null);
+
+        surveyAnswer.getHistory().addEntry(user.getId(), userRole, String.format("Imported data from '%s'", modelToImport.getName()), date, History.HistoryAction.IMPORTED);
+        surveyAnswer.getMetadata().setModifiedBy(user.getId());
+        surveyAnswer.getMetadata().setModificationDate(date);
+        return surveyAnswerCrudService.update(surveyAnswerId, surveyAnswer);
+    }

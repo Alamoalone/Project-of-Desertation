@@ -1,0 +1,8 @@
+  private void addApplication(String namespace, Application app) throws ConflictException {
+    ApplicationSpecification appSpec = Specifications.from(app);
+    ApplicationMeta meta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                               new ChangeDetail(null, null, null,
+                                                                System.currentTimeMillis()));
+    store.addLatestApplication(new ApplicationId(namespace, appSpec.getName()), meta);
+  }
+

@@ -1,0 +1,44 @@
+    public <T> T get(Object root)
+    {
+        final JSONBeanUtil beanUtil = new JSONBeanUtil();
+        beanUtil.setObjectSupport(JSONUtil.OBJECT_SUPPORT);
+
+        Object current = root;
+
+        SchemaReference currentPath = SchemaReference.newRef(domainQL, rootType, Collections.emptyList());
+        final int pathLen = path.size();
+        final int last = pathLen - 1;
+        for (int i = 0; i < pathLen; i++)
+        {
+            String p = path.get(i);
+            final Object value = beanUtil.getProperty(current, p);
+
+            if (value instanceof List)
+            {
+                if (i == last)
+                {
+                    return (T) value;
+                }
+                final SchemaReference subPath = SchemaReference.newRef(
+                    domainQL,
+                    GraphQLTypeUtil.unwrapAll(resolve(domainQL, rootType, path.subList(0, i + 1))).getName(),
+                    path.subList(i + 1, pathLen)
+                );
+
+                List<?> out = new ArrayList<>();
+                for (Object o : (List) value)
+                {
+                    out.add(
+                        subPath.get(o)
+                    );
+                }
+                return (T) out;
+            }
+            else
+            {
+                current = value;
+                currentPath = currentPath.getField(p);
+            }
+        }
+        return (T) current;
+    }

@@ -1,0 +1,8 @@
+    public ResponseEntity<Order> getOrderById(@PathVariable String orderId){
+
+        Order order= null;
+        order=orderservice.getOrderById(orderId);
+        //order should be returned with an orderId.
+
+        return new ResponseEntity<>(order, HttpStatus.CREATED);
+    }

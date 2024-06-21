@@ -1,0 +1,98 @@
+{
+    "sha": "7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2",
+    "node_id": "C_kwDOEzMWutoAKDdhYWUwZTAyYjM5ZTQyMTNkZmE4MTJhOGMzNDZlZTIxYjljZjllYjI",
+    "commit": {
+        "author": {
+            "name": "Ranjitha-NB",
+            "email": "ranjithan@boston-technology.com",
+            "date": "2022-11-24T09:47:50Z"
+        },
+        "committer": {
+            "name": "Ranjitha-NB",
+            "email": "ranjithan@boston-technology.com",
+            "date": "2022-11-24T09:47:50Z"
+        },
+        "message": "Null pointer exception changes",
+        "tree": {
+            "sha": "a761442af0ce83400b6f52e4749b27d6ecf396ca",
+            "url": "https://api.github.com/repos/FDA-MyStudies/WCP/git/trees/a761442af0ce83400b6f52e4749b27d6ecf396ca"
+        },
+        "url": "https://api.github.com/repos/FDA-MyStudies/WCP/git/commits/7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/FDA-MyStudies/WCP/commits/7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2",
+    "html_url": "https://github.com/FDA-MyStudies/WCP/commit/7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2",
+    "comments_url": "https://api.github.com/repos/FDA-MyStudies/WCP/commits/7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2/comments",
+    "author": {
+        "login": "Ranjithabtc",
+        "id": 89509285,
+        "node_id": "MDQ6VXNlcjg5NTA5Mjg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89509285?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ranjithabtc",
+        "html_url": "https://github.com/Ranjithabtc",
+        "followers_url": "https://api.github.com/users/Ranjithabtc/followers",
+        "following_url": "https://api.github.com/users/Ranjithabtc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ranjithabtc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ranjithabtc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ranjithabtc/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ranjithabtc/orgs",
+        "repos_url": "https://api.github.com/users/Ranjithabtc/repos",
+        "events_url": "https://api.github.com/users/Ranjithabtc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ranjithabtc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Ranjithabtc",
+        "id": 89509285,
+        "node_id": "MDQ6VXNlcjg5NTA5Mjg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89509285?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ranjithabtc",
+        "html_url": "https://github.com/Ranjithabtc",
+        "followers_url": "https://api.github.com/users/Ranjithabtc/followers",
+        "following_url": "https://api.github.com/users/Ranjithabtc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ranjithabtc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ranjithabtc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ranjithabtc/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ranjithabtc/orgs",
+        "repos_url": "https://api.github.com/users/Ranjithabtc/repos",
+        "events_url": "https://api.github.com/users/Ranjithabtc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ranjithabtc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "16d813dce150be7d90d63b2fa52c1cfb806263f2",
+            "url": "https://api.github.com/repos/FDA-MyStudies/WCP/commits/16d813dce150be7d90d63b2fa52c1cfb806263f2",
+            "html_url": "https://github.com/FDA-MyStudies/WCP/commit/16d813dce150be7d90d63b2fa52c1cfb806263f2"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 6,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "953de88b1118197723c3f4f328034fe8293930a2",
+            "filename": "fdahpStudyDesigner/src/main/java/com/fdahpstudydesigner/controller/StudyQuestionnaireController.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 3,
+            "changes": 9,
+            "blob_url": "https://github.com/FDA-MyStudies/WCP/blob/7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2/fdahpStudyDesigner%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffdahpstudydesigner%2Fcontroller%2FStudyQuestionnaireController.java",
+            "raw_url": "https://github.com/FDA-MyStudies/WCP/raw/7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2/fdahpStudyDesigner%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffdahpstudydesigner%2Fcontroller%2FStudyQuestionnaireController.java",
+            "contents_url": "https://api.github.com/repos/FDA-MyStudies/WCP/contents/fdahpStudyDesigner%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffdahpstudydesigner%2Fcontroller%2FStudyQuestionnaireController.java?ref=7aae0e02b39e4213dfa812a8c346ee21b9cf9eb2",
+            "patch": "@@ -386,12 +386,15 @@ public void deleteQuestionnaireStepInfo(\n                 ? \"\"\n                 : request.getParameter(\"questionnaireId\");\n         //getting groupId by sending stepId\n+        List<GroupMappingBo> groupMappingBo = null;\n         Integer groupId = studyQuestionnaireService.getGroupId(stepId);\n-        //getting noOfstepsCount by sending groupId\n-        List<GroupMappingBo> groupMappingBo = studyQuestionnaireService.getStepId(String.valueOf(groupId),questionnaireId);\n+        if(groupId != null) {\n+          //getting noOfstepsCount by sending groupId\n+          groupMappingBo = studyQuestionnaireService.getStepId(String.valueOf(groupId), questionnaireId);\n+        }\n         //writing conditon for checking the count\n         if (!stepId.isEmpty() && !questionnaireId.isEmpty() && !stepType.isEmpty()) {\n-          if(groupMappingBo.size() > 2 || groupMappingBo.size() == 0){\n+          if(groupMappingBo == null || groupMappingBo.size() > 2){\n           String msgg = studyQuestionnaireService.deleteStepBasedOnStepId(stepId);\n           message =\n               studyQuestionnaireService.deleteQuestionnaireStep("
+        }
+    ]
+}

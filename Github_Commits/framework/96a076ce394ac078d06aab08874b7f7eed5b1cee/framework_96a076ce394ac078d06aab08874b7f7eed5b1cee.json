@@ -1,0 +1,98 @@
+{
+    "sha": "96a076ce394ac078d06aab08874b7f7eed5b1cee",
+    "node_id": "C_kwDODR1Cr9oAKDk2YTA3NmNlMzk0YWMwNzhkMDZhYWIwODg3NGI3ZjdlZWQ1YjFjZWU",
+    "commit": {
+        "author": {
+            "name": "Savvas Kyriacou",
+            "email": "savvasky@uk.ibm.com",
+            "date": "2023-08-02T13:59:57Z"
+        },
+        "committer": {
+            "name": "Savvas Kyriacou",
+            "email": "savvasky@uk.ibm.com",
+            "date": "2023-08-02T13:59:57Z"
+        },
+        "message": "corrected null pointer exceptions in getSortDirection\n\nCo-authored-by: Holly Hunt <Holly.Hunt@ibm.com>\nSigned-off-by: Savvas Kyriacou <savvasky@uk.ibm.com>",
+        "tree": {
+            "sha": "0a825d37ded876700ce03be153406a98424310f2",
+            "url": "https://api.github.com/repos/galasa-dev/framework/git/trees/0a825d37ded876700ce03be153406a98424310f2"
+        },
+        "url": "https://api.github.com/repos/galasa-dev/framework/git/commits/96a076ce394ac078d06aab08874b7f7eed5b1cee",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEETno0tqD2K6rR5qKJBmQzpj62q1IFAmTKYV0ACgkQBmQzpj62\nq1LXYBAAj4qQd70NmFTCjL7//Bba0ZgkRkDB2iV9W6/SEOwyHO1rZJ67QOCHw9Mi\nhhHfwfbUWhY46yL/rp8UaYJmU3px6BL+Dt80tv/VUEYtiGBEn1gRvAqIyrL3yAjI\ndayBWSLahemt8NA/TSEnRv7cot8h8KcNHttBQzey2K7Vg9UDtl5EoWmQu/koCaGJ\nRZ3uWkjZqXnzchp0TIDaAz34RSOVOzEwcHnGpo2ySKj7+fq6VO1SAySCDP0VNXcV\nv/skon20hhE9BicUFfvIhummzNjW+gHFltVwTKfgJIRM/rKcnxlhmq9a+e+VzmDf\nJaF8Qip9Um4J3rHB0yBr7nQBn5eGPrOrJe5GW5bjZFqM6qvkwnF1uVJsGXMWotBC\nyEaLj3cEXBlJwZR2gCIh5BjPRCoubxYEKlWBVMJUQ72jrxQDma+Nk+ghw709SwlQ\nxzy7Z2xUZWFk5mwGB5keO/UzxKo12Q2DPHfFmldwl4zJR8vVcWmErQpgEyRpMOom\n8xJcjuFmfkmyjgvsoACCLed1SjH02MytER5rxC4UsqwqyTg4Q2h+K41A0ynZgUgk\nL/nkdUKiDcjONhBG5I5SHZ5VhK8v/5poxekgy1+YAZWeFI/iWUQDntE6QnRPFVJ/\nPsWFVWgw4sOmKTXuLAx4W3umNPA+cMJTajb40UUGfMXAsWr67Ck=\n=J57M\n-----END PGP SIGNATURE-----",
+            "payload": "tree 0a825d37ded876700ce03be153406a98424310f2\nparent ae0129249894a0f40f326ddc0956e6e71b3d36ab\nauthor Savvas Kyriacou <savvasky@uk.ibm.com> 1690984797 +0100\ncommitter Savvas Kyriacou <savvasky@uk.ibm.com> 1690984797 +0100\n\ncorrected null pointer exceptions in getSortDirection\n\nCo-authored-by: Holly Hunt <Holly.Hunt@ibm.com>\nSigned-off-by: Savvas Kyriacou <savvasky@uk.ibm.com>\n"
+        }
+    },
+    "url": "https://api.github.com/repos/galasa-dev/framework/commits/96a076ce394ac078d06aab08874b7f7eed5b1cee",
+    "html_url": "https://github.com/galasa-dev/framework/commit/96a076ce394ac078d06aab08874b7f7eed5b1cee",
+    "comments_url": "https://api.github.com/repos/galasa-dev/framework/commits/96a076ce394ac078d06aab08874b7f7eed5b1cee/comments",
+    "author": {
+        "login": "KirbyKatcher",
+        "id": 115538070,
+        "node_id": "U_kgDOBuL4lg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115538070?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KirbyKatcher",
+        "html_url": "https://github.com/KirbyKatcher",
+        "followers_url": "https://api.github.com/users/KirbyKatcher/followers",
+        "following_url": "https://api.github.com/users/KirbyKatcher/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KirbyKatcher/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KirbyKatcher/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KirbyKatcher/subscriptions",
+        "organizations_url": "https://api.github.com/users/KirbyKatcher/orgs",
+        "repos_url": "https://api.github.com/users/KirbyKatcher/repos",
+        "events_url": "https://api.github.com/users/KirbyKatcher/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KirbyKatcher/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "KirbyKatcher",
+        "id": 115538070,
+        "node_id": "U_kgDOBuL4lg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115538070?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/KirbyKatcher",
+        "html_url": "https://github.com/KirbyKatcher",
+        "followers_url": "https://api.github.com/users/KirbyKatcher/followers",
+        "following_url": "https://api.github.com/users/KirbyKatcher/following{/other_user}",
+        "gists_url": "https://api.github.com/users/KirbyKatcher/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/KirbyKatcher/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/KirbyKatcher/subscriptions",
+        "organizations_url": "https://api.github.com/users/KirbyKatcher/orgs",
+        "repos_url": "https://api.github.com/users/KirbyKatcher/repos",
+        "events_url": "https://api.github.com/users/KirbyKatcher/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/KirbyKatcher/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ae0129249894a0f40f326ddc0956e6e71b3d36ab",
+            "url": "https://api.github.com/repos/galasa-dev/framework/commits/ae0129249894a0f40f326ddc0956e6e71b3d36ab",
+            "html_url": "https://github.com/galasa-dev/framework/commit/ae0129249894a0f40f326ddc0956e6e71b3d36ab"
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "additions": 11,
+        "deletions": 9
+    },
+    "files": [
+        {
+            "sha": "43b39457db22cf6f232c6230faafdbc293849fc8",
+            "filename": "galasa-parent/dev.galasa.framework.api.ras/src/main/java/dev/galasa/framework/api/ras/internal/common/RasQueryParameters.java",
+            "status": "modified",
+            "additions": 11,
+            "deletions": 9,
+            "changes": 20,
+            "blob_url": "https://github.com/galasa-dev/framework/blob/96a076ce394ac078d06aab08874b7f7eed5b1cee/galasa-parent%2Fdev.galasa.framework.api.ras%2Fsrc%2Fmain%2Fjava%2Fdev%2Fgalasa%2Fframework%2Fapi%2Fras%2Finternal%2Fcommon%2FRasQueryParameters.java",
+            "raw_url": "https://github.com/galasa-dev/framework/raw/96a076ce394ac078d06aab08874b7f7eed5b1cee/galasa-parent%2Fdev.galasa.framework.api.ras%2Fsrc%2Fmain%2Fjava%2Fdev%2Fgalasa%2Fframework%2Fapi%2Fras%2Finternal%2Fcommon%2FRasQueryParameters.java",
+            "contents_url": "https://api.github.com/repos/galasa-dev/framework/contents/galasa-parent%2Fdev.galasa.framework.api.ras%2Fsrc%2Fmain%2Fjava%2Fdev%2Fgalasa%2Fframework%2Fapi%2Fras%2Finternal%2Fcommon%2FRasQueryParameters.java?ref=96a076ce394ac078d06aab08874b7f7eed5b1cee",
+            "patch": "@@ -23,7 +23,7 @@ public class RasQueryParameters {\n \n \tpublic static final int DEFAULT_PAGE_NUMBER = 1;\n \tpublic static final int DEFAULT_NUMBER_RECORDS_PER_PAGE = 100;\n-    private static final Map<String, Boolean> sortDirectionMap = new HashMap<String,Boolean>(){{\n+    private final Map<String, Boolean> sortDirectionMap = new HashMap<String,Boolean>(){{\n         put(\"asc\",true);\n         put(\"ascending\",true);\n         put(\"desc\",false);\n@@ -143,13 +143,17 @@ public QueryParameters getGeneralQueryParameters() {\n     public boolean isAscending(String fieldToSortBy) throws InternalServletException{\n         String sortValue = generalQueryParams.getSingleString(\"sort\", null);\n \t\tboolean isAscending = false;\n-        try{\n-            if(sortIsValidFormat(sortValue)) {\n-                isAscending = getSortDirection(fieldToSortBy,sortValue);\n+        if (sortValue != null){\n+            try{\n+                if(sortIsValidFormat(sortValue)) {\n+                    isAscending = getSortDirection(fieldToSortBy,sortValue);\n+                }else{\n+                throw new Exception();\n+                }\n+            }catch (Exception e) {\n+                ServletError error = new ServletError(GAL5011_SORT_VALUE_NOT_RECOGNIZED,sortValue);\n+                throw new InternalServletException(error, HttpServletResponse.SC_BAD_REQUEST);\n             }\n-        }catch (Exception e) {\n-            ServletError error = new ServletError(GAL5011_SORT_VALUE_NOT_RECOGNIZED,sortValue);\n-            throw new InternalServletException(error, HttpServletResponse.SC_BAD_REQUEST);\n         }\n \t\treturn isAscending;\n \t}\n@@ -158,9 +162,7 @@ public boolean isAscending(String fieldToSortBy) throws InternalServletException\n     private boolean getSortDirection(String fieldToSortBy, String sortValue) {\n         boolean isAscending = false;\n         String[] split = sortValue.split(\":\");\n-        if(fieldToSortBy == split[0].toLowerCase()){\n             isAscending = sortDirectionMap.get(split[1].toLowerCase());\n-        }\n         return isAscending;\n     }\n "
+        }
+    ]
+}

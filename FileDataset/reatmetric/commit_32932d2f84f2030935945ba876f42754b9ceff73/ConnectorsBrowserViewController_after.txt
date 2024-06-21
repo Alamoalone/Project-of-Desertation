@@ -1,0 +1,11 @@
+    public void status(TransportStatus status) {
+        if(status != null) {
+            FxUtils.runLater(() -> {
+                ConnectorStatusWidgetController controller = connector2controller.get(status.getName());
+                if (controller != null) {
+                    controller.updateStatus(status);
+                }
+            });
+        }
+    }
+

@@ -1,0 +1,14 @@
+  private static List<RequestObject> mapRequestObject(final SpecFile specFile, final Operation operation, final GlobalObject globalObject) {
+    final List<RequestObject> requestObjects = new ArrayList<>();
+    if (Objects.isNull(operation.getOperationId())) {
+      throw new InvalidOpenAPIException();
+    }
+    final String operationIdWithCap = operation.getOperationId().substring(0, 1).toUpperCase() + operation.getOperationId().substring(1);
+    if (Objects.nonNull(operation.getRequestBody())) {
+      requestObjects.add(RequestObject.builder()
+                                      .required(operation.getRequestBody().getRequired())
+                                      .contentObjects(mapContentObject(specFile, operation.getRequestBody().getContent(), "InlineObject" + operationIdWithCap, globalObject))
+                                      .build());
+    }
+    return requestObjects;
+  }

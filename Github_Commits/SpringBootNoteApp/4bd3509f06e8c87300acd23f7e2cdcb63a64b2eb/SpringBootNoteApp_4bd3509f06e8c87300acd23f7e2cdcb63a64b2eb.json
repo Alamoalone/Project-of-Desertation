@@ -1,0 +1,124 @@
+{
+    "sha": "4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+    "node_id": "C_kwDODtntqtoAKDRiZDM1MDlmMDZlOGM4NzMwMGFjZDIzZjdlMmNkY2I2M2E2NGIyZWI",
+    "commit": {
+        "author": {
+            "name": "Sandeep Pareek",
+            "email": "psandeep01@gmail.com",
+            "date": "2023-04-23T09:32:00Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-04-23T09:32:00Z"
+        },
+        "message": "fixed null pointer exception for list of notes (#12)",
+        "tree": {
+            "sha": "523e3f6445a02c124e055f7da72575be55bad7b6",
+            "url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/git/trees/523e3f6445a02c124e055f7da72575be55bad7b6"
+        },
+        "url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/git/commits/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkRPsQCRBK7hj4Ov3rIwAAJf4IAC0XQzxqqxSG1cvlvc54+2D3\nqnAa7KArmnJUtmhXDGh45eWmMxFrAgPUdSFc4KxLbzkNsnIFOKd/Kmnqmd18jTRw\nkFIMZegRtPASLMWVDJhNcgKakYAsvSDsoEZIOeTAIgbQOER/ZISwHm30TLEqkrEf\n9XtRT3Gm8Rflv4AW6De4kqhsYAYeIEvP92vsR1QhgK05W/dM8xznnGU5k0m/Rrqb\nTNgdiOnd7qlFpGV6argJb697oeEHN6UK98e1fAY0Dhqx4jMwV2GnJ81zZ40OKp8y\nxSViPLTCJxbW6bf75Zcszwn76Bn27QFtUVzrdB/Y//KqNkoT9uXeFaHoqo6zFyI=\n=zoWd\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 523e3f6445a02c124e055f7da72575be55bad7b6\nparent d3ca2a6204295455c5398f9bca98ad9636a902b3\nauthor Sandeep Pareek <psandeep01@gmail.com> 1682242320 +0530\ncommitter GitHub <noreply@github.com> 1682242320 +0530\n\nfixed null pointer exception for list of notes (#12)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/commits/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+    "html_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/commit/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+    "comments_url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/commits/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/comments",
+    "author": {
+        "login": "sandeep-pareek",
+        "id": 6332549,
+        "node_id": "MDQ6VXNlcjYzMzI1NDk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6332549?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sandeep-pareek",
+        "html_url": "https://github.com/sandeep-pareek",
+        "followers_url": "https://api.github.com/users/sandeep-pareek/followers",
+        "following_url": "https://api.github.com/users/sandeep-pareek/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sandeep-pareek/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sandeep-pareek/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sandeep-pareek/subscriptions",
+        "organizations_url": "https://api.github.com/users/sandeep-pareek/orgs",
+        "repos_url": "https://api.github.com/users/sandeep-pareek/repos",
+        "events_url": "https://api.github.com/users/sandeep-pareek/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sandeep-pareek/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d3ca2a6204295455c5398f9bca98ad9636a902b3",
+            "url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/commits/d3ca2a6204295455c5398f9bca98ad9636a902b3",
+            "html_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/commit/d3ca2a6204295455c5398f9bca98ad9636a902b3"
+        }
+    ],
+    "stats": {
+        "total": 23,
+        "additions": 11,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "11421f17b72f2ad6fdf936bba42732cd9e4dac85",
+            "filename": "src/main/java/com/sandeep/SpringBootNoteApp/controller/NotesController.java",
+            "status": "renamed",
+            "additions": 8,
+            "deletions": 9,
+            "changes": 17,
+            "blob_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/blob/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fcontroller%2FNotesController.java",
+            "raw_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/raw/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fcontroller%2FNotesController.java",
+            "contents_url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/contents/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fcontroller%2FNotesController.java?ref=4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+            "patch": "@@ -10,11 +10,10 @@\n import org.springframework.web.bind.annotation.PostMapping;\n import org.springframework.web.bind.annotation.PutMapping;\n import org.springframework.web.bind.annotation.RequestBody;\n-import org.springframework.web.bind.annotation.ResponseBody;\n import org.springframework.web.bind.annotation.RestController;\n \n import com.sandeep.SpringBootNoteApp.dto.NoteDto;\n-import com.sandeep.SpringBootNoteApp.service.NoteService;\n+import com.sandeep.SpringBootNoteApp.service.NotesService;\n \n //import io.swagger.annotations.ApiOperation;\n //import io.swagger.annotations.Authorization;\n@@ -28,43 +27,43 @@\n \n @RestController\n @CrossOrigin(origins = \"http://localhost:3000\")\n-public class NoteController {\n+public class NotesController {\n \n \t@Autowired\n-\tprivate NoteService noteService;\n+\tprivate NotesService notesService;\n \n \t@GetMapping(\"/note/{noteId}\")\n //\t@ApiOperation(value = \"\", authorizations = { @Authorization(\"jwtToken\") })\n \tpublic NoteDto getNote(@PathVariable(\"noteId\") int noteId) {\n-\t\tNoteDto note = noteService.getNote(noteId);\n+\t\tNoteDto note = notesService.getNote(noteId);\n \t\treturn note;\n \t}\n \n \t@PostMapping(\"/note\")\n //\t@ApiOperation(value = \"\", authorizations = { @Authorization(\"jwtToken\") })\n \tpublic String saveNote(@RequestBody NoteDto note) {\n \t\tSystem.out.println(\"note: \" + note.toString());\n-\t\tnoteService.saveNote(note);\n+\t\tnotesService.saveNote(note);\n \t\treturn \"SUCCESS\";\n \t}\n \n \t@PutMapping(\"/note\")\n //\t@ApiOperation(value = \"\", authorizations = { @Authorization(\"jwtToken\") })\n \tpublic NoteDto updateNote(@RequestBody NoteDto note) {\n-\t\treturn noteService.updateNote(note);\n+\t\treturn notesService.updateNote(note);\n \t}\n \n \t@DeleteMapping(\"/admin/note/{noteId}\")\n //\t@ApiOperation(value = \"\", authorizations = { @Authorization(\"jwtToken\") })\n \tpublic String deleteNote(@PathVariable(\"noteId\") int noteId) {\n-\t\tnoteService.deleteNote(noteId);\n+\t\tnotesService.deleteNote(noteId);\n \t\treturn \"SUCCESS\";\n \t}\n \n \t@GetMapping(\"/note/list\")\n //\t@ApiOperation(value = \"\", authorizations = { @Authorization(\"jwtToken\") })\n \tpublic List<NoteDto> getNotes() {\n \t\tSystem.out.println(\"Getting all notes\");\n-\t\treturn noteService.getNotes();\n+\t\treturn notesService.getNotes();\n \t}\n }",
+            "previous_filename": "src/main/java/com/sandeep/SpringBootNoteApp/controller/NoteController.java"
+        },
+        {
+            "sha": "b9f28c01504ca92477f3240df5e0a0a537269709",
+            "filename": "src/main/java/com/sandeep/SpringBootNoteApp/service/NoteServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/blob/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fservice%2FNoteServiceImpl.java",
+            "raw_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/raw/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fservice%2FNoteServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/contents/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fservice%2FNoteServiceImpl.java?ref=4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+            "patch": "@@ -21,7 +21,7 @@\n  */\n \n @Service\n-public class NoteServiceImpl implements NoteService {\n+public class NoteServiceImpl implements NotesService {\n \n \t@Autowired\n \tprivate NoteDao noteDao;\n@@ -80,7 +80,7 @@ public NoteDto updateNote(NoteDto note) {\n \tpublic List<NoteDto> getNotes() {\n \t\treturn noteDao\n \t\t\t\t.getNotes()\n-\t\t\t\t.parallelStream()\n+\t\t\t\t.stream()\n \t\t\t\t.map(n -> modelMapper.map(n, NoteDto.class))\n \t\t\t\t.collect(Collectors.toList());\n \t}"
+        },
+        {
+            "sha": "3af112ddb9f4186f2794087b7ee189c75ff13e00",
+            "filename": "src/main/java/com/sandeep/SpringBootNoteApp/service/NotesService.java",
+            "status": "renamed",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/blob/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fservice%2FNotesService.java",
+            "raw_url": "https://github.com/sandeep-pareek/SpringBootNoteApp/raw/4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fservice%2FNotesService.java",
+            "contents_url": "https://api.github.com/repos/sandeep-pareek/SpringBootNoteApp/contents/src%2Fmain%2Fjava%2Fcom%2Fsandeep%2FSpringBootNoteApp%2Fservice%2FNotesService.java?ref=4bd3509f06e8c87300acd23f7e2cdcb63a64b2eb",
+            "patch": "@@ -9,7 +9,7 @@\n  * @since 22 March 2020\n  */\n \n-public interface NoteService {\n+public interface NotesService {\n \n \tpublic NoteDto saveNote(NoteDto note);\n ",
+            "previous_filename": "src/main/java/com/sandeep/SpringBootNoteApp/service/NoteService.java"
+        }
+    ]
+}

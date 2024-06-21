@@ -1,0 +1,98 @@
+{
+    "sha": "c7b49e7720ef78decbc62472a6e38cd390abf1f9",
+    "node_id": "C_kwDOBDXHUtoAKGM3YjQ5ZTc3MjBlZjc4ZGVjYmM2MjQ3MmE2ZTM4Y2QzOTBhYmYxZjk",
+    "commit": {
+        "author": {
+            "name": "Diogo Correia",
+            "email": "me@diogotc.com",
+            "date": "2023-11-01T16:45:06Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-11-01T16:45:06Z"
+        },
+        "message": "fix(core): null pointer exception when refreshing all players (#341)\n\nFixes #326",
+        "tree": {
+            "sha": "7757757066dfcd099a22f43068ffca14896c0f6f",
+            "url": "https://api.github.com/repos/tritonmc/Triton/git/trees/7757757066dfcd099a22f43068ffca14896c0f6f"
+        },
+        "url": "https://api.github.com/repos/tritonmc/Triton/git/commits/c7b49e7720ef78decbc62472a6e38cd390abf1f9",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlQoCSCRBK7hj4Ov3rIwAAwLMIAAv1toCzTlxeZsrjlKqFZvUy\nxJqKTgQoKe4BeRkzWxQydStsfdJxUVa8aivXwX5iBp/QnVNTyFfU4WmSgcp0AGRV\nAgO2dRqnxDUwTl+tx1oCYvFlN53FP3XJgvwHq5NHwQJrAV0ts/claEYxG0TPMkgW\nasIZZ4sblPKkz+SioB5NbWgezVw8x6pWNvO/MxkwQzjrTvy1lt9aL1F0ZuggcUqk\nOzvW/5XusLDEVY9MdXjAjfhHz2SKbpp3aIwk/rmgtGG0TpU+AA0p5jlLH08rT5Id\nTsq39q2IcehzQiSIHPPSEg0jN+IEo5z1qfJd7nWEieelB1Y3Y604gdbtlrADFmk=\n=fkBI\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 7757757066dfcd099a22f43068ffca14896c0f6f\nparent 4fecf2d92dd4e6e5bce728b179bb75af3d239cd7\nauthor Diogo Correia <me@diogotc.com> 1698857106 +0100\ncommitter GitHub <noreply@github.com> 1698857106 +0000\n\nfix(core): null pointer exception when refreshing all players (#341)\n\nFixes #326"
+        }
+    },
+    "url": "https://api.github.com/repos/tritonmc/Triton/commits/c7b49e7720ef78decbc62472a6e38cd390abf1f9",
+    "html_url": "https://github.com/tritonmc/Triton/commit/c7b49e7720ef78decbc62472a6e38cd390abf1f9",
+    "comments_url": "https://api.github.com/repos/tritonmc/Triton/commits/c7b49e7720ef78decbc62472a6e38cd390abf1f9/comments",
+    "author": {
+        "login": "diogotcorreia",
+        "id": 7467891,
+        "node_id": "MDQ6VXNlcjc0Njc4OTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7467891?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/diogotcorreia",
+        "html_url": "https://github.com/diogotcorreia",
+        "followers_url": "https://api.github.com/users/diogotcorreia/followers",
+        "following_url": "https://api.github.com/users/diogotcorreia/following{/other_user}",
+        "gists_url": "https://api.github.com/users/diogotcorreia/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/diogotcorreia/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/diogotcorreia/subscriptions",
+        "organizations_url": "https://api.github.com/users/diogotcorreia/orgs",
+        "repos_url": "https://api.github.com/users/diogotcorreia/repos",
+        "events_url": "https://api.github.com/users/diogotcorreia/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/diogotcorreia/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4fecf2d92dd4e6e5bce728b179bb75af3d239cd7",
+            "url": "https://api.github.com/repos/tritonmc/Triton/commits/4fecf2d92dd4e6e5bce728b179bb75af3d239cd7",
+            "html_url": "https://github.com/tritonmc/Triton/commit/4fecf2d92dd4e6e5bce728b179bb75af3d239cd7"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 4,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "97378368490e58d286d61a7e1db9367aa9eeef36",
+            "filename": "core/src/main/java/com/rexcantor64/triton/Triton.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/tritonmc/Triton/blob/c7b49e7720ef78decbc62472a6e38cd390abf1f9/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Frexcantor64%2Ftriton%2FTriton.java",
+            "raw_url": "https://github.com/tritonmc/Triton/raw/c7b49e7720ef78decbc62472a6e38cd390abf1f9/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Frexcantor64%2Ftriton%2FTriton.java",
+            "contents_url": "https://api.github.com/repos/tritonmc/Triton/contents/core%2Fsrc%2Fmain%2Fjava%2Fcom%2Frexcantor64%2Ftriton%2FTriton.java?ref=c7b49e7720ef78decbc62472a6e38cd390abf1f9",
+            "patch": "@@ -25,6 +25,7 @@\n import java.io.FileInputStream;\n import java.io.InputStreamReader;\n import java.nio.charset.StandardCharsets;\n+import java.util.Objects;\n import java.util.UUID;\n \n @Getter\n@@ -109,8 +110,9 @@ public void reload() {\n     }\n \n     public void refreshPlayers() {\n-        for (LanguagePlayer lp : playerManager.getAll())\n-            lp.refreshAll();\n+        playerManager.getAll().stream()\n+                .filter(Objects::nonNull)\n+                .forEach(LanguagePlayer::refreshAll);\n     }\n \n     public Configuration loadYAML(String fileName, String internalFileName) {"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+    public Monster saveMonster(MonsterRequestDto monsterRequestDto) {
+        Monster monster = modelMapper.map(monsterRequestDto, Monster.class);
+        try {
+            monster.setImage(monsterRequestDto.getImage().getBytes());
+        } catch (IOException | NullPointerException e) {
+            monster.setImage(null);
+        }
+
+        return monsterRepository.save(monster);
+    }
+

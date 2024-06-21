@@ -1,0 +1,40 @@
+  protected void processProduct(Product product, StatusMonitorIF monitor, CloseableFile unzippedParentFolder) throws InterruptedException
+  {
+    if (this.progressTask != null && truthy(this.progressTask.getProcessDem()))
+    {
+      this.runProcessor(unzippedParentFolder, "odm_dem/dsm.tif", new ManagedDocument(buildS3Path(ImageryComponent.DEM, this.filePrefix, "dsm" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor));
+      this.runProcessor(unzippedParentFolder, "odm_dem/dtm.tif", new ManagedDocument(buildS3Path(ImageryComponent.DEM, this.filePrefix, "dtm" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor));
+
+      this.runProcessor(unzippedParentFolder, "odm_dem/dsm.tif", new HillshadeProcessor(buildS3Path(DEM_GDAL, this.filePrefix, "dsm" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor));
+
+      // Add the report to the dem folder
+      this.runProcessor(unzippedParentFolder, "odm_report/report.pdf", new ManagedDocument(buildS3Path(ImageryComponent.DEM, this.filePrefix, "report.pdf"), this.product, this.collection, monitor));
+    }
+
+    if (this.progressTask != null && truthy(this.progressTask.getProcessOrtho()))
+    {
+      this.runProcessor(unzippedParentFolder, "odm_orthophoto/odm_orthophoto.png", new ManagedDocument(buildS3Path(ImageryComponent.ORTHO, this.filePrefix, "odm_orthophoto.png"), this.product, this.collection, monitor));
+      this.runProcessor(unzippedParentFolder, "odm_orthophoto/odm_orthophoto.tif", new ManagedDocument(buildS3Path(ImageryComponent.ORTHO, this.filePrefix, "odm_orthophoto" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor, new DocumentInfo().setOrthoCorrectionModel("unknown")));
+
+      // Add the report to the ortho folder
+      this.runProcessor(unzippedParentFolder, "odm_report/report.pdf", new ManagedDocument(buildS3Path(ImageryComponent.ORTHO, this.filePrefix, "report.pdf"), this.product, this.collection, monitor));
+    }
+
+    if (this.progressTask != null && truthy(this.progressTask.getProcessPtcloud()))
+    {
+      EpsgProcessor processor = new EpsgProcessor();
+
+      this.runProcessor(unzippedParentFolder, "odm_georeferencing/odm_georeferencing_model_geo.txt", processor);
+      this.runProcessor(unzippedParentFolder, "odm_georeferencing/odm_georeferenced_model.laz", new ManagedDocument(buildS3Path(ImageryComponent.PTCLOUD, this.filePrefix, "odm_georeferenced_model.laz"), this.product, this.collection, monitor, new DocumentInfo().setProjectionName(processor.getLine())));
+
+      this.runProcessor(unzippedParentFolder, "entwine_pointcloud/ept.json", new S3FileUpload(buildS3Path(POTREE, this.filePrefix, "ept.json"), this.product, this.collection, monitor));
+      this.runProcessor(unzippedParentFolder, "entwine_pointcloud/ept-build.json", new S3FileUpload(buildS3Path(POTREE, this.filePrefix, "ept-build.json"), this.product, this.collection, monitor));
+      this.runProcessor(unzippedParentFolder, "entwine_pointcloud/ept-sources", new S3FileUpload(buildS3Path(POTREE, this.filePrefix, "ept-sources"), this.product, this.collection, monitor));
+      this.runProcessor(unzippedParentFolder, "entwine_pointcloud/ept-hierarchy", new S3FileUpload(buildS3Path(POTREE, this.filePrefix, "ept-hierarchy"), this.product, this.collection, monitor));
+      this.runProcessor(unzippedParentFolder, "entwine_pointcloud/ept-data", new S3FileUpload(buildS3Path(POTREE, this.filePrefix, "ept-data"), this.product, this.collection, monitor));
+
+      // Add the report to the pt clould folder
+      this.runProcessor(unzippedParentFolder, "odm_report/report.pdf", new ManagedDocument(buildS3Path(ImageryComponent.PTCLOUD, this.filePrefix, "report.pdf"), this.product, this.collection, monitor));
+    }
+
+  }

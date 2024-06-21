@@ -1,0 +1,110 @@
+{
+    "sha": "62f7dcd265a01d982a2896e1d65215164a0a12cd",
+    "node_id": "C_kwDOFfG3ntoAKDYyZjdkY2QyNjVhMDFkOTgyYTI4OTZlMWQ2NTIxNTE2NGEwYTEyY2Q",
+    "commit": {
+        "author": {
+            "name": "knutaa",
+            "email": "knut.johannessen@online.no",
+            "date": "2023-03-14T23:28:21Z"
+        },
+        "committer": {
+            "name": "knutaa",
+            "email": "knut.johannessen@online.no",
+            "date": "2023-03-14T23:28:21Z"
+        },
+        "message": "Bug fixes - avoid null pointer exceptions",
+        "tree": {
+            "sha": "3ef0d4ee397ebb3f15744daeeee34ba50702a88a",
+            "url": "https://api.github.com/repos/knutaa/oastooling/git/trees/3ef0d4ee397ebb3f15744daeeee34ba50702a88a"
+        },
+        "url": "https://api.github.com/repos/knutaa/oastooling/git/commits/62f7dcd265a01d982a2896e1d65215164a0a12cd",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/knutaa/oastooling/commits/62f7dcd265a01d982a2896e1d65215164a0a12cd",
+    "html_url": "https://github.com/knutaa/oastooling/commit/62f7dcd265a01d982a2896e1d65215164a0a12cd",
+    "comments_url": "https://api.github.com/repos/knutaa/oastooling/commits/62f7dcd265a01d982a2896e1d65215164a0a12cd/comments",
+    "author": {
+        "login": "knutaa",
+        "id": 22618583,
+        "node_id": "MDQ6VXNlcjIyNjE4NTgz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22618583?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/knutaa",
+        "html_url": "https://github.com/knutaa",
+        "followers_url": "https://api.github.com/users/knutaa/followers",
+        "following_url": "https://api.github.com/users/knutaa/following{/other_user}",
+        "gists_url": "https://api.github.com/users/knutaa/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/knutaa/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/knutaa/subscriptions",
+        "organizations_url": "https://api.github.com/users/knutaa/orgs",
+        "repos_url": "https://api.github.com/users/knutaa/repos",
+        "events_url": "https://api.github.com/users/knutaa/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/knutaa/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "knutaa",
+        "id": 22618583,
+        "node_id": "MDQ6VXNlcjIyNjE4NTgz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22618583?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/knutaa",
+        "html_url": "https://github.com/knutaa",
+        "followers_url": "https://api.github.com/users/knutaa/followers",
+        "following_url": "https://api.github.com/users/knutaa/following{/other_user}",
+        "gists_url": "https://api.github.com/users/knutaa/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/knutaa/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/knutaa/subscriptions",
+        "organizations_url": "https://api.github.com/users/knutaa/orgs",
+        "repos_url": "https://api.github.com/users/knutaa/repos",
+        "events_url": "https://api.github.com/users/knutaa/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/knutaa/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "32bd95c4b80883bb70ce55567206ba8846ba6191",
+            "url": "https://api.github.com/repos/knutaa/oastooling/commits/32bd95c4b80883bb70ce55567206ba8846ba6191",
+            "html_url": "https://github.com/knutaa/oastooling/commit/32bd95c4b80883bb70ce55567206ba8846ba6191"
+        }
+    ],
+    "stats": {
+        "total": 17,
+        "additions": 16,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "6a82766037f3c7cb018774302315c9ad5271d9b7",
+            "filename": "src/main/java/no/paneon/api/tooling/userguide/OperationsFragment.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/knutaa/oastooling/blob/62f7dcd265a01d982a2896e1d65215164a0a12cd/src%2Fmain%2Fjava%2Fno%2Fpaneon%2Fapi%2Ftooling%2Fuserguide%2FOperationsFragment.java",
+            "raw_url": "https://github.com/knutaa/oastooling/raw/62f7dcd265a01d982a2896e1d65215164a0a12cd/src%2Fmain%2Fjava%2Fno%2Fpaneon%2Fapi%2Ftooling%2Fuserguide%2FOperationsFragment.java",
+            "contents_url": "https://api.github.com/repos/knutaa/oastooling/contents/src%2Fmain%2Fjava%2Fno%2Fpaneon%2Fapi%2Ftooling%2Fuserguide%2FOperationsFragment.java?ref=62f7dcd265a01d982a2896e1d65215164a0a12cd",
+            "patch": "@@ -676,6 +676,11 @@ private String generateRequestPayload(String op, String path, JSONObject payload\n \tprivate String readPayload(String op, String path, JSONObject config, JSONObject sampleConfig, String requestResponse) {\n \t\tStringBuilder res = new StringBuilder();\n \t\t\t\t\n+\t\tif(sampleConfig==null) {\n+\t\t\tOut.printOnce(\"... missing payload examples\");\n+\t\t\treturn res.toString();\n+\t\t}\n+\t\t\n \t\tif(sampleConfig.optJSONObject(requestResponse)!=null) {\n \t\t\tString content = Samples.readPayload(args.workingDirectory, sampleConfig, requestResponse);\n \t\t\tres.append(content);"
+        },
+        {
+            "sha": "fab2eb0d12708965cf8f5c9a2c342e932b12a0fb",
+            "filename": "src/main/java/no/paneon/api/tooling/userguide/UserGuideGenerator.java",
+            "status": "modified",
+            "additions": 11,
+            "deletions": 1,
+            "changes": 12,
+            "blob_url": "https://github.com/knutaa/oastooling/blob/62f7dcd265a01d982a2896e1d65215164a0a12cd/src%2Fmain%2Fjava%2Fno%2Fpaneon%2Fapi%2Ftooling%2Fuserguide%2FUserGuideGenerator.java",
+            "raw_url": "https://github.com/knutaa/oastooling/raw/62f7dcd265a01d982a2896e1d65215164a0a12cd/src%2Fmain%2Fjava%2Fno%2Fpaneon%2Fapi%2Ftooling%2Fuserguide%2FUserGuideGenerator.java",
+            "contents_url": "https://api.github.com/repos/knutaa/oastooling/contents/src%2Fmain%2Fjava%2Fno%2Fpaneon%2Fapi%2Ftooling%2Fuserguide%2FUserGuideGenerator.java?ref=62f7dcd265a01d982a2896e1d65215164a0a12cd",
+            "patch": "@@ -47,7 +47,8 @@ public class UserGuideGenerator {\n \tstatic final Logger LOG = LogManager.getLogger(UserGuideGenerator.class);\n \t\t\n \tprivate static final String EXCLUDED_RESOURCES = \"userguide::excludedResources\";\n-\t\n+\tprivate static final String RESOURCE_LAYOUT = \"userguide::resourceLayout\";\n+\n \tArgs.UserGuide args;\n \t\n \tAPIGraph apiGraph;\n@@ -330,6 +331,15 @@ public List<String> getResources() {\n \t\t\t\t\t\t.sorted(Comparator.comparingInt(String::length))\n \t\t\t\t\t\t.collect(toList());\n \t\t\n+\t\tList<String> configSequence = Config.get(RESOURCE_LAYOUT);\n+\t\t\n+\t\tif(!configSequence.isEmpty()) {\n+\t\t\tconfigSequence = configSequence.stream().filter(configSequence::contains).collect(toList());\n+\t\t\tresources.removeAll(configSequence);\n+\t\t\tconfigSequence.addAll(resources);\n+\t\t\tresources=configSequence;\n+\t\t}\n+\t\t\n \t\treturn resources;\n \t}\n "
+        }
+    ]
+}

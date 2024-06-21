@@ -1,0 +1,122 @@
+{
+    "sha": "540e6cdc13f110d507d400d65269c0a830e84d9a",
+    "node_id": "C_kwDOLJp_ENoAKDU0MGU2Y2RjMTNmMTEwZDUwN2Q0MDBkNjUyNjljMGE4MzBlODRkOWE",
+    "commit": {
+        "author": {
+            "name": "JannisA",
+            "email": "jannis.austgen@gmail.com",
+            "date": "2024-03-24T21:51:51Z"
+        },
+        "committer": {
+            "name": "JannisA",
+            "email": "jannis.austgen@gmail.com",
+            "date": "2024-03-24T21:51:51Z"
+        },
+        "message": "FEAT-added type saving to db\nmodified validEntryChecker to avoid null pointer exceptions",
+        "tree": {
+            "sha": "1291d5c990aa477446a56e155019cf2cce807014",
+            "url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/git/trees/1291d5c990aa477446a56e155019cf2cce807014"
+        },
+        "url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/git/commits/540e6cdc13f110d507d400d65269c0a830e84d9a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/commits/540e6cdc13f110d507d400d65269c0a830e84d9a",
+    "html_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/commit/540e6cdc13f110d507d400d65269c0a830e84d9a",
+    "comments_url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/commits/540e6cdc13f110d507d400d65269c0a830e84d9a/comments",
+    "author": {
+        "login": "Heedix",
+        "id": 132510991,
+        "node_id": "U_kgDOB-X1Dw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132510991?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Heedix",
+        "html_url": "https://github.com/Heedix",
+        "followers_url": "https://api.github.com/users/Heedix/followers",
+        "following_url": "https://api.github.com/users/Heedix/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Heedix/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Heedix/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Heedix/subscriptions",
+        "organizations_url": "https://api.github.com/users/Heedix/orgs",
+        "repos_url": "https://api.github.com/users/Heedix/repos",
+        "events_url": "https://api.github.com/users/Heedix/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Heedix/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Heedix",
+        "id": 132510991,
+        "node_id": "U_kgDOB-X1Dw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132510991?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Heedix",
+        "html_url": "https://github.com/Heedix",
+        "followers_url": "https://api.github.com/users/Heedix/followers",
+        "following_url": "https://api.github.com/users/Heedix/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Heedix/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Heedix/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Heedix/subscriptions",
+        "organizations_url": "https://api.github.com/users/Heedix/orgs",
+        "repos_url": "https://api.github.com/users/Heedix/repos",
+        "events_url": "https://api.github.com/users/Heedix/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Heedix/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9e587bea54ab67d88e7265a43b1f9c42fff4ab08",
+            "url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/commits/9e587bea54ab67d88e7265a43b1f9c42fff4ab08",
+            "html_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/commit/9e587bea54ab67d88e7265a43b1f9c42fff4ab08"
+        }
+    ],
+    "stats": {
+        "total": 172,
+        "additions": 104,
+        "deletions": 68
+    },
+    "files": [
+        {
+            "sha": "099d1e5f8988bd951aab5b35d1e259af8f818dd9",
+            "filename": "src/main/java/com/filmverleih/filmverleih/EditMovieController.java",
+            "status": "modified",
+            "additions": 88,
+            "deletions": 55,
+            "changes": 143,
+            "blob_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/blob/540e6cdc13f110d507d400d65269c0a830e84d9a/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FEditMovieController.java",
+            "raw_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/raw/540e6cdc13f110d507d400d65269c0a830e84d9a/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FEditMovieController.java",
+            "contents_url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/contents/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FEditMovieController.java?ref=540e6cdc13f110d507d400d65269c0a830e84d9a",
+            "patch": "@@ -200,6 +200,7 @@ public void setConnector(NWayControllerConnector<NavbarController,\n     private String changedActors;\n     private String changedLinkToCover;\n     private String changedComment;\n+    private String changedType;\n \n \n     public void initialize(Movies movie) {\n@@ -252,23 +253,23 @@ private void insertMovieData() {\n \n         if(currentMovieGenres != null) {\n             txf_movieEditGenre1.setText(genreArray[0]);\n-            if(genreArray.length > 1) {\n-                txf_movieEditGenre2.setText(genreArray[1]);\n-                if (genreArray.length > 2) {\n-                    txf_movieEditGenre3.setText(genreArray[2]);\n-                }\n-            }\n-        }\n+        } //txf_movieEditGenre1.setText();\n+        if(genreArray.length > 1) {\n+            txf_movieEditGenre2.setText(genreArray[1]);\n+        } //else {txf_movieEditGenre2.setText(null);}\n+        if (genreArray.length > 2) {\n+            txf_movieEditGenre3.setText(genreArray[2]);\n+        } //else {txf_movieEditGenre3.setText(null);}\n \n         if(currentMovieDirectors != null) {\n             txf_movieEditDirector1.setText(directorsArray[0]);\n-            if(directorsArray.length > 1) {\n-                txf_movieEditDirector2.setText(directorsArray[1]);\n-                if (directorsArray.length > 2) {\n-                    txf_movieEditDirector3.setText(directorsArray[2]);\n-                }\n-            }\n         }\n+        if(directorsArray.length > 1) {\n+            txf_movieEditDirector2.setText(directorsArray[1]);\n+        } //else {txf_movieEditDirector2.setText(null);}\n+        if (directorsArray.length > 2) {\n+            txf_movieEditDirector3.setText(directorsArray[2]);\n+        } //else {txf_movieEditDirector3.setText(null);}\n \n         txf_movieEditCount.setText(valueOf(currentMovieCount));\n         txf_movieEditStudio.setText(currentMovieStudio);\n@@ -277,7 +278,7 @@ private void insertMovieData() {\n         txa_movieEditComment.setText(currentMovieComment);\n         txa_movieEditComment.setWrapText(true);\n         if(currentMovieType.equals(\"DVD\")) {cbx_movieEditSelDVD.setSelected(true);}\n-        if(currentMovieType.equals(\"Blu-Ray\")) {cbx_movieEditSelBluRay.setSelected(true);}\n+        if(currentMovieType.equals(\"BR\")) {cbx_movieEditSelBluRay.setSelected(true);}\n     }\n \n     private void addOnlyNumbersConstraint() {\n@@ -393,7 +394,7 @@ private void checkIfCheckBoxesChanged() {\n         if(currentMovieType.equals(\"DVD\") && !cbx_movieEditSelDVD.isSelected()) {\n             cbx_movieEditSelDVD.setStyle(\"-fx-text-fill: #FF4040\");\n             cbx_movieEditSelBluRay.setStyle(\"-fx-text-fill: #FF4040\");\n-        } else if(currentMovieType.equals(\"Blu-Ray\") && !cbx_movieEditSelBluRay.isSelected()) {\n+        } else if(currentMovieType.equals(\"BR\") && !cbx_movieEditSelBluRay.isSelected()) {\n             cbx_movieEditSelBluRay.setStyle(\"-fx-fill: #FF4040\");\n             cbx_movieEditSelDVD.setStyle(\"-fx-text-fill: #FF4040\");\n         } else {\n@@ -416,7 +417,8 @@ public void confirmMovieEdit() {\n                     changedStudio,\n                     changedActors,\n                     changedLinkToCover,\n-                    changedComment);\n+                    changedComment,\n+                    changedType);\n             if (dbUpdateSuccessful) {\n                 lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_SUCCESSFUL);\n                 lbl_movieEditSaveFeedback.setStyle(\"-fx-text-fill: #518E21\");\n@@ -436,55 +438,83 @@ public void confirmMovieEdit() {\n     private boolean validEntryChecker() {\n         boolean entriesAreValid = true;\n         saveInfosAsNeededDataTypes();\n-        if(changedName.isEmpty()) {\n-            lbl_movieEditNameTitle.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditNameTitle.setStyle(\"-fx-text-fill: #949494\");}\n+        try {\n+            if (changedName.isEmpty()) {\n+                lbl_movieEditNameTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+                entriesAreValid = false;\n+            } else {\n+                lbl_movieEditNameTitle.setStyle(\"-fx-text-fill: #949494\");\n+            }\n \n-        if(changedYear < 1920 || changedYear > 2024) {\n-            lbl_movieEditYearTitle.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditYearTitle.setStyle(\"-fx-text-fill: #949494\");}\n+            if (changedYear < 1920 || changedYear > 2024) {\n+                lbl_movieEditYearTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+                entriesAreValid = false;\n+            } else {\n+                lbl_movieEditYearTitle.setStyle(\"-fx-text-fill: #949494\");\n+            }\n \n-        if(changedFsk != 0 && changedFsk != 6 && changedFsk != 12 && changedFsk != 16 && changedFsk != 18) {\n-            lbl_movieEditFskTitle.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditFskTitle.setStyle(\"-fx-text-fill: #949494\");}\n+            if (changedFsk != 0 && changedFsk != 6 && changedFsk != 12 && changedFsk != 16 && changedFsk != 18) {\n+                lbl_movieEditFskTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+                entriesAreValid = false;\n+            } else {\n+                lbl_movieEditFskTitle.setStyle(\"-fx-text-fill: #949494\");\n+            }\n \n-        if(!txf_movieEditRating.getText().matches(\"^\\\\d\\\\.\\\\d$\")) {//changedRating.doubleValue() < MIN_RATING || changedRating.doubleValue() >= MAX_RATING\n-            lbl_movieEditRatingTitle.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditRatingTitle.setStyle(\"-fx-text-fill: #949494\");}\n+            if (!txf_movieEditRating.getText().matches(\"^\\\\d\\\\.\\\\d$\")) {//changedRating.doubleValue() < MIN_RATING || changedRating.doubleValue() >= MAX_RATING\n+                lbl_movieEditRatingTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+                entriesAreValid = false;\n+            } else {\n+                lbl_movieEditRatingTitle.setStyle(\"-fx-text-fill: #949494\");\n+            }\n \n-        if(txf_movieEditGenre1.getText().isEmpty() && (!txf_movieEditGenre2.getText().isEmpty() || !txf_movieEditGenre3.getText().isEmpty())){\n-            lbl_movieEditGenre1Title.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditGenre1Title.setStyle(\"-fx-text-fill: #949494\");}\n+            if (changedGenres != null) {\n+                if (txf_movieEditGenre1.getText().isEmpty() && (!txf_movieEditGenre2.getText().isEmpty() || !txf_movieEditGenre3.getText().isEmpty())) {\n+                    lbl_movieEditGenre1Title.setStyle(\"-fx-text-fill: #FF4040\");\n+                    entriesAreValid = false;\n+                } else {\n+                    lbl_movieEditGenre1Title.setStyle(\"-fx-text-fill: #949494\");\n+                }\n \n-        if(txf_movieEditGenre2.getText().isEmpty() && !txf_movieEditGenre3.getText().isEmpty()) {\n-            lbl_movieEditGenre2Title.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditGenre2Title.setStyle(\"-fx-text-fill: #949494\");}\n+                if (txf_movieEditGenre2.getText().isEmpty() && !txf_movieEditGenre3.getText().isEmpty()) {\n+                    lbl_movieEditGenre2Title.setStyle(\"-fx-text-fill: #FF4040\");\n+                    entriesAreValid = false;\n+                } else {\n+                    lbl_movieEditGenre2Title.setStyle(\"-fx-text-fill: #949494\");\n+                }\n+            }\n \n-        if(!changedActors.matches(\"^(\\\\w+\\\\.?\\\\w*( \\\\w+\\\\.?\\\\w*)*(, \\\\w+\\\\.?\\\\w*( \\\\w+\\\\.?\\\\w*)*)*)+$\")) {//^(\\w+( \\w+)*(, \\w+( \\w+)*)*)+$\n-            lbl_movieEditActorsTitle.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditActorsTitle.setStyle(\"-fx-text-fill: #949494\");}\n+            if (!changedActors.matches(\"^(\\\\w+\\\\.?\\\\w*( \\\\w+\\\\.?\\\\w*)*(, \\\\w+\\\\.?\\\\w*( \\\\w+\\\\.?\\\\w*)*)*)+$\")) {//^(\\w+( \\w+)*(, \\w+( \\w+)*)*)+$\n+                lbl_movieEditActorsTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+                entriesAreValid = false;\n+            } else {\n+                lbl_movieEditActorsTitle.setStyle(\"-fx-text-fill: #949494\");\n+            }\n \n-        if(txf_movieEditDirector1.getText().isEmpty() && (!txf_movieEditDirector2.getText().isEmpty() || !txf_movieEditDirector3.getText().isEmpty())){\n-            lbl_movieEditDirector1Title.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditDirector1Title.setStyle(\"-fx-text-fill: #949494\");}\n+            if (changedDirectors != null) {\n+                if (txf_movieEditDirector1.getText().isEmpty() && (!txf_movieEditDirector2.getText().isEmpty() || !txf_movieEditDirector3.getText().isEmpty())) {\n+                    lbl_movieEditDirector1Title.setStyle(\"-fx-text-fill: #FF4040\");\n+                    entriesAreValid = false;\n+                } else {\n+                    lbl_movieEditDirector1Title.setStyle(\"-fx-text-fill: #949494\");\n+                }\n \n-        if(txf_movieEditDirector2.getText().isEmpty() && !txf_movieEditDirector3.getText().isEmpty()){\n-            lbl_movieEditDirector2Title.setStyle(\"-fx-text-fill: #FF4040\");\n-            entriesAreValid = false;\n-        } else {lbl_movieEditDirector2Title.setStyle(\"-fx-text-fill: #949494\");}\n+                if (txf_movieEditDirector2.getText().isEmpty() && !txf_movieEditDirector3.getText().isEmpty()) {\n+                    lbl_movieEditDirector2Title.setStyle(\"-fx-text-fill: #FF4040\");\n+                    entriesAreValid = false;\n+                } else {\n+                    lbl_movieEditDirector2Title.setStyle(\"-fx-text-fill: #949494\");\n+                }\n+            }\n \n-        if(!changedLinkToCover.isEmpty() && !changedLinkToCover.matches(\"^(http://|https://)[-a-zA-Z0-9@:%._+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_+.~#?&/=]*((\\\\.jpg)|(\\\\.png)))$\")) {\n-            lbl_movieEditLinkToCoverTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+            if (!changedLinkToCover.isEmpty() && !changedLinkToCover.matches(\"^(http://|https://)[-a-zA-Z0-9@:%._+~#=]{1,256}\\\\.[a-zA-Z0-9()]{1,6}\\\\b([-a-zA-Z0-9()@:%_+.~#?&/=]*((\\\\.jpg)|(\\\\.png)))$\")) {\n+                lbl_movieEditLinkToCoverTitle.setStyle(\"-fx-text-fill: #FF4040\");\n+                entriesAreValid = false;\n+            } else {\n+                lbl_movieEditLinkToCoverTitle.setStyle(\"-fx-text-fill: #949494\");\n+            }\n+        } catch (NullPointerException e) {\n             entriesAreValid = false;\n-        } else {lbl_movieEditLinkToCoverTitle.setStyle(\"-fx-text-fill: #949494\");}\n+        }\n \n         return entriesAreValid;\n     }\n@@ -514,6 +544,9 @@ private void saveInfosAsNeededDataTypes() {\n         this.changedActors = txf_movieEditActors.getText();\n         this.changedLinkToCover = txf_movieEditLinkToCover.getText();\n         this.changedComment = txa_movieEditComment.getText();\n+        if(cbx_movieEditSelDVD.isSelected()) {\n+            this.changedType = \"DVD\";\n+        } else {this.changedType = \"BR\";}\n     }\n \n     public void cancelMovieEdit() {"
+        },
+        {
+            "sha": "8ca081ba23d8dd3616bc94f369e330dc841695cf",
+            "filename": "src/main/java/com/filmverleih/filmverleih/TextFieldFunctions.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/blob/540e6cdc13f110d507d400d65269c0a830e84d9a/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FTextFieldFunctions.java",
+            "raw_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/raw/540e6cdc13f110d507d400d65269c0a830e84d9a/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FTextFieldFunctions.java",
+            "contents_url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/contents/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FTextFieldFunctions.java?ref=540e6cdc13f110d507d400d65269c0a830e84d9a",
+            "patch": "@@ -27,7 +27,7 @@ public static void addYearChecker(TextField textField) {\n \n     public static void addRatingChecker(TextField textField) {\n         textField.textProperty().addListener((observable, oldValue, newValue) -> {\n-            if (!newValue.matches(\"^-?\\\\d?\\\\.\\\\d?$\")) {\n+            if (!newValue.matches(\"^-?\\\\d?\\\\.?\\\\d?$\")) {\n                 textField.setText(oldValue);\n             }\n         });"
+        },
+        {
+            "sha": "9f21f13e458d9c069436e88d0f09426c60a749f7",
+            "filename": "src/main/java/com/filmverleih/filmverleih/Utility.java",
+            "status": "modified",
+            "additions": 15,
+            "deletions": 12,
+            "changes": 27,
+            "blob_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/blob/540e6cdc13f110d507d400d65269c0a830e84d9a/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FUtility.java",
+            "raw_url": "https://github.com/MarcOhneMarc/prog3-Filmverleih/raw/540e6cdc13f110d507d400d65269c0a830e84d9a/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FUtility.java",
+            "contents_url": "https://api.github.com/repos/MarcOhneMarc/prog3-Filmverleih/contents/src%2Fmain%2Fjava%2Fcom%2Ffilmverleih%2Ffilmverleih%2FUtility.java?ref=540e6cdc13f110d507d400d65269c0a830e84d9a",
+            "patch": "@@ -113,18 +113,19 @@ public static Boolean DeleteMovieInDB(int movDelID) {\n     }\n \n     public static Boolean UpdateMovieInDB(int movieid,\n-                                   String name,\n-                                   int year,\n-                                   int length,\n-                                   int fsk,\n-                                   BigDecimal rating,\n-                                   String genres,\n-                                   String directors,\n-                                   int count,\n-                                   String studio,\n-                                   String actors,\n-                                   String cover,\n-                                   String comment) {\n+                                    String name,\n+                                    int year,\n+                                    int length,\n+                                    int fsk,\n+                                    BigDecimal rating,\n+                                    String genres,\n+                                    String directors,\n+                                    int count,\n+                                    String studio,\n+                                    String actors,\n+                                    String cover,\n+                                    String comment,\n+                                    String type) {\n         try (SessionFactory sessionFactory = new Configuration().configure(\"hibernate.cfg.xml\").buildSessionFactory();\n              Session session = sessionFactory.openSession()) {\n             Transaction transaction = null;\n@@ -143,6 +144,7 @@ public static Boolean UpdateMovieInDB(int movieid,\n                         \", actors = :actors\" +\n                         \", cover = :cover\" +\n                         \", comment = :comment\" +\n+                        \", type = :type\" +\n                         \" WHERE movieid = :movieid\");\n \n                 query.setParameter(\"name\", name);\n@@ -157,6 +159,7 @@ public static Boolean UpdateMovieInDB(int movieid,\n                 query.setParameter(\"actors\", actors);\n                 query.setParameter(\"cover\", cover);\n                 query.setParameter(\"comment\", comment);\n+                query.setParameter(\"type\", type);\n                 query.setParameter(\"movieid\", movieid);\n \n                 query.executeUpdate();"
+        }
+    ]
+}

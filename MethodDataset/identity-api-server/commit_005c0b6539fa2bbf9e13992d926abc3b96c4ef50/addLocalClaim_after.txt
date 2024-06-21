@@ -1,0 +1,25 @@
+    public String addLocalClaim(LocalClaimReqDTO localClaimReqDTO) {
+
+        // Validate mandatory attributes.
+        if (StringUtils.isBlank(localClaimReqDTO.getClaimURI())) {
+            throw handleClaimManagementClientError(ERROR_CODE_CLAIM_URI_NOT_SPECIFIED,
+                    BAD_REQUEST);
+        }
+        if (StringUtils.isBlank(localClaimReqDTO.getDisplayName())) {
+            throw handleClaimManagementClientError(Constant.ErrorMessage.ERROR_CODE_CLAIM_DISPLAY_NAME_NOT_SPECIFIED,
+                    BAD_REQUEST);
+        }
+
+        try {
+            validateAttributeMappings(localClaimReqDTO.getAttributeMapping());
+            getClaimMetadataManagementService().addLocalClaim(createLocalClaim(localClaimReqDTO),
+                    ContextLoader.getTenantDomainFromContext());
+        } catch (ClaimMetadataException e) {
+            throw handleClaimManagementException(e, ERROR_CODE_ERROR_ADDING_LOCAL_CLAIM,
+                    localClaimReqDTO.getClaimURI());
+        } catch (UserStoreException e) {
+            throw handleException(e, ERROR_CODE_ERROR_ADDING_LOCAL_CLAIM, localClaimReqDTO.getClaimURI());
+        }
+
+        return getResourceId(localClaimReqDTO.getClaimURI());
+    }

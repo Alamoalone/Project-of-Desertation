@@ -1,0 +1,30 @@
+	public PublicKey getServerPublicKeyObject() 
+	{
+		if (this.serverPublicKeyObject == null)
+		{
+			this.serverPublicKeyObject = CryptoLib.decodePublicKeyFromBase64(this.serverPublicKey);
+		}
+		
+		return serverPublicKeyObject;
+	}
+
+	public void setAdminEmail(String adminEmail)
+	{
+		this.adminEmail = adminEmail;
+	}
+
+	public PrivateKey getUserPrivateKeyObject() 
+	{
+		if (this.userPrivateKeyObject == null)
+		{
+			this.userPrivateKeyObject = CryptoLib.decodePrivateKeyFromBase64(this.userPrivateKey);
+		}
+		
+		return this.userPrivateKeyObject;
+	}
+
+	public String getServerPublicKey()
+	{
+		return serverPublicKey;
+	}
+

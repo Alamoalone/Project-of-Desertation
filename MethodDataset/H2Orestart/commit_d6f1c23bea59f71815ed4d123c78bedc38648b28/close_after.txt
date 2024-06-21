@@ -1,0 +1,10 @@
+    public void close() {
+        try {
+            if (hwp!=null)
+                hwp.close();
+            if (hwpx!=null)
+                hwpx.close();
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }

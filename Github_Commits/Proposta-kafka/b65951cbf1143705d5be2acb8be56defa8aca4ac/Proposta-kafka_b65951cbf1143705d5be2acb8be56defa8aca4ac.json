@@ -1,0 +1,72 @@
+{
+    "sha": "b65951cbf1143705d5be2acb8be56defa8aca4ac",
+    "node_id": "C_kwDOLDm7v9oAKGI2NTk1MWNiZjExNDM3MDVkNWJlMmFjYjhiZTU2ZGVmYThhY2E0YWM",
+    "commit": {
+        "author": {
+            "name": "JOAO LUCAS MELO",
+            "email": "lucasmelo59@unifor.br",
+            "date": "2024-01-16T20:26:13Z"
+        },
+        "committer": {
+            "name": "JOAO LUCAS MELO",
+            "email": "lucasmelo59@unifor.br",
+            "date": "2024-01-16T20:26:13Z"
+        },
+        "message": "corrijindo erro null pointer exception na criança da proposta",
+        "tree": {
+            "sha": "9cf25e5aa6560361ebc0f99ef6b65f4b57ff349f",
+            "url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/git/trees/9cf25e5aa6560361ebc0f99ef6b65f4b57ff349f"
+        },
+        "url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/git/commits/b65951cbf1143705d5be2acb8be56defa8aca4ac",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/commits/b65951cbf1143705d5be2acb8be56defa8aca4ac",
+    "html_url": "https://github.com/LucasMelo59/Proposta-kafka/commit/b65951cbf1143705d5be2acb8be56defa8aca4ac",
+    "comments_url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/commits/b65951cbf1143705d5be2acb8be56defa8aca4ac/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "da8fbd4cf0a2acd677cc0063e0734217ca36ea73",
+            "url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/commits/da8fbd4cf0a2acd677cc0063e0734217ca36ea73",
+            "html_url": "https://github.com/LucasMelo59/Proposta-kafka/commit/da8fbd4cf0a2acd677cc0063e0734217ca36ea73"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 4,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "9488efa765c5987d86234543edcf6d7b04156175",
+            "filename": "src/main/java/org/br/mineradora/service/ProposalService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/LucasMelo59/Proposta-kafka/blob/b65951cbf1143705d5be2acb8be56defa8aca4ac/src%2Fmain%2Fjava%2Forg%2Fbr%2Fmineradora%2Fservice%2FProposalService.java",
+            "raw_url": "https://github.com/LucasMelo59/Proposta-kafka/raw/b65951cbf1143705d5be2acb8be56defa8aca4ac/src%2Fmain%2Fjava%2Forg%2Fbr%2Fmineradora%2Fservice%2FProposalService.java",
+            "contents_url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/contents/src%2Fmain%2Fjava%2Forg%2Fbr%2Fmineradora%2Fservice%2FProposalService.java?ref=b65951cbf1143705d5be2acb8be56defa8aca4ac",
+            "patch": "@@ -2,6 +2,8 @@\n \n import jakarta.enterprise.context.ApplicationScoped;\n import org.br.mineradora.dto.ProposalDetailsDTO;\n+import org.br.mineradora.entity.ProposalEntity;\n+\n public interface ProposalService {\n \n     ProposalDetailsDTO findFullProposal(long id);"
+        },
+        {
+            "sha": "f4e654c6ff4ecdbaa2fcdff21b2d2ddc37f62336",
+            "filename": "src/main/java/org/br/mineradora/service/ProposalServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/LucasMelo59/Proposta-kafka/blob/b65951cbf1143705d5be2acb8be56defa8aca4ac/src%2Fmain%2Fjava%2Forg%2Fbr%2Fmineradora%2Fservice%2FProposalServiceImpl.java",
+            "raw_url": "https://github.com/LucasMelo59/Proposta-kafka/raw/b65951cbf1143705d5be2acb8be56defa8aca4ac/src%2Fmain%2Fjava%2Forg%2Fbr%2Fmineradora%2Fservice%2FProposalServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/LucasMelo59/Proposta-kafka/contents/src%2Fmain%2Fjava%2Forg%2Fbr%2Fmineradora%2Fservice%2FProposalServiceImpl.java?ref=b65951cbf1143705d5be2acb8be56defa8aca4ac",
+            "patch": "@@ -57,9 +57,9 @@ private ProposalDTO buildAndSaveNewProposal(ProposalDetailsDTO proposalDetailsDT\n             proposal.setCreated(LocalDateTime.now());\n             proposal.setProposalValidityDays(proposalDetailsDTO.getProposalValidityDays());\n             proposal.setCountry(proposalDetailsDTO.getCountry());\n-            proposal.setCustomer(proposal.getCustomer());\n+            proposal.setCustomer(proposalDetailsDTO.getCustomer());\n             proposal.setPriceTonne(proposalDetailsDTO.getPriceTonne());\n-            proposal.setTonnes(proposal.getTonnes());\n+            proposal.setTonnes(proposalDetailsDTO.getTonnes());\n \n             proposalRepository.persist(proposal);\n "
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+    protected CryptogramResponse buildResponseObjectFromDomain(String arqc) {
+        CryptogramResponse cryptogramResponse = new CryptogramResponse();
+        cryptogramResponse.setRequestCryptogram(arqc);
+        return cryptogramResponse;
+    }
+
+    public CryptogramResponse getApplicationCryptogram(GenerateApplicationCryptogramCommand command) {
+        final String CVN_NAME = "CVN";
+        final String CVR_NAME = "CVR";
+        // Log command object
+        logDebug(log, "Command object received: {}.", command);
+        // Map command to domain
+        CryptogramRequest cryptogramRequest = buildDomainObjectFromCommand(command);
+        // Parsed Visa IAD
+        Map<String, String> visaIad =  getParsedVisaIad(cryptogramRequest.getIssuerApplicationData());
+        // Set Cryptogram Version Number
+        log.debug("CVN from Parsed IAD: {}.", visaIad.get(CVN_NAME));
+        CryptogramVersionNumber cryptogramVersionNumber = CryptogramVersionNumber.valueOf(
+                visaIad.get(CVN_NAME)
+        );
+        String cardVerificationResults = visaIad.get(CVR_NAME);
+        // Generate Unique Derivation Key
+        String uniqueDerivationKey = getUniqueDerivationKey(cryptogramRequest.getIssuerMasterKey(),
+                cryptogramRequest.getPan(),
+                cryptogramRequest.getPanSequenceNumber(),
+                cryptogramVersionNumber
+        );
+        // Generate Session Key
+        String sessionKey = getSessionKey(uniqueDerivationKey,
+                cryptogramRequest.getApplicationTransactionCounter(),
+                cryptogramVersionNumber
+        );
+        // Generate Visa cryptogram, and build and return REST API response object
+        return buildResponseObjectFromDomain(generateCryptogram(cryptogramRequest,
+                sessionKey,
+                cryptogramVersionNumber,
+                cardVerificationResults)
+        );
+    }
+
+    protected String generateCryptogram(CryptogramRequest cryptogramRequest,
+                                        String sessionKey,
+                                        CryptogramVersionNumber cryptogramVersionNumber,
+                                        String cardVerificationResults) {
+        VisaApplicationCryptogramGenerator visaApplicationCryptogramGenerator = new VisaApplicationCryptogramGenerator();
+        return visaApplicationCryptogramGenerator.generateVisaApplicationCryptogram(cryptogramRequest,
+                sessionKey,
+                cryptogramVersionNumber,
+                cardVerificationResults
+        );
+    }
+
+    private Map<String, String> getParsedVisaIad(String issuerApplicationData){
+        return new VisaIADParser(
+                issuerApplicationData)
+                .parseIad();
+    }
+
+    protected String getUniqueDerivationKey(String issuerMasterKey,
+                                            String pan,
+                                            String panSequenceNumber,
+                                            CryptogramVersionNumber cryptogramVersionNumber) {
+        EMVUniqueDerivationKeyDerivator emvUdkDerivator = new EMVUniqueDerivationKeyDerivator(issuerMasterKey,
+                pan,
+                panSequenceNumber,
+                PaymentScheme.VISA,
+                cryptogramVersionNumber,
+                EMVUDKDerivationMethod.METHOD_A
+        );
+        // The UDK derivation must be enhanced for CVN 22, as CVN 22 uses METHOD_B.
+        return emvUdkDerivator.generateUniqueDerivationKey();
+    }
+
+    protected String getSessionKey(String uniqueDerivationKey,
+                                   String applicationTransactionCounter,
+                                   CryptogramVersionNumber cryptogramVersionNumber) {
+        EMVSessionKeyDerivator emvSessionKeyDerivator = new EMVSessionKeyDerivator(uniqueDerivationKey,
+                applicationTransactionCounter,
+                cryptogramVersionNumber
+        );
+        return emvSessionKeyDerivator.generateSessionKey();
+    }
+
+
+

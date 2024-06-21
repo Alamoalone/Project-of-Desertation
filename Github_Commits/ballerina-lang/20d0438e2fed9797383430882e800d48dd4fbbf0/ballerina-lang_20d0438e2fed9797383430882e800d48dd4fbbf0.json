@@ -1,0 +1,110 @@
+{
+    "sha": "20d0438e2fed9797383430882e800d48dd4fbbf0",
+    "node_id": "C_kwDOBGgWQdoAKDIwZDA0MzhlMmZlZDk3OTczODM0MzA4ODJlODAwZDQ4ZGQ0ZmJiZjA",
+    "commit": {
+        "author": {
+            "name": "dsplayerX",
+            "email": "dumindu0043@gmail.com",
+            "date": "2023-10-24T09:52:59Z"
+        },
+        "committer": {
+            "name": "dsplayerX",
+            "email": "dumindu0043@gmail.com",
+            "date": "2023-10-24T09:52:59Z"
+        },
+        "message": "Fix null pointer exception when 'infoRecord' is null",
+        "tree": {
+            "sha": "be15fe8f8ce4a21bcd04f9d3a7db667e946818ca",
+            "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/git/trees/be15fe8f8ce4a21bcd04f9d3a7db667e946818ca"
+        },
+        "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/git/commits/20d0438e2fed9797383430882e800d48dd4fbbf0",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/commits/20d0438e2fed9797383430882e800d48dd4fbbf0",
+    "html_url": "https://github.com/ballerina-platform/ballerina-lang/commit/20d0438e2fed9797383430882e800d48dd4fbbf0",
+    "comments_url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/commits/20d0438e2fed9797383430882e800d48dd4fbbf0/comments",
+    "author": {
+        "login": "dsplayerX",
+        "id": 100945633,
+        "node_id": "U_kgDOBgRO4Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/100945633?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dsplayerX",
+        "html_url": "https://github.com/dsplayerX",
+        "followers_url": "https://api.github.com/users/dsplayerX/followers",
+        "following_url": "https://api.github.com/users/dsplayerX/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dsplayerX/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dsplayerX/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dsplayerX/subscriptions",
+        "organizations_url": "https://api.github.com/users/dsplayerX/orgs",
+        "repos_url": "https://api.github.com/users/dsplayerX/repos",
+        "events_url": "https://api.github.com/users/dsplayerX/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dsplayerX/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dsplayerX",
+        "id": 100945633,
+        "node_id": "U_kgDOBgRO4Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/100945633?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dsplayerX",
+        "html_url": "https://github.com/dsplayerX",
+        "followers_url": "https://api.github.com/users/dsplayerX/followers",
+        "following_url": "https://api.github.com/users/dsplayerX/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dsplayerX/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dsplayerX/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dsplayerX/subscriptions",
+        "organizations_url": "https://api.github.com/users/dsplayerX/orgs",
+        "repos_url": "https://api.github.com/users/dsplayerX/repos",
+        "events_url": "https://api.github.com/users/dsplayerX/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dsplayerX/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d78063ea6f5210f467270c5a92decb1f9810e783",
+            "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/commits/d78063ea6f5210f467270c5a92decb1f9810e783",
+            "html_url": "https://github.com/ballerina-platform/ballerina-lang/commit/d78063ea6f5210f467270c5a92decb1f9810e783"
+        }
+    ],
+    "stats": {
+        "total": 19,
+        "additions": 15,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "7f8cdcdea9d9e2549e06766cb77889cefe7d1e1e",
+            "filename": "bvm/ballerina-runtime/src/main/java/io/ballerina/runtime/transactions/TransactionLocalContext.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 3,
+            "changes": 12,
+            "blob_url": "https://github.com/ballerina-platform/ballerina-lang/blob/20d0438e2fed9797383430882e800d48dd4fbbf0/bvm%2Fballerina-runtime%2Fsrc%2Fmain%2Fjava%2Fio%2Fballerina%2Fruntime%2Ftransactions%2FTransactionLocalContext.java",
+            "raw_url": "https://github.com/ballerina-platform/ballerina-lang/raw/20d0438e2fed9797383430882e800d48dd4fbbf0/bvm%2Fballerina-runtime%2Fsrc%2Fmain%2Fjava%2Fio%2Fballerina%2Fruntime%2Ftransactions%2FTransactionLocalContext.java",
+            "contents_url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/contents/bvm%2Fballerina-runtime%2Fsrc%2Fmain%2Fjava%2Fio%2Fballerina%2Fruntime%2Ftransactions%2FTransactionLocalContext.java?ref=20d0438e2fed9797383430882e800d48dd4fbbf0",
+            "patch": "@@ -64,8 +64,14 @@ private TransactionLocalContext(String globalTransactionId, String url, String p\n         this.rollbackOnlyError = null;\n         this.isTransactional = true;\n         this.transactionId = ValueCreator.createArrayValue(globalTransactionId.getBytes());\n-        transactionResourceManager.transactionInfoMap.put(ByteBuffer.wrap(transactionId.getBytes().clone()),\n-                infoRecord);\n+        validateAndPutTransactionInfo(ByteBuffer.wrap(transactionId.getBytes().clone()), infoRecord);\n+    }\n+\n+    private void validateAndPutTransactionInfo(ByteBuffer transactionIdBytes, Object infoRecord) {\n+        if (infoRecord == null) {\n+            return;\n+        }\n+        transactionResourceManager.transactionInfoMap.put(transactionIdBytes, infoRecord);\n     }\n \n     public static TransactionLocalContext createTransactionParticipantLocalCtx(String globalTransactionId,\n@@ -228,7 +234,7 @@ public void setResourceParticipant(boolean resourceParticipant) {\n     }\n \n     public Object getInfoRecord() {\n-        return transactionResourceManager.transactionInfoMap.get(ByteBuffer.wrap(transactionId.getBytes()));\n+        return transactionResourceManager.getTransactionRecord(transactionId);\n     }\n \n     public boolean isTransactional() {"
+        },
+        {
+            "sha": "c796731d8332d264c51e2ab1afa79c2b2ebdf287",
+            "filename": "bvm/ballerina-runtime/src/main/java/io/ballerina/runtime/transactions/TransactionResourceManager.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 1,
+            "changes": 7,
+            "blob_url": "https://github.com/ballerina-platform/ballerina-lang/blob/20d0438e2fed9797383430882e800d48dd4fbbf0/bvm%2Fballerina-runtime%2Fsrc%2Fmain%2Fjava%2Fio%2Fballerina%2Fruntime%2Ftransactions%2FTransactionResourceManager.java",
+            "raw_url": "https://github.com/ballerina-platform/ballerina-lang/raw/20d0438e2fed9797383430882e800d48dd4fbbf0/bvm%2Fballerina-runtime%2Fsrc%2Fmain%2Fjava%2Fio%2Fballerina%2Fruntime%2Ftransactions%2FTransactionResourceManager.java",
+            "contents_url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/contents/bvm%2Fballerina-runtime%2Fsrc%2Fmain%2Fjava%2Fio%2Fballerina%2Fruntime%2Ftransactions%2FTransactionResourceManager.java?ref=20d0438e2fed9797383430882e800d48dd4fbbf0",
+            "patch": "@@ -610,6 +610,11 @@ public void notifyLocalParticipantFailure(String gTransactionId, String blockId)\n     }\n \n     public Object getTransactionRecord(BArray xid) {\n-        return transactionInfoMap.get(ByteBuffer.wrap(xid.getBytes()));\n+        synchronized (transactionInfoMap) {\n+            if (transactionInfoMap.containsKey(ByteBuffer.wrap(xid.getBytes()))) {\n+                return transactionInfoMap.get(ByteBuffer.wrap(xid.getBytes()));\n+            }\n+            return null;\n+        }\n     }\n }"
+        }
+    ]
+}

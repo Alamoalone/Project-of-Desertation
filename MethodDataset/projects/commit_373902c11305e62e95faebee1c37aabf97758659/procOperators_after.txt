@@ -1,0 +1,18 @@
+    private static ExecOperationNode procOperators(OperationNode _anaNode, Forwards _forwards) {
+        if (_anaNode instanceof CmpOperation) {
+            return compare((CmpOperation) _anaNode);
+        }
+        if (_anaNode instanceof RangeOperation) {
+            RangeOperation c_ = (RangeOperation) _anaNode;
+            return new ExecRangeOperation(new ExecOperationContent(c_.getContent()), c_.getOpOffset(), c_.isImplicitMiddle());
+        }
+        if (_anaNode instanceof InstanceOfOperation) {
+            InstanceOfOperation c_ = (InstanceOfOperation) _anaNode;
+            return new ExecInstanceOfOperation(new ExecOperationContent(c_.getContent()), new ExecTypeCheckContent(c_.getTypeCheckContent()));
+        }
+        if (_anaNode instanceof EqOperation) {
+            EqOperation c_ = (EqOperation) _anaNode;
+            return new ExecQuickOperation(new ExecOperationContent(c_.getContent()), new ExecOperatorContent(c_.getOperatorContent()), new ExecOperDir(c_.getSymbol()));
+        }
+        return procOper(_anaNode, _forwards);
+    }

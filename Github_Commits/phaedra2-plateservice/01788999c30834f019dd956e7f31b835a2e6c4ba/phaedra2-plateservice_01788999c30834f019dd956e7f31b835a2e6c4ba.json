@@ -1,0 +1,60 @@
+{
+    "sha": "01788999c30834f019dd956e7f31b835a2e6c4ba",
+    "node_id": "C_kwDOKV8IRtoAKDAxNzg4OTk5YzMwODM0ZjAxOWRkOTU2ZTdmMzFiODM1YTJlNmM0YmE",
+    "commit": {
+        "author": {
+            "name": "sberberovic",
+            "email": "sasa.berberovic@openanalytics.eu",
+            "date": "2023-09-19T10:45:30Z"
+        },
+        "committer": {
+            "name": "sberberovic",
+            "email": "sasa.berberovic@openanalytics.eu",
+            "date": "2023-09-19T10:45:30Z"
+        },
+        "message": "fix: fix some null pointer exceptions",
+        "tree": {
+            "sha": "d6c39e54b0451d28fb690851de2359a4b57841dd",
+            "url": "https://api.github.com/repos/openanalytics/phaedra2-plateservice/git/trees/d6c39e54b0451d28fb690851de2359a4b57841dd"
+        },
+        "url": "https://api.github.com/repos/openanalytics/phaedra2-plateservice/git/commits/01788999c30834f019dd956e7f31b835a2e6c4ba",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/openanalytics/phaedra2-plateservice/commits/01788999c30834f019dd956e7f31b835a2e6c4ba",
+    "html_url": "https://github.com/openanalytics/phaedra2-plateservice/commit/01788999c30834f019dd956e7f31b835a2e6c4ba",
+    "comments_url": "https://api.github.com/repos/openanalytics/phaedra2-plateservice/commits/01788999c30834f019dd956e7f31b835a2e6c4ba/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "3b0ec0b1df9fc854ad957ac576baf6b684ab0797",
+            "url": "https://api.github.com/repos/openanalytics/phaedra2-plateservice/commits/3b0ec0b1df9fc854ad957ac576baf6b684ab0797",
+            "html_url": "https://github.com/openanalytics/phaedra2-plateservice/commit/3b0ec0b1df9fc854ad957ac576baf6b684ab0797"
+        }
+    ],
+    "stats": {
+        "total": 31,
+        "additions": 19,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "1e4ef4409ddafaad96f1a03a33025f0e76b638a5",
+            "filename": "server/src/main/java/eu/openanalytics/phaedra/plateservice/api/PlateGraphQLController.java",
+            "status": "modified",
+            "additions": 19,
+            "deletions": 12,
+            "changes": 31,
+            "blob_url": "https://github.com/openanalytics/phaedra2-plateservice/blob/01788999c30834f019dd956e7f31b835a2e6c4ba/server%2Fsrc%2Fmain%2Fjava%2Feu%2Fopenanalytics%2Fphaedra%2Fplateservice%2Fapi%2FPlateGraphQLController.java",
+            "raw_url": "https://github.com/openanalytics/phaedra2-plateservice/raw/01788999c30834f019dd956e7f31b835a2e6c4ba/server%2Fsrc%2Fmain%2Fjava%2Feu%2Fopenanalytics%2Fphaedra%2Fplateservice%2Fapi%2FPlateGraphQLController.java",
+            "contents_url": "https://api.github.com/repos/openanalytics/phaedra2-plateservice/contents/server%2Fsrc%2Fmain%2Fjava%2Feu%2Fopenanalytics%2Fphaedra%2Fplateservice%2Fapi%2FPlateGraphQLController.java?ref=01788999c30834f019dd956e7f31b835a2e6c4ba",
+            "patch": "@@ -30,10 +30,13 @@\n import eu.openanalytics.phaedra.plateservice.service.PlateService;\n import eu.openanalytics.phaedra.plateservice.service.WellService;\n import org.apache.commons.collections4.CollectionUtils;\n+import org.apache.commons.lang3.ObjectUtils;\n+import org.apache.commons.lang3.StringUtils;\n import org.springframework.graphql.data.method.annotation.Argument;\n import org.springframework.graphql.data.method.annotation.QueryMapping;\n import org.springframework.stereotype.Controller;\n \n+import java.util.ArrayList;\n import java.util.List;\n import java.util.stream.Collectors;\n \n@@ -53,8 +56,8 @@ public PlateGraphQLController(PlateService plateService, WellService wellService\n     }\n \n     @QueryMapping\n-    public List<PlateDTO> getPlatesByExperimentId(@Argument long experimentId) {\n-        List<PlateDTO> result = plateService.getPlatesByExperimentId(experimentId);\n+    public List<PlateDTO> getPlatesByExperimentId(@Argument Long experimentId) {\n+        List<PlateDTO> result = ObjectUtils.isNotEmpty(experimentId) ? plateService.getPlatesByExperimentId(experimentId) : new ArrayList<>();\n         if (CollectionUtils.isNotEmpty(result)) {\n             // Add tags\n             result.stream().forEach(plateDTO -> {\n@@ -67,7 +70,7 @@ public List<PlateDTO> getPlatesByExperimentId(@Argument long experimentId) {\n \n     @QueryMapping\n     public List<PlateDTO> getPlatesByBarcode(@Argument String barcode) {\n-        List<PlateDTO> result = plateService.getPlatesByBarcode(barcode);\n+        List<PlateDTO> result = StringUtils.isNotEmpty(barcode) ? plateService.getPlatesByBarcode(barcode) : new ArrayList<>();\n         if (CollectionUtils.isNotEmpty(result)) {\n             // Add tags\n             result.stream().forEach(plateDTO -> {\n@@ -79,8 +82,8 @@ public List<PlateDTO> getPlatesByBarcode(@Argument String barcode) {\n     }\n \n     @QueryMapping\n-    public PlateDTO getPlateById(@Argument long plateId) {\n-        PlateDTO result = plateService.getPlateById(plateId);\n+    public PlateDTO getPlateById(@Argument Long plateId) {\n+        PlateDTO result = ObjectUtils.isNotEmpty(plateId) ? plateService.getPlateById(plateId) : null;\n         if (result != null) {\n             List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, result.getId());\n             result.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));\n@@ -89,17 +92,21 @@ public PlateDTO getPlateById(@Argument long plateId) {\n     }\n \n     @QueryMapping\n-    public List<WellDTO> getPlateWells(@Argument long plateId) {\n-        List<WellDTO> result = wellService.getWellsByPlateId(plateId);\n+    public List<WellDTO> getPlateWells(@Argument Long plateId) {\n+        List<WellDTO> result = ObjectUtils.isNotEmpty(plateId) ? wellService.getWellsByPlateId(plateId) : new ArrayList<>();\n         return result;\n     }\n \n     @QueryMapping\n-    public List<PlateMeasurementDTO> getPlateMeasurements(@Argument long plateId, @Argument boolean active) {\n-        if (active) {\n-            return List.of(plateMeasurementService.getActivePlateMeasurement(plateId));\n-        } else {\n-            return plateMeasurementService.getPlateMeasurements(plateId);\n+    public List<PlateMeasurementDTO> getPlateMeasurements(@Argument Long plateId, @Argument boolean active) {\n+        List<PlateMeasurementDTO> result = new ArrayList<>();\n+        if (ObjectUtils.isNotEmpty(plateId)) {\n+            if (active) {\n+                result.add(plateMeasurementService.getActivePlateMeasurement(plateId));\n+            } else {\n+                result.addAll(plateMeasurementService.getPlateMeasurements(plateId));\n+            }\n         }\n+        return result;\n     }\n }"
+        }
+    ]
+}

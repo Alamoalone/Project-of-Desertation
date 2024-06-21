@@ -1,0 +1,2 @@
+onMessage(String stringMessage)
+apply(GenericMessageResponse response)

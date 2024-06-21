@@ -1,0 +1,189 @@
+{
+    "sha": "a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+    "node_id": "C_kwDOK1xOxtoAKGEwNDk1ZjY2ZTU2ZDc5OWRhMWQzZGZlNWI5MzZkYTBmMzA0M2RiM2Y",
+    "commit": {
+        "author": {
+            "name": "Yasser Chenik",
+            "email": "yasserchenik218@gmail.com",
+            "date": "2023-12-14T12:04:28Z"
+        },
+        "committer": {
+            "name": "Yasser Chenik",
+            "email": "yasserchenik218@gmail.com",
+            "date": "2023-12-14T12:04:28Z"
+        },
+        "message": "Null pointer exception removed",
+        "tree": {
+            "sha": "496cf08afb67766eac7598d407830309b4de6559",
+            "url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/git/trees/496cf08afb67766eac7598d407830309b4de6559"
+        },
+        "url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/git/commits/a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/commits/a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+    "html_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/commit/a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+    "comments_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/commits/a0495f66e56d799da1d3dfe5b936da0f3043db3f/comments",
+    "author": {
+        "login": "Yasser-Chen",
+        "id": 72452071,
+        "node_id": "MDQ6VXNlcjcyNDUyMDcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/72452071?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Yasser-Chen",
+        "html_url": "https://github.com/Yasser-Chen",
+        "followers_url": "https://api.github.com/users/Yasser-Chen/followers",
+        "following_url": "https://api.github.com/users/Yasser-Chen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Yasser-Chen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Yasser-Chen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Yasser-Chen/subscriptions",
+        "organizations_url": "https://api.github.com/users/Yasser-Chen/orgs",
+        "repos_url": "https://api.github.com/users/Yasser-Chen/repos",
+        "events_url": "https://api.github.com/users/Yasser-Chen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Yasser-Chen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Yasser-Chen",
+        "id": 72452071,
+        "node_id": "MDQ6VXNlcjcyNDUyMDcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/72452071?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Yasser-Chen",
+        "html_url": "https://github.com/Yasser-Chen",
+        "followers_url": "https://api.github.com/users/Yasser-Chen/followers",
+        "following_url": "https://api.github.com/users/Yasser-Chen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Yasser-Chen/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Yasser-Chen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Yasser-Chen/subscriptions",
+        "organizations_url": "https://api.github.com/users/Yasser-Chen/orgs",
+        "repos_url": "https://api.github.com/users/Yasser-Chen/repos",
+        "events_url": "https://api.github.com/users/Yasser-Chen/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Yasser-Chen/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d167847efddd4c935164a7393aff21e6251351e3",
+            "url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/commits/d167847efddd4c935164a7393aff21e6251351e3",
+            "html_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/commit/d167847efddd4c935164a7393aff21e6251351e3"
+        }
+    ],
+    "stats": {
+        "total": 378,
+        "additions": 190,
+        "deletions": 188
+    },
+    "files": [
+        {
+            "sha": "8ec970a045217653585a08f196fb53d0454f6a5f",
+            "filename": ".project",
+            "status": "modified",
+            "additions": 11,
+            "deletions": 0,
+            "changes": 11,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/.project",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/.project",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/.project?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+            "patch": "@@ -14,4 +14,15 @@\n \t<natures>\n \t\t<nature>org.eclipse.jdt.core.javanature</nature>\n \t</natures>\n+\t<filteredResources>\n+\t\t<filter>\n+\t\t\t<id>1702555347858</id>\n+\t\t\t<name></name>\n+\t\t\t<type>30</type>\n+\t\t\t<matcher>\n+\t\t\t\t<id>org.eclipse.core.resources.regexFilterMatcher</id>\n+\t\t\t\t<arguments>node_modules|\\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>\n+\t\t\t</matcher>\n+\t\t</filter>\n+\t</filteredResources>\n </projectDescription>"
+        },
+        {
+            "sha": "10b78fe552ca2fb66623a098097b01c0dc159e6a",
+            "filename": "bin/module-info.class",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/d167847efddd4c935164a7393aff21e6251351e3/bin%2Fmodule-info.class",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/d167847efddd4c935164a7393aff21e6251351e3/bin%2Fmodule-info.class",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/bin%2Fmodule-info.class?ref=d167847efddd4c935164a7393aff21e6251351e3"
+        },
+        {
+            "sha": "6c7334719e4db41a2fff6ffaa66862663dbef307",
+            "filename": "bin/tp/Phone.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FPhone.class",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FPhone.class",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/bin%2Ftp%2FPhone.class?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f"
+        },
+        {
+            "sha": "492c5561b152e03531ad38de91fc797ba53cba20",
+            "filename": "bin/tp/PhoneListContainer.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FPhoneListContainer.class",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FPhoneListContainer.class",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/bin%2Ftp%2FPhoneListContainer.class?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f"
+        },
+        {
+            "sha": "4fa0abe4c5b67c753127c1e2b2c438e905c950db",
+            "filename": "bin/tp/SmartPhone.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FSmartPhone.class",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FSmartPhone.class",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/bin%2Ftp%2FSmartPhone.class?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f"
+        },
+        {
+            "sha": "2249d24640468cff12c5068d8939af07f038cc79",
+            "filename": "bin/tp/TableauPhone.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FTableauPhone.class",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/bin%2Ftp%2FTableauPhone.class",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/bin%2Ftp%2FTableauPhone.class?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f"
+        },
+        {
+            "sha": "1b6481d04c192112a0788339a71633075710ebbb",
+            "filename": "src/module-info.java",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 8,
+            "changes": 8,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/d167847efddd4c935164a7393aff21e6251351e3/src%2Fmodule-info.java",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/d167847efddd4c935164a7393aff21e6251351e3/src%2Fmodule-info.java",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/src%2Fmodule-info.java?ref=d167847efddd4c935164a7393aff21e6251351e3",
+            "patch": "@@ -1,8 +0,0 @@\n-/**\n- * \n- */\n-/**\n- * \n- */\n-module VersionFinale {\n-}\n\\ No newline at end of file"
+        },
+        {
+            "sha": "db94b28915e74ab5d46bc9d053e1df4b3f47d59b",
+            "filename": "src/tp/Phone.java",
+            "status": "modified",
+            "additions": 78,
+            "deletions": 78,
+            "changes": 156,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/src%2Ftp%2FPhone.java",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/src%2Ftp%2FPhone.java",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/src%2Ftp%2FPhone.java?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+            "patch": "@@ -46,85 +46,85 @@ public int compareTo(Phone o) {\n \t\n \t\n \n-\t\t    public static void main(String[] args) {\n-\t\t        // Création d'objets Phone\n-\t\t        Phone tele1 = new SmartPhone(\"iphone1\", 2000, 2023);\n-\t\t        Phone tele2 = new Phone(\"nokiapile\", 200, 1999);\n-\t\t        Phone tele3 = new Phone(\"androidphone\", 500, 2005);\n-\n-\t\t        // Création d'un objet PhoneListContainer\n-\t\t        PhoneListContainer phoneListContainer = new PhoneListContainer(nom, numserie, numserie);\n-\n-\t\t        // Remplissage de la liste de téléphones dans PhoneListContainer\n-\t\t        phoneListContainer.populateList(new Phone[]{tele1, tele2, tele3});\n-\n-\t\t        // Affichage de la liste de téléphones\n-\t\t        System.out.println(\"Liste de téléphones :\");\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        // Tri de la liste de téléphones\n-\t\t        System.out.println(\"\\nListe de téléphones triée :\");\n-\t\t        phoneListContainer.sortList();\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        // Insertion d'un nouveau téléphone \n-\t\t        Phone tele4 = new Phone(\"j1\", 300, 2022);\n-\t\t        phoneListContainer.insertElement(tele4, 1);\n-\t\t        System.out.println(\"\\nListe de téléphones après insertion d'un nouveau téléphone :\");\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        // Suppression d'un téléphone\n-\t\t        phoneListContainer.removeElement(tele2);\n-\t\t        System.out.println(\"\\nListe de téléphones après suppression d'un téléphone :\");\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        Phone nouveauPhone = null;\n-\t\t\t\t// Recherche d'un téléphone\n-\t\t        System.out.println(\"\\n'NouveauPhone' est-il dans la liste ? \" + phoneListContainer.searchElement(nouveauPhone));\n-\n-\t\t        // Copie de la liste de téléphones\n-\t\t        List<Phone> listeCopiee = phoneListContainer.copyList();\n-\t\t        System.out.println(\"\\nListe de téléphones copiée :\");\n-\t\t        listeCopiee.forEach(System.out::println);\n-\n-\t\t        // Mélange de la liste de téléphones\n-\t\t        phoneListContainer.shuffleList();\n-\t\t        System.out.println(\"\\nListe de téléphones mélangée :\");\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        // Inversion de la liste de téléphones\n-\t\t        phoneListContainer.reverseList();\n-\t\t        System.out.println(\"\\nListe de téléphones inversée :\");\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        // Extraction d'une sous-liste\n-\t\t        List<Phone> sousListe = phoneListContainer.subList(1, 3);\n-\t\t        System.out.println(\"\\nSous-liste (de l'index 1 à 3) :\");\n-\t\t        sousListe.forEach(System.out::println);\n-\n-\t\t        // Comparaison de listes\n-\t\t        List<Phone> autreListe = Arrays.asList(tele1, tele2, tele3);\n-\t\t        System.out.println(\"\\nLes deux listes sont-elles égales ? \" + phoneListContainer.compareLists(autreListe));\n-\n-\t\t        // Échange d'éléments aux indices 0 et 2\n-\t\t        phoneListContainer.swapElements(0, 2);\n-\t\t        System.out.println(\"\\nListe de téléphones après échange d'éléments aux indices 0 et 2 :\");\n-\t\t        phoneListContainer.displayList();\n-\n-\t\t        // Vidange de la liste de téléphones\n-\t\t        phoneListContainer.clearList();\n-\t\t   \n-\t\t        System.out.println(\"\\nLa liste de téléphones est-elle vide ? \" + phoneListContainer.isListEmpty());\n-\t\t    \n-\t\t        Phone tele88 = new SmartPhone(\"iphone1\", 2000, 2023);\n-\t\t\t\tPhone tele5 = new Phone(\"nokiapile\", 200,1999);\n-\t\t\t\t\n-\t\t\t\t\n-\t\t\t\tSystem.out.println(tele88);\n-\t\t\t\tSystem.out.println(tele5);\n-\t\t    \n-\t\t    }\n+\tpublic static void main(String[] args) {\n+\t\t// Création d'objets Phone\n+\t\tPhone tele1 = new SmartPhone(\"iphone1\", 2000, 2023);\n+\t\tPhone tele2 = new Phone(\"nokiapile\", 200, 1999);\n+\t\tPhone tele3 = new Phone(\"androidphone\", 500, 2005);\n+\n+\t\t// Création d'un objet PhoneListContainer\n+\t\tPhoneListContainer phoneListContainer = new PhoneListContainer(nom, numserie, numserie);\n+\n+\t\t// Remplissage de la liste de téléphones dans PhoneListContainer\n+\t\tphoneListContainer.populateList(new Phone[]{tele1, tele2, tele3});\n+\n+\t\t// Affichage de la liste de téléphones\n+\t\tSystem.out.println(\"Liste de téléphones :\");\n+\t\tphoneListContainer.displayList();\n+\n+\t\t// Tri de la liste de téléphones\n+\t\tSystem.out.println(\"\\nListe de téléphones triée :\");\n+\t\tphoneListContainer.sortList();\n+\t\tphoneListContainer.displayList();\n+\n+\t\t// Insertion d'un nouveau téléphone \n+\t\tPhone tele4 = new Phone(\"j1\", 300, 2022);\n+\t\tphoneListContainer.insertElement(tele4, 1);\n+\t\tSystem.out.println(\"\\nListe de téléphones après insertion d'un nouveau téléphone :\");\n+\t\tphoneListContainer.displayList();\n+\n+\t\t// Suppression d'un téléphone\n+\t\tphoneListContainer.removeElement(tele2);\n+\t\tSystem.out.println(\"\\nListe de téléphones après suppression d'un téléphone :\");\n+\t\tphoneListContainer.displayList();\n+\n+\t\tPhone nouveauPhone = null;\n+\t\t// Recherche d'un téléphone\n+\t\tSystem.out.println(\"\\n'NouveauPhone' est-il dans la liste ? \" + phoneListContainer.searchElement(nouveauPhone));\n+\n+\t\t// Copie de la liste de téléphones\n+\t\tList<Phone> listeCopiee = phoneListContainer.copyList();\n+\t\tSystem.out.println(\"\\nListe de téléphones copiée :\");\n+\t\tlisteCopiee.forEach(System.out::println);\n+\n+\t\t// Mélange de la liste de téléphones\n+\t\tphoneListContainer.shuffleList();\n+\t\tSystem.out.println(\"\\nListe de téléphones mélangée :\");\n+\t\tphoneListContainer.displayList();\n+\n+\t\t// Inversion de la liste de téléphones\n+\t\tphoneListContainer.reverseList();\n+\t\tSystem.out.println(\"\\nListe de téléphones inversée :\");\n+\t\tphoneListContainer.displayList();\n+\n+\t\t// Extraction d'une sous-liste\n+\t\tList<Phone> sousListe = phoneListContainer.subList(1, 3);\n+\t\tSystem.out.println(\"\\nSous-liste (de l'index 1 à 3) :\");\n+\t\tsousListe.forEach(System.out::println);\n+\n+\t\t// Comparaison de listes\n+\t\tList<Phone> autreListe = Arrays.asList(tele1, tele2, tele3);\n+\t\tSystem.out.println(\"\\nLes deux listes sont-elles égales ? \" + phoneListContainer.compareLists(autreListe));\n+\n+\t\t// Échange d'éléments aux indices 0 et 2\n+\t\tphoneListContainer.swapElements(0, 2);\n+\t\tSystem.out.println(\"\\nListe de téléphones après échange d'éléments aux indices 0 et 2 :\");\n+\t\tphoneListContainer.displayList();\n+\n+\t\t// Vidange de la liste de téléphones\n+\t\tphoneListContainer.clearList();\n+\t\n+\t\tSystem.out.println(\"\\nLa liste de téléphones est-elle vide ? \" + phoneListContainer.isListEmpty());\n+\t\n+\t\tPhone tele88 = new SmartPhone(\"iphone1\", 2000, 2023);\n+\t\tPhone tele5 = new Phone(\"nokiapile\", 200,1999);\n+\t\t\n \t\t\n+\t\tSystem.out.println(tele88);\n+\t\tSystem.out.println(tele5);\n+\t\n+\t}\n+\n \n \t\t\n \t}"
+        },
+        {
+            "sha": "c08fe7401252c52d8c2d2975c9c31351b2b38990",
+            "filename": "src/tp/PhoneListContainer.java",
+            "status": "modified",
+            "additions": 101,
+            "deletions": 102,
+            "changes": 203,
+            "blob_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/blob/a0495f66e56d799da1d3dfe5b936da0f3043db3f/src%2Ftp%2FPhoneListContainer.java",
+            "raw_url": "https://github.com/Yasser-Chen/OOP-Java-EMSI/raw/a0495f66e56d799da1d3dfe5b936da0f3043db3f/src%2Ftp%2FPhoneListContainer.java",
+            "contents_url": "https://api.github.com/repos/Yasser-Chen/OOP-Java-EMSI/contents/src%2Ftp%2FPhoneListContainer.java?ref=a0495f66e56d799da1d3dfe5b936da0f3043db3f",
+            "patch": "@@ -6,118 +6,117 @@\n import java.util.Iterator;\n import java.util.List;\n \n-public class PhoneListContainer extends Phone{\n-\t\n-\t\n+public class PhoneListContainer extends Phone {\n+\n \tprivate List<Phone> phoneList;\n \n-\t//constructeur\n-\t\n-\t public PhoneListContainer(String nom, int prix, int numserie) {\n+\t// constructeur\n+\n+\tpublic PhoneListContainer(String nom, int prix, int numserie) {\n \t\tsuper(nom, prix, numserie);\n+\t\tphoneList = new ArrayList<Phone>();\n \t}\n \n-\t\n \tpublic List<Phone> getPhoneList() {\n \t\treturn phoneList;\n \t}\n \n \tpublic void setPhoneList(List<Phone> phoneList) {\n \t\tthis.phoneList = phoneList;\n \t}\n-\t\n-\t\n-\n-\t   // a. Fonction pour alimenter la liste\n-\t \n-\t    public void populateList(Phone[] phones) {\n-\t        phoneList.addAll(Arrays.asList(phones));\n-\t    }\n-\n-\t    // b. Fonction pour afficher la liste (ligne par ligne)\n-\t    \n-\t    \n-\t    public void displayList() {\n-\t        for (Phone phone : phoneList) {\n-\t            System.out.println(phone);\n-\t        }\n-\t    }\n-\t    // c. Fonction pour parcourir tous les éléments de la liste à l'aide d'un Iterateur\n-\t    \n-\t    public void iterateList() {\n-\t        Iterator<Phone> iterator = phoneList.iterator();\n-\t        while (iterator.hasNext()) {\n-\t            \n-\t        }\n-\t    }\n-\t    // d. Fonction pour insérer un élément dans la liste\n-\t    \n-\t    public void insertElement(Phone phone, int index) {\n-\t        phoneList.add(index, phone);\n-\t    }\n-\n-\t    // e. Codez une fonction Java qui permet de récupérer un élément \n-\t    \n-\t    public Phone getElement(int index) {\n-\t        return phoneList.get(index);\n-\t    }\n-\t    // f. Codez une fonction Java qui permet de supprimer un élément.\n-\t   \n-\t    public void removeElement(Phone phone) {\n-\t        phoneList.remove(phone);\n-\t    }\n-\t    // g. Codez une fonction Java qui permet de rechercher un élément.\n-\t   \n-\t    public boolean searchElement(Phone phone) {\n-\t        return phoneList.contains(phone);\n-\t    }\n-\t    \n-\t    // h. Codez une fonction Java qui permet de trier la liste\n-\t    public void sortList() {\n-\t    \tCollections.sort(phoneList);\n-\t    }\n-\n-\t\n-\t\t// i. Codez une fonction Java qui permet de copier la liste dans un nouveau tableau.\n-\t\t  \n-\t\tpublic List<Phone> copyList() {\n-\t\t        return new ArrayList<>(phoneList);\n-\t\t    }\n-\t\t  // j. Codez une fonction Java qui permet de mélanger les éléments de la liste.\n-\t    \n-\t\tpublic void shuffleList() {\n-\t        Collections.shuffle(phoneList);\n-\t    }\n-\n-\t    // k. Codez une fonction Java qui permet d’inverser les éléments de la liste.\n-\t   \n-\t    public void reverseList() {\n-\t        Collections.reverse(phoneList);\n-\t    }\n-\n-\t    // l. Codez une fonction Java qui permet d’extraire une partie de la liste.\n-\t   \n-\t    public List<Phone> subList(int fromIndex, int toIndex) {\n-\t        return phoneList.subList(fromIndex, toIndex);\n-\t    }\n-\n-\t    // m. Codez une fonction Java qui permet de comparer deux listes.\n-\t    \n-\t    public boolean compareLists(List<Phone> otherList) {\n-\t        return phoneList.equals(otherList);\n-\t    }\n-\t // n. Codez une fonction Java d'échange de deux éléments dans une liste.\n-\t    public void swapElements(int iphone7, int iphone8) {\n-\t        Collections.swap(phoneList, iphone7, iphone8);\n-\t    }\n-\t // o. Codez une fonction Java qui permet de vider la liste.\n-\t    public void clearList() {\n-\t        phoneList.clear();\n-\t    }\n-\t // p. Codez une fonction Java qui permet de tester que la liste est vide ou non.\n-\t    \n-\t    public boolean isListEmpty() {\n-\t        return phoneList.isEmpty();\n-\t    }\n-\t    \n+\n+\t// a. Fonction pour alimenter la liste\n+\n+\tpublic void populateList(Phone[] phones) {\n+\t\tphoneList.addAll(Arrays.asList(phones));\n+\t}\n+\n+\t// b. Fonction pour afficher la liste (ligne par ligne)\n+\n+\tpublic void displayList() {\n+\t\tfor (Phone phone : phoneList) {\n+\t\t\tSystem.out.println(phone);\n+\t\t}\n+\t}\n+\t// c. Fonction pour parcourir tous les éléments de la liste à l'aide d'un\n+\t// Iterateur\n+\n+\tpublic void iterateList() {\n+\t\tIterator<Phone> iterator = phoneList.iterator();\n+\t\twhile (iterator.hasNext()) {\n+\n+\t\t}\n+\t}\n+\t// d. Fonction pour insérer un élément dans la liste\n+\n+\tpublic void insertElement(Phone phone, int index) {\n+\t\tphoneList.add(index, phone);\n+\t}\n+\n+\t// e. Codez une fonction Java qui permet de récupérer un élément\n+\n+\tpublic Phone getElement(int index) {\n+\t\treturn phoneList.get(index);\n+\t}\n+\t// f. Codez une fonction Java qui permet de supprimer un élément.\n+\n+\tpublic void removeElement(Phone phone) {\n+\t\tphoneList.remove(phone);\n+\t}\n+\t// g. Codez une fonction Java qui permet de rechercher un élément.\n+\n+\tpublic boolean searchElement(Phone phone) {\n+\t\treturn phoneList.contains(phone);\n+\t}\n+\n+\t// h. Codez une fonction Java qui permet de trier la liste\n+\tpublic void sortList() {\n+\t\tCollections.sort(phoneList);\n+\t}\n+\n+\t// i. Codez une fonction Java qui permet de copier la liste dans un nouveau\n+\t// tableau.\n+\n+\tpublic List<Phone> copyList() {\n+\t\treturn new ArrayList<>(phoneList);\n+\t}\n+\t// j. Codez une fonction Java qui permet de mélanger les éléments de la liste.\n+\n+\tpublic void shuffleList() {\n+\t\tCollections.shuffle(phoneList);\n+\t}\n+\n+\t// k. Codez une fonction Java qui permet d’inverser les éléments de la liste.\n+\n+\tpublic void reverseList() {\n+\t\tCollections.reverse(phoneList);\n+\t}\n+\n+\t// l. Codez une fonction Java qui permet d’extraire une partie de la liste.\n+\n+\tpublic List<Phone> subList(int fromIndex, int toIndex) {\n+\t\treturn phoneList.subList(fromIndex, toIndex);\n+\t}\n+\n+\t// m. Codez une fonction Java qui permet de comparer deux listes.\n+\n+\tpublic boolean compareLists(List<Phone> otherList) {\n+\t\treturn phoneList.equals(otherList);\n+\t}\n+\n+\t// n. Codez une fonction Java d'échange de deux éléments dans une liste.\n+\tpublic void swapElements(int iphone7, int iphone8) {\n+\t\tCollections.swap(phoneList, iphone7, iphone8);\n+\t}\n+\n+\t// o. Codez une fonction Java qui permet de vider la liste.\n+\tpublic void clearList() {\n+\t\tphoneList.clear();\n+\t}\n+\t// p. Codez une fonction Java qui permet de tester que la liste est vide ou non.\n+\n+\tpublic boolean isListEmpty() {\n+\t\treturn phoneList.isEmpty();\n+\t}\n+\n }"
+        }
+    ]
+}

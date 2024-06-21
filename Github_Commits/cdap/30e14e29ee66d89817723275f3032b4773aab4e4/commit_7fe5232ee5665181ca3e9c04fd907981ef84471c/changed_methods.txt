@@ -1,0 +1,3 @@
+testGetLatestOnLegacyRows()
+testConcurrentCreateAppFirstVersion()
+testConcurrentCreateAppAfterTheFirstVersion()

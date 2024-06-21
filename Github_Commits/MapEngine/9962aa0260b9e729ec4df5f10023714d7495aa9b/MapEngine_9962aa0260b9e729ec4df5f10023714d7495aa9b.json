@@ -1,0 +1,98 @@
+{
+    "sha": "9962aa0260b9e729ec4df5f10023714d7495aa9b",
+    "node_id": "C_kwDOJSPhZdoAKDk5NjJhYTAyNjBiOWU3MjllYzRkZjVmMTAwMjM3MTRkNzQ5NWFhOWI",
+    "commit": {
+        "author": {
+            "name": "pianoman911",
+            "email": "pianofinn13@gmail.com",
+            "date": "2023-11-04T02:00:16Z"
+        },
+        "committer": {
+            "name": "pianoman911",
+            "email": "pianofinn13@gmail.com",
+            "date": "2023-11-04T02:00:16Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "af51b2e06031fadf00cda288756a9cc392bf0085",
+            "url": "https://api.github.com/repos/TheJoCraftNET/MapEngine/git/trees/af51b2e06031fadf00cda288756a9cc392bf0085"
+        },
+        "url": "https://api.github.com/repos/TheJoCraftNET/MapEngine/git/commits/9962aa0260b9e729ec4df5f10023714d7495aa9b",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCAAdFiEEXvLLAhYy0FdapCLceCSN0twiJdAFAmVFpbAACgkQeCSN0twi\nJdDpnQv/UU41lWRN7gYRyIGr8FCYncHLWZobn4i174KMiAg3vqAUpnZQbLuujOW8\nTqftQPcIlc/TcIKL32rMvgbRVtbDkzgD4aS8XwX6/q+ZAqyh7V8LMJFWMWgRwTwV\nDs+HQnEn7RZxANe3+hbTLzhy/ZfuYgFffYhFsQQKeFVP8OfF1M94f2hiK4GTKkLs\n+gu504mKJeIo1ZQP+8x4AkhWvmV1TPpJiZlSdWKJK/JNRgsVc8YFsR6cicRWwUKH\nVnyQy+0z8NVhxOCM6CbKUZ+88iDZUligkkSUnuWQDyKGtyg2nVEAWXGLgqtwHPmG\npY4qvqh1o6MH8/FIlN1gwk6M8e9z2GR6yCQWI1fkI01J+nbxFSvuG0IRVZ61w9Em\nQT2SOZLUSrmQm6H4AXkIC1Xbb1L78IlUx28/qVvL6muO4Kuk87RGufaqqLXr3Ado\npdClgO0bgzMgEpA4NrQ1+1+ZbMGPws2giJ3zERdwghtbe44t1nGsyLC5icPXj1XL\nqDXI7ilN\n=u8dP\n-----END PGP SIGNATURE-----",
+            "payload": "tree af51b2e06031fadf00cda288756a9cc392bf0085\nparent d41a90dc69f04b251075ec03aa828e7e40e3dcea\nauthor pianoman911 <pianofinn13@gmail.com> 1699063216 +0100\ncommitter pianoman911 <pianofinn13@gmail.com> 1699063216 +0100\n\nFixed null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/TheJoCraftNET/MapEngine/commits/9962aa0260b9e729ec4df5f10023714d7495aa9b",
+    "html_url": "https://github.com/TheJoCraftNET/MapEngine/commit/9962aa0260b9e729ec4df5f10023714d7495aa9b",
+    "comments_url": "https://api.github.com/repos/TheJoCraftNET/MapEngine/commits/9962aa0260b9e729ec4df5f10023714d7495aa9b/comments",
+    "author": {
+        "login": "pianoman911",
+        "id": 47421010,
+        "node_id": "MDQ6VXNlcjQ3NDIxMDEw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/47421010?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pianoman911",
+        "html_url": "https://github.com/pianoman911",
+        "followers_url": "https://api.github.com/users/pianoman911/followers",
+        "following_url": "https://api.github.com/users/pianoman911/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pianoman911/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pianoman911/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pianoman911/subscriptions",
+        "organizations_url": "https://api.github.com/users/pianoman911/orgs",
+        "repos_url": "https://api.github.com/users/pianoman911/repos",
+        "events_url": "https://api.github.com/users/pianoman911/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pianoman911/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "pianoman911",
+        "id": 47421010,
+        "node_id": "MDQ6VXNlcjQ3NDIxMDEw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/47421010?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pianoman911",
+        "html_url": "https://github.com/pianoman911",
+        "followers_url": "https://api.github.com/users/pianoman911/followers",
+        "following_url": "https://api.github.com/users/pianoman911/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pianoman911/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pianoman911/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pianoman911/subscriptions",
+        "organizations_url": "https://api.github.com/users/pianoman911/orgs",
+        "repos_url": "https://api.github.com/users/pianoman911/repos",
+        "events_url": "https://api.github.com/users/pianoman911/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pianoman911/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d41a90dc69f04b251075ec03aa828e7e40e3dcea",
+            "url": "https://api.github.com/repos/TheJoCraftNET/MapEngine/commits/d41a90dc69f04b251075ec03aa828e7e40e3dcea",
+            "html_url": "https://github.com/TheJoCraftNET/MapEngine/commit/d41a90dc69f04b251075ec03aa828e7e40e3dcea"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 5,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "f9c03c9481dfc63d6cea740120e3e96c4115c1d3",
+            "filename": "plugin/src/main/java/de/pianoman911/mapengine/core/pipeline/BaseDisplayOutput.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 2,
+            "changes": 7,
+            "blob_url": "https://github.com/TheJoCraftNET/MapEngine/blob/9962aa0260b9e729ec4df5f10023714d7495aa9b/plugin%2Fsrc%2Fmain%2Fjava%2Fde%2Fpianoman911%2Fmapengine%2Fcore%2Fpipeline%2FBaseDisplayOutput.java",
+            "raw_url": "https://github.com/TheJoCraftNET/MapEngine/raw/9962aa0260b9e729ec4df5f10023714d7495aa9b/plugin%2Fsrc%2Fmain%2Fjava%2Fde%2Fpianoman911%2Fmapengine%2Fcore%2Fpipeline%2FBaseDisplayOutput.java",
+            "contents_url": "https://api.github.com/repos/TheJoCraftNET/MapEngine/contents/plugin%2Fsrc%2Fmain%2Fjava%2Fde%2Fpianoman911%2Fmapengine%2Fcore%2Fpipeline%2FBaseDisplayOutput.java?ref=9962aa0260b9e729ec4df5f10023714d7495aa9b",
+            "patch": "@@ -42,8 +42,11 @@ public static void ejectPlayer(Player player) {\n \n         for (BaseDisplayOutput instance : instances) {\n             synchronized (instance.cache) {\n-                for (FrameFileCache cache : instance.cache.remove(player.getUniqueId()).values()) {\n-                    cache.closeAndDelete();\n+                Map<Integer, FrameFileCache> zs = instance.cache.remove(player.getUniqueId());\n+                if (zs != null) {\n+                    for (FrameFileCache cache : zs.values()) {\n+                        cache.closeAndDelete();\n+                    }\n                 }\n             }\n         }"
+        }
+    ]
+}

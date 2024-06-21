@@ -1,0 +1,32 @@
+  public void testGetLatestOnLegacyRows() throws Exception {
+    Gson GSON = ApplicationSpecificationAdapter.addTypeAdapters(new GsonBuilder()).create();
+    // insert a row in appspec table with latest column set to null
+    String appName = "legacy_app_without_latest";
+    String appVersion = ApplicationId.DEFAULT_VERSION;
+    ApplicationReference appRef = new ApplicationReference(NamespaceId.DEFAULT, appName);
+
+    ArtifactId artifactId = NamespaceId.DEFAULT.artifact("testArtifact", "1.0").toApiArtifactId();
+    ApplicationId appId = appRef.app(appVersion);
+    ApplicationSpecification spec = createDummyAppSpec(appId.getApplication(), appId.getVersion(), artifactId);
+    ApplicationMeta appMeta = new ApplicationMeta(appName, spec, null, null);
+
+    TransactionRunners.run(transactionRunner, context -> {
+      AppMetadataStore metaStore = AppMetadataStore.create(context);
+      metaStore.createLatestApplicationVersion(appId, appMeta);
+      StructuredTable appSpecTable = context.getTable(
+          StoreDefinition.AppMetadataStore.APPLICATION_SPECIFICATIONS);
+
+      List<Field<?>> fields = metaStore.getApplicationPrimaryKeys(
+          NamespaceId.DEFAULT.getNamespace(), appName, appVersion);
+      fields.add(Fields.booleanField(StoreDefinition.AppMetadataStore.LATEST_FIELD, null));
+      appSpecTable.upsert(fields);
+    });
+
+    ApplicationMeta latestAppMeta = TransactionRunners.run(transactionRunner, context -> {
+      AppMetadataStore metaStore = AppMetadataStore.create(context);
+      return metaStore.getLatest(appRef);
+    });
+
+    Assert.assertEquals(appName, latestAppMeta.getId());
+    Assert.assertEquals(appVersion, latestAppMeta.getSpec().getAppVersion());
+  }

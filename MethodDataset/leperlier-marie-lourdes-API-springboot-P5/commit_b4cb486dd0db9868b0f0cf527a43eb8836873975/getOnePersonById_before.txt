@@ -1,0 +1,8 @@
+	public Person getOnePersonById(String id) throws NullPointerException {
+		Person personFoundById = new Person();
+		personFoundById  = persons.stream().filter(person -> person.getId().equals(id)).findFirst().map(existingPerson -> {
+			return existingPerson;
+		}).orElseThrow(() -> new NullPointerException("person not found with id"));
+				
+		return personFoundById ;
+	}

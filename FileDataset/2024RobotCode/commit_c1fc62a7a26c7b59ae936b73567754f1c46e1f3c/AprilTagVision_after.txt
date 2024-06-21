@@ -1,0 +1,25 @@
+    public void periodic() {
+        frontCameraIO.setPoseOffset(
+                new Pose3d(
+                        FRONT_CAMERA_POSE.getX(),
+                        FRONT_CAMERA_POSE.getY(),
+                        FRONT_CAMERA_POSE.getZ(),
+                        FRONT_CAMERA_POSE.getRotation())
+        );
+
+        frontCameraIO.updateInputs(frontCameraInputs);
+        Logger.processInputs("Vision/FrontCamera", frontCameraInputs);
+        if (frontCameraInputs.lastMeasurementTimestampSecs > frontPose.timestampSecs()) {
+            frontPose = new TimestampedVisionPose(
+                    frontCameraInputs.lastMeasurementTimestampSecs,
+                    frontCameraInputs.estimatedPoseMeters,
+                    frontCameraInputs.seenTagIDs,
+                    frontCameraInputs.tagPosesMeters,
+                    true);
+        }
+
+        latestPose = getEstimatedPose();
+        latestPose.ifPresent(visionPose -> Logger.recordOutput("Vision/EstimatedPose", visionPose.poseMeters()));
+        latestPose.ifPresent(visionPoseConsumer);
+    }
+

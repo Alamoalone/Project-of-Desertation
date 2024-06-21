@@ -1,0 +1,98 @@
+{
+    "sha": "51b4dd68168ff4646ed83e76e3d839b1c3104273",
+    "node_id": "C_kwDOK3AN49oAKDUxYjRkZDY4MTY4ZmY0NjQ2ZWQ4M2U3NmUzZDgzOWIxYzMxMDQyNzM",
+    "commit": {
+        "author": {
+            "name": "ItzOver",
+            "email": "alireza@daneshian.ir",
+            "date": "2023-12-07T17:34:07Z"
+        },
+        "committer": {
+            "name": "ItzOver",
+            "email": "alireza@daneshian.ir",
+            "date": "2023-12-07T17:34:07Z"
+        },
+        "message": "Fixed a null pointer exception",
+        "tree": {
+            "sha": "352bafe5dcb97f7c9ac7d213e7afd3cc3bd053ac",
+            "url": "https://api.github.com/repos/ItzOverS/CoReScreen/git/trees/352bafe5dcb97f7c9ac7d213e7afd3cc3bd053ac"
+        },
+        "url": "https://api.github.com/repos/ItzOverS/CoReScreen/git/commits/51b4dd68168ff4646ed83e76e3d839b1c3104273",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ItzOverS/CoReScreen/commits/51b4dd68168ff4646ed83e76e3d839b1c3104273",
+    "html_url": "https://github.com/ItzOverS/CoReScreen/commit/51b4dd68168ff4646ed83e76e3d839b1c3104273",
+    "comments_url": "https://api.github.com/repos/ItzOverS/CoReScreen/commits/51b4dd68168ff4646ed83e76e3d839b1c3104273/comments",
+    "author": {
+        "login": "ItzOverS",
+        "id": 75364681,
+        "node_id": "MDQ6VXNlcjc1MzY0Njgx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75364681?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ItzOverS",
+        "html_url": "https://github.com/ItzOverS",
+        "followers_url": "https://api.github.com/users/ItzOverS/followers",
+        "following_url": "https://api.github.com/users/ItzOverS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ItzOverS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ItzOverS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ItzOverS/subscriptions",
+        "organizations_url": "https://api.github.com/users/ItzOverS/orgs",
+        "repos_url": "https://api.github.com/users/ItzOverS/repos",
+        "events_url": "https://api.github.com/users/ItzOverS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ItzOverS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ItzOverS",
+        "id": 75364681,
+        "node_id": "MDQ6VXNlcjc1MzY0Njgx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75364681?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ItzOverS",
+        "html_url": "https://github.com/ItzOverS",
+        "followers_url": "https://api.github.com/users/ItzOverS/followers",
+        "following_url": "https://api.github.com/users/ItzOverS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ItzOverS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ItzOverS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ItzOverS/subscriptions",
+        "organizations_url": "https://api.github.com/users/ItzOverS/orgs",
+        "repos_url": "https://api.github.com/users/ItzOverS/repos",
+        "events_url": "https://api.github.com/users/ItzOverS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ItzOverS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ddc59d3336bc357b9867d87835b68e093fe77d6d",
+            "url": "https://api.github.com/repos/ItzOverS/CoReScreen/commits/ddc59d3336bc357b9867d87835b68e093fe77d6d",
+            "html_url": "https://github.com/ItzOverS/CoReScreen/commit/ddc59d3336bc357b9867d87835b68e093fe77d6d"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "40ddb940a467bdfdf7d6620a4b8cfe14d01ed159",
+            "filename": "src/main/java/me/overlight/corescreen/Vanish/VanishManager.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/ItzOverS/CoReScreen/blob/51b4dd68168ff4646ed83e76e3d839b1c3104273/src%2Fmain%2Fjava%2Fme%2Foverlight%2Fcorescreen%2FVanish%2FVanishManager.java",
+            "raw_url": "https://github.com/ItzOverS/CoReScreen/raw/51b4dd68168ff4646ed83e76e3d839b1c3104273/src%2Fmain%2Fjava%2Fme%2Foverlight%2Fcorescreen%2FVanish%2FVanishManager.java",
+            "contents_url": "https://api.github.com/repos/ItzOverS/CoReScreen/contents/src%2Fmain%2Fjava%2Fme%2Foverlight%2Fcorescreen%2FVanish%2FVanishManager.java?ref=51b4dd68168ff4646ed83e76e3d839b1c3104273",
+            "patch": "@@ -33,6 +33,7 @@ public class VanishManager {\n     }\n \n     public static boolean isVanish(Player player) {\n+        if(player == null) return false;\n         return vanishes.contains(player.getName());\n     }\n "
+        }
+    ]
+}

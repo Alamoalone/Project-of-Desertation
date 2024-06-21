@@ -1,0 +1,4 @@
+  public int createLatestApplicationVersion(ApplicationId id, ApplicationMeta appMeta)
+      throws IOException, ConflictException {
+    return createApplicationVersion(id, appMeta, true);
+  }

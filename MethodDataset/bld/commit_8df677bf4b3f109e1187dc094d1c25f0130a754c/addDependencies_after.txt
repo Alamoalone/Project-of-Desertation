@@ -1,0 +1,44 @@
+    private void addDependencies(Template t, Scope scope) {
+        var scoped_dependencies = dependencies().scope(scope);
+        if (!scoped_dependencies.isEmpty()) {
+            for (var dependency : scoped_dependencies) {
+                t.setValueEncoded("dependency-groupId", dependency.groupId());
+                t.setValueEncoded("dependency-artifactId", dependency.artifactId());
+
+                t.blankValue("dependency-version");
+                t.blankValue("dependency-version-tag");
+                if (!dependency.version().equals(VersionNumber.UNKNOWN)) {
+                    t.setValueEncoded("dependency-version", dependency.version());
+                    t.setBlock("dependency-version-tag");
+                }
+
+                t.blankValue("dependency-type");
+                t.blankValue("dependency-type-tag");
+                if (!"jar".equals(dependency.type())) {
+                    t.setValueEncoded("dependency-type", dependency.type());
+                    t.setBlock("dependency-type-tag");
+                }
+
+                t.blankValue("dependency-classifier");
+                t.blankValue("dependency-classifier-tag");
+                if (!dependency.classifier().isBlank()) {
+                    t.setValueEncoded("dependency-classifier", dependency.classifier());
+                    t.setBlock("dependency-classifier-tag");
+                }
+
+                t.setValueEncoded("dependency-scope", scope);
+                t.blankValue("dependency-exclusions");
+                t.blankValue("dependency-exclusions-tag");
+                if (!dependency.exclusions().isEmpty()) {
+                    for (var exclusion : dependency.exclusions()) {
+                        t.setValueEncoded("exclusion-groupId", exclusion.groupId());
+                        t.setValueEncoded("exclusion-artifactId", exclusion.artifactId());
+                        t.appendBlock("dependency-exclusions", "dependency-exclusion");
+                    }
+                    t.setBlock("dependency-exclusions-tag");
+                }
+
+                t.appendBlock("dependencies", "dependency");
+            }
+        }
+    }

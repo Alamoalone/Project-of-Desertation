@@ -1,0 +1,21 @@
+    public byte[] read(long xid, long uid) throws Exception {
+        Transaction transaction = activeTransaction.get(xid);
+        if (transaction.err != null) throw transaction.err;
+
+        Entry entry = null;
+        try {
+            entry = super.get(uid);
+        } catch (Exception e) {
+            if (e == NullEntryException) {
+                return null;
+            } else throw e;
+        }
+
+        try {
+            if (Visibility.isVisible(tm, transaction, entry)) {
+                return entry.data();
+            } else return null;
+        } finally {
+            entry.release();
+        }
+    }

@@ -1,0 +1,8 @@
+    protected String getUniqueDerivationKey(String issuerMasterKey, String pan, String panSequenceNumber,
+                                            CryptogramVersionNumber cryptogramVersionNumber) {
+        EMVUniqueDerivationKeyDerivator emvUdkDerivator = new EMVUniqueDerivationKeyDerivator(issuerMasterKey, pan,
+                panSequenceNumber, PaymentScheme.VISA, cryptogramVersionNumber, EMVUDKDerivationMethod.METHOD_A);
+        // The UDK derivation must be enhanced for CVN 22, as CVN 22 uses METHOD_B.
+
+        return emvUdkDerivator.generateUniqueDerivationKey();
+    }

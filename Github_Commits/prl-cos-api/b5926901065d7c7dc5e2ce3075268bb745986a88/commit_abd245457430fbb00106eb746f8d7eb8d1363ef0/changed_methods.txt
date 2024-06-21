@@ -1,0 +1,3 @@
+testupdateCaseDetailsCitizenUpdateOnCaApplicant()
+testupdateCaseDetailsCitizenUpdateOnCaRespondentForNull()
+testupdateCaseDetailsCitizenUpdateOnCaRespondent()

@@ -1,0 +1,79 @@
+    private void drawTerrain(char[][] map, Graphics2D g) {
+
+        // Drawing the grass textures and other static objects (well, house, etc.)
+        if (dad.level == 0) {
+            for (int i=0; i<map.length; i++) {
+                for (int j=0; j<map[0].length; j++) {
+
+                    // Interaction with map done via ASCII table values | 49 == '1'
+                    if ((int) map[i][j] - 48 <= 1 && changeGrass) {
+
+                        // Changes the grass in map value if the player is outside
+                        Random rnd = new Random();
+                        map[i][j] = (char) (48 + rnd.nextInt(2));
+                    }
+                    
+                    // Draw everything except flowers and house
+                    if ((int) map[i][j] - 48 != 3 || (int) map[i][j] - 48 != 2) {
+                        g.drawImage(new ImageIcon("res/Pics/" + Game.groundTextures[(int) map[i][j] - 48]).getImage(), 128*j, 128*i, 128, 128, null);
+                    }
+
+                    // Drawing the side fence poles
+                    for (int k=2; k<32; k++) {
+                        g.drawImage(new ImageIcon("res/Pics/FencePole.png").getImage(), 1877, k*30, 22, 96, null);
+                    }
+                }
+            }
+        } else {
+
+            // Draws the interior of the house
+            for (int i=0; i<map.length; i++) {
+                for (int j=0; j<map[0].length; j++) {
+                    g.drawImage(new ImageIcon("res/Pics/" + Game.houseTextures[(int) map[i][j] - 48]).getImage(), 128*j, 128*i, 128, 128, null);
+                }
+            }
+        }
+        
+
+        try {
+            if (dad.level == 0) {
+                // Draw the house itself
+                g.drawImage(new ImageIcon("res/Pics/" + Game.groundTextures[(int) map[0][1] - 48]).getImage(), 128, 0, 256, 256, null);
+                changeGrass = false;
+
+                // Drawing all the placed plants by a for loop to allow editing the plants
+                for (int i=0; i<Game.flowers.size(); i++) {
+                    Flower plant = Game.flowers.get(i);
+
+                    // Flower life-ending logic
+                    if (plant.TIME_TO_DISSAPEAR >= System.currentTimeMillis()) {
+                        if (plant.TIME_TO_DIE <= System.currentTimeMillis()) {
+                            if (plant.STATUS.equals("Alive")) {
+                                plant.CURRENT_TEXTURE = plant.setTexture(plant.DEAD_TEXTURE);
+                                plant.STATUS = "Dead";
+                                Game.playSound("res/Audio/MagicSound.wav");
+                            }
+                        } else if (plant.TIME_TO_DIE - System.currentTimeMillis() <= Game.flowerChange) {
+                            plant.CURRENT_TEXTURE = plant.setTexture(plant.THIRSTY_TEXTURE);
+                        }
+                        g.drawImage(plant.CURRENT_TEXTURE, plant.LOCATION_X*128, plant.LOCATION_Y*128, 128, 128, null);     // Draw the flower
+                    } else {
+                        Game.flowers.remove(plant);
+                        map[plant.LOCATION_Y][plant.LOCATION_X] = '0';
+                    }
+                }
+            }
+
+            // Drawing the player character in 128 x 128
+            g.drawImage(dad.currentTexture, (int) dad.LOCATION_X, (int) dad.LOCATION_Y, 128, 128, null);
+
+            // Drawing the errors
+            g.setFont(new Font("Monospaced", Font.BOLD, 20));
+            g.setColor(new Color(238, 16, 16));
+            g.drawString(Game.errorMessage, (int) dad.LOCATION_X - 60, (int) dad.LOCATION_Y + 10);
+        } catch(NullPointerException npe) {
+            System.err.println(ErrorList.ERR_NPE.message);
+            Game.error("Null Pointer Exception Draw", 3);
+        }
+    }
+

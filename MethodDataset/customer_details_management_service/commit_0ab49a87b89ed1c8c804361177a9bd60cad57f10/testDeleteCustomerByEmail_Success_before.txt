@@ -1,0 +1,11 @@
+    void testDeleteCustomerByEmail_Success() {
+        // Arrange
+        String email = "test@example.com";
+        when(customerDetailService.deleteCustomerDetailsByEmail(email)).thenReturn(true);
+
+        // Act
+        ResponseEntity<?> responseEntity = customerDetailsController.deleteCustomerByEmail(email);
+
+        // Assert
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+    }

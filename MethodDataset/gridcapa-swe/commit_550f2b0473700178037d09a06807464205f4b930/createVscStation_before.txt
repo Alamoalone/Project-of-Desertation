@@ -1,0 +1,18 @@
+    private static void createVscStation(Network network, HvdcCreationParameters creationParameters, HvdcLine.Side side) {
+        Generator equivalentGenerator = network.getGenerator(creationParameters.getEquivalentGeneratorId(side));
+        Terminal terminal = equivalentGenerator.getTerminal();
+        // WARNING : in CVG, this is done for the equivalent generator of HVDC line 1 for both HVDC lines. Here it is more generic => check if OK
+        VscStationCreationParameters vscStationCreationParameters = creationParameters.getVscCreationParameters(side);
+        double voltageSetpoint = terminal.isConnected() ? equivalentGenerator.getTargetV() : vscStationCreationParameters.getDefaultVoltageSetpoint();
+        VoltageLevel voltageLevel = terminal.getVoltageLevel();
+        voltageLevel.newVscConverterStation()
+                .setId(vscStationCreationParameters.getId())
+                .setReactivePowerSetpoint(vscStationCreationParameters.getReactivePowerSetpoint())
+                .setLossFactor(vscStationCreationParameters.getLossFactor())
+                .setVoltageRegulatorOn(vscStationCreationParameters.isVoltageRegulatorOn())
+                .setVoltageSetpoint(voltageSetpoint)
+                .setConnectableBus(terminal.getBusBreakerView().getConnectableBus().getId())
+                .setFictitious(false)
+                .setEnsureIdUnicity(true)
+                .add();
+    }

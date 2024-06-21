@@ -1,0 +1,110 @@
+{
+    "sha": "04a1ed25dd60cc3e00e43e0daec4a45c471595ff",
+    "node_id": "C_kwDOAATZv9oAKDA0YTFlZDI1ZGQ2MGNjM2UwMGU0M2UwZGFlYzRhNDVjNDcxNTk1ZmY",
+    "commit": {
+        "author": {
+            "name": "mikellorza",
+            "email": "mikel.lorza@liferay.com",
+            "date": "2023-06-09T12:26:54Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-06-14T09:49:03Z"
+        },
+        "message": "LPS-187268 Avoid null pointer exception",
+        "tree": {
+            "sha": "66df32547cf323b4e1fec1a49d4a06681e042af6",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/66df32547cf323b4e1fec1a49d4a06681e042af6"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/04a1ed25dd60cc3e00e43e0daec4a45c471595ff",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN SSH SIGNATURE-----\nU1NIU0lHAAAAAQAAADMAAAALc3NoLWVkMjU1MTkAAAAgIcDjNlTxfRgpDVhEm9M0CmMGHg\n8lPcdZvrefGnr7hcIAAAADZ2l0AAAAAAAAAAZzaGE1MTIAAABTAAAAC3NzaC1lZDI1NTE5\nAAAAQGF2PibwPWWiLDLEJIev1n8R0NvHL4mkYuTcKyNBnGCtIVysTqqNRr4bi5mS9bzmLf\ndsBL0HlRKof+jGa++hLAI=\n-----END SSH SIGNATURE-----",
+            "payload": "tree 66df32547cf323b4e1fec1a49d4a06681e042af6\nparent d7781345d769b13b5063549a76a54b272d1e15ad\nauthor mikellorza <mikel.lorza@liferay.com> 1686313614 +0200\ncommitter Brian Chan <brian.chan@liferay.com> 1686736143 +0530\n\nLPS-187268 Avoid null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/04a1ed25dd60cc3e00e43e0daec4a45c471595ff",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/04a1ed25dd60cc3e00e43e0daec4a45c471595ff",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/04a1ed25dd60cc3e00e43e0daec4a45c471595ff/comments",
+    "author": {
+        "login": "Mikellorza",
+        "id": 46810560,
+        "node_id": "MDQ6VXNlcjQ2ODEwNTYw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/46810560?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mikellorza",
+        "html_url": "https://github.com/Mikellorza",
+        "followers_url": "https://api.github.com/users/Mikellorza/followers",
+        "following_url": "https://api.github.com/users/Mikellorza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mikellorza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mikellorza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mikellorza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mikellorza/orgs",
+        "repos_url": "https://api.github.com/users/Mikellorza/repos",
+        "events_url": "https://api.github.com/users/Mikellorza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mikellorza/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d7781345d769b13b5063549a76a54b272d1e15ad",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/d7781345d769b13b5063549a76a54b272d1e15ad",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/d7781345d769b13b5063549a76a54b272d1e15ad"
+        }
+    ],
+    "stats": {
+        "total": 25,
+        "additions": 10,
+        "deletions": 15
+    },
+    "files": [
+        {
+            "sha": "8feb283d807d15f3d6f6791c22d8e01d55fac563",
+            "filename": "modules/apps/layout/layout-taglib/src/main/java/com/liferay/layout/taglib/internal/servlet/LayoutStructureCommonStylesCSSServlet.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 7,
+            "changes": 12,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/04a1ed25dd60cc3e00e43e0daec4a45c471595ff/modules%2Fapps%2Flayout%2Flayout-taglib%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Ftaglib%2Finternal%2Fservlet%2FLayoutStructureCommonStylesCSSServlet.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/04a1ed25dd60cc3e00e43e0daec4a45c471595ff/modules%2Fapps%2Flayout%2Flayout-taglib%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Ftaglib%2Finternal%2Fservlet%2FLayoutStructureCommonStylesCSSServlet.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Flayout%2Flayout-taglib%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Ftaglib%2Finternal%2Fservlet%2FLayoutStructureCommonStylesCSSServlet.java?ref=04a1ed25dd60cc3e00e43e0daec4a45c471595ff",
+            "patch": "@@ -50,7 +50,6 @@\n import com.liferay.portal.kernel.util.ContentTypes;\n import com.liferay.portal.kernel.util.GetterUtil;\n import com.liferay.portal.kernel.util.HashMapBuilder;\n-import com.liferay.portal.kernel.util.HttpComponentsUtil;\n import com.liferay.portal.kernel.util.ListUtil;\n import com.liferay.portal.kernel.util.ParamUtil;\n import com.liferay.portal.kernel.util.Portal;\n@@ -140,13 +139,12 @@ protected void doGet(\n \t\thttpServletResponse.setContentType(ContentTypes.TEXT_CSS_UTF8);\n \t\thttpServletResponse.setStatus(HttpServletResponse.SC_OK);\n \n-\t\tMap<String, String[]> parameterMap = HttpComponentsUtil.getParameterMap(\n-\t\t\thttpServletRequest.getQueryString());\n+\t\tlong plid = ParamUtil.getLong(httpServletRequest, \"plid\");\n+\t\tLayout layout = null;\n \n-\t\tString[] plids = parameterMap.get(\"plid\");\n-\n-\t\tLayout layout = _layoutLocalService.fetchLayout(\n-\t\t\tGetterUtil.getLong(plids[0]));\n+\t\tif (plid > 0) {\n+\t\t\tlayout = _layoutLocalService.fetchLayout(plid);\n+\t\t}\n \n \t\tif ((layout == null) ||\n \t\t\t(!layout.isTypeAssetDisplay() && !layout.isTypeContent())) {"
+        },
+        {
+            "sha": "22b5d2a0c3316f67ad3e4de36025fcb129ad526c",
+            "filename": "modules/apps/layout/layout-taglib/src/main/java/com/liferay/layout/taglib/internal/util/SegmentsExperienceUtil.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 8,
+            "changes": 13,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/04a1ed25dd60cc3e00e43e0daec4a45c471595ff/modules%2Fapps%2Flayout%2Flayout-taglib%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Ftaglib%2Finternal%2Futil%2FSegmentsExperienceUtil.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/04a1ed25dd60cc3e00e43e0daec4a45c471595ff/modules%2Fapps%2Flayout%2Flayout-taglib%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Ftaglib%2Finternal%2Futil%2FSegmentsExperienceUtil.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Flayout%2Flayout-taglib%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Flayout%2Ftaglib%2Finternal%2Futil%2FSegmentsExperienceUtil.java?ref=04a1ed25dd60cc3e00e43e0daec4a45c471595ff",
+            "patch": "@@ -18,16 +18,12 @@\n import com.liferay.portal.kernel.model.Layout;\n import com.liferay.portal.kernel.service.LayoutLocalServiceUtil;\n import com.liferay.portal.kernel.theme.ThemeDisplay;\n-import com.liferay.portal.kernel.util.GetterUtil;\n-import com.liferay.portal.kernel.util.HttpComponentsUtil;\n import com.liferay.portal.kernel.util.ParamUtil;\n import com.liferay.portal.kernel.util.WebKeys;\n import com.liferay.segments.manager.SegmentsExperienceManager;\n import com.liferay.segments.model.SegmentsExperience;\n import com.liferay.segments.service.SegmentsExperienceLocalServiceUtil;\n \n-import java.util.Map;\n-\n import javax.servlet.http.HttpServletRequest;\n \n /**\n@@ -64,12 +60,13 @@ private static Layout _getLayout(HttpServletRequest httpServletRequest) {\n \t\t\treturn themeDisplay.getLayout();\n \t\t}\n \n-\t\tMap<String, String[]> parameterMap = HttpComponentsUtil.getParameterMap(\n-\t\t\thttpServletRequest.getQueryString());\n+\t\tlong plid = ParamUtil.getLong(httpServletRequest, \"plid\");\n \n-\t\tString[] plids = parameterMap.get(\"plid\");\n+\t\tif (plid > 0) {\n+\t\t\treturn LayoutLocalServiceUtil.fetchLayout(plid);\n+\t\t}\n \n-\t\treturn LayoutLocalServiceUtil.fetchLayout(GetterUtil.getLong(plids[0]));\n+\t\treturn null;\n \t}\n \n \tprivate static boolean _isValidSegmentsExperienceId("
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+    public void removeCards (int startIndex, int endIndex) {
+        cards.subList(startIndex, endIndex+1).clear();
+    }

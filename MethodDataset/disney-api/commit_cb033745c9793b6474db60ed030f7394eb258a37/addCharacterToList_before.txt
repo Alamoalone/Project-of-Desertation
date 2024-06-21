@@ -1,0 +1,4 @@
+    public void addCharacterToList(Character character) {
+        if (Objects.nonNull(character) && !this.characters.contains(character))
+            this.getCharacters().add(character);
+    }

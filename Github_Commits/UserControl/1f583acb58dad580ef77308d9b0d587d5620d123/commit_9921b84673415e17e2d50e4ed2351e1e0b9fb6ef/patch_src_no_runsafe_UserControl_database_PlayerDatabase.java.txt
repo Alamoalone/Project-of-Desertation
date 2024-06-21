@@ -1,0 +1,22 @@
+@@ -213,14 +213,20 @@ public HashMap<String, String> GetPlayerData(IPlayer player)
+ 
+ 	private String formatDate(Instant date)
+ 	{
++		if (date == null)
++			return "Invalid Date";
++
+ 		return date.atZone(ZoneId.systemDefault()).toString().replace("T", " ").substring(0,16);
+ 	}
+ 
+ 	@Override
+ 	public DateTime GetPlayerLogout(IPlayer player)
+ 	{
++		if (player == null)
++			return null;
++
+ 		PlayerData data = getData(player);
+-		if (data == null)
++		if (data == null || data.getLogout() == null)
+ 			return null;
+ 
+ 		return new DateTime(data.getLogout().getEpochSecond());

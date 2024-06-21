@@ -1,0 +1,4 @@
+	public String getServerPublicKey()
+	{
+		return serverPublicKey;
+	}

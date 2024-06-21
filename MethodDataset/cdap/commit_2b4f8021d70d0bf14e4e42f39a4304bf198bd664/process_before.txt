@@ -1,0 +1,39 @@
+  public void process(ApplicationWithPrograms input) throws Exception {
+    ApplicationSpecification applicationSpecification = input.getSpecification();
+    ApplicationId applicationId = input.getApplicationId();
+    Collection<ApplicationId> allAppVersionsAppIds =
+        store.getAllAppVersionsAppIds(applicationId.getAppReference());
+    boolean ownerAdded = addOwnerIfRequired(input, allAppVersionsAppIds);
+    ApplicationMeta appMeta = new ApplicationMeta(applicationSpecification.getName(),
+        input.getSpecification(),
+        input.getChangeDetail(), input.getSourceControlMeta(), !input.isSkipMarkingLatest());
+    try {
+      int editCount = store.addApplication(input.getApplicationId(), appMeta);
+
+      if (input.isSkipMarkingLatest()) {
+        // TODO [CDAP-20848]
+        // do not emit any metrics. the application may be cleaned up or marked latest later
+      } else if (input.isUpgrade()) {
+        // increment metric : app.deploy.event.count.upgrade
+        emitMetrics(applicationId.getNamespace(), applicationId.getApplication(),
+            Constants.Metrics.AppMetadataStore.DEPLOY_UPGRADE_COUNT);
+      } else if (editCount == 1) {
+        // increment metric : app.deploy.event.count.create
+        emitMetrics(applicationId.getNamespace(), applicationId.getApplication(),
+            Constants.Metrics.AppMetadataStore.DEPLOY_NEW_COUNT);
+      } else {
+        // When the app already exists, it is an edit - increment metric : app.deploy.event.count.edit
+        emitMetrics(applicationId.getNamespace(), applicationId.getApplication(),
+            Constants.Metrics.AppMetadataStore.DEPLOY_EDIT_COUNT);
+      }
+    } catch (Exception e) {
+      // if we failed to store the app spec cleanup the owner if it was added in this call
+      if (ownerAdded) {
+        ownerAdmin.delete(input.getApplicationId());
+      }
+      // propagate the exception
+      throw e;
+    }
+    registerDatasets(input);
+    emit(input);
+  }

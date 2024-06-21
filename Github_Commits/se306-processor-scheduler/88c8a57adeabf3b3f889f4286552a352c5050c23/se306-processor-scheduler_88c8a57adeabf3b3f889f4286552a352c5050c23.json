@@ -1,0 +1,98 @@
+{
+    "sha": "88c8a57adeabf3b3f889f4286552a352c5050c23",
+    "node_id": "C_kwDOLZifo9oAKDg4YzhhNTdhZGVhYmYzYjNmODg5ZjQyODY1NTJhMzUyYzUwNTBjMjM",
+    "commit": {
+        "author": {
+            "name": "Andrew Lam",
+            "email": "bluey17501@gmail.com",
+            "date": "2023-10-15T09:25:55Z"
+        },
+        "committer": {
+            "name": "Andrew Lam",
+            "email": "bluey17501@gmail.com",
+            "date": "2023-10-15T09:25:55Z"
+        },
+        "message": "feat: fixed null pointer exception on start node",
+        "tree": {
+            "sha": "9a23777296e5534896257a040a83674ba15147bd",
+            "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/git/trees/9a23777296e5534896257a040a83674ba15147bd"
+        },
+        "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/git/commits/88c8a57adeabf3b3f889f4286552a352c5050c23",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/commits/88c8a57adeabf3b3f889f4286552a352c5050c23",
+    "html_url": "https://github.com/KW781/se306-processor-scheduler/commit/88c8a57adeabf3b3f889f4286552a352c5050c23",
+    "comments_url": "https://api.github.com/repos/KW781/se306-processor-scheduler/commits/88c8a57adeabf3b3f889f4286552a352c5050c23/comments",
+    "author": {
+        "login": "Alam624",
+        "id": 100545381,
+        "node_id": "U_kgDOBf4zZQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/100545381?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Alam624",
+        "html_url": "https://github.com/Alam624",
+        "followers_url": "https://api.github.com/users/Alam624/followers",
+        "following_url": "https://api.github.com/users/Alam624/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Alam624/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Alam624/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Alam624/subscriptions",
+        "organizations_url": "https://api.github.com/users/Alam624/orgs",
+        "repos_url": "https://api.github.com/users/Alam624/repos",
+        "events_url": "https://api.github.com/users/Alam624/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Alam624/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Alam624",
+        "id": 100545381,
+        "node_id": "U_kgDOBf4zZQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/100545381?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Alam624",
+        "html_url": "https://github.com/Alam624",
+        "followers_url": "https://api.github.com/users/Alam624/followers",
+        "following_url": "https://api.github.com/users/Alam624/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Alam624/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Alam624/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Alam624/subscriptions",
+        "organizations_url": "https://api.github.com/users/Alam624/orgs",
+        "repos_url": "https://api.github.com/users/Alam624/repos",
+        "events_url": "https://api.github.com/users/Alam624/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Alam624/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b7d158b45e381ffdf8b6479afb34b1b9abd40185",
+            "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/commits/b7d158b45e381ffdf8b6479afb34b1b9abd40185",
+            "html_url": "https://github.com/KW781/se306-processor-scheduler/commit/b7d158b45e381ffdf8b6479afb34b1b9abd40185"
+        }
+    ],
+    "stats": {
+        "total": 16,
+        "additions": 4,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "5ea39c38745b24718ed98f5dab26e1ba9d6fbbe8",
+            "filename": "src/main/java/com/example/project2project2team16/controllers/MainVisualisationController.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 12,
+            "changes": 16,
+            "blob_url": "https://github.com/KW781/se306-processor-scheduler/blob/88c8a57adeabf3b3f889f4286552a352c5050c23/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject2project2team16%2Fcontrollers%2FMainVisualisationController.java",
+            "raw_url": "https://github.com/KW781/se306-processor-scheduler/raw/88c8a57adeabf3b3f889f4286552a352c5050c23/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject2project2team16%2Fcontrollers%2FMainVisualisationController.java",
+            "contents_url": "https://api.github.com/repos/KW781/se306-processor-scheduler/contents/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject2project2team16%2Fcontrollers%2FMainVisualisationController.java?ref=88c8a57adeabf3b3f889f4286552a352c5050c23",
+            "patch": "@@ -109,7 +109,6 @@ public class MainVisualisationController {\n     static final OperatingSystemMXBean osBean = ManagementFactory.getPlatformMXBean(OperatingSystemMXBean.class);\n     private ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();\n \n-\n     @FXML\n     public void initialize() {\n         // Initialise graph controls\n@@ -279,40 +278,33 @@ public void createGanttChart() {\n \n \n     public void updateGanttChart(ScheduleNode scheduleNode, int numProcessors) {\n-\n-\n-        // Set block height dependent on number of processors\n         int blockHeight = 150/numProcessors;\n         if(blockHeight > 50) {\n             blockHeight = 50;\n         }\n \n         ganttChart.setBlockHeight(blockHeight);\n \n-        // Initialize processor row of tasks\n         XYChart.Series[] rows = new XYChart.Series[numProcessors];\n         for (int i = 0; i < numProcessors; i++) {\n             rows[i] = new XYChart.Series();\n         }\n \n         for (Map.Entry<String, Pair<Integer,Integer>> entry : scheduleNode.GetVisited().entrySet()) {\n-            int taskProcessor = entry.getValue().getKey();\n             String taskId = entry.getKey();\n-            int taskWeight = GraphVisualisationHelper.instance().getTaskGraph().getNode(taskId).getAttribute(\"Weight\", Double.class).intValue();\n-            int taskStartTime = entry.getValue().getValue() - taskWeight;\n+            Integer taskProcessor = entry.getValue().getKey();\n+            Integer taskWeight = GraphVisualisationHelper.instance().getTaskGraph().getNode(taskId).getAttribute(\"Weight\", Double.class).intValue();\n+            Integer taskStartTime = entry.getValue().getValue() - taskWeight;\n             int processorIdDisplay = taskProcessor+1;\n             int styleCode = taskProcessor % 5;\n \n-            // Create bar in chart\n             GanttChart.ExtraData taskData = new GanttChart.ExtraData(taskWeight, \"ganttchart\"+styleCode);\n             XYChart.Data data = new XYChart.Data(taskStartTime, \"Processor \" + processorIdDisplay, taskData);\n             rows[taskProcessor].getData().add(data);\n         }\n \n-        // remove previous graph\n         ganttChart.getData().clear();\n         for (int i = 0; i < numProcessors; i++) {\n-            NumberAxis x = (NumberAxis) ganttChart.getXAxis();\n             ganttChart.getData().add(rows[i]);\n         }\n     }\n@@ -324,7 +316,7 @@ public void updateGanttChart(ScheduleNode scheduleNode, int numProcessors) {\n     public void setNodeClicked(FxViewPanel view) {\n         view.setOnMousePressed(clickEvent -> {\n             GraphicElement node = view.findGraphicElementAt(EnumSet.of(InteractiveElement.NODE), clickEvent.getX(), clickEvent.getY());\n-            if (node != null) {\n+            if (node != null && !node.getLabel().equals(\"0\")){\n                 node.setAttribute(\"ui.style\", \" stroke-mode: plain; stroke-color: #5A57D8; stroke-width: 2.0; size: 25px;\");\n                 nodeLabel.setText((String) node.getAttribute(\"ui.heuristic\"));\n                 nodePathCost.setText((String) node.getAttribute(\"ui.heuristicCost\"));"
+        }
+    ]
+}

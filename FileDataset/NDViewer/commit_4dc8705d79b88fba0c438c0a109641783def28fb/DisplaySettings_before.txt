@@ -1,0 +1,11 @@
+   public boolean isActive(String channelName) {
+      synchronized (this) {
+         try {
+            return json_.getJSONObject(channelName).getBoolean("Active");
+         } catch (Exception ex) {
+            System.err.println("Channel active missing in settings");
+            return true;
+         }
+      }
+   }
+

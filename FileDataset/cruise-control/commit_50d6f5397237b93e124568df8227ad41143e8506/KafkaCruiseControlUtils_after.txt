@@ -1,0 +1,9 @@
+  public static boolean isPartitionUnderReplicated(Cluster cluster, TopicPartition tp) throws
+                                                                                       PartitionNotExistsException {
+    PartitionInfo partitionInfo = cluster.partition(tp);
+    if (partitionInfo == null) {
+      throw new PartitionNotExistsException("Partition " + tp + " does not exist.");
+    }
+    return partitionInfo.inSyncReplicas().length != partitionInfo.replicas().length;
+  }
+

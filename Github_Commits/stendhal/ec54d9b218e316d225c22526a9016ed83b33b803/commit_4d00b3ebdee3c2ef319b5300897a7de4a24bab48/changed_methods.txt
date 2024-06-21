@@ -1,0 +1,1 @@
+configureNPC(SpeakerNPC npc, String shopname, boolean seller, boolean offer)

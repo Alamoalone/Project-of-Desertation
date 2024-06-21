@@ -1,0 +1,5 @@
+    public void onResume() {
+        Intent intent = new Intent(getContext(), AudioService.class);
+        getActivity().bindService(intent, this, Context.BIND_AUTO_CREATE);
+        super.onResume();
+    }

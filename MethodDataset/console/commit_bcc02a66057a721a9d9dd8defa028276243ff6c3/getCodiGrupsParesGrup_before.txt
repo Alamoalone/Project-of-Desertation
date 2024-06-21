@@ -1,0 +1,13 @@
+    private Collection getCodiGrupsParesGrup(String codiGrup) {
+
+        GroupEntity grupAnalitzar = getGroupEntityDao().findByName(codiGrup);
+
+        Collection totsPares = new HashSet();
+        GroupEntity pare = grupAnalitzar.getParent();
+        while (pare != null) {
+            totsPares.add(pare.getName());
+            pare = pare.getParent();
+        }
+
+        return totsPares;
+    }

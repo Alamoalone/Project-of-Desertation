@@ -1,0 +1,98 @@
+{
+    "sha": "fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc",
+    "node_id": "C_kwDOKN6RFdoAKGZkMmNlNDZlZWQwYWU2ZmE0ZmZkYmI1NWViMDMzYjI3ZTc5NDUwYmM",
+    "commit": {
+        "author": {
+            "name": "hugorithm",
+            "email": "hugofsilv@gmail.com",
+            "date": "2023-11-03T19:22:42Z"
+        },
+        "committer": {
+            "name": "hugorithm",
+            "email": "hugofsilv@gmail.com",
+            "date": "2023-11-03T19:22:42Z"
+        },
+        "message": "refactor: prevent null pointer exception",
+        "tree": {
+            "sha": "21f6586e77a0edebf498bcca189492a51fdb7fa1",
+            "url": "https://api.github.com/repos/hugorithm/HopfenCraft/git/trees/21f6586e77a0edebf498bcca189492a51fdb7fa1"
+        },
+        "url": "https://api.github.com/repos/hugorithm/HopfenCraft/git/commits/fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hugorithm/HopfenCraft/commits/fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc",
+    "html_url": "https://github.com/hugorithm/HopfenCraft/commit/fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc",
+    "comments_url": "https://api.github.com/repos/hugorithm/HopfenCraft/commits/fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc/comments",
+    "author": {
+        "login": "hugorithm",
+        "id": 26043517,
+        "node_id": "MDQ6VXNlcjI2MDQzNTE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26043517?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hugorithm",
+        "html_url": "https://github.com/hugorithm",
+        "followers_url": "https://api.github.com/users/hugorithm/followers",
+        "following_url": "https://api.github.com/users/hugorithm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hugorithm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hugorithm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hugorithm/subscriptions",
+        "organizations_url": "https://api.github.com/users/hugorithm/orgs",
+        "repos_url": "https://api.github.com/users/hugorithm/repos",
+        "events_url": "https://api.github.com/users/hugorithm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hugorithm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "hugorithm",
+        "id": 26043517,
+        "node_id": "MDQ6VXNlcjI2MDQzNTE3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/26043517?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hugorithm",
+        "html_url": "https://github.com/hugorithm",
+        "followers_url": "https://api.github.com/users/hugorithm/followers",
+        "following_url": "https://api.github.com/users/hugorithm/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hugorithm/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hugorithm/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hugorithm/subscriptions",
+        "organizations_url": "https://api.github.com/users/hugorithm/orgs",
+        "repos_url": "https://api.github.com/users/hugorithm/repos",
+        "events_url": "https://api.github.com/users/hugorithm/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hugorithm/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d7aec3fd03ba78b23963f4f5b91eb39fc2130ef2",
+            "url": "https://api.github.com/repos/hugorithm/HopfenCraft/commits/d7aec3fd03ba78b23963f4f5b91eb39fc2130ef2",
+            "html_url": "https://github.com/hugorithm/HopfenCraft/commit/d7aec3fd03ba78b23963f4f5b91eb39fc2130ef2"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "28eed214c885ebcd3d3f9b4b27fa520af2dcac1b",
+            "filename": "backend/src/test/java/com/hugorithm/hopfencraft/service/ProductServiceTests.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/hugorithm/HopfenCraft/blob/fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fhugorithm%2Fhopfencraft%2Fservice%2FProductServiceTests.java",
+            "raw_url": "https://github.com/hugorithm/HopfenCraft/raw/fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fhugorithm%2Fhopfencraft%2Fservice%2FProductServiceTests.java",
+            "contents_url": "https://api.github.com/repos/hugorithm/HopfenCraft/contents/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fhugorithm%2Fhopfencraft%2Fservice%2FProductServiceTests.java?ref=fd2ce46eed0ae6fa4ffdbb55eb033b27e79450bc",
+            "patch": "@@ -22,6 +22,7 @@\n \n import java.math.BigDecimal;\n import java.util.Arrays;\n+import java.util.Objects;\n import java.util.Optional;\n \n import static org.junit.jupiter.api.Assertions.*;\n@@ -282,7 +283,7 @@ public void testFindAllProducts_ReturnsPageOfProducts() {\n         ResponseEntity<Page<ProductDTO>> productsPage = productService.getProducts(pageable, null);\n \n         // Assert the expected behavior\n-        assertEquals(3, productsPage.getBody().getTotalElements());\n+        assertEquals(3, Objects.requireNonNull(productsPage.getBody()).getTotalElements());\n         assertEquals(3, productsPage.getBody().getContent().size());\n     }\n "
+        }
+    ]
+}

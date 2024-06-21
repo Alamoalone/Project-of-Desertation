@@ -1,0 +1,3 @@
+    public static ImplicitMethods fetchImplicits(ClassMethodIdMemberIdTypeFct _id, Forwards _forwards) {
+        return fetchImplicits(_id.getImplicit(),_id.getMemberId(),_forwards);
+    }

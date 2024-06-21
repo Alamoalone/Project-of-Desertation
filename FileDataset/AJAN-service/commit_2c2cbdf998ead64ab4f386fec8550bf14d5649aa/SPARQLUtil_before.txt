@@ -1,0 +1,4 @@
+	public static Model queryRepository(final Repository repo, final String query) {
+		return Repositories.graphQuery(repo, query, r -> QueryResults.asModel(r));
+	}
+

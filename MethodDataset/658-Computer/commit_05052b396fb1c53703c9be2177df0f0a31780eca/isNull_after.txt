@@ -1,0 +1,4 @@
+  public boolean isNull()
+  {
+    return (topLeft == null) || (bottomRight == null);
+  }

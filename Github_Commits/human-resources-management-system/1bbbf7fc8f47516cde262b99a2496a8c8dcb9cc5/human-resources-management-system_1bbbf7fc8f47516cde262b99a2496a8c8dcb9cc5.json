@@ -1,0 +1,110 @@
+{
+    "sha": "1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5",
+    "node_id": "C_kwDOLOaUA9oAKDFiYmJmN2ZjOGY0NzUxNmNkZTI2MmI5OWEyNDk2YThjOGRjYjljYzU",
+    "commit": {
+        "author": {
+            "name": "alivolkansahin",
+            "email": "avolkan.shn@gmail.com",
+            "date": "2024-02-28T01:45:27Z"
+        },
+        "committer": {
+            "name": "alivolkansahin",
+            "email": "avolkan.shn@gmail.com",
+            "date": "2024-02-28T01:45:27Z"
+        },
+        "message": "Small fixes for null pointer exceptions in spending service",
+        "tree": {
+            "sha": "0e9e061d17ea2af125ec0d2574626eaa60900ffb",
+            "url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/git/trees/0e9e061d17ea2af125ec0d2574626eaa60900ffb"
+        },
+        "url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/git/commits/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/commits/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5",
+    "html_url": "https://github.com/alivolkansahin/human-resources-management-system/commit/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5",
+    "comments_url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/commits/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5/comments",
+    "author": {
+        "login": "alivolkansahin",
+        "id": 141641869,
+        "node_id": "U_kgDOCHFIjQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/141641869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alivolkansahin",
+        "html_url": "https://github.com/alivolkansahin",
+        "followers_url": "https://api.github.com/users/alivolkansahin/followers",
+        "following_url": "https://api.github.com/users/alivolkansahin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alivolkansahin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alivolkansahin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alivolkansahin/subscriptions",
+        "organizations_url": "https://api.github.com/users/alivolkansahin/orgs",
+        "repos_url": "https://api.github.com/users/alivolkansahin/repos",
+        "events_url": "https://api.github.com/users/alivolkansahin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alivolkansahin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "alivolkansahin",
+        "id": 141641869,
+        "node_id": "U_kgDOCHFIjQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/141641869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alivolkansahin",
+        "html_url": "https://github.com/alivolkansahin",
+        "followers_url": "https://api.github.com/users/alivolkansahin/followers",
+        "following_url": "https://api.github.com/users/alivolkansahin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alivolkansahin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alivolkansahin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alivolkansahin/subscriptions",
+        "organizations_url": "https://api.github.com/users/alivolkansahin/orgs",
+        "repos_url": "https://api.github.com/users/alivolkansahin/repos",
+        "events_url": "https://api.github.com/users/alivolkansahin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alivolkansahin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fc5f2c4df660ccef8854b68f9ddebff8836959a1",
+            "url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/commits/fc5f2c4df660ccef8854b68f9ddebff8836959a1",
+            "html_url": "https://github.com/alivolkansahin/human-resources-management-system/commit/fc5f2c4df660ccef8854b68f9ddebff8836959a1"
+        }
+    ],
+    "stats": {
+        "total": 18,
+        "additions": 9,
+        "deletions": 9
+    },
+    "files": [
+        {
+            "sha": "0c4136f60b0b3e15811e77e33fc967bb5c528f9c",
+            "filename": "spending-service/src/main/java/org/musketeers/dto/request/SpendingCreateRequestDto.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/alivolkansahin/human-resources-management-system/blob/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5/spending-service%2Fsrc%2Fmain%2Fjava%2Forg%2Fmusketeers%2Fdto%2Frequest%2FSpendingCreateRequestDto.java",
+            "raw_url": "https://github.com/alivolkansahin/human-resources-management-system/raw/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5/spending-service%2Fsrc%2Fmain%2Fjava%2Forg%2Fmusketeers%2Fdto%2Frequest%2FSpendingCreateRequestDto.java",
+            "contents_url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/contents/spending-service%2Fsrc%2Fmain%2Fjava%2Forg%2Fmusketeers%2Fdto%2Frequest%2FSpendingCreateRequestDto.java?ref=1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5",
+            "patch": "@@ -25,7 +25,7 @@ public class SpendingCreateRequestDto {\n \n     private String currency;\n \n-    private LocalDate spendingDate;\n+    private String spendingDate;\n \n     private List<MultipartFile> attachments;\n "
+        },
+        {
+            "sha": "1b81839ec981445960d832139cdfca6610ab3750",
+            "filename": "spending-service/src/main/java/org/musketeers/service/SpendingService.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 8,
+            "changes": 16,
+            "blob_url": "https://github.com/alivolkansahin/human-resources-management-system/blob/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5/spending-service%2Fsrc%2Fmain%2Fjava%2Forg%2Fmusketeers%2Fservice%2FSpendingService.java",
+            "raw_url": "https://github.com/alivolkansahin/human-resources-management-system/raw/1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5/spending-service%2Fsrc%2Fmain%2Fjava%2Forg%2Fmusketeers%2Fservice%2FSpendingService.java",
+            "contents_url": "https://api.github.com/repos/alivolkansahin/human-resources-management-system/contents/spending-service%2Fsrc%2Fmain%2Fjava%2Forg%2Fmusketeers%2Fservice%2FSpendingService.java?ref=1bbbf7fc8f47516cde262b99a2496a8c8dcb9cc5",
+            "patch": "@@ -27,11 +27,10 @@\n \n import java.io.IOException;\n import java.time.Instant;\n+import java.time.LocalDate;\n import java.time.ZoneId;\n-import java.util.ArrayList;\n-import java.util.Collections;\n-import java.util.List;\n-import java.util.Map;\n+import java.time.format.DateTimeFormatter;\n+import java.util.*;\n \n @Service\n public class SpendingService extends ServiceManager<Spending, String> {\n@@ -83,10 +82,11 @@ public String createRequest(SpendingCreateRequestDto dto) {\n                 .description(dto.getDescription())\n                 .amount(dto.getAmount())\n                 .currency(ECurrency.valueOf(dto.getCurrency()))\n-                .spendingDate(dto.getSpendingDate())\n+                .spendingDate(LocalDate.parse(dto.getSpendingDate(), DateTimeFormatter.ofPattern(\"EEE MMM dd yyyy HH:mm:ss 'GMT'Z (z)\", Locale.ENGLISH)))\n                 .build();\n-        if(!dto.getAttachments().isEmpty()){\n+        if(Optional.ofNullable(dto.getAttachments()).isPresent()){\n             List<Attachment> attachments = new ArrayList<>();\n+            long time = System.currentTimeMillis();\n             dto.getAttachments().forEach(multipartFile -> {\n                 try {\n                     byte[] fileBytes = multipartFile.getBytes();\n@@ -95,8 +95,8 @@ public String createRequest(SpendingCreateRequestDto dto) {\n                     attachments.add(Attachment.builder()\n                             .spending(spending)\n                             .fileUrl(url)\n-                            .createdAt(spending.getCreatedAt())\n-                            .updatedAt(spending.getUpdatedAt())\n+                            .createdAt(time)\n+                            .updatedAt(time)\n                             .status(true)\n                             .build());\n                 } catch (IOException e) {"
+        }
+    ]
+}

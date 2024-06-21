@@ -1,0 +1,23 @@
+	public static List<File> findFiles(File baseDir, String regex) {
+		List<File> files = new ArrayList<>();
+
+		File[] filesArray = baseDir.listFiles();
+
+		if (filesArray == null) {
+			return files;
+		}
+
+		for (File file : filesArray) {
+			String fileName = file.getName();
+
+			if (file.isDirectory()) {
+				files.addAll(findFiles(file, regex));
+			}
+			else if (fileName.matches(regex)) {
+				files.add(file);
+			}
+		}
+
+		return files;
+	}
+

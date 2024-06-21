@@ -1,0 +1,3 @@
+    public Optional<Document> getDocument() {
+        return Optional.ofNullable(document);
+    }

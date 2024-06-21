@@ -1,0 +1,20 @@
+    public void testFindAllProducts_ReturnsPageOfProducts() {
+        // Implement test logic for retrieving all products with pagination.
+        ApplicationUser user = new ApplicationUser();
+        user.setUsername("testuser");
+        user.setEmail("testuser@example.com");
+        // Mock data initialization to return a sample page of products
+        Pageable pageable = Pageable.ofSize(5).withPage(0);
+        when(productRepository.findAll(pageable)).thenReturn(new PageImpl<>(Arrays.asList(
+                new Product("Brand1", "Product1", "Description1", 5, new BigDecimal("19.99"), user),
+                new Product("Brand2", "Product2", "Description2", 10, new BigDecimal("29.99"), user),
+                new Product("Brand3", "Product3", "Description3", 15, new BigDecimal("39.99"), user)
+        )));
+
+        // Call the service method to retrieve all products
+        ResponseEntity<Page<ProductDTO>> productsPage = productService.getProducts(pageable, null);
+
+        // Assert the expected behavior
+        assertEquals(3, productsPage.getBody().getTotalElements());
+        assertEquals(3, productsPage.getBody().getContent().size());
+    }

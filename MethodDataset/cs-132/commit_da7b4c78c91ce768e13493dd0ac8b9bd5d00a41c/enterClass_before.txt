@@ -1,0 +1,3 @@
+    TypeEnv enterClass(Class c) {
+        return new TypeEnv(List.nul(), classList, Optional.of(c));
+    }

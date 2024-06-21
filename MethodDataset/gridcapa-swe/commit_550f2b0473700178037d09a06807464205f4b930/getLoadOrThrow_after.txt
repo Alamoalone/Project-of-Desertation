@@ -1,0 +1,7 @@
+    private static Load getLoadOrThrow(Network network, String id) {
+        Load load = network.getLoad(id);
+        if (load == null) {
+            throw new SweInvalidDataException(String.format("Load with id: %s needed for HVDC link modelling does not exist in network ", id));
+        }
+        return load;
+    }

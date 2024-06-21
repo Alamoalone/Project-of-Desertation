@@ -1,0 +1,98 @@
+{
+    "sha": "33eac2e94e436330b8ba7c6fd5919578938018a7",
+    "node_id": "C_kwDOAOlCtdoAKDMzZWFjMmU5NGU0MzYzMzBiOGJhN2M2ZmQ1OTE5NTc4OTM4MDE4YTc",
+    "commit": {
+        "author": {
+            "name": "--replace-all",
+            "email": "quocquyenit@gmail.com",
+            "date": "2023-03-17T07:23:17Z"
+        },
+        "committer": {
+            "name": "Quyen Ly",
+            "email": "quocquyenit@gmail.com",
+            "date": "2023-05-10T08:08:41Z"
+        },
+        "message": "FRI-577 Fixed null pointer exception",
+        "tree": {
+            "sha": "21da8c2e549c8104f2c6d4c9dd802fd8abc8e9aa",
+            "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/git/trees/21da8c2e549c8104f2c6d4c9dd802fd8abc8e9aa"
+        },
+        "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/git/commits/33eac2e94e436330b8ba7c6fd5919578938018a7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/commits/33eac2e94e436330b8ba7c6fd5919578938018a7",
+    "html_url": "https://github.com/IHTSDO/snomed-release-service/commit/33eac2e94e436330b8ba7c6fd5919578938018a7",
+    "comments_url": "https://api.github.com/repos/IHTSDO/snomed-release-service/commits/33eac2e94e436330b8ba7c6fd5919578938018a7/comments",
+    "author": {
+        "login": "QuyenLy87",
+        "id": 28590677,
+        "node_id": "MDQ6VXNlcjI4NTkwNjc3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28590677?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/QuyenLy87",
+        "html_url": "https://github.com/QuyenLy87",
+        "followers_url": "https://api.github.com/users/QuyenLy87/followers",
+        "following_url": "https://api.github.com/users/QuyenLy87/following{/other_user}",
+        "gists_url": "https://api.github.com/users/QuyenLy87/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/QuyenLy87/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/QuyenLy87/subscriptions",
+        "organizations_url": "https://api.github.com/users/QuyenLy87/orgs",
+        "repos_url": "https://api.github.com/users/QuyenLy87/repos",
+        "events_url": "https://api.github.com/users/QuyenLy87/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/QuyenLy87/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "QuyenLy87",
+        "id": 28590677,
+        "node_id": "MDQ6VXNlcjI4NTkwNjc3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28590677?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/QuyenLy87",
+        "html_url": "https://github.com/QuyenLy87",
+        "followers_url": "https://api.github.com/users/QuyenLy87/followers",
+        "following_url": "https://api.github.com/users/QuyenLy87/following{/other_user}",
+        "gists_url": "https://api.github.com/users/QuyenLy87/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/QuyenLy87/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/QuyenLy87/subscriptions",
+        "organizations_url": "https://api.github.com/users/QuyenLy87/orgs",
+        "repos_url": "https://api.github.com/users/QuyenLy87/repos",
+        "events_url": "https://api.github.com/users/QuyenLy87/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/QuyenLy87/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "488521fb919b28fb1c0f2251506183a28db6dacf",
+            "url": "https://api.github.com/repos/IHTSDO/snomed-release-service/commits/488521fb919b28fb1c0f2251506183a28db6dacf",
+            "html_url": "https://github.com/IHTSDO/snomed-release-service/commit/488521fb919b28fb1c0f2251506183a28db6dacf"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 8,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "8e43cec9094467d2cf14ccc04547a76ef0fde7de",
+            "filename": "src/main/java/org/ihtsdo/buildcloud/core/service/RVFFailureJiraAssociationService.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 4,
+            "changes": 12,
+            "blob_url": "https://github.com/IHTSDO/snomed-release-service/blob/33eac2e94e436330b8ba7c6fd5919578938018a7/src%2Fmain%2Fjava%2Forg%2Fihtsdo%2Fbuildcloud%2Fcore%2Fservice%2FRVFFailureJiraAssociationService.java",
+            "raw_url": "https://github.com/IHTSDO/snomed-release-service/raw/33eac2e94e436330b8ba7c6fd5919578938018a7/src%2Fmain%2Fjava%2Forg%2Fihtsdo%2Fbuildcloud%2Fcore%2Fservice%2FRVFFailureJiraAssociationService.java",
+            "contents_url": "https://api.github.com/repos/IHTSDO/snomed-release-service/contents/src%2Fmain%2Fjava%2Forg%2Fihtsdo%2Fbuildcloud%2Fcore%2Fservice%2FRVFFailureJiraAssociationService.java?ref=33eac2e94e436330b8ba7c6fd5919578938018a7",
+            "patch": "@@ -152,11 +152,12 @@ private String generateDescription(Build build, ValidationReport.RvfValidationRe\n \t\t\t\t+ \"Total number of failures: \" + testRunItem.getFailureCount() + \"\\n\"\n \t\t\t\t+ \"Report URL: \" + \"[\" + build.getRvfURL() + \"|\" + build.getRvfURL() + \"]\" + \"\\n\";\n \t\tList<ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail> firstNInstances = getFirstNInstances(testRunItem.getFirstNInstances(), 10);\n-\t\tresult += \"First \" + firstNInstances.size() + \" failures: \\n\";\n-\t\tfor (ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail failureDetail: firstNInstances) {\n-\t\t\tresult += \"* \" + failureDetail.toStringAndTruncateIfTextTooLong() + \"\\n\";\n+\t\tif (!firstNInstances.isEmpty()) {\n+\t\t\tresult += \"First \" + firstNInstances.size() + \" failures: \\n\";\n+\t\t\tfor (ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail failureDetail: firstNInstances) {\n+\t\t\t\tresult += \"* \" + failureDetail.toStringAndTruncateIfTextTooLong() + \"\\n\";\n+\t\t\t}\n \t\t}\n-\n \t\treturn result;\n \t}\n \n@@ -167,6 +168,9 @@ private String getPrettyString(String input) {\n \t}\n \n \tprivate List<ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail> getFirstNInstances(List<ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail> instances, int numberOfItem) {\n+\t\tif (instances == null) {\n+\t\t\treturn Collections.emptyList();\n+\t\t}\n \t\tif (numberOfItem < 0) {\n \t\t\treturn instances;\n \t\t}"
+        }
+    ]
+}

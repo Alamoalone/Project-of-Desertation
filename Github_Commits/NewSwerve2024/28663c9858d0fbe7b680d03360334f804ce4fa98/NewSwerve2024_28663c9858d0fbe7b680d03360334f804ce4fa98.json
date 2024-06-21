@@ -1,0 +1,194 @@
+{
+    "sha": "28663c9858d0fbe7b680d03360334f804ce4fa98",
+    "node_id": "C_kwDOLNiEItoAKDI4NjYzYzk4NThkMGZiZTdiNjgwZDAzMzYwMzM0ZjgwNGNlNGZhOTg",
+    "commit": {
+        "author": {
+            "name": "Aakrist Godar",
+            "email": "aakrist.godar.1@gmail.com",
+            "date": "2024-02-15T04:37:12Z"
+        },
+        "committer": {
+            "name": "Aakrist Godar",
+            "email": "aakrist.godar.1@gmail.com",
+            "date": "2024-02-15T04:37:12Z"
+        },
+        "message": "Fixing autnomous and null pointer exceptions",
+        "tree": {
+            "sha": "802aed8b30812240bf70aede353082ba4d8708f9",
+            "url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/git/trees/802aed8b30812240bf70aede353082ba4d8708f9"
+        },
+        "url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/git/commits/28663c9858d0fbe7b680d03360334f804ce4fa98",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/commits/28663c9858d0fbe7b680d03360334f804ce4fa98",
+    "html_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/commit/28663c9858d0fbe7b680d03360334f804ce4fa98",
+    "comments_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/commits/28663c9858d0fbe7b680d03360334f804ce4fa98/comments",
+    "author": {
+        "login": "AakristG",
+        "id": 139092408,
+        "node_id": "U_kgDOCEphuA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139092408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AakristG",
+        "html_url": "https://github.com/AakristG",
+        "followers_url": "https://api.github.com/users/AakristG/followers",
+        "following_url": "https://api.github.com/users/AakristG/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AakristG/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AakristG/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AakristG/subscriptions",
+        "organizations_url": "https://api.github.com/users/AakristG/orgs",
+        "repos_url": "https://api.github.com/users/AakristG/repos",
+        "events_url": "https://api.github.com/users/AakristG/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AakristG/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "AakristG",
+        "id": 139092408,
+        "node_id": "U_kgDOCEphuA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139092408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AakristG",
+        "html_url": "https://github.com/AakristG",
+        "followers_url": "https://api.github.com/users/AakristG/followers",
+        "following_url": "https://api.github.com/users/AakristG/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AakristG/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AakristG/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AakristG/subscriptions",
+        "organizations_url": "https://api.github.com/users/AakristG/orgs",
+        "repos_url": "https://api.github.com/users/AakristG/repos",
+        "events_url": "https://api.github.com/users/AakristG/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AakristG/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f161f70097466fafb2d14a5cdb235e59792e8173",
+            "url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/commits/f161f70097466fafb2d14a5cdb235e59792e8173",
+            "html_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/commit/f161f70097466fafb2d14a5cdb235e59792e8173"
+        }
+    ],
+    "stats": {
+        "total": 53,
+        "additions": 38,
+        "deletions": 15
+    },
+    "files": [
+        {
+            "sha": "d601ba6ac85677d21f6d25c0db15aff0278a3110",
+            "filename": "src/main/java/frc/robot/Constants.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FConstants.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FConstants.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FConstants.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -72,8 +72,8 @@ public static final class Arm {\n     public static final class Winches {\n     \n     //TODO: Update the motorID with the correct ones in the winches\n-    public static final int kRightWinchMotorID = 4;\n-    public static final int kLeftWinchMotorID = 5;\n+     public static final int kRightWinchMotorID = 10;\n+    public static final int kLeftWinchMotorID = 9;\n     \n     //TODO: The inches is just a placeholder, need to measure how much it should realistically extend after robot is built\n     public static final double kWinchLength = Units.inchesToMeters(30);"
+        },
+        {
+            "sha": "7d8bfb3f4974714f1ebae141c71524256a4ac793",
+            "filename": "src/main/java/frc/robot/Main.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FMain.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FMain.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FMain.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -11,6 +11,12 @@ public final class Main {\n   private Main() {}\n \n   public static void main(String... args) {\n+\n+    try{\n     RobotBase.startRobot(Robot::new);\n+    }\n+    catch(IllegalArgumentException e){\n+    }\n+    \n   }\n }"
+        },
+        {
+            "sha": "b7c6c0b7e48d59e5243dde99590f546714dd4f31",
+            "filename": "src/main/java/frc/robot/RobotContainer.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 4,
+            "changes": 11,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FRobotContainer.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FRobotContainer.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2FRobotContainer.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -15,16 +15,17 @@\n import frc.robot.commands.ShootMech;\n import frc.robot.commands.auto.DriveToDistance;\n import frc.robot.commands.auto.ShootAndMove;\n+import frc.robot.commands.auto.MoveandAmp;\n import frc.robot.commands.auto.TurnToAngle;\n import frc.robot.commands.drive.DriveWithJoysticks;\n import frc.robot.subsystems.PneumaticsSubsystem;\n-import frc.robot.subsystems.Swerve;\n+import frc.robot.subsystems.Swerve; \n import frc.robot.subsystems.Winch;\n import frc.robot.subsystems.Shooter;\n import frc.robot.subsystems.Intake;\n \n \n-public class RobotContainer {\n+public class RobotContainer{\n \n   private final SendableChooser<Command> chooser = new SendableChooser<Command>();\n   private Swerve m_swerve = new Swerve();\n@@ -76,9 +77,10 @@ private void configureButtonBindings() {\n     // m_operatorController.a().onTrue(new MoveToGoal(m_arm, Row.BOTTOM))\n     // .or(m_operatorController.b().onTrue(new MoveToGoal(m_arm, Row.MIDDLE)))\n     // .or(m_operatorController.y().onTrue(new MoveToGoal(m_arm, Row.TOP)));\n-\n     m_winch.setDefaultCommand(new RunCommand(() -> m_winch.winchExtend(m_operatorController)));\n+      \n     \n+   \n     //onTrue() can be changed to whileTrue() if we were to hold the button to shoot\n     m_operatorController.a().onTrue(new ShootMech(m_shooter));\n     \n@@ -96,8 +98,9 @@ private void addCommandDropdown()\n   {\n     chooser.setDefaultOption(\"Drive To Distance\", new DriveToDistance(Units.feetToMeters(12), m_swerve));\n     chooser.addOption(\"Turn To Angle\", new TurnToAngle(90, m_swerve));\n-    chooser.addOption(\"Shoot and Move\", new ShootAndMove());\n+    chooser.addOption(\"Shoot and Move\", new ShootAndMove(m_shooter, m_swerve));\n     chooser.addOption(\"Shoot\", new ShootMech(m_shooter));\n+    chooser.addOption(\"Move and Amp\", new MoveandAmp(m_intake, m_swerve)); \n \n     SmartDashboard.putData(chooser);\n   }"
+        },
+        {
+            "sha": "d0e9e94ee96521c9d218c2e64270dec0395eac65",
+            "filename": "src/main/java/frc/robot/commands/auto/MoveandAmp.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 3,
+            "changes": 4,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fcommands%2Fauto%2FMoveandAmp.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fcommands%2Fauto%2FMoveandAmp.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fcommands%2Fauto%2FMoveandAmp.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -7,10 +7,8 @@\n \n public class MoveandAmp extends SequentialCommandGroup {\n     \n-    private Intake m_intake;\n-    private Swerve m_Swerve;\n \n-    public MoveandAmp(){\n+    public MoveandAmp(Intake m_intake, Swerve m_Swerve){\n         //TODO: Test TurnToAngle\n         addCommands(new DriveToDistance(3, m_Swerve), new TurnToAngle(90, m_Swerve), new InstantCommand(() -> m_intake.on(Constants.Intake.kIntakeSpeed)));\n     }"
+        },
+        {
+            "sha": "8906b563d4cac5147c8745be982d3f38bf3df326",
+            "filename": "src/main/java/frc/robot/commands/auto/ShootAndMove.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 3,
+            "changes": 5,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fcommands%2Fauto%2FShootAndMove.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fcommands%2Fauto%2FShootAndMove.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fcommands%2Fauto%2FShootAndMove.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -8,11 +8,10 @@\n \n public class ShootAndMove extends SequentialCommandGroup {\n \n-    private Shooter m_shooter;\n-    private Swerve m_Swerve;\n \n-    public ShootAndMove()\n+    public ShootAndMove(Shooter m_shooter, Swerve m_Swerve)\n     {\n+        \n         addCommands(new ShootMech(m_shooter), new DriveToDistance(-3, m_Swerve));\n     }\n     "
+        },
+        {
+            "sha": "7a94a509903a6fd3ddfbc2181e825a9fd6bd336f",
+            "filename": "src/main/java/frc/robot/subsystems/Intake.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FIntake.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FIntake.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FIntake.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -2,6 +2,8 @@\n \n import com.revrobotics.CANSparkMax;\n import com.revrobotics.CANSparkBase.IdleMode;\n+import com.revrobotics.CANSparkLowLevel.MotorType;\n+\n import frc.robot.Constants;\n import edu.wpi.first.wpilibj2.command.SubsystemBase;\n import edu.wpi.first.wpilibj2.command.button.CommandXboxController;\n@@ -12,6 +14,8 @@ public class Intake extends SubsystemBase{\n     private CANSparkMax intakeCANSparkMax;\n \n     public Intake(){\n+\n+        intakeCANSparkMax = new CANSparkMax(21, MotorType.kBrushless); \n         intakeCANSparkMax.setInverted(true);\n         intakeCANSparkMax.setSmartCurrentLimit(60);\n         intakeCANSparkMax.setIdleMode(IdleMode.kBrake);"
+        },
+        {
+            "sha": "bd102cd7bfbbe3d1f4fdce38a277c45ae59db9a9",
+            "filename": "src/main/java/frc/robot/subsystems/PneumaticsSubsystem.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 2,
+            "changes": 10,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FPneumaticsSubsystem.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FPneumaticsSubsystem.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FPneumaticsSubsystem.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -3,6 +3,7 @@\n // the WPILib BSD license file in the root directory of this project.\n \n package frc.robot.subsystems;\n+import edu.wpi.first.hal.util.AllocationException;\n /* Github testing */\n //import edu.wpi.first.wpilibj.Compressor;\n import edu.wpi.first.wpilibj.DoubleSolenoid;\n@@ -17,8 +18,13 @@ public class PneumaticsSubsystem extends SubsystemBase {\n   DoubleSolenoid ds;\n   \n   public PneumaticsSubsystem() {\n-    ds = new DoubleSolenoid(6 ,PneumaticsModuleType.CTREPCM, 1, 2);\n-    ds.set(Value.kForward);\n+    try{\n+      ds = new DoubleSolenoid(6 ,PneumaticsModuleType.CTREPCM, 1, 2);\n+      ds.set(Value.kForward);\n+    }\n+    catch(AllocationException e) {\n+\n+    }\n   }\n \n   /**"
+        },
+        {
+            "sha": "a7569d239112bca60c932dd06ef804c020308a07",
+            "filename": "src/main/java/frc/robot/subsystems/Shooter.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FShooter.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FShooter.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FShooter.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -5,6 +5,8 @@\n \n import com.revrobotics.CANSparkMax;\n import com.revrobotics.CANSparkBase.IdleMode;\n+import com.revrobotics.CANSparkLowLevel.MotorType;\n+\n import frc.robot.Constants;\n import edu.wpi.first.math.controller.PIDController;\n import edu.wpi.first.wpilibj2.command.SubsystemBase;\n@@ -42,6 +44,11 @@ public Shooter(Swerve mSwerve) {\n   \n    this.mSwerve = mSwerve;\n \n+   shooterCANSparkMax = new CANSparkMax(11, MotorType.kBrushless);\n+   shooterCANSparkMaxTwo = new CANSparkMax(12, MotorType.kBrushless);\n+   shooterCANSparkMaxThree = new CANSparkMax(13, MotorType.kBrushless);\n+   shooterCANSparkMaxFour = new CANSparkMax(14, MotorType.kBrushless);\n+\n    shooterCANSparkMax.setInverted(true);\n    shooterCANSparkMax.setSmartCurrentLimit(40);\n    shooterCANSparkMax.setIdleMode(com.revrobotics.CANSparkBase.IdleMode.kBrake);"
+        },
+        {
+            "sha": "a1e588d08efaadbd49ec8e9661fa35cfe3a24535",
+            "filename": "src/main/java/frc/robot/subsystems/Swerve.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/blob/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FSwerve.java",
+            "raw_url": "https://github.com/FRC-Chain-Reaction-Robotics/NewSwerve2024/raw/28663c9858d0fbe7b680d03360334f804ce4fa98/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FSwerve.java",
+            "contents_url": "https://api.github.com/repos/FRC-Chain-Reaction-Robotics/NewSwerve2024/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2FSwerve.java?ref=28663c9858d0fbe7b680d03360334f804ce4fa98",
+            "patch": "@@ -68,7 +68,7 @@ public class Swerve extends SubsystemBase {\n \n   private final Field2d m_fieldSim = new Field2d();\n   \n-  //Default Speed\n+  //TODO: This is where you decrease the Default Speed\n   public static final double output = 1;\n \n   public static double m_output = output;"
+        }
+    ]
+}

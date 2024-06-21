@@ -1,0 +1,5 @@
+removeCards(int startIndex, int endIndex)
+findCardGivenHP(int hp)
+findCardGivenName(String name)
+getCardOfName(String name, boolean firstCard)
+getCardOfHP(int hp, boolean firstCard)

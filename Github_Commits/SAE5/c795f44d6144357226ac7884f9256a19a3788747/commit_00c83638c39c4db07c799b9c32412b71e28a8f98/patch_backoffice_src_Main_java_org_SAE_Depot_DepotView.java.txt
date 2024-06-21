@@ -1,0 +1,27 @@
+@@ -63,7 +63,7 @@ protected JPanel createListPanel(Depot t) {
+ 		JPanel panel = new JPanel();
+ 		panel.setLayout(new GridLayout(1, 4));
+ 		panel.add(new Label(t.toString()));
+-		UButton editButton = new UButton("Modifier");
++		UButton editButton = new UButton("Détailler");
+ 		editButton.addActionListener(e -> {
+ 			displayView(true);
+ 			clear();
+@@ -103,7 +103,7 @@ protected JPanel createFormPanel() {
+ 			depotFormComponents.panel.add(depotFormComponents.fieldPanels[i]);
+ 		}
+ 		depotFormComponents.panel.setLayout(new GridLayout(depotFormComponents.fieldPanels.length / 2 + 2, 2));
+-		UButton createButton = new UButton("Create");
++		UButton createButton = new UButton("Créer");
+ 		createButton.addActionListener(e -> createDepot(depotFormComponents.fieldPanels, depotFormComponents.joursLivraisons, depotFormComponents.image.get(),
+ 						depotFormComponents.addressChoice, depotFormComponents.referentChoice));
+ 		depotFormComponents.panel.add(createButton);
+@@ -181,7 +181,7 @@ protected JPanel createEditPanel(Depot depotToEdit) {
+ 			}
+ 		}
+ 		periodesNonLivrables.add(addPeriode);
+-		UButton createButton = new UButton("Modifier");
++		UButton createButton = new UButton("Détailler");
+ 		createButton.addActionListener(e -> {
+ 			String[] values = getValues(depotFormComponents.fieldPanels(), depotFormComponents.addressChoice(), depotFormComponents.referentChoice());
+ 			if (values.length == 0) return;

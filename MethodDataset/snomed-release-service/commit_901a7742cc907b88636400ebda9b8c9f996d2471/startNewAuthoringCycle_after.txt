@@ -1,0 +1,17 @@
+	public ResponseEntity<Void> startNewAuthoringCycle(@PathVariable String releaseCenterKey,
+												 @PathVariable String productKey,
+												 @Parameter(description = "New effective time. Required format: yyyy-MM-dd", required = true)
+													 @RequestParam String effectiveTime,
+												 @Parameter(description = "The product that contains the latest published build. This param requires a product key", required = true)
+													 @RequestParam String productSource,
+												 @Parameter(description = "New dependency package if needed.")
+													 @RequestParam(required = false) String dependencyPackage)
+			throws BusinessServiceException, IOException, ParseException, JAXBException {
+		try {
+			DateFormatUtils.ISO_8601_EXTENDED_DATE_FORMAT.parse(effectiveTime);
+		} catch (final ParseException e) {
+			throw new BadRequestException("Invalid effectiveTime format. Expecting format " + DateFormatUtils.ISO_8601_EXTENDED_DATE_FORMAT.getPattern() + ".", e);
+		}
+		releaseService.startNewAuthoringCycle(releaseCenterKey.trim(), productKey.trim(), effectiveTime, productSource.trim(), dependencyPackage != null ? dependencyPackage.trim() : null);
+		return new ResponseEntity<>(HttpStatus.OK);
+	}

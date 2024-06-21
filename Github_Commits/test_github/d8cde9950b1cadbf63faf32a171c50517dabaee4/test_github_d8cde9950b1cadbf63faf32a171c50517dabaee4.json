@@ -1,0 +1,110 @@
+{
+    "sha": "d8cde9950b1cadbf63faf32a171c50517dabaee4",
+    "node_id": "C_kwDOLCi0ddoAKGQ4Y2RlOTk1MGIxY2FkYmY2M2ZhZjMyYTE3MWM1MDUxN2RhYmFlZTQ",
+    "commit": {
+        "author": {
+            "name": "Ph1lSt",
+            "email": "philipp.steiner@hak-reutte.ac.at",
+            "date": "2024-01-21T22:16:55Z"
+        },
+        "committer": {
+            "name": "Ph1lSt",
+            "email": "philipp.steiner@hak-reutte.ac.at",
+            "date": "2024-01-21T22:16:55Z"
+        },
+        "message": "Versuch, die Pointer \"Null\" exception loszukriegen",
+        "tree": {
+            "sha": "ac20cd18ddcae697e2f0d0e4e105afd559498727",
+            "url": "https://api.github.com/repos/Ph1lSt/test_github/git/trees/ac20cd18ddcae697e2f0d0e4e105afd559498727"
+        },
+        "url": "https://api.github.com/repos/Ph1lSt/test_github/git/commits/d8cde9950b1cadbf63faf32a171c50517dabaee4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Ph1lSt/test_github/commits/d8cde9950b1cadbf63faf32a171c50517dabaee4",
+    "html_url": "https://github.com/Ph1lSt/test_github/commit/d8cde9950b1cadbf63faf32a171c50517dabaee4",
+    "comments_url": "https://api.github.com/repos/Ph1lSt/test_github/commits/d8cde9950b1cadbf63faf32a171c50517dabaee4/comments",
+    "author": {
+        "login": "Ph1lSt",
+        "id": 155985612,
+        "node_id": "U_kgDOCUwmzA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/155985612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ph1lSt",
+        "html_url": "https://github.com/Ph1lSt",
+        "followers_url": "https://api.github.com/users/Ph1lSt/followers",
+        "following_url": "https://api.github.com/users/Ph1lSt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ph1lSt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ph1lSt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ph1lSt/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ph1lSt/orgs",
+        "repos_url": "https://api.github.com/users/Ph1lSt/repos",
+        "events_url": "https://api.github.com/users/Ph1lSt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ph1lSt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Ph1lSt",
+        "id": 155985612,
+        "node_id": "U_kgDOCUwmzA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/155985612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ph1lSt",
+        "html_url": "https://github.com/Ph1lSt",
+        "followers_url": "https://api.github.com/users/Ph1lSt/followers",
+        "following_url": "https://api.github.com/users/Ph1lSt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ph1lSt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ph1lSt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ph1lSt/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ph1lSt/orgs",
+        "repos_url": "https://api.github.com/users/Ph1lSt/repos",
+        "events_url": "https://api.github.com/users/Ph1lSt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ph1lSt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b5e79b6c89b84a134a8956c2af3ed1caa818d4b4",
+            "url": "https://api.github.com/repos/Ph1lSt/test_github/commits/b5e79b6c89b84a134a8956c2af3ed1caa818d4b4",
+            "html_url": "https://github.com/Ph1lSt/test_github/commit/b5e79b6c89b84a134a8956c2af3ed1caa818d4b4"
+        }
+    ],
+    "stats": {
+        "total": 61,
+        "additions": 60,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "4f5ddea258cf0f14a934bb9571c49902883b86af",
+            "filename": "src/geoMetry/Test.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 0,
+            "changes": 12,
+            "blob_url": "https://github.com/Ph1lSt/test_github/blob/d8cde9950b1cadbf63faf32a171c50517dabaee4/src%2FgeoMetry%2FTest.java",
+            "raw_url": "https://github.com/Ph1lSt/test_github/raw/d8cde9950b1cadbf63faf32a171c50517dabaee4/src%2FgeoMetry%2FTest.java",
+            "contents_url": "https://api.github.com/repos/Ph1lSt/test_github/contents/src%2FgeoMetry%2FTest.java?ref=d8cde9950b1cadbf63faf32a171c50517dabaee4",
+            "patch": "@@ -6,6 +6,7 @@ public static void main(String[] args) {\n \t\t\n \t\tCoordinate c1 = new Coordinate(2, 4);\n \t\tCoordinate c2 = new Coordinate(5, 2);\n+\t\tCoordinate c3 = new Coordinate(7, 3);\n \t\t\n \t\t//Circle test\n \t\tSystem.out.println(\"-----Circle testrun-----\");\n@@ -25,6 +26,17 @@ public static void main(String[] args) {\n         System.out.println(\"Die Fläche des Rechtecks beträgt: \" + r.calculateArea());\n         System.out.println(\"Der Umfang des Rechtecks beträgt: \" + r.calculateCircumference());\n         \n+        System.out.println(\" \");\n+        \n+        //Triangle test\n+        System.out.println(\"-----Triangle testrun-----\");\n+        Triangle t = new Triangle(c1, c2, c3);\n+        System.out.println(t.calculateArea());\n+        System.out.println(t.calculateCircumference());\n+        System.out.println(t.calculateSide(0));\n+        System.out.println(t.calculateSide(1));\n+        System.out.println(t.calculateSide(2));\n+        \n \t}\n \n }"
+        },
+        {
+            "sha": "5dcfcc66534cea02011d19035dd87b7b6e5b726e",
+            "filename": "src/geoMetry/Triangle.java",
+            "status": "modified",
+            "additions": 48,
+            "deletions": 1,
+            "changes": 49,
+            "blob_url": "https://github.com/Ph1lSt/test_github/blob/d8cde9950b1cadbf63faf32a171c50517dabaee4/src%2FgeoMetry%2FTriangle.java",
+            "raw_url": "https://github.com/Ph1lSt/test_github/raw/d8cde9950b1cadbf63faf32a171c50517dabaee4/src%2FgeoMetry%2FTriangle.java",
+            "contents_url": "https://api.github.com/repos/Ph1lSt/test_github/contents/src%2FgeoMetry%2FTriangle.java?ref=d8cde9950b1cadbf63faf32a171c50517dabaee4",
+            "patch": "@@ -1,5 +1,52 @@\n package geoMetry;\n \n-public class Triangle {\n+public class Triangle extends Shapes {\n \n+\tCoordinate point1;\n+\tCoordinate point2;\n+\tCoordinate point3;\n+\tdouble[] sideLengths;\n+\t\n+\tpublic Triangle(Coordinate point1, Coordinate point2, Coordinate point3) {\n+\t\tthis.point1 = point1;\n+\t    this.point2 = point2;\n+\t    this.point3 = point3;\n+\t }\n+\t\n+\tpublic double calculateSide(int side) {\n+\t\tswitch(side) {\n+\t\tcase 0 : this.sideLengths[0] = Math.sqrt(Math.pow(this.point2.getX() - this.point1.getX(), 2) +\n+\t\t\t\tMath.pow(this.point2.getY() - this.point1.getY(), 2));\n+\t\t\t\treturn this.sideLengths[side];\n+\t\t\t\t\n+\t\tcase 1 : this.sideLengths[1] = Math.sqrt(Math.pow(this.point3.getX() - this.point2.getX(), 2) +\n+\t\t\t\tMath.pow(this.point3.getY() - this.point2.getY(), 2));\n+\t\t\t\treturn this.sideLengths[side];\n+\t\t\t\t\n+\t\tcase 2 : this.sideLengths[2] = Math.sqrt(Math.pow(this.point1.getX() - this.point3.getX(), 2) +\n+\t\t\t\tMath.pow(this.point1.getY() - this.point3.getY(), 2));\n+\t\t\t\treturn this.sideLengths[side];\n+\t\t\t\t\n+\t\tdefault : System.err.println(\"Fehler!\"); break;\n+\t\t}\n+\t\treturn this.sideLengths[side];\n+\t\t\n+\t}\n+\t\n+\t\n+\t@Override\n+\tpublic double calculateCircumference() {\n+\t\tdouble umfang = 0;\n+\t\tfor(int i = 0; i <= 3; i++) {\n+\t\t\tumfang += this.calculateSide(i);\n+\t\t}\n+\t\treturn umfang;\n+\t\t}\n+\n+\t@Override\n+\tpublic double calculateArea() {\n+\t\tdouble s = calculateCircumference() / 2;\n+\t\tdouble area = Math.sqrt(s * (s - this.calculateSide(0)) * (s - this.calculateSide(1)) * (s - this.calculateSide(2)));\n+\t\treturn area;\n+\t\t}\n }"
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "sha": "3d71909ff90420f8419eb290ecc957c7a39bffff",
+    "node_id": "C_kwDOKj2OgtoAKDNkNzE5MDlmZjkwNDIwZjg0MTllYjI5MGVjYzk1N2M3YTM5YmZmZmY",
+    "commit": {
+        "author": {
+            "name": "Jiohim",
+            "email": "bohdankrasin@gmail.com",
+            "date": "2023-11-10T21:53:51Z"
+        },
+        "committer": {
+            "name": "Jiohim",
+            "email": "bohdankrasin@gmail.com",
+            "date": "2023-11-10T21:53:51Z"
+        },
+        "message": "fixed Money Mapper null pointer exception . Closed #6",
+        "tree": {
+            "sha": "a1e311c24e928c3dd41682d6cee4def13a4cf428",
+            "url": "https://api.github.com/repos/jiohim/budget-buddy-backend/git/trees/a1e311c24e928c3dd41682d6cee4def13a4cf428"
+        },
+        "url": "https://api.github.com/repos/jiohim/budget-buddy-backend/git/commits/3d71909ff90420f8419eb290ecc957c7a39bffff",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jiohim/budget-buddy-backend/commits/3d71909ff90420f8419eb290ecc957c7a39bffff",
+    "html_url": "https://github.com/jiohim/budget-buddy-backend/commit/3d71909ff90420f8419eb290ecc957c7a39bffff",
+    "comments_url": "https://api.github.com/repos/jiohim/budget-buddy-backend/commits/3d71909ff90420f8419eb290ecc957c7a39bffff/comments",
+    "author": {
+        "login": "jiohim",
+        "id": 107395250,
+        "node_id": "U_kgDOBma4sg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107395250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jiohim",
+        "html_url": "https://github.com/jiohim",
+        "followers_url": "https://api.github.com/users/jiohim/followers",
+        "following_url": "https://api.github.com/users/jiohim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jiohim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jiohim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jiohim/subscriptions",
+        "organizations_url": "https://api.github.com/users/jiohim/orgs",
+        "repos_url": "https://api.github.com/users/jiohim/repos",
+        "events_url": "https://api.github.com/users/jiohim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jiohim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jiohim",
+        "id": 107395250,
+        "node_id": "U_kgDOBma4sg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107395250?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jiohim",
+        "html_url": "https://github.com/jiohim",
+        "followers_url": "https://api.github.com/users/jiohim/followers",
+        "following_url": "https://api.github.com/users/jiohim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jiohim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jiohim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jiohim/subscriptions",
+        "organizations_url": "https://api.github.com/users/jiohim/orgs",
+        "repos_url": "https://api.github.com/users/jiohim/repos",
+        "events_url": "https://api.github.com/users/jiohim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jiohim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cb4a523fbf40e436687af9e325c1bd6d71820e5d",
+            "url": "https://api.github.com/repos/jiohim/budget-buddy-backend/commits/cb4a523fbf40e436687af9e325c1bd6d71820e5d",
+            "html_url": "https://github.com/jiohim/budget-buddy-backend/commit/cb4a523fbf40e436687af9e325c1bd6d71820e5d"
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "additions": 13,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "b035aaeb3a67e99f3ae9e3bae7e3eeb82cff6062",
+            "filename": "pom.xml",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 2,
+            "changes": 5,
+            "blob_url": "https://github.com/jiohim/budget-buddy-backend/blob/3d71909ff90420f8419eb290ecc957c7a39bffff/pom.xml",
+            "raw_url": "https://github.com/jiohim/budget-buddy-backend/raw/3d71909ff90420f8419eb290ecc957c7a39bffff/pom.xml",
+            "contents_url": "https://api.github.com/repos/jiohim/budget-buddy-backend/contents/pom.xml?ref=3d71909ff90420f8419eb290ecc957c7a39bffff",
+            "patch": "@@ -60,9 +60,10 @@\n             <version>42.6.0</version>\n         </dependency>\n         <dependency>\n-            <groupId>org.javamoney.moneta</groupId>\n-            <artifactId>moneta-core</artifactId>\n+            <groupId>org.javamoney</groupId>\n+            <artifactId>moneta</artifactId>\n             <version>1.4.2</version>\n+            <type>pom</type>\n         </dependency>\n         <dependency>\n             <groupId>org.mapstruct</groupId>"
+        },
+        {
+            "sha": "718d57a2018cab2e3c8c736d73161f881cf6def6",
+            "filename": "src/main/java/com/robo/project/controllers/TransactionController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/jiohim/budget-buddy-backend/blob/3d71909ff90420f8419eb290ecc957c7a39bffff/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fcontrollers%2FTransactionController.java",
+            "raw_url": "https://github.com/jiohim/budget-buddy-backend/raw/3d71909ff90420f8419eb290ecc957c7a39bffff/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fcontrollers%2FTransactionController.java",
+            "contents_url": "https://api.github.com/repos/jiohim/budget-buddy-backend/contents/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fcontrollers%2FTransactionController.java?ref=3d71909ff90420f8419eb290ecc957c7a39bffff",
+            "patch": "@@ -2,7 +2,7 @@\n \n \n import com.robo.project.mappers.BalanceRestMapper;\n-import com.robo.project.mappers.dto.TransactionDto;\n+import com.robo.project.mappers.TransactionDto;\n import com.robo.project.services.BalanceService;\n import com.robo.project.util.Constant;\n import lombok.RequiredArgsConstructor;"
+        },
+        {
+            "sha": "dca51cd74512d4951a9d12ecd5a4904dcbd9bbd5",
+            "filename": "src/main/java/com/robo/project/mappers/BalanceRestMapper.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 2,
+            "changes": 9,
+            "blob_url": "https://github.com/jiohim/budget-buddy-backend/blob/3d71909ff90420f8419eb290ecc957c7a39bffff/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fmappers%2FBalanceRestMapper.java",
+            "raw_url": "https://github.com/jiohim/budget-buddy-backend/raw/3d71909ff90420f8419eb290ecc957c7a39bffff/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fmappers%2FBalanceRestMapper.java",
+            "contents_url": "https://api.github.com/repos/jiohim/budget-buddy-backend/contents/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fmappers%2FBalanceRestMapper.java?ref=3d71909ff90420f8419eb290ecc957c7a39bffff",
+            "patch": "@@ -1,15 +1,20 @@\n package com.robo.project.mappers;\n \n \n-import com.robo.project.mappers.dto.TransactionDto;\n import com.robo.project.model.Transaction;\n+import org.javamoney.moneta.Money;\n import org.mapstruct.Mapper;\n+import org.mapstruct.Mapping;\n \n-@Mapper(componentModel = \"spring\", uses = MoneyMapper.class)\n+\n+@Mapper(componentModel = \"spring\", imports = {Money.class})\n public interface BalanceRestMapper {\n \n+    @Mapping(target = \"value\" ,expression = \"java(Money.of(transactionDto.getMoneyValue(), \\\"USD\\\"))\")\n     Transaction toDomain(TransactionDto transactionDto);\n \n+\n+    @Mapping(target = \"moneyValue\", expression = \"java(transaction.getValue().getNumber().doubleValueExact())\")\n     TransactionDto toDto(Transaction transaction);\n \n }"
+        },
+        {
+            "sha": "10e55d16b02ed59cc785649b338d52fa61ccfae0",
+            "filename": "src/main/java/com/robo/project/mappers/TransactionDto.java",
+            "status": "renamed",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/jiohim/budget-buddy-backend/blob/3d71909ff90420f8419eb290ecc957c7a39bffff/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fmappers%2FTransactionDto.java",
+            "raw_url": "https://github.com/jiohim/budget-buddy-backend/raw/3d71909ff90420f8419eb290ecc957c7a39bffff/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fmappers%2FTransactionDto.java",
+            "contents_url": "https://api.github.com/repos/jiohim/budget-buddy-backend/contents/src%2Fmain%2Fjava%2Fcom%2Frobo%2Fproject%2Fmappers%2FTransactionDto.java?ref=3d71909ff90420f8419eb290ecc957c7a39bffff",
+            "patch": "@@ -1,4 +1,4 @@\n-package com.robo.project.mappers.dto;\n+package com.robo.project.mappers;\n \n import lombok.Data;\n \n@@ -8,7 +8,7 @@\n public class TransactionDto {\n \n     private Long id;\n-    private String moneyValue;\n+    private double moneyValue;\n     private ZonedDateTime timestamp;\n     private String transactionCategory;\n }",
+            "previous_filename": "src/main/java/com/robo/project/mappers/dto/TransactionDto.java"
+        }
+    ]
+}

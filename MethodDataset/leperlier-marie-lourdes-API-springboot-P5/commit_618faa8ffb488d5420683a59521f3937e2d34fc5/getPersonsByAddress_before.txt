@@ -1,0 +1,12 @@
+	public List<Person> getPersonsByAddress(String address) {
+		List<Person> personsFoundByAddress = new ArrayList<>();
+		Iterator<Person> itrPersons = persons.listIterator();
+		while (itrPersons.hasNext()) {
+			Person itrPerson = itrPersons.next();
+			if (itrPerson.getAddress().equals(address)) {
+				personsFoundByAddress.add(itrPerson);
+			}
+		}
+		System.out.println("personsFoundByAddress" + personsFoundByAddress);
+		return personsFoundByAddress;
+	}

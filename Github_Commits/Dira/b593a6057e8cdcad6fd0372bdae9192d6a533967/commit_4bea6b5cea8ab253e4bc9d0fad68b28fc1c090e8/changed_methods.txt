@@ -1,0 +1,2 @@
+onUpdate(Update update)
+onScrollArrowPressed()

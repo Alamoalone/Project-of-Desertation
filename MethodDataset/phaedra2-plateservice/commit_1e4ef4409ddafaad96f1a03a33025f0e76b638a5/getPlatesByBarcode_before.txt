@@ -1,0 +1,11 @@
+    public List<PlateDTO> getPlatesByBarcode(@Argument String barcode) {
+        List<PlateDTO> result = plateService.getPlatesByBarcode(barcode);
+        if (CollectionUtils.isNotEmpty(result)) {
+            // Add tags
+            result.stream().forEach(plateDTO -> {
+                List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, plateDTO.getId());
+                plateDTO.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+            });
+        }
+        return result;
+    }

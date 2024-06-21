@@ -1,0 +1,98 @@
+{
+    "sha": "08db8abafb167f23136904437ba426101fe4e66e",
+    "node_id": "C_kwDOKZfjsNoAKDA4ZGI4YWJhZmIxNjdmMjMxMzY5MDQ0MzdiYTQyNjEwMWZlNGU2NmU",
+    "commit": {
+        "author": {
+            "name": "Humberto Sandmann",
+            "email": "hsandmann@ieee.org",
+            "date": "2023-12-07T18:59:55Z"
+        },
+        "committer": {
+            "name": "Humberto Sandmann",
+            "email": "hsandmann@ieee.org",
+            "date": "2023-12-07T18:59:55Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "9f1cb2701428f8d2dad851ec21e2f590ab5d56c4",
+            "url": "https://api.github.com/repos/hsandmann/sb232.store.product/git/trees/9f1cb2701428f8d2dad851ec21e2f590ab5d56c4"
+        },
+        "url": "https://api.github.com/repos/hsandmann/sb232.store.product/git/commits/08db8abafb167f23136904437ba426101fe4e66e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hsandmann/sb232.store.product/commits/08db8abafb167f23136904437ba426101fe4e66e",
+    "html_url": "https://github.com/hsandmann/sb232.store.product/commit/08db8abafb167f23136904437ba426101fe4e66e",
+    "comments_url": "https://api.github.com/repos/hsandmann/sb232.store.product/commits/08db8abafb167f23136904437ba426101fe4e66e/comments",
+    "author": {
+        "login": "hsandmann",
+        "id": 20843348,
+        "node_id": "MDQ6VXNlcjIwODQzMzQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20843348?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hsandmann",
+        "html_url": "https://github.com/hsandmann",
+        "followers_url": "https://api.github.com/users/hsandmann/followers",
+        "following_url": "https://api.github.com/users/hsandmann/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hsandmann/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hsandmann/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hsandmann/subscriptions",
+        "organizations_url": "https://api.github.com/users/hsandmann/orgs",
+        "repos_url": "https://api.github.com/users/hsandmann/repos",
+        "events_url": "https://api.github.com/users/hsandmann/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hsandmann/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "hsandmann",
+        "id": 20843348,
+        "node_id": "MDQ6VXNlcjIwODQzMzQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20843348?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hsandmann",
+        "html_url": "https://github.com/hsandmann",
+        "followers_url": "https://api.github.com/users/hsandmann/followers",
+        "following_url": "https://api.github.com/users/hsandmann/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hsandmann/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hsandmann/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hsandmann/subscriptions",
+        "organizations_url": "https://api.github.com/users/hsandmann/orgs",
+        "repos_url": "https://api.github.com/users/hsandmann/repos",
+        "events_url": "https://api.github.com/users/hsandmann/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hsandmann/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ce8f03cbc743ba4911cefb0e509d6a2cd8030b1d",
+            "url": "https://api.github.com/repos/hsandmann/sb232.store.product/commits/ce8f03cbc743ba4911cefb0e509d6a2cd8030b1d",
+            "html_url": "https://github.com/hsandmann/sb232.store.product/commit/ce8f03cbc743ba4911cefb0e509d6a2cd8030b1d"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "ae7e4661459cb38912586d25002b86671843257e",
+            "filename": "src/main/java/store/product/ProductService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/hsandmann/sb232.store.product/blob/08db8abafb167f23136904437ba426101fe4e66e/src%2Fmain%2Fjava%2Fstore%2Fproduct%2FProductService.java",
+            "raw_url": "https://github.com/hsandmann/sb232.store.product/raw/08db8abafb167f23136904437ba426101fe4e66e/src%2Fmain%2Fjava%2Fstore%2Fproduct%2FProductService.java",
+            "contents_url": "https://api.github.com/repos/hsandmann/sb232.store.product/contents/src%2Fmain%2Fjava%2Fstore%2Fproduct%2FProductService.java?ref=08db8abafb167f23136904437ba426101fe4e66e",
+            "patch": "@@ -20,7 +20,8 @@ public List<Product> list() {\n     }\n \n     public Product find(String id) {\n-        return productRepository.findById(id).orElse(null).to();\n+        ProductModel model = productRepository.findById(id).orElse(null);\n+        return model == null ? null : model.to();\n     }\n \n     public void delete(String id) {"
+        }
+    ]
+}

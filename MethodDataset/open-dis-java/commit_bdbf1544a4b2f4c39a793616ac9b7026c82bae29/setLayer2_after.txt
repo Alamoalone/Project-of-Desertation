@@ -1,0 +1,4 @@
+    public void setLayer2(IFFLayer2 layer2) {
+        this.layer2 = layer2;
+        updateInformationLayersPresent();
+    }

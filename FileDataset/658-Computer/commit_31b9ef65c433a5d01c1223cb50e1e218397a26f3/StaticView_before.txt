@@ -1,0 +1,34 @@
+  public void paintBoundingBox(Graphics2D graphics, Viewport viewport)
+  {
+    boundingBox.transform(rotation);
+
+    Int2D p = new Int2D();
+    Int2D s = new Int2D();
+    getBoundingBoxInScreenSpace(viewport, p, s);
+    viewport.paintRectangle(graphics, p.x, p.y, s.x, s.y, viewport.getAbsoluteStroke(1), null, Color.ORANGE);
+  }
+
+  public void getSelectionBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+  {
+    getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, selectionBox);
+  }
+
+  public void getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+  {
+    getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, boundingBox);
+  }
+
+  public void paintSelected(Graphics2D graphics, Viewport viewport, Color color)
+  {
+    Int2D p = new Int2D();
+    Int2D s = new Int2D();
+
+    getSelectionBoxInScreenSpace(viewport, p, s);
+
+    graphics.setStroke(viewport.getZoomableStroke());
+    paintSelectionRectangle(graphics, viewport, p.x, p.y, color);
+    paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y, color);
+    paintSelectionRectangle(graphics, viewport, p.x, p.y + s.y, color);
+    paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y + s.y, color);
+  }
+

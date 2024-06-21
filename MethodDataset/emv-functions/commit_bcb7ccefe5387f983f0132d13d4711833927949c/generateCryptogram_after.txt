@@ -1,0 +1,11 @@
+    protected String generateCryptogram(CryptogramRequest cryptogramRequest,
+                                        String sessionKey,
+                                        CryptogramVersionNumber cryptogramVersionNumber,
+                                        String cardVerificationResults) {
+        VisaApplicationCryptogramGenerator visaApplicationCryptogramGenerator = new VisaApplicationCryptogramGenerator();
+        return visaApplicationCryptogramGenerator.generateVisaApplicationCryptogram(cryptogramRequest,
+                sessionKey,
+                cryptogramVersionNumber,
+                cardVerificationResults
+        );
+    }

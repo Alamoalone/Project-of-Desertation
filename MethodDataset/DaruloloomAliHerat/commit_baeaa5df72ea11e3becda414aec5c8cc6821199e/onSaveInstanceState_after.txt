@@ -1,0 +1,19 @@
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+       /* outState.putInt("media_player", MEDIA_PLAYER);
+        if (audioService.isPlaying()) {
+            outState.putInt("saveInt1", audioService.getCurrentPosition());
+            outState.putString("saveString1", "playing");
+        } else if (!audioService.isPlaying()) {
+            outState.putString("saveString1", "notPlaying");
+            if (MEDIA_PLAYER > 0) {
+                if (audioService.getCurrentPosition() > 0) {
+                    outState.putInt("saveInt1", audioService.getCurrentPosition());
+                }
+            }
+        }
+
+        ifAudioIsPlaying();*/
+
+    }

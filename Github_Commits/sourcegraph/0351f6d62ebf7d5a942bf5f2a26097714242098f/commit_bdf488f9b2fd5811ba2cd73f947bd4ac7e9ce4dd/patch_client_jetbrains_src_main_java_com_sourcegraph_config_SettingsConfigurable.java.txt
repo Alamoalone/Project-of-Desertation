@@ -1,0 +1,31 @@
+@@ -13,11 +13,12 @@
+ 
+ /** Provides controller functionality for application settings. */
+ public class SettingsConfigurable implements Configurable {
+-  private final Project project;
+-  private SettingsComponent mySettingsComponent;
++  private final @NotNull Project project;
++  private final @NotNull SettingsComponent mySettingsComponent;
+ 
+   public SettingsConfigurable(@NotNull Project project) {
+     this.project = project;
++    mySettingsComponent = new SettingsComponent(project);
+   }
+ 
+   @Nls(capitalization = Nls.Capitalization.Title)
+@@ -34,7 +35,6 @@ public JComponent getPreferredFocusedComponent() {
+   @Nullable
+   @Override
+   public JComponent createComponent() {
+-    mySettingsComponent = new SettingsComponent(project);
+     Disposer.register(project, mySettingsComponent);
+     return mySettingsComponent.getPanel();
+   }
+@@ -179,6 +179,6 @@ public void reset() {
+ 
+   @Override
+   public void disposeUIResources() {
+-    mySettingsComponent = null;
++    mySettingsComponent.dispose();
+   }
+ }

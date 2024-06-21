@@ -1,0 +1,3 @@
+    public static GroupModel mapCreateGroup(GroupInput from) {
+        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());
+    }

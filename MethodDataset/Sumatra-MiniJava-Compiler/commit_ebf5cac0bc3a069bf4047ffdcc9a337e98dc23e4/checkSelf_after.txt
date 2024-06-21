@@ -1,0 +1,4 @@
+    protected void checkSelf() throws CompilerException {
+        if(sentence != SEMICOLON_SENTENCE)
+            sentence.check();
+    }

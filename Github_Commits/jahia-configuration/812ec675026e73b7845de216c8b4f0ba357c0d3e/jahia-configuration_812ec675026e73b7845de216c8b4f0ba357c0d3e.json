@@ -1,0 +1,98 @@
+{
+    "sha": "812ec675026e73b7845de216c8b4f0ba357c0d3e",
+    "node_id": "C_kwDOA8OpD9oAKDgxMmVjNjc1MDI2ZTczYjc4NDVkZTIxNmM4YjRmMGJhMzU3YzBkM2U",
+    "commit": {
+        "author": {
+            "name": "jsinovassin",
+            "email": "jsinovassinnaik@jahia.com",
+            "date": "2024-02-14T16:04:15Z"
+        },
+        "committer": {
+            "name": "jsinovassin",
+            "email": "jsinovassinnaik@jahia.com",
+            "date": "2024-02-14T16:04:15Z"
+        },
+        "message": "BACKLOG-22362: fix null pointer exception",
+        "tree": {
+            "sha": "e82499f52e7f72fc33eaca408ff5a23153f4e38b",
+            "url": "https://api.github.com/repos/Jahia/jahia-configuration/git/trees/e82499f52e7f72fc33eaca408ff5a23153f4e38b"
+        },
+        "url": "https://api.github.com/repos/Jahia/jahia-configuration/git/commits/812ec675026e73b7845de216c8b4f0ba357c0d3e",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEyYR8csF14VKEDdzqFpXpIlbMVWQFAmXM5IAACgkQFpXpIlbM\nVWR9lw/+LNvc7jCuUz3cj3l4sy1w0P5SmNJyzLr694wlGRWwMHlCYRhzL5Fl1l4W\nZShU3Y65RYod4/9ZRw7LViiCU/o28RUzUia6HOtOZ0QL125IYDrqJUQL8V21wpwj\npFIwbwkVj/eT18reGoQqYqqp8EwvN/qI6u790hhRxiV67u7lkz4GA/rHwqYUrFS6\n/1Nc0t5inozRpBGUcQS1zt3hZRQl+b3Dx9ewNi/IoFUybz5IVkWU8ohKZno5UlCq\nZeCXsn04hV6B/Iy+RtgelnEmXYrjZFxWfoNFxNwsXpRGd3Ji+zzMPmTceHggoZkL\nlBTD8OKBMruaoJXt3tl2dd7ARftYzCAuNE9B7hHnnsrlvVQQzCWJnyhigkLWvqP/\nKqLYYSIpnize0FKqEJtl3jNKZ5kjcwn6NzXoOAcBUpeTQ9og4LfOx2xtr8XzybeW\n7FPM6JxM5GOTy0V/kpZvoToezcs7jaGFJvzEfhXlR5hgaF9lat2igcsqpgKvPghP\n5MQuIPMXN122KdbUbNjR+ibsqrKVSfn/DUetlyBJEXHSJY/1Yp3rxX15sIBXg8pC\nvfIx6xTKR7/GktSuMgTSD2kG8S9AREuh9IT/ceiAqy2MKxlO+yFLT+63CPsgOXQA\nqUHsLyI8pEEvL4r+X8Dnd3yBOPH85YJ+VU2X3iVNSKHs++OGmfg=\n=O7Bh\n-----END PGP SIGNATURE-----",
+            "payload": "tree e82499f52e7f72fc33eaca408ff5a23153f4e38b\nparent fafbab804578593f058269e52ae5e099081b46ef\nauthor jsinovassin <jsinovassinnaik@jahia.com> 1707926655 +0100\ncommitter jsinovassin <jsinovassinnaik@jahia.com> 1707926655 +0100\n\nBACKLOG-22362: fix null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/Jahia/jahia-configuration/commits/812ec675026e73b7845de216c8b4f0ba357c0d3e",
+    "html_url": "https://github.com/Jahia/jahia-configuration/commit/812ec675026e73b7845de216c8b4f0ba357c0d3e",
+    "comments_url": "https://api.github.com/repos/Jahia/jahia-configuration/commits/812ec675026e73b7845de216c8b4f0ba357c0d3e/comments",
+    "author": {
+        "login": "jsinovassin",
+        "id": 58434978,
+        "node_id": "MDQ6VXNlcjU4NDM0OTc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58434978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jsinovassin",
+        "html_url": "https://github.com/jsinovassin",
+        "followers_url": "https://api.github.com/users/jsinovassin/followers",
+        "following_url": "https://api.github.com/users/jsinovassin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jsinovassin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jsinovassin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jsinovassin/subscriptions",
+        "organizations_url": "https://api.github.com/users/jsinovassin/orgs",
+        "repos_url": "https://api.github.com/users/jsinovassin/repos",
+        "events_url": "https://api.github.com/users/jsinovassin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jsinovassin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jsinovassin",
+        "id": 58434978,
+        "node_id": "MDQ6VXNlcjU4NDM0OTc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58434978?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jsinovassin",
+        "html_url": "https://github.com/jsinovassin",
+        "followers_url": "https://api.github.com/users/jsinovassin/followers",
+        "following_url": "https://api.github.com/users/jsinovassin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jsinovassin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jsinovassin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jsinovassin/subscriptions",
+        "organizations_url": "https://api.github.com/users/jsinovassin/orgs",
+        "repos_url": "https://api.github.com/users/jsinovassin/repos",
+        "events_url": "https://api.github.com/users/jsinovassin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jsinovassin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fafbab804578593f058269e52ae5e099081b46ef",
+            "url": "https://api.github.com/repos/Jahia/jahia-configuration/commits/fafbab804578593f058269e52ae5e099081b46ef",
+            "html_url": "https://github.com/Jahia/jahia-configuration/commit/fafbab804578593f058269e52ae5e099081b46ef"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "ca17320bbeb69c6578a8dc01aea77e7f91cc6d26",
+            "filename": "maven-jahia-plugin/src/main/java/org/jahia/utils/maven/plugin/osgi/CheckDependenciesMojo.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/Jahia/jahia-configuration/blob/812ec675026e73b7845de216c8b4f0ba357c0d3e/maven-jahia-plugin%2Fsrc%2Fmain%2Fjava%2Forg%2Fjahia%2Futils%2Fmaven%2Fplugin%2Fosgi%2FCheckDependenciesMojo.java",
+            "raw_url": "https://github.com/Jahia/jahia-configuration/raw/812ec675026e73b7845de216c8b4f0ba357c0d3e/maven-jahia-plugin%2Fsrc%2Fmain%2Fjava%2Forg%2Fjahia%2Futils%2Fmaven%2Fplugin%2Fosgi%2FCheckDependenciesMojo.java",
+            "contents_url": "https://api.github.com/repos/Jahia/jahia-configuration/contents/maven-jahia-plugin%2Fsrc%2Fmain%2Fjava%2Forg%2Fjahia%2Futils%2Fmaven%2Fplugin%2Fosgi%2FCheckDependenciesMojo.java?ref=812ec675026e73b7845de216c8b4f0ba357c0d3e",
+            "patch": "@@ -186,13 +186,13 @@ public void execute() throws MojoExecutionException {\n                             info = getPackageInfo(bundlePluginExplicitPackages, importPackagePath);\n                         }\n                         if (info != null) {\n-                            // the package was explicitely configured either through Maven properties or through\n+                            // the package was explicitly configured either through Maven properties or through\n                             // explicit configuration in the bundle plugin, in this case we will not touch the\n                             // package's resolution directive\n                             getLog().info(\"Explicit package configuration found for \" + importPackagePath + \".\");\n                             if (info.getVersion() != null) {\n                                 String bndVersion = importPackageClause.getAttributes().get(Constants.VERSION_ATTRIBUTE);\n-                                if (!bndVersion.equals(info.getVersion())) {\n+                                if (bndVersion == null || !bndVersion.equals(info.getVersion())) {\n                                     getLog().info(\"Explicit package configuration version\" + info.getVersion() + \" is different than BND one \" + bndVersion + \" for \" + importPackagePath + \".\");\n                                     modifiedImportPackageClauses = true;\n                                 }"
+        }
+    ]
+}

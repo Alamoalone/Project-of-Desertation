@@ -1,0 +1,2 @@
+getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId)
+getLastDeliveryTimeByPartnerId(String partnerId)

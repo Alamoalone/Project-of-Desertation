@@ -1,0 +1,23 @@
+	public List<String> getResources() {
+		List<String> resources = APIModel.getResources();
+		
+		final List<String> excludedResources = Config.get(EXCLUDED_RESOURCES);
+		
+		Predicate<String> notExcludedResource  = s -> !excludedResources.contains(s);
+		
+		resources = resources.stream()
+						.filter(notExcludedResource)
+						.sorted(Comparator.comparingInt(String::length))
+						.collect(toList());
+		
+		List<String> configSequence = Config.get(RESOURCE_LAYOUT);
+		
+		if(!configSequence.isEmpty()) {
+			configSequence = configSequence.stream().filter(configSequence::contains).collect(toList());
+			resources.removeAll(configSequence);
+			configSequence.addAll(resources);
+			resources=configSequence;
+		}
+		
+		return resources;
+	}

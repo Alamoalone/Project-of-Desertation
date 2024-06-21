@@ -1,0 +1,98 @@
+{
+    "sha": "0a784250d8c1e379be0367f829dcbe66bca6c86d",
+    "node_id": "C_kwDOJyUi2toAKDBhNzg0MjUwZDhjMWUzNzliZTAzNjdmODI5ZGNiZTY2YmNhNmM4NmQ",
+    "commit": {
+        "author": {
+            "name": "mirinion",
+            "email": "mirinion@bk.ru",
+            "date": "2024-01-04T13:36:33Z"
+        },
+        "committer": {
+            "name": "mirinion",
+            "email": "mirinion@bk.ru",
+            "date": "2024-01-04T13:36:33Z"
+        },
+        "message": "убрал фичу, которая выкидывала null pointer exception",
+        "tree": {
+            "sha": "28d6c74dc73d80af147db1fed14da0d0fc2dcba8",
+            "url": "https://api.github.com/repos/OurBookStore/TheBookStore/git/trees/28d6c74dc73d80af147db1fed14da0d0fc2dcba8"
+        },
+        "url": "https://api.github.com/repos/OurBookStore/TheBookStore/git/commits/0a784250d8c1e379be0367f829dcbe66bca6c86d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/OurBookStore/TheBookStore/commits/0a784250d8c1e379be0367f829dcbe66bca6c86d",
+    "html_url": "https://github.com/OurBookStore/TheBookStore/commit/0a784250d8c1e379be0367f829dcbe66bca6c86d",
+    "comments_url": "https://api.github.com/repos/OurBookStore/TheBookStore/commits/0a784250d8c1e379be0367f829dcbe66bca6c86d/comments",
+    "author": {
+        "login": "mirinion",
+        "id": 102416529,
+        "node_id": "U_kgDOBhrAkQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/102416529?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mirinion",
+        "html_url": "https://github.com/mirinion",
+        "followers_url": "https://api.github.com/users/mirinion/followers",
+        "following_url": "https://api.github.com/users/mirinion/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mirinion/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mirinion/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mirinion/subscriptions",
+        "organizations_url": "https://api.github.com/users/mirinion/orgs",
+        "repos_url": "https://api.github.com/users/mirinion/repos",
+        "events_url": "https://api.github.com/users/mirinion/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mirinion/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "mirinion",
+        "id": 102416529,
+        "node_id": "U_kgDOBhrAkQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/102416529?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mirinion",
+        "html_url": "https://github.com/mirinion",
+        "followers_url": "https://api.github.com/users/mirinion/followers",
+        "following_url": "https://api.github.com/users/mirinion/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mirinion/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mirinion/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mirinion/subscriptions",
+        "organizations_url": "https://api.github.com/users/mirinion/orgs",
+        "repos_url": "https://api.github.com/users/mirinion/repos",
+        "events_url": "https://api.github.com/users/mirinion/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mirinion/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "84146d327f93e9b9e0e35a1913fc9225a6ed35e8",
+            "url": "https://api.github.com/repos/OurBookStore/TheBookStore/commits/84146d327f93e9b9e0e35a1913fc9225a6ed35e8",
+            "html_url": "https://github.com/OurBookStore/TheBookStore/commit/84146d327f93e9b9e0e35a1913fc9225a6ed35e8"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 4,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "8139a97147267a628679ff09eb1044e0f8a35881",
+            "filename": "src/main/java/ru/mephi/ourbookstore/service/book/BookService.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 4,
+            "changes": 8,
+            "blob_url": "https://github.com/OurBookStore/TheBookStore/blob/0a784250d8c1e379be0367f829dcbe66bca6c86d/src%2Fmain%2Fjava%2Fru%2Fmephi%2Fourbookstore%2Fservice%2Fbook%2FBookService.java",
+            "raw_url": "https://github.com/OurBookStore/TheBookStore/raw/0a784250d8c1e379be0367f829dcbe66bca6c86d/src%2Fmain%2Fjava%2Fru%2Fmephi%2Fourbookstore%2Fservice%2Fbook%2FBookService.java",
+            "contents_url": "https://api.github.com/repos/OurBookStore/TheBookStore/contents/src%2Fmain%2Fjava%2Fru%2Fmephi%2Fourbookstore%2Fservice%2Fbook%2FBookService.java?ref=0a784250d8c1e379be0367f829dcbe66bca6c86d",
+            "patch": "@@ -73,8 +73,8 @@ public List<Book> search(BookSearchRqDto bookSearchRqDto) {\n         int offset = bookSearchRqDto.getPageNumber() * BOOK_PER_PAGE;\n         SearchSession searchSession = Search.session(entityManager);\n \n-        LocalDate dateFrom = LocalDate.parse(bookSearchRqDto.getDateOfBirthFrom());\n-        LocalDate dateTo = LocalDate.parse(bookSearchRqDto.getDateOfBirthTo());\n+        LocalDate dateFrom = bookSearchRqDto.getDateOfBirthFrom() == null ? null : LocalDate.parse(bookSearchRqDto.getDateOfBirthFrom());\n+        LocalDate dateTo = bookSearchRqDto.getDateOfBirthTo() == null ? null : LocalDate.parse(bookSearchRqDto.getDateOfBirthTo());\n \n         runIndexing(searchSession);\n \n@@ -85,10 +85,10 @@ public List<Book> search(BookSearchRqDto bookSearchRqDto) {\n                     if (bookSearchRqDto.getSearchText() != null && !bookSearchRqDto.getSearchText().isEmpty()) {\n                         b.must(f.match().fields().fields(\"name\", \"authors.fullName\").matching(bookSearchRqDto.getSearchText()).fuzzy());\n                     }\n-                    if (bookSearchRqDto.getDateOfBirthFrom() != null) {\n+                    if (dateFrom != null) {\n                         b.must(f.range().field(\"authors.dateOfBirth\").atLeast(dateFrom));\n                     }\n-                    if (bookSearchRqDto.getDateOfBirthTo() != null) {\n+                    if (dateTo != null) {\n                         b.must(f.range().field(\"authors.dateOfBirth\").atMost(dateTo));\n                     }\n                 } ))"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == CAMERA_PERMISSION_REQUEST_CODE) {
+            handleCameraPermissionResult(grantResults);
+        } else if (requestCode == ACCESS_FINE_LOCATION_REQUEST_CODE) {
+            handleLocationPermissionResult(grantResults);
+        } else {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+    }

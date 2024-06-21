@@ -1,0 +1,98 @@
+{
+    "sha": "5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d",
+    "node_id": "C_kwDOCTf8qtoAKDVhNWExZDlhOTEyOTlmZmE3ZGRhMGQ4N2FiNzY0ZTBmYjMyYWUwMmQ",
+    "commit": {
+        "author": {
+            "name": "gabriel mandler",
+            "email": "gabriel.mandler@appsflyer.com",
+            "date": "2023-06-27T15:02:36Z"
+        },
+        "committer": {
+            "name": "gabriel mandler",
+            "email": "gabriel.mandler@appsflyer.com",
+            "date": "2023-06-27T15:02:36Z"
+        },
+        "message": "fix null pointer exception bug",
+        "tree": {
+            "sha": "dd3afdfd2ac1b50b513ad6f539516844efe928dc",
+            "url": "https://api.github.com/repos/AppsFlyerSDK/appsflyer-flutter-plugin/git/trees/dd3afdfd2ac1b50b513ad6f539516844efe928dc"
+        },
+        "url": "https://api.github.com/repos/AppsFlyerSDK/appsflyer-flutter-plugin/git/commits/5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AppsFlyerSDK/appsflyer-flutter-plugin/commits/5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d",
+    "html_url": "https://github.com/AppsFlyerSDK/appsflyer-flutter-plugin/commit/5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d",
+    "comments_url": "https://api.github.com/repos/AppsFlyerSDK/appsflyer-flutter-plugin/commits/5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d/comments",
+    "author": {
+        "login": "GM-appsflyer",
+        "id": 53262434,
+        "node_id": "MDQ6VXNlcjUzMjYyNDM0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53262434?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GM-appsflyer",
+        "html_url": "https://github.com/GM-appsflyer",
+        "followers_url": "https://api.github.com/users/GM-appsflyer/followers",
+        "following_url": "https://api.github.com/users/GM-appsflyer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GM-appsflyer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GM-appsflyer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GM-appsflyer/subscriptions",
+        "organizations_url": "https://api.github.com/users/GM-appsflyer/orgs",
+        "repos_url": "https://api.github.com/users/GM-appsflyer/repos",
+        "events_url": "https://api.github.com/users/GM-appsflyer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GM-appsflyer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "GM-appsflyer",
+        "id": 53262434,
+        "node_id": "MDQ6VXNlcjUzMjYyNDM0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53262434?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GM-appsflyer",
+        "html_url": "https://github.com/GM-appsflyer",
+        "followers_url": "https://api.github.com/users/GM-appsflyer/followers",
+        "following_url": "https://api.github.com/users/GM-appsflyer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GM-appsflyer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GM-appsflyer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GM-appsflyer/subscriptions",
+        "organizations_url": "https://api.github.com/users/GM-appsflyer/orgs",
+        "repos_url": "https://api.github.com/users/GM-appsflyer/repos",
+        "events_url": "https://api.github.com/users/GM-appsflyer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GM-appsflyer/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6481b39459dccbd10713810ca67a162d45d6b23a",
+            "url": "https://api.github.com/repos/AppsFlyerSDK/appsflyer-flutter-plugin/commits/6481b39459dccbd10713810ca67a162d45d6b23a",
+            "html_url": "https://github.com/AppsFlyerSDK/appsflyer-flutter-plugin/commit/6481b39459dccbd10713810ca67a162d45d6b23a"
+        }
+    ],
+    "stats": {
+        "total": 16,
+        "additions": 10,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "ccc62fb536863cc727387110d4fac3b1e140e815",
+            "filename": "android/src/main/java/com/appsflyer/appsflyersdk/AppsflyerSdkPlugin.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 6,
+            "changes": 16,
+            "blob_url": "https://github.com/AppsFlyerSDK/appsflyer-flutter-plugin/blob/5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d/android%2Fsrc%2Fmain%2Fjava%2Fcom%2Fappsflyer%2Fappsflyersdk%2FAppsflyerSdkPlugin.java",
+            "raw_url": "https://github.com/AppsFlyerSDK/appsflyer-flutter-plugin/raw/5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d/android%2Fsrc%2Fmain%2Fjava%2Fcom%2Fappsflyer%2Fappsflyersdk%2FAppsflyerSdkPlugin.java",
+            "contents_url": "https://api.github.com/repos/AppsFlyerSDK/appsflyer-flutter-plugin/contents/android%2Fsrc%2Fmain%2Fjava%2Fcom%2Fappsflyer%2Fappsflyersdk%2FAppsflyerSdkPlugin.java?ref=5a5a1d9a91299ffa7dda0d87ab764e0fb32ae02d",
+            "patch": "@@ -60,7 +60,8 @@ public class AppsflyerSdkPlugin implements MethodCallHandler, FlutterPlugin, Act\n     private static String cachedOnAttributionFailure;\n     private static String cachedOnConversionDataFail;\n     private static DeepLinkResult cachedDeepLinkResult;\n-    \n+    private static ActivityPluginBinding activityPluginBinding;\n+\n     final Handler uiThreadHandler = new Handler(Looper.getMainLooper());\n     private EventChannel mEventChannel;\n     /**\n@@ -773,7 +774,9 @@ private void initSdk(MethodCall call, final MethodChannel.Result result) {\n         AppsFlyerConversionListener gcdListener = null;\n         DeepLinkListener udlListener = null;\n         AppsFlyerLib instance = AppsFlyerLib.getInstance();\n-\n+        if(activity == null){\n+            activity = activityPluginBinding.getActivity();\n+        }\n         String afDevKey = (String) call.argument(AppsFlyerConstants.AF_DEV_KEY);\n         if (afDevKey == null || afDevKey.equals(\"\")) {\n             result.error(null, \"AF Dev Key is empty\", \"AF dev key cannot be empty\");\n@@ -901,10 +904,11 @@ public void onDetachedFromEngine(FlutterPluginBinding binding) {\n \n     @Override\n     public void onAttachedToActivity(ActivityPluginBinding binding) {\n-        activity = binding.getActivity();\n-        mIntent = binding.getActivity().getIntent();\n-        mApplication = binding.getActivity().getApplication();\n-        binding.addOnNewIntentListener(onNewIntentListener);\n+        activityPluginBinding = binding;\n+        activity = activityPluginBinding.getActivity();\n+        mIntent = activityPluginBinding.getActivity().getIntent();\n+        mApplication = activityPluginBinding.getActivity().getApplication();\n+        activityPluginBinding.addOnNewIntentListener(onNewIntentListener);\n     }\n \n     @Override"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+    public void invalidate(Player player) {
+        if (Objects.isNull(player)) return;
+
+        if (getHeadFor(player).isPresent())
+            HEAD_CACHE.invalidate(player);
+    }
+

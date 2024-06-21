@@ -1,0 +1,31 @@
+@@ -8,8 +8,6 @@
+ import java.util.HashMap;
+ 
+ public class ScoreWriter extends OutputWriter<HashMap<String,Double>> {
+-    private HashMap<String,Double> scores;
+-    private String className;
+     public ScoreWriter(String className, HashMap<String,Double> scores){
+         super("reflection-scores",className,scores);
+     }
+@@ -41,8 +39,8 @@ protected void writeData(File file){
+             BufferedWriter bufferWriter = new BufferedWriter(writer);
+             bufferWriter.write("Student-Name,Reflection-Points");
+             bufferWriter.newLine();
+-            for (String name : scores.keySet()){
+-                double points = scores.get(name);
++            for (String name : data.keySet()){
++                double points = data.get(name);
+ 
+                 bufferWriter.write(name + "," + points + ",");
+                 bufferWriter.newLine();
+@@ -59,8 +57,8 @@ protected void writeData(File file){
+     @Override
+     public String toString(){
+         StringBuilder builder = new StringBuilder();
+-        for (String name : scores.keySet()){
+-            double score = scores.get(name);
++        for (String name : data.keySet()){
++            double score = data.get(name);
+             builder.append(name + "," + score);
+         }
+         return builder.toString();

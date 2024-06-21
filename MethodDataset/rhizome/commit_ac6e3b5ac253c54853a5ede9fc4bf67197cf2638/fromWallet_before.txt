@@ -1,0 +1,3 @@
+    public PublicWalletAddress fromWallet() {
+        return this.from;
+    }

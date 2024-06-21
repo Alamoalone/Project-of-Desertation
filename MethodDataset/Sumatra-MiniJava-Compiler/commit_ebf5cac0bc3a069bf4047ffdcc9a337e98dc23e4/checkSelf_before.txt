@@ -1,0 +1,3 @@
+    protected void checkSelf() throws CompilerException {
+        sentence.check();
+    }

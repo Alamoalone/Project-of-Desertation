@@ -1,0 +1,16 @@
+  public void testRemoveAll() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    NamespaceId namespaceId = new NamespaceId("account1");
+    ApplicationId appId = namespaceId.app("application1");
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    Assert.assertNotNull(store.getApplication(appId));
+
+    // removing everything
+    store.removeAll(namespaceId);
+
+    Assert.assertNull(store.getApplication(appId));
+  }

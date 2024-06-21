@@ -1,0 +1,9 @@
+@@ -27,7 +27,7 @@ public static void addYearChecker(TextField textField) {
+ 
+     public static void addRatingChecker(TextField textField) {
+         textField.textProperty().addListener((observable, oldValue, newValue) -> {
+-            if (!newValue.matches("^-?\\d?\\.\\d?$")) {
++            if (!newValue.matches("^-?\\d?\\.?\\d?$")) {
+                 textField.setText(oldValue);
+             }
+         });

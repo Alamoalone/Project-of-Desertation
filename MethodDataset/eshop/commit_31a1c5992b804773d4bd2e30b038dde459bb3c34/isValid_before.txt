@@ -1,0 +1,3 @@
+    public boolean isValid(UserDto userDto, ConstraintValidatorContext context) {
+        return userDto.getPassword().equals(userDto.getRepeatPassword());
+    }

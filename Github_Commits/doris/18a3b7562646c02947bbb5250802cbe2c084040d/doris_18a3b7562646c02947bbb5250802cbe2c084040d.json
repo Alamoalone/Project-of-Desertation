@@ -1,0 +1,98 @@
+{
+    "sha": "18a3b7562646c02947bbb5250802cbe2c084040d",
+    "node_id": "C_kwDOBfSlxtoAKDE4YTNiNzU2MjY0NmMwMjk0N2JiYjUyNTA4MDJjYmUyYzA4NDA0MGQ",
+    "commit": {
+        "author": {
+            "name": "luozenglin",
+            "email": "37725793+luozenglin@users.noreply.github.com",
+            "date": "2023-01-11T08:38:55Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-11T08:38:55Z"
+        },
+        "message": "[fix](QueryDetail) fix QueryDetail may be incorrect and null pointer exception (#15765)\n\n* [fix](QueryDetail) fix QueryDetail may be incorrect and null pointer exception",
+        "tree": {
+            "sha": "b47ede9b83f53eea0bab7f9843b3315e987f762c",
+            "url": "https://api.github.com/repos/apache/doris/git/trees/b47ede9b83f53eea0bab7f9843b3315e987f762c"
+        },
+        "url": "https://api.github.com/repos/apache/doris/git/commits/18a3b7562646c02947bbb5250802cbe2c084040d",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjvnWfCRBK7hj4Ov3rIwAAWFAIABEVCX+zyAVwAMuJ1++9HIrN\n6YyXitL8/tmjKf52WavclkKRxi3gFrMwW6AkJiw2dGQa31brEnq9lEbN4E8M82vw\nSU0jqQiqjG1ixSP7ro4OvzcG0WcdGDtVbh1yocqIrlD3ORn+Lcf40t09oUWxeu0y\nt9nxbEsM5iSLnmtz+2WJrd8Z4ACy3RJfUYUrI+/zcoRiZRe15BC0L9cA+KiiWIEn\nRJVpY6y3/xHhcyBnJo6zd8AAhZYY0dP6rh60UXpHlwCYCo6dA7hFqrAnlW28PmMe\n05zfyCZQ2gR9AN/gqELZ6AXWKnyVzQafIGhchTjJbH+fAaRjje+gH/aW7tEXIXE=\n=6p+H\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree b47ede9b83f53eea0bab7f9843b3315e987f762c\nparent 4424874237f2be5d26deceae4f49ba4011360a80\nauthor luozenglin <37725793+luozenglin@users.noreply.github.com> 1673426335 +0800\ncommitter GitHub <noreply@github.com> 1673426335 +0800\n\n[fix](QueryDetail) fix QueryDetail may be incorrect and null pointer exception (#15765)\n\n* [fix](QueryDetail) fix QueryDetail may be incorrect and null pointer exception"
+        }
+    },
+    "url": "https://api.github.com/repos/apache/doris/commits/18a3b7562646c02947bbb5250802cbe2c084040d",
+    "html_url": "https://github.com/apache/doris/commit/18a3b7562646c02947bbb5250802cbe2c084040d",
+    "comments_url": "https://api.github.com/repos/apache/doris/commits/18a3b7562646c02947bbb5250802cbe2c084040d/comments",
+    "author": {
+        "login": "luozenglin",
+        "id": 37725793,
+        "node_id": "MDQ6VXNlcjM3NzI1Nzkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/37725793?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/luozenglin",
+        "html_url": "https://github.com/luozenglin",
+        "followers_url": "https://api.github.com/users/luozenglin/followers",
+        "following_url": "https://api.github.com/users/luozenglin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/luozenglin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/luozenglin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/luozenglin/subscriptions",
+        "organizations_url": "https://api.github.com/users/luozenglin/orgs",
+        "repos_url": "https://api.github.com/users/luozenglin/repos",
+        "events_url": "https://api.github.com/users/luozenglin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/luozenglin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4424874237f2be5d26deceae4f49ba4011360a80",
+            "url": "https://api.github.com/repos/apache/doris/commits/4424874237f2be5d26deceae4f49ba4011360a80",
+            "html_url": "https://github.com/apache/doris/commit/4424874237f2be5d26deceae4f49ba4011360a80"
+        }
+    ],
+    "stats": {
+        "total": 13,
+        "additions": 8,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "493126af54c1ceba53508b4d9dd2adb5873c4d59",
+            "filename": "fe/fe-core/src/main/java/org/apache/doris/qe/ConnectProcessor.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 5,
+            "changes": 13,
+            "blob_url": "https://github.com/apache/doris/blob/18a3b7562646c02947bbb5250802cbe2c084040d/fe%2Ffe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fdoris%2Fqe%2FConnectProcessor.java",
+            "raw_url": "https://github.com/apache/doris/raw/18a3b7562646c02947bbb5250802cbe2c084040d/fe%2Ffe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fdoris%2Fqe%2FConnectProcessor.java",
+            "contents_url": "https://api.github.com/repos/apache/doris/contents/fe%2Ffe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fapache%2Fdoris%2Fqe%2FConnectProcessor.java?ref=18a3b7562646c02947bbb5250802cbe2c084040d",
+            "patch": "@@ -209,11 +209,14 @@ private void auditAfterExec(String origStmt, StatementBase parsedStmt, Data.PQue\n                 }\n             }\n             ctx.getAuditEventBuilder().setIsQuery(true);\n-            ctx.getQueryDetail().setEventTime(endTime);\n-            ctx.getQueryDetail().setEndTime(endTime);\n-            ctx.getQueryDetail().setLatency(elapseMs);\n-            ctx.getQueryDetail().setState(QueryDetail.QueryMemState.FINISHED);\n-            QueryDetailQueue.addOrUpdateQueryDetail(ctx.getQueryDetail());\n+            if (ctx.getQueryDetail() != null) {\n+                ctx.getQueryDetail().setEventTime(endTime);\n+                ctx.getQueryDetail().setEndTime(endTime);\n+                ctx.getQueryDetail().setLatency(elapseMs);\n+                ctx.getQueryDetail().setState(QueryDetail.QueryMemState.FINISHED);\n+                QueryDetailQueue.addOrUpdateQueryDetail(ctx.getQueryDetail());\n+                ctx.setQueryDetail(null);\n+            }\n         } else {\n             ctx.getAuditEventBuilder().setIsQuery(false);\n         }"
+        }
+    ]
+}

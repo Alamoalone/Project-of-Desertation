@@ -1,0 +1,182 @@
+{
+    "sha": "a3b6858e5e3549b8656cea7ce96063d974b512fa",
+    "node_id": "C_kwDOH_UYU9oAKGEzYjY4NThlNWUzNTQ5Yjg2NTZjZWE3Y2U5NjA2M2Q5NzRiNTEyZmE",
+    "commit": {
+        "author": {
+            "name": "Seamus McShane",
+            "email": "seamus.mcshane@digital.cabinet-office.gov.uk",
+            "date": "2023-10-16T14:38:22Z"
+        },
+        "committer": {
+            "name": "Seamus McShane",
+            "email": "seamus.mcshane@digital.cabinet-office.gov.uk",
+            "date": "2023-10-20T15:04:41Z"
+        },
+        "message": "LIME-766 Add DVLAAuthenticateTokenRequestDeniedAlarm, dvla_third_party_api_token_endpoint_status_code_alert_metric and correct resource leak in http retryer\n\n\t- also fixes null pointer with empty CI list in fallback pathway.\n\t- changed fallback error to log the exception class name (Formley e.getMessage() being null for null pointer is not clear/useful)",
+        "tree": {
+            "sha": "b288349b21180339cb87aeadb5ba51abfc9754c8",
+            "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/git/trees/b288349b21180339cb87aeadb5ba51abfc9754c8"
+        },
+        "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/git/commits/a3b6858e5e3549b8656cea7ce96063d974b512fa",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niKMEABYKAEsWIQRzLyM+xUt3x1OWdkwKYb3wh65p2gUCZTKXCS0cc2VhbXVzLm1j\nc2hhbmVAZGlnaXRhbC5jYWJpbmV0LW9mZmljZS5nb3YudWsACgkQCmG98IeuadpQ\nBQD/ZMbqaU4fxrZ3nH3HutmojIH6nMsBJsAh2sz8EvFK3YQBAKdV5iDS1oLvHRX4\ntoCcEA+yONwSEaxHS9opqD9ZYVgI\n=omen\n-----END PGP SIGNATURE-----",
+            "payload": "tree b288349b21180339cb87aeadb5ba51abfc9754c8\nparent b6e69035d68c8ae8be7ce8f91e701894d660d599\nauthor Seamus McShane <seamus.mcshane@digital.cabinet-office.gov.uk> 1697467102 +0100\ncommitter Seamus McShane <seamus.mcshane@digital.cabinet-office.gov.uk> 1697814281 +0100\n\nLIME-766 Add DVLAAuthenticateTokenRequestDeniedAlarm, dvla_third_party_api_token_endpoint_status_code_alert_metric and correct resource leak in http retryer\n\n\t- also fixes null pointer with empty CI list in fallback pathway.\n\t- changed fallback error to log the exception class name (Formley e.getMessage() being null for null pointer is not clear/useful)\n"
+        }
+    },
+    "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/commits/a3b6858e5e3549b8656cea7ce96063d974b512fa",
+    "html_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/commit/a3b6858e5e3549b8656cea7ce96063d974b512fa",
+    "comments_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/commits/a3b6858e5e3549b8656cea7ce96063d974b512fa/comments",
+    "author": {
+        "login": "smsgds",
+        "id": 105730527,
+        "node_id": "U_kgDOBk1R3w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105730527?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/smsgds",
+        "html_url": "https://github.com/smsgds",
+        "followers_url": "https://api.github.com/users/smsgds/followers",
+        "following_url": "https://api.github.com/users/smsgds/following{/other_user}",
+        "gists_url": "https://api.github.com/users/smsgds/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/smsgds/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/smsgds/subscriptions",
+        "organizations_url": "https://api.github.com/users/smsgds/orgs",
+        "repos_url": "https://api.github.com/users/smsgds/repos",
+        "events_url": "https://api.github.com/users/smsgds/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/smsgds/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "smsgds",
+        "id": 105730527,
+        "node_id": "U_kgDOBk1R3w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/105730527?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/smsgds",
+        "html_url": "https://github.com/smsgds",
+        "followers_url": "https://api.github.com/users/smsgds/followers",
+        "following_url": "https://api.github.com/users/smsgds/following{/other_user}",
+        "gists_url": "https://api.github.com/users/smsgds/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/smsgds/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/smsgds/subscriptions",
+        "organizations_url": "https://api.github.com/users/smsgds/orgs",
+        "repos_url": "https://api.github.com/users/smsgds/repos",
+        "events_url": "https://api.github.com/users/smsgds/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/smsgds/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b6e69035d68c8ae8be7ce8f91e701894d660d599",
+            "url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/commits/b6e69035d68c8ae8be7ce8f91e701894d660d599",
+            "html_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/commit/b6e69035d68c8ae8be7ce8f91e701894d660d599"
+        }
+    ],
+    "stats": {
+        "total": 141,
+        "additions": 138,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "f35e4f199556f4113e41161388e6a04fb91eba0c",
+            "filename": "infrastructure/lambda/template.yaml",
+            "status": "modified",
+            "additions": 24,
+            "deletions": 0,
+            "changes": 24,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/infrastructure%2Flambda%2Ftemplate.yaml",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/infrastructure%2Flambda%2Ftemplate.yaml",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/infrastructure%2Flambda%2Ftemplate.yaml?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -1109,6 +1109,30 @@ Resources:\n             Period: 300\n             Stat: Sum\n \n+  DVLAAuthenticateTokenRequestDeniedAlarm:\n+    Type: AWS::CloudWatch::Alarm\n+    Properties:\n+      AlarmName: !Sub \"${AWS::StackName}-${Environment} - Driving Licence - DVLA Authenticate Token Request Denied Alarm\"\n+      AlarmDescription: !Sub Driving Licence ${Environment} DVLA Token endpoint returned a 400/401 response to a token request (failure to authenticate)\n+      ActionsEnabled: true\n+      AlarmActions:\n+        - !Ref AlarmTopicDL\n+      OKActions:\n+        - !Ref AlarmTopicDL\n+      InsufficientDataActions: []\n+      MetricName: dvla_third_party_api_token_endpoint_status_code_alert_metric\n+      Namespace: !Sub \"${CriIdentifier}\"\n+      Statistic: Sum\n+      Dimensions:\n+        - Name: Service\n+          Value: !Sub \"${CriIdentifier}-drivingpermitcheck\"\n+      Period: 60\n+      EvaluationPeriods: 1\n+      DatapointsToAlarm: 1\n+      Threshold: 1\n+      ComparisonOperator: GreaterThanOrEqualToThreshold\n+      TreatMissingData: notBreaching\n+\n ####################################################################\n #                                                                  #\n # Alarm setup                                                      #"
+        },
+        {
+            "sha": "d56388b423afbc8c352fbd94765cf25eb3f598f0",
+            "filename": "lambdas/drivingpermitcheck/src/main/java/uk/gov/di/ipv/cri/drivingpermit/api/handler/DrivingPermitHandler.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fhandler%2FDrivingPermitHandler.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fhandler%2FDrivingPermitHandler.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fhandler%2FDrivingPermitHandler.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -192,7 +192,8 @@ public APIGatewayProxyResponseEvent handleRequest(\n                     result = executeFallbackIfDocumentFailedToVerify(result, drivingPermitFormData);\n                 }\n             } catch (Exception e) {\n-                LOGGER.info(\"Exception {}, checking if fallback is required\", e.getMessage());\n+                LOGGER.info(\"Exception {}, checking if fallback is required\", e.getClass());\n+\n                 if (!thirdPartyIsDcs && !thirdPartyIsDva) {\n                     LOGGER.info(\n                             \"Exception has occurred during fallback window. Executing request with DVAD\");\n@@ -397,7 +398,8 @@ private DocumentCheckVerificationResult executeFallbackIfDocumentFailedToVerify(\n             DrivingPermitForm drivingPermitFormData)\n             throws Exception {\n         if (!documentDataVerificationResult.isVerified()\n-                || !documentDataVerificationResult.getContraIndicators().isEmpty()) {\n+                || (documentDataVerificationResult.getContraIndicators() != null\n+                        && !documentDataVerificationResult.getContraIndicators().isEmpty())) {\n             LOGGER.info(\n                     \"Document has been marked unverified during fallback window. Executing request with Direct connection\");\n             documentDataVerificationResult = executeFallbackRequest(drivingPermitFormData);"
+        },
+        {
+            "sha": "d621345ffd7b56364e0fc4a78e0063fe5995e3a8",
+            "filename": "lambdas/drivingpermitcheck/src/main/java/uk/gov/di/ipv/cri/drivingpermit/api/service/HttpRetryer.java",
+            "status": "modified",
+            "additions": 21,
+            "deletions": 1,
+            "changes": 22,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2FHttpRetryer.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2FHttpRetryer.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2FHttpRetryer.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -42,9 +42,10 @@ public CloseableHttpResponse sendHTTPRequestRetryIfAllowed(\n         boolean retry = false;\n \n         do {\n-            // \"If\" added for capturing retries\n             if (retry) {\n                 eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendRetryMetric());\n+\n+                freeHttpConnectionBackToPool(httpResponse);\n             }\n \n             // Wait before sending request (0ms for first try)\n@@ -74,6 +75,9 @@ public CloseableHttpResponse sendHTTPRequestRetryIfAllowed(\n                     // not\n                     LOGGER.warn(\"Failed to send request - reason {}\", e.getMessage());\n                     eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendFailMetric(e));\n+\n+                    freeHttpConnectionBackToPool(httpResponse);\n+\n                     throw e;\n                 }\n \n@@ -101,6 +105,8 @@ public CloseableHttpResponse sendHTTPRequestRetryIfAllowed(\n                     LOGGER.warn(\"Failed to send request - reason {}\", e.getMessage());\n                     eventProbe.counterMetric(httpRetryStatusConfig.httpRetryerSendFailMetric(e));\n \n+                    freeHttpConnectionBackToPool(httpResponse);\n+\n                     throw e;\n                 }\n             }\n@@ -121,4 +127,18 @@ public CloseableHttpResponse sendHTTPRequestRetryIfAllowed(\n \n         return httpResponse;\n     }\n+\n+    /***\n+     * This avoids using all the limited number of http connection pool\n+     * resources, by closing previous responses when errors occur.\n+     * @param httpResponse\n+     * @throws IOException\n+     */\n+    private void freeHttpConnectionBackToPool(CloseableHttpResponse httpResponse)\n+            throws IOException {\n+        if (httpResponse != null) {\n+            // Prevent the resource leak\n+            httpResponse.close();\n+        }\n+    }\n }"
+        },
+        {
+            "sha": "5c3fc5715bb69cb36c6af60beef16164a7528ffd",
+            "filename": "lambdas/drivingpermitcheck/src/main/java/uk/gov/di/ipv/cri/drivingpermit/api/service/IdentityVerificationService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2FIdentityVerificationService.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2FIdentityVerificationService.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2FIdentityVerificationService.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -176,6 +176,8 @@ private int calculateActivityHistory(DocumentCheckResult documentCheckResult) {\n                 : MIN_DRIVING_ACTIVITY_HISTORY_SCORE;\n     }\n \n+    // Todo change this to return an empty list, to avoid needing/forgetting null checks later\n+    // Later code behaviour is based on this being null - change also to empty checks\n     private List<String> calculateContraIndicators(DocumentCheckResult documentCheckResult) {\n         return documentCheckResult.isValid() ? null : List.of(DOCUMENT_VALIDITY_CI);\n     }"
+        },
+        {
+            "sha": "7eaae0fb08917b415fd69612b5e6d1d3291b9c43",
+            "filename": "lambdas/drivingpermitcheck/src/main/java/uk/gov/di/ipv/cri/drivingpermit/api/service/dvla/endpoints/TokenRequestService.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 0,
+            "changes": 16,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2Fdvla%2Fendpoints%2FTokenRequestService.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2Fdvla%2Fendpoints%2FTokenRequestService.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lambdas%2Fdrivingpermitcheck%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2Fdvla%2Fendpoints%2FTokenRequestService.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -30,13 +30,17 @@\n import java.time.Instant;\n import java.time.ZoneId;\n import java.util.Arrays;\n+import java.util.List;\n import java.util.UUID;\n \n import static uk.gov.di.ipv.cri.drivingpermit.api.domain.dvla.request.RequestHeaderKeys.HEADER_CONTENT_TYPE;\n+import static uk.gov.di.ipv.cri.drivingpermit.api.service.dvla.endpoints.ResponseStatusCodes.BAD_REQUEST;\n+import static uk.gov.di.ipv.cri.drivingpermit.api.service.dvla.endpoints.ResponseStatusCodes.UNAUTHORISED;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_CREATED;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_REUSING_CACHED_TOKEN;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_SEND_ERROR;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_SEND_OK;\n+import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_STATUS_CODE_ALERT_METRIC;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_TYPE_EXPECTED_HTTP_STATUS;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_TYPE_INVALID;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS;\n@@ -64,6 +68,10 @@ public class TokenRequestService {\n \n     private final HttpRetryStatusConfig httpRetryStatusConfig;\n \n+    // Alerts will be fired for these status code responses\n+    // The CRI must also never retry request with these codes\n+    private final List<Integer> alertStatusCodes = List.of(BAD_REQUEST, UNAUTHORISED);\n+\n     // Token item shared between concurrent lambdas (if scaling)\n     public static final String TOKEN_ITEM_ID = \"TokenKey\";\n \n@@ -245,6 +253,14 @@ private TokenResponse performNewTokenRequest() throws OAuthErrorResponseExceptio\n             eventProbe.counterMetric(\n                     DVLA_TOKEN_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS.withEndpointPrefix());\n \n+            if (alertStatusCodes.contains(httpReply.statusCode)) {\n+                LOGGER.warn(\"Status code {}, triggered alert metric\", httpReply.statusCode);\n+\n+                // Alarm Firing\n+                eventProbe.counterMetric(\n+                        DVLA_TOKEN_RESPONSE_STATUS_CODE_ALERT_METRIC.withEndpointPrefix());\n+            }\n+\n             throw new OAuthErrorResponseException(\n                     HttpStatusCode.INTERNAL_SERVER_ERROR,\n                     ErrorResponse.ERROR_TOKEN_ENDPOINT_RETURNED_UNEXPECTED_HTTP_STATUS_CODE);"
+        },
+        {
+            "sha": "7e7f091d79af3d16043ec62ae7f5eb7bbc5c1511",
+            "filename": "lambdas/drivingpermitcheck/src/test/java/uk/gov/di/ipv/cri/drivingpermit/api/service/dvla/endpoints/TokenRequestServiceTest.java",
+            "status": "modified",
+            "additions": 60,
+            "deletions": 0,
+            "changes": 60,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2Fdvla%2Fendpoints%2FTokenRequestServiceTest.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lambdas%2Fdrivingpermitcheck%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2Fdvla%2Fendpoints%2FTokenRequestServiceTest.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lambdas%2Fdrivingpermitcheck%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fapi%2Fservice%2Fdvla%2Fendpoints%2FTokenRequestServiceTest.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -10,6 +10,8 @@\n import org.junit.jupiter.api.BeforeEach;\n import org.junit.jupiter.api.Test;\n import org.junit.jupiter.api.extension.ExtendWith;\n+import org.junit.jupiter.params.ParameterizedTest;\n+import org.junit.jupiter.params.provider.CsvSource;\n import org.mockito.ArgumentCaptor;\n import org.mockito.InOrder;\n import org.mockito.Mock;\n@@ -49,6 +51,7 @@\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_REUSING_CACHED_TOKEN;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_SEND_ERROR;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_REQUEST_SEND_OK;\n+import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_STATUS_CODE_ALERT_METRIC;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_TYPE_EXPECTED_HTTP_STATUS;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_TYPE_INVALID;\n import static uk.gov.di.ipv.cri.drivingpermit.library.metrics.ThirdPartyAPIEndpointMetric.DVLA_TOKEN_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS;\n@@ -245,6 +248,63 @@ void shouldReturnOAuthErrorResponseExceptionWhenTokenEndpointResponseStatusCodeN\n         assertEquals(expectedReturnedException.getErrorReason(), thrownException.getErrorReason());\n     }\n \n+    @ParameterizedTest\n+    @CsvSource({\n+        \"400\", \"401\", // Status Codes where the alert metric is expected to be captured\n+    })\n+    void shouldCaptureTokenResponseStatusCodeAlertMetricWhenStatusCodeIs(\n+            int tokenResponseStatusCode) throws IOException {\n+        ArgumentCaptor<HttpPost> httpRequestCaptor = ArgumentCaptor.forClass(HttpPost.class);\n+\n+        CloseableHttpResponse tokenResponse =\n+                HttpResponseFixtures.createHttpResponse(\n+                        tokenResponseStatusCode, null, \"Server Error\", false);\n+\n+        // HttpClient response\n+        when(mockHttpRetryer.sendHTTPRequestRetryIfAllowed(\n+                        httpRequestCaptor.capture(), any(TokenHttpRetryStatusConfig.class)))\n+                .thenReturn(tokenResponse);\n+\n+        OAuthErrorResponseException expectedReturnedException =\n+                new OAuthErrorResponseException(\n+                        HttpStatus.SC_INTERNAL_SERVER_ERROR,\n+                        ErrorResponse.ERROR_TOKEN_ENDPOINT_RETURNED_UNEXPECTED_HTTP_STATUS_CODE);\n+\n+        OAuthErrorResponseException thrownException =\n+                assertThrows(\n+                        OAuthErrorResponseException.class,\n+                        () -> tokenRequestService.requestToken(true),\n+                        \"Expected OAuthErrorResponseException\");\n+\n+        // (Post) Token\n+        InOrder inOrderMockHttpRetryerSequence = inOrder(mockHttpRetryer);\n+        inOrderMockHttpRetryerSequence\n+                .verify(mockHttpRetryer, times(1))\n+                .sendHTTPRequestRetryIfAllowed(\n+                        any(HttpPost.class), any(TokenHttpRetryStatusConfig.class));\n+        verifyNoMoreInteractions(mockHttpRetryer);\n+\n+        InOrder inOrderMockEventProbeSequence = inOrder(mockEventProbe);\n+        inOrderMockEventProbeSequence\n+                .verify(mockEventProbe)\n+                .counterMetric(DVLA_TOKEN_REQUEST_CREATED.withEndpointPrefix());\n+        inOrderMockEventProbeSequence\n+                .verify(mockEventProbe)\n+                .counterMetric(DVLA_TOKEN_REQUEST_SEND_OK.withEndpointPrefix());\n+        inOrderMockEventProbeSequence\n+                .verify(mockEventProbe)\n+                .counterMetric(\n+                        DVLA_TOKEN_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS.withEndpointPrefix());\n+        // Token Status Code Alert\n+        inOrderMockEventProbeSequence\n+                .verify(mockEventProbe)\n+                .counterMetric(DVLA_TOKEN_RESPONSE_STATUS_CODE_ALERT_METRIC.withEndpointPrefix());\n+        verifyNoMoreInteractions(mockEventProbe);\n+\n+        assertEquals(expectedReturnedException.getStatusCode(), thrownException.getStatusCode());\n+        assertEquals(expectedReturnedException.getErrorReason(), thrownException.getErrorReason());\n+    }\n+\n     @Test\n     void shouldReturnOAuthErrorResponseExceptionWhenFailingToMapTokenEndpointResponse()\n             throws IOException {"
+        },
+        {
+            "sha": "8e51c1d384d9d7e69611942a558d0e4fad214fe5",
+            "filename": "lib/src/main/java/uk/gov/di/ipv/cri/drivingpermit/library/metrics/ThirdPartyAPIEndpointMetric.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lib%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Flibrary%2Fmetrics%2FThirdPartyAPIEndpointMetric.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lib%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Flibrary%2Fmetrics%2FThirdPartyAPIEndpointMetric.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lib%2Fsrc%2Fmain%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Flibrary%2Fmetrics%2FThirdPartyAPIEndpointMetric.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -100,6 +100,10 @@ public enum ThirdPartyAPIEndpointMetric {\n     DVLA_TOKEN_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS(\n             DVLA_THIRD_PARTY_API_TOKEN_ENDPOINT, API_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS),\n \n+    DVLA_TOKEN_RESPONSE_STATUS_CODE_ALERT_METRIC(\n+            DVLA_THIRD_PARTY_API_TOKEN_ENDPOINT,\n+            \"status_code_alert_metric\"), // Unique to DVLA Token\n+\n     DVLA_TOKEN_HTTP_RETRYER_REQUEST_SEND_OK(\n             DVLA_THIRD_PARTY_API_TOKEN_ENDPOINT, HTTP_RETRYER_REQUEST_SEND_OK),\n     DVLA_TOKEN_HTTP_RETRYER_REQUEST_SEND_FAIL("
+        },
+        {
+            "sha": "a06095251f5464bd8d8d14f7cf58a17b27b066db",
+            "filename": "lib/src/test/java/uk/gov/di/ipv/cri/drivingpermit/metrics/ThirdPartyAPIEndpointMetricTest.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/blob/a3b6858e5e3549b8656cea7ce96063d974b512fa/lib%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fmetrics%2FThirdPartyAPIEndpointMetricTest.java",
+            "raw_url": "https://github.com/govuk-one-login/ipv-cri-dl-api/raw/a3b6858e5e3549b8656cea7ce96063d974b512fa/lib%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fmetrics%2FThirdPartyAPIEndpointMetricTest.java",
+            "contents_url": "https://api.github.com/repos/govuk-one-login/ipv-cri-dl-api/contents/lib%2Fsrc%2Ftest%2Fjava%2Fuk%2Fgov%2Fdi%2Fipv%2Fcri%2Fdrivingpermit%2Fmetrics%2FThirdPartyAPIEndpointMetricTest.java?ref=a3b6858e5e3549b8656cea7ce96063d974b512fa",
+            "patch": "@@ -92,6 +92,13 @@ void assertEndpointMetricsAreGeneratedCorrectly() {\n                                 \"reusing_cached_token\")\n                         .toLowerCase());\n \n+        expectedMetricsCaptureList.add(\n+                String.format(\n+                                expectedFormat,\n+                                DVLA_THIRD_PARTY_API_TOKEN_ENDPOINT,\n+                                \"status_code_alert_metric\")\n+                        .toLowerCase());\n+\n         // Sort the two lists so the orders are the same\n         Collections.sort(expectedMetricsCaptureList);\n         Collections.sort(enumGeneratedMetricsStrings);"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+	protected JPanel createFormPanel() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(6, 1));
+		// create the form
+		JTextField nomField = new JTextField();
+		panel.add(new JLabel("Nom"));
+		panel.add(nomField);
+		JTextField descriptionField = new JTextField();
+		panel.add(new JLabel("Description"));
+		panel.add(descriptionField);
+		Choice uniteChoice = new Choice();
+		for (int i = 0; i < Unite.unites.size(); i++) uniteChoice.add(Unite.unites.get(i).toString());
+		panel.add(new JLabel("Unite"));
+		panel.add(uniteChoice);
+		// image choice
+		UButton imageButton = new UButton("Choose image");
+		AtomicReference<File> image = new AtomicReference<>();
+		imageButton.addActionListener(e -> {
+			JFileChooser fileChooser = new JFileChooser();
+			fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+			int result = fileChooser.showOpenDialog(this);
+			if (result == JFileChooser.APPROVE_OPTION) {
+				image.set(fileChooser.getSelectedFile());
+			}
+		});
+		panel.add(imageButton);
+		// create a button to create the produit
+		UButton createButton = new UButton("Create");
+		createButton.addActionListener(e -> {
+			Produit produit = new Produit(nomField.getText(), descriptionField.getText(), Unite.unites.get(uniteChoice.getSelectedIndex()).id, image.get());
+			Produit.create(produit);
+			displayView(false);
+		});
+		panel.add(createButton);
+		return panel;
+	}

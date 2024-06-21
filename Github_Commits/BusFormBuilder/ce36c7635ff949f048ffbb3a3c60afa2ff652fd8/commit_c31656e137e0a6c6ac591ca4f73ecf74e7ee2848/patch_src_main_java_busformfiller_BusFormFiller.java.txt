@@ -1,0 +1,42 @@
+@@ -189,27 +189,29 @@ public static int findLine(File file, LocalDate startDate, LocalDate endDate, Da
+ 				// If there is no such date in the report, then it must not exist even after incrementing till the end date
+ 				return lineCount; // In all cases return the lineCount
+ 			case "end":
+-				try (ReversedLinesFileReader r = ReversedLinesFileReader.builder().setPath(path).get()){
+-					int endLineCount = 0; // Meant to count how many lines it takes to get to the required end date
++				int endLineCount = 0; // Meant to count how many lines it takes to get to the required end date
+ 					int endDateCount = 0; // Increments the date by 1 each time
+ 					String end = ""; // String variable to store the changing dates
+-					String line;
++					String line; // Holds the current line of the file
+ 					do{
+-						end = endDate.minusDays(endDateCount).format(format);
+-						endLineCount = 0;
+-						while(r != null) {
+-							line = r.readLine();
+-							if(line.contains(end)) {
+-								return getTotalLines(path) - endLineCount;
++						// Initiates fresh ReversedLinesFileReader
++						ReversedLinesFileReader r = ReversedLinesFileReader.builder().setPath(path).get();
++						end = endDate.minusDays(endDateCount).format(format); // Decrement dates
++						endLineCount = 0; // Start a fresh line count
++						while(r != null) { // As long as ReversedLinesFileReader is not null
++							line = r.readLine(); // Get the last line of the file
++							if(line == null){ // If line is null
++								break; // Break the inner loop
++							}else if(line.contains(end)) { // If line has the end date
++								return (getTotalLines(path) - endLineCount); // Return the necessary amount of lines to skip
+ 							}
+-							endLineCount++;
++							endLineCount++; // If there is no match, move on to the next date and increment
+ 						}
+-						endDateCount++;
++						endDateCount++; // If the previous date doesn't work, then increase the subtraction
+ 					}while(!end.equals(startDate.format(format))); // Ensure that the end date does not equal the start date
+ 					System.out.println("It seems this date does not exist. Please make sure it is included in the presto report. Date: " + startDate.format(format));
+ 					// If there is no such date in the report, then it must not exist even after incrementing till the end date
+ 					return endLineCount; // In all cases return the lineCount
+-				}
+ 			default:
+ 				System.out.println("Error: The value for 'direction' must be 'start' or 'end'");
+ 				break;

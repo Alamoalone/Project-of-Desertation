@@ -1,0 +1,4 @@
+  private boolean truthy(Boolean b)
+  {
+    return Boolean.TRUE.equals(b); // Prevents against throwing NPE if b is null
+  }

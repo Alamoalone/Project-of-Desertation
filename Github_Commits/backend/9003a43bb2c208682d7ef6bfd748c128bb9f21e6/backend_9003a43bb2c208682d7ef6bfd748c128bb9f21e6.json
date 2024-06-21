@@ -1,0 +1,110 @@
+{
+    "sha": "9003a43bb2c208682d7ef6bfd748c128bb9f21e6",
+    "node_id": "C_kwDOKLQ1D9oAKDkwMDNhNDNiYjJjMjA4NjgyZDdlZjZiZmQ3NDhjMTI4YmI5ZjIxZTY",
+    "commit": {
+        "author": {
+            "name": "Rayner Tan",
+            "email": "raynertanxw@me.com",
+            "date": "2023-09-25T07:08:44Z"
+        },
+        "committer": {
+            "name": "Rayner Tan",
+            "email": "raynertanxw@me.com",
+            "date": "2023-09-25T07:09:01Z"
+        },
+        "message": "Fixed BookingSimpleJson null pointer exception for consturctor when inbound is empty.",
+        "tree": {
+            "sha": "cd52c987f09edb618c1bdc0003271567f27a1f79",
+            "url": "https://api.github.com/repos/G2T5203/backend/git/trees/cd52c987f09edb618c1bdc0003271567f27a1f79"
+        },
+        "url": "https://api.github.com/repos/G2T5203/backend/git/commits/9003a43bb2c208682d7ef6bfd748c128bb9f21e6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/G2T5203/backend/commits/9003a43bb2c208682d7ef6bfd748c128bb9f21e6",
+    "html_url": "https://github.com/G2T5203/backend/commit/9003a43bb2c208682d7ef6bfd748c128bb9f21e6",
+    "comments_url": "https://api.github.com/repos/G2T5203/backend/commits/9003a43bb2c208682d7ef6bfd748c128bb9f21e6/comments",
+    "author": {
+        "login": "raynertanxw",
+        "id": 3617000,
+        "node_id": "MDQ6VXNlcjM2MTcwMDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3617000?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/raynertanxw",
+        "html_url": "https://github.com/raynertanxw",
+        "followers_url": "https://api.github.com/users/raynertanxw/followers",
+        "following_url": "https://api.github.com/users/raynertanxw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/raynertanxw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/raynertanxw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/raynertanxw/subscriptions",
+        "organizations_url": "https://api.github.com/users/raynertanxw/orgs",
+        "repos_url": "https://api.github.com/users/raynertanxw/repos",
+        "events_url": "https://api.github.com/users/raynertanxw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/raynertanxw/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "raynertanxw",
+        "id": 3617000,
+        "node_id": "MDQ6VXNlcjM2MTcwMDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3617000?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/raynertanxw",
+        "html_url": "https://github.com/raynertanxw",
+        "followers_url": "https://api.github.com/users/raynertanxw/followers",
+        "following_url": "https://api.github.com/users/raynertanxw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/raynertanxw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/raynertanxw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/raynertanxw/subscriptions",
+        "organizations_url": "https://api.github.com/users/raynertanxw/orgs",
+        "repos_url": "https://api.github.com/users/raynertanxw/repos",
+        "events_url": "https://api.github.com/users/raynertanxw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/raynertanxw/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bee606194a1f54fafc86eb1c553b93bcedf65631",
+            "url": "https://api.github.com/repos/G2T5203/backend/commits/bee606194a1f54fafc86eb1c553b93bcedf65631",
+            "html_url": "https://github.com/G2T5203/backend/commit/bee606194a1f54fafc86eb1c553b93bcedf65631"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 5,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "7174d799b1b1b1d3dd843d9e08ed0f7d43708769",
+            "filename": "wingit/src/main/java/com/G2T5203/wingit/booking/BookingSimpleJson.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/G2T5203/backend/blob/9003a43bb2c208682d7ef6bfd748c128bb9f21e6/wingit%2Fsrc%2Fmain%2Fjava%2Fcom%2FG2T5203%2Fwingit%2Fbooking%2FBookingSimpleJson.java",
+            "raw_url": "https://github.com/G2T5203/backend/raw/9003a43bb2c208682d7ef6bfd748c128bb9f21e6/wingit%2Fsrc%2Fmain%2Fjava%2Fcom%2FG2T5203%2Fwingit%2Fbooking%2FBookingSimpleJson.java",
+            "contents_url": "https://api.github.com/repos/G2T5203/backend/contents/wingit%2Fsrc%2Fmain%2Fjava%2Fcom%2FG2T5203%2Fwingit%2Fbooking%2FBookingSimpleJson.java?ref=9003a43bb2c208682d7ef6bfd748c128bb9f21e6",
+            "patch": "@@ -60,9 +60,9 @@ public BookingSimpleJson(Booking booking) {\n                 booking.getOutboundRouteListing().getRouteListingPk().getRoute().getRouteId(),\n                 booking.getOutboundRouteListing().getRouteListingPk().getDepartureDatetime(),\n \n-                booking.getInboundRouteListing().getRouteListingPk().getPlane().getPlaneId(),\n-                booking.getInboundRouteListing().getRouteListingPk().getRoute().getRouteId(),\n-                booking.getInboundRouteListing().getRouteListingPk().getDepartureDatetime(),\n+                booking.hasInboundRouteListing() ? booking.getInboundRouteListing().getRouteListingPk().getPlane().getPlaneId() : null,\n+                booking.hasInboundRouteListing() ? booking.getInboundRouteListing().getRouteListingPk().getRoute().getRouteId() : -1,\n+                booking.hasInboundRouteListing() ? booking.getInboundRouteListing().getRouteListingPk().getDepartureDatetime() : null,\n \n                 booking.getStartBookingDatetime(),\n                 booking.getPartySize(),"
+        },
+        {
+            "sha": "e7e082b24a5bb875a4903574f7070752c6049a64",
+            "filename": "wingit/src/main/java/com/G2T5203/wingit/entities/Booking.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/G2T5203/backend/blob/9003a43bb2c208682d7ef6bfd748c128bb9f21e6/wingit%2Fsrc%2Fmain%2Fjava%2Fcom%2FG2T5203%2Fwingit%2Fentities%2FBooking.java",
+            "raw_url": "https://github.com/G2T5203/backend/raw/9003a43bb2c208682d7ef6bfd748c128bb9f21e6/wingit%2Fsrc%2Fmain%2Fjava%2Fcom%2FG2T5203%2Fwingit%2Fentities%2FBooking.java",
+            "contents_url": "https://api.github.com/repos/G2T5203/backend/contents/wingit%2Fsrc%2Fmain%2Fjava%2Fcom%2FG2T5203%2Fwingit%2Fentities%2FBooking.java?ref=9003a43bb2c208682d7ef6bfd748c128bb9f21e6",
+            "patch": "@@ -94,6 +94,8 @@ public void setInboundRouteListing(RouteListing inboundRouteListing) {\n         this.inboundRouteListing = inboundRouteListing;\n     }\n \n+    public boolean hasInboundRouteListing() { return this.inboundRouteListing != null; }\n+\n     public Date getStartBookingDatetime() {\n         return startBookingDatetime;\n     }"
+        }
+    ]
+}

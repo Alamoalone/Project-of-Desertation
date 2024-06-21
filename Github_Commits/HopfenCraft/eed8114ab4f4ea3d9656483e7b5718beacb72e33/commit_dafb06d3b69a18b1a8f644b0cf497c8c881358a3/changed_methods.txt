@@ -1,0 +1,6 @@
+GetCartItems_EmptyCart_ReturnsOKWithEmptyList()
+RemoveCartItem_ValidInput_ReturnsOK()
+AddCartItem_InvalidQuantity_ReturnsBadRequest()
+AddCartItem_InvalidProduct_ReturnsBadRequest()
+AddCartItem_ValidInput_ReturnsCreated()
+RemoveCartItem_NonExistentItem_ReturnsNotFound()

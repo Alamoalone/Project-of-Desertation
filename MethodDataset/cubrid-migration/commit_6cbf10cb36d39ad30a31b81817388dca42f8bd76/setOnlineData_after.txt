@@ -1,0 +1,50 @@
+	private void setOnlineData() {
+		srcCatalog = wizard.getOriginalSourceCatalog().createCatalog();
+		tarCatalog = wizard.getTargetCatalog();
+		
+		srcSchemaList = srcCatalog.getSchemas();
+		tarSchemaList = tarCatalog.getSchemas();
+		
+		Map<String, Schema> scriptSchemaMap = config.getScriptSchemaMapping();
+		
+		for (Schema schema : srcSchemaList) {
+			SrcTable srcTable = new SrcTable();
+			srcTable.setSrcDBType(srcCatalog.getDatabaseType().getName());
+			srcTable.setSrcSchema(schema.getName());
+			srcTable.setNote(schema.isGrantorSchema());
+			
+			if (!schema.isGrantorSchema()) {
+				srcTableList.add(0, srcTable);
+			} else {
+				srcTableList.add(srcTable);
+			}
+			
+			srcTable.setTarDBType(tarCatalog.getDatabaseType().getName());
+			
+			if (scriptSchemaMap.size() != 0) {
+				logger.info("script schema");
+				
+				Schema scriptSchema = scriptSchemaMap.get(srcTable.getSrcSchema());
+				String tarSchemaName = null;
+				if (scriptSchema != null) {
+					srcTable.setTarSchema(scriptSchema.getTargetSchemaName().toUpperCase());
+					tarSchemaName = scriptSchema.getTargetSchemaName().toUpperCase();
+					srcTable.setSelected(scriptSchemaMap.get(srcTable.getSrcSchema()).isMigration());
+				}
+				
+				if (tarSchemaName == null || tarSchemaName.isEmpty()) {
+					srcTable.setTarSchema(tarCatalog.getName());
+				}
+				
+				logger.info("srcTable target schema : " + srcTable.getTarSchema());
+			} else {
+				int version = tarCatalog.getVersion().getDbMajorVersion() * 10 + tarCatalog.getVersion().getDbMinorVersion();
+				
+				if (tarCatalog.isDBAGroup() && version >= 112) {
+					srcTable.setTarSchema(srcTable.getSrcSchema());
+				} else {
+					srcTable.setTarSchema(tarCatalog.getSchemas().get(0).getName());
+				}
+			}
+		}
+	}

@@ -1,0 +1,5 @@
+	private void establishNotificationSocket(Socket kkSocket)
+	{
+		this.notificationReceiverThread = this.new ClientNotificationReceiverThread(kkSocket);
+		this.notificationReceiverThread.start();
+	}

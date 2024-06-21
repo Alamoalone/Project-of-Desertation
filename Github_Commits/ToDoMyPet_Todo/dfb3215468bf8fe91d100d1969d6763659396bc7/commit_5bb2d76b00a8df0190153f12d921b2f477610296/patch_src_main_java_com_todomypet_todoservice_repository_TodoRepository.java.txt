@@ -1,0 +1,13 @@
+@@ -43,10 +43,10 @@ public interface TodoRepository extends Neo4jRepository<Todo, String> {
+             "RETURN DISTINCT t ORDER BY t.id ASC")
+     List<Todo> getAllTodoByUserAndMonth(String userId, int year, int month);
+ 
+-    @Query("MATCH (t:Todo{id:$repeatCode}) RETURN t")
++    @Query("MATCH (t:Todo) WHERE t.repeatCode = $repeatCode RETURN t")
+     List<Todo> getTodoByRepeatCode(String repeatCode);
+ 
+-    @Query("MATCH (t:Todo{id:%todoId}) DETACH DELETE todoId")
++    @Query("MATCH (t:Todo{id:$todoId}) DETACH DELETE todoId")
+     void deleteOneById(String todoId);
+ 
+     @Query("MATCH (t:Todo{id:$todoId}) RETURN t")

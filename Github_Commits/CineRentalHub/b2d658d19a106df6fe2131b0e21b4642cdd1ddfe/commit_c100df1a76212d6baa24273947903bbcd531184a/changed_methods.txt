@@ -1,0 +1,4 @@
+getMainImage(Integer movieId)
+getImagesByMovieId(Integer movieId)
+updateMovie(Integer movieId, MoviePostPutDTO movieDTO)
+addMovie(MoviePostPutDTO movieDTO)

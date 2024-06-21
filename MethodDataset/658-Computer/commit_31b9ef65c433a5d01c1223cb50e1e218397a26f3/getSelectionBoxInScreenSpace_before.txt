@@ -1,0 +1,4 @@
+  public void getSelectionBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+  {
+    getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, selectionBox);
+  }

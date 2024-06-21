@@ -1,0 +1,1 @@
+loadTopic(CouchDbClient client, String dirs)

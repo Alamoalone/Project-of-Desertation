@@ -1,0 +1,103 @@
+    private boolean blockKnownTracker(String daddr, int uid) {
+        Tracker tracker = null;
+        Expiring<Tracker> expiringTracker = ipToTracker.get(daddr);
+        if (expiringTracker != null) {
+            tracker = expiringTracker.getOrExpired();
+
+            if (tracker == null) // expired
+                ipToTracker.remove(daddr);
+        }
+
+        if (tracker == null) {
+            // Check if IP known
+            String dname = null;
+            Expiring<String> expiringHost = ipToHost.get(daddr);
+            if (expiringHost != null) {
+                dname = expiringHost.getOrExpired();
+
+                if (dname == null) // expired
+                    ipToHost.remove(daddr);
+            }
+
+            if (dname == null) { // TODO: Note that this does not implement any SNI code
+                // Retrieve dname from DB
+                DatabaseHelper dh = DatabaseHelper.getInstance(ServiceSinkhole.this);
+                long time;
+                long ttl;
+                try (Cursor lookup = dh.getQAName(uid, daddr, true)) {
+                    time = new Date().getTime();
+                    ttl = 7 * 24 * 3600 * 1000L;
+
+                    // Loop through entries and pick the one that is related to tracking
+                    if (lookup != null) {
+                        while (lookup.moveToNext()) {
+                            // Get DNS expiry details
+                            int colTime = lookup.getColumnIndex("time");
+                            int colTTL = lookup.getColumnIndex("ttl");
+                            if (!lookup.isNull(colTime))
+                                time = lookup.getLong(colTime);
+                            if (!lookup.isNull(colTTL))
+                                ttl = lookup.getLong(colTTL);
+
+                            // Check tracker
+                            String aname = lookup.getString(lookup.getColumnIndex("aname"));
+                            dname = lookup.getString(lookup.getColumnIndex("qname"));
+                            tracker = TrackerList.findTracker(dname);
+
+                            // If no tracker found, try DNS uncloaking
+                            if (tracker == null
+                                    && aname != null) {
+                                tracker = TrackerList.findTracker(aname);
+
+                                if (tracker != null) {
+                                    dname = aname;
+                                    Log.d(TAG, "Uncloaked: " + dname + " -> " + aname);
+                                }
+                            }
+
+                            // If tracker found, seek no further
+                            if (tracker != null)
+                                break;
+                        }
+                    }
+                }
+
+                // No success in finding dname or tracker?
+                if (dname == null)
+                    dname = NO_DNAME;
+                if (tracker == null)
+                    tracker = NO_TRACKER;
+
+                // Save dname and tracker
+                ipToHost.put(daddr, new Expiring<>(dname, time + ttl));
+                ipToTracker.put(daddr, new Expiring<>(tracker, time + ttl));
+            }
+
+            // If we can't resolve domain, use IP-based blocklist as fallback
+            if (dname == null)
+                if (TrackerList.trackingIps.contains(daddr))
+                    tracker = TrackerList.findTracker(daddr);
+        }
+
+        // Log or block?
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean("log_logcat", false)) {
+            String app = uidToApp.get(uid);
+            if (app == null) {
+                PackageManager pm = getPackageManager();
+                app = Common.getAppName(pm, uid);
+                uidToApp.put(uid, app);
+            }
+            assert tracker != null;
+            Log.i("TC-Log", app + " " + daddr + " " + ipToHost.get(daddr) + " " + tracker.getName());
+        } else {
+            if (tracker != NO_TRACKER) {
+                TrackerBlocklist b = TrackerBlocklist.getInstance(ServiceSinkhole.this);
+                return tracker != null
+                        && b.blockedTracker(uid, tracker);
+            }
+        }
+
+        return false;
+    }
+

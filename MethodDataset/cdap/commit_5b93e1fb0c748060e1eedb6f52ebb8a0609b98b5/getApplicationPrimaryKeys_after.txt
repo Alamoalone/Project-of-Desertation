@@ -1,0 +1,8 @@
+  List<Field<?>> getApplicationPrimaryKeys(String namespaceId, String appId,
+      String versionId) {
+    List<Field<?>> fields = new ArrayList<>();
+    fields.add(Fields.stringField(StoreDefinition.AppMetadataStore.NAMESPACE_FIELD, namespaceId));
+    fields.add(Fields.stringField(StoreDefinition.AppMetadataStore.APPLICATION_FIELD, appId));
+    fields.add(Fields.stringField(StoreDefinition.AppMetadataStore.VERSION_FIELD, versionId));
+    return fields;
+  }

@@ -1,0 +1,98 @@
+{
+    "sha": "d8decac949c7fd861bd52677ef116f142593e05e",
+    "node_id": "C_kwDOIuKSZNoAKGQ4ZGVjYWM5NDljN2ZkODYxYmQ1MjY3N2VmMTE2ZjE0MjU5M2UwNWU",
+    "commit": {
+        "author": {
+            "name": "Posh1G",
+            "email": "Josh.d.jonathan@gmail.com",
+            "date": "2023-02-21T17:44:42Z"
+        },
+        "committer": {
+            "name": "Posh1G",
+            "email": "Josh.d.jonathan@gmail.com",
+            "date": "2023-02-22T14:37:13Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "91bae04119a8e66946d2156e53be68902b38aab3",
+            "url": "https://api.github.com/repos/FRC-4509-MechBulls/2023_Charged_Up_Bot/git/trees/91bae04119a8e66946d2156e53be68902b38aab3"
+        },
+        "url": "https://api.github.com/repos/FRC-4509-MechBulls/2023_Charged_Up_Bot/git/commits/d8decac949c7fd861bd52677ef116f142593e05e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/FRC-4509-MechBulls/2023_Charged_Up_Bot/commits/d8decac949c7fd861bd52677ef116f142593e05e",
+    "html_url": "https://github.com/FRC-4509-MechBulls/2023_Charged_Up_Bot/commit/d8decac949c7fd861bd52677ef116f142593e05e",
+    "comments_url": "https://api.github.com/repos/FRC-4509-MechBulls/2023_Charged_Up_Bot/commits/d8decac949c7fd861bd52677ef116f142593e05e/comments",
+    "author": {
+        "login": "JoshJonathan",
+        "id": 68840376,
+        "node_id": "MDQ6VXNlcjY4ODQwMzc2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68840376?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JoshJonathan",
+        "html_url": "https://github.com/JoshJonathan",
+        "followers_url": "https://api.github.com/users/JoshJonathan/followers",
+        "following_url": "https://api.github.com/users/JoshJonathan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JoshJonathan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JoshJonathan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JoshJonathan/subscriptions",
+        "organizations_url": "https://api.github.com/users/JoshJonathan/orgs",
+        "repos_url": "https://api.github.com/users/JoshJonathan/repos",
+        "events_url": "https://api.github.com/users/JoshJonathan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JoshJonathan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "JoshJonathan",
+        "id": 68840376,
+        "node_id": "MDQ6VXNlcjY4ODQwMzc2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/68840376?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JoshJonathan",
+        "html_url": "https://github.com/JoshJonathan",
+        "followers_url": "https://api.github.com/users/JoshJonathan/followers",
+        "following_url": "https://api.github.com/users/JoshJonathan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JoshJonathan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JoshJonathan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JoshJonathan/subscriptions",
+        "organizations_url": "https://api.github.com/users/JoshJonathan/orgs",
+        "repos_url": "https://api.github.com/users/JoshJonathan/repos",
+        "events_url": "https://api.github.com/users/JoshJonathan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JoshJonathan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f6219318f5b7b901f882059151b2bf6db60e7d6a",
+            "url": "https://api.github.com/repos/FRC-4509-MechBulls/2023_Charged_Up_Bot/commits/f6219318f5b7b901f882059151b2bf6db60e7d6a",
+            "html_url": "https://github.com/FRC-4509-MechBulls/2023_Charged_Up_Bot/commit/f6219318f5b7b901f882059151b2bf6db60e7d6a"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "0c53c18db7b003efc8e0646de256db62db2181e1",
+            "filename": "src/main/java/frc/robot/subsystems/arm/Grabber.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/FRC-4509-MechBulls/2023_Charged_Up_Bot/blob/d8decac949c7fd861bd52677ef116f142593e05e/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2Farm%2FGrabber.java",
+            "raw_url": "https://github.com/FRC-4509-MechBulls/2023_Charged_Up_Bot/raw/d8decac949c7fd861bd52677ef116f142593e05e/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2Farm%2FGrabber.java",
+            "contents_url": "https://api.github.com/repos/FRC-4509-MechBulls/2023_Charged_Up_Bot/contents/src%2Fmain%2Fjava%2Ffrc%2Frobot%2Fsubsystems%2Farm%2FGrabber.java?ref=d8decac949c7fd861bd52677ef116f142593e05e",
+            "patch": "@@ -27,7 +27,7 @@ public class Grabber extends SubsystemBase {\n \n   private double stageOneAFF;\n   private double stageTwoAFF;\n-  private double[] setpointXY;\n+  private double[] setpointXY = {1, 1};\n   private double[] setpointAlphaTheta;\n   private double[] eFPosition;\n "
+        }
+    ]
+}

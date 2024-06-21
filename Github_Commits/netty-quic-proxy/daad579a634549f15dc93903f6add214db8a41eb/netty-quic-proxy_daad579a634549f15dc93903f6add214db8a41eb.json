@@ -1,0 +1,98 @@
+{
+    "sha": "daad579a634549f15dc93903f6add214db8a41eb",
+    "node_id": "C_kwDOHbEQtdoAKGRhYWQ1NzlhNjM0NTQ5ZjE1ZGM5MzkwM2Y2YWRkMjE0ZGI4YTQxZWI",
+    "commit": {
+        "author": {
+            "name": "zhining-lu",
+            "email": "zhining_lu@163.com",
+            "date": "2023-07-12T14:52:25Z"
+        },
+        "committer": {
+            "name": "zhining-lu",
+            "email": "zhining_lu@163.com",
+            "date": "2023-07-12T14:52:25Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "419991eb0ed53d960f498cb3c26324aa5535c9d1",
+            "url": "https://api.github.com/repos/zhining-lu/netty-quic-proxy/git/trees/419991eb0ed53d960f498cb3c26324aa5535c9d1"
+        },
+        "url": "https://api.github.com/repos/zhining-lu/netty-quic-proxy/git/commits/daad579a634549f15dc93903f6add214db8a41eb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/zhining-lu/netty-quic-proxy/commits/daad579a634549f15dc93903f6add214db8a41eb",
+    "html_url": "https://github.com/zhining-lu/netty-quic-proxy/commit/daad579a634549f15dc93903f6add214db8a41eb",
+    "comments_url": "https://api.github.com/repos/zhining-lu/netty-quic-proxy/commits/daad579a634549f15dc93903f6add214db8a41eb/comments",
+    "author": {
+        "login": "zhining-lu",
+        "id": 63458300,
+        "node_id": "MDQ6VXNlcjYzNDU4MzAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63458300?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zhining-lu",
+        "html_url": "https://github.com/zhining-lu",
+        "followers_url": "https://api.github.com/users/zhining-lu/followers",
+        "following_url": "https://api.github.com/users/zhining-lu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zhining-lu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zhining-lu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zhining-lu/subscriptions",
+        "organizations_url": "https://api.github.com/users/zhining-lu/orgs",
+        "repos_url": "https://api.github.com/users/zhining-lu/repos",
+        "events_url": "https://api.github.com/users/zhining-lu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zhining-lu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "zhining-lu",
+        "id": 63458300,
+        "node_id": "MDQ6VXNlcjYzNDU4MzAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63458300?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zhining-lu",
+        "html_url": "https://github.com/zhining-lu",
+        "followers_url": "https://api.github.com/users/zhining-lu/followers",
+        "following_url": "https://api.github.com/users/zhining-lu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zhining-lu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zhining-lu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zhining-lu/subscriptions",
+        "organizations_url": "https://api.github.com/users/zhining-lu/orgs",
+        "repos_url": "https://api.github.com/users/zhining-lu/repos",
+        "events_url": "https://api.github.com/users/zhining-lu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zhining-lu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f0fcf7f572417e113c3c10928f6428262578f308",
+            "url": "https://api.github.com/repos/zhining-lu/netty-quic-proxy/commits/f0fcf7f572417e113c3c10928f6428262578f308",
+            "html_url": "https://github.com/zhining-lu/netty-quic-proxy/commit/f0fcf7f572417e113c3c10928f6428262578f308"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "66cdba8a54ca95cb0d2e68df5bce590be1d5f33b",
+            "filename": "src/main/java/cn/wowspeeder/quic/QuicServerProxyHandler.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/zhining-lu/netty-quic-proxy/blob/daad579a634549f15dc93903f6add214db8a41eb/src%2Fmain%2Fjava%2Fcn%2Fwowspeeder%2Fquic%2FQuicServerProxyHandler.java",
+            "raw_url": "https://github.com/zhining-lu/netty-quic-proxy/raw/daad579a634549f15dc93903f6add214db8a41eb/src%2Fmain%2Fjava%2Fcn%2Fwowspeeder%2Fquic%2FQuicServerProxyHandler.java",
+            "contents_url": "https://api.github.com/repos/zhining-lu/netty-quic-proxy/contents/src%2Fmain%2Fjava%2Fcn%2Fwowspeeder%2Fquic%2FQuicServerProxyHandler.java?ref=daad579a634549f15dc93903f6add214db8a41eb",
+            "patch": "@@ -145,7 +145,7 @@ public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws E\n                                         }\n                                     }\n                                 } else {\n-                                    logger.error(\"channel id {}, {}<->{} connect {},cause {}, time: {}\", quicStreamChannel.id().toString(), quicStreamChannel.remoteAddress().toString(), clientRecipient.toString(), future.isSuccess(), future.cause(), System.currentTimeMillis() - startTime);\n+//                                    logger.error(\"channel id {}, {}<->{} connect {},cause {}, time: {}\", quicStreamChannel.id().toString(), quicStreamChannel.remoteAddress().toString(), clientRecipient.toString(), future.isSuccess(), future.cause(), System.currentTimeMillis() - startTime);\n                                     proxyChannelClose();\n                                 }\n                             } catch (Exception e) {"
+        }
+    ]
+}

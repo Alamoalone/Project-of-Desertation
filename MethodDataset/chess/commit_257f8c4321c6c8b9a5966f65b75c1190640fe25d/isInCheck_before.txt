@@ -1,0 +1,60 @@
+    public boolean isInCheck(TeamColor teamColor) {
+        ChessPiece king = new ChessPiece(teamColor, ChessPiece.PieceType.KING);
+        ChessPiece enemy;
+        ChessPosition position = new ChessPosition(1,1);
+        ChessPiece currentPiece = this.board.getPiece(position);
+        Collection<ChessMove> potentialMoves;
+        PieceMovesCalculator mover;
+        ChessMove nextMove;
+        boolean inCheck = false;
+
+        for (int i = 1; i < 9; i++) {
+            for (int j = 1; j < 9; j++) {
+                position = new ChessPosition(i, j);
+                currentPiece = this.board.getPiece(position);
+                if(king.equals(currentPiece)){
+                    break;
+                } else if(position.getRow() == 8 && position.getColumn() == 8){
+                    return false;
+                }
+            }
+            if(king.equals(currentPiece)){
+                break;
+            }
+        }
+
+
+
+
+        mover = new KnightMoveCalculator();
+        potentialMoves = mover.pieceMoves(this.board,position);
+
+        for (ChessMove potentialMove : potentialMoves) {
+            enemy = this.board.getPiece(potentialMove.getEndPosition());
+            if (enemy != null && enemy.getPieceType() == ChessPiece.PieceType.KNIGHT){
+                return true;
+            }
+        }
+
+        mover = new RookMovesCalculator();
+        potentialMoves = mover.pieceMoves(this.board,position);
+
+        for (ChessMove potentialMove : potentialMoves) {
+            enemy = this.board.getPiece(potentialMove.getEndPosition());
+            if ( enemy != null && (enemy.getPieceType() == ChessPiece.PieceType.ROOK || enemy.getPieceType() == ChessPiece.PieceType.QUEEN)){
+                return true;
+            }
+        }
+
+        mover = new BishopMovesCalculator();
+        potentialMoves = mover.pieceMoves(this.board,position);
+
+        for (ChessMove potentialMove : potentialMoves) {
+            enemy = this.board.getPiece(potentialMove.getEndPosition());
+            if ( enemy != null && (enemy.getPieceType() == ChessPiece.PieceType.BISHOP || enemy.getPieceType() == ChessPiece.PieceType.QUEEN)){
+                return true;
+            }
+        }
+
+        return false;
+    }

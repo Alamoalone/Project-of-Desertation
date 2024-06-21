@@ -1,0 +1,122 @@
+{
+    "sha": "27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+    "node_id": "C_kwDOGgHro9oAKDI3ZTVjNmE2NjYxNzU4YTcxOGE0MDJlYTdmMmEyOTJlYjJmNTRlZDE",
+    "commit": {
+        "author": {
+            "name": "LLytho",
+            "email": "main@lytho.dev",
+            "date": "2023-09-27T18:04:55Z"
+        },
+        "committer": {
+            "name": "LLytho",
+            "email": "main@lytho.dev",
+            "date": "2023-09-27T18:16:45Z"
+        },
+        "message": "Fixes #14\n\n- Fixed null pointer exception when using `addLootTableModifier` and an entity dies",
+        "tree": {
+            "sha": "80c78f257f4def141cbd07219ccd79e7be8f91f8",
+            "url": "https://api.github.com/repos/AlmostReliable/lootjs/git/trees/80c78f257f4def141cbd07219ccd79e7be8f91f8"
+        },
+        "url": "https://api.github.com/repos/AlmostReliable/lootjs/git/commits/27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AlmostReliable/lootjs/commits/27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+    "html_url": "https://github.com/AlmostReliable/lootjs/commit/27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+    "comments_url": "https://api.github.com/repos/AlmostReliable/lootjs/commits/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/comments",
+    "author": {
+        "login": "LLytho",
+        "id": 29131229,
+        "node_id": "MDQ6VXNlcjI5MTMxMjI5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29131229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/LLytho",
+        "html_url": "https://github.com/LLytho",
+        "followers_url": "https://api.github.com/users/LLytho/followers",
+        "following_url": "https://api.github.com/users/LLytho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LLytho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/LLytho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LLytho/subscriptions",
+        "organizations_url": "https://api.github.com/users/LLytho/orgs",
+        "repos_url": "https://api.github.com/users/LLytho/repos",
+        "events_url": "https://api.github.com/users/LLytho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/LLytho/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "LLytho",
+        "id": 29131229,
+        "node_id": "MDQ6VXNlcjI5MTMxMjI5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29131229?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/LLytho",
+        "html_url": "https://github.com/LLytho",
+        "followers_url": "https://api.github.com/users/LLytho/followers",
+        "following_url": "https://api.github.com/users/LLytho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LLytho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/LLytho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LLytho/subscriptions",
+        "organizations_url": "https://api.github.com/users/LLytho/orgs",
+        "repos_url": "https://api.github.com/users/LLytho/repos",
+        "events_url": "https://api.github.com/users/LLytho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/LLytho/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "945080e0c210cc43a1bb4834cabf18c99ea57df5",
+            "url": "https://api.github.com/repos/AlmostReliable/lootjs/commits/945080e0c210cc43a1bb4834cabf18c99ea57df5",
+            "html_url": "https://github.com/AlmostReliable/lootjs/commit/945080e0c210cc43a1bb4834cabf18c99ea57df5"
+        }
+    ],
+    "stats": {
+        "total": 21,
+        "additions": 20,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "7cb52a7e933f740e9c1ad2154d5a0e5618ad1c88",
+            "filename": "CHANGELOG.md",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 0,
+            "changes": 6,
+            "blob_url": "https://github.com/AlmostReliable/lootjs/blob/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/CHANGELOG.md",
+            "raw_url": "https://github.com/AlmostReliable/lootjs/raw/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/CHANGELOG.md",
+            "contents_url": "https://api.github.com/repos/AlmostReliable/lootjs/contents/CHANGELOG.md?ref=27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+            "patch": "@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning].\n ## [Unreleased]\n - /\n \n+## [2.10.3] - 2023-09-27\n+### Fixed\n+- Fixed null pointer exception when using `addLootTableModifier` and an entity dies\n+\n ## [2.10.2] - 2023-09-23\n ### Add\n - Add custom loot function `customFunction(json)`\n@@ -144,6 +148,8 @@ We are now on 1.18.2!\n \n <!-- Versions -->\n [unreleased]: https://github.com/AlmostReliable/lootjs/compare/1.18...HEAD\n+[2.10.3]: https://github.com/AlmostReliable/lootjs/releases/tag/v1.18-2.10.3\n+[2.10.2]: https://github.com/AlmostReliable/lootjs/releases/tag/v1.18-2.10.2\n [2.10.1]: https://github.com/AlmostReliable/lootjs/releases/tag/v1.18-2.10.1\n [2.9.1]: https://github.com/AlmostReliable/lootjs/releases/tag/v1.18-2.9.1\n [2.9.0]: https://github.com/AlmostReliable/lootjs/releases/tag/v1.18-2.9.0"
+        },
+        {
+            "sha": "91e0cc32014f7e12c6bfb00c0fcbfb6e9de341bd",
+            "filename": "fabric/src/main/java/com/almostreliable/lootjs/fabric/mixin/LootContextMixin.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 0,
+            "changes": 13,
+            "blob_url": "https://github.com/AlmostReliable/lootjs/blob/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/fabric%2Fsrc%2Fmain%2Fjava%2Fcom%2Falmostreliable%2Flootjs%2Ffabric%2Fmixin%2FLootContextMixin.java",
+            "raw_url": "https://github.com/AlmostReliable/lootjs/raw/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/fabric%2Fsrc%2Fmain%2Fjava%2Fcom%2Falmostreliable%2Flootjs%2Ffabric%2Fmixin%2FLootContextMixin.java",
+            "contents_url": "https://api.github.com/repos/AlmostReliable/lootjs/contents/fabric%2Fsrc%2Fmain%2Fjava%2Fcom%2Falmostreliable%2Flootjs%2Ffabric%2Fmixin%2FLootContextMixin.java?ref=27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+            "patch": "@@ -3,15 +3,28 @@\n import com.almostreliable.lootjs.fabric.core.FabricLootContextExtension;\n import com.almostreliable.lootjs.fabric.kubejs.LootConsumer;\n import net.minecraft.resources.ResourceLocation;\n+import net.minecraft.util.RandomSource;\n import net.minecraft.world.level.storage.loot.LootContext;\n+import net.minecraft.world.level.storage.loot.LootDataResolver;\n+import net.minecraft.world.level.storage.loot.LootParams;\n import org.spongepowered.asm.mixin.Mixin;\n import org.spongepowered.asm.mixin.Unique;\n+import org.spongepowered.asm.mixin.injection.At;\n+import org.spongepowered.asm.mixin.injection.Inject;\n+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;\n \n import javax.annotation.Nullable;\n \n @Mixin(LootContext.class)\n public class LootContextMixin implements FabricLootContextExtension {\n \n+    @Inject(method = \"<init>\", at = @At(\"TAIL\"))\n+    private void lootjs$initSetTableId(LootParams lootParams, RandomSource randomSource, LootDataResolver lootDataResolver, CallbackInfo ci) {\n+        if (lootParams instanceof FabricLootContextExtension lootParamsExt) {\n+            lootjs$setQueriedLootTableId(lootParamsExt.lootjs$getQueriedLootTableId());\n+        }\n+    }\n+\n     @Unique\n     @Nullable\n     private LootConsumer lootjs$lootConsumer;"
+        },
+        {
+            "sha": "045a51afb9a88091c88176c08b3066f88a862c9a",
+            "filename": "gradle.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/AlmostReliable/lootjs/blob/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/gradle.properties",
+            "raw_url": "https://github.com/AlmostReliable/lootjs/raw/27e5c6a6661758a718a402ea7f2a292eb2f54ed1/gradle.properties",
+            "contents_url": "https://api.github.com/repos/AlmostReliable/lootjs/contents/gradle.properties?ref=27e5c6a6661758a718a402ea7f2a292eb2f54ed1",
+            "patch": "@@ -1,6 +1,6 @@\n group = com.almostreliable.lootjs\n license = GNU Lesser General Public License v3.0\n-version = 2.10.2\n+version = 2.10.3\n mixin_version = 0.8.5\n \n # Common"
+        }
+    ]
+}

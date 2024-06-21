@@ -1,0 +1,98 @@
+{
+    "sha": "242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec",
+    "node_id": "C_kwDOGlIlxtoAKDI0MmZhOWI3ZDBiNGU4NzRkYjg2ZDA2M2RlMmNkYWY3YjkzZmMwZWM",
+    "commit": {
+        "author": {
+            "name": "Acuadragon100",
+            "email": "30689683+Acuadragon100@users.noreply.github.com",
+            "date": "2023-12-26T15:04:14Z"
+        },
+        "committer": {
+            "name": "Acuadragon100",
+            "email": "30689683+Acuadragon100@users.noreply.github.com",
+            "date": "2023-12-26T15:04:14Z"
+        },
+        "message": "Fix null pointer exception when checking for nearby shops.",
+        "tree": {
+            "sha": "04e5b42fd440ce2166f5f1fe82e02a688a89ad1e",
+            "url": "https://api.github.com/repos/METAcraft-KTH/player-trading/git/trees/04e5b42fd440ce2166f5f1fe82e02a688a89ad1e"
+        },
+        "url": "https://api.github.com/repos/METAcraft-KTH/player-trading/git/commits/242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/METAcraft-KTH/player-trading/commits/242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec",
+    "html_url": "https://github.com/METAcraft-KTH/player-trading/commit/242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec",
+    "comments_url": "https://api.github.com/repos/METAcraft-KTH/player-trading/commits/242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec/comments",
+    "author": {
+        "login": "Acuadragon100",
+        "id": 30689683,
+        "node_id": "MDQ6VXNlcjMwNjg5Njgz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30689683?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Acuadragon100",
+        "html_url": "https://github.com/Acuadragon100",
+        "followers_url": "https://api.github.com/users/Acuadragon100/followers",
+        "following_url": "https://api.github.com/users/Acuadragon100/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Acuadragon100/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Acuadragon100/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Acuadragon100/subscriptions",
+        "organizations_url": "https://api.github.com/users/Acuadragon100/orgs",
+        "repos_url": "https://api.github.com/users/Acuadragon100/repos",
+        "events_url": "https://api.github.com/users/Acuadragon100/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Acuadragon100/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Acuadragon100",
+        "id": 30689683,
+        "node_id": "MDQ6VXNlcjMwNjg5Njgz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30689683?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Acuadragon100",
+        "html_url": "https://github.com/Acuadragon100",
+        "followers_url": "https://api.github.com/users/Acuadragon100/followers",
+        "following_url": "https://api.github.com/users/Acuadragon100/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Acuadragon100/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Acuadragon100/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Acuadragon100/subscriptions",
+        "organizations_url": "https://api.github.com/users/Acuadragon100/orgs",
+        "repos_url": "https://api.github.com/users/Acuadragon100/repos",
+        "events_url": "https://api.github.com/users/Acuadragon100/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Acuadragon100/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3fe55188cf460a12a09c480a162a180c31e6c32a",
+            "url": "https://api.github.com/repos/METAcraft-KTH/player-trading/commits/3fe55188cf460a12a09c480a162a180c31e6c32a",
+            "html_url": "https://github.com/METAcraft-KTH/player-trading/commit/3fe55188cf460a12a09c480a162a180c31e6c32a"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "34b48a0d9fa5862b489eacaebb16b545b6f995a1",
+            "filename": "src/main/java/se/leddy231/playertrading/interfaces/IBarrelEntity.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/METAcraft-KTH/player-trading/blob/242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec/src%2Fmain%2Fjava%2Fse%2Fleddy231%2Fplayertrading%2Finterfaces%2FIBarrelEntity.java",
+            "raw_url": "https://github.com/METAcraft-KTH/player-trading/raw/242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec/src%2Fmain%2Fjava%2Fse%2Fleddy231%2Fplayertrading%2Finterfaces%2FIBarrelEntity.java",
+            "contents_url": "https://api.github.com/repos/METAcraft-KTH/player-trading/contents/src%2Fmain%2Fjava%2Fse%2Fleddy231%2Fplayertrading%2Finterfaces%2FIBarrelEntity.java?ref=242fa9b7d0b4e874db86d063de2cdaf7b93fc0ec",
+            "patch": "@@ -18,6 +18,9 @@ static boolean isOpen(@Nullable BarrelBlockEntity entity) {\n \n     static @Nullable Shop getConnectedShop(BarrelBlockEntity barrelEntity) {\n         var level = barrelEntity.getLevel();\n+        if (level == null) {\n+            return null;\n+        }\n         var pos = barrelEntity.getBlockPos();\n         for (var direction : Direction.values()) {\n             if (direction == Direction.DOWN) {"
+        }
+    ]
+}

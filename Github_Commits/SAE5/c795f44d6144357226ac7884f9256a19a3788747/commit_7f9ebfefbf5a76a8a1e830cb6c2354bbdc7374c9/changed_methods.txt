@@ -1,0 +1,2 @@
+getCreateButton(JTextField nomField, JTextField telephoneField, JTextField emailField)
+createEditPanel(Referent referent)

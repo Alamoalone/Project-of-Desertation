@@ -1,0 +1,3 @@
+    public int getPreparationTimeMinutes() {
+        return item.getPreparationTimeMinutes();
+    }

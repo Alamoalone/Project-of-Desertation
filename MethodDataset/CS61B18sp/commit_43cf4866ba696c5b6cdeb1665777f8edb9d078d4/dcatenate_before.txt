@@ -1,0 +1,14 @@
+    public static IntList dcatenate(IntList A, IntList B) {
+        //TODO:  fill in method
+
+        //using iteration
+        IntList t = A;
+        while(t.rest != null){
+            t = t.rest;
+        }
+        t.rest = B;
+        return A;
+
+        //using recursion
+        
+    }

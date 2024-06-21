@@ -1,0 +1,44 @@
+    void testGetParticipationWithAllResults(ZonedDateTime startDate, ZonedDateTime releaseDate, AssessmentType assessmentType, ZonedDateTime completionDate,
+            ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {
+        programmingExercise.setStartDate(startDate);
+        programmingExercise.setReleaseDate(releaseDate);
+        // Add an automatic result first
+        var firstResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        // Add another automatic result
+        var secondResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        // Add a parameterized third result
+        var thirdResult = participationUtilService.addResultToParticipation(assessmentType, completionDate, programmingExerciseParticipation);
+        StudentParticipation participation = (StudentParticipation) thirdResult.getParticipation();
+
+        // Expect the request to always be ok because it should at least return the first automatic result
+        var requestedParticipation = request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-all-results", HttpStatus.OK,
+                ProgrammingExerciseStudentParticipation.class);
+
+        if (expectLastCreatedResult) {
+            assertThat(requestedParticipation.getResults()).hasSize(3);
+        }
+        else {
+            assertThat(requestedParticipation.getResults()).hasSize(2);
+        }
+        for (var result : requestedParticipation.getResults()) {
+            assertThat(result.getFeedbacks()).noneMatch(Feedback::isInvisible);
+            assertThat(result.getFeedbacks()).noneMatch(Feedback::isAfterDueDate);
+        }
+        firstResult.filterSensitiveInformation();
+        firstResult.filterSensitiveFeedbacks(true);
+        assertThat(requestedParticipation.getResults()).contains(firstResult);
+        secondResult.filterSensitiveInformation();
+        secondResult.filterSensitiveFeedbacks(true);
+        assertThat(requestedParticipation.getResults()).contains(secondResult);
+
+        // Depending on the parameters we expect to get the third result too
+        if (expectLastCreatedResult) {
+            thirdResult.filterSensitiveInformation();
+            thirdResult.filterSensitiveFeedbacks(true);
+            assertThat(requestedParticipation.getResults()).contains(thirdResult);
+        }
+    }

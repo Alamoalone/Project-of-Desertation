@@ -1,0 +1,5 @@
+getColor()
+decreaseScoreNumber(int amount)
+setScoreNumber(int scoreNumber)
+getScoreNumber()
+increaseScoreNumber(int amount)

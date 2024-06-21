@@ -1,0 +1,171 @@
+{
+    "sha": "0b4d1f02aea056333f409d359235fb918f694708",
+    "node_id": "C_kwDOB_9c0NoAKDBiNGQxZjAyYWVhMDU2MzMzZjQwOWQzNTkyMzVmYjkxOGY2OTQ3MDg",
+    "commit": {
+        "author": {
+            "name": "Gaurav Matta",
+            "email": "gaurav.matta.tech@gmail.com",
+            "date": "2023-10-21T09:11:30Z"
+        },
+        "committer": {
+            "name": "Gaurav Matta",
+            "email": "gaurav.matta.tech@gmail.com",
+            "date": "2023-10-21T09:11:30Z"
+        },
+        "message": "Added Centralized Null Pointer Exception",
+        "tree": {
+            "sha": "33da0f5f24e15a8e0d001649eb9ef487f4cd4709",
+            "url": "https://api.github.com/repos/gauravmatta/springmvc/git/trees/33da0f5f24e15a8e0d001649eb9ef487f4cd4709"
+        },
+        "url": "https://api.github.com/repos/gauravmatta/springmvc/git/commits/0b4d1f02aea056333f409d359235fb918f694708",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/gauravmatta/springmvc/commits/0b4d1f02aea056333f409d359235fb918f694708",
+    "html_url": "https://github.com/gauravmatta/springmvc/commit/0b4d1f02aea056333f409d359235fb918f694708",
+    "comments_url": "https://api.github.com/repos/gauravmatta/springmvc/commits/0b4d1f02aea056333f409d359235fb918f694708/comments",
+    "author": {
+        "login": "gauravmatta",
+        "id": 4722264,
+        "node_id": "MDQ6VXNlcjQ3MjIyNjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4722264?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gauravmatta",
+        "html_url": "https://github.com/gauravmatta",
+        "followers_url": "https://api.github.com/users/gauravmatta/followers",
+        "following_url": "https://api.github.com/users/gauravmatta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gauravmatta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gauravmatta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gauravmatta/subscriptions",
+        "organizations_url": "https://api.github.com/users/gauravmatta/orgs",
+        "repos_url": "https://api.github.com/users/gauravmatta/repos",
+        "events_url": "https://api.github.com/users/gauravmatta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gauravmatta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "gauravmatta",
+        "id": 4722264,
+        "node_id": "MDQ6VXNlcjQ3MjIyNjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4722264?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gauravmatta",
+        "html_url": "https://github.com/gauravmatta",
+        "followers_url": "https://api.github.com/users/gauravmatta/followers",
+        "following_url": "https://api.github.com/users/gauravmatta/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gauravmatta/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gauravmatta/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gauravmatta/subscriptions",
+        "organizations_url": "https://api.github.com/users/gauravmatta/orgs",
+        "repos_url": "https://api.github.com/users/gauravmatta/repos",
+        "events_url": "https://api.github.com/users/gauravmatta/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gauravmatta/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4ae446b5f80cc2f57f2f21f31f2722e6b122a6a0",
+            "url": "https://api.github.com/repos/gauravmatta/springmvc/commits/4ae446b5f80cc2f57f2f21f31f2722e6b122a6a0",
+            "html_url": "https://github.com/gauravmatta/springmvc/commit/4ae446b5f80cc2f57f2f21f31f2722e6b122a6a0"
+        }
+    ],
+    "stats": {
+        "total": 59,
+        "additions": 52,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "a1fecf14cce71822f23b623d298639101de9734b",
+            "filename": "newsfeed/target/m2e-wtp/web-resources/META-INF/maven/com.springimplant.newsfeed/newsfeed/pom.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/0b4d1f02aea056333f409d359235fb918f694708/newsfeed%2Ftarget%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2Fcom.springimplant.newsfeed%2Fnewsfeed%2Fpom.properties",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/0b4d1f02aea056333f409d359235fb918f694708/newsfeed%2Ftarget%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2Fcom.springimplant.newsfeed%2Fnewsfeed%2Fpom.properties",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/newsfeed%2Ftarget%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2Fcom.springimplant.newsfeed%2Fnewsfeed%2Fpom.properties?ref=0b4d1f02aea056333f409d359235fb918f694708",
+            "patch": "@@ -1,5 +1,5 @@\n #Generated by Maven Integration for Eclipse\n-#Fri Oct 20 07:13:13 IST 2023\n+#Sat Oct 21 14:40:09 IST 2023\n m2e.projectLocation=/home/gauravmatta/projects/springmvc/newsfeed\n m2e.projectName=newsfeed\n groupId=com.springimplant.newsfeed"
+        },
+        {
+            "sha": "f7e6ecc4e05cc43051288cd85c7b96cffc5c6da3",
+            "filename": "spring-ioc-project/src/main/java/com/springimplant/ioc/autowired/Human.java",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 5,
+            "changes": 5,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/4ae446b5f80cc2f57f2f21f31f2722e6b122a6a0/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringimplant%2Fioc%2Fautowired%2FHuman.java",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/4ae446b5f80cc2f57f2f21f31f2722e6b122a6a0/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringimplant%2Fioc%2Fautowired%2FHuman.java",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringimplant%2Fioc%2Fautowired%2FHuman.java?ref=4ae446b5f80cc2f57f2f21f31f2722e6b122a6a0",
+            "patch": "@@ -1,5 +0,0 @@\n-package com.springimplant.ioc.autowired;\r\n-\r\n-public class Human {\r\n-\tprivate Heart heart;\r\n-}\r"
+        },
+        {
+            "sha": "d19f446d35a6a1b408f4d71b73ace0c05e644650",
+            "filename": "spring-ioc-project/src/main/java/com/springmvcimplant/ioc/autowired/Heart.java",
+            "status": "renamed",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fautowired%2FHeart.java",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fautowired%2FHeart.java",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fautowired%2FHeart.java?ref=0b4d1f02aea056333f409d359235fb918f694708",
+            "patch": "@@ -1,4 +1,4 @@\n-package com.springimplant.ioc.autowired;\r\n+package com.springmvcimplant.ioc.autowired;\r\n \r\n public class Heart {\r\n \tpublic void pump()\r",
+            "previous_filename": "spring-ioc-project/src/main/java/com/springimplant/ioc/autowired/Heart.java"
+        },
+        {
+            "sha": "23f643da6c3d14ff3cebde08c1297405e33f5198",
+            "filename": "spring-ioc-project/src/main/java/com/springmvcimplant/ioc/autowired/Human.java",
+            "status": "added",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fautowired%2FHuman.java",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fautowired%2FHuman.java",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fautowired%2FHuman.java?ref=0b4d1f02aea056333f409d359235fb918f694708",
+            "patch": "@@ -0,0 +1,5 @@\n+package com.springmvcimplant.ioc.autowired;\r\n+\r\n+public class Human {\r\n+\tprivate Heart heart;\r\n+}\r"
+        },
+        {
+            "sha": "a49b2c57332107302af483dfe8a60595d12c5ddb",
+            "filename": "spring-ioc-project/src/main/java/com/springmvcimplant/ioc/config/MyExceptionHandler.java",
+            "status": "added",
+            "additions": 36,
+            "deletions": 0,
+            "changes": 36,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fconfig%2FMyExceptionHandler.java",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fconfig%2FMyExceptionHandler.java",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fconfig%2FMyExceptionHandler.java?ref=0b4d1f02aea056333f409d359235fb918f694708",
+            "patch": "@@ -0,0 +1,36 @@\n+package com.springmvcimplant.ioc.config;\n+\n+import org.springframework.core.convert.ConversionException;\n+import org.springframework.http.HttpStatus;\n+import org.springframework.ui.Model;\n+import org.springframework.web.bind.annotation.ControllerAdvice;\n+import org.springframework.web.bind.annotation.ExceptionHandler;\n+import org.springframework.web.bind.annotation.ResponseStatus;\n+\n+@ControllerAdvice\n+public class MyExceptionHandler {\n+\t\n+\t@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)\n+\t@ExceptionHandler({NullPointerException.class})\n+\tpublic String NullExceptionHandler(Model m) {\n+\t\tSystem.out.println(\"Centralized Null Pointer Exception Occurred\");\n+\t\tm.addAttribute(\"msg\",\"Centralized Null Pointer Exception\");\n+\t\treturn \"null_error\";\n+\t}\n+\t\n+\t@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)\n+\t@ExceptionHandler({ConversionException.class,NumberFormatException.class})\n+\tpublic String ConversionExceptionHandler(Model m) {\n+\t\tSystem.out.println(\"Centralized Number Format Exception Occurred\");\n+\t\tm.addAttribute(\"msg\",\"Centralized Number Format Exception\");\n+\t\treturn \"null_error\";\n+\t}\n+\t\n+\t@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)\n+\t@ExceptionHandler({Exception.class})\n+\tpublic String GenericExceptionHandler(Model m) {\n+\t\tSystem.out.println(\"Centralized General Exception Occurred\");\n+\t\tm.addAttribute(\"msg\",\"Centralized General Exception\");\n+\t\treturn \"null_error\";\n+\t}\n+}"
+        },
+        {
+            "sha": "564002a7be9ad141c6c727971b1354bc7b81b6ce",
+            "filename": "spring-ioc-project/src/main/java/com/springmvcimplant/ioc/controllers/FileUploadController.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fcontrollers%2FFileUploadController.java",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fcontrollers%2FFileUploadController.java",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fcontrollers%2FFileUploadController.java?ref=0b4d1f02aea056333f409d359235fb918f694708",
+            "patch": "@@ -21,6 +21,13 @@ public class FileUploadController {\n \tpublic String showUploadForm() {\n \t\treturn \"fileform\";\n \t}\n+\t\n+\t@RequestMapping(\"/throwerror\")\n+\tpublic String throwerror() {\n+\t\tString str=null;\n+\t\tSystem.out.println(str.charAt(0));\n+\t\treturn \"fileform\";\n+\t}\n \n \t@RequestMapping(value = \"/uploadimage\", method = RequestMethod.POST)\n \tpublic String uploadImage(@RequestParam(\"profile\") CommonsMultipartFile file, HttpSession s,Model m) {"
+        },
+        {
+            "sha": "d2645281d243864cd39ceb76c1b813c09fd0b61c",
+            "filename": "spring-ioc-project/src/main/java/com/springmvcimplant/ioc/controllers/SearchController.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/gauravmatta/springmvc/blob/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fcontrollers%2FSearchController.java",
+            "raw_url": "https://github.com/gauravmatta/springmvc/raw/0b4d1f02aea056333f409d359235fb918f694708/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fcontrollers%2FSearchController.java",
+            "contents_url": "https://api.github.com/repos/gauravmatta/springmvc/contents/spring-ioc-project%2Fsrc%2Fmain%2Fjava%2Fcom%2Fspringmvcimplant%2Fioc%2Fcontrollers%2FSearchController.java?ref=0b4d1f02aea056333f409d359235fb918f694708",
+            "patch": "@@ -84,13 +84,15 @@ public String NullExceptionHandler(Model m) {\n \t\treturn \"null_error\";\n \t}\n \t\n+\t@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)\n \t@ExceptionHandler({ConversionException.class,NumberFormatException.class})\n \tpublic String ConversionExceptionHandler(Model m) {\n \t\tSystem.out.println(\"Number Format Exception Occurred\");\n \t\tm.addAttribute(\"msg\",\"Number Format Exception\");\n \t\treturn \"null_error\";\n \t}\n \t\n+\t@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)\n \t@ExceptionHandler({Exception.class})\n \tpublic String GenericExceptionHandler(Model m) {\n \t\tSystem.out.println(\"General Exception Occurred\");"
+        }
+    ]
+}

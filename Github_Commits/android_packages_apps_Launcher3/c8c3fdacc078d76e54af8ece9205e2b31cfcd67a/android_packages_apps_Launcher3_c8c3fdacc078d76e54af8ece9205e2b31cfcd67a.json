@@ -1,0 +1,98 @@
+{
+    "sha": "c8c3fdacc078d76e54af8ece9205e2b31cfcd67a",
+    "node_id": "C_kwDOLCNT5NoAKGM4YzNmZGFjYzA3OGQ3NmU1NGFmOGVjZTkyMDVlMmIzMWNmY2Q2N2E",
+    "commit": {
+        "author": {
+            "name": "Harsh",
+            "email": "iamhp2k@gmail.com",
+            "date": "2023-03-01T19:22:29Z"
+        },
+        "committer": {
+            "name": "unsatifsed27",
+            "email": "unsatifsederror@gmail.com",
+            "date": "2024-01-08T13:53:12Z"
+        },
+        "message": "Launcher3: PageIndicatorDots: null pointer Exception\n\nSigned-off-by: Dmitrii <bankersenator@gmail.com>",
+        "tree": {
+            "sha": "7434cd153755199447b510cc40ff05248d594e29",
+            "url": "https://api.github.com/repos/azca27/android_packages_apps_Launcher3/git/trees/7434cd153755199447b510cc40ff05248d594e29"
+        },
+        "url": "https://api.github.com/repos/azca27/android_packages_apps_Launcher3/git/commits/c8c3fdacc078d76e54af8ece9205e2b31cfcd67a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/azca27/android_packages_apps_Launcher3/commits/c8c3fdacc078d76e54af8ece9205e2b31cfcd67a",
+    "html_url": "https://github.com/azca27/android_packages_apps_Launcher3/commit/c8c3fdacc078d76e54af8ece9205e2b31cfcd67a",
+    "comments_url": "https://api.github.com/repos/azca27/android_packages_apps_Launcher3/commits/c8c3fdacc078d76e54af8ece9205e2b31cfcd67a/comments",
+    "author": {
+        "login": "hpnightowl",
+        "id": 48650798,
+        "node_id": "MDQ6VXNlcjQ4NjUwNzk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48650798?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hpnightowl",
+        "html_url": "https://github.com/hpnightowl",
+        "followers_url": "https://api.github.com/users/hpnightowl/followers",
+        "following_url": "https://api.github.com/users/hpnightowl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hpnightowl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hpnightowl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hpnightowl/subscriptions",
+        "organizations_url": "https://api.github.com/users/hpnightowl/orgs",
+        "repos_url": "https://api.github.com/users/hpnightowl/repos",
+        "events_url": "https://api.github.com/users/hpnightowl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hpnightowl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "unsatifsed27",
+        "id": 99007945,
+        "node_id": "U_kgDOBea9yQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99007945?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/unsatifsed27",
+        "html_url": "https://github.com/unsatifsed27",
+        "followers_url": "https://api.github.com/users/unsatifsed27/followers",
+        "following_url": "https://api.github.com/users/unsatifsed27/following{/other_user}",
+        "gists_url": "https://api.github.com/users/unsatifsed27/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/unsatifsed27/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/unsatifsed27/subscriptions",
+        "organizations_url": "https://api.github.com/users/unsatifsed27/orgs",
+        "repos_url": "https://api.github.com/users/unsatifsed27/repos",
+        "events_url": "https://api.github.com/users/unsatifsed27/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/unsatifsed27/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "19848fc3c63890f9f02674370bffc499c5ba9803",
+            "url": "https://api.github.com/repos/azca27/android_packages_apps_Launcher3/commits/19848fc3c63890f9f02674370bffc499c5ba9803",
+            "html_url": "https://github.com/azca27/android_packages_apps_Launcher3/commit/19848fc3c63890f9f02674370bffc499c5ba9803"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "d62c21a5302c0ed65c7aa1705db227df372c046a",
+            "filename": "src/com/android/launcher3/pageindicators/PageIndicatorDots.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/azca27/android_packages_apps_Launcher3/blob/c8c3fdacc078d76e54af8ece9205e2b31cfcd67a/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "raw_url": "https://github.com/azca27/android_packages_apps_Launcher3/raw/c8c3fdacc078d76e54af8ece9205e2b31cfcd67a/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "contents_url": "https://api.github.com/repos/azca27/android_packages_apps_Launcher3/contents/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java?ref=c8c3fdacc078d76e54af8ece9205e2b31cfcd67a",
+            "patch": "@@ -189,6 +189,10 @@ public void setScroll(int currentScroll, int totalScroll) {\n         mTotalScroll = totalScroll;\n \n         int scrollPerPage = totalScroll / (mNumPages - 1);\n+        if (scrollPerPage == 0) {\n+            return;\n+        }\n+\n         int pageToLeft = scrollPerPage == 0 ? 0 : currentScroll / scrollPerPage;\n         int pageToLeftScroll = pageToLeft * scrollPerPage;\n         int pageToRightScroll = pageToLeftScroll + scrollPerPage;"
+        }
+    ]
+}

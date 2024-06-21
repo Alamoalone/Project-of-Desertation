@@ -1,0 +1,146 @@
+{
+    "sha": "b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+    "node_id": "C_kwDOJnrpSNoAKGI3MjU1ZjcwZWZkNDhjMzVkOGRiYmExOGRmZDNiMzM1ZWYzZWFjMGI",
+    "commit": {
+        "author": {
+            "name": "devjunmo",
+            "email": "devjunmo@gmail.com",
+            "date": "2023-05-17T07:11:58Z"
+        },
+        "committer": {
+            "name": "devjunmo",
+            "email": "devjunmo@gmail.com",
+            "date": "2023-05-17T07:11:58Z"
+        },
+        "message": "🐛 fix: order history null pointer exception 해결\n\n\nFormer-commit-id: ac1aa71ca43401ef1f53b1781fdc2eacba9bba99",
+        "tree": {
+            "sha": "b72089619c6b09b0d695fb57f764056f721b7084",
+            "url": "https://api.github.com/repos/nowgnas/STOCKEY/git/trees/b72089619c6b09b0d695fb57f764056f721b7084"
+        },
+        "url": "https://api.github.com/repos/nowgnas/STOCKEY/git/commits/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/nowgnas/STOCKEY/commits/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+    "html_url": "https://github.com/nowgnas/STOCKEY/commit/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+    "comments_url": "https://api.github.com/repos/nowgnas/STOCKEY/commits/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/comments",
+    "author": {
+        "login": "devjunmo",
+        "id": 55372995,
+        "node_id": "MDQ6VXNlcjU1MzcyOTk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55372995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/devjunmo",
+        "html_url": "https://github.com/devjunmo",
+        "followers_url": "https://api.github.com/users/devjunmo/followers",
+        "following_url": "https://api.github.com/users/devjunmo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/devjunmo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/devjunmo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/devjunmo/subscriptions",
+        "organizations_url": "https://api.github.com/users/devjunmo/orgs",
+        "repos_url": "https://api.github.com/users/devjunmo/repos",
+        "events_url": "https://api.github.com/users/devjunmo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/devjunmo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "devjunmo",
+        "id": 55372995,
+        "node_id": "MDQ6VXNlcjU1MzcyOTk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55372995?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/devjunmo",
+        "html_url": "https://github.com/devjunmo",
+        "followers_url": "https://api.github.com/users/devjunmo/followers",
+        "following_url": "https://api.github.com/users/devjunmo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/devjunmo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/devjunmo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/devjunmo/subscriptions",
+        "organizations_url": "https://api.github.com/users/devjunmo/orgs",
+        "repos_url": "https://api.github.com/users/devjunmo/repos",
+        "events_url": "https://api.github.com/users/devjunmo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/devjunmo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b4c37975f6fef206bf5f8d568d270e47510abb4a",
+            "url": "https://api.github.com/repos/nowgnas/STOCKEY/commits/b4c37975f6fef206bf5f8d568d270e47510abb4a",
+            "html_url": "https://github.com/nowgnas/STOCKEY/commit/b4c37975f6fef206bf5f8d568d270e47510abb4a"
+        }
+    ],
+    "stats": {
+        "total": 82,
+        "additions": 54,
+        "deletions": 28
+    },
+    "files": [
+        {
+            "sha": "a3db109cc9ae439a9be791d7cd2cc02648414208",
+            "filename": "server/investment-service/src/main/java/kr/stockey/investmentservice/dto/ResponseDto.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 4,
+            "changes": 6,
+            "blob_url": "https://github.com/nowgnas/STOCKEY/blob/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fdto%2FResponseDto.java",
+            "raw_url": "https://github.com/nowgnas/STOCKEY/raw/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fdto%2FResponseDto.java",
+            "contents_url": "https://api.github.com/repos/nowgnas/STOCKEY/contents/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fdto%2FResponseDto.java?ref=b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+            "patch": "@@ -1,14 +1,12 @@\n package kr.stockey.investmentservice.dto;\n \n-import lombok.AllArgsConstructor;\n-import lombok.Builder;\n-import lombok.Getter;\n-import lombok.NoArgsConstructor;\n+import lombok.*;\n \n @Getter\n @NoArgsConstructor\n @AllArgsConstructor\n @Builder\n+@ToString\n public class ResponseDto {\n     private String message;\n     private Object data;"
+        },
+        {
+            "sha": "02ee75def21d6355fb9937ecdfe963acac7f215b",
+            "filename": "server/investment-service/src/main/java/kr/stockey/investmentservice/entity/Contract.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/nowgnas/STOCKEY/blob/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fentity%2FContract.java",
+            "raw_url": "https://github.com/nowgnas/STOCKEY/raw/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fentity%2FContract.java",
+            "contents_url": "https://api.github.com/repos/nowgnas/STOCKEY/contents/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fentity%2FContract.java?ref=b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+            "patch": "@@ -37,6 +37,7 @@ public class Contract {\n \n     @Size(max = 10)\n     @NotNull\n+    @Enumerated(EnumType.STRING) // Specify the mapping strategy\n     @Column(name = \"contract_type\", nullable = false, length = 10)\n     private ContractType contractType;\n \n@@ -46,9 +47,9 @@ public class Contract {\n \n     @Size(max = 20)\n     @NotNull\n+    @Enumerated(EnumType.STRING) // Specify the mapping strategy\n     @Column(name = \"category\", nullable = false, length = 20)\n     private InvCategory category;\n-\n     @Setter\n     @Column(name = \"match_order_id\", nullable = true)\n     private Long matchOrderId;"
+        },
+        {
+            "sha": "536a6f57d376e8ad7a9bfce29188a42d2c614364",
+            "filename": "server/investment-service/src/main/java/kr/stockey/investmentservice/exception/investment/InvestmentExceptionType.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/nowgnas/STOCKEY/blob/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fexception%2Finvestment%2FInvestmentExceptionType.java",
+            "raw_url": "https://github.com/nowgnas/STOCKEY/raw/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fexception%2Finvestment%2FInvestmentExceptionType.java",
+            "contents_url": "https://api.github.com/repos/nowgnas/STOCKEY/contents/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fexception%2Finvestment%2FInvestmentExceptionType.java?ref=b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+            "patch": "@@ -7,7 +7,8 @@ public enum InvestmentExceptionType implements BaseExceptionType {\n \n     NOT_ORDERING_TIME(HttpStatus.BAD_REQUEST, \"주문 가능한 시간이 아닙니다.\"),\n     NO_OWNED_STOCK(HttpStatus.NO_CONTENT, \"보유한 주식이 없습니다.\"),\n-    NO_USER_RANK(HttpStatus.NO_CONTENT, \"해당 유저의 랭킹 정보가 없습니다.\");\n+    NO_USER_RANK(HttpStatus.NO_CONTENT, \"해당 유저의 랭킹 정보가 없습니다.\"),\n+    NO_ORDER_HISTORY(HttpStatus.NO_CONTENT, \"주문 기록이 없습니다.\");\n \n     private final HttpStatus httpStatus;\n     private final String errorMessage;"
+        },
+        {
+            "sha": "3b083ad74ab459719c38b76108560d9bd7ac2051",
+            "filename": "server/investment-service/src/main/java/kr/stockey/investmentservice/repository/ContractRepository.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/nowgnas/STOCKEY/blob/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Frepository%2FContractRepository.java",
+            "raw_url": "https://github.com/nowgnas/STOCKEY/raw/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Frepository%2FContractRepository.java",
+            "contents_url": "https://api.github.com/repos/nowgnas/STOCKEY/contents/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Frepository%2FContractRepository.java?ref=b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+            "patch": "@@ -25,5 +25,7 @@ List<Contract> getContractsByMatchOrderIdsAndDateRange(List<Long> matchOrderIds,\n                                                            LocalDateTime startDate, LocalDateTime endDate);\n \n     @Query(\"SELECT c FROM Contract c WHERE c.memberId = :memberId AND c.createdAt BETWEEN :startDate AND :endDate\")\n-    List<Contract> findByMemberIdAndCreatedAtBetween(Long memberId, LocalDateTime startDate, LocalDateTime endDate);\n+    List<Contract> findByMemberIdAndCreatedAtBetween(@Param(\"memberId\") Long memberId,\n+                                                     @Param(\"startDate\") LocalDateTime startDate,\n+                                                     @Param(\"endDate\") LocalDateTime endDate);\n }"
+        },
+        {
+            "sha": "e6bebb9146dea6ed3967d5aeb823f9ca69cfcb52",
+            "filename": "server/investment-service/src/main/java/kr/stockey/investmentservice/service/InvestmentServiceImpl.java",
+            "status": "modified",
+            "additions": 45,
+            "deletions": 21,
+            "changes": 66,
+            "blob_url": "https://github.com/nowgnas/STOCKEY/blob/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fservice%2FInvestmentServiceImpl.java",
+            "raw_url": "https://github.com/nowgnas/STOCKEY/raw/b7255f70efd48c35d8dbba18dfd3b335ef3eac0b/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fservice%2FInvestmentServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/nowgnas/STOCKEY/contents/server%2Finvestment-service%2Fsrc%2Fmain%2Fjava%2Fkr%2Fstockey%2Finvestmentservice%2Fservice%2FInvestmentServiceImpl.java?ref=b7255f70efd48c35d8dbba18dfd3b335ef3eac0b",
+            "patch": "@@ -243,12 +243,36 @@ public Boolean checkOrderSubmit(Long memberId) {\n \n     @Override\n     public List<OrderHistoryDto> getOrderHistory(Long memberId) {\n+        // 리턴 데이터\n+        List<OrderHistoryDto> orderHistoryDtoList = new ArrayList<>();\n+\n         // 현재 날짜 기준 이번주 첫날, 끝날 날짜 정보 가져오기\n         List<LocalDateTime> stEdWeekDates = getStEdWeekDates();// 월요일, 일요일 시간 정보\n         LocalDateTime startTime = stEdWeekDates.get(0);\n         LocalDateTime endTime = stEdWeekDates.get(1);\n \n         // 특정 유저의 이번주에 주문, 체결 정보 모두 가져오기\n+\n+        // redis에 존재하는 주문 정보 가져오기 -> 체결 데이터 없는 정보\n+        List<Order> allOrders = (List<Order>) orderRedisRepository.findAll();\n+        for (Order order : allOrders) {\n+            List<OrderListDto> orderListDtos = order.getOrders();\n+            for (OrderListDto orderListDto : orderListDtos) {\n+                OrderHistoryDto orderHistoryDto = OrderHistoryDto.builder()\n+                        .stockId(orderListDto.getStockId())\n+                        .stockName(stockIdToNameMap.get(orderListDto.getStockId()))\n+                        .orderCount(Long.valueOf(orderListDto.getCount()))\n+                        .contractCount(null)\n+                        .contractPrice(null)\n+                        .profit(null)\n+                        .contractType(orderListDto.getOrderType())\n+                        .createdAt(order.getOrderTime())\n+                        .build();\n+                orderHistoryDtoList.add(orderHistoryDto);\n+            }\n+        }\n+\n+        // db에 저장된 주문, 체결 정보 가져오기\n         List<Contract> contractsAndOrders = contractRepository.findByMemberIdAndCreatedAtBetween(memberId, startTime, endTime);\n         List<ContractDto> contractsAndOrdersDtoList = investmentMapper.toContractDtoList(contractsAndOrders);\n \n@@ -260,27 +284,27 @@ public List<OrderHistoryDto> getOrderHistory(Long memberId) {\n         List<ContractDto> contractList = contractsByCategory.get(InvCategory.CONTRACT);\n         List<ContractDto> orderList = contractsByCategory.get(InvCategory.ORDER);\n \n-        // First, create a map from the contractList for easy access\n-        Map<Long, ContractDto> contractMap = contractList.stream()\n-                .collect(Collectors.toMap(ContractDto::getMatchOrderId, contract -> contract));\n-\n-        List<OrderHistoryDto> orderHistoryDtoList = new ArrayList<>();\n-\n-        // Then, for each order, find the corresponding contract\n-        for (ContractDto order : orderList) {\n-            ContractDto matchingContract = contractMap.get(order.getId());\n-\n-            OrderHistoryDto orderHistoryDto = OrderHistoryDto.builder()\n-                    .stockId(order.getStockId())\n-                    .stockName(stockIdToNameMap.get(order.getStockId()))\n-                    .orderCount(order.getCount())\n-                    .contractCount(matchingContract.getCount())\n-                    .contractPrice(matchingContract.getContractPrice())\n-                    .profit(matchingContract.getProfit())\n-                    .contractType(order.getContractType())\n-                    .createdAt(order.getCreatedAt())\n-                    .build();\n-            orderHistoryDtoList.add(orderHistoryDto);\n+        if (orderList!=null) {\n+            // First, create a map from the contractList for easy access\n+            Map<Long, ContractDto> contractMap = contractList.stream()\n+                    .collect(Collectors.toMap(ContractDto::getMatchOrderId, contract -> contract));\n+\n+            // Then, for each order, find the corresponding contract\n+            for (ContractDto order : orderList) {\n+                ContractDto matchingContract = contractMap.get(order.getId());\n+\n+                OrderHistoryDto orderHistoryDto = OrderHistoryDto.builder()\n+                        .stockId(order.getStockId())\n+                        .stockName(stockIdToNameMap.get(order.getStockId()))\n+                        .orderCount(order.getCount())\n+                        .contractCount(matchingContract.getCount())\n+                        .contractPrice(matchingContract.getContractPrice())\n+                        .profit(matchingContract.getProfit())\n+                        .contractType(order.getContractType())\n+                        .createdAt(order.getCreatedAt())\n+                        .build();\n+                orderHistoryDtoList.add(orderHistoryDto);\n+            }\n         }\n         return orderHistoryDtoList;\n     }"
+        }
+    ]
+}

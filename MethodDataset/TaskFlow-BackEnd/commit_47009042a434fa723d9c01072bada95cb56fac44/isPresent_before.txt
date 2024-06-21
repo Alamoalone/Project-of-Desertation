@@ -1,0 +1,11 @@
+    private boolean isPresent(JsonNode jsonNode, String text) {
+        try {
+            if (jsonNode.findParent(text) != null) {
+                return true;
+            } else {
+                throw new NullPointerException();
+            }
+        } catch (NullPointerException e) {
+            return false;
+        }
+    }

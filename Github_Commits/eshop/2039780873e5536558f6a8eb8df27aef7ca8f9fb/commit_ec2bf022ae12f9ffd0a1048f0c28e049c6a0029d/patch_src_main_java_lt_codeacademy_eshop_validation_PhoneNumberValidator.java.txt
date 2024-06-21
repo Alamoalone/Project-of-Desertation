@@ -1,0 +1,29 @@
+@@ -3,6 +3,8 @@
+ import jakarta.validation.ConstraintValidator;
+ import jakarta.validation.ConstraintValidatorContext;
+ 
++import java.util.Objects;
++
+ public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber, String> {
+ 
+     private PhoneNumberType type;
+@@ -15,9 +17,17 @@ public void initialize(PhoneNumber constraintAnnotation) {
+     @Override
+     public boolean isValid(String value, ConstraintValidatorContext context) {
+         if (type.equals(PhoneNumberType.GLOBAL)) {
+-            return value.startsWith("+370") && value.length() == 12;
++            return isValidPrefixGlobal(value);
+         } else {
+-            return value.startsWith("86") && value.length() == 9;
++            return isValidPrefixLocal(value);
+         }
+     }
++
++    private boolean isValidPrefixGlobal(final String phoneNumber) {
++        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith("+370") && phoneNumber.length() == 12;
++    }
++
++    private boolean isValidPrefixLocal(final String phoneNumber) {
++        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith("86") && phoneNumber.length() == 9;
++    }
+ }

@@ -1,0 +1,13 @@
+  public void periodic() {
+    // This method will be called once per scheduler run
+
+    Measurement latestMeasurement = getMeasurement();
+
+    if (latestMeasurement != null) {
+      for (Consumer<Measurement> consumer : m_consumerList) {
+        consumer.accept(latestMeasurement);
+      }
+    }
+
+    SmartDashboard.putBoolean("Limelight Has Target", m_tv.get() == 1);
+  }

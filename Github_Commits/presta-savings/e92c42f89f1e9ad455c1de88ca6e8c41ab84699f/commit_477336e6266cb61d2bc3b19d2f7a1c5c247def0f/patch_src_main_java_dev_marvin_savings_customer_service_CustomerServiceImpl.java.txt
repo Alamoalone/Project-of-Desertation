@@ -1,0 +1,21 @@
+@@ -34,14 +34,16 @@ public class CustomerServiceImpl implements CustomerService, UserDetailsService
+ 
+     @Override
+     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+-        Customer customer = customerDao.getCustomerByEmail(email);
+-
+-        if (customer == null) {
++        Optional<Customer> customer = customerDao.getCustomerByEmail(email);
++        Customer existingCustomer;
++        if (customer.isPresent()) {
++            existingCustomer = customer.get();
++            return existingCustomer;
++        } else {
+             System.out.println("Customer 404");
+             throw new UsernameNotFoundException("Customer with email [%s] not found".formatted(email));
+         }
+ 
+-        return customer;
+     }
+ 
+     @Override

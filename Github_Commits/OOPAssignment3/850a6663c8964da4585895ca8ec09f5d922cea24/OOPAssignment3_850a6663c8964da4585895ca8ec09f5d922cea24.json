@@ -1,0 +1,122 @@
+{
+    "sha": "850a6663c8964da4585895ca8ec09f5d922cea24",
+    "node_id": "C_kwDOLbmDFtoAKDg1MGE2NjYzYzg5NjRkYTQ1ODU4OTVjYThlYzA5ZjVkOTIyY2VhMjQ",
+    "commit": {
+        "author": {
+            "name": "NerunSmarts",
+            "email": "neruntoneron@gmail.com",
+            "date": "2024-04-03T03:58:37Z"
+        },
+        "committer": {
+            "name": "NerunSmarts",
+            "email": "neruntoneron@gmail.com",
+            "date": "2024-04-03T03:58:37Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "2179495f4a668063ab8240a70e40b9ab1a842660",
+            "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/git/trees/2179495f4a668063ab8240a70e40b9ab1a842660"
+        },
+        "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/git/commits/850a6663c8964da4585895ca8ec09f5d922cea24",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/commits/850a6663c8964da4585895ca8ec09f5d922cea24",
+    "html_url": "https://github.com/NerunSmarts/OOPAssignment3/commit/850a6663c8964da4585895ca8ec09f5d922cea24",
+    "comments_url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/commits/850a6663c8964da4585895ca8ec09f5d922cea24/comments",
+    "author": {
+        "login": "NerunSmarts",
+        "id": 66692543,
+        "node_id": "MDQ6VXNlcjY2NjkyNTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66692543?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NerunSmarts",
+        "html_url": "https://github.com/NerunSmarts",
+        "followers_url": "https://api.github.com/users/NerunSmarts/followers",
+        "following_url": "https://api.github.com/users/NerunSmarts/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NerunSmarts/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NerunSmarts/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NerunSmarts/subscriptions",
+        "organizations_url": "https://api.github.com/users/NerunSmarts/orgs",
+        "repos_url": "https://api.github.com/users/NerunSmarts/repos",
+        "events_url": "https://api.github.com/users/NerunSmarts/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NerunSmarts/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "NerunSmarts",
+        "id": 66692543,
+        "node_id": "MDQ6VXNlcjY2NjkyNTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66692543?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NerunSmarts",
+        "html_url": "https://github.com/NerunSmarts",
+        "followers_url": "https://api.github.com/users/NerunSmarts/followers",
+        "following_url": "https://api.github.com/users/NerunSmarts/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NerunSmarts/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NerunSmarts/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NerunSmarts/subscriptions",
+        "organizations_url": "https://api.github.com/users/NerunSmarts/orgs",
+        "repos_url": "https://api.github.com/users/NerunSmarts/repos",
+        "events_url": "https://api.github.com/users/NerunSmarts/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NerunSmarts/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c20c1b03d5ae1b818875916eb8d23f0f4a80e205",
+            "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/commits/c20c1b03d5ae1b818875916eb8d23f0f4a80e205",
+            "html_url": "https://github.com/NerunSmarts/OOPAssignment3/commit/c20c1b03d5ae1b818875916eb8d23f0f4a80e205"
+        }
+    ],
+    "stats": {
+        "total": 43,
+        "additions": 23,
+        "deletions": 20
+    },
+    "files": [
+        {
+            "sha": "8e15c6c5dadc4418df801963c48b227a357b4175",
+            "filename": "bin/.LCKCourse.java~",
+            "status": "added",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/NerunSmarts/OOPAssignment3/blob/850a6663c8964da4585895ca8ec09f5d922cea24/bin%2F.LCKCourse.java%7E",
+            "raw_url": "https://github.com/NerunSmarts/OOPAssignment3/raw/850a6663c8964da4585895ca8ec09f5d922cea24/bin%2F.LCKCourse.java%7E",
+            "contents_url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/contents/bin%2F.LCKCourse.java%7E?ref=850a6663c8964da4585895ca8ec09f5d922cea24",
+            "patch": "@@ -0,0 +1 @@\n+/Users/jonahgjersvig/Documents/Schoolwork/Code/Assignment3/CoursePlanningSystem/src/Course.java\n\\ No newline at end of file"
+        },
+        {
+            "sha": "102e73cf37b077fff0b1386aeea7bca45d396aa0",
+            "filename": "edu/cs2430/assignment3/Course.java",
+            "status": "modified",
+            "additions": 21,
+            "deletions": 20,
+            "changes": 41,
+            "blob_url": "https://github.com/NerunSmarts/OOPAssignment3/blob/850a6663c8964da4585895ca8ec09f5d922cea24/edu%2Fcs2430%2Fassignment3%2FCourse.java",
+            "raw_url": "https://github.com/NerunSmarts/OOPAssignment3/raw/850a6663c8964da4585895ca8ec09f5d922cea24/edu%2Fcs2430%2Fassignment3%2FCourse.java",
+            "contents_url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/contents/edu%2Fcs2430%2Fassignment3%2FCourse.java?ref=850a6663c8964da4585895ca8ec09f5d922cea24",
+            "patch": "@@ -97,25 +97,26 @@ private boolean validateAddPrerequisiteCourse(Course prerequisiteCourse){\n        boolean valid = true;\n        if(prerequisiteCourse == null){\n            valid = false;\n-       }\n-       if(prerequisiteCourse.name.equals(this.name) && prerequisiteCourse.program.equals(this.program)){\n-           valid = false;\n-       }\n-       int prerequisiteCoursesInArray = 0;\n-       for(int i=0;i<prerequisiteCourses.length;i++){\n-           if(prerequisiteCourses[i] != null){\n-               prerequisiteCoursesInArray += 1;\n-           }\n-       }\n-       if(prerequisiteCoursesInArray>4){\n-           valid = false;\n-       }\n-       for (Course c : prerequisiteCourses){\n-           if (c == prerequisiteCourse) {\n-               valid = false;\n-               break;\n-           }\n-       }\n-       return valid;\n+       } else {\n+            if(prerequisiteCourse.name.equals(this.name) && prerequisiteCourse.program.equals(this.program)){\n+                valid = false;\n+            }\n+            int prerequisiteCoursesInArray = 0;\n+            for(int i=0;i<prerequisiteCourses.length;i++){\n+                if(prerequisiteCourses[i] != null){\n+                    prerequisiteCoursesInArray += 1;\n+                }\n+            }\n+            if(prerequisiteCoursesInArray>4){\n+                valid = false;\n+            }\n+            for (Course c : prerequisiteCourses){\n+                if (c == prerequisiteCourse) {\n+                    valid = false;\n+                    break;\n+                }\n+            }\n+        }\n+        return valid;\n    }\n }"
+        },
+        {
+            "sha": "8e15c6c5dadc4418df801963c48b227a357b4175",
+            "filename": "src/.LCKCourse.java~",
+            "status": "added",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/NerunSmarts/OOPAssignment3/blob/850a6663c8964da4585895ca8ec09f5d922cea24/src%2F.LCKCourse.java%7E",
+            "raw_url": "https://github.com/NerunSmarts/OOPAssignment3/raw/850a6663c8964da4585895ca8ec09f5d922cea24/src%2F.LCKCourse.java%7E",
+            "contents_url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/contents/src%2F.LCKCourse.java%7E?ref=850a6663c8964da4585895ca8ec09f5d922cea24",
+            "patch": "@@ -0,0 +1 @@\n+/Users/jonahgjersvig/Documents/Schoolwork/Code/Assignment3/CoursePlanningSystem/src/Course.java\n\\ No newline at end of file"
+        }
+    ]
+}

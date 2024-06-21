@@ -1,0 +1,23 @@
+    public IssnData getIssnData(String issn) {
+        String json = null;
+        
+        try {
+            LOG.debug("Extracting ISSN for " +  issn);
+            // ensure any lower case x is X otherwise issn portal won't work
+            json = getJsonDataFromIssnPortal(issn.toUpperCase());
+        } catch (IOException | InterruptedException | URISyntaxException e) {
+            throw new RuntimeException("Error extracting json from issn portal response", e);
+        }
+        try {
+            if (json != null) {
+                IssnData data = extractIssnData(json);
+                data.setIssn(issn);
+                return data;
+            } else {
+                return null;
+            }
+        } catch (Exception e) {
+            LOG.warn("Error extracting issn data from json returned from issn portal", e);
+            return null;
+        }
+    }

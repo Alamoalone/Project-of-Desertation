@@ -1,0 +1,64 @@
+    public List<Notes> findAllByUserUserId(Integer userId) {
+        return notesRepository.findAllByUserUserId(userId);
+    }
+
+    public List<Notes> notesList() {
+        List<Notes> notesList = notesRepository.findAll();
+        List<Notes> collected = new ArrayList<>();
+
+        try {
+            collected = notesList.stream()
+                    .peek(note -> {
+                        note.setTitle(encryptionUtil.decrypt(note.getTitle()));
+                        note.setDescription(encryptionUtil.decrypt(note.getDescription()));
+                    })
+                    .toList();
+        } catch (NullPointerException e) {
+            throw new NullPointerException("LIST IS EMPTY");
+        }
+
+        return collected;
+    }
+
+    public Notes createNote(Notes note) throws Exception {
+        try {
+            Optional<User> user = userRepository.findById(note.getUser().getUserId());
+            note.setUser(user.get());
+            note.setDate(FormatDateTime.parseStandardDate(note.getDate()));
+            note.setTitle(encryptionUtil.encrypt(note.getTitle()));
+            note.setDescription(encryptionUtil.encrypt(note.getDescription()));
+        } catch (Exception e) {
+            throw new Exception(e);
+        }
+        return notesRepository.save(note);
+    }
+
+    public Notes findByNoteId(Integer id) {
+        Notes note = notesRepository.findByNoteId(id);
+        try{
+            note.setTitle(encryptionUtil.decrypt(note.getTitle()));
+            note.setDescription(encryptionUtil.decrypt(note.getDescription()));
+        }catch (NullPointerException e){
+            return null;
+        }
+        return note;
+    }
+
+    public List<Notes> findByTitle(String title) {
+        return notesRepository.findByTitle(title);
+    }
+
+    public Notes updateNoteById(Integer id, Notes notes) {
+        Notes oldNote = notesRepository.findByNoteId(id);
+        if (oldNote == null) {
+            return null;
+        }
+//        oldNote.setColor(notes.getColor());
+        oldNote.setDate(FormatDateTime.parseStandardDate(notes.getDate()));
+        oldNote.setTitle(notes.getTitle());
+        oldNote.setDescription(notes.getDescription());
+        oldNote.setCompleted(notes.isCompleted());
+        notesRepository.save(oldNote);
+        return oldNote;
+    }
+

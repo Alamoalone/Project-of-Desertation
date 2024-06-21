@@ -1,0 +1,98 @@
+{
+    "sha": "2dc8049e74ab420af189a0fd8020d7aae6367dda",
+    "node_id": "C_kwDODblE-NoAKDJkYzgwNDllNzRhYjQyMGFmMTg5YTBmZDgwMjBkN2FhZTYzNjdkZGE",
+    "commit": {
+        "author": {
+            "name": "Sofien Haj Chedhli",
+            "email": "shajchedli@exoplatform.com",
+            "date": "2024-01-18T10:04:22Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-01-18T10:04:22Z"
+        },
+        "message": "fix: Fix the upgrade plugin error when starting new server -EXO-68823 (#188) (#189)\n\nPrior to this change, a null pointer exception was thrown from the notification upgrade plugin when starting a new server. This issue is due to the null value of the pluginInfo model if the plugin is missing. This change is going to handle this exception",
+        "tree": {
+            "sha": "158d508c653beafe31f658b43b851e42950c2b46",
+            "url": "https://api.github.com/repos/exoplatform/data-upgrade/git/trees/158d508c653beafe31f658b43b851e42950c2b46"
+        },
+        "url": "https://api.github.com/repos/exoplatform/data-upgrade/git/commits/2dc8049e74ab420af189a0fd8020d7aae6367dda",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJlqPemCRC1aQ7uu5UhlAAAybEQAInZ2+xVsscypvriE5rk5sv/\nkkBwgNgOLWmEAJBucYC4qkdmuLhuj2tXZmUv0EWwPl+MaNRuZl4U/X8oM5I7lfkN\nJ2qk8GfuxPBw2liXLxnM5kSqfo8ARbTfgCHm8HCh/uLZAAugTGTdbKhBdgh4iT93\nVs5zEjv1Jm4UBziVMZKDEUrHlYNtk0Flw4N6LUm0q34JZhidz5sG1NpWvKGroCNE\n+6A9FGzxE5Myh0prxD4DpqWmi4/SvKV+2u1knvvEdNwEHu6KBEhLsJIkB8AaroVF\nwrI+F5ds34uL892ORBK93m2ht8mt3hT8MEDx1iyttExUIzeGQcH5IO2idw3PR8d8\nTt410hTigWu2SRrUHnnhxAk8ax97iJqq0h+cnNZIbjR0a5lyazkKoFOoL+VDeKMm\nmBW5suHtLYWFvpbbRGrAsDcZICIZ0K2OS/N7AWigtm8iDepSUZPrcmFR24aleibA\nuXBjlIqsS+55lrB5XMccnvQYlOD4abLAc78FOGX3UNlAhYsdZt2tpp3qTqWGjvar\npcwqnA8ZnK/3fhjdXjOsJARJ+DPEPIZnz9FvMNYla3jpfWZf+1d2Bb/ooh37KoGm\nZPw7pj+Xzcn9/rna1r1wWwSMf+NazBgEVJjYz3B24IQpPGjHHpKwyJkb/FToIQnR\n8dX0oNHQYEd8cBJ2+jmh\n=xZaN\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 158d508c653beafe31f658b43b851e42950c2b46\nparent 508fe45c33d49aee4ce8d6b6fd041e3a95851cd5\nauthor Sofien Haj Chedhli <shajchedli@exoplatform.com> 1705572262 +0100\ncommitter GitHub <noreply@github.com> 1705572262 +0100\n\nfix: Fix the upgrade plugin error when starting new server -EXO-68823 (#188) (#189)\n\nPrior to this change, a null pointer exception was thrown from the notification upgrade plugin when starting a new server. This issue is due to the null value of the pluginInfo model if the plugin is missing. This change is going to handle this exception"
+        }
+    },
+    "url": "https://api.github.com/repos/exoplatform/data-upgrade/commits/2dc8049e74ab420af189a0fd8020d7aae6367dda",
+    "html_url": "https://github.com/exoplatform/data-upgrade/commit/2dc8049e74ab420af189a0fd8020d7aae6367dda",
+    "comments_url": "https://api.github.com/repos/exoplatform/data-upgrade/commits/2dc8049e74ab420af189a0fd8020d7aae6367dda/comments",
+    "author": {
+        "login": "sofyenne",
+        "id": 27963909,
+        "node_id": "MDQ6VXNlcjI3OTYzOTA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/27963909?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sofyenne",
+        "html_url": "https://github.com/sofyenne",
+        "followers_url": "https://api.github.com/users/sofyenne/followers",
+        "following_url": "https://api.github.com/users/sofyenne/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sofyenne/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sofyenne/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sofyenne/subscriptions",
+        "organizations_url": "https://api.github.com/users/sofyenne/orgs",
+        "repos_url": "https://api.github.com/users/sofyenne/repos",
+        "events_url": "https://api.github.com/users/sofyenne/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sofyenne/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "508fe45c33d49aee4ce8d6b6fd041e3a95851cd5",
+            "url": "https://api.github.com/repos/exoplatform/data-upgrade/commits/508fe45c33d49aee4ce8d6b6fd041e3a95851cd5",
+            "html_url": "https://github.com/exoplatform/data-upgrade/commit/508fe45c33d49aee4ce8d6b6fd041e3a95851cd5"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "d11577775f3df34e1ccb8f374ca5dbc23c918d61",
+            "filename": "data-upgrade-notifications/src/main/java/org/exoplatform/portal/upgrade/notification/NotificationSettingsUpgradePlugin.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/exoplatform/data-upgrade/blob/2dc8049e74ab420af189a0fd8020d7aae6367dda/data-upgrade-notifications%2Fsrc%2Fmain%2Fjava%2Forg%2Fexoplatform%2Fportal%2Fupgrade%2Fnotification%2FNotificationSettingsUpgradePlugin.java",
+            "raw_url": "https://github.com/exoplatform/data-upgrade/raw/2dc8049e74ab420af189a0fd8020d7aae6367dda/data-upgrade-notifications%2Fsrc%2Fmain%2Fjava%2Forg%2Fexoplatform%2Fportal%2Fupgrade%2Fnotification%2FNotificationSettingsUpgradePlugin.java",
+            "contents_url": "https://api.github.com/repos/exoplatform/data-upgrade/contents/data-upgrade-notifications%2Fsrc%2Fmain%2Fjava%2Forg%2Fexoplatform%2Fportal%2Fupgrade%2Fnotification%2FNotificationSettingsUpgradePlugin.java?ref=2dc8049e74ab420af189a0fd8020d7aae6367dda",
+            "patch": "@@ -61,7 +61,10 @@ public void processUpgrade(String oldVersion, String newVersion) {\n \n         PluginInfo pluginTypeConfig = findPlugin(pluginType);\n         List<String> usersContexts;\n-\n+        if (pluginTypeConfig == null) {\n+          LOG.info(\"=== couldn't initialize the settings of {} , plugin is not found\", pluginType);\n+          continue;\n+        }\n         entityManagerService.startRequest(currentContainer);\n         long startTime = System.currentTimeMillis();\n         do {"
+        }
+    ]
+}

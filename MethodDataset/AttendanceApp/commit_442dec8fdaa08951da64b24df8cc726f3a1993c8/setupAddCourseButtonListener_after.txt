@@ -1,0 +1,6 @@
+    private void setupAddCourseButtonListener() {
+        addCourseStudentButton.setOnClickListener(v -> {
+            Log.i("INFO", "Add course button clicked");
+            requestCameraPermission();
+        });
+    }

@@ -1,0 +1,107 @@
+@@ -17,6 +17,7 @@
+ import com.khadir.pokemonserver.config.handlers.CustomAuthenticationSuccessHandler;
+ import com.khadir.pokemonserver.dtos.UserDto;
+ import com.khadir.pokemonserver.exceptions.UserAlreadyExistsException;
++import com.khadir.pokemonserver.exceptions.UserNotFoundException;
+ import com.khadir.pokemonserver.models.User;
+ import com.khadir.pokemonserver.services.UserService;
+ 
+@@ -26,58 +27,59 @@
+ @RequestMapping("/api/auth")
+ public class AuthController {
+ 
+-    @Autowired
+-    private UserService userService;
++	@Autowired
++	private UserService userService;
+ 
+ 	@PostMapping("/register")
+-    public ResponseEntity<?> registerUser(@RequestBody UserDto userDto) {
+-        try {
+-            User user = userService.registerNewUser(userDto);
+-            UserDto responseDto = convertToDto(user);
+-            return new ResponseEntity<>(responseDto, HttpStatus.CREATED);
+-        } catch (UserAlreadyExistsException e) {
+-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+-        }
+-        // Include more exception handling as needed
+-    }
+-	
++	public ResponseEntity<?> registerUser(@RequestBody UserDto userDto) {
++		try {
++			User user = userService.registerNewUser(userDto);
++			UserDto responseDto = convertToDto(user);
++			return new ResponseEntity<>(responseDto, HttpStatus.CREATED);
++		} catch (UserAlreadyExistsException e) {
++			return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
++		}
++		// Include more exception handling as needed
++	}
++
+ 	private UserDto convertToDto(User user) {
+-		UserDto userDto = UserDto.builder()
+-				.id(user.getId())
+-				.username(user.getUsername())
+-				.build();
+-        return userDto;
+-    }
+-	
++		UserDto userDto = UserDto.builder().id(user.getId()).username(user.getUsername()).build();
++		return userDto;
++	}
++
+ 	@PostMapping("/login")
+ 	public ResponseEntity<?> loginUser(@RequestBody UserDto userDto, Authentication authentication) {
+-	    // Can use 'authentication' to access the currently authenticated user's details
+-	    // Implement any additional logic needed post-authentication
+-	    return ResponseEntity.ok().body("User logged in successfully");
++		// Can use 'authentication' to access the currently authenticated user's details
++		// Implement any additional logic needed post-authentication
++		return ResponseEntity.ok().body("User logged in successfully");
+ 	}
+ 
+ 	@Autowired
+ 	private SessionRegistry sessionRegistry;
+ 
+ 	@PostMapping("/logout")
+ 	public ResponseEntity<?> logout(HttpServletRequest request, Authentication authentication) {
+-		// Retrieve all sessions for the current user
+-	    List<SessionInformation> userSessions = sessionRegistry.getAllSessions(authentication.getPrincipal(), false);
++		try {
++			// Retrieve all sessions for the current user
++			List<SessionInformation> userSessions = sessionRegistry.getAllSessions(authentication.getPrincipal(),
++					false);
++			String sessionId = request.getSession().getId();
++			String username = (String) request.getSession().getAttribute("username");
+ 
+-	    // Expire all sessions
+-	    for (SessionInformation session : userSessions) {
+-	        session.expireNow();
+-	        sessionRegistry.removeSessionInformation(session.getSessionId());
+-	    }
+-	    
+-	    String sessionId = request.getSession().getId();
+-	    String username = (String) request.getSession().getAttribute("username");
+-	    request.getSession().invalidate();
+-	    SecurityContextHolder.clearContext();
+-	    CustomAuthenticationSuccessHandler.removeActiveSession(sessionId);
+-	    return ResponseEntity.ok().body("User: " + username + " logged out");
+-	}
++			// Expire all sessions
++			for (SessionInformation session : userSessions) {
++				session.expireNow();
++				sessionRegistry.removeSessionInformation(session.getSessionId());
++			}
+ 
++			request.getSession().invalidate();
++			SecurityContextHolder.clearContext();
++			CustomAuthenticationSuccessHandler.removeActiveSession(sessionId);
++			return ResponseEntity.ok().body("User: " + username + " logged out");
++		} catch (NullPointerException e) {
++			return new ResponseEntity<>("Cannot log out because user isn't logged in", HttpStatus.BAD_REQUEST);
++		}
++
++	}
+ 
+-	
+ }

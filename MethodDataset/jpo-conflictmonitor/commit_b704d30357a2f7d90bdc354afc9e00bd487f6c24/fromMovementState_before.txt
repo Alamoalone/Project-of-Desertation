@@ -1,0 +1,13 @@
+    public static SpatTimeChangeDetailState fromMovementState(MovementState state){
+        SpatTimeChangeDetailState newState = new SpatTimeChangeDetailState();
+        newState.setSignalGroup(state.getSignalGroup());
+
+        List<MovementEvent> events =  state.getStateTimeSpeed();
+        if(events.size() > 0){
+            newState.setMaxEndTime(events.get(0).getTiming().getMaxEndTime().toInstant().toEpochMilli());
+            newState.setMinEndTime(events.get(0).getTiming().getMinEndTime().toInstant().toEpochMilli());
+            newState.setEventState(events.get(0).getEventState());
+        }
+        
+        return newState;
+    }

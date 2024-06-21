@@ -1,0 +1,3 @@
+    public void sign(Ed25519PublicKeyParameters pubKey, Ed25519PrivateKeyParameters signingKey) {
+        this.signature.signature = signWithPrivateKey(getHash().hash, pubKey, signingKey);
+    }

@@ -1,0 +1,40 @@
+    public void AddCartItem_ValidInput_ReturnsCreated() {
+        //Login
+        LoginDTO login = new LoginDTO("testuser", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+        assertNotNull(loginResponse.getBody());
+        String jwt = loginResponse.getBody().getJwt();
+
+        // Create a CartRegistrationDTO for testing
+        CartRegistrationDTO validInput = new CartRegistrationDTO(1L, 5);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<CartRegistrationDTO> requestEntity = new HttpEntity<>(validInput, headers);
+
+        ResponseEntity<CartResponseDTO> response = restTemplate.postForEntity(
+                "http://localhost:" + port + "/cart/add",
+                requestEntity,
+                CartResponseDTO.class
+        );
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+
+        CartResponseDTO responseBody = response.getBody();
+        assertNotNull(responseBody);
+
+        List<CartItemDTO> cartItems = responseBody.getCartItems();
+
+        for (CartItemDTO cartItemDTO : cartItems) {
+            assertEquals(1L, cartItemDTO.getCartItemId());
+            assertEquals(5, cartItemDTO.getQuantity());
+            assertNotNull(cartItemDTO.getProduct());
+        }
+    }

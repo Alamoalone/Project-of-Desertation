@@ -1,0 +1,31 @@
+@@ -49,9 +49,6 @@ public static User of(Authentication auth) {
+         } else {
+             throw new InsufficientAuthenticationException("Could not create user. Insufficient user authentication");
+         }
+-        if (user.getEmail() != null) {
+-            user.setEmail(user.getEmail().toLowerCase());
+-        }
+         logger.debug(String.format("UserService from Authentication: %s", user));
+         return user;
+     }
+@@ -69,7 +66,10 @@ public String getEmail() {
+     }
+ 
+     public void setEmail(String email) {
+-        this.email = email.toLowerCase();
++        if (email != null) {
++            email = email.toLowerCase();
++        }
++        this.email = email;
+     }
+ 
+     public String getName() {
+@@ -135,7 +135,7 @@ public static String getId(Authentication auth) {
+ 
+     @Override
+     public String getId() {
+-        return this.email.toLowerCase();
++        return this.email != null ? this.email.toLowerCase() : null;
+     }
+ 
+     @Override

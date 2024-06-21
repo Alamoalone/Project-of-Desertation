@@ -1,0 +1,28 @@
+  public void testRunsLimit() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    ApplicationId appId = new ApplicationId("testRunsLimit", spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    ProgramId mapreduceProgramId = new ApplicationId("testRunsLimit", spec.getName())
+      .mr(AllProgramsApp.NoOpMR.class.getSimpleName());
+    ArtifactId artifactId = appId.getNamespaceId().artifact("testArtifact", "1.0").toApiArtifactId();
+
+    Assert.assertNotNull(store.getApplication(appId));
+
+    long now = System.currentTimeMillis();
+    ProgramRunId programRunId = mapreduceProgramId.run(RunIds.generate(now - 3000));
+    setStartAndRunning(programRunId, artifactId);
+    store.setStop(programRunId, now - 100, ProgramController.State.COMPLETED.getRunStatus(),
+                  AppFabricTestHelper.createSourceId(++sourceId));
+
+    setStartAndRunning(mapreduceProgramId.run(RunIds.generate(now - 2000)), artifactId);
+
+    // even though there's two separate run records (one that's complete and one that's active), only one should be
+    // returned by the query, because the limit parameter of 1 is being passed in.
+    Map<ProgramRunId, RunRecordDetail> historymap = store.getRuns(mapreduceProgramId, ProgramRunStatus.ALL,
+                                                                  0, Long.MAX_VALUE, 1);
+    Assert.assertEquals(1, historymap.size());
+  }

@@ -1,0 +1,34 @@
+@@ -73,10 +73,15 @@ public void removeCard (int index) {
+         cards.remove(index);
+     }
+     public void removeCards (int startIndex, int endIndex) {
+-        cards.subList(startIndex, endIndex+1).clear();
++        cards.subList(startIndex, endIndex).clear();
+     }
+-    public int findCardGivenName (String name) {
+-        return Collections.binarySearch(cards, new Card(name));
++    public int getCardOfName (String name, boolean firstCard) {
++        if (firstCard) {
++            return cards.indexOf(new Card(name));
++        } else {
++            return cards.lastIndexOf(new Card(name));
++        }
++
+     }
+     public Card getCard (int index) {
+         return cards.get(index);
+@@ -97,8 +102,12 @@ public int getCardsSize () {
+     public boolean atMaxCapacity () {
+         return cards.size() == maxCapacity;
+     }
+-    public int findCardGivenHP (int hp) {
+-        return Collections.binarySearch(cards, new Card (hp), new SortByHP());
++    public int getCardOfHP (int hp, boolean firstCard) {
++        if (firstCard) {
++            return cards.indexOf(new Card(hp));
++        } else {
++            return cards.lastIndexOf(new Card(hp));
++        }
+     }
+     public String nameDateToString () {
+         return String.format ("Album Number: %d%nDate: %s%n",albumNum,date);

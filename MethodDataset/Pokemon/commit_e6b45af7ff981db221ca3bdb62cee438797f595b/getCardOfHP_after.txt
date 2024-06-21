@@ -1,0 +1,7 @@
+    public int getCardOfHP (int hp, boolean firstCard) {
+        if (firstCard) {
+            return cards.indexOf(new Card(hp));
+        } else {
+            return cards.lastIndexOf(new Card(hp));
+        }
+    }

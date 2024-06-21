@@ -1,0 +1,122 @@
+{
+    "sha": "35e8f5b30dac09dc74bda91678123060c053d8f9",
+    "node_id": "C_kwDOLS6kA9oAKDM1ZThmNWIzMGRhYzA5ZGM3NGJkYTkxNjc4MTIzMDYwYzA1M2Q4Zjk",
+    "commit": {
+        "author": {
+            "name": "RichiCod3s",
+            "email": "aaronrichardsonsg@gmail.com",
+            "date": "2024-03-02T06:49:25Z"
+        },
+        "committer": {
+            "name": "RichiCod3s",
+            "email": "aaronrichardsonsg@gmail.com",
+            "date": "2024-03-02T06:49:25Z"
+        },
+        "message": "Part8/10 complete (Section 1)\n\nLearned getOrDefault() when using a hashmap.\n\nowed.getOrDefault(toWhom,0.0);\n\nThe second value is the default if the key is not found. This stops a Null Pointer exception",
+        "tree": {
+            "sha": "99e595b65a651d2172133dc9ef1450e3161f572b",
+            "url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/git/trees/99e595b65a651d2172133dc9ef1450e3161f572b"
+        },
+        "url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/git/commits/35e8f5b30dac09dc74bda91678123060c053d8f9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/commits/35e8f5b30dac09dc74bda91678123060c053d8f9",
+    "html_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/commit/35e8f5b30dac09dc74bda91678123060c053d8f9",
+    "comments_url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/commits/35e8f5b30dac09dc74bda91678123060c053d8f9/comments",
+    "author": {
+        "login": "RichiCod3s",
+        "id": 108982619,
+        "node_id": "U_kgDOBn7xWw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/108982619?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RichiCod3s",
+        "html_url": "https://github.com/RichiCod3s",
+        "followers_url": "https://api.github.com/users/RichiCod3s/followers",
+        "following_url": "https://api.github.com/users/RichiCod3s/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RichiCod3s/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RichiCod3s/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RichiCod3s/subscriptions",
+        "organizations_url": "https://api.github.com/users/RichiCod3s/orgs",
+        "repos_url": "https://api.github.com/users/RichiCod3s/repos",
+        "events_url": "https://api.github.com/users/RichiCod3s/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RichiCod3s/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "RichiCod3s",
+        "id": 108982619,
+        "node_id": "U_kgDOBn7xWw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/108982619?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/RichiCod3s",
+        "html_url": "https://github.com/RichiCod3s",
+        "followers_url": "https://api.github.com/users/RichiCod3s/followers",
+        "following_url": "https://api.github.com/users/RichiCod3s/following{/other_user}",
+        "gists_url": "https://api.github.com/users/RichiCod3s/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/RichiCod3s/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/RichiCod3s/subscriptions",
+        "organizations_url": "https://api.github.com/users/RichiCod3s/orgs",
+        "repos_url": "https://api.github.com/users/RichiCod3s/repos",
+        "events_url": "https://api.github.com/users/RichiCod3s/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/RichiCod3s/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "37d847cd2fb5647ac68608c68e02fd1238434d28",
+            "url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/commits/37d847cd2fb5647ac68608c68e02fd1238434d28",
+            "html_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/commit/37d847cd2fb5647ac68608c68e02fd1238434d28"
+        }
+    ],
+    "stats": {
+        "total": 33,
+        "additions": 33,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "097bd1bb78c9b72ea57a4f16c0483ec15caea2e1",
+            "filename": ".gitignore",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/blob/35e8f5b30dac09dc74bda91678123060c053d8f9/.gitignore",
+            "raw_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/raw/35e8f5b30dac09dc74bda91678123060c053d8f9/.gitignore",
+            "contents_url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/contents/.gitignore?ref=35e8f5b30dac09dc74bda91678123060c053d8f9",
+            "patch": "@@ -5,3 +5,4 @@\n /part08-Part08_06.Nicknames/target/\n /part08-Part08_07.Abbreviations/target/\n /part08-Part08_08.PrintMeMyHashmap/target/\n+/part08-Part08_10.IOweYou/target/"
+        },
+        {
+            "sha": "585776bcbdbc9ca3b7ac1b49647201985a5a9553",
+            "filename": "part08-Part08_10.IOweYou/src/main/java/IOU.java",
+            "status": "added",
+            "additions": 25,
+            "deletions": 0,
+            "changes": 25,
+            "blob_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/blob/35e8f5b30dac09dc74bda91678123060c053d8f9/part08-Part08_10.IOweYou%2Fsrc%2Fmain%2Fjava%2FIOU.java",
+            "raw_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/raw/35e8f5b30dac09dc74bda91678123060c053d8f9/part08-Part08_10.IOweYou%2Fsrc%2Fmain%2Fjava%2FIOU.java",
+            "contents_url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/contents/part08-Part08_10.IOweYou%2Fsrc%2Fmain%2Fjava%2FIOU.java?ref=35e8f5b30dac09dc74bda91678123060c053d8f9",
+            "patch": "@@ -0,0 +1,25 @@\n+\n+import java.util.HashMap;\n+\n+public class IOU {\n+/*The IOU does not care about old debt. When you set a new sum owed to a person \n+  when there is some money already owed to the same person, the old debt is forgotten.*/\n+    private HashMap<String, Double> owed;\n+\n+    public IOU() {\n+        this.owed = new HashMap<>();\n+    }\n+\n+//saves the amount owed and the person owed to to the IOU.\n+    public void setSum(String toWhom, double amount) {\n+        this.owed.put(toWhom, amount);\n+    }\n+\n+//returns the amount owed to the person whose name is given as a parameter. If the person\n+    public double howMuchDoIOweTo(String toWhom) {\n+        // getOrDefault returns 0.0 if toWhom is not know\n+        // eliminated nullPointerException\n+      return  this.owed.getOrDefault(toWhom,0.0);\n+    }\n+\n+}"
+        },
+        {
+            "sha": "341fb9a48bd719d6d066b3ee5f5ac1e72b730f5e",
+            "filename": "part08-Part08_10.IOweYou/src/main/java/Main.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/blob/35e8f5b30dac09dc74bda91678123060c053d8f9/part08-Part08_10.IOweYou%2Fsrc%2Fmain%2Fjava%2FMain.java",
+            "raw_url": "https://github.com/RichiCod3s/mooc-java-programming-ii/raw/35e8f5b30dac09dc74bda91678123060c053d8f9/part08-Part08_10.IOweYou%2Fsrc%2Fmain%2Fjava%2FMain.java",
+            "contents_url": "https://api.github.com/repos/RichiCod3s/mooc-java-programming-ii/contents/part08-Part08_10.IOweYou%2Fsrc%2Fmain%2Fjava%2FMain.java?ref=35e8f5b30dac09dc74bda91678123060c053d8f9",
+            "patch": "@@ -3,5 +3,12 @@ public class Main {\n \n     public static void main(String[] args) {\n         // Test your program here\n+        IOU mattsIOU = new IOU();\n+        mattsIOU.setSum(\"Arthur\", 51.5);\n+        mattsIOU.setSum(\"Michael\", 30);\n+\n+        System.out.println(mattsIOU.howMuchDoIOweTo(\"Arthur\"));\n+        System.out.println(mattsIOU.howMuchDoIOweTo(\"Michael\"));\n+        System.out.println(mattsIOU.howMuchDoIOweTo(\"Paul\")); // defaults t0 0.0\n     }\n }"
+        }
+    ]
+}

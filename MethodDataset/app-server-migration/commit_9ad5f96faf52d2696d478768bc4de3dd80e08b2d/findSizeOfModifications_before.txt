@@ -1,0 +1,12 @@
+    private int findSizeOfModifications(boolean excludeSQL) {
+        int totalModifications = 0;
+        if (this.modifications != null) {
+            if(excludeSQL) {
+                totalModifications = (int) this.modifications.keySet().stream().
+                        filter(codeMetaData -> !codeMetaData.getLanguage().equals(IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage())).count();
+            } else {
+                totalModifications = this.modifications.size();
+            }
+        }
+        return totalModifications;
+    }

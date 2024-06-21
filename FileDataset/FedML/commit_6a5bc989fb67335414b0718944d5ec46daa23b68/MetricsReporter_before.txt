@@ -1,0 +1,24 @@
+    public void reportSystemMetric(final long runId, final long edgeId) {
+        final String topicSysMetrics = "fl_client/mlops/system_performance";
+        JSONObject jsonObject = new JSONObject();
+        final SysStats sysStats = SysStats.getInstance();
+        try {
+            jsonObject.put("run_id", runId);
+            jsonObject.put("edge_id", edgeId);
+            jsonObject.put("cpu_utilization", sysStats.getCpuUtilization());
+            jsonObject.put("process_cpu_threads_in_use", sysStats.getProcessCpuThreadsInUse());
+            SysStats.MemoryStats memoryStats = sysStats.getMemoryInfo();
+            if (memoryStats != null) {
+                jsonObject.put("SystemMemoryUtilization", memoryStats.getMemoryUtilization());
+                jsonObject.put("process_memory_in_use", memoryStats.getMemoryInUse());
+                jsonObject.put("process_memory_in_use_size", memoryStats.getMemoryInUseSize());
+                jsonObject.put("process_memory_available", memoryStats.getMemoryAvailable());
+            }
+            jsonObject.put("disk_utilization", sysStats.getDiskUtilization());
+            jsonObject.put("network_traffic", sysStats.getNetworkTraffic());
+        } catch (JSONException e) {
+            LogHelper.e(e, "reportSystemMetric(%s)", edgeId);
+        }
+        edgeCommunicator.sendMessage(topicSysMetrics, jsonObject.toString());
+    }
+

@@ -1,0 +1,16 @@
+    public void removeAll(Collection<String> users) {
+        if (users != null) {
+            for (String user : users) {
+                this.removeAll(user);
+            }
+        }
+    }
+
+    public void removeAll(Collection<String> users, String group) {
+        if (users != null) {
+            for (String user : users) {
+                this.removeAll(user, group);
+            }
+        }
+    }
+

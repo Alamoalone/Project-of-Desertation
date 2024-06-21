@@ -1,0 +1,30 @@
+	protected JPanel createListPanel(Depot t) {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(1, 4));
+		panel.add(new Label(t.toString()));
+		UButton editButton = new UButton("Détailler");
+		editButton.addActionListener(e -> {
+			displayView(true);
+			clear();
+			mainPanel.add(createEditPanel(t));
+			refresh();
+		});
+		UButton deleteButton = new UButton("Supprimer");
+		UButton archiveButton = new UButton(t.isArchived ? "Désarchiver" : "Archiver");
+		deleteButton.addActionListener(e -> {
+			t.delete();
+			Depot.getFromDatabase();
+			displayView(false);
+		});
+		archiveButton.addActionListener(e -> {
+			t.isArchived = !t.isArchived;
+			Depot.update(t);
+			Depot.getFromDatabase();
+			displayView(false);
+		});
+
+		panel.add(editButton);
+		panel.add(deleteButton);
+		panel.add(archiveButton);
+		return panel;
+	}

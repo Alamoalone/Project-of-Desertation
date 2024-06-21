@@ -1,0 +1,98 @@
+{
+    "sha": "be59932425ed113db0ac2c8bd555cbc2e342ac7c",
+    "node_id": "C_kwDOAfXxwNoAKGJlNTk5MzI0MjVlZDExM2RiMGFjMmM4YmQ1NTVjYmMyZTM0MmFjN2M",
+    "commit": {
+        "author": {
+            "name": "Averi Kitsch",
+            "email": "akitsch@google.com",
+            "date": "2023-09-18T16:25:37Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-09-18T16:25:37Z"
+        },
+        "message": "chore: add assert statement to fix null pointer exception (#8646)",
+        "tree": {
+            "sha": "fd96765778636920804161015b297e40631260fb",
+            "url": "https://api.github.com/repos/GoogleCloudPlatform/java-docs-samples/git/trees/fd96765778636920804161015b297e40631260fb"
+        },
+        "url": "https://api.github.com/repos/GoogleCloudPlatform/java-docs-samples/git/commits/be59932425ed113db0ac2c8bd555cbc2e342ac7c",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlCHoBCRBK7hj4Ov3rIwAAw0cIAJnBrbgoxw8/mfjVJ6LdzbNb\nXL1B9QvdlktzR0ioqk3s3W3883TmpHknMkHF7E+agohTzl5rNfzYmoKUwW86QUke\nDOEA+hJjFaSRNXsMJKlpkPjQcRcBIAKOyMjGF7qY+WGt2QrgIbkT4lM2ASkvoJih\nYLnIbYOwofr+/RDtTXimkNW7ORIxFAQJR02Ql2DT7SR0xmdLEngzj0n1qWw6qIqi\nmNEQ6EMkJNQ4wtSvBFrFsje1QdGxq3C8mW2eBwQxj0OJ+NBOaN6v3xV0K0lPdgAu\nQLuGE9p/Acr9sjIeleekWSOAZqS+8mQ3bo47eqbpiA2qyMfnn7DzQf50nfwBw0A=\n=qP69\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree fd96765778636920804161015b297e40631260fb\nparent 44833e1c8bf0dafd33759e02f603678b3b70dc91\nauthor Averi Kitsch <akitsch@google.com> 1695054337 -0700\ncommitter GitHub <noreply@github.com> 1695054337 -0700\n\nchore: add assert statement to fix null pointer exception (#8646)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/GoogleCloudPlatform/java-docs-samples/commits/be59932425ed113db0ac2c8bd555cbc2e342ac7c",
+    "html_url": "https://github.com/GoogleCloudPlatform/java-docs-samples/commit/be59932425ed113db0ac2c8bd555cbc2e342ac7c",
+    "comments_url": "https://api.github.com/repos/GoogleCloudPlatform/java-docs-samples/commits/be59932425ed113db0ac2c8bd555cbc2e342ac7c/comments",
+    "author": {
+        "login": "averikitsch",
+        "id": 6519888,
+        "node_id": "MDQ6VXNlcjY1MTk4ODg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6519888?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/averikitsch",
+        "html_url": "https://github.com/averikitsch",
+        "followers_url": "https://api.github.com/users/averikitsch/followers",
+        "following_url": "https://api.github.com/users/averikitsch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/averikitsch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/averikitsch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/averikitsch/subscriptions",
+        "organizations_url": "https://api.github.com/users/averikitsch/orgs",
+        "repos_url": "https://api.github.com/users/averikitsch/repos",
+        "events_url": "https://api.github.com/users/averikitsch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/averikitsch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "44833e1c8bf0dafd33759e02f603678b3b70dc91",
+            "url": "https://api.github.com/repos/GoogleCloudPlatform/java-docs-samples/commits/44833e1c8bf0dafd33759e02f603678b3b70dc91",
+            "html_url": "https://github.com/GoogleCloudPlatform/java-docs-samples/commit/44833e1c8bf0dafd33759e02f603678b3b70dc91"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "391e6b92f67641c063d2862338db83f681fdbb86",
+            "filename": "container-registry/container-analysis/src/test/java/com/example/containeranalysis/SamplesTest.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/GoogleCloudPlatform/java-docs-samples/blob/be59932425ed113db0ac2c8bd555cbc2e342ac7c/container-registry%2Fcontainer-analysis%2Fsrc%2Ftest%2Fjava%2Fcom%2Fexample%2Fcontaineranalysis%2FSamplesTest.java",
+            "raw_url": "https://github.com/GoogleCloudPlatform/java-docs-samples/raw/be59932425ed113db0ac2c8bd555cbc2e342ac7c/container-registry%2Fcontainer-analysis%2Fsrc%2Ftest%2Fjava%2Fcom%2Fexample%2Fcontaineranalysis%2FSamplesTest.java",
+            "contents_url": "https://api.github.com/repos/GoogleCloudPlatform/java-docs-samples/contents/container-registry%2Fcontainer-analysis%2Fsrc%2Ftest%2Fjava%2Fcom%2Fexample%2Fcontaineranalysis%2FSamplesTest.java?ref=be59932425ed113db0ac2c8bd555cbc2e342ac7c",
+            "patch": "@@ -18,6 +18,7 @@\n \n import static java.lang.Thread.sleep;\n import static org.junit.Assert.assertEquals;\n+import static org.junit.Assert.assertNotNull;\n import static org.junit.Assert.assertTrue;\n \n import com.google.api.gax.rpc.AlreadyExistsException;\n@@ -60,7 +61,7 @@\n @RunWith(JUnit4.class)\n @SuppressWarnings(\"checkstyle:abbreviationaswordinname\")\n public class SamplesTest {\n-  \n+\n   private static final String PROJECT_ID = System.getenv(\"GOOGLE_CLOUD_PROJECT\");\n   private static final String subId = \"CA-Occurrences-\" + (new Date()).getTime();\n   private String noteId;\n@@ -288,6 +289,7 @@ public void testPollDiscoveryOccurrenceFinished() throws Exception {\n       attempt += 1;\n       sleep(3 * SLEEP_TIME * Math.round((Math.pow(2, attempt - 1))));\n     }\n+    assertNotNull(\"Polling failed.\", found);\n     AnalysisStatus foundStatus = found.getDiscovery().getAnalysisStatus();\n     assertEquals(foundStatus, AnalysisStatus.FINISHED_SUCCESS);\n "
+        }
+    ]
+}

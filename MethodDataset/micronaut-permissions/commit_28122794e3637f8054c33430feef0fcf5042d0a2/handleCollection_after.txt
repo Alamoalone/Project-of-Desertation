@@ -1,0 +1,7 @@
+    public void handleCollection(@Body HandleCollectionRequest handleCollectionRequest) {
+        List<Post> posts = handleCollectionRequest.getIds() != null ? handleCollectionRequest.getIds()
+            .stream()
+            .map(postRepository::get)
+            .collect(Collectors.toList()) : null;
+        postService.handleCollection(posts);
+    }

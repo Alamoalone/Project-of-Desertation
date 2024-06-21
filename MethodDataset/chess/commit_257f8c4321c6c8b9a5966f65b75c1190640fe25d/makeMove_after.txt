@@ -1,0 +1,19 @@
+    public void makeMove(ChessMove move) throws InvalidMoveException {
+        Collection<ChessMove> validPieceMoves = this.validMoves(move.getStartPosition());
+        if(validPieceMoves.contains(move)){
+            if(move.getPromotionPiece() == null) {
+                this.board.addPiece(move.getEndPosition(), this.board.getPiece(move.getStartPosition()));
+                this.board.addPiece(move.getStartPosition(), null);
+            } else{
+                this.board.addPiece(move.getEndPosition(), new ChessPiece(this.teamTurn, move.getPromotionPiece()));
+                this.board.addPiece(move.getStartPosition(), null);
+            }
+            if(this.teamTurn == TeamColor.WHITE){
+                this.teamTurn = TeamColor.BLACK;
+            } else{
+                this.teamTurn = TeamColor.WHITE;
+            }
+        } else{
+            throw new InvalidMoveException();
+        }
+    }

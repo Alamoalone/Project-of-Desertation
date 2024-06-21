@@ -1,0 +1,122 @@
+{
+    "sha": "0cabc6979042baa4870fef90649a168bb6eb3e46",
+    "node_id": "C_kwDOKTDXldoAKDBjYWJjNjk3OTA0MmJhYTQ4NzBmZWY5MDY0OWExNjhiYjZlYjNlNDY",
+    "commit": {
+        "author": {
+            "name": "marie-lourdes",
+            "email": "marielourdesleperlier64@gmail.com",
+            "date": "2023-10-19T18:36:58Z"
+        },
+        "committer": {
+            "name": "marie-lourdes",
+            "email": "marielourdesleperlier64@gmail.com",
+            "date": "2023-10-19T18:36:58Z"
+        },
+        "message": "PersonService: add in all method throw null pointer exception and throws null pointer exception on each methods",
+        "tree": {
+            "sha": "5361094f9f445c16f8b78660046c7a8e13eee64f",
+            "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/git/trees/5361094f9f445c16f8b78660046c7a8e13eee64f"
+        },
+        "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/git/commits/0cabc6979042baa4870fef90649a168bb6eb3e46",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commits/0cabc6979042baa4870fef90649a168bb6eb3e46",
+    "html_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commit/0cabc6979042baa4870fef90649a168bb6eb3e46",
+    "comments_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commits/0cabc6979042baa4870fef90649a168bb6eb3e46/comments",
+    "author": {
+        "login": "marie-lourdes",
+        "id": 101858408,
+        "node_id": "U_kgDOBhI8aA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101858408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marie-lourdes",
+        "html_url": "https://github.com/marie-lourdes",
+        "followers_url": "https://api.github.com/users/marie-lourdes/followers",
+        "following_url": "https://api.github.com/users/marie-lourdes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marie-lourdes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marie-lourdes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marie-lourdes/subscriptions",
+        "organizations_url": "https://api.github.com/users/marie-lourdes/orgs",
+        "repos_url": "https://api.github.com/users/marie-lourdes/repos",
+        "events_url": "https://api.github.com/users/marie-lourdes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marie-lourdes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "marie-lourdes",
+        "id": 101858408,
+        "node_id": "U_kgDOBhI8aA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/101858408?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/marie-lourdes",
+        "html_url": "https://github.com/marie-lourdes",
+        "followers_url": "https://api.github.com/users/marie-lourdes/followers",
+        "following_url": "https://api.github.com/users/marie-lourdes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/marie-lourdes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/marie-lourdes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/marie-lourdes/subscriptions",
+        "organizations_url": "https://api.github.com/users/marie-lourdes/orgs",
+        "repos_url": "https://api.github.com/users/marie-lourdes/repos",
+        "events_url": "https://api.github.com/users/marie-lourdes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/marie-lourdes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0264e85505500ea670f9fe3c6b3568659d0d59c5",
+            "url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commits/0264e85505500ea670f9fe3c6b3568659d0d59c5",
+            "html_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/commit/0264e85505500ea670f9fe3c6b3568659d0d59c5"
+        }
+    ],
+    "stats": {
+        "total": 82,
+        "additions": 54,
+        "deletions": 28
+    },
+    "files": [
+        {
+            "sha": "611d0c55b901f52ecb7c7294e5fae23024ca2d9a",
+            "filename": "src/main/java/com/safetynet/api/controller/PersonController.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 9,
+            "changes": 25,
+            "blob_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/blob/0cabc6979042baa4870fef90649a168bb6eb3e46/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fcontroller%2FPersonController.java",
+            "raw_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/raw/0cabc6979042baa4870fef90649a168bb6eb3e46/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fcontroller%2FPersonController.java",
+            "contents_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/contents/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fcontroller%2FPersonController.java?ref=0cabc6979042baa4870fef90649a168bb6eb3e46",
+            "patch": "@@ -14,6 +14,7 @@\n import org.springframework.web.bind.annotation.ResponseBody;\n import org.springframework.web.bind.annotation.RestController;\n \n+import com.safetynet.api.model.FireStation;\n import com.safetynet.api.model.Person;\n import com.safetynet.api.service.dataservice.PersonService;\n import com.safetynet.api.utils.IResponseHTTPEmpty;\n@@ -45,23 +46,29 @@ public ResponseEntity<?> updateOnePersonById(@RequestBody Person person, @PathVa\n \t\t\treturn returnResponseEntityEmptyAndCode404();\n \n \t\t}\n-\t\n \t}\n \n \t@DeleteMapping(\"/person/{id}\")\n-\tpublic ResponseEntity<Long> deleteOnePersonById(@PathVariable String id) {\n-\t\tboolean isPersonRemoved = personService.deleteOnePersonById(id);\n-\t\treturn isPersonRemoved ? new ResponseEntity<Long>(HttpStatus.NO_CONTENT)\n-\t\t\t\t: new ResponseEntity<Long>(HttpStatus.NOT_FOUND);\n+\tpublic ResponseEntity<Long> deleteOnePersonById(@PathVariable String id)  {\n+\t\t\n+\t\ttry {\n+\t\t\tpersonService.deleteOnePersonById(id);\n+\t\t\treturn new ResponseEntity<Long>(HttpStatus.NO_CONTENT);\n+\t\t} catch (NullPointerException e) {\n+\t\t\tSystem.out.println(e.getMessage());\n+\t\t\treturn new ResponseEntity<Long>(HttpStatus.NOT_FOUND);\n+\t\t}\t\n \t}\n \n \t@GetMapping(\"/person/{id}\")\n \tpublic ResponseEntity<?> getOnePerson(@PathVariable String id) {\n-\t\tPerson personFoundById = personService.getOnePersonById(id);\n-\t\tif (personFoundById != null) {\n+\t\tPerson personFoundById ;\t\t\n+\t\ttry {\n+\t\t\tpersonFoundById = personService.getOnePersonById(id);\n \t\t\treturn ResponseEntity.status(HttpStatus.OK).body(personFoundById);\n-\t\t} else {\n-\t\t\treturn  returnResponseEntityEmptyAndCode404();\n+\t\t} catch (NullPointerException e) {\n+\t\t\tSystem.out.println(e.getMessage());\n+\t\t\treturn returnResponseEntityEmptyAndCode404();\n \t\t}\n \t}\n "
+        },
+        {
+            "sha": "74d65cee115d1f9c9a59a58d68c7b247d45e0810",
+            "filename": "src/main/java/com/safetynet/api/service/dataservice/FireStationService.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 3,
+            "changes": 8,
+            "blob_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/blob/0cabc6979042baa4870fef90649a168bb6eb3e46/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Fdataservice%2FFireStationService.java",
+            "raw_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/raw/0cabc6979042baa4870fef90649a168bb6eb3e46/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Fdataservice%2FFireStationService.java",
+            "contents_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/contents/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Fdataservice%2FFireStationService.java?ref=0cabc6979042baa4870fef90649a168bb6eb3e46",
+            "patch": "@@ -96,13 +96,15 @@ public boolean deleteFireStationById(String id) throws NullPointerException {\n \t\t// log.debug(\"Deleting medical record for {} {}\", firstName, lastName);\n \t\tboolean result = false;\n \t\tresult = fireStations.removeIf(fireStation -> fireStation.getId().equals(id));\n-\t\t// log.info(\"firestation deleted by id with station number successfully for {}\n-\t\t// {}\", id);\n+\t\t\n \t\tif (!result) {\n \t\t\t// log.error(\"Failed to delete firestation for {} {}\", id);\n \t\t\tthrow new NullPointerException(\"this station number of firestation to remove doesn't exist\");\n+\t\t}else {\n+\t\t\t// log.info(\"firestation deleted by id with station number successfully for {}\n+\t\t\t// {}\", id);\n \t\t}\n-\n+\t\t\n \t\treturn result;\n \t}\n "
+        },
+        {
+            "sha": "618faa8ffb488d5420683a59521f3937e2d34fc5",
+            "filename": "src/main/java/com/safetynet/api/service/dataservice/PersonService.java",
+            "status": "modified",
+            "additions": 33,
+            "deletions": 16,
+            "changes": 49,
+            "blob_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/blob/0cabc6979042baa4870fef90649a168bb6eb3e46/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Fdataservice%2FPersonService.java",
+            "raw_url": "https://github.com/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/raw/0cabc6979042baa4870fef90649a168bb6eb3e46/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Fdataservice%2FPersonService.java",
+            "contents_url": "https://api.github.com/repos/marie-lourdes/leperlier-marie-lourdes-API-springboot-P5/contents/src%2Fmain%2Fjava%2Fcom%2Fsafetynet%2Fapi%2Fservice%2Fdataservice%2FPersonService.java?ref=0cabc6979042baa4870fef90649a168bb6eb3e46",
+            "patch": "@@ -6,6 +6,7 @@\n \n import org.springframework.stereotype.Service;\n \n+import com.safetynet.api.model.FireStation;\n import com.safetynet.api.model.Person;\n \n import lombok.RequiredArgsConstructor;\n@@ -35,50 +36,63 @@ public Person updatePerson(String id, Person updatedPerson) throws NullPointerEx\n \t\treturn \texistingPersonUpdated;\n \t}\n \n-\tpublic boolean deleteOnePersonById(String id) {\n+\tpublic boolean deleteOnePersonById(String id) throws NullPointerException  {\n \t\t// log.debug(\"Deleting medical record for {} {}\", firstName, lastName);\n \t\tboolean result = persons.removeIf(person -> person.getId().equals(id));\n-\t\tif (result) {\n-\t\t\t// log.info(\"Person deleted successfully for {} {}\", id);\n+\t\t\n+\t\tif (!result) {\n+\t\t\t// log.error(\"Failed to delete person for {} {}\", id);\t\t\n+\t\t\tthrow new NullPointerException(\"this person to remove doesn't exist\");\n \t\t} else {\n-\t\t\t// log.error(\"Failed to delete person for {} {}\", id);\n+\t\t\t// log.info(\"Person deleted successfully for {} {}\", id);\n \t\t}\n \t\treturn result;\n \t}\n \n-\tpublic Person getOnePersonById(String id) {\n-\t\treturn persons.stream().filter(person -> person.getId().equals(id)).findFirst().map(existingPerson -> {\n+\tpublic Person getOnePersonById(String id) throws NullPointerException {\n+\t\tPerson personFoundById = new Person();\n+\t\tpersonFoundById  = persons.stream().filter(person -> person.getId().equals(id)).findFirst().map(existingPerson -> {\n \t\t\treturn existingPerson;\n-\t\t}).orElse(null);\n+\t\t}).orElseThrow(() -> new NullPointerException(\"person not found with id\"));\n+\t\t\t\t\n+\t\treturn personFoundById ;\n \t}\n \n-\tpublic List<Person> getPersonsLastName(String lastName) {\n+\tpublic List<Person> getPersonsLastName(String lastName) throws NullPointerException {\n \t\tList<Person> personsFoundByLastName = new ArrayList<>();\n \t\tIterator<Person> itrPersons = persons.listIterator();\n \t\twhile (itrPersons.hasNext()) {\n \t\t\tPerson itrPerson = itrPersons.next();\n+\t\t\t\n \t\t\tif (itrPerson.getLastName().equals(lastName)) {\n \t\t\t\tpersonsFoundByLastName.add(itrPerson);\n-\t\t\t}\n+\t\t\t}\t\t\n+\t\t}\n+\n+\t\tif (personsFoundByLastName .isEmpty()) {\n+\t\t\tthrow new NullPointerException(\"person not found with lastName\");\n \t\t}\n \t\tSystem.out.println(\"personsFoundByLastName\" + personsFoundByLastName);\n \t\treturn personsFoundByLastName;\n \t}\n \n-\tpublic List<Person> getPersonsByAddress(String address) {\n+\tpublic List<Person> getPersonsByAddress(String address) throws NullPointerException  {\n \t\tList<Person> personsFoundByAddress = new ArrayList<>();\n \t\tIterator<Person> itrPersons = persons.listIterator();\n \t\twhile (itrPersons.hasNext()) {\n \t\t\tPerson itrPerson = itrPersons.next();\n \t\t\tif (itrPerson.getAddress().equals(address)) {\n \t\t\t\tpersonsFoundByAddress.add(itrPerson);\n-\t\t\t}\n+\t\t\t}\t\t\n+\t\t}\n+\t\tif (personsFoundByAddress .isEmpty()) {\n+\t\t\tthrow new NullPointerException(\"person not found with address\");\n \t\t}\n \t\tSystem.out.println(\"personsFoundByAddress\" + personsFoundByAddress);\n \t\treturn personsFoundByAddress;\n \t}\n \n-\tpublic List<Person> getPersonsByCity(String city) {\n+\tpublic List<Person> getPersonsByCity(String city) throws NullPointerException  {\n \t\tList<Person> personsFoundByCity = new ArrayList<>();\n \t\tIterator<Person> itrPersons = persons.listIterator();\n \t\twhile (itrPersons.hasNext()) {\n@@ -87,14 +101,17 @@ public List<Person> getPersonsByCity(String city) {\n \t\t\t\tpersonsFoundByCity.add(itrPerson);\n \t\t\t}\n \t\t}\n+\t\tif ( personsFoundByCity.isEmpty()) {\n+\t\t\tthrow new NullPointerException(\"person not found with city\");\n+\t\t}\n \t\tSystem.out.println(\"personsFoundByAddress\" + personsFoundByCity);\n \t\treturn personsFoundByCity;\n \t}\n \n-\tpublic List<Person> getAllPersons() {\n-\t\tif(persons ==null) {\n-    \t\treturn null;\n-    \t}\n+\tpublic List<Person> getAllPersons() throws NullPointerException {\n+\t\tif (persons.isEmpty()) {\n+\t\t\tthrow new NullPointerException(\"none person registered!\");\n+\t\t}\n \t\tSystem.out.println(\"Retrieving all persons\" + persons);\n \t\treturn persons;\n \t}"
+        }
+    ]
+}

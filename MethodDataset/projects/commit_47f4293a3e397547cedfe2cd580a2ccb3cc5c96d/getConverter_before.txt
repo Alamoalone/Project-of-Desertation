@@ -1,0 +1,3 @@
+    protected ImplicitMethods getConverter() {
+        return converter;
+    }

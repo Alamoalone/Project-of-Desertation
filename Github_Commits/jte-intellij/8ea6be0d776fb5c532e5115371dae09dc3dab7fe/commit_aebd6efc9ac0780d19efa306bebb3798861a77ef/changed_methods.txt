@@ -1,0 +1,1 @@
+handleContentChange(JtePsiJavaContent element, TextRange range, String newContent)

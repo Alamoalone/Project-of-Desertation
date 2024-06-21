@@ -1,0 +1,26 @@
+    public FormValidation doCheckAssignedLabelString(@QueryParameter String value) {
+        if (Util.fixEmpty(value) == null) {
+            return FormValidation.ok(); // nothing typed yet
+        }
+
+        try {
+            Label.parseExpression(value);
+        } catch (ANTLRException e) {
+            return FormValidation.error(e, MessageFormat.format("Invalid boolean expression: {0}", value));
+        }
+
+        Label l = Jenkins.getInstance().getLabel(value);
+
+        if (l.isEmpty()) {
+            for (LabelAtom a : l.listAtoms()) {
+                if (a.isEmpty()) {
+                    LabelAtom nearest = LabelAtom.findNearest(a.getName());
+                    String guess = MessageFormat.format("No agent/cloud matches this label expression. Did you mean ‘{1}’ instead of ‘{0}’?",
+                                                      a.getName(), nearest.getDisplayName());
+                    return FormValidation.warning(guess);
+                }
+            }
+            return FormValidation.warning("No agent/cloud matches this label expression.");
+        }
+        return FormValidation.ok();
+    }

@@ -1,0 +1,17 @@
+    private static Element buildVideoElement(Element videoElement) {
+        Element htmlElement = new Element("video");
+        String sourceURL = videoElement.attr("abs:src");
+        if (StringUtils.isEmpty(sourceURL)) {
+            Element sourceElement = findFirstChildElement(videoElement, "source");
+            sourceURL = sourceElement.attr("abs:src");
+            if (StringUtils.isEmpty(sourceURL)) return null;
+        }
+        if (sourceURL.startsWith("//")) sourceURL = String.format("http:%s", sourceURL);
+        htmlElement.attr("src", sourceURL);
+        String width = videoElement.attr("width");
+        if (!StringUtils.isEmpty(width)) htmlElement.attr("width", width);
+        String height = videoElement.attr("height");
+        if (!StringUtils.isEmpty(height)) htmlElement.attr("height", height);
+        return htmlElement;
+    }
+

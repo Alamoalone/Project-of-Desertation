@@ -1,0 +1,40 @@
+    public void setScroll(int currentScroll, int totalScroll) {
+        if (SHOW_DOT_PAGINATION.get()) {
+            animatePaginationToAlpha(VISIBLE_ALPHA);
+        }
+
+        if (mNumPages <= 1) {
+            mCurrentScroll = 0;
+            return;
+        }
+
+        if (mIsRtl) {
+            currentScroll = totalScroll - currentScroll;
+        }
+
+        mTotalScroll = totalScroll;
+
+        int scrollPerPage = totalScroll / (mNumPages - 1);
+        int pageToLeft = currentScroll / scrollPerPage;
+        int pageToLeftScroll = pageToLeft * scrollPerPage;
+        int pageToRightScroll = pageToLeftScroll + scrollPerPage;
+
+        float scrollThreshold = SHIFT_THRESHOLD * scrollPerPage;
+        if (currentScroll < pageToLeftScroll + scrollThreshold) {
+            // scroll is within the left page's threshold
+            animateToPosition(pageToLeft);
+            if (SHOW_DOT_PAGINATION.get()) {
+                hideAfterDelay();
+            }
+        } else if (currentScroll > pageToRightScroll - scrollThreshold) {
+            // scroll is far enough from left page to go to the right page
+            animateToPosition(pageToLeft + 1);
+            if (SHOW_DOT_PAGINATION.get()) {
+                hideAfterDelay();
+            }
+        } else {
+            // scroll is between left and right page
+            animateToPosition(pageToLeft + SHIFT_PER_ANIMATION);
+        }
+    }
+

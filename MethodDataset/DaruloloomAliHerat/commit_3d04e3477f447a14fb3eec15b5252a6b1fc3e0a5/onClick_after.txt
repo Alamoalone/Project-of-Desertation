@@ -1,0 +1,3 @@
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "ehsanullahhaidary@gmail.com", Toast.LENGTH_LONG).show();
+            }

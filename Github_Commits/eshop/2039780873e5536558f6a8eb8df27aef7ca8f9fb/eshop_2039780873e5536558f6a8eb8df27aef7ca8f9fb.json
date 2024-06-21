@@ -1,0 +1,110 @@
+{
+    "sha": "2039780873e5536558f6a8eb8df27aef7ca8f9fb",
+    "node_id": "C_kwDOLHGVztoAKDIwMzk3ODA4NzNlNTUzNjU1OGY2YThlYjhkZjI3YWVmN2NhOGY5ZmI",
+    "commit": {
+        "author": {
+            "name": "Dovydas Berzanskas",
+            "email": "dovydas.berzanskas@gmail.com",
+            "date": "2024-02-09T17:34:53Z"
+        },
+        "committer": {
+            "name": "Dovydas Berzanskas",
+            "email": "dovydas.berzanskas@gmail.com",
+            "date": "2024-02-09T17:34:53Z"
+        },
+        "message": "[ESHOP] fix null pointer exceptions in validation logic",
+        "tree": {
+            "sha": "c2ab9458e6ed7b4941f3b83f7e844bdf54240658",
+            "url": "https://api.github.com/repos/DovydasBerzanskas/eshop/git/trees/c2ab9458e6ed7b4941f3b83f7e844bdf54240658"
+        },
+        "url": "https://api.github.com/repos/DovydasBerzanskas/eshop/git/commits/2039780873e5536558f6a8eb8df27aef7ca8f9fb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/DovydasBerzanskas/eshop/commits/2039780873e5536558f6a8eb8df27aef7ca8f9fb",
+    "html_url": "https://github.com/DovydasBerzanskas/eshop/commit/2039780873e5536558f6a8eb8df27aef7ca8f9fb",
+    "comments_url": "https://api.github.com/repos/DovydasBerzanskas/eshop/commits/2039780873e5536558f6a8eb8df27aef7ca8f9fb/comments",
+    "author": {
+        "login": "DovydasBerzanskas",
+        "id": 148130199,
+        "node_id": "U_kgDOCNRJlw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/148130199?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DovydasBerzanskas",
+        "html_url": "https://github.com/DovydasBerzanskas",
+        "followers_url": "https://api.github.com/users/DovydasBerzanskas/followers",
+        "following_url": "https://api.github.com/users/DovydasBerzanskas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DovydasBerzanskas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DovydasBerzanskas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DovydasBerzanskas/subscriptions",
+        "organizations_url": "https://api.github.com/users/DovydasBerzanskas/orgs",
+        "repos_url": "https://api.github.com/users/DovydasBerzanskas/repos",
+        "events_url": "https://api.github.com/users/DovydasBerzanskas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DovydasBerzanskas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "DovydasBerzanskas",
+        "id": 148130199,
+        "node_id": "U_kgDOCNRJlw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/148130199?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DovydasBerzanskas",
+        "html_url": "https://github.com/DovydasBerzanskas",
+        "followers_url": "https://api.github.com/users/DovydasBerzanskas/followers",
+        "following_url": "https://api.github.com/users/DovydasBerzanskas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DovydasBerzanskas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DovydasBerzanskas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DovydasBerzanskas/subscriptions",
+        "organizations_url": "https://api.github.com/users/DovydasBerzanskas/orgs",
+        "repos_url": "https://api.github.com/users/DovydasBerzanskas/repos",
+        "events_url": "https://api.github.com/users/DovydasBerzanskas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DovydasBerzanskas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9f3a091fea131b66492521d776c6b7bc0e8e59b3",
+            "url": "https://api.github.com/repos/DovydasBerzanskas/eshop/commits/9f3a091fea131b66492521d776c6b7bc0e8e59b3",
+            "html_url": "https://github.com/DovydasBerzanskas/eshop/commit/9f3a091fea131b66492521d776c6b7bc0e8e59b3"
+        }
+    ],
+    "stats": {
+        "total": 18,
+        "additions": 15,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "31a1c5992b804773d4bd2e30b038dde459bb3c34",
+            "filename": "src/main/java/lt/codeacademy/eshop/validation/PasswordMatchValidator.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/DovydasBerzanskas/eshop/blob/2039780873e5536558f6a8eb8df27aef7ca8f9fb/src%2Fmain%2Fjava%2Flt%2Fcodeacademy%2Feshop%2Fvalidation%2FPasswordMatchValidator.java",
+            "raw_url": "https://github.com/DovydasBerzanskas/eshop/raw/2039780873e5536558f6a8eb8df27aef7ca8f9fb/src%2Fmain%2Fjava%2Flt%2Fcodeacademy%2Feshop%2Fvalidation%2FPasswordMatchValidator.java",
+            "contents_url": "https://api.github.com/repos/DovydasBerzanskas/eshop/contents/src%2Fmain%2Fjava%2Flt%2Fcodeacademy%2Feshop%2Fvalidation%2FPasswordMatchValidator.java?ref=2039780873e5536558f6a8eb8df27aef7ca8f9fb",
+            "patch": "@@ -4,10 +4,12 @@\n import jakarta.validation.ConstraintValidatorContext;\n import lt.codeacademy.eshop.user.dto.UserDto;\n \n+import java.util.Objects;\n+\n public class PasswordMatchValidator implements ConstraintValidator<RepeatPassword, UserDto> {\n \n     @Override\n     public boolean isValid(UserDto userDto, ConstraintValidatorContext context) {\n-        return userDto.getPassword().equals(userDto.getRepeatPassword());\n+        return Objects.nonNull(userDto.getPassword()) && userDto.getPassword().equals(userDto.getRepeatPassword());\n     }\n }"
+        },
+        {
+            "sha": "ec2bf022ae12f9ffd0a1048f0c28e049c6a0029d",
+            "filename": "src/main/java/lt/codeacademy/eshop/validation/PhoneNumberValidator.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 2,
+            "changes": 14,
+            "blob_url": "https://github.com/DovydasBerzanskas/eshop/blob/2039780873e5536558f6a8eb8df27aef7ca8f9fb/src%2Fmain%2Fjava%2Flt%2Fcodeacademy%2Feshop%2Fvalidation%2FPhoneNumberValidator.java",
+            "raw_url": "https://github.com/DovydasBerzanskas/eshop/raw/2039780873e5536558f6a8eb8df27aef7ca8f9fb/src%2Fmain%2Fjava%2Flt%2Fcodeacademy%2Feshop%2Fvalidation%2FPhoneNumberValidator.java",
+            "contents_url": "https://api.github.com/repos/DovydasBerzanskas/eshop/contents/src%2Fmain%2Fjava%2Flt%2Fcodeacademy%2Feshop%2Fvalidation%2FPhoneNumberValidator.java?ref=2039780873e5536558f6a8eb8df27aef7ca8f9fb",
+            "patch": "@@ -3,6 +3,8 @@\n import jakarta.validation.ConstraintValidator;\n import jakarta.validation.ConstraintValidatorContext;\n \n+import java.util.Objects;\n+\n public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber, String> {\n \n     private PhoneNumberType type;\n@@ -15,9 +17,17 @@ public void initialize(PhoneNumber constraintAnnotation) {\n     @Override\n     public boolean isValid(String value, ConstraintValidatorContext context) {\n         if (type.equals(PhoneNumberType.GLOBAL)) {\n-            return value.startsWith(\"+370\") && value.length() == 12;\n+            return isValidPrefixGlobal(value);\n         } else {\n-            return value.startsWith(\"86\") && value.length() == 9;\n+            return isValidPrefixLocal(value);\n         }\n     }\n+\n+    private boolean isValidPrefixGlobal(final String phoneNumber) {\n+        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith(\"+370\") && phoneNumber.length() == 12;\n+    }\n+\n+    private boolean isValidPrefixLocal(final String phoneNumber) {\n+        return Objects.nonNull(phoneNumber) && phoneNumber.startsWith(\"86\") && phoneNumber.length() == 9;\n+    }\n }"
+        }
+    ]
+}

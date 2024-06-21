@@ -1,0 +1,31 @@
+    public void confirmMovieEdit() {
+        if(validEntryChecker()) {
+            boolean dbUpdateSuccessful = Utility.UpdateMovieInDB(currentMovieId,
+                    changedName,
+                    changedYear,
+                    changedLength,
+                    changedFsk,
+                    changedRating,
+                    changedGenres,
+                    changedDirectors,
+                    changedCount,
+                    changedStudio,
+                    changedActors,
+                    changedLinkToCover,
+                    changedComment,
+                    changedType);
+            if (dbUpdateSuccessful) {
+                lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_SUCCESSFUL);
+                lbl_movieEditSaveFeedback.setStyle("-fx-text-fill: #518E21");
+                lbl_movieEditSaveFeedback.setVisible(true);
+            } else {
+                lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_WENT_WRONG);
+                lbl_movieEditSaveFeedback.setStyle("-fx-text-fill: #FF4040");
+                lbl_movieEditSaveFeedback.setVisible(true);
+            }
+        } else {
+            lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_FAILED);
+            lbl_movieEditSaveFeedback.setStyle("-fx-text-fill: #FF4040");
+            lbl_movieEditSaveFeedback.setVisible(true);
+        }
+    }

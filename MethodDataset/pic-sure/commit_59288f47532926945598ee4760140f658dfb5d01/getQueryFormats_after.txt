@@ -1,0 +1,6 @@
+	public List<QueryFormat> getQueryFormats() {
+		if(queryFormats == null) {
+			queryFormats = new ArrayList<>();
+		}
+		return queryFormats;
+	}

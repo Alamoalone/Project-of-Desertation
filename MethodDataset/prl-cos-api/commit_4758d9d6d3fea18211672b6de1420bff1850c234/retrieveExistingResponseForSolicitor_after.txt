@@ -1,0 +1,119 @@
+    private void retrieveExistingResponseForSolicitor(CallbackRequest callbackRequest, Map<String,
+        Object> caseDataUpdated, Element<PartyDetails> solicitorRepresentedRespondent) {
+        String invokedEvent = callbackRequest.getEventId().substring(0, callbackRequest.getEventId().length() - 1);
+        RespondentSolicitorEvents.getCaseFieldName(invokedEvent).ifPresent(event -> {
+            switch (event) {
+                case CONSENT:
+                    caseDataUpdated.put(
+                        event.getCaseFieldName(),
+                        solicitorRepresentedRespondent.getValue().getResponse().getConsent()
+                    );
+                    break;
+                case KEEP_DETAILS_PRIVATE:
+                    caseDataUpdated.put(
+                        event.getCaseFieldName(),
+                        solicitorRepresentedRespondent.getValue().getResponse().getKeepDetailsPrivate()
+                    );
+                    break;
+                case CONFIRM_EDIT_CONTACT_DETAILS:
+                    CitizenDetails citizenDetails = solicitorRepresentedRespondent.getValue().getResponse().getCitizenDetails();
+                    PartyDetails partyDetails = solicitorRepresentedRespondent.getValue();
+                    caseDataUpdated.put(
+                        event.getCaseFieldName(),
+                        CitizenDetails.builder()
+                            .address(ofNullable(citizenDetails.getAddress()).orElse(partyDetails.getAddress()))
+                            .addressHistory(ofNullable(citizenDetails.getAddressHistory()).orElse(
+                                AddressHistory.builder().isAtAddressLessThan5Years(partyDetails.getIsAtAddressLessThan5Years())
+                                    .build()
+                            ))
+                            .contact(ofNullable(citizenDetails.getContact()).orElse(Contact.builder()
+                                                                                                 .phoneNumber(
+                                                                                                     partyDetails
+                                                                                                         .getPhoneNumber())
+                                                                                                 .email(partyDetails.getEmail())
+                                                                                                 .build()))
+                            .dateOfBirth(ofNullable(citizenDetails.getDateOfBirth()).orElse(partyDetails.getDateOfBirth()))
+                            .firstName(ofNullable(citizenDetails.getFirstName()).orElse(partyDetails.getFirstName()))
+                            .lastName(ofNullable(citizenDetails.getLastName()).orElse(partyDetails.getLastName()))
+                            .placeOfBirth(ofNullable(citizenDetails.getPlaceOfBirth()).orElse(partyDetails.getPlaceOfBirth()))
+                            .previousName(ofNullable(citizenDetails.getPreviousName()).orElse(partyDetails.getPreviousName()))
+                            .build()
+                    );
+                    break;
+                case ATTENDING_THE_COURT:
+                    caseDataUpdated.put(
+                        event.getCaseFieldName(),
+                        solicitorRepresentedRespondent.getValue().getResponse().getAttendToCourt()
+                    );
+                    break;
+                case MIAM:
+                    String[] miamFields = event.getCaseFieldName().split(",");
+                    caseDataUpdated.put(
+                        miamFields[0],
+                        solicitorRepresentedRespondent.getValue().getResponse().getMiam()
+                    );
+                    caseDataUpdated.put(miamFields[1], miamService.getCollapsableOfWhatIsMiamPlaceHolder());
+                    caseDataUpdated.put(
+                        miamFields[2],
+                        miamService.getCollapsableOfHelpMiamCostsExemptionsPlaceHolder()
+                    );
+                    break;
+                case CURRENT_OR_PREVIOUS_PROCEEDINGS:
+                    String[] proceedingsFields = event.getCaseFieldName().split(",");
+                    caseDataUpdated.put(
+                        proceedingsFields[0],
+                        solicitorRepresentedRespondent.getValue().getResponse().getCurrentOrPastProceedingsForChildren()
+                    );
+                    caseDataUpdated.put(
+                        proceedingsFields[1],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentExistingProceedings()
+                    );
+                    break;
+                case ALLEGATION_OF_HARM:
+                    String[] allegationsOfHarmFields = event.getCaseFieldName().split(",");
+                    caseDataUpdated.put(
+                        allegationsOfHarmFields[0],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentAllegationsOfHarmData().getRespAohYesOrNo()
+                    );
+                    caseDataUpdated.put(
+                        allegationsOfHarmFields[1],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentAllegationsOfHarmData().getRespAllegationsOfHarmInfo()
+                    );
+                    caseDataUpdated.put(
+                        allegationsOfHarmFields[2],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentAllegationsOfHarmData().getRespDomesticAbuseInfo()
+                    );
+                    caseDataUpdated.put(
+                        allegationsOfHarmFields[3],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentAllegationsOfHarmData().getRespChildAbuseInfo()
+                    );
+                    caseDataUpdated.put(
+                        allegationsOfHarmFields[4],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentAllegationsOfHarmData().getRespChildAbductionInfo()
+                    );
+                    caseDataUpdated.put(
+                        allegationsOfHarmFields[5],
+                        solicitorRepresentedRespondent.getValue().getResponse().getRespondentAllegationsOfHarmData().getRespOtherConcernsInfo()
+                    );
+                    break;
+                case INTERNATIONAL_ELEMENT:
+                    String[] internationalElementFields = event.getCaseFieldName().split(",");
+                    caseDataUpdated.put(
+                        internationalElementFields[0],
+                        solicitorRepresentedRespondent.getValue().getResponse().getCitizenInternationalElements()
+                    );
+                    break;
+                case ABILITY_TO_PARTICIPATE:
+                    String[] abilityToParticipateFields = event.getCaseFieldName().split(",");
+                    caseDataUpdated.put(
+                        abilityToParticipateFields[0],
+                        solicitorRepresentedRespondent.getValue().getResponse().getAbilityToParticipate()
+                    );
+                    break;
+                case VIEW_DRAFT_RESPONSE:
+                case SUBMIT:
+                default:
+                    break;
+            }
+        });
+    }

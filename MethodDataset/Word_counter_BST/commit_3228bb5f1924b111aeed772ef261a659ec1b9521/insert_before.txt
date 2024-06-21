@@ -1,0 +1,47 @@
+    public void insert(String string, boolean origin) {
+        WordFreqTreeNode newWordNode = new WordFreqTreeNode(string);
+        String newRoot = newWordNode.getWordFreqObj().getRoot();
+
+        if (head == null) {
+            head = newWordNode;
+            if (newRoot != null)
+                WordFreq.rootWords.insertAtBack(newRoot);
+            return ;
+        }
+
+        WordFreqTreeNode nodeIter = head;
+        while (true) {
+            boolean equalsIgnorePostfix = false;
+            if (!origin && nodeIter.getWordFreqObj().getType() != null && newWordNode.getWordFreqObj().getType() != null) {
+                if (WordFreq.rootWords.containsString(newRoot) && (nodeIter.getWordFreqObj().getWord().equals(string) || (nodeIter.getWordFreqObj().getRoot().equals(newRoot)) && string.length() > 3) // the root exist, so we need to increase the frequency
+                        && nodeIter.getWordFreqObj().containsType(newWordNode.getWordFreqObj().getType())) { //nouns and adjectives are being mixed
+                            equalsIgnorePostfix = true;
+                }
+            }
+
+            if (nodeIter.compareTo(newWordNode) == 0 || equalsIgnorePostfix) {
+                nodeIter.getWordFreqObj().increaseFrequency();
+                ++totalWords;
+                // if (!nodeIter.getWordFreqObj().getWord().equals(string)) //todo next patch: check for wrong equivalents
+                    //System.out.println(nodeIter.getWordFreqObj().getWord() + "  " + string);
+                return ;
+            } else {
+                WordFreqTreeNode childNode = (nodeIter.compareTo(newWordNode) < 0) ? nodeIter.getRight() : nodeIter.getLeft();
+                if (childNode == null) {
+                    ++totalWords;
+                    if (nodeIter.compareTo(newWordNode) < 0) {
+                        nodeIter.setRight(newWordNode);
+                    } else {
+                        nodeIter.setLeft(newWordNode);
+                    }
+                    newWordNode.setParent(nodeIter);
+                    newWordNode.subtreeIncrease();
+                    if (newRoot != null)
+                        WordFreq.rootWords.insertAtBack(newRoot);   //if the stringRoot has been found but does not exist it must be added to the list
+                    return;
+                } else {
+                    nodeIter = childNode;
+                }
+            }
+        }
+    }

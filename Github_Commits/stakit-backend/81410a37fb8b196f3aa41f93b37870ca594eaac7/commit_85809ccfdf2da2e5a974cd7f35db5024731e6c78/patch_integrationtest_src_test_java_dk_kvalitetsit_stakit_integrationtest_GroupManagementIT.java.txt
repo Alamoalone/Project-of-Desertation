@@ -1,0 +1,26 @@
+@@ -267,4 +267,25 @@ public void testGetServicesInGroup() throws ApiException {
+         assertEquals(input2.getGroup(), serv2.getGroup());
+         assertEquals(input2.getDescription(), serv2.getDescription());
+     }
++
++    @Test
++    public void testCreateAndGetGroupNullDisplay() throws ApiException {
++        var input = new GroupInput();
++        input.setName("name");
++        input.setDisplayOrder(20);
++        input.setDescription("description");
++        var response = groupManagementApi.v1GroupsPostWithHttpInfo(input);
++        assertEquals(201, response.getStatusCode());
++
++        var uuid = response.getData().getUuid();
++        assertEquals(uuid.toString(), response.getHeaders().get("Location").get(0));
++
++        var result = groupManagementApi.v1GroupsGet();
++        assertNotNull(result);
++        assertTrue(result.stream().anyMatch(x ->
++                input.getDisplayOrder().equals(x.getDisplayOrder()) &&
++                input.getName().equals(x.getName()) &&
++                input.getDescription().equals(x.getDescription()) &&
++                x.getDisplay()));
++    }
+ }

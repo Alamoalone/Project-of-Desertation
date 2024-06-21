@@ -1,0 +1,86 @@
+	private static String toReadableString(String text) {
+		StringBuffer sb = new StringBuffer();
+		char extendChar = 0;
+		char inlineChar = 0;
+		ByteBuffer bb = ByteBuffer.allocate(12).order(ByteOrder.LITTLE_ENDIAN);
+		
+		for(int i=0;i<text.length();i++) {
+			char c = text.charAt(i);
+			if (extendChar==0 && inlineChar==0 && c>31) {
+				sb.append(c);
+			} else if (extendChar!=0) {
+				if (c==extendChar) {
+					sb.append(new String(bb.array(), StandardCharsets.US_ASCII).trim()+"[/EXT("+(int)c+")]");
+					((Buffer)bb).clear();	// Java9 이후와 호환을 위해
+					extendChar=0;
+				} else {
+					bb.putChar(c);
+				}
+			} else if (inlineChar!=0) {
+				if (c==inlineChar) {
+					switch(c) {
+					case 9:
+						sb.append(HwpRecord.toHexString(bb.array())+"[/INL("+(int)c+")]"); 
+						break;
+					default:
+						sb.append(new String(bb.array(), StandardCharsets.US_ASCII).trim()+"[/INL("+(int)c+")]");
+					}
+					((Buffer)bb).clear();	// Java9 이후와 호환을 위해
+					inlineChar=0;
+				} else {
+					bb.putChar(c);
+				}
+			} else if (c <= 31) {
+				switch(c) {
+				case 13:
+					sb.append("[END]");
+					break;
+				case 0:
+				case 10:
+				case 24:
+				case 25:
+				case 26:
+				case 27:
+				case 28:
+				case 29:
+				case 30:
+				case 31:
+					sb.append("[CHAR("+(int)c+")]");
+					break;
+				case 1:
+				case 2:
+				case 3:
+				case 11:
+				case 12:
+				case 14:
+				case 15:
+				case 16:
+				case 17:
+				case 18:
+				case 21:
+				case 22:
+				case 23:
+					sb.append("[EXT("+(int)c+")]");
+					((Buffer)bb).clear();	// Java9 이후와 호환을 위해
+					extendChar = c;
+					break;
+				case 4:
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+				case 19:
+				case 20:
+					sb.append("[INL("+(int)c+")]");
+					((Buffer)bb).clear();	// Java9 이후와 호환을 위해
+					inlineChar = c;
+					break;
+				default:
+					bb.putChar(c);
+				}
+			}
+		}
+		return sb.toString();
+	}
+

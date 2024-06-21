@@ -1,0 +1,3 @@
+    public static GroupModel mapUpdateGroup(UUID uuid, GroupInput from) {
+        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay(), from.getExpanded());
+    }

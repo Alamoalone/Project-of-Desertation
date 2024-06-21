@@ -1,0 +1,98 @@
+{
+    "sha": "41985f28dfd7ca117e74ff1b96a8d54b6db431f9",
+    "node_id": "C_kwDODy-wPdoAKDQxOTg1ZjI4ZGZkN2NhMTE3ZTc0ZmYxYjk2YThkNTRiNmRiNDMxZjk",
+    "commit": {
+        "author": {
+            "name": "Other Brand",
+            "email": "larryw.schultz@gmail.com",
+            "date": "2023-07-26T03:51:20Z"
+        },
+        "committer": {
+            "name": "Other Brand",
+            "email": "larryw.schultz@gmail.com",
+            "date": "2023-07-26T03:51:20Z"
+        },
+        "message": "Fixing null pointer exceptions",
+        "tree": {
+            "sha": "ccbc31c55fdc44c9ed669165e8cc711da59ede74",
+            "url": "https://api.github.com/repos/Larry-Schultz/FFTB_Viewer/git/trees/ccbc31c55fdc44c9ed669165e8cc711da59ede74"
+        },
+        "url": "https://api.github.com/repos/Larry-Schultz/FFTB_Viewer/git/commits/41985f28dfd7ca117e74ff1b96a8d54b6db431f9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Larry-Schultz/FFTB_Viewer/commits/41985f28dfd7ca117e74ff1b96a8d54b6db431f9",
+    "html_url": "https://github.com/Larry-Schultz/FFTB_Viewer/commit/41985f28dfd7ca117e74ff1b96a8d54b6db431f9",
+    "comments_url": "https://api.github.com/repos/Larry-Schultz/FFTB_Viewer/commits/41985f28dfd7ca117e74ff1b96a8d54b6db431f9/comments",
+    "author": {
+        "login": "Larry-Schultz",
+        "id": 3164659,
+        "node_id": "MDQ6VXNlcjMxNjQ2NTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3164659?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Larry-Schultz",
+        "html_url": "https://github.com/Larry-Schultz",
+        "followers_url": "https://api.github.com/users/Larry-Schultz/followers",
+        "following_url": "https://api.github.com/users/Larry-Schultz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Larry-Schultz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Larry-Schultz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Larry-Schultz/subscriptions",
+        "organizations_url": "https://api.github.com/users/Larry-Schultz/orgs",
+        "repos_url": "https://api.github.com/users/Larry-Schultz/repos",
+        "events_url": "https://api.github.com/users/Larry-Schultz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Larry-Schultz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Larry-Schultz",
+        "id": 3164659,
+        "node_id": "MDQ6VXNlcjMxNjQ2NTk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3164659?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Larry-Schultz",
+        "html_url": "https://github.com/Larry-Schultz",
+        "followers_url": "https://api.github.com/users/Larry-Schultz/followers",
+        "following_url": "https://api.github.com/users/Larry-Schultz/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Larry-Schultz/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Larry-Schultz/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Larry-Schultz/subscriptions",
+        "organizations_url": "https://api.github.com/users/Larry-Schultz/orgs",
+        "repos_url": "https://api.github.com/users/Larry-Schultz/repos",
+        "events_url": "https://api.github.com/users/Larry-Schultz/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Larry-Schultz/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4c79ed97bc2d232146fca8b1716f3f9c69df307a",
+            "url": "https://api.github.com/repos/Larry-Schultz/FFTB_Viewer/commits/4c79ed97bc2d232146fca8b1716f3f9c69df307a",
+            "html_url": "https://github.com/Larry-Schultz/FFTB_Viewer/commit/4c79ed97bc2d232146fca8b1716f3f9c69df307a"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "4c6376f73b3603b04a79521e8540137f2da4aa2d",
+            "filename": "src/main/java/fft_battleground/event/EventParser.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Larry-Schultz/FFTB_Viewer/blob/41985f28dfd7ca117e74ff1b96a8d54b6db431f9/src%2Fmain%2Fjava%2Ffft_battleground%2Fevent%2FEventParser.java",
+            "raw_url": "https://github.com/Larry-Schultz/FFTB_Viewer/raw/41985f28dfd7ca117e74ff1b96a8d54b6db431f9/src%2Fmain%2Fjava%2Ffft_battleground%2Fevent%2FEventParser.java",
+            "contents_url": "https://api.github.com/repos/Larry-Schultz/FFTB_Viewer/contents/src%2Fmain%2Fjava%2Ffft_battleground%2Fevent%2FEventParser.java?ref=41985f28dfd7ca117e74ff1b96a8d54b6db431f9",
+            "patch": "@@ -174,13 +174,14 @@ protected List<BattleGroundEvent> getEventsFromChatMessage(ChatMessage message)\n \t\t\tBattleGroundEvent event = null;\n \t\t\ttry {\n \t\t\t\tevent = detector.detect(message);\n-\t\t\t\tevent.setEventTime(message.getMessageTime()); // this sets the event time to when the message was read, not parsed;\n+\t\t\t\t;\n \t\t\t} catch(Exception e) {\n \t\t\t\tString errorMessage = \"exception found while running detector \" + detector.getClass().getCanonicalName();\n \t\t\t\tlog.warn(errorMessage, e);\n \t\t\t\tthis.errorWebhookManager.sendWarningException(e, errorMessage);\n \t\t\t}\n \t\t\tif(event != null) {\n+\t\t\t\tevent.setEventTime(message.getMessageTime()); // this sets the event time to when the message was read, not parsed\n \t\t\t\tevents.add(event);\n \t\t\t}\n \t\t}"
+        }
+    ]
+}

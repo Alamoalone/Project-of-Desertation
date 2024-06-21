@@ -1,0 +1,23 @@
+    private static ExecOperationNode procGeneOperators(OperationNode _anaNode, Forwards _forwards) {
+        if (_anaNode instanceof UnaryOperation) {
+            UnaryOperation m_ = (UnaryOperation) _anaNode;
+            return new ExecQuickOperation(new ExecOperationContent(m_.getContent()),null, new ExecOperatorContent(m_.getOperatorContent()), new ExecOperDir(m_.getSymbol()));
+        }
+        if (_anaNode instanceof RandCodeOperation) {
+            RandCodeOperation m_ = (RandCodeOperation) _anaNode;
+            return new ExecRandCodeOperation(new ExecOperationContent(m_.getContent()), m_.getOperatorContent().getOpOffset());
+        }
+        if (_anaNode instanceof CastOperation) {
+            CastOperation m_ = (CastOperation) _anaNode;
+            return new ExecCastOperation(new ExecOperationContent(m_.getContent()), new ExecTypeCheckContent(m_.getTypeCheckContent()));
+        }
+        if (_anaNode instanceof ExplicitOperation) {
+            ExplicitOperation m_ = (ExplicitOperation) _anaNode;
+            return cast(_forwards, m_.getExplicitContent(), m_.getContent());
+        }
+        if (_anaNode instanceof ImplicitOperation) {
+            ImplicitOperation m_ = (ImplicitOperation) _anaNode;
+            return cast(_forwards, m_.getExplicitContent(), m_.getContent());
+        }
+        return procOperators(_anaNode, _forwards);
+    }

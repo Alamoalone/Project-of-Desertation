@@ -1,0 +1,122 @@
+{
+    "sha": "b5926901065d7c7dc5e2ce3075268bb745986a88",
+    "node_id": "C_kwDOGQmqvtoAKGI1OTI2OTAxMDY1ZDdjN2RjNWUyY2UzMDc1MjY4YmI3NDU5ODZhODg",
+    "commit": {
+        "author": {
+            "name": "SasankAchyuta9",
+            "email": "VenkataSaiMadhavaSasank.Achyuta@HMCTS.NET",
+            "date": "2023-04-26T12:49:46Z"
+        },
+        "committer": {
+            "name": "SasankAchyuta9",
+            "email": "VenkataSaiMadhavaSasank.Achyuta@HMCTS.NET",
+            "date": "2023-04-26T12:49:46Z"
+        },
+        "message": "added null pointer exception for case service and test cases",
+        "tree": {
+            "sha": "5b74fa8280c3a450b7ce9c3309f6e04a0f38b900",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/5b74fa8280c3a450b7ce9c3309f6e04a0f38b900"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/b5926901065d7c7dc5e2ce3075268bb745986a88",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/b5926901065d7c7dc5e2ce3075268bb745986a88",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/b5926901065d7c7dc5e2ce3075268bb745986a88",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/b5926901065d7c7dc5e2ce3075268bb745986a88/comments",
+    "author": {
+        "login": "SasankAchyuta9",
+        "id": 114911946,
+        "node_id": "U_kgDOBtlqyg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114911946?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SasankAchyuta9",
+        "html_url": "https://github.com/SasankAchyuta9",
+        "followers_url": "https://api.github.com/users/SasankAchyuta9/followers",
+        "following_url": "https://api.github.com/users/SasankAchyuta9/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SasankAchyuta9/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SasankAchyuta9/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SasankAchyuta9/subscriptions",
+        "organizations_url": "https://api.github.com/users/SasankAchyuta9/orgs",
+        "repos_url": "https://api.github.com/users/SasankAchyuta9/repos",
+        "events_url": "https://api.github.com/users/SasankAchyuta9/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SasankAchyuta9/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "SasankAchyuta9",
+        "id": 114911946,
+        "node_id": "U_kgDOBtlqyg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114911946?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SasankAchyuta9",
+        "html_url": "https://github.com/SasankAchyuta9",
+        "followers_url": "https://api.github.com/users/SasankAchyuta9/followers",
+        "following_url": "https://api.github.com/users/SasankAchyuta9/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SasankAchyuta9/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SasankAchyuta9/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SasankAchyuta9/subscriptions",
+        "organizations_url": "https://api.github.com/users/SasankAchyuta9/orgs",
+        "repos_url": "https://api.github.com/users/SasankAchyuta9/repos",
+        "events_url": "https://api.github.com/users/SasankAchyuta9/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SasankAchyuta9/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a543a8e3514bebce32e4d05bced1246706fa0ebc",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/a543a8e3514bebce32e4d05bced1246706fa0ebc",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/a543a8e3514bebce32e4d05bced1246706fa0ebc"
+        }
+    ],
+    "stats": {
+        "total": 137,
+        "additions": 109,
+        "deletions": 28
+    },
+    "files": [
+        {
+            "sha": "466a7e62fbc5bf626683931957ad7708ded83aed",
+            "filename": "build.gradle",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 2,
+            "changes": 3,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/b5926901065d7c7dc5e2ce3075268bb745986a88/build.gradle",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/b5926901065d7c7dc5e2ce3075268bb745986a88/build.gradle",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/build.gradle?ref=b5926901065d7c7dc5e2ce3075268bb745986a88",
+            "patch": "@@ -544,8 +544,7 @@ def sonarExclusions = [\n   '**uk/gov/hmcts/reform/prl/controllers/EditAndApproveDraftOrderController.java',\n   '**uk/gov/hmcts/reform/prl/services/tab/alltabs/AllTabServiceImpl.java',\n   '**uk/gov/hmcts/reform/prl/services/cafcass/HearingService.java',\n-  '**uk/gov/hmcts/reform/prl/services/cafcass/CaseDataService.java',\n-  '**uk/gov/hmcts/reform/prl/services/citizen/CaseService.java'\n+  '**uk/gov/hmcts/reform/prl/services/cafcass/CaseDataService.java'\n ]\n \n sonarqube {"
+        },
+        {
+            "sha": "7385a28b49fa05b63cfa9b151ad217d18d3b11ac",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/services/citizen/CaseService.java",
+            "status": "modified",
+            "additions": 28,
+            "deletions": 25,
+            "changes": 53,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/b5926901065d7c7dc5e2ce3075268bb745986a88/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fcitizen%2FCaseService.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/b5926901065d7c7dc5e2ce3075268bb745986a88/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fcitizen%2FCaseService.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fcitizen%2FCaseService.java?ref=b5926901065d7c7dc5e2ce3075268bb745986a88",
+            "patch": "@@ -110,36 +110,39 @@ public CaseDetails updateCaseDetails(String authToken,\n         CaseData caseData = CaseUtils.getCaseData(caseDetails, objectMapper);\n         PartyDetails partyDetails = updateCaseData.getPartyDetails();\n         PartyEnum partyType = updateCaseData.getPartyType();\n-        if (C100_CASE_TYPE.equalsIgnoreCase(updateCaseData.getCaseTypeOfApplication())) {\n-            if (PartyEnum.applicant.equals(partyType)) {\n-                List<Element<PartyDetails>> applicants = caseData.getApplicants();\n-                applicants.stream()\n-                    .filter(party -> Objects.equals(party.getValue().getUser().getIdamId(), partyDetails.getUser().getIdamId()))\n-                    .findFirst()\n-                    .ifPresent(party -> {\n-                        applicants.set(applicants.indexOf(party), element(party.getId(), partyDetails));\n-                    });\n-            } else if (PartyEnum.respondent.equals(partyType)) {\n-                List<Element<PartyDetails>> respondents = caseData.getRespondents();\n-                respondents.stream()\n-                    .filter(party -> Objects.equals(party.getValue().getUser().getIdamId(), partyDetails.getUser().getIdamId()))\n-                    .findFirst()\n-                    .ifPresent(party -> {\n-                        respondents.set(respondents.indexOf(party), element(party.getId(), partyDetails));\n-                    });\n-            }\n-        } else {\n-            if (PartyEnum.applicant.equals(partyType)) {\n-                if (partyDetails.getUser().getIdamId().equalsIgnoreCase(caseData.getApplicantsFL401().getUser().getIdamId())) {\n-                    caseData = caseData.toBuilder().applicantsFL401(partyDetails).build();\n+        if (null != partyDetails.getUser()) {\n+            if (C100_CASE_TYPE.equalsIgnoreCase(updateCaseData.getCaseTypeOfApplication())) {\n+                if (PartyEnum.applicant.equals(partyType)) {\n+                    List<Element<PartyDetails>> applicants = caseData.getApplicants();\n+                    applicants.stream()\n+                        .filter(party -> Objects.equals(party.getValue().getUser().getIdamId(), partyDetails.getUser().getIdamId()))\n+                        .findFirst()\n+                        .ifPresent(party -> {\n+                            applicants.set(applicants.indexOf(party), element(party.getId(), partyDetails));\n+                        });\n+                } else if (PartyEnum.respondent.equals(partyType)) {\n+                    List<Element<PartyDetails>> respondents = caseData.getRespondents();\n+                    respondents.stream()\n+                        .filter(party -> Objects.equals(party.getValue().getUser().getIdamId(), partyDetails.getUser().getIdamId()))\n+                        .findFirst()\n+                        .ifPresent(party -> {\n+                            respondents.set(respondents.indexOf(party), element(party.getId(), partyDetails));\n+                        });\n                 }\n             } else {\n-                if (partyDetails.getUser().getIdamId().equalsIgnoreCase(caseData.getRespondentsFL401().getUser().getIdamId())) {\n-                    caseData = caseData.toBuilder().respondentsFL401(partyDetails).build();\n+                if (PartyEnum.applicant.equals(partyType)) {\n+                    if (partyDetails.getUser().getIdamId().equalsIgnoreCase(caseData.getApplicantsFL401().getUser().getIdamId())) {\n+                        caseData = caseData.toBuilder().applicantsFL401(partyDetails).build();\n+                    }\n+                } else {\n+                    if (partyDetails.getUser().getIdamId().equalsIgnoreCase(caseData.getRespondentsFL401().getUser().getIdamId())) {\n+                        caseData = caseData.toBuilder().respondentsFL401(partyDetails).build();\n+                    }\n                 }\n             }\n+        } else {\n+            throw (new NullPointerException());\n         }\n-\n         return caseRepository.updateCase(authToken, caseId, caseData, CaseEvent.fromValue(eventId));\n     }\n "
+        },
+        {
+            "sha": "abd245457430fbb00106eb746f8d7eb8d1363ef0",
+            "filename": "src/test/java/uk/gov/hmcts/reform/prl/services/citizen/CaseServiceTest.java",
+            "status": "modified",
+            "additions": 80,
+            "deletions": 1,
+            "changes": 81,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/b5926901065d7c7dc5e2ce3075268bb745986a88/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fcitizen%2FCaseServiceTest.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/b5926901065d7c7dc5e2ce3075268bb745986a88/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fcitizen%2FCaseServiceTest.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fcitizen%2FCaseServiceTest.java?ref=b5926901065d7c7dc5e2ce3075268bb745986a88",
+            "patch": "@@ -313,7 +313,7 @@ public void shouldWithdrawCase() {\n \n \n     @Test\n-    public void testupdateCaseDetailsCitizenUpdateOnCaRespondent() throws JsonProcessingException {\n+    public void testupdateCaseDetailsCitizenUpdateOnCaApplicant() throws JsonProcessingException {\n \n         User user1 = User.builder().idamId(\"123\").build();\n         PartyDetails applicant1 = PartyDetails.builder().user(user1).email(\"test@hmcts.net\").firstName(\"test\").build();\n@@ -354,6 +354,85 @@ public void testupdateCaseDetailsCitizenUpdateOnCaRespondent() throws JsonProces\n         assertNotNull(caseDetailsAfterUpdate);\n     }\n \n+    @Test\n+    public void testupdateCaseDetailsCitizenUpdateOnCaRespondent() throws JsonProcessingException {\n+\n+        User user1 = User.builder().idamId(\"123\").build();\n+        PartyDetails respondent1 = PartyDetails.builder().user(user1).email(\"test@hmcts.net\").firstName(\"test\").build();\n+        PartyDetails respondent2 = PartyDetails.builder().email(\"test@hmcts.net\").firstName(\"test\").build();\n+        caseData = CaseData.builder()\n+            .applicants(Arrays.asList(element(respondent1), element(respondent2)))\n+            .build();\n+        caseDataMap = caseData.toMap(objectMapper);\n+\n+        caseDetails = caseDetails.toBuilder()\n+            .data(caseDataMap)\n+            .id(123L)\n+            .state(\"SUBMITTED_PAID\")\n+            .build();\n+        PartyDetails partyDetails1 = PartyDetails.builder()\n+            .firstName(\"Test\")\n+            .lastName(\"User\")\n+            .user(User.builder()\n+                      .email(\"test@gmail.com\")\n+                      .idamId(\"123\")\n+                      .solicitorRepresented(YesOrNo.Yes)\n+                      .build())\n+            .build();\n+        updateCaseData = UpdateCaseData.builder()\n+            .caseTypeOfApplication(C100_CASE_TYPE)\n+            .partyDetails(partyDetails1)\n+            .partyType(PartyEnum.applicant)\n+            .build();\n+\n+\n+        userDetails = UserDetails.builder().build();\n+        when(objectMapper.convertValue(caseDataMap, CaseData.class)).thenReturn(caseData);\n+        when(caseRepository.getCase(authToken,\"123\")).thenReturn(caseDetails);\n+        when(caseRepository.updateCase(authToken, \"123\", caseData, CITIZEN_CASE_UPDATE)).thenReturn(caseDetails);\n+\n+        CaseDetails caseDetailsAfterUpdate = caseService.updateCaseDetails(authToken, \"123\", \"citizen-case-submit\", updateCaseData);\n+\n+        assertNotNull(caseDetailsAfterUpdate);\n+    }\n+\n+    @Test(expected = NullPointerException.class)\n+    public void testupdateCaseDetailsCitizenUpdateOnCaRespondentForNull() throws JsonProcessingException {\n+\n+        User user1 = User.builder().idamId(\"123\").build();\n+        PartyDetails respondent1 = PartyDetails.builder().user(user1).email(\"test@hmcts.net\").firstName(\"test\").build();\n+        PartyDetails respondent2 = PartyDetails.builder().email(\"test@hmcts.net\").firstName(\"test\").build();\n+        caseData = CaseData.builder()\n+            .applicants(Arrays.asList(element(respondent1), element(respondent2)))\n+            .build();\n+        caseDataMap = caseData.toMap(objectMapper);\n+\n+        caseDetails = caseDetails.toBuilder()\n+            .data(caseDataMap)\n+            .id(123L)\n+            .state(\"SUBMITTED_PAID\")\n+            .build();\n+        PartyDetails partyDetails1 = PartyDetails.builder()\n+            .firstName(\"Test\")\n+            .lastName(\"User\")\n+            .build();\n+        updateCaseData = UpdateCaseData.builder()\n+            .caseTypeOfApplication(C100_CASE_TYPE)\n+            .partyDetails(partyDetails1)\n+            .partyType(PartyEnum.applicant)\n+            .build();\n+\n+\n+        userDetails = UserDetails.builder().build();\n+        when(objectMapper.convertValue(caseDataMap, CaseData.class)).thenReturn(caseData);\n+        when(caseRepository.getCase(authToken,\"123\")).thenReturn(caseDetails);\n+        when(caseRepository.updateCase(authToken, \"123\", caseData, CITIZEN_CASE_UPDATE)).thenReturn(caseDetails);\n+\n+        CaseDetails caseDetailsAfterUpdate = caseService.updateCaseDetails(authToken, \"123\", \"citizen-case-submit\", updateCaseData);\n+\n+        assertNotNull(caseDetailsAfterUpdate);\n+    }\n+\n \n \n     @Test"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+    public String getToolbarAgentExperience() {
+        if (sharedPreferences != null) {
+            return sharedPreferences.getString(AGENT_EXPERIENCE, null);
+        }
+        return null;
+    }

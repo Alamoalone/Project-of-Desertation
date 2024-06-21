@@ -1,0 +1,46 @@
+    public void addTest(TestDto dto) {
+        Exam exam = new Exam();
+        exam.setExamTitle(dto.getExamTitle());
+    }
+
+    public void auto(List<QuestionDto> single, List<QuestionDto> multiple, List<QuestionDto> judge, Integer examId) {
+        Exam exam = baseMapper.selectById(examId);
+        Double singleScore = exam.getSingleScore();
+        Double multipleScore = exam.getMultipleScore();
+        Double judgeScore = exam.getBoolScore();
+        Integer loginId = (Integer) StpUtil.getSession().get("loginId");
+        Double totalScore = 0.0;
+
+
+        for (QuestionDto question : single) {
+            String userAnswer = question.getUserAnswer();
+            String correctAnswer = question.getCorrectAnswer();
+            if (StrUtil.isNotBlank(userAnswer)) {
+                totalScore = userAnswer.equals(correctAnswer) ? totalScore + singleScore : totalScore;
+            }
+        }
+
+        for (QuestionDto question : multiple) {
+            String userAnswer = question.getUserAnswer();
+            String correctAnswer = question.getCorrectAnswer();
+            if (StrUtil.isNotBlank(userAnswer)) {
+                totalScore = userAnswer.equals(correctAnswer) ? totalScore + multipleScore : totalScore;
+            }
+        }
+
+        for (QuestionDto question : judge) {
+            String userAnswer = question.getUserAnswer();
+            String correctAnswer = question.getCorrectAnswer();
+            if (StrUtil.isNotBlank(userAnswer)) {
+                totalScore = userAnswer.equals(correctAnswer) ? totalScore + judgeScore : totalScore;
+            }
+        }
+
+        LambdaQueryWrapper<Task> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Task::getExamId, examId).eq(Task::getUserId, loginId);
+        Task one = taskService.getOne(queryWrapper);
+        one.setScore(totalScore);
+        one.setUpdateTime(OwnUtil.getCurrentDate());
+        taskService.updateById(one);
+    }
+

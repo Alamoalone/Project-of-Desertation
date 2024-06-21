@@ -1,0 +1,4146 @@
+nohup: ignoring input
+Processing file: setupReportAsSpinner_after.txt in commit Android
+yes
+Processing file: setupReportAsSpinner_before.txt in commit Android
+Yes
+Processing file: processUpgrade_after.txt in commit data-upgrade
+yes
+Processing file: processUpgrade_before.txt in commit data-upgrade
+yes
+Processing file: doPost_after.txt in commit NewGo-Back-End-02-Nathan_Kosmalski
+Yes
+Processing file: doPost_before.txt in commit NewGo-Back-End-02-Nathan_Kosmalski
+Yes
+Processing file: createComponent_before.txt in commit sourcegraph
+yes
+Processing file: disposeUIResources_after.txt in commit sourcegraph
+yes
+Processing file: createComponent_after.txt in commit sourcegraph
+yes
+Processing file: disposeUIResources_before.txt in commit sourcegraph
+No
+Processing file: testDeleteCustomerByEmail_Failure_before.txt in commit customer_details_management_service
+yes
+Processing file: testGetCustomerDetailsByEmail_Success_before.txt in commit customer_details_management_service
+yes
+Processing file: testGetCustomerDetailsByEmail_NotFound_before.txt in commit customer_details_management_service
+No
+Processing file: testCreateCustomerDetails_Success_before.txt in commit customer_details_management_service
+No
+Processing file: testCreateCustomerDetails_Success_after.txt in commit customer_details_management_service
+no
+Processing file: testGetCustomerDetailsByEmail_Success_after.txt in commit customer_details_management_service
+no
+Processing file: testUpdateCustomerDetails_Failure_before.txt in commit customer_details_management_service
+no
+Processing file: testCreateCustomerDetails_AlreadyExists_after.txt in commit customer_details_management_service
+No
+Processing file: testCreateCustomerDetails_AlreadyExists_before.txt in commit customer_details_management_service
+no
+Processing file: testGetCustomerDetailsByEmail_NotFound_after.txt in commit customer_details_management_service
+no
+Processing file: testDeleteCustomerByEmail_Success_before.txt in commit customer_details_management_service
+yes
+Processing file: testUpdateCustomerDetails_Failure_after.txt in commit customer_details_management_service
+yes
+Processing file: testDeleteCustomerByEmail_Success_after.txt in commit customer_details_management_service
+yes
+Processing file: testDeleteCustomerByEmail_Failure_after.txt in commit customer_details_management_service
+no
+Processing file: testUpdateCustomerDetails_Success_before.txt in commit customer_details_management_service
+yes
+Processing file: testUpdateCustomerDetails_Success_after.txt in commit customer_details_management_service
+no
+Processing file: updateLocalClaims_after.txt in commit identity-api-server
+yes
+Processing file: updateExternalClaims_before.txt in commit identity-api-server
+yes
+Processing file: updateExternalClaims_after.txt in commit identity-api-server
+Yes
+Processing file: addLocalClaim_before.txt in commit identity-api-server
+yes
+Processing file: updateLocalClaims_before.txt in commit identity-api-server
+yes
+Processing file: addLocalClaim_after.txt in commit identity-api-server
+Yes
+Processing file: updateGanttChart_before.txt in commit se306-processor-scheduler
+yes
+Processing file: updateGanttChart_after.txt in commit se306-processor-scheduler
+yes
+Processing file: updateGanttChart_before.txt in commit se306-processor-scheduler
+yes
+Processing file: updateGanttChart_after.txt in commit se306-processor-scheduler
+yes
+Processing file: setNodeClicked_before.txt in commit se306-processor-scheduler
+yes
+Processing file: setNodeClicked_after.txt in commit se306-processor-scheduler
+yes
+Processing file: findOwner_after.txt in commit jenkins_practical_tasks
+No
+Processing file: findPet_before.txt in commit jenkins_practical_tasks
+yes
+Processing file: findPet_after.txt in commit jenkins_practical_tasks
+yes
+Processing file: findOwner_before.txt in commit jenkins_practical_tasks
+yes
+Processing file: findOwner_after.txt in commit test
+no
+Processing file: findPet_before.txt in commit test
+yes
+Processing file: findPet_after.txt in commit test
+yes
+Processing file: findOwner_before.txt in commit test
+yes
+Processing file: cleanText_after.txt in commit ORCID-Source
+yes
+Processing file: extractIssnData_after.txt in commit ORCID-Source
+Yes
+Processing file: getJsonDataFromIssnPortal_before.txt in commit ORCID-Source
+yes
+Processing file: getJsonDataFromIssnPortal_after.txt in commit ORCID-Source
+yes
+Processing file: extractIssnData_before.txt in commit ORCID-Source
+yes
+Processing file: cleanText_before.txt in commit ORCID-Source
+yes
+Processing file: getIssnData_before.txt in commit ORCID-Source
+yes
+Processing file: getIssnData_after.txt in commit ORCID-Source
+no
+Processing file: selectAnswer_before.txt in commit Android-LightningQuiz
+yes
+Processing file: selectAnswer_after.txt in commit Android-LightningQuiz
+Yes
+Processing file: updateAnswerContentDescription_after.txt in commit Android-LightningQuiz
+no
+Processing file: updateAnswerContentDescription_before.txt in commit Android-LightningQuiz
+yes
+Processing file: apply_before.txt in commit quarkus
+yes
+Processing file: apply_after.txt in commit quarkus
+yes
+Processing file: main_after.txt in commit openmessaging-benchmark
+yes
+Processing file: main_before.txt in commit openmessaging-benchmark
+yes
+Processing file: toWallet_after.txt in commit rhizome
+yes
+Processing file: sign_before.txt in commit rhizome
+yes
+Processing file: getHash_before.txt in commit rhizome
+yes
+Processing file: fromWallet_before.txt in commit rhizome
+yes
+Processing file: fromWallet_after.txt in commit rhizome
+yes
+Processing file: getHash_after.txt in commit rhizome
+yes
+Processing file: sign_after.txt in commit rhizome
+yes
+Processing file: toWallet_before.txt in commit rhizome
+yes
+Processing file: retrieveTrxHist_after.txt in commit OasisBet
+yes
+Processing file: retrieveTrxHist_before.txt in commit OasisBet
+yes
+Processing file: retrieveBetEventByCompType_before.txt in commit OasisBet
+yes
+Processing file: updateCurrBetEvents_after.txt in commit OasisBet
+yes
+Processing file: retrieveBetEventByCompType_after.txt in commit OasisBet
+Yes
+Processing file: updateCurrBetEvents_before.txt in commit OasisBet
+Yes
+Processing file: broadcastSelectedMessage_after.txt in commit GodOfWealth
+yes
+Processing file: selectLuckyPlayer_after.txt in commit GodOfWealth
+yes
+Processing file: selectLuckyPlayer_before.txt in commit GodOfWealth
+yes
+Processing file: broadcastSelectedMessage_before.txt in commit GodOfWealth
+yes
+Processing file: run_after.txt in commit GodOfWealth
+Yes
+Processing file: run_before.txt in commit GodOfWealth
+yes
+Processing file: getName_after.txt in commit tracker-control-android
+No
+Processing file: getName_before.txt in commit tracker-control-android
+yes
+Processing file: blockKnownTracker_before.txt in commit tracker-control-android
+yes
+Processing file: blockKnownTracker_after.txt in commit tracker-control-android
+yes
+Processing file: updateAppWidget_after.txt in commit MachEWidget
+yes
+Processing file: updateAppWidget_before.txt in commit MachEWidget
+yes
+Processing file: updateAppWidget_after.txt in commit MachEWidget
+yes
+Processing file: updateAppWidget_before.txt in commit MachEWidget
+yes
+Processing file: updateAppWidget_after.txt in commit MachEWidget
+yes
+Processing file: updateAppWidget_before.txt in commit MachEWidget
+yes
+Processing file: main_after.txt in commit mooc-java-programming-ii
+No
+Processing file: main_before.txt in commit mooc-java-programming-ii
+yes
+Processing file: getAllEchoes_before.txt in commit echoboard
+yes
+Processing file: getAllEchoes_after.txt in commit echoboard
+yes
+Processing file: handleBadRequest_before.txt in commit echoboard
+Yes
+Processing file: handleBadRequest_after.txt in commit echoboard
+No
+Processing file: throwerror_after.txt in commit springmvc
+yes
+Processing file: throwerror_before.txt in commit springmvc
+yes
+Processing file: buildTargetResource_after.txt in commit 637
+yes
+Processing file: buildTargetResource_before.txt in commit 637
+yes
+Processing file: findSizeOfModifications_before.txt in commit app-server-migration-core
+yes
+Processing file: findSizeOfAdditions_after.txt in commit app-server-migration-core
+yes
+Processing file: findSizeOfModifications_after.txt in commit app-server-migration-core
+yes
+Processing file: findSizeOfDeletions_after.txt in commit app-server-migration-core
+yes
+Processing file: findSizeOfDeletions_before.txt in commit app-server-migration-core
+yes
+Processing file: findSizeOfAdditions_before.txt in commit app-server-migration-core
+yes
+Processing file: bankrupt_after.txt in commit cbdc
+yes
+Processing file: bankrupt_before.txt in commit cbdc
+yes
+Processing file: formatTime_before.txt in commit AttendanceApp
+yes
+Processing file: onMenuItemClick_after.txt in commit AttendanceApp
+Yes
+Processing file: initializeUIComponents_after.txt in commit AttendanceApp
+yes
+Processing file: handleLocationPermissionResult_before.txt in commit AttendanceApp
+yes
+Processing file: initializeUIComponents_before.txt in commit AttendanceApp
+yes
+Processing file: onLocationChanged_before.txt in commit AttendanceApp
+yes
+Processing file: onMenuItemClick_before.txt in commit AttendanceApp
+yes
+Processing file: setupListViewItemClickListener_after.txt in commit AttendanceApp
+Yes
+Processing file: onCourseClick_before.txt in commit AttendanceApp
+yes
+Processing file: onRequestPermissionsResult_after.txt in commit AttendanceApp
+no
+Processing file: initializeListView_before.txt in commit AttendanceApp
+yes
+Processing file: startListening_before.txt in commit AttendanceApp
+yes
+Processing file: formatTime_after.txt in commit AttendanceApp
+yes
+Processing file: listenForLocation_after.txt in commit AttendanceApp
+Yes
+Processing file: onLocationChanged_after.txt in commit AttendanceApp
+No
+Processing file: startListening_after.txt in commit AttendanceApp
+yes
+Processing file: listenForLocation_before.txt in commit AttendanceApp
+yes
+Processing file: formatDate_after.txt in commit AttendanceApp
+yes
+Processing file: setupListViewItemClickListener_before.txt in commit AttendanceApp
+yes
+Processing file: onCreate_before.txt in commit AttendanceApp
+yes
+Processing file: onComplete_before.txt in commit AttendanceApp
+yes
+Processing file: setupAddCourseButtonListener_after.txt in commit AttendanceApp
+yes
+Processing file: requestCameraPermission_before.txt in commit AttendanceApp
+yes
+Processing file: setupAddCourseButtonListener_before.txt in commit AttendanceApp
+Yes
+Processing file: requestCameraPermission_after.txt in commit AttendanceApp
+No
+Processing file: scanBarcode_before.txt in commit AttendanceApp
+yes
+Processing file: formatDate_before.txt in commit AttendanceApp
+yes
+Processing file: onComplete_after.txt in commit AttendanceApp
+Yes
+Processing file: takeAttendance_before.txt in commit AttendanceApp
+yes
+Processing file: fetchAndDisplayCourses_after.txt in commit AttendanceApp
+yes
+Processing file: fetchAndDisplayCourses_before.txt in commit AttendanceApp
+yes
+Processing file: initializeListView_after.txt in commit AttendanceApp
+yes
+Processing file: showProfilePopupMenu_before.txt in commit AttendanceApp
+no
+Processing file: handleCameraPermissionResult_before.txt in commit AttendanceApp
+yes
+Processing file: scanBarcode_after.txt in commit AttendanceApp
+Yes
+Processing file: updateLocationInfo_after.txt in commit AttendanceApp
+yes
+Processing file: updateLocationInfo_before.txt in commit AttendanceApp
+no
+Processing file: onCourseClick_after.txt in commit AttendanceApp
+no
+Processing file: onCreate_after.txt in commit AttendanceApp
+Yes
+Processing file: showProfilePopupMenu_after.txt in commit AttendanceApp
+yes
+Processing file: handleLocationPermissionResult_after.txt in commit AttendanceApp
+yes
+Processing file: handleCameraPermissionResult_after.txt in commit AttendanceApp
+yes
+Processing file: takeAttendance_after.txt in commit AttendanceApp
+yes
+Processing file: onRequestPermissionsResult_before.txt in commit AttendanceApp
+yes
+Processing file: createInterfaceFromRow_after.txt in commit lokahi
+yes
+Processing file: createInterfaceFromRow_before.txt in commit lokahi
+yes
+Processing file: cleanToBeAddedList_before.txt in commit JGame-Library-Lite
+yes
+Processing file: cleanToBeAddedList_after.txt in commit JGame-Library-Lite
+yes
+Processing file: track_after.txt in commit JGame-Library-Lite
+yes
+Processing file: track_before.txt in commit JGame-Library-Lite
+yes
+Processing file: GetPlayerLogout_before.txt in commit UserControl
+yes
+Processing file: formatDate_after.txt in commit UserControl
+yes
+Processing file: formatDate_before.txt in commit UserControl
+yes
+Processing file: GetPlayerLogout_after.txt in commit UserControl
+yes
+Processing file: updateQiLevels_after.txt in commit xianxia-craft
+yes
+Processing file: onEnable_after.txt in commit xianxia-craft
+yes
+Processing file: onEnable_before.txt in commit xianxia-craft
+yes
+Processing file: updateQiLevels_before.txt in commit xianxia-craft
+yes
+Processing file: onCommand_before.txt in commit xianxia-craft
+yes
+Processing file: onCommand_after.txt in commit xianxia-craft
+yes
+Processing file: setRequestedDuration_after.txt in commit elas
+yes
+Processing file: setRequestedDuration_before.txt in commit elas
+No
+Processing file: postV5RecipeAnalysis_before.txt in commit becpg-community
+yes
+Processing file: postV5RecipeAnalysis_after.txt in commit becpg-community
+yes
+Processing file: compile_before.txt in commit dicio-sentences-compiler
+yes
+Processing file: compile_after.txt in commit dicio-sentences-compiler
+yes
+Processing file: buildAlternatives_after.txt in commit dicio-sentences-compiler
+yes
+Processing file: buildAlternatives_before.txt in commit dicio-sentences-compiler
+yes
+Processing file: execute_after.txt in commit jahia-configuration
+yes
+Processing file: execute_before.txt in commit jahia-configuration
+yes
+Processing file: drive_before.txt in commit AdvantageKitDrivebase
+yes
+Processing file: drive_after.txt in commit AdvantageKitDrivebase
+Yes
+Processing file: initElements_after.txt in commit roda
+yes
+Processing file: initElements_before.txt in commit roda
+yes
+Processing file: findOwner_after.txt in commit devopstest
+No
+Processing file: findPet_before.txt in commit devopstest
+yes
+Processing file: findPet_after.txt in commit devopstest
+yes
+Processing file: findOwner_before.txt in commit devopstest
+yes
+Processing file: post_before.txt in commit dtls-fuzzer
+yes
+Processing file: doStep_after.txt in commit dtls-fuzzer
+yes
+Processing file: doStep_before.txt in commit dtls-fuzzer
+yes
+Processing file: post_after.txt in commit dtls-fuzzer
+yes
+Processing file: deleteOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+No
+Processing file: getPersonsLastName_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsByCity_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: deleteOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updatePerson_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: getPersonsByAddress_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updatePerson_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsByCity_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsByAddress_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: getOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsLastName_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: deleteOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsLastName_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsByCity_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: deleteOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: getAllPersons_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsByAddress_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllPersons_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getPersonsByCity_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: getPersonsByAddress_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: getPersonsLastName_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getListOfHouseHoldByStationNumber_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: getListOfHouseHoldByStationNumber_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: createStationNumberOfFireStation_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updateOneFireStationById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllFireStations_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: updateOneFireStationById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: createAddressOfFireStation_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllFireStations_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: createStationNumberOfFireStation_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: createAddressOfFireStation_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: deleteOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+No
+Processing file: deleteOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: getAllPersons_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllPersons_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOnePerson_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updateOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOnePerson_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updateOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: deleteOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: deleteOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: getOnePerson_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updateOnePersonById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: getOnePerson_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+No
+Processing file: updateOnePersonById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllFireStations_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: deleteFireStationById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getFireStationsById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: deleteFireStationById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: getAllFireStations_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: getFireStationsById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: addMedicalRecord_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updateMedicalRecord_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: addMedicalRecord_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: updateMedicalRecord_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOneMedicalRecordById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: deleteOneMedicalRecordById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: deleteOneMedicalRecordById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllMedicalRecords_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllMedicalRecords_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOneMedicalRecordById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getListOfResidentsOfStationNumber_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: getListOfResidentsOfStationNumber_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+Yes
+Processing file: updateOneMedicalRecordById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getOneMedicalRecord_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+No
+Processing file: getAllMedicalRecords_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getAllMedicalRecords_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+No
+Processing file: getOneMedicalRecord_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: updateOneMedicalRecordById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+no
+Processing file: deleteFireStationById_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: deleteFireStationById_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getListOfHouseHoldByStationNumberIfFlood_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getListOfHouseHoldByStationNumberIfFlood_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getListOfHouseHoldByStationNumber_before.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: getListOfHouseHoldByStationNumber_after.txt in commit leperlier-marie-lourdes-API-springboot-P5
+yes
+Processing file: initEmojiData_after.txt in commit android
+yes
+Processing file: initEmojiData_before.txt in commit android
+yes
+Processing file: addRating_after.txt in commit Spring-Next-MovieDB
+yes
+Processing file: addRating_before.txt in commit Spring-Next-MovieDB
+Yes
+Processing file: filterChain_after.txt in commit jobs-spring-security
+No
+Processing file: filterChain_before.txt in commit jobs-spring-security
+no
+Processing file: loadUserByUsername_before.txt in commit jobs-spring-security
+yes
+Processing file: loadUserByUsername_after.txt in commit jobs-spring-security
+yes
+Processing file: findOwner_after.txt in commit petclinic
+no
+Processing file: findPet_before.txt in commit petclinic
+yes
+Processing file: findPet_after.txt in commit petclinic
+yes
+Processing file: findOwner_before.txt in commit petclinic
+yes
+Processing file: newCustomToolbarDesign_before.txt in commit Kommunicate-Android-Chat-SDK
+yes
+Processing file: newCustomToolbarDesign_after.txt in commit Kommunicate-Android-Chat-SDK
+yes
+Processing file: getToolbarSubtitleRating_after.txt in commit Kommunicate-Android-Chat-SDK
+No
+Processing file: getToolbarAgentExperience_before.txt in commit Kommunicate-Android-Chat-SDK
+yes
+Processing file: getToolbarSubtitleRating_before.txt in commit Kommunicate-Android-Chat-SDK
+No
+Processing file: getToolbarAgentExperience_after.txt in commit Kommunicate-Android-Chat-SDK
+Yes
+Processing file: isSpacecraftBodyRate_before.txt in commit Orekit
+yes
+Processing file: isSpacecraftBodyRate_after.txt in commit Orekit
+yes
+Processing file: state_before.txt in commit jpo-conflictmonitor
+yes
+Processing file: state_after.txt in commit jpo-conflictmonitor
+yes
+Processing file: fromMovementState_after.txt in commit jpo-conflictmonitor
+yes
+Processing file: fromMovementState_before.txt in commit jpo-conflictmonitor
+yes
+Processing file: getUsers_before.txt in commit rocketgateway
+yes
+Processing file: getUsers_after.txt in commit rocketgateway
+yes
+Processing file: getMitarbeiterListeVonAbteilung_before.txt in commit FirmaVersion3
+yes
+Processing file: main_after.txt in commit FirmaVersion3
+yes
+Processing file: getMitarbeiterListeVonAbteilung_after.txt in commit FirmaVersion3
+yes
+Processing file: main_before.txt in commit FirmaVersion3
+yes
+Processing file: create_before.txt in commit java-project-72
+yes
+Processing file: create_after.txt in commit java-project-72
+yes
+Processing file: check_after.txt in commit java-project-72
+yes
+Processing file: check_before.txt in commit java-project-72
+yes
+Processing file: testUrlCheck_before.txt in commit java-project-72
+yes
+Processing file: testUrlCheck_after.txt in commit java-project-72
+yes
+Processing file: getTimestampFromDate_before.txt in commit adempiere-grpc-utils
+yes
+Processing file: getTimestampFromDate_after.txt in commit adempiere-grpc-utils
+yes
+Processing file: addCharacterToList_after.txt in commit disney-api
+yes
+Processing file: removeCharacterFromList_before.txt in commit disney-api
+yes
+Processing file: addCharacterToList_before.txt in commit disney-api
+yes
+Processing file: removeCharacterFromList_after.txt in commit disney-api
+yes
+Processing file: testPollDiscoveryOccurrenceFinished_after.txt in commit java-docs-samples
+Yes
+Processing file: testPollDiscoveryOccurrenceFinished_before.txt in commit java-docs-samples
+yes
+Processing file: finishFinalGame_after.txt in commit MCTManager
+yes
+Processing file: finishFinalGame_before.txt in commit MCTManager
+yes
+Processing file: find_after.txt in commit sb232.store.customer
+no
+Processing file: find_before.txt in commit sb232.store.customer
+yes
+Processing file: addTest_after.txt in commit exam
+yes
+Processing file: auto_before.txt in commit exam
+yes
+Processing file: addTest_before.txt in commit exam
+yes
+Processing file: auto_after.txt in commit exam
+yes
+Processing file: addTimestampedVisionPose_after.txt in commit 2024RobotCode
+no
+Processing file: updatePose_before.txt in commit 2024RobotCode
+yes
+Processing file: periodic_after.txt in commit 2024RobotCode
+yes
+Processing file: addTimestampedVisionPose_before.txt in commit 2024RobotCode
+no
+Processing file: periodic_before.txt in commit 2024RobotCode
+yes
+Processing file: updatePose_after.txt in commit 2024RobotCode
+yes
+Processing file: periodic_after.txt in commit 2024RobotCode
+yes
+Processing file: periodic_before.txt in commit 2024RobotCode
+yes
+Processing file: getQueryFormats_after.txt in commit pic-sure
+No
+Processing file: getQueryFormats_before.txt in commit pic-sure
+yes
+Processing file: main_after.txt in commit BlockchainforMedicalConsultation
+No
+Processing file: main_before.txt in commit BlockchainforMedicalConsultation
+No
+Processing file: Block_after.txt in commit BlockchainforMedicalConsultation
+yes
+Processing file: main_after.txt in commit BlockchainforMedicalConsultation
+yes
+Processing file: Block_before.txt in commit BlockchainforMedicalConsultation
+yes
+Processing file: main_before.txt in commit BlockchainforMedicalConsultation
+yes
+Processing file: onAttachedToActivity_before.txt in commit appsflyer-flutter-plugin
+yes
+Processing file: initSdk_before.txt in commit appsflyer-flutter-plugin
+Yes
+Processing file: initSdk_after.txt in commit appsflyer-flutter-plugin
+yes
+Processing file: onAttachedToActivity_after.txt in commit appsflyer-flutter-plugin
+yes
+Processing file: findOwner_after.txt in commit sprint-pet-clinic
+no
+Processing file: findPet_before.txt in commit sprint-pet-clinic
+yes
+Processing file: findPet_after.txt in commit sprint-pet-clinic
+yes
+Processing file: findOwner_before.txt in commit sprint-pet-clinic
+yes
+Processing file: createRoutineLoadTask_before.txt in commit my-starrocks
+Yes
+Processing file: createRoutineLoadTask_after.txt in commit my-starrocks
+yes
+Processing file: doCanvasCommand_before.txt in commit aya
+yes
+Processing file: doCanvasCommand_after.txt in commit aya
+yes
+Processing file: autofocusHookBefore_before.txt in commit micro-manager
+yes
+Processing file: autofocusHookBefore_after.txt in commit micro-manager
+Yes
+Processing file: zPositionHook_after.txt in commit micro-manager
+Yes
+Processing file: zPositionHook_before.txt in commit micro-manager
+yes
+Processing file: packToZip_before.txt in commit project03
+yes
+Processing file: packToZip_after.txt in commit project03
+yes
+Processing file: addPrerequisiteCourse_before.txt in commit OOPAssignment3
+yes
+Processing file: addPrerequisiteCourse_after.txt in commit OOPAssignment3
+yes
+Processing file: validateAddPrerequisiteCourse_after.txt in commit OOPAssignment3
+Yes
+Processing file: validateAddPrerequisiteCourse_before.txt in commit OOPAssignment3
+yes
+Processing file: catenate_before.txt in commit CS61B18sp
+yes
+Processing file: dcatenate_after.txt in commit CS61B18sp
+yes
+Processing file: dcatenate_before.txt in commit CS61B18sp
+yes
+Processing file: catenate_after.txt in commit CS61B18sp
+yes
+Processing file: loadUserPermissions_before.txt in commit CoreFramework
+yes
+Processing file: loadUserPermissions_after.txt in commit CoreFramework
+yes
+Processing file: cleanToBeAddedList_before.txt in commit 3D-Game
+yes
+Processing file: cleanToBeAddedList_after.txt in commit 3D-Game
+yes
+Processing file: track_after.txt in commit 3D-Game
+yes
+Processing file: track_before.txt in commit 3D-Game
+yes
+Processing file: listFiles_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: main_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: listFiles_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: main_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: cutImageByPixels_before.txt in commit Photo-sort-compress-formatChange
+Yes
+Processing file: cutImageByPixels_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: copyErrorFile_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: handlePictures_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: compressImage_before.txt in commit Photo-sort-compress-formatChange
+Yes
+Processing file: compressImage_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: copyErrorFile_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: handlePictures_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: actionPerformed_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: actionPerformed_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: listFiles_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: main_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: listFiles_after.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: main_before.txt in commit Photo-sort-compress-formatChange
+yes
+Processing file: onCreateView_after.txt in commit FitStir
+yes
+Processing file: onComplete_before.txt in commit FitStir
+Yes
+Processing file: onCreateView_before.txt in commit FitStir
+Yes
+Processing file: onComplete_after.txt in commit FitStir
+yes
+Processing file: onCreateView_after.txt in commit FitStir
+yes
+Processing file: onCreateView_before.txt in commit FitStir
+yes
+Processing file: makeMove_after.txt in commit chess
+yes
+Processing file: validMoves_before.txt in commit chess
+yes
+Processing file: validMoves_after.txt in commit chess
+yes
+Processing file: isInCheck_after.txt in commit chess
+Yes
+Processing file: isInCheckmate_after.txt in commit chess
+yes
+Processing file: isInStalemate_before.txt in commit chess
+No
+Processing file: isInCheck_before.txt in commit chess
+Yes
+Processing file: makeMove_before.txt in commit chess
+Yes
+Processing file: isInCheckmate_before.txt in commit chess
+no
+Processing file: isInStalemate_after.txt in commit chess
+yes
+Processing file: checkSelf_after.txt in commit Sumatra-MiniJava-Compiler
+yes
+Processing file: checkSelf_before.txt in commit Sumatra-MiniJava-Compiler
+yes
+Processing file: paintControl_after.txt in commit swtchart
+yes
+Processing file: paintControl_before.txt in commit swtchart
+yes
+Processing file: refreshPlayers_before.txt in commit Triton
+yes
+Processing file: refreshPlayers_after.txt in commit Triton
+yes
+Processing file: onCreate_before.txt in commit Dwelventory
+yes
+Processing file: onCreate_after.txt in commit Dwelventory
+yes
+Processing file: handleInternalErrorException_before.txt in commit doc-file-service
+no
+Processing file: handleMinioErrorResponseException_after.txt in commit doc-file-service
+yes
+Processing file: handleInternalErrorException_after.txt in commit doc-file-service
+no
+Processing file: handleMinioErrorResponseException_before.txt in commit doc-file-service
+yes
+Processing file: getFile_before.txt in commit doc-file-service
+Yes
+Processing file: getFile_after.txt in commit doc-file-service
+yes
+Processing file: getString_before.txt in commit tc-website
+yes
+Processing file: getString_after.txt in commit tc-website
+yes
+Processing file: createModule_after.txt in commit cradle
+no
+Processing file: createModule_before.txt in commit cradle
+yes
+Processing file: hasAccessToParticipationElseThrow_before.txt in commit Artemis
+yes
+Processing file: hasAccessToParticipationElseThrow_after.txt in commit Artemis
+yes
+Processing file: testGetParticipationAllResults_studentCanAccessIfNoStartDateSet_after.txt in commit Artemis
+yes
+Processing file: testGetParticipationWithLatestResultAsAStudent_before.txt in commit Artemis
+Yes
+Processing file: testGetParticipationWithLatestResultAsAStudent_after.txt in commit Artemis
+yes
+Processing file: testGetParticipationAllResults_studentCanAccessIfNoStartDateSet_before.txt in commit Artemis
+yes
+Processing file: testGetParticipationWithAllResults_after.txt in commit Artemis
+yes
+Processing file: testGetParticipationWithAllResults_before.txt in commit Artemis
+yes
+Processing file: argumentsForGetParticipationResults_before.txt in commit Artemis
+no
+Processing file: testGetParticipationWithLatestResult_multipleResultsAvailable_after.txt in commit Artemis
+yes
+Processing file: testGetParticipationWithLatestResult_multipleResultsAvailable_before.txt in commit Artemis
+yes
+Processing file: argumentsForGetParticipationResults_after.txt in commit Artemis
+no
+Processing file: findByNameMobilePosition_before.txt in commit staffnew
+yes
+Processing file: findByNameMobilePosition_after.txt in commit staffnew
+yes
+Processing file: findByNumberModel_after.txt in commit staffnew
+yes
+Processing file: findByNumberModel_before.txt in commit staffnew
+yes
+Processing file: onScrollArrowPressed_after.txt in commit Dira
+yes
+Processing file: onUpdate_before.txt in commit Dira
+yes
+Processing file: onUpdate_after.txt in commit Dira
+Yes
+Processing file: onScrollArrowPressed_before.txt in commit Dira
+yes
+Processing file: updateMessageReading_before.txt in commit Dira
+yes
+Processing file: updateMessageReading_after.txt in commit Dira
+yes
+Processing file: updateScrollArrowIndicator_before.txt in commit Dira
+yes
+Processing file: updateScrollArrowIndicator_after.txt in commit Dira
+yes
+Processing file: debugLog_after.txt in commit emv-functions
+yes
+Processing file: buildResponseObjectFromDomain_after.txt in commit emv-functions
+No
+Processing file: getSessionKey_before.txt in commit emv-functions
+yes
+Processing file: buildResponseObjectFromDomain_before.txt in commit emv-functions
+no
+Processing file: getSessionKey_after.txt in commit emv-functions
+yes
+Processing file: debugLog_before.txt in commit emv-functions
+yes
+Processing file: generateCryptogram_after.txt in commit emv-functions
+Yes
+Processing file: getApplicationCryptogram_after.txt in commit emv-functions
+yes
+Processing file: getApplicationCryptogram_before.txt in commit emv-functions
+yes
+Processing file: generateCryptogram_before.txt in commit emv-functions
+Yes
+Processing file: getParsedVisaIad_before.txt in commit emv-functions
+yes
+Processing file: getUniqueDerivationKey_after.txt in commit emv-functions
+yes
+Processing file: getParsedVisaIad_after.txt in commit emv-functions
+yes
+Processing file: getUniqueDerivationKey_before.txt in commit emv-functions
+yes
+Processing file: toString_after.txt in commit emv-functions
+yes
+Processing file: toString_before.txt in commit emv-functions
+yes
+Processing file: performIsoIec97971Method1Padding_after.txt in commit emv-functions
+no
+Processing file: performIsoIec97971Method1Padding_before.txt in commit emv-functions
+yes
+Processing file: performIsoIec97971Method2Padding_before.txt in commit emv-functions
+no
+Processing file: performIsoIec97971Method2Padding_after.txt in commit emv-functions
+no
+Processing file: checkWeaponSlot_after.txt in commit kotori-plugins
+no
+Processing file: checkWeaponSlot_before.txt in commit kotori-plugins
+yes
+Processing file: logMessage_before.txt in commit obkv-table-client-java
+Yes.
+Processing file: logMessage_after.txt in commit obkv-table-client-java
+Yes
+Processing file: saveContentionEvent_before.txt in commit abd-vro
+yes
+Processing file: saveContentionEvent_after.txt in commit abd-vro
+yes
+Processing file: getTableCellRendererComponent_before.txt in commit Digital
+yes
+Processing file: getTableCellRendererComponent_after.txt in commit Digital
+Yes
+Processing file: getTableCellRendererComponent_before.txt in commit Digital
+yes
+Processing file: getTableCellRendererComponent_after.txt in commit Digital
+yes
+Processing file: deserialize_after.txt in commit TaskFlow-BackEnd
+yes
+Processing file: deserialize_before.txt in commit TaskFlow-BackEnd
+Yes
+Processing file: isPresent_before.txt in commit TaskFlow-BackEnd
+no
+Processing file: isPresent_after.txt in commit TaskFlow-BackEnd
+yes
+Processing file: updateIndexes_before.txt in commit TaskFlow-BackEnd
+yes
+Processing file: updateIndexes_after.txt in commit TaskFlow-BackEnd
+yes
+Processing file: findOwner_after.txt in commit spring-petclinic-with-kotlin
+No
+Processing file: findPet_before.txt in commit spring-petclinic-with-kotlin
+yes
+Processing file: findPet_after.txt in commit spring-petclinic-with-kotlin
+yes
+Processing file: findOwner_before.txt in commit spring-petclinic-with-kotlin
+yes
+Processing file: publishAPIToExternalStores_before.txt in commit carbon-apimgt
+yes
+Processing file: publishAPIToExternalStores_after.txt in commit carbon-apimgt
+yes
+Processing file: getPhysicalNetFromPin_after.txt in commit RapidWright
+yes
+Processing file: getPhysicalNetFromPin_before.txt in commit RapidWright
+yes
+Processing file: findPath_before.txt in commit EpicBlock2Taxi
+yes
+Processing file: findPath_after.txt in commit EpicBlock2Taxi
+yes
+Processing file: findOwner_after.txt in commit petclinic-jenkins
+no
+Processing file: findPet_before.txt in commit petclinic-jenkins
+yes
+Processing file: findPet_after.txt in commit petclinic-jenkins
+yes
+Processing file: findOwner_before.txt in commit petclinic-jenkins
+yes
+Processing file: parseDate_before.txt in commit account-manager
+yes
+Processing file: parseDate_after.txt in commit account-manager
+yes
+Processing file: next_after.txt in commit account-manager
+yes
+Processing file: next_before.txt in commit account-manager
+Yes
+Processing file: testPerformAbsoluteWorkingDir_after.txt in commit xshell-plugin
+yes
+Processing file: testPerformAbsoluteWorkingDir_before.txt in commit xshell-plugin
+yes
+Processing file: perform_before.txt in commit xshell-plugin
+yes
+Processing file: perform_after.txt in commit xshell-plugin
+yes
+Processing file: checkIfUserMustReceiveTheCard_after.txt in commit operatorfabric-core
+yes
+Processing file: checkIfUserMustReceiveTheCard_before.txt in commit operatorfabric-core
+yes
+Processing file: setScroll_before.txt in commit android_packages_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit android_packages_apps_Launcher3
+Yes
+Processing file: setScroll_before.txt in commit android_packages_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit android_packages_apps_Launcher3
+Yes
+Processing file: triggerAttestation_before.txt in commit sunbird-rc-core
+Yes
+Processing file: addAttestationProperty_before.txt in commit sunbird-rc-core
+yes
+Processing file: triggerAttestation_after.txt in commit sunbird-rc-core
+yes
+Processing file: addAttestationProperty_after.txt in commit sunbird-rc-core
+yes
+Processing file: ServerStarted_before.txt in commit biDiServer
+yes
+Processing file: ServerStarted_after.txt in commit biDiServer
+no
+Processing file: ServerNotStarted_after.txt in commit biDiServer
+yes
+Processing file: ServerNotStarted_before.txt in commit biDiServer
+no
+Processing file: establishNotificationSocket_before.txt in commit biDiServer
+yes
+Processing file: establishNotificationSocket_after.txt in commit biDiServer
+yes
+Processing file: getServerPublicKey_before.txt in commit biDiServer
+Yes
+Processing file: getUserPrivateKeyObject_after.txt in commit biDiServer
+yes
+Processing file: getUserPrivateKeyObject_before.txt in commit biDiServer
+yes
+Processing file: getServerPublicKeyObject_before.txt in commit biDiServer
+yes
+Processing file: getServerPublicKey_after.txt in commit biDiServer
+no
+Processing file: setAdminEmail_before.txt in commit biDiServer
+yes
+Processing file: getServerPublicKeyObject_after.txt in commit biDiServer
+no
+Processing file: setAdminEmail_after.txt in commit biDiServer
+no
+Processing file: start_after.txt in commit biDiServer
+yes
+Processing file: start_before.txt in commit biDiServer
+yes
+Processing file: updateTasks_before.txt in commit smapserver2
+yes
+Processing file: updateTasks_after.txt in commit smapserver2
+yes
+Processing file: getz_before.txt in commit nurgling
+yes
+Processing file: getz_after.txt in commit nurgling
+yes
+Processing file: BouncyEngineProperties_after.txt in commit klab
+yes
+Processing file: BouncyEngineProperties_before.txt in commit klab
+yes
+Processing file: createSelectionSortingTask_before.txt in commit SortingAlgos
+yes
+Processing file: createBubbleSortingTask_before.txt in commit SortingAlgos
+yes
+Processing file: call_after.txt in commit SortingAlgos
+Yes
+Processing file: createInsertionSortingTask_after.txt in commit SortingAlgos
+Yes
+Processing file: call_before.txt in commit SortingAlgos
+yes
+Processing file: createSeries_after.txt in commit SortingAlgos
+No
+Processing file: createSeries_before.txt in commit SortingAlgos
+Yes
+Processing file: createInsertionSortingTask_before.txt in commit SortingAlgos
+yes
+Processing file: createBubbleSortingTask_after.txt in commit SortingAlgos
+yes
+Processing file: createSelectionSortingTask_after.txt in commit SortingAlgos
+yes
+Processing file: getz_before.txt in commit hafen-client
+yes
+Processing file: getz_after.txt in commit hafen-client
+yes
+Processing file: main_after.txt in commit Back-End
+yes
+Processing file: main_before.txt in commit Back-End
+yes
+Processing file: createAccount_before.txt in commit Back-End
+yes
+Processing file: createAccount_after.txt in commit Back-End
+yes
+Processing file: onMessage_before.txt in commit transformer
+yes
+Processing file: onMessage_after.txt in commit transformer
+yes
+Processing file: apply_before.txt in commit transformer
+yes
+Processing file: apply_after.txt in commit transformer
+Yes
+Processing file: transform_after.txt in commit transformer
+yes
+Processing file: onMessage_before.txt in commit transformer
+yes
+Processing file: onMessage_after.txt in commit transformer
+yes
+Processing file: accept_after.txt in commit transformer
+yes
+Processing file: transform_before.txt in commit transformer
+yes
+Processing file: apply_before.txt in commit transformer
+yes
+Processing file: accept_before.txt in commit transformer
+Yes
+Processing file: apply_after.txt in commit transformer
+yes
+Processing file: loadSearch_after.txt in commit LavaSearch
+no
+Processing file: loadSearch_before.txt in commit LavaSearch
+no
+Processing file: getPickupStatus_before.txt in commit CoRide
+Yes
+Processing file: getPickupStatus_after.txt in commit CoRide
+Yes
+Processing file: testNoinputFails_before.txt in commit gridcapa-swe
+yes
+Processing file: testNoinputFails_after.txt in commit gridcapa-swe
+yes
+Processing file: getLoadOrThrow_after.txt in commit gridcapa-swe
+No
+Processing file: disconnectGeneratorAndLoad_before.txt in commit gridcapa-swe
+Yes
+Processing file: getGeneratorOrThrow_after.txt in commit gridcapa-swe
+No
+Processing file: connectEquivalentGeneratorsAndLoads_before.txt in commit gridcapa-swe
+Yes
+Processing file: replaceEquivalentModelByHvdc_before.txt in commit gridcapa-swe
+yes
+Processing file: getGeneratorOrThrow_before.txt in commit gridcapa-swe
+yes
+Processing file: getLineOrThrow_before.txt in commit gridcapa-swe
+no
+Processing file: createHvdcLine_before.txt in commit gridcapa-swe
+yes
+Processing file: disconnectGeneratorAndLoad_after.txt in commit gridcapa-swe
+yes
+Processing file: createVscStation_after.txt in commit gridcapa-swe
+yes
+Processing file: replaceEquivalentModelByHvdc_after.txt in commit gridcapa-swe
+yes
+Processing file: createHvdcLine_after.txt in commit gridcapa-swe
+yes
+Processing file: createVscStation_before.txt in commit gridcapa-swe
+yes
+Processing file: connectEquivalentAcLine_before.txt in commit gridcapa-swe
+yes
+Processing file: getLineOrThrow_after.txt in commit gridcapa-swe
+No
+Processing file: getLoadOrThrow_before.txt in commit gridcapa-swe
+yes
+Processing file: connectEquivalentAcLine_after.txt in commit gridcapa-swe
+yes
+Processing file: connectEquivalentGeneratorsAndLoads_after.txt in commit gridcapa-swe
+yes
+Processing file: isVisible_after.txt in commit simple-db
+Yes
+Processing file: isVisible_before.txt in commit simple-db
+Yes
+Processing file: delete_before.txt in commit simple-db
+yes
+Processing file: read_before.txt in commit simple-db
+yes
+Processing file: insert_after.txt in commit simple-db
+yes
+Processing file: read_after.txt in commit simple-db
+yes
+Processing file: delete_after.txt in commit simple-db
+yes
+Processing file: insert_before.txt in commit simple-db
+yes
+Processing file: addVisionMeasurement_after.txt in commit Crescendo2024
+yes
+Processing file: setModuleStates_after.txt in commit Crescendo2024
+yes
+Processing file: addVisionMeasurement_before.txt in commit Crescendo2024
+yes
+Processing file: setModuleStates_before.txt in commit Crescendo2024
+yes
+Processing file: periodic_after.txt in commit Crescendo2024
+yes
+Processing file: periodic_before.txt in commit Crescendo2024
+yes
+Processing file: getMeasurement_after.txt in commit Crescendo2024
+yes
+Processing file: addConsumer_before.txt in commit Crescendo2024
+no
+Processing file: periodic_after.txt in commit Crescendo2024
+yes
+Processing file: getMeasurement_before.txt in commit Crescendo2024
+yes
+Processing file: addConsumer_after.txt in commit Crescendo2024
+yes
+Processing file: periodic_before.txt in commit Crescendo2024
+yes
+Processing file: auditAfterExec_before.txt in commit doris
+yes
+Processing file: auditAfterExec_after.txt in commit doris
+yes
+Processing file: onNavigationItemSelected_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onDestroy_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onNavigationItemSelected_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onBackPressed_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onSaveInstanceState_after.txt in commit DaruloloomAliHerat
+No
+Processing file: onCreate_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onSaveInstanceState_before.txt in commit DaruloloomAliHerat
+no
+Processing file: onDestroy_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onBackPressed_after.txt in commit DaruloloomAliHerat
+Yes
+Processing file: checkFavoriteButtons_after.txt in commit DaruloloomAliHerat
+Yes
+Processing file: checkFavoriteButtons_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onCreate_after.txt in commit DaruloloomAliHerat
+Yes
+Processing file: onViewCreated_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: openLink_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: openLink_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onClick_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onViewCreated_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onClick_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onResume_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onResume_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onPause_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onSaveInstanceState_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onSaveInstanceState_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onPause_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onServiceConnected_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: onServiceDisconnected_after.txt in commit DaruloloomAliHerat
+no
+Processing file: onServiceConnected_after.txt in commit DaruloloomAliHerat
+yes
+Processing file: onServiceDisconnected_before.txt in commit DaruloloomAliHerat
+yes
+Processing file: get_before.txt in commit automaton
+yes
+Processing file: get_after.txt in commit automaton
+yes
+Processing file: testBeanReading_after.txt in commit automaton
+yes
+Processing file: testBeanReading_before.txt in commit automaton
+yes
+Processing file: fetchKPIDataFromDb_after.txt in commit PSknowHOW
+yes
+Processing file: fetchKPIDataFromDb_before.txt in commit PSknowHOW
+yes
+Processing file: fetchKPIDataFromDb_after.txt in commit PSknowHOW
+yes
+Processing file: fetchKPIDataFromDb_before.txt in commit PSknowHOW
+yes
+Processing file: fetchSprintVelocityDataFromDb_before.txt in commit PSknowHOW
+yes
+Processing file: getMinimumClosedDateFromConfiguration_after.txt in commit PSknowHOW
+yes
+Processing file: getMinimumClosedDateFromConfiguration_before.txt in commit PSknowHOW
+yes
+Processing file: fetchSprintVelocityDataFromDb_after.txt in commit PSknowHOW
+yes
+Processing file: modifica_before.txt in commit SPACCA
+Yes
+Processing file: modifica_after.txt in commit SPACCA
+yes
+Processing file: elimina_after.txt in commit SPACCA
+yes
+Processing file: elimina_before.txt in commit SPACCA
+yes
+Processing file: fine_after.txt in commit SPACCA
+yes
+Processing file: fine_before.txt in commit SPACCA
+yes
+Processing file: eliminaPartita_after.txt in commit SPACCA
+yes
+Processing file: eliminaPartita_before.txt in commit SPACCA
+yes
+Processing file: procediModifica_after.txt in commit SPACCA
+Yes
+Processing file: procediModifica_before.txt in commit SPACCA
+Yes
+Processing file: modificaProfiloGiocatore_after.txt in commit SPACCA
+yes
+Processing file: modificaProfiloGiocatore_before.txt in commit SPACCA
+yes
+Processing file: giveMove_before.txt in commit Flengine
+yes
+Processing file: giveMove_after.txt in commit Flengine
+yes
+Processing file: hasInboundRouteListing_before.txt in commit backend
+yes
+Processing file: hasInboundRouteListing_after.txt in commit backend
+no
+Processing file: getNewSourceId_after.txt in commit siglus-api
+yes
+Processing file: getNewSourceId_before.txt in commit siglus-api
+Yes
+Processing file: setScroll_before.txt in commit platform_packages_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit platform_packages_apps_Launcher3
+yes
+Processing file: setScroll_before.txt in commit platform_packages_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit platform_packages_apps_Launcher3
+yes
+Processing file: configureNPC_after.txt in commit stendhal
+Yes
+Processing file: configureNPC_before.txt in commit stendhal
+yes
+Processing file: addTodo_after.txt in commit ToDoMyPet_Todo
+yes
+Processing file: addTodo_before.txt in commit ToDoMyPet_Todo
+Yes
+Processing file: addTodo_after.txt in commit ToDoMyPet_Todo
+Yes
+Processing file: addTodo_before.txt in commit ToDoMyPet_Todo
+yes
+Processing file: merge_before.txt in commit micronaut-permissions
+no
+Processing file: handleCollection_after.txt in commit micronaut-permissions
+yes
+Processing file: merge_after.txt in commit micronaut-permissions
+yes
+Processing file: compare_after.txt in commit micronaut-permissions
+yes
+Processing file: compare_before.txt in commit micronaut-permissions
+yes
+Processing file: handleCollection_before.txt in commit micronaut-permissions
+yes
+Processing file: checkPermissionOnContainer_after.txt in commit micronaut-permissions
+yes
+Processing file: checkPermissionOnContainer_before.txt in commit micronaut-permissions
+yes
+Processing file: setSettings_before.txt in commit capacitor-background-mode
+yes
+Processing file: setSettings_after.txt in commit capacitor-background-mode
+yes
+Processing file: main_after.txt in commit javaflame
+yes
+Processing file: main_before.txt in commit javaflame
+yes
+Processing file: recursive_before.txt in commit javaflame
+yes
+Processing file: toString_after.txt in commit javaflame
+yes
+Processing file: toString_before.txt in commit javaflame
+yes
+Processing file: getJ_before.txt in commit javaflame
+no
+Processing file: recursive_after.txt in commit javaflame
+yes
+Processing file: getJ_after.txt in commit javaflame
+No
+Processing file: enter_after.txt in commit javaflame
+yes
+Processing file: enter_before.txt in commit javaflame
+Yes
+Processing file: getPanel_after.txt in commit SAE5
+yes
+Processing file: createListPanel_after.txt in commit SAE5
+Yes
+Processing file: createListPanel_before.txt in commit SAE5
+yes
+Processing file: getPanel_before.txt in commit SAE5
+yes
+Processing file: createFormPanel_before.txt in commit SAE5
+yes
+Processing file: createFormPanel_after.txt in commit SAE5
+yes
+Processing file: createFormPanel_before.txt in commit SAE5
+yes
+Processing file: createFormPanel_after.txt in commit SAE5
+yes
+Processing file: getCreateButton_before.txt in commit SAE5
+yes
+Processing file: getCreateButton_after.txt in commit SAE5
+yes
+Processing file: createEditPanel_before.txt in commit SAE5
+Yes
+Processing file: createEditPanel_after.txt in commit SAE5
+yes
+Processing file: insertDeliveryDays_before.txt in commit SAE5
+Yes
+Processing file: insertDeliveryDays_after.txt in commit SAE5
+yes
+Processing file: create_before.txt in commit SAE5
+Yes
+Processing file: create_after.txt in commit SAE5
+yes
+Processing file: createFormPanel_before.txt in commit SAE5
+Yes
+Processing file: createFormPanel_after.txt in commit SAE5
+yes
+Processing file: createListPanel_after.txt in commit SAE5
+yes
+Processing file: createListPanel_before.txt in commit SAE5
+yes
+Processing file: createEditPanel_before.txt in commit SAE5
+yes
+Processing file: createEditPanel_after.txt in commit SAE5
+Yes
+Processing file: createListPanel_after.txt in commit SAE5
+Yes
+Processing file: createListPanel_before.txt in commit SAE5
+yes
+Processing file: addMarker_after.txt in commit SAE5
+yes
+Processing file: addMarker_before.txt in commit SAE5
+yes
+Processing file: createFormPanel_before.txt in commit SAE5
+yes
+Processing file: createFormPanel_after.txt in commit SAE5
+yes
+Processing file: createFormPanel_before.txt in commit SAE5
+yes
+Processing file: createFormPanel_after.txt in commit SAE5
+Yes
+Processing file: create_before.txt in commit SAE5
+yes
+Processing file: create_after.txt in commit SAE5
+yes
+Processing file: updateLivraison_before.txt in commit SAE5
+yes
+Processing file: updateLivraison_after.txt in commit SAE5
+yes
+Processing file: createListPanel_after.txt in commit SAE5
+Yes
+Processing file: displayView_after.txt in commit SAE5
+Yes
+Processing file: createListPanel_before.txt in commit SAE5
+Yes
+Processing file: displayView_before.txt in commit SAE5
+yes
+Processing file: getCredentials_after.txt in commit aws_codeartifact_maven
+yes
+Processing file: getCredentials_before.txt in commit aws_codeartifact_maven
+yes
+Processing file: fetchPluginDocumentationUrl_after.txt in commit plugin-health-scoring
+yes
+Processing file: fetchPluginDocumentationUrl_before.txt in commit plugin-health-scoring
+yes
+Processing file: shouldBeAbleToParseFileWithNullValue_after.txt in commit plugin-health-scoring
+yes
+Processing file: shouldBeAbleToParseFileWithNullValue_before.txt in commit plugin-health-scoring
+yes
+Processing file: setOnlineData_before.txt in commit cubrid-migration
+yes
+Processing file: getSchemaValues_before.txt in commit cubrid-migration
+yes
+Processing file: setOnlineData_after.txt in commit cubrid-migration
+yes
+Processing file: getSchemaValues_after.txt in commit cubrid-migration
+yes
+Processing file: setOnlineEditor_after.txt in commit cubrid-migration
+yes
+Processing file: setOnlineEditor_before.txt in commit cubrid-migration
+yes
+Processing file: getSchemaNames_before.txt in commit cubrid-migration
+yes
+Processing file: getSchemaNames_after.txt in commit cubrid-migration
+yes
+Processing file: reportSystemMetric_before.txt in commit FedML
+yes
+Processing file: reportSystemMetric_after.txt in commit FedML
+yes
+Processing file: getCpuUsageForHigherVersion_after.txt in commit FedML
+yes
+Processing file: getCPUIndex_before.txt in commit FedML
+No
+Processing file: getCPUIndex_after.txt in commit FedML
+no
+Processing file: getCpuUsageForLowerVersion_before.txt in commit FedML
+yes
+Processing file: getCpuUsageForHigherVersion_before.txt in commit FedML
+yes
+Processing file: getCpuUsageForLowerVersion_after.txt in commit FedML
+yes
+Processing file: sendDeviceInfo_after.txt in commit FedML
+yes
+Processing file: sendDeviceInfo_before.txt in commit FedML
+yes
+Processing file: _toBackgroundImageFragmentEntryProcessorJSONObject_before.txt in commit liferay-portal
+yes
+Processing file: _toBackgroundImageFragmentEntryProcessorJSONObject_after.txt in commit liferay-portal
+yes
+Processing file: findFiles_after.txt in commit liferay-portal
+yes
+Processing file: findFiles_before.txt in commit liferay-portal
+yes
+Processing file: isHideable_before.txt in commit liferay-portal
+yes
+Processing file: isHideable_after.txt in commit liferay-portal
+yes
+Processing file: processEndTag_after.txt in commit liferay-portal
+yes
+Processing file: processEndTag_before.txt in commit liferay-portal
+yes
+Processing file: _getLayout_before.txt in commit liferay-portal
+yes
+Processing file: _getLayout_after.txt in commit liferay-portal
+yes
+Processing file: _getValue_after.txt in commit liferay-portal
+yes
+Processing file: _getValue_before.txt in commit liferay-portal
+yes
+Processing file: onAfterIncrement_after.txt in commit liferay-portal
+yes
+Processing file: onAfterIncrement_before.txt in commit liferay-portal
+yes
+Processing file: processStartTag_after.txt in commit liferay-portal
+yes
+Processing file: processStartTag_before.txt in commit liferay-portal
+yes
+Processing file: _updateFragmentEntryLinks_before.txt in commit liferay-portal
+yes
+Processing file: _updateFragmentEntryLinks_after.txt in commit liferay-portal
+yes
+Processing file: _getThemeDisplay_before.txt in commit liferay-portal
+yes
+Processing file: _getThemeDisplay_after.txt in commit liferay-portal
+yes
+Processing file: doGet_after.txt in commit liferay-portal
+yes
+Processing file: doGet_before.txt in commit liferay-portal
+yes
+Processing file: onPreviewFrame_before.txt in commit theta-plugin-library
+yes
+Processing file: onPreviewFrame_after.txt in commit theta-plugin-library
+yes
+Processing file: onPreviewFrame_before.txt in commit theta-plugin-library
+yes
+Processing file: onPreviewFrame_after.txt in commit theta-plugin-library
+yes
+Processing file: getSessionFromHost_after.txt in commit mailer
+Yes
+Processing file: getSessionFromHost_before.txt in commit mailer
+yes
+Processing file: allocateTabletsEqually_after.txt in commit chunjun
+yes
+Processing file: allocateTabletsEqually_before.txt in commit chunjun
+yes
+Processing file: hasRegisteredForThisCourse_before.txt in commit SchoolSystem
+yes
+Processing file: findStudent_before.txt in commit SchoolSystem
+yes
+Processing file: findCourse_after.txt in commit SchoolSystem
+yes
+Processing file: registerCourse_before.txt in commit SchoolSystem
+yes
+Processing file: findTeacher_before.txt in commit SchoolSystem
+yes
+Processing file: findTeacher_after.txt in commit SchoolSystem
+yes
+Processing file: findStudent_after.txt in commit SchoolSystem
+yes
+Processing file: printDepartment_before.txt in commit SchoolSystem
+Yes
+Processing file: findCourse_before.txt in commit SchoolSystem
+yes
+Processing file: printDepartment_after.txt in commit SchoolSystem
+yes
+Processing file: addStudent_before.txt in commit SchoolSystem
+Yes
+Processing file: hasRegisteredForThisCourse_after.txt in commit SchoolSystem
+yes
+Processing file: addStudent_after.txt in commit SchoolSystem
+Yes
+Processing file: modifyCourseTeacher_after.txt in commit SchoolSystem
+yes
+Processing file: modifyCourseTeacher_before.txt in commit SchoolSystem
+Yes
+Processing file: registerCourse_after.txt in commit SchoolSystem
+Yes
+Processing file: main_after.txt in commit SchoolSystem
+Yes
+Processing file: main_before.txt in commit SchoolSystem
+yes
+Processing file: hasRegisteredForThisCourse_before.txt in commit SchoolSystem
+yes
+Processing file: findCourse_after.txt in commit SchoolSystem
+yes
+Processing file: findCourse_before.txt in commit SchoolSystem
+yes
+Processing file: hasRegisteredForThisCourse_after.txt in commit SchoolSystem
+yes
+Processing file: hasRegisteredForThisCourse_before.txt in commit SchoolSystem
+yes
+Processing file: findCourse_after.txt in commit SchoolSystem
+Yes
+Processing file: findCourse_before.txt in commit SchoolSystem
+yes
+Processing file: hasRegisteredForThisCourse_after.txt in commit SchoolSystem
+yes
+Processing file: main_after.txt in commit SchoolSystem
+Yes
+Processing file: main_before.txt in commit SchoolSystem
+Yes
+Processing file: getNotes_before.txt in commit SpringBootNoteApp
+Yes
+Processing file: getNotes_after.txt in commit SpringBootNoteApp
+yes
+Processing file: getMobEffect_before.txt in commit Space-Tech-Mod
+Yes
+Processing file: tick_before.txt in commit Space-Tech-Mod
+yes
+Processing file: tick_after.txt in commit Space-Tech-Mod
+yes
+Processing file: getMobEffect_after.txt in commit Space-Tech-Mod
+yes
+Processing file: validatePhotoChecksumExist_after.txt in commit esthete
+yes
+Processing file: validatePhotoChecksumExist_before.txt in commit esthete
+yes
+Processing file: testValidatePhotoChecksumExist_before.txt in commit esthete
+Yes
+Processing file: testValidatePhotoChecksumExist_after.txt in commit esthete
+Yes
+Processing file: jadenSmithWritingStyle_after.txt in commit Dev_Interview_Pre
+no
+Processing file: main_after.txt in commit Dev_Interview_Pre
+yes
+Processing file: jadenSmithWritingStyle_before.txt in commit Dev_Interview_Pre
+no
+Processing file: main_before.txt in commit Dev_Interview_Pre
+No
+Processing file: getDocument_after.txt in commit be_expenses_manager
+no
+Processing file: getDocument_before.txt in commit be_expenses_manager
+yes
+Processing file: toDto_after.txt in commit be_expenses_manager
+yes
+Processing file: toDto_before.txt in commit be_expenses_manager
+Yes
+Processing file: startNewAuthoringCycle_after.txt in commit snomed-release-service
+No
+Processing file: startNewAuthoringCycle_before.txt in commit snomed-release-service
+yes
+Processing file: getFirstNInstances_after.txt in commit snomed-release-service
+No
+Processing file: getFirstNInstances_before.txt in commit snomed-release-service
+yes
+Processing file: generateDescription_before.txt in commit snomed-release-service
+Yes
+Processing file: generateDescription_after.txt in commit snomed-release-service
+yes
+Processing file: toString_after.txt in commit WebScraper3
+Yes
+Processing file: toString_before.txt in commit WebScraper3
+yes
+Processing file: writeData_after.txt in commit WebScraper3
+yes
+Processing file: writeData_before.txt in commit WebScraper3
+yes
+Processing file: nullex_before.txt in commit BE
+no
+Processing file: nullex_after.txt in commit BE
+No
+Processing file: controlLoop_after.txt in commit JAVA
+No
+Processing file: controlLoop_before.txt in commit JAVA
+yes
+Processing file: findBook_after.txt in commit JAVA
+yes
+Processing file: findBook_before.txt in commit JAVA
+yes
+Processing file: findPublicationByTitle_before.txt in commit JAVA
+yes
+Processing file: findPublicationByTitle_after.txt in commit JAVA
+yes
+Processing file: setRequestedDuration_after.txt in commit elasticsearch-monorepo
+Yes
+Processing file: setRequestedDuration_before.txt in commit elasticsearch-monorepo
+No
+Processing file: testPollDiscoveryOccurrenceFinished_after.txt in commit wp_cloud
+yes
+Processing file: testPollDiscoveryOccurrenceFinished_before.txt in commit wp_cloud
+yes
+Processing file: setImplicits_before.txt in commit projects
+yes
+Processing file: fwdFormatTypes_after.txt in commit projects
+yes
+Processing file: fetchImplicits_before.txt in commit projects
+yes
+Processing file: fwdFormatTypes_before.txt in commit projects
+Yes
+Processing file: setImplicits_after.txt in commit projects
+yes
+Processing file: fetchImplicits_after.txt in commit projects
+yes
+Processing file: partsTokens17_after.txt in commit projects
+yes
+Processing file: partsTokens21_after.txt in commit projects
+yes
+Processing file: partsTokens17_before.txt in commit projects
+yes
+Processing file: partsTokens21_before.txt in commit projects
+yes
+Processing file: creatReachOperationNode_after.txt in commit projects
+yes
+Processing file: creatReachOperationNode_before.txt in commit projects
+yes
+Processing file: getConverter_after.txt in commit projects
+yes
+Processing file: getConverter_before.txt in commit projects
+yes
+Processing file: process_before.txt in commit projects
+Yes
+Processing file: getConverter_after.txt in commit projects
+yes
+Processing file: getConverter_before.txt in commit projects
+yes
+Processing file: process_after.txt in commit projects
+yes
+Processing file: getConverter_after.txt in commit projects
+yes
+Processing file: getConverter_before.txt in commit projects
+yes
+Processing file: procOperands_after.txt in commit projects
+yes
+Processing file: procOperands_before.txt in commit projects
+yes
+Processing file: fwdType_before.txt in commit projects
+yes
+Processing file: fwdType_after.txt in commit projects
+yes
+Processing file: getConv_after.txt in commit projects
+yes
+Processing file: endCalculate_after.txt in commit projects
+yes
+Processing file: getConv_before.txt in commit projects
+yes
+Processing file: endCalculate_before.txt in commit projects
+yes
+Processing file: build_after.txt in commit projects
+yes
+Processing file: build_before.txt in commit projects
+yes
+Processing file: initByNotNull_before.txt in commit projects
+yes
+Processing file: initByNotNull_after.txt in commit projects
+yes
+Processing file: isValidIndex_after.txt in commit projects
+yes
+Processing file: isValidIndex_before.txt in commit projects
+yes
+Processing file: defCalcArg_before.txt in commit projects
+yes
+Processing file: defCalcArg_after.txt in commit projects
+yes
+Processing file: procOperands_after.txt in commit projects
+yes
+Processing file: procOperands_before.txt in commit projects
+yes
+Processing file: processPreSemiAffectation_after.txt in commit projects
+yes
+Processing file: processCompoundAffLeftOpReport_before.txt in commit projects
+yes
+Processing file: processCompoundAffLeftOpError_before.txt in commit projects
+yes
+Processing file: processCompoundAffLeftOpError_after.txt in commit projects
+yes
+Processing file: processLogicAndOrOperationReport_after.txt in commit projects
+Yes
+Processing file: processLogicAndOrOperationReport_before.txt in commit projects
+yes
+Processing file: processPostIncr_before.txt in commit projects
+yes
+Processing file: getRelativize_after.txt in commit projects
+yes
+Processing file: processCompoundAffLeftOpReport_after.txt in commit projects
+yes
+Processing file: processUnarySymbol_before.txt in commit projects
+yes
+Processing file: processCustomOperator_before.txt in commit projects
+yes
+Processing file: processPreSemiAffectation_before.txt in commit projects
+yes
+Processing file: processCompareReport_after.txt in commit projects
+Yes
+Processing file: processPostIncr_after.txt in commit projects
+yes
+Processing file: processCompareReport_before.txt in commit projects
+yes
+Processing file: processUnarySymbol_after.txt in commit projects
+Yes
+Processing file: processCustomOperator_after.txt in commit projects
+yes
+Processing file: getRelativize_before.txt in commit projects
+yes
+Processing file: getConverter_after.txt in commit projects
+yes
+Processing file: getConverter_before.txt in commit projects
+no
+Processing file: explicitOperator_after.txt in commit projects
+yes
+Processing file: procOperators_before.txt in commit projects
+yes
+Processing file: quickOp_before.txt in commit projects
+yes
+Processing file: explicitOperator_before.txt in commit projects
+yes
+Processing file: compound_after.txt in commit projects
+yes
+Processing file: semi_before.txt in commit projects
+yes
+Processing file: updateConv_before.txt in commit projects
+Yes
+Processing file: procOperands_after.txt in commit projects
+yes
+Processing file: compare_after.txt in commit projects
+yes
+Processing file: semi_after.txt in commit projects
+yes
+Processing file: updateConv_after.txt in commit projects
+yes
+Processing file: procGeneOperators_after.txt in commit projects
+yes
+Processing file: procOperators_after.txt in commit projects
+Yes
+Processing file: quickOp_after.txt in commit projects
+yes
+Processing file: procOper_after.txt in commit projects
+yes
+Processing file: compare_before.txt in commit projects
+yes
+Processing file: procOper_before.txt in commit projects
+yes
+Processing file: procGeneOperators_before.txt in commit projects
+yes
+Processing file: procOperands_before.txt in commit projects
+yes
+Processing file: compound_before.txt in commit projects
+yes
+Processing file: feedInherits_after.txt in commit projects
+yes
+Processing file: feedInherits_before.txt in commit projects
+yes
+Processing file: impls_before.txt in commit projects
+yes
+Processing file: setImplicits_before.txt in commit projects
+yes
+Processing file: impls_after.txt in commit projects
+yes
+Processing file: fetchImplicits_before.txt in commit projects
+yes
+Processing file: formatted_after.txt in commit projects
+yes
+Processing file: update_after.txt in commit projects
+yes
+Processing file: update_before.txt in commit projects
+yes
+Processing file: conv_before.txt in commit projects
+yes
+Processing file: formatted_before.txt in commit projects
+yes
+Processing file: setImplicits_after.txt in commit projects
+yes
+Processing file: fetchImplicits_after.txt in commit projects
+yes
+Processing file: conv_after.txt in commit projects
+yes
+Processing file: procOperators_before.txt in commit projects
+yes
+Processing file: compound_after.txt in commit projects
+yes
+Processing file: semi_before.txt in commit projects
+yes
+Processing file: updateConv_before.txt in commit projects
+yes
+Processing file: procOperands_after.txt in commit projects
+yes
+Processing file: semi_after.txt in commit projects
+yes
+Processing file: updateConv_after.txt in commit projects
+yes
+Processing file: procGeneOperators_after.txt in commit projects
+yes
+Processing file: procOperators_after.txt in commit projects
+yes
+Processing file: procOper_after.txt in commit projects
+yes
+Processing file: quickOperation_after.txt in commit projects
+yes
+Processing file: procOper_before.txt in commit projects
+yes
+Processing file: procGeneOperators_before.txt in commit projects
+yes
+Processing file: procOperands_before.txt in commit projects
+yes
+Processing file: compound_before.txt in commit projects
+yes
+Processing file: quickOperation_before.txt in commit projects
+yes
+Processing file: drawTerrain_before.txt in commit GardeningGame
+yes
+Processing file: drawTerrain_after.txt in commit GardeningGame
+yes
+Processing file: setScroll_before.txt in commit packages_apps_Launcher3
+Yes
+Processing file: setScroll_after.txt in commit packages_apps_Launcher3
+yes
+Processing file: setScroll_before.txt in commit packages_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit packages_apps_Launcher3
+Yes
+Processing file: setScroll_before.txt in commit packages_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit packages_apps_Launcher3
+yes
+Processing file: setStationTimes_after.txt in commit IRCTC
+Yes
+Processing file: getStationTimes_before.txt in commit IRCTC
+yes
+Processing file: setStationTimes_before.txt in commit IRCTC
+No
+Processing file: getStationTimes_after.txt in commit IRCTC
+yes
+Processing file: searchTrains_after.txt in commit IRCTC
+yes
+Processing file: updateTrain_after.txt in commit IRCTC
+Yes
+Processing file: searchTrains_before.txt in commit IRCTC
+yes
+Processing file: validTrain_after.txt in commit IRCTC
+yes
+Processing file: validTrain_before.txt in commit IRCTC
+Yes
+Processing file: saveTrainListToFile_after.txt in commit IRCTC
+yes
+Processing file: addTrain_after.txt in commit IRCTC
+yes
+Processing file: saveTrainListToFile_before.txt in commit IRCTC
+yes
+Processing file: addTrain_before.txt in commit IRCTC
+yes
+Processing file: updateTrain_before.txt in commit IRCTC
+yes
+Processing file: registerTemplate_before.txt in commit amazon-ecs-plugin
+yes
+Processing file: registerTemplate_after.txt in commit amazon-ecs-plugin
+Yes
+Processing file: rateLimiters_before.txt in commit mu-server
+yes
+Processing file: rateLimiters_after.txt in commit mu-server
+yes
+Processing file: emptyListReturnedWhenNoLimiters_after.txt in commit mu-server
+yes
+Processing file: emptyListReturnedWhenNoLimiters_before.txt in commit mu-server
+yes
+Processing file: update_after.txt in commit library
+yes
+Processing file: update_before.txt in commit library
+yes
+Processing file: closeImmediately_before.txt in commit library
+yes
+Processing file: closeImmediately_after.txt in commit library
+no
+Processing file: close_before.txt in commit library
+yes
+Processing file: close_after.txt in commit library
+yes
+Processing file: invoke_before.txt in commit bankAccount
+Yes
+Processing file: invoke_after.txt in commit bankAccount
+yes
+Processing file: loadUserByUsername_before.txt in commit presta-savings
+no
+Processing file: loadUserByUsername_after.txt in commit presta-savings
+yes
+Processing file: initiate_before.txt in commit rudder-sdk-android
+yes
+Processing file: initiate_after.txt in commit rudder-sdk-android
+yes
+Processing file: createCounters_before.txt in commit rudder-sdk-android
+yes
+Processing file: createCounters_after.txt in commit rudder-sdk-android
+yes
+Processing file: createRoutineLoadTask_before.txt in commit starrocks
+yes
+Processing file: createRoutineLoadTask_after.txt in commit starrocks
+yes
+Processing file: UpdateMovieInDB_after.txt in commit prog3-Filmverleih
+yes
+Processing file: UpdateMovieInDB_before.txt in commit prog3-Filmverleih
+yes
+Processing file: saveInfosAsNeededDataTypes_before.txt in commit prog3-Filmverleih
+Yes
+Processing file: confirmMovieEdit_before.txt in commit prog3-Filmverleih
+yes
+Processing file: saveInfosAsNeededDataTypes_after.txt in commit prog3-Filmverleih
+yes
+Processing file: confirmMovieEdit_after.txt in commit prog3-Filmverleih
+yes
+Processing file: validEntryChecker_after.txt in commit prog3-Filmverleih
+yes
+Processing file: insertMovieData_before.txt in commit prog3-Filmverleih
+yes
+Processing file: validEntryChecker_before.txt in commit prog3-Filmverleih
+yes
+Processing file: checkIfCheckBoxesChanged_before.txt in commit prog3-Filmverleih
+yes
+Processing file: checkIfCheckBoxesChanged_after.txt in commit prog3-Filmverleih
+yes
+Processing file: insertMovieData_after.txt in commit prog3-Filmverleih
+yes
+Processing file: addRatingChecker_after.txt in commit prog3-Filmverleih
+yes
+Processing file: addRatingChecker_before.txt in commit prog3-Filmverleih
+yes
+Processing file: isAllowed_before.txt in commit SkyblockAddon
+yes
+Processing file: isAllowed_after.txt in commit SkyblockAddon
+yes
+Processing file: getDescription_after.txt in commit SkyblockAddon
+yes
+Processing file: getDescription_before.txt in commit SkyblockAddon
+yes
+Processing file: referencedClassIdentifierGenerator_after.txt in commit epcis-testdata-generator
+yes
+Processing file: referencedClassIdentifierGenerator_before.txt in commit epcis-testdata-generator
+yes
+Processing file: referencedEpcsIdentifierGenerator_after.txt in commit epcis-testdata-generator
+yes
+Processing file: referencedEpcsIdentifierGenerator_before.txt in commit epcis-testdata-generator
+yes
+Processing file: addCommandDropdown_before.txt in commit NewSwerve2024
+yes
+Processing file: addCommandDropdown_after.txt in commit NewSwerve2024
+yes
+Processing file: configureButtonBindings_before.txt in commit NewSwerve2024
+yes
+Processing file: configureButtonBindings_after.txt in commit NewSwerve2024
+yes
+Processing file: main_after.txt in commit NewSwerve2024
+yes
+Processing file: main_before.txt in commit NewSwerve2024
+yes
+Processing file: onVisibilityStateChange_after.txt in commit CommandPrompter
+yes
+Processing file: onVisibilityStateChange_before.txt in commit CommandPrompter
+yes
+Processing file: invalidate_after.txt in commit CommandPrompter
+yes
+Processing file: invalidate_before.txt in commit CommandPrompter
+yes
+Processing file: saveToVSETFile_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: saveToVSETFile_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: start_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: start_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getCameraProjectionIndexData_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: copy_before.txt in commit Kintsugi3DBuilder
+Yes
+Processing file: getRelativeImagePathName_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLightIntensityData_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLightPositionData_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: createFromLookAt_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getCameraPoseData_before.txt in commit Kintsugi3DBuilder
+Yes
+Processing file: writeVSETFileToStream_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: findPrimaryImageFile_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getCameraProjectionData_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: moveRootDirectory_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLightIndexData_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getRelativeImagePathName_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: findPrimaryImageFile_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: setPrimaryView_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: createPermutation_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getCameraProjectionIndexData_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: setPrimaryViewIndex_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: setPrimaryViewIndex_after.txt in commit Kintsugi3DBuilder
+no
+Processing file: getEncodedLuminanceValues_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getImageFilePath_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: setRelativeImagePathName_before.txt in commit Kintsugi3DBuilder
+no
+Processing file: createFromLookAt_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLinearLuminanceValues_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getCameraPoseData_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLightIndexData_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: createPermutation_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: setRelativeImagePathName_after.txt in commit Kintsugi3DBuilder
+No
+Processing file: moveRootDirectory_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLightPositionData_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: setPrimaryView_before.txt in commit Kintsugi3DBuilder
+No
+Processing file: getCameraProjectionData_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: writeVSETFileToStream_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getEncodedLuminanceValues_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: copy_after.txt in commit Kintsugi3DBuilder
+Yes
+Processing file: getImageFilePath_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLightIntensityData_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getLinearLuminanceValues_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: main_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: main_before.txt in commit Kintsugi3DBuilder
+Yes
+Processing file: saveMaterialFiles_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: saveGlTF_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: saveGlTF_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: saveMaterialFiles_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: priorSolutionButtonAction_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: exportDirectoryButtonAction_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: prompt_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: prompt_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: reconstructionViewSetButtonAction_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: reconstructionViewSetButtonAction_before.txt in commit Kintsugi3DBuilder
+Yes
+Processing file: priorSolutionButtonAction_after.txt in commit Kintsugi3DBuilder
+yes
+Processing file: exportDirectoryButtonAction_before.txt in commit Kintsugi3DBuilder
+yes
+Processing file: getAlchsPerHour_before.txt in commit osrs-scripts
+yes
+Processing file: getAlchsPerHour_after.txt in commit osrs-scripts
+yes
+Processing file: lootjs$getQueriedLootTableId_after.txt in commit lootjs
+yes
+Processing file: lootjs$getQueriedLootTableId_before.txt in commit lootjs
+yes
+Processing file: lootjs$setLootConsumer_after.txt in commit lootjs
+yes
+Processing file: lootjs$setQueriedLootTableId_before.txt in commit lootjs
+no
+Processing file: lootjs$getLootConsumer_before.txt in commit lootjs
+yes
+Processing file: lootjs$getLootConsumer_after.txt in commit lootjs
+yes
+Processing file: lootjs$setQueriedLootTableId_after.txt in commit lootjs
+yes
+Processing file: lootjs$setLootConsumer_before.txt in commit lootjs
+yes
+Processing file: handleContentChange_after.txt in commit jte-intellij
+yes
+Processing file: handleContentChange_before.txt in commit jte-intellij
+yes
+Processing file: handleContentChange_after.txt in commit jte-intellij
+yes
+Processing file: handleContentChange_before.txt in commit jte-intellij
+yes
+Processing file: displayAutonomousRoutines_after.txt in commit cled
+yes
+Processing file: displayAutonomousRoutines_before.txt in commit cled
+yes
+Processing file: findOwner_after.txt in commit spring-petclinic-oidc
+no
+Processing file: findPet_before.txt in commit spring-petclinic-oidc
+yes
+Processing file: findPet_after.txt in commit spring-petclinic-oidc
+yes
+Processing file: findOwner_before.txt in commit spring-petclinic-oidc
+yes
+Processing file: align_before.txt in commit birt
+yes
+Processing file: align_after.txt in commit birt
+Yes
+Processing file: getFilmInfo_before.txt in commit java-project
+yes
+Processing file: getFilmInfo_after.txt in commit java-project
+yes
+Processing file: getExchangesFromRow_after.txt in commit gridcapa-cse
+Yes
+Processing file: getRow_after.txt in commit gridcapa-cse
+yes
+Processing file: getRow_before.txt in commit gridcapa-cse
+yes
+Processing file: getExchangesFromRow_before.txt in commit gridcapa-cse
+yes
+Processing file: taskComparator_before.txt in commit cruise-control
+Yes
+Processing file: taskComparator_after.txt in commit cruise-control
+yes
+Processing file: maybeMoveReplicaToEndOfReplicaList_before.txt in commit cruise-control
+yes
+Processing file: shouldSkipOperationOnURP_before.txt in commit cruise-control
+yes
+Processing file: maybeMoveReplicaToEndOfReplicaList_after.txt in commit cruise-control
+yes
+Processing file: maybeChangeLeadershipForPartition_after.txt in commit cruise-control
+yes
+Processing file: shouldSkipOperationOnURP_after.txt in commit cruise-control
+yes
+Processing file: maybeChangeLeadershipForPartition_before.txt in commit cruise-control
+yes
+Processing file: isPartitionUnderReplicated_after.txt in commit cruise-control
+yes
+Processing file: isPartitionUnderReplicated_before.txt in commit cruise-control
+yes
+Processing file: createClusterModel_after.txt in commit cruise-control
+yes
+Processing file: createClusterModel_before.txt in commit cruise-control
+No
+Processing file: getMembraneMapping_before.txt in commit vcell
+yes
+Processing file: getMembraneMapping_after.txt in commit vcell
+yes
+Processing file: getModifyForm_after.txt in commit lutece-form-plugin-forms
+yes
+Processing file: getModifyForm_before.txt in commit lutece-form-plugin-forms
+yes
+Processing file: getResult_after.txt in commit AJAN-service
+yes
+Processing file: getResult_before.txt in commit AJAN-service
+yes
+Processing file: addInputToModel_after.txt in commit AJAN-service
+yes
+Processing file: addInputToModel_before.txt in commit AJAN-service
+yes
+Processing file: getInputModel_before.txt in commit AJAN-service
+yes
+Processing file: getInputModel_after.txt in commit AJAN-service
+Yes
+Processing file: execute_after.txt in commit AJAN-service
+yes
+Processing file: execute_before.txt in commit AJAN-service
+yes
+Processing file: queryRepository_before.txt in commit AJAN-service
+yes
+Processing file: queryRepository_after.txt in commit AJAN-service
+yes
+Processing file: addReactionFigure_after.txt in commit lingua-franca
+Yes
+Processing file: addReactionFigure_before.txt in commit lingua-franca
+yes
+Processing file: findOwner_after.txt in commit spring-petclinic
+no
+Processing file: findPet_before.txt in commit spring-petclinic
+yes
+Processing file: findPet_after.txt in commit spring-petclinic
+yes
+Processing file: findOwner_before.txt in commit spring-petclinic
+yes
+Processing file: testMergeOneOfTheScoresContainsMissingTeam_before.txt in commit ters
+yes
+Processing file: testMergeTwoEmptyScores_after.txt in commit ters
+No
+Processing file: testMergeOneOfTheScoresContainsMissingTeam_after.txt in commit ters
+No
+Processing file: testMergeTwoEmptyScores_before.txt in commit ters
+yes
+Processing file: mapPetEntitytoPetResponse_before.txt in commit poochku-backend
+Yes
+Processing file: mapPetEntitytoPetResponse_after.txt in commit poochku-backend
+Yes
+Processing file: createUserAccount_after.txt in commit poochku-backend
+yes
+Processing file: createUserAccount_before.txt in commit poochku-backend
+Yes
+Processing file: parentMeetingExists_before.txt in commit bigbluebutton
+yes
+Processing file: parentMeetingExists_after.txt in commit bigbluebutton
+yes
+Processing file: createAndConnectComponent_before.txt in commit 658-Computer
+yes
+Processing file: createAndConnectComponent_after.txt in commit 658-Computer
+yes
+Processing file: paint_before.txt in commit 658-Computer
+Yes
+Processing file: paint_after.txt in commit 658-Computer
+yes
+Processing file: createAndConnectComponent_before.txt in commit 658-Computer
+yes
+Processing file: createAndConnectComponent_after.txt in commit 658-Computer
+yes
+Processing file: getComponentViewInScreenSpace_after.txt in commit 658-Computer
+Yes
+Processing file: getComponentViewInScreenSpace_before.txt in commit 658-Computer
+yes
+Processing file: loadComponents_after.txt in commit 658-Computer
+yes
+Processing file: loadComponents_before.txt in commit 658-Computer
+Yes
+Processing file: wireConnect_before.txt in commit 658-Computer
+Yes
+Processing file: wireConnect_after.txt in commit 658-Computer
+yes
+Processing file: isNull_before.txt in commit 658-Computer
+yes
+Processing file: isNull_after.txt in commit 658-Computer
+No
+Processing file: paintSelected_after.txt in commit 658-Computer
+yes
+Processing file: paintBoundingBox_after.txt in commit 658-Computer
+yes
+Processing file: getBoundingBoxInScreenSpace_after.txt in commit 658-Computer
+No
+Processing file: paintBoundingBox_before.txt in commit 658-Computer
+yes
+Processing file: getBoundingBoxInScreenSpace_before.txt in commit 658-Computer
+yes
+Processing file: getSelectionBoxInScreenSpace_before.txt in commit 658-Computer
+yes
+Processing file: getSelectionBoxInScreenSpace_after.txt in commit 658-Computer
+yes
+Processing file: paintSelected_before.txt in commit 658-Computer
+yes
+Processing file: buildAndSaveNewProposal_after.txt in commit Proposta-kafka
+Yes
+Processing file: buildAndSaveNewProposal_before.txt in commit Proposta-kafka
+Yes
+Processing file: getReview_before.txt in commit Review-Kurly-BE
+yes
+Processing file: getReview_after.txt in commit Review-Kurly-BE
+yes
+Processing file: findOwner_after.txt in commit jgmp_module8
+no
+Processing file: findPet_before.txt in commit jgmp_module8
+yes
+Processing file: findPet_after.txt in commit jgmp_module8
+yes
+Processing file: findOwner_before.txt in commit jgmp_module8
+yes
+Processing file: generateDraftDocumentsForRespondent_before.txt in commit prl-cos-api
+Yes
+Processing file: generateDraftDocumentsForRespondent_after.txt in commit prl-cos-api
+Yes
+Processing file: updateCaseDetails_after.txt in commit prl-cos-api
+yes
+Processing file: updateCaseDetails_before.txt in commit prl-cos-api
+Yes
+Processing file: generateDraftDocumentsForRespondent_before.txt in commit prl-cos-api
+Yes
+Processing file: generateDraftDocumentsForRespondent_after.txt in commit prl-cos-api
+Yes
+Processing file: setUp_after.txt in commit prl-cos-api
+yes
+Processing file: setUp_before.txt in commit prl-cos-api
+yes
+Processing file: setUp_after.txt in commit prl-cos-api
+yes
+Processing file: setUp_before.txt in commit prl-cos-api
+yes
+Processing file: setUp_after.txt in commit prl-cos-api
+yes
+Processing file: setUp_before.txt in commit prl-cos-api
+yes
+Processing file: testupdateCaseDetailsCitizenUpdateOnCaRespondentForNull_after.txt in commit prl-cos-api
+no
+Processing file: testupdateCaseDetailsCitizenUpdateOnCaRespondent_before.txt in commit prl-cos-api
+yes
+Processing file: testupdateCaseDetailsCitizenUpdateOnCaRespondentForNull_before.txt in commit prl-cos-api
+yes
+Processing file: testupdateCaseDetailsCitizenUpdateOnCaRespondent_after.txt in commit prl-cos-api
+yes
+Processing file: testupdateCaseDetailsCitizenUpdateOnCaApplicant_after.txt in commit prl-cos-api
+yes
+Processing file: testupdateCaseDetailsCitizenUpdateOnCaApplicant_before.txt in commit prl-cos-api
+yes
+Processing file: generateDraftDocumentsForRespondent_before.txt in commit prl-cos-api
+Yes
+Processing file: generateDraftDocumentsForRespondent_after.txt in commit prl-cos-api
+Yes
+Processing file: retrieveExistingResponseForSolicitor_before.txt in commit prl-cos-api
+yes
+Processing file: retrieveExistingResponseForSolicitor_after.txt in commit prl-cos-api
+yes
+Processing file: sendToGatekeeper_after.txt in commit prl-cos-api
+yes
+Processing file: sendToGatekeeper_before.txt in commit prl-cos-api
+Yes
+Processing file: testCreateRoleAssignmentActorIdIsNull_before.txt in commit prl-cos-api
+yes
+Processing file: testCreateRoleAssignmentActorIdIsNull_after.txt in commit prl-cos-api
+yes
+Processing file: generateDraftDocumentsForRespondent_before.txt in commit prl-cos-api
+yes
+Processing file: generateDraftDocumentsForRespondent_after.txt in commit prl-cos-api
+yes
+Processing file: createRoleAssignment_before.txt in commit prl-cos-api
+yes
+Processing file: createRoleAssignment_after.txt in commit prl-cos-api
+yes
+Processing file: generateDraftDocumentsForRespondent_before.txt in commit prl-cos-api
+yes
+Processing file: generateDraftDocumentsForRespondent_after.txt in commit prl-cos-api
+yes
+Processing file: sendToGatekeeper_after.txt in commit prl-cos-api
+Yes
+Processing file: sendToGatekeeper_before.txt in commit prl-cos-api
+yes
+Processing file: populateDataMap_after.txt in commit prl-cos-api
+yes
+Processing file: populateDataMap_before.txt in commit prl-cos-api
+yes
+Processing file: find_after.txt in commit COMP2503-A3
+yes
+Processing file: find_before.txt in commit COMP2503-A3
+yes
+Processing file: callBackReceive_before.txt in commit Adrestus
+yes
+Processing file: callBackReceive_after.txt in commit Adrestus
+yes
+Processing file: getQueryAggDataSql_after.txt in commit himmatMahalo
+yes
+Processing file: getQueryAggDataSql_before.txt in commit himmatMahalo
+yes
+Processing file: assembleSqlFilter_before.txt in commit himmatMahalo
+no
+Processing file: assembleSqlFilter_after.txt in commit himmatMahalo
+No
+Processing file: manageUsers_after.txt in commit TaskManagementSystem
+yes
+Processing file: manageEmployees_after.txt in commit TaskManagementSystem
+yes
+Processing file: manageUsers_before.txt in commit TaskManagementSystem
+yes
+Processing file: manageEmployees_before.txt in commit TaskManagementSystem
+yes
+Processing file: stop_before.txt in commit clickhouse-kafka-connect
+yes
+Processing file: stop_after.txt in commit clickhouse-kafka-connect
+yes
+Processing file: main_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: main_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: compareLists_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: clearList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: iterateList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: shuffleList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: sortList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: shuffleList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: removeElement_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: subList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: swapElements_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: iterateList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: populateList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: getElement_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: searchElement_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: subList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: isListEmpty_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: reverseList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: sortList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: copyList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: getElement_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: displayList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: copyList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: reverseList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: insertElement_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: removeElement_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: clearList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: compareLists_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: insertElement_before.txt in commit OOP-Java-EMSI
+Yes
+Processing file: swapElements_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: displayList_after.txt in commit OOP-Java-EMSI
+yes
+Processing file: populateList_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: isListEmpty_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: searchElement_before.txt in commit OOP-Java-EMSI
+yes
+Processing file: runIngester_before.txt in commit marklogic-data-hub
+yes
+Processing file: runIngester_after.txt in commit marklogic-data-hub
+yes
+Processing file: compare_after.txt in commit Pokemon
+yes
+Processing file: compare_before.txt in commit Pokemon
+Yes
+Processing file: compare_after.txt in commit Pokemon
+yes
+Processing file: compare_before.txt in commit Pokemon
+Yes
+Processing file: findCardGivenName_before.txt in commit Pokemon
+Yes
+Processing file: findCardGivenHP_after.txt in commit Pokemon
+yes
+Processing file: findCardGivenName_after.txt in commit Pokemon
+Yes
+Processing file: getCardOfHP_before.txt in commit Pokemon
+yes
+Processing file: getCardOfName_after.txt in commit Pokemon
+yes
+Processing file: findCardGivenHP_before.txt in commit Pokemon
+yes
+Processing file: removeCards_before.txt in commit Pokemon
+yes
+Processing file: getCardOfHP_after.txt in commit Pokemon
+Yes
+Processing file: getCardOfName_before.txt in commit Pokemon
+yes
+Processing file: removeCards_after.txt in commit Pokemon
+yes
+Processing file: makePointHistories_after.txt in commit stepup
+yes
+Processing file: makeRandomDance_after.txt in commit stepup
+no
+Processing file: init_before.txt in commit stepup
+No
+Processing file: makePointHistories_before.txt in commit stepup
+yes
+Processing file: makeRandomDance_before.txt in commit stepup
+yes
+Processing file: init_after.txt in commit stepup
+Unclear
+Processing file: doCheckAssignedLabelString_after.txt in commit agent-setup-plugin
+yes
+Processing file: doCheckAssignedLabelString_before.txt in commit agent-setup-plugin
+yes
+Processing file: doFilterInternal_before.txt in commit rectle-service
+yes
+Processing file: doFilterInternal_after.txt in commit rectle-service
+yes
+Processing file: setNodeService_before.txt in commit alfresco-community-repo
+no
+Processing file: setNodeService_after.txt in commit alfresco-community-repo
+yes
+Processing file: findOwner_after.txt in commit spring-petclinic-for-azure-app
+no
+Processing file: findPet_before.txt in commit spring-petclinic-for-azure-app
+yes
+Processing file: findPet_after.txt in commit spring-petclinic-for-azure-app
+yes
+Processing file: findOwner_before.txt in commit spring-petclinic-for-azure-app
+yes
+Processing file: findSizeOfModifications_before.txt in commit app-server-migration
+yes
+Processing file: findSizeOfAdditions_after.txt in commit app-server-migration
+yes
+Processing file: findSizeOfModifications_after.txt in commit app-server-migration
+yes
+Processing file: findSizeOfDeletions_after.txt in commit app-server-migration
+yes
+Processing file: findSizeOfDeletions_before.txt in commit app-server-migration
+yes
+Processing file: findSizeOfAdditions_before.txt in commit app-server-migration
+yes
+Processing file: clean_after.txt in commit ArtAgencyApp
+yes
+Processing file: clean_before.txt in commit ArtAgencyApp
+yes
+Processing file: givenContactObject_whenTrim_thenReturnCleanedContactObject_before.txt in commit ArtAgencyApp
+yes
+Processing file: givenContactObjectWithTitleOnly_whenTrim_thenReturnCleanedContactObject_before.txt in commit ArtAgencyApp
+yes
+Processing file: givenContactObjectWithTitleOnly_whenTrim_thenReturnCleanedContactObject_after.txt in commit ArtAgencyApp
+yes
+Processing file: givenContactObject_whenTrim_thenReturnCleanedContactObject_after.txt in commit ArtAgencyApp
+yes
+Processing file: removeSummonedPets_before.txt in commit EntityControl
+yes
+Processing file: removeSummonedPets_after.txt in commit EntityControl
+yes
+Processing file: addProcessors_after.txt in commit toolbox-streams
+Yes
+Processing file: addProcessors_before.txt in commit toolbox-streams
+yes
+Processing file: addProcessors_after.txt in commit toolbox-streams
+yes
+Processing file: addProcessors_before.txt in commit toolbox-streams
+yes
+Processing file: onReceive_before.txt in commit ionic-native-sms-retriever-plugin-master
+Yes
+Processing file: onReceive_after.txt in commit ionic-native-sms-retriever-plugin-master
+Yes
+Processing file: testProfileMetadata_after.txt in commit cdap
+yes
+Processing file: testProfileMetadataWithNoProfilePreferences_after.txt in commit cdap
+yes
+Processing file: testProfileMetadataWithNoProfilePreferences_before.txt in commit cdap
+yes
+Processing file: testProfileMetadata_before.txt in commit cdap
+yes
+Processing file: addApplication_after.txt in commit cdap
+yes
+Processing file: addApplication_before.txt in commit cdap
+yes
+Processing file: toString_after.txt in commit cdap
+yes
+Processing file: toString_before.txt in commit cdap
+yes
+Processing file: getIsLatest_before.txt in commit cdap
+No
+Processing file: getIsLatest_after.txt in commit cdap
+yes
+Processing file: testGetLatestOnLegacyRows_after.txt in commit cdap
+no
+Processing file: testGetLatestOnLegacyRows_before.txt in commit cdap
+yes
+Processing file: addApplication_after.txt in commit cdap
+yes
+Processing file: addApplication_before.txt in commit cdap
+yes
+Processing file: addApplication_after.txt in commit cdap
+yes
+Processing file: addApplication_before.txt in commit cdap
+yes
+Processing file: addLatestApplication_after.txt in commit cdap
+yes
+Processing file: addLatestApplication_before.txt in commit cdap
+yes
+Processing file: testLocalDatasetsInWorkflow_after.txt in commit cdap
+yes
+Processing file: testLocalDatasetsInWorkflow_before.txt in commit cdap
+yes
+Processing file: testWorkflowLineage_before.txt in commit cdap
+yes
+Processing file: testWorkflowLineage_after.txt in commit cdap
+yes
+Processing file: testListRunsWithLegacyRows_after.txt in commit cdap
+no
+Processing file: testUpdateApplicationScmMetaWithNonExistingAppIds_before.txt in commit cdap
+yes
+Processing file: testAddApplication_before.txt in commit cdap
+yes
+Processing file: testMarkApplicationsLatestWithExistingLatest_after.txt in commit cdap
+yes
+Processing file: testLoadingProgram_before.txt in commit cdap
+yes
+Processing file: testUpdateApplicationScmMetaWithNonExistingAppIds_after.txt in commit cdap
+yes
+Processing file: testAddApplicationWithoutMarkingLatest_before.txt in commit cdap
+yes
+Processing file: testUpdateApplicationScmMeta_before.txt in commit cdap
+yes
+Processing file: testServiceInstances_after.txt in commit cdap
+yes
+Processing file: testServiceDeletion_before.txt in commit cdap
+yes
+Processing file: testStateRemovedOnRemoveApplication_after.txt in commit cdap
+yes
+Processing file: testCheckDeletedWorkflow_after.txt in commit cdap
+yes
+Processing file: testMarkApplicationsLatestWithExistingLatest_before.txt in commit cdap
+No
+Processing file: testUpdateApplicationScmMeta_after.txt in commit cdap
+yes
+Processing file: testLoadingProgram_after.txt in commit cdap
+yes
+Processing file: testMarkApplicationsLatestWithNewApps_after.txt in commit cdap
+yes
+Processing file: testHistoryDeletion_before.txt in commit cdap
+yes
+Processing file: testServiceInstances_before.txt in commit cdap
+yes
+Processing file: testStateRemovedOnRemoveAll_after.txt in commit cdap
+yes
+Processing file: testStateRemovedOnRemoveApplication_before.txt in commit cdap
+no
+Processing file: testProgramRunCount_after.txt in commit cdap
+yes
+Processing file: testRemoveAll_before.txt in commit cdap
+Yes
+Processing file: testRemoveApplication_after.txt in commit cdap
+yes
+Processing file: testScanApplications_before.txt in commit cdap
+yes
+Processing file: testCheckDeletedWorkflow_before.txt in commit cdap
+yes
+Processing file: testScanApplications_after.txt in commit cdap
+yes
+Processing file: testHistoryDeletion_after.txt in commit cdap
+no
+Processing file: testAddApplication_after.txt in commit cdap
+yes
+Processing file: testUpdateChangedApplication_after.txt in commit cdap
+yes
+Processing file: testListRunsWithLegacyRows_before.txt in commit cdap
+yes
+Processing file: testRuntimeArgsDeletion_after.txt in commit cdap
+yes
+Processing file: testUpdateChangedApplication_before.txt in commit cdap
+yes
+Processing file: testCheckDeletedProgramSpecs_before.txt in commit cdap
+yes
+Processing file: testWorkerInstances_before.txt in commit cdap
+yes
+Processing file: testMarkApplicationsLatestWithNewApps_before.txt in commit cdap
+yes
+Processing file: testRemoveApplication_before.txt in commit cdap
+yes
+Processing file: testProgramRunCount_before.txt in commit cdap
+Yes
+Processing file: testStateRemovedOnRemoveAll_before.txt in commit cdap
+yes
+Processing file: testScanApplicationsWithNamespace_after.txt in commit cdap
+no
+Processing file: testRunsLimit_after.txt in commit cdap
+yes
+Processing file: testCheckDeletedProgramSpecs_after.txt in commit cdap
+yes
+Processing file: testAddApplicationWithoutMarkingLatest_after.txt in commit cdap
+yes
+Processing file: testScanApplicationsWithNamespace_before.txt in commit cdap
+No
+Processing file: testRunsLimit_before.txt in commit cdap
+no
+Processing file: testServiceDeletion_after.txt in commit cdap
+yes
+Processing file: testWorkerInstances_after.txt in commit cdap
+yes
+Processing file: testRemoveAll_after.txt in commit cdap
+yes
+Processing file: testRuntimeArgsDeletion_before.txt in commit cdap
+yes
+Processing file: addAppSpecs_after.txt in commit cdap
+no
+Processing file: addAppSpecs_before.txt in commit cdap
+yes
+Processing file: process_before.txt in commit cdap
+yes
+Processing file: process_after.txt in commit cdap
+yes
+Processing file: testProfileDeletion_after.txt in commit cdap
+no
+Processing file: testProfileDeletion_before.txt in commit cdap
+yes
+Processing file: getApplicationPrimaryKeys_before.txt in commit cdap
+no
+Processing file: createLatestApplicationVersion_after.txt in commit cdap
+No
+Processing file: decodeRow_after.txt in commit cdap
+yes
+Processing file: decodeRow_before.txt in commit cdap
+yes
+Processing file: writeApplication_before.txt in commit cdap
+yes
+Processing file: writeApplication_after.txt in commit cdap
+yes
+Processing file: getApplicationPrimaryKeys_after.txt in commit cdap
+no
+Processing file: createLatestApplicationVersion_before.txt in commit cdap
+no
+Processing file: createApplicationVersion_after.txt in commit cdap
+yes
+Processing file: createApplicationVersion_before.txt in commit cdap
+yes
+Processing file: testConcurrentCreateAppFirstVersion_after.txt in commit cdap
+No
+Processing file: testGetLatestOnLegacyRows_after.txt in commit cdap
+yes
+Processing file: testConcurrentCreateAppFirstVersion_before.txt in commit cdap
+No
+Processing file: testConcurrentCreateAppAfterTheFirstVersion_after.txt in commit cdap
+no
+Processing file: testGetLatestOnLegacyRows_before.txt in commit cdap
+yes
+Processing file: testConcurrentCreateAppAfterTheFirstVersion_before.txt in commit cdap
+No
+Processing file: status_after.txt in commit reatmetric
+yes
+Processing file: status_before.txt in commit reatmetric
+yes
+Processing file: setCharacteristics_before.txt in commit reatmetric
+no
+Processing file: setCharacteristics_after.txt in commit reatmetric
+yes
+Processing file: addOrder_before.txt in commit Datamasters
+Yes
+Processing file: addOrder_after.txt in commit Datamasters
+Yes
+Processing file: orderIsSent_after.txt in commit Datamasters
+yes
+Processing file: toString_after.txt in commit Datamasters
+yes
+Processing file: toString_before.txt in commit Datamasters
+yes
+Processing file: getPreparationTimeMinutes_after.txt in commit Datamasters
+no
+Processing file: orderIsSent_before.txt in commit Datamasters
+yes
+Processing file: setPreparationTimeMinutes_before.txt in commit Datamasters
+yes
+Processing file: isCancelable_after.txt in commit Datamasters
+yes
+Processing file: getPreparationTimeMinutes_before.txt in commit Datamasters
+yes
+Processing file: setPreparationTimeMinutes_after.txt in commit Datamasters
+No
+Processing file: isCancelable_before.txt in commit Datamasters
+yes
+Processing file: packToZip_before.txt in commit New-home-flaw-finding-service
+yes
+Processing file: packToZip_after.txt in commit New-home-flaw-finding-service
+yes
+Processing file: increaseScoreNumber_before.txt in commit Term-Project
+yes
+Processing file: getScoreNumber_after.txt in commit Term-Project
+No
+Processing file: getColor_after.txt in commit Term-Project
+No
+Processing file: increaseScoreNumber_after.txt in commit Term-Project
+Yes
+Processing file: setScoreNumber_after.txt in commit Term-Project
+No
+Processing file: setScoreNumber_before.txt in commit Term-Project
+no
+Processing file: getScoreNumber_before.txt in commit Term-Project
+yes
+Processing file: decreaseScoreNumber_before.txt in commit Term-Project
+yes
+Processing file: decreaseScoreNumber_after.txt in commit Term-Project
+yes
+Processing file: getColor_before.txt in commit Term-Project
+No
+Processing file: act_after.txt in commit Term-Project
+yes
+Processing file: act_before.txt in commit Term-Project
+No
+Processing file: act_after.txt in commit Term-Project
+yes
+Processing file: setBalance_after.txt in commit Term-Project
+no
+Processing file: updateBalance_before.txt in commit Term-Project
+yes
+Processing file: decreaseBalance_after.txt in commit Term-Project
+yes
+Processing file: act_before.txt in commit Term-Project
+yes
+Processing file: decreaseBalance_before.txt in commit Term-Project
+yes
+Processing file: increaseBalance_before.txt in commit Term-Project
+Yes
+Processing file: increaseBalance_after.txt in commit Term-Project
+yes
+Processing file: setBalance_before.txt in commit Term-Project
+yes
+Processing file: getBalance_before.txt in commit Term-Project
+yes
+Processing file: updateBalance_after.txt in commit Term-Project
+No
+Processing file: getBalance_after.txt in commit Term-Project
+No
+Processing file: getUserScore_after.txt in commit Term-Project
+yes
+Processing file: getMoney_after.txt in commit Term-Project
+Yes
+Processing file: getMoney_before.txt in commit Term-Project
+No
+Processing file: getCredit_before.txt in commit Term-Project
+No
+Processing file: setCredit_after.txt in commit Term-Project
+yes
+Processing file: getBankAccount_after.txt in commit Term-Project
+yes
+Processing file: getBankAccount_before.txt in commit Term-Project
+yes
+Processing file: setMoney_before.txt in commit Term-Project
+No
+Processing file: getUserScore_before.txt in commit Term-Project
+yes
+Processing file: getBalance_before.txt in commit Term-Project
+yes
+Processing file: setCredit_before.txt in commit Term-Project
+no
+Processing file: getCredit_after.txt in commit Term-Project
+yes
+Processing file: getBalance_after.txt in commit Term-Project
+yes
+Processing file: setMoney_after.txt in commit Term-Project
+yes
+Processing file: isStartCacheRefresh_after.txt in commit jans
+yes
+Processing file: prepareLdapServerConnections_before.txt in commit jans
+no
+Processing file: prepareLdapServerConnections_after.txt in commit jans
+yes
+Processing file: isStartCacheRefresh_before.txt in commit jans
+yes
+Processing file: setLogLevel_after.txt in commit languagetool
+Yes
+Processing file: setLogLevel_before.txt in commit languagetool
+yes
+Processing file: setLangTool_after.txt in commit languagetool
+Yes
+Processing file: setLangTool_before.txt in commit languagetool
+yes
+Processing file: resetSortedTextRules_before.txt in commit languagetool
+Yes
+Processing file: resetSortedTextRules_after.txt in commit languagetool
+yes
+Processing file: run_after.txt in commit languagetool
+Yes
+Processing file: run_before.txt in commit languagetool
+yes
+Processing file: setDokumentListener_after.txt in commit languagetool
+no
+Processing file: setDocumentCacheForTests_before.txt in commit languagetool
+yes
+Processing file: setDokumentListener_before.txt in commit languagetool
+No
+Processing file: setDocumentCacheForTests_after.txt in commit languagetool
+yes
+Processing file: processTimeAdvanceGrant_after.txt in commit cdasim
+yes
+Processing file: processTimeAdvanceGrant_before.txt in commit cdasim
+yes
+Processing file: setScroll_before.txt in commit packages_apps_Trebuchet
+yes
+Processing file: setScroll_after.txt in commit packages_apps_Trebuchet
+yes
+Processing file: getResourceFolderFiles_before.txt in commit skript-parser
+yes
+Processing file: getResourceFolderFiles_after.txt in commit skript-parser
+yes
+Processing file: createPdu_after.txt in commit open-dis-java
+yes
+Processing file: createPdu_before.txt in commit open-dis-java
+yes
+Processing file: setLayer2_before.txt in commit open-dis-java
+yes
+Processing file: getMarshalledSize_after.txt in commit open-dis-java
+yes
+Processing file: setLayer2_after.txt in commit open-dis-java
+yes
+Processing file: unmarshal_before.txt in commit open-dis-java
+yes
+Processing file: unmarshal_after.txt in commit open-dis-java
+yes
+Processing file: getMarshalledSize_before.txt in commit open-dis-java
+yes
+Processing file: mapToRatingDtoFromClient_before.txt in commit errand
+yes
+Processing file: mapToRatingDtoFromClient_after.txt in commit errand
+Yes
+Processing file: maptoRatingDtoFromServiceProvider_before.txt in commit errand
+Yes
+Processing file: maptoRatingDtoFromServiceProvider_after.txt in commit errand
+yes
+Processing file: getUserImage_before.txt in commit ChatApp
+yes
+Processing file: getUserImage_after.txt in commit ChatApp
+no
+Processing file: getUser_after.txt in commit ChatApp
+Yes
+Processing file: getUser_before.txt in commit ChatApp
+yes
+Processing file: loadUserDetail_before.txt in commit ChatApp
+Yes
+Processing file: loadUserDetail_after.txt in commit ChatApp
+yes
+Processing file: find_after.txt in commit sb232.store.product
+no
+Processing file: find_before.txt in commit sb232.store.product
+yes
+Processing file: getCodiGrupsParesGrup_before.txt in commit console
+yes
+Processing file: getCodiGrupsParesGrup_after.txt in commit console
+Yes
+Processing file: createNotification_after.txt in commit iterable-android-sdk
+yes
+Processing file: createNotification_before.txt in commit iterable-android-sdk
+yes
+Processing file: shouldCaptureTokenResponseStatusCodeAlertMetricWhenStatusCodeIs_before.txt in commit ipv-cri-dl-api
+yes
+Processing file: shouldCaptureTokenResponseStatusCodeAlertMetricWhenStatusCodeIs_after.txt in commit ipv-cri-dl-api
+yes
+Processing file: freeHttpConnectionBackToPool_before.txt in commit ipv-cri-dl-api
+Yes
+Processing file: sendHTTPRequestRetryIfAllowed_before.txt in commit ipv-cri-dl-api
+yes
+Processing file: sendHTTPRequestRetryIfAllowed_after.txt in commit ipv-cri-dl-api
+yes
+Processing file: freeHttpConnectionBackToPool_after.txt in commit ipv-cri-dl-api
+no
+Processing file: performNewTokenRequest_before.txt in commit ipv-cri-dl-api
+yes
+Processing file: performNewTokenRequest_after.txt in commit ipv-cri-dl-api
+yes
+Processing file: executeFallbackIfDocumentFailedToVerify_before.txt in commit ipv-cri-dl-api
+yes
+Processing file: handleRequest_after.txt in commit ipv-cri-dl-api
+yes
+Processing file: handleRequest_before.txt in commit ipv-cri-dl-api
+yes
+Processing file: executeFallbackIfDocumentFailedToVerify_after.txt in commit ipv-cri-dl-api
+yes
+Processing file: assertEndpointMetricsAreGeneratedCorrectly_after.txt in commit ipv-cri-dl-api
+No
+Processing file: assertEndpointMetricsAreGeneratedCorrectly_before.txt in commit ipv-cri-dl-api
+yes
+Processing file: send_before.txt in commit okandroid
+yes
+Processing file: send_after.txt in commit okandroid
+yes
+Processing file: open_before.txt in commit MartexLibrary
+yes
+Processing file: open_after.txt in commit MartexLibrary
+yes
+Processing file: findRootAndPostfix_after.txt in commit Word_counter_BST
+yes
+Processing file: findRootAndPostfix_before.txt in commit Word_counter_BST
+yes
+Processing file: insert_after.txt in commit Word_counter_BST
+yes
+Processing file: insert_before.txt in commit Word_counter_BST
+yes
+Processing file: toReadableString_before.txt in commit H2Orestart
+no
+Processing file: toReadableString_after.txt in commit H2Orestart
+No
+Processing file: getParaString_after.txt in commit H2Orestart
+yes
+Processing file: getParaString_before.txt in commit H2Orestart
+yes
+Processing file: loadHwpx_before.txt in commit H2Orestart
+yes
+Processing file: loadHwpx_after.txt in commit H2Orestart
+yes
+Processing file: loadHwp_after.txt in commit H2Orestart
+yes
+Processing file: main_after.txt in commit H2Orestart
+Yes
+Processing file: detectHancom_after.txt in commit H2Orestart
+yes
+Processing file: close_before.txt in commit H2Orestart
+yes
+Processing file: close_after.txt in commit H2Orestart
+Yes
+Processing file: loadHwp_before.txt in commit H2Orestart
+yes
+Processing file: detectHancom_before.txt in commit H2Orestart
+yes
+Processing file: main_before.txt in commit H2Orestart
+Yes
+Processing file: getBlockedDimensions_after.txt in commit eternal-dimensions
+yes
+Processing file: getBlockedDimensions_before.txt in commit eternal-dimensions
+yes
+Processing file: updateSaveManagerDialog_after.txt in commit PicoZen
+yes
+Processing file: updateSaveManagerDialog_before.txt in commit PicoZen
+yes
+Processing file: getEventsFromChatMessage_after.txt in commit FFTB_Viewer
+yes
+Processing file: getEventsFromChatMessage_before.txt in commit FFTB_Viewer
+yes
+Processing file: findUsers_before.txt in commit SWAP
+yes
+Processing file: findUsers_after.txt in commit SWAP
+yes
+Processing file: searchApi_whenNoSearchParameter_thenReturnAllData_before.txt in commit search-api
+yes
+Processing file: searchApi_whenNoSearchParameter_thenReturnAllData_after.txt in commit search-api
+No
+Processing file: buildSpecificationForMethod_after.txt in commit search-api
+yes
+Processing file: buildSpecificationForMethod_before.txt in commit search-api
+yes
+Processing file: addDependencies_before.txt in commit bld
+yes
+Processing file: addDependencies_after.txt in commit bld
+yes
+Processing file: setScroll_before.txt in commit package_apps_Launcher3
+yes
+Processing file: setScroll_after.txt in commit package_apps_Launcher3
+Yes
+Processing file: getResources_before.txt in commit oastooling
+yes
+Processing file: getResources_after.txt in commit oastooling
+Yes
+Processing file: readPayload_before.txt in commit oastooling
+yes
+Processing file: readPayload_after.txt in commit oastooling
+Yes
+Processing file: getAlbum_before.txt in commit PlaylistEditor
+yes
+Processing file: getFileName_before.txt in commit PlaylistEditor
+No
+Processing file: getFilePath_after.txt in commit PlaylistEditor
+yes
+Processing file: isSelected_after.txt in commit PlaylistEditor
+yes
+Processing file: getTitle_after.txt in commit PlaylistEditor
+yes
+Processing file: getArtist_before.txt in commit PlaylistEditor
+no
+Processing file: getFileName_after.txt in commit PlaylistEditor
+yes
+Processing file: setSelected_after.txt in commit PlaylistEditor
+yes
+Processing file: resizeImageSmooth_before.txt in commit PlaylistEditor
+yes
+Processing file: resizeImageSmooth_after.txt in commit PlaylistEditor
+yes
+Processing file: getArtist_after.txt in commit PlaylistEditor
+yes
+Processing file: getFilePath_before.txt in commit PlaylistEditor
+no
+Processing file: isSelected_before.txt in commit PlaylistEditor
+No
+Processing file: getTitle_before.txt in commit PlaylistEditor
+No
+Processing file: setSelected_before.txt in commit PlaylistEditor
+No
+Processing file: getAlbum_after.txt in commit PlaylistEditor
+yes
+Processing file: doCall_after.txt in commit exhort
+yes
+Processing file: doCall_before.txt in commit exhort
+yes
+Processing file: main_after.txt in commit test_github
+no
+Processing file: main_before.txt in commit test_github
+no
+Processing file: calculateSide_after.txt in commit test_github
+yes
+Processing file: calculateArea_after.txt in commit test_github
+yes
+Processing file: calculateCircumference_before.txt in commit test_github
+yes
+Processing file: calculateCircumference_after.txt in commit test_github
+no
+Processing file: calculateSide_before.txt in commit test_github
+yes
+Processing file: calculateArea_before.txt in commit test_github
+Yes
+Processing file: setVelocity_after.txt in commit mercurialftc
+yes
+Processing file: resetVelocity_before.txt in commit mercurialftc
+yes
+Processing file: setVelocity_before.txt in commit mercurialftc
+yes
+Processing file: resetAcceleration_after.txt in commit mercurialftc
+yes
+Processing file: resetVelocity_after.txt in commit mercurialftc
+yes
+Processing file: setAcceleration_after.txt in commit mercurialftc
+yes
+Processing file: resetAcceleration_before.txt in commit mercurialftc
+yes
+Processing file: setAcceleration_before.txt in commit mercurialftc
+yes
+Processing file: setRequestedDuration_after.txt in commit 16CentAstrologyAIDevelopment
+no
+Processing file: setRequestedDuration_before.txt in commit 16CentAstrologyAIDevelopment
+no
+Processing file: apply_before.txt in commit pebble
+yes
+Processing file: apply_after.txt in commit pebble
+yes
+Processing file: testReplaceFilterNullInput_before.txt in commit pebble
+yes
+Processing file: testReplaceFilterNullInput_after.txt in commit pebble
+No
+Processing file: roiModified_after.txt in commit points-detector
+yes
+Processing file: closed_before.txt in commit points-detector
+No
+Processing file: updatePoints_before.txt in commit points-detector
+yes
+Processing file: closed_after.txt in commit points-detector
+No
+Processing file: roiModified_before.txt in commit points-detector
+yes
+Processing file: updatePoints_after.txt in commit points-detector
+Yes
+Processing file: run_after.txt in commit points-detector
+no
+Processing file: run_before.txt in commit points-detector
+yes
+Processing file: getTransactionRecord_after.txt in commit ballerina-lang
+yes
+Processing file: getTransactionRecord_before.txt in commit ballerina-lang
+yes
+Processing file: setMapElementGivenOperand_after.txt in commit ballerina-lang
+yes
+Processing file: setMapElementGivenOperand_before.txt in commit ballerina-lang
+yes
+Processing file: getInfoRecord_after.txt in commit ballerina-lang
+yes
+Processing file: getInfoRecord_before.txt in commit ballerina-lang
+yes
+Processing file: validateAndPutTransactionInfo_before.txt in commit ballerina-lang
+yes
+Processing file: validateAndPutTransactionInfo_after.txt in commit ballerina-lang
+yes
+Processing file: cleanExistingProduct_after.txt in commit osmre-uav
+yes
+Processing file: cleanExistingProduct_before.txt in commit osmre-uav
+yes
+Processing file: truthy_before.txt in commit osmre-uav
+yes
+Processing file: truthy_after.txt in commit osmre-uav
+No
+Processing file: processProduct_before.txt in commit osmre-uav
+yes
+Processing file: processProduct_after.txt in commit osmre-uav
+yes
+Processing file: map_before.txt in commit company-appointments.api.ch.gov.uk
+yes
+Processing file: mapDateOfBirth_before.txt in commit company-appointments.api.ch.gov.uk
+yes
+Processing file: mapDateOfBirth_after.txt in commit company-appointments.api.ch.gov.uk
+yes
+Processing file: map_after.txt in commit company-appointments.api.ch.gov.uk
+yes
+Processing file: testCompanyAppointmentMapperWithoutSensitiveData_before.txt in commit company-appointments.api.ch.gov.uk
+Yes
+Processing file: testCompanyAppointmentMapperWithoutSensitiveData_after.txt in commit company-appointments.api.ch.gov.uk
+yes
+Processing file: call_after.txt in commit transportpce
+yes
+Processing file: call_before.txt in commit transportpce
+yes
+Processing file: toString_after.txt in commit gla-bcsc0006-2024-2
+yes
+Processing file: toString_before.txt in commit gla-bcsc0006-2024-2
+Yes
+Processing file: testExceptionForTestGenerationWithNoOperationId_after.txt in commit scs-multiapi-plugin
+no
+Processing file: testExceptionForTestGenerationWithNoOperationId_before.txt in commit scs-multiapi-plugin
+yes
+Processing file: testExceptionForTestGenerationWithNoOperationId_after.txt in commit scs-multiapi-plugin
+no
+Processing file: testExceptionForTestGenerationWithNoOperationId_before.txt in commit scs-multiapi-plugin
+yes
+Processing file: getOperationId_before.txt in commit scs-multiapi-plugin
+yes
+Processing file: getOperationId_after.txt in commit scs-multiapi-plugin
+yes
+Processing file: mapRequestObject_after.txt in commit scs-multiapi-plugin
+Yes
+Processing file: mapRequestObject_before.txt in commit scs-multiapi-plugin
+Yes
+Processing file: createCatalog_after.txt in commit seatunnel
+yes
+Processing file: createCatalog_before.txt in commit seatunnel
+Yes
+Processing file: processConfig_after.txt in commit seatunnel
+yes
+Processing file: processConfig_before.txt in commit seatunnel
+yes
+Processing file: checkForOperationParameterChanges_after.txt in commit ReExtractor
+yes
+Processing file: detectRefactoringsBetweenMatchedAndExtractedEntities_before.txt in commit ReExtractor
+yes
+Processing file: processTryStatement_after.txt in commit ReExtractor
+yes
+Processing file: processTryStatement_before.txt in commit ReExtractor
+yes
+Processing file: processOperations_after.txt in commit ReExtractor
+yes
+Processing file: isSubTypeOf_before.txt in commit ReExtractor
+yes
+Processing file: checkForOperationParameterChanges_before.txt in commit ReExtractor
+yes
+Processing file: detectRefactoringsBetweenMatchedAndExtractedEntities_after.txt in commit ReExtractor
+yes
+Processing file: processOperations_before.txt in commit ReExtractor
+yes
+Processing file: isSubTypeOf_after.txt in commit ReExtractor
+yes
+Processing file: testFindAllProducts_ReturnsPageOfProducts_before.txt in commit HopfenCraft
+yes
+Processing file: testFindAllProducts_ReturnsPageOfProducts_after.txt in commit HopfenCraft
+yes
+Processing file: AddCartItem_InvalidProduct_ReturnsBadRequest_before.txt in commit HopfenCraft
+yes
+Processing file: AddCartItem_ValidInput_ReturnsCreated_after.txt in commit HopfenCraft
+yes
+Processing file: RemoveCartItem_NonExistentItem_ReturnsNotFound_before.txt in commit HopfenCraft
+yes
+Processing file: RemoveCartItem_ValidInput_ReturnsOK_before.txt in commit HopfenCraft
+yes
+Processing file: AddCartItem_ValidInput_ReturnsCreated_before.txt in commit HopfenCraft
+yes
+Processing file: GetCartItems_EmptyCart_ReturnsOKWithEmptyList_after.txt in commit HopfenCraft
+yes
+Processing file: AddCartItem_InvalidQuantity_ReturnsBadRequest_after.txt in commit HopfenCraft
+yes
+Processing file: AddCartItem_InvalidProduct_ReturnsBadRequest_after.txt in commit HopfenCraft
+yes
+Processing file: RemoveCartItem_ValidInput_ReturnsOK_after.txt in commit HopfenCraft
+yes
+Processing file: GetCartItems_EmptyCart_ReturnsOKWithEmptyList_before.txt in commit HopfenCraft
+yes
+Processing file: RemoveCartItem_NonExistentItem_ReturnsNotFound_after.txt in commit HopfenCraft
+yes
+Processing file: AddCartItem_InvalidQuantity_ReturnsBadRequest_before.txt in commit HopfenCraft
+yes
+Processing file: GetProducts_ReturnsOk_after.txt in commit HopfenCraft
+yes
+Processing file: CreateProduct_ValidInput_ReturnsCreated_after.txt in commit HopfenCraft
+yes
+Processing file: UpdateProduct_ValidInput_ReturnsOk_after.txt in commit HopfenCraft
+yes
+Processing file: CreateProduct_InvalidInput_ReturnsBadRequest_before.txt in commit HopfenCraft
+yes
+Processing file: GetProductById_ValidId_ReturnsOk_after.txt in commit HopfenCraft
+yes
+Processing file: UpdateProduct_InvalidInput_ReturnsBadRequest_after.txt in commit HopfenCraft
+yes
+Processing file: UpdateProduct_ValidInput_ReturnsOk_before.txt in commit HopfenCraft
+Yes
+Processing file: GetProductById_ValidId_ReturnsOk_before.txt in commit HopfenCraft
+yes
+Processing file: GetProducts_ReturnsOk_before.txt in commit HopfenCraft
+yes
+Processing file: CreateProduct_ValidInput_ReturnsCreated_before.txt in commit HopfenCraft
+yes
+Processing file: UpdateProduct_InvalidInput_ReturnsBadRequest_before.txt in commit HopfenCraft
+yes
+Processing file: CreateProduct_InvalidInput_ReturnsBadRequest_after.txt in commit HopfenCraft
+yes
+Processing file: handleLogin_after.txt in commit Library-Management-System
+Yes
+Processing file: switchToNextPage_after.txt in commit Library-Management-System
+yes
+Processing file: switchToNextPage_before.txt in commit Library-Management-System
+yes
+Processing file: handleLogin_before.txt in commit Library-Management-System
+Yes
+Processing file: findOwner_after.txt in commit java-sample-app
+no
+Processing file: findPet_before.txt in commit java-sample-app
+yes
+Processing file: findPet_after.txt in commit java-sample-app
+yes
+Processing file: findOwner_before.txt in commit java-sample-app
+yes
+Processing file: inicializarHome_before.txt in commit Proyecto-IS
+yes
+Processing file: inicializarHome_after.txt in commit Proyecto-IS
+yes
+Processing file: irPantallaPrincipal_after.txt in commit Proyecto-IS
+yes
+Processing file: irPantallaPrincipal_before.txt in commit Proyecto-IS
+yes
+Processing file: getUsuarioSesion_after.txt in commit Proyecto-IS
+yes
+Processing file: setUsuarioSesion_after.txt in commit Proyecto-IS
+yes
+Processing file: setUsuarioSesion_before.txt in commit Proyecto-IS
+yes
+Processing file: getUsuarioSesion_before.txt in commit Proyecto-IS
+Yes
+Processing file: setUsuarioSession_before.txt in commit Proyecto-IS
+yes
+Processing file: getUsuarioSession_before.txt in commit Proyecto-IS
+yes
+Processing file: setUsuarioSession_after.txt in commit Proyecto-IS
+yes
+Processing file: getUsuarioSession_after.txt in commit Proyecto-IS
+Yes
+Processing file: verificarSesionEscritorio_before.txt in commit Proyecto-IS
+yes
+Processing file: verificarSesionEscritorio_after.txt in commit Proyecto-IS
+Yes
+Processing file: issue_before.txt in commit Microprocessors-Project
+Yes
+Processing file: issue_after.txt in commit Microprocessors-Project
+yes
+Processing file: getWCListFuzzySearch_after.txt in commit punjab-mgramseva
+Yes
+Processing file: getWCListFuzzySearch_before.txt in commit punjab-mgramseva
+Yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_Dupilcate_IdShort_in_shell_level_after.txt in commit sldt-digital-twin-registry
+no
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_level_and_duplicate_submodelDescriptor_level_before.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_submodelDescriptor_level_before.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_and_submodelDescriptor_level_after.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_submodelDescriptor_level_after.txt in commit sldt-digital-twin-registry
+Yes
+Processing file: removedAllShells_before.txt in commit sldt-digital-twin-registry
+yes
+Processing file: removedAllShells_after.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_valid_IdShort_in_shell_and_empty_IdShort_in_submodelDescriptor_level_before.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_level_and_duplicate_submodelDescriptor_level_after.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_Dupilcate_IdShort_in_shell_level_before.txt in commit sldt-digital-twin-registry
+no
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_valid_IdShort_in_submodelDescriptor_level_after.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_unique_IdShort_in_shell_and_submodelDescriptor_level_before.txt in commit sldt-digital-twin-registry
+yes
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_valid_IdShort_in_submodelDescriptor_level_before.txt in commit sldt-digital-twin-registry
+no
+Processing file: test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_valid_IdShort_in_shell_and_empty_IdShort_in_submodelDescriptor_level_after.txt in commit sldt-digital-twin-registry
+yes
+Processing file: generateApproveApplicationRow_after.txt in commit addon-bpm
+yes
+Processing file: generateApproveApplicationRow_before.txt in commit addon-bpm
+yes
+Processing file: getAllSessionsEndpoints_after.txt in commit platform
+yes
+Processing file: getAllSessionsEndpoints_before.txt in commit platform
+yes
+Processing file: parseReportingData_after.txt in commit Kraftwerk
+Yes
+Processing file: parseReportingData_before.txt in commit Kraftwerk
+yes
+Processing file: addReportingDataUEToQuestionnaire_after.txt in commit Kraftwerk
+yes
+Processing file: addReportingDataUEToQuestionnaire_before.txt in commit Kraftwerk
+yes
+Processing file: end_before.txt in commit jbpm
+Yes
+Processing file: end_after.txt in commit jbpm
+yes
+Processing file: getQueryResultViewModel_before.txt in commit WASDI
+yes
+Processing file: executeAndRetrieve_before.txt in commit WASDI
+yes
+Processing file: executeAndRetrieve_after.txt in commit WASDI
+yes
+Processing file: getQueryResultViewModel_after.txt in commit WASDI
+yes
+Processing file: executeDownloadFile_after.txt in commit WASDI
+yes
+Processing file: main_after.txt in commit WASDI
+yes
+Processing file: getDownloadFileSize_after.txt in commit WASDI
+yes
+Processing file: getDownloadFileSize_before.txt in commit WASDI
+yes
+Processing file: executeDownloadFile_before.txt in commit WASDI
+yes
+Processing file: main_before.txt in commit WASDI
+yes
+Processing file: prepareCdsPayload_before.txt in commit WASDI
+yes
+Processing file: prepareCdsPayload_after.txt in commit WASDI
+yes
+Processing file: findOwner_after.txt in commit jfrog
+no
+Processing file: findPet_before.txt in commit jfrog
+yes
+Processing file: findPet_after.txt in commit jfrog
+yes
+Processing file: findOwner_before.txt in commit jfrog
+yes
+Processing file: parseSingleExpr_before.txt in commit Skript
+yes
+Processing file: parseSingleExpr_after.txt in commit Skript
+yes
+Processing file: reanalyseOpenedPrograms_before.txt in commit che-che4z-lsp-for-cobol
+yes
+Processing file: reanalyseOpenedPrograms_after.txt in commit che-che4z-lsp-for-cobol
+Yes
+Processing file: setDocumentCheckingRoute_before.txt in commit ipv-cri-uk-passport-api
+yes
+Processing file: getProperty_before.txt in commit ipv-cri-uk-passport-api
+yes
+Processing file: getProperty_after.txt in commit ipv-cri-uk-passport-api
+no
+Processing file: setDocumentCheckingRoute_after.txt in commit ipv-cri-uk-passport-api
+yes
+Processing file: findOwner_after.txt in commit dockertest2
+No
+Processing file: findPet_before.txt in commit dockertest2
+yes
+Processing file: findPet_after.txt in commit dockertest2
+yes
+Processing file: findOwner_before.txt in commit dockertest2
+yes
+Processing file: buildVideoElement_after.txt in commit weapon
+yes
+Processing file: buildVideoElement_before.txt in commit weapon
+yes
+Processing file: createRequest_before.txt in commit human-resources-management-system
+yes
+Processing file: createRequest_after.txt in commit human-resources-management-system
+yes
+Processing file: endTest1_before.txt in commit BusFormBuilder
+yes
+Processing file: endTest1_after.txt in commit BusFormBuilder
+yes
+Processing file: setUpTest_before.txt in commit test-repo
+yes
+Processing file: testUpdateTeiByProvidingNullValueToImageAttribute_after.txt in commit test-repo
+Yes
+Processing file: testUpdateTeiByProvidingNullValueToImageAttribute_before.txt in commit test-repo
+no
+Processing file: setUpTest_after.txt in commit test-repo
+yes
+Processing file: assignFileResource_before.txt in commit test-repo
+Yes
+Processing file: assignFileResource_after.txt in commit test-repo
+yes
+Processing file: handleTextMessage_before.txt in commit CodeArena
+yes
+Processing file: handleTextMessage_after.txt in commit CodeArena
+Yes
+Processing file: mapRow_after.txt in commit RCL_IGM_PHASE-1
+yes
+Processing file: mapRow_before.txt in commit RCL_IGM_PHASE-1
+Yes
+Processing file: loadTopic_before.txt in commit kmap
+yes
+Processing file: loadTopic_after.txt in commit kmap
+yes
+Processing file: search_before.txt in commit TheBookStore
+yes
+Processing file: search_after.txt in commit TheBookStore
+yes
+Processing file: completed_before.txt in commit Harbinger
+no
+Processing file: completed_after.txt in commit Harbinger
+no
+Processing file: eliminarContacto_after.txt in commit Actividad2-Contactos
+yes
+Processing file: eliminarContacto_before.txt in commit Actividad2-Contactos
+yes
+Processing file: getAllOrders_after.txt in commit amazoff-GITHUB-Vipul
+Yes
+Processing file: getCountOfUnassignedOrders_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersLeftAfterGivenTimeByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrderById_after.txt in commit amazoff-GITHUB-Vipul
+Yes
+Processing file: getOrderById_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getCountOfUnassignedOrders_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getPartnerById_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrderCountByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+Yes
+Processing file: getPartnerById_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrderCountByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getLastDeliveryTimeByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+Yes
+Processing file: getOrdersLeftAfterGivenTimeByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+Yes
+Processing file: getAllOrders_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getLastDeliveryTimeByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersLeftAfterGivenTimeByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersLeftAfterGivenTimeByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersLeftAfterGivenTimeByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getLastDeliveryTimeByPartnerId_after.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getOrdersLeftAfterGivenTimeByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: getLastDeliveryTimeByPartnerId_before.txt in commit amazoff-GITHUB-Vipul
+yes
+Processing file: fetchAllSubCategories_before.txt in commit akto
+Yes
+Processing file: fetchAllSubCategories_after.txt in commit akto
+yes
+Processing file: bodyAsString_after.txt in commit mod-notify
+yes
+Processing file: bodyAsString_before.txt in commit mod-notify
+yes
+Processing file: isNullOrEmpty_after.txt in commit my-website-be
+No
+Processing file: isNullOrEmpty_before.txt in commit my-website-be
+yes
+Processing file: proxy_before.txt in commit netty-quic-proxy
+yes
+Processing file: proxy_after.txt in commit netty-quic-proxy
+yes
+Processing file: handleFire_before.txt in commit vssg
+yes
+Processing file: handleFire_after.txt in commit vssg
+yes
+Processing file: handleInput_before.txt in commit vssg
+yes
+Processing file: checkObjects_before.txt in commit vssg
+yes
+Processing file: handleInput_after.txt in commit vssg
+yes
+Processing file: checkObjects_after.txt in commit vssg
+yes
+Processing file: status_after.txt in commit a1-maze-runner
+yes
+Processing file: isPathValid_after.txt in commit a1-maze-runner
+yes
+Processing file: isPathValid_before.txt in commit a1-maze-runner
+yes
+Processing file: status_before.txt in commit a1-maze-runner
+Yes
+Processing file: nullPointerSpecial2023_before.txt in commit week8-mon
+yes
+Processing file: nullPointerSpecial2023_after.txt in commit week8-mon
+unclear
+Processing file: enterMethod_after.txt in commit cs-132
+yes
+Processing file: toString_after.txt in commit cs-132
+yes
+Processing file: toString_before.txt in commit cs-132
+yes
+Processing file: enterMethod_before.txt in commit cs-132
+yes
+Processing file: enterClass_after.txt in commit cs-132
+no
+Processing file: enterClass_before.txt in commit cs-132
+no
+Processing file: visit_before.txt in commit cs-132
+Yes
+Processing file: visit_after.txt in commit cs-132
+yes
+Processing file: visit_before.txt in commit cs-132
+yes
+Processing file: visit_after.txt in commit cs-132
+yes
+Processing file: visit_before.txt in commit cs-132
+yes
+Processing file: visit_after.txt in commit cs-132
+yes
+Processing file: main_after.txt in commit cs-132
+yes
+Processing file: main_before.txt in commit cs-132
+yes
+Processing file: forAll_after.txt in commit cs-132
+yes
+Processing file: forall_after.txt in commit cs-132
+yes
+Processing file: forAll_before.txt in commit cs-132
+yes
+Processing file: forall_before.txt in commit cs-132
+yes
+Processing file: calculateAverage_before.txt in commit TWTW
+yes
+Processing file: calculateAverage_after.txt in commit TWTW
+yes
+Processing file: averageLongitude_after.txt in commit TWTW
+yes
+Processing file: averageLatitude_before.txt in commit TWTW
+yes
+Processing file: getAveragePoint_before.txt in commit TWTW
+yes
+Processing file: averageLongitude_before.txt in commit TWTW
+yes
+Processing file: averageLatitude_after.txt in commit TWTW
+yes
+Processing file: getAveragePoint_after.txt in commit TWTW
+yes
+Processing file: on_after.txt in commit SootCTF
+yes
+Processing file: on_before.txt in commit SootCTF
+yes
+Processing file: run_after.txt in commit SootCTF
+yes
+Processing file: run_before.txt in commit SootCTF
+yes
+Processing file: teleport_after.txt in commit SootCTF
+yes
+Processing file: teleport_before.txt in commit SootCTF
+yes
+Processing file: on_after.txt in commit SootCTF
+yes
+Processing file: on_before.txt in commit SootCTF
+yes
+Processing file: getIdentifier_after.txt in commit JCC816
+yes
+Processing file: interpret_before.txt in commit JCC816
+yes
+Processing file: interpret_after.txt in commit JCC816
+yes
+Processing file: getIdentifier_before.txt in commit JCC816
+yes
+Processing file: getInfo_before.txt in commit JCC816
+yes
+Processing file: getInfo_after.txt in commit JCC816
+yes
+Processing file: setEmail_before.txt in commit eosc-observatory
+yes
+Processing file: of_before.txt in commit eosc-observatory
+yes
+Processing file: setEmail_after.txt in commit eosc-observatory
+no
+Processing file: of_after.txt in commit eosc-observatory
+yes
+Processing file: getId_before.txt in commit eosc-observatory
+yes
+Processing file: getId_after.txt in commit eosc-observatory
+yes
+Processing file: importAnswer_after.txt in commit eosc-observatory
+Yes
+Processing file: importAnswer_before.txt in commit eosc-observatory
+yes
+Processing file: removeAll_after.txt in commit eosc-observatory
+yes
+Processing file: removeAll_before.txt in commit eosc-observatory
+yes
+Processing file: updateManagers_after.txt in commit eosc-observatory
+yes
+Processing file: updateManagers_before.txt in commit eosc-observatory
+yes
+Processing file: updateContributors_after.txt in commit eosc-observatory
+Yes
+Processing file: updateContributors_before.txt in commit eosc-observatory
+Yes
+Processing file: imageFromUrl_after.txt in commit eosc-observatory
+yes
+Processing file: imageFromUrl_before.txt in commit eosc-observatory
+yes
+Processing file: findOwner_after.txt in commit javavm
+no
+Processing file: findPet_before.txt in commit javavm
+yes
+Processing file: findPet_after.txt in commit javavm
+yes
+Processing file: findOwner_before.txt in commit javavm
+yes
+Processing file: findByTitle_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: getNoteById_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: getAllNotes_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: createNote_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: deleteById_before.txt in commit React_and_SpringBoot_Projects
+Yes
+Processing file: updateNoteById_after.txt in commit React_and_SpringBoot_Projects
+Yes
+Processing file: findByTitle_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: deleteById_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: getAllNotes_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: updateNoteById_before.txt in commit React_and_SpringBoot_Projects
+Yes
+Processing file: getNoteById_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: createNote_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: findByTitle_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: findAllByUserUserId_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: findAllByUserUserId_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: createNote_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: findByNoteId_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: updateNoteById_after.txt in commit React_and_SpringBoot_Projects
+Yes
+Processing file: findByTitle_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: updateNoteById_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: findByNoteId_after.txt in commit React_and_SpringBoot_Projects
+Yes
+Processing file: notesList_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: notesList_after.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: createNote_before.txt in commit React_and_SpringBoot_Projects
+yes
+Processing file: webViewFinishedLoading_before.txt in commit mobile-sdk-android
+yes
+Processing file: close_before.txt in commit mobile-sdk-android
+yes
+Processing file: close_after.txt in commit mobile-sdk-android
+yes
+Processing file: webViewFinishedLoading_after.txt in commit mobile-sdk-android
+yes
+Processing file: handleBannerOrInterstitialAd_after.txt in commit mobile-sdk-android
+yes
+Processing file: resize_before.txt in commit mobile-sdk-android
+yes
+Processing file: onLayout_after.txt in commit mobile-sdk-android
+Yes
+Processing file: toggleAutoRefresh_after.txt in commit mobile-sdk-android
+yes
+Processing file: toggleAutoRefresh_before.txt in commit mobile-sdk-android
+yes
+Processing file: resize_after.txt in commit mobile-sdk-android
+yes
+Processing file: close_before.txt in commit mobile-sdk-android
+yes
+Processing file: close_after.txt in commit mobile-sdk-android
+yes
+Processing file: processAdLoaded_before.txt in commit mobile-sdk-android
+Yes
+Processing file: processAdLoaded_after.txt in commit mobile-sdk-android
+yes
+Processing file: run_after.txt in commit mobile-sdk-android
+yes
+Processing file: run_before.txt in commit mobile-sdk-android
+yes
+Processing file: handleBannerOrInterstitialAd_before.txt in commit mobile-sdk-android
+yes
+Processing file: onLayout_before.txt in commit mobile-sdk-android
+yes
+Processing file: processAdLoaded_before.txt in commit mobile-sdk-android
+yes
+Processing file: processAdLoaded_after.txt in commit mobile-sdk-android
+yes
+Processing file: onReceiveAd_after.txt in commit mobile-sdk-android
+Yes
+Processing file: handleCSMResponse_after.txt in commit mobile-sdk-android
+yes
+Processing file: handleCSMResponse_before.txt in commit mobile-sdk-android
+yes
+Processing file: onReceiveAd_before.txt in commit mobile-sdk-android
+yes
+Processing file: getAdResponse_after.txt in commit mobile-sdk-android
+yes
+Processing file: getAdResponse_before.txt in commit mobile-sdk-android
+yes
+Processing file: getMediaType_before.txt in commit mobile-sdk-android
+yes
+Processing file: getMediaType_after.txt in commit mobile-sdk-android
+yes
+Processing file: addMovie_before.txt in commit CineRentalHub
+yes
+Processing file: getMainImage_after.txt in commit CineRentalHub
+Yes
+Processing file: getMainImage_before.txt in commit CineRentalHub
+yes
+Processing file: updateMovie_after.txt in commit CineRentalHub
+yes
+Processing file: getImagesByMovieId_before.txt in commit CineRentalHub
+yes
+Processing file: updateMovie_before.txt in commit CineRentalHub
+yes
+Processing file: addMovie_after.txt in commit CineRentalHub
+yes
+Processing file: getImagesByMovieId_after.txt in commit CineRentalHub
+yes
+Processing file: registerUser_after.txt in commit pokemonDexBase
+yes
+Processing file: loginUser_after.txt in commit pokemonDexBase
+no
+Processing file: logout_before.txt in commit pokemonDexBase
+yes
+Processing file: logout_after.txt in commit pokemonDexBase
+yes
+Processing file: registerUser_before.txt in commit pokemonDexBase
+yes
+Processing file: convertToDto_after.txt in commit pokemonDexBase
+yes
+Processing file: loginUser_before.txt in commit pokemonDexBase
+no
+Processing file: convertToDto_before.txt in commit pokemonDexBase
+Yes
+Processing file: removeContrastControls_after.txt in commit NDViewer
+yes
+Processing file: removeContrastControls_before.txt in commit NDViewer
+yes
+Processing file: isActive_after.txt in commit NDViewer
+yes
+Processing file: isActive_before.txt in commit NDViewer
+yes
+Processing file: removeContrastControls_after.txt in commit NDViewer
+yes
+Processing file: removeContrastControls_before.txt in commit NDViewer
+yes
+Processing file: updateHistogramData_after.txt in commit NDViewer
+Yes
+Processing file: removeContrastControls_after.txt in commit NDViewer
+yes
+Processing file: removeContrastControls_before.txt in commit NDViewer
+yes
+Processing file: updateHistogramData_before.txt in commit NDViewer
+yes
+Processing file: makeOrGetImage_after.txt in commit NDViewer
+yes
+Processing file: makeOrGetImage_before.txt in commit NDViewer
+yes
+Processing file: removeImageProcessor_after.txt in commit NDViewer
+yes
+Processing file: removeImageProcessor_before.txt in commit NDViewer
+Yes
+Processing file: removeContrastControls_after.txt in commit NDViewer
+yes
+Processing file: removeContrastControls_before.txt in commit NDViewer
+yes
+Processing file: addContrastControls_after.txt in commit NDViewer
+yes
+Processing file: addContrastControls_before.txt in commit NDViewer
+yes
+Processing file: newImageArrived_before.txt in commit NDViewer
+Yes
+Processing file: setCompositeMode_before.txt in commit NDViewer
+yes
+Processing file: setCompositeMode_after.txt in commit NDViewer
+Yes
+Processing file: initializeViewerToLoaded_after.txt in commit NDViewer
+yes
+Processing file: newImageArrived_after.txt in commit NDViewer
+Yes
+Processing file: initializeViewerToLoaded_before.txt in commit NDViewer
+yes
+Processing file: displayResourcesAvailableToSearchFor_after.txt in commit strategic-game
+yes
+Processing file: displayResourcesAvailableToSearchFor_before.txt in commit strategic-game
+Yes
+Processing file: run_after.txt in commit strategic-game
+Yes
+Processing file: run_before.txt in commit strategic-game
+yes
+Processing file: getBHat_after.txt in commit tetrad
+yes
+Processing file: getbHat_before.txt in commit tetrad
+yes
+Processing file: getBHat_before.txt in commit tetrad
+yes
+Processing file: getbHat_after.txt in commit tetrad
+yes
+Processing file: getClientValue_before.txt in commit addon-backup
+yes
+Processing file: getClientValue_after.txt in commit addon-backup
+yes
+Processing file: createForm_before.txt in commit marubase
+yes
+Processing file: createForm_after.txt in commit marubase
+yes
+Processing file: setup_before.txt in commit dynamic-complain-app
+yes
+Processing file: setup_after.txt in commit dynamic-complain-app
+yes
+Processing file: toString_after.txt in commit uvl-parser
+yes
+Processing file: toString_before.txt in commit uvl-parser
+yes
+Processing file: replaceExpressionSubPart_after.txt in commit uvl-parser
+yes
+Processing file: replaceExpressionSubPart_before.txt in commit uvl-parser
+yes
+Processing file: evaluate_before.txt in commit uvl-parser
+yes
+Processing file: evaluate_after.txt in commit uvl-parser
+yes
+Processing file: loadLibrary_before.txt in commit whisper-jni
+yes
+Processing file: loadLibrary_after.txt in commit whisper-jni
+yes
+Processing file: onReceive_before.txt in commit thikrallah
+yes
+Processing file: onReceive_after.txt in commit thikrallah
+yes
+Processing file: getHostString_after.txt in commit realm-java
+no
+Processing file: getHostString_before.txt in commit realm-java
+yes
+Processing file: isAscending_before.txt in commit framework
+yes
+Processing file: getSortDirection_before.txt in commit framework
+yes
+Processing file: isAscending_after.txt in commit framework
+yes
+Processing file: getSortDirection_after.txt in commit framework
+yes
+Processing file: deleteQuestionnaireStepInfo_after.txt in commit WCP
+Yes
+Processing file: deleteQuestionnaireStepInfo_before.txt in commit WCP
+yes
+Processing file: saveMonster_after.txt in commit rpg-api
+Yes
+Processing file: saveMonster_before.txt in commit rpg-api
+yes
+Processing file: getPlatesByExperimentId_after.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlateById_before.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlatesByBarcode_before.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlateWells_after.txt in commit phaedra2-plateservice
+Yes
+Processing file: getPlateMeasurements_after.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlatesByBarcode_after.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlateMeasurements_before.txt in commit phaedra2-plateservice
+Yes
+Processing file: getPlateById_after.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlatesByExperimentId_before.txt in commit phaedra2-plateservice
+yes
+Processing file: getPlateWells_before.txt in commit phaedra2-plateservice
+yes
+Processing file: mapUpdateGroup_after.txt in commit stakit-backend
+yes
+Processing file: mapUpdateGroup_before.txt in commit stakit-backend
+yes
+Processing file: mapCreateGroup_after.txt in commit stakit-backend
+yes
+Processing file: mapCreateGroup_before.txt in commit stakit-backend
+yes
+Processing file: mapUpdateGroup_after.txt in commit stakit-backend
+yes
+Processing file: mapUpdateGroup_before.txt in commit stakit-backend
+Yes
+Processing file: mapCreateGroup_after.txt in commit stakit-backend
+yes
+Processing file: mapCreateGroup_before.txt in commit stakit-backend
+yes
+Processing file: testCreateGroupNullValue_after.txt in commit stakit-backend
+yes
+Processing file: testGetServicesInGroupNotFound_before.txt in commit stakit-backend
+No
+Processing file: testCreateGroupNullValue_before.txt in commit stakit-backend
+yes
+Processing file: testGetServicesInGroupNotFound_after.txt in commit stakit-backend
+no
+Processing file: testUpdateGroupNullValue_before.txt in commit stakit-backend
+yes
+Processing file: testUpdateGroupNullValue_after.txt in commit stakit-backend
+yes
+Processing file: testUpdateGroupNullValue_before.txt in commit stakit-backend
+yes
+Processing file: testUpdateGroupNullValue_after.txt in commit stakit-backend
+Yes
+Processing file: testCreateAndGetGroupNullDisplay_after.txt in commit stakit-backend
+yes
+Processing file: testCreateAndGetGroupNullDisplay_before.txt in commit stakit-backend
+yes
+Processing file: isValid_after.txt in commit eshop
+yes
+Processing file: isValid_before.txt in commit eshop
+yes
+Processing file: isValidPrefixGlobal_before.txt in commit eshop
+yes
+Processing file: isValidPrefixLocal_after.txt in commit eshop
+No
+Processing file: isValidPrefixLocal_before.txt in commit eshop
+yes
+Processing file: isValid_after.txt in commit eshop
+yes
+Processing file: isValidPrefixGlobal_after.txt in commit eshop
+no
+Processing file: isValid_before.txt in commit eshop
+yes
+Processing file: sendVrPlayerStateToClients_before.txt in commit VivecraftMod
+yes
+Processing file: sendVrPlayerStateToClients_after.txt in commit VivecraftMod
+yes
+Upsource .venv/bin/activatedated spreadsheet 'llama3_70b_methods_sheet.xlsx' with new data.

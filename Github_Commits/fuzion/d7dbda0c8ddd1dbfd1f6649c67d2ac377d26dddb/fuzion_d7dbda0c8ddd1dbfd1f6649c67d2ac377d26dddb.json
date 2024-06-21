@@ -1,0 +1,98 @@
+{
+    "sha": "d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb",
+    "node_id": "C_kwDOE1umc9oAKGQ3ZGJkYTBjOGRkZDFkYmZkMWY2NjQ5YzY3ZDJhYzM3N2QyNmRkZGI",
+    "commit": {
+        "author": {
+            "name": "fridis",
+            "email": "fridi@fridi.de",
+            "date": "2023-07-10T12:58:46Z"
+        },
+        "committer": {
+            "name": "fridis",
+            "email": "fridi@fridi.de",
+            "date": "2023-07-10T12:58:46Z"
+        },
+        "message": "dfa: fix null pointer exception in case of void result",
+        "tree": {
+            "sha": "80b3082c22b0b7931a4bcf014085f95f47f9f1eb",
+            "url": "https://api.github.com/repos/tokiwa-software/fuzion/git/trees/80b3082c22b0b7931a4bcf014085f95f47f9f1eb"
+        },
+        "url": "https://api.github.com/repos/tokiwa-software/fuzion/git/commits/d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/tokiwa-software/fuzion/commits/d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb",
+    "html_url": "https://github.com/tokiwa-software/fuzion/commit/d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb",
+    "comments_url": "https://api.github.com/repos/tokiwa-software/fuzion/commits/d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb/comments",
+    "author": {
+        "login": "fridis",
+        "id": 48821596,
+        "node_id": "MDQ6VXNlcjQ4ODIxNTk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48821596?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fridis",
+        "html_url": "https://github.com/fridis",
+        "followers_url": "https://api.github.com/users/fridis/followers",
+        "following_url": "https://api.github.com/users/fridis/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fridis/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fridis/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fridis/subscriptions",
+        "organizations_url": "https://api.github.com/users/fridis/orgs",
+        "repos_url": "https://api.github.com/users/fridis/repos",
+        "events_url": "https://api.github.com/users/fridis/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fridis/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "fridis",
+        "id": 48821596,
+        "node_id": "MDQ6VXNlcjQ4ODIxNTk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48821596?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fridis",
+        "html_url": "https://github.com/fridis",
+        "followers_url": "https://api.github.com/users/fridis/followers",
+        "following_url": "https://api.github.com/users/fridis/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fridis/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fridis/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fridis/subscriptions",
+        "organizations_url": "https://api.github.com/users/fridis/orgs",
+        "repos_url": "https://api.github.com/users/fridis/repos",
+        "events_url": "https://api.github.com/users/fridis/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fridis/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bd23ced6671d303043abb3e35e2434ad07a93256",
+            "url": "https://api.github.com/repos/tokiwa-software/fuzion/commits/bd23ced6671d303043abb3e35e2434ad07a93256",
+            "html_url": "https://github.com/tokiwa-software/fuzion/commit/bd23ced6671d303043abb3e35e2434ad07a93256"
+        }
+    ],
+    "stats": {
+        "total": 21,
+        "additions": 12,
+        "deletions": 9
+    },
+    "files": [
+        {
+            "sha": "3f995070281f5eb39ba8d0e1058f3eafc831e61b",
+            "filename": "src/dev/flang/fuir/analysis/dfa/DFA.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 9,
+            "changes": 21,
+            "blob_url": "https://github.com/tokiwa-software/fuzion/blob/d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb/src%2Fdev%2Fflang%2Ffuir%2Fanalysis%2Fdfa%2FDFA.java",
+            "raw_url": "https://github.com/tokiwa-software/fuzion/raw/d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb/src%2Fdev%2Fflang%2Ffuir%2Fanalysis%2Fdfa%2FDFA.java",
+            "contents_url": "https://api.github.com/repos/tokiwa-software/fuzion/contents/src%2Fdev%2Fflang%2Ffuir%2Fanalysis%2Fdfa%2FDFA.java?ref=d7dbda0c8ddd1dbfd1f6649c67d2ac377d26dddb",
+            "patch": "@@ -286,20 +286,23 @@ Val access(int cl, int c, int i, Val tvalue, List<Val> args)\n                 }\n             });\n         }\n-      if (tvalue instanceof EmbeddedValue && !_fuir.clazzIsRef(tc) && _fuir.clazzKind(cc0) == FUIR.FeatureKind.Field)\n-        { // an embedded field in a value instance, so keep tvalue's\n-          // embedding. For chained embedded fields in value instances like\n-          // `t.f.g.h`, the embedding remains `t` for `f`, `g` and `h`.\n-          resf[0] = tvalue.rewrap(DFA.this, x -> resf[0].value());\n-        }\n+      var res = resf[0];\n       if (!found[0])\n-        {\n-          // NYI: proper error reporting\n+        { // NYI: proper error reporting\n           Errors.error(_fuir.codeAtAsPos(c, i),\n                        \"NYI: in \"+_fuir.clazzAsString(cl)+\" no targets for \"+_fuir.codeAtAsString(cl, c, i)+\" target \"+tvalue,\n                        null);\n         }\n-      return resf[0];\n+      else if (res != null &&\n+               tvalue instanceof EmbeddedValue &&\n+               !_fuir.clazzIsRef(tc) &&\n+               _fuir.clazzKind(cc0) == FUIR.FeatureKind.Field)\n+        { // an embedded field in a value instance, so keep tvalue's\n+          // embedding. For chained embedded fields in value instances like\n+          // `t.f.g.h`, the embedding remains `t` for `f`, `g` and `h`.\n+          res = tvalue.rewrap(DFA.this, x -> resf[0].value());\n+        }\n+      return res;\n     }\n \n "
+        }
+    ]
+}

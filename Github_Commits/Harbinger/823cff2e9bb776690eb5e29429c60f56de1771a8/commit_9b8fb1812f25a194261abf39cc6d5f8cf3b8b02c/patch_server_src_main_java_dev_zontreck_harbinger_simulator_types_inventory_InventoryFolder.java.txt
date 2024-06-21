@@ -1,0 +1,13 @@
+@@ -108,8 +108,11 @@ public void AssertAllChildren ( ) {
+ 
+ 	@Completed
+ 	public void completed ( boolean deserial ) {
+-		if ( deserial )
++		if ( deserial ) {
+ 			finishLoad ( );
++
++			if(subFolders==null)subFolders=new HashMap<> (  );
++		}
+ 	}
+ 
+ 	public boolean needsReSave = false;

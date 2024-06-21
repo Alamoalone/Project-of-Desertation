@@ -1,0 +1,14 @@
+@@ -12,11 +12,11 @@
+ 
+ public class GroupMapper {
+     public static GroupModel mapCreateGroup(GroupInput from) {
+-        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null || from.getExpanded());
++        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());
+     }
+ 
+     public static GroupModel mapUpdateGroup(UUID uuid, GroupInput from) {
+-        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null || from.getExpanded());
++        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());
+     }
+ 
+     public static List<org.openapitools.model.Group> mapGetGroups(List<GroupGetModel> from) {

@@ -1,0 +1,3 @@
+makePointHistories()
+init()
+makeRandomDance()

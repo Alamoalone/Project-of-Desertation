@@ -1,0 +1,9 @@
+@@ -680,7 +680,7 @@ public static Set<Module> refreshCache(VirtualFile file) {
+                     }
+                 })
+                 .forEach(desc -> {
+-                    if (nonNull(classes.remove(desc.cls.getQualifiedName()))) {
++                    if (nonNull(withRes(desc.cls.getQualifiedName(), classes::remove))) {
+                         result.add(getModule(desc.cls));
+                     }
+                 });

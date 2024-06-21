@@ -1,0 +1,56 @@
+    private static RendDynOperationNode procOperands(OperationNode _anaNode, Forwards _forwards) {
+        if (_anaNode instanceof SettableAbstractFieldOperation) {
+            return procUseField((SettableAbstractFieldOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof ArrayFieldOperation) {
+            ArrayFieldOperation s_ = (ArrayFieldOperation) _anaNode;
+            return new RendArrayFieldOperation(new ExecOperationContent(s_.getContent()), new ExecFieldOperationContent(s_.getFieldContent()));
+        }
+        if (_anaNode instanceof VariableOperation) {
+            VariableOperation m_ = (VariableOperation) _anaNode;
+            return new RendStdRefVariableOperation(new ExecOperationContent(m_.getContent()), new ExecVariableContent(m_.getVariableContent()), m_.getType() == ConstType.REF_LOC_VAR);
+        }
+        if (_anaNode instanceof VariableOperationUse) {
+            VariableOperationUse m_ = (VariableOperationUse) _anaNode;
+            return new RendStdRefVariableOperation(new ExecOperationContent(m_.getContent()), new ExecVariableContent(m_.getVariableContent()));
+        }
+        if (_anaNode instanceof FinalVariableOperation) {
+            return finalVariable((FinalVariableOperation) _anaNode);
+        }
+        if (_anaNode instanceof DotOperation) {
+            DotOperation m_ = (DotOperation) _anaNode;
+            return new RendDotOperation(new ExecOperationContent(m_.getContent()));
+        }
+        if (_anaNode instanceof SafeDotOperation) {
+            SafeDotOperation m_ = (SafeDotOperation) _anaNode;
+            StringList names_ = _anaNode.getResultClass().getNames();
+            return new RendSafeDotOperation(new ExecOperationContent(m_.getContent()), names_);
+        }
+        if (_anaNode instanceof ExplicitOperatorOperation) {
+            ExplicitOperatorOperation m_ = (ExplicitOperatorOperation) _anaNode;
+            if (m_.isAffect()) {
+                StringList names_ = _anaNode.getResultClass().getNames();
+                AnaCallFctContent callFctContent_ = m_.getCallFctContent();
+                ExecTypeFunction pair_ = FetchMemberUtil.fetchFunctionOpPair(callFctContent_.getMemberId(), _forwards);
+                return new RendCompoundAffectationExplicitCustOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(ForwardInfos.syntheticOperator(m_.getSyntheticOperator()),m_.getOffsetOper()), new ExecStaticFctContent(callFctContent_, _forwards), pair_, FetchMemberUtil.fetchImplicits(m_.getConv(), _forwards), names_, m_.isPost());
+            }
+            return new RendExplicitOperatorOperation(new ExecOperationContent(m_.getContent()), m_.isIntermediateDottedOperation(), new ExecStaticFctContent(m_.getCallFctContent(), _forwards), FetchMemberUtil.fetchFunctionOpPair(m_.getCallFctContent().getMemberId(), _forwards), new ExecOperatorContent(ForwardInfos.syntheticOperator(m_.getSyntheticOperator()),m_.getOffsetOper()), new ExecArrContent(m_.getArrContent()), FetchMemberUtil.fetchImplicits(m_.getConv(), _forwards));
+        }
+        if (_anaNode instanceof SemiAffectationOperation) {
+            return semi((SemiAffectationOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof SymbolOperation) {
+            SymbolOperation n_ = (SymbolOperation) _anaNode;
+            ClassMethodIdMemberIdTypeFct fct_ = n_.getFct();
+            AnaTypeFct pair_ = fct_.getFunction();
+            if (pair_ != null) {
+                return new RendExplicitOperatorOperation(
+                        new ExecOperationContent(_anaNode.getContent()),
+                        false,
+                        new ExecStaticFctContent(new ExecStaticFctCommonContent("","",-1), new ExecStaticEltContent(fct_, _forwards)),
+                        FetchMemberUtil.fetchFunctionOpPair(fct_, _forwards),
+                        new ExecOperatorContent(n_.getOperatorContent()), new ExecArrContent(false), null);
+            }
+        }
+        return procGeneOperators(_anaNode, _forwards);
+    }

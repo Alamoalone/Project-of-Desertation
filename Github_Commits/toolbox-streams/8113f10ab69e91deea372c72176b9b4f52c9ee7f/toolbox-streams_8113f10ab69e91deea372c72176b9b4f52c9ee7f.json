@@ -1,0 +1,98 @@
+{
+    "sha": "8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+    "node_id": "C_kwDOIXpQANoAKDgxMTNmMTBhYjY5ZTkxZGVlYTM3MmM3MjE3NmI5YjRmNTJjOWVlN2Y",
+    "commit": {
+        "author": {
+            "name": "joschne",
+            "email": "jonas.schneider@balcab.ch",
+            "date": "2023-02-24T09:49:11Z"
+        },
+        "committer": {
+            "name": "joschne",
+            "email": "jonas.schneider@balcab.ch",
+            "date": "2023-02-24T09:49:11Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "f4c527c653c7ce1c13e520dadef8a39eac106e84",
+            "url": "https://api.github.com/repos/geovistory/toolbox-streams/git/trees/f4c527c653c7ce1c13e520dadef8a39eac106e84"
+        },
+        "url": "https://api.github.com/repos/geovistory/toolbox-streams/git/commits/8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/geovistory/toolbox-streams/commits/8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+    "html_url": "https://github.com/geovistory/toolbox-streams/commit/8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+    "comments_url": "https://api.github.com/repos/geovistory/toolbox-streams/commits/8113f10ab69e91deea372c72176b9b4f52c9ee7f/comments",
+    "author": {
+        "login": "joschne",
+        "id": 10991869,
+        "node_id": "MDQ6VXNlcjEwOTkxODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10991869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joschne",
+        "html_url": "https://github.com/joschne",
+        "followers_url": "https://api.github.com/users/joschne/followers",
+        "following_url": "https://api.github.com/users/joschne/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joschne/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joschne/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joschne/subscriptions",
+        "organizations_url": "https://api.github.com/users/joschne/orgs",
+        "repos_url": "https://api.github.com/users/joschne/repos",
+        "events_url": "https://api.github.com/users/joschne/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joschne/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "joschne",
+        "id": 10991869,
+        "node_id": "MDQ6VXNlcjEwOTkxODY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10991869?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/joschne",
+        "html_url": "https://github.com/joschne",
+        "followers_url": "https://api.github.com/users/joschne/followers",
+        "following_url": "https://api.github.com/users/joschne/following{/other_user}",
+        "gists_url": "https://api.github.com/users/joschne/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/joschne/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/joschne/subscriptions",
+        "organizations_url": "https://api.github.com/users/joschne/orgs",
+        "repos_url": "https://api.github.com/users/joschne/repos",
+        "events_url": "https://api.github.com/users/joschne/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/joschne/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "64a9fd5d15e06a53f4ee728f372cfdd266dfe04d",
+            "url": "https://api.github.com/repos/geovistory/toolbox-streams/commits/64a9fd5d15e06a53f4ee728f372cfdd266dfe04d",
+            "html_url": "https://github.com/geovistory/toolbox-streams/commit/64a9fd5d15e06a53f4ee728f372cfdd266dfe04d"
+        }
+    ],
+    "stats": {
+        "total": 24,
+        "additions": 16,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "6c6d649eba2a7de8c94e3e68ae3351925c65c86c",
+            "filename": "app-1-base-config/src/main/java/org/geovistory/toolbox/streams/base/config/processors/ProjectClass.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 8,
+            "changes": 24,
+            "blob_url": "https://github.com/geovistory/toolbox-streams/blob/8113f10ab69e91deea372c72176b9b4f52c9ee7f/app-1-base-config%2Fsrc%2Fmain%2Fjava%2Forg%2Fgeovistory%2Ftoolbox%2Fstreams%2Fbase%2Fconfig%2Fprocessors%2FProjectClass.java",
+            "raw_url": "https://github.com/geovistory/toolbox-streams/raw/8113f10ab69e91deea372c72176b9b4f52c9ee7f/app-1-base-config%2Fsrc%2Fmain%2Fjava%2Forg%2Fgeovistory%2Ftoolbox%2Fstreams%2Fbase%2Fconfig%2Fprocessors%2FProjectClass.java",
+            "contents_url": "https://api.github.com/repos/geovistory/toolbox-streams/contents/app-1-base-config%2Fsrc%2Fmain%2Fjava%2Forg%2Fgeovistory%2Ftoolbox%2Fstreams%2Fbase%2Fconfig%2Fprocessors%2FProjectClass.java?ref=8113f10ab69e91deea372c72176b9b4f52c9ee7f",
+            "patch": "@@ -14,6 +14,7 @@\n import org.geovistory.toolbox.streams.lib.ConfluentAvroSerdes;\n import org.geovistory.toolbox.streams.lib.Utils;\n \n+import java.util.LinkedList;\n import java.util.Objects;\n \n \n@@ -118,14 +119,21 @@ public static ProjectClassReturnValue addProcessors(\n                 .toStream(\n                         Named.as(inner.TOPICS.project_classes_stream + \"-to-stream\")\n                 )\n-                .flatMap((key, value) -> value.getMap().values().stream().map(projectClassValue -> {\n-                                    var k = ProjectClassKey.newBuilder()\n-                                            .setClassId(projectClassValue.getClassId())\n-                                            .setProjectId(projectClassValue.getProjectId())\n-                                            .build();\n-                                    return KeyValue.pair(k, projectClassValue);\n-                                }\n-                        ).toList(),\n+                .flatMap((key, value) -> {\n+                            try {\n+                                return value.getMap().values().stream().map(projectClassValue -> {\n+                                            var k = ProjectClassKey.newBuilder()\n+                                                    .setClassId(projectClassValue.getClassId())\n+                                                    .setProjectId(projectClassValue.getProjectId())\n+                                                    .build();\n+                                            return KeyValue.pair(k, projectClassValue);\n+                                        }\n+                                ).toList();\n+\n+                            } catch (RuntimeException e) {\n+                                return new LinkedList<>();\n+                            }\n+                        },\n                         Named.as(inner.TOPICS.project_classes_flat));\n \n         projectClassFlat.to(output.TOPICS.project_class,"
+        }
+    ]
+}

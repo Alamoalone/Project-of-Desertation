@@ -1,0 +1,98 @@
+{
+    "sha": "ceb39fe8397bee12633f286dc8d565536fb73a8e",
+    "node_id": "C_kwDOKwFvXdoAKGNlYjM5ZmU4Mzk3YmVlMTI2MzNmMjg2ZGM4ZDU2NTUzNmZiNzNhOGU",
+    "commit": {
+        "author": {
+            "name": "unit74",
+            "email": "u__nit@naver.com",
+            "date": "2023-10-05T13:42:12Z"
+        },
+        "committer": {
+            "name": "unit74",
+            "email": "u__nit@naver.com",
+            "date": "2023-10-05T13:42:12Z"
+        },
+        "message": "🚑 chore: Check null pointer exception",
+        "tree": {
+            "sha": "396ba1b6fddb664db7dfc22d3002632bd6c531ec",
+            "url": "https://api.github.com/repos/bbang7/New-home-flaw-finding-service/git/trees/396ba1b6fddb664db7dfc22d3002632bd6c531ec"
+        },
+        "url": "https://api.github.com/repos/bbang7/New-home-flaw-finding-service/git/commits/ceb39fe8397bee12633f286dc8d565536fb73a8e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/bbang7/New-home-flaw-finding-service/commits/ceb39fe8397bee12633f286dc8d565536fb73a8e",
+    "html_url": "https://github.com/bbang7/New-home-flaw-finding-service/commit/ceb39fe8397bee12633f286dc8d565536fb73a8e",
+    "comments_url": "https://api.github.com/repos/bbang7/New-home-flaw-finding-service/commits/ceb39fe8397bee12633f286dc8d565536fb73a8e/comments",
+    "author": {
+        "login": "unit74",
+        "id": 107717206,
+        "node_id": "U_kgDOBmuiVg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107717206?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/unit74",
+        "html_url": "https://github.com/unit74",
+        "followers_url": "https://api.github.com/users/unit74/followers",
+        "following_url": "https://api.github.com/users/unit74/following{/other_user}",
+        "gists_url": "https://api.github.com/users/unit74/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/unit74/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/unit74/subscriptions",
+        "organizations_url": "https://api.github.com/users/unit74/orgs",
+        "repos_url": "https://api.github.com/users/unit74/repos",
+        "events_url": "https://api.github.com/users/unit74/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/unit74/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "unit74",
+        "id": 107717206,
+        "node_id": "U_kgDOBmuiVg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107717206?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/unit74",
+        "html_url": "https://github.com/unit74",
+        "followers_url": "https://api.github.com/users/unit74/followers",
+        "following_url": "https://api.github.com/users/unit74/following{/other_user}",
+        "gists_url": "https://api.github.com/users/unit74/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/unit74/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/unit74/subscriptions",
+        "organizations_url": "https://api.github.com/users/unit74/orgs",
+        "repos_url": "https://api.github.com/users/unit74/repos",
+        "events_url": "https://api.github.com/users/unit74/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/unit74/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2ff6afe51d4e51f6f4da66ea480be440f42964c9",
+            "url": "https://api.github.com/repos/bbang7/New-home-flaw-finding-service/commits/2ff6afe51d4e51f6f4da66ea480be440f42964c9",
+            "html_url": "https://github.com/bbang7/New-home-flaw-finding-service/commit/2ff6afe51d4e51f6f4da66ea480be440f42964c9"
+        }
+    ],
+    "stats": {
+        "total": 33,
+        "additions": 23,
+        "deletions": 10
+    },
+    "files": [
+        {
+            "sha": "25a2dedc8e9e0ad1d4b11673c8c308087201da85",
+            "filename": "backend/whatisthis/src/main/java/com/mo/whatisthis/apis/history/services/HistoryService.java",
+            "status": "modified",
+            "additions": 23,
+            "deletions": 10,
+            "changes": 33,
+            "blob_url": "https://github.com/bbang7/New-home-flaw-finding-service/blob/ceb39fe8397bee12633f286dc8d565536fb73a8e/backend%2Fwhatisthis%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmo%2Fwhatisthis%2Fapis%2Fhistory%2Fservices%2FHistoryService.java",
+            "raw_url": "https://github.com/bbang7/New-home-flaw-finding-service/raw/ceb39fe8397bee12633f286dc8d565536fb73a8e/backend%2Fwhatisthis%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmo%2Fwhatisthis%2Fapis%2Fhistory%2Fservices%2FHistoryService.java",
+            "contents_url": "https://api.github.com/repos/bbang7/New-home-flaw-finding-service/contents/backend%2Fwhatisthis%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmo%2Fwhatisthis%2Fapis%2Fhistory%2Fservices%2FHistoryService.java?ref=ceb39fe8397bee12633f286dc8d565536fb73a8e",
+            "patch": "@@ -103,19 +103,32 @@ public String uploadReport(Long id, MultipartFile report) throws IOException {\n     public void packToZip(Long id, String reportUrl) throws IOException {\n         List<String> keys = new ArrayList<>();\n         keys.add(reportUrl);\n-        \n+\n         AllHistoryResponse allHistoryResponse = getAllHistory(id);\n \n-        for (DamagedHistoryResponse damagedHistoryResponse : allHistoryResponse.getHistory()\n-                                                                               .getDamaged()) {\n-            keys.add(damagedHistoryResponse.getImageUrl());\n+        if (allHistoryResponse.getHistory() != null && allHistoryResponse.getHistory()\n+                                                                         .getDamaged() != null) {\n+            for (DamagedHistoryResponse damagedHistoryResponse : allHistoryResponse.getHistory()\n+                                                                                   .getDamaged()) {\n+                keys.add(damagedHistoryResponse.getImageUrl());\n+            }\n         }\n-        keys.add(allHistoryResponse.getHistory()\n-                                   .getDrawingUrl());\n-        for (TodolistWrapperResponse todolistWrapperResponse : allHistoryResponse.getTodolist()) {\n-            for (TodolistResponse todolistResponse : todolistWrapperResponse.getTodolist()) {\n-                for (TodolistImageResponse todolistImageResponse : todolistResponse.getImages()) {\n-                    keys.add(todolistImageResponse.getImageUrl());\n+\n+        if (allHistoryResponse.getHistory() != null) {\n+            keys.add(allHistoryResponse.getHistory()\n+                                       .getDrawingUrl());\n+        }\n+\n+        if (allHistoryResponse.getTodolist() != null) {\n+            for (TodolistWrapperResponse todolistWrapperResponse : allHistoryResponse.getTodolist()) {\n+                if (todolistWrapperResponse.getTodolist() != null) {\n+                    for (TodolistResponse todolistResponse : todolistWrapperResponse.getTodolist()) {\n+                        if (todolistResponse.getImages() != null) {\n+                            for (TodolistImageResponse todolistImageResponse : todolistResponse.getImages()) {\n+                                keys.add(todolistImageResponse.getImageUrl());\n+                            }\n+                        }\n+                    }\n                 }\n             }\n         }"
+        }
+    ]
+}

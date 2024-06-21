@@ -1,0 +1,8 @@
+    public PlateDTO getPlateById(@Argument long plateId) {
+        PlateDTO result = plateService.getPlateById(plateId);
+        if (result != null) {
+            List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, result.getId());
+            result.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+        }
+        return result;
+    }

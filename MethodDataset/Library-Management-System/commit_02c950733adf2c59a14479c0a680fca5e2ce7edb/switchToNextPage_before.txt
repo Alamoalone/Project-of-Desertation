@@ -1,0 +1,20 @@
+    public void switchToNextPage(ActionEvent event) throws IOException {
+
+        Parent root;
+        System.out.println(t);
+        if (t=='l'){
+            root = FXMLLoader.load(getClass().getResource("InitialLibrarian.fxml"));
+            stage = (Stage)loginButton.getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+        else if(t=='r') {
+           root= FXMLLoader.load(getClass().getResource("InitialReader.fxml"));
+            stage = (Stage)loginButton.getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+
+    }

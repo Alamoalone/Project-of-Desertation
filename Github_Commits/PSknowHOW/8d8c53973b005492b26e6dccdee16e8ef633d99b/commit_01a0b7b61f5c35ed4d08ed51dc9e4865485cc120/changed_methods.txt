@@ -1,0 +1,2 @@
+fetchSprintVelocityDataFromDb(KpiRequest kpiRequest, Map projectWiseSprintsForFilter, List sprintDetails)
+getMinimumClosedDateFromConfiguration(Map duplicateIssues, Map customFieldMapping)

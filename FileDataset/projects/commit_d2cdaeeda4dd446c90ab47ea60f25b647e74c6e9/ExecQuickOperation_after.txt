@@ -1,0 +1,4 @@
+    public ImplicitMethods getConverter() {
+        return converter;
+    }
+

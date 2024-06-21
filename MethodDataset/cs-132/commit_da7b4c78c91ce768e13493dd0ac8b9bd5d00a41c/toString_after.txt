@@ -1,0 +1,3 @@
+    public String toString() {
+        return classList.fold("", (str, c) -> String.format("%s---\n%s\n%s", str, c, c.get()));
+    }

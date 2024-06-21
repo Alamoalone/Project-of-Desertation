@@ -1,0 +1,40 @@
+@@ -13,15 +13,15 @@ public class RespuestaLoginEscritorio {
+     
+     private boolean error;
+     private String contenido;
+-    private Usuario usuarioSession;
++    private Usuario usuarioSesion;
+ 
+     public RespuestaLoginEscritorio() {
+     }
+ 
+-    public RespuestaLoginEscritorio(boolean error, String contenido, Usuario usuarioSession) {
++    public RespuestaLoginEscritorio(boolean error, String contenido, Usuario usuarioSesion) {
+         this.error = error;
+         this.contenido = contenido;
+-        this.usuarioSession = usuarioSession;
++        this.usuarioSesion = usuarioSesion;
+     }
+ 
+     public boolean isError() {
+@@ -40,14 +40,14 @@ public void setContenido(String contenido) {
+         this.contenido = contenido;
+     }
+ 
+-    public Usuario getUsuarioSession() {
+-        return usuarioSession;
++    public Usuario getUsuarioSesion() {
++        return usuarioSesion;
+     }
+ 
+-    public void setUsuarioSession(Usuario usuarioSession) {
+-        this.usuarioSession = usuarioSession;
++    public void setUsuarioSesion(Usuario usuarioSesion) {
++        this.usuarioSesion = usuarioSesion;
+     }
+-    
+-    
++
++
+     
+ }

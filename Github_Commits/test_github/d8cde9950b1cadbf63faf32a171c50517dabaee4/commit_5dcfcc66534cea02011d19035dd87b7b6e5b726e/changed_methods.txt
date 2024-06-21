@@ -1,0 +1,3 @@
+calculateCircumference()
+calculateArea()
+calculateSide(int side)

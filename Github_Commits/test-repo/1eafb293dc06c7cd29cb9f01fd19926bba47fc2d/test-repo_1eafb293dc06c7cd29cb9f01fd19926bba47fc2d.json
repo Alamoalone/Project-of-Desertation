@@ -1,0 +1,110 @@
+{
+    "sha": "1eafb293dc06c7cd29cb9f01fd19926bba47fc2d",
+    "node_id": "C_kwDOKRpH99oAKDFlYWZiMjkzZGMwNmM3Y2QyOWNiOWYwMWZkMTk5MjZiYmE0N2ZjMmQ",
+    "commit": {
+        "author": {
+            "name": "Zubair Asghar",
+            "email": "zubair@dhis2.org",
+            "date": "2023-08-31T13:19:31Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-08-31T13:19:31Z"
+        },
+        "message": "fix: null pointer exception while deleting image attribute[DHIS2-15295] (#14943)",
+        "tree": {
+            "sha": "220a93ec63fad35189317a758544105352475996",
+            "url": "https://api.github.com/repos/mdriyazali/test-repo/git/trees/220a93ec63fad35189317a758544105352475996"
+        },
+        "url": "https://api.github.com/repos/mdriyazali/test-repo/git/commits/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk8JNjCRBK7hj4Ov3rIwAACCMIAJmYzr7nUQy5sHZtL1/7LTbs\nrVMMDA3Qqaxi/bjhxyLOYbgm1+vUKmoCcEMfyZG1JHW8ABFV5kAz86RpgmQ7Tq5O\n2zUQQDrVynVKdUWDBk3fM/1DH/XELIuqQUTMq23k9JR0o2IqrFCWrdu0dYJ+aiIU\nYD+Im0ad5NIJJ9YlxvzzLFP2urMwvh6/omwPAyOyBSIBuCthx7WNqC+hspKZDrTl\n3N3Ju8rzjwkgdw8TjiZv+nYduXFUO3cQxOPRSPOFZ3bY+PUtA3jT14XLu2QI8Sk+\n6D8v6k7VDr17PHRO9uN5k2CDloK+oB4n321VLBm4hpQQkAFsY6oXKTdTfe0G9UM=\n=VksA\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 220a93ec63fad35189317a758544105352475996\nparent b6eacfb5fbe3f7eacecc093047f6e0ef7249ccac\nauthor Zubair Asghar <zubair@dhis2.org> 1693487971 +0500\ncommitter GitHub <noreply@github.com> 1693487971 +0500\n\nfix: null pointer exception while deleting image attribute[DHIS2-15295] (#14943)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/mdriyazali/test-repo/commits/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d",
+    "html_url": "https://github.com/mdriyazali/test-repo/commit/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d",
+    "comments_url": "https://api.github.com/repos/mdriyazali/test-repo/commits/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d/comments",
+    "author": {
+        "login": "zubaira",
+        "id": 13900328,
+        "node_id": "MDQ6VXNlcjEzOTAwMzI4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13900328?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zubaira",
+        "html_url": "https://github.com/zubaira",
+        "followers_url": "https://api.github.com/users/zubaira/followers",
+        "following_url": "https://api.github.com/users/zubaira/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zubaira/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zubaira/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zubaira/subscriptions",
+        "organizations_url": "https://api.github.com/users/zubaira/orgs",
+        "repos_url": "https://api.github.com/users/zubaira/repos",
+        "events_url": "https://api.github.com/users/zubaira/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zubaira/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b6eacfb5fbe3f7eacecc093047f6e0ef7249ccac",
+            "url": "https://api.github.com/repos/mdriyazali/test-repo/commits/b6eacfb5fbe3f7eacecc093047f6e0ef7249ccac",
+            "html_url": "https://github.com/mdriyazali/test-repo/commit/b6eacfb5fbe3f7eacecc093047f6e0ef7249ccac"
+        }
+    ],
+    "stats": {
+        "total": 61,
+        "additions": 60,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "0e446828a0c5c88a0663f16813df064a8c9c6309",
+            "filename": "dhis-2/dhis-services/dhis-service-dxf2/src/main/java/org/hisp/dhis/dxf2/deprecated/tracker/trackedentity/AbstractTrackedEntityInstanceService.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/mdriyazali/test-repo/blob/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d/dhis-2%2Fdhis-services%2Fdhis-service-dxf2%2Fsrc%2Fmain%2Fjava%2Forg%2Fhisp%2Fdhis%2Fdxf2%2Fdeprecated%2Ftracker%2Ftrackedentity%2FAbstractTrackedEntityInstanceService.java",
+            "raw_url": "https://github.com/mdriyazali/test-repo/raw/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d/dhis-2%2Fdhis-services%2Fdhis-service-dxf2%2Fsrc%2Fmain%2Fjava%2Forg%2Fhisp%2Fdhis%2Fdxf2%2Fdeprecated%2Ftracker%2Ftrackedentity%2FAbstractTrackedEntityInstanceService.java",
+            "contents_url": "https://api.github.com/repos/mdriyazali/test-repo/contents/dhis-2%2Fdhis-services%2Fdhis-service-dxf2%2Fsrc%2Fmain%2Fjava%2Forg%2Fhisp%2Fdhis%2Fdxf2%2Fdeprecated%2Ftracker%2Ftrackedentity%2FAbstractTrackedEntityInstanceService.java?ref=1eafb293dc06c7cd29cb9f01fd19926bba47fc2d",
+            "patch": "@@ -1275,7 +1275,8 @@ private void assignFileResource(\n     if (trackedEntityAttribute.getValueType().isFile()) {\n       FileResource fileResource = fileResourceService.getFileResource(attribute.getValue());\n \n-      if (!fileResource.isAssigned() || fileResource.getFileResourceOwner() == null) {\n+      if (fileResource != null\n+          && (!fileResource.isAssigned() || fileResource.getFileResourceOwner() == null)) {\n         fileResource.setAssigned(true);\n         fileResource.setFileResourceOwner(fileResourceOwner);\n         fileResourceService.updateFileResource(fileResource);"
+        },
+        {
+            "sha": "9d17ad4d1eb3d940334e469bf2a1b44ba6d9d96b",
+            "filename": "dhis-2/dhis-test-integration/src/test/java/org/hisp/dhis/dxf2/deprecated/tracker/TrackedEntityServiceTest.java",
+            "status": "modified",
+            "additions": 58,
+            "deletions": 0,
+            "changes": 58,
+            "blob_url": "https://github.com/mdriyazali/test-repo/blob/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d/dhis-2%2Fdhis-test-integration%2Fsrc%2Ftest%2Fjava%2Forg%2Fhisp%2Fdhis%2Fdxf2%2Fdeprecated%2Ftracker%2FTrackedEntityServiceTest.java",
+            "raw_url": "https://github.com/mdriyazali/test-repo/raw/1eafb293dc06c7cd29cb9f01fd19926bba47fc2d/dhis-2%2Fdhis-test-integration%2Fsrc%2Ftest%2Fjava%2Forg%2Fhisp%2Fdhis%2Fdxf2%2Fdeprecated%2Ftracker%2FTrackedEntityServiceTest.java",
+            "contents_url": "https://api.github.com/repos/mdriyazali/test-repo/contents/dhis-2%2Fdhis-test-integration%2Fsrc%2Ftest%2Fjava%2Forg%2Fhisp%2Fdhis%2Fdxf2%2Fdeprecated%2Ftracker%2FTrackedEntityServiceTest.java?ref=1eafb293dc06c7cd29cb9f01fd19926bba47fc2d",
+            "patch": "@@ -54,6 +54,7 @@\n import org.hisp.dhis.common.CodeGenerator;\n import org.hisp.dhis.common.IdentifiableObjectManager;\n import org.hisp.dhis.common.Objects;\n+import org.hisp.dhis.common.ValueType;\n import org.hisp.dhis.dxf2.common.ImportOptions;\n import org.hisp.dhis.dxf2.deprecated.tracker.enrollment.Enrollment;\n import org.hisp.dhis.dxf2.deprecated.tracker.enrollment.EnrollmentStatus;\n@@ -65,6 +66,8 @@\n import org.hisp.dhis.dxf2.importsummary.ImportSummaries;\n import org.hisp.dhis.dxf2.importsummary.ImportSummary;\n import org.hisp.dhis.event.EventStatus;\n+import org.hisp.dhis.fileresource.FileResource;\n+import org.hisp.dhis.fileresource.FileResourceService;\n import org.hisp.dhis.importexport.ImportStrategy;\n import org.hisp.dhis.organisationunit.OrganisationUnit;\n import org.hisp.dhis.program.EnrollmentService;\n@@ -114,6 +117,10 @@ class TrackedEntityServiceTest extends TransactionalIntegrationTest {\n \n   @Autowired private UserService _userService;\n \n+  @Autowired private FileResourceService fileResourceService;\n+\n+  private TrackedEntity maleC;\n+\n   private TrackedEntity maleA;\n \n   private TrackedEntity maleB;\n@@ -140,22 +147,31 @@ class TrackedEntityServiceTest extends TransactionalIntegrationTest {\n \n   private TrackedEntityInstance teiFemaleA;\n \n+  private TrackedEntityAttribute imageAttribute;\n+\n   private TrackedEntityAttribute generatedAttribute;\n \n   private TrackedEntityAttribute trackedEntityAttributeB;\n \n   private TrackedEntityType trackedEntityType;\n \n+  private FileResource fileResource;\n   private User user;\n \n   @Override\n   protected void setUpTest() throws Exception {\n+\n+    fileResource = createFileResource('F', \"fileResource\".getBytes());\n+    fileResourceService.saveFileResource(fileResource, \"fileResource\".getBytes());\n+\n     userService = _userService;\n     user = createAndAddAdminUser(AUTHORITY_ALL);\n \n     organisationUnitA = createOrganisationUnit('A');\n     organisationUnitB = createOrganisationUnit('B');\n     organisationUnitB.setParent(organisationUnitA);\n+    imageAttribute = createTrackedEntityAttribute('F');\n+    imageAttribute.setValueType(ValueType.IMAGE);\n     generatedAttribute = createTrackedEntityAttribute('A');\n     generatedAttribute.setGenerated(true);\n     // uniqueIdAttribute.setPattern( \"RANDOM(#####)\" );\n@@ -164,25 +180,47 @@ protected void setUpTest() throws Exception {\n     textPattern.setOwnerObject(Objects.TRACKEDENTITYATTRIBUTE);\n     textPattern.setOwnerUid(generatedAttribute.getUid());\n     generatedAttribute.setTextPattern(textPattern);\n+\n     trackedEntityAttributeService.addTrackedEntityAttribute(generatedAttribute);\n+    trackedEntityAttributeService.addTrackedEntityAttribute(imageAttribute);\n+\n     trackedEntityAttributeB = createTrackedEntityAttribute('B');\n     trackedEntityAttributeService.addTrackedEntityAttribute(trackedEntityAttributeB);\n+\n     trackedEntityType = createTrackedEntityType('A');\n+\n     TrackedEntityTypeAttribute trackedEntityTypeAttribute = new TrackedEntityTypeAttribute();\n     trackedEntityTypeAttribute.setTrackedEntityAttribute(generatedAttribute);\n     trackedEntityTypeAttribute.setTrackedEntityType(trackedEntityType);\n     trackedEntityType.setTrackedEntityTypeAttributes(List.of(trackedEntityTypeAttribute));\n+\n+    TrackedEntityTypeAttribute trackedEntityTypeFileAttribute = new TrackedEntityTypeAttribute();\n+    trackedEntityTypeFileAttribute.setTrackedEntityAttribute(imageAttribute);\n+    trackedEntityTypeFileAttribute.setTrackedEntityType(trackedEntityType);\n+    trackedEntityType.setTrackedEntityTypeAttributes(List.of(trackedEntityTypeFileAttribute));\n+\n     trackedEntityTypeService.addTrackedEntityType(trackedEntityType);\n+\n+    maleC = createTrackedEntity(organisationUnitA);\n     maleA = createTrackedEntity(organisationUnitA);\n     maleB = createTrackedEntity(organisationUnitB);\n     femaleA = createTrackedEntity(organisationUnitA);\n     femaleB = createTrackedEntity(organisationUnitB);\n     dateConflictsMaleA = createTrackedEntity(organisationUnitA);\n+\n     TrackedEntityAttributeValue uniqueId =\n         createTrackedEntityAttributeValue('A', maleA, generatedAttribute);\n     uniqueId.setValue(\"12345\");\n+\n+    TrackedEntityAttributeValue imageAttributeValue =\n+        createTrackedEntityAttributeValue('E', maleC, imageAttribute);\n+    imageAttributeValue.setValue(fileResource.getUid());\n+\n     maleA.setTrackedEntityType(trackedEntityType);\n+    maleC.setTrackedEntityType(trackedEntityType);\n     maleA.setTrackedEntityAttributeValues(Set.of(uniqueId));\n+    maleC.setTrackedEntityAttributeValues(Set.of(imageAttributeValue));\n+\n     maleB.setTrackedEntityType(trackedEntityType);\n     femaleA.setTrackedEntityType(trackedEntityType);\n     femaleB.setTrackedEntityType(trackedEntityType);\n@@ -196,6 +234,7 @@ protected void setUpTest() throws Exception {\n     manager.save(organisationUnitA);\n     manager.save(organisationUnitB);\n     manager.save(maleA);\n+    manager.save(maleC);\n     manager.save(maleB);\n     manager.save(femaleA);\n     manager.save(femaleB);\n@@ -207,6 +246,7 @@ protected void setUpTest() throws Exception {\n     teiMaleB = trackedEntityInstanceService.getTrackedEntityInstance(maleB);\n     teiFemaleA = trackedEntityInstanceService.getTrackedEntityInstance(femaleA);\n     trackedEntityAttributeValueService.addTrackedEntityAttributeValue(uniqueId);\n+    trackedEntityAttributeValueService.addTrackedEntityAttributeValue(imageAttributeValue);\n     enrollmentService.enrollTrackedEntity(maleA, programA, null, null, organisationUnitA);\n     enrollmentService.enrollTrackedEntity(\n         femaleA, programA, DateTime.now().plusMonths(1).toDate(), null, organisationUnitA);\n@@ -271,6 +311,24 @@ void testUpdatePerson() {\n     // maleA.getUid() ).getName() );\n   }\n \n+  @Test\n+  void testUpdateTeiByProvidingNullValueToImageAttribute() {\n+    TrackedEntityInstance trackedEntityInstance =\n+        trackedEntityInstanceService.getTrackedEntityInstance(maleC.getUid());\n+\n+    Attribute attribute =\n+        trackedEntityInstance.getAttributes().stream()\n+            .filter(a -> a.getValueType() == ValueType.IMAGE)\n+            .findFirst()\n+            .orElse(null);\n+    attribute.setValue(null);\n+\n+    ImportSummary importSummary =\n+        trackedEntityInstanceService.updateTrackedEntityInstance(\n+            trackedEntityInstance, null, null, true);\n+    assertEquals(ImportStatus.SUCCESS, importSummary.getStatus());\n+  }\n+\n   @Test\n   void testUpdateTeiByCompletingExistingEnrollmentAndOpeningNewEnrollment() {\n     TrackedEntityInstance trackedEntityInstance ="
+        }
+    ]
+}

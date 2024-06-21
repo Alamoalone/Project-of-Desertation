@@ -1,0 +1,42 @@
+@@ -15,6 +15,7 @@ public abstract class BaseView<T extends Base> extends JPanel {
+ 	protected static JPanel topPanel;
+ 	protected static JPanel bottomPanel;
+ 	private String name;
++	private JTextField searchBar;
+ 
+ 	/**
+ 	 * Constructor for BaseView.
+@@ -58,17 +59,21 @@ public void displayView(boolean isCreateMode) {
+ 		if (isCreateMode) {
+ 			clear();
+ 			JPanel formPanel = createFormPanel();
+-			if (formPanel != null) {
+-				mainPanel.add(formPanel);
++			if (formPanel == null) {
++				displayView(false);
++				return;
+ 			}
++			mainPanel.add(formPanel);
+ 			refresh();
+ 			createButton.setText("Annuler");
++			// hide search bar
++			topPanel.remove(searchBar);
+ 			inCreation = true;
+ 			return;
+ 		}
+ 		clear();
+ 		// search bar
+-		JTextField searchBar = new JTextField();
++		searchBar = new JTextField();
+ 		searchBar.setMaximumSize(new Dimension(1000, 30));
+ 		searchBar.setPreferredSize(new Dimension(1000, 30));
+ 		searchBar.addActionListener(e -> search(searchBar));
+@@ -121,7 +126,7 @@ protected JPanel createListPanel(T t) {
+ 		JPanel panel = new JPanel();
+ 		panel.setLayout(new GridLayout(1, 2));
+ 		JLabel label = new JLabel(t.toString());
+-		UButton editButton = new UButton("Modifier");
++		UButton editButton = new UButton("Détailler");
+ 		editButton.addActionListener(e -> {
+ 			displayView(true);
+ 			clear();

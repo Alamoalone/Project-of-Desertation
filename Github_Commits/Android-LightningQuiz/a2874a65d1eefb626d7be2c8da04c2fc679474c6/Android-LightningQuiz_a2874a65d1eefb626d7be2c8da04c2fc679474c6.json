@@ -1,0 +1,98 @@
+{
+    "sha": "a2874a65d1eefb626d7be2c8da04c2fc679474c6",
+    "node_id": "C_kwDOAZkdgtoAKGEyODc0YTY1ZDFlZWZiNjI2ZDdiZTJjOGRhMDRjMmZjNjc5NDc0YzY",
+    "commit": {
+        "author": {
+            "name": "jrmitchell",
+            "email": "jr@3sidedcube.com",
+            "date": "2023-04-06T10:53:07Z"
+        },
+        "committer": {
+            "name": "jrmitchell",
+            "email": "jr@3sidedcube.com",
+            "date": "2023-04-06T11:00:42Z"
+        },
+        "message": "fix: avoids null pointer exception in ImageQuizItemViewHolder.selectAnswer",
+        "tree": {
+            "sha": "eb8faea73d90eddc78c95a2c04f08e2cadbeccc5",
+            "url": "https://api.github.com/repos/3sidedcube/Android-LightningQuiz/git/trees/eb8faea73d90eddc78c95a2c04f08e2cadbeccc5"
+        },
+        "url": "https://api.github.com/repos/3sidedcube/Android-LightningQuiz/git/commits/a2874a65d1eefb626d7be2c8da04c2fc679474c6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/3sidedcube/Android-LightningQuiz/commits/a2874a65d1eefb626d7be2c8da04c2fc679474c6",
+    "html_url": "https://github.com/3sidedcube/Android-LightningQuiz/commit/a2874a65d1eefb626d7be2c8da04c2fc679474c6",
+    "comments_url": "https://api.github.com/repos/3sidedcube/Android-LightningQuiz/commits/a2874a65d1eefb626d7be2c8da04c2fc679474c6/comments",
+    "author": {
+        "login": "JR-Mitchell-Cube",
+        "id": 158455217,
+        "node_id": "U_kgDOCXHVsQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/158455217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JR-Mitchell-Cube",
+        "html_url": "https://github.com/JR-Mitchell-Cube",
+        "followers_url": "https://api.github.com/users/JR-Mitchell-Cube/followers",
+        "following_url": "https://api.github.com/users/JR-Mitchell-Cube/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JR-Mitchell-Cube/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JR-Mitchell-Cube/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JR-Mitchell-Cube/subscriptions",
+        "organizations_url": "https://api.github.com/users/JR-Mitchell-Cube/orgs",
+        "repos_url": "https://api.github.com/users/JR-Mitchell-Cube/repos",
+        "events_url": "https://api.github.com/users/JR-Mitchell-Cube/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JR-Mitchell-Cube/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "JR-Mitchell-Cube",
+        "id": 158455217,
+        "node_id": "U_kgDOCXHVsQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/158455217?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JR-Mitchell-Cube",
+        "html_url": "https://github.com/JR-Mitchell-Cube",
+        "followers_url": "https://api.github.com/users/JR-Mitchell-Cube/followers",
+        "following_url": "https://api.github.com/users/JR-Mitchell-Cube/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JR-Mitchell-Cube/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JR-Mitchell-Cube/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JR-Mitchell-Cube/subscriptions",
+        "organizations_url": "https://api.github.com/users/JR-Mitchell-Cube/orgs",
+        "repos_url": "https://api.github.com/users/JR-Mitchell-Cube/repos",
+        "events_url": "https://api.github.com/users/JR-Mitchell-Cube/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JR-Mitchell-Cube/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fc4b61e22f64b1d5034b5373d1cc893a9d4cac8b",
+            "url": "https://api.github.com/repos/3sidedcube/Android-LightningQuiz/commits/fc4b61e22f64b1d5034b5373d1cc893a9d4cac8b",
+            "html_url": "https://github.com/3sidedcube/Android-LightningQuiz/commit/fc4b61e22f64b1d5034b5373d1cc893a9d4cac8b"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 10,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "a658062850c38e9800f0730907ebf2d9cda1389d",
+            "filename": "library/src/main/java/com/cube/storm/ui/quiz/view/holder/ImageQuizItemViewHolder.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 2,
+            "changes": 12,
+            "blob_url": "https://github.com/3sidedcube/Android-LightningQuiz/blob/a2874a65d1eefb626d7be2c8da04c2fc679474c6/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Fcube%2Fstorm%2Fui%2Fquiz%2Fview%2Fholder%2FImageQuizItemViewHolder.java",
+            "raw_url": "https://github.com/3sidedcube/Android-LightningQuiz/raw/a2874a65d1eefb626d7be2c8da04c2fc679474c6/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Fcube%2Fstorm%2Fui%2Fquiz%2Fview%2Fholder%2FImageQuizItemViewHolder.java",
+            "contents_url": "https://api.github.com/repos/3sidedcube/Android-LightningQuiz/contents/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Fcube%2Fstorm%2Fui%2Fquiz%2Fview%2Fholder%2FImageQuizItemViewHolder.java?ref=a2874a65d1eefb626d7be2c8da04c2fc679474c6",
+            "patch": "@@ -18,6 +18,8 @@\n \n import java.util.ArrayList;\n \n+import androidx.annotation.Nullable;\n+\n /**\n  * View holder for {@link com.cube.storm.ui.quiz.model.quiz.ImageQuizItem} in the adapter\n  *\n@@ -124,15 +126,17 @@ private void selectAnswer(View answerLayout, boolean selectAnswer)\n \n \t\t// Set image label style and its background\n \t\tTextView textView = answerLayout.findViewById(R.id.label);\n+\t\tCharSequence labelText = null;\n \t\tif (textView != null)\n \t\t{\n \t\t\ttextView.setTextAppearance(answerLayout.getContext(),\n \t\t\t\tselectAnswer ? R.style.QuizImageLabel_Selected : R.style.QuizImageLabel_Unselected);\n \t\t\ttextView.setBackgroundResource(selectAnswer ? R.drawable.quiz_image_label_selected_border : 0);\n+\t\t\tlabelText = textView.getText();\n \t\t}\n \n \t\t// Update the content description based on the selected answer and label text\n-\t\tupdateAnswerContentDescription(answerLayout, textView.getText(), selectAnswer);\n+\t\tupdateAnswerContentDescription(answerLayout, labelText, selectAnswer);\n \t}\n \t\n \t/**\n@@ -141,8 +145,12 @@ private void selectAnswer(View answerLayout, boolean selectAnswer)\n \t * @param baseText the base label text of the view\n \t * @param selectAnswer if answer is selected or unselected\n \t */\n-\tprotected void updateAnswerContentDescription(View answerLayout, CharSequence baseText, boolean selectAnswer)\n+\tprotected void updateAnswerContentDescription(View answerLayout, @Nullable CharSequence baseText, boolean selectAnswer)\n \t{\n+\t\tif(baseText == null)\n+\t\t{\n+\t\t\tbaseText = \"\";\n+\t\t}\n \t\tanswerLayout.setContentDescription(baseText + (selectAnswer ? \" selected\" : \" not selected\"));\n \t}\n "
+        }
+    ]
+}

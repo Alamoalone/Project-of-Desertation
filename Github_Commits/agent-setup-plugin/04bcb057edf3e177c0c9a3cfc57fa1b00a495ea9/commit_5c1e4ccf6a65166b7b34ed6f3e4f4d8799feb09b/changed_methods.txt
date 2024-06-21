@@ -1,0 +1,1 @@
+doCheckAssignedLabelString(String value)

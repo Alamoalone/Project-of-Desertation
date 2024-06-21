@@ -1,0 +1,28 @@
+    public CreditScore getUserScore(){
+        return userScore;
+    }
+
+    public void setCredit(int credit) {
+        userScore.setScoreNumber(credit);
+    }
+
+
+
+
+
+    public BankAccount getBankAccount(){
+        return bankAccount;
+    }
+
+    public void setMoney(double Money) {
+        bankAccount.setBalance(Money);
+    }
+
+    public double getBalance() {
+        return bankAccount.getBalance();
+    }
+
+    public int getCredit() {
+        return userScore.getScoreNumber();
+    }
+

@@ -1,0 +1,81 @@
+	private static Map<String, Object> prepareCdsPayload(Map<String, String> aoWasdiPayload) {
+		String sDataset = JsonUtils.getProperty(aoWasdiPayload, "dataset");
+		String sProductType = JsonUtils.getProperty(aoWasdiPayload, "productType");
+		String sVariables = JsonUtils.getProperty(aoWasdiPayload, "variables");
+		String sMonthlyAggregation = JsonUtils.getProperty(aoWasdiPayload, "monthlyAggregation");
+		String sStartDate = JsonUtils.getProperty(aoWasdiPayload, "startDate");
+		String sEndDate = JsonUtils.getProperty(aoWasdiPayload, "endDate");
+		String sDate = JsonUtils.getProperty(aoWasdiPayload, "date");
+		String sBoundingBox = JsonUtils.getProperty(aoWasdiPayload, "boundingBox");
+		String sFormat = JsonUtils.getProperty(aoWasdiPayload, "format");
+
+		List<String> asVariables = null;
+		if (!Utils.isNullOrEmpty(sVariables)) {
+			asVariables = Arrays.stream(sVariables.split(" "))
+					.map(CDSProviderAdapter::inflateVariable)
+					.collect(Collectors.toList());
+		}
+
+		String sYear = "";
+		String sMonth = "";
+		String sDay = "";
+		List<String> asDays = Collections.emptyList();
+		
+		if (sMonthlyAggregation.equalsIgnoreCase("true")) {
+			sYear = sStartDate.substring(0, 4);
+			sMonth = sStartDate.substring(4, 6);
+			int iStartDay = Integer.parseInt(sStartDate.substring(6,  8));
+			int iEndDay = Integer.parseInt(sEndDate.substring(6,  8));
+			asDays = IntStream.rangeClosed(iStartDay, iEndDay)
+					.mapToObj(String::valueOf)
+					.collect(Collectors.toList());
+		} else {
+			sYear = sDate.substring(0, 4);
+			sMonth = sDate.substring(4, 6);
+			sDay = sDate.substring(6, 8);
+		}
+		
+
+		List<String> oaTimeHours = Arrays.asList("00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00");
+
+		Map<String, Object> aoHashMap = new HashMap<>();
+		if (sProductType != null) aoHashMap.put("product_type", sProductType);
+		if (asVariables != null) {
+			aoHashMap.put("variable", asVariables);
+		}
+		aoHashMap.put("year", sYear);
+		aoHashMap.put("month", sMonth);
+		aoHashMap.put("time", oaTimeHours);
+		aoHashMap.put("format", sFormat);
+		if (sMonthlyAggregation.equalsIgnoreCase("true")) {
+			aoHashMap.put("day", asDays);
+		} else {
+			aoHashMap.put("day", sDay);
+		}
+
+		if (sBoundingBox != null && !sBoundingBox.contains("null")) {
+			List<Double> originalBbox = BoundingBoxUtils.parseBoundingBox(sBoundingBox);
+			List<Double> expandedBbox = BoundingBoxUtils.expandBoundingBoxUpToAQuarterDegree(originalBbox);
+
+			if (expandedBbox != null) {
+				aoHashMap.put("area", expandedBbox);
+			}
+		}
+
+		if (sDataset.equalsIgnoreCase("reanalysis-era5-pressure-levels")) {
+			String sPresureLevels = JsonUtils.getProperty(aoWasdiPayload, "presureLevels");
+			List<String> oaPressureLevels = Arrays.asList(sPresureLevels.split(" "));
+
+			aoHashMap.put("pressure_level", oaPressureLevels);
+		}
+		
+        if (sDataset.equalsIgnoreCase("satellite-sea-surface-temperature")) {
+            aoHashMap.put("sensor_on_satellite", "combined_product");
+            aoHashMap.put("version", "2_1");
+            aoHashMap.put("processinglevel", "level_4");
+            aoHashMap.remove("time");
+            aoHashMap.remove("area");
+        }
+
+		return aoHashMap;
+	}

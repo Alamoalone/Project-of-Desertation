@@ -1,0 +1,5 @@
+	public Model getResult(final Repository repo) {
+		reset = false;
+		result = SPARQLUtil.getNamedGraph(SPARQLUtil.queryRepository(repo, sparql));
+		return result;
+	}

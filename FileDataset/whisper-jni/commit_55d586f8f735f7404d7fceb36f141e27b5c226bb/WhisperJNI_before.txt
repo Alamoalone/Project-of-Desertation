@@ -1,0 +1,11 @@
+    public static void loadLibrary(LoadOptions options) throws IOException {
+        if (options == null) {
+            options = new LoadOptions();
+        }
+        if (libraryLoaded) {
+            return;
+        }
+        LibraryUtils.loadLibrary(options);
+        libraryLoaded = true;
+    }
+

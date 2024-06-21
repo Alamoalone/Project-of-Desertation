@@ -1,0 +1,14 @@
+    public static RatingDto mapToRatingDtoFromClient(Rating rating){
+        RatingDto.RatingDtoBuilder builder = RatingDto.builder()
+                .serviceProviderRating(rating.getServiceProviderRating())
+                .serviceProviderRatingDescription(rating.getServiceProviderRatingDescription())
+                .taskDto(mapToTaskDto(rating.getTask()));
+
+        if (rating.getClient() != null){
+            builder.clientDto(mapToClientDto(rating.getClient()));
+        }
+        if(rating.getServiceProvider() != null){
+            builder.serviceProviderDto(toServiceProviderDto(rating.getServiceProvider()));
+        }
+        return builder.build();
+    }

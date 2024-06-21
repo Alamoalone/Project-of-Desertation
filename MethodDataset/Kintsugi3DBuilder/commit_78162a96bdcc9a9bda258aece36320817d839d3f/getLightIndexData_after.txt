@@ -1,0 +1,14 @@
+    public ReadonlyNativeVectorBuffer getLightIndexData()
+    {
+        // Store the light indices in a uniform buffer
+        if (lightIndexList.isEmpty())
+        {
+            return null;
+        }
+        else
+        {
+            int[] indexArray = new int[lightIndexList.size()];
+            Arrays.setAll(indexArray, lightIndexList::get);
+            return NativeVectorBufferFactory.getInstance().createFromIntArray(false, 1, lightIndexList.size(), indexArray);
+        }
+    }

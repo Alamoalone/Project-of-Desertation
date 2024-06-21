@@ -1,0 +1,9 @@
+    protected String getSessionKey(String uniqueDerivationKey,
+                                   String applicationTransactionCounter,
+                                   CryptogramVersionNumber cryptogramVersionNumber) {
+        EMVSessionKeyDerivator emvSessionKeyDerivator = new EMVSessionKeyDerivator(uniqueDerivationKey,
+                applicationTransactionCounter,
+                cryptogramVersionNumber
+        );
+        return emvSessionKeyDerivator.generateSessionKey();
+    }

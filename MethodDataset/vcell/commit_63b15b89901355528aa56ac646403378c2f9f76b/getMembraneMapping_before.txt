@@ -1,0 +1,151 @@
+private MembraneMapping getMembraneMapping(Element param, SimulationContext simulationContext) throws XmlParseException{
+	//Retrieve attributes
+	String membranename = unMangle( param.getAttributeValue(XMLTags.MembraneAttrTag) );
+	
+	Membrane membraneref = (Membrane)simulationContext.getModel().getStructure(membranename);
+	if (membraneref == null) {
+		throw new XmlParseException("The Membrane "+ membranename + " could not be resolved!");
+	}
+
+	//*** Create new Membrane Mapping ****
+	MembraneMapping memmap = new MembraneMapping(membraneref, simulationContext, simulationContext.getModel().getUnitSystem());
+
+	//Set SurfacetoVolumeRatio when it exists, amended Sept. 27th, 2007
+	if(param.getAttributeValue(XMLTags.SurfaceToVolumeRatioTag)!= null)
+	{
+		String ratio = unMangle( param.getAttributeValue(XMLTags.SurfaceToVolumeRatioTag) );
+		try {
+			memmap.getSurfaceToVolumeParameter().setExpression(unMangleExpression(ratio));
+		} catch (ExpressionException e) {
+			e.printStackTrace(System.out);
+			throw new XmlParseException("An expressionException was fired when setting the SurfacetoVolumeRatio Expression " + ratio + " to a membraneMapping!", e);
+		}
+	}
+	
+	//Set VolumeFraction when it exists, amended Sept. 27th, 2007
+	if(param.getAttributeValue(XMLTags.VolumeFractionTag) != null)
+	{
+		String fraction = unMangle( param.getAttributeValue(XMLTags.VolumeFractionTag) );
+		try {
+			memmap.getVolumeFractionParameter().setExpression(unMangleExpression(fraction));
+		} catch (ExpressionException e) {
+			e.printStackTrace(System.out);
+			throw new XmlParseException("An expressionException was fired when setting the VolumeFraction Expression " + fraction + " to a membraneMapping!", e);
+		}
+	}
+	
+	//Set Area/unit_area if it exists, amended Sept. 27th, 2007
+	if(param.getAttributeValue(XMLTags.AreaPerUnitAreaTag)!= null)
+	{
+		String ratio = unMangle( param.getAttributeValue(XMLTags.AreaPerUnitAreaTag) );
+		try {
+			memmap.getAreaPerUnitAreaParameter().setExpression(unMangleExpression(ratio));
+		} catch (ExpressionException e) {
+			e.printStackTrace(System.out);
+			throw new XmlParseException("An expressionException was fired when setting the AreaPerUnitArea Expression " + ratio + " to a membraneMapping!", e);
+		}
+	}
+	
+	//Set SurfacetoVolumeRatio when it exists, amended Sept. 27th, 2007
+	if(param.getAttributeValue(XMLTags.AreaPerUnitVolumeTag)!= null)
+	{
+		String ratio = unMangle( param.getAttributeValue(XMLTags.AreaPerUnitVolumeTag) );
+		try {
+			memmap.getAreaPerUnitVolumeParameter().setExpression(unMangleExpression(ratio));
+		} catch (ExpressionException e) {
+			e.printStackTrace(System.out);
+			throw new XmlParseException("An expressionException was fired when setting the AreaPerUnitVolume Expression " + ratio + " to a membraneMapping!", e);
+		}
+	}
+
+	//Set Size
+	if(param.getAttributeValue(XMLTags.SizeTag) != null)
+	{
+		String size = unMangle( param.getAttributeValue(XMLTags.SizeTag) );
+		try {
+			memmap.getSizeParameter().setExpression(unMangleExpression(size));
+		} catch (ExpressionException e) {
+			e.printStackTrace(System.out);
+			throw new XmlParseException("An expressionException was fired when setting the size Expression " + size + " to a membraneMapping!", e);
+		}
+	}else{
+		try {
+			memmap.getSizeParameter().setExpression(null);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("unexpected exception while setting structure size", e);
+		}
+	}
+	//** Set electrical properties **
+	//set specific capacitance
+	double specificCap = Double.parseDouble(param.getAttributeValue(XMLTags.SpecificCapacitanceTag));
+	try {
+		memmap.getSpecificCapacitanceParameter().setExpression(new Expression(specificCap));		
+	} catch (ExpressionException e) {
+		e.printStackTrace(System.out);
+		throw new XmlParseException(e);
+	}
+	
+	//set flag calculate voltage
+	boolean calculateVolt = (Boolean.valueOf(param.getAttributeValue(XMLTags.CalculateVoltageTag))).booleanValue();
+	memmap.setCalculateVoltage(calculateVolt);
+
+	//set initial Voltage
+	String initialVoltString = param.getAttributeValue(XMLTags.InitialVoltageTag);
+	try {
+		Expression initialExpr = unMangleExpression(initialVoltString);
+		memmap.getInitialVoltageParameter().setExpression(initialExpr);
+	} catch (ExpressionException e) {
+		e.printStackTrace(System.out);
+		throw new XmlParseException(e);
+	}
+	
+	String geometryClassName = param.getAttributeValue(XMLTags.GeometryClassAttrTag);
+	if (geometryClassName != null){
+		geometryClassName = unMangle(geometryClassName);
+	}
+	//Retrieve subvolumeref, allow subvolumes to be 'null'
+	if (geometryClassName != null) {
+		GeometryClass[] geometryClasses = simulationContext.getGeometry().getGeometryClasses();
+		for (int i = 0; i < geometryClasses.length; i++) {
+			if (geometryClasses[i].getName().equals(geometryClassName)){
+				try {
+					memmap.setGeometryClass(geometryClasses[i]);
+				} catch (PropertyVetoException e) {
+					e.printStackTrace();
+					throw new XmlParseException("A propertyVetoException was fired when trying to set the subvolume or surface " + geometryClassName + " to a MembraneMapping!", e);
+				}
+			}
+		}
+	}
+
+	//Set Boundary conditions
+	Element tempElement = param.getChild(XMLTags.BoundariesTypesTag, vcNamespace);
+	
+	//Xm
+	String temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueXm);
+	BoundaryConditionType bct = new BoundaryConditionType(temp);
+	memmap.setBoundaryConditionTypeXm(bct);
+	//Xp
+	temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueXp);
+	bct = new BoundaryConditionType(temp);
+	memmap.setBoundaryConditionTypeXp(bct);
+	//Ym
+	temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueYm);
+	bct = new BoundaryConditionType(temp);
+	memmap.setBoundaryConditionTypeYm(bct);
+	//Yp
+	temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueYp);
+	bct = new BoundaryConditionType(temp);
+	memmap.setBoundaryConditionTypeYp(bct);
+	//Zm
+	temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueZm);
+	bct = new BoundaryConditionType(temp);
+	memmap.setBoundaryConditionTypeZm(bct);
+	//Zp
+	temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueZp);
+	bct = new BoundaryConditionType(temp);
+	memmap.setBoundaryConditionTypeZp(bct);
+
+	return memmap;
+}

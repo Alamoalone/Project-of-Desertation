@@ -1,0 +1,4 @@
+    private static void disconnectGeneratorAndLoad(Network network, HvdcCreationParameters creationParameters, HvdcLine.Side side) {
+        getGeneratorOrThrow(network, creationParameters.getEquivalentGeneratorId(side)).getTerminal().disconnect();
+        getLoadOrThrow(network, creationParameters.getEquivalentLoadId(side)).getTerminal().disconnect();
+    }

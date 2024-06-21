@@ -1,0 +1,3 @@
+toString()
+enterClass(Class c)
+enterMethod(Method m)

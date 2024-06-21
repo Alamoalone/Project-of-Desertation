@@ -1,0 +1,10 @@
+@@ -1189,7 +1189,8 @@ private void generateApproveApplicationRow(Listbox lb, int i, RoleRequestInfo gr
+ 			if (grant.getParentRole() == null) {
+ 				Listcell listCell = new Listcell(fullName);
+ 				item.appendChild( listCell);
+-				addIconPermissions(listCell, u);
++				if (u != null)
++					addIconPermissions(listCell, u);
+ 			} else {
+ 				item.appendChild(new Listcell());
+ 			}

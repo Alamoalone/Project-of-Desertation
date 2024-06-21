@@ -1,0 +1,9 @@
+ public void addTimestampedVisionPose(Optional<TimestampedVisionPose> visionPose) {
+  if (visionPose.isPresent()) {
+    TimestampedVisionPose realVisionPose = visionPose.get();
+    poseEstimator.addVisionMeasurement(realVisionPose.poseMeters(), realVisionPose.timestampSecs()); 
+  }
+  else {
+    
+  }
+}

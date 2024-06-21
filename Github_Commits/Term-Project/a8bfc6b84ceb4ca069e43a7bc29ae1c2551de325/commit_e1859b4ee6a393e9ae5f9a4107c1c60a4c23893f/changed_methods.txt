@@ -1,0 +1,6 @@
+setBalance(double balance)
+decreaseBalance(int amount)
+getBalance()
+increaseBalance(int amount)
+updateBalance(double amount)
+act()

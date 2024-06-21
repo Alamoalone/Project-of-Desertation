@@ -1,0 +1,4 @@
+convertToDto(User user)
+registerUser(UserDto userDto)
+loginUser(UserDto userDto, Authentication authentication)
+logout(HttpServletRequest request, Authentication authentication)

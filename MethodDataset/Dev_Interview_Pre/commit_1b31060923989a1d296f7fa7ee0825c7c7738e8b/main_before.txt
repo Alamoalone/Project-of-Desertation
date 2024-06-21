@@ -1,0 +1,6 @@
+    public static void main(String[] args) {
+
+        String sentence = "     how can   mirrors    be real if    our eyes   aren't   real     ";
+
+       // System.out.println(jadenSmithWritingStyle(sentence));
+    }

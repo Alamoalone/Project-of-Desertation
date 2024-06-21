@@ -1,0 +1,9 @@
+@@ -464,7 +464,7 @@ public void onAdLoaded(final AdResponse ad) {
+         }
+ 
+         private void processAdLoaded(AdResponse ad) {
+-            if (!ad.getMediaType().equals(MediaType.NATIVE)) {
++            if (ad.getMediaType() != MediaType.NATIVE) {
+                 onAdFailed(ResultCode.getNewInstance(ResultCode.INTERNAL_ERROR), null);
+             } else {
+                 final String IMAGE_URL = "image", ICON_URL = "icon";

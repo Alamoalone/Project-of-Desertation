@@ -1,0 +1,98 @@
+{
+    "sha": "7117bcb851002c85ff8c5b4aee31eca748205adb",
+    "node_id": "C_kwDOB7tJrNoAKDcxMTdiY2I4NTEwMDJjODVmZjhjNWI0YWVlMzFlY2E3NDgyMDVhZGI",
+    "commit": {
+        "author": {
+            "name": "louis-edmond",
+            "email": "louis-edmond.fillet.external@atos.net",
+            "date": "2023-05-22T10:06:00Z"
+        },
+        "committer": {
+            "name": "Seb Leridon",
+            "email": "25958061+seboo@users.noreply.github.com",
+            "date": "2023-10-27T08:47:04Z"
+        },
+        "message": "LUT-25121 : fix possible null pointer exception cases with logo",
+        "tree": {
+            "sha": "bac70ef9393a5eeba1b8f791ac678eccb9e52423",
+            "url": "https://api.github.com/repos/lutece-platform/lutece-form-plugin-forms/git/trees/bac70ef9393a5eeba1b8f791ac678eccb9e52423"
+        },
+        "url": "https://api.github.com/repos/lutece-platform/lutece-form-plugin-forms/git/commits/7117bcb851002c85ff8c5b4aee31eca748205adb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/lutece-platform/lutece-form-plugin-forms/commits/7117bcb851002c85ff8c5b4aee31eca748205adb",
+    "html_url": "https://github.com/lutece-platform/lutece-form-plugin-forms/commit/7117bcb851002c85ff8c5b4aee31eca748205adb",
+    "comments_url": "https://api.github.com/repos/lutece-platform/lutece-form-plugin-forms/commits/7117bcb851002c85ff8c5b4aee31eca748205adb/comments",
+    "author": {
+        "login": "Louis-Edmond",
+        "id": 113031723,
+        "node_id": "U_kgDOBry6Kw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/113031723?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Louis-Edmond",
+        "html_url": "https://github.com/Louis-Edmond",
+        "followers_url": "https://api.github.com/users/Louis-Edmond/followers",
+        "following_url": "https://api.github.com/users/Louis-Edmond/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Louis-Edmond/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Louis-Edmond/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Louis-Edmond/subscriptions",
+        "organizations_url": "https://api.github.com/users/Louis-Edmond/orgs",
+        "repos_url": "https://api.github.com/users/Louis-Edmond/repos",
+        "events_url": "https://api.github.com/users/Louis-Edmond/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Louis-Edmond/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "seboo",
+        "id": 25958061,
+        "node_id": "MDQ6VXNlcjI1OTU4MDYx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25958061?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/seboo",
+        "html_url": "https://github.com/seboo",
+        "followers_url": "https://api.github.com/users/seboo/followers",
+        "following_url": "https://api.github.com/users/seboo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/seboo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/seboo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/seboo/subscriptions",
+        "organizations_url": "https://api.github.com/users/seboo/orgs",
+        "repos_url": "https://api.github.com/users/seboo/repos",
+        "events_url": "https://api.github.com/users/seboo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/seboo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5f8bcad7f12e4f772e8b1dbdb0ceecd6bc8777d5",
+            "url": "https://api.github.com/repos/lutece-platform/lutece-form-plugin-forms/commits/5f8bcad7f12e4f772e8b1dbdb0ceecd6bc8777d5",
+            "html_url": "https://github.com/lutece-platform/lutece-form-plugin-forms/commit/5f8bcad7f12e4f772e8b1dbdb0ceecd6bc8777d5"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 9,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "67087a23ddca8e2f80502e373e019c24c27e1b27",
+            "filename": "src/java/fr/paris/lutece/plugins/forms/web/admin/FormJspBean.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 3,
+            "changes": 12,
+            "blob_url": "https://github.com/lutece-platform/lutece-form-plugin-forms/blob/7117bcb851002c85ff8c5b4aee31eca748205adb/src%2Fjava%2Ffr%2Fparis%2Flutece%2Fplugins%2Fforms%2Fweb%2Fadmin%2FFormJspBean.java",
+            "raw_url": "https://github.com/lutece-platform/lutece-form-plugin-forms/raw/7117bcb851002c85ff8c5b4aee31eca748205adb/src%2Fjava%2Ffr%2Fparis%2Flutece%2Fplugins%2Fforms%2Fweb%2Fadmin%2FFormJspBean.java",
+            "contents_url": "https://api.github.com/repos/lutece-platform/lutece-form-plugin-forms/contents/src%2Fjava%2Ffr%2Fparis%2Flutece%2Fplugins%2Fforms%2Fweb%2Fadmin%2FFormJspBean.java?ref=7117bcb851002c85ff8c5b4aee31eca748205adb",
+            "patch": "@@ -542,9 +542,15 @@ public String getModifyForm( HttpServletRequest request ) throws AccessDeniedExc\n             if ( formToBeModified.getLogo( ) != null )\n             {\n                 File logo = FileHome.findByPrimaryKey( formToBeModified.getLogo( ).getIdFile( ) );\n-                PhysicalFile physicalFile = PhysicalFileHome.findByPrimaryKey( logo.getPhysicalFile( ).getIdPhysicalFile( ) );\n-                FileItem fileItem = new GenAttFileItem( physicalFile.getValue( ), logo.getTitle( ) );\n-                _uploadHandler.addFileItemToUploadedFilesList( fileItem, PARAMETER_LOGO, request );\n+                if (logo != null && logo.getPhysicalFile( ) != null)\n+                {\n+                \tPhysicalFile physicalFile = PhysicalFileHome.findByPrimaryKey( logo.getPhysicalFile( ).getIdPhysicalFile( ) );\n+                \tif (physicalFile != null)\n+                \t{\n+                \t\tFileItem fileItem = new GenAttFileItem( physicalFile.getValue( ), logo.getTitle( ) );\n+                        _uploadHandler.addFileItemToUploadedFilesList( fileItem, PARAMETER_LOGO, request );\n+                \t}\n+                }\n             }\n \n             if ( WorkflowService.getInstance( ).isAvailable( ) )"
+        }
+    ]
+}

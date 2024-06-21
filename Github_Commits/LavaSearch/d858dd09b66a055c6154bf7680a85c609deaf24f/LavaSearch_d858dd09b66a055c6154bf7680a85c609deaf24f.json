@@ -1,0 +1,111 @@
+{
+    "sha": "d858dd09b66a055c6154bf7680a85c609deaf24f",
+    "node_id": "C_kwDOJ-P4jNoAKGQ4NThkZDA5YjY2YTA1NWM2MTU0YmY3NjgwYTg1YzYwOWRlYWYyNGY",
+    "commit": {
+        "author": {
+            "name": "Toπ",
+            "email": "git@topi.wtf",
+            "date": "2023-07-22T00:31:49Z"
+        },
+        "committer": {
+            "name": "Toπ",
+            "email": "git@topi.wtf",
+            "date": "2023-07-22T00:32:00Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "709edc2e27bec7725a1504d0e243ec6adc484fc9",
+            "url": "https://api.github.com/repos/topi314/LavaSearch/git/trees/709edc2e27bec7725a1504d0e243ec6adc484fc9"
+        },
+        "url": "https://api.github.com/repos/topi314/LavaSearch/git/commits/d858dd09b66a055c6154bf7680a85c609deaf24f",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE0pqYvQ0uLsBtnKyh3k1A/HmzDywFAmS7I4AACgkQ3k1A/Hmz\nDyyvmQ/7BxQs2HVt2y6FoGkVIPBBU3qKCbEesIGnjG8AcpEXz3zFWoFlnmDkYrct\nkWst44powms8YwZVdgF328MTSDlv4CC1VSkmw/wwXxzAEcs47nNxkkyWLmk0q8iO\nQISGj0314mthEWcV40vk4jJDSRxMWnQ5hannQkEKdV5Qsx4bMMNj+qyGioy4wDkb\n4QhL4jQEtbYPmS0rhaqct2rlLa6ZzB1delz7BJNmAxpmuuw1jCOwGVGX4M6u1Etj\nnaGZLPJauU/JLnU8Wyv4lRBWEvfq+sf2EEvjaCLRHHhJZPP2VChwRuemYM7XUjiL\n6tcIC/17DAln14Oy9ZjVRdnzBQxoNQ6w1oFHGrPsPu3A7AuuEQVoPDIIHzcQPpQs\nUwiu15+RkgsqeHCG9XY5ctnZ0EyqC4lIxKs3HVDhRukSwyt5kLEwAg8zIljHnuKT\nEYpgtSZ27Xr31AN+YMgXGJgijwjv8t3tfFcLMmEBNGUWZdroOgO4MQWkI3stCWIP\nPvhFJK4D8v9Gaaw1gPf6L7/lEImLL5352+m0pYdH9O8C5B3kBvKGo4A1obSxDD/O\nJHWnM3IN8Lhz6mlrwKlFw3//Z9iPnPPGTvRkJWD7I79W8/YeE3W4LCjSGeAzjjQK\nyt1kvnFoCkqwov8adSI2MXvjbu8ILCsvHEqWld84l56JgIauUO4=\n=0Zit\n-----END PGP SIGNATURE-----",
+            "payload": "tree 709edc2e27bec7725a1504d0e243ec6adc484fc9\nparent 61d5bb9fef6ce66e5508fcef33cfbbc1c1edcca3\nauthor Toπ <git@topi.wtf> 1689985909 +0200\ncommitter Toπ <git@topi.wtf> 1689985920 +0200\n\nfix null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/topi314/LavaSearch/commits/d858dd09b66a055c6154bf7680a85c609deaf24f",
+    "html_url": "https://github.com/topi314/LavaSearch/commit/d858dd09b66a055c6154bf7680a85c609deaf24f",
+    "comments_url": "https://api.github.com/repos/topi314/LavaSearch/commits/d858dd09b66a055c6154bf7680a85c609deaf24f/comments",
+    "author": {
+        "login": "topi314",
+        "id": 15636011,
+        "node_id": "MDQ6VXNlcjE1NjM2MDEx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15636011?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/topi314",
+        "html_url": "https://github.com/topi314",
+        "followers_url": "https://api.github.com/users/topi314/followers",
+        "following_url": "https://api.github.com/users/topi314/following{/other_user}",
+        "gists_url": "https://api.github.com/users/topi314/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/topi314/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/topi314/subscriptions",
+        "organizations_url": "https://api.github.com/users/topi314/orgs",
+        "repos_url": "https://api.github.com/users/topi314/repos",
+        "events_url": "https://api.github.com/users/topi314/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/topi314/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "topi314",
+        "id": 15636011,
+        "node_id": "MDQ6VXNlcjE1NjM2MDEx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15636011?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/topi314",
+        "html_url": "https://github.com/topi314",
+        "followers_url": "https://api.github.com/users/topi314/followers",
+        "following_url": "https://api.github.com/users/topi314/following{/other_user}",
+        "gists_url": "https://api.github.com/users/topi314/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/topi314/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/topi314/subscriptions",
+        "organizations_url": "https://api.github.com/users/topi314/orgs",
+        "repos_url": "https://api.github.com/users/topi314/repos",
+        "events_url": "https://api.github.com/users/topi314/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/topi314/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "61d5bb9fef6ce66e5508fcef33cfbbc1c1edcca3",
+            "url": "https://api.github.com/repos/topi314/LavaSearch/commits/61d5bb9fef6ce66e5508fcef33cfbbc1c1edcca3",
+            "html_url": "https://github.com/topi314/LavaSearch/commit/61d5bb9fef6ce66e5508fcef33cfbbc1c1edcca3"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 7,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "3d62601ef71612ef4d11e1817b696bf8ab28f11f",
+            "filename": "plugin/src/main/java/com/github/topi314/lavasearch/plugin/SearchConfiguration.java",
+            "status": "renamed",
+            "additions": 5,
+            "deletions": 4,
+            "changes": 9,
+            "blob_url": "https://github.com/topi314/LavaSearch/blob/d858dd09b66a055c6154bf7680a85c609deaf24f/plugin%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Ftopi314%2Flavasearch%2Fplugin%2FSearchConfiguration.java",
+            "raw_url": "https://github.com/topi314/LavaSearch/raw/d858dd09b66a055c6154bf7680a85c609deaf24f/plugin%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Ftopi314%2Flavasearch%2Fplugin%2FSearchConfiguration.java",
+            "contents_url": "https://api.github.com/repos/topi314/LavaSearch/contents/plugin%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Ftopi314%2Flavasearch%2Fplugin%2FSearchConfiguration.java?ref=d858dd09b66a055c6154bf7680a85c609deaf24f",
+            "patch": "@@ -1,16 +1,17 @@\n package com.github.topi314.lavasearch.plugin;\n \n import com.github.topi314.lavasearch.SearchManager;\n+import com.github.topi314.lavasearch.api.SearchManagerConfiguration;\n import org.springframework.context.annotation.Bean;\n-import org.springframework.stereotype.Component;\n+import org.springframework.context.annotation.Configuration;\n \n import java.util.Collection;\n \n-@Component\n-public class SearchManagerConfiguration {\n+@Configuration\n+public class SearchConfiguration {\n \n \t@Bean\n-\tpublic SearchManager searchManagerSupplier(Collection<com.github.topi314.lavasearch.api.SearchManagerConfiguration> searchManagerConfigurations) {\n+\tpublic SearchManager searchManagerSupplier(Collection<SearchManagerConfiguration> searchManagerConfigurations) {\n \t\tvar manager = new SearchManager();\n \n \t\tfor (var config : searchManagerConfigurations) {",
+            "previous_filename": "plugin/src/main/java/com/github/topi314/lavasearch/plugin/SearchManagerConfiguration.java"
+        },
+        {
+            "sha": "f985301bb81a06c4d784b017ab698a6d84a4a47d",
+            "filename": "plugin/src/main/java/com/github/topi314/lavasearch/plugin/SearchRestHandler.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/topi314/LavaSearch/blob/d858dd09b66a055c6154bf7680a85c609deaf24f/plugin%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Ftopi314%2Flavasearch%2Fplugin%2FSearchRestHandler.java",
+            "raw_url": "https://github.com/topi314/LavaSearch/raw/d858dd09b66a055c6154bf7680a85c609deaf24f/plugin%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Ftopi314%2Flavasearch%2Fplugin%2FSearchRestHandler.java",
+            "contents_url": "https://api.github.com/repos/topi314/LavaSearch/contents/plugin%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Ftopi314%2Flavasearch%2Fplugin%2FSearchRestHandler.java?ref=d858dd09b66a055c6154bf7680a85c609deaf24f",
+            "patch": "@@ -10,6 +10,7 @@\n import org.springframework.web.bind.annotation.RequestParam;\n import org.springframework.web.bind.annotation.RestController;\n \n+import java.util.ArrayList;\n import java.util.Arrays;\n \n @RestController\n@@ -27,7 +28,7 @@ public SearchRestHandler(SearchManager searchManager) {\n \t@GetMapping(\"/v4/loadsearch\")\n \tpublic ResponseEntity<SearchResult> loadSearch(HttpServletRequest request, @RequestParam String query, @RequestParam(required = false) String rawTypes) {\n \t\tlog.info(\"loadSearch: query={}\", query);\n-\t\tvar types = rawTypes == null ? null : Arrays.asList(rawTypes.split(\",\"));\n+\t\tvar types = rawTypes == null ? new ArrayList<String>() : Arrays.asList(rawTypes.split(\",\"));\n \t\tvar result = searchManager.loadSearch(query, types);\n \t\tif (result != null) {\n \t\t\treturn ResponseEntity.ok(result);"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+jadenSmithWritingStyle(String words)
+main(String args)

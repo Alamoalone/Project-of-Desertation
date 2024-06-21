@@ -1,0 +1,23 @@
+    public Boolean visit(MainClass n, TypeEnv argu) {
+        final var argsSym = n.f11.f0.tokenImage;
+        final var localNodes = n.f14.nodes;
+        final var stmtNodes = n.f15.nodes;
+
+        final TypeEnv typeEnv = new TypeEnv(localNodes.stream().reduce(List.nul(), (symList, node) -> {
+            final var pair = node.accept(new SymPairVisitor(), argu);
+
+            if (pair.sym.equals(argsSym) || symList.exists(s -> s.sym.equals(pair.sym)))
+                return Util.error("Duplicate local name");
+            else
+                return symList.cons(pair);
+        }, (u, v) -> v), argu.classList, Optional.empty());
+
+        return stmtNodes.stream().allMatch(node -> node.accept(this, typeEnv));
+    }
+
+
+
+    public Boolean visit(MethodDeclaration n, TypeEnv argu) {
+        return null;
+    }
+

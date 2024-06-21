@@ -1,0 +1,20 @@
+@@ -52,7 +52,8 @@ public void run() {
+     }
+ 
+     public void closeImmediately() throws IOException {
+-        timer.cancel();
++        if (timer != null)
++            timer.cancel();
+         active = null;
+         super.close();
+     }
+@@ -67,7 +68,8 @@ protected void sendParameters() throws IOException {
+ 
+     private void update(int d) {
+         duration = d;
+-        timer.cancel();
++        if (timer != null)
++            timer.cancel();
+         close();
+     }
+ }

@@ -1,0 +1,31 @@
+    public PublicWalletAddress toWallet() {
+        return this.to;
+    }
+
+    public PublicWalletAddress fromWallet() {
+        return this.from;
+    }
+
+    public byte[] getHash() {
+        SHA256Digest digest = new SHA256Digest();
+        byte[] ret = new byte[32];
+        digest.update(to.address, 0, to.address.length);
+        if (!isTransactionFee) {
+            digest.update(from.address, 0, from.address.length);
+        }
+        digest.update(longToBytes(fee.amount()), 0, 8);
+        digest.update(longToBytes(amount.amount()), 0, 8);
+        digest.update(longToBytes(timestamp), 0, 8);
+        digest.doFinal(ret, 0);
+
+        return ret;
+    }
+
+    public void sign(Ed25519PublicKeyParameters pubKey, Ed25519PrivateKeyParameters signingKey) {
+        SHA256Hash sha256 = new SHA256Hash();
+        sha256.hash = getHash();
+        byte[] transactionSignature = signWithPrivateKey(sha256.hash, pubKey, signingKey);
+
+        this.signature.signature = transactionSignature;
+    }
+

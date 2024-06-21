@@ -1,0 +1,122 @@
+{
+    "sha": "0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+    "node_id": "C_kwDOLQW98doAKDBmOWRhMTJhZTNhNjliZDIwY2U5ZmViZGQ1NThlZDMyYWVjOGU5MmY",
+    "commit": {
+        "author": {
+            "name": "Sky",
+            "email": "45436884+skyphii@users.noreply.github.com",
+            "date": "2024-02-15T22:03:54Z"
+        },
+        "committer": {
+            "name": "Sky",
+            "email": "45436884+skyphii@users.noreply.github.com",
+            "date": "2024-02-15T22:03:54Z"
+        },
+        "message": "Heal players on death + between rounds\n\n+ fix null pointer exception",
+        "tree": {
+            "sha": "34b731e2d28e75118d7a86cce52fd5dff3ca2a24",
+            "url": "https://api.github.com/repos/SootMC/SootCTF/git/trees/34b731e2d28e75118d7a86cce52fd5dff3ca2a24"
+        },
+        "url": "https://api.github.com/repos/SootMC/SootCTF/git/commits/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SootMC/SootCTF/commits/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+    "html_url": "https://github.com/SootMC/SootCTF/commit/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+    "comments_url": "https://api.github.com/repos/SootMC/SootCTF/commits/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/comments",
+    "author": {
+        "login": "skyphii",
+        "id": 45436884,
+        "node_id": "MDQ6VXNlcjQ1NDM2ODg0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45436884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skyphii",
+        "html_url": "https://github.com/skyphii",
+        "followers_url": "https://api.github.com/users/skyphii/followers",
+        "following_url": "https://api.github.com/users/skyphii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skyphii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skyphii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skyphii/subscriptions",
+        "organizations_url": "https://api.github.com/users/skyphii/orgs",
+        "repos_url": "https://api.github.com/users/skyphii/repos",
+        "events_url": "https://api.github.com/users/skyphii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skyphii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "skyphii",
+        "id": 45436884,
+        "node_id": "MDQ6VXNlcjQ1NDM2ODg0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45436884?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/skyphii",
+        "html_url": "https://github.com/skyphii",
+        "followers_url": "https://api.github.com/users/skyphii/followers",
+        "following_url": "https://api.github.com/users/skyphii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/skyphii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/skyphii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/skyphii/subscriptions",
+        "organizations_url": "https://api.github.com/users/skyphii/orgs",
+        "repos_url": "https://api.github.com/users/skyphii/repos",
+        "events_url": "https://api.github.com/users/skyphii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/skyphii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6d9c292dd9f52a90c6efe89c1bab6ffadbca270a",
+            "url": "https://api.github.com/repos/SootMC/SootCTF/commits/6d9c292dd9f52a90c6efe89c1bab6ffadbca270a",
+            "html_url": "https://github.com/SootMC/SootCTF/commit/6d9c292dd9f52a90c6efe89c1bab6ffadbca270a"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 6,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "acf143dcbd64d9592347a09ff6af58fa7b6d1a17",
+            "filename": "src/main/java/dev/skyphi/Listeners/DeathListener.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/SootMC/SootCTF/blob/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FListeners%2FDeathListener.java",
+            "raw_url": "https://github.com/SootMC/SootCTF/raw/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FListeners%2FDeathListener.java",
+            "contents_url": "https://api.github.com/repos/SootMC/SootCTF/contents/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FListeners%2FDeathListener.java?ref=0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+            "patch": "@@ -41,6 +41,8 @@ public void on(EntityDamageEvent event) {\n         new BukkitRunnable() {\n             @Override\n             public void run() {\n+                player.setHealth(20);\n+                player.setSaturation(20);\n                 player.teleport(ctfp.getTeam().getFlag().getLocation());\n                 player.setGameMode(gm);\n                 player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BELL, 1, 1);"
+        },
+        {
+            "sha": "cd67bf56221829f76527ccc10a989b059cdc2d9c",
+            "filename": "src/main/java/dev/skyphi/Listeners/FlagListener.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/SootMC/SootCTF/blob/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FListeners%2FFlagListener.java",
+            "raw_url": "https://github.com/SootMC/SootCTF/raw/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FListeners%2FFlagListener.java",
+            "contents_url": "https://api.github.com/repos/SootMC/SootCTF/contents/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FListeners%2FFlagListener.java?ref=0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+            "patch": "@@ -21,6 +21,8 @@ public void on(PlayerInteractEvent event) {\n         if(block == null) return;\n \n         CTFPlayer ctfp = CTFUtils.getCTFPlayer(event.getPlayer());\n+        if(ctfp == null) return;\n+        \n         CTFTeam team = ctfp.getTeam();\n         CTFTeam enemyTeam = ctfp.getEnemyTeam();\n         Block enemyFlag = enemyTeam.getFlag();"
+        },
+        {
+            "sha": "d2c864b708c6bf3ca43110755221eb042b28792e",
+            "filename": "src/main/java/dev/skyphi/Models/CTFTeam.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/SootMC/SootCTF/blob/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FModels%2FCTFTeam.java",
+            "raw_url": "https://github.com/SootMC/SootCTF/raw/0f9da12ae3a69bd20ce9febdd558ed32aec8e92f/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FModels%2FCTFTeam.java",
+            "contents_url": "https://api.github.com/repos/SootMC/SootCTF/contents/src%2Fmain%2Fjava%2Fdev%2Fskyphi%2FModels%2FCTFTeam.java?ref=0f9da12ae3a69bd20ce9febdd558ed32aec8e92f",
+            "patch": "@@ -97,6 +97,8 @@ public void teleport() {\n         for(CTFPlayer ctfp : playerList.values()) {\n             flagLoc.add(x+0.5, 0, z+0.5);\n             ctfp.getPlayer().teleport(flagLoc);\n+            ctfp.getPlayer().setHealth(20);\n+            ctfp.getPlayer().setSaturation(20);\n \n             x++;\n             if(x > 4) {"
+        }
+    ]
+}

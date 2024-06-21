@@ -1,0 +1,13 @@
+    public static ExpenseDto toDto(Expense expense) {
+        ExpenseDto expenseDto = new ExpenseDto();
+        expenseDto.setDescription(expense.getDescription());
+        expenseDto.setExpenseDate(expense.getExpenseDate());
+        expenseDto.setAmount(expense.getAmount());
+        expenseDto.setUserId(expense.getUser().getUserId());
+        expenseDto.setDocumentId(expense.getDocument().getDocumentId());
+        expenseDto.setCategory(expense.getCategory());
+        expenseDto.setCurrency(expense.getCurrency());
+
+        return expenseDto;
+    }
+

@@ -1,0 +1,3 @@
+  public void addConsumer(Consumer<Measurement> consumer) {
+    m_consumerList.add(consumer);
+  }

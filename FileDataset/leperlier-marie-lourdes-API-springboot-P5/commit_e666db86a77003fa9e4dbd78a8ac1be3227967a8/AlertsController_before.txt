@@ -1,0 +1,25 @@
+	public ResponseEntity<?> getListOfHouseHoldByStationNumberIfFlood(@RequestParam List<String> stations) {
+		List<Object> listOfHouseHoldByStationNumber = new ArrayList<Object>();
+		List<Object> listOfHouseHoldByStationNumberWithMoreOneRequestParam = new ArrayList<Object>();
+		
+			
+		
+				for (String station : stations) {
+					try {
+				listOfHouseHoldByStationNumber = floodService.getListOfHouseHoldByStationNumber(station);
+				
+				listOfHouseHoldByStationNumberWithMoreOneRequestParam.add(listOfHouseHoldByStationNumber);
+					}catch (NullPointerException e) {
+						
+						System.out.println(e.getMessage());
+						return returnResponseEntityEmptyAndCode404();
+					}
+				}
+			/*	if(		listOfHouseHoldByStationNumber==null) {
+					
+				}*/
+				return ResponseEntity.status(HttpStatus.OK).body(listOfHouseHoldByStationNumberWithMoreOneRequestParam);
+			}
+
+
+

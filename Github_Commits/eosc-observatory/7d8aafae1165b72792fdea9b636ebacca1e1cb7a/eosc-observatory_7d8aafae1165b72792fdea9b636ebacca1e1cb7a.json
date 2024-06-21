@@ -1,0 +1,98 @@
+{
+    "sha": "7d8aafae1165b72792fdea9b636ebacca1e1cb7a",
+    "node_id": "C_kwDOGayHltoAKDdkOGFhZmFlMTE2NWI3Mjc5MmZkZWE5YjYzNmViYWNjYTFlMWNiN2E",
+    "commit": {
+        "author": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-07-25T13:06:19Z"
+        },
+        "committer": {
+            "name": "Konstantinos Spyrou",
+            "email": "spyroukon@gmail.com",
+            "date": "2023-07-25T13:06:19Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "08026c0c0681c06e8f783b1122c71bb68b374f87",
+            "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/git/trees/08026c0c0681c06e8f783b1122c71bb68b374f87"
+        },
+        "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/git/commits/7d8aafae1165b72792fdea9b636ebacca1e1cb7a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/7d8aafae1165b72792fdea9b636ebacca1e1cb7a",
+    "html_url": "https://github.com/madgeek-arc/eosc-observatory/commit/7d8aafae1165b72792fdea9b636ebacca1e1cb7a",
+    "comments_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/7d8aafae1165b72792fdea9b636ebacca1e1cb7a/comments",
+    "author": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "spyroukostas",
+        "id": 23262569,
+        "node_id": "MDQ6VXNlcjIzMjYyNTY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/23262569?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/spyroukostas",
+        "html_url": "https://github.com/spyroukostas",
+        "followers_url": "https://api.github.com/users/spyroukostas/followers",
+        "following_url": "https://api.github.com/users/spyroukostas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/spyroukostas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/spyroukostas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/spyroukostas/subscriptions",
+        "organizations_url": "https://api.github.com/users/spyroukostas/orgs",
+        "repos_url": "https://api.github.com/users/spyroukostas/repos",
+        "events_url": "https://api.github.com/users/spyroukostas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/spyroukostas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fb94851d3b654d84e54a61ab89d99c00e30295dc",
+            "url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/commits/fb94851d3b654d84e54a61ab89d99c00e30295dc",
+            "html_url": "https://github.com/madgeek-arc/eosc-observatory/commit/fb94851d3b654d84e54a61ab89d99c00e30295dc"
+        }
+    ],
+    "stats": {
+        "total": 17,
+        "additions": 10,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "3808f6f2f36edbe169505d90aec53975448b00ae",
+            "filename": "src/main/java/eu/eosc/observatory/domain/Profile.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 7,
+            "changes": 17,
+            "blob_url": "https://github.com/madgeek-arc/eosc-observatory/blob/7d8aafae1165b72792fdea9b636ebacca1e1cb7a/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fdomain%2FProfile.java",
+            "raw_url": "https://github.com/madgeek-arc/eosc-observatory/raw/7d8aafae1165b72792fdea9b636ebacca1e1cb7a/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fdomain%2FProfile.java",
+            "contents_url": "https://api.github.com/repos/madgeek-arc/eosc-observatory/contents/src%2Fmain%2Fjava%2Feu%2Feosc%2Fobservatory%2Fdomain%2FProfile.java?ref=7d8aafae1165b72792fdea9b636ebacca1e1cb7a",
+            "patch": "@@ -31,14 +31,17 @@ public static Profile of(ProfileDTO profileDTO) {\n     }\n \n     public static byte[] imageFromUrl(String url) {\n-        RestTemplate restTemplate = new RestTemplate();\n-        URI uri = null;\n-        try {\n-            uri = new URI(url);\n-        } catch (URISyntaxException e) {\n-            return null;\n+        if (url != null) {\n+            RestTemplate restTemplate = new RestTemplate();\n+            URI uri = null;\n+            try {\n+                uri = new URI(url);\n+            } catch (URISyntaxException e) {\n+                return null;\n+            }\n+            return restTemplate.getForObject(uri.toString(), byte[].class);\n         }\n-        return restTemplate.getForObject(uri.toString(), byte[].class);\n+        return null;\n     }\n \n     public byte[] getPicture() {"
+        }
+    ]
+}

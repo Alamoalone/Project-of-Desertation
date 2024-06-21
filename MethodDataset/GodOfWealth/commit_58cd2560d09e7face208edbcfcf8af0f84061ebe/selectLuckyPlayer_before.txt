@@ -1,0 +1,11 @@
+    private void selectLuckyPlayer() {
+        List<Player> players = new ArrayList<>(Bukkit.getOnlinePlayers());
+        if (players.isEmpty()) {
+            ConfigUtil.clearData();
+            return;
+        }
+        Random random = new Random();
+        int randomNumber = random.nextInt(players.size());
+        Player player = players.get(randomNumber);
+        ConfigUtil.saveData(player);
+    }

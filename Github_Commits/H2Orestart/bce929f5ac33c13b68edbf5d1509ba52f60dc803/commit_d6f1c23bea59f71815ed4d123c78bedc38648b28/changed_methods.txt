@@ -1,0 +1,5 @@
+close()
+detectHancom(String inputFile)
+loadHwpx(String inputFile)
+loadHwp(String inputFile)
+main(String args)

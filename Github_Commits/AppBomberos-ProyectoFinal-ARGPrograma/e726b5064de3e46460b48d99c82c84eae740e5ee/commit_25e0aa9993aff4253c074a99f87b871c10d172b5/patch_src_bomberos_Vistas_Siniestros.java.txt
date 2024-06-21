@@ -1,0 +1,15 @@
+@@ -38,9 +38,12 @@ public class Siniestros extends javax.swing.JPanel {
+     SiniestroData siniestroDB = new SiniestroData();
+     CuartelData cuartelDB = new CuartelData();
+     BrigadaData brigadaDB = new BrigadaData();
++    Cuartel cuartel =new Cuartel();
++    Brigada brigada =new Brigada();
++    Siniestro accidente =new Siniestro();
++    
+ 
+-    private Siniestro accidente;
+-    private Brigada brigada;
++   
+     private ImageIcon icono;
+     private Conexion con;
+     private List<Brigada> brigadas = new ArrayList<>();

@@ -1,0 +1,98 @@
+{
+    "sha": "1fe38772cbe7f62d74a064865c7d17a9d0c2793e",
+    "node_id": "C_kwDOKnV3htoAKDFmZTM4NzcyY2JlN2Y2MmQ3NGEwNjQ4NjVjN2QxN2E5ZDBjMjc5M2U",
+    "commit": {
+        "author": {
+            "name": "Hara Peko",
+            "email": "harapeko.suiren@gmail.com",
+            "date": "2023-10-31T15:15:30Z"
+        },
+        "committer": {
+            "name": "Hara Peko",
+            "email": "harapeko.suiren@gmail.com",
+            "date": "2023-10-31T15:15:30Z"
+        },
+        "message": "🐛 fix(TransactionImpl.java): set default value for fee field to avoid null pointer exception\n✨ feat(TransactionImpl.java): change getHash() method to return SHA256Hash object instead of byte array\nThe fee field in the TransactionImpl class is now initialized with a default value of 0 to prevent a null pointer exception when accessing the fee field. The getHash() method has been modified to return a SHA256Hash object instead of a byte array. This change improves the code readability and allows for better handling of the hash value.",
+        "tree": {
+            "sha": "2e0af7ee22338490fe8b41bb25f6e0494ed1c477",
+            "url": "https://api.github.com/repos/pandanite-crypto/rhizome/git/trees/2e0af7ee22338490fe8b41bb25f6e0494ed1c477"
+        },
+        "url": "https://api.github.com/repos/pandanite-crypto/rhizome/git/commits/1fe38772cbe7f62d74a064865c7d17a9d0c2793e",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/pandanite-crypto/rhizome/commits/1fe38772cbe7f62d74a064865c7d17a9d0c2793e",
+    "html_url": "https://github.com/pandanite-crypto/rhizome/commit/1fe38772cbe7f62d74a064865c7d17a9d0c2793e",
+    "comments_url": "https://api.github.com/repos/pandanite-crypto/rhizome/commits/1fe38772cbe7f62d74a064865c7d17a9d0c2793e/comments",
+    "author": {
+        "login": "Censseo",
+        "id": 3895982,
+        "node_id": "MDQ6VXNlcjM4OTU5ODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3895982?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Censseo",
+        "html_url": "https://github.com/Censseo",
+        "followers_url": "https://api.github.com/users/Censseo/followers",
+        "following_url": "https://api.github.com/users/Censseo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Censseo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Censseo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Censseo/subscriptions",
+        "organizations_url": "https://api.github.com/users/Censseo/orgs",
+        "repos_url": "https://api.github.com/users/Censseo/repos",
+        "events_url": "https://api.github.com/users/Censseo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Censseo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Censseo",
+        "id": 3895982,
+        "node_id": "MDQ6VXNlcjM4OTU5ODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3895982?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Censseo",
+        "html_url": "https://github.com/Censseo",
+        "followers_url": "https://api.github.com/users/Censseo/followers",
+        "following_url": "https://api.github.com/users/Censseo/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Censseo/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Censseo/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Censseo/subscriptions",
+        "organizations_url": "https://api.github.com/users/Censseo/orgs",
+        "repos_url": "https://api.github.com/users/Censseo/repos",
+        "events_url": "https://api.github.com/users/Censseo/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Censseo/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d7dba3d40be9591f4352734fdaab3bc4aafa0952",
+            "url": "https://api.github.com/repos/pandanite-crypto/rhizome/commits/d7dba3d40be9591f4352734fdaab3bc4aafa0952",
+            "html_url": "https://github.com/pandanite-crypto/rhizome/commit/d7dba3d40be9591f4352734fdaab3bc4aafa0952"
+        }
+    ],
+    "stats": {
+        "total": 31,
+        "additions": 9,
+        "deletions": 22
+    },
+    "files": [
+        {
+            "sha": "ac6e3b5ac253c54853a5ede9fc4bf67197cf2638",
+            "filename": "app/src/main/java/rhizome/core/transaction/TransactionImpl.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 22,
+            "changes": 31,
+            "blob_url": "https://github.com/pandanite-crypto/rhizome/blob/1fe38772cbe7f62d74a064865c7d17a9d0c2793e/app%2Fsrc%2Fmain%2Fjava%2Frhizome%2Fcore%2Ftransaction%2FTransactionImpl.java",
+            "raw_url": "https://github.com/pandanite-crypto/rhizome/raw/1fe38772cbe7f62d74a064865c7d17a9d0c2793e/app%2Fsrc%2Fmain%2Fjava%2Frhizome%2Fcore%2Ftransaction%2FTransactionImpl.java",
+            "contents_url": "https://api.github.com/repos/pandanite-crypto/rhizome/contents/app%2Fsrc%2Fmain%2Fjava%2Frhizome%2Fcore%2Ftransaction%2FTransactionImpl.java?ref=1fe38772cbe7f62d74a064865c7d17a9d0c2793e",
+            "patch": "@@ -35,7 +35,8 @@ public class TransactionImpl implements Transaction, Comparable<Transaction> {\n     @Builder.Default\n     private long timestamp = System.currentTimeMillis();\n \n-    private TransactionAmount fee;\n+    @Builder.Default\n+    private TransactionAmount fee = new TransactionAmount(0);\n \n     private Ed25519PublicKeyParameters signingKey;\n \n@@ -58,38 +59,24 @@ public boolean signatureValid() {\n         throw new UnsupportedOperationException(\"Not supported yet....\");\n     }\n \n-    public byte[] getHash() {\n-        SHA256Digest digest = new SHA256Digest();\n-        byte[] ret = new byte[32];\n+    public SHA256Hash getHash() {\n+        var digest = new SHA256Digest();\n+        var sha256Hash = new SHA256Hash();\n+\n         digest.update(to.address, 0, to.address.length);\n         if (!isTransactionFee) {\n             digest.update(from.address, 0, from.address.length);\n         }\n         digest.update(longToBytes(fee.amount()), 0, 8);\n         digest.update(longToBytes(amount.amount()), 0, 8);\n         digest.update(longToBytes(timestamp), 0, 8);\n-        digest.doFinal(ret, 0);\n-\n-        return ret;\n-    }\n+        digest.doFinal(sha256Hash.hash, 0);\n \n-    // Method to get from wallet\n-    public PublicWalletAddress fromWallet() {\n-        return this.from;\n+        return sha256Hash;\n     }\n \n-    // Method to get to wallet\n-    public PublicWalletAddress toWallet() {\n-        return this.to;\n-    }\n-\n-    // Method to sign\n     public void sign(Ed25519PublicKeyParameters pubKey, Ed25519PrivateKeyParameters signingKey) {\n-        SHA256Hash sha256 = new SHA256Hash();\n-        sha256.hash = getHash();\n-        byte[] transactionSignature = signWithPrivateKey(sha256.hash, pubKey, signingKey);\n-\n-        this.signature.signature = transactionSignature;\n+        this.signature.signature = signWithPrivateKey(getHash().hash, pubKey, signingKey);\n     }\n \n     @Override"
+        }
+    ]
+}

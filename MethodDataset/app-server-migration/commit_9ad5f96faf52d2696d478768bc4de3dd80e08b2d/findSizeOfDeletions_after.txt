@@ -1,0 +1,12 @@
+    private int findSizeOfDeletions(boolean excludeSQL) {
+        int totalDeletions = 0;
+        if (this.deletion != null) {
+            if (excludeSQL) {
+                totalDeletions = (int) this.deletion.stream().
+                        filter(codeMetaData -> !IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage().equals(codeMetaData.getLanguage())).count();
+            } else {
+                totalDeletions = this.deletion.size();
+            }
+        }
+        return totalDeletions;
+    }

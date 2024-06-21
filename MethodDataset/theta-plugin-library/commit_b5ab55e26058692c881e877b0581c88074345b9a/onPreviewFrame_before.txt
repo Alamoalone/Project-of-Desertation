@@ -1,0 +1,3 @@
+        public void onPreviewFrame(byte[] data, theta360.hardware.Camera camera) {
+            prCallback.onPreviewFrame(data, camera);
+        }

@@ -1,0 +1,9 @@
+    public ResponseEntity<?> deleteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " DELETED");
+        Notes note = notesService.findByNoteId(id);
+        if(note == null){
+            return ResponseEntity.noContent().header("msg", "NO CONTENT DELETED BECAUSE IT DOESN'T EXIST").build();
+        }
+        notesService.deleteById(id);
+        return ResponseEntity.ok().build();
+    }

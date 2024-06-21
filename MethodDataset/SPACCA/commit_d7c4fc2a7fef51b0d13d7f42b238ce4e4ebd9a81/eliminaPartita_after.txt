@@ -1,0 +1,4 @@
+    public void eliminaPartita() throws FileNotFoundException {
+        partita.fine();
+        eliminaPartitaButton.setVisible(false);
+    }

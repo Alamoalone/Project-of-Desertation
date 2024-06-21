@@ -1,0 +1,7 @@
+    public boolean isValid(String value, ConstraintValidatorContext context) {
+        if (type.equals(PhoneNumberType.GLOBAL)) {
+            return isValidPrefixGlobal(value);
+        } else {
+            return isValidPrefixLocal(value);
+        }
+    }

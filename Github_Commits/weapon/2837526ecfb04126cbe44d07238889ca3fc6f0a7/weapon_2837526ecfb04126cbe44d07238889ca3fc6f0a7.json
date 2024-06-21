@@ -1,0 +1,98 @@
+{
+    "sha": "2837526ecfb04126cbe44d07238889ca3fc6f0a7",
+    "node_id": "C_kwDOHupm59oAKDI4Mzc1MjZlY2ZiMDQxMjZjYmU0NGQwNzIzODg4OWNhM2ZjNmYwYTc",
+    "commit": {
+        "author": {
+            "name": "frankcl",
+            "email": "frank.lichen@gmail.com",
+            "date": "2023-03-08T09:16:42Z"
+        },
+        "committer": {
+            "name": "frankcl",
+            "email": "frank.lichen@gmail.com",
+            "date": "2023-03-08T09:16:42Z"
+        },
+        "message": "fix bug: HTMLExtractor null pointer exception",
+        "tree": {
+            "sha": "29b13b05eeb981d06304b196625062645dfb21b3",
+            "url": "https://api.github.com/repos/frankcl/weapon/git/trees/29b13b05eeb981d06304b196625062645dfb21b3"
+        },
+        "url": "https://api.github.com/repos/frankcl/weapon/git/commits/2837526ecfb04126cbe44d07238889ca3fc6f0a7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/frankcl/weapon/commits/2837526ecfb04126cbe44d07238889ca3fc6f0a7",
+    "html_url": "https://github.com/frankcl/weapon/commit/2837526ecfb04126cbe44d07238889ca3fc6f0a7",
+    "comments_url": "https://api.github.com/repos/frankcl/weapon/commits/2837526ecfb04126cbe44d07238889ca3fc6f0a7/comments",
+    "author": {
+        "login": "frankcl",
+        "id": 16952548,
+        "node_id": "MDQ6VXNlcjE2OTUyNTQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16952548?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frankcl",
+        "html_url": "https://github.com/frankcl",
+        "followers_url": "https://api.github.com/users/frankcl/followers",
+        "following_url": "https://api.github.com/users/frankcl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frankcl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frankcl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frankcl/subscriptions",
+        "organizations_url": "https://api.github.com/users/frankcl/orgs",
+        "repos_url": "https://api.github.com/users/frankcl/repos",
+        "events_url": "https://api.github.com/users/frankcl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frankcl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "frankcl",
+        "id": 16952548,
+        "node_id": "MDQ6VXNlcjE2OTUyNTQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16952548?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frankcl",
+        "html_url": "https://github.com/frankcl",
+        "followers_url": "https://api.github.com/users/frankcl/followers",
+        "following_url": "https://api.github.com/users/frankcl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frankcl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frankcl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frankcl/subscriptions",
+        "organizations_url": "https://api.github.com/users/frankcl/orgs",
+        "repos_url": "https://api.github.com/users/frankcl/repos",
+        "events_url": "https://api.github.com/users/frankcl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frankcl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "562f77dc1b74f08df068526064951f1b917ca99e",
+            "url": "https://api.github.com/repos/frankcl/weapon/commits/562f77dc1b74f08df068526064951f1b917ca99e",
+            "html_url": "https://github.com/frankcl/weapon/commit/562f77dc1b74f08df068526064951f1b917ca99e"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "ae4f9f01589ea1f55c38979c4495a22a66afa90c",
+            "filename": "weapon-base/src/main/java/xin/manong/weapon/base/html/HTMLExtractor.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/frankcl/weapon/blob/2837526ecfb04126cbe44d07238889ca3fc6f0a7/weapon-base%2Fsrc%2Fmain%2Fjava%2Fxin%2Fmanong%2Fweapon%2Fbase%2Fhtml%2FHTMLExtractor.java",
+            "raw_url": "https://github.com/frankcl/weapon/raw/2837526ecfb04126cbe44d07238889ca3fc6f0a7/weapon-base%2Fsrc%2Fmain%2Fjava%2Fxin%2Fmanong%2Fweapon%2Fbase%2Fhtml%2FHTMLExtractor.java",
+            "contents_url": "https://api.github.com/repos/frankcl/weapon/contents/weapon-base%2Fsrc%2Fmain%2Fjava%2Fxin%2Fmanong%2Fweapon%2Fbase%2Fhtml%2FHTMLExtractor.java?ref=2837526ecfb04126cbe44d07238889ca3fc6f0a7",
+            "patch": "@@ -200,6 +200,7 @@ private static Element buildVideoElement(Element videoElement) {\n         String sourceURL = videoElement.attr(\"abs:src\");\n         if (StringUtils.isEmpty(sourceURL)) {\n             Element sourceElement = findFirstChildElement(videoElement, \"source\");\n+            if (sourceElement == null) return null;\n             sourceURL = sourceElement.attr(\"abs:src\");\n             if (StringUtils.isEmpty(sourceURL)) return null;\n         }"
+        }
+    ]
+}

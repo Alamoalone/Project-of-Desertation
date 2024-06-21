@@ -1,0 +1,7 @@
+    private static Generator getGeneratorOrThrow(Network network, String id) {
+        Generator generator = network.getGenerator(id);
+        if (generator == null) {
+            throw new SweInvalidDataException(String.format("Generator with id: %s needed for HVDC link modelling does not exist in network ", id));
+        }
+        return generator;
+    }

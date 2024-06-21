@@ -1,0 +1,149 @@
+  public void testWorkflowLineage() throws ConflictException {
+
+    TransactionRunner transactionRunner = getInjector().getInstance(TransactionRunner.class);
+    LineageStoreReader lineageReader =
+      new DefaultLineageStoreReader(transactionRunner);
+    LineageWriter lineageWriter = new BasicLineageWriter(transactionRunner);
+
+    ApplicationId testApp = NamespaceId.DEFAULT.app("testApp");
+    ProgramId workflowId = testApp.workflow("wf1");
+    // if the spark and mr job are inner jobs of workflow, they should be in the same app
+    ProgramId mrId = testApp.mr("mr1");
+    ProgramId sparkId = testApp.mr("spark1");
+    ImmutableList<WorkflowNode> nodes = ImmutableList.of(
+      new WorkflowActionNode("mr1", new ScheduleProgramInfo(SchedulableProgramType.MAPREDUCE, "mr1")),
+      new WorkflowActionNode("spark1", new ScheduleProgramInfo(SchedulableProgramType.SPARK, "spark1")));
+    WorkflowSpecification wfSpec =
+      new WorkflowSpecification("test", "wf1", "", Collections.emptyMap(),
+                                nodes,
+                                Collections.emptyMap(), Collections.emptyMap());
+    ApplicationSpecification appSpec =
+      new DefaultApplicationSpecification("testApp", ProjectInfo.getVersion().toString(), "dummy app", null,
+                                          NamespaceId.DEFAULT.artifact("testArtifact",
+                                                                       "1.0").toApiArtifactId(),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          ImmutableMap.of(workflowId.getProgram(), wfSpec),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          Collections.emptyMap(), Collections.emptyMap()
+      );
+
+    Store store = getInjector().getInstance(Store.class);
+    ApplicationMeta meta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                               new ChangeDetail(null, null, null,
+                                                                System.currentTimeMillis()));
+    store.addApplication(testApp, meta);
+    LineageAdmin lineageAdmin = new LineageAdmin(lineageReader, store);
+
+    // Add accesses for D3 -> P2 -> D2 -> P1 -> D1 <-> P3
+    //                                           |
+    //                                           |-> P5,
+    // P1 and P2 are inner programs of the workflow
+    // We need to use current time here as metadata store stores access time using current time
+    ProgramRunId run1 = mrId.run(RunIds.generate(System.currentTimeMillis()).getId());
+    ProgramRunId run2 = sparkId.run(RunIds.generate(System.currentTimeMillis()).getId());
+    ProgramRunId run3 = program3.run(RunIds.generate(System.currentTimeMillis()).getId());
+
+    ProgramRunId workflow = workflowId.run(RunIds.generate(System.currentTimeMillis()).getId());
+
+    ProgramRunId run5 = program5.run(RunIds.generate(System.currentTimeMillis()).getId());
+
+    addRuns(store, workflow);
+    // only mr and spark can be inner programs
+    addWorkflowRuns(store, workflow.getProgram(), workflow.getRun(), run1, run2);
+    addRuns(store, run3);
+    addRuns(store, run5);
+
+    // It is okay to use current time here since access time is ignore during assertions
+    lineageWriter.addAccess(run1, dataset1, AccessType.WRITE);
+    lineageWriter.addAccess(run1, dataset2, AccessType.READ);
+
+    lineageWriter.addAccess(run2, dataset2, AccessType.WRITE);
+    lineageWriter.addAccess(run2, dataset3, AccessType.READ);
+
+    lineageWriter.addAccess(run3, dataset1, AccessType.UNKNOWN, null);
+
+    lineageWriter.addAccess(run5, dataset1, AccessType.READ, null);
+
+
+    // The UNKNOWN access type will get filtered out if there is READ/WRITE. It will be preserved if it is the
+    // only access type
+    Lineage expectedLineage = new Lineage(
+      ImmutableSet.of(
+        new Relation(dataset1, workflowId, AccessType.WRITE, twillRunId(workflow)),
+        new Relation(dataset2, workflowId, AccessType.READ, twillRunId(workflow)),
+        new Relation(dataset2, workflowId, AccessType.WRITE, twillRunId(workflow)),
+        new Relation(dataset3, workflowId, AccessType.READ, twillRunId(workflow)),
+        new Relation(dataset1, program3, AccessType.UNKNOWN, twillRunId(run3)),
+        new Relation(dataset1, program5, AccessType.READ, twillRunId(run5))
+      )
+    );
+
+    Lineage resultLineage = lineageAdmin.computeLineage(dataset1, 500, System.currentTimeMillis() + 10000,
+                                                        100, "workflow");
+    // Lineage for D1
+    Assert.assertEquals(expectedLineage, resultLineage);
+
+
+    resultLineage = lineageAdmin.computeLineage(dataset2, 500, System.currentTimeMillis() + 10000,
+                                                100, "workflow");
+    // Lineage for D2
+    Assert.assertEquals(expectedLineage, resultLineage);
+
+
+    // Lineage for D1 for one level should be D2 -> P1 -> D1 <-> P3
+    Lineage oneLevelLineage = lineageAdmin.computeLineage(dataset1, 500, System.currentTimeMillis() + 10000,
+                                                          1, "workflow");
+
+    Assert.assertEquals(
+      ImmutableSet.of(
+        new Relation(dataset1, workflowId, AccessType.WRITE, twillRunId(workflow)),
+        new Relation(dataset2, workflowId, AccessType.READ, twillRunId(workflow)),
+        new Relation(dataset1, program5, AccessType.READ, twillRunId(run5)),
+        new Relation(dataset1, program3, AccessType.UNKNOWN, twillRunId(run3))
+      ),
+      oneLevelLineage.getRelations());
+
+    // Run tests without workflow parameter
+    expectedLineage = new Lineage(
+      ImmutableSet.of(
+        new Relation(dataset1, mrId, AccessType.WRITE, twillRunId(run1)),
+        new Relation(dataset2, mrId, AccessType.READ, twillRunId(run1)),
+        new Relation(dataset2, sparkId, AccessType.WRITE, twillRunId(run2)),
+        new Relation(dataset3, sparkId, AccessType.READ, twillRunId(run2)),
+        new Relation(dataset1, program3, AccessType.UNKNOWN, twillRunId(run3)),
+        new Relation(dataset1, program5, AccessType.READ, twillRunId(run5))
+      )
+    );
+
+    resultLineage = lineageAdmin.computeLineage(dataset1, 500, System.currentTimeMillis() + 10000,
+                                                        100, null);
+    // Lineage for D1
+    Assert.assertEquals(expectedLineage, resultLineage);
+
+    resultLineage = lineageAdmin.computeLineage(dataset2, 500, System.currentTimeMillis() + 10000,
+                                                100, null);
+    // Lineage for D2
+    Assert.assertEquals(expectedLineage, resultLineage);
+
+
+    // Lineage for D1 for one level should be D2 -> P1 -> D1 <-> P3
+    oneLevelLineage = lineageAdmin.computeLineage(dataset1, 500, System.currentTimeMillis() + 10000,
+                                                          1, null);
+
+    Assert.assertEquals(
+      ImmutableSet.of(
+        new Relation(dataset1, mrId, AccessType.WRITE, twillRunId(run1)),
+        new Relation(dataset2, mrId, AccessType.READ, twillRunId(run1)),
+        new Relation(dataset1, program5, AccessType.READ, twillRunId(run5)),
+        new Relation(dataset1, program3, AccessType.UNKNOWN, twillRunId(run3))
+      ),
+      oneLevelLineage.getRelations());
+    
+    // Assert that in a different namespace both lineage and metadata should be empty
+    NamespaceId customNamespace = new NamespaceId("custom_namespace");
+    DatasetId customDataset1 = customNamespace.dataset(dataset1.getEntityName());
+    Assert.assertEquals(new Lineage(ImmutableSet.of()),
+                        lineageAdmin.computeLineage(customDataset1, 500,
+                                                    System.currentTimeMillis() + 10000, 100));
+  }

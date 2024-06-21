@@ -1,0 +1,46 @@
+    void webViewFinishedLoading(AdWebView view, String startingState) {
+        // Fire the ready event only once
+        if (!readyFired) {
+            String adType = owner.adView.isBanner() ? "inline" : "interstitial";
+            isMRAIDTwoPartExpanded =
+                    startingState.equals(
+                            MRAID_INIT_STATE_STRINGS[MRAID_INIT_STATE.STARTING_EXPANDED.ordinal()]);
+            owner.isFullScreen = isMRAIDTwoPartExpanded;
+
+            view.injectJavaScript("javascript:window.mraid.util.setPlacementType('"
+                    + adType + "')");
+
+            if (!isMRAIDTwoPartExpanded) {
+                setSupportsValues(view);
+                setScreenSize();
+                setMaxSize();
+                setDefaultPosition();
+                setCurrentAppOrientation();
+            }
+
+            owner.checkPosition(); //set CURRENT position, in addition to default
+            view.injectJavaScript("javascript:window.mraid.util.stateChangeEvent('" + startingState + "')");
+            view.injectJavaScript("javascript:window.mraid.util.readyEvent();");
+
+            // Store width and height for close()
+            owner.adView.post(new Runnable() {
+                @Override
+                public void run() {
+                    if (owner != null && owner.adView != null) {
+                        ViewGroup.LayoutParams layoutParams = owner.adView.getLayoutParams();
+                        if (layoutParams != null) {
+                            default_width = layoutParams.width;
+                            default_height = layoutParams.height;
+                        }
+                    }
+                }
+            });
+
+            if (owner.adView.getMediaType().equals(MediaType.BANNER)) {
+                default_gravity = ((FrameLayout.LayoutParams) owner.getLayoutParams()).gravity;
+            }
+
+            readyFired = true;
+            onViewableChange(owner.isViewable());
+        }
+    }

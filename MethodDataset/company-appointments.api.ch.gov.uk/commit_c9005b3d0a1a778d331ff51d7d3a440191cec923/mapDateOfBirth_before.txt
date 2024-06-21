@@ -1,0 +1,6 @@
+    private DateOfBirth mapDateOfBirth(Instant dob, boolean registerView) {
+        return Optional.ofNullable(dob)
+                .map(dateOfBirth -> registerView ? mapDateOfBirth(dateOfBirth, dateOfBirth.atZone(UTC).getDayOfMonth())
+                        : mapDateOfBirth(dateOfBirth, null))
+                .orElse(null);
+    }

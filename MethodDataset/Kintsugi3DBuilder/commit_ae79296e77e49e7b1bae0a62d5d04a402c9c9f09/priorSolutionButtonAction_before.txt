@@ -1,0 +1,22 @@
+    public void priorSolutionButtonAction()
+    {
+        this.directoryChooser.setTitle("Choose a folder containing the prior solution");
+        if (priorSolutionField.getText().isEmpty())
+        {
+            if (lastDirectory != null)
+            {
+                this.directoryChooser.setInitialDirectory(lastDirectory);
+            }
+        }
+        else
+        {
+            File currentValue = new File(priorSolutionField.getText());
+            this.directoryChooser.setInitialDirectory(currentValue);
+        }
+        File file = this.directoryChooser.showDialog(stage.getOwner());
+        if (file != null)
+        {
+            priorSolutionField.setText(file.toString());
+            lastDirectory = file;
+        }
+    }

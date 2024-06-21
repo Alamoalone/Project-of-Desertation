@@ -1,0 +1,2 @@
+getConverter()
+process(RendCompoundAffectationOperation _curr, IdMap _nodes, ContextEl _context, RendStackCall _rendStack, Argument _res)

@@ -1,0 +1,97 @@
+  public void initElements() {
+    title.setText(ri.getName());
+
+    representationInformationId.setText(messages.representationInformationIdentifier() + ": " + ri.getId());
+
+    if (ri.getCreatedOn() != null && StringUtils.isNotBlank(ri.getCreatedBy())) {
+      dateCreated.setText(messages.dateCreated(Humanize.formatDateTime(ri.getCreatedOn()), ri.getCreatedBy()));
+    }
+
+    if (ri.getUpdatedOn() != null && StringUtils.isNotBlank(ri.getUpdatedBy())) {
+      dateUpdated.setText(messages.dateUpdated(Humanize.formatDateTime(ri.getUpdatedOn()), ri.getUpdatedBy()));
+    }
+
+    representationInformationDescriptionValue.setHTML(SafeHtmlUtils.fromString(ri.getDescription()));
+    representationInformationDescriptionKey.setVisible(StringUtils.isNotBlank(ri.getDescription()));
+
+    representationInformationFamilyKey.setVisible(StringUtils.isNotBlank(ri.getFamily()));
+    BrowserService.Util.getInstance().retrieveRepresentationInformationFamilyOptions(ri.getFamily(),
+      LocaleInfo.getCurrentLocale().getLocaleName(), new AsyncCallback<String>() {
+
+        @Override
+        public void onFailure(Throwable caught) {
+          AsyncCallbackUtils.defaultFailureTreatment(caught);
+        }
+
+        @Override
+        public void onSuccess(String familyTranslation) {
+          representationInformationFamilyValue.setText(familyTranslation);
+        }
+      });
+
+    List<String> tagsList = ri.getTags();
+    representationInformationTagValue.setVisible(tagsList != null && !tagsList.isEmpty());
+    representationInformationTagKey.setVisible(tagsList != null && !tagsList.isEmpty());
+
+    if (tagsList != null) {
+      for (final String category : tagsList) {
+        InlineHTML parPanel = new InlineHTML();
+        parPanel.setHTML("<span class='label label-info btn-separator-right ri-category'>"
+          + messages.representationInformationListItems(SafeHtmlUtils.htmlEscape(category)) + "</span>");
+        parPanel.addClickHandler(new ClickHandler() {
+          @Override
+          public void onClick(ClickEvent event) {
+            List<String> history = new ArrayList<>();
+            history.addAll(RepresentationInformationNetwork.RESOLVER.getHistoryPath());
+            history.add(Search.RESOLVER.getHistoryToken());
+            history.add(RodaConstants.REPRESENTATION_INFORMATION_TAGS);
+            history.add(category);
+            HistoryUtils.newHistory(history);
+          }
+        });
+        representationInformationTagValue.add(parPanel);
+      }
+    }
+
+    if (ri.getSupport() != null) {
+      representationInformationSupportValue
+        .setText(messages.representationInformationSupportValue(ri.getSupport().toString()));
+      representationInformationSupportKey.setVisible(true);
+    } else {
+      representationInformationSupportKey.setVisible(false);
+    }
+
+    BrowserService.Util.getInstance().retrieveRepresentationInformationExtraBundle(ri.getId(),
+      LocaleInfo.getCurrentLocale().getLocaleName(), new AsyncCallback<RepresentationInformationExtraBundle>() {
+
+        @Override
+        public void onFailure(Throwable caught) {
+          AsyncCallbackUtils.defaultFailureTreatment(caught);
+        }
+
+        @Override
+        public void onSuccess(RepresentationInformationExtraBundle extra) {
+          if (extra != null) {
+            HtmlSnippetUtils.createExtraShow(extras, extra.getFamilyValues().get(ri.getFamily()), false);
+          }
+        }
+      });
+
+    RepresentationInformationActions representationInformationActions = RepresentationInformationActions.get();
+
+    actionableWidgetBuilder = new ActionableWidgetBuilder<>(representationInformationActions)
+      .withActionCallback(new NoAsyncCallback<Actionable.ActionImpact>() {
+        @Override
+        public void onSuccess(Actionable.ActionImpact result) {
+          if (result.equals(Actionable.ActionImpact.DESTROYED)) {
+            HistoryUtils.newHistory(RepresentationInformationNetwork.RESOLVER);
+          }
+        }
+      });
+
+    SidebarUtils.toggleSidebar(contentFlowPanel, sidebarFlowPanel, representationInformationActions.hasAnyRoles());
+    actionsSidebar.setWidget(actionableWidgetBuilder.buildListWithObjects(new ActionableObject<>(ri)));
+
+    initRelations();
+  }
+

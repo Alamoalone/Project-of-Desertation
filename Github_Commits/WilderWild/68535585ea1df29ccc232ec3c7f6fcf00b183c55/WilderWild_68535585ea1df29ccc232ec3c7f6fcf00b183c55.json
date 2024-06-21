@@ -1,0 +1,98 @@
+{
+    "sha": "68535585ea1df29ccc232ec3c7f6fcf00b183c55",
+    "node_id": "C_kwDOHL4r-toAKDY4NTM1NTg1ZWExZGYyOWNjYzIzMmVjM2M3ZjZmY2YwMGIxODNjNTU",
+    "commit": {
+        "author": {
+            "name": "Noa Sakurajin",
+            "email": "14131388+noah1510@users.noreply.github.com",
+            "date": "2023-09-07T22:04:29Z"
+        },
+        "committer": {
+            "name": "Noa Sakurajin",
+            "email": "14131388+noah1510@users.noreply.github.com",
+            "date": "2023-09-07T22:04:29Z"
+        },
+        "message": "preventing another null pointer exception",
+        "tree": {
+            "sha": "07becf5b6bd7ce987c13d936cc575e1f3db83c57",
+            "url": "https://api.github.com/repos/FrozenBlock/WilderWild/git/trees/07becf5b6bd7ce987c13d936cc575e1f3db83c57"
+        },
+        "url": "https://api.github.com/repos/FrozenBlock/WilderWild/git/commits/68535585ea1df29ccc232ec3c7f6fcf00b183c55",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/FrozenBlock/WilderWild/commits/68535585ea1df29ccc232ec3c7f6fcf00b183c55",
+    "html_url": "https://github.com/FrozenBlock/WilderWild/commit/68535585ea1df29ccc232ec3c7f6fcf00b183c55",
+    "comments_url": "https://api.github.com/repos/FrozenBlock/WilderWild/commits/68535585ea1df29ccc232ec3c7f6fcf00b183c55/comments",
+    "author": {
+        "login": "noah1510",
+        "id": 14131388,
+        "node_id": "MDQ6VXNlcjE0MTMxMzg4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14131388?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noah1510",
+        "html_url": "https://github.com/noah1510",
+        "followers_url": "https://api.github.com/users/noah1510/followers",
+        "following_url": "https://api.github.com/users/noah1510/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noah1510/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noah1510/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noah1510/subscriptions",
+        "organizations_url": "https://api.github.com/users/noah1510/orgs",
+        "repos_url": "https://api.github.com/users/noah1510/repos",
+        "events_url": "https://api.github.com/users/noah1510/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noah1510/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "noah1510",
+        "id": 14131388,
+        "node_id": "MDQ6VXNlcjE0MTMxMzg4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14131388?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/noah1510",
+        "html_url": "https://github.com/noah1510",
+        "followers_url": "https://api.github.com/users/noah1510/followers",
+        "following_url": "https://api.github.com/users/noah1510/following{/other_user}",
+        "gists_url": "https://api.github.com/users/noah1510/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/noah1510/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/noah1510/subscriptions",
+        "organizations_url": "https://api.github.com/users/noah1510/orgs",
+        "repos_url": "https://api.github.com/users/noah1510/repos",
+        "events_url": "https://api.github.com/users/noah1510/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/noah1510/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2160802466e2d744016f6f5a29163ff76a063e1b",
+            "url": "https://api.github.com/repos/FrozenBlock/WilderWild/commits/2160802466e2d744016f6f5a29163ff76a063e1b",
+            "html_url": "https://github.com/FrozenBlock/WilderWild/commit/2160802466e2d744016f6f5a29163ff76a063e1b"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "f90f10ee0dc41f208297e4ae68b5465af3619b98",
+            "filename": "src/main/java/net/frozenblock/wilderwild/mixin/server/sculk/SculkBlockMixin.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/FrozenBlock/WilderWild/blob/68535585ea1df29ccc232ec3c7f6fcf00b183c55/src%2Fmain%2Fjava%2Fnet%2Ffrozenblock%2Fwilderwild%2Fmixin%2Fserver%2Fsculk%2FSculkBlockMixin.java",
+            "raw_url": "https://github.com/FrozenBlock/WilderWild/raw/68535585ea1df29ccc232ec3c7f6fcf00b183c55/src%2Fmain%2Fjava%2Fnet%2Ffrozenblock%2Fwilderwild%2Fmixin%2Fserver%2Fsculk%2FSculkBlockMixin.java",
+            "contents_url": "https://api.github.com/repos/FrozenBlock/WilderWild/contents/src%2Fmain%2Fjava%2Fnet%2Ffrozenblock%2Fwilderwild%2Fmixin%2Fserver%2Fsculk%2FSculkBlockMixin.java?ref=68535585ea1df29ccc232ec3c7f6fcf00b183c55",
+            "patch": "@@ -219,6 +219,9 @@ public abstract class SculkBlockMixin {\n \n \t@Inject(method = \"attemptUseCharge\", at = @At(value = \"INVOKE\", target = \"Lnet/minecraft/world/level/LevelAccessor;playSound(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V\", shift = At.Shift.AFTER))\n \tprivate void wilderWild$handlePlacement(SculkSpreader.ChargeCursor chargeCursor, LevelAccessor levelAccessor, BlockPos blockPos, RandomSource randomSource, SculkSpreader sculkSpreader, boolean bl, CallbackInfoReturnable<Integer> cir) {\n+\t\tif(this.wilderWild$placedState == null) {\n+\t\t\treturn;\n+\t\t}\n \t\tif (this.wilderWild$isWorldgen && this.wilderWild$placedState.getBlock() instanceof OsseousSculkBlock osseousSculkBlock) {\n \t\t\tint growthAmount = Math.max(0, this.wilderWild$placedState.getValue(OsseousSculkBlock.HEIGHT_LEFT) - this.wilderWild$randomSource.nextInt(2));\n \t\t\tfor (int a = 0; a < growthAmount; a++) {"
+        }
+    ]
+}

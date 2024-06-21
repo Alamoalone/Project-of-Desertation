@@ -1,0 +1,9 @@
+	public ResponseEntity<SearchResult> loadSearch(HttpServletRequest request, @RequestParam String query, @RequestParam(required = false) String rawTypes) {
+		log.info("loadSearch: query={}", query);
+		var types = rawTypes == null ? new ArrayList<String>() : Arrays.asList(rawTypes.split(","));
+		var result = searchManager.loadSearch(query, types);
+		if (result != null) {
+			return ResponseEntity.ok(result);
+		}
+		return ResponseEntity.notFound().build();
+	}

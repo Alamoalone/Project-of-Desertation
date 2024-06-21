@@ -1,0 +1,2 @@
+addTest(TestDto dto)
+auto(List single, List multiple, List judge, Integer examId)

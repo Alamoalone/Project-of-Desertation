@@ -1,0 +1,5 @@
+	public double calculateArea() {
+		double s = calculateCircumference() / 2;
+		double area = Math.sqrt(s * (s - this.calculateSide(0)) * (s - this.calculateSide(1)) * (s - this.calculateSide(2)));
+		return area;
+		}

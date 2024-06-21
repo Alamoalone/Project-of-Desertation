@@ -1,0 +1,116 @@
+@@ -144,7 +144,7 @@ public static void subMenuTwo (Scanner in, ArrayList <Album> albums) {
+                     removeCard(displayMenu(in, 3),in,currentAlbum);
+                     break;
+                 case 5: // Edit attack
+-                    editAttack(displayMenu(in,4),in,getCard(in,currentAlbum));
++                    editAttack(in,getCard(in,currentAlbum));
+                     break;
+                 case 6: // Sort cards (3 options)
+                     sortCards(displayMenu(in,5),currentAlbum);
+@@ -160,8 +160,10 @@ public static void subMenuTwo (Scanner in, ArrayList <Album> albums) {
+                     break;
+                 case 10: // remove only card
+                     currentAlbum.removeCard(0);
++                    break;
+                 case 11:
+-                    editAttack(displayMenu(in,4),in,currentAlbum.getCard(0));
++                    editAttack(in,currentAlbum.getCard(0));
++                    break;
+                 case 12:
+                     System.out.println("Since there is only one card, output will the same no matter which method of sorting" +
+                             "is chosen. Here is the card: ");
+@@ -271,68 +273,28 @@ public static String addCard (Scanner in, Album currentAlbum) {
+         }
+     }
+     public static void removeCard (int choice, Scanner in, Album currentAlbum) {
+-        ArrayList <Card> cards = currentAlbum.getCards();
+         switch (choice) {
+             case 1: // sort by name, remove
+                 currentAlbum.sortCardsByName();
+-                int indexOfName;
++                int firstIndexOfName;
+                 String name;
+                 do {
+                     name = getString(in, "Please give the name of the card you want to remove",
+                             true);
+-                } while ((indexOfName = currentAlbum.findCardGivenName(name)) < 0);
+-                int firstIndexOfName = indexOfName;
+-                for (int i = indexOfName-1; i > -1; i--) {
+-                    if (cards.get(i).getName().equalsIgnoreCase(name)) {
+-                        firstIndexOfName--;
+-                    } else {
+-                        break;
+-                    }
+-                }
+-                int lastIndexOfName = indexOfName;
+-                for (int i = indexOfName+1; i < cards.size(); i++) {
+-                    if (cards.get(i).getName().equalsIgnoreCase(name)) {
+-                        lastIndexOfName++;
+-                    } else {
+-                        break;
+-                    }
+-                }
+-                if (firstIndexOfName == lastIndexOfName) {
+-                    currentAlbum.removeCard(indexOfName);
+-                } else {
+-                    currentAlbum.removeCards(firstIndexOfName,lastIndexOfName);
+-                }
++                } while ((firstIndexOfName = currentAlbum.getCardOfName(name,true)) < 0);
++                int lastIndexOfName = currentAlbum.getCardOfName(name,false);
++                currentAlbum.removeCards(firstIndexOfName,lastIndexOfName+1);
+                 break;
+             case 2: // sort by HP, remove
+                 currentAlbum.sortCardsByHP();
+-                int indexOfHP;
++                int firstIndexOfHP;
+                 int hp;
+                 do {
+                     hp = getInt(in, "Please give the hp of the card you want to remove",
+                             1,Integer.MAX_VALUE);
+-                } while ((indexOfHP = currentAlbum.findCardGivenHP(hp)) < 0);
+-                int firstIndexOfHP = indexOfHP;
+-                cards = currentAlbum.getCards();
+-                for (int i = indexOfHP-1; i > -1; i--) {
+-                    if (cards.get(i).getHP() == hp) {
+-                        firstIndexOfHP--;
+-                    } else {
+-                        break;
+-                    }
+-                }
+-                int lastIndexOfHP = indexOfHP;
+-                for (int i = indexOfHP+1; i < cards.size(); i++) {
+-                    if (cards.get(i).getHP() == hp) {
+-                        lastIndexOfHP++;
+-                    } else {
+-                        break;
+-                    }
+-                }
+-                if (firstIndexOfHP == lastIndexOfHP) {
+-                    currentAlbum.removeCard(indexOfHP);
+-                } else {
+-                    currentAlbum.removeCards(firstIndexOfHP,lastIndexOfHP);
+-                }
++                } while ((firstIndexOfHP = currentAlbum.getCardOfHP(hp,true)) < 0);
++                int lastIndexOfHP = currentAlbum.getCardOfHP(hp,false);
++                currentAlbum.removeCards(firstIndexOfHP,lastIndexOfHP+1);
+                 break;
+             case 3:
+                 currentAlbum.removeCard(0);
+@@ -341,7 +303,7 @@ public static void removeCard (int choice, Scanner in, Album currentAlbum) {
+                 currentAlbum.removeCard(currentAlbum.getCardsSize() - 1);
+         }
+     }
+-    public static void editAttack (int choice, Scanner in, Card card) {
++    public static void editAttack (Scanner in, Card card) {
+         Attack[] attacks = card.getAttacks();
+         Attack attack;
+         if (attacks.length == 1) {
+@@ -354,7 +316,7 @@ public static void editAttack (int choice, Scanner in, Card card) {
+             }
+             attack = attacks[getInt (in, "Which attack would you like to edit?", 1,attacks.length)];
+         }
+-
++        int choice = displayMenu(in,4);
+         switch (choice) {
+             case 1: // name
+                 attack.edit("name",getString(in,"Enter new name: ",true));

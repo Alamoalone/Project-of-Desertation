@@ -1,0 +1,2 @@
+updateContributors(String stakeholderId, Set userIds)
+updateManagers(String stakeholderId, Set userIds)

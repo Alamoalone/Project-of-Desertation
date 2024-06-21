@@ -1,0 +1,8 @@
+    public ResponseEntity<Integer> getCountOfUnassignedOrders(){
+        Integer countOfOrders = 0;
+
+        //Count of orders that have not been assigned to any DeliveryPartner
+        countOfOrders=orderservice.getCountOfUnassignedOrders();
+
+        return new ResponseEntity<>(countOfOrders, HttpStatus.CREATED);
+    }

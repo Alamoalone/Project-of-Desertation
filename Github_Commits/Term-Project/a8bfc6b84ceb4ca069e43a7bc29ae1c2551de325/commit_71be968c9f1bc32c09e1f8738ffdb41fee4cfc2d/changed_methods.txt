@@ -1,0 +1,8 @@
+getCredit()
+setCredit(int credit)
+getBalance()
+setMoney(double Money)
+setCredit(int Credit)
+getUserScore()
+getBankAccount()
+getMoney()

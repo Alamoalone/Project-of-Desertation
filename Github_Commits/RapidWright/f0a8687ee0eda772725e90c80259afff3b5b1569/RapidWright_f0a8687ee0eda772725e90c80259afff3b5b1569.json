@@ -1,0 +1,98 @@
+{
+    "sha": "f0a8687ee0eda772725e90c80259afff3b5b1569",
+    "node_id": "C_kwDOBhF25NoAKGYwYTg2ODdlZTBlZGE3NzI3MjVlOTBjODAyNTlhZmZmM2I1YjE1Njk",
+    "commit": {
+        "author": {
+            "name": "haydenc-amd",
+            "email": "133905095+haydenc-amd@users.noreply.github.com",
+            "date": "2023-08-18T16:31:45Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-08-18T16:31:45Z"
+        },
+        "message": "fixed null pointer exception in getPhysicalNetFromPin() (#775)\n\nSigned-off-by: Hayden Cook <haydenc@amd.com>",
+        "tree": {
+            "sha": "fc13aa1dab856e558425456279d51ca33241a7dd",
+            "url": "https://api.github.com/repos/Xilinx/RapidWright/git/trees/fc13aa1dab856e558425456279d51ca33241a7dd"
+        },
+        "url": "https://api.github.com/repos/Xilinx/RapidWright/git/commits/f0a8687ee0eda772725e90c80259afff3b5b1569",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk35zxCRBK7hj4Ov3rIwAAYhoIAEjzZcTl6SYokcEFOujDJJYp\nXloAt6/eTH/I/qmbB5SEFyvtfVIwPQOXBaSO+JFOJFazGm8tATnQHnnbGMhFm8O2\njbKp+UXTJiUIX7SrsDZ7M/WOoR8uLQRhGeyLpGgqrWU1JBIwyIu3eNWwdjmL6ui1\nYiEBIaBtgtiaioqJbeVG/rFZUkGD7czoMqqtqkaqISKY7pMO7GedfT17PSqoDF5u\nDDjn2JUh7AwMtm8BzpKmQGDfchrLjjWNt4YTcfUwpm1k27KjvlT6cbzixlaGP1iO\npl9JxDJxrbJ0Fh4v9N9kJwxqpNl1TAkglUaewGpAdvTq0AeugsOBX7whQn43k0A=\n=KI6s\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree fc13aa1dab856e558425456279d51ca33241a7dd\nparent 5b6a61955993842ae0876462cfb2e666fa30aae4\nauthor haydenc-amd <133905095+haydenc-amd@users.noreply.github.com> 1692376305 -0600\ncommitter GitHub <noreply@github.com> 1692376305 -0600\n\nfixed null pointer exception in getPhysicalNetFromPin() (#775)\n\nSigned-off-by: Hayden Cook <haydenc@amd.com>"
+        }
+    },
+    "url": "https://api.github.com/repos/Xilinx/RapidWright/commits/f0a8687ee0eda772725e90c80259afff3b5b1569",
+    "html_url": "https://github.com/Xilinx/RapidWright/commit/f0a8687ee0eda772725e90c80259afff3b5b1569",
+    "comments_url": "https://api.github.com/repos/Xilinx/RapidWright/commits/f0a8687ee0eda772725e90c80259afff3b5b1569/comments",
+    "author": {
+        "login": "haydenc-amd",
+        "id": 133905095,
+        "node_id": "U_kgDOB_s6xw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/133905095?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/haydenc-amd",
+        "html_url": "https://github.com/haydenc-amd",
+        "followers_url": "https://api.github.com/users/haydenc-amd/followers",
+        "following_url": "https://api.github.com/users/haydenc-amd/following{/other_user}",
+        "gists_url": "https://api.github.com/users/haydenc-amd/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/haydenc-amd/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/haydenc-amd/subscriptions",
+        "organizations_url": "https://api.github.com/users/haydenc-amd/orgs",
+        "repos_url": "https://api.github.com/users/haydenc-amd/repos",
+        "events_url": "https://api.github.com/users/haydenc-amd/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/haydenc-amd/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5b6a61955993842ae0876462cfb2e666fa30aae4",
+            "url": "https://api.github.com/repos/Xilinx/RapidWright/commits/5b6a61955993842ae0876462cfb2e666fa30aae4",
+            "html_url": "https://github.com/Xilinx/RapidWright/commit/5b6a61955993842ae0876462cfb2e666fa30aae4"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "e3673d5e40dac329061fb4298b56285c7625e7ef",
+            "filename": "src/com/xilinx/rapidwright/edif/EDIFNetlist.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Xilinx/RapidWright/blob/f0a8687ee0eda772725e90c80259afff3b5b1569/src%2Fcom%2Fxilinx%2Frapidwright%2Fedif%2FEDIFNetlist.java",
+            "raw_url": "https://github.com/Xilinx/RapidWright/raw/f0a8687ee0eda772725e90c80259afff3b5b1569/src%2Fcom%2Fxilinx%2Frapidwright%2Fedif%2FEDIFNetlist.java",
+            "contents_url": "https://api.github.com/repos/Xilinx/RapidWright/contents/src%2Fcom%2Fxilinx%2Frapidwright%2Fedif%2FEDIFNetlist.java?ref=f0a8687ee0eda772725e90c80259afff3b5b1569",
+            "patch": "@@ -989,7 +989,7 @@ public Net getPhysicalNetFromPin(EDIFHierPortInst p, Design d) {\n \n         Map<EDIFHierNet,EDIFHierNet> parentNetMap = getParentNetMap();\n         EDIFHierNet parentNetName = parentNetMap.get(p.getHierarchicalNet());\n-        Net n = d.getNet(parentNetName.getHierarchicalNetName());\n+        Net n = parentNetName == null ? null : d.getNet(parentNetName.getHierarchicalNetName());\n         if (n == null) {\n             if (parentNetName == null) {\n                 // Maybe it is GND/VCC"
+        }
+    ]
+}

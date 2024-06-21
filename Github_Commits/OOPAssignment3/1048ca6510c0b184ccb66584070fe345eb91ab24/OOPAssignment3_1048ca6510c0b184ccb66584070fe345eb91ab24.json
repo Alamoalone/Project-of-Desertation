@@ -1,0 +1,98 @@
+{
+    "sha": "1048ca6510c0b184ccb66584070fe345eb91ab24",
+    "node_id": "C_kwDOLbmDFtoAKDEwNDhjYTY1MTBjMGIxODRjY2I2NjU4NDA3MGZlMzQ1ZWI5MWFiMjQ",
+    "commit": {
+        "author": {
+            "name": "NerunSmarts",
+            "email": "neruntoneron@gmail.com",
+            "date": "2024-04-03T04:06:03Z"
+        },
+        "committer": {
+            "name": "NerunSmarts",
+            "email": "neruntoneron@gmail.com",
+            "date": "2024-04-03T04:06:03Z"
+        },
+        "message": "possible null pointer exception fix",
+        "tree": {
+            "sha": "7df7f658af95dd812c0e50aa66f59f6004da7cc5",
+            "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/git/trees/7df7f658af95dd812c0e50aa66f59f6004da7cc5"
+        },
+        "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/git/commits/1048ca6510c0b184ccb66584070fe345eb91ab24",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/commits/1048ca6510c0b184ccb66584070fe345eb91ab24",
+    "html_url": "https://github.com/NerunSmarts/OOPAssignment3/commit/1048ca6510c0b184ccb66584070fe345eb91ab24",
+    "comments_url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/commits/1048ca6510c0b184ccb66584070fe345eb91ab24/comments",
+    "author": {
+        "login": "NerunSmarts",
+        "id": 66692543,
+        "node_id": "MDQ6VXNlcjY2NjkyNTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66692543?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NerunSmarts",
+        "html_url": "https://github.com/NerunSmarts",
+        "followers_url": "https://api.github.com/users/NerunSmarts/followers",
+        "following_url": "https://api.github.com/users/NerunSmarts/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NerunSmarts/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NerunSmarts/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NerunSmarts/subscriptions",
+        "organizations_url": "https://api.github.com/users/NerunSmarts/orgs",
+        "repos_url": "https://api.github.com/users/NerunSmarts/repos",
+        "events_url": "https://api.github.com/users/NerunSmarts/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NerunSmarts/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "NerunSmarts",
+        "id": 66692543,
+        "node_id": "MDQ6VXNlcjY2NjkyNTQz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66692543?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NerunSmarts",
+        "html_url": "https://github.com/NerunSmarts",
+        "followers_url": "https://api.github.com/users/NerunSmarts/followers",
+        "following_url": "https://api.github.com/users/NerunSmarts/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NerunSmarts/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NerunSmarts/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NerunSmarts/subscriptions",
+        "organizations_url": "https://api.github.com/users/NerunSmarts/orgs",
+        "repos_url": "https://api.github.com/users/NerunSmarts/repos",
+        "events_url": "https://api.github.com/users/NerunSmarts/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NerunSmarts/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "850a6663c8964da4585895ca8ec09f5d922cea24",
+            "url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/commits/850a6663c8964da4585895ca8ec09f5d922cea24",
+            "html_url": "https://github.com/NerunSmarts/OOPAssignment3/commit/850a6663c8964da4585895ca8ec09f5d922cea24"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 2,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "bebbda78b6995d3e026a3ae5f526992b5903b543",
+            "filename": "edu/cs2430/assignment3/Course.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/NerunSmarts/OOPAssignment3/blob/1048ca6510c0b184ccb66584070fe345eb91ab24/edu%2Fcs2430%2Fassignment3%2FCourse.java",
+            "raw_url": "https://github.com/NerunSmarts/OOPAssignment3/raw/1048ca6510c0b184ccb66584070fe345eb91ab24/edu%2Fcs2430%2Fassignment3%2FCourse.java",
+            "contents_url": "https://api.github.com/repos/NerunSmarts/OOPAssignment3/contents/edu%2Fcs2430%2Fassignment3%2FCourse.java?ref=1048ca6510c0b184ccb66584070fe345eb91ab24",
+            "patch": "@@ -47,6 +47,7 @@ public Course(String name, int number, Program program, int numberOfCredits, Cou\n    }\n    public boolean addPrerequisiteCourse(Course prerequisiteCourse){\n        int temp = 0;\n+       if (prerequisiteCourses != null) {\n        for(Course c : prerequisiteCourses){\n            if (c != null) {\n                temp += 1;\n@@ -59,6 +60,7 @@ public boolean addPrerequisiteCourse(Course prerequisiteCourse){\n        else{\n            return false;\n        }\n+    } else { return false; }\n    }\n    public boolean containsPrerequisite(Course prerequisiteCourse){\n        boolean contains = false;"
+        }
+    ]
+}

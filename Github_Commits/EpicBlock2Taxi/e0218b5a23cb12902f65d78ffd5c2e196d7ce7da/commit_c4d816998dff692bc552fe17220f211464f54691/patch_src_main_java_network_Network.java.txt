@@ -1,0 +1,10 @@
+@@ -267,6 +267,9 @@ class DijkstraNode {
+                     }
+                 }
+                 int alt = u.dist + e.weight;
++                if (v == null) {
++                    continue;
++                }
+                 if (alt < v.dist) {
+                     v.dist = alt;
+                     v.prev = u;

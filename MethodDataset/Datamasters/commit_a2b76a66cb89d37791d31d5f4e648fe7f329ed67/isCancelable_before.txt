@@ -1,0 +1,4 @@
+    public boolean isCancelable(LocalDateTime currentTime) {
+        LocalDateTime cutoffTime = this.orderDateTime.plusMinutes(getPreparationTimeMinutes() * this.quantityUnits);
+        return currentTime.isAfter(cutoffTime);
+    }

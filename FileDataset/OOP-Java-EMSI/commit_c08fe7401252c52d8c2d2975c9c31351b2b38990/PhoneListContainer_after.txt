@@ -1,0 +1,69 @@
+	public boolean searchElement(Phone phone) {
+		return phoneList.contains(phone);
+	}
+
+	public void removeElement(Phone phone) {
+		phoneList.remove(phone);
+	}
+
+	public void sortList() {
+		Collections.sort(phoneList);
+	}
+
+	public void shuffleList() {
+		Collections.shuffle(phoneList);
+	}
+
+	public boolean compareLists(List<Phone> otherList) {
+		return phoneList.equals(otherList);
+	}
+
+	public void populateList(Phone[] phones) {
+		phoneList.addAll(Arrays.asList(phones));
+	}
+
+	public List<Phone> subList(int fromIndex, int toIndex) {
+		return phoneList.subList(fromIndex, toIndex);
+	}
+
+	public void insertElement(Phone phone, int index) {
+		phoneList.add(index, phone);
+	}
+
+	public void clearList() {
+		phoneList.clear();
+	}
+
+	public void displayList() {
+		for (Phone phone : phoneList) {
+			System.out.println(phone);
+		}
+	}
+
+	public boolean isListEmpty() {
+		return phoneList.isEmpty();
+	}
+
+	public void reverseList() {
+		Collections.reverse(phoneList);
+	}
+
+	public void swapElements(int iphone7, int iphone8) {
+		Collections.swap(phoneList, iphone7, iphone8);
+	}
+
+	public void iterateList() {
+		Iterator<Phone> iterator = phoneList.iterator();
+		while (iterator.hasNext()) {
+
+		}
+	}
+
+	public List<Phone> copyList() {
+		return new ArrayList<>(phoneList);
+	}
+
+	public Phone getElement(int index) {
+		return phoneList.get(index);
+	}
+

@@ -1,0 +1,84 @@
+{
+    "sha": "ded890b606f296eef35194555fe259676ac90754",
+    "node_id": "C_kwDOKnpWo9oAKGRlZDg5MGI2MDZmMjk2ZWVmMzUxOTQ1NTVmZTI1OTY3NmFjOTA3NTQ",
+    "commit": {
+        "author": {
+            "name": "Jonatas Jackson Goncalves",
+            "email": "jonatasg@weg.net",
+            "date": "2024-01-29T18:10:06Z"
+        },
+        "committer": {
+            "name": "Jonatas Jackson Goncalves",
+            "email": "jonatasg@weg.net",
+            "date": "2024-01-29T18:10:06Z"
+        },
+        "message": "Ajeitando o null pointer exception quando as tarefas nao estao marcadas",
+        "tree": {
+            "sha": "eeb5a5e12a6b88a7706ba90ae38b38fb74b103f5",
+            "url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/git/trees/eeb5a5e12a6b88a7706ba90ae38b38fb74b103f5"
+        },
+        "url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/git/commits/ded890b606f296eef35194555fe259676ac90754",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/commits/ded890b606f296eef35194555fe259676ac90754",
+    "html_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/commit/ded890b606f296eef35194555fe259676ac90754",
+    "comments_url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/commits/ded890b606f296eef35194555fe259676ac90754/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "29ea13d3e41ce08eaba1c68c6ede62db6b74ce56",
+            "url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/commits/29ea13d3e41ce08eaba1c68c6ede62db6b74ce56",
+            "html_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/commit/29ea13d3e41ce08eaba1c68c6ede62db6b74ce56"
+        }
+    ],
+    "stats": {
+        "total": 33,
+        "additions": 22,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "3d2e1b71ab2aa83465b42bc596cf7ae5f5f2a49a",
+            "filename": "src/main/java/br/demo/backend/model/enums/Language.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/blob/ded890b606f296eef35194555fe259676ac90754/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fmodel%2Fenums%2FLanguage.java",
+            "raw_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/raw/ded890b606f296eef35194555fe259676ac90754/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fmodel%2Fenums%2FLanguage.java",
+            "contents_url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/contents/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fmodel%2Fenums%2FLanguage.java?ref=ded890b606f296eef35194555fe259676ac90754",
+            "patch": "@@ -4,5 +4,6 @@ public enum Language {\n     ENGLISH,\n     SPANISH,\n     PORTUGUESE,\n+\n     //ADD MORE\n }"
+        },
+        {
+            "sha": "47009042a434fa723d9c01072bada95cb56fac44",
+            "filename": "src/main/java/br/demo/backend/model/values/DeserializerValue.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/blob/ded890b606f296eef35194555fe259676ac90754/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fmodel%2Fvalues%2FDeserializerValue.java",
+            "raw_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/raw/ded890b606f296eef35194555fe259676ac90754/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fmodel%2Fvalues%2FDeserializerValue.java",
+            "contents_url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/contents/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fmodel%2Fvalues%2FDeserializerValue.java?ref=ded890b606f296eef35194555fe259676ac90754",
+            "patch": "@@ -1,7 +1,9 @@\n package br.demo.backend.model.values;\n \n+import br.demo.backend.model.Project;\n import br.demo.backend.model.User;\n import br.demo.backend.model.properties.Option;\n+import br.demo.backend.model.properties.Property;\n import br.demo.backend.model.values.*;\n import com.fasterxml.jackson.core.JacksonException;\n import com.fasterxml.jackson.core.JsonParser;\n@@ -20,6 +22,8 @@\n \n public class DeserializerValue extends StdDeserializer<Value> {\n     JsonNode jsonNode;\n+    private Project project;\n+    private Project ;\n \n     protected DeserializerValue() {\n         super(Value.class);\n@@ -93,5 +97,8 @@ private boolean isPresent(JsonNode jsonNode, String text) {\n         } catch (NullPointerException e) {\n             return false;\n         }\n+\n     }\n+\n+\n }\n\\ No newline at end of file"
+        },
+        {
+            "sha": "2bc595bf2305aa18cdf59d49287c26a62beb7fae",
+            "filename": "src/main/java/br/demo/backend/service/pages/CommonPageService.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 11,
+            "changes": 25,
+            "blob_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/blob/ded890b606f296eef35194555fe259676ac90754/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fservice%2Fpages%2FCommonPageService.java",
+            "raw_url": "https://github.com/Marquardtt/TaskFlow-BackEnd/raw/ded890b606f296eef35194555fe259676ac90754/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fservice%2Fpages%2FCommonPageService.java",
+            "contents_url": "https://api.github.com/repos/Marquardtt/TaskFlow-BackEnd/contents/src%2Fmain%2Fjava%2Fbr%2Fdemo%2Fbackend%2Fservice%2Fpages%2FCommonPageService.java?ref=ded890b606f296eef35194555fe259676ac90754",
+            "patch": "@@ -53,19 +53,22 @@ public CommonPage updateIndexes(CommonPage page, Long taskId, Integer index, Int\n         for (TaskPage task : page.getTasks()) {\n             for (TaskValue taskVl : task.getTask().getProperties()) {\n                 if (taskVl.getProperty().getId().equals(page.getPropertyOrdering().getId())) {\n-                    if (((Option) taskVl.getValue().getValue()).getId().equals(columnOption.getId())) {\n-                        if (oldIndex > index || columnChaged == 1) {\n-                            if (task.getIndexAtColumn() >= index && !task.getTask().getId().equals(taskId)) {\n-                                task.setIndexAtColumn(task.getIndexAtColumn() + 1);\n+                    try{\n+                        if (taskVl.getValue().getValue() == null && columnOption == null ||\n+                                ((Option) taskVl.getValue().getValue()).getId().equals(columnOption.getId())) {\n+                            if (oldIndex > index || columnChaged == 1) {\n+                                if (task.getIndexAtColumn() >= index && !task.getTask().getId().equals(taskId)) {\n+                                    task.setIndexAtColumn(task.getIndexAtColumn() + 1);\n+                                }\n+                                taskOld.setIndexAtColumn(index);\n+                            } else {\n+                                if (task.getIndexAtColumn() > index && !task.getTask().getId().equals(taskId)) {\n+                                    task.setIndexAtColumn(task.getIndexAtColumn() + 1);\n+                                }\n+                                taskOld.setIndexAtColumn(index+1);\n                             }\n-                            taskOld.setIndexAtColumn(index);\n-                        } else {\n-                            if (task.getIndexAtColumn() > index && !task.getTask().getId().equals(taskId)) {\n-                                task.setIndexAtColumn(task.getIndexAtColumn() + 1);\n-                            }\n-                            taskOld.setIndexAtColumn(index+1);\n                         }\n-                    }\n+                    } catch (NullPointerException ignore){}\n                 }\n             }\n         }"
+        }
+    ]
+}

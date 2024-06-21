@@ -1,0 +1,98 @@
+{
+    "sha": "8b1bdba7965f0f8f6066cb555780f9e4c448eacd",
+    "node_id": "C_kwDOLPTJKdoAKDhiMWJkYmE3OTY1ZjBmOGY2MDY2Y2I1NTU3ODBmOWU0YzQ0OGVhY2Q",
+    "commit": {
+        "author": {
+            "name": "dbc2201",
+            "email": "divyanshb22@gmail.com",
+            "date": "2024-01-29T19:16:51Z"
+        },
+        "committer": {
+            "name": "dbc2201",
+            "email": "divyanshb22@gmail.com",
+            "date": "2024-01-29T19:16:51Z"
+        },
+        "message": "fix null pointer exception in DoubleNode toString()",
+        "tree": {
+            "sha": "53523d904e1dfb63be78bd69d0a8ee45899097bb",
+            "url": "https://api.github.com/repos/gsj1002/gla-bcsc0006-2024-2/git/trees/53523d904e1dfb63be78bd69d0a8ee45899097bb"
+        },
+        "url": "https://api.github.com/repos/gsj1002/gla-bcsc0006-2024-2/git/commits/8b1bdba7965f0f8f6066cb555780f9e4c448eacd",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/gsj1002/gla-bcsc0006-2024-2/commits/8b1bdba7965f0f8f6066cb555780f9e4c448eacd",
+    "html_url": "https://github.com/gsj1002/gla-bcsc0006-2024-2/commit/8b1bdba7965f0f8f6066cb555780f9e4c448eacd",
+    "comments_url": "https://api.github.com/repos/gsj1002/gla-bcsc0006-2024-2/commits/8b1bdba7965f0f8f6066cb555780f9e4c448eacd/comments",
+    "author": {
+        "login": "dbc2201",
+        "id": 22192936,
+        "node_id": "MDQ6VXNlcjIyMTkyOTM2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22192936?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dbc2201",
+        "html_url": "https://github.com/dbc2201",
+        "followers_url": "https://api.github.com/users/dbc2201/followers",
+        "following_url": "https://api.github.com/users/dbc2201/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dbc2201/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dbc2201/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dbc2201/subscriptions",
+        "organizations_url": "https://api.github.com/users/dbc2201/orgs",
+        "repos_url": "https://api.github.com/users/dbc2201/repos",
+        "events_url": "https://api.github.com/users/dbc2201/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dbc2201/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dbc2201",
+        "id": 22192936,
+        "node_id": "MDQ6VXNlcjIyMTkyOTM2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22192936?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dbc2201",
+        "html_url": "https://github.com/dbc2201",
+        "followers_url": "https://api.github.com/users/dbc2201/followers",
+        "following_url": "https://api.github.com/users/dbc2201/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dbc2201/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dbc2201/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dbc2201/subscriptions",
+        "organizations_url": "https://api.github.com/users/dbc2201/orgs",
+        "repos_url": "https://api.github.com/users/dbc2201/repos",
+        "events_url": "https://api.github.com/users/dbc2201/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dbc2201/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a18bb1db671161108273315a83cda10d4c757109",
+            "url": "https://api.github.com/repos/gsj1002/gla-bcsc0006-2024-2/commits/a18bb1db671161108273315a83cda10d4c757109",
+            "html_url": "https://github.com/gsj1002/gla-bcsc0006-2024-2/commit/a18bb1db671161108273315a83cda10d4c757109"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "f370b62f6a9766d4c5ce835c30ee09f321446193",
+            "filename": "src/main/java/list/doubly/node/DoublyNode.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/gsj1002/gla-bcsc0006-2024-2/blob/8b1bdba7965f0f8f6066cb555780f9e4c448eacd/src%2Fmain%2Fjava%2Flist%2Fdoubly%2Fnode%2FDoublyNode.java",
+            "raw_url": "https://github.com/gsj1002/gla-bcsc0006-2024-2/raw/8b1bdba7965f0f8f6066cb555780f9e4c448eacd/src%2Fmain%2Fjava%2Flist%2Fdoubly%2Fnode%2FDoublyNode.java",
+            "contents_url": "https://api.github.com/repos/gsj1002/gla-bcsc0006-2024-2/contents/src%2Fmain%2Fjava%2Flist%2Fdoubly%2Fnode%2FDoublyNode.java?ref=8b1bdba7965f0f8f6066cb555780f9e4c448eacd",
+            "patch": "@@ -17,6 +17,6 @@ public DoublyNode(int data, DoublyNode previous, DoublyNode next) {\n \t\n \t@Override\n \tpublic String toString() {\n-\t\treturn \"{\" + previous.data + \" <--> \" + this.data + \"<-->\" + next.data + \"}\";\n+\t\treturn \"{\" + previous + \" <--> \" + this.data + \" <--> \" + next + \"}\";\n \t}\n }"
+        }
+    ]
+}

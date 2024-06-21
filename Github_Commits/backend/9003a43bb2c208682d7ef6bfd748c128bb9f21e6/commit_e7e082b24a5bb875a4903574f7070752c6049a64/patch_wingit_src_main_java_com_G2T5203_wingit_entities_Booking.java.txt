@@ -1,0 +1,9 @@
+@@ -94,6 +94,8 @@ public void setInboundRouteListing(RouteListing inboundRouteListing) {
+         this.inboundRouteListing = inboundRouteListing;
+     }
+ 
++    public boolean hasInboundRouteListing() { return this.inboundRouteListing != null; }
++
+     public Date getStartBookingDatetime() {
+         return startBookingDatetime;
+     }

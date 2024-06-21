@@ -1,0 +1,5 @@
+    public Customer find(String id) {
+        CustomerModel customer = customerRepository.findById(id).orElse(null);
+        return customer == null ? null : customer.to();
+    }
+

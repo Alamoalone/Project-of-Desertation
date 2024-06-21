@@ -1,0 +1,110 @@
+{
+    "sha": "bcde83cb6826d39758897f7379197c3fbed0c86e",
+    "node_id": "C_kwDOAG_q_toAKGJjZGU4M2NiNjgyNmQzOTc1ODg5N2Y3Mzc5MTk3YzNmYmVkMGM4NmU",
+    "commit": {
+        "author": {
+            "name": "Fabrice Cipolla",
+            "email": "fabricecipolla@gmail.com",
+            "date": "2023-03-25T13:45:12Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-25T13:45:12Z"
+        },
+        "message": "Fix the null pointer exception on the replace filter (#650)",
+        "tree": {
+            "sha": "d3b3dc58e8799a12a1b3658d49704907d95909e1",
+            "url": "https://api.github.com/repos/PebbleTemplates/pebble/git/trees/d3b3dc58e8799a12a1b3658d49704907d95909e1"
+        },
+        "url": "https://api.github.com/repos/PebbleTemplates/pebble/git/commits/bcde83cb6826d39758897f7379197c3fbed0c86e",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkHvroCRBK7hj4Ov3rIwAA34MIAIV00tLoR1PprKLWn7Uyiyp6\n5mnlEbSkcfygr2/YFQUzJAEGLM8mp0UiYi47UmpwrwF4hJsqy/Gzx8IYiNb62V7Y\ng5s8mOixwiQrBabF+9sVHgImp+KUEhScEfe4fPaMQXS2gACU0OavUrSducpXMakQ\n7cxhWyXmE1QxTGDfVTEEXJbvyB/uzpZshHHNVnC5dkrFoFkwEVTxrrNqizXfkNmD\nqNNHBGviR6EWr1Dco/TTKhfSjuYuUQbzTKH+4huvS/ikAkImHEpMclPzghcnF1OJ\nzx96TR/fc9UNyW5T4qg/ZHQrUmMWAes3/trhuo+3Aj4cGe1n/MM9T2v2qlDky20=\n=s3+Y\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d3b3dc58e8799a12a1b3658d49704907d95909e1\nparent daf0714255e743dfdc0bdd701929ac2ba6c6b08f\nauthor Fabrice Cipolla <fabricecipolla@gmail.com> 1679751912 +0100\ncommitter GitHub <noreply@github.com> 1679751912 -0400\n\nFix the null pointer exception on the replace filter (#650)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/PebbleTemplates/pebble/commits/bcde83cb6826d39758897f7379197c3fbed0c86e",
+    "html_url": "https://github.com/PebbleTemplates/pebble/commit/bcde83cb6826d39758897f7379197c3fbed0c86e",
+    "comments_url": "https://api.github.com/repos/PebbleTemplates/pebble/commits/bcde83cb6826d39758897f7379197c3fbed0c86e/comments",
+    "author": {
+        "login": "fabriceci",
+        "id": 6397893,
+        "node_id": "MDQ6VXNlcjYzOTc4OTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6397893?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fabriceci",
+        "html_url": "https://github.com/fabriceci",
+        "followers_url": "https://api.github.com/users/fabriceci/followers",
+        "following_url": "https://api.github.com/users/fabriceci/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fabriceci/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fabriceci/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fabriceci/subscriptions",
+        "organizations_url": "https://api.github.com/users/fabriceci/orgs",
+        "repos_url": "https://api.github.com/users/fabriceci/repos",
+        "events_url": "https://api.github.com/users/fabriceci/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fabriceci/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "daf0714255e743dfdc0bdd701929ac2ba6c6b08f",
+            "url": "https://api.github.com/repos/PebbleTemplates/pebble/commits/daf0714255e743dfdc0bdd701929ac2ba6c6b08f",
+            "html_url": "https://github.com/PebbleTemplates/pebble/commit/daf0714255e743dfdc0bdd701929ac2ba6c6b08f"
+        }
+    ],
+    "stats": {
+        "total": 24,
+        "additions": 21,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "cdc2a3443e3b09816c215b60e1873cfebaff2951",
+            "filename": "pebble/src/main/java/io/pebbletemplates/pebble/extension/core/ReplaceFilter.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/PebbleTemplates/pebble/blob/bcde83cb6826d39758897f7379197c3fbed0c86e/pebble%2Fsrc%2Fmain%2Fjava%2Fio%2Fpebbletemplates%2Fpebble%2Fextension%2Fcore%2FReplaceFilter.java",
+            "raw_url": "https://github.com/PebbleTemplates/pebble/raw/bcde83cb6826d39758897f7379197c3fbed0c86e/pebble%2Fsrc%2Fmain%2Fjava%2Fio%2Fpebbletemplates%2Fpebble%2Fextension%2Fcore%2FReplaceFilter.java",
+            "contents_url": "https://api.github.com/repos/PebbleTemplates/pebble/contents/pebble%2Fsrc%2Fmain%2Fjava%2Fio%2Fpebbletemplates%2Fpebble%2Fextension%2Fcore%2FReplaceFilter.java?ref=bcde83cb6826d39758897f7379197c3fbed0c86e",
+            "patch": "@@ -32,14 +32,16 @@ public List<String> getArgumentNames() {\n   @Override\n   public Object apply(Object input, Map<String, Object> args, PebbleTemplate self,\n                       EvaluationContext context, int lineNumber) throws PebbleException {\n-    String data = input.toString();\n+    if (input == null) {\n+      return null;\n+    }\n     if (args.get(ARGUMENT_NAME) == null) {\n       throw new PebbleException(null,\n           MessageFormat.format(\"The argument ''{0}'' is required.\", ARGUMENT_NAME), lineNumber,\n           self.getName());\n     }\n     Map<?, ?> replacePair = (Map<?, ?>) args.get(ARGUMENT_NAME);\n-\n+    String data = input.toString();\n     for (Entry<?, ?> entry : replacePair.entrySet()) {\n       data = data.replace(entry.getKey().toString(), entry.getValue().toString());\n     }"
+        },
+        {
+            "sha": "f1ab66bdb9d1f3541f74a62fc26f51c9ad614f45",
+            "filename": "pebble/src/test/java/io/pebbletemplates/pebble/CoreFiltersTest.java",
+            "status": "modified",
+            "additions": 17,
+            "deletions": 1,
+            "changes": 18,
+            "blob_url": "https://github.com/PebbleTemplates/pebble/blob/bcde83cb6826d39758897f7379197c3fbed0c86e/pebble%2Fsrc%2Ftest%2Fjava%2Fio%2Fpebbletemplates%2Fpebble%2FCoreFiltersTest.java",
+            "raw_url": "https://github.com/PebbleTemplates/pebble/raw/bcde83cb6826d39758897f7379197c3fbed0c86e/pebble%2Fsrc%2Ftest%2Fjava%2Fio%2Fpebbletemplates%2Fpebble%2FCoreFiltersTest.java",
+            "contents_url": "https://api.github.com/repos/PebbleTemplates/pebble/contents/pebble%2Fsrc%2Ftest%2Fjava%2Fio%2Fpebbletemplates%2Fpebble%2FCoreFiltersTest.java?ref=bcde83cb6826d39758897f7379197c3fbed0c86e",
+            "patch": "@@ -12,7 +12,6 @@\n import io.pebbletemplates.pebble.extension.TestingExtension;\n import io.pebbletemplates.pebble.extension.core.*;\n import io.pebbletemplates.pebble.loader.StringLoader;\n-import io.pebbletemplates.pebble.extension.core.*;\n import io.pebbletemplates.pebble.template.PebbleTemplate;\n \n import org.junit.jupiter.api.Test;\n@@ -30,6 +29,7 @@\n import static java.util.Collections.emptyList;\n import static org.junit.jupiter.api.Assertions.assertEquals;\n import static org.junit.jupiter.api.Assertions.assertThrows;\n+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;\n \n class CoreFiltersTest {\n \n@@ -1309,6 +1309,22 @@ void testLengthFilterInTemplate() throws PebbleException, IOException {\n     assertEquals(\"4\", writer.toString());\n   }\n \n+  /**\n+   * Tests {@link ReplaceFilter} if it can handle a null input.\n+   */\n+  @Test\n+  void testReplaceFilterNullInput() throws PebbleException, IOException {\n+    PebbleEngine pebble = new PebbleEngine.Builder().loader(new StringLoader())\n+            .strictVariables(false).build();\n+\n+    PebbleTemplate template = pebble\n+            .getTemplate(\n+                    \"{{ null |replace({'%this%': foo, '%that%': \\\"bar\\\"}) }}\");\n+\n+    Writer writer = new StringWriter();\n+    assertDoesNotThrow(() -> template.evaluate(writer, new HashMap<>()));\n+  }\n+\n   /**\n    * Tests {@link ReplaceFilter} if the length filter is working within templates.\n    */"
+        }
+    ]
+}

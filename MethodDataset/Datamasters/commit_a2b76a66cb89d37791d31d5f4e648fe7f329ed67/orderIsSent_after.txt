@@ -1,0 +1,4 @@
+    public boolean orderIsSent(LocalDateTime currentTime) {
+        LocalDateTime cutoffTime = this.orderDateTime.plusMinutes(this.preparationTimeMinutes);
+        return currentTime.isAfter(cutoffTime);
+    }

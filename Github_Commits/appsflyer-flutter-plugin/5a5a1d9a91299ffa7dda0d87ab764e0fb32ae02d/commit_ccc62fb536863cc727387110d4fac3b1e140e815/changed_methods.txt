@@ -1,0 +1,2 @@
+initSdk(MethodCall call, MethodChannel result)
+onAttachedToActivity(ActivityPluginBinding binding)

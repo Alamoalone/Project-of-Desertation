@@ -1,0 +1,29 @@
+    protected void close(int w, int h, MRAIDImplementation caller) {
+        // Remove MRAID close button
+        ViewUtil.removeChildFromParent(close_button);
+        close_button = null;
+
+        if (caller.owner.isFullScreen) {
+            ViewUtil.removeChildFromParent(caller.owner);
+            if (caller.getDefaultContainer() != null) {
+                caller.getDefaultContainer().addView(caller.owner, 0);
+            }
+
+            if (caller.getFullscreenActivity() != null) {
+                caller.getFullscreenActivity().finish();
+            }
+
+            // Reset the context of MutableContext wrapper for banner expand and close case.
+            if (getMediaType().equals(MediaType.BANNER) && (caller.owner.getContext() instanceof MutableContextWrapper)) {
+                ((MutableContextWrapper) caller.owner.getContext()).setBaseContext(getContext());
+            }
+        }
+        // null these out for safety
+        mraidFullscreenContainer = null;
+        mraidFullscreenImplementation = null;
+        mraidFullscreenListener = null;
+
+        MRAIDChangeSize(w, h);
+        mraid_is_closing = true;
+        isMRAIDExpanded = false;
+    }

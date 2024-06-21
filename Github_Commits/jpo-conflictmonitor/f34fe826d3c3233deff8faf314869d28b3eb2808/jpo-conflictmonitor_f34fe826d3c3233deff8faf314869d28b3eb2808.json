@@ -1,0 +1,110 @@
+{
+    "sha": "f34fe826d3c3233deff8faf314869d28b3eb2808",
+    "node_id": "C_kwDOIRShudoAKGYzNGZlODI2ZDNjMzIzM2RlZmY4ZmFmMzE0ODY5ZDI4YjNlYjI4MDg",
+    "commit": {
+        "author": {
+            "name": "Ivan Yourshaw",
+            "email": "39739503+iyourshaw@users.noreply.github.com",
+            "date": "2023-03-13T22:07:16Z"
+        },
+        "committer": {
+            "name": "Ivan Yourshaw",
+            "email": "39739503+iyourshaw@users.noreply.github.com",
+            "date": "2023-03-13T22:07:16Z"
+        },
+        "message": "Fix null pointer exceptions in SpatTimeChangeDetailsState, with regression test",
+        "tree": {
+            "sha": "3acbeb54d768c52e522f071d7789cf7a17d403f7",
+            "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/git/trees/3acbeb54d768c52e522f071d7789cf7a17d403f7"
+        },
+        "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/git/commits/f34fe826d3c3233deff8faf314869d28b3eb2808",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/commits/f34fe826d3c3233deff8faf314869d28b3eb2808",
+    "html_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/commit/f34fe826d3c3233deff8faf314869d28b3eb2808",
+    "comments_url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/commits/f34fe826d3c3233deff8faf314869d28b3eb2808/comments",
+    "author": {
+        "login": "iyourshaw",
+        "id": 39739503,
+        "node_id": "MDQ6VXNlcjM5NzM5NTAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39739503?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iyourshaw",
+        "html_url": "https://github.com/iyourshaw",
+        "followers_url": "https://api.github.com/users/iyourshaw/followers",
+        "following_url": "https://api.github.com/users/iyourshaw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iyourshaw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iyourshaw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iyourshaw/subscriptions",
+        "organizations_url": "https://api.github.com/users/iyourshaw/orgs",
+        "repos_url": "https://api.github.com/users/iyourshaw/repos",
+        "events_url": "https://api.github.com/users/iyourshaw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iyourshaw/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "iyourshaw",
+        "id": 39739503,
+        "node_id": "MDQ6VXNlcjM5NzM5NTAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39739503?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iyourshaw",
+        "html_url": "https://github.com/iyourshaw",
+        "followers_url": "https://api.github.com/users/iyourshaw/followers",
+        "following_url": "https://api.github.com/users/iyourshaw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iyourshaw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iyourshaw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iyourshaw/subscriptions",
+        "organizations_url": "https://api.github.com/users/iyourshaw/orgs",
+        "repos_url": "https://api.github.com/users/iyourshaw/repos",
+        "events_url": "https://api.github.com/users/iyourshaw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iyourshaw/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f610f7444252ed83c6c8974a5814a733994124e6",
+            "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/commits/f610f7444252ed83c6c8974a5814a733994124e6",
+            "html_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/commit/f610f7444252ed83c6c8974a5814a733994124e6"
+        }
+    ],
+    "stats": {
+        "total": 120,
+        "additions": 115,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "b704d30357a2f7d90bdc354afc9e00bd487f6c24",
+            "filename": "jpo-conflictmonitor/src/main/java/us/dot/its/jpo/conflictmonitor/monitor/models/spat/SpatTimeChangeDetailState.java",
+            "status": "modified",
+            "additions": 20,
+            "deletions": 5,
+            "changes": 25,
+            "blob_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/blob/f34fe826d3c3233deff8faf314869d28b3eb2808/jpo-conflictmonitor%2Fsrc%2Fmain%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailState.java",
+            "raw_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/raw/f34fe826d3c3233deff8faf314869d28b3eb2808/jpo-conflictmonitor%2Fsrc%2Fmain%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailState.java",
+            "contents_url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/contents/jpo-conflictmonitor%2Fsrc%2Fmain%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailState.java?ref=f34fe826d3c3233deff8faf314869d28b3eb2808",
+            "patch": "@@ -4,10 +4,14 @@\n \n import com.fasterxml.jackson.annotation.JsonIgnore;\n \n+import lombok.EqualsAndHashCode;\n+import lombok.ToString;\n import us.dot.its.jpo.geojsonconverter.pojos.spat.MovementEvent;\n import us.dot.its.jpo.geojsonconverter.pojos.spat.MovementState;\n import us.dot.its.jpo.ode.plugin.j2735.J2735MovementPhaseState;\n \n+@EqualsAndHashCode\n+@ToString\n public class SpatTimeChangeDetailState {\n     private long minEndTime;\n     private long maxEndTime;\n@@ -17,13 +21,24 @@ public class SpatTimeChangeDetailState {\n     @JsonIgnore\n     public static SpatTimeChangeDetailState fromMovementState(MovementState state){\n         SpatTimeChangeDetailState newState = new SpatTimeChangeDetailState();\n-        newState.setSignalGroup(state.getSignalGroup());\n+        if (state.getSignalGroup() != null) {\n+            newState.setSignalGroup(state.getSignalGroup());\n+        }\n \n         List<MovementEvent> events =  state.getStateTimeSpeed();\n-        if(events.size() > 0){\n-            newState.setMaxEndTime(events.get(0).getTiming().getMaxEndTime().toInstant().toEpochMilli());\n-            newState.setMinEndTime(events.get(0).getTiming().getMinEndTime().toInstant().toEpochMilli());\n-            newState.setEventState(events.get(0).getEventState());\n+\n+        if(events != null && events.size() > 0){\n+            var event = events.get(0);\n+            if (event.getTiming() != null) {\n+                var timing = event.getTiming();\n+                if (timing.getMaxEndTime() != null) {\n+                    newState.setMaxEndTime(timing.getMaxEndTime().toInstant().toEpochMilli());\n+                }\n+                if (timing.getMinEndTime() != null) {\n+                    newState.setMinEndTime(timing.getMinEndTime().toInstant().toEpochMilli());\n+                }\n+            }\n+            newState.setEventState(event.getEventState());\n         }\n         \n         return newState;"
+        },
+        {
+            "sha": "b36763942a0e62f6d932e6ac779813ba1ecdb14e",
+            "filename": "jpo-conflictmonitor/src/test/java/us/dot/its/jpo/conflictmonitor/monitor/models/spat/SpatTimeChangeDetailStateTest.java",
+            "status": "added",
+            "additions": 95,
+            "deletions": 0,
+            "changes": 95,
+            "blob_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/blob/f34fe826d3c3233deff8faf314869d28b3eb2808/jpo-conflictmonitor%2Fsrc%2Ftest%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailStateTest.java",
+            "raw_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/raw/f34fe826d3c3233deff8faf314869d28b3eb2808/jpo-conflictmonitor%2Fsrc%2Ftest%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailStateTest.java",
+            "contents_url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/contents/jpo-conflictmonitor%2Fsrc%2Ftest%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailStateTest.java?ref=f34fe826d3c3233deff8faf314869d28b3eb2808",
+            "patch": "@@ -0,0 +1,95 @@\n+package us.dot.its.jpo.conflictmonitor.monitor.models.spat;\n+\n+import java.time.ZonedDateTime;\n+import java.util.ArrayList;\n+import java.util.Collection;\n+import java.util.Collections;\n+\n+import org.apache.commons.lang3.tuple.Pair;\n+import org.junit.Test;\n+import org.junit.runner.RunWith;\n+import org.junit.runners.Parameterized;\n+import org.junit.runners.Parameterized.Parameters;\n+\n+import us.dot.its.jpo.geojsonconverter.pojos.spat.MovementEvent;\n+import us.dot.its.jpo.geojsonconverter.pojos.spat.MovementState;\n+import us.dot.its.jpo.geojsonconverter.pojos.spat.TimingChangeDetails;\n+import us.dot.its.jpo.ode.plugin.j2735.J2735MovementEvent;\n+import us.dot.its.jpo.ode.plugin.j2735.J2735MovementPhaseState;\n+\n+import static org.hamcrest.MatcherAssert.assertThat;\n+import static org.hamcrest.Matchers.*;\n+\n+/**\n+ * Unit tests for {@link SpatTimeChangeDetailState}\n+ */\n+@RunWith(Parameterized.class)\n+public class SpatTimeChangeDetailStateTest {\n+\n+    MovementState inputState;\n+    SpatTimeChangeDetailState expectedResult;\n+    final static ZonedDateTime MAX_TIME = ZonedDateTime.parse(\"2023-03-13T00:00:30.999Z\");\n+    final static ZonedDateTime MIN_TIME = ZonedDateTime.parse(\"2023-03-13T00:00:15.555Z\");\n+    final static J2735MovementPhaseState EVENT_STATE = J2735MovementPhaseState.PERMISSIVE_MOVEMENT_ALLOWED;\n+    final static Integer SIGNAL_GROUP = 10;\n+\n+    public SpatTimeChangeDetailStateTest(MovementState inputState, SpatTimeChangeDetailState expectedResult) {\n+        this.inputState = inputState;\n+        this.expectedResult = expectedResult;\n+    }\n+\n+    @Parameters\n+    public static Collection<Object[]> getParams() {\n+        var params = new ArrayList<Object[]>();\n+        params.add(state(null, null, null, null));\n+        params.add(state(MAX_TIME, null, null, SIGNAL_GROUP));\n+        params.add(state(null, MIN_TIME, null, SIGNAL_GROUP));\n+        params.add(state(MAX_TIME, MIN_TIME, null, SIGNAL_GROUP));\n+        params.add(state(null, null, EVENT_STATE, SIGNAL_GROUP));\n+        params.add(state(MAX_TIME, MIN_TIME, EVENT_STATE, SIGNAL_GROUP));\n+        return params;\n+    }\n+\n+    public static Object[] state(ZonedDateTime maxTime, ZonedDateTime minTime,\n+            J2735MovementPhaseState eventState, Integer signalGroup) {\n+\n+        // Construct MovementState\n+        MovementState state = new MovementState();\n+        state.setSignalGroup(signalGroup);\n+        MovementEvent event = new MovementEvent();\n+        if (maxTime != null || minTime != null) {\n+            TimingChangeDetails timing = new TimingChangeDetails();\n+            timing.setMaxEndTime(maxTime);\n+            timing.setMinEndTime(minTime);\n+            event.setTiming(timing);\n+        }\n+        event.setEventState(eventState);\n+        state.setStateTimeSpeed(Collections.singletonList(event));\n+\n+        // Consturct expected SpatTimeChangeDetailState\n+        SpatTimeChangeDetailState expectedResult = new SpatTimeChangeDetailState();\n+        if (signalGroup != null) {\n+            expectedResult.setSignalGroup(signalGroup.intValue());\n+        }\n+        if (maxTime != null) {\n+            expectedResult.setMaxEndTime(maxTime.toInstant().toEpochMilli());\n+        }\n+        if (minTime != null) {\n+            expectedResult.setMinEndTime(minTime.toInstant().toEpochMilli());\n+        }\n+        expectedResult.setEventState(eventState);\n+        \n+        return new Object[] { state, expectedResult};\n+    }\n+\n+   \n+    \n+    /**\n+     * Test that {@link SpatTimeChangeDetailState#fromMovementState(MovementState)} can deal with nulls\n+     */\n+    @Test\n+    public void testFromMovementState() {\n+        SpatTimeChangeDetailState result = SpatTimeChangeDetailState.fromMovementState(inputState);\n+        assertThat(result, equalTo(expectedResult));\n+    }\n+}"
+        }
+    ]
+}

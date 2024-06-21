@@ -1,0 +1,98 @@
+{
+    "sha": "0351f6d62ebf7d5a942bf5f2a26097714242098f",
+    "node_id": "C_kwDOAnYEBNoAKDAzNTFmNmQ2MmViZjdkNWE5NDJiZjVmMmEyNjA5NzcxNDI0MjA5OGY",
+    "commit": {
+        "author": {
+            "name": "Ólafur Páll Geirsson",
+            "email": "olafurpg@gmail.com",
+            "date": "2023-08-15T13:28:33Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-08-15T13:28:33Z"
+        },
+        "message": "JetBrains: prevent null pointer exception (#55869)\n\nFixes https://github.com/sourcegraph/sourcegraph/issues/55865",
+        "tree": {
+            "sha": "7fefc06554d9401652e20eb799ae12d620a44c4d",
+            "url": "https://api.github.com/repos/sourcegraph/sourcegraph/git/trees/7fefc06554d9401652e20eb799ae12d620a44c4d"
+        },
+        "url": "https://api.github.com/repos/sourcegraph/sourcegraph/git/commits/0351f6d62ebf7d5a942bf5f2a26097714242098f",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk232BCRBK7hj4Ov3rIwAApQoIAAdqSe2XnrnbRBpcHH5I0AGD\neMYfIgR5QfBYYmeWtQxMhZlqkKAMz6PUF4H62mn4eBePFOH1grEC0tHCCJ0sRxmq\nMCo9piSb+x0ket3iMQpFQ7Yl4KDuFsNmgnvsGUa0zB/K1N2l4YFpu5puEKFYy95P\nuUybN8YpyFSG26Y5HU61UBXx7YnHIlUo57mRMVm2ubu4/CGWBpLlFEC0Puz57Xtm\n8DvL9h996aOHBcVHY8GVLC0wZuvjTWQmx93TyI4/x4fkHvIW/6pD+lvQGByRLy7w\nKa4Pc4PRtr3sJzqFoDbYAyGIan4pzJLFVU+TOUuE7GrZ5wY09sJfpDVb4EZzWAI=\n=Jwcs\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 7fefc06554d9401652e20eb799ae12d620a44c4d\nparent c58a05cc97387d98c48aa16fe18a49d7f638b7be\nauthor Ólafur Páll Geirsson <olafurpg@gmail.com> 1692106113 +0200\ncommitter GitHub <noreply@github.com> 1692106113 +0200\n\nJetBrains: prevent null pointer exception (#55869)\n\nFixes https://github.com/sourcegraph/sourcegraph/issues/55865"
+        }
+    },
+    "url": "https://api.github.com/repos/sourcegraph/sourcegraph/commits/0351f6d62ebf7d5a942bf5f2a26097714242098f",
+    "html_url": "https://github.com/sourcegraph/sourcegraph/commit/0351f6d62ebf7d5a942bf5f2a26097714242098f",
+    "comments_url": "https://api.github.com/repos/sourcegraph/sourcegraph/commits/0351f6d62ebf7d5a942bf5f2a26097714242098f/comments",
+    "author": {
+        "login": "olafurpg",
+        "id": 1408093,
+        "node_id": "MDQ6VXNlcjE0MDgwOTM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1408093?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/olafurpg",
+        "html_url": "https://github.com/olafurpg",
+        "followers_url": "https://api.github.com/users/olafurpg/followers",
+        "following_url": "https://api.github.com/users/olafurpg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/olafurpg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/olafurpg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/olafurpg/subscriptions",
+        "organizations_url": "https://api.github.com/users/olafurpg/orgs",
+        "repos_url": "https://api.github.com/users/olafurpg/repos",
+        "events_url": "https://api.github.com/users/olafurpg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/olafurpg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c58a05cc97387d98c48aa16fe18a49d7f638b7be",
+            "url": "https://api.github.com/repos/sourcegraph/sourcegraph/commits/c58a05cc97387d98c48aa16fe18a49d7f638b7be",
+            "html_url": "https://github.com/sourcegraph/sourcegraph/commit/c58a05cc97387d98c48aa16fe18a49d7f638b7be"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 4,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "bdf488f9b2fd5811ba2cd73f947bd4ac7e9ce4dd",
+            "filename": "client/jetbrains/src/main/java/com/sourcegraph/config/SettingsConfigurable.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 4,
+            "changes": 8,
+            "blob_url": "https://github.com/sourcegraph/sourcegraph/blob/0351f6d62ebf7d5a942bf5f2a26097714242098f/client%2Fjetbrains%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsourcegraph%2Fconfig%2FSettingsConfigurable.java",
+            "raw_url": "https://github.com/sourcegraph/sourcegraph/raw/0351f6d62ebf7d5a942bf5f2a26097714242098f/client%2Fjetbrains%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsourcegraph%2Fconfig%2FSettingsConfigurable.java",
+            "contents_url": "https://api.github.com/repos/sourcegraph/sourcegraph/contents/client%2Fjetbrains%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsourcegraph%2Fconfig%2FSettingsConfigurable.java?ref=0351f6d62ebf7d5a942bf5f2a26097714242098f",
+            "patch": "@@ -13,11 +13,12 @@\n \n /** Provides controller functionality for application settings. */\n public class SettingsConfigurable implements Configurable {\n-  private final Project project;\n-  private SettingsComponent mySettingsComponent;\n+  private final @NotNull Project project;\n+  private final @NotNull SettingsComponent mySettingsComponent;\n \n   public SettingsConfigurable(@NotNull Project project) {\n     this.project = project;\n+    mySettingsComponent = new SettingsComponent(project);\n   }\n \n   @Nls(capitalization = Nls.Capitalization.Title)\n@@ -34,7 +35,6 @@ public JComponent getPreferredFocusedComponent() {\n   @Nullable\n   @Override\n   public JComponent createComponent() {\n-    mySettingsComponent = new SettingsComponent(project);\n     Disposer.register(project, mySettingsComponent);\n     return mySettingsComponent.getPanel();\n   }\n@@ -179,6 +179,6 @@ public void reset() {\n \n   @Override\n   public void disposeUIResources() {\n-    mySettingsComponent = null;\n+    mySettingsComponent.dispose();\n   }\n }"
+        }
+    ]
+}

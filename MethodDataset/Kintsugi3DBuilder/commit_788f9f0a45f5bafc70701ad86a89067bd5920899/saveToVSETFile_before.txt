@@ -1,0 +1,7 @@
+    public void saveToVSETFile(File vsetFile) throws IOException
+    {
+        try (OutputStream stream = new FileOutputStream(vsetFile))
+        {
+            ibrInstance.getActiveViewSet().writeVSETFileToStream(stream, vsetFile.getParentFile().toPath());
+        }
+    }

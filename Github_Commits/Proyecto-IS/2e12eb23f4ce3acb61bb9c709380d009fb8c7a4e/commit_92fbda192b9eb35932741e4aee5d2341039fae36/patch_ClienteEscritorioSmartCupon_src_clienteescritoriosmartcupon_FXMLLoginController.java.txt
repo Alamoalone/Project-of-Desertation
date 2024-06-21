@@ -1,0 +1,9 @@
+@@ -104,7 +104,7 @@ private void irPantallaPrincipal(Usuario usuarioSesion) {
+ 
+             FXMLHomeController controladorHome = loadVista.getController();
+             controladorHome.inicializarHome(usuarioSesion);
+-
++            
+             Scene scene = new Scene(vista);
+             stagePrincipal.setTitle("Inicio");
+             stagePrincipal.setScene(scene);

@@ -1,0 +1,24 @@
+    private static void feedInherits(Forwards _forwards) {
+        for (FwdRootBlockMembers e: _forwards.getMembers()) {
+            RootBlock i = e.getRootBlock();
+            CustList<AnaFormattedRootBlock> genericClasses_ = i.getAllGenericClassesInfo();
+            ExecFormattedRootBlock formattedType_ = null;
+            Members mem_ = e.getMembers();
+            if (i instanceof UniqueRootedBlock && genericClasses_.size() > 1) {
+                AnaFormattedRootBlock anaFormattedRootBlock_ = genericClasses_.get(1);
+                mem_.getRootBlock().setUniqueType(FetchMemberUtil.fetchType(anaFormattedRootBlock_.getRootBlock().getNumberAll(), _forwards));
+                formattedType_ = FetchMemberUtil.fwdFormatType(anaFormattedRootBlock_, _forwards);
+            }
+            ConstructorBlock emptyCtor_ = i.getEmptyCtor();
+            ExecNamedFunctionBlock fct_ = null;
+            if (emptyCtor_ != null) {
+                fct_ = FetchMemberUtil.fetchCtorFunction(mem_, emptyCtor_.getCtorNumber());
+            }
+            mem_.getRootBlock().emptyCtorPair(fct_);
+            mem_.getRootBlock().setFormattedSuperClass(formattedType_);
+        }
+        for (FwdRootBlockMembers e: _forwards.getMembers()) {
+            CustList<AnaFormattedRootBlock> allGenericSuperTypes_ = e.getRootBlock().getAllGenericSuperTypesInfo();
+            e.getMembers().getRootBlock().getAllGenericSuperTypes().addAllElts(FetchMemberUtil.fwdFormatTypes(allGenericSuperTypes_,_forwards));
+        }
+    }

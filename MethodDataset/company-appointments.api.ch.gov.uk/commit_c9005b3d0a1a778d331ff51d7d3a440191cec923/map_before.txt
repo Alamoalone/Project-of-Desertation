@@ -1,0 +1,35 @@
+    public OfficerSummary map(CompanyAppointmentDocument companyAppointment, boolean registerView) {
+        LOGGER.debug("Mapping data for appointment: " + companyAppointment.getId(), DataMapHolder.getLogMap());
+
+        DeltaOfficerData data = Optional.ofNullable(companyAppointment.getData())
+                .orElseThrow(() -> new IllegalArgumentException("Missing data element"));
+
+        boolean isSecretary = RoleHelper.isSecretary(companyAppointment);
+
+        LocalDate appointedOn = extractDate(data.getAppointedOn());
+        LocalDate appointedBefore = extractDate(data.getAppointedBefore());
+        LocalDate resignedOn = extractDate(data.getResignedOn());
+
+        OfficerSummary result = new OfficerSummary()
+                .appointedOn(appointedOn)
+                .appointedBefore(appointedBefore)
+                .resignedOn(resignedOn)
+                .countryOfResidence(isSecretary ? null : data.getCountryOfResidence())
+                .dateOfBirth(isSecretary ? null
+                        : mapDateOfBirth(companyAppointment.getSensitiveData().getDateOfBirth(), registerView))
+                .links(mapLinks(data.getLinks()))
+                .nationality(data.getNationality())
+                .occupation(data.getOccupation())
+                .officerRole(OfficerRoleEnum.fromValue(data.getOfficerRole()))
+                .address(mapAddress(data.getServiceAddress()))
+                .identification(mapCorporateInfo(data.getIdentification()))
+                .formerNames(mapFormerNames(data.getFormerNames()))
+                .name(mapOfficerName(data))
+                .responsibilities(data.getResponsibilities())
+                .principalOfficeAddress(mapPrincipalOfficeAddress(data.getPrincipalOfficeAddress()))
+                .contactDetails(mapContactDetails(data.getContactDetails()))
+                .isPre1992Appointment(data.getPre1992Appointment())
+                .personNumber(data.getPersonNumber());
+        LOGGER.debug("Mapped data for appointment: " + companyAppointment.getId(), DataMapHolder.getLogMap());
+        return result;
+    }

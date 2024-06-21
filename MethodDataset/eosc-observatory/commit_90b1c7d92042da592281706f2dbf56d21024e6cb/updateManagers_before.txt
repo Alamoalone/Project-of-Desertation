@@ -1,0 +1,23 @@
+    public Stakeholder updateManagers(String stakeholderId, Set<String> userIds) {
+        Stakeholder stakeholder = get(stakeholderId);
+        Set<String> previousManagers = stakeholder.getManagers();
+        for (String manager : userIds) {
+            previousManagers.remove(manager);
+        }
+
+        permissionService.removeAll(previousManagers, Groups.STAKEHOLDER_MANAGER.getKey());
+        stakeholder.setManagers(userIds);
+
+
+        // read/manage/publish access for all resources
+        List<SurveyAnswer> answers = surveyService.getAllByStakeholder(stakeholderId);
+        List<String> allResourceIds = getSurveyAnswerIds(answers);
+        addManagerPermissions(userIds, allResourceIds);
+
+        // all manager permissions for active resource
+        answers = surveyService.getActive(stakeholderId);
+        List<String> resourceIds = getSurveyAnswerIds(answers);
+        addManagerFullPermissions(userIds, resourceIds);
+
+        return update(stakeholderId, stakeholder);
+    }

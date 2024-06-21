@@ -1,0 +1,3 @@
+    public int findCardGivenName (String name) {
+        return Collections.binarySearch(cards, new Card(name));
+    }

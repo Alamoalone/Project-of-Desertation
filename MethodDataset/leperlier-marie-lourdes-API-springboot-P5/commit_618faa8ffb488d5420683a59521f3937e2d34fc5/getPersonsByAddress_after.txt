@@ -1,0 +1,15 @@
+	public List<Person> getPersonsByAddress(String address) throws NullPointerException  {
+		List<Person> personsFoundByAddress = new ArrayList<>();
+		Iterator<Person> itrPersons = persons.listIterator();
+		while (itrPersons.hasNext()) {
+			Person itrPerson = itrPersons.next();
+			if (itrPerson.getAddress().equals(address)) {
+				personsFoundByAddress.add(itrPerson);
+			}		
+		}
+		if (personsFoundByAddress .isEmpty()) {
+			throw new NullPointerException("person not found with address");
+		}
+		System.out.println("personsFoundByAddress" + personsFoundByAddress);
+		return personsFoundByAddress;
+	}

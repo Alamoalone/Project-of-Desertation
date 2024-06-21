@@ -1,0 +1,8 @@
+    public ResponseEntity<?> getAllNotes() {
+        Loggers.info("ALL NOTE FETCHED");
+        List<Notes> notesList = notesService.notesList();
+        if(notesList.isEmpty()){
+            return ResponseEntity.status(204).header("msg", "NOTES LIST IS EMPTY").build();
+        }
+        return ResponseEntity.ok(notesList);
+    }

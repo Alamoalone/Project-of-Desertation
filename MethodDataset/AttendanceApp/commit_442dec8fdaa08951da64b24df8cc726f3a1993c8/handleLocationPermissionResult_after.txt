@@ -1,0 +1,9 @@
+    private void handleLocationPermissionResult(int[] grantResults) {
+        if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            // Location permission granted, proceed with location-related operations
+            Log.i("INFO", "Location permission granted, starting location updates");
+            startListening(); // Replace with your location-related operation
+        } else {
+            Toast.makeText(this, "Location permission denied", Toast.LENGTH_SHORT).show();
+        }
+    }

@@ -1,0 +1,17 @@
+@@ -208,7 +208,8 @@ public void onReceive(Context context, Intent intent) {
+             case CommonStatusCodes.SUCCESS:
+               final String message = extra.getString(SmsRetriever.EXTRA_SMS_MESSAGE);
+               //if (!StringUtils.hasContent(message)) return;
+-
++              if(message == null) return;
++              
+               Log.d(TAG, message);
+ 
+               data = new JSONObject();
+@@ -231,4 +232,4 @@ public void onReceive(Context context, Intent intent) {
+       }
+     };
+   };
+-}
+\ No newline at end of file
++}

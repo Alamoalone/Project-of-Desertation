@@ -1,0 +1,7 @@
+	public static com.google.protobuf.Timestamp getTimestampFromDate(Timestamp value) {
+		if (value == null) {
+			return null;
+		}
+		return fromMillis(value.getTime());
+	}
+

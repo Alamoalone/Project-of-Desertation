@@ -1,0 +1,98 @@
+{
+    "sha": "c3f37058b402906d63b0721777be8565b883cb57",
+    "node_id": "C_kwDOKecMZ9oAKGMzZjM3MDU4YjQwMjkwNmQ2M2IwNzIxNzc3YmU4NTY1Yjg4M2NiNTc",
+    "commit": {
+        "author": {
+            "name": "unit74",
+            "email": "u__nit@naver.com",
+            "date": "2023-09-26T00:21:51Z"
+        },
+        "committer": {
+            "name": "unit74",
+            "email": "u__nit@naver.com",
+            "date": "2023-09-26T00:21:51Z"
+        },
+        "message": "🐛 fix: Null pointer exception check",
+        "tree": {
+            "sha": "356b2f2085da8e8abddef27d7212e834c1bf770b",
+            "url": "https://api.github.com/repos/unit74/whatisthis/git/trees/356b2f2085da8e8abddef27d7212e834c1bf770b"
+        },
+        "url": "https://api.github.com/repos/unit74/whatisthis/git/commits/c3f37058b402906d63b0721777be8565b883cb57",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/unit74/whatisthis/commits/c3f37058b402906d63b0721777be8565b883cb57",
+    "html_url": "https://github.com/unit74/whatisthis/commit/c3f37058b402906d63b0721777be8565b883cb57",
+    "comments_url": "https://api.github.com/repos/unit74/whatisthis/commits/c3f37058b402906d63b0721777be8565b883cb57/comments",
+    "author": {
+        "login": "unit74",
+        "id": 107717206,
+        "node_id": "U_kgDOBmuiVg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107717206?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/unit74",
+        "html_url": "https://github.com/unit74",
+        "followers_url": "https://api.github.com/users/unit74/followers",
+        "following_url": "https://api.github.com/users/unit74/following{/other_user}",
+        "gists_url": "https://api.github.com/users/unit74/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/unit74/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/unit74/subscriptions",
+        "organizations_url": "https://api.github.com/users/unit74/orgs",
+        "repos_url": "https://api.github.com/users/unit74/repos",
+        "events_url": "https://api.github.com/users/unit74/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/unit74/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "unit74",
+        "id": 107717206,
+        "node_id": "U_kgDOBmuiVg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107717206?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/unit74",
+        "html_url": "https://github.com/unit74",
+        "followers_url": "https://api.github.com/users/unit74/followers",
+        "following_url": "https://api.github.com/users/unit74/following{/other_user}",
+        "gists_url": "https://api.github.com/users/unit74/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/unit74/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/unit74/subscriptions",
+        "organizations_url": "https://api.github.com/users/unit74/orgs",
+        "repos_url": "https://api.github.com/users/unit74/repos",
+        "events_url": "https://api.github.com/users/unit74/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/unit74/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "381532fca86929a4e34265d642f298ff729b5e2d",
+            "url": "https://api.github.com/repos/unit74/whatisthis/commits/381532fca86929a4e34265d642f298ff729b5e2d",
+            "html_url": "https://github.com/unit74/whatisthis/commit/381532fca86929a4e34265d642f298ff729b5e2d"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 6,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "65c9a8a4306b21437572bdb22f943162beb38e96",
+            "filename": "backend/whatisthis/src/main/java/com/mo/whatisthis/apis/request/responses/RequestDetailRequests.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 2,
+            "changes": 8,
+            "blob_url": "https://github.com/unit74/whatisthis/blob/c3f37058b402906d63b0721777be8565b883cb57/backend%2Fwhatisthis%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmo%2Fwhatisthis%2Fapis%2Frequest%2Fresponses%2FRequestDetailRequests.java",
+            "raw_url": "https://github.com/unit74/whatisthis/raw/c3f37058b402906d63b0721777be8565b883cb57/backend%2Fwhatisthis%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmo%2Fwhatisthis%2Fapis%2Frequest%2Fresponses%2FRequestDetailRequests.java",
+            "contents_url": "https://api.github.com/repos/unit74/whatisthis/contents/backend%2Fwhatisthis%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmo%2Fwhatisthis%2Fapis%2Frequest%2Fresponses%2FRequestDetailRequests.java?ref=c3f37058b402906d63b0721777be8565b883cb57",
+            "patch": "@@ -44,8 +44,12 @@ public RequestDetailRequests(RequestEntity requestEntity) {\n         this.requestedAt = requestEntity.getRequestedAt();\n         this.requestContent = requestEntity.getRequestContent();\n         this.warrantUrl = requestEntity.getWarrantUrl();\n-        this.employeeName = requestEntity.getEmployee()\n-                                         .getName();\n+\n+        if (requestEntity.getEmployee() != null) {\n+            this.employeeName = requestEntity.getEmployee()\n+                                             .getName();\n+        }\n+        \n         this.inspectionDate = requestEntity.getInspectionDate();\n     }\n "
+        }
+    ]
+}

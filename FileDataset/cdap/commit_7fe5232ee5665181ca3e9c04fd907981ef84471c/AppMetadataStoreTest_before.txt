@@ -1,0 +1,123 @@
+  public void testConcurrentCreateAppFirstVersion() throws Exception {
+    String appName = "application1";
+    ArtifactId artifactId = NamespaceId.DEFAULT.artifact("testArtifact", "1.0").toApiArtifactId();
+    ApplicationReference appRef = new ApplicationReference(NamespaceId.DEFAULT, appName);
+    
+    // Concurrently deploy different fist version of the same application
+    int numThreads = 10;
+    AtomicInteger idGenerator = new AtomicInteger();
+    runConcurrentOperation("concurrent-first-deploy-application", numThreads, () ->
+      TransactionRunners.run(transactionRunner, context -> {
+        AppMetadataStore metaStore = AppMetadataStore.create(context);
+        int id = idGenerator.getAndIncrement();
+        ApplicationId appId = appRef.app(appName + "_version_" + id);
+        ApplicationSpecification spec = createDummyAppSpec(appId.getApplication(), appId.getVersion(), artifactId);
+        ApplicationMeta meta = new ApplicationMeta(spec.getName(), spec,
+                                                   new ChangeDetail(null, null, null,
+                                                                    creationTimeMillis + id));
+        metaStore.createApplicationVersion(appId, meta);
+      })
+    );
+
+    // Verify latest version
+    AtomicInteger latestVersionCount = new AtomicInteger();
+    AtomicInteger allVersionsCount = new AtomicInteger();
+    AtomicInteger appEditNumber = new AtomicInteger();
+    TransactionRunners.run(transactionRunner, context -> {
+      AppMetadataStore metaStore = AppMetadataStore.create(context);
+      List<ApplicationMeta> allVersions = new ArrayList<>();
+      metaStore.scanApplications(
+        ScanApplicationsRequest.builder().setApplicationReference(appRef).build(),
+        entry -> {
+          allVersions.add(entry.getValue());
+          return true;
+        });
+
+      List<String> latestVersions = allVersions
+        .stream()
+        .filter(version -> {
+          Assert.assertNotNull(version.getChange());
+          Assert.assertNotNull(version.getChange().getLatest());
+          return version.getChange().getLatest().equals(true);
+        })
+        .map(version -> version.getSpec().getAppVersion())
+        .collect(Collectors.toList());
+      allVersionsCount.set(allVersions.size());
+      latestVersionCount.set(latestVersions.size());
+      appEditNumber.set(metaStore.getApplicationEditNumber(appRef));
+    });
+    
+    // There can only be one latest version
+    Assert.assertEquals(1, latestVersionCount.get());
+    Assert.assertEquals(numThreads, allVersionsCount.get());
+    Assert.assertEquals(numThreads, appEditNumber.get());
+  }
+
+  public void testConcurrentCreateAppAfterTheFirstVersion() throws Exception {
+    String appName = "application1";
+    ArtifactId artifactId = NamespaceId.DEFAULT.artifact("testArtifact", "1.0").toApiArtifactId();
+    ApplicationReference appRef = new ApplicationReference(NamespaceId.DEFAULT, appName);
+
+    AtomicInteger idGenerator = new AtomicInteger();
+    // Deploy the first version
+    TransactionRunners.run(transactionRunner, context -> {
+      AppMetadataStore metaStore = AppMetadataStore.create(context);
+      int id = idGenerator.getAndIncrement();
+      ApplicationId appId = appRef.app(appName + "_version_" + id);
+      ApplicationSpecification spec = createDummyAppSpec(appId.getApplication(), appId.getVersion(), artifactId);
+      ApplicationMeta meta = new ApplicationMeta(spec.getName(), spec,
+                                                 new ChangeDetail(null, null, null,
+                                                                  creationTimeMillis + id));
+      metaStore.createApplicationVersion(appId, meta);
+    });
+
+    // Concurrently deploy different versions of the same application
+    int numThreads = 10;
+    runConcurrentOperation("concurrent-second-deploy-application", numThreads, () ->
+      TransactionRunners.run(transactionRunner, context -> {
+        AppMetadataStore metaStore = AppMetadataStore.create(context);
+        int id = idGenerator.getAndIncrement();
+        ApplicationId appId = appRef.app(appName + "_version_" + id);
+        ApplicationSpecification spec = createDummyAppSpec(appId.getApplication(), appId.getVersion(), artifactId);
+        ApplicationMeta meta = new ApplicationMeta(spec.getName(), spec,
+                                                   new ChangeDetail(null, null, null,
+                                                                    creationTimeMillis + id));
+        metaStore.createApplicationVersion(appId, meta);
+      })
+    );
+
+    // Verify latest version
+    AtomicInteger latestVersionCount = new AtomicInteger();
+    AtomicInteger allVersionsCount = new AtomicInteger();
+    AtomicInteger appEditNumber = new AtomicInteger();
+    TransactionRunners.run(transactionRunner, context -> {
+      AppMetadataStore metaStore = AppMetadataStore.create(context);
+      List<ApplicationMeta> allVersions = new ArrayList<>();
+      metaStore.scanApplications(
+        ScanApplicationsRequest.builder().setApplicationReference(appRef).build(),
+        entry -> {
+          allVersions.add(entry.getValue());
+          return true;
+        });
+      List<String> latestVersions = allVersions
+        .stream()
+        .filter(version -> {
+          Assert.assertNotNull(version.getChange());
+          Assert.assertNotNull(version.getChange().getLatest());
+          return version.getChange().getLatest().equals(true);
+        })
+        .map(version -> version.getSpec().getAppVersion())
+        .collect(Collectors.toList());
+      allVersionsCount.set(allVersions.size());
+      latestVersionCount.set(latestVersions.size());
+      appEditNumber.set(metaStore.getApplicationEditNumber(appRef));
+    });
+
+    // There can only be one latest version
+    Assert.assertEquals(1, latestVersionCount.get());
+    Assert.assertEquals(1 + numThreads, allVersionsCount.get());
+    Assert.assertEquals(1 + numThreads, appEditNumber.get());
+  }
+
+
+

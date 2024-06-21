@@ -1,0 +1,2 @@
+createAndConnectComponent(CircuitSimulation circuitSimulation, TraceLoader traceLoader, TraceView traceView)
+createAndConnectComponent(SubcircuitEditor subcircuitEditor, CircuitSimulation circuitSimulation, TraceLoader traceLoader, TraceView traceView)

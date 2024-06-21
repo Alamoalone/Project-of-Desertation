@@ -1,0 +1,16 @@
+  public void testUpdateChangedApplication() throws ConflictException {
+    ApplicationId id = new ApplicationId("account1", "application1");
+    ApplicationMeta appMeta = new ApplicationMeta("application1", Specifications.from(new FooApp()),
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addLatestApplication(id, appMeta);
+    // update
+    ApplicationMeta appMetaUpdate = new ApplicationMeta("application1", Specifications.from(new ChangedFooApp()),
+                                                        new ChangeDetail(null, null, null,
+                                                                         System.currentTimeMillis()));
+    store.addLatestApplication(id, appMetaUpdate);
+
+    ApplicationSpecification spec = store.getApplication(id);
+    Assert.assertNotNull(spec);
+    Assert.assertEquals(FooMapReduceJob.class.getName(), spec.getMapReduce().get("mrJob3").getClassName());
+  }

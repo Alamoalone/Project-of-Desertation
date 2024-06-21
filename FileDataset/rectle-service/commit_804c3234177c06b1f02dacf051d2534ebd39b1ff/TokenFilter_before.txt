@@ -1,0 +1,12 @@
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        try {
+            verifyToken(request.getHeader(HttpHeaders.AUTHORIZATION));
+            UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = getUserAuthentication(request);
+            SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+            filterChain.doFilter(request, response);
+        } catch (TokenVerifier.VerificationException e) {
+            log.warn("There was a problem with token verification", e);
+            throw new RuntimeException(e);
+        }
+    }
+

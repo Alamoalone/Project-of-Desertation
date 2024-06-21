@@ -1,0 +1,98 @@
+{
+    "sha": "462aa248973b2668deb41fb1183f12f56daf4aa6",
+    "node_id": "C_kwDODF4qTtoAKDQ2MmFhMjQ4OTczYjI2NjhkZWI0MWZiMTE4M2YxMmY1NmRhZjRhYTY",
+    "commit": {
+        "author": {
+            "name": "Brijesh",
+            "email": "brijesh@nectechnologies.in",
+            "date": "2022-12-24T07:18:04Z"
+        },
+        "committer": {
+            "name": "Brijesh",
+            "email": "brijesh@nectechnologies.in",
+            "date": "2022-12-24T07:18:04Z"
+        },
+        "message": "parentMap null pointer exception fix",
+        "tree": {
+            "sha": "4b84729bdc78bb9802335444954fe32a8c913498",
+            "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/git/trees/4b84729bdc78bb9802335444954fe32a8c913498"
+        },
+        "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/git/commits/462aa248973b2668deb41fb1183f12f56daf4aa6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/commits/462aa248973b2668deb41fb1183f12f56daf4aa6",
+    "html_url": "https://github.com/ScorpioBroker/ScorpioBroker/commit/462aa248973b2668deb41fb1183f12f56daf4aa6",
+    "comments_url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/commits/462aa248973b2668deb41fb1183f12f56daf4aa6/comments",
+    "author": {
+        "login": "brijeshnec",
+        "id": 115468216,
+        "node_id": "U_kgDOBuHnuA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115468216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brijeshnec",
+        "html_url": "https://github.com/brijeshnec",
+        "followers_url": "https://api.github.com/users/brijeshnec/followers",
+        "following_url": "https://api.github.com/users/brijeshnec/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brijeshnec/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brijeshnec/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brijeshnec/subscriptions",
+        "organizations_url": "https://api.github.com/users/brijeshnec/orgs",
+        "repos_url": "https://api.github.com/users/brijeshnec/repos",
+        "events_url": "https://api.github.com/users/brijeshnec/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brijeshnec/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brijeshnec",
+        "id": 115468216,
+        "node_id": "U_kgDOBuHnuA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115468216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brijeshnec",
+        "html_url": "https://github.com/brijeshnec",
+        "followers_url": "https://api.github.com/users/brijeshnec/followers",
+        "following_url": "https://api.github.com/users/brijeshnec/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brijeshnec/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brijeshnec/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brijeshnec/subscriptions",
+        "organizations_url": "https://api.github.com/users/brijeshnec/orgs",
+        "repos_url": "https://api.github.com/users/brijeshnec/repos",
+        "events_url": "https://api.github.com/users/brijeshnec/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brijeshnec/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "aa8065ce5fbf22bed628c1eb67c79b8dae705ab0",
+            "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/commits/aa8065ce5fbf22bed628c1eb67c79b8dae705ab0",
+            "html_url": "https://github.com/ScorpioBroker/ScorpioBroker/commit/aa8065ce5fbf22bed628c1eb67c79b8dae705ab0"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 3,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "5b0fd2d6847b8e3893e7ec6e899cb2206e782749",
+            "filename": "Commons/src/main/java/eu/neclab/ngsildbroker/commons/controllers/EntryControllerFunctions.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/ScorpioBroker/ScorpioBroker/blob/462aa248973b2668deb41fb1183f12f56daf4aa6/Commons%2Fsrc%2Fmain%2Fjava%2Feu%2Fneclab%2Fngsildbroker%2Fcommons%2Fcontrollers%2FEntryControllerFunctions.java",
+            "raw_url": "https://github.com/ScorpioBroker/ScorpioBroker/raw/462aa248973b2668deb41fb1183f12f56daf4aa6/Commons%2Fsrc%2Fmain%2Fjava%2Feu%2Fneclab%2Fngsildbroker%2Fcommons%2Fcontrollers%2FEntryControllerFunctions.java",
+            "contents_url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/contents/Commons%2Fsrc%2Fmain%2Fjava%2Feu%2Fneclab%2Fngsildbroker%2Fcommons%2Fcontrollers%2FEntryControllerFunctions.java?ref=462aa248973b2668deb41fb1183f12f56daf4aa6",
+            "patch": "@@ -573,7 +573,6 @@ public static Uni<RestResponse<Object>> updateEntry(EntryCRUDService entityServi\n \t */\n \t@SuppressWarnings(\"unchecked\")\n \tprivate static void noConcise(Object object, Map<String, Object> parentMap, String keyOfObject) {\n-\n \t\t// Object is Map\n \t\tif (object instanceof Map<?, ?> map) {\n \t\t\t// Map have object but not type\n@@ -610,7 +609,8 @@ private static void noConcise(Object object, Map<String, Object> parentMap, Stri\n \t\t\t\t\t\t&& !key.equals(NGSIConstants.QUERY_PARAMETER_COORDINATES)\n \t\t\t\t\t\t&& !key.equals(NGSIConstants.QUERY_PARAMETER_OBSERVED_AT)\n \t\t\t\t\t\t&& !key.equals(NGSIConstants.INSTANCE_ID)\n-\t\t\t\t\t\t&& !key.equals(NGSIConstants.QUERY_PARAMETER_DATA_SET_ID) && !key.equals(NGSIConstants.OBJECT)\n+\t\t\t\t\t\t&& !key.equals(NGSIConstants.QUERY_PARAMETER_DATA_SET_ID)\n+\t\t\t\t\t\t&& !key.equals(NGSIConstants.OBJECT)\n \t\t\t\t\t\t&& !key.equals(NGSIConstants.QUERY_PARAMETER_UNIT_CODE)) {\n \t\t\t\t\tnoConcise(map.get(key), (Map<String, Object>) map, key.toString());\n \t\t\t\t}\n@@ -623,7 +623,7 @@ else if (object instanceof List<?> list) {\n \t\t\t}\n \t\t}\n \t\t// Object is String or Number value\n-\t\telse if (object instanceof String || object instanceof Number) {\n+\t\telse if ((object instanceof String || object instanceof Number) && parentMap != null) {\n \t\t\t/*\n \t\t\t * if keyofobject is value then just need convert double to int if possible\n \t\t\t */"
+        }
+    ]
+}

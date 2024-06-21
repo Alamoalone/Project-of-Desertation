@@ -1,0 +1,3 @@
+    public Matrix getbHat() {
+        return bHat;
+    }

@@ -1,0 +1,158 @@
+{
+    "sha": "762a63b12fb5a316806a00467cf16733a22b7723",
+    "node_id": "C_kwDOJhItZtoAKDc2MmE2M2IxMmZiNWEzMTY4MDZhMDA0NjdjZjE2NzMzYTIyYjc3MjM",
+    "commit": {
+        "author": {
+            "name": "Erik C. Thauvin",
+            "email": "erik@thauvin.net",
+            "date": "2023-09-15T12:19:51Z"
+        },
+        "committer": {
+            "name": "Erik C. Thauvin",
+            "email": "erik@thauvin.net",
+            "date": "2023-09-15T12:19:51Z"
+        },
+        "message": "Flipped String equals to avoid potential null pointer exception",
+        "tree": {
+            "sha": "dd2d168a18831933856b1d13817d6caba2aad0ff",
+            "url": "https://api.github.com/repos/rife2/bld/git/trees/dd2d168a18831933856b1d13817d6caba2aad0ff"
+        },
+        "url": "https://api.github.com/repos/rife2/bld/git/commits/762a63b12fb5a316806a00467cf16733a22b7723",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/rife2/bld/commits/762a63b12fb5a316806a00467cf16733a22b7723",
+    "html_url": "https://github.com/rife2/bld/commit/762a63b12fb5a316806a00467cf16733a22b7723",
+    "comments_url": "https://api.github.com/repos/rife2/bld/commits/762a63b12fb5a316806a00467cf16733a22b7723/comments",
+    "author": {
+        "login": "ethauvin",
+        "id": 705618,
+        "node_id": "MDQ6VXNlcjcwNTYxOA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/705618?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ethauvin",
+        "html_url": "https://github.com/ethauvin",
+        "followers_url": "https://api.github.com/users/ethauvin/followers",
+        "following_url": "https://api.github.com/users/ethauvin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ethauvin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ethauvin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ethauvin/subscriptions",
+        "organizations_url": "https://api.github.com/users/ethauvin/orgs",
+        "repos_url": "https://api.github.com/users/ethauvin/repos",
+        "events_url": "https://api.github.com/users/ethauvin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ethauvin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ethauvin",
+        "id": 705618,
+        "node_id": "MDQ6VXNlcjcwNTYxOA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/705618?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ethauvin",
+        "html_url": "https://github.com/ethauvin",
+        "followers_url": "https://api.github.com/users/ethauvin/followers",
+        "following_url": "https://api.github.com/users/ethauvin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ethauvin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ethauvin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ethauvin/subscriptions",
+        "organizations_url": "https://api.github.com/users/ethauvin/orgs",
+        "repos_url": "https://api.github.com/users/ethauvin/repos",
+        "events_url": "https://api.github.com/users/ethauvin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ethauvin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e69f4fe554dc78b009d98e3c52f136d62bd6c247",
+            "url": "https://api.github.com/repos/rife2/bld/commits/e69f4fe554dc78b009d98e3c52f136d62bd6c247",
+            "html_url": "https://github.com/rife2/bld/commit/e69f4fe554dc78b009d98e3c52f136d62bd6c247"
+        }
+    ],
+    "stats": {
+        "total": 28,
+        "additions": 14,
+        "deletions": 14
+    },
+    "files": [
+        {
+            "sha": "8939c182810653cb5e0cf2c51ab1756cd88d592a",
+            "filename": "src/main/java/rife/bld/dependencies/Dependency.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/rife2/bld/blob/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FDependency.java",
+            "raw_url": "https://github.com/rife2/bld/raw/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FDependency.java",
+            "contents_url": "https://api.github.com/repos/rife2/bld/contents/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FDependency.java?ref=762a63b12fb5a316806a00467cf16733a22b7723",
+            "patch": "@@ -147,7 +147,7 @@ public String toString() {\n         if (!classifier.isEmpty()) {\n             result.append(\":\").append(classifier);\n         }\n-        if (!type.isEmpty() && !type.equals(\"jar\")) {\n+        if (!type.isEmpty() && !\"jar\".equals(type)) {\n             result.append(\"@\").append(type);\n         }\n         return result.toString();"
+        },
+        {
+            "sha": "f9a7d7e8d3aacb7182d0549cfbb3f628b5e880f2",
+            "filename": "src/main/java/rife/bld/dependencies/DependencyExclusion.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 4,
+            "changes": 8,
+            "blob_url": "https://github.com/rife2/bld/blob/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FDependencyExclusion.java",
+            "raw_url": "https://github.com/rife2/bld/raw/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FDependencyExclusion.java",
+            "contents_url": "https://api.github.com/repos/rife2/bld/contents/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FDependencyExclusion.java?ref=762a63b12fb5a316806a00467cf16733a22b7723",
+            "patch": "@@ -25,10 +25,10 @@ public int hashCode() {\n     }\n \n     boolean matches(PomDependency dependency) {\n-        return (groupId().equals(\"*\") && artifactId().equals(\"*\")) ||\n-               (groupId().equals(\"*\") && artifactId().equals(dependency.artifactId())) ||\n-               (groupId().equals(dependency.groupId()) && artifactId().equals(\"*\")) ||\n-               (groupId().equals(dependency.groupId()) && artifactId().equals(dependency.artifactId()));\n+        return (\"*\".equals(groupId()) && \"*\".equals(artifactId())) ||\n+               (\"*\".equals(groupId()) && artifactId().equals(dependency.artifactId())) ||\n+               (groupId().equals(dependency.groupId()) && \"*\".equals(artifactId())) ||\n+               (groupId().equals(dependency.groupId()) && dependency.artifactId().equals(artifactId()));\n \n     }\n }"
+        },
+        {
+            "sha": "03d5c828f367d82159049716d7974ec07051f951",
+            "filename": "src/main/java/rife/bld/dependencies/Xml2MavenPom.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 4,
+            "changes": 8,
+            "blob_url": "https://github.com/rife2/bld/blob/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FXml2MavenPom.java",
+            "raw_url": "https://github.com/rife2/bld/raw/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FXml2MavenPom.java",
+            "contents_url": "https://api.github.com/repos/rife2/bld/contents/src%2Fmain%2Fjava%2Frife%2Fbld%2Fdependencies%2FXml2MavenPom.java?ref=762a63b12fb5a316806a00467cf16733a22b7723",
+            "patch": "@@ -287,19 +287,19 @@ public void endElement(String uri, String localName, String qName) {\n     }\n \n     private boolean isChildOfProject() {\n-        return elementStack_.peek().equals(\"project\");\n+        return \"project\".equals(elementStack_.peek());\n     }\n \n     private boolean isChildOfParent() {\n-        return elementStack_.peek().equals(\"parent\");\n+        return \"parent\".equals(elementStack_.peek());\n     }\n \n     private boolean isChildOfDependency() {\n-        return elementStack_.peek().equals(\"dependency\");\n+        return \"dependency\".equals(elementStack_.peek());\n     }\n \n     private boolean isChildOfExclusion() {\n-        return elementStack_.peek().equals(\"exclusion\");\n+        return \"exclusion\".equals(elementStack_.peek());\n     }\n \n     private void addProjectProperty(String name) {"
+        },
+        {
+            "sha": "c13b3f0b357124d12a6b973dbcd69c50a7548adb",
+            "filename": "src/main/java/rife/bld/operations/JUnitOperation.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/rife2/bld/blob/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Foperations%2FJUnitOperation.java",
+            "raw_url": "https://github.com/rife2/bld/raw/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Foperations%2FJUnitOperation.java",
+            "contents_url": "https://api.github.com/repos/rife2/bld/contents/src%2Fmain%2Fjava%2Frife%2Fbld%2Foperations%2FJUnitOperation.java?ref=762a63b12fb5a316806a00467cf16733a22b7723",
+            "patch": "@@ -34,7 +34,7 @@ public JUnitOperation fromProject(BaseProject project) {\n         }\n \n         // add the default JUnit options if none were specified\n-        if (testToolOptions().isEmpty() && mainClass().equals(DEFAULT_TEST_TOOL_JUNIT5)) {\n+        if (testToolOptions().isEmpty() && DEFAULT_TEST_TOOL_JUNIT5.equals(mainClass())) {\n             testToolOptions().defaultOptions();\n         }\n \n@@ -45,9 +45,9 @@ public JUnitOperation fromProject(BaseProject project) {\n             var argument = arguments.get(0);\n             if (argument.startsWith(\"-\")) {\n                 arguments.remove(0);\n-                if (argument.equals(\"--junit-help\")) {\n+                if (\"--junit-help\".equals(argument)) {\n                     testToolOptions().add(\"--help\");\n-                } else if (argument.equals(\"--junit-clear\")) {\n+                } else if (\"--junit-clear\".equals(argument)) {\n                     testToolOptions().clear();\n                 } else {\n                     testToolOptions().add(argument);"
+        },
+        {
+            "sha": "8df677bf4b3f109e1187dc094d1c25f0130a754c",
+            "filename": "src/main/java/rife/bld/publish/PomBuilder.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/rife2/bld/blob/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fpublish%2FPomBuilder.java",
+            "raw_url": "https://github.com/rife2/bld/raw/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fpublish%2FPomBuilder.java",
+            "contents_url": "https://api.github.com/repos/rife2/bld/contents/src%2Fmain%2Fjava%2Frife%2Fbld%2Fpublish%2FPomBuilder.java?ref=762a63b12fb5a316806a00467cf16733a22b7723",
+            "patch": "@@ -151,7 +151,7 @@ private void addDependencies(Template t, Scope scope) {\n \n                 t.blankValue(\"dependency-type\");\n                 t.blankValue(\"dependency-type-tag\");\n-                if (!dependency.type().equals(\"jar\")) {\n+                if (!\"jar\".equals(dependency.type())) {\n                     t.setValueEncoded(\"dependency-type\", dependency.type());\n                     t.setBlock(\"dependency-type-tag\");\n                 }"
+        },
+        {
+            "sha": "19c2d1c9f604580d34ea7612130054bd77fd9887",
+            "filename": "src/main/java/rife/bld/wrapper/Wrapper.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/rife2/bld/blob/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fwrapper%2FWrapper.java",
+            "raw_url": "https://github.com/rife2/bld/raw/762a63b12fb5a316806a00467cf16733a22b7723/src%2Fmain%2Fjava%2Frife%2Fbld%2Fwrapper%2FWrapper.java",
+            "contents_url": "https://api.github.com/repos/rife2/bld/contents/src%2Fmain%2Fjava%2Frife%2Fbld%2Fwrapper%2FWrapper.java?ref=762a63b12fb5a316806a00467cf16733a22b7723",
+            "patch": "@@ -496,7 +496,7 @@ private void resolveExtensions() {\n \n     private int launchMain(File jarFile, List<String> arguments)\n     throws IOException, InterruptedException, FileUtilsErrorException {\n-        if (arguments.isEmpty() || !arguments.get(0).equals(\"--build\")) {\n+        if (arguments.isEmpty() || !\"--build\".equals(arguments.get(0))) {\n             return launchMainCli(jarFile, arguments);\n         }\n         return launchMainBuild(jarFile, arguments);"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+    public void inicializarHome(Usuario usuarioSesion) {  
+        this.usuarioSesion = usuarioSesion;
+        lbUsuario.setText(usuarioSesion.getNombre()+ " "+usuarioSesion.getApellidoPaterno());
+    }
+

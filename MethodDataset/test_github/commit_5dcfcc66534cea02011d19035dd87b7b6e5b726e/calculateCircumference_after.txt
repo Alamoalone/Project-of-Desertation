@@ -1,0 +1,7 @@
+	public double calculateCircumference() {
+		double umfang = 0;
+		for(int i = 0; i <= 3; i++) {
+			umfang += this.calculateSide(i);
+		}
+		return umfang;
+		}

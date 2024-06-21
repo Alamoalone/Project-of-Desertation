@@ -1,0 +1,92 @@
+    private void updateExternalClaims(String dialectId, List<ExternalClaimReqDTO> externalClaimReqDTOList,
+                                      Boolean delete) throws ClaimMetadataException {
+
+        if (delete != null && delete) {
+            deleteClaimDialect(dialectId);
+            dialectId = addClaimDialect(base64DecodeId(dialectId));
+            importExternalClaims(dialectId, externalClaimReqDTOList);
+            return;
+        }
+
+        List<ClaimErrorDTO> errors = new ArrayList<>();
+
+        for (ExternalClaimReqDTO externalClaimReqDTO : externalClaimReqDTOList) {
+            try {
+                if (StringUtils.isBlank(externalClaimReqDTO.getClaimURI())) {
+                    throw handleClaimManagementClientError(ERROR_CODE_EMPTY_EXTERNAL_CLAIM_URI, BAD_REQUEST);
+                }
+                String claimId = getResourceId(externalClaimReqDTO.getClaimURI());
+                if (isExternalClaimExist(dialectId, claimId)) {
+                    updateExternalClaim(dialectId, claimId, externalClaimReqDTO);
+                } else {
+                    addExternalClaim(dialectId, externalClaimReqDTO);
+                }
+            } catch (APIError e) {
+                ClaimErrorDTO claimErrorDTO = new ClaimErrorDTO(e.getResponseEntity());
+                claimErrorDTO.setClaimURI(externalClaimReqDTO.getClaimURI());
+                errors.add(claimErrorDTO);
+            }
+        }
+        if (!errors.isEmpty()) {
+            throw handleClaimManagementBulkClientError(ERROR_CODE_UPDATING_EXTERNAL_CLAIMS, BAD_REQUEST, errors,
+                    String.valueOf(errors.size()), String.valueOf(externalClaimReqDTOList.size()));
+        }
+    }
+
+    public String addLocalClaim(LocalClaimReqDTO localClaimReqDTO) {
+
+        // Validate mandatory attributes.
+        if (StringUtils.isBlank(localClaimReqDTO.getClaimURI())) {
+            throw handleClaimManagementClientError(ERROR_CODE_CLAIM_URI_NOT_SPECIFIED,
+                    BAD_REQUEST);
+        }
+        if (StringUtils.isBlank(localClaimReqDTO.getDisplayName())) {
+            throw handleClaimManagementClientError(Constant.ErrorMessage.ERROR_CODE_CLAIM_DISPLAY_NAME_NOT_SPECIFIED,
+                    BAD_REQUEST);
+        }
+
+        try {
+            validateAttributeMappings(localClaimReqDTO.getAttributeMapping());
+            getClaimMetadataManagementService().addLocalClaim(createLocalClaim(localClaimReqDTO),
+                    ContextLoader.getTenantDomainFromContext());
+        } catch (ClaimMetadataException e) {
+            throw handleClaimManagementException(e, ERROR_CODE_ERROR_ADDING_LOCAL_CLAIM,
+                    localClaimReqDTO.getClaimURI());
+        } catch (UserStoreException e) {
+            throw handleException(e, ERROR_CODE_ERROR_ADDING_LOCAL_CLAIM, localClaimReqDTO.getClaimURI());
+        }
+
+        return getResourceId(localClaimReqDTO.getClaimURI());
+    }
+
+    private void updateLocalClaims(List<LocalClaimReqDTO> localClaimReqDTOList, Boolean delete)
+            throws ClaimMetadataException {
+
+        List<ClaimErrorDTO> errors = new ArrayList<>();
+
+        for (LocalClaimReqDTO localClaimReqDTO : localClaimReqDTOList) {
+            try {
+                if (StringUtils.isBlank(localClaimReqDTO.getClaimURI())) {
+                    throw handleClaimManagementClientError(ERROR_CODE_EMPTY_LOCAL_CLAIM_URI, BAD_REQUEST);
+                }
+                String claimId = getResourceId(localClaimReqDTO.getClaimURI());
+                if (isLocalClaimExist(claimId)) {
+                    updateLocalClaim(claimId, localClaimReqDTO);
+                } else {
+                    addLocalClaim(localClaimReqDTO);
+                }
+            } catch (APIError e) {
+                ClaimErrorDTO claimErrorDTO = new ClaimErrorDTO(e.getResponseEntity());
+                claimErrorDTO.setClaimURI(localClaimReqDTO.getClaimURI());
+                errors.add(claimErrorDTO);
+            }
+        }
+        if (delete != null && delete) {
+            deleteUnusedLocalClaims(localClaimReqDTOList, errors);
+        }
+        if (!errors.isEmpty()) {
+            throw handleClaimManagementBulkClientError(ERROR_CODE_UPDATING_LOCAL_CLAIMS, BAD_REQUEST, errors,
+                    String.valueOf(errors.size()), String.valueOf(localClaimReqDTOList.size()));
+        }
+    }
+

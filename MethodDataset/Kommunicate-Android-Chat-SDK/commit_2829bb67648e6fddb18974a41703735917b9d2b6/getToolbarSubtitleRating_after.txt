@@ -1,0 +1,6 @@
+    public Float getToolbarSubtitleRating(){
+        if (sharedPreferences != null){
+            return sharedPreferences.getFloat(AGENT_RATING,-1.0F);
+        }
+        return null;
+    }

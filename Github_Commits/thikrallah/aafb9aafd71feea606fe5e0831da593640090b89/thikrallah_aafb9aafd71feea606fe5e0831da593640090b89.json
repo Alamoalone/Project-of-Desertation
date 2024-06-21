@@ -1,0 +1,110 @@
+{
+    "sha": "aafb9aafd71feea606fe5e0831da593640090b89",
+    "node_id": "C_kwDOC1A7mNoAKGFhZmI5YWFmZDcxZmVlYTYwNmZlNWUwODMxZGE1OTM2NDAwOTBiODk",
+    "commit": {
+        "author": {
+            "name": "hani-28",
+            "email": "28.hani@gmail.com",
+            "date": "2023-08-30T04:13:34Z"
+        },
+        "committer": {
+            "name": "hani-28",
+            "email": "28.hani@gmail.com",
+            "date": "2023-08-30T04:13:34Z"
+        },
+        "message": "fixed null pointer exception. not checking for action string as all is being done is update alarms every single time regardless of action string",
+        "tree": {
+            "sha": "5678e77a097599b5c32bc99d9c77fad6894ab209",
+            "url": "https://api.github.com/repos/hani-28/thikrallah/git/trees/5678e77a097599b5c32bc99d9c77fad6894ab209"
+        },
+        "url": "https://api.github.com/repos/hani-28/thikrallah/git/commits/aafb9aafd71feea606fe5e0831da593640090b89",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hani-28/thikrallah/commits/aafb9aafd71feea606fe5e0831da593640090b89",
+    "html_url": "https://github.com/hani-28/thikrallah/commit/aafb9aafd71feea606fe5e0831da593640090b89",
+    "comments_url": "https://api.github.com/repos/hani-28/thikrallah/commits/aafb9aafd71feea606fe5e0831da593640090b89/comments",
+    "author": {
+        "login": "hani-28",
+        "id": 3527658,
+        "node_id": "MDQ6VXNlcjM1Mjc2NTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3527658?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hani-28",
+        "html_url": "https://github.com/hani-28",
+        "followers_url": "https://api.github.com/users/hani-28/followers",
+        "following_url": "https://api.github.com/users/hani-28/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hani-28/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hani-28/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hani-28/subscriptions",
+        "organizations_url": "https://api.github.com/users/hani-28/orgs",
+        "repos_url": "https://api.github.com/users/hani-28/repos",
+        "events_url": "https://api.github.com/users/hani-28/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hani-28/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "hani-28",
+        "id": 3527658,
+        "node_id": "MDQ6VXNlcjM1Mjc2NTg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3527658?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hani-28",
+        "html_url": "https://github.com/hani-28",
+        "followers_url": "https://api.github.com/users/hani-28/followers",
+        "following_url": "https://api.github.com/users/hani-28/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hani-28/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hani-28/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hani-28/subscriptions",
+        "organizations_url": "https://api.github.com/users/hani-28/orgs",
+        "repos_url": "https://api.github.com/users/hani-28/repos",
+        "events_url": "https://api.github.com/users/hani-28/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hani-28/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b2d29ca39cacb625b827c675b6288ed2bf58f4c4",
+            "url": "https://api.github.com/repos/hani-28/thikrallah/commits/b2d29ca39cacb625b827c675b6288ed2bf58f4c4",
+            "html_url": "https://github.com/hani-28/thikrallah/commit/b2d29ca39cacb625b827c675b6288ed2bf58f4c4"
+        }
+    ],
+    "stats": {
+        "total": 31,
+        "additions": 15,
+        "deletions": 16
+    },
+    "files": [
+        {
+            "sha": "8fea571e511b56856b70825186ddf4976533451a",
+            "filename": "app/build.gradle",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/hani-28/thikrallah/blob/aafb9aafd71feea606fe5e0831da593640090b89/app%2Fbuild.gradle",
+            "raw_url": "https://github.com/hani-28/thikrallah/raw/aafb9aafd71feea606fe5e0831da593640090b89/app%2Fbuild.gradle",
+            "contents_url": "https://api.github.com/repos/hani-28/thikrallah/contents/app%2Fbuild.gradle?ref=aafb9aafd71feea606fe5e0831da593640090b89",
+            "patch": "@@ -30,8 +30,8 @@ android {\n         applicationId \"com.HMSolutions.thikrallah\"\n         minSdkVersion 21\n         targetSdkVersion 33\n-        versionCode 128\n-        versionName \"7.0.2\"\n+        versionCode 129\n+        versionName \"7.0.3\"\n     }\n     buildTypes {\n         release {"
+        },
+        {
+            "sha": "0e674461aa232091cef312acd60f8832c6d3f77c",
+            "filename": "app/src/main/java/com/HMSolutions/thikrallah/Notification/ThikrBootReceiver.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 14,
+            "changes": 27,
+            "blob_url": "https://github.com/hani-28/thikrallah/blob/aafb9aafd71feea606fe5e0831da593640090b89/app%2Fsrc%2Fmain%2Fjava%2Fcom%2FHMSolutions%2Fthikrallah%2FNotification%2FThikrBootReceiver.java",
+            "raw_url": "https://github.com/hani-28/thikrallah/raw/aafb9aafd71feea606fe5e0831da593640090b89/app%2Fsrc%2Fmain%2Fjava%2Fcom%2FHMSolutions%2Fthikrallah%2FNotification%2FThikrBootReceiver.java",
+            "contents_url": "https://api.github.com/repos/hani-28/thikrallah/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2FHMSolutions%2Fthikrallah%2FNotification%2FThikrBootReceiver.java?ref=aafb9aafd71feea606fe5e0831da593640090b89",
+            "patch": "@@ -15,24 +15,23 @@ public class ThikrBootReceiver extends BroadcastReceiver {\n \t@Override\r\n \tpublic void onReceive(Context context, Intent intent) {\r\n \t\tLog.d(TAG,\"ThikrBootReceiver onrecieve called\");\r\n-\t\tif (intent.getAction().equalsIgnoreCase(\"com.HMSolutions.thikrallah.Notification.ThikrBootReceiver.android.action.broadcast\")\r\n-\t\t\t\t|| intent.getAction().equalsIgnoreCase(Intent.ACTION_BOOT_COMPLETED)){\r\n-\t\t\tMyAlarmsManager manager=new MyAlarmsManager(context);\r\n-\t\t\tmanager.UpdateAllApplicableAlarms();\r\n-\r\n-\t\t\tSharedPreferences mPrefs=PreferenceManager.getDefaultSharedPreferences(context);;\r\n-\t\t\tboolean isTimer=mPrefs.getBoolean(\"foreground_athan_timer\",true);\r\n-\r\n-\t\t\tif(isTimer){\r\n-\t\t\t\tif (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {\r\n-\t\t\t\t\tcontext.startForegroundService(new Intent(context,AthanTimerService.class));\r\n-\t\t\t\t} else {\r\n-\t\t\t\t\tcontext.startService(new Intent(context,AthanTimerService.class));\r\n-\t\t\t\t}\r\n+\r\n+\t\tMyAlarmsManager manager=new MyAlarmsManager(context);\r\n+\t\tmanager.UpdateAllApplicableAlarms();\r\n+\r\n+\t\tSharedPreferences mPrefs=PreferenceManager.getDefaultSharedPreferences(context);\r\n+\t\tboolean isTimer=mPrefs.getBoolean(\"foreground_athan_timer\",true);\r\n+\r\n+\t\tif(isTimer){\r\n+\t\t\tif (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {\r\n+\t\t\t\tcontext.startForegroundService(new Intent(context,AthanTimerService.class));\r\n+\t\t\t} else {\r\n+\t\t\t\tcontext.startService(new Intent(context,AthanTimerService.class));\r\n \t\t\t}\r\n \t\t}\r\n \r\n \r\n \r\n+\r\n \t}\r\n }\r"
+        }
+    ]
+}

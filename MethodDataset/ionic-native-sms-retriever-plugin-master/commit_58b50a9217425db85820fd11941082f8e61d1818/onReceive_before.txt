@@ -1,0 +1,32 @@
+    public void onReceive(Context context, Intent intent) {
+
+      if (intent.getAction().equals(SmsRetriever.SMS_RETRIEVED_ACTION)) {
+        final Bundle extra = intent.getExtras();
+        if (extra != null && extra.containsKey(SmsRetriever.EXTRA_STATUS)) {
+          Status status = (Status) extra.get(SmsRetriever.EXTRA_STATUS);
+          switch (status.getStatusCode()) {
+            case CommonStatusCodes.SUCCESS:
+              final String message = extra.getString(SmsRetriever.EXTRA_SMS_MESSAGE);
+              //if (!StringUtils.hasContent(message)) return;
+
+              Log.d(TAG, message);
+
+              data = new JSONObject();
+              try {
+                data.put("Message",message);
+              } catch(JSONException e) {}
+
+              //Toast.makeText(cordova.getActivity().getApplicationContext(),"Message: "+ message, Toast.LENGTH_LONG).show();
+              PluginResult result = new PluginResult(PluginResult.Status.OK, data);
+              callbackContext.sendPluginResult(result);
+
+              break;
+            case CommonStatusCodes.TIMEOUT:
+
+              PluginResult resultTimeout = new PluginResult(PluginResult.Status.ERROR, "TIMEOUT");
+              callbackContext.sendPluginResult(resultTimeout);
+              break;
+          }
+        }
+      }
+    };

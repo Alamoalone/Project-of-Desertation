@@ -1,0 +1,38 @@
+  public void testCheckDeletedProgramSpecs() throws ConflictException {
+    //Deploy program with all types of programs.
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    ApplicationId appId = NamespaceId.DEFAULT.app(spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    Set<String> specsToBeVerified = Sets.newHashSet();
+    specsToBeVerified.addAll(spec.getMapReduce().keySet());
+    specsToBeVerified.addAll(spec.getWorkflows().keySet());
+    specsToBeVerified.addAll(spec.getServices().keySet());
+    specsToBeVerified.addAll(spec.getWorkers().keySet());
+    specsToBeVerified.addAll(spec.getSpark().keySet());
+
+    //Verify if there are 6 program specs in AllProgramsApp
+    Assert.assertEquals(6, specsToBeVerified.size());
+
+    // Check the diff with the same app - re-deployment scenario where programs are not removed.
+    List<ProgramSpecification> deletedSpecs = store.getDeletedProgramSpecifications(appId.getAppReference(), spec);
+    Assert.assertEquals(0, deletedSpecs.size());
+
+    //Get the spec for app that contains no programs.
+    spec = Specifications.from(new NoProgramsApp());
+
+    //Get the deleted program specs by sending a spec with same name as AllProgramsApp but with no programs
+    deletedSpecs = store.getDeletedProgramSpecifications(appId.getAppReference(), spec);
+    Assert.assertEquals(6, deletedSpecs.size());
+
+    for (ProgramSpecification specification : deletedSpecs) {
+      //Remove the spec that is verified, to check the count later.
+      specsToBeVerified.remove(specification.getName());
+    }
+
+    //All the 6 specs should have been deleted.
+    Assert.assertEquals(0, specsToBeVerified.size());
+  }

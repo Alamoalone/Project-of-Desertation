@@ -1,0 +1,5 @@
+searchTrains(String source, String destination)
+updateTrain(Train updatedTrain)
+addTrain(Train newTrain)
+validTrain(Train train, String source, String destination)
+saveTrainListToFile()

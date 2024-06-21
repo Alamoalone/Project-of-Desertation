@@ -1,0 +1,25 @@
+	public static void main(String[]args) throws Exception {
+		String sUrl = "https://identity.cloudferro.com/auth/realms/wekeo-elasticity/protocol/openid-connect/token";
+		URL oURL = new URL(sUrl);
+
+		HttpURLConnection oConnection = (HttpURLConnection) oURL.openConnection();
+		oConnection.setRequestMethod("POST");
+		oConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+		oConnection.setDoOutput(true);
+		String sDownloadPassword = "******";
+		String sDownloadUser = "******";
+		String sPayload = "client_id=CLOUDFERRO_PUBLIC&password=" + sDownloadPassword + "&username=" + sDownloadUser + "&grant_type=password";
+
+		HttpCallResponse oResponse = HttpUtils.httpPost(sUrl, sPayload);
+		System.out.println(oResponse.getResponseBody());
+		JSONObject oResponseBody = new JSONObject(oResponse.getResponseBody());
+		String sAccessToken = oResponseBody.optString("access_token");
+		
+		String otherUrl = "https://zipper.dataspace.copernicus.eu/odata/v1/Products(702b4faf-16d5-4450-9f61-4d0a13f96794)/$value?token=" + sAccessToken;
+		
+		HttpCallResponse oResponse2 = HttpUtils.httpGet(otherUrl);
+		
+		System.out.println(oResponse2);
+
+
+	}

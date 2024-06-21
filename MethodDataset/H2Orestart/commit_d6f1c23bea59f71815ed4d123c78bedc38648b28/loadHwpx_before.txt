@@ -1,0 +1,74 @@
+    public List<ParaNode> loadHwpx(String inputFile) throws HwpDetectException, IOException, ParserConfigurationException, 
+                               SAXException, DataFormatException, OwpmlParseException, HwpParseException, NotImplementedException {
+        
+        HwpxFile hwpx = new HwpxFile(inputFile);
+        hwpx.detect();
+        hwpx.open();
+        
+        List<HwpSection> sections = hwpx.getSections();
+
+        for (int i=0; i < hwpx.docInfo.bulletList.size(); i++) {
+            // Bullet ID는 1부터 시작한다.
+            CompNumbering.makeCustomBulletStyle(i+1, (HwpRecord_Bullet)hwpx.docInfo.bulletList.get(i));
+        }
+        for (int i=0; i < hwpx.docInfo.numberingList.size(); i++) {
+            // Numbering ID는 1부터 시작한다.
+            CompNumbering.makeCustomNumberingStyle(i+1, (HwpRecord_Numbering)hwpx.docInfo.numberingList.get(i));
+        }
+
+        for (HwpSection section: sections) {
+            // 커스톰 PageStyle 생성
+            Ctrl_SectionDef secd =  (Ctrl_SectionDef)section.paraList.stream()
+                                                            .filter(p -> p.p!=null)
+                                                            .flatMap(p -> p.p.stream())
+                                                            .filter(c -> (c instanceof Ctrl_SectionDef)).findAny().get();
+            CompPage.makeCustomPageStyle(secd);
+        }
+        // 리턴 자료구조
+        List<ParaNode> paraList = new ArrayList<ParaNode>();
+        
+        int secIndex = 0;
+        for (int i=0; i<sections.size(); i++) {
+            HwpSection section = sections.get(i);
+            CompPage.setSectionIndex(secIndex++);
+            String numberingPrefix = "";
+            
+            for (HwpParagraph para: section.paraList) {
+                HwpRecord_ParaShape paraShape = (HwpRecord_ParaShape) hwpx.docInfo.paraShapeList.get(para.paraShapeID);
+                
+                boolean showNumberingPrefix = false;
+                String numberingStyleName = "";
+                HwpRecord_Numbering numberingStyle = null;
+                switch(paraShape.headingType) {
+                case NONE:
+                    break;
+                case OUTLINE:
+                    numberingStyleName = CompNumbering.getOutlineStyleName();
+                    Ctrl_SectionDef secd = CompPage.getCurrentPage();
+                    numberingStyle = (HwpRecord_Numbering)hwpx.docInfo.numberingList.get(secd.outlineNumberingID-1);
+                    numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);
+                    showNumberingPrefix = true;
+                    break;
+                case NUMBER:
+                    log.finest("번호문단ID="+paraShape.headingIdRef + ",문단수준="+paraShape.headingLevel);
+                    numberingStyleName = CompNumbering.numberingStyleNameMap.get((int)paraShape.headingIdRef-1);
+                    numberingStyle = (HwpRecord_Numbering)hwpx.docInfo.numberingList.get((int)paraShape.headingIdRef-1);
+                    numberingPrefix = CompNumbering.getNumberingHead(numberingStyleName, numberingStyle, paraShape.headingLevel);
+                    showNumberingPrefix = true;
+                    break;
+                case BULLET:
+                    log.finest("글머리표문단ID="+paraShape.headingIdRef + ",문단수준="+paraShape.headingLevel);
+                    numberingStyleName = CompNumbering.bulletStyleNameMap.get((int)paraShape.headingIdRef-1);
+                    HwpRecord_Bullet bulletStyle = (HwpRecord_Bullet)hwpx.docInfo.bulletList.get((int)paraShape.headingIdRef-1);
+                    numberingPrefix = Character.toString((char)bulletStyle.bulletChar);
+                    showNumberingPrefix = true;
+                    break;
+                }
+                String paragraph = CompRecurs.getParaString(para);
+                
+                paraList.add(new ParaNode(numberingPrefix, showNumberingPrefix, paragraph));
+            }
+        }
+        
+        return paraList;
+    }

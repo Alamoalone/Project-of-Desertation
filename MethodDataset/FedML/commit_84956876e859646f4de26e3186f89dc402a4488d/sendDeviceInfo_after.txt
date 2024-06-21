@@ -1,0 +1,26 @@
+    private void sendDeviceInfo() {
+        final String topicMetrics = "fl_client/mlops/device_info";
+        Battery battery = BatteryUtils.getBattery(ContextHolder.getAppContext());
+        Memory memory = MemoryUtils.getMemory(ContextHolder.getAppContext());
+        final SysStats sysStats = SysStats.getInstance();
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("edge_id", mEdgeId);
+            jsonObject.put("network_type", DeviceUtils.getNetworkType(ContextHolder.getAppContext()));
+            jsonObject.put("battery_status", battery.getStatus());
+            jsonObject.put("battery_power", battery.getPower());
+            jsonObject.put("battery_percent", battery.getPercentage());
+            jsonObject.put("battery_health", battery.getHealth());
+            jsonObject.put("ramMemoryTotal", memory.getRamMemoryTotal());
+            jsonObject.put("ramMemoryAvailable", memory.getRamMemoryAvailable());
+            jsonObject.put("romMemoryAvailable", memory.getRomMemoryAvailable());
+            jsonObject.put("romMemoryTotal", memory.getRomMemoryTotal());
+            Float cpuUtilization = sysStats.getCpuUtilization();
+            if (null != cpuUtilization) {
+                jsonObject.put("cpu_utilization", cpuUtilization);
+            }
+        } catch (JSONException e) {
+            LogHelper.e(e, "sendDeviceInfo(%s)", mEdgeId);
+        }
+        mEdgeCommunicator.sendMessage(topicMetrics, jsonObject.toString());
+    }

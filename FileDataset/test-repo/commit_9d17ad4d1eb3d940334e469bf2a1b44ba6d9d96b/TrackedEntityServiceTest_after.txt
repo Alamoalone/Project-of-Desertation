@@ -1,0 +1,116 @@
+  protected void setUpTest() throws Exception {
+
+    fileResource = createFileResource('F', "fileResource".getBytes());
+    fileResourceService.saveFileResource(fileResource, "fileResource".getBytes());
+
+    userService = _userService;
+    user = createAndAddAdminUser(AUTHORITY_ALL);
+
+    organisationUnitA = createOrganisationUnit('A');
+    organisationUnitB = createOrganisationUnit('B');
+    organisationUnitB.setParent(organisationUnitA);
+    imageAttribute = createTrackedEntityAttribute('F');
+    imageAttribute.setValueType(ValueType.IMAGE);
+    generatedAttribute = createTrackedEntityAttribute('A');
+    generatedAttribute.setGenerated(true);
+    // uniqueIdAttribute.setPattern( "RANDOM(#####)" );
+    TextPattern textPattern =
+        new TextPattern(List.of(new TextPatternSegment(TextPatternMethod.RANDOM, "RANDOM(#####)")));
+    textPattern.setOwnerObject(Objects.TRACKEDENTITYATTRIBUTE);
+    textPattern.setOwnerUid(generatedAttribute.getUid());
+    generatedAttribute.setTextPattern(textPattern);
+
+    trackedEntityAttributeService.addTrackedEntityAttribute(generatedAttribute);
+    trackedEntityAttributeService.addTrackedEntityAttribute(imageAttribute);
+
+    trackedEntityAttributeB = createTrackedEntityAttribute('B');
+    trackedEntityAttributeService.addTrackedEntityAttribute(trackedEntityAttributeB);
+
+    trackedEntityType = createTrackedEntityType('A');
+
+    TrackedEntityTypeAttribute trackedEntityTypeAttribute = new TrackedEntityTypeAttribute();
+    trackedEntityTypeAttribute.setTrackedEntityAttribute(generatedAttribute);
+    trackedEntityTypeAttribute.setTrackedEntityType(trackedEntityType);
+    trackedEntityType.setTrackedEntityTypeAttributes(List.of(trackedEntityTypeAttribute));
+
+    TrackedEntityTypeAttribute trackedEntityTypeFileAttribute = new TrackedEntityTypeAttribute();
+    trackedEntityTypeFileAttribute.setTrackedEntityAttribute(imageAttribute);
+    trackedEntityTypeFileAttribute.setTrackedEntityType(trackedEntityType);
+    trackedEntityType.setTrackedEntityTypeAttributes(List.of(trackedEntityTypeFileAttribute));
+
+    trackedEntityTypeService.addTrackedEntityType(trackedEntityType);
+
+    maleC = createTrackedEntity(organisationUnitA);
+    maleA = createTrackedEntity(organisationUnitA);
+    maleB = createTrackedEntity(organisationUnitB);
+    femaleA = createTrackedEntity(organisationUnitA);
+    femaleB = createTrackedEntity(organisationUnitB);
+    dateConflictsMaleA = createTrackedEntity(organisationUnitA);
+
+    TrackedEntityAttributeValue uniqueId =
+        createTrackedEntityAttributeValue('A', maleA, generatedAttribute);
+    uniqueId.setValue("12345");
+
+    TrackedEntityAttributeValue imageAttributeValue =
+        createTrackedEntityAttributeValue('E', maleC, imageAttribute);
+    imageAttributeValue.setValue(fileResource.getUid());
+
+    maleA.setTrackedEntityType(trackedEntityType);
+    maleC.setTrackedEntityType(trackedEntityType);
+    maleA.setTrackedEntityAttributeValues(Set.of(uniqueId));
+    maleC.setTrackedEntityAttributeValues(Set.of(imageAttributeValue));
+
+    maleB.setTrackedEntityType(trackedEntityType);
+    femaleA.setTrackedEntityType(trackedEntityType);
+    femaleB.setTrackedEntityType(trackedEntityType);
+    dateConflictsMaleA.setTrackedEntityType(trackedEntityType);
+    programA = createProgram('A', new HashSet<>(), organisationUnitA);
+    programA.setProgramType(ProgramType.WITH_REGISTRATION);
+    programStageA1 = createProgramStage('1', programA);
+    programStageA2 = createProgramStage('2', programA);
+    programA.setProgramStages(
+        Stream.of(programStageA1, programStageA2).collect(Collectors.toCollection(HashSet::new)));
+    manager.save(organisationUnitA);
+    manager.save(organisationUnitB);
+    manager.save(maleA);
+    manager.save(maleC);
+    manager.save(maleB);
+    manager.save(femaleA);
+    manager.save(femaleB);
+    manager.save(dateConflictsMaleA);
+    manager.save(programA);
+    manager.save(programStageA1);
+    manager.save(programStageA2);
+    teiMaleA = trackedEntityInstanceService.getTrackedEntityInstance(maleA);
+    teiMaleB = trackedEntityInstanceService.getTrackedEntityInstance(maleB);
+    teiFemaleA = trackedEntityInstanceService.getTrackedEntityInstance(femaleA);
+    trackedEntityAttributeValueService.addTrackedEntityAttributeValue(uniqueId);
+    trackedEntityAttributeValueService.addTrackedEntityAttributeValue(imageAttributeValue);
+    enrollmentService.enrollTrackedEntity(maleA, programA, null, null, organisationUnitA);
+    enrollmentService.enrollTrackedEntity(
+        femaleA, programA, DateTime.now().plusMonths(1).toDate(), null, organisationUnitA);
+    enrollmentService.enrollTrackedEntity(
+        dateConflictsMaleA,
+        programA,
+        DateTime.now().plusMonths(1).toDate(),
+        DateTime.now().plusMonths(2).toDate(),
+        organisationUnitA);
+  }
+
+  void testUpdateTeiByProvidingNullValueToImageAttribute() {
+    TrackedEntityInstance trackedEntityInstance =
+        trackedEntityInstanceService.getTrackedEntityInstance(maleC.getUid());
+
+    Attribute attribute =
+        trackedEntityInstance.getAttributes().stream()
+            .filter(a -> a.getValueType() == ValueType.IMAGE)
+            .findFirst()
+            .orElse(null);
+    attribute.setValue(null);
+
+    ImportSummary importSummary =
+        trackedEntityInstanceService.updateTrackedEntityInstance(
+            trackedEntityInstance, null, null, true);
+    assertEquals(ImportStatus.SUCCESS, importSummary.getStatus());
+  }
+

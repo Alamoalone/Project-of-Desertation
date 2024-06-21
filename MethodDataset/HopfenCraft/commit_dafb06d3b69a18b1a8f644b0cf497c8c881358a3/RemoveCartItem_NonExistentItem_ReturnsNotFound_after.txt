@@ -1,0 +1,27 @@
+    public void RemoveCartItem_NonExistentItem_ReturnsNotFound() {
+        // Login as a user
+        LoginDTO login = new LoginDTO("testuser", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+        assertNotNull(loginResponse.getBody());
+        String jwt = loginResponse.getBody().getJwt();
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+        // Attempt to remove a cart item with a cart item ID that doesn't exist
+
+        long cartItemId = 9999L;
+        ResponseEntity<CartResponseDTO> response3 = restTemplate.exchange(
+                "http://localhost:" + port + "/cart/remove/" + cartItemId,
+                HttpMethod.DELETE,
+                new HttpEntity<>(headers),
+                CartResponseDTO.class
+        );
+
+        // Assert that the response has status code Not Found (404)
+        assertEquals(HttpStatus.NOT_FOUND, response3.getStatusCode());
+    }

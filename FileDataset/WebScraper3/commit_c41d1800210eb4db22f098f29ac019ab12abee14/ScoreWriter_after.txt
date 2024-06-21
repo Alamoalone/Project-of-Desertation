@@ -1,0 +1,26 @@
+    public String toString(){
+        StringBuilder builder = new StringBuilder();
+        for (String name : data.keySet()){
+            double score = data.get(name);
+            builder.append(name + "," + score);
+        }
+        return builder.toString();
+    }
+
+    protected void writeData(File file){
+        try {
+            FileWriter writer = new FileWriter(file, false);
+            BufferedWriter bufferWriter = new BufferedWriter(writer);
+            bufferWriter.write("Student-Name,Reflection-Points");
+            bufferWriter.newLine();
+            for (String name : data.keySet()){
+                double points = data.get(name);
+
+                bufferWriter.write(name + "," + points + ",");
+                bufferWriter.newLine();
+            }
+            bufferWriter.close();
+            writer.close();
+        }catch (Exception e){e.printStackTrace();}
+    }
+

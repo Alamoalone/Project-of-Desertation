@@ -1,0 +1,133 @@
+{
+    "sha": "c0452952bfe4bbe2d040f151a266487f79e04abe",
+    "node_id": "C_kwDOApdpfdoAKGMwNDUyOTUyYmZlNGJiZTJkMDQwZjE1MWEyNjY0ODdmNzllMDRhYmU",
+    "commit": {
+        "author": {
+            "name": "FO",
+            "email": "fo@ifad.dk",
+            "date": "2024-03-04T08:31:56Z"
+        },
+        "committer": {
+            "name": "FO",
+            "email": "fo@ifad.dk",
+            "date": "2024-03-04T08:31:56Z"
+        },
+        "message": "avoid null pointer exception, update information layers when layer 2 is set, and added IFFPdu unit test",
+        "tree": {
+            "sha": "31ac500eafe5211171eb06544e463189fc4aa1e1",
+            "url": "https://api.github.com/repos/open-dis/open-dis-java/git/trees/31ac500eafe5211171eb06544e463189fc4aa1e1"
+        },
+        "url": "https://api.github.com/repos/open-dis/open-dis-java/git/commits/c0452952bfe4bbe2d040f151a266487f79e04abe",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/open-dis/open-dis-java/commits/c0452952bfe4bbe2d040f151a266487f79e04abe",
+    "html_url": "https://github.com/open-dis/open-dis-java/commit/c0452952bfe4bbe2d040f151a266487f79e04abe",
+    "comments_url": "https://api.github.com/repos/open-dis/open-dis-java/commits/c0452952bfe4bbe2d040f151a266487f79e04abe/comments",
+    "author": {
+        "login": "fo-ifad",
+        "id": 92848575,
+        "node_id": "U_kgDOBYjBvw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/92848575?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fo-ifad",
+        "html_url": "https://github.com/fo-ifad",
+        "followers_url": "https://api.github.com/users/fo-ifad/followers",
+        "following_url": "https://api.github.com/users/fo-ifad/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fo-ifad/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fo-ifad/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fo-ifad/subscriptions",
+        "organizations_url": "https://api.github.com/users/fo-ifad/orgs",
+        "repos_url": "https://api.github.com/users/fo-ifad/repos",
+        "events_url": "https://api.github.com/users/fo-ifad/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fo-ifad/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "fo-ifad",
+        "id": 92848575,
+        "node_id": "U_kgDOBYjBvw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/92848575?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fo-ifad",
+        "html_url": "https://github.com/fo-ifad",
+        "followers_url": "https://api.github.com/users/fo-ifad/followers",
+        "following_url": "https://api.github.com/users/fo-ifad/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fo-ifad/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fo-ifad/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fo-ifad/subscriptions",
+        "organizations_url": "https://api.github.com/users/fo-ifad/orgs",
+        "repos_url": "https://api.github.com/users/fo-ifad/repos",
+        "events_url": "https://api.github.com/users/fo-ifad/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fo-ifad/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f37994fa47a7370d298830cfcd35cb2178d353cf",
+            "url": "https://api.github.com/repos/open-dis/open-dis-java/commits/f37994fa47a7370d298830cfcd35cb2178d353cf",
+            "html_url": "https://github.com/open-dis/open-dis-java/commit/f37994fa47a7370d298830cfcd35cb2178d353cf"
+        }
+    ],
+    "stats": {
+        "total": 182,
+        "additions": 180,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "bdbf1544a4b2f4c39a793616ac9b7026c82bae29",
+            "filename": "src/main/java/edu/nps/moves/dis7/IFFPdu.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 2,
+            "changes": 7,
+            "blob_url": "https://github.com/open-dis/open-dis-java/blob/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Fmain%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPdu.java",
+            "raw_url": "https://github.com/open-dis/open-dis-java/raw/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Fmain%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPdu.java",
+            "contents_url": "https://api.github.com/repos/open-dis/open-dis-java/contents/src%2Fmain%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPdu.java?ref=c0452952bfe4bbe2d040f151a266487f79e04abe",
+            "patch": "@@ -39,9 +39,10 @@ public int getMarshalledSize() {\n         int marshalSize = 0;\n         marshalSize = super.getMarshalledSize();\n         marshalSize = marshalSize + layer1.getMarshalledSize();//emittingEntityId\n-        if (layer2 != null) {\n+        if (isLayerPresent(2)) {\n             marshalSize = marshalSize + layer2.getMarshalledSize();\n         }\n+        \n         return marshalSize;\n     }\n \n@@ -59,6 +60,7 @@ public IFFLayer2 getLayer2() {\n \n     public void setLayer2(IFFLayer2 layer2) {\n         this.layer2 = layer2;\n+        updateInformationLayersPresent();\n     }\n \n     private void updateInformationLayersPresent() {\n@@ -109,7 +111,8 @@ public void marshal(java.nio.ByteBuffer buff) {\n     public void unmarshal(java.nio.ByteBuffer buff) {\n         super.unmarshal(buff);\n         layer1.unmarshal(buff);\n-        if (isLayerPresent(2)) {\n+        if (isLayerPresent(2) ) {\n+            layer2 = new IFFLayer2();\n             layer2.unmarshal(buff);\n         }\n     } // end of unmarshal method  "
+        },
+        {
+            "sha": "4f34322a69c157785b938d8459e90a037215636b",
+            "filename": "src/main/java/edu/nps/moves/dis7/PduFactory.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/open-dis/open-dis-java/blob/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Fmain%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FPduFactory.java",
+            "raw_url": "https://github.com/open-dis/open-dis-java/raw/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Fmain%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FPduFactory.java",
+            "contents_url": "https://api.github.com/repos/open-dis/open-dis-java/contents/src%2Fmain%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FPduFactory.java?ref=c0452952bfe4bbe2d040f151a266487f79e04abe",
+            "patch": "@@ -242,6 +242,9 @@ public Pdu createPdu(ByteBuffer buff) {\n                 case ENTITY_STATE_UPDATE:\n                     aPdu = new EntityStateUpdatePdu();\n                     break;\n+                case IFF_ATC_NAVAIDS:\n+                    aPdu = new IFFPdu();\n+                    break;\n                 default:\n                     this.logger.log(Level.INFO, \"PDU not implemented. Type = \" + pduType + \"\\n\");\n                     if (pduTypeEnum != null) {"
+        },
+        {
+            "sha": "3174dfc14670ce12ae973345eea2bd6837b35767",
+            "filename": "src/test/java/edu/nps/moves/dis7/IFFPduTest.java",
+            "status": "added",
+            "additions": 172,
+            "deletions": 0,
+            "changes": 172,
+            "blob_url": "https://github.com/open-dis/open-dis-java/blob/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Ftest%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPduTest.java",
+            "raw_url": "https://github.com/open-dis/open-dis-java/raw/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Ftest%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPduTest.java",
+            "contents_url": "https://api.github.com/repos/open-dis/open-dis-java/contents/src%2Ftest%2Fjava%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPduTest.java?ref=c0452952bfe4bbe2d040f151a266487f79e04abe",
+            "patch": "@@ -0,0 +1,172 @@\n+package edu.nps.moves.dis7;\n+\n+import java.io.IOException;\n+import org.junit.After;\n+import org.junit.AfterClass;\n+import org.junit.Before;\n+import org.junit.BeforeClass;\n+import org.junit.Test;\n+import static org.junit.Assert.*;\n+\n+/**\n+ *\n+ * @author fo\n+ */\n+public class IFFPduTest {\n+    \n+    public IFFPduTest() {\n+    }\n+    \n+    @BeforeClass\n+    public static void setUpClass() {\n+    }\n+    \n+    @AfterClass\n+    public static void tearDownClass() {\n+    }\n+    \n+    @Before\n+    public void setUp() {\n+    }\n+    \n+    @After\n+    public void tearDown() {\n+    }\n+\n+    @Test\n+    public void marshal() {\n+        IFFPdu ipdu = new IFFPdu();\n+\n+        byte[] buffer = ipdu.marshal();\n+\n+        assertEquals(buffer.length, ipdu.getLength());\n+    }\n+\n+    @Test\n+    public void unmarshal() throws IOException {\n+        PduFactory factory = new PduFactory();\n+        Pdu pdu = factory.createPdu(edu.nps.moves.dis7.PduFileLoader.load(\"IFFPdu.raw\"));\n+\n+        // Header\n+        assertEquals(7, pdu.getProtocolVersion());\n+        assertEquals(1, pdu.getExerciseID());\n+        assertEquals(28, pdu.getPduType());\n+        assertEquals(6, pdu.getProtocolFamily());\n+        assertEquals(136, pdu.getLength());\n+        assertEquals(13, pdu.getPduStatus());\n+        assertEquals(0, pdu.getPadding());\n+        \n+        IFFPdu ipdu =(IFFPdu) pdu;\n+        \n+\n+\n+        //Layer1\n+        final IFFLayer1 layer1 = ipdu.getLayer1();\n+       \n+        //EmittingEntityId\n+        assertEquals(1, layer1.getEmittingEntityId().getSiteID());\n+        assertEquals(206, layer1.getEmittingEntityId().getApplicationID());\n+        assertEquals(55, layer1.getEmittingEntityId().getEntityID());\n+        \n+        //EventId\n+        assertEquals(1, layer1.getEventId().getSimulationAddress().getSite());\n+        assertEquals(206, layer1.getEventId().getSimulationAddress().getApplication());\n+        assertEquals(1, layer1.getEventId().getEventNumber());\n+        \n+        //RelativeAntennaLocation\n+        assertEquals(1, layer1.getRelativeAntennaLocation().getX(),0.001);\n+        assertEquals(1, layer1.getRelativeAntennaLocation().getY(),0.001);\n+        assertEquals(1, layer1.getRelativeAntennaLocation().getZ(),0.001);\n+\n+        //SystemId\n+        assertEquals(1, layer1.getSystemId().getSystemType());\n+        assertEquals(1, layer1.getSystemId().getSystemName());\n+        assertEquals(3, layer1.getSystemId().getSystemMode());\n+        assertEquals(2, layer1.getSystemId().getChangeOptions().getValue());\n+\n+        //SystemDesignator\n+        assertEquals(55, layer1.getSystemDesignator());\n+\n+        //SystemSpecificData\n+        assertEquals(55, layer1.getSystemSpecificData());\n+\n+        //FundamentalOperationalData\n+\n+        //SystemStatus\n+        assertEquals(1, layer1.getFundamentalOperationalData().getSystemStatus());\n+        \n+        //DataField1\n+        assertEquals(0, layer1.getFundamentalOperationalData().getDataField1());\n+        \n+        //InformationLayers\n+        assertEquals(3, layer1.getFundamentalOperationalData().getInformationLayers());\n+\n+        //DataField2\n+        assertEquals(14, layer1.getFundamentalOperationalData().getDataField2());\n+        \n+        //Parameter1\n+        assertEquals(57403, layer1.getFundamentalOperationalData().getParameter1());\n+\n+        //Parameter1\n+        assertEquals(61439, layer1.getFundamentalOperationalData().getParameter2());\n+\n+        //Parameter1\n+        assertEquals(61439, layer1.getFundamentalOperationalData().getParameter3());\n+\n+        //Parameter1\n+        assertEquals(57389, layer1.getFundamentalOperationalData().getParameter4());\n+\n+        //Parameter1\n+        assertEquals(57364, layer1.getFundamentalOperationalData().getParameter5());\n+\n+        //Parameter1\n+        assertEquals(57344, layer1.getFundamentalOperationalData().getParameter6());\n+\n+\n+\n+        //Layer2\n+        final IFFLayer2 layer2 = ipdu.getLayer2();\n+        \n+        //LayerHeader\n+        assertEquals(2, layer2.getLayerHeader().getLayerNumber());        \n+        assertEquals(76, layer2.getLayerHeader().getLength());        \n+        assertEquals(0, layer2.getLayerHeader().getLayerSpecificInformation());        \n+        \n+        //BeamData\n+        assertEquals(56, layer2.getBeamData().getBeamAzimuthCenter(), 0.001);\n+        assertEquals(57, layer2.getBeamData().getBeamAzimuthSweep(), 0.001);\n+        assertEquals(58, layer2.getBeamData().getBeamElevationCenter(), 0.001);\n+        assertEquals(60, layer2.getBeamData().getBeamElevationSweep(), 0.001);\n+        assertEquals(59, layer2.getBeamData().getBeamSweepSync(), 0.001);\n+        \n+        //IffFundamentalParameterData\n+        assertEquals(2, layer2.getIffFundamentalParameterData().size());\n+        \n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(0).getApplicableModes());\n+        assertEquals(5, layer2.getIffFundamentalParameterData().get(0).getBurstLength());\n+        assertEquals(5, layer2.getIffFundamentalParameterData().get(0).getErp(), 0.001);\n+        assertEquals(5, layer2.getIffFundamentalParameterData().get(0).getFrequency(), 0.001);\n+        assertEquals(5, layer2.getIffFundamentalParameterData().get(0).getPgrf(), 0.001);\n+        assertEquals(5, layer2.getIffFundamentalParameterData().get(0).getPulseWidth(), 0.001);\n+        assertEquals(3, layer2.getIffFundamentalParameterData().get(0).getSystemSpecificData().length);\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(0).getSystemSpecificData()[0]);\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(0).getSystemSpecificData()[1]);\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(0).getSystemSpecificData()[2]);\n+\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(1).getApplicableModes());\n+        assertEquals(6, layer2.getIffFundamentalParameterData().get(1).getBurstLength());\n+        assertEquals(6, layer2.getIffFundamentalParameterData().get(1).getErp(), 0.001);\n+        assertEquals(6, layer2.getIffFundamentalParameterData().get(1).getFrequency(), 0.001);\n+        assertEquals(6, layer2.getIffFundamentalParameterData().get(1).getPgrf(), 0.001);\n+        assertEquals(6, layer2.getIffFundamentalParameterData().get(1).getPulseWidth(), 0.001);\n+        assertEquals(3, layer2.getIffFundamentalParameterData().get(1).getSystemSpecificData().length);\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(1).getSystemSpecificData()[0]);\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(1).getSystemSpecificData()[1]);\n+        assertEquals(0, layer2.getIffFundamentalParameterData().get(1).getSystemSpecificData()[2]);\n+        \n+        //SecondaryOperationalData\n+        assertEquals(2, layer2.getSecondaryOperationalData().getNumberOfIFFFundamentalParameterRecords());\n+        assertEquals(0, layer2.getSecondaryOperationalData().getOperationalData1());\n+        assertEquals(0, layer2.getSecondaryOperationalData().getOperationalData2());\n+    }\n+}"
+        },
+        {
+            "sha": "5902be6096a7a1900e244b7f17ae5b36d205c2d4",
+            "filename": "src/test/resources/edu/nps/moves/dis7/IFFPdu.raw",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/open-dis/open-dis-java/blob/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Ftest%2Fresources%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPdu.raw",
+            "raw_url": "https://github.com/open-dis/open-dis-java/raw/c0452952bfe4bbe2d040f151a266487f79e04abe/src%2Ftest%2Fresources%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPdu.raw",
+            "contents_url": "https://api.github.com/repos/open-dis/open-dis-java/contents/src%2Ftest%2Fresources%2Fedu%2Fnps%2Fmoves%2Fdis7%2FIFFPdu.raw?ref=c0452952bfe4bbe2d040f151a266487f79e04abe"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "46f1202268e70c8e864408260309892731d934cb",
+    "node_id": "C_kwDOK0irCtoAKDQ2ZjEyMDIyNjhlNzBjOGU4NjQ0MDgyNjAzMDk4OTI3MzFkOTM0Y2I",
+    "commit": {
+        "author": {
+            "name": "Khadir Abdul",
+            "email": "khadir786.ka@googlemail.com",
+            "date": "2023-12-30T17:08:38Z"
+        },
+        "committer": {
+            "name": "Khadir Abdul",
+            "email": "khadir786.ka@googlemail.com",
+            "date": "2023-12-30T17:08:38Z"
+        },
+        "message": "Handled null pointer exception in logout endpoint",
+        "tree": {
+            "sha": "8a329f0a230d641e934220e9613cae60fbe3704a",
+            "url": "https://api.github.com/repos/khadir786/pokemonDexBase/git/trees/8a329f0a230d641e934220e9613cae60fbe3704a"
+        },
+        "url": "https://api.github.com/repos/khadir786/pokemonDexBase/git/commits/46f1202268e70c8e864408260309892731d934cb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/khadir786/pokemonDexBase/commits/46f1202268e70c8e864408260309892731d934cb",
+    "html_url": "https://github.com/khadir786/pokemonDexBase/commit/46f1202268e70c8e864408260309892731d934cb",
+    "comments_url": "https://api.github.com/repos/khadir786/pokemonDexBase/commits/46f1202268e70c8e864408260309892731d934cb/comments",
+    "author": {
+        "login": "khadir786",
+        "id": 52165828,
+        "node_id": "MDQ6VXNlcjUyMTY1ODI4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52165828?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/khadir786",
+        "html_url": "https://github.com/khadir786",
+        "followers_url": "https://api.github.com/users/khadir786/followers",
+        "following_url": "https://api.github.com/users/khadir786/following{/other_user}",
+        "gists_url": "https://api.github.com/users/khadir786/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/khadir786/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/khadir786/subscriptions",
+        "organizations_url": "https://api.github.com/users/khadir786/orgs",
+        "repos_url": "https://api.github.com/users/khadir786/repos",
+        "events_url": "https://api.github.com/users/khadir786/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/khadir786/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "khadir786",
+        "id": 52165828,
+        "node_id": "MDQ6VXNlcjUyMTY1ODI4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52165828?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/khadir786",
+        "html_url": "https://github.com/khadir786",
+        "followers_url": "https://api.github.com/users/khadir786/followers",
+        "following_url": "https://api.github.com/users/khadir786/following{/other_user}",
+        "gists_url": "https://api.github.com/users/khadir786/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/khadir786/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/khadir786/subscriptions",
+        "organizations_url": "https://api.github.com/users/khadir786/orgs",
+        "repos_url": "https://api.github.com/users/khadir786/repos",
+        "events_url": "https://api.github.com/users/khadir786/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/khadir786/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8edd45505001bb2eeac3dde79b476eb68efc94a4",
+            "url": "https://api.github.com/repos/khadir786/pokemonDexBase/commits/8edd45505001bb2eeac3dde79b476eb68efc94a4",
+            "html_url": "https://github.com/khadir786/pokemonDexBase/commit/8edd45505001bb2eeac3dde79b476eb68efc94a4"
+        }
+    ],
+    "stats": {
+        "total": 80,
+        "additions": 41,
+        "deletions": 39
+    },
+    "files": [
+        {
+            "sha": "3452208b9d6dae99616a684e1070b72e9cbb6a30",
+            "filename": "src/main/java/com/khadir/pokemonserver/controllers/AuthController.java",
+            "status": "modified",
+            "additions": 41,
+            "deletions": 39,
+            "changes": 80,
+            "blob_url": "https://github.com/khadir786/pokemonDexBase/blob/46f1202268e70c8e864408260309892731d934cb/src%2Fmain%2Fjava%2Fcom%2Fkhadir%2Fpokemonserver%2Fcontrollers%2FAuthController.java",
+            "raw_url": "https://github.com/khadir786/pokemonDexBase/raw/46f1202268e70c8e864408260309892731d934cb/src%2Fmain%2Fjava%2Fcom%2Fkhadir%2Fpokemonserver%2Fcontrollers%2FAuthController.java",
+            "contents_url": "https://api.github.com/repos/khadir786/pokemonDexBase/contents/src%2Fmain%2Fjava%2Fcom%2Fkhadir%2Fpokemonserver%2Fcontrollers%2FAuthController.java?ref=46f1202268e70c8e864408260309892731d934cb",
+            "patch": "@@ -17,6 +17,7 @@\n import com.khadir.pokemonserver.config.handlers.CustomAuthenticationSuccessHandler;\n import com.khadir.pokemonserver.dtos.UserDto;\n import com.khadir.pokemonserver.exceptions.UserAlreadyExistsException;\n+import com.khadir.pokemonserver.exceptions.UserNotFoundException;\n import com.khadir.pokemonserver.models.User;\n import com.khadir.pokemonserver.services.UserService;\n \n@@ -26,58 +27,59 @@\n @RequestMapping(\"/api/auth\")\n public class AuthController {\n \n-    @Autowired\n-    private UserService userService;\n+\t@Autowired\n+\tprivate UserService userService;\n \n \t@PostMapping(\"/register\")\n-    public ResponseEntity<?> registerUser(@RequestBody UserDto userDto) {\n-        try {\n-            User user = userService.registerNewUser(userDto);\n-            UserDto responseDto = convertToDto(user);\n-            return new ResponseEntity<>(responseDto, HttpStatus.CREATED);\n-        } catch (UserAlreadyExistsException e) {\n-            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);\n-        }\n-        // Include more exception handling as needed\n-    }\n-\t\n+\tpublic ResponseEntity<?> registerUser(@RequestBody UserDto userDto) {\n+\t\ttry {\n+\t\t\tUser user = userService.registerNewUser(userDto);\n+\t\t\tUserDto responseDto = convertToDto(user);\n+\t\t\treturn new ResponseEntity<>(responseDto, HttpStatus.CREATED);\n+\t\t} catch (UserAlreadyExistsException e) {\n+\t\t\treturn new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);\n+\t\t}\n+\t\t// Include more exception handling as needed\n+\t}\n+\n \tprivate UserDto convertToDto(User user) {\n-\t\tUserDto userDto = UserDto.builder()\n-\t\t\t\t.id(user.getId())\n-\t\t\t\t.username(user.getUsername())\n-\t\t\t\t.build();\n-        return userDto;\n-    }\n-\t\n+\t\tUserDto userDto = UserDto.builder().id(user.getId()).username(user.getUsername()).build();\n+\t\treturn userDto;\n+\t}\n+\n \t@PostMapping(\"/login\")\n \tpublic ResponseEntity<?> loginUser(@RequestBody UserDto userDto, Authentication authentication) {\n-\t    // Can use 'authentication' to access the currently authenticated user's details\n-\t    // Implement any additional logic needed post-authentication\n-\t    return ResponseEntity.ok().body(\"User logged in successfully\");\n+\t\t// Can use 'authentication' to access the currently authenticated user's details\n+\t\t// Implement any additional logic needed post-authentication\n+\t\treturn ResponseEntity.ok().body(\"User logged in successfully\");\n \t}\n \n \t@Autowired\n \tprivate SessionRegistry sessionRegistry;\n \n \t@PostMapping(\"/logout\")\n \tpublic ResponseEntity<?> logout(HttpServletRequest request, Authentication authentication) {\n-\t\t// Retrieve all sessions for the current user\n-\t    List<SessionInformation> userSessions = sessionRegistry.getAllSessions(authentication.getPrincipal(), false);\n+\t\ttry {\n+\t\t\t// Retrieve all sessions for the current user\n+\t\t\tList<SessionInformation> userSessions = sessionRegistry.getAllSessions(authentication.getPrincipal(),\n+\t\t\t\t\tfalse);\n+\t\t\tString sessionId = request.getSession().getId();\n+\t\t\tString username = (String) request.getSession().getAttribute(\"username\");\n \n-\t    // Expire all sessions\n-\t    for (SessionInformation session : userSessions) {\n-\t        session.expireNow();\n-\t        sessionRegistry.removeSessionInformation(session.getSessionId());\n-\t    }\n-\t    \n-\t    String sessionId = request.getSession().getId();\n-\t    String username = (String) request.getSession().getAttribute(\"username\");\n-\t    request.getSession().invalidate();\n-\t    SecurityContextHolder.clearContext();\n-\t    CustomAuthenticationSuccessHandler.removeActiveSession(sessionId);\n-\t    return ResponseEntity.ok().body(\"User: \" + username + \" logged out\");\n-\t}\n+\t\t\t// Expire all sessions\n+\t\t\tfor (SessionInformation session : userSessions) {\n+\t\t\t\tsession.expireNow();\n+\t\t\t\tsessionRegistry.removeSessionInformation(session.getSessionId());\n+\t\t\t}\n \n+\t\t\trequest.getSession().invalidate();\n+\t\t\tSecurityContextHolder.clearContext();\n+\t\t\tCustomAuthenticationSuccessHandler.removeActiveSession(sessionId);\n+\t\t\treturn ResponseEntity.ok().body(\"User: \" + username + \" logged out\");\n+\t\t} catch (NullPointerException e) {\n+\t\t\treturn new ResponseEntity<>(\"Cannot log out because user isn't logged in\", HttpStatus.BAD_REQUEST);\n+\t\t}\n+\n+\t}\n \n-\t\n }"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+   public void test_Creating_a_new_Asset_Administration_Shell_Descriptor_with_empty_IdShort_in_shell_and_valid_IdShort_in_submodelDescriptor_level() throws Exception {
+      //Given
+      removedAllShells();
+      AssetAdministrationShellDescriptor shellPayload = TestUtil.createCompleteAasDescriptor();
+      shellPayload.setIdShort( null );
+      //When & Then
+      mvc.perform(
+                  MockMvcRequestBuilders
+                        .post( SHELL_BASE_PATH )
+                        .accept( MediaType.APPLICATION_JSON )
+                        .contentType( MediaType.APPLICATION_JSON )
+                        .content( mapper.writeValueAsString( shellPayload ) )
+                        .with( jwtTokenFactory.allRoles() )
+            )
+            .andDo( MockMvcResultHandlers.print() )
+            .andExpect( status().isCreated());
+   }

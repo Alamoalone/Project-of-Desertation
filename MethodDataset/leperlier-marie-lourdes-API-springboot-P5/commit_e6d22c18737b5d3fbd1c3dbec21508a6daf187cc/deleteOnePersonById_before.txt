@@ -1,0 +1,10 @@
+	public ResponseEntity<Long> deleteOnePersonById(@PathVariable String id)  {
+		
+		try {
+			personService.deleteOnePersonById(id);
+			return new ResponseEntity<Long>(HttpStatus.NO_CONTENT);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return new ResponseEntity<Long>(HttpStatus.NOT_FOUND);
+		}	
+	}

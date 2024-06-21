@@ -1,0 +1,52 @@
+    private void initSdk(MethodCall call, final MethodChannel.Result result) {
+        AppsFlyerConversionListener gcdListener = null;
+        DeepLinkListener udlListener = null;
+        AppsFlyerLib instance = AppsFlyerLib.getInstance();
+
+        String afDevKey = (String) call.argument(AppsFlyerConstants.AF_DEV_KEY);
+        if (afDevKey == null || afDevKey.equals("")) {
+            result.error(null, "AF Dev Key is empty", "AF dev key cannot be empty");
+        }
+
+        boolean advertiserIdDisabled = (boolean) call.argument(AppsFlyerConstants.DISABLE_ADVERTISING_IDENTIFIER);
+        if (advertiserIdDisabled) {
+            instance.setDisableAdvertisingIdentifiers(true);
+        }
+
+        boolean getGCD = (boolean) call.argument(AppsFlyerConstants.AF_GCD);
+        if (getGCD) {
+            gcdListener = afConversionListener;
+        }
+        // added Unified deeplink
+        boolean getUdl = (boolean) call.argument(AppsFlyerConstants.AF_UDL);
+        if (getUdl) {
+            instance.subscribeForDeepLink(afDeepLinkListener);
+        }
+
+        boolean isDebug = (boolean) call.argument(AppsFlyerConstants.AF_IS_DEBUG);
+        if (isDebug) {
+            instance.setLogLevel(AFLogger.LogLevel.DEBUG);
+            instance.setDebugLog(true);
+        } else {
+            instance.setDebugLog(false);
+        }
+
+        PluginInfo pluginInfo = new PluginInfo(Plugin.FLUTTER, AppsFlyerConstants.PLUGIN_VERSION);
+        instance.setPluginInfo(pluginInfo);
+
+        instance.init(afDevKey, gcdListener, mContext);
+
+        String appInviteOneLink = (String) call.argument(AppsFlyerConstants.AF_APP_INVITE_ONE_LINK);
+        if (appInviteOneLink != null) {
+            instance.setAppInviteOneLink(appInviteOneLink);
+        }
+
+        instance.start(activity);
+
+        if (saveCallbacks) {
+            saveCallbacks = false;
+            sendCachedCallbacksToDart();
+        }
+
+        result.success("success");
+    }

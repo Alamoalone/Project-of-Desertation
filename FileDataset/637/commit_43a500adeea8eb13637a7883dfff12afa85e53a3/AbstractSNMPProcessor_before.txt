@@ -1,0 +1,22 @@
+    private void buildTargetResource(ProcessContext context) {
+        if((this.transportMapping == null) || !this.transportMapping.isListening() || (this.snmp == null)) {
+            try {
+                this.transportMapping = new DefaultUdpTransportMapping();
+                this.snmp = new Snmp(this.transportMapping);
+
+                if("SNMPv3".equals(context.getProperty(SNMP_VERSION).getValue())) {
+                    USM usm = new USM(SecurityProtocols.getInstance(), new OctetString(MPv3.createLocalEngineID()), 0);
+                    SecurityModels.getInstance().addSecurityModel(usm);
+                }
+
+                this.transportMapping.listen();
+            } catch (Exception e) {
+                throw new IllegalStateException("Failed to initialize UDP transport mapping", e);
+            }
+        }
+        if (this.snmpTarget == null) {
+            this.snmpTarget = this.createSnmpTarget(context);
+            this.targetResource = this.finishBuildingTargetResource(context);
+        }
+    }
+

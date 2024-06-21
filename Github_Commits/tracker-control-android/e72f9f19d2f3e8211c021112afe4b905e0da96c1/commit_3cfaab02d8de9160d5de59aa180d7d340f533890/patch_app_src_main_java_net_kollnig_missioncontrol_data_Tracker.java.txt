@@ -1,0 +1,13 @@
+@@ -71,10 +71,10 @@ public String toString() {
+      * @return Name of tracker company
+      */
+     public String getName() {
+-        if (name.equals("Alphabet"))
++        if (name != null && name.equals("Alphabet"))
+             return "Google";
+ 
+-        if (name.equals("Adobe Systems"))
++        if (name != null && name.equals("Adobe Systems"))
+             return "Adobe";
+ 
+         return name;

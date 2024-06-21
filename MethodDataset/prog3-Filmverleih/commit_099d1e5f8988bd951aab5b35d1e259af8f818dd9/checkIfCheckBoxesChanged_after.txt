@@ -1,0 +1,12 @@
+    private void checkIfCheckBoxesChanged() {
+        if(currentMovieType.equals("DVD") && !cbx_movieEditSelDVD.isSelected()) {
+            cbx_movieEditSelDVD.setStyle("-fx-text-fill: #FF4040");
+            cbx_movieEditSelBluRay.setStyle("-fx-text-fill: #FF4040");
+        } else if(currentMovieType.equals("BR") && !cbx_movieEditSelBluRay.isSelected()) {
+            cbx_movieEditSelBluRay.setStyle("-fx-fill: #FF4040");
+            cbx_movieEditSelDVD.setStyle("-fx-text-fill: #FF4040");
+        } else {
+            cbx_movieEditSelBluRay.setStyle("-fx-fill: #FFF");
+            cbx_movieEditSelDVD.setStyle("-fx-text-fill: #FFF");
+        }
+    }

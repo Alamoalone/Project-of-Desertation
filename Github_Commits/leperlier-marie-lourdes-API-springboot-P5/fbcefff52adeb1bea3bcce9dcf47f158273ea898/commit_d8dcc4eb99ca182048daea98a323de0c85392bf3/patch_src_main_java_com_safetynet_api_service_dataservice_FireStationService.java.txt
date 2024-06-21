@@ -1,0 +1,46 @@
+@@ -20,7 +20,7 @@ public FireStation addFireStation(FireStation fireStation) {
+ 		fireStations.add(fireStation);
+ 		return fireStation;
+ 	}
+-	
++
+ //ajouter illagal state argumnt pour le body vide passé en parametre sans entrée et envoyer un code erreur de non creation de donnée ,
+ //car les annotation permette de renvoyer erreur 400
+ 	public FireStation addStationNumberOfExistingFireStation(FireStation fireStation, String address) {
+@@ -96,15 +96,15 @@ public boolean deleteFireStationById(String id) throws NullPointerException {
+ 		// log.debug("Deleting medical record for {} {}", firstName, lastName);
+ 		boolean result = false;
+ 		result = fireStations.removeIf(fireStation -> fireStation.getId().equals(id));
+-		
++
+ 		if (!result) {
+ 			// log.error("Failed to delete firestation for {} {}", id);
+ 			throw new NullPointerException("this station number of firestation to remove doesn't exist");
+-		}else {
++		} else {
+ 			// log.info("firestation deleted by id with station number successfully for {}
+ 			// {}", id);
+ 		}
+-		
++
+ 		return result;
+ 	}
+ 
+@@ -131,7 +131,7 @@ public List<FireStation> getFireStationsById(String id) throws NullPointerExcept
+ 				fireStationsFoundById.add(itrFireStation);
+ 			}
+ 		}
+-		
++
+ 		if (fireStationsFoundById.isEmpty()) {
+ 			throw new NullPointerException("firestation not found");
+ 		}
+@@ -149,7 +149,7 @@ public FireStation getOneFireStationByAddress(String address) throws NullPointer
+ 		return fireStationFoundByAddress;
+ 	}
+ 
+-	public List<FireStation> getAllFireStations() throws NullPointerException{
++	public List<FireStation> getAllFireStations() throws NullPointerException {
+ 		if (fireStations.isEmpty()) {
+ 			throw new NullPointerException("none firestation registered!");
+ 		}

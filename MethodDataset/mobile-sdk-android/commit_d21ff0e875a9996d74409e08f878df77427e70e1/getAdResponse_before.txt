@@ -1,0 +1,36 @@
+    private AdResponse getAdResponse() {
+        return new AdResponse() {
+            @Override
+            public MediaType getMediaType() {
+                return adView.getMediaType();
+            }
+
+            @Override
+            public boolean isMediated() {
+                // Only SSM / RTBHTML and BannerVideo use AdWebView for rendering
+                return (UTConstants.SSM.equalsIgnoreCase(adResponseData.getContentSource())) ? true : false;
+            }
+
+            @Override
+            public Displayable getDisplayable() {
+                return AdWebView.this;
+            }
+
+            @Override
+            public NativeAdResponse getNativeAdResponse() {
+                if (isNativeAd)
+                    return ((RTBNativeAdResponse) adResponseData).getNativeAdResponse();
+                return null;
+            }
+
+            @Override
+            public BaseAdResponse getResponseData() {
+                return AdWebView.this.adResponseData;
+            }
+
+            @Override
+            public void destroy() {
+                AdWebView.this.destroy();
+            }
+        };
+    }

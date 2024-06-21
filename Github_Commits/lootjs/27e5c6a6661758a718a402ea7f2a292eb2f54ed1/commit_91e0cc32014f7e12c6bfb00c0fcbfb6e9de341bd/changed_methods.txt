@@ -1,0 +1,4 @@
+lootjs$setQueriedLootTableId(ResourceLocation id)
+lootjs$getLootConsumer()
+lootjs$setLootConsumer(LootConsumer consumer)
+lootjs$getQueriedLootTableId()

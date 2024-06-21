@@ -1,0 +1,6 @@
+@@ -1,5 +0,0 @@
+-package com.springimplant.ioc.autowired;
+-
+-public class Human {
+-	private Heart heart;
+-}

@@ -1,0 +1,21 @@
+    private Pet mapPetEntitytoPetResponse(PetEntity petEntity) {
+        Pet petResponse = new Pet();
+        petResponse.setPetId(petEntity.getPetId());
+        petResponse.setAge(petEntity.getAge());
+        petResponse.setPetType(petEntity.getPetType());
+        petResponse.setName(petResponse.getName());
+        petResponse.setBreed(petEntity.getBreed());
+        petResponse.setDescription(petEntity.getDescription());
+        petResponse.setStatus(petEntity.getPetStatus());
+        petResponse.setFatherBreed(petEntity.getFatherBreed());
+        petResponse.setMotherBreed(petEntity.getMotherBreed());
+        petResponse.setLocation(petEntity.getLocation());
+        petResponse.setQuality(petEntity.getQuality());
+        petResponse.setGender(petEntity.getGender());
+        UserDto owner = mapSellerEntitytoUserDto(petEntity.getSeller());
+        petResponse.setOwner(owner);
+        petResponse.setService(mapPetServiceEntityToPetService(petEntity.getService()));
+        petResponse.setImageUrls(petEntity.getPetImageEntity().getImageUrls());
+        return petResponse;
+    }
+

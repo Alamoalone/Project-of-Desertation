@@ -1,0 +1,8 @@
+@@ -29,6 +29,7 @@ public static void cancelMoveIfConnectedToShop(
+     public static List<Shop> getConnectedShops(HopperBlockEntity hopperEntity) {
+         var output = new ArrayList<Shop>();
+         var pos = hopperEntity.getBlockPos();
++        if (hopperEntity.getLevel() == null) return output;
+         var entity = hopperEntity.getLevel().getBlockEntity(pos.relative(Direction.UP));
+         if (entity instanceof BarrelBlockEntity barrelEntity) {
+             var shop = IBarrelEntity.getConnectedShop(barrelEntity);

@@ -1,0 +1,23 @@
+@@ -230,6 +230,22 @@ void testCompanyAppointmentMapperWithoutDateOfBirth() {
+                 .dateOfBirth(null), actual);
+     }
+ 
++    @Test
++    void testCompanyAppointmentMapperWithoutSensitiveData() {
++        //when
++        OfficerSummary actual = companyAppointmentMapper.map(
++                companyAppointmentData(officerData()
++                        .forename("Forename")
++                        .surname("SURNAME")
++                        .build())
++                        .sensitiveData(null));
++
++        //then
++        assertEquals(expectedCompanyAppointment()
++                .name("SURNAME, Forename")
++                .dateOfBirth(null), actual);
++    }
++
+     @Test
+     void testCompanyAppointmentMapperDoesNotMapCountryOfResidenceOrDOBForSecretarialRoles() {
+         SecretarialRoles.stream().forEach(secretary -> {

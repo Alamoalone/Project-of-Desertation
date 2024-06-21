@@ -1,0 +1,3 @@
+addLocalClaim(LocalClaimReqDTO localClaimReqDTO)
+updateExternalClaims(String dialectId, List externalClaimReqDTOList, Boolean delete)
+updateLocalClaims(List localClaimReqDTOList, Boolean delete)

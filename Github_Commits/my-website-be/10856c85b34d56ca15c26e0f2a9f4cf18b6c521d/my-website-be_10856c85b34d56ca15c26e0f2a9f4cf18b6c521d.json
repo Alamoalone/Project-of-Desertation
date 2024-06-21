@@ -1,0 +1,98 @@
+{
+    "sha": "10856c85b34d56ca15c26e0f2a9f4cf18b6c521d",
+    "node_id": "C_kwDOJ6jxBNoAKDEwODU2Yzg1YjM0ZDU2Y2ExNWMyNmUwZjJhOWY0Y2YxOGI2YzUyMWQ",
+    "commit": {
+        "author": {
+            "name": "yapicimurat",
+            "email": "muratyapiicii@gmail.com",
+            "date": "2023-10-09T21:16:33Z"
+        },
+        "committer": {
+            "name": "yapicimurat",
+            "email": "muratyapiicii@gmail.com",
+            "date": "2023-10-09T21:16:33Z"
+        },
+        "message": "Change the locations of isEmpty check method to avoid null pointer exception",
+        "tree": {
+            "sha": "72cbbd5c7d407f280c27e386b20b9a50c4dda2c4",
+            "url": "https://api.github.com/repos/yapicimurat/my-website-be/git/trees/72cbbd5c7d407f280c27e386b20b9a50c4dda2c4"
+        },
+        "url": "https://api.github.com/repos/yapicimurat/my-website-be/git/commits/10856c85b34d56ca15c26e0f2a9f4cf18b6c521d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/yapicimurat/my-website-be/commits/10856c85b34d56ca15c26e0f2a9f4cf18b6c521d",
+    "html_url": "https://github.com/yapicimurat/my-website-be/commit/10856c85b34d56ca15c26e0f2a9f4cf18b6c521d",
+    "comments_url": "https://api.github.com/repos/yapicimurat/my-website-be/commits/10856c85b34d56ca15c26e0f2a9f4cf18b6c521d/comments",
+    "author": {
+        "login": "yapicimurat",
+        "id": 45922313,
+        "node_id": "MDQ6VXNlcjQ1OTIyMzEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45922313?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/yapicimurat",
+        "html_url": "https://github.com/yapicimurat",
+        "followers_url": "https://api.github.com/users/yapicimurat/followers",
+        "following_url": "https://api.github.com/users/yapicimurat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yapicimurat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/yapicimurat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yapicimurat/subscriptions",
+        "organizations_url": "https://api.github.com/users/yapicimurat/orgs",
+        "repos_url": "https://api.github.com/users/yapicimurat/repos",
+        "events_url": "https://api.github.com/users/yapicimurat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/yapicimurat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "yapicimurat",
+        "id": 45922313,
+        "node_id": "MDQ6VXNlcjQ1OTIyMzEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45922313?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/yapicimurat",
+        "html_url": "https://github.com/yapicimurat",
+        "followers_url": "https://api.github.com/users/yapicimurat/followers",
+        "following_url": "https://api.github.com/users/yapicimurat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yapicimurat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/yapicimurat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yapicimurat/subscriptions",
+        "organizations_url": "https://api.github.com/users/yapicimurat/orgs",
+        "repos_url": "https://api.github.com/users/yapicimurat/repos",
+        "events_url": "https://api.github.com/users/yapicimurat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/yapicimurat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6b995546d7820b0d0ca96ac0b247853ddfaadcca",
+            "url": "https://api.github.com/repos/yapicimurat/my-website-be/commits/6b995546d7820b0d0ca96ac0b247853ddfaadcca",
+            "html_url": "https://github.com/yapicimurat/my-website-be/commit/6b995546d7820b0d0ca96ac0b247853ddfaadcca"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "8f51eb5b6038426764b07885cc72f1be7d9472f1",
+            "filename": "src/main/java/com/yapicimurat/util/GeneralUtil.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/yapicimurat/my-website-be/blob/10856c85b34d56ca15c26e0f2a9f4cf18b6c521d/src%2Fmain%2Fjava%2Fcom%2Fyapicimurat%2Futil%2FGeneralUtil.java",
+            "raw_url": "https://github.com/yapicimurat/my-website-be/raw/10856c85b34d56ca15c26e0f2a9f4cf18b6c521d/src%2Fmain%2Fjava%2Fcom%2Fyapicimurat%2Futil%2FGeneralUtil.java",
+            "contents_url": "https://api.github.com/repos/yapicimurat/my-website-be/contents/src%2Fmain%2Fjava%2Fcom%2Fyapicimurat%2Futil%2FGeneralUtil.java?ref=10856c85b34d56ca15c26e0f2a9f4cf18b6c521d",
+            "patch": "@@ -11,7 +11,7 @@ public final class GeneralUtil {\n     private GeneralUtil() {}\n \n     public static boolean isNullOrEmpty(String str) {\n-        return str.isEmpty() || str == null;\n+        return str == null || str.isEmpty();\n     }\n \n     public static <T extends BaseDTO, S extends BaseModel> List<T> mapEntityListToDTOList("
+        }
+    ]
+}

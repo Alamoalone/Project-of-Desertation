@@ -1,0 +1,122 @@
+{
+    "sha": "f312226c176b5bee05d712d1d40926a493aaed95",
+    "node_id": "C_kwDOKChZ8doAKGYzMTIyMjZjMTc2YjViZWUwNWQ3MTJkMWQ0MDkyNmE0OTNhYWVkOTU",
+    "commit": {
+        "author": {
+            "name": "Danila",
+            "email": "crowo4ka@gmail.com",
+            "date": "2023-10-16T19:59:52Z"
+        },
+        "committer": {
+            "name": "Danila",
+            "email": "crowo4ka@gmail.com",
+            "date": "2023-10-16T19:59:52Z"
+        },
+        "message": "fix: getBlockedDimensions null pointer exception when config just initialized",
+        "tree": {
+            "sha": "e5d46da8eeaef33ee68708fcaa4ba15d8dff926d",
+            "url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/git/trees/e5d46da8eeaef33ee68708fcaa4ba15d8dff926d"
+        },
+        "url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/git/commits/f312226c176b5bee05d712d1d40926a493aaed95",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/commits/f312226c176b5bee05d712d1d40926a493aaed95",
+    "html_url": "https://github.com/BehindTheScenery/eternal-dimensions/commit/f312226c176b5bee05d712d1d40926a493aaed95",
+    "comments_url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/commits/f312226c176b5bee05d712d1d40926a493aaed95/comments",
+    "author": {
+        "login": "danila-schelkov",
+        "id": 54549682,
+        "node_id": "MDQ6VXNlcjU0NTQ5Njgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/54549682?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danila-schelkov",
+        "html_url": "https://github.com/danila-schelkov",
+        "followers_url": "https://api.github.com/users/danila-schelkov/followers",
+        "following_url": "https://api.github.com/users/danila-schelkov/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danila-schelkov/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danila-schelkov/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danila-schelkov/subscriptions",
+        "organizations_url": "https://api.github.com/users/danila-schelkov/orgs",
+        "repos_url": "https://api.github.com/users/danila-schelkov/repos",
+        "events_url": "https://api.github.com/users/danila-schelkov/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danila-schelkov/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "danila-schelkov",
+        "id": 54549682,
+        "node_id": "MDQ6VXNlcjU0NTQ5Njgy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/54549682?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danila-schelkov",
+        "html_url": "https://github.com/danila-schelkov",
+        "followers_url": "https://api.github.com/users/danila-schelkov/followers",
+        "following_url": "https://api.github.com/users/danila-schelkov/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danila-schelkov/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danila-schelkov/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danila-schelkov/subscriptions",
+        "organizations_url": "https://api.github.com/users/danila-schelkov/orgs",
+        "repos_url": "https://api.github.com/users/danila-schelkov/repos",
+        "events_url": "https://api.github.com/users/danila-schelkov/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danila-schelkov/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d3f23a5162843878a37e899eaf3fd19a6a71cf46",
+            "url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/commits/d3f23a5162843878a37e899eaf3fd19a6a71cf46",
+            "html_url": "https://github.com/BehindTheScenery/eternal-dimensions/commit/d3f23a5162843878a37e899eaf3fd19a6a71cf46"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 3,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "8c6281be05c1489fe27455df6bc301ac77f730e9",
+            "filename": "gradle.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/BehindTheScenery/eternal-dimensions/blob/f312226c176b5bee05d712d1d40926a493aaed95/gradle.properties",
+            "raw_url": "https://github.com/BehindTheScenery/eternal-dimensions/raw/f312226c176b5bee05d712d1d40926a493aaed95/gradle.properties",
+            "contents_url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/contents/gradle.properties?ref=f312226c176b5bee05d712d1d40926a493aaed95",
+            "patch": "@@ -10,7 +10,7 @@ loader_version=0.14.21\n loom_version=1.3-SNAPSHOT\n \n # Mod Properties\n-mod_version=1.0.9\n+mod_version=1.1.0\n maven_group=com.vorono4ka\n archives_base_name=no-more-dimensions\n "
+        },
+        {
+            "sha": "dff0f557fe43015ece1ab2b7a1440bf4825a9a3a",
+            "filename": "src/main/java/com/vorono4ka/config/NoMoreDimensionsConfig.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/BehindTheScenery/eternal-dimensions/blob/f312226c176b5bee05d712d1d40926a493aaed95/src%2Fmain%2Fjava%2Fcom%2Fvorono4ka%2Fconfig%2FNoMoreDimensionsConfig.java",
+            "raw_url": "https://github.com/BehindTheScenery/eternal-dimensions/raw/f312226c176b5bee05d712d1d40926a493aaed95/src%2Fmain%2Fjava%2Fcom%2Fvorono4ka%2Fconfig%2FNoMoreDimensionsConfig.java",
+            "contents_url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/contents/src%2Fmain%2Fjava%2Fcom%2Fvorono4ka%2Fconfig%2FNoMoreDimensionsConfig.java?ref=f312226c176b5bee05d712d1d40926a493aaed95",
+            "patch": "@@ -22,7 +22,7 @@ public static class Common {\n         public String blockedDimensions;\n \n         public String[] getBlockedDimensions() {\n-            return blockedDimensions.split(listDelimiter);\n+            return blockedDimensions != null ? blockedDimensions.split(listDelimiter) : new String[0];\n         }\n     }\n }"
+        },
+        {
+            "sha": "9ca3b3e896e258bebbc4f3ad723c4353303cefca",
+            "filename": "src/main/resources/fabric.mod.json",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/BehindTheScenery/eternal-dimensions/blob/f312226c176b5bee05d712d1d40926a493aaed95/src%2Fmain%2Fresources%2Ffabric.mod.json",
+            "raw_url": "https://github.com/BehindTheScenery/eternal-dimensions/raw/f312226c176b5bee05d712d1d40926a493aaed95/src%2Fmain%2Fresources%2Ffabric.mod.json",
+            "contents_url": "https://api.github.com/repos/BehindTheScenery/eternal-dimensions/contents/src%2Fmain%2Fresources%2Ffabric.mod.json?ref=f312226c176b5bee05d712d1d40926a493aaed95",
+            "patch": "@@ -10,7 +10,7 @@\n \t\"contact\": {\n \t\t\"sources\": \"https://github.com/BehindTheScenery/eternal-dimensions\"\n \t},\n-\t\"license\": \"CC0-1.0\",\n+\t\"license\": \"MIT\",\n \t\"icon\": \"assets/no-more-dimensions/icon.png\",\n \t\"environment\": \"*\",\n \t\"entrypoints\": {"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+    private void cutImageByPixels(boolean changeFormat, File file, String format, String fileName) {
+        String pathOfNewFile = ""; // for logger
+        try {
+            image = ImageIO.read(file);
+
+            // changing image
+            if (width > 0 && height > 0) {
+                image = Scalr.resize(image, width, height);
+            }
+
+            if (compressionRate > 0) {
+                height = image.getHeight();
+                width = image.getWidth();
+                double buffer = (double) compressionRate / 100;
+                int newWidth = width - (int) (width * buffer);
+                int newHeight = height - (int) (height * buffer);
+                image = Scalr.resize(image, newWidth, newHeight);
+            }
+
+            // saving image
+            if (changeFormat) {
+                File newFile = new File(dstFolder + "\\" + fileName + "." + dstFormat.toString());
+                newFile = escapeDuplicateFiles(newFile, dstFolder, fileName);
+                pathOfNewFile = newFile.getPath();
+                ImageIO.write(image, dstFormat.toString(), newFile);
+            } else {
+                File newFile = new File(dstFolder + "\\" + fileName + "." + format);
+                newFile = escapeDuplicateFiles(newFile, dstFolder, fileName);
+                ImageIO.write(image, format, newFile);
+                Main.logger.info("обработали файл " + newFile.getName());
+            }
+        } catch (Exception e) {
+            Main.logger.error("Не удалось сохранить файл " + file.getName() + " Путь = " + pathOfNewFile);
+            copyErrorFile(file, format, fileName);
+        }
+
+    }

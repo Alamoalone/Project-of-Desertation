@@ -1,0 +1,122 @@
+{
+    "sha": "df04944f4b1292538d5f8acf032075459fa3de06",
+    "node_id": "C_kwDOKgvLEtoAKGRmMDQ5NDRmNGIxMjkyNTM4ZDVmOGFjZjAzMjA3NTQ1OWZhM2RlMDY",
+    "commit": {
+        "author": {
+            "name": "jrinehulsPGT",
+            "email": "jrinehuls@pgttrucking.com",
+            "date": "2023-12-01T21:22:51Z"
+        },
+        "committer": {
+            "name": "jrinehulsPGT",
+            "email": "jrinehuls@pgttrucking.com",
+            "date": "2023-12-01T21:22:51Z"
+        },
+        "message": "Handle null pointer exception for posting null image",
+        "tree": {
+            "sha": "7f92762473e87290d224e346abc864220caf1612",
+            "url": "https://api.github.com/repos/jrinehuls/rpg-api/git/trees/7f92762473e87290d224e346abc864220caf1612"
+        },
+        "url": "https://api.github.com/repos/jrinehuls/rpg-api/git/commits/df04944f4b1292538d5f8acf032075459fa3de06",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jrinehuls/rpg-api/commits/df04944f4b1292538d5f8acf032075459fa3de06",
+    "html_url": "https://github.com/jrinehuls/rpg-api/commit/df04944f4b1292538d5f8acf032075459fa3de06",
+    "comments_url": "https://api.github.com/repos/jrinehuls/rpg-api/commits/df04944f4b1292538d5f8acf032075459fa3de06/comments",
+    "author": {
+        "login": "jrinehulsPGT",
+        "id": 123960834,
+        "node_id": "U_kgDOB2N-Ag",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123960834?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrinehulsPGT",
+        "html_url": "https://github.com/jrinehulsPGT",
+        "followers_url": "https://api.github.com/users/jrinehulsPGT/followers",
+        "following_url": "https://api.github.com/users/jrinehulsPGT/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrinehulsPGT/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrinehulsPGT/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrinehulsPGT/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrinehulsPGT/orgs",
+        "repos_url": "https://api.github.com/users/jrinehulsPGT/repos",
+        "events_url": "https://api.github.com/users/jrinehulsPGT/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrinehulsPGT/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jrinehulsPGT",
+        "id": 123960834,
+        "node_id": "U_kgDOB2N-Ag",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123960834?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jrinehulsPGT",
+        "html_url": "https://github.com/jrinehulsPGT",
+        "followers_url": "https://api.github.com/users/jrinehulsPGT/followers",
+        "following_url": "https://api.github.com/users/jrinehulsPGT/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jrinehulsPGT/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jrinehulsPGT/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jrinehulsPGT/subscriptions",
+        "organizations_url": "https://api.github.com/users/jrinehulsPGT/orgs",
+        "repos_url": "https://api.github.com/users/jrinehulsPGT/repos",
+        "events_url": "https://api.github.com/users/jrinehulsPGT/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jrinehulsPGT/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "080e55aa7aca18a46ce9959554190e444394902b",
+            "url": "https://api.github.com/repos/jrinehuls/rpg-api/commits/080e55aa7aca18a46ce9959554190e444394902b",
+            "html_url": "https://github.com/jrinehuls/rpg-api/commit/080e55aa7aca18a46ce9959554190e444394902b"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 4,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "285928a51cd9ac7b2b69584a0301592a54197ba4",
+            "filename": "src/main/java/com/jrinehuls/rpgapi/controller/MonsterController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/jrinehuls/rpg-api/blob/df04944f4b1292538d5f8acf032075459fa3de06/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fcontroller%2FMonsterController.java",
+            "raw_url": "https://github.com/jrinehuls/rpg-api/raw/df04944f4b1292538d5f8acf032075459fa3de06/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fcontroller%2FMonsterController.java",
+            "contents_url": "https://api.github.com/repos/jrinehuls/rpg-api/contents/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fcontroller%2FMonsterController.java?ref=df04944f4b1292538d5f8acf032075459fa3de06",
+            "patch": "@@ -23,7 +23,7 @@ public class MonsterController {\n     @Autowired\n     ModelMapper modelMapper;\n \n-    @PostMapping(value = \"\", consumes = MediaType.MULTIPART_FORM_DATA_VALUE,\n+    @PostMapping(value = \"/\", consumes = MediaType.MULTIPART_FORM_DATA_VALUE,\n             produces = MediaType.APPLICATION_JSON_VALUE)\n     public ResponseEntity<MonsterResponseDto> saveMonster(@Valid @ModelAttribute MonsterRequestDto monsterRequestDto) {\n         Monster monster = monsterService.saveMonster(monsterRequestDto);"
+        },
+        {
+            "sha": "1f03adacf5d41c7ae9730474d160c01758500e1e",
+            "filename": "src/main/java/com/jrinehuls/rpgapi/dto/monster/MonsterRequestDto.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/jrinehuls/rpg-api/blob/df04944f4b1292538d5f8acf032075459fa3de06/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fdto%2Fmonster%2FMonsterRequestDto.java",
+            "raw_url": "https://github.com/jrinehuls/rpg-api/raw/df04944f4b1292538d5f8acf032075459fa3de06/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fdto%2Fmonster%2FMonsterRequestDto.java",
+            "contents_url": "https://api.github.com/repos/jrinehuls/rpg-api/contents/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fdto%2Fmonster%2FMonsterRequestDto.java?ref=df04944f4b1292538d5f8acf032075459fa3de06",
+            "patch": "@@ -50,7 +50,7 @@ public class MonsterRequestDto {\n     @NotNull(message = \"baseExp must be provided\")\n     private Integer baseExp;\n \n-    @NotNull(message = \"image must be provided\")\n+    // @NotNull(message = \"image must be provided\")\n     private MultipartFile image;\n \n }"
+        },
+        {
+            "sha": "42c021638e128a7cddb3773fb5c055433f0cc747",
+            "filename": "src/main/java/com/jrinehuls/rpgapi/service/impl/MonsterServiceImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/jrinehuls/rpg-api/blob/df04944f4b1292538d5f8acf032075459fa3de06/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fservice%2Fimpl%2FMonsterServiceImpl.java",
+            "raw_url": "https://github.com/jrinehuls/rpg-api/raw/df04944f4b1292538d5f8acf032075459fa3de06/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fservice%2Fimpl%2FMonsterServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/jrinehuls/rpg-api/contents/src%2Fmain%2Fjava%2Fcom%2Fjrinehuls%2Frpgapi%2Fservice%2Fimpl%2FMonsterServiceImpl.java?ref=df04944f4b1292538d5f8acf032075459fa3de06",
+            "patch": "@@ -27,8 +27,8 @@ public Monster saveMonster(MonsterRequestDto monsterRequestDto) {\n         Monster monster = modelMapper.map(monsterRequestDto, Monster.class);\n         try {\n             monster.setImage(monsterRequestDto.getImage().getBytes());\n-        } catch (IOException e) {\n-            throw new RuntimeException(e);\n+        } catch (IOException | NullPointerException e) {\n+            monster.setImage(null);\n         }\n \n         return monsterRepository.save(monster);"
+        }
+    ]
+}

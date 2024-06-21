@@ -1,0 +1,13 @@
+  public void paintSelected(Graphics2D graphics, Viewport viewport, Color color)
+  {
+    Int2D p = new Int2D();
+    Int2D s = new Int2D();
+
+    getSelectionBoxInScreenSpace(viewport, p, s);
+
+    graphics.setStroke(viewport.getZoomableStroke());
+    paintSelectionRectangle(graphics, viewport, p.x, p.y, color);
+    paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y, color);
+    paintSelectionRectangle(graphics, viewport, p.x, p.y + s.y, color);
+    paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y + s.y, color);
+  }

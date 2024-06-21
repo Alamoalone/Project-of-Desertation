@@ -1,0 +1,98 @@
+{
+    "sha": "4d707e096acba5c9295ee68b586bdc58d4bb6b70",
+    "node_id": "C_kwDOCPlqTdoAKDRkNzA3ZTA5NmFjYmE1YzkyOTVlZTY4YjU4NmJkYzU4ZDRiYjZiNzA",
+    "commit": {
+        "author": {
+            "name": "freddidierRTE",
+            "email": "frederic-f.didier@rte-france.com",
+            "date": "2023-09-08T05:37:36Z"
+        },
+        "committer": {
+            "name": "Giovanni Ferrari",
+            "email": "giovanni.ferrari@soft.it",
+            "date": "2023-09-08T08:57:25Z"
+        },
+        "message": "Solve potential null pointer exception (Ref audit : CID:31171)\n\nSigned-off-by: freddidierRTE <frederic-f.didier@rte-france.com>",
+        "tree": {
+            "sha": "06b118ef1d366438113dc6aeb553a987c2e79f82",
+            "url": "https://api.github.com/repos/opfab/operatorfabric-core/git/trees/06b118ef1d366438113dc6aeb553a987c2e79f82"
+        },
+        "url": "https://api.github.com/repos/opfab/operatorfabric-core/git/commits/4d707e096acba5c9295ee68b586bdc58d4bb6b70",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/opfab/operatorfabric-core/commits/4d707e096acba5c9295ee68b586bdc58d4bb6b70",
+    "html_url": "https://github.com/opfab/operatorfabric-core/commit/4d707e096acba5c9295ee68b586bdc58d4bb6b70",
+    "comments_url": "https://api.github.com/repos/opfab/operatorfabric-core/commits/4d707e096acba5c9295ee68b586bdc58d4bb6b70/comments",
+    "author": {
+        "login": "freddidierRTE",
+        "id": 58251627,
+        "node_id": "MDQ6VXNlcjU4MjUxNjI3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58251627?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/freddidierRTE",
+        "html_url": "https://github.com/freddidierRTE",
+        "followers_url": "https://api.github.com/users/freddidierRTE/followers",
+        "following_url": "https://api.github.com/users/freddidierRTE/following{/other_user}",
+        "gists_url": "https://api.github.com/users/freddidierRTE/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/freddidierRTE/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/freddidierRTE/subscriptions",
+        "organizations_url": "https://api.github.com/users/freddidierRTE/orgs",
+        "repos_url": "https://api.github.com/users/freddidierRTE/repos",
+        "events_url": "https://api.github.com/users/freddidierRTE/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/freddidierRTE/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "quinarygio",
+        "id": 19426449,
+        "node_id": "MDQ6VXNlcjE5NDI2NDQ5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19426449?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/quinarygio",
+        "html_url": "https://github.com/quinarygio",
+        "followers_url": "https://api.github.com/users/quinarygio/followers",
+        "following_url": "https://api.github.com/users/quinarygio/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quinarygio/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/quinarygio/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quinarygio/subscriptions",
+        "organizations_url": "https://api.github.com/users/quinarygio/orgs",
+        "repos_url": "https://api.github.com/users/quinarygio/repos",
+        "events_url": "https://api.github.com/users/quinarygio/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/quinarygio/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1e9f349579b755e69b211893032d4aefdaae5494",
+            "url": "https://api.github.com/repos/opfab/operatorfabric-core/commits/1e9f349579b755e69b211893032d4aefdaae5494",
+            "html_url": "https://github.com/opfab/operatorfabric-core/commit/1e9f349579b755e69b211893032d4aefdaae5494"
+        }
+    ],
+    "stats": {
+        "total": 24,
+        "additions": 12,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "2bbaa0238771a21f236f0246099cbed76b60c546",
+            "filename": "services/cards-consultation/src/main/java/org/opfab/cards/consultation/services/CardRoutingUtilities.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 12,
+            "changes": 24,
+            "blob_url": "https://github.com/opfab/operatorfabric-core/blob/4d707e096acba5c9295ee68b586bdc58d4bb6b70/services%2Fcards-consultation%2Fsrc%2Fmain%2Fjava%2Forg%2Fopfab%2Fcards%2Fconsultation%2Fservices%2FCardRoutingUtilities.java",
+            "raw_url": "https://github.com/opfab/operatorfabric-core/raw/4d707e096acba5c9295ee68b586bdc58d4bb6b70/services%2Fcards-consultation%2Fsrc%2Fmain%2Fjava%2Forg%2Fopfab%2Fcards%2Fconsultation%2Fservices%2FCardRoutingUtilities.java",
+            "contents_url": "https://api.github.com/repos/opfab/operatorfabric-core/contents/services%2Fcards-consultation%2Fsrc%2Fmain%2Fjava%2Forg%2Fopfab%2Fcards%2Fconsultation%2Fservices%2FCardRoutingUtilities.java?ref=4d707e096acba5c9295ee68b586bdc58d4bb6b70",
+            "patch": "@@ -84,20 +84,16 @@ private static boolean isReceiveRightsForProcessAndState(String processId, Strin\n      * ReceiveAndWrite)\n      **/\n     public static boolean checkIfUserMustReceiveTheCard(JSONObject cardOperation,\n-            CurrentUserWithPerimeters currentUserWithPerimeters) {\n-\n-        Map<String, RightsEnum> userRightsPerProcessAndState = loadUserRightsPerProcessAndState(\n-                currentUserWithPerimeters);\n-\n+            CurrentUserWithPerimeters currentUserWithPerimeters) {    \n+                \n+        String idCard ;\n+        String process ;\n+        String state;\n+        JSONArray groupRecipientsArray ;\n+        JSONArray entityRecipientsArray ;\n+        JSONArray userRecipientsArray ;\n         JSONObject cardObj = (JSONObject) cardOperation.get(\"card\");\n \n-        String idCard = null;\n-        String process = \"\";\n-        String state = \"\";\n-        JSONArray groupRecipientsArray = new JSONArray();\n-        JSONArray entityRecipientsArray = new JSONArray();\n-        JSONArray userRecipientsArray = new JSONArray();\n-\n         if (cardObj != null) {\n             idCard = (cardObj.get(\"id\") != null) ? (String) cardObj.get(\"id\") : \"\";\n             process = (String) cardObj.get(\"process\");\n@@ -107,6 +103,7 @@ public static boolean checkIfUserMustReceiveTheCard(JSONObject cardOperation,\n             entityRecipientsArray = (JSONArray) cardObj.get(\"entityRecipients\");\n             userRecipientsArray = (JSONArray) cardObj.get(\"userRecipients\");\n         }\n+        else return false; \n \n         if (!checkIfUserMustBeNotifiedForThisProcessState(process, state, currentUserWithPerimeters))\n             return false;\n@@ -120,6 +117,9 @@ public static boolean checkIfUserMustReceiveTheCard(JSONObject cardOperation,\n \n         // First, we check if the user has the right for receiving this card (Receive or\n         // ReceiveAndWrite)\n+\n+        Map<String, RightsEnum> userRightsPerProcessAndState = loadUserRightsPerProcessAndState(\n+                currentUserWithPerimeters);\n         if (!isReceiveRightsForProcessAndState(process, state, userRightsPerProcessAndState))\n             return false;\n "
+        }
+    ]
+}

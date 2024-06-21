@@ -1,0 +1,121 @@
+{
+    "sha": "2d98137592bac6c24505be6ad8923bc0128c117b",
+    "node_id": "C_kwDOIveSedoAKDJkOTgxMzc1OTJiYWM2YzI0NTA1YmU2YWQ4OTIzYmMwMTI4YzExN2I",
+    "commit": {
+        "author": {
+            "name": "Vojat",
+            "email": "78501335+Vojat05@users.noreply.github.com",
+            "date": "2023-07-19T00:15:50Z"
+        },
+        "committer": {
+            "name": "Vojat",
+            "email": "78501335+Vojat05@users.noreply.github.com",
+            "date": "2023-07-19T00:15:50Z"
+        },
+        "message": "Null pointer exception fixed",
+        "tree": {
+            "sha": "6f5364119e2fdcae7bbc626c8857f158da024e69",
+            "url": "https://api.github.com/repos/Vojat05/GardeningGame/git/trees/6f5364119e2fdcae7bbc626c8857f158da024e69"
+        },
+        "url": "https://api.github.com/repos/Vojat05/GardeningGame/git/commits/2d98137592bac6c24505be6ad8923bc0128c117b",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Vojat05/GardeningGame/commits/2d98137592bac6c24505be6ad8923bc0128c117b",
+    "html_url": "https://github.com/Vojat05/GardeningGame/commit/2d98137592bac6c24505be6ad8923bc0128c117b",
+    "comments_url": "https://api.github.com/repos/Vojat05/GardeningGame/commits/2d98137592bac6c24505be6ad8923bc0128c117b/comments",
+    "author": {
+        "login": "Vojat05",
+        "id": 78501335,
+        "node_id": "MDQ6VXNlcjc4NTAxMzM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/78501335?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Vojat05",
+        "html_url": "https://github.com/Vojat05",
+        "followers_url": "https://api.github.com/users/Vojat05/followers",
+        "following_url": "https://api.github.com/users/Vojat05/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Vojat05/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Vojat05/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Vojat05/subscriptions",
+        "organizations_url": "https://api.github.com/users/Vojat05/orgs",
+        "repos_url": "https://api.github.com/users/Vojat05/repos",
+        "events_url": "https://api.github.com/users/Vojat05/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Vojat05/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Vojat05",
+        "id": 78501335,
+        "node_id": "MDQ6VXNlcjc4NTAxMzM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/78501335?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Vojat05",
+        "html_url": "https://github.com/Vojat05",
+        "followers_url": "https://api.github.com/users/Vojat05/followers",
+        "following_url": "https://api.github.com/users/Vojat05/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Vojat05/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Vojat05/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Vojat05/subscriptions",
+        "organizations_url": "https://api.github.com/users/Vojat05/orgs",
+        "repos_url": "https://api.github.com/users/Vojat05/repos",
+        "events_url": "https://api.github.com/users/Vojat05/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Vojat05/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "41a23823bb4efbb42d72dd040e313d66bec5de6c",
+            "url": "https://api.github.com/repos/Vojat05/GardeningGame/commits/41a23823bb4efbb42d72dd040e313d66bec5de6c",
+            "html_url": "https://github.com/Vojat05/GardeningGame/commit/41a23823bb4efbb42d72dd040e313d66bec5de6c"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 6,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "e74f2288c5821a70ca221c02653612bb07d35bf8",
+            "filename": "GardeningGame.jar",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Vojat05/GardeningGame/blob/2d98137592bac6c24505be6ad8923bc0128c117b/GardeningGame.jar",
+            "raw_url": "https://github.com/Vojat05/GardeningGame/raw/2d98137592bac6c24505be6ad8923bc0128c117b/GardeningGame.jar",
+            "contents_url": "https://api.github.com/repos/Vojat05/GardeningGame/contents/GardeningGame.jar?ref=2d98137592bac6c24505be6ad8923bc0128c117b"
+        },
+        {
+            "sha": "11dd47cdc7fbb4a4ed81aa7af8b70e493e696f0b",
+            "filename": "src/com/vojat/garden/Game.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Vojat05/GardeningGame/blob/2d98137592bac6c24505be6ad8923bc0128c117b/src%2Fcom%2Fvojat%2Fgarden%2FGame.java",
+            "raw_url": "https://github.com/Vojat05/GardeningGame/raw/2d98137592bac6c24505be6ad8923bc0128c117b/src%2Fcom%2Fvojat%2Fgarden%2FGame.java",
+            "contents_url": "https://api.github.com/repos/Vojat05/GardeningGame/contents/src%2Fcom%2Fvojat%2Fgarden%2FGame.java?ref=2d98137592bac6c24505be6ad8923bc0128c117b",
+            "patch": "@@ -27,7 +27,7 @@ public class Game implements Runnable {\n     public static final String ANSI_RED = \"\\u001B[31m\";                                                                                                                             // Set the console text color to red\n     public static final String ANSI_RESET = \"\\u001B[0m\";                                                                                                                            // Reset the console text color\n     public static byte errorTime = 0;                                                                                                                                               // Number of secodns for the latest error to be visible\n-    public static String errorMessage;                                                                                                                                              // The laster error message\n+    public static String errorMessage = \"\";                                                                                                                                         // The laster error message\n     public static ArrayList<Flower> flowers = new ArrayList<>();                                                                                                                    // ArrayList for all the flowers present in-game at a time\n     public static char[][] map = new char[8][15];                                                                                                                                   // [Y][X] coords\n     public static char[][] houseMap = new char[8][15];                                                                                                                              // [Y][X] cords"
+        },
+        {
+            "sha": "f2501b273b54af28fbbb3ce559127fe7a03348d2",
+            "filename": "src/com/vojat/garden/GamePanel.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 1,
+            "changes": 6,
+            "blob_url": "https://github.com/Vojat05/GardeningGame/blob/2d98137592bac6c24505be6ad8923bc0128c117b/src%2Fcom%2Fvojat%2Fgarden%2FGamePanel.java",
+            "raw_url": "https://github.com/Vojat05/GardeningGame/raw/2d98137592bac6c24505be6ad8923bc0128c117b/src%2Fcom%2Fvojat%2Fgarden%2FGamePanel.java",
+            "contents_url": "https://api.github.com/repos/Vojat05/GardeningGame/contents/src%2Fcom%2Fvojat%2Fgarden%2FGamePanel.java?ref=2d98137592bac6c24505be6ad8923bc0128c117b",
+            "patch": "@@ -202,6 +202,7 @@ private void drawTerrain(char[][] map, Graphics2D g) {\n \n         try {\n             if (dad.level == 0) {\n+                \n                 // Draw the house itself\n                 g.drawImage(new ImageIcon(\"res/Pics/\" + Game.groundTextures[(int) map[0][1] - 48]).getImage(), 128, 0, 256, 256, null);\n                 changeGrass = false;\n@@ -221,7 +222,9 @@ private void drawTerrain(char[][] map, Graphics2D g) {\n                         } else if (plant.TIME_TO_DIE - System.currentTimeMillis() <= Game.flowerChange) {\n                             plant.CURRENT_TEXTURE = plant.setTexture(plant.THIRSTY_TEXTURE);\n                         }\n-                        g.drawImage(plant.CURRENT_TEXTURE, plant.LOCATION_X*128, plant.LOCATION_Y*128, 128, 128, null);     // Draw the flower\n+\n+                        // Draw the flower\n+                        g.drawImage(plant.CURRENT_TEXTURE, plant.LOCATION_X*128, plant.LOCATION_Y*128, 128, 128, null);\n                     } else {\n                         Game.flowers.remove(plant);\n                         map[plant.LOCATION_Y][plant.LOCATION_X] = '0';\n@@ -237,6 +240,7 @@ private void drawTerrain(char[][] map, Graphics2D g) {\n             g.setColor(new Color(238, 16, 16));\n             g.drawString(Game.errorMessage, (int) dad.LOCATION_X - 60, (int) dad.LOCATION_Y + 10);\n         } catch(NullPointerException npe) {\n+            System.out.println(npe.getMessage());\n             System.err.println(ErrorList.ERR_NPE.message);\n             Game.error(\"Null Pointer Exception Draw\", 3);\n         }"
+        }
+    ]
+}

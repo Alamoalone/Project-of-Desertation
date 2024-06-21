@@ -1,0 +1,38 @@
+    private void processOperations(boolean isMove, Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities,
+                                   DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity, List<Refactoring> refactorings) {
+        MethodDeclaration removedOperation = (MethodDeclaration) oldEntity.getDeclaration();
+        MethodDeclaration addedOperation = (MethodDeclaration) newEntity.getDeclaration();
+        if (isMove) {
+            if (isSubTypeOf(matchedEntities, oldEntity, newEntity)) {
+                PullUpOperationRefactoring refactoring = new PullUpOperationRefactoring(oldEntity, newEntity);
+                refactorings.add(refactoring);
+            } else if (isSubTypeOf(matchedEntities, newEntity, oldEntity)) {
+                PushDownOperationRefactoring refactoring = new PushDownOperationRefactoring(oldEntity, newEntity);
+                refactorings.add(refactoring);
+            } else {
+                if (!oldEntity.getName().equals(newEntity.getName())) {
+                    MoveAndRenameOperationRefactoring refactoring = new MoveAndRenameOperationRefactoring(oldEntity, newEntity);
+                    refactorings.add(refactoring);
+                } else {
+                    MoveOperationRefactoring refactoring = new MoveOperationRefactoring(oldEntity, newEntity);
+                    refactorings.add(refactoring);
+                }
+            }
+        } else {
+            if (!oldEntity.getName().equals(newEntity.getName()) &&
+                    !(removedOperation.isConstructor() && addedOperation.isConstructor())) {
+                RenameOperationRefactoring refactoring = new RenameOperationRefactoring(oldEntity, newEntity);
+                refactorings.add(refactoring);
+            }
+        }
+        String originalType = removedOperation.getReturnType2() == null ? "" : removedOperation.getReturnType2().toString();
+        String changedType = addedOperation.getReturnType2() == null ? "" : addedOperation.getReturnType2().toString();
+        if (!StringUtils.equals(originalType, changedType)) {
+            ChangeReturnTypeRefactoring refactoring = new ChangeReturnTypeRefactoring(removedOperation.getReturnType2(), addedOperation.getReturnType2(), oldEntity, newEntity);
+            refactorings.add(refactoring);
+        }
+        checkForOperationAnnotationChanges(oldEntity, newEntity, refactorings);
+        checkForOperationModifierChanges(oldEntity, newEntity, refactorings);
+        checkForThrownExceptionTypeChanges(oldEntity, newEntity, refactorings);
+        checkForOperationParameterChanges(oldEntity, newEntity, refactorings);
+    }

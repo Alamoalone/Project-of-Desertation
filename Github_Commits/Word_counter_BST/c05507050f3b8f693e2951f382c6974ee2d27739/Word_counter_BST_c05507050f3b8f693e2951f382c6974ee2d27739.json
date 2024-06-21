@@ -1,0 +1,98 @@
+{
+    "sha": "c05507050f3b8f693e2951f382c6974ee2d27739",
+    "node_id": "C_kwDOKKD7BtoAKGMwNTUwNzA1MGYzYjhmNjkzZTI5NTFmMzgyYzY5NzRlZTJkMjc3Mzk",
+    "commit": {
+        "author": {
+            "name": "Antony",
+            "email": "antonis132011@hotmail.com",
+            "date": "2023-09-22T12:34:29Z"
+        },
+        "committer": {
+            "name": "Antony",
+            "email": "antonis132011@hotmail.com",
+            "date": "2023-09-22T12:34:29Z"
+        },
+        "message": "added prepositions list, fixed null pointer exception",
+        "tree": {
+            "sha": "fc1e8266aa8576602c130f68b8743ff3a5f91d33",
+            "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/git/trees/fc1e8266aa8576602c130f68b8743ff3a5f91d33"
+        },
+        "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/git/commits/c05507050f3b8f693e2951f382c6974ee2d27739",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/commits/c05507050f3b8f693e2951f382c6974ee2d27739",
+    "html_url": "https://github.com/AntonisGRENDE/Word_counter_BST/commit/c05507050f3b8f693e2951f382c6974ee2d27739",
+    "comments_url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/commits/c05507050f3b8f693e2951f382c6974ee2d27739/comments",
+    "author": {
+        "login": "AntonisGRENDE",
+        "id": 99513059,
+        "node_id": "U_kgDOBe5y4w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99513059?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AntonisGRENDE",
+        "html_url": "https://github.com/AntonisGRENDE",
+        "followers_url": "https://api.github.com/users/AntonisGRENDE/followers",
+        "following_url": "https://api.github.com/users/AntonisGRENDE/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AntonisGRENDE/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AntonisGRENDE/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AntonisGRENDE/subscriptions",
+        "organizations_url": "https://api.github.com/users/AntonisGRENDE/orgs",
+        "repos_url": "https://api.github.com/users/AntonisGRENDE/repos",
+        "events_url": "https://api.github.com/users/AntonisGRENDE/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AntonisGRENDE/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "AntonisGRENDE",
+        "id": 99513059,
+        "node_id": "U_kgDOBe5y4w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99513059?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AntonisGRENDE",
+        "html_url": "https://github.com/AntonisGRENDE",
+        "followers_url": "https://api.github.com/users/AntonisGRENDE/followers",
+        "following_url": "https://api.github.com/users/AntonisGRENDE/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AntonisGRENDE/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AntonisGRENDE/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AntonisGRENDE/subscriptions",
+        "organizations_url": "https://api.github.com/users/AntonisGRENDE/orgs",
+        "repos_url": "https://api.github.com/users/AntonisGRENDE/repos",
+        "events_url": "https://api.github.com/users/AntonisGRENDE/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AntonisGRENDE/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f69f75e20532c986bf96e0b0056d24527cde30ec",
+            "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/commits/f69f75e20532c986bf96e0b0056d24527cde30ec",
+            "html_url": "https://github.com/AntonisGRENDE/Word_counter_BST/commit/f69f75e20532c986bf96e0b0056d24527cde30ec"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 12,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "3228bb5f1924b111aeed772ef261a659ec1b9521",
+            "filename": "src/WordFreqBST.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 2,
+            "changes": 14,
+            "blob_url": "https://github.com/AntonisGRENDE/Word_counter_BST/blob/c05507050f3b8f693e2951f382c6974ee2d27739/src%2FWordFreqBST.java",
+            "raw_url": "https://github.com/AntonisGRENDE/Word_counter_BST/raw/c05507050f3b8f693e2951f382c6974ee2d27739/src%2FWordFreqBST.java",
+            "contents_url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/contents/src%2FWordFreqBST.java?ref=c05507050f3b8f693e2951f382c6974ee2d27739",
+            "patch": "@@ -3,6 +3,7 @@\n import java.io.IOException;\n import java.io.PrintStream;\n import java.util.Comparator;\n+import java.util.Objects;\n import java.util.Scanner;\n \n public class WordFreqBST implements WordCounter {\n@@ -128,9 +129,18 @@ public void insert(String string, boolean origin) {\n         while (true) {\n             boolean equalsIgnorePostfix = false;\n             if (!origin && nodeIter.getWordFreqObj().getType() != null && newWordNode.getWordFreqObj().getType() != null) {\n-                if (WordFreq.rootWords.containsString(newRoot) && (nodeIter.getWordFreqObj().getWord().equals(string) || (nodeIter.getWordFreqObj().getRoot().equals(newRoot)) && string.length() > 3) // the root exist, so we need to increase the frequency\n+                String IterRootSubstring, newRootSubstring;\n+                boolean condition = false;\n+//                try {\n+//                    String nodeIterRoot = nodeIter.getWordFreqObj().getRoot();\n+//                    IterRootSubstring = nodeIterRoot.substring(0, nodeIterRoot.length() - 2);\n+//                    newRootSubstring = newRoot.substring(0, newRoot.length() - 2);\n+//                    condition = (IterRootSubstring.equals(newRootSubstring) && Math.abs(nodeIter.getWordFreqObj().getRoot().length() - newRoot.length()) <= 1 && nodeIter.getWordFreqObj().getRoot().length() > 3);\n+//                    System.out.println(\" IterRootSubstring equals newRootSubstring?   \" + nodeIter.getWordFreqObj().getWord() + \" \" + string + \" condition is: \" + condition);\n+//                } catch (RuntimeException e) { }\n+                if (WordFreq.rootWords.containsString(newRoot) && (nodeIter.getWordFreqObj().getWord().equals(string) || (Objects.equals(nodeIter.getWordFreqObj().getRoot(), newRoot) && string.length() > 3) || condition )\n                         && nodeIter.getWordFreqObj().containsType(newWordNode.getWordFreqObj().getType())) { //nouns and adjectives are being mixed\n-                            equalsIgnorePostfix = true;\n+                            equalsIgnorePostfix = true;  // the root exist, so we need to increase the frequency\n                 }\n             }\n "
+        }
+    ]
+}

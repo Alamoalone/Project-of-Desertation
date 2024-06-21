@@ -1,0 +1,33 @@
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        telegram = view.findViewById(R.id.telegram);
+        facebook = view.findViewById(R.id.facebook);
+        adminTelegram = view.findViewById(R.id.adminTelegram);
+        adminGmail = view.findViewById(R.id.adminGmail);
+
+        telegram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLink("https://t.me/daruloloomAliHerat");
+            }
+        });
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLink("https://www.facebook.com/darululoomaaliherat");
+            }
+        });
+        adminTelegram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLink("https://t.me/Ehsanullahhaidary");
+            }
+        });
+        adminGmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "ehsanullahhaidary@gmail.com", Toast.LENGTH_LONG).show();
+            }
+        });
+    }

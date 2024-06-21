@@ -1,0 +1,20 @@
+   public void setCompositeMode(boolean selected) {
+      if (stringAxes_ == null || stringAxes_.size() == 0) {
+         // this seems to happen in a not reproducible way. not sure why, but seems safe to ignore
+         return;
+      }
+      displaySettings_.setCompositeMode(selected);
+      //select all channels if composite mode is being turned on
+      if (selected) {
+         for (String channel : stringAxes_.get("channel")) {
+            displaySettings_.setActive(channel, true);
+            displayWindow_.displaySettingsChanged();
+         }
+      } else {
+         for (String channel : stringAxes_.get("channel")) {
+            displaySettings_.setActive(channel, viewCoords_.getActiveChannel().equals(channel));
+            displayWindow_.displaySettingsChanged();
+         }
+      }
+      update();
+   }

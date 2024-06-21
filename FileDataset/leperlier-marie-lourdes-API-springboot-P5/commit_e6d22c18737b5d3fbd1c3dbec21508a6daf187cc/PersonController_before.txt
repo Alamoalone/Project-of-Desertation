@@ -1,0 +1,48 @@
+	public ResponseEntity<Long> deleteOnePersonById(@PathVariable String id)  {
+		
+		try {
+			personService.deleteOnePersonById(id);
+			return new ResponseEntity<Long>(HttpStatus.NO_CONTENT);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return new ResponseEntity<Long>(HttpStatus.NOT_FOUND);
+		}	
+	}
+
+	public @ResponseBody ResponseEntity<?> getAllPersons() {
+		List<Person> allPersons ;
+		
+		try {
+			allPersons = personService.getAllPersons();
+			return ResponseEntity.status(HttpStatus.OK).body( allPersons );
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}
+
+	public ResponseEntity<?> updateOnePersonById(@RequestBody Person person, @PathVariable String id) {
+		Person personFoundById; 
+		
+		try {
+			 personFoundById= personService.updatePerson(id, person);
+			return ResponseEntity.status(HttpStatus.CREATED).body( personFoundById);
+		} catch (NullPointerException e) {
+			// e.printStackTrace();
+			// ajouter log error
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}
+
+	public ResponseEntity<?> getOnePerson(@PathVariable String id) {
+		Person personFoundById ;		
+		try {
+			personFoundById = personService.getOnePersonById(id);
+			return ResponseEntity.status(HttpStatus.OK).body(personFoundById);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}
+

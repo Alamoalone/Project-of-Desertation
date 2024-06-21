@@ -1,0 +1,98 @@
+{
+    "sha": "9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9",
+    "node_id": "C_kwDOBge4xdoAKDllMGQxMDdhMWM2YjAyMmViOWY5ZTFhOWZmMzZlZTFhYWZmYTY1ZDk",
+    "commit": {
+        "author": {
+            "name": "Vignesh",
+            "email": "125984866+Vignesh-kalyanasundaram@users.noreply.github.com",
+            "date": "2023-04-28T12:55:12Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-04-28T12:55:12Z"
+        },
+        "message": "MODNOTIFY-124 Fixed Null Pointer Exception (#129)\n\n* MODNOTIFY-124 Fixed Null pointer Exception",
+        "tree": {
+            "sha": "bd638c9397bb0801a9cf124b1ac1dd52888f9c27",
+            "url": "https://api.github.com/repos/folio-org/mod-notify/git/trees/bd638c9397bb0801a9cf124b1ac1dd52888f9c27"
+        },
+        "url": "https://api.github.com/repos/folio-org/mod-notify/git/commits/9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkS8IwCRBK7hj4Ov3rIwAA9DEIAJJshHFevRzt5Ua74ckqWsF3\nPJZEg+agOY7CXwzpXyvDsUHDntj4Uy7JYifZ3yXRfbC9FTQvocpGAPBkYI2zjpFq\nabx/Hss0NvJDChkw7HZWEDwhHcDEvMMvd2EHFeHrYAQeKsSGL+c40ss/laadyJD1\nOFpyOSZr9LhZA/wKpyfEj7dhdNZcFDyWLV2cOjIsXy/T28K7fmnUggzPWSNiylky\nGj12F7R9kF4On2SonUlPuU+x+onOr/1Ou4T3nTxtIu6CqgqAOOtO7gEDumsn8GJq\nO855AA+Bf0xnMoC1wMaH54S5hcw7GR5rF4yN28NuL44YQBlcHZqZ/eTrYf6ANTo=\n=iWAZ\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree bd638c9397bb0801a9cf124b1ac1dd52888f9c27\nparent 89d00092d9a1af8aecabf1e19b7495c85b1ab6aa\nauthor Vignesh <125984866+Vignesh-kalyanasundaram@users.noreply.github.com> 1682686512 +0530\ncommitter GitHub <noreply@github.com> 1682686512 +0530\n\nMODNOTIFY-124 Fixed Null Pointer Exception (#129)\n\n* MODNOTIFY-124 Fixed Null pointer Exception"
+        }
+    },
+    "url": "https://api.github.com/repos/folio-org/mod-notify/commits/9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9",
+    "html_url": "https://github.com/folio-org/mod-notify/commit/9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9",
+    "comments_url": "https://api.github.com/repos/folio-org/mod-notify/commits/9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9/comments",
+    "author": {
+        "login": "Vignesh-kalyanasundaram",
+        "id": 125984866,
+        "node_id": "U_kgDOB4JgYg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/125984866?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Vignesh-kalyanasundaram",
+        "html_url": "https://github.com/Vignesh-kalyanasundaram",
+        "followers_url": "https://api.github.com/users/Vignesh-kalyanasundaram/followers",
+        "following_url": "https://api.github.com/users/Vignesh-kalyanasundaram/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Vignesh-kalyanasundaram/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Vignesh-kalyanasundaram/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Vignesh-kalyanasundaram/subscriptions",
+        "organizations_url": "https://api.github.com/users/Vignesh-kalyanasundaram/orgs",
+        "repos_url": "https://api.github.com/users/Vignesh-kalyanasundaram/repos",
+        "events_url": "https://api.github.com/users/Vignesh-kalyanasundaram/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Vignesh-kalyanasundaram/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "89d00092d9a1af8aecabf1e19b7495c85b1ab6aa",
+            "url": "https://api.github.com/repos/folio-org/mod-notify/commits/89d00092d9a1af8aecabf1e19b7495c85b1ab6aa",
+            "html_url": "https://github.com/folio-org/mod-notify/commit/89d00092d9a1af8aecabf1e19b7495c85b1ab6aa"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 5,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "f57074c83fe481b37d218ba3a1e40e33d8b21de5",
+            "filename": "src/main/java/org/folio/util/LogUtil.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 1,
+            "changes": 6,
+            "blob_url": "https://github.com/folio-org/mod-notify/blob/9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9/src%2Fmain%2Fjava%2Forg%2Ffolio%2Futil%2FLogUtil.java",
+            "raw_url": "https://github.com/folio-org/mod-notify/raw/9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9/src%2Fmain%2Fjava%2Forg%2Ffolio%2Futil%2FLogUtil.java",
+            "contents_url": "https://api.github.com/repos/folio-org/mod-notify/contents/src%2Fmain%2Fjava%2Forg%2Ffolio%2Futil%2FLogUtil.java?ref=9e0d107a1c6b022eb9f9e1a9ff36ee1aaffa65d9",
+            "patch": "@@ -5,6 +5,7 @@\n \n import java.util.List;\n import java.util.Map;\n+import java.util.Optional;\n import java.util.stream.Collectors;\n \n import javax.ws.rs.core.Response;\n@@ -109,7 +110,10 @@ public static String headersAsString(Map<String, String> okapiHeaders) {\n \n   public static String bodyAsString(HttpResponse<Buffer> response) {\n     try {\n-      return crop(response.bodyAsString().replaceAll(R_N_LINE_SEPARATOR, R_LINE_SEPARATOR));\n+      return Optional.ofNullable(response.bodyAsString())\n+        .map(LogUtil::crop)\n+        .map(str -> str.replaceAll(R_N_LINE_SEPARATOR, R_LINE_SEPARATOR))\n+        .orElse(null);\n     } catch (Exception ex) {\n       log.warn(\"logResponseBody:: Failed to log an HTTP response\", ex);\n       return null;"
+        }
+    ]
+}

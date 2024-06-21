@@ -1,0 +1,6 @@
+	public String getIdentifier()
+	{
+		if (directDeclarator != null)
+			return directDeclarator.getIdentifier();
+		else return null;
+	}

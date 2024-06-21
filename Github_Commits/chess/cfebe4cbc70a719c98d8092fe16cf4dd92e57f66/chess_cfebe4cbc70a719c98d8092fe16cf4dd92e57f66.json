@@ -1,0 +1,60 @@
+{
+    "sha": "cfebe4cbc70a719c98d8092fe16cf4dd92e57f66",
+    "node_id": "C_kwDOLDCVutoAKGNmZWJlNGNiYzcwYTcxOWM5OGQ4MDkyZmUxNmNmNGRkOTJlNTdmNjY",
+    "commit": {
+        "author": {
+            "name": "John Rowberry",
+            "email": "jsr74@byu.edu",
+            "date": "2024-02-04T08:02:04Z"
+        },
+        "committer": {
+            "name": "John Rowberry",
+            "email": "jsr74@byu.edu",
+            "date": "2024-02-04T08:02:04Z"
+        },
+        "message": "Fixed the checkmate function by resolving null pointer exceptions and accounting for pawn and king pieces contributing to checkmate.",
+        "tree": {
+            "sha": "8e698c16207cbaabbd7017c48f327c2e826a380a",
+            "url": "https://api.github.com/repos/lemlag/chess/git/trees/8e698c16207cbaabbd7017c48f327c2e826a380a"
+        },
+        "url": "https://api.github.com/repos/lemlag/chess/git/commits/cfebe4cbc70a719c98d8092fe16cf4dd92e57f66",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/lemlag/chess/commits/cfebe4cbc70a719c98d8092fe16cf4dd92e57f66",
+    "html_url": "https://github.com/lemlag/chess/commit/cfebe4cbc70a719c98d8092fe16cf4dd92e57f66",
+    "comments_url": "https://api.github.com/repos/lemlag/chess/commits/cfebe4cbc70a719c98d8092fe16cf4dd92e57f66/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "2892c1cf690eccabb59265488bf41225b61b052e",
+            "url": "https://api.github.com/repos/lemlag/chess/commits/2892c1cf690eccabb59265488bf41225b61b052e",
+            "html_url": "https://github.com/lemlag/chess/commit/2892c1cf690eccabb59265488bf41225b61b052e"
+        }
+    ],
+    "stats": {
+        "total": 58,
+        "additions": 50,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "257f8c4321c6c8b9a5966f65b75c1190640fe25d",
+            "filename": "shared/src/main/java/chess/ChessGame.java",
+            "status": "modified",
+            "additions": 50,
+            "deletions": 8,
+            "changes": 58,
+            "blob_url": "https://github.com/lemlag/chess/blob/cfebe4cbc70a719c98d8092fe16cf4dd92e57f66/shared%2Fsrc%2Fmain%2Fjava%2Fchess%2FChessGame.java",
+            "raw_url": "https://github.com/lemlag/chess/raw/cfebe4cbc70a719c98d8092fe16cf4dd92e57f66/shared%2Fsrc%2Fmain%2Fjava%2Fchess%2FChessGame.java",
+            "contents_url": "https://api.github.com/repos/lemlag/chess/contents/shared%2Fsrc%2Fmain%2Fjava%2Fchess%2FChessGame.java?ref=cfebe4cbc70a719c98d8092fe16cf4dd92e57f66",
+            "patch": "@@ -52,7 +52,7 @@ public enum TeamColor {\n     public Collection<ChessMove> validMoves(ChessPosition startPosition){\n         ChessPiece piece = this.board.getPiece(startPosition);\n         ChessBoard copyBoard = null;\n-        if(piece == null){\n+        if(piece == null || piece.getTeamColor() != this.getTeamTurn()){\n             return null;\n         }\n         Collection<ChessMove> moves = piece.pieceMoves(this.board, startPosition);\n@@ -87,11 +87,6 @@ public Collection<ChessMove> validMoves(ChessPosition startPosition){\n      * @throws InvalidMoveException if move is invalid\n      */\n     public void makeMove(ChessMove move) throws InvalidMoveException {\n-        ChessPiece piece = board.getPiece(move.getStartPosition());\n-        if(piece.getTeamColor() != this.teamTurn){\n-            throw new InvalidMoveException();\n-        }\n-\n         Collection<ChessMove> validPieceMoves = this.validMoves(move.getStartPosition());\n         if(validPieceMoves.contains(move)){\n             if(move.getPromotionPiece() == null) {\n@@ -175,6 +170,29 @@ public boolean isInCheck(TeamColor teamColor) {\n             }\n         }\n \n+        if((this.teamTurn == TeamColor.WHITE && position.getRow() < 8) ||\n+                (this.teamTurn == TeamColor.BLACK && position.getRow() > 1)) {\n+            mover = new PawnMovesCalculator();\n+            potentialMoves = mover.pieceMoves(this.board, position);\n+\n+            for (ChessMove potentialMove : potentialMoves) {\n+                enemy = this.board.getPiece(potentialMove.getEndPosition());\n+                if (enemy != null && (enemy.getPieceType() == ChessPiece.PieceType.PAWN)) {\n+                    return true;\n+                }\n+            }\n+        }\n+\n+\n+        mover = new KingMovesCalculator();\n+        potentialMoves = mover.pieceMoves(this.board, position);\n+        for (ChessMove potentialMove : potentialMoves) {\n+            enemy = this.board.getPiece(potentialMove.getEndPosition());\n+            if (enemy != null && (enemy.getPieceType() == ChessPiece.PieceType.KING)) {\n+                return true;\n+            }\n+        }\n+\n         return false;\n     }\n \n@@ -185,7 +203,20 @@ public boolean isInCheck(TeamColor teamColor) {\n      * @return True if the specified team is in checkmate\n      */\n     public boolean isInCheckmate(TeamColor teamColor) {\n-        return isInCheck(teamColor);\n+        Collection<ChessMove> tester;\n+        if(isInCheck(teamColor)){\n+            for (int i = 1; i <= 8; i++) {\n+                for (int j = 1; j <= 8; j++) {\n+                    ChessPosition position = new ChessPosition(i, j);\n+                    tester = this.validMoves(position);\n+                    if((!(tester == null)) && !tester.isEmpty()){\n+                        return false;\n+                    }\n+                }\n+            }\n+            return true;\n+        }\n+        return false;\n     }\n \n     /**\n@@ -196,7 +227,18 @@ public boolean isInCheckmate(TeamColor teamColor) {\n      * @return True if the specified team is in stalemate, otherwise false\n      */\n     public boolean isInStalemate(TeamColor teamColor) {\n-        return !isInCheck(teamColor);\n+        if(!isInCheck(teamColor)){\n+            for (int i = 1; i < 8; i++) {\n+                for (int j = 1; j < 8; j++) {\n+                    ChessPosition position = new ChessPosition(i, j);\n+                    if(!(this.validMoves(position) == null)){\n+                        return false;\n+                    }\n+                }\n+            }\n+            return true;\n+        }\n+        return false;\n     }\n \n     /**"
+        }
+    ]
+}

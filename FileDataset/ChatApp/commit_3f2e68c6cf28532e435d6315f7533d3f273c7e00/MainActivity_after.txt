@@ -1,0 +1,10 @@
+    private void loadUserDetail() {
+        String userName = preferenceManager.getString(Constants.KEY_NAME);
+            binding.textName.setText(userName != null ? userName : "");
+
+        String userImage = preferenceManager.getString(Constants.KEY_IMAGE);
+        byte[] bytes = userImage != null ? Base64.decode(userImage, Base64.DEFAULT) : new byte[0];
+        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        binding.imageProfile.setImageBitmap(bitmap);
+    }
+

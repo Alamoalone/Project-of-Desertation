@@ -1,0 +1,110 @@
+{
+    "sha": "7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460",
+    "node_id": "C_kwDOA04uDtoAKDdmOWFjMDc4NGY2ZGJmNWE2YTNhZThkYWQ1N2RiZTA4NTUwN2Y0NjA",
+    "commit": {
+        "author": {
+            "name": "Evan Greer",
+            "email": "evan.greer@iterable.com",
+            "date": "2023-01-20T17:04:30Z"
+        },
+        "committer": {
+            "name": "Evan Greer",
+            "email": "evan.greer@iterable.com",
+            "date": "2023-01-20T17:04:30Z"
+        },
+        "message": "resolves null pointer exception for soundName",
+        "tree": {
+            "sha": "40259651cc076078d903fc9b696eb675d3620c66",
+            "url": "https://api.github.com/repos/Iterable/iterable-android-sdk/git/trees/40259651cc076078d903fc9b696eb675d3620c66"
+        },
+        "url": "https://api.github.com/repos/Iterable/iterable-android-sdk/git/commits/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Iterable/iterable-android-sdk/commits/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460",
+    "html_url": "https://github.com/Iterable/iterable-android-sdk/commit/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460",
+    "comments_url": "https://api.github.com/repos/Iterable/iterable-android-sdk/commits/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460/comments",
+    "author": {
+        "login": "evantk91",
+        "id": 56953678,
+        "node_id": "MDQ6VXNlcjU2OTUzNjc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/56953678?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/evantk91",
+        "html_url": "https://github.com/evantk91",
+        "followers_url": "https://api.github.com/users/evantk91/followers",
+        "following_url": "https://api.github.com/users/evantk91/following{/other_user}",
+        "gists_url": "https://api.github.com/users/evantk91/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/evantk91/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/evantk91/subscriptions",
+        "organizations_url": "https://api.github.com/users/evantk91/orgs",
+        "repos_url": "https://api.github.com/users/evantk91/repos",
+        "events_url": "https://api.github.com/users/evantk91/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/evantk91/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "evantk91",
+        "id": 56953678,
+        "node_id": "MDQ6VXNlcjU2OTUzNjc4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/56953678?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/evantk91",
+        "html_url": "https://github.com/evantk91",
+        "followers_url": "https://api.github.com/users/evantk91/followers",
+        "following_url": "https://api.github.com/users/evantk91/following{/other_user}",
+        "gists_url": "https://api.github.com/users/evantk91/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/evantk91/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/evantk91/subscriptions",
+        "organizations_url": "https://api.github.com/users/evantk91/orgs",
+        "repos_url": "https://api.github.com/users/evantk91/repos",
+        "events_url": "https://api.github.com/users/evantk91/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/evantk91/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "20ea6c39aae9c3b4f017abfb73b180b22892255d",
+            "url": "https://api.github.com/repos/Iterable/iterable-android-sdk/commits/20ea6c39aae9c3b4f017abfb73b180b22892255d",
+            "html_url": "https://github.com/Iterable/iterable-android-sdk/commit/20ea6c39aae9c3b4f017abfb73b180b22892255d"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "13ad8ed13093b1b423a3589923732aa4c8f46722",
+            "filename": "iterableapi/build.gradle",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Iterable/iterable-android-sdk/blob/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460/iterableapi%2Fbuild.gradle",
+            "raw_url": "https://github.com/Iterable/iterable-android-sdk/raw/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460/iterableapi%2Fbuild.gradle",
+            "contents_url": "https://api.github.com/repos/Iterable/iterable-android-sdk/contents/iterableapi%2Fbuild.gradle?ref=7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460",
+            "patch": "@@ -59,6 +59,7 @@ dependencies {\n     androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'\n     androidTestImplementation 'com.squareup.okhttp3:mockwebserver:4.2.2'\n     androidTestImplementation 'org.mockito:mockito-android:3.0.0'\n+    androidTestImplementation project(path: ':iterableapi')\n }\n \n ext {"
+        },
+        {
+            "sha": "426c65ba0070ad1fd2c1f568433570b3d7cb6873",
+            "filename": "iterableapi/src/main/java/com/iterable/iterableapi/IterableNotificationHelper.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Iterable/iterable-android-sdk/blob/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460/iterableapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fiterable%2Fiterableapi%2FIterableNotificationHelper.java",
+            "raw_url": "https://github.com/Iterable/iterable-android-sdk/raw/7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460/iterableapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fiterable%2Fiterableapi%2FIterableNotificationHelper.java",
+            "contents_url": "https://api.github.com/repos/Iterable/iterable-android-sdk/contents/iterableapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fiterable%2Fiterableapi%2FIterableNotificationHelper.java?ref=7f9ac0784f6dbf5a6a3ae8dad57dbe085507f460",
+            "patch": "@@ -122,7 +122,7 @@ public IterableNotificationBuilder createNotification(Context context, Bundle ex\n             notificationBody = extras.getString(IterableConstants.ITERABLE_DATA_BODY);\n             soundName = extras.getString(IterableConstants.ITERABLE_DATA_SOUND);\n \n-            if (soundName.contains(\".\") && soundName.charAt(0) != '.') {\n+            if (soundName != null && soundName.contains(\".\") && soundName.charAt(0) != '.') {\n                 String[] soundFile = soundName.split(\"\\\\.\");\n                 soundName = soundFile[0];\n                 soundResourceId = context.getResources().getIdentifier(soundFile[0], \"raw\", context.getPackageName());"
+        }
+    ]
+}

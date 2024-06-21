@@ -1,0 +1,12 @@
+    private int findSizeOfAdditions(boolean excludeSQL) {
+        int totalAdditions = 0;
+        if (this.addition != null) {
+            if(excludeSQL) {
+                totalAdditions = (int) this.addition.stream().
+                        filter(codeMetaData -> !codeMetaData.getLanguage().equals(IAnalyzer.SUPPORTED_LANGUAGES.LANG_SQL.getLanguage())).count();
+            } else {
+                totalAdditions = this.addition.size();
+            }
+        }
+        return totalAdditions;
+    }

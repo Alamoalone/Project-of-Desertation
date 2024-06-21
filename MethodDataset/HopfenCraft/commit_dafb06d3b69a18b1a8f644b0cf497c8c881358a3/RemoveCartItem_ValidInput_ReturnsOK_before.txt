@@ -1,0 +1,68 @@
+    public void RemoveCartItem_ValidInput_ReturnsOK() {
+        // Login as a user
+        LoginDTO login = new LoginDTO("testuser", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+
+        String jwt = loginResponse.getBody().getJwt();
+
+
+        // Add a cart item to the cart
+        CartRegistrationDTO validInput = new CartRegistrationDTO(1L, 5);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<CartRegistrationDTO> requestEntity = new HttpEntity<>(validInput, headers);
+
+        ResponseEntity<CartResponseDTO> response = restTemplate.postForEntity(
+                "http://localhost:" + port + "/cart/add",
+                requestEntity,
+                CartResponseDTO.class
+        );
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+
+        CartResponseDTO responseBody = response.getBody();
+        assertNotNull(responseBody);
+
+        // Get the cart items and retrieve the cart item ID of the item added
+        ResponseEntity<CartResponseDTO> response2 = restTemplate.exchange(
+                "http://localhost:" + port + "/cart/items",
+                HttpMethod.GET,
+                new HttpEntity<>(headers),
+                CartResponseDTO.class
+        );
+
+        // Assert that the response has status code OK (200) and an empty list of cart items
+        assertEquals(HttpStatus.OK, response2.getStatusCode());
+
+        CartResponseDTO responseBody2 = response2.getBody();
+        assertNotNull(responseBody2);
+        List<CartItemDTO> cartItems2 = responseBody2.getCartItems();
+
+        Long cartItemId = cartItems2.get(0).getCartItemId();
+
+        // Perform a DELETE request to remove the cart item using the cart item ID
+        ResponseEntity<CartResponseDTO> response3 = restTemplate.exchange(
+                "http://localhost:" + port + "/cart/remove/" + cartItemId,
+                HttpMethod.DELETE,
+                new HttpEntity<>(headers),
+                CartResponseDTO.class
+        );
+
+        // Assert that the response has status code OK (200)
+        assertEquals(HttpStatus.OK, response3.getStatusCode());
+
+        // Get the cart items again and ensure that the removed item is no longer in the list
+
+        CartResponseDTO responseBody3 = response3.getBody();
+        assertNotNull(responseBody3);
+        List<CartItemDTO> cartItems3 = responseBody3.getCartItems();
+        assertTrue(cartItems3.isEmpty());
+    }

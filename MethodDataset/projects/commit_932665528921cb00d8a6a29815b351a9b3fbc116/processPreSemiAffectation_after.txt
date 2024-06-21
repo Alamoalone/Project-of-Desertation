@@ -1,0 +1,39 @@
+    private static void processPreSemiAffectation(VariablesOffsets _vars, int _sum, OperationNode _val) {
+        if (!(_val instanceof SemiAffectationOperation)) {
+            return;
+        }
+        SemiAffectationOperation par_ = (SemiAffectationOperation) _val;
+        int offsetOp_ = par_.getOpOffset();
+        if (par_.isPost()) {
+            return;
+        }
+        boolean err_ = true;
+        AnaTypeFct function_ = par_.getFct().getFunction();
+        if (LambdaOperation.fct(function_) != null) {
+            addParts(_vars, function_,
+                    _sum + _val.getIndexInEl()+offsetOp_,1,
+                    _val.getErrs(), _val.getErrs());
+            err_ = false;
+        }
+        SettableElResult settable_ = par_.getSettable();
+        if (settable_ instanceof ArrOperation && ((ArrOperation) settable_).getFunctionSet() != null) {
+            ArrOperation parArr_ = (ArrOperation) settable_;
+            addParts(_vars, parArr_.getFunctionSet(),
+                    _sum + _val.getIndexInEl()+offsetOp_+1,1,
+                    _val.getErrs(), _val.getErrs());
+            err_ = false;
+        }
+        if (err_ && !par_.getErrs().isEmpty()) {
+            int begin_ = offsetOp_ + _sum + _val.getIndexInEl();
+            _vars.addPart(new PartOffset(ExportCst.anchorErr(StringUtil.join(par_.getErrs(), ExportCst.JOIN_ERR)), begin_));
+            _vars.addPart(new PartOffset(ExportCst.END_ANCHOR, begin_ + 2));
+        }
+        OperationNode ch_ = null;
+        if (settable_ instanceof OperationNode) {
+            ch_ = par_.getFirstChild();
+        }
+        if (ch_ != null) {
+            int begin_ = offsetOp_ + _sum + _val.getIndexInEl()+2;
+            tryAddMergedParts(_vars,par_.getFunctionTo(), begin_, new StringList(), new StringList());
+        }
+    }

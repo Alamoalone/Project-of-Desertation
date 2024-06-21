@@ -1,0 +1,3 @@
+replaceExpressionSubPart(Expression oldSubExpression, Expression newSubExpression)
+evaluate(Set selectedFeatures)
+toString(boolean withSubmodels, String currentAlias)

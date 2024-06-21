@@ -1,0 +1,5 @@
+	public void displayList() {
+		for (Phone phone : phoneList) {
+			System.out.println(phone);
+		}
+	}

@@ -1,0 +1,158 @@
+{
+    "sha": "50946783ea3d8991069f501e14fa24b4a6b4943c",
+    "node_id": "C_kwDOJS3eSdoAKDUwOTQ2NzgzZWEzZDg5OTEwNjlmNTAxZTE0ZmEyNGI0YTZiNDk0M2M",
+    "commit": {
+        "author": {
+            "name": "Jason Cheng",
+            "email": "jasoncheng224@gmail.com",
+            "date": "2023-04-30T05:38:09Z"
+        },
+        "committer": {
+            "name": "Jason Cheng",
+            "email": "jasoncheng224@gmail.com",
+            "date": "2023-04-30T05:38:09Z"
+        },
+        "message": "hw2: no more null pointer exceptions",
+        "tree": {
+            "sha": "47bc26033c5ec9bf19f0ab0ffc83c8cddbcf0a0f",
+            "url": "https://api.github.com/repos/jc65536/cs-132/git/trees/47bc26033c5ec9bf19f0ab0ffc83c8cddbcf0a0f"
+        },
+        "url": "https://api.github.com/repos/jc65536/cs-132/git/commits/50946783ea3d8991069f501e14fa24b4a6b4943c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jc65536/cs-132/commits/50946783ea3d8991069f501e14fa24b4a6b4943c",
+    "html_url": "https://github.com/jc65536/cs-132/commit/50946783ea3d8991069f501e14fa24b4a6b4943c",
+    "comments_url": "https://api.github.com/repos/jc65536/cs-132/commits/50946783ea3d8991069f501e14fa24b4a6b4943c/comments",
+    "author": {
+        "login": "jc65536",
+        "id": 40078680,
+        "node_id": "MDQ6VXNlcjQwMDc4Njgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40078680?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jc65536",
+        "html_url": "https://github.com/jc65536",
+        "followers_url": "https://api.github.com/users/jc65536/followers",
+        "following_url": "https://api.github.com/users/jc65536/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jc65536/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jc65536/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jc65536/subscriptions",
+        "organizations_url": "https://api.github.com/users/jc65536/orgs",
+        "repos_url": "https://api.github.com/users/jc65536/repos",
+        "events_url": "https://api.github.com/users/jc65536/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jc65536/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jc65536",
+        "id": 40078680,
+        "node_id": "MDQ6VXNlcjQwMDc4Njgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/40078680?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jc65536",
+        "html_url": "https://github.com/jc65536",
+        "followers_url": "https://api.github.com/users/jc65536/followers",
+        "following_url": "https://api.github.com/users/jc65536/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jc65536/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jc65536/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jc65536/subscriptions",
+        "organizations_url": "https://api.github.com/users/jc65536/orgs",
+        "repos_url": "https://api.github.com/users/jc65536/repos",
+        "events_url": "https://api.github.com/users/jc65536/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jc65536/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "582cd8b7df17ecb5f624c0ae9c615c9f6ead46a0",
+            "url": "https://api.github.com/repos/jc65536/cs-132/commits/582cd8b7df17ecb5f624c0ae9c615c9f6ead46a0",
+            "html_url": "https://github.com/jc65536/cs-132/commit/582cd8b7df17ecb5f624c0ae9c615c9f6ead46a0"
+        }
+    ],
+    "stats": {
+        "total": 78,
+        "additions": 67,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "46f4ffde1fe35ffd4331a1c12fcf6708767a04c2",
+            "filename": "cs132-framework/src/main/java/List.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/jc65536/cs-132/blob/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FList.java",
+            "raw_url": "https://github.com/jc65536/cs-132/raw/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FList.java",
+            "contents_url": "https://api.github.com/repos/jc65536/cs-132/contents/cs132-framework%2Fsrc%2Fmain%2Fjava%2FList.java?ref=50946783ea3d8991069f501e14fa24b4a6b4943c",
+            "patch": "@@ -26,7 +26,7 @@ static <T> List<T> of(T val) {\n         return List.<T>nul().cons(val);\n     }\n \n-    boolean forall(Predicate<T> p) {\n+    boolean forAll(Predicate<T> p) {\n         return !exists(p.negate());\n     }\n "
+        },
+        {
+            "sha": "891d3ef6496122ce7ad9dc2f8d524a7b9a1e6857",
+            "filename": "cs132-framework/src/main/java/SymPairVisitor.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/jc65536/cs-132/blob/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FSymPairVisitor.java",
+            "raw_url": "https://github.com/jc65536/cs-132/raw/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FSymPairVisitor.java",
+            "contents_url": "https://api.github.com/repos/jc65536/cs-132/contents/cs132-framework%2Fsrc%2Fmain%2Fjava%2FSymPairVisitor.java?ref=50946783ea3d8991069f501e14fa24b4a6b4943c",
+            "patch": "@@ -15,4 +15,9 @@ public SymPair visit(FormalParameter n, TypeEnv argu) {\n         final var type = n.f0.accept(new TypeVisitor(), argu);\n         return new SymPair(sym, type);\n     }\n+\n+    @Override\n+    public SymPair visit(FormalParameterRest n, TypeEnv argu) {\n+        return n.f1.accept(this, argu);\n+    }\n }"
+        },
+        {
+            "sha": "74d02c24b12e0b6501ec40bc6ac2c4eacf6d7248",
+            "filename": "cs132-framework/src/main/java/TypeDeclVisitor.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/jc65536/cs-132/blob/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypeDeclVisitor.java",
+            "raw_url": "https://github.com/jc65536/cs-132/raw/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypeDeclVisitor.java",
+            "contents_url": "https://api.github.com/repos/jc65536/cs-132/contents/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypeDeclVisitor.java?ref=50946783ea3d8991069f501e14fa24b4a6b4943c",
+            "patch": "@@ -17,6 +17,6 @@ public TypeEnv visit(Goal n) {\n                         Util.error(\"Duplicate class name\");\n \n                     return classes.cons(clas);\n-                }, (u, v) -> v), Optional.empty())).get();\n+                }, (u, v) -> v), Optional.empty(), Optional.empty())).get();\n     }\n }"
+        },
+        {
+            "sha": "da7b4c78c91ce768e13493dd0ac8b9bd5d00a41c",
+            "filename": "cs132-framework/src/main/java/TypeEnv.java",
+            "status": "modified",
+            "additions": 33,
+            "deletions": 3,
+            "changes": 36,
+            "blob_url": "https://github.com/jc65536/cs-132/blob/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypeEnv.java",
+            "raw_url": "https://github.com/jc65536/cs-132/raw/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypeEnv.java",
+            "contents_url": "https://api.github.com/repos/jc65536/cs-132/contents/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypeEnv.java?ref=50946783ea3d8991069f501e14fa24b4a6b4943c",
+            "patch": "@@ -39,6 +39,11 @@ Method methodLookup(String name, List<Type> paramTypes) {\n         return get().methods.find(m -> m.name.equals(name) && m.argsCompat(paramTypes))\n                 .orElseGet(() -> Util.error(\"Unknown method \" + name));\n     }\n+\n+    @Override\n+    public String toString() {\n+        return name;\n+    }\n }\n \n class ClassBody {\n@@ -53,6 +58,13 @@ class ClassBody {\n         this.methods = methods;\n         this.superClass = superClass;\n     }\n+\n+    @Override\n+    public String toString() {\n+        return String.format(\"%s%s%s\", superClass.map(sc -> sc.toString() + \"\\n\").orElse(\"\"),\n+                fields.fold(\"\", (str, f) -> String.format(\"%s%s\\n\", str, f)),\n+                methods.fold(\"\", (str, m) -> String.format(\"%s%s\\n\", str, m)));\n+    }\n }\n \n class SymPair {\n@@ -63,6 +75,11 @@ class SymPair {\n         this.sym = sym;\n         this.type = type;\n     }\n+\n+    @Override\n+    public String toString() {\n+        return String.format(\"%s: %s\", sym, type);\n+    }\n }\n \n class Method {\n@@ -85,25 +102,33 @@ boolean argsCompat(List<Type> argTypes) {\n     boolean typeEquals(Method other) {\n         return retType == other.retType && params.equals(other.params, (u, v) -> u.type == v.type);\n     }\n+\n+    @Override\n+    public String toString() {\n+        return String.format(\"%s: %s -> %s\", name, params.fold(\"\", (str, p) -> String.format(\"%s, %s\", str, p)),\n+                retType);\n+    }\n }\n \n public class TypeEnv {\n     final List<SymPair> symList;\n     final List<Class> classList;\n     final Optional<Class> currClass;\n+    final Optional<Method> currMethod;\n \n-    TypeEnv(List<SymPair> symList, List<Class> classList, Optional<Class> currClass) {\n+    TypeEnv(List<SymPair> symList, List<Class> classList, Optional<Class> currClass, Optional<Method> currMethod) {\n         this.symList = symList;\n         this.classList = classList;\n         this.currClass = currClass;\n+        this.currMethod = currMethod;\n     }\n \n     TypeEnv enterClass(Class c) {\n-        return new TypeEnv(List.nul(), classList, Optional.of(c));\n+        return new TypeEnv(List.nul(), classList, Optional.of(c), Optional.empty());\n     }\n \n     TypeEnv enterMethod(Method m) {\n-        return new TypeEnv(m.params, classList, currClass);\n+        return new TypeEnv(m.params, classList, currClass, Optional.of(m));\n     }\n \n     Class classLookup(String name) {\n@@ -114,4 +139,9 @@ SymPair symLookup(String sym) {\n         return symList.find(s -> s.sym.equals(sym)).or(() -> currClass.map(c -> c.fieldLookup(sym)))\n                 .orElseGet(() -> Util.error(\"Unknown symbol \" + sym));\n     }\n+\n+    @Override\n+    public String toString() {\n+        return classList.fold(\"\", (str, c) -> String.format(\"%s---\\n%s\\n%s\", str, c, c.get()));\n+    }\n }"
+        },
+        {
+            "sha": "12c1c105b43c60fb5a44e2d0b31484df51cd6f20",
+            "filename": "cs132-framework/src/main/java/Typecheck.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 4,
+            "changes": 10,
+            "blob_url": "https://github.com/jc65536/cs-132/blob/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypecheck.java",
+            "raw_url": "https://github.com/jc65536/cs-132/raw/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypecheck.java",
+            "contents_url": "https://api.github.com/repos/jc65536/cs-132/contents/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypecheck.java?ref=50946783ea3d8991069f501e14fa24b4a6b4943c",
+            "patch": "@@ -6,10 +6,12 @@ public static void main(String[] args) throws Exception {\n \n         final var typeEnv = root.accept(new TypeDeclVisitor());\n \n-        final var typeChecks = typeEnv.classList\n-                .flatMap(c -> c.get().methods.map(m -> m.body))\n-                .map(nodes -> nodes.cons(root.f0).forall(node -> node.accept(new TypecheckVisitor(), null)))\n-                .get();\n+        System.out.println(typeEnv);\n+\n+        final var mainClassTypeChecks = root.f0.accept(new TypecheckVisitor(), typeEnv);\n+\n+        final var typeChecks = mainClassTypeChecks && typeEnv.classList.forAll(c -> c.get().methods\n+                .forAll(m -> m.body.accept(new TypecheckVisitor(), typeEnv.enterClass(c).enterMethod(m))));\n \n         if (typeChecks)\n             System.out.println(\"Program type checked successfully\");"
+        },
+        {
+            "sha": "82b65ed8406cae2ab6bf2e9465c62800dfccc488",
+            "filename": "cs132-framework/src/main/java/TypecheckVisitor.java",
+            "status": "modified",
+            "additions": 21,
+            "deletions": 2,
+            "changes": 23,
+            "blob_url": "https://github.com/jc65536/cs-132/blob/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypecheckVisitor.java",
+            "raw_url": "https://github.com/jc65536/cs-132/raw/50946783ea3d8991069f501e14fa24b4a6b4943c/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypecheckVisitor.java",
+            "contents_url": "https://api.github.com/repos/jc65536/cs-132/contents/cs132-framework%2Fsrc%2Fmain%2Fjava%2FTypecheckVisitor.java?ref=50946783ea3d8991069f501e14fa24b4a6b4943c",
+            "patch": "@@ -70,6 +70,11 @@ public Type visit(MessageSend n, TypeEnv argu) {\n         }\n     }\n \n+    @Override\n+    public Type visit(ExpressionRest n, TypeEnv argu) {\n+        return n.f1.accept(this, argu);\n+    }\n+\n     @Override\n     public Type visit(PrimaryExpression n, TypeEnv argu) {\n         final var exprNode = n.f0.choice;\n@@ -154,14 +159,28 @@ public Boolean visit(MainClass n, TypeEnv argu) {\n                 return Util.error(\"Duplicate local name\");\n             else\n                 return symList.cons(pair);\n-        }, (u, v) -> v), argu.classList, Optional.empty());\n+        }, (u, v) -> v), argu.classList, Optional.empty(), Optional.empty());\n \n         return stmtNodes.stream().allMatch(node -> node.accept(this, typeEnv));\n     }\n \n     @Override\n     public Boolean visit(MethodDeclaration n, TypeEnv argu) {\n-        return null;\n+        final var localNodes = n.f7.nodes;\n+        final var stmtNodes = n.f8.nodes;\n+\n+        final TypeEnv typeEnv = new TypeEnv(localNodes.stream().reduce(argu.symList, (symList, node) -> {\n+            final var pair = node.accept(new SymPairVisitor(), argu);\n+\n+            if (symList.exists(s -> s.sym.equals(pair.sym)))\n+                return Util.error(\"Duplicate local name\");\n+            else\n+                return symList.cons(pair);\n+        }, (u, v) -> v), argu.classList, argu.currClass, argu.currMethod);\n+\n+        final var retType = n.f10.accept(new ExprVisitor(), typeEnv);\n+\n+        return retType == typeEnv.currMethod.get() && stmtNodes.stream().allMatch(node -> node.accept(this, typeEnv));\n     }\n \n     @Override"
+        }
+    ]
+}

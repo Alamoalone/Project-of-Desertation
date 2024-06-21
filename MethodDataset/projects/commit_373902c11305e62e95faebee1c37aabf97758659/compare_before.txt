@@ -1,0 +1,3 @@
+    private static ExecMethodOperation compare(CmpOperation _anaNode) {
+        return new ExecQuickOperation(new ExecOperationContent(_anaNode.getContent()),null, new ExecOperatorContent(_anaNode.getOperatorContent()),new ExecOperDir(_anaNode.getSymbol()));
+    }

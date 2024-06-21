@@ -1,0 +1,4 @@
+    public static void setImplicits(AnaClassArgumentMatching _ana, ImplicitMethods _implicitsOp, ImplicitMethods _implicitsTestOp, Forwards _forwards) {
+        impls(_implicitsOp, _forwards, _ana.getImplicits(), _ana.getMemberId());
+        impls(_implicitsTestOp, _forwards, _ana.getImplicitsTest(), _ana.getMemberIdTest());
+    }

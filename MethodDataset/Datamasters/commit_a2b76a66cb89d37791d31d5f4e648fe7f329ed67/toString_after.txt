@@ -1,0 +1,15 @@
+    public String toString() {
+        return "Order{" +
+                "orderNumber=" + orderNumber +
+                ", customer=" + customer.getId() + customer.getName() +
+                ", item=" + item.getCode() +item.getDescription() +
+                ", quantityUnits=" + quantityUnits +
+                ", Item price=  " + item.getSellingPrice()+
+                ", Order price= " + calculateOrderPrice() +
+                ", orderDateTime=" + orderDateTime +
+                ", preparationTimeMinutes=" + this.preparationTimeMinutes +
+                ", orderIsCancelable=" + isCancelable(LocalDateTime.now()) +
+                ", shippingCost= " + item.getShippingCost()+
+                ", orderIsSent=" + orderIsSent(LocalDateTime.now()) +
+                '}';
+    }

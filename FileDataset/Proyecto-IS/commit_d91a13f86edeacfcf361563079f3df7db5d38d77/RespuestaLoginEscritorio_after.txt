@@ -1,0 +1,12 @@
+
+
+
+
+    public void setUsuarioSesion(Usuario usuarioSesion) {
+        this.usuarioSesion = usuarioSesion;
+    }
+
+    public Usuario getUsuarioSesion() {
+        return usuarioSesion;
+    }
+

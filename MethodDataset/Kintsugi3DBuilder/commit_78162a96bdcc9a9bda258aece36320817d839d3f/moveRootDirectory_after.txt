@@ -1,0 +1,18 @@
+    public void moveRootDirectory(Path newRootDirectory)
+    {
+        //noinspection VariableNotUsedInsideIf
+        if (this.rootDirectory != null)
+        {
+            if (this.getGeometryFile() != null)
+            {
+                this.geometryFileName = newRootDirectory.relativize(getGeometryFile().toPath()).toString();
+            }
+
+            if (this.getImageFilePath() != null)
+            {
+                this.relativeImagePathName = newRootDirectory.relativize(getImageFilePath().toPath()).toString();
+            }
+        }
+
+        this.rootDirectory = newRootDirectory.toFile();
+    }

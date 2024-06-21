@@ -1,0 +1,8 @@
+	public MedicalRecord getOneMedicalRecordById(String id) {
+		MedicalRecord personFoundById = new MedicalRecord();
+		personFoundById = medicalRecords.stream().filter(medicalRecord -> medicalRecord.getId().equals(id)).findFirst()
+				.map(existingMedicalRecord -> {
+					return existingMedicalRecord;
+				}).orElseThrow(() -> new NullPointerException("medical record not found with id"));
+		return personFoundById;
+	}

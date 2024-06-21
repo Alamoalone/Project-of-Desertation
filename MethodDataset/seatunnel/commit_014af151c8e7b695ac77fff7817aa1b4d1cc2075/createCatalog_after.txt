@@ -1,0 +1,16 @@
+    public Catalog createCatalog(String catalogName, ReadonlyConfig options) {
+        String urlWithDatabase = options.get(JdbcCatalogOptions.BASE_URL);
+        Preconditions.checkArgument(
+                StringUtils.isNoneBlank(urlWithDatabase),
+                "Miss config <base-url>! Please check your config.");
+        JdbcUrlUtil.UrlInfo urlInfo = JdbcUrlUtil.getUrlInfo(urlWithDatabase);
+        Optional<String> defaultDatabase = urlInfo.getDefaultDatabase();
+        if (!defaultDatabase.isPresent()) {
+            throw new OptionValidationException(JdbcCatalogOptions.BASE_URL);
+        }
+        return new MySqlCatalog(
+                catalogName,
+                options.get(JdbcCatalogOptions.USERNAME),
+                options.get(JdbcCatalogOptions.PASSWORD),
+                urlInfo);
+    }

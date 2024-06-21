@@ -1,0 +1,3 @@
+  public void addVisionMeasurement(Pose2d pose, double timestamp) {
+    m_poseEstimator.addVisionMeasurement(pose, timestamp);
+  }

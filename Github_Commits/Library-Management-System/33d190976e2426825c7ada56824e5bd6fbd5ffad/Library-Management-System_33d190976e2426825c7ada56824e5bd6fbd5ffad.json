@@ -1,0 +1,110 @@
+{
+    "sha": "33d190976e2426825c7ada56824e5bd6fbd5ffad",
+    "node_id": "C_kwDOJebo-NoAKDMzZDE5MDk3NmUyNDI2ODI1YzdhZGE1NjgyNGU1YmQ2ZmJkNWZmYWQ",
+    "commit": {
+        "author": {
+            "name": "ahmedaymanali03",
+            "email": "21p0002@eng.asu.edu.eg",
+            "date": "2023-05-17T12:23:06Z"
+        },
+        "committer": {
+            "name": "ahmedaymanali03",
+            "email": "21p0002@eng.asu.edu.eg",
+            "date": "2023-05-17T12:23:06Z"
+        },
+        "message": "added try and catch for null pointer exception in login conrtoller",
+        "tree": {
+            "sha": "366a7943439b5e5f0541bbd1eb7cc296de9d2555",
+            "url": "https://api.github.com/repos/Yehia404/Library-Management-System/git/trees/366a7943439b5e5f0541bbd1eb7cc296de9d2555"
+        },
+        "url": "https://api.github.com/repos/Yehia404/Library-Management-System/git/commits/33d190976e2426825c7ada56824e5bd6fbd5ffad",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Yehia404/Library-Management-System/commits/33d190976e2426825c7ada56824e5bd6fbd5ffad",
+    "html_url": "https://github.com/Yehia404/Library-Management-System/commit/33d190976e2426825c7ada56824e5bd6fbd5ffad",
+    "comments_url": "https://api.github.com/repos/Yehia404/Library-Management-System/commits/33d190976e2426825c7ada56824e5bd6fbd5ffad/comments",
+    "author": {
+        "login": "ahmedaymanali03",
+        "id": 128629644,
+        "node_id": "U_kgDOB6q7jA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/128629644?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ahmedaymanali03",
+        "html_url": "https://github.com/ahmedaymanali03",
+        "followers_url": "https://api.github.com/users/ahmedaymanali03/followers",
+        "following_url": "https://api.github.com/users/ahmedaymanali03/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ahmedaymanali03/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ahmedaymanali03/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ahmedaymanali03/subscriptions",
+        "organizations_url": "https://api.github.com/users/ahmedaymanali03/orgs",
+        "repos_url": "https://api.github.com/users/ahmedaymanali03/repos",
+        "events_url": "https://api.github.com/users/ahmedaymanali03/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ahmedaymanali03/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ahmedaymanali03",
+        "id": 128629644,
+        "node_id": "U_kgDOB6q7jA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/128629644?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ahmedaymanali03",
+        "html_url": "https://github.com/ahmedaymanali03",
+        "followers_url": "https://api.github.com/users/ahmedaymanali03/followers",
+        "following_url": "https://api.github.com/users/ahmedaymanali03/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ahmedaymanali03/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ahmedaymanali03/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ahmedaymanali03/subscriptions",
+        "organizations_url": "https://api.github.com/users/ahmedaymanali03/orgs",
+        "repos_url": "https://api.github.com/users/ahmedaymanali03/repos",
+        "events_url": "https://api.github.com/users/ahmedaymanali03/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ahmedaymanali03/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c1a618a2af33432e5b00ad1fecb9483092912297",
+            "url": "https://api.github.com/repos/Yehia404/Library-Management-System/commits/c1a618a2af33432e5b00ad1fecb9483092912297",
+            "html_url": "https://github.com/Yehia404/Library-Management-System/commit/c1a618a2af33432e5b00ad1fecb9483092912297"
+        }
+    ],
+    "stats": {
+        "total": 47,
+        "additions": 24,
+        "deletions": 23
+    },
+    "files": [
+        {
+            "sha": "314dc2357bdabffb5e7fe6f8693b481d3e215f0e",
+            "filename": "src/main/java/classes/Library.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 10,
+            "changes": 20,
+            "blob_url": "https://github.com/Yehia404/Library-Management-System/blob/33d190976e2426825c7ada56824e5bd6fbd5ffad/src%2Fmain%2Fjava%2Fclasses%2FLibrary.java",
+            "raw_url": "https://github.com/Yehia404/Library-Management-System/raw/33d190976e2426825c7ada56824e5bd6fbd5ffad/src%2Fmain%2Fjava%2Fclasses%2FLibrary.java",
+            "contents_url": "https://api.github.com/repos/Yehia404/Library-Management-System/contents/src%2Fmain%2Fjava%2Fclasses%2FLibrary.java?ref=33d190976e2426825c7ada56824e5bd6fbd5ffad",
+            "patch": "@@ -15,23 +15,23 @@ public Library() {\n \n \n \n-        Librarian l0= new Librarian(\"ab\", \"Lib\", \"a\", \"a\", \"1\", 1, \"email1\" );\n-        Librarian l1= new Librarian(\"aa\", \"Lib\", \"b\", \"b\", \"2\", 2, \"email2\" );\n-        Librarian l4= new Librarian(\"ac\", \"Lib\", \"E\", \"e\", \"5\", 6, \"email5\" );\n-        Librarian l3= new Librarian(\"ac\", \"Lib\", \"D\", \"d\", \"4\", 5, \"email4\" );\n-        Librarian l2= new Librarian(\"ac\", \"Lib\", \"c\", \"c\", \"3\", 4, \"email3\" );\n+        Librarian l0= new Librarian(\"pass\", \"Lib\", \"a\", \"a\", \"1\", 1, \"email1@librarian.com\" );\n+        Librarian l1= new Librarian(\"pass\", \"Lib\", \"b\", \"b\", \"2\", 2, \"email2@librarian.com\" );\n+        Librarian l4= new Librarian(\"pass\", \"Lib\", \"E\", \"e\", \"5\", 6, \"email5@librarian.com\" );\n+        Librarian l3= new Librarian(\"pass\", \"Lib\", \"D\", \"d\", \"4\", 5, \"email4@librarian.com\" );\n+        Librarian l2= new Librarian(\"pass\", \"Lib\", \"c\", \"c\", \"3\", 4, \"email3@librarian.com\" );\n         persons.add(l0);\n         persons.add(l1);\n         persons.add(l2);\n         persons.add(l3);\n         persons.add(l4);\n \n \n-        Reader R0= new Reader(\"ab\", \"Read\", \"a\", \"a\", \"1\", 1, \"email11\" );\n-        Reader R1= new Reader(\"aa\", \"Read\", \"b\", \"b\", \"2\", 2, \"email2\" );\n-        Reader R2= new Reader(\"ac\", \"Read\", \"E\", \"e\", \"5\", 6, \"email5\" );\n-        Reader R3= new Reader(\"ac\", \"Read\", \"D\", \"d\", \"4\", 5, \"email4\" );\n-        Reader R4= new Reader(\"ac\", \"Read\", \"c\", \"c\", \"3\", 4, \"email3\" );\n+        Reader R0= new Reader(\"pass\", \"Read\", \"a\", \"a\", \"1\", 1, \"email1@reader.com\" );\n+        Reader R1= new Reader(\"pass\", \"Read\", \"b\", \"b\", \"2\", 2, \"email2@reader.com\" );\n+        Reader R2= new Reader(\"pass\", \"Read\", \"E\", \"e\", \"5\", 6, \"email5@reader.com\" );\n+        Reader R3= new Reader(\"pass\", \"Read\", \"D\", \"d\", \"4\", 5, \"email4@reader.com\" );\n+        Reader R4= new Reader(\"pass\", \"Read\", \"c\", \"c\", \"3\", 4, \"email3@reader.com\" );\n         persons.add(R0);\n         persons.add(R1);\n         persons.add(R2);"
+        },
+        {
+            "sha": "02c950733adf2c59a14479c0a680fca5e2ce7edb",
+            "filename": "src/main/java/com/example/project_gui/LoginController.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 13,
+            "changes": 27,
+            "blob_url": "https://github.com/Yehia404/Library-Management-System/blob/33d190976e2426825c7ada56824e5bd6fbd5ffad/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject_gui%2FLoginController.java",
+            "raw_url": "https://github.com/Yehia404/Library-Management-System/raw/33d190976e2426825c7ada56824e5bd6fbd5ffad/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject_gui%2FLoginController.java",
+            "contents_url": "https://api.github.com/repos/Yehia404/Library-Management-System/contents/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject_gui%2FLoginController.java?ref=33d190976e2426825c7ada56824e5bd6fbd5ffad",
+            "patch": "@@ -8,9 +8,7 @@\n import javafx.scene.Node;\n import javafx.scene.Parent;\n import javafx.scene.Scene;\n-import javafx.scene.control.Button;\n-import javafx.scene.control.PasswordField;\n-import javafx.scene.control.TextField;\n+import javafx.scene.control.*;\n import javafx.scene.layout.StackPane;\n import javafx.stage.Stage;\n \n@@ -43,34 +41,37 @@ public class LoginController {\n     private char t;\n \n     public void switchToNextPage(ActionEvent event) throws IOException {\n-\n         Parent root;\n         System.out.println(t);\n-        if (t=='l'){\n+        if (t == 'l') {\n             root = FXMLLoader.load(getClass().getResource(\"InitialLibrarian.fxml\"));\n-            stage = (Stage)loginButton.getScene().getWindow();\n+            stage = (Stage) loginButton.getScene().getWindow();\n             scene = new Scene(root);\n             stage.setScene(scene);\n             stage.show();\n-        }\n-        else if(t=='r') {\n-           root= FXMLLoader.load(getClass().getResource(\"InitialReader.fxml\"));\n-            stage = (Stage)loginButton.getScene().getWindow();\n+        } else if (t == 'r') {\n+            root = FXMLLoader.load(getClass().getResource(\"InitialReader.fxml\"));\n+            stage = (Stage) loginButton.getScene().getWindow();\n             scene = new Scene(root);\n             stage.setScene(scene);\n             stage.show();\n+        } else {\n+            Alert alert = new Alert(Alert.AlertType.ERROR, \"Invalid credentials!\", ButtonType.OK);\n+            alert.showAndWait();\n         }\n-\n     }\n \n \n+\n     @FXML\n     private void handleLogin() throws IOException {\n \n         Email = usernameField.getText();\n         Password = passwordField.getText();\n-\n-        t = Library.checkPassword(Email, Password).getTYPE();\n+        try {\n+            t = Library.checkPassword(Email, Password).getTYPE();\n+        }\n+        catch (NullPointerException e){}\n         Library.loggedIn = Library.checkPassword(Email, Password);\n         System.out.println(t);\n         switchToNextPage(e);"
+        }
+    ]
+}

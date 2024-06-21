@@ -1,0 +1,23 @@
+    private static void createCounters(Metrics metrics) {
+        ReportManager.messageCounter = metrics.getLongCounter(EVENTS_SUBMITTED_COUNTER_TAG);
+        ReportManager.discardedCounter = metrics.getLongCounter(EVENTS_DISCARDED_COUNTER_TAG);
+        ReportManager.deviceModeEventCounter = metrics.getLongCounter(DEVICE_MODE_EVENT_COUNTER_TAG);
+        ReportManager.cloudModeEventCounter = metrics.getLongCounter(CLOUD_MODE_EVENT_COUNTER_TAG);
+        ReportManager.deviceModeDiscardedCounter = metrics.getLongCounter(DEVICE_MODE_DISCARD_COUNTER_TAG);
+
+        cloudModeUploadSuccessCounter = metrics.getLongCounter(CLOUD_MODE_EVENT_UPLOAD_SUCCESS_COUNTER_TAG);
+        cloudModeUploadAbortCounter = metrics.getLongCounter(CLOUD_MODE_EVENT_UPLOAD_ABORT_COUNTER_TAG);
+        cloudModeUploadRetryCounter = metrics.getLongCounter(CLOUD_MODE_EVENT_UPLOAD_RETRY_COUNTER_TAG);
+
+        sourceConfigDownloadRetryCounter = metrics.getLongCounter(SOURCE_CONFIG_DOWNLOAD_RETRY_COUNTER_TAG);
+        sourceConfigDownloadSuccessCounter = metrics.getLongCounter(SOURCE_CONFIG_DOWNLOAD_SUCCESS_COUNTER_TAG);
+        sourceConfigDownloadAbortCounter = metrics.getLongCounter(SOURCE_CONFIG_DOWNLOAD_ABORT_COUNTER_TAG);
+    }
+
+    public static void initiate(Metrics metrics, ErrorClient errorStatsClient) {
+        ReportManager.metrics = metrics;
+        ReportManager.errorStatsClient = errorStatsClient;
+        createCounters(metrics);
+
+    }
+

@@ -1,0 +1,65 @@
+    public void GetProducts_ReturnsOk() {
+        LoginDTO login = new LoginDTO("admin", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+        assertNotNull(loginResponse.getBody());
+        String jwt = loginResponse.getBody().getJwt();
+
+        // Create some ProductDTOs for testing
+        ProductRegistrationDTO product1 = new ProductRegistrationDTO(
+                "Brand 1",
+                "Name 1",
+                "Description 1",
+                5,
+                new BigDecimal("10.99")
+        );
+        ProductRegistrationDTO product2 = new ProductRegistrationDTO(
+                "Brand 2",
+                "Name 2",
+                "Description 2",
+                8,
+                new BigDecimal("15.99")
+        );
+        ProductRegistrationDTO product3 = new ProductRegistrationDTO(
+                "Brand 3",
+                "Name 3",
+                "Description 3",
+                3,
+                new BigDecimal("7.99")
+        );
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<ProductRegistrationDTO> requestEntity1 = new HttpEntity<>(product1, headers);
+        HttpEntity<ProductRegistrationDTO> requestEntity2 = new HttpEntity<>(product2, headers);
+        HttpEntity<ProductRegistrationDTO> requestEntity3 = new HttpEntity<>(product3, headers);
+
+
+        restTemplate.postForEntity("http://localhost:" + port + "/product/register", requestEntity1, ProductRegistrationDTO.class);
+        restTemplate.postForEntity("http://localhost:" + port + "/product/register", requestEntity2, ProductRegistrationDTO.class);
+        restTemplate.postForEntity("http://localhost:" + port + "/product/register", requestEntity3, ProductRegistrationDTO.class);
+
+
+        ResponseEntity<Page<ProductDTO>> response = restTemplate.exchange(
+                "http://localhost:" + port + "/product/products",
+                HttpMethod.GET,
+                new HttpEntity<>(headers),
+                new ParameterizedTypeReference<Page<ProductDTO>>() {}
+        );
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+
+        Page<ProductDTO> responseBody = response.getBody();
+        assertNotNull(responseBody);
+        // TODO: Maybe just create a init data for tests without all the products.
+        // 15 here is because TestConfig runs DataInitialization which creates 12 Products. Here we add 3 more so 12 + 3 = 15
+        assertEquals(15, responseBody.getTotalElements());
+
+
+    }

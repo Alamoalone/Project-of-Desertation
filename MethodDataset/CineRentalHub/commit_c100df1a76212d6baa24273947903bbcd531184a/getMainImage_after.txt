@@ -1,0 +1,30 @@
+  public static ImageDTO getMainImage(Integer movieId) throws Exception {
+    EntityManager em = MariaDB.getEntityManager();
+
+    try {
+      em.getTransaction().begin();
+
+      StoredProcedureQuery query = em.createStoredProcedureQuery("get_main_image_by_movie_id")
+              .registerStoredProcedureParameter("id_movie", Integer.class, ParameterMode.IN)
+              .setParameter("id_movie", movieId);
+
+      @SuppressWarnings("unchecked")
+      List<Object[]> result = query.getResultList();
+      if (!result.isEmpty()) {
+        Object[] row = result.get(0);
+        // Hack car bug, pour le get de main image, le 4e paramètre est un Byte et non un boolean
+        Boolean isMain = (Byte) row[3] == 1;
+        return new ImageDTO((Integer) row[0], (Integer) row[1], (String) row[2], isMain);
+      }
+
+      throw new Exception("No main image found for movie with id " + movieId);
+    } catch (PersistenceException e) {
+      if (em.getTransaction().isActive()) {
+        em.getTransaction().rollback();
+      }
+      ModelUtils.generateException(e);
+      return null;
+    } finally {
+      em.close();
+    }
+  }

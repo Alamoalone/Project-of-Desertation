@@ -1,0 +1,110 @@
+{
+    "sha": "b9125aec301e4e03d9b24c690eec404f78b81713",
+    "node_id": "C_kwDOKI-T0toAKGI5MTI1YWVjMzAxZTRlMDNkOWIyNGM2OTBlZWM0MDRmNzhiODE3MTM",
+    "commit": {
+        "author": {
+            "name": "Juan Dingevan",
+            "email": "jidingevan@gmail.com",
+            "date": "2023-10-25T16:35:37Z"
+        },
+        "committer": {
+            "name": "Juan Dingevan",
+            "email": "jidingevan@gmail.com",
+            "date": "2023-10-25T16:35:37Z"
+        },
+        "message": "Avoiding null pointer exception when ElseNodes checks a semicolon sentence.",
+        "tree": {
+            "sha": "3b4db041e3a0bb690dbed50d2616d4613e8bb928",
+            "url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/git/trees/3b4db041e3a0bb690dbed50d2616d4613e8bb928"
+        },
+        "url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/git/commits/b9125aec301e4e03d9b24c690eec404f78b81713",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/commits/b9125aec301e4e03d9b24c690eec404f78b81713",
+    "html_url": "https://github.com/Juan-Dingevan/Sumatra-MiniJava-Compiler/commit/b9125aec301e4e03d9b24c690eec404f78b81713",
+    "comments_url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/commits/b9125aec301e4e03d9b24c690eec404f78b81713/comments",
+    "author": {
+        "login": "Juan-Dingevan",
+        "id": 89468735,
+        "node_id": "MDQ6VXNlcjg5NDY4NzM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89468735?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Juan-Dingevan",
+        "html_url": "https://github.com/Juan-Dingevan",
+        "followers_url": "https://api.github.com/users/Juan-Dingevan/followers",
+        "following_url": "https://api.github.com/users/Juan-Dingevan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Juan-Dingevan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Juan-Dingevan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Juan-Dingevan/subscriptions",
+        "organizations_url": "https://api.github.com/users/Juan-Dingevan/orgs",
+        "repos_url": "https://api.github.com/users/Juan-Dingevan/repos",
+        "events_url": "https://api.github.com/users/Juan-Dingevan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Juan-Dingevan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Juan-Dingevan",
+        "id": 89468735,
+        "node_id": "MDQ6VXNlcjg5NDY4NzM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89468735?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Juan-Dingevan",
+        "html_url": "https://github.com/Juan-Dingevan",
+        "followers_url": "https://api.github.com/users/Juan-Dingevan/followers",
+        "following_url": "https://api.github.com/users/Juan-Dingevan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Juan-Dingevan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Juan-Dingevan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Juan-Dingevan/subscriptions",
+        "organizations_url": "https://api.github.com/users/Juan-Dingevan/orgs",
+        "repos_url": "https://api.github.com/users/Juan-Dingevan/repos",
+        "events_url": "https://api.github.com/users/Juan-Dingevan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Juan-Dingevan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2af2f0f08c058835a169d3a61a0cbdcb721becc2",
+            "url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/commits/2af2f0f08c058835a169d3a61a0cbdcb721becc2",
+            "html_url": "https://github.com/Juan-Dingevan/Sumatra-MiniJava-Compiler/commit/2af2f0f08c058835a169d3a61a0cbdcb721becc2"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 14,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "de4efd223cad10efc4f9c43286c6440fe053a01c",
+            "filename": "resources/sinErrores/sem_if_empty_sentence.java",
+            "status": "added",
+            "additions": 12,
+            "deletions": 0,
+            "changes": 12,
+            "blob_url": "https://github.com/Juan-Dingevan/Sumatra-MiniJava-Compiler/blob/b9125aec301e4e03d9b24c690eec404f78b81713/resources%2FsinErrores%2Fsem_if_empty_sentence.java",
+            "raw_url": "https://github.com/Juan-Dingevan/Sumatra-MiniJava-Compiler/raw/b9125aec301e4e03d9b24c690eec404f78b81713/resources%2FsinErrores%2Fsem_if_empty_sentence.java",
+            "contents_url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/contents/resources%2FsinErrores%2Fsem_if_empty_sentence.java?ref=b9125aec301e4e03d9b24c690eec404f78b81713",
+            "patch": "@@ -0,0 +1,12 @@\n+///[SinErrores]\n+class Main {\n+    public static void main() {}\n+\n+    public void m() {\n+        while(true);\n+\n+        if(true);\n+        else;\n+\n+    }\n+}\n\\ No newline at end of file"
+        },
+        {
+            "sha": "ebf5cac0bc3a069bf4047ffdcc9a337e98dc23e4",
+            "filename": "src/symboltable/ast/sentencenodes/ElseNode.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Juan-Dingevan/Sumatra-MiniJava-Compiler/blob/b9125aec301e4e03d9b24c690eec404f78b81713/src%2Fsymboltable%2Fast%2Fsentencenodes%2FElseNode.java",
+            "raw_url": "https://github.com/Juan-Dingevan/Sumatra-MiniJava-Compiler/raw/b9125aec301e4e03d9b24c690eec404f78b81713/src%2Fsymboltable%2Fast%2Fsentencenodes%2FElseNode.java",
+            "contents_url": "https://api.github.com/repos/Juan-Dingevan/Sumatra-MiniJava-Compiler/contents/src%2Fsymboltable%2Fast%2Fsentencenodes%2FElseNode.java?ref=b9125aec301e4e03d9b24c690eec404f78b81713",
+            "patch": "@@ -26,7 +26,8 @@ public void setSentence(SentenceNode sentence) {\n \n     @Override\n     protected void checkSelf() throws CompilerException {\n-        sentence.check();\n+        if(sentence != SEMICOLON_SENTENCE)\n+            sentence.check();\n     }\n \n     public String toString() {"
+        }
+    ]
+}

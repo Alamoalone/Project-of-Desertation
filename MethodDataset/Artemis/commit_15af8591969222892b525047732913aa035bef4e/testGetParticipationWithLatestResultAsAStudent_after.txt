@@ -1,0 +1,18 @@
+    void testGetParticipationWithLatestResultAsAStudent(ZonedDateTime startDate, ZonedDateTime releaseDate, AssessmentType assessmentType, ZonedDateTime completionDate,
+            ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {
+        programmingExercise.setStartDate(startDate);
+        programmingExercise.setReleaseDate(releaseDate);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        var result = addStudentParticipationWithResult(assessmentType, completionDate);
+        StudentParticipation participation = (StudentParticipation) result.getParticipation();
+        var expectedStatus = expectLastCreatedResult ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        var requestedParticipation = request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-latest-result-and-feedbacks", expectedStatus,
+                ProgrammingExerciseStudentParticipation.class);
+
+        if (expectedStatus == HttpStatus.OK) {
+            assertThat(requestedParticipation.getResults()).hasSize(1);
+            var requestedResult = requestedParticipation.getResults().iterator().next();
+            assertThat(requestedResult.getFeedbacks()).noneMatch(Feedback::isInvisible);
+        }
+    }

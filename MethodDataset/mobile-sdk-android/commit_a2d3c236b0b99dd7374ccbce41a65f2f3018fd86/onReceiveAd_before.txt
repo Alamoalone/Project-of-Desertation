@@ -1,0 +1,39 @@
+    public void onReceiveAd(AdResponse ad) {
+        Clog.logTime(getClass().getSimpleName() + " - onReceiveAd");
+        printMediatedClasses();
+        if (controller != null) {
+            // do not hold a reference of current mediated ad controller after ad is loaded
+            controller = null;
+        }
+        if (mediatedNativeAdController != null) {
+            // do not hold a reference of current mediated ad controller after ad is loaded
+            mediatedNativeAdController = null;
+        }
+        if (ssmAdViewController != null) {
+            // do not hold a reference of current ssm mediated ad controller after ad is loaded
+            ssmAdViewController = null;
+        }
+        if (csrNativeBannerController != null) {
+            csrNativeBannerController = null;
+        }
+        Ad owner = this.owner.get();
+        if (owner != null) {
+            if (ad.getMediaType().equals(MediaType.BANNER)) {
+                BannerAdView bav = (BannerAdView) owner;
+                if (bav.getExpandsToFitScreenWidth() || bav.getResizeAdToFitContainer()) {
+                    int width = ad.getResponseData().getWidth() <= 1 ? bav.getRequestParameters().getPrimarySize().width() : ad.getResponseData().getWidth();
+                    int height = ad.getResponseData().getHeight() <= 1 ? bav.getRequestParameters().getPrimarySize().height() : ad.getResponseData().getHeight();
+                    if (bav.getExpandsToFitScreenWidth()) {
+                        bav.expandToFitScreenWidth(width, height, ad.getDisplayable().getView());
+                    }
+                    if (bav.getResizeAdToFitContainer()) {
+                        bav.resizeViewToFitContainer(width, height, ad.getDisplayable().getView());
+                    }
+                }
+                fireImpressionTrackerIfBeginToRender(bav, ad.getResponseData());
+            }
+            ((AdDispatcher) owner.getAdDispatcher()).onAdLoaded(ad);
+        } else {
+            ad.destroy();
+        }
+    }

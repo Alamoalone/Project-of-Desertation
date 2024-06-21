@@ -1,0 +1,98 @@
+{
+    "sha": "d61015f11ebfc56b57ee0c42cd17f72df9665605",
+    "node_id": "C_kwDOGV9Zr9oAKGQ2MTAxNWYxMWViZmM1NmI1N2VlMGM0MmNkMTdmNzJkZjk2NjU2MDU",
+    "commit": {
+        "author": {
+            "name": "vanson",
+            "email": "43193589+WeiXinChan@users.noreply.github.com",
+            "date": "2024-01-10T03:13:35Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-01-10T03:13:35Z"
+        },
+        "message": "fix null pointer exception when error code is unknown from higher version observer (#73)",
+        "tree": {
+            "sha": "d1838c69e7ef6e6b7524802a40a06af3ba1f610d",
+            "url": "https://api.github.com/repos/oceanbase/obkv-table-client-java/git/trees/d1838c69e7ef6e6b7524802a40a06af3ba1f610d"
+        },
+        "url": "https://api.github.com/repos/oceanbase/obkv-table-client-java/git/commits/d61015f11ebfc56b57ee0c42cd17f72df9665605",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlngtfCRBK7hj4Ov3rIwAARvwIAJ1eo2lwproml+z+tmnHfKy/\neUydfhnir8aEpruorYYmAFeqBI5sVu1FCE4bzFC/YLBCYPsyqZ04mxhNlDk68u3e\nlZyTHSikPFm+AwL7+BZ3NkDMBGpjaTBdItdNX5NxTMsWCnkfVSVnfycRS2c6iw+M\naxowXlCB6jl9zt0yrZiokZK8eSoCrx5SVUJcA9rGRlr2vyPSwM8G//4A1AAoKgqM\nktMOV1DpsACMQklLMU6vePlvcR0luVPrMmJZMSK5dhIXGp/a4UK+7NPuNRn5hfA7\nsIJfcQcJVRAJrf4IfQoEQ0i47jFoBiixOYeyoPLPbRv+/WH5Stvs+sKKMQiRcUw=\n=R24r\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d1838c69e7ef6e6b7524802a40a06af3ba1f610d\nparent e078efec17848d41445a1af9ca1ad15c7e39e3fe\nauthor vanson <43193589+WeiXinChan@users.noreply.github.com> 1704856415 +0800\ncommitter GitHub <noreply@github.com> 1704856415 +0800\n\nfix null pointer exception when error code is unknown from higher version observer (#73)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/oceanbase/obkv-table-client-java/commits/d61015f11ebfc56b57ee0c42cd17f72df9665605",
+    "html_url": "https://github.com/oceanbase/obkv-table-client-java/commit/d61015f11ebfc56b57ee0c42cd17f72df9665605",
+    "comments_url": "https://api.github.com/repos/oceanbase/obkv-table-client-java/commits/d61015f11ebfc56b57ee0c42cd17f72df9665605/comments",
+    "author": {
+        "login": "WeiXinChan",
+        "id": 43193589,
+        "node_id": "MDQ6VXNlcjQzMTkzNTg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/43193589?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/WeiXinChan",
+        "html_url": "https://github.com/WeiXinChan",
+        "followers_url": "https://api.github.com/users/WeiXinChan/followers",
+        "following_url": "https://api.github.com/users/WeiXinChan/following{/other_user}",
+        "gists_url": "https://api.github.com/users/WeiXinChan/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/WeiXinChan/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/WeiXinChan/subscriptions",
+        "organizations_url": "https://api.github.com/users/WeiXinChan/orgs",
+        "repos_url": "https://api.github.com/users/WeiXinChan/repos",
+        "events_url": "https://api.github.com/users/WeiXinChan/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/WeiXinChan/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e078efec17848d41445a1af9ca1ad15c7e39e3fe",
+            "url": "https://api.github.com/repos/oceanbase/obkv-table-client-java/commits/e078efec17848d41445a1af9ca1ad15c7e39e3fe",
+            "html_url": "https://github.com/oceanbase/obkv-table-client-java/commit/e078efec17848d41445a1af9ca1ad15c7e39e3fe"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "efd0bf39cd532fbb81ed07764155722ed13928be",
+            "filename": "src/main/java/com/alipay/oceanbase/rpc/util/MonitorUtil.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/oceanbase/obkv-table-client-java/blob/d61015f11ebfc56b57ee0c42cd17f72df9665605/src%2Fmain%2Fjava%2Fcom%2Falipay%2Foceanbase%2Frpc%2Futil%2FMonitorUtil.java",
+            "raw_url": "https://github.com/oceanbase/obkv-table-client-java/raw/d61015f11ebfc56b57ee0c42cd17f72df9665605/src%2Fmain%2Fjava%2Fcom%2Falipay%2Foceanbase%2Frpc%2Futil%2FMonitorUtil.java",
+            "contents_url": "https://api.github.com/repos/oceanbase/obkv-table-client-java/contents/src%2Fmain%2Fjava%2Fcom%2Falipay%2Foceanbase%2Frpc%2Futil%2FMonitorUtil.java?ref=d61015f11ebfc56b57ee0c42cd17f72df9665605",
+            "patch": "@@ -136,7 +136,10 @@ private static String logMessage(String traceId, String database, String tableNa\n                     res = String.valueOf(result.getAffectedRows());\n             }\n         }\n-        String errorCodeStringValue = resultCode.toString();\n+        String errorCodeStringValue = \"UnknownErrorCode\";\n+        if (resultCode != null) {\n+            errorCodeStringValue = resultCode.toString();\n+        }\n \n         StringBuilder stringBuilder = new StringBuilder();\n         stringBuilder.append(traceId).append(\" - \").append(database).append(\",\").append(tableName)"
+        }
+    ]
+}

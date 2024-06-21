@@ -1,0 +1,9 @@
+    public int getMarshalledSize() {
+        int marshalSize = 0;
+        marshalSize = super.getMarshalledSize();
+        marshalSize = marshalSize + layer1.getMarshalledSize();//emittingEntityId
+        if (layer2 != null) {
+            marshalSize = marshalSize + layer2.getMarshalledSize();
+        }
+        return marshalSize;
+    }

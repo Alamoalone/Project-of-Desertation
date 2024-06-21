@@ -1,0 +1,98 @@
+{
+    "sha": "f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa",
+    "node_id": "C_kwDOK7vKIdoAKGYxMmY2NGYwNWMyZDg1MDhiODhlN2E5YTRiYWJkOTRiMGY3MmIzZmE",
+    "commit": {
+        "author": {
+            "name": "lan lin",
+            "email": "lin.lan@northeastern.edu",
+            "date": "2024-01-06T01:33:50Z"
+        },
+        "committer": {
+            "name": "Lan Lin",
+            "email": "lin.lan@northeastern.edu",
+            "date": "2024-01-06T06:36:48Z"
+        },
+        "message": "fix: null pointer exception",
+        "tree": {
+            "sha": "ba7c7276ce7e4698a19de45e5dcad01fe32bdcbf",
+            "url": "https://api.github.com/repos/simple-wheel/simple-db/git/trees/ba7c7276ce7e4698a19de45e5dcad01fe32bdcbf"
+        },
+        "url": "https://api.github.com/repos/simple-wheel/simple-db/git/commits/f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/simple-wheel/simple-db/commits/f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa",
+    "html_url": "https://github.com/simple-wheel/simple-db/commit/f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa",
+    "comments_url": "https://api.github.com/repos/simple-wheel/simple-db/commits/f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa/comments",
+    "author": {
+        "login": "user1689",
+        "id": 89725525,
+        "node_id": "MDQ6VXNlcjg5NzI1NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89725525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/user1689",
+        "html_url": "https://github.com/user1689",
+        "followers_url": "https://api.github.com/users/user1689/followers",
+        "following_url": "https://api.github.com/users/user1689/following{/other_user}",
+        "gists_url": "https://api.github.com/users/user1689/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/user1689/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/user1689/subscriptions",
+        "organizations_url": "https://api.github.com/users/user1689/orgs",
+        "repos_url": "https://api.github.com/users/user1689/repos",
+        "events_url": "https://api.github.com/users/user1689/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/user1689/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "user1689",
+        "id": 89725525,
+        "node_id": "MDQ6VXNlcjg5NzI1NTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89725525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/user1689",
+        "html_url": "https://github.com/user1689",
+        "followers_url": "https://api.github.com/users/user1689/followers",
+        "following_url": "https://api.github.com/users/user1689/following{/other_user}",
+        "gists_url": "https://api.github.com/users/user1689/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/user1689/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/user1689/subscriptions",
+        "organizations_url": "https://api.github.com/users/user1689/orgs",
+        "repos_url": "https://api.github.com/users/user1689/repos",
+        "events_url": "https://api.github.com/users/user1689/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/user1689/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5ab702c918101b919d4fa869f20fff509bfa610f",
+            "url": "https://api.github.com/repos/simple-wheel/simple-db/commits/5ab702c918101b919d4fa869f20fff509bfa610f",
+            "html_url": "https://github.com/simple-wheel/simple-db/commit/5ab702c918101b919d4fa869f20fff509bfa610f"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 5,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "631cddc85c7d9a86f4b2626a19d683797e568195",
+            "filename": "src/main/java/com/northeastern/edu/simpledb/backend/vm/VersionManager.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 4,
+            "changes": 9,
+            "blob_url": "https://github.com/simple-wheel/simple-db/blob/f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fvm%2FVersionManager.java",
+            "raw_url": "https://github.com/simple-wheel/simple-db/raw/f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fvm%2FVersionManager.java",
+            "contents_url": "https://api.github.com/repos/simple-wheel/simple-db/contents/src%2Fmain%2Fjava%2Fcom%2Fnortheastern%2Fedu%2Fsimpledb%2Fbackend%2Fvm%2FVersionManager.java?ref=f12f64f05c2d8508b88e7a9a4babd94b0f72b3fa",
+            "patch": "@@ -36,6 +36,7 @@ public VersionManager(TransactionManager tm, DataManger dm) {\n     @Override\n     public byte[] read(long xid, long uid) throws Exception {\n         Transaction transaction = activeTransaction.get(xid);\n+        if (transaction == null) return null;\n         if (transaction.err != null) throw transaction.err;\n \n         Entry entry = null;\n@@ -59,7 +60,7 @@ public byte[] read(long xid, long uid) throws Exception {\n     @Override\n     public long insert(long xid, byte[] data) throws Exception {\n         Transaction transaction = activeTransaction.get(xid);\n-\n+        if (transaction == null) throw Error.InvalidCommandException;\n         if (transaction.err != null) throw transaction.err;\n \n         byte[] raw = Entry.wrapEntryRaw(xid, data);\n@@ -69,9 +70,9 @@ public long insert(long xid, byte[] data) throws Exception {\n     @Override\n     public boolean delete(long xid, long uid) throws Exception {\n         Transaction transaction = activeTransaction.get(xid);\n-        if (transaction.err != null) {\n-            throw transaction.err;\n-        }\n+        if (transaction == null) throw Error.InvalidCommandException;\n+        if (transaction.err != null) throw transaction.err;\n+\n \n         Entry entry = null;\n         try {"
+        }
+    ]
+}

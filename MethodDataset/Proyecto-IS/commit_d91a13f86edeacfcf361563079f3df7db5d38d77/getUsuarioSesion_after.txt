@@ -1,0 +1,3 @@
+    public Usuario getUsuarioSesion() {
+        return usuarioSesion;
+    }

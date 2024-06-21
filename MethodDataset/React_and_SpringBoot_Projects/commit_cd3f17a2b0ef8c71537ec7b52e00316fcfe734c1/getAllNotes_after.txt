@@ -1,0 +1,8 @@
+    public ResponseEntity<?> getAllNotes() throws NullPointerException {
+        Loggers.info("ALL NOTE FETCHED");
+        List<Notes> notesList = notesService.notesList();
+        if(notesList.isEmpty()){
+            return ResponseEntity.noContent().header("msg", "NO NOTE FOUND").build();
+        }
+        return ResponseEntity.ok(notesList);
+    }

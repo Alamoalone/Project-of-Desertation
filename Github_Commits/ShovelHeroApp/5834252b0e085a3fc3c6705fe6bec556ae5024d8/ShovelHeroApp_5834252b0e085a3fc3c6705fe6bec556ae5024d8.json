@@ -1,0 +1,98 @@
+{
+    "sha": "5834252b0e085a3fc3c6705fe6bec556ae5024d8",
+    "node_id": "C_kwDOKoH9DNoAKDU4MzQyNTJiMGUwODVhM2ZjM2M2NzA1ZmU2YmVjNTU2YWU1MDI0ZDg",
+    "commit": {
+        "author": {
+            "name": "Shawn",
+            "email": "sperron3@my.centennialcollege.ca",
+            "date": "2023-12-01T17:48:36Z"
+        },
+        "committer": {
+            "name": "Shawn",
+            "email": "sperron3@my.centennialcollege.ca",
+            "date": "2023-12-01T17:48:36Z"
+        },
+        "message": "Fixed Null Pointer Exception in Youth Shoveler",
+        "tree": {
+            "sha": "8ed0c3fa15bec136b2a41e7cb6a74cd06afd2293",
+            "url": "https://api.github.com/repos/LookyLuCU/ShovelHeroApp/git/trees/8ed0c3fa15bec136b2a41e7cb6a74cd06afd2293"
+        },
+        "url": "https://api.github.com/repos/LookyLuCU/ShovelHeroApp/git/commits/5834252b0e085a3fc3c6705fe6bec556ae5024d8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/LookyLuCU/ShovelHeroApp/commits/5834252b0e085a3fc3c6705fe6bec556ae5024d8",
+    "html_url": "https://github.com/LookyLuCU/ShovelHeroApp/commit/5834252b0e085a3fc3c6705fe6bec556ae5024d8",
+    "comments_url": "https://api.github.com/repos/LookyLuCU/ShovelHeroApp/commits/5834252b0e085a3fc3c6705fe6bec556ae5024d8/comments",
+    "author": {
+        "login": "sperron3",
+        "id": 122643051,
+        "node_id": "U_kgDOB09iaw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/122643051?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sperron3",
+        "html_url": "https://github.com/sperron3",
+        "followers_url": "https://api.github.com/users/sperron3/followers",
+        "following_url": "https://api.github.com/users/sperron3/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sperron3/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sperron3/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sperron3/subscriptions",
+        "organizations_url": "https://api.github.com/users/sperron3/orgs",
+        "repos_url": "https://api.github.com/users/sperron3/repos",
+        "events_url": "https://api.github.com/users/sperron3/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sperron3/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "sperron3",
+        "id": 122643051,
+        "node_id": "U_kgDOB09iaw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/122643051?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sperron3",
+        "html_url": "https://github.com/sperron3",
+        "followers_url": "https://api.github.com/users/sperron3/followers",
+        "following_url": "https://api.github.com/users/sperron3/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sperron3/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sperron3/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sperron3/subscriptions",
+        "organizations_url": "https://api.github.com/users/sperron3/orgs",
+        "repos_url": "https://api.github.com/users/sperron3/repos",
+        "events_url": "https://api.github.com/users/sperron3/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sperron3/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ea495c8f43ff032e3e682e4ffafec5f51f4db1ac",
+            "url": "https://api.github.com/repos/LookyLuCU/ShovelHeroApp/commits/ea495c8f43ff032e3e682e4ffafec5f51f4db1ac",
+            "html_url": "https://github.com/LookyLuCU/ShovelHeroApp/commit/ea495c8f43ff032e3e682e4ffafec5f51f4db1ac"
+        }
+    ],
+    "stats": {
+        "total": 23,
+        "additions": 13,
+        "deletions": 10
+    },
+    "files": [
+        {
+            "sha": "d33926f08d719f5f7bb0652919bfe1cd28637888",
+            "filename": "app/src/main/java/com/example/shovelheroapp/Controllers/YouthShovelerProfileActivity.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 10,
+            "changes": 23,
+            "blob_url": "https://github.com/LookyLuCU/ShovelHeroApp/blob/5834252b0e085a3fc3c6705fe6bec556ae5024d8/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fshovelheroapp%2FControllers%2FYouthShovelerProfileActivity.java",
+            "raw_url": "https://github.com/LookyLuCU/ShovelHeroApp/raw/5834252b0e085a3fc3c6705fe6bec556ae5024d8/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fshovelheroapp%2FControllers%2FYouthShovelerProfileActivity.java",
+            "contents_url": "https://api.github.com/repos/LookyLuCU/ShovelHeroApp/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fshovelheroapp%2FControllers%2FYouthShovelerProfileActivity.java?ref=5834252b0e085a3fc3c6705fe6bec556ae5024d8",
+            "patch": "@@ -127,17 +127,20 @@ public void onDataChange(@NonNull DataSnapshot dataSnapshot) {\n                    // if (!workOrder.getStatus().equals(\"Closed\") && workOrder.getShovellerId().equals(userId)) {\n                     //if (workOrder.getStatus().equals(\"Open\")) {\n \n-                    if ((workOrder.getStatus().equals(Status.Open.toString()) ||\n-                            workOrder.getStatus().equals(Status.OpenCustom.toString()) ||\n-                            workOrder.getStatus().equals(Status.PendingGuardianApproval.toString()) ||\n-                            workOrder.getStatus().equals(Status.Accepted.toString()) ||\n-                            workOrder.getStatus().equals(Status.Enroute.toString()) ||\n-                            workOrder.getStatus().equals(Status.InProgress.toString()) ||\n-                            workOrder.getStatus().equals(Status.Issue.toString()) )\n-                            && workOrder.getShovellerId().equals(userId)) {\n+                    String status = workOrder.getStatus();\n+                    String shovellerId = workOrder.getShovellerId();\n+\n+                    if ((status != null) && (shovellerId != null) &&\n+                            (status.equals(Status.Open.toString()) ||\n+                                    status.equals(Status.OpenCustom.toString()) ||\n+                                    status.equals(Status.PendingGuardianApproval.toString()) ||\n+                                    status.equals(Status.Accepted.toString()) ||\n+                                    status.equals(Status.Enroute.toString()) ||\n+                                    status.equals(Status.InProgress.toString()) ||\n+                                    status.equals(Status.Issue.toString())) &&\n+                            shovellerId.equals(userId)) {\n                         pendingWorkOrderList.add(workOrder);\n-                    }\n-                    else {\n+                    } else {\n                         Toast.makeText(YouthShovelerProfileActivity.this, \"No Open Jobs\", Toast.LENGTH_SHORT).show();\n                     }\n                 }"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+    public static ReachMethodOperation creatReachOperationNode(OperationNode _oper) {
+//        if (_oper instanceof VarargOperation) {
+//            return new ReachNoopOperation(_oper);
+//        }
+        if (InvokingOperation.getDeltaCount(_oper) != 0) {
+            return new ReachNoopOperation(_oper);
+        }
+        if (_oper instanceof ArrayFieldOperation) {
+            return new ReachArrayFieldOperation(_oper);
+        }
+        if (_oper instanceof SettableAbstractFieldOperation) {
+            return new ReachFieldOperation((SettableAbstractFieldOperation) _oper);
+        }
+        if (_oper instanceof StaticInfoOperation) {
+            return new ReachStaticInfoOperation((StaticInfoOperation) _oper);
+        }
+        if (_oper instanceof DefaultValueOperation) {
+            return new ReachDefaultValueOperation((DefaultValueOperation) _oper);
+        }
+        if (_oper instanceof RangeOperation) {
+            return range(_oper);
+        }
+        if (_oper instanceof SymbolOperation) {
+            SymbolOperation s_ = (SymbolOperation) _oper;
+            if (!s_.isOkNum() || s_.getFct().getFunction() != null) {
+                return new ReachStdOperation(_oper);
+            }
+        }
+        if (_oper instanceof QuickOperation) {
+            QuickOperation s_ = (QuickOperation) _oper;
+            if (!s_.isOkNum() || s_.getFct().getFunction() != null) {
+                return new ReachStdOperation(_oper);
+            }
+        }
+        return symbolFct(_oper);
+    }

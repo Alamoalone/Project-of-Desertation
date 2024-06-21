@@ -1,0 +1,7 @@
+    public ResponseEntity<?> updateNoteById(@PathVariable Integer id, @RequestBody Notes notes) {
+        Loggers.info("NOTE WITH ID " + id + " UPDATED");
+        if(notesService.updateNoteById(id, notes) == null){
+            return ResponseEntity.status(400).header("msg", "BAD REQUEST").build();
+        }
+        return ResponseEntity.ok(notesService.updateNoteById(id, notes));
+    }

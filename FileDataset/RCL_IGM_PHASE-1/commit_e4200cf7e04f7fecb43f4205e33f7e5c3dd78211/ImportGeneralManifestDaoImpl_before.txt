@@ -1,0 +1,180 @@
+		public Object mapRow(ResultSet rs, int row) throws SQLException {
+			//System.out.println("#IGMLogger mapRow() started..");
+			ImportGeneralManifestMod objMod = new ImportGeneralManifestMod();
+			
+			objMod.setService(rs.getString("SERVICE"));
+			objMod.setBl(rs.getString("BL_NO"));
+			blrNumber.add(objMod.getBl());
+			objMod.setPod(rs.getString("POD"));
+			objMod.setPodTerminal(rs.getString("POD_TERMINAL"));
+			PodTerminal.add(objMod.getPodTerminal());
+			objMod.setVessel(rs.getString("VESSEL"));
+			objMod.setVoyage(rs.getString("VOYAGE"));
+			objMod.setCodeCode(rs.getString("CUST_CODE"));
+			objMod.setCallSing(rs.getString("CALL_SIGN"));
+			objMod.setLineCode(rs.getString("LINE_CODE"));
+			objMod.setAgentCode(rs.getString("AGENT_CODE"));
+			objMod.setPortOrigin(rs.getString("PORT_ORIGIN"));
+			objMod.setPortArrival(rs.getString("PORT_ARRIVAL"));
+			objMod.setLastPort1(rs.getString("LAST_PORT_1"));
+			objMod.setLastPort2(rs.getString("LAST_PORT_2"));
+			objMod.setLastPort3(rs.getString("LAST_PORT_3"));
+			objMod.setNextport1(rs.getString("NEXT_PORT_4"));
+			objMod.setNextport2(rs.getString("NEXT_PORT_5"));
+			objMod.setNextport3(rs.getString("NEXT_PORT_6"));
+			objMod.setTerminal(rs.getString("TERMINAL"));
+			objMod.setVesselType(rs.getString("VESSEL_TYPE"));
+			objMod.setGenDesc(rs.getString("GEN_DESC"));
+			objMod.setMasterName(rs.getString("MASTER_NAME"));
+			objMod.setVesselNation(rs.getString("VESSEL_NATION"));
+			objMod.setIgmNumber(rs.getString("IGM_NUMBER"));
+			objMod.setIgmDate(rs.getString("IGM_DATE"));
+			objMod.setArrivalDate(rs.getString("ARRIVAL_DATE"));
+			objMod.setArrivalTime(rs.getString("ARRIVAL_TIME"));
+			objMod.setAtaarrivalDate(rs.getString("ARRIVAL_DATE_ATA"));
+			objMod.setAtaarrivalTime(rs.getString("ARRIVAL_TIME_ATA"));
+			objMod.setTotalBls(rs.getString("TOTAL_BLS"));
+			objMod.setLightDue(rs.getString("LIGHT_DUE"));
+			objMod.setSmBtCargo(rs.getString("SM_BT_CARGO"));
+			objMod.setShipStrDect(rs.getString("SHIP_STR_DECL"));
+			objMod.setCrewEffect(rs.getString("CREW_EFFECT"));
+			objMod.setMariTimeDecl(rs.getString("MARITIME_DECL"));
+			objMod.setItemNumber(rs.getString("ITEM_NUMBER"));
+			objMod.setCargoNature(rs.getString("CARGO_NATURE"));
+			objMod.setCargoMovmnt(rs.getString("CARGO_MOVMNT"));
+			objMod.setItemType(rs.getString("ITEM_TYPE"));
+			objMod.setCargoMovmntType(rs.getString("CARGO_MOVMNT_TYPE"));
+			objMod.setTransportMode(rs.getString("TRANSPORT_MODE"));
+			objMod.setRoadCarrCode(rs.getString("ROAD_CARR_CODE"));
+			objMod.setRoadTpBondNo(rs.getString("ROAD_TP_BOND_NO"));
+			objMod.setNewVessel(rs.getString("NEW_VOYAGE"));
+			objMod.setNewVoyage(rs.getString("NEW_VESSEL"));
+			objMod.setSubmitDateTime(rs.getString("SUBMIT_DATE_TIME"));
+			objMod.setNhavaShevaEta(rs.getString("NHAVA_SHEVA_ETA"));
+			objMod.setFinalPlaceDelivery(rs.getString("FINAL_PLACE_DELIVERY"));
+			objMod.setPackages(rs.getString("PACKAGES"));
+			objMod.setCfsName(rs.getString("CFS_NAME"));
+			objMod.setMblNo(rs.getString("MBL_NO"));
+			objMod.setHblNo(rs.getString("HBL_NO"));
+			objMod.setFromItemNo(rs.getString("FROM_ITEM_NO"));
+			objMod.setToItemNo(rs.getString("TO_ITEM_NO"));
+			objMod.setNetWeight(rs.getString("NET_WEIGHT"));
+			objMod.setGrossWeight(rs.getString("GROSS_WEIGHT"));
+			objMod.setImoCode(rs.getString("IMO_CODE"));
+			objMod.setBlDate(rs.getString("BL_DATE"));
+			objMod.setBlStatus(rs.getString("BL_STATUS"));
+			objMod.setPol(rs.getString("POL"));
+			objMod.setCustomTerminalCode(rs.getString("CUSTOM_TERMINAL_CODE"));
+			objMod.setBlVersion(rs.getString("BL_VERSION"));
+			objMod.setDpdCode(rs.getString("DPD_CODE"));
+			objMod.setDpdMovement(rs.getString("DPD_MOVEMENT"));
+			objMod.setPolTerminal(rs.getString("POL_TERMINAL"));
+			objMod.setCargoDeclaration(rs.getString("CARGO_DECL"));
+			objMod.setCrewListDeclaration(rs.getString("CREW_LST_DECL"));
+			objMod.setPassengerList(rs.getString("PASSNGR_LIST"));
+			objMod.setCusAdd1(rs.getString("CUSTOMERS_ADDRESS_1"));
+			objMod.setCusAdd2(rs.getString("CUSTOMERS_ADDRESS_2"));
+			objMod.setCusAdd3(rs.getString("CUSTOMERS_ADDRESS_3"));
+			objMod.setCusAdd4(rs.getString("CUSTOMERS_ADDRESS_4"));
+			objMod.setIsValidateBL(rs.getString("COLOR_FLAG"));
+			objMod.setGrossCargoWeightBLlevel(rs.getString("NET_WEIGHT_METRIC"));
+			objMod.setPackageBLLevel(rs.getString("NET_PACKAGE"));
+			objMod.setDel(rs.getString("DEL_VLS"));
+			objMod.setDepot(rs.getString("DEPOT_VLS"));
+			
+			//NEW ADDED ROW FOR VESSEL & VOYAGE 
+			
+			objMod.setDep_manif_no(rs.getString("DEP_MANIF_NO"));
+			objMod.setDep_manifest_date(rs.getString("DEP_MANIFEST_DATE"));
+			objMod.setSubmitter_type(rs.getString("SUBMITTER_TYPE"));
+			objMod.setSubmitter_code(rs.getString("SUBMITTER_CODE"));
+			objMod.setAuthoriz_rep_code(rs.getString("AUTHORIZ_REP_CODE"));
+			objMod.setShipping_line_bond_no_r(rs.getString("SHIPPING_LINE_BOND_NO_R"));
+			objMod.setMode_of_transport(rs.getString("MODE_OF_TRANSPORT"));
+			objMod.setShip_type(rs.getString("SHIP_TYPE"));
+			objMod.setConveyance_reference_no(rs.getString("CONVEYANCE_REFERENCE_NO"));
+			objMod.setCargo_description(rs.getString("CARGO_DESCRIPTION"));
+			objMod.setTol_no_of_trans_equ_manif(rs.getString("TOL_NO_OF_TRANS_EQU_MANIF"));
+			objMod.setBrief_cargo_des(rs.getString("BRIEF_CARGO_DES"));
+			objMod.setExpected_date(rs.getString("EXPECTED_DATE"));
+			objMod.setExpected_date(rs.getString("TIME_OF_DEPT"));
+			objMod.setTotal_no_of_tran_s_cont_repo_on_ari_dep(rs.getString("TOTAL_NO_OF_TRAN_S_CONT_REPO_ON_ARI_DEP"));
+			objMod.setMessage_type(rs.getString("MESSAGE_TYPE"));
+			objMod.setVessel_type_movement(rs.getString("VESSEL_TYPE_MOVEMENT"));
+			objMod.setAuthorized_sea_carrier_code(rs.getString("AUTHORIZED_SEA_CARRIER_CODE"));
+			objMod.setPort_of_registry(rs.getString("PORT_OF_REGISTRY"));
+			objMod.setRegistry_date(rs.getString("REGISTRY_DATE"));
+			objMod.setVoyage_details_movement(rs.getString("VOYAGE_DETAILS"));
+			objMod.setShip_itinerary_sequence(rs.getString("SHIP_ITINERARY_SEQUENCE"));
+			objMod.setShip_itinerary(rs.getString("SHIP_ITINERARY"));
+			objMod.setPort_of_call_name(rs.getString("PORT_OF_CALL_NAME"));
+			objMod.setArrival_departure_details(rs.getString("ARRIVAL_DEPARTURE_DETAILS"));
+			objMod.setTotal_no_of_transport_equipment_reported_on_arrival_departure(rs.getString("TOTAL_NO_OF_TRANSPORT_EQUIPMENT_REPORTED_ON_ARRIVAL_DEPARTURE"));
+			//vessel&voyage section ended.....
+			
+			//BL SECTION 
+			objMod.setConsolidated_indicator(rs.getString("CONSOLIDATED_INDICATOR"));
+			objMod.setPrevious_declaration(rs.getString("PREVIOUS_DECLARATION"));
+			objMod.setConsolidator_pan(rs.getString("CONSOLIDATOR_PAN"));
+			objMod.setCin_type(rs.getString("CIN_TYPE"));
+			objMod.setMcin(rs.getString("MCIN"));
+			objMod.setCsn_submitted_type(rs.getString("CSN_SUBMITTED_TYPE"));
+			objMod.setCsn_submitted_by(rs.getString("CSN_SUBMITTED_BY"));
+			objMod.setCsn_reporting_type(rs.getString("CSN_REPORTING_TYPE"));
+			objMod.setCsn_site_id(rs.getString("CSN_SITE_ID"));
+			objMod.setCsn_number(rs.getString("CSN_NUMBER"));
+			objMod.setCsn_date(rs.getString("CSN_DATE"));
+			objMod.setSplit_indicator(rs.getString("PREVIOUS_MCIN"));
+			objMod.setSplit_indicator(rs.getString("SPLIT_INDICATOR"));
+			objMod.setNumber_of_packages(rs.getString("NUMBER_OF_PACKAGES"));
+			objMod.setType_of_package(rs.getString("TYPE_OF_PACKAGE"));
+			objMod.setFirst_port_of_entry_last_port_of_departure(rs.getString("FIRST_PORT_OF_ENTRY_LAST_PORT_OF_DEPARTURE"));
+			objMod.setType_of_cargo(rs.getString("TYPE_OF_CARGO"));
+			objMod.setSplit_indicator_list(rs.getString("SPLIT_INDICATOR_LIST"));
+			objMod.setPort_of_acceptance(rs.getString("PORT_OF_ACCEPTANCE"));
+			objMod.setPort_of_receipt(rs.getString("PORT_OF_RECEIPT"));
+			objMod.setUcr_type(rs.getString("UCR_TYPE"));
+			objMod.setUcr_code(rs.getString("UCR_CODE"));
+			objMod.setPort_of_acceptance_name(rs.getString("PORT_OF_ACCEPTANCE_NAME"));
+			objMod.setPort_of_receipt_name(rs.getString("PORT_OF_RECEIPT_NAME"));
+			objMod.setPan_of_notified_party(rs.getString("PAN_OF_NOTIFIED_PARTY"));
+			objMod.setUnit_of_weight(rs.getString("UNIT_OF_WEIGHT"));
+			objMod.setGross_volume(rs.getString("GROSS_VOLUME"));
+			objMod.setUnit_of_volume(rs.getString("UNIT_OF_VOLUME"));
+			objMod.setCargo_item_sequence_no(rs.getString("CARGO_ITEM_SEQUENCE_NO"));
+			objMod.setCargo_item_description(rs.getString("CARGO_ITEM_DESCRIPTION"));
+			objMod.setContainer_weight(rs.getString("CONTAINER_WEIGHT"));
+			objMod.setNumber_of_packages_hidden(rs.getString("NUMBER_OF_PACKAGES_HID"));
+			objMod.setType_of_packages_hidden(rs.getString("TYPE_OF_PACKAGES_HID"));
+			objMod.setPort_of_call_sequence_number(rs.getString("PORT_OF_CALL_SEQUENCE_NUMBER"));
+			objMod.setPort_of_call_coded(rs.getString("PORT_OF_CALL_CODED"));
+			objMod.setNext_port_of_call_coded(rs.getString("NEXT_PORT_OF_CALL_CODED"));
+			objMod.setMc_location_customs(rs.getString("MC_LOCATION_CUSTOMS"));
+			objMod.setUno_code(rs.getString("UNO_CODE"));
+			objMod.setImdg_code(rs.getString("IMDG_CODE"));
+			objMod.setPort_of_destination(rs.getString("port_of_destination"));
+			objMod.setTshipmentFlag(rs.getString("TSHIPMNT_FLAG"));
+			objMod.setTerminal_op_cod(rs.getString("TERMINAL_OP_COD"));
+			
+			objMod.setActualPod(rs.getString("ACTUAL_POD"));
+//			objMod.setIgmDestinationPort(rs.getString("IGMDEL"));
+//			objMod.setIgmport(rs.getString("IGMPORT"));
+
+			if(objMod.getActualPod().equals(objMod.getPort_of_destination())) {
+//				//IGMPORT  implement 
+				if(null !=rs.getString("IGMPORT")|| ("").equals(rs.getString("IGMPORT")) ) {
+					objMod.setIgmDestinationPort(rs.getString("IGMPORT"));
+				}else {
+				objMod.setIgmDestinationPort("");
+				}
+			}else {
+				//IGMDEL implement  
+				objMod.setIgmDestinationPort(rs.getString("IGMDEL"));
+			}
+
+			objMod.setDestinationPortFinal(rs.getString("IGMPORT_DEST"));
+			//END BL SECTION 
+
+			return objMod;
+		}
+

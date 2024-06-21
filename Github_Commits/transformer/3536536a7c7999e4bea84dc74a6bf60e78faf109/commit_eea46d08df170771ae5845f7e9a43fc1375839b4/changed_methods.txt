@@ -1,0 +1,6 @@
+apply(JsonNode jsonNode)
+onMessage()
+transform(XMessage xMessage)
+accept(XMessage transformedMessage)
+accept(ReceiverRecord stringMessage)
+apply(FormManagerParams previousMeta)

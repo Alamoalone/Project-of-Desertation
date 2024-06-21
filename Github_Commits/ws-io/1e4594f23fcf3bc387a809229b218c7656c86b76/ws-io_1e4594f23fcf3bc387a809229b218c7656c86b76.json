@@ -1,0 +1,98 @@
+{
+    "sha": "1e4594f23fcf3bc387a809229b218c7656c86b76",
+    "node_id": "C_kwDOBtF8NdoAKDFlNDU5NGYyM2ZjZjNiYzM4N2E4MDkyMjliMjE4Yzc2NTZjODZiNzY",
+    "commit": {
+        "author": {
+            "name": "Jose Manuel Da Silva",
+            "email": "jose.mdsg@gmail.com",
+            "date": "2023-01-15T21:08:35Z"
+        },
+        "committer": {
+            "name": "Jose Manuel Da Silva",
+            "email": "jose.mdsg@gmail.com",
+            "date": "2023-01-15T21:08:35Z"
+        },
+        "message": "Fixed a null pointer exception",
+        "tree": {
+            "sha": "1a8db05eef6a44308b4040c933e46b66b21a77b3",
+            "url": "https://api.github.com/repos/jmdsg/ws-io/git/trees/1a8db05eef6a44308b4040c933e46b66b21a77b3"
+        },
+        "url": "https://api.github.com/repos/jmdsg/ws-io/git/commits/1e4594f23fcf3bc387a809229b218c7656c86b76",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jmdsg/ws-io/commits/1e4594f23fcf3bc387a809229b218c7656c86b76",
+    "html_url": "https://github.com/jmdsg/ws-io/commit/1e4594f23fcf3bc387a809229b218c7656c86b76",
+    "comments_url": "https://api.github.com/repos/jmdsg/ws-io/commits/1e4594f23fcf3bc387a809229b218c7656c86b76/comments",
+    "author": {
+        "login": "jmdsg",
+        "id": 11861795,
+        "node_id": "MDQ6VXNlcjExODYxNzk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11861795?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jmdsg",
+        "html_url": "https://github.com/jmdsg",
+        "followers_url": "https://api.github.com/users/jmdsg/followers",
+        "following_url": "https://api.github.com/users/jmdsg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jmdsg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jmdsg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jmdsg/subscriptions",
+        "organizations_url": "https://api.github.com/users/jmdsg/orgs",
+        "repos_url": "https://api.github.com/users/jmdsg/repos",
+        "events_url": "https://api.github.com/users/jmdsg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jmdsg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jmdsg",
+        "id": 11861795,
+        "node_id": "MDQ6VXNlcjExODYxNzk1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11861795?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jmdsg",
+        "html_url": "https://github.com/jmdsg",
+        "followers_url": "https://api.github.com/users/jmdsg/followers",
+        "following_url": "https://api.github.com/users/jmdsg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jmdsg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jmdsg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jmdsg/subscriptions",
+        "organizations_url": "https://api.github.com/users/jmdsg/orgs",
+        "repos_url": "https://api.github.com/users/jmdsg/repos",
+        "events_url": "https://api.github.com/users/jmdsg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jmdsg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2d7b9b3c7e88ab04846cd263b78bc0f78fc3d3a5",
+            "url": "https://api.github.com/repos/jmdsg/ws-io/commits/2d7b9b3c7e88ab04846cd263b78bc0f78fc3d3a5",
+            "html_url": "https://github.com/jmdsg/ws-io/commit/2d7b9b3c7e88ab04846cd263b78bc0f78fc3d3a5"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 8,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "d57c29ba282ba3f377f398b858488c0b37f31c52",
+            "filename": "src/main/java/com/fiberg/wsio/processor/WsIOUtils.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 7,
+            "changes": 15,
+            "blob_url": "https://github.com/jmdsg/ws-io/blob/1e4594f23fcf3bc387a809229b218c7656c86b76/src%2Fmain%2Fjava%2Fcom%2Ffiberg%2Fwsio%2Fprocessor%2FWsIOUtils.java",
+            "raw_url": "https://github.com/jmdsg/ws-io/raw/1e4594f23fcf3bc387a809229b218c7656c86b76/src%2Fmain%2Fjava%2Fcom%2Ffiberg%2Fwsio%2Fprocessor%2FWsIOUtils.java",
+            "contents_url": "https://api.github.com/repos/jmdsg/ws-io/contents/src%2Fmain%2Fjava%2Fcom%2Ffiberg%2Fwsio%2Fprocessor%2FWsIOUtils.java?ref=1e4594f23fcf3bc387a809229b218c7656c86b76",
+            "patch": "@@ -494,17 +494,18 @@ static WsIOMemberInfo extractMemberInfo(Element element, WsIOQualifierInfo quali\n \t\t\t\t.filter(List::nonEmpty)\n \t\t\t\t.getOrNull();\n \n-\t\tList<WsIOAdapterInfo> adapterInfos = adapterMirrors.map(adapterMirror -> {\n+\t\tList<WsIOAdapterInfo> adapterInfos = Option.of(adapterMirrors)\n+\t\t\t\t.map(infos -> infos.map(adapterMirror -> {\n \n-\t\t\t/* Get the adapter value of the adapter */\n-\t\t\tString adapterValue = WsIOUtils.getAnnotationLiteralValue(adapterMirror, \"value\");\n+\t\t\t\t\t/* Get the adapter value of the adapter */\n+\t\t\t\t\tString adapterValue = WsIOUtils.getAnnotationLiteralValue(adapterMirror, \"value\");\n \n-\t\t\t/* Get the adapter type of the adapter */\n-\t\t\tString adapterType = WsIOUtils.getAnnotationLiteralValue(adapterMirror, \"type\");\n+\t\t\t\t\t/* Get the adapter type of the adapter */\n+\t\t\t\t\tString adapterType = WsIOUtils.getAnnotationLiteralValue(adapterMirror, \"type\");\n \n-\t\t\treturn WsIOAdapterInfo.of(adapterValue, adapterType);\n+\t\t\t\t\treturn WsIOAdapterInfo.of(adapterValue, adapterType);\n \n-\t\t});\n+\t\t\t\t})).getOrNull();\n \n \t\t/* Get the priority param values */\n \t\tString paramName = StringUtils.firstNonBlank(internalParamName, externalParamName);"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "sha": "79e779c07945787a84dd8739f16b44587e0eb1ab",
+    "node_id": "C_kwDOKgmLK9oAKDc5ZTc3OWMwNzk0NTc4N2E4NGRkODczOWYxNmI0NDU4N2UwZWIxYWI",
+    "commit": {
+        "author": {
+            "name": "Marin Balabanov",
+            "email": "marincomics@gmail.com",
+            "date": "2023-10-16T09:20:08Z"
+        },
+        "committer": {
+            "name": "Marin Balabanov",
+            "email": "marincomics@gmail.com",
+            "date": "2023-10-16T09:20:08Z"
+        },
+        "message": "Corrects NULL pointer exception",
+        "tree": {
+            "sha": "b3be4974626852a64123954557f0fa967b6e6abc",
+            "url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/git/trees/b3be4974626852a64123954557f0fa967b6e6abc"
+        },
+        "url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/git/commits/79e779c07945787a84dd8739f16b44587e0eb1ab",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/commits/79e779c07945787a84dd8739f16b44587e0eb1ab",
+    "html_url": "https://github.com/mbalabanov/FirmaVersion3/commit/79e779c07945787a84dd8739f16b44587e0eb1ab",
+    "comments_url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/commits/79e779c07945787a84dd8739f16b44587e0eb1ab/comments",
+    "author": {
+        "login": "mbalabanov",
+        "id": 3449511,
+        "node_id": "MDQ6VXNlcjM0NDk1MTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3449511?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mbalabanov",
+        "html_url": "https://github.com/mbalabanov",
+        "followers_url": "https://api.github.com/users/mbalabanov/followers",
+        "following_url": "https://api.github.com/users/mbalabanov/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mbalabanov/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mbalabanov/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mbalabanov/subscriptions",
+        "organizations_url": "https://api.github.com/users/mbalabanov/orgs",
+        "repos_url": "https://api.github.com/users/mbalabanov/repos",
+        "events_url": "https://api.github.com/users/mbalabanov/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mbalabanov/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "mbalabanov",
+        "id": 3449511,
+        "node_id": "MDQ6VXNlcjM0NDk1MTE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3449511?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mbalabanov",
+        "html_url": "https://github.com/mbalabanov",
+        "followers_url": "https://api.github.com/users/mbalabanov/followers",
+        "following_url": "https://api.github.com/users/mbalabanov/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mbalabanov/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mbalabanov/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mbalabanov/subscriptions",
+        "organizations_url": "https://api.github.com/users/mbalabanov/orgs",
+        "repos_url": "https://api.github.com/users/mbalabanov/repos",
+        "events_url": "https://api.github.com/users/mbalabanov/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mbalabanov/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "54f694f181eb042e0653c26ff369107a95c0c7d7",
+            "url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/commits/54f694f181eb042e0653c26ff369107a95c0c7d7",
+            "html_url": "https://github.com/mbalabanov/FirmaVersion3/commit/54f694f181eb042e0653c26ff369107a95c0c7d7"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 12,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "fc0edbce07267b4cefe54977b159b6672cd38670",
+            "filename": "src/at/bfi/projekt/firma_v3/Verwaltung.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 1,
+            "changes": 13,
+            "blob_url": "https://github.com/mbalabanov/FirmaVersion3/blob/79e779c07945787a84dd8739f16b44587e0eb1ab/src%2Fat%2Fbfi%2Fprojekt%2Ffirma_v3%2FVerwaltung.java",
+            "raw_url": "https://github.com/mbalabanov/FirmaVersion3/raw/79e779c07945787a84dd8739f16b44587e0eb1ab/src%2Fat%2Fbfi%2Fprojekt%2Ffirma_v3%2FVerwaltung.java",
+            "contents_url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/contents/src%2Fat%2Fbfi%2Fprojekt%2Ffirma_v3%2FVerwaltung.java?ref=79e779c07945787a84dd8739f16b44587e0eb1ab",
+            "patch": "@@ -66,6 +66,13 @@ public static void main(String[] args) {\n \t\t}\n \t\tSystem.out.println(\"### Ende Ausgabe der PR Mitarbeiter\\n\");\n \n+\t\tSystem.out.println(\"### NULL POINTER? Wir holen uns die Mitarbeiterliste aus der PR-Abteilung (ID 1): \");\n+\t\tMitarbeiter[] mitarbeiterPrAbteilung1 = getMitarbeiterListeVonAbteilung(6);\n+\t\tfor (Mitarbeiter prMitarbeiter1 : mitarbeiterPrAbteilung1) {\n+\t\t\tSystem.out.println(prMitarbeiter1.ausgabe());\n+\t\t}\n+\t\tSystem.out.println(\"### Ende Ausgabe der PR Mitarbeiter\\n\");\n+\n \t\tSystem.out.println(\"+++ Wir suchen den Mitarbeiter mit der ID 7. Es sollte Mathis sein.\");\n \t\tSystem.out.println(searchMitarbeiterAusFirma(7).ausgabe());\n \t\tSystem.out.println(\"\\n\");\n@@ -115,6 +122,10 @@ public static void berechneSummeAlleGehaelter(Mitarbeiter[] mitarbeiter_liste) {\n \t\t}\n \t};\n \n+\t/**\n+\t * @param dieserMitarbeiter\n+\t * @return\n+\t */\n \tpublic static double berechneNettoGehalt(Mitarbeiter dieserMitarbeiter) {\n \t\tdouble bruttoBetrag = dieserMitarbeiter.berechneBrutto();\n \t\tdouble steuerBetrag = 0;\n@@ -145,7 +156,7 @@ public static Mitarbeiter[] getMitarbeiterListeVonAbteilung(int abt_id) {\n \t\t\t\treturn dieseAbteilung.getMitarb_liste();\n \t\t\t}\n \t\t}\n-\t\treturn null;\n+\t\treturn new Mitarbeiter[0];\n \t}\n \n \t/**"
+        },
+        {
+            "sha": "55fcb937195ba182cb26a43aa0e6857ca86b6181",
+            "filename": "src/at/bfi/projekt/firma_v3/VerwaltungTest.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/mbalabanov/FirmaVersion3/blob/79e779c07945787a84dd8739f16b44587e0eb1ab/src%2Fat%2Fbfi%2Fprojekt%2Ffirma_v3%2FVerwaltungTest.java",
+            "raw_url": "https://github.com/mbalabanov/FirmaVersion3/raw/79e779c07945787a84dd8739f16b44587e0eb1ab/src%2Fat%2Fbfi%2Fprojekt%2Ffirma_v3%2FVerwaltungTest.java",
+            "contents_url": "https://api.github.com/repos/mbalabanov/FirmaVersion3/contents/src%2Fat%2Fbfi%2Fprojekt%2Ffirma_v3%2FVerwaltungTest.java?ref=79e779c07945787a84dd8739f16b44587e0eb1ab",
+            "patch": "@@ -67,7 +67,6 @@ void testAugabeAbteilungNachID() {\n \t\tassertEquals(Verwaltung.abt_liste[0].getMitarb_liste(), gefundeneMitarbeiterPrAbteilung);\n \t}\n \n-\t// searchMitarbeiterAusFirma(int mitarbeiter_id)\n \t@Test\n \tvoid testSucheAbteilungsmitarbeiterNachID() {\n "
+        }
+    ]
+}

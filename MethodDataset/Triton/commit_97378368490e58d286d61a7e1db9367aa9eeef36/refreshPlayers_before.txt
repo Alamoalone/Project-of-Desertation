@@ -1,0 +1,4 @@
+    public void refreshPlayers() {
+        for (LanguagePlayer lp : playerManager.getAll())
+            lp.refreshAll();
+    }

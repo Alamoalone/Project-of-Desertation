@@ -1,0 +1,4 @@
+    public void modificaProfiloGiocatore(String oldGiocatore, Object newGiocatore) throws FileNotFoundException {
+        giocatoreHandler.modifica(oldGiocatore, newGiocatore);
+    }
+

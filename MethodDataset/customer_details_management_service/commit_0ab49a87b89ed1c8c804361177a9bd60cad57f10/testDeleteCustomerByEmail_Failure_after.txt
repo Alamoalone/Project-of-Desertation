@@ -1,0 +1,8 @@
+    void testDeleteCustomerByEmail_Failure() {
+        String email = "test@gmail.com";
+        when(customerDetailService.deleteCustomerDetailsByEmail(email)).thenReturn(false);
+
+        ResponseEntity<?> responseEntity = customerDetailsController.deleteCustomerByEmail(email);
+
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());
+    }

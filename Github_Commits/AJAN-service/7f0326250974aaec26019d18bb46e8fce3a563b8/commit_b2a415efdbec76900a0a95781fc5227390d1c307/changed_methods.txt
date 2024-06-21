@@ -1,0 +1,3 @@
+addInputToModel(Repository repo, BehaviorQuery input, InputModel inputModel)
+getInputModel(Action action)
+getInputModel(List inputs, Repository repo)

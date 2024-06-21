@@ -1,0 +1,60 @@
+{
+    "sha": "dade34fe778ddbb2715624d685cbcb6daba1edca",
+    "node_id": "C_kwDOGQmqvtoAKGRhZGUzNGZlNzc4ZGRiYjI3MTU2MjRkNjg1Y2JjYjZkYWJhMWVkY2E",
+    "commit": {
+        "author": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2024-01-24T18:43:07Z"
+        },
+        "committer": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2024-01-24T18:43:07Z"
+        },
+        "message": "featureprl-4930/integration-with-am): fixed null pointer exception for actor id",
+        "tree": {
+            "sha": "781be04bc7795dcdd400ac3317bb2718d199b8ed",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/781be04bc7795dcdd400ac3317bb2718d199b8ed"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/dade34fe778ddbb2715624d685cbcb6daba1edca",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/dade34fe778ddbb2715624d685cbcb6daba1edca",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/dade34fe778ddbb2715624d685cbcb6daba1edca",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/dade34fe778ddbb2715624d685cbcb6daba1edca/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "80d4014bb4a9e83041e77918ab4e34ffe28d0fcf",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/80d4014bb4a9e83041e77918ab4e34ffe28d0fcf",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/80d4014bb4a9e83041e77918ab4e34ffe28d0fcf"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 7,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "fdcbc40423e90058cae6bdbc27e51b134b363da1",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/controllers/CallbackController.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 8,
+            "changes": 15,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/dade34fe778ddbb2715624d685cbcb6daba1edca/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fcontrollers%2FCallbackController.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/dade34fe778ddbb2715624d685cbcb6daba1edca/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fcontrollers%2FCallbackController.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fcontrollers%2FCallbackController.java?ref=dade34fe778ddbb2715624d685cbcb6daba1edca",
+            "patch": "@@ -515,14 +515,13 @@ public AboutToStartOrSubmitCallbackResponse sendToGatekeeper(\n             Map<String, Object> allTabsFields = allTabsService.getAllTabsFields(caseData);\n             caseDataUpdated.putAll(allTabsFields);\n \n-            if (gatekeepingDetails.getIsSpecificGateKeeperNeeded().equals(Yes)) {\n-                roleAssignmentService.createRoleAssignment(\n-                    authorisation,\n-                    callbackRequest.getCaseDetails(),\n-                    false,\n-                    GATEKEEPING_JUDGE_ROLE\n-                );\n-            }\n+            roleAssignmentService.createRoleAssignment(\n+                authorisation,\n+                callbackRequest.getCaseDetails(),\n+                false,\n+                GATEKEEPING_JUDGE_ROLE\n+            );\n+\n \n             return AboutToStartOrSubmitCallbackResponse.builder().data(caseDataUpdated).build();\n         } else {"
+        }
+    ]
+}

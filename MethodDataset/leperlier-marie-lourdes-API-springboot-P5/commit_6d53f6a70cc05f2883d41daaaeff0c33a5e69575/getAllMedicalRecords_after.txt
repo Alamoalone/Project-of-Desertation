@@ -1,0 +1,8 @@
+	public List<MedicalRecord> getAllMedicalRecords() {
+		// log.debug("Retrieving all medical records");
+		if (medicalRecords.isEmpty()) {
+			throw new NullPointerException("none medical record registered!");
+		}
+		System.out.println("Retrieving all medical records" + medicalRecords);
+		return medicalRecords;
+	}

@@ -1,0 +1,11 @@
+    public void setDocumentCheckingRoute() {
+        if (getProperty("cucumber.tags").equals("@hmpoDVAD")) {
+            setFeatureSet("hmpoDVAD");
+        }
+    }
+
+    private static String getProperty(String propertyName) {
+        String property = System.getProperty(propertyName);
+        return Objects.requireNonNullElse(property, "");
+    }
+

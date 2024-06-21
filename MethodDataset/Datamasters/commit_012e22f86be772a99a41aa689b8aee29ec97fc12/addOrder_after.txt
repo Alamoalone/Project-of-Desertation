@@ -1,0 +1,36 @@
+    private void addOrder() {
+        System.out.print("Enter order number: ");
+        int orderNumber = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline character
+
+        System.out.print("Enter customer ID: ");
+        String customerId = scanner.nextLine();
+        Customer customer = controller.findCustomerById(customerId);
+
+        if (customer == null) {
+            System.out.println("Customer not found. Please add the customer details.");
+            addCustomer();
+            customer = controller.findCustomerById(customerId);
+        }
+        scanner.nextLine(); // Consume the newline character
+        System.out.print("Enter item code: ");
+        String itemCode = scanner.nextLine();
+        Item item = controller.findItemByCode(itemCode);
+
+        if (item == null) {
+            System.out.println("Product not found. Please add the product details.");
+            scanner.nextLine(); // Consume the newline character
+            addItems();
+            item = controller.findItemByCode(itemCode);
+        }
+
+        System.out.print("Enter quantity of units: ");
+        int quantityUnits = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline character
+
+        LocalDateTime orderDateTime = LocalDateTime.now();
+
+        Orders order = new Orders(orderNumber, customer, item, quantityUnits, orderDateTime);
+        controller.addOrder(order);
+        System.out.println("Order added successfully.");
+    }

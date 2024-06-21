@@ -1,0 +1,56 @@
+	protected JPanel createFormPanel() {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(0, 2));
+		JComboBox<Client> clientComboBox = new JComboBox<>();
+		for (Client client : Client.clients) clientComboBox.addItem(client);
+		JComboBox<Panier> panierComboBox = new JComboBox<>();
+		for (Panier panier : Panier.paniers) panierComboBox.addItem(panier);
+		Properties p = new Properties();
+		p.put("text.today", "Today");
+		p.put("text.month", "Month");
+		p.put("text.year", "Year");
+		JDatePanelImpl datePanelD = new JDatePanelImpl(new UtilDateModel(), p);
+		JDatePanelImpl datePanelF = new JDatePanelImpl(new UtilDateModel(), p);
+		JDatePickerImpl debutField = new JDatePickerImpl(datePanelD, new DateLabelFormatter());
+		JDatePickerImpl finField = new JDatePickerImpl(datePanelF, new DateLabelFormatter());
+		JTextField frequenceLivraisonField = new JTextField();
+		JCheckBox estActifCheckBox = new JCheckBox();
+		panel.add(new JLabel("Client"));
+		panel.add(clientComboBox);
+		panel.add(new JLabel("Panier"));
+		panel.add(panierComboBox);
+		panel.add(new JLabel("Date début"));
+		panel.add(debutField);
+		panel.add(new JLabel("Date fin"));
+		panel.add(finField);
+		panel.add(new JLabel("Fréquence de livraison"));
+		panel.add(frequenceLivraisonField);
+		panel.add(new JLabel("Est actif"));
+		panel.add(estActifCheckBox);
+		JButton createButton = new JButton("Créer");
+		createButton.addActionListener(e -> {
+			Client client = (Client) clientComboBox.getSelectedItem();
+			Panier panier = (Panier) panierComboBox.getSelectedItem();
+			// check for value
+			if (client == null || panier == null || debutField.getJFormattedTextField().getText().isEmpty() || finField.getJFormattedTextField().getText().isEmpty() || frequenceLivraisonField.getText().isEmpty()) {
+				org.SAE.Main.Logger.error("All fields must be filled");
+				return;
+			}
+			// check if date interval is greater than frequenceLivraison
+			if (Date.valueOf(debutField.getJFormattedTextField().getText())
+							.toLocalDate().plusDays(Integer.parseInt(frequenceLivraisonField.getText()))
+							.isAfter(Date.valueOf(finField.getJFormattedTextField().getText()).toLocalDate())) {
+				org.SAE.Main.Logger.error("Date interval must be greater than frequenceLivraison");
+				return;
+			}
+			Date debut = Date.valueOf(debutField.getJFormattedTextField().getText());
+			Date fin = Date.valueOf(finField.getJFormattedTextField().getText());
+			int frequenceLivraison = Integer.parseInt(frequenceLivraisonField.getText());
+			boolean estActif = estActifCheckBox.isSelected();
+			Abonnement abonnement = new Abonnement(client, panier, debut, fin, frequenceLivraison, estActif);
+			Abonnement.create(abonnement);
+			displayView(false);
+		});
+		panel.add(createButton);
+		return panel;
+	}

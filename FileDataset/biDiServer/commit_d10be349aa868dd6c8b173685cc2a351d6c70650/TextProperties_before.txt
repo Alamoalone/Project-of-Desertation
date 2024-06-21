@@ -1,0 +1,12 @@
+	static TextProperty ServerStarted(String arg0) {
+		return new TextProperty("ServerStarted", new String[] {arg0});
+	}
+
+	static TextProperty ServerNotStarted(String arg0) {
+		return new TextProperty("ServerNotStarted", new String[] {arg0});
+	}
+
+
+
+
+

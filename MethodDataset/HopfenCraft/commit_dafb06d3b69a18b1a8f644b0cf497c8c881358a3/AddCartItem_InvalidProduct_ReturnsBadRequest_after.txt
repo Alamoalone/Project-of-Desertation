@@ -1,0 +1,32 @@
+    public void AddCartItem_InvalidProduct_ReturnsBadRequest() {
+        // Login as a user
+        LoginDTO login = new LoginDTO("testuser", "Password123!");
+
+        ResponseEntity<LoginResponseDTO> loginResponse = restTemplate.postForEntity(
+                "http://localhost:" + port + "/auth/login",
+                login,
+                LoginResponseDTO.class);
+
+        assertEquals(HttpStatus.OK, loginResponse.getStatusCode());
+        assertNotNull(loginResponse.getBody());
+        String jwt = loginResponse.getBody().getJwt();
+
+        // Create a CartRegistrationDTO with an invalid product ID (e.g., a product ID that doesn't exist)
+        CartRegistrationDTO invalidInput = new CartRegistrationDTO(9999L, 5);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + jwt);
+
+        HttpEntity<CartRegistrationDTO> requestEntity = new HttpEntity<>(invalidInput, headers);
+
+        // Perform a POST request to add the cart item with the invalid product ID
+        ResponseEntity<CartResponseDTO> response = restTemplate.postForEntity(
+                "http://localhost:" + port + "/cart/add",
+                requestEntity,
+                CartResponseDTO.class
+        );
+
+        // Assert that the response has status code Bad Request (400) indicating that the product is invalid
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
+    }

@@ -1,0 +1,9 @@
+  public GetObjectResponse getFile(String key)
+      throws ServerException, InsufficientDataException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException, ErrorResponseException {
+    GetObjectArgs objectArgs = GetObjectArgs.builder()
+        .bucket(minioBucketName)
+        .object(key)
+        .build();
+
+    return minioClient.getObject(objectArgs);
+  }

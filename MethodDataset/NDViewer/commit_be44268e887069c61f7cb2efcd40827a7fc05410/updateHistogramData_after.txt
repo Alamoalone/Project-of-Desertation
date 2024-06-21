@@ -1,0 +1,10 @@
+   void updateHistogramData(HashMap<String, int[]> hists) {
+      if (ccpList_ == null || hists == null || ccpList_.size() == 0) {
+         return; // no channels added yet
+      }
+      for (String i : hists.keySet()) {
+         ChannelControlPanel c = ccpList_.get(i);
+         int[] hist = hists.get(i);
+         c.updateHistogram(hist);
+      }
+   }

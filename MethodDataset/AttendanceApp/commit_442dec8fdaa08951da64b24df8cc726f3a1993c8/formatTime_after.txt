@@ -1,0 +1,5 @@
+    private String formatTime(Timestamp timestamp) {
+        Date date = timestamp.toDate();
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mma", Locale.US);
+        return sdf.format(date);
+    }

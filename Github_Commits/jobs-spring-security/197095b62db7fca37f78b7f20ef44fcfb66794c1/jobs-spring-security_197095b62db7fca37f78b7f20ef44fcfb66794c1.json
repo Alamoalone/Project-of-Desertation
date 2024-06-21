@@ -1,0 +1,134 @@
+{
+    "sha": "197095b62db7fca37f78b7f20ef44fcfb66794c1",
+    "node_id": "C_kwDOKdPgjNoAKDE5NzA5NWI2MmRiN2ZjYTM3Zjc4YjdmMjBlZjQ0ZmNmYjY2Nzk0YzE",
+    "commit": {
+        "author": {
+            "name": "joseong-ug",
+            "email": "hoho88@naver.com",
+            "date": "2023-10-14T15:21:08Z"
+        },
+        "committer": {
+            "name": "joseong-ug",
+            "email": "hoho88@naver.com",
+            "date": "2023-10-14T15:21:08Z"
+        },
+        "message": "1. exception\n- null pointer exception",
+        "tree": {
+            "sha": "c11ad6be5507990972b10e237fa611dc8a820172",
+            "url": "https://api.github.com/repos/xg1988/jobs-spring-security/git/trees/c11ad6be5507990972b10e237fa611dc8a820172"
+        },
+        "url": "https://api.github.com/repos/xg1988/jobs-spring-security/git/commits/197095b62db7fca37f78b7f20ef44fcfb66794c1",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/xg1988/jobs-spring-security/commits/197095b62db7fca37f78b7f20ef44fcfb66794c1",
+    "html_url": "https://github.com/xg1988/jobs-spring-security/commit/197095b62db7fca37f78b7f20ef44fcfb66794c1",
+    "comments_url": "https://api.github.com/repos/xg1988/jobs-spring-security/commits/197095b62db7fca37f78b7f20ef44fcfb66794c1/comments",
+    "author": {
+        "login": "xg1988",
+        "id": 7813800,
+        "node_id": "MDQ6VXNlcjc4MTM4MDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7813800?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xg1988",
+        "html_url": "https://github.com/xg1988",
+        "followers_url": "https://api.github.com/users/xg1988/followers",
+        "following_url": "https://api.github.com/users/xg1988/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xg1988/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xg1988/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xg1988/subscriptions",
+        "organizations_url": "https://api.github.com/users/xg1988/orgs",
+        "repos_url": "https://api.github.com/users/xg1988/repos",
+        "events_url": "https://api.github.com/users/xg1988/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xg1988/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "xg1988",
+        "id": 7813800,
+        "node_id": "MDQ6VXNlcjc4MTM4MDA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7813800?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xg1988",
+        "html_url": "https://github.com/xg1988",
+        "followers_url": "https://api.github.com/users/xg1988/followers",
+        "following_url": "https://api.github.com/users/xg1988/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xg1988/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xg1988/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xg1988/subscriptions",
+        "organizations_url": "https://api.github.com/users/xg1988/orgs",
+        "repos_url": "https://api.github.com/users/xg1988/repos",
+        "events_url": "https://api.github.com/users/xg1988/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xg1988/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5143f835658156baa7122b09f4e07d866578b7ba",
+            "url": "https://api.github.com/repos/xg1988/jobs-spring-security/commits/5143f835658156baa7122b09f4e07d866578b7ba",
+            "html_url": "https://github.com/xg1988/jobs-spring-security/commit/5143f835658156baa7122b09f4e07d866578b7ba"
+        }
+    ],
+    "stats": {
+        "total": 78,
+        "additions": 71,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "d963f6532cefc949959e2510cfa81f45d649acdf",
+            "filename": "src/main/java/com/jobs/springsecurity/api/login/LoginService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/xg1988/jobs-spring-security/blob/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fapi%2Flogin%2FLoginService.java",
+            "raw_url": "https://github.com/xg1988/jobs-spring-security/raw/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fapi%2Flogin%2FLoginService.java",
+            "contents_url": "https://api.github.com/repos/xg1988/jobs-spring-security/contents/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fapi%2Flogin%2FLoginService.java?ref=197095b62db7fca37f78b7f20ef44fcfb66794c1",
+            "patch": "@@ -61,7 +61,7 @@ public UserDetails loadUserByUsername(String username) throws UsernameNotFoundEx\n         try{\n             userDto = userDtoRepository.findById(username).orElseThrow(NullPointerException::new);\n         }catch (NullPointerException e){\n-            e.printStackTrace();\n+            throw e;\n         }\n \n         UserSecurityDto userSecurityDto = new UserSecurityDto(userDto);"
+        },
+        {
+            "sha": "bd79182250193f4e9cf9094f243b5d41e8e7e3ee",
+            "filename": "src/main/java/com/jobs/springsecurity/common/config/ExceptionAopConfig.java",
+            "status": "added",
+            "additions": 25,
+            "deletions": 0,
+            "changes": 25,
+            "blob_url": "https://github.com/xg1988/jobs-spring-security/blob/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fcommon%2Fconfig%2FExceptionAopConfig.java",
+            "raw_url": "https://github.com/xg1988/jobs-spring-security/raw/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fcommon%2Fconfig%2FExceptionAopConfig.java",
+            "contents_url": "https://api.github.com/repos/xg1988/jobs-spring-security/contents/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fcommon%2Fconfig%2FExceptionAopConfig.java?ref=197095b62db7fca37f78b7f20ef44fcfb66794c1",
+            "patch": "@@ -0,0 +1,25 @@\n+package com.jobs.springsecurity.common.config;\n+\n+\n+import lombok.extern.slf4j.Slf4j;\n+import org.springframework.ui.Model;\n+import org.springframework.web.bind.annotation.ControllerAdvice;\n+import org.springframework.web.bind.annotation.ExceptionHandler;\n+\n+@ControllerAdvice\n+@Slf4j\n+public class ExceptionAopConfig {\n+    @ExceptionHandler(Exception.class)\n+    public String exception(Exception e, Model model){\n+        model.addAttribute(\"errorMessage\", e.getMessage());\n+        model.addAttribute(\"errorCode\", \"0000\");\n+        return \"exception\";\n+    }\n+\n+    @ExceptionHandler(NullPointerException.class)\n+    public String nullPointerException(Exception e, Model model){\n+        model.addAttribute(\"errorMessage\", e.getMessage());\n+        model.addAttribute(\"errorCode\", \"0001\");\n+        return \"exception\";\n+    }\n+}"
+        },
+        {
+            "sha": "6bae863e0442d71c42b909aaafb30d0156ee4d0f",
+            "filename": "src/main/java/com/jobs/springsecurity/common/config/WebSecurityConfig.java",
+            "status": "modified",
+            "additions": 19,
+            "deletions": 6,
+            "changes": 25,
+            "blob_url": "https://github.com/xg1988/jobs-spring-security/blob/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fcommon%2Fconfig%2FWebSecurityConfig.java",
+            "raw_url": "https://github.com/xg1988/jobs-spring-security/raw/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fcommon%2Fconfig%2FWebSecurityConfig.java",
+            "contents_url": "https://api.github.com/repos/xg1988/jobs-spring-security/contents/src%2Fmain%2Fjava%2Fcom%2Fjobs%2Fspringsecurity%2Fcommon%2Fconfig%2FWebSecurityConfig.java?ref=197095b62db7fca37f78b7f20ef44fcfb66794c1",
+            "patch": "@@ -50,20 +50,33 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{\n                 .formLogin(Customizer.withDefaults())\n                 .httpBasic(Customizer.withDefaults());\n         */\n-\n-        http.csrf().disable()\n+        http\n+                .csrf().disable()\n                 .authorizeHttpRequests()\n                 .antMatchers(\"/\", \"/signup/**\").permitAll() // permitAll을 한다고 해서 전체 필터가 제외되는 것은 아님, 전체 필터 제외는 web ignoring\n                 .antMatchers(\"/user/**\").hasAuthority(\"USER\") // hasAuthority\n                 .antMatchers(\"/admin/**\").hasAuthority(\"ADMIN\") // hasAuthority\n                 //.antMatchers(\"/user/**\").hasRole(\"USER\") // hasRole에서는 DB저장 시 ROLE_ prefix 붙여서 저장\n-                .anyRequest().authenticated()\n-                .and()\n+                .anyRequest().authenticated();\n+\n+        http\n                 .authenticationManager(authenticationManager())\n-                .exceptionHandling().accessDeniedPage(\"/access-denied\")\n-                .and()\n+                .exceptionHandling().accessDeniedPage(\"/access-denied\");\n+\n+        http\n                 .formLogin(Customizer.withDefaults())\n+                /*.formLogin(httpSecurityFormLoginConfigurer -> {\n+                    httpSecurityFormLoginConfigurer\n+                            .loginPage(\"\")\n+                            .passwordParameter(\"\")\n+                            .usernameParameter(\"\")\n+                            .defaultSuccessUrl(\"\", false)\n+                            .successForwardUrl(\"\")\n+                            .failureForwardUrl(\"\")\n+                            .loginProcessingUrl(\"\");\n+                })*/\n                 .httpBasic(Customizer.withDefaults());\n+\n         return http.build();\n     }\n "
+        },
+        {
+            "sha": "12cb3ac75a412c973c6509a6b13fa9b5e13fa338",
+            "filename": "src/main/resources/templates/thymeleaf/exception.html",
+            "status": "added",
+            "additions": 26,
+            "deletions": 0,
+            "changes": 26,
+            "blob_url": "https://github.com/xg1988/jobs-spring-security/blob/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fresources%2Ftemplates%2Fthymeleaf%2Fexception.html",
+            "raw_url": "https://github.com/xg1988/jobs-spring-security/raw/197095b62db7fca37f78b7f20ef44fcfb66794c1/src%2Fmain%2Fresources%2Ftemplates%2Fthymeleaf%2Fexception.html",
+            "contents_url": "https://api.github.com/repos/xg1988/jobs-spring-security/contents/src%2Fmain%2Fresources%2Ftemplates%2Fthymeleaf%2Fexception.html?ref=197095b62db7fca37f78b7f20ef44fcfb66794c1",
+            "patch": "@@ -0,0 +1,26 @@\n+<!DOCTYPE html>\n+<html lang=\"en\" xmlns:th=\"http://www.thymeleaf.org\">\n+<head>\n+    <meta charset=\"UTF-8\">\n+    <title>Title</title>\n+</head>\n+<body>\n+<br/>\n+\n+Exception Handling\n+<br/>\n+<span th:text=\"${errorMessage}\"></span>\n+(<span th:text=\"${errorCode}\"></span>)\n+\n+<br/>\n+<a href=\"/\"> 메인 </a>\n+<br/>\n+<a href=\"/login\">로그인</a>\n+<br/>\n+<a href=\"/logout\">로그아웃</a>\n+<br/>\n+<a href=\"/admin/dashboard\">어드민 대시보드</a>\n+<br/>\n+<a href=\"/user/dashboard\">사용자 대시보드</a>\n+</body>\n+</html>\n\\ No newline at end of file"
+        }
+    ]
+}

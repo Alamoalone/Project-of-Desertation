@@ -1,0 +1,4 @@
+deleteOnePersonById(String id)
+updateOnePersonById(Person person, String id)
+getAllPersons()
+getOnePerson(String id)

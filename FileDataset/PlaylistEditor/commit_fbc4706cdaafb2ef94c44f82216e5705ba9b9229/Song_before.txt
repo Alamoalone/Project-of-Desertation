@@ -1,0 +1,37 @@
+    public String getFileName() {
+        return fileName;
+    }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected = selected;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAlbum() {
+        return album.replace("?", "");
+    }
+
+    public static BufferedImage resizeImageSmooth(final Image image, int width, int height) {
+        ImageIcon resized = new ImageIcon(image.getScaledInstance(width, height, Image.SCALE_SMOOTH));
+        final BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        final Graphics2D graphics2D = bufferedImage.createGraphics();
+        graphics2D.drawImage(resized.getImage(), 0, 0, width, height, null);
+        graphics2D.dispose();
+        return bufferedImage;
+    }
+
+    public boolean isSelected() {
+        return selected;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+

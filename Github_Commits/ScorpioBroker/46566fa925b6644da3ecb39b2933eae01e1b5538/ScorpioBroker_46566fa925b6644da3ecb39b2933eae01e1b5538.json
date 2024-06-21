@@ -1,0 +1,98 @@
+{
+    "sha": "46566fa925b6644da3ecb39b2933eae01e1b5538",
+    "node_id": "C_kwDODF4qTtoAKDQ2NTY2ZmE5MjViNjY0NGRhM2VjYjM5YjI5MzNlYWUwMWUxYjU1Mzg",
+    "commit": {
+        "author": {
+            "name": "Brijesh",
+            "email": "brijesh@nectechnologies.in",
+            "date": "2023-06-26T05:33:45Z"
+        },
+        "committer": {
+            "name": "Brijesh",
+            "email": "brijesh@nectechnologies.in",
+            "date": "2023-06-26T05:33:45Z"
+        },
+        "message": "null pointer exception fixed",
+        "tree": {
+            "sha": "2311c97124267105295aa5ea2de071a5d70211e8",
+            "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/git/trees/2311c97124267105295aa5ea2de071a5d70211e8"
+        },
+        "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/git/commits/46566fa925b6644da3ecb39b2933eae01e1b5538",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/commits/46566fa925b6644da3ecb39b2933eae01e1b5538",
+    "html_url": "https://github.com/ScorpioBroker/ScorpioBroker/commit/46566fa925b6644da3ecb39b2933eae01e1b5538",
+    "comments_url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/commits/46566fa925b6644da3ecb39b2933eae01e1b5538/comments",
+    "author": {
+        "login": "brijeshnec",
+        "id": 115468216,
+        "node_id": "U_kgDOBuHnuA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115468216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brijeshnec",
+        "html_url": "https://github.com/brijeshnec",
+        "followers_url": "https://api.github.com/users/brijeshnec/followers",
+        "following_url": "https://api.github.com/users/brijeshnec/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brijeshnec/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brijeshnec/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brijeshnec/subscriptions",
+        "organizations_url": "https://api.github.com/users/brijeshnec/orgs",
+        "repos_url": "https://api.github.com/users/brijeshnec/repos",
+        "events_url": "https://api.github.com/users/brijeshnec/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brijeshnec/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brijeshnec",
+        "id": 115468216,
+        "node_id": "U_kgDOBuHnuA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115468216?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brijeshnec",
+        "html_url": "https://github.com/brijeshnec",
+        "followers_url": "https://api.github.com/users/brijeshnec/followers",
+        "following_url": "https://api.github.com/users/brijeshnec/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brijeshnec/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brijeshnec/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brijeshnec/subscriptions",
+        "organizations_url": "https://api.github.com/users/brijeshnec/orgs",
+        "repos_url": "https://api.github.com/users/brijeshnec/repos",
+        "events_url": "https://api.github.com/users/brijeshnec/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brijeshnec/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f5fa676aecd26ee8b47ddf1c9233f15be3015ca9",
+            "url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/commits/f5fa676aecd26ee8b47ddf1c9233f15be3015ca9",
+            "html_url": "https://github.com/ScorpioBroker/ScorpioBroker/commit/f5fa676aecd26ee8b47ddf1c9233f15be3015ca9"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 6,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "f103cc0b52f7a29d3e189a1c32f89b206ae9786e",
+            "filename": "SubscriptionManager/src/main/java/eu/neclab/ngsildbroker/subscriptionmanager/service/SubscriptionService.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 2,
+            "changes": 8,
+            "blob_url": "https://github.com/ScorpioBroker/ScorpioBroker/blob/46566fa925b6644da3ecb39b2933eae01e1b5538/SubscriptionManager%2Fsrc%2Fmain%2Fjava%2Feu%2Fneclab%2Fngsildbroker%2Fsubscriptionmanager%2Fservice%2FSubscriptionService.java",
+            "raw_url": "https://github.com/ScorpioBroker/ScorpioBroker/raw/46566fa925b6644da3ecb39b2933eae01e1b5538/SubscriptionManager%2Fsrc%2Fmain%2Fjava%2Feu%2Fneclab%2Fngsildbroker%2Fsubscriptionmanager%2Fservice%2FSubscriptionService.java",
+            "contents_url": "https://api.github.com/repos/ScorpioBroker/ScorpioBroker/contents/SubscriptionManager%2Fsrc%2Fmain%2Fjava%2Feu%2Fneclab%2Fngsildbroker%2Fsubscriptionmanager%2Fservice%2FSubscriptionService.java?ref=46566fa925b6644da3ecb39b2933eae01e1b5538",
+            "patch": "@@ -469,10 +469,14 @@ private Uni<Void> sendNotification(SubscriptionRequest potentialSub, Map<String,\n \tprivate Uni<MqttClient> getMqttClient(NotificationParam notificationParam) {\n \t\tURI host = notificationParam.getEndPoint().getUri();\n \t\tString hostString = host.getUserInfo()+host.getHost() + host.getPort();\n-\t\tString[] usrPass = host.getUserInfo().split(\":\");\n \t\tMqttClient client;\n \t\tif (!host2MqttClient.containsKey(hostString)) {\n-\t\t\tclient = MqttClient.create(vertx, new MqttClientOptions().setUsername(usrPass[0]).setPassword(usrPass[1]));\n+\t\t\tif(host.getUserInfo() != null){\n+\t\t\t\tString[] usrPass = host.getUserInfo().split(\":\");\n+\t\t\t\tclient = MqttClient.create(vertx, new MqttClientOptions().setUsername(usrPass[0]).setPassword(usrPass[1]));\n+\t\t\t}else{\n+\t\t\t\tclient = MqttClient.create(vertx, new MqttClientOptions());\n+\t\t\t}\n \t\t\treturn client.connect(host.getPort(), host.getHost()).onItem().transform(t -> {\n \t\t\t\thost2MqttClient.put(hostString, client);\n \t\t\t\treturn client;"
+        }
+    ]
+}

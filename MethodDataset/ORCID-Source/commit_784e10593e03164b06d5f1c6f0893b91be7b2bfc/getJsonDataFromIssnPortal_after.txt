@@ -1,0 +1,8 @@
+    private String getJsonDataFromIssnPortal(String issn) throws IOException, InterruptedException, URISyntaxException {
+        String issnUrl = issnPortalUrlBuilder.buildJsonIssnPortalUrlForIssn(issn);
+        HttpResponse<String> response = httpRequestUtils.doGet(issnUrl);
+        if (response.statusCode() != 200) {
+            return null;
+        }
+        return response.body();
+    }

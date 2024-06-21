@@ -1,0 +1,5 @@
+isInStalemate(TeamColor teamColor)
+makeMove(ChessMove move)
+validMoves(ChessPosition startPosition)
+isInCheck(TeamColor teamColor)
+isInCheckmate(TeamColor teamColor)

@@ -1,0 +1,98 @@
+{
+    "sha": "d409abb050d83a07c806bac8d35c38a849eab966",
+    "node_id": "C_kwDOAIF2_NoAKGQ0MDlhYmIwNTBkODNhMDdjODA2YmFjOGQzNWMzOGE4NDllYWI5NjY",
+    "commit": {
+        "author": {
+            "name": "c.dumitru@orcid.org",
+            "email": "c.dumitru@orcid.org",
+            "date": "2023-04-11T10:10:57Z"
+        },
+        "committer": {
+            "name": "c.dumitru@orcid.org",
+            "email": "c.dumitru@orcid.org",
+            "date": "2023-04-11T10:10:57Z"
+        },
+        "message": "Added the null pointer exception check, issn logging",
+        "tree": {
+            "sha": "7ea2718370cdfe82b916d8ca67fab8c5b988bfe7",
+            "url": "https://api.github.com/repos/ORCID/ORCID-Source/git/trees/7ea2718370cdfe82b916d8ca67fab8c5b988bfe7"
+        },
+        "url": "https://api.github.com/repos/ORCID/ORCID-Source/git/commits/d409abb050d83a07c806bac8d35c38a849eab966",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ORCID/ORCID-Source/commits/d409abb050d83a07c806bac8d35c38a849eab966",
+    "html_url": "https://github.com/ORCID/ORCID-Source/commit/d409abb050d83a07c806bac8d35c38a849eab966",
+    "comments_url": "https://api.github.com/repos/ORCID/ORCID-Source/commits/d409abb050d83a07c806bac8d35c38a849eab966/comments",
+    "author": {
+        "login": "Camelia-Orcid",
+        "id": 62257307,
+        "node_id": "MDQ6VXNlcjYyMjU3MzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/62257307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Camelia-Orcid",
+        "html_url": "https://github.com/Camelia-Orcid",
+        "followers_url": "https://api.github.com/users/Camelia-Orcid/followers",
+        "following_url": "https://api.github.com/users/Camelia-Orcid/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Camelia-Orcid/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Camelia-Orcid/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Camelia-Orcid/subscriptions",
+        "organizations_url": "https://api.github.com/users/Camelia-Orcid/orgs",
+        "repos_url": "https://api.github.com/users/Camelia-Orcid/repos",
+        "events_url": "https://api.github.com/users/Camelia-Orcid/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Camelia-Orcid/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Camelia-Orcid",
+        "id": 62257307,
+        "node_id": "MDQ6VXNlcjYyMjU3MzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/62257307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Camelia-Orcid",
+        "html_url": "https://github.com/Camelia-Orcid",
+        "followers_url": "https://api.github.com/users/Camelia-Orcid/followers",
+        "following_url": "https://api.github.com/users/Camelia-Orcid/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Camelia-Orcid/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Camelia-Orcid/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Camelia-Orcid/subscriptions",
+        "organizations_url": "https://api.github.com/users/Camelia-Orcid/orgs",
+        "repos_url": "https://api.github.com/users/Camelia-Orcid/repos",
+        "events_url": "https://api.github.com/users/Camelia-Orcid/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Camelia-Orcid/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f0f0ca0b83fb76e75b93347ae802d4873135901b",
+            "url": "https://api.github.com/repos/ORCID/ORCID-Source/commits/f0f0ca0b83fb76e75b93347ae802d4873135901b",
+            "html_url": "https://github.com/ORCID/ORCID-Source/commit/f0f0ca0b83fb76e75b93347ae802d4873135901b"
+        }
+    ],
+    "stats": {
+        "total": 67,
+        "additions": 37,
+        "deletions": 30
+    },
+    "files": [
+        {
+            "sha": "784e10593e03164b06d5f1c6f0893b91be7b2bfc",
+            "filename": "orcid-core/src/main/java/org/orcid/core/groupIds/issn/IssnClient.java",
+            "status": "modified",
+            "additions": 37,
+            "deletions": 30,
+            "changes": 67,
+            "blob_url": "https://github.com/ORCID/ORCID-Source/blob/d409abb050d83a07c806bac8d35c38a849eab966/orcid-core%2Fsrc%2Fmain%2Fjava%2Forg%2Forcid%2Fcore%2FgroupIds%2Fissn%2FIssnClient.java",
+            "raw_url": "https://github.com/ORCID/ORCID-Source/raw/d409abb050d83a07c806bac8d35c38a849eab966/orcid-core%2Fsrc%2Fmain%2Fjava%2Forg%2Forcid%2Fcore%2FgroupIds%2Fissn%2FIssnClient.java",
+            "contents_url": "https://api.github.com/repos/ORCID/ORCID-Source/contents/orcid-core%2Fsrc%2Fmain%2Fjava%2Forg%2Forcid%2Fcore%2FgroupIds%2Fissn%2FIssnClient.java?ref=d409abb050d83a07c806bac8d35c38a849eab966",
+            "patch": "@@ -18,29 +18,35 @@\n public class IssnClient {\n \n     private static final Logger LOG = LoggerFactory.getLogger(IssnClient.class);\n-    \n-    private static final String START_OF_STRING=\"\\u0098\";\n+\n+    private static final String START_OF_STRING = \"\\u0098\";\n     private static final String STRING_TERMINATOR = \"\\u009C\";\n-    \n+\n     @Resource\n     private IssnPortalUrlBuilder issnPortalUrlBuilder;\n-    \n+\n     @Resource\n     private HttpRequestUtils httpRequestUtils;\n \n     public IssnData getIssnData(String issn) {\n         String json = null;\n+        \n         try {\n+            LOG.debug(\"Extracting ISSN for \" +  issn);\n             // ensure any lower case x is X otherwise issn portal won't work\n             json = getJsonDataFromIssnPortal(issn.toUpperCase());\n         } catch (IOException | InterruptedException | URISyntaxException e) {\n             throw new RuntimeException(\"Error extracting json from issn portal response\", e);\n-        } \n+        }\n         try {\n-            IssnData data = extractIssnData(json);\n-            data.setIssn(issn);\n-            return data;\n-        } catch (JSONException e) {\n+            if (json != null) {\n+                IssnData data = extractIssnData(json);\n+                data.setIssn(issn);\n+                return data;\n+            } else {\n+                return null;\n+            }\n+        } catch (Exception e) {\n             LOG.warn(\"Error extracting issn data from json returned from issn portal\", e);\n             return null;\n         }\n@@ -50,39 +56,40 @@ private IssnData extractIssnData(String json) throws JSONException {\n         JSONObject jsonObject = new JSONObject(json);\n         JSONArray jsonArray = jsonObject.getJSONArray(\"@graph\");\n         IssnData issnData = new IssnData();\n-        for (int i = 0; i < jsonArray.length(); i++) {\n-            if (jsonArray.getJSONObject(i).has(\"mainTitle\")) {\n-                String title = jsonArray.getJSONObject(i).getString(\"mainTitle\");\n-                String cleanTitle = cleanText(title);\n-                issnData.setMainTitle(cleanTitle);\n-                return issnData;\n-            } else if (jsonArray.getJSONObject(i).has(\"name\")) {\n-                // name and mainTitle always in same object - therefore if no mainTitle but name present, no mainTitle in data\n-                try {\n-                    issnData.setMainTitle(jsonArray.getJSONObject(i).getJSONArray(\"name\").getString(0));\n-                } catch (JSONException e) {\n-                    // may not be an array\n-                    issnData.setMainTitle(jsonArray.getJSONObject(i).getString(\"name\"));\n+        if (issnData != null) {\n+            for (int i = 0; i < jsonArray.length(); i++) {\n+                if (jsonArray.getJSONObject(i).has(\"mainTitle\")) {\n+                    String title = jsonArray.getJSONObject(i).getString(\"mainTitle\");\n+                    String cleanTitle = cleanText(title);\n+                    issnData.setMainTitle(cleanTitle);\n+                    return issnData;\n+                } else if (jsonArray.getJSONObject(i).has(\"name\")) {\n+                    // name and mainTitle always in same object - therefore if\n+                    // no mainTitle but name present, no mainTitle in data\n+                    try {\n+                        issnData.setMainTitle(jsonArray.getJSONObject(i).getJSONArray(\"name\").getString(0));\n+                    } catch (JSONException e) {\n+                        // may not be an array\n+                        issnData.setMainTitle(jsonArray.getJSONObject(i).getString(\"name\"));\n+                    }\n+                    return issnData;\n                 }\n-                return issnData;\n             }\n         }\n         return null;\n     }\n \n     private String getJsonDataFromIssnPortal(String issn) throws IOException, InterruptedException, URISyntaxException {\n-        String issnUrl = issnPortalUrlBuilder.buildJsonIssnPortalUrlForIssn(issn);        \n+        String issnUrl = issnPortalUrlBuilder.buildJsonIssnPortalUrlForIssn(issn);\n         HttpResponse<String> response = httpRequestUtils.doGet(issnUrl);\n-        if(response.statusCode() != 200) {\n+        if (response.statusCode() != 200) {\n             return null;\n         }\n         return response.body();\n     }\n-    \n+\n     private String cleanText(String text) {\n-        return text.replaceAll(\"\\\\p{C}\", \"\")\n-                .replaceAll(START_OF_STRING,\"\")\n-                .replaceAll(STRING_TERMINATOR, \"\");\n+        return text.replaceAll(\"\\\\p{C}\", \"\").replaceAll(START_OF_STRING, \"\").replaceAll(STRING_TERMINATOR, \"\");\n     }\n-    \n+\n }"
+        }
+    ]
+}

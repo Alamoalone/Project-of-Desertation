@@ -1,0 +1,29 @@
+@@ -3,6 +3,7 @@
+ import java.io.IOException;
+ import java.io.PrintStream;
+ import java.util.Comparator;
++import java.util.Objects;
+ import java.util.Scanner;
+ 
+ public class WordFreqBST implements WordCounter {
+@@ -128,9 +129,18 @@ public void insert(String string, boolean origin) {
+         while (true) {
+             boolean equalsIgnorePostfix = false;
+             if (!origin && nodeIter.getWordFreqObj().getType() != null && newWordNode.getWordFreqObj().getType() != null) {
+-                if (WordFreq.rootWords.containsString(newRoot) && (nodeIter.getWordFreqObj().getWord().equals(string) || (nodeIter.getWordFreqObj().getRoot().equals(newRoot)) && string.length() > 3) // the root exist, so we need to increase the frequency
++                String IterRootSubstring, newRootSubstring;
++                boolean condition = false;
++//                try {
++//                    String nodeIterRoot = nodeIter.getWordFreqObj().getRoot();
++//                    IterRootSubstring = nodeIterRoot.substring(0, nodeIterRoot.length() - 2);
++//                    newRootSubstring = newRoot.substring(0, newRoot.length() - 2);
++//                    condition = (IterRootSubstring.equals(newRootSubstring) && Math.abs(nodeIter.getWordFreqObj().getRoot().length() - newRoot.length()) <= 1 && nodeIter.getWordFreqObj().getRoot().length() > 3);
++//                    System.out.println(" IterRootSubstring equals newRootSubstring?   " + nodeIter.getWordFreqObj().getWord() + " " + string + " condition is: " + condition);
++//                } catch (RuntimeException e) { }
++                if (WordFreq.rootWords.containsString(newRoot) && (nodeIter.getWordFreqObj().getWord().equals(string) || (Objects.equals(nodeIter.getWordFreqObj().getRoot(), newRoot) && string.length() > 3) || condition )
+                         && nodeIter.getWordFreqObj().containsType(newWordNode.getWordFreqObj().getType())) { //nouns and adjectives are being mixed
+-                            equalsIgnorePostfix = true;
++                            equalsIgnorePostfix = true;  // the root exist, so we need to increase the frequency
+                 }
+             }
+ 

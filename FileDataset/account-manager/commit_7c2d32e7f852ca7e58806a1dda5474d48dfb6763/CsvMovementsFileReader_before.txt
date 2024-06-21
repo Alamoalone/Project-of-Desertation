@@ -1,0 +1,14 @@
+    public Movement next() {
+        var row = records.next();
+        String subject = row.get(profile.columnSubject);
+        Movement movement = new Movement();
+        movement.subject = subject;
+        movement.accountingDate = parseDate(row.get(profile.columnAccountingDate));
+        movement.valueDate = parseDate(row.get(profile.columnValueDate));
+        movement.quantity = Double.parseDouble(row.get(profile.columnQuantity));
+        movement.profile = profile;
+        return movement;
+    }
+
+
+

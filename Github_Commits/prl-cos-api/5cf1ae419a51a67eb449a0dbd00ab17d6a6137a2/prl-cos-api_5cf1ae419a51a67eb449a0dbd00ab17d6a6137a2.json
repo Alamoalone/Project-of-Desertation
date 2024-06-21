@@ -1,0 +1,72 @@
+{
+    "sha": "5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2",
+    "node_id": "C_kwDOGQmqvtoAKDVjZjFhZTQxOWE1MWE2N2ViNDQ5YTBkYmQwMGFiMTdkNmE2MTM3YTI",
+    "commit": {
+        "author": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2024-01-24T12:28:08Z"
+        },
+        "committer": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2024-01-24T12:28:08Z"
+        },
+        "message": "featureprl-4930/integration-with-am): fixed null pointer exception for actor id",
+        "tree": {
+            "sha": "f135c4532a42936d336b4f0bace1e986268c735e",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/f135c4532a42936d336b4f0bace1e986268c735e"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "968230f1a4a54df4fa78c006e866ede23f9d1b9c",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/968230f1a4a54df4fa78c006e866ede23f9d1b9c",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/968230f1a4a54df4fa78c006e866ede23f9d1b9c"
+        }
+    ],
+    "stats": {
+        "total": 101,
+        "additions": 59,
+        "deletions": 42
+    },
+    "files": [
+        {
+            "sha": "2fe8dd2d81fc3d585ad82589e49b39e836926581",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/services/RoleAssignmentService.java",
+            "status": "modified",
+            "additions": 45,
+            "deletions": 42,
+            "changes": 87,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2FRoleAssignmentService.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2FRoleAssignmentService.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2FRoleAssignmentService.java?ref=5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2",
+            "patch": "@@ -57,49 +57,52 @@ public void createRoleAssignment(String authorization,\n                                      String roleName) {\n         String actorId = populateActorId(authorization, (HashMap<String, Object>) caseDetails.getData());\n         String roleCategory = RoleCategory.JUDICIAL.name();\n-        if (actorId.split(UNDERSCORE)[1].equals(LEGAL_ADVISER)) {\n-            roleName = \"allocated-legal-adviser\";\n-            roleCategory = RoleCategory.LEGAL_OPERATIONS.name();\n+        if (null != actorId) {\n+            if (actorId.split(UNDERSCORE)[1].equals(LEGAL_ADVISER)) {\n+                roleName = \"allocated-legal-adviser\";\n+                roleCategory = RoleCategory.LEGAL_OPERATIONS.name();\n+            }\n+\n+            log.info(\"actor id is {}\", actorId);\n+            UserDetails userDetails = userService.getUserDetails(authorization);\n+\n+            RoleRequest roleRequest = RoleRequest.roleRequest()\n+                .assignerId(userDetails.getId())\n+                .process(\"CCD\")\n+                .reference(createRoleRequestReference(caseDetails, userDetails.getId()))\n+                .replaceExisting(replaceExisting)\n+                .build();\n+            String actorIdForService = actorId.split(UNDERSCORE)[0];\n+            List<RequestedRoles> requestedRoles = List.of(RequestedRoles.requestedRoles()\n+                .actorIdType(\"IDAM\")\n+                .actorId(actorIdForService)\n+                .roleType(RoleType.CASE.name())\n+                .roleName(roleName)\n+                .classification(Classification.RESTRICTED.name())\n+                .grantType(GrantType.SPECIFIC.name())\n+                .roleCategory(roleCategory)\n+                .readOnly(false)\n+                .beginTime(Instant.now())\n+                .attributes(Attributes.attributes()\n+                    .jurisdiction(caseDetails.getJurisdiction())\n+                    .caseType(caseDetails.getCaseTypeId())\n+                    .caseId(caseDetails.getId().toString())\n+                    .build())\n+\n+                .build());\n+\n+            RoleAssignmentRequest assignmentRequest = RoleAssignmentRequest.roleAssignmentRequest()\n+                .roleRequest(roleRequest)\n+                .requestedRoles(requestedRoles)\n+                .build();\n+            log.info(\"assignmentRequest----{}\", assignmentRequest);\n+            roleAssignmentApi.updateRoleAssignment(\n+                authorization,\n+                authTokenGenerator.generate(),\n+                null,\n+                assignmentRequest\n+            );\n         }\n-        log.info(\"actor id is {}\", actorId);\n-        UserDetails userDetails = userService.getUserDetails(authorization);\n-\n-        RoleRequest roleRequest = RoleRequest.roleRequest()\n-            .assignerId(userDetails.getId())\n-            .process(\"CCD\")\n-            .reference(createRoleRequestReference(caseDetails, userDetails.getId()))\n-            .replaceExisting(replaceExisting)\n-            .build();\n-        String actorIdForService = actorId.split(UNDERSCORE)[0];\n-        List<RequestedRoles> requestedRoles = List.of(RequestedRoles.requestedRoles()\n-                                                          .actorIdType(\"IDAM\")\n-                                                          .actorId(actorIdForService)\n-                                                          .roleType(RoleType.CASE.name())\n-                                                          .roleName(roleName)\n-                                                          .classification(Classification.RESTRICTED.name())\n-                                                          .grantType(GrantType.SPECIFIC.name())\n-                                                          .roleCategory(roleCategory)\n-                                                          .readOnly(false)\n-                                                          .beginTime(Instant.now())\n-                                                          .attributes(Attributes.attributes()\n-                                                                          .jurisdiction(caseDetails.getJurisdiction())\n-                                                                          .caseType(caseDetails.getCaseTypeId())\n-                                                                          .caseId(caseDetails.getId().toString())\n-                                                                          .build())\n-\n-                                                          .build());\n-\n-        RoleAssignmentRequest assignmentRequest = RoleAssignmentRequest.roleAssignmentRequest()\n-            .roleRequest(roleRequest)\n-            .requestedRoles(requestedRoles)\n-            .build();\n-        log.info(\"assignmentRequest----{}\", assignmentRequest);\n-        roleAssignmentApi.updateRoleAssignment(\n-            authorization,\n-            authTokenGenerator.generate(),\n-            null,\n-            assignmentRequest\n-        );\n     }\n \n     private String populateActorId(String authorization, HashMap<String, Object> caseDataUpdated) {"
+        },
+        {
+            "sha": "fb2f7622a0e70257898c8ba150937d8f2460178a",
+            "filename": "src/test/java/uk/gov/hmcts/reform/prl/services/RoleAssignmentServiceTest.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 0,
+            "changes": 14,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2FRoleAssignmentServiceTest.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2FRoleAssignmentServiceTest.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2FRoleAssignmentServiceTest.java?ref=5cf1ae419a51a67eb449a0dbd00ab17d6a6137a2",
+            "patch": "@@ -59,6 +59,20 @@ public void init() {\n         caseDetails = CaseDetails.builder().data(dataMap).id(123L).build();\n     }\n \n+    @Test\n+    public void testCreateRoleAssignmentActorIdIsNull() {\n+        Map<String, Object> caseDetailsMap = new HashMap<>();\n+        List<String> roles = new ArrayList();\n+        roles.add(\"caseworker-privatelaw-judge\");\n+        userDetails = UserDetails.builder().id(\"1\").roles(roles).build();\n+        caseDetails.setData(caseDetailsMap);\n+\n+        when(userService.getUserDetails(auth)).thenReturn(userDetails);\n+        when(authTokenGenerator.generate()).thenReturn(\"test\");\n+        roleAssignmentService.createRoleAssignment(auth, caseDetails, true, \"Judge\");\n+        assertEquals(\"1\", userDetails.getId());\n+    }\n+\n     @Test\n     public void testCreateRoleAssignmentJudgeWithName() {\n         Map<String, Object> caseDetailsMap = new HashMap<>();"
+        }
+    ]
+}

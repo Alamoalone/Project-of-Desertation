@@ -1,0 +1,96 @@
+{
+    "sha": "943a49b7b80e59c817f619e477fe5d8eab60d69d",
+    "node_id": "C_kwDOJy1fVNoAKDk0M2E0OWI3YjgwZTU5YzgxN2Y2MTllNDc3ZmU1ZDhlYWI2MGQ2OWQ",
+    "commit": {
+        "author": {
+            "name": "Arrington Perry",
+            "email": "perryceo21@hotmail.com",
+            "date": "2023-08-02T23:10:40Z"
+        },
+        "committer": {
+            "name": "Arrington Perry",
+            "email": "perryceo21@hotmail.com",
+            "date": "2023-08-02T23:10:40Z"
+        },
+        "message": "Handle null pointer exception",
+        "tree": {
+            "sha": "48e3d028d6befb1575dacd744cb5e8e75b884404",
+            "url": "https://api.github.com/repos/shastye/FitStir/git/trees/48e3d028d6befb1575dacd744cb5e8e75b884404"
+        },
+        "url": "https://api.github.com/repos/shastye/FitStir/git/commits/943a49b7b80e59c817f619e477fe5d8eab60d69d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/shastye/FitStir/commits/943a49b7b80e59c817f619e477fe5d8eab60d69d",
+    "html_url": "https://github.com/shastye/FitStir/commit/943a49b7b80e59c817f619e477fe5d8eab60d69d",
+    "comments_url": "https://api.github.com/repos/shastye/FitStir/commits/943a49b7b80e59c817f619e477fe5d8eab60d69d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "88b009c0dbccd9ebd5ff4910abc906ed6ed71667",
+            "url": "https://api.github.com/repos/shastye/FitStir/commits/88b009c0dbccd9ebd5ff4910abc906ed6ed71667",
+            "html_url": "https://github.com/shastye/FitStir/commit/88b009c0dbccd9ebd5ff4910abc906ed6ed71667"
+        }
+    ],
+    "stats": {
+        "total": 92,
+        "additions": 52,
+        "deletions": 40
+    },
+    "files": [
+        {
+            "sha": "98b5c8186808f01f5f02124b1a4e912e156b36d3",
+            "filename": ".idea/deploymentTargetDropDown.xml",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/shastye/FitStir/blob/943a49b7b80e59c817f619e477fe5d8eab60d69d/.idea%2FdeploymentTargetDropDown.xml",
+            "raw_url": "https://github.com/shastye/FitStir/raw/943a49b7b80e59c817f619e477fe5d8eab60d69d/.idea%2FdeploymentTargetDropDown.xml",
+            "contents_url": "https://api.github.com/repos/shastye/FitStir/contents/.idea%2FdeploymentTargetDropDown.xml?ref=943a49b7b80e59c817f619e477fe5d8eab60d69d",
+            "patch": "@@ -7,11 +7,11 @@\n         <deviceKey>\n           <Key>\n             <type value=\"VIRTUAL_DEVICE_PATH\" />\n-            <value value=\"C:\\Users\\Sierra\\.android\\avd\\Pixel_6_Pro_API_33.avd\" />\n+            <value value=\"C:\\Users\\perry\\.android\\avd\\Pixel_XL_API_33_2.avd\" />\n           </Key>\n         </deviceKey>\n       </Target>\n     </targetSelectedWithDropDown>\n-    <timeTargetWasSelectedWithDropDown value=\"2023-07-16T17:34:34.910495600Z\" />\n+    <timeTargetWasSelectedWithDropDown value=\"2023-08-02T22:55:49.275306Z\" />\n   </component>\n </project>\n\\ No newline at end of file"
+        },
+        {
+            "sha": "ed34cb4245e68d701910da0b87690e710b514fe3",
+            "filename": "app/src/main/java/com/fitstir/fitstirapp/ui/connect/LogInFragment.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/shastye/FitStir/blob/943a49b7b80e59c817f619e477fe5d8eab60d69d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffitstir%2Ffitstirapp%2Fui%2Fconnect%2FLogInFragment.java",
+            "raw_url": "https://github.com/shastye/FitStir/raw/943a49b7b80e59c817f619e477fe5d8eab60d69d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffitstir%2Ffitstirapp%2Fui%2Fconnect%2FLogInFragment.java",
+            "contents_url": "https://api.github.com/repos/shastye/FitStir/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffitstir%2Ffitstirapp%2Fui%2Fconnect%2FLogInFragment.java?ref=943a49b7b80e59c817f619e477fe5d8eab60d69d",
+            "patch": "@@ -59,6 +59,7 @@ public class LogInFragment extends Fragment {\n     private EditText user_Email, user_Password;\n     private GoogleSignInClient client;\n     private GoogleSignInOptions options;\n+    private SharedPreferences sharedPreferences;\n \n     public View onCreateView(@NonNull LayoutInflater inflater,\n                              ViewGroup container, Bundle savedInstanceState) {\n@@ -74,7 +75,7 @@ public View onCreateView(@NonNull LayoutInflater inflater,\n         auth = FirebaseAuth.getInstance();\n         user_Email = root.findViewById(R.id.username_log_in);\n         user_Password = root.findViewById(R.id.user_password);\n-\n+        sharedPreferences = getActivity().getSharedPreferences(\"user_Login\", Context.MODE_PRIVATE);\n \n         ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {\n             @Override"
+        },
+        {
+            "sha": "22b3e3c76c77b659aea3a84319f4d539255999e6",
+            "filename": "app/src/main/java/com/fitstir/fitstirapp/ui/settings/fragments/ProfileFragment.java",
+            "status": "modified",
+            "additions": 47,
+            "deletions": 37,
+            "changes": 84,
+            "blob_url": "https://github.com/shastye/FitStir/blob/943a49b7b80e59c817f619e477fe5d8eab60d69d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffitstir%2Ffitstirapp%2Fui%2Fsettings%2Ffragments%2FProfileFragment.java",
+            "raw_url": "https://github.com/shastye/FitStir/raw/943a49b7b80e59c817f619e477fe5d8eab60d69d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffitstir%2Ffitstirapp%2Fui%2Fsettings%2Ffragments%2FProfileFragment.java",
+            "contents_url": "https://api.github.com/repos/shastye/FitStir/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffitstir%2Ffitstirapp%2Fui%2Fsettings%2Ffragments%2FProfileFragment.java?ref=943a49b7b80e59c817f619e477fe5d8eab60d69d",
+            "patch": "@@ -1,11 +1,13 @@\n package com.fitstir.fitstirapp.ui.settings.fragments;\n \n import android.os.Bundle;\n+import android.util.Log;\n import android.view.LayoutInflater;\n import android.view.View;\n import android.view.ViewGroup;\n import android.widget.ImageView;\n import android.widget.TextView;\n+import android.widget.Toast;\n \n import androidx.annotation.NonNull;\n import androidx.cardview.widget.CardView;\n@@ -61,47 +63,55 @@ public View onCreateView(@NonNull LayoutInflater inflater,\n         weight.setText(tWeight);\n         email.setText(settingsViewModel.getEmail().getValue());\n \n-        auth = FirebaseAuth.getInstance();\n-        String user = auth.getCurrentUser().getUid();\n-        reference =  FirebaseDatabase.getInstance().getReference(\"Users\");\n-        reference.child(user).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {\n-            @Override\n-            public void onComplete(@NonNull Task<DataSnapshot> task) {\n \n-                if(task.isSuccessful())\n-                {\n-                    if(task.getResult().exists())\n-                    {\n-                        DataSnapshot snapshot = task.getResult();\n-                        String fullName = String.valueOf(snapshot.child(\"fullname\").getValue());\n-                        String email = String.valueOf(snapshot.child(\"email\").getValue());\n-                        String age = String.valueOf(snapshot.child(\"age\").getValue());\n-                        String height_ft = String.valueOf(snapshot.child(\"height_ft\").getValue());\n-                        String height_in = String.valueOf(snapshot.child(\"height_in\").getValue());\n-                        String weight = String.valueOf(snapshot.child(\"_Weight\").getValue());\n-\n-                        settingsViewModel.setName(fullName);\n-                        settingsViewModel.setEmail(email);\n-                        settingsViewModel.setAge(Integer.parseInt(age));\n-                        settingsViewModel.setHeightInFeet(Integer.parseInt(height_ft));\n-                        settingsViewModel.setHeightInInches(Integer.parseInt(height_in));\n-                        settingsViewModel.setWeight(Integer.parseInt(weight));\n-\n-                        binding.textName.setText(fullName);\n-                        binding.textEmail.setText(email);\n-                        String tAge = settingsViewModel.getAge().getValue() + \" years old\";\n-                        binding.textAge.setText(tAge);\n-                        String tHeightFeet = settingsViewModel.getHeightInFeet().getValue() + \" feet \";\n-                        binding.textHeightFt.setText(tHeightFeet);\n-                        String tHeightInches = settingsViewModel.getHeightInInches().getValue() + \" inches\";\n-                        binding.textHeightIn.setText(tHeightInches);\n-                        String tWeight = settingsViewModel.getWeight().getValue() + \" lbs\";\n-                        binding.textWeight.setText(tWeight);\n+        \n+        try {\n+            auth = FirebaseAuth.getInstance();\n+            String user = auth.getCurrentUser().getUid();\n+            reference =  FirebaseDatabase.getInstance().getReference(\"Users\");\n+            reference.child(user).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {\n+                @Override\n+                public void onComplete(@NonNull Task<DataSnapshot> task) {\n \n+                    if(task.isSuccessful())\n+                    {\n+                        if(task.getResult().exists())\n+                        {\n+                            DataSnapshot snapshot = task.getResult();\n+                            String fullName = String.valueOf(snapshot.child(\"fullname\").getValue());\n+                            String email = String.valueOf(snapshot.child(\"email\").getValue());\n+                            String age = String.valueOf(snapshot.child(\"age\").getValue());\n+                            String height_ft = String.valueOf(snapshot.child(\"height_ft\").getValue());\n+                            String height_in = String.valueOf(snapshot.child(\"height_in\").getValue());\n+                            String weight = String.valueOf(snapshot.child(\"_Weight\").getValue());\n+\n+                            settingsViewModel.setName(fullName);\n+                            settingsViewModel.setEmail(email);\n+                            settingsViewModel.setAge(Integer.parseInt(age));\n+                            settingsViewModel.setHeightInFeet(Integer.parseInt(height_ft));\n+                            settingsViewModel.setHeightInInches(Integer.parseInt(height_in));\n+                            settingsViewModel.setWeight(Integer.parseInt(weight));\n+\n+                            binding.textName.setText(fullName);\n+                            binding.textEmail.setText(email);\n+                            String tAge = settingsViewModel.getAge().getValue() + \" years old\";\n+                            binding.textAge.setText(tAge);\n+                            String tHeightFeet = settingsViewModel.getHeightInFeet().getValue() + \" feet \";\n+                            binding.textHeightFt.setText(tHeightFeet);\n+                            String tHeightInches = settingsViewModel.getHeightInInches().getValue() + \" inches\";\n+                            binding.textHeightIn.setText(tHeightInches);\n+                            String tWeight = settingsViewModel.getWeight().getValue() + \" lbs\";\n+                            binding.textWeight.setText(tWeight);\n+\n+                        }\n                     }\n                 }\n-            }\n-        });\n+            });\n+        }\n+        catch(Exception NullPointerException) {\n+            Toast.makeText(requireActivity(), \"Refer to Google Account for Profile Details\", Toast.LENGTH_SHORT).show();\n+        }\n+       \n \n \n         CardView editButton = binding.editbuttonCardViewProfile;"
+        },
+        {
+            "sha": "dfe61a389c7372f711a180ecd72c8325ea00cf0a",
+            "filename": "app/src/main/res/values/strings.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/shastye/FitStir/blob/943a49b7b80e59c817f619e477fe5d8eab60d69d/app%2Fsrc%2Fmain%2Fres%2Fvalues%2Fstrings.xml",
+            "raw_url": "https://github.com/shastye/FitStir/raw/943a49b7b80e59c817f619e477fe5d8eab60d69d/app%2Fsrc%2Fmain%2Fres%2Fvalues%2Fstrings.xml",
+            "contents_url": "https://api.github.com/repos/shastye/FitStir/contents/app%2Fsrc%2Fmain%2Fres%2Fvalues%2Fstrings.xml?ref=943a49b7b80e59c817f619e477fe5d8eab60d69d",
+            "patch": "@@ -11,6 +11,7 @@\n     <string name=\"question_intro\">This is the question fragment.</string>\n     <string name=\"profile_label\">Profile</string>\n     <string name=\"settings_label\">Settings</string>\n+    <string name=\"user_profile\">User Profile Data</string>\n     <string name=\"log_out_label\">Log Out</string>\n     <string name=\"label_for_section\">Label</string>\n     <string name=\"icon_for_section\">icon for section</string>"
+        }
+    ]
+}

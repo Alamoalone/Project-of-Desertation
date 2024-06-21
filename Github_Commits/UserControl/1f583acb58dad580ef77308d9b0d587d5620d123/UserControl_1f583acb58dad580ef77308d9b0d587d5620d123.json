@@ -1,0 +1,98 @@
+{
+    "sha": "1f583acb58dad580ef77308d9b0d587d5620d123",
+    "node_id": "C_kwDOAGRN1doAKDFmNTgzYWNiNThkYWQ1ODBlZjc3MzA4ZDliMGQ1ODdkNTYyMGQxMjM",
+    "commit": {
+        "author": {
+            "name": "DevDeborah",
+            "email": "softwaredeveloperdeborah@gmail.com",
+            "date": "2024-01-01T20:21:22Z"
+        },
+        "committer": {
+            "name": "DevDeborah",
+            "email": "softwaredeveloperdeborah@gmail.com",
+            "date": "2024-01-01T20:49:06Z"
+        },
+        "message": "Fix null pointer exceptions from players that haven't logged out manually",
+        "tree": {
+            "sha": "23e5dc15cdba772591e891cb5342be9348d7d0d7",
+            "url": "https://api.github.com/repos/Runsafe/UserControl/git/trees/23e5dc15cdba772591e891cb5342be9348d7d0d7"
+        },
+        "url": "https://api.github.com/repos/Runsafe/UserControl/git/commits/1f583acb58dad580ef77308d9b0d587d5620d123",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Runsafe/UserControl/commits/1f583acb58dad580ef77308d9b0d587d5620d123",
+    "html_url": "https://github.com/Runsafe/UserControl/commit/1f583acb58dad580ef77308d9b0d587d5620d123",
+    "comments_url": "https://api.github.com/repos/Runsafe/UserControl/commits/1f583acb58dad580ef77308d9b0d587d5620d123/comments",
+    "author": {
+        "login": "DeveloperDeborah",
+        "id": 71165709,
+        "node_id": "MDQ6VXNlcjcxMTY1NzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/71165709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DeveloperDeborah",
+        "html_url": "https://github.com/DeveloperDeborah",
+        "followers_url": "https://api.github.com/users/DeveloperDeborah/followers",
+        "following_url": "https://api.github.com/users/DeveloperDeborah/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DeveloperDeborah/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DeveloperDeborah/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DeveloperDeborah/subscriptions",
+        "organizations_url": "https://api.github.com/users/DeveloperDeborah/orgs",
+        "repos_url": "https://api.github.com/users/DeveloperDeborah/repos",
+        "events_url": "https://api.github.com/users/DeveloperDeborah/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DeveloperDeborah/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "DeveloperDeborah",
+        "id": 71165709,
+        "node_id": "MDQ6VXNlcjcxMTY1NzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/71165709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DeveloperDeborah",
+        "html_url": "https://github.com/DeveloperDeborah",
+        "followers_url": "https://api.github.com/users/DeveloperDeborah/followers",
+        "following_url": "https://api.github.com/users/DeveloperDeborah/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DeveloperDeborah/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DeveloperDeborah/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DeveloperDeborah/subscriptions",
+        "organizations_url": "https://api.github.com/users/DeveloperDeborah/orgs",
+        "repos_url": "https://api.github.com/users/DeveloperDeborah/repos",
+        "events_url": "https://api.github.com/users/DeveloperDeborah/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DeveloperDeborah/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9e9e80feb074de8d18af98e1bc2424bba6a9118b",
+            "url": "https://api.github.com/repos/Runsafe/UserControl/commits/9e9e80feb074de8d18af98e1bc2424bba6a9118b",
+            "html_url": "https://github.com/Runsafe/UserControl/commit/9e9e80feb074de8d18af98e1bc2424bba6a9118b"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 7,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "9921b84673415e17e2d50e4ed2351e1e0b9fb6ef",
+            "filename": "src/no/runsafe/UserControl/database/PlayerDatabase.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 1,
+            "changes": 8,
+            "blob_url": "https://github.com/Runsafe/UserControl/blob/1f583acb58dad580ef77308d9b0d587d5620d123/src%2Fno%2Frunsafe%2FUserControl%2Fdatabase%2FPlayerDatabase.java",
+            "raw_url": "https://github.com/Runsafe/UserControl/raw/1f583acb58dad580ef77308d9b0d587d5620d123/src%2Fno%2Frunsafe%2FUserControl%2Fdatabase%2FPlayerDatabase.java",
+            "contents_url": "https://api.github.com/repos/Runsafe/UserControl/contents/src%2Fno%2Frunsafe%2FUserControl%2Fdatabase%2FPlayerDatabase.java?ref=1f583acb58dad580ef77308d9b0d587d5620d123",
+            "patch": "@@ -213,14 +213,20 @@ public HashMap<String, String> GetPlayerData(IPlayer player)\n \r\n \tprivate String formatDate(Instant date)\r\n \t{\r\n+\t\tif (date == null)\r\n+\t\t\treturn \"Invalid Date\";\r\n+\r\n \t\treturn date.atZone(ZoneId.systemDefault()).toString().replace(\"T\", \" \").substring(0,16);\r\n \t}\r\n \r\n \t@Override\r\n \tpublic DateTime GetPlayerLogout(IPlayer player)\r\n \t{\r\n+\t\tif (player == null)\r\n+\t\t\treturn null;\r\n+\r\n \t\tPlayerData data = getData(player);\r\n-\t\tif (data == null)\r\n+\t\tif (data == null || data.getLogout() == null)\r\n \t\t\treturn null;\r\n \r\n \t\treturn new DateTime(data.getLogout().getEpochSecond());\r"
+        }
+    ]
+}

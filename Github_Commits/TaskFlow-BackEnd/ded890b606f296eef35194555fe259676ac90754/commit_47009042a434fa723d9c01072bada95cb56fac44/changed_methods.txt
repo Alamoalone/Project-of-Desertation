@@ -1,0 +1,2 @@
+isPresent(JsonNode jsonNode, String text)
+deserialize(JsonParser jsonParser, DeserializationContext deserializationContext)

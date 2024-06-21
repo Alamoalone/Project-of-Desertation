@@ -1,0 +1,98 @@
+{
+    "sha": "b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2",
+    "node_id": "C_kwDOAATZv9oAKGI4OTE2ZDU3ODdkNmY2YTc4ZjdiZGZlYmRhNGNkMjRjOWI3OWMxZTI",
+    "commit": {
+        "author": {
+            "name": "David Truong",
+            "email": "david.truong@liferay.com",
+            "date": "2023-01-25T03:09:56Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-01-26T04:37:29Z"
+        },
+        "message": "LPS-172496 fix null pointer exception",
+        "tree": {
+            "sha": "732909939918dddc86a806554326ccb496294503",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/732909939918dddc86a806554326ccb496294503"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2/comments",
+    "author": {
+        "login": "david-truong",
+        "id": 717711,
+        "node_id": "MDQ6VXNlcjcxNzcxMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/717711?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/david-truong",
+        "html_url": "https://github.com/david-truong",
+        "followers_url": "https://api.github.com/users/david-truong/followers",
+        "following_url": "https://api.github.com/users/david-truong/following{/other_user}",
+        "gists_url": "https://api.github.com/users/david-truong/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/david-truong/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/david-truong/subscriptions",
+        "organizations_url": "https://api.github.com/users/david-truong/orgs",
+        "repos_url": "https://api.github.com/users/david-truong/repos",
+        "events_url": "https://api.github.com/users/david-truong/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/david-truong/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8a6e09726997bddc226391e7510f25654cbe60e7",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/8a6e09726997bddc226391e7510f25654cbe60e7",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/8a6e09726997bddc226391e7510f25654cbe60e7"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "eaee9c497b6b8e0ee2b909b467e93962fd0e9d62",
+            "filename": "modules/apps/change-tracking/change-tracking-web/src/main/java/com/liferay/change/tracking/web/internal/spi/display/PortletPreferenceValueCTDisplayRenderer.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2/modules%2Fapps%2Fchange-tracking%2Fchange-tracking-web%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fchange%2Ftracking%2Fweb%2Finternal%2Fspi%2Fdisplay%2FPortletPreferenceValueCTDisplayRenderer.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2/modules%2Fapps%2Fchange-tracking%2Fchange-tracking-web%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fchange%2Ftracking%2Fweb%2Finternal%2Fspi%2Fdisplay%2FPortletPreferenceValueCTDisplayRenderer.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Fchange-tracking%2Fchange-tracking-web%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fchange%2Ftracking%2Fweb%2Finternal%2Fspi%2Fdisplay%2FPortletPreferenceValueCTDisplayRenderer.java?ref=b8916d5787d6f6a78f7bdfebda4cd24c9b79c1e2",
+            "patch": "@@ -98,6 +98,10 @@ public boolean isHideable(PortletPreferenceValue portletPreferenceValue) {\n \t\t\t_portletPreferencesLocalService.fetchPortletPreferences(\n \t\t\t\tportletPreferenceValue.getPortletPreferencesId());\n \n+\t\tif (portletPreferences == null) {\n+\t\t\treturn true;\n+\t\t}\n+\n \t\tPortlet portlet = _portletLocalService.getPortletById(\n \t\t\tportletPreferences.getCompanyId(),\n \t\t\tportletPreferences.getPortletId());"
+        }
+    ]
+}

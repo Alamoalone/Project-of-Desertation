@@ -1,0 +1,3 @@
+setCompositeMode(boolean selected)
+initializeViewerToLoaded(List channelNames, JSONObject dispSettings, HashMap axisMins, HashMap axisMaxs)
+newImageArrived(HashMap axesPositions)

@@ -1,0 +1,39 @@
+  private void addAppSpecs() throws ConflictException {
+    WorkflowSpecification scheduledWorfklow1 =
+      new WorkflowSpecification("DummyClass", SCHEDULED_PROG1_ID.getProgram(), "scheduled workflow",
+                                Collections.emptyMap(), Collections.emptyList(), Collections.emptyMap(),
+                                Collections.emptyMap());
+    ApplicationSpecification dummyAppSpec1 =
+      new DefaultApplicationSpecification(APP1_ID.getApplication(), ProjectInfo.getVersion().toString(),
+                                          "dummy app", null,
+                                          ARTIFACT_ID1.toApiArtifactId(),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          ImmutableMap.of(SCHEDULED_PROG1_ID.getProgram(), scheduledWorfklow1),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          Collections.emptyMap(), Collections.emptyMap()
+      );
+    ApplicationMeta meta = new ApplicationMeta(dummyAppSpec1.getName(), dummyAppSpec1,
+                                               new ChangeDetail(null, null, null,
+                                                                System.currentTimeMillis()));
+    store.addLatestApplication(APP1_ID, meta);
+    WorkflowSpecification scheduledWorfklow2 =
+      new WorkflowSpecification("DummyClass", SCHEDULED_PROG2_ID.getProgram(), "scheduled workflow",
+                                Collections.emptyMap(), Collections.emptyList(), Collections.emptyMap(),
+                                Collections.emptyMap());
+    ApplicationSpecification dummyAppSpec2 =
+      new DefaultApplicationSpecification(APP2_ID.getApplication(), ProjectInfo.getVersion().toString(),
+                                          "dummy app", null,
+                                          ARTIFACT_ID2.toApiArtifactId(),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          ImmutableMap.of(SCHEDULED_PROG2_ID.getProgram(), scheduledWorfklow2),
+                                          Collections.emptyMap(), Collections.emptyMap(),
+                                          Collections.emptyMap(), Collections.emptyMap()
+      );
+    meta = new ApplicationMeta(dummyAppSpec2.getName(), dummyAppSpec2,
+                               new ChangeDetail(null, null, null,
+                                                System.currentTimeMillis()));
+    store.addLatestApplication(APP2_ID, meta);
+  }
+

@@ -1,0 +1,98 @@
+{
+    "sha": "60a13be82c1aafa3662b4027f65ab64f9c7a370f",
+    "node_id": "C_kwDOIFnbIdoAKDYwYTEzYmU4MmMxYWFmYTM2NjJiNDAyN2Y2NWFiNjRmOWM3YTM3MGY",
+    "commit": {
+        "author": {
+            "name": "Arshad Anas",
+            "email": "arshadanas900+github@gmail.com",
+            "date": "2023-07-14T17:13:41Z"
+        },
+        "committer": {
+            "name": "Arshad Anas",
+            "email": "arshadanas900+github@gmail.com",
+            "date": "2023-07-14T17:13:41Z"
+        },
+        "message": "avoid null pointer exception",
+        "tree": {
+            "sha": "5193bf2628b358c355ce3d45fbbbadd23de1aaee",
+            "url": "https://api.github.com/repos/raleighmasjid/ftc-21836-2022/git/trees/5193bf2628b358c355ce3d45fbbbadd23de1aaee"
+        },
+        "url": "https://api.github.com/repos/raleighmasjid/ftc-21836-2022/git/commits/60a13be82c1aafa3662b4027f65ab64f9c7a370f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/raleighmasjid/ftc-21836-2022/commits/60a13be82c1aafa3662b4027f65ab64f9c7a370f",
+    "html_url": "https://github.com/raleighmasjid/ftc-21836-2022/commit/60a13be82c1aafa3662b4027f65ab64f9c7a370f",
+    "comments_url": "https://api.github.com/repos/raleighmasjid/ftc-21836-2022/commits/60a13be82c1aafa3662b4027f65ab64f9c7a370f/comments",
+    "author": {
+        "login": "Arshad-Anas",
+        "id": 79271473,
+        "node_id": "MDQ6VXNlcjc5MjcxNDcz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79271473?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Arshad-Anas",
+        "html_url": "https://github.com/Arshad-Anas",
+        "followers_url": "https://api.github.com/users/Arshad-Anas/followers",
+        "following_url": "https://api.github.com/users/Arshad-Anas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Arshad-Anas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Arshad-Anas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Arshad-Anas/subscriptions",
+        "organizations_url": "https://api.github.com/users/Arshad-Anas/orgs",
+        "repos_url": "https://api.github.com/users/Arshad-Anas/repos",
+        "events_url": "https://api.github.com/users/Arshad-Anas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Arshad-Anas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Arshad-Anas",
+        "id": 79271473,
+        "node_id": "MDQ6VXNlcjc5MjcxNDcz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79271473?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Arshad-Anas",
+        "html_url": "https://github.com/Arshad-Anas",
+        "followers_url": "https://api.github.com/users/Arshad-Anas/followers",
+        "following_url": "https://api.github.com/users/Arshad-Anas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Arshad-Anas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Arshad-Anas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Arshad-Anas/subscriptions",
+        "organizations_url": "https://api.github.com/users/Arshad-Anas/orgs",
+        "repos_url": "https://api.github.com/users/Arshad-Anas/repos",
+        "events_url": "https://api.github.com/users/Arshad-Anas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Arshad-Anas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "37698b9b50a2d7ab598d94984deb89471426d56e",
+            "url": "https://api.github.com/repos/raleighmasjid/ftc-21836-2022/commits/37698b9b50a2d7ab598d94984deb89471426d56e",
+            "html_url": "https://github.com/raleighmasjid/ftc-21836-2022/commit/37698b9b50a2d7ab598d94984deb89471426d56e"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "260f57ba27a7e199d6cd16b1b27a7bdb343aec3c",
+            "filename": "TeamCode/src/main/java/org/firstinspires/ftc/teamcode/control/controllers/fullstatefeedback/FullStateController.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/raleighmasjid/ftc-21836-2022/blob/60a13be82c1aafa3662b4027f65ab64f9c7a370f/TeamCode%2Fsrc%2Fmain%2Fjava%2Forg%2Ffirstinspires%2Fftc%2Fteamcode%2Fcontrol%2Fcontrollers%2Ffullstatefeedback%2FFullStateController.java",
+            "raw_url": "https://github.com/raleighmasjid/ftc-21836-2022/raw/60a13be82c1aafa3662b4027f65ab64f9c7a370f/TeamCode%2Fsrc%2Fmain%2Fjava%2Forg%2Ffirstinspires%2Fftc%2Fteamcode%2Fcontrol%2Fcontrollers%2Ffullstatefeedback%2FFullStateController.java",
+            "contents_url": "https://api.github.com/repos/raleighmasjid/ftc-21836-2022/contents/TeamCode%2Fsrc%2Fmain%2Fjava%2Forg%2Ffirstinspires%2Fftc%2Fteamcode%2Fcontrol%2Fcontrollers%2Ffullstatefeedback%2FFullStateController.java?ref=60a13be82c1aafa3662b4027f65ab64f9c7a370f",
+            "patch": "@@ -7,7 +7,7 @@\n public class FullStateController implements FeedbackController {\n \n     private FullStateGains gains;\n-    private State target, error;\n+    private State target, error = new State();\n \n     @Override\n     public void setTarget(State target) {"
+        }
+    ]
+}

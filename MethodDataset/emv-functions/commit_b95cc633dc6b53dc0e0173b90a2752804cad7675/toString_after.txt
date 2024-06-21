@@ -1,0 +1,18 @@
+    public String toString() {
+        return "GenerateApplicationCryptogramCommand{" +
+                "pan='" + pan + '\'' +
+                ", panSequenceNumber='" + panSequenceNumber + '\'' +
+                ", issuerMasterKey='" + issuerMasterKey + '\'' +
+                ", amountAuthorised='" + amountAuthorised + '\'' +
+                ", amountOther='" + amountOther + '\'' +
+                ", terminalCountryCode='" + terminalCountryCode + '\'' +
+                ", terminalVerificationResults='" + terminalVerificationResults + '\'' +
+                ", transactionCurrencyCode='" + transactionCurrencyCode + '\'' +
+                ", transactionDate='" + transactionDate + '\'' +
+                ", transactionType='" + transactionType + '\'' +
+                ", unpredictableNumber='" + unpredictableNumber + '\'' +
+                ", applicationInterchangeProfile='" + applicationInterchangeProfile + '\'' +
+                ", applicationTransactionCounter='" + applicationTransactionCounter + '\'' +
+                ", issuerApplicationData='" + issuerApplicationData + '\'' +
+                '}';
+    }

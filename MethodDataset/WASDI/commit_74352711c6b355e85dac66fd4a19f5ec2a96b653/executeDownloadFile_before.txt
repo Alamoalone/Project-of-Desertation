@@ -1,0 +1,85 @@
+	public String executeDownloadFile(String sFileURL, String sDownloadUser, String sDownloadPassword,
+			String sSaveDirOnServer, ProcessWorkspace oProcessWorkspace, int iMaxRetry) throws Exception {
+		// main method. sFileUrl is the url received by the lined data provider. sSaveDirOnServer is the local folder. 
+		// must return the valid file full path or "" if the download was not possible. 
+		
+		WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Execute download for file: " + sFileURL);
+		
+		
+		String sResult = null;
+
+		if (isFileProtocol(m_sDefaultProtocol)) {
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: detected file protocol ");
+
+			String sFilesystemPath = null;
+			if (isFileProtocol(sFileURL)) {
+				sFilesystemPath = removePrefixFile(sFileURL);
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile:  file system path from file protocol " + sFilesystemPath);
+			} else if (isHttpsProtocol(sFileURL)) {
+				sFilesystemPath = extractFilePathFromHttpsUrl(sFileURL);
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile:  file system path from http protocol " + sFilesystemPath);
+			} else {
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: unknown protocol " + sFileURL);
+			}
+
+			if (sFilesystemPath != null) {
+				File oSourceFile = new File(sFilesystemPath);
+
+				if (oSourceFile != null && oSourceFile.exists()) {
+					sResult = copyFile("file:" + sFilesystemPath, sDownloadUser, sDownloadPassword, sSaveDirOnServer, oProcessWorkspace, iMaxRetry);
+					WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: destination file path " + sResult);
+
+					return sResult;
+				}
+			}
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile: no operation was effective for file protocol");
+
+		}
+		
+
+		if(isHttpsProtocol(sFileURL)) { 
+			int iAttemptCount = 0;
+			int iWaitDelta = 100;
+			long lLowerWatingTime = 1L;
+			long lUpperWatingTime = 10L;
+			
+			while (iAttemptCount < iMaxRetry) {
+				String sAccessToken = getAuthenticationToken(sDownloadUser, sDownloadPassword);
+				
+				if (Utils.isNullOrEmpty(sAccessToken)) {
+					WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Error retrieving the access token. Impossible to continue.");
+					// TODO: better to return an empty string or null?
+					return "";
+				}
+				
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Access token correctly received.");
+				String sODataDownloadUrl = getODataDownloadUrl(sFileURL);
+//				String sProductId = getProductIdFromURL(sODataDownloadUrl);
+				// with the auth token, we can send the download request
+				String sDownloadUrl = sODataDownloadUrl + SDOWNLOAD_URL_END + sAccessToken;
+				
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.executeDownloadFile. Access token correctly received. Download url (withouth accesso token): " + sODataDownloadUrl + SDOWNLOAD_URL_END);
+	
+				
+				// TODO: understand if I should also pass the name of the file - I think no. The method already parses the "File-disposition" attribute in the header. Should also work for Creodias2
+				String sDownloadedFilePath = downloadViaHttp(sDownloadUrl, null, sSaveDirOnServer);
+				
+				if(Utils.isNullOrEmpty(sDownloadedFilePath)) {
+					// we will try again
+					iAttemptCount++;
+					long lRandomWaitSeconds = new SecureRandom().longs(lLowerWatingTime, lUpperWatingTime).findFirst().getAsLong();
+					//prepare to wait longer next time
+					lLowerWatingTime = lRandomWaitSeconds;
+					lUpperWatingTime += iWaitDelta;
+					WasdiLog.warnLog("CreoDias2ProviderAdapter.executeDownloadFile. Download failed. Trying again after waiting  " + lRandomWaitSeconds +" seconds.");
+					TimeUnit.SECONDS.sleep(lRandomWaitSeconds);
+				} else {
+					// download completed
+					WasdiLog.debugLog("CreoDias2ProviderAdapter.executeDownloadFile. Download completed: " + sDownloadedFilePath);
+					return sDownloadedFilePath;
+				}
+			}
+		}
+		// TODO: better to return an empty string or null? 
+		return "";
+	}

@@ -1,0 +1,110 @@
+{
+    "sha": "e72f9f19d2f3e8211c021112afe4b905e0da96c1",
+    "node_id": "C_kwDODSmGZdoAKGU3MmY5ZjE5ZDJmM2U4MjExYzAyMTExMmFmZTRiOTA1ZTBkYTk2YzE",
+    "commit": {
+        "author": {
+            "name": "derMart",
+            "email": "derMart@users.noreply.github.com",
+            "date": "2024-01-02T14:33:58Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2024-01-02T14:33:58Z"
+        },
+        "message": "fix null pointer exception in Tracker.getName() / DNS name correctly shown in TC-Log output (#401)\n\n* fix null pointer exception in Tracker.getName() if private name member is null\r\n\r\n* fix dns name not correctly shown in TC-Log output",
+        "tree": {
+            "sha": "7c4b8d00de5119aed13053b269a5ba494fcba748",
+            "url": "https://api.github.com/repos/TrackerControl/tracker-control-android/git/trees/7c4b8d00de5119aed13053b269a5ba494fcba748"
+        },
+        "url": "https://api.github.com/repos/TrackerControl/tracker-control-android/git/commits/e72f9f19d2f3e8211c021112afe4b905e0da96c1",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJllB7WCRBK7hj4Ov3rIwAAltIIAKa0hzcyuJYPwirvtw2noXQ+\nBSe/oiULIZ8pE6z06acPSQBLczyyEog7RMHP+oVq3bpxMKrdMlBwwTqbdVRJlAP8\nI/VRYZd0hcTd+Gouf81norPwbwymFFKSzqYyD1NX0/1Uunmk5IRqUrkjsTWuDEEF\ne0ooIWndYCMwtLFnswGZBPxm3Le3Hsosr5FpF/IdM9rkEJ2IkELAd4C+FMchaRmh\nLTDC/cET4PKVey2J5ZDdn69HqvT4eGOEkXmiH/mjYe06oMvCylTOFOM6MQCd0JwI\nnj6Q33NRW7JgMSnxSDDiwOB4D+Fy4ayeRbuWrpAmIW8RZNhwBM/kcUSFGUAa6ZI=\n=lB50\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 7c4b8d00de5119aed13053b269a5ba494fcba748\nparent 472edbf673a7bfdea859fe7de89f72de6164d8eb\nauthor derMart <derMart@users.noreply.github.com> 1704206038 +0100\ncommitter GitHub <noreply@github.com> 1704206038 +0100\n\nfix null pointer exception in Tracker.getName() / DNS name correctly shown in TC-Log output (#401)\n\n* fix null pointer exception in Tracker.getName() if private name member is null\r\n\r\n* fix dns name not correctly shown in TC-Log output"
+        }
+    },
+    "url": "https://api.github.com/repos/TrackerControl/tracker-control-android/commits/e72f9f19d2f3e8211c021112afe4b905e0da96c1",
+    "html_url": "https://github.com/TrackerControl/tracker-control-android/commit/e72f9f19d2f3e8211c021112afe4b905e0da96c1",
+    "comments_url": "https://api.github.com/repos/TrackerControl/tracker-control-android/commits/e72f9f19d2f3e8211c021112afe4b905e0da96c1/comments",
+    "author": {
+        "login": "derMart",
+        "id": 1069456,
+        "node_id": "MDQ6VXNlcjEwNjk0NTY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1069456?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/derMart",
+        "html_url": "https://github.com/derMart",
+        "followers_url": "https://api.github.com/users/derMart/followers",
+        "following_url": "https://api.github.com/users/derMart/following{/other_user}",
+        "gists_url": "https://api.github.com/users/derMart/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/derMart/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/derMart/subscriptions",
+        "organizations_url": "https://api.github.com/users/derMart/orgs",
+        "repos_url": "https://api.github.com/users/derMart/repos",
+        "events_url": "https://api.github.com/users/derMart/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/derMart/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "472edbf673a7bfdea859fe7de89f72de6164d8eb",
+            "url": "https://api.github.com/repos/TrackerControl/tracker-control-android/commits/472edbf673a7bfdea859fe7de89f72de6164d8eb",
+            "html_url": "https://github.com/TrackerControl/tracker-control-android/commit/472edbf673a7bfdea859fe7de89f72de6164d8eb"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 3,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "76d8e2761e72e7a60d2a4881b69fc335a6fdfd31",
+            "filename": "app/src/main/java/eu/faircode/netguard/ServiceSinkhole.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/TrackerControl/tracker-control-android/blob/e72f9f19d2f3e8211c021112afe4b905e0da96c1/app%2Fsrc%2Fmain%2Fjava%2Feu%2Ffaircode%2Fnetguard%2FServiceSinkhole.java",
+            "raw_url": "https://github.com/TrackerControl/tracker-control-android/raw/e72f9f19d2f3e8211c021112afe4b905e0da96c1/app%2Fsrc%2Fmain%2Fjava%2Feu%2Ffaircode%2Fnetguard%2FServiceSinkhole.java",
+            "contents_url": "https://api.github.com/repos/TrackerControl/tracker-control-android/contents/app%2Fsrc%2Fmain%2Fjava%2Feu%2Ffaircode%2Fnetguard%2FServiceSinkhole.java?ref=e72f9f19d2f3e8211c021112afe4b905e0da96c1",
+            "patch": "@@ -2176,7 +2176,7 @@ private boolean blockKnownTracker(String daddr, int uid) {\n                 uidToApp.put(uid, app);\n             }\n             assert tracker != null;\n-            Log.i(\"TC-Log\", app + \" \" + daddr + \" \" + ipToHost.get(daddr) + \" \" + tracker.getName());\n+            Log.i(\"TC-Log\", app + \" \" + daddr + \" \" + ipToHost.get(daddr).getOrExpired() + \" \" + tracker.getName());\n         } else {\n             if (tracker != NO_TRACKER) {\n                 TrackerBlocklist b = TrackerBlocklist.getInstance(ServiceSinkhole.this);"
+        },
+        {
+            "sha": "3cfaab02d8de9160d5de59aa180d7d340f533890",
+            "filename": "app/src/main/java/net/kollnig/missioncontrol/data/Tracker.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/TrackerControl/tracker-control-android/blob/e72f9f19d2f3e8211c021112afe4b905e0da96c1/app%2Fsrc%2Fmain%2Fjava%2Fnet%2Fkollnig%2Fmissioncontrol%2Fdata%2FTracker.java",
+            "raw_url": "https://github.com/TrackerControl/tracker-control-android/raw/e72f9f19d2f3e8211c021112afe4b905e0da96c1/app%2Fsrc%2Fmain%2Fjava%2Fnet%2Fkollnig%2Fmissioncontrol%2Fdata%2FTracker.java",
+            "contents_url": "https://api.github.com/repos/TrackerControl/tracker-control-android/contents/app%2Fsrc%2Fmain%2Fjava%2Fnet%2Fkollnig%2Fmissioncontrol%2Fdata%2FTracker.java?ref=e72f9f19d2f3e8211c021112afe4b905e0da96c1",
+            "patch": "@@ -71,10 +71,10 @@ public String toString() {\n      * @return Name of tracker company\n      */\n     public String getName() {\n-        if (name.equals(\"Alphabet\"))\n+        if (name != null && name.equals(\"Alphabet\"))\n             return \"Google\";\n \n-        if (name.equals(\"Adobe Systems\"))\n+        if (name != null && name.equals(\"Adobe Systems\"))\n             return \"Adobe\";\n \n         return name;"
+        }
+    ]
+}

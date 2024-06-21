@@ -1,0 +1,5 @@
+            public void run() {
+                player.teleport(ctfp.getTeam().getFlag().getLocation());
+                player.setGameMode(gm);
+                player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BELL, 1, 1);
+            }

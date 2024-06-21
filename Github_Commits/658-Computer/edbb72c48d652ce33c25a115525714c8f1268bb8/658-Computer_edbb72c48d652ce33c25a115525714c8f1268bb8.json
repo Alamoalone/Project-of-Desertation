@@ -1,0 +1,146 @@
+{
+    "sha": "edbb72c48d652ce33c25a115525714c8f1268bb8",
+    "node_id": "C_kwDOF22kQ9oAKGVkYmI3MmM0OGQ2NTJjZTMzYzI1YTExNTUyNTcxNGM4ZjEyNjhiYjg",
+    "commit": {
+        "author": {
+            "name": "Andrew Paterson",
+            "email": "andrew.ian.paterson@gmail.com",
+            "date": "2023-05-12T10:16:33Z"
+        },
+        "committer": {
+            "name": "Andrew Paterson",
+            "email": "andrew.ian.paterson@gmail.com",
+            "date": "2023-05-12T10:16:33Z"
+        },
+        "message": "Fixed null pointer exception when creating splitters.",
+        "tree": {
+            "sha": "d4d952a4eea04047715450f28f44c6938f55371a",
+            "url": "https://api.github.com/repos/andrewpaterson/658-Computer/git/trees/d4d952a4eea04047715450f28f44c6938f55371a"
+        },
+        "url": "https://api.github.com/repos/andrewpaterson/658-Computer/git/commits/edbb72c48d652ce33c25a115525714c8f1268bb8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/andrewpaterson/658-Computer/commits/edbb72c48d652ce33c25a115525714c8f1268bb8",
+    "html_url": "https://github.com/andrewpaterson/658-Computer/commit/edbb72c48d652ce33c25a115525714c8f1268bb8",
+    "comments_url": "https://api.github.com/repos/andrewpaterson/658-Computer/commits/edbb72c48d652ce33c25a115525714c8f1268bb8/comments",
+    "author": {
+        "login": "andrewpaterson",
+        "id": 769629,
+        "node_id": "MDQ6VXNlcjc2OTYyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/769629?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/andrewpaterson",
+        "html_url": "https://github.com/andrewpaterson",
+        "followers_url": "https://api.github.com/users/andrewpaterson/followers",
+        "following_url": "https://api.github.com/users/andrewpaterson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/andrewpaterson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/andrewpaterson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/andrewpaterson/subscriptions",
+        "organizations_url": "https://api.github.com/users/andrewpaterson/orgs",
+        "repos_url": "https://api.github.com/users/andrewpaterson/repos",
+        "events_url": "https://api.github.com/users/andrewpaterson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/andrewpaterson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "andrewpaterson",
+        "id": 769629,
+        "node_id": "MDQ6VXNlcjc2OTYyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/769629?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/andrewpaterson",
+        "html_url": "https://github.com/andrewpaterson",
+        "followers_url": "https://api.github.com/users/andrewpaterson/followers",
+        "following_url": "https://api.github.com/users/andrewpaterson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/andrewpaterson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/andrewpaterson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/andrewpaterson/subscriptions",
+        "organizations_url": "https://api.github.com/users/andrewpaterson/orgs",
+        "repos_url": "https://api.github.com/users/andrewpaterson/repos",
+        "events_url": "https://api.github.com/users/andrewpaterson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/andrewpaterson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "036579c38478b0afc2f23238e3d84280bea177b7",
+            "url": "https://api.github.com/repos/andrewpaterson/658-Computer/commits/036579c38478b0afc2f23238e3d84280bea177b7",
+            "html_url": "https://github.com/andrewpaterson/658-Computer/commit/036579c38478b0afc2f23238e3d84280bea177b7"
+        }
+    ],
+    "stats": {
+        "total": 32,
+        "additions": 13,
+        "deletions": 19
+    },
+    "files": [
+        {
+            "sha": "c1bdccb0ae04f04a65ff502452962079c40e7ec1",
+            "filename": "Logicim/src/net/logicim/data/wire/TraceData.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 8,
+            "changes": 13,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FTraceData.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FTraceData.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FTraceData.java?ref=edbb72c48d652ce33c25a115525714c8f1268bb8",
+            "patch": "@@ -2,8 +2,6 @@\n \n import net.logicim.common.SimulatorException;\n import net.logicim.common.type.Int2D;\n-import net.logicim.data.common.LongArrayData;\n-import net.logicim.data.common.LongData;\n import net.logicim.data.common.ViewData;\n import net.logicim.domain.CircuitSimulation;\n import net.logicim.ui.common.wire.TraceView;\n@@ -60,8 +58,7 @@ public TraceView createAndEnableTraceView(SubcircuitEditor subcircuitEditor)\n     return traceView;\n   }\n \n-  public void createAndConnectComponent(SubcircuitEditor subcircuitEditor,\n-                                        CircuitSimulation circuitSimulation,\n+  public void createAndConnectComponent(CircuitSimulation circuitSimulation,\n                                         TraceLoader traceLoader,\n                                         TraceView traceView)\n   {\n@@ -71,12 +68,12 @@ public void createAndConnectComponent(SubcircuitEditor subcircuitEditor,\n       throw new SimulatorException(\"Cannot find trace IDs for Circuit Simulation [%s].\", circuitSimulation.getDescription());\n     }\n \n-    WireDataHelper.wireConnect(subcircuitEditor,\n-                               circuitSimulation,\n+    WireDataHelper.wireConnect(\n+        circuitSimulation,\n                                traceLoader,\n                                traceView,\n-                               traceIDs,\n-                               selected);\n+                               traceIDs\n+    );\n \n   }\n }"
+        },
+        {
+            "sha": "3293c53fc77c2675e16a7b493a46320d24f81e1f",
+            "filename": "Logicim/src/net/logicim/data/wire/TunnelData.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 4,
+            "changes": 8,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FTunnelData.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FTunnelData.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FTunnelData.java?ref=edbb72c48d652ce33c25a115525714c8f1268bb8",
+            "patch": "@@ -51,12 +51,12 @@ public void createAndConnectComponent(SubcircuitEditor subcircuitEditor,\n       throw new SimulatorException(\"Cannot find trace IDs for Circuit Simulation [%s].\", circuitSimulation.getDescription());\n     }\n \n-    WireDataHelper.wireConnect(subcircuitEditor,\n-                               circuitSimulation,\n+    WireDataHelper.wireConnect(\n+        circuitSimulation,\n                                traceLoader,\n                                tunnelView,\n-                               traceIDs,\n-                               selected);\n+                               traceIDs\n+    );\n   }\n \n   @Override"
+        },
+        {
+            "sha": "bce2616c3ae4a60e962db4d51c977ecb302f73b3",
+            "filename": "Logicim/src/net/logicim/data/wire/WireDataHelper.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 5,
+            "changes": 7,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FWireDataHelper.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FWireDataHelper.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdata%2Fwire%2FWireDataHelper.java?ref=edbb72c48d652ce33c25a115525714c8f1268bb8",
+            "patch": "@@ -3,19 +3,16 @@\n import net.logicim.domain.CircuitSimulation;\n import net.logicim.domain.common.wire.Trace;\n import net.logicim.ui.common.wire.WireView;\n-import net.logicim.ui.simulation.SubcircuitEditor;\n \n import java.util.ArrayList;\n import java.util.List;\n \n public abstract class WireDataHelper\n {\n-  protected static void wireConnect(SubcircuitEditor subcircuitEditor,\n-                                    CircuitSimulation simulation,\n+  protected static void wireConnect(CircuitSimulation simulation,\n                                     TraceLoader traceLoader,\n                                     WireView wireView,\n-                                    long[] traceIds,\n-                                    boolean selected)\n+                                    long[] traceIds)\n   {\n     List<Trace> traces = new ArrayList<>(traceIds.length);\n     for (long id : traceIds)"
+        },
+        {
+            "sha": "5eddf8477b4c576ad3a7d92b60d570a4be0e9e12",
+            "filename": "Logicim/src/net/logicim/domain/passive/wire/Splitter.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdomain%2Fpassive%2Fwire%2FSplitter.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdomain%2Fpassive%2Fwire%2FSplitter.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fdomain%2Fpassive%2Fwire%2FSplitter.java?ref=edbb72c48d652ce33c25a115525714c8f1268bb8",
+            "patch": "@@ -19,7 +19,7 @@ public Splitter(Circuit circuit, String name, List<String> startPortNames, List<\n   {\n     super(circuit, name);\n \n-    startPorts = new ArrayList<>(startPorts.size());\n+    startPorts = new ArrayList<>(startPortNames.size());\n     for (String portName : startPortNames)\n     {\n       startPorts.add(new TracePort(portName, this));"
+        },
+        {
+            "sha": "733e2ec7317936c92c4d3029ee599b31b60c36a6",
+            "filename": "Logicim/src/net/logicim/ui/simulation/SubcircuitEditor.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2FSubcircuitEditor.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/edbb72c48d652ce33c25a115525714c8f1268bb8/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2FSubcircuitEditor.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2FSubcircuitEditor.java?ref=edbb72c48d652ce33c25a115525714c8f1268bb8",
+            "patch": "@@ -341,7 +341,7 @@ else if (view instanceof TraceView)\n       {\n         TraceView traceView = (TraceView) view;\n         TraceData traceData = (TraceData) data;\n-        traceData.createAndConnectComponent(this, circuitSimulation, traceLoader, traceView);\n+        traceData.createAndConnectComponent(circuitSimulation, traceLoader, traceView);\n       }\n       else\n       {"
+        }
+    ]
+}

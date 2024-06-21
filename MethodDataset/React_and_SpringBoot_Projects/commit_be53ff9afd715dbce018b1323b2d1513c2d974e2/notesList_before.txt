@@ -1,0 +1,14 @@
+    public List<Notes> notesList() {
+        List<Notes> notesList = notesRepository.findAll();
+
+//        notesList.stream()
+//                .forEach(ele -> ele.setTitle(encryptionUtil.decrypt(ele.getTitle())));
+//
+//        notesList.forEach(System.out::println);
+
+        Notes notes = notesList.get(0);
+        System.out.println(encryptionUtil.decrypt(notes.getTitle() + " " + encryptionUtil.decrypt(notes.getDescription())));
+
+        List<Notes> collected = null;
+        return collected;
+    }

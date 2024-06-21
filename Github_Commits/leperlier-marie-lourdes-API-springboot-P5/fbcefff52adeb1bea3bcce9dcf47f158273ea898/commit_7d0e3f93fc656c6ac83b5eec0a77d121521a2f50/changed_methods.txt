@@ -1,0 +1,3 @@
+getOneMedicalRecord(String id)
+getAllMedicalRecords()
+updateOneMedicalRecordById(MedicalRecord medicalRecord, String id)

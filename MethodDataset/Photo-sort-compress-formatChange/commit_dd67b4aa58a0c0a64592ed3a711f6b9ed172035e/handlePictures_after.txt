@@ -1,0 +1,10 @@
+    public boolean handlePictures() {
+        files.forEach(file -> {
+            FileFormat fileFormat = new FileFormat(file.getPath());
+            String format = fileFormat.getFileFormat();
+
+            String fileName = getFileName(file.getName());
+            cutImageByPixels(changeFormat, file, format, fileName);
+        });
+        return true;
+    }

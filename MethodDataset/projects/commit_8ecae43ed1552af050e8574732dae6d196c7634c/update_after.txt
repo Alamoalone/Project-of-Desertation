@@ -1,0 +1,4 @@
+    private static void update(ImplicitMethods _converter, ExecTypeFunction _fct, String _formatted) {
+        _converter.getConverter().add(_fct);
+        _converter.setOwnerClass(new ExecFormattedRootBlock(_fct.getType(), _formatted));
+    }

@@ -1,0 +1,19 @@
+	public DeclaratorNode interpret(Abstract_declaratorContext node) throws Exception
+	{
+		// Get pointer(s)
+		if (node.pointer() != null)
+		{
+			for (Type_qualifier_listContext qualList : node.pointer().type_qualifier_list())
+			{
+				List<String> qualifiers = new LinkedList<String>();
+				for (Type_qualifierContext qualifier : qualList.type_qualifier())
+					qualifiers.add(qualifier.getText());
+				pointerQualifiers.add(new HashSet<String>(qualifiers));
+			}
+		}
+		
+		if (node.direct_abstract_declarator() != null)
+			directDeclarator = new DirectDeclaratorNode(this, scopeOverride).interpret(node.direct_abstract_declarator());
+		
+		return this;
+	}

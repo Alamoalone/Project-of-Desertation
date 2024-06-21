@@ -1,0 +1,11 @@
+	protected void doCanvasCommand(Canvas cvs, Block block) {
+		try {
+			block.push(
+					cvs.getCursorListener().getMoveHistory().stream()
+							.map(CanvasCursorListener.MoveInfo::toDict)
+							.collect(new ListCollector())
+			);
+		} catch (NullPointerException e) {
+			throw new ValueError(e.getMessage());
+		}
+	}

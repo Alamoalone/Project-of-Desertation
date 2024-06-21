@@ -1,0 +1,8 @@
+@@ -47,7 +47,6 @@ public void displayAutonomousRoutines(List<AutonomousRoutine> routines)
+             
+             setCurrentAutonomousRoutine(autoChooser.getSelected());
+         }
+-        displayAutonomousRoutines("autonomous", routines);
+     }
+     public void setCurrentAutonomousRoutine(AutonomousRoutine routine)
+     {

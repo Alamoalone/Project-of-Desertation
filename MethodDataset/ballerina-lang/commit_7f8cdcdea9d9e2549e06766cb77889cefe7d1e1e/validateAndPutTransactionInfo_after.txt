@@ -1,0 +1,6 @@
+    private void validateAndPutTransactionInfo(ByteBuffer transactionIdBytes, Object infoRecord) {
+        if (infoRecord == null) {
+            return;
+        }
+        transactionResourceManager.transactionInfoMap.put(transactionIdBytes, infoRecord);
+    }

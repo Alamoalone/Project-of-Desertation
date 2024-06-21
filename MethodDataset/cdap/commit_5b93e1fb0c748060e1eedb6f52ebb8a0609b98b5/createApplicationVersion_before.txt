@@ -1,0 +1,43 @@
+  public int createApplicationVersion(ApplicationId id, ApplicationMeta appMeta)
+      throws IOException, ConflictException {
+    String parentVersion = Optional.ofNullable(appMeta.getChange())
+        .map(ChangeDetail::getParentVersion).orElse(null);
+
+    boolean markAsLatest = appMeta.getIsLatest();
+    // Fetch the latest version
+    ApplicationMeta latest = getLatest(id.getAppReference());
+    String latestVersion = latest == null ? null : latest.getSpec().getAppVersion();
+    if (!deployAppAllowed(parentVersion, latest)) {
+      throw new ConflictException(
+          String.format("Cannot deploy the application because parent version '%s' does not "
+              + "match the latest version '%s'.", parentVersion, latestVersion));
+    }
+
+    // if we are not going to mark the new version as latest, then we should leave the current
+    // latest version as latest.
+    // also, when latest is null, i.e. the app does not exist, then it's not an edit
+    if (latest != null) {
+      List<Field<?>> fields = getApplicationPrimaryKeys(id.getNamespace(), id.getApplication(),
+          latest.getSpec().getAppVersion());
+      fields.add(Fields.booleanField(StoreDefinition.AppMetadataStore.LATEST_FIELD, !markAsLatest));
+
+      // Assign a creation time if it's null for the previous latest app version
+      // It is for the pre-6.8 application, we mark it as past version (like created 1s ago)
+      // So it's sortable on creation time, especially when UI displays the version history for a pipeline
+      if (latest.getChange() == null) {
+        // appMeta.getChange() should never be null in edit case
+        fields.add(Fields.longField(StoreDefinition.AppMetadataStore.CREATION_TIME_FIELD,
+            appMeta.getChange().getCreationTimeMillis() - 1000));
+        getApplicationSpecificationTable().upsert(fields);
+      } else if (markAsLatest) {
+        getApplicationSpecificationTable().upsert(fields);
+      }
+    }
+
+    // Add a new version of the app
+    writeApplication(id.getNamespace(), id.getApplication(), id.getVersion(), appMeta.getSpec(),
+        appMeta.getChange(),
+        appMeta.getSourceControlMeta(), markAsLatest);
+    return getApplicationEditNumber(
+        new ApplicationReference(id.getNamespaceId(), id.getApplication()));
+  }

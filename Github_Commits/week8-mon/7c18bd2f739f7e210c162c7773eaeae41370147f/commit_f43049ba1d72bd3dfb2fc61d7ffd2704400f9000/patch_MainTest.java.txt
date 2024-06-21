@@ -1,0 +1,10 @@
+@@ -48,4 +48,9 @@ public void testIsPrimeHighNumber(){
+         //Assert
+         assertTrue(output);
+     }
++
++    @Test(expected = NullPointerException.class) 
++    public void nullPointerSpecial2023() {
++        Main.Special(2023);
++    }
+ }

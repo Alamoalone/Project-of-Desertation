@@ -1,0 +1,6 @@
+UpdateProduct_InvalidInput_ReturnsBadRequest()
+GetProductById_ValidId_ReturnsOk()
+CreateProduct_InvalidInput_ReturnsBadRequest()
+GetProducts_ReturnsOk()
+UpdateProduct_ValidInput_ReturnsOk()
+CreateProduct_ValidInput_ReturnsCreated()

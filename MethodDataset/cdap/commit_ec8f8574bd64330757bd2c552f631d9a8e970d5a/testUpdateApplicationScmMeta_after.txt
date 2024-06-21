@@ -1,0 +1,18 @@
+  public void testUpdateApplicationScmMeta()
+      throws IOException, ConflictException {
+    // Add an application with a scm meta field
+    ApplicationId appId = new ApplicationId("account1", "application1");
+    ApplicationMeta appMeta = new ApplicationMeta("application1", Specifications.from(new FooApp()),
+        new ChangeDetail(null, null, null,
+            System.currentTimeMillis()), null);
+
+    store.addLatestApplication(appId, appMeta);
+    Map<ApplicationId, SourceControlMeta> updateRequests = new HashMap<>();
+    updateRequests.put(appId, new SourceControlMeta("updated-file-hash"));
+    store.updateApplicationSourceControlMeta(updateRequests);
+
+    ApplicationMeta storedMeta = store.getApplicationMetadata(appId);
+    Assert.assertNotNull(storedMeta);
+    Assert.assertNotNull(storedMeta.getSourceControlMeta());
+    Assert.assertEquals("updated-file-hash", storedMeta.getSourceControlMeta().getFileHash());
+  }

@@ -1,0 +1,9 @@
+@@ -123,7 +123,7 @@ public FormValidation doCheckAssignedLabelString(@QueryParameter String value) {
+ 
+         Label l = Jenkins.getInstance().getLabel(value);
+ 
+-        if (l.isEmpty()) {
++        if (l != null && l.isEmpty()) {
+             for (LabelAtom a : l.listAtoms()) {
+                 if (a.isEmpty()) {
+                     LabelAtom nearest = LabelAtom.findNearest(a.getName());

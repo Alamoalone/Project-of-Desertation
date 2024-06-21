@@ -1,0 +1,11 @@
+    private static ExecOperationNode quickOp(QuickOperation _anaNode, Forwards _forwards) {
+        ClassMethodIdMemberIdTypeFct fct_ = _anaNode.getFct();
+        ExecTypeFunction pair_ = FetchMemberUtil.fetchFunctionOpPair(fct_, _forwards);
+        AnaOperatorContent cont_ = new AnaOperatorContent();
+        cont_.setOper(quickOperator(_anaNode));
+        cont_.setOpOffset(_anaNode.getOpOffset());
+        if (pair_.getFct() != null) {
+            return new ExecExplicitOperatorOperation(new ExecOperationContent(_anaNode.getContent()),false, new ExecStaticFctContent(new ExecStaticFctCommonContent("","",-1),new ExecStaticEltContent(fct_, _forwards)), pair_, new ExecArrContent(false),FetchMemberUtil.fetchImplicits(_anaNode.getConv(), _forwards), new ExecOperatorContent(cont_));
+        }
+        return new ExecQuickOperation(new ExecOperationContent(_anaNode.getContent()), FetchMemberUtil.fetchImplicits(_anaNode.getConv(), _forwards), new ExecOperatorContent(cont_), new ExecOperDir(_anaNode.getSymbol()));
+    }

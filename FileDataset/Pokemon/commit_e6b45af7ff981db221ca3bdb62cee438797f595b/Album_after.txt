@@ -1,0 +1,25 @@
+
+
+    public int getCardOfName (String name, boolean firstCard) {
+        if (firstCard) {
+            return cards.indexOf(new Card(name));
+        } else {
+            return cards.lastIndexOf(new Card(name));
+        }
+
+    }
+
+
+
+    public void removeCards (int startIndex, int endIndex) {
+        cards.subList(startIndex, endIndex).clear();
+    }
+
+    public int getCardOfHP (int hp, boolean firstCard) {
+        if (firstCard) {
+            return cards.indexOf(new Card(hp));
+        } else {
+            return cards.lastIndexOf(new Card(hp));
+        }
+    }
+

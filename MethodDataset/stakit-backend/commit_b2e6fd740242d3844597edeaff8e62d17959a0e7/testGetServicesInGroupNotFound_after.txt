@@ -1,0 +1,10 @@
+    public void testGetServicesInGroupNotFound() {
+        var input = UUID.randomUUID();
+
+        Mockito.when(groupService.getServicesInGroup(input)).thenReturn(Optional.empty());
+
+        var expectedException = assertThrows(ResourceNotFoundException.class, () -> groupManagementController.v1GroupsUuidServicesGet(input));
+        assertNotNull(expectedException);
+        assertEquals("Group with uuid %s not found".formatted(input), expectedException.getMessage());
+        assertEquals(HttpStatus.NOT_FOUND, expectedException.getHttpStatus());
+    }

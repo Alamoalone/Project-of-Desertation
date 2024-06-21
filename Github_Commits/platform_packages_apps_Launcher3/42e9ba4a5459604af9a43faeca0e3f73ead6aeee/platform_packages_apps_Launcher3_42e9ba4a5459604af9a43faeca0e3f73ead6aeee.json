@@ -1,0 +1,98 @@
+{
+    "sha": "42e9ba4a5459604af9a43faeca0e3f73ead6aeee",
+    "node_id": "C_kwDOHul7ytoAKDQyZTliYTRhNTQ1OTYwNGFmOWE0M2ZhZWNhMGUzZjczZWFkNmFlZWU",
+    "commit": {
+        "author": {
+            "name": "Harsh",
+            "email": "iamhp2k@gmail.com",
+            "date": "2023-03-01T19:22:29Z"
+        },
+        "committer": {
+            "name": "Mohammad Hasan Keramat J",
+            "email": "ikeramat@protonmail.com",
+            "date": "2023-05-16T17:19:46Z"
+        },
+        "message": "Launcher3: PageIndicatorDots: null pointer Exception\n\nSigned-off-by: Mohammad Hasan Keramat J <ikeramat@protonmail.com>",
+        "tree": {
+            "sha": "aef7aba14001ef6a74d33195d678bb11971b9709",
+            "url": "https://api.github.com/repos/LMODroid/platform_packages_apps_Launcher3/git/trees/aef7aba14001ef6a74d33195d678bb11971b9709"
+        },
+        "url": "https://api.github.com/repos/LMODroid/platform_packages_apps_Launcher3/git/commits/42e9ba4a5459604af9a43faeca0e3f73ead6aeee",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/LMODroid/platform_packages_apps_Launcher3/commits/42e9ba4a5459604af9a43faeca0e3f73ead6aeee",
+    "html_url": "https://github.com/LMODroid/platform_packages_apps_Launcher3/commit/42e9ba4a5459604af9a43faeca0e3f73ead6aeee",
+    "comments_url": "https://api.github.com/repos/LMODroid/platform_packages_apps_Launcher3/commits/42e9ba4a5459604af9a43faeca0e3f73ead6aeee/comments",
+    "author": {
+        "login": "hpnightowl",
+        "id": 48650798,
+        "node_id": "MDQ6VXNlcjQ4NjUwNzk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48650798?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hpnightowl",
+        "html_url": "https://github.com/hpnightowl",
+        "followers_url": "https://api.github.com/users/hpnightowl/followers",
+        "following_url": "https://api.github.com/users/hpnightowl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hpnightowl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hpnightowl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hpnightowl/subscriptions",
+        "organizations_url": "https://api.github.com/users/hpnightowl/orgs",
+        "repos_url": "https://api.github.com/users/hpnightowl/repos",
+        "events_url": "https://api.github.com/users/hpnightowl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hpnightowl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "iKeramat",
+        "id": 60795135,
+        "node_id": "MDQ6VXNlcjYwNzk1MTM1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/60795135?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iKeramat",
+        "html_url": "https://github.com/iKeramat",
+        "followers_url": "https://api.github.com/users/iKeramat/followers",
+        "following_url": "https://api.github.com/users/iKeramat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iKeramat/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iKeramat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iKeramat/subscriptions",
+        "organizations_url": "https://api.github.com/users/iKeramat/orgs",
+        "repos_url": "https://api.github.com/users/iKeramat/repos",
+        "events_url": "https://api.github.com/users/iKeramat/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iKeramat/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "dcaf9902bece2dd6d45063f054b9125a3bed37c4",
+            "url": "https://api.github.com/repos/LMODroid/platform_packages_apps_Launcher3/commits/dcaf9902bece2dd6d45063f054b9125a3bed37c4",
+            "html_url": "https://github.com/LMODroid/platform_packages_apps_Launcher3/commit/dcaf9902bece2dd6d45063f054b9125a3bed37c4"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "369ac6851039b7842325a63d553ce42c7c2a043e",
+            "filename": "src/com/android/launcher3/pageindicators/PageIndicatorDots.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/LMODroid/platform_packages_apps_Launcher3/blob/42e9ba4a5459604af9a43faeca0e3f73ead6aeee/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "raw_url": "https://github.com/LMODroid/platform_packages_apps_Launcher3/raw/42e9ba4a5459604af9a43faeca0e3f73ead6aeee/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "contents_url": "https://api.github.com/repos/LMODroid/platform_packages_apps_Launcher3/contents/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java?ref=42e9ba4a5459604af9a43faeca0e3f73ead6aeee",
+            "patch": "@@ -173,6 +173,10 @@ public void setScroll(int currentScroll, int totalScroll) {\n         mTotalScroll = totalScroll;\n \n         int scrollPerPage = totalScroll / (mNumPages - 1);\n+        if (scrollPerPage == 0) {\n+            return;\n+        }\n+\n         int pageToLeft = currentScroll / scrollPerPage;\n         int pageToLeftScroll = pageToLeft * scrollPerPage;\n         int pageToRightScroll = pageToLeftScroll + scrollPerPage;"
+        }
+    ]
+}

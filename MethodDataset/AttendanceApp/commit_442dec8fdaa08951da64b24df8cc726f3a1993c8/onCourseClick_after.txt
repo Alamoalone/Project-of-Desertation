@@ -1,0 +1,6 @@
+    public void onCourseClick(Course course) {
+        Log.i("INFO", "Course clicked. locationObtained: " + locationObtained);
+        if (!locationObtained) {
+            listenForLocation(course);
+        }
+    }

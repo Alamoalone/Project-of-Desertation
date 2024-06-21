@@ -1,0 +1,3 @@
+    public BankAccount getBankAccount(){
+        return bankAccount;
+    }

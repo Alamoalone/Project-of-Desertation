@@ -1,0 +1,32 @@
+    private static void createHvdcLine(Network network, HvdcCreationParameters creationParameters) {
+        HvdcLine hvdcLine = network.newHvdcLine()
+                .setMaxP(creationParameters.getMaxP())
+                .setR(creationParameters.getR())
+                .setNominalV(creationParameters.getNominalV())
+                .setId(creationParameters.getId())
+                .setEnsureIdUnicity(true)
+                .setConverterStationId1(creationParameters.getVscCreationParameters(HvdcLine.Side.ONE).getId())
+                .setConverterStationId2(creationParameters.getVscCreationParameters(HvdcLine.Side.TWO).getId())
+                .setConvertersMode(HvdcLine.ConvertersMode.SIDE_1_RECTIFIER_SIDE_2_INVERTER)
+                .setActivePowerSetpoint(0)
+                .add();
+        // Check if equivalent line is connected before connecting the new HVDC line
+        Line equivalentAcLine = getLineOrThrow(network, creationParameters.getEquivalentAcLineId());
+        if (equivalentAcLine.getTerminal1().isConnected()) {
+            hvdcLine.getConverterStation1().getTerminal().connect();
+            equivalentAcLine.getTerminal1().disconnect();
+        }
+        if (equivalentAcLine.getTerminal2().isConnected()) {
+            hvdcLine.getConverterStation2().getTerminal().connect();
+            equivalentAcLine.getTerminal2().disconnect();
+        }
+        // Create angle droop active power control extension
+        if (creationParameters.getAngleDroopActivePowerControlParameters() != null) {
+            hvdcLine.newExtension(HvdcAngleDroopActivePowerControlAdder.class)
+                    .withP0(creationParameters.getAngleDroopActivePowerControlParameters().getP0())
+                    .withDroop(creationParameters.getAngleDroopActivePowerControlParameters().getDroop())
+                    .withEnabled(true)
+                    .add();
+        }
+        // WARNING : check if it is also necessary to disconnect the two tie-lines (which are currently not in the HvdcCreationParameters)
+    }

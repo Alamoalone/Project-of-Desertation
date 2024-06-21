@@ -1,0 +1,8 @@
+	public static Model queryRepository(final Repository repo, final String query) throws TripleStoreException {
+		try {
+			return Repositories.graphQuery(repo, query, r -> QueryResults.asModel(r));
+		} catch (Exception ex) {
+			throw new TripleStoreException("Unable to query repository!", ex);
+		}
+	}
+

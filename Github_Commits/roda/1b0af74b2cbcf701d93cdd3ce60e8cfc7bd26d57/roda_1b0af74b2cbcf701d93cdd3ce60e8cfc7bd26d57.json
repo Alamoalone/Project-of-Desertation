@@ -1,0 +1,98 @@
+{
+    "sha": "1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57",
+    "node_id": "C_kwDOAED-itoAKDFiMGFmNzRiMmNiY2Y3MDFkOTNjZGQzY2U2MGU4Y2ZjN2JkMjZkNTc",
+    "commit": {
+        "author": {
+            "name": "carlosjepard",
+            "email": "f6carlos.afonso@gmail.com",
+            "date": "2023-09-07T10:36:12Z"
+        },
+        "committer": {
+            "name": "Miguel Guimarães",
+            "email": "mguimaraes@keep.pt",
+            "date": "2023-09-07T11:22:24Z"
+        },
+        "message": "Fixed null pointer exception when creating a represention information",
+        "tree": {
+            "sha": "be62eb1520a655a6e0de4ed41daba819dad96239",
+            "url": "https://api.github.com/repos/keeps/roda/git/trees/be62eb1520a655a6e0de4ed41daba819dad96239"
+        },
+        "url": "https://api.github.com/repos/keeps/roda/git/commits/1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/keeps/roda/commits/1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57",
+    "html_url": "https://github.com/keeps/roda/commit/1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57",
+    "comments_url": "https://api.github.com/repos/keeps/roda/commits/1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57/comments",
+    "author": {
+        "login": "carlosjepard",
+        "id": 50378106,
+        "node_id": "MDQ6VXNlcjUwMzc4MTA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50378106?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/carlosjepard",
+        "html_url": "https://github.com/carlosjepard",
+        "followers_url": "https://api.github.com/users/carlosjepard/followers",
+        "following_url": "https://api.github.com/users/carlosjepard/following{/other_user}",
+        "gists_url": "https://api.github.com/users/carlosjepard/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/carlosjepard/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/carlosjepard/subscriptions",
+        "organizations_url": "https://api.github.com/users/carlosjepard/orgs",
+        "repos_url": "https://api.github.com/users/carlosjepard/repos",
+        "events_url": "https://api.github.com/users/carlosjepard/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/carlosjepard/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "hmiguim",
+        "id": 1252710,
+        "node_id": "MDQ6VXNlcjEyNTI3MTA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1252710?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hmiguim",
+        "html_url": "https://github.com/hmiguim",
+        "followers_url": "https://api.github.com/users/hmiguim/followers",
+        "following_url": "https://api.github.com/users/hmiguim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hmiguim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hmiguim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hmiguim/subscriptions",
+        "organizations_url": "https://api.github.com/users/hmiguim/orgs",
+        "repos_url": "https://api.github.com/users/hmiguim/repos",
+        "events_url": "https://api.github.com/users/hmiguim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hmiguim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0f254b02be54caba7972e964fc146ed590974b00",
+            "url": "https://api.github.com/repos/keeps/roda/commits/0f254b02be54caba7972e964fc146ed590974b00",
+            "html_url": "https://github.com/keeps/roda/commit/0f254b02be54caba7972e964fc146ed590974b00"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 3,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "5f15bb6c999d78f619978746a23c5c8cca7453f9",
+            "filename": "roda-ui/roda-wui/src/main/java/org/roda/wui/client/planning/ShowRepresentationInformation.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 2,
+            "changes": 5,
+            "blob_url": "https://github.com/keeps/roda/blob/1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57/roda-ui%2Froda-wui%2Fsrc%2Fmain%2Fjava%2Forg%2Froda%2Fwui%2Fclient%2Fplanning%2FShowRepresentationInformation.java",
+            "raw_url": "https://github.com/keeps/roda/raw/1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57/roda-ui%2Froda-wui%2Fsrc%2Fmain%2Fjava%2Forg%2Froda%2Fwui%2Fclient%2Fplanning%2FShowRepresentationInformation.java",
+            "contents_url": "https://api.github.com/repos/keeps/roda/contents/roda-ui%2Froda-wui%2Fsrc%2Fmain%2Fjava%2Forg%2Froda%2Fwui%2Fclient%2Fplanning%2FShowRepresentationInformation.java?ref=1b0af74b2cbcf701d93cdd3ce60e8cfc7bd26d57",
+            "patch": "@@ -60,11 +60,11 @@\n import com.google.gwt.event.dom.client.ClickEvent;\n import com.google.gwt.event.dom.client.ClickHandler;\n import com.google.gwt.i18n.client.LocaleInfo;\n+import com.google.gwt.safehtml.shared.SafeHtmlUtils;\n import com.google.gwt.uibinder.client.UiBinder;\n import com.google.gwt.uibinder.client.UiField;\n import com.google.gwt.user.client.rpc.AsyncCallback;\n import com.google.gwt.user.client.ui.Anchor;\n-import com.google.gwt.safehtml.shared.SafeHtmlUtils;\n import com.google.gwt.user.client.ui.Composite;\n import com.google.gwt.user.client.ui.FlowPanel;\n import com.google.gwt.user.client.ui.HTML;\n@@ -197,7 +197,8 @@ public void initElements() {\n       dateUpdated.setText(messages.dateUpdated(Humanize.formatDateTime(ri.getUpdatedOn()), ri.getUpdatedBy()));\n     }\n \n-    representationInformationDescriptionValue.setHTML(SafeHtmlUtils.fromString(ri.getDescription()));\n+    String description = (ri.getDescription() == null) ? \"\" : ri.getDescription();\n+    representationInformationDescriptionValue.setHTML(SafeHtmlUtils.fromString(description));\n     representationInformationDescriptionKey.setVisible(StringUtils.isNotBlank(ri.getDescription()));\n \n     representationInformationFamilyKey.setVisible(StringUtils.isNotBlank(ri.getFamily()));"
+        }
+    ]
+}

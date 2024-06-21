@@ -1,0 +1,98 @@
+{
+    "sha": "1f99216d37ebc134dd8f5bb6343083a990686a56",
+    "node_id": "C_kwDOEMUoFdoAKDFmOTkyMTZkMzdlYmMxMzRkZDhmNWJiNjM0MzA4M2E5OTA2ODZhNTY",
+    "commit": {
+        "author": {
+            "name": "Manish Kumar",
+            "email": "110275771+code4uuuu@users.noreply.github.com",
+            "date": "2023-10-16T11:14:43Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-10-16T11:14:43Z"
+        },
+        "message": "[MNT-23933] Fixed Null Pointer Exception (#2253)",
+        "tree": {
+            "sha": "829c24fa43f54713abb12735b1dedce3881d7368",
+            "url": "https://api.github.com/repos/Alfresco/alfresco-community-repo/git/trees/829c24fa43f54713abb12735b1dedce3881d7368"
+        },
+        "url": "https://api.github.com/repos/Alfresco/alfresco-community-repo/git/commits/1f99216d37ebc134dd8f5bb6343083a990686a56",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlLRsjCRBK7hj4Ov3rIwAAM9kIAC1TaybIlDCQCU6Lp6p3wGh9\nfRN3fSkhtJGixpnp8DBggmPUPPhJYmPh2NSHJ10NvzsT0292r8TKDOzJVfc9spGh\nLfCkoz1r4fGJYUbTxCs0qlCz89U1rfFWYruaTHV+O+W9aKMyEnMDRWNpyAEFPDIw\noTU1vxepHTSo20eSGHaZs4xE1cr/VSVyHOLHmUCsfOjMVMxzVCho8DQlUAR8WNXg\n7Ot3fci1S7Dxpt7X+rml+jN0Qqk35RoBzNMYiFJOgwy7veE0oIaABDPiRguJg5e6\nLZuyC94z4NkuHXYAcGmoo4h2xTUEeYVj7rju98ulDVyaYoKnx1xYR4qenOgcONI=\n=oY2V\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 829c24fa43f54713abb12735b1dedce3881d7368\nparent 3c60415ea0fbecd89fe7f2e81ed2543418406a88\nauthor Manish Kumar <110275771+code4uuuu@users.noreply.github.com> 1697454883 +0530\ncommitter GitHub <noreply@github.com> 1697454883 +0530\n\n[MNT-23933] Fixed Null Pointer Exception (#2253)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/Alfresco/alfresco-community-repo/commits/1f99216d37ebc134dd8f5bb6343083a990686a56",
+    "html_url": "https://github.com/Alfresco/alfresco-community-repo/commit/1f99216d37ebc134dd8f5bb6343083a990686a56",
+    "comments_url": "https://api.github.com/repos/Alfresco/alfresco-community-repo/commits/1f99216d37ebc134dd8f5bb6343083a990686a56/comments",
+    "author": {
+        "login": "code4uuuu",
+        "id": 110275771,
+        "node_id": "U_kgDOBpKsuw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/110275771?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/code4uuuu",
+        "html_url": "https://github.com/code4uuuu",
+        "followers_url": "https://api.github.com/users/code4uuuu/followers",
+        "following_url": "https://api.github.com/users/code4uuuu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/code4uuuu/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/code4uuuu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/code4uuuu/subscriptions",
+        "organizations_url": "https://api.github.com/users/code4uuuu/orgs",
+        "repos_url": "https://api.github.com/users/code4uuuu/repos",
+        "events_url": "https://api.github.com/users/code4uuuu/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/code4uuuu/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3c60415ea0fbecd89fe7f2e81ed2543418406a88",
+            "url": "https://api.github.com/repos/Alfresco/alfresco-community-repo/commits/3c60415ea0fbecd89fe7f2e81ed2543418406a88",
+            "html_url": "https://github.com/Alfresco/alfresco-community-repo/commit/3c60415ea0fbecd89fe7f2e81ed2543418406a88"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "e9859ea0bd829b89e344f7384730ebabc4a3816b",
+            "filename": "amps/ags/rm-community/rm-community-repo/source/java/org/alfresco/module/org_alfresco_module_rm/email/RFC822MetadataExtracter.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Alfresco/alfresco-community-repo/blob/1f99216d37ebc134dd8f5bb6343083a990686a56/amps%2Fags%2Frm-community%2Frm-community-repo%2Fsource%2Fjava%2Forg%2Falfresco%2Fmodule%2Forg_alfresco_module_rm%2Femail%2FRFC822MetadataExtracter.java",
+            "raw_url": "https://github.com/Alfresco/alfresco-community-repo/raw/1f99216d37ebc134dd8f5bb6343083a990686a56/amps%2Fags%2Frm-community%2Frm-community-repo%2Fsource%2Fjava%2Forg%2Falfresco%2Fmodule%2Forg_alfresco_module_rm%2Femail%2FRFC822MetadataExtracter.java",
+            "contents_url": "https://api.github.com/repos/Alfresco/alfresco-community-repo/contents/amps%2Fags%2Frm-community%2Frm-community-repo%2Fsource%2Fjava%2Forg%2Falfresco%2Fmodule%2Forg_alfresco_module_rm%2Femail%2FRFC822MetadataExtracter.java?ref=1f99216d37ebc134dd8f5bb6343083a990686a56",
+            "patch": "@@ -61,6 +61,7 @@ public class RFC822MetadataExtracter extends org.alfresco.repo.content.metadata.\n     public void setNodeService(NodeService nodeService)\n     {\n         this.nodeService = nodeService;\n+        super.setNodeService(nodeService);\n     }\n \n     /**"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+    private void broadcastSelectedMessage(OfflinePlayer player) {
+        if (plugin.getConfig().getString("lucky-player-real-name").isEmpty()) {
+            return;
+        }
+        String lang = plugin.getConfig().getString("lang.broadcast-selected-player").replaceAll("%player%", player.getName());
+        Bukkit.broadcastMessage(ConfigUtil.color(lang));
+    }

@@ -1,0 +1,42 @@
+@@ -18,6 +18,8 @@
+ 
+ import java.util.ArrayList;
+ 
++import androidx.annotation.Nullable;
++
+ /**
+  * View holder for {@link com.cube.storm.ui.quiz.model.quiz.ImageQuizItem} in the adapter
+  *
+@@ -124,15 +126,17 @@ private void selectAnswer(View answerLayout, boolean selectAnswer)
+ 
+ 		// Set image label style and its background
+ 		TextView textView = answerLayout.findViewById(R.id.label);
++		CharSequence labelText = null;
+ 		if (textView != null)
+ 		{
+ 			textView.setTextAppearance(answerLayout.getContext(),
+ 				selectAnswer ? R.style.QuizImageLabel_Selected : R.style.QuizImageLabel_Unselected);
+ 			textView.setBackgroundResource(selectAnswer ? R.drawable.quiz_image_label_selected_border : 0);
++			labelText = textView.getText();
+ 		}
+ 
+ 		// Update the content description based on the selected answer and label text
+-		updateAnswerContentDescription(answerLayout, textView.getText(), selectAnswer);
++		updateAnswerContentDescription(answerLayout, labelText, selectAnswer);
+ 	}
+ 	
+ 	/**
+@@ -141,8 +145,12 @@ private void selectAnswer(View answerLayout, boolean selectAnswer)
+ 	 * @param baseText the base label text of the view
+ 	 * @param selectAnswer if answer is selected or unselected
+ 	 */
+-	protected void updateAnswerContentDescription(View answerLayout, CharSequence baseText, boolean selectAnswer)
++	protected void updateAnswerContentDescription(View answerLayout, @Nullable CharSequence baseText, boolean selectAnswer)
+ 	{
++		if(baseText == null)
++		{
++			baseText = "";
++		}
+ 		answerLayout.setContentDescription(baseText + (selectAnswer ? " selected" : " not selected"));
+ 	}
+ 

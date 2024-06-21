@@ -1,0 +1,52 @@
+	protected List<String> getSchemaNames(Connection conn, ConnParameters cp) throws SQLException {
+		Integer ver = Integer.parseInt("" + conn.getMetaData().getDatabaseMajorVersion() 
+				+ conn.getMetaData().getDatabaseMinorVersion());
+		
+		if (ver < 112) {
+			return super.getSchemaNames(conn, cp);
+		}
+		
+		if (!getPrivilege(conn, cp)) {
+			return getUserSchemaNames(conn, cp);
+		}
+		
+		
+		List<String> schemaNames = new ArrayList<String>();
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+		
+		try {			
+//			String sql = "select a.grantor_name, a.grantee_name, a.auth_type, b.auth_type "
+//					+ "from (select grantor_name, grantee_name, class_name, auth_type " 
+//					+ "from db_auth " 
+//					+ "where auth_type = 'SELECT') a " 
+//					+ "join (select auth_type, class_name, grantee_name "
+//					+ "from db_auth " 
+//					+ "where auth_type = 'INSERT') b " 
+//					+ "where (a.class_name = b.class_name and a.grantee_name = b.grantee_name) " 
+//					+ "and a.grantee_name = ? "
+//					+ "group by grantor_name";
+			
+			String sql = "select name from db_user";
+			stmt = conn.prepareStatement(sql);
+//			stmt.setString(1, cp.getConUser().toUpperCase());
+			rs = stmt.executeQuery();
+			
+			while (rs.next()) {
+				schemaNames.add(rs.getString("name"));
+			}
+			
+			if (schemaNames.isEmpty()) {
+				return super.getSchemaNames(conn, cp);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			Closer.close(rs);
+			Closer.close(stmt);
+		}
+		
+		return schemaNames;
+	}
+

@@ -1,0 +1,42 @@
+	private QueryResultViewModel getQueryResultViewModel(QueryViewModel oQuery, String sPayload, String sFootPrint,
+			Date oStartDate, Date oEndDate) {
+		String sStartDate = Utils.formatToYyyyMMdd(oStartDate);
+		String sEndDate = oEndDate != null 
+				? Utils.formatToYyyyMMdd(oEndDate) 
+				: "";
+		String sStartDateTime = TimeEpochUtils.fromEpochToDateString(oStartDate.getTime());
+		String sEndDateTime = null;
+		if (oEndDate != null) {
+			sEndDateTime = TimeEpochUtils.fromEpochToDateString(oEndDate.getTime());
+		}
+
+		String sExtension = "." + oQuery.timeliness;
+		String sFileName = getFileName(oQuery.productName, oQuery.sensorMode, sStartDate, sEndDate, sExtension);
+		String sUrl = s_oDataProviderConfig.link + "?payload=" + sPayload;
+		String sEncodedUrl = StringUtils.encodeUrl(sUrl);
+
+		QueryResultViewModel oResult = new QueryResultViewModel();
+		oResult.setId(sFileName);
+		oResult.setTitle(sFileName);
+		oResult.setLink(sEncodedUrl);
+		oResult.setSummary(getSummary(sStartDateTime, sEndDateTime, oQuery.sensorMode, oQuery.timeliness)); 
+		oResult.setProvider(m_sProvider);
+		oResult.setFootprint(sFootPrint);
+		oResult.getProperties().put("platformname", Platforms.ERA5);
+		oResult.getProperties().put("dataset", oQuery.productName);
+		oResult.getProperties().put("format", oQuery.timeliness);
+		oResult.getProperties().put("variables", oQuery.sensorMode);
+		oResult.getProperties().put("startDate", sStartDateTime);
+		oResult.getProperties().put("beginposition", sStartDateTime);
+
+		if (oEndDate != null) {
+			oResult.getProperties().put("endDate", sEndDateTime);
+			oResult.getProperties().put("endposition", sEndDateTime);
+		}
+		
+		if (!oQuery.productName.equalsIgnoreCase(s_sSEA_SURFACE_TEMPERATURE_DATASET)) { 
+			oResult.getProperties().put("productType", oQuery.productType);
+			oResult.getProperties().put("presureLevels", oQuery.productLevel);
+		}
+		return oResult;
+	}

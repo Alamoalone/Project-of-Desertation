@@ -1,0 +1,98 @@
+{
+    "sha": "45f209ee4371d75fdcaa46c78da6051194c89118",
+    "node_id": "C_kwDODjA8BdoAKDQ1ZjIwOWVlNDM3MWQ3NWZkY2FhNDZjNzhkYTYwNTExOTRjODkxMTg",
+    "commit": {
+        "author": {
+            "name": "Kostis Sagonas",
+            "email": "kostis@it.uu.se",
+            "date": "2023-09-05T14:59:02Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-09-05T14:59:02Z"
+        },
+        "message": "Remove two catches of null pointer exceptions (#73)\n\nIt's a bad idea to catch null pointer exceptions because they often\r\nindicate logical errors that should be handled in other ways.\r\nRemove two such occurrences of catching NPEs and substitute them with\r\nconditional checks for nulls instead.",
+        "tree": {
+            "sha": "552abfbcdb681f8a0067e26f0e55952a2f9e1fc0",
+            "url": "https://api.github.com/repos/assist-project/dtls-fuzzer/git/trees/552abfbcdb681f8a0067e26f0e55952a2f9e1fc0"
+        },
+        "url": "https://api.github.com/repos/assist-project/dtls-fuzzer/git/commits/45f209ee4371d75fdcaa46c78da6051194c89118",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJk90I2CRBK7hj4Ov3rIwAAusUIAGfuwKFG2NBL3Rm6wthFlENR\ntB9//Xv6Nx+QSKY/E8k7HFtZv6ceMEnDMEQcZlt55cENQZDDmXoKZgNqob08eLCc\nZ/BAJ2iWjcWXEigWQ1xKKNC55t9jLX3XoKExKMIwVqxUo+HoYLGftzS8tpDK5Y2S\nmKd+CrKZ3TdzCl3O3j8Y8AhFa8IVxZprVSAASkihly/Fa4071uzfUNUqYoixnB1l\nH6HJDL6TH+E+XzwFB2dyb5KIYrjJxEr3au09qyU++0/mJp7p88bjis7ayrpfOosX\nxQBBRaf/oRvTLUlap1ppfRbn882Zr+ahioEz19pSDssxxy9T+jzWn4GqzWK4Fjs=\n=ljy/\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 552abfbcdb681f8a0067e26f0e55952a2f9e1fc0\nparent 58ac37adbc966f4fba8b8384c4b06fc04ed1d220\nauthor Kostis Sagonas <kostis@it.uu.se> 1693925942 +0200\ncommitter GitHub <noreply@github.com> 1693925942 +0200\n\nRemove two catches of null pointer exceptions (#73)\n\nIt's a bad idea to catch null pointer exceptions because they often\r\nindicate logical errors that should be handled in other ways.\r\nRemove two such occurrences of catching NPEs and substitute them with\r\nconditional checks for nulls instead."
+        }
+    },
+    "url": "https://api.github.com/repos/assist-project/dtls-fuzzer/commits/45f209ee4371d75fdcaa46c78da6051194c89118",
+    "html_url": "https://github.com/assist-project/dtls-fuzzer/commit/45f209ee4371d75fdcaa46c78da6051194c89118",
+    "comments_url": "https://api.github.com/repos/assist-project/dtls-fuzzer/commits/45f209ee4371d75fdcaa46c78da6051194c89118/comments",
+    "author": {
+        "login": "kostis",
+        "id": 165033,
+        "node_id": "MDQ6VXNlcjE2NTAzMw==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/165033?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kostis",
+        "html_url": "https://github.com/kostis",
+        "followers_url": "https://api.github.com/users/kostis/followers",
+        "following_url": "https://api.github.com/users/kostis/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kostis/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kostis/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kostis/subscriptions",
+        "organizations_url": "https://api.github.com/users/kostis/orgs",
+        "repos_url": "https://api.github.com/users/kostis/repos",
+        "events_url": "https://api.github.com/users/kostis/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kostis/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "58ac37adbc966f4fba8b8384c4b06fc04ed1d220",
+            "url": "https://api.github.com/repos/assist-project/dtls-fuzzer/commits/58ac37adbc966f4fba8b8384c4b06fc04ed1d220",
+            "html_url": "https://github.com/assist-project/dtls-fuzzer/commit/58ac37adbc966f4fba8b8384c4b06fc04ed1d220"
+        }
+    ],
+    "stats": {
+        "total": 27,
+        "additions": 16,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "2dc3fd8cbaff386ba0cee316853af2fbe31a28a8",
+            "filename": "src/main/java/se/uu/it/dtlsfuzzer/components/sul/core/TlsSul.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 11,
+            "changes": 27,
+            "blob_url": "https://github.com/assist-project/dtls-fuzzer/blob/45f209ee4371d75fdcaa46c78da6051194c89118/src%2Fmain%2Fjava%2Fse%2Fuu%2Fit%2Fdtlsfuzzer%2Fcomponents%2Fsul%2Fcore%2FTlsSul.java",
+            "raw_url": "https://github.com/assist-project/dtls-fuzzer/raw/45f209ee4371d75fdcaa46c78da6051194c89118/src%2Fmain%2Fjava%2Fse%2Fuu%2Fit%2Fdtlsfuzzer%2Fcomponents%2Fsul%2Fcore%2FTlsSul.java",
+            "contents_url": "https://api.github.com/repos/assist-project/dtls-fuzzer/contents/src%2Fmain%2Fjava%2Fse%2Fuu%2Fit%2Fdtlsfuzzer%2Fcomponents%2Fsul%2Fcore%2FTlsSul.java?ref=45f209ee4371d75fdcaa46c78da6051194c89118",
+            "patch": "@@ -186,19 +186,21 @@ public void post() {\n             if (server && !receivedClientHello) {\n                 receiveClientHello();\n             }\n-            state.getTlsContext().getTransportHandler().closeConnection();\n-            if (resetWait > 0) {\n-                Thread.sleep(resetWait);\n+            TransportHandler transportHandler = state.getTlsContext().getTransportHandler();\n+            if (transportHandler == null) {\n+                LOGGER.error(\"Transport handler is null\");\n+            } else {\n+                transportHandler.closeConnection();\n+                if (resetWait > 0) {\n+                    Thread.sleep(resetWait);\n+                }\n             }\n         } catch (IOException e) {\n             LOGGER.error(\"Could not close connections\");\n             LOGGER.error(e, null);\n         } catch (InterruptedException e) {\n             LOGGER.error(\"Could not sleep thread\");\n             LOGGER.error(e, null);\n-        } catch (NullPointerException e) {\n-            LOGGER.error(\"Transport handler is null\");\n-            LOGGER.error(e, null);\n         }\n     }\n \n@@ -242,9 +244,12 @@ private AbstractOutput doStep(TlsInput in) {\n         try {\n             if (state == null) {\n                 throw new RuntimeException(\"TLS-Attacker state is not initialized\");\n-            } else if (state.getTlsContext().getTransportHandler().isClosed() || closed) {\n-                closed = true;\n-                return outputMapper.socketClosed();\n+            } else {\n+                TransportHandler transportHandler = state.getTlsContext().getTransportHandler();\n+                if (transportHandler == null || transportHandler.isClosed() || closed) {\n+                    closed = true;\n+                    return outputMapper.socketClosed();\n+                }\n             }\n \n             output = executeInput(in, executor, role);\n@@ -258,8 +263,8 @@ private AbstractOutput doStep(TlsInput in) {\n                 closed = true;\n             }\n             return output;\n-        } catch (IOException | NullPointerException ex) {\n-            ex.printStackTrace();\n+        } catch (IOException e) {\n+            e.printStackTrace();\n             closed = true;\n             return outputMapper.socketClosed();\n         }"
+        }
+    ]
+}

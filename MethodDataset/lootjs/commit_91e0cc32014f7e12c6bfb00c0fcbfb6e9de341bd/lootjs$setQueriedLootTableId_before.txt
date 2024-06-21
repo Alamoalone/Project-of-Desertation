@@ -1,0 +1,3 @@
+    public void lootjs$setQueriedLootTableId(ResourceLocation id) {
+        lootjs$queriedLootTableId = id;
+    }

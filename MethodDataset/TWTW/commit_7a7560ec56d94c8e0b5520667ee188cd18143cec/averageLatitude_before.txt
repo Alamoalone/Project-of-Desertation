@@ -1,0 +1,3 @@
+    public double averageLatitude() {
+        return points.stream().mapToDouble(Point::getY).average().orElse(DEFAULT_VALUE);
+    }

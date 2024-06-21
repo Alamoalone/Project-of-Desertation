@@ -1,0 +1,4 @@
+    public void fine() {
+        this.handlerPartita.elimina(this.codice);
+    }
+

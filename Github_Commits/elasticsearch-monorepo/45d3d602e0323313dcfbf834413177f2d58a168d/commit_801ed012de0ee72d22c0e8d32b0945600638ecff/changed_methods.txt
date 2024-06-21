@@ -1,0 +1,2 @@
+setRequestedDuration(Double requestedDuration)
+setRequestedDuration(double requestedDuration)

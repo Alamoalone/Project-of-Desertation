@@ -1,0 +1,2 @@
+handleCSMResponse(Ad ownerAd, CSMSDKAdResponse csmSdkAdResponse)
+onReceiveAd(AdResponse ad)

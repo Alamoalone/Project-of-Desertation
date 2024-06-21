@@ -1,0 +1,29 @@
+    public void testUrlCheck() throws IOException {
+        var mockServerUrl = mockServer.url("/").toString();
+
+        var mockResponse = new MockResponse();
+        var mockContent = "<meta name=\"description\" content=\"some description\">\n"
+                + "<title>some title</title>\n"
+                + "<h1>some header</h1>\n";
+        mockResponse.setBody(mockContent);
+        mockServer.enqueue(mockResponse);
+
+        JavalinTest.test(app, ((server, client) -> {
+            var url = new Url(mockServerUrl);
+            UrlsRepository.save(url);
+            var id = url.getId();
+
+            var response = client.post(Routes.checkUrlPath(id));
+            assertThat(response.code()).isEqualTo(200);
+            var responseBody = response.body().string();
+            assertThat(responseBody.contains("200"));
+            assertThat(responseBody.contains("some title"));
+            assertThat(responseBody.contains("some header"));
+            assertThat(responseBody.contains("some description"));
+
+            var urlCheck = UrlChecksRepository.getEntities(1L).get(0);
+            assertThat(urlCheck.getId() == 1L);
+            assertThat(urlCheck.getUrlId().equals(id));
+            assertThat(urlCheck.getCreatedAt()).isNotNull();
+        }));
+    }

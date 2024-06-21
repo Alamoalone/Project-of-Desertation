@@ -1,0 +1,19 @@
+    public static void sendVrPlayerStateToClients(ServerPlayer vrPlayerEntity) {
+        var vivePlayer = playersWithVivecraft.get(vrPlayerEntity.getUUID());
+        if (vivePlayer == null) {
+            return;
+        }
+        if (vivePlayer.player == null || vivePlayer.player.hasDisconnected()) {
+            playersWithVivecraft.remove(vrPlayerEntity.getUUID());
+        }
+        if (!vivePlayer.isVR() || vivePlayer.vrPlayerState == null) {
+            return;
+        }
+        for (var trackingPlayer : ServerNetworking.getTrackingPlayers(vrPlayerEntity)) {
+            if (!playersWithVivecraft.containsKey(trackingPlayer.getPlayer().getUUID()) || trackingPlayer.getPlayer() == vrPlayerEntity) {
+                continue;
+            }
+            trackingPlayer.send(ServerNetworking.createUberPacket(vivePlayer.player, vivePlayer.vrPlayerState, vivePlayer.worldScale, vivePlayer.heightScale));
+        }
+    }
+

@@ -1,0 +1,60 @@
+{
+    "sha": "e0218b5a23cb12902f65d78ffd5c2e196d7ce7da",
+    "node_id": "C_kwDOKygKjNoAKGUwMjE4YjVhMjNjYjEyOTAyZjY1ZDc4ZmZkNWMyZTE5NmQ3Y2U3ZGE",
+    "commit": {
+        "author": {
+            "name": "23357614",
+            "email": "jackcasey614@gmail.com",
+            "date": "2023-12-04T21:09:28Z"
+        },
+        "committer": {
+            "name": "23357614",
+            "email": "jackcasey614@gmail.com",
+            "date": "2023-12-04T21:09:28Z"
+        },
+        "message": "FIXED null pointer exception",
+        "tree": {
+            "sha": "c403855e39604e6044f09ae661ddffa5207230f1",
+            "url": "https://api.github.com/repos/De3pBlu3/EpicBlock2Taxi/git/trees/c403855e39604e6044f09ae661ddffa5207230f1"
+        },
+        "url": "https://api.github.com/repos/De3pBlu3/EpicBlock2Taxi/git/commits/e0218b5a23cb12902f65d78ffd5c2e196d7ce7da",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/De3pBlu3/EpicBlock2Taxi/commits/e0218b5a23cb12902f65d78ffd5c2e196d7ce7da",
+    "html_url": "https://github.com/De3pBlu3/EpicBlock2Taxi/commit/e0218b5a23cb12902f65d78ffd5c2e196d7ce7da",
+    "comments_url": "https://api.github.com/repos/De3pBlu3/EpicBlock2Taxi/commits/e0218b5a23cb12902f65d78ffd5c2e196d7ce7da/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "8afc06a3cef71cdbaa2e55794a0c710b3b63bdde",
+            "url": "https://api.github.com/repos/De3pBlu3/EpicBlock2Taxi/commits/8afc06a3cef71cdbaa2e55794a0c710b3b63bdde",
+            "html_url": "https://github.com/De3pBlu3/EpicBlock2Taxi/commit/8afc06a3cef71cdbaa2e55794a0c710b3b63bdde"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "c4d816998dff692bc552fe17220f211464f54691",
+            "filename": "src/main/java/network/Network.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/De3pBlu3/EpicBlock2Taxi/blob/e0218b5a23cb12902f65d78ffd5c2e196d7ce7da/src%2Fmain%2Fjava%2Fnetwork%2FNetwork.java",
+            "raw_url": "https://github.com/De3pBlu3/EpicBlock2Taxi/raw/e0218b5a23cb12902f65d78ffd5c2e196d7ce7da/src%2Fmain%2Fjava%2Fnetwork%2FNetwork.java",
+            "contents_url": "https://api.github.com/repos/De3pBlu3/EpicBlock2Taxi/contents/src%2Fmain%2Fjava%2Fnetwork%2FNetwork.java?ref=e0218b5a23cb12902f65d78ffd5c2e196d7ce7da",
+            "patch": "@@ -267,6 +267,9 @@ class DijkstraNode {\n                     }\n                 }\n                 int alt = u.dist + e.weight;\n+                if (v == null) {\n+                    continue;\n+                }\n                 if (alt < v.dist) {\n                     v.dist = alt;\n                     v.prev = u;"
+        }
+    ]
+}

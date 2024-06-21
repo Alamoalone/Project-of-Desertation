@@ -1,0 +1,22 @@
+    private static String detectHancom(String inputFile) {
+        String detectingType = null;
+        
+        try {
+            HwpxFile hwpxTemp = new HwpxFile(inputFile);
+            hwpxTemp.detect();
+            detectingType = "HWPX";
+            hwpxTemp.close();
+        } catch (IOException | HwpDetectException | ParserConfigurationException | SAXException | DataFormatException e1) {
+            
+            try {
+                HwpFile hwpTemp = new HwpFile(inputFile);
+                hwpTemp.detect();
+                detectingType = "HWP";
+                hwpTemp.close();
+            } catch (IOException | HwpDetectException | CompoundDetectException | NotImplementedException | CompoundParseException e2) {
+                log.info("file detected neither HWPX nor HWP");
+            }
+        }
+        
+        return detectingType;
+    }

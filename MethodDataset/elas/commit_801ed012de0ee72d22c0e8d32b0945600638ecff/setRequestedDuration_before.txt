@@ -1,0 +1,3 @@
+        public void setRequestedDuration(double requestedDuration) {
+            this.requestedDuration = requestedDuration;
+        }

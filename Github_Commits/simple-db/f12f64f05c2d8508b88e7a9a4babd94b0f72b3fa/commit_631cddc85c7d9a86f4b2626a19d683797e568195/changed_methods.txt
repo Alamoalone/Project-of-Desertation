@@ -1,0 +1,3 @@
+insert(long xid, byte data)
+delete(long xid, long uid)
+read(long xid, long uid)

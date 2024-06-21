@@ -1,0 +1,9 @@
+	private List<ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail> getFirstNInstances(List<ValidationReport.RvfValidationResult.TestResult.TestRunItem.FailureDetail> instances, int numberOfItem) {
+		if (numberOfItem < 0) {
+			return instances;
+		}
+
+		int firstNCount = Math.min(numberOfItem, instances.size());
+
+		return instances.subList(0, firstNCount);
+	}

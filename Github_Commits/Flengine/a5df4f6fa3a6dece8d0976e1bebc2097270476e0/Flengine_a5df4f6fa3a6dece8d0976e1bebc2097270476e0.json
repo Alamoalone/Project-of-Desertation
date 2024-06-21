@@ -1,0 +1,98 @@
+{
+    "sha": "a5df4f6fa3a6dece8d0976e1bebc2097270476e0",
+    "node_id": "C_kwDOKf6nWNoAKGE1ZGY0ZjZmYTNhNmRlY2U4ZDA5NzZlMWJlYmMyMDk3MjcwNDc2ZTA",
+    "commit": {
+        "author": {
+            "name": "dasdawidt",
+            "email": "David_Maier@gmx.de",
+            "date": "2023-11-11T15:56:52Z"
+        },
+        "committer": {
+            "name": "dasdawidt",
+            "email": "David_Maier@gmx.de",
+            "date": "2023-11-11T15:56:52Z"
+        },
+        "message": "fix: add prevention of null pointer exceptions",
+        "tree": {
+            "sha": "d892663eba701d536cb3a5ea8d1b21bfdffa5ad8",
+            "url": "https://api.github.com/repos/flyndre/Flengine/git/trees/d892663eba701d536cb3a5ea8d1b21bfdffa5ad8"
+        },
+        "url": "https://api.github.com/repos/flyndre/Flengine/git/commits/a5df4f6fa3a6dece8d0976e1bebc2097270476e0",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/flyndre/Flengine/commits/a5df4f6fa3a6dece8d0976e1bebc2097270476e0",
+    "html_url": "https://github.com/flyndre/Flengine/commit/a5df4f6fa3a6dece8d0976e1bebc2097270476e0",
+    "comments_url": "https://api.github.com/repos/flyndre/Flengine/commits/a5df4f6fa3a6dece8d0976e1bebc2097270476e0/comments",
+    "author": {
+        "login": "dasdawidt",
+        "id": 20287307,
+        "node_id": "MDQ6VXNlcjIwMjg3MzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20287307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dasdawidt",
+        "html_url": "https://github.com/dasdawidt",
+        "followers_url": "https://api.github.com/users/dasdawidt/followers",
+        "following_url": "https://api.github.com/users/dasdawidt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dasdawidt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dasdawidt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dasdawidt/subscriptions",
+        "organizations_url": "https://api.github.com/users/dasdawidt/orgs",
+        "repos_url": "https://api.github.com/users/dasdawidt/repos",
+        "events_url": "https://api.github.com/users/dasdawidt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dasdawidt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dasdawidt",
+        "id": 20287307,
+        "node_id": "MDQ6VXNlcjIwMjg3MzA3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20287307?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dasdawidt",
+        "html_url": "https://github.com/dasdawidt",
+        "followers_url": "https://api.github.com/users/dasdawidt/followers",
+        "following_url": "https://api.github.com/users/dasdawidt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dasdawidt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dasdawidt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dasdawidt/subscriptions",
+        "organizations_url": "https://api.github.com/users/dasdawidt/orgs",
+        "repos_url": "https://api.github.com/users/dasdawidt/repos",
+        "events_url": "https://api.github.com/users/dasdawidt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dasdawidt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "44407ddb8d43769629a5241e9d947d27e286d181",
+            "url": "https://api.github.com/repos/flyndre/Flengine/commits/44407ddb8d43769629a5241e9d947d27e286d181",
+            "html_url": "https://github.com/flyndre/Flengine/commit/44407ddb8d43769629a5241e9d947d27e286d181"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 2,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "a541b625de9ef0c528ab7deb5b6294294b1f1bae",
+            "filename": "flengine/src/main/java/de/flyndre/flengine/enginecontroller/Controller.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/flyndre/Flengine/blob/a5df4f6fa3a6dece8d0976e1bebc2097270476e0/flengine%2Fsrc%2Fmain%2Fjava%2Fde%2Fflyndre%2Fflengine%2Fenginecontroller%2FController.java",
+            "raw_url": "https://github.com/flyndre/Flengine/raw/a5df4f6fa3a6dece8d0976e1bebc2097270476e0/flengine%2Fsrc%2Fmain%2Fjava%2Fde%2Fflyndre%2Fflengine%2Fenginecontroller%2FController.java",
+            "contents_url": "https://api.github.com/repos/flyndre/Flengine/contents/flengine%2Fsrc%2Fmain%2Fjava%2Fde%2Fflyndre%2Fflengine%2Fenginecontroller%2FController.java?ref=a5df4f6fa3a6dece8d0976e1bebc2097270476e0",
+            "patch": "@@ -51,7 +51,8 @@ public static Move giveMove(Board board, Options options) {\n                         // Squaring the random number to control which items are more probable.\n                         // A higher exponent makes the front items of the list more probable.\n                         // Because the front moves should be the better ones, this makes the engine more difficult.\n-                        Math.pow(Math.random(), DIFFICULTY) * moves.size())\n+                        // The modulo 1 is needed to prevent values greater than 1 if the difficulty is less than 0.\n+                        Math.pow(Math.random(), DIFFICULTY) % 1 * moves.size())\n                 );\n             }\n         }"
+        }
+    ]
+}

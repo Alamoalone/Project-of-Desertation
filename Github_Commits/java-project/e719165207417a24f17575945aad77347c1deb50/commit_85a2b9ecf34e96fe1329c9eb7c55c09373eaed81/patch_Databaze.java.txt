@@ -1,0 +1,17 @@
+@@ -53,9 +53,13 @@ else if (prvkyDatabaze.get(nazov) instanceof AnimovanyFilm){
+             System.out.println("Nazov: " + prvkyDatabaze.get(nazov).getNazov() + " Reziser: " + prvkyDatabaze.get(nazov).getReziser() + " Rok: " + prvkyDatabaze.get(nazov).getRok() + " Doporuceny Vek: " + ((AnimovanyFilm) prvkyDatabaze.get(nazov)).getDoporucenyVek() + " Herci : " + getActors(nazov));
+         }
+         ArrayList<Hodnotenie> hodnotenia = this.getHodnotenia(nazov);
+-        hodnotenia.sort(Comparator.comparing(Hodnotenie::getHodnotenie).reversed());
+-        for (Hodnotenie hodnotenie : hodnotenia)
+-            System.out.println("Hodnotenie: " + hodnotenie.getHodnotenie() + " Komentar: " + hodnotenie.getKomentar());
++        if (hodnotenia == null || hodnotenia.size() == 0)
++            System.out.println("Film este nemal ziadne hodnotenia");
++        else {
++            hodnotenia.sort(Comparator.comparing(Hodnotenie::getHodnotenie).reversed());
++            for (Hodnotenie hodnotenie : hodnotenia)
++                System.out.println("Hodnotenie: " + hodnotenie.getHodnotenie() + " Komentar: " + hodnotenie.getKomentar());
++        }
+     }
+ 
+     public void typFilmu (String nazov) {

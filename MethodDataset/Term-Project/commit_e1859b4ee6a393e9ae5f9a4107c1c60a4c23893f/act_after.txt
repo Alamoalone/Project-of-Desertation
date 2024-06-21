@@ -1,0 +1,9 @@
+    public void act()
+    {
+        
+        bankaccountImage.setColor(Color.BLACK);
+        //updateBalance();
+        bankaccountImage.clear();
+        bankaccountImage.drawString("Account Balance: \n         $"+balance, 0, 20);
+        setImage(bankaccountImage);   
+    }

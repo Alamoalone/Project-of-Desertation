@@ -1,0 +1,4 @@
+	private UserDto convertToDto(User user) {
+		UserDto userDto = UserDto.builder().id(user.getId()).username(user.getUsername()).build();
+		return userDto;
+	}

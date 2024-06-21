@@ -1,0 +1,12 @@
+    public static Series<String,Number> createSeries() {
+        Series<String, Number> seriesL = new Series<>();
+        seriesL.setName("Index");
+        for (int i = 0; i < 15; i++) {
+//            xAxis.setCategories(FXCollections.<String>
+//                    observableArrayList(Arrays.asList("Order")));
+            Number randomNumber = (int) (Math.random() * 1000);
+            seriesL.getData().add(new Data<>("" + i, randomNumber));
+        }
+
+        return seriesL;
+    }

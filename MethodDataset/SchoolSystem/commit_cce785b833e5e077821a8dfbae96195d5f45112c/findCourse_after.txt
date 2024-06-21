@@ -1,0 +1,9 @@
+    public Course findCourse(String courseId){
+        for(Course course : courses){
+            if( course != null && course.getId() != null && course.getId().equals(courseId)){
+                return course;
+            }
+        }
+        System.out.println("Course is not found !");
+        return null;
+    }

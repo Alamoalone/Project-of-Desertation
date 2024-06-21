@@ -1,0 +1,28 @@
+@@ -33,6 +33,7 @@
+ import com.liferay.portal.kernel.model.Layout;
+ import com.liferay.portal.kernel.model.LayoutSet;
+ import com.liferay.portal.kernel.security.permission.PermissionCheckerFactoryUtil;
++import com.liferay.portal.kernel.service.CompanyLocalService;
+ import com.liferay.portal.kernel.service.ServiceContext;
+ import com.liferay.portal.kernel.test.rule.AggregateTestRule;
+ import com.liferay.portal.kernel.test.rule.DeleteAfterTestRun;
+@@ -254,6 +255,9 @@ private ThemeDisplay _getThemeDisplay(HttpServletRequest httpServletRequest)
+ 
+ 		ThemeDisplay themeDisplay = new ThemeDisplay();
+ 
++		themeDisplay.setCompany(
++			_companyLocalService.getCompany(TestPropsValues.getCompanyId()));
++
+ 		LayoutSet layoutSet = _group.getPublicLayoutSet();
+ 
+ 		themeDisplay.setLookAndFeel(
+@@ -271,6 +275,9 @@ private ThemeDisplay _getThemeDisplay(HttpServletRequest httpServletRequest)
+ 		return themeDisplay;
+ 	}
+ 
++	@Inject
++	private CompanyLocalService _companyLocalService;
++
+ 	private long _defaultSegmentsExperienceId;
+ 
+ 	@Inject

@@ -1,0 +1,8 @@
+	public DateTime GetPlayerLogout(IPlayer player)
+	{
+		PlayerData data = getData(player);
+		if (data == null)
+			return null;
+
+		return new DateTime(data.getLogout().getEpochSecond());
+	}

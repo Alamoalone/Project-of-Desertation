@@ -1,0 +1,2 @@
+sendHTTPRequestRetryIfAllowed(HttpUriRequest request, HttpRetryStatusConfig httpRetryStatusConfig)
+freeHttpConnectionBackToPool(CloseableHttpResponse httpResponse)

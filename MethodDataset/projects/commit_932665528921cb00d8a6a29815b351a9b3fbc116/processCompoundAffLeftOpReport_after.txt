@@ -1,0 +1,44 @@
+    private static void processCompoundAffLeftOpReport(LinkageStackElementIn _in, VariablesOffsets _vars, OperationNode _curOp, OperationNode _nextSiblingOp, MethodOperation _parentOp, Coverage _cov) {
+        if (!(_parentOp instanceof CompoundAffectationOperation)) {
+            return;
+        }
+        CompoundAffectationOperation par_ = (CompoundAffectationOperation) _parentOp;
+        AnaTypeFct function_ = par_.getFct().getFunction();
+        AnaTypeFct functionTest_ = par_.getFunctionTest();
+        int opDelta_ = par_.getOper().length() - 1;
+        int sum_ = _in.getBeginBlock() + _parentOp.getIndexInEl();
+        int begin_ = sum_+par_.getOpOffset();
+        int len_ = opDelta_;
+        if (LambdaOperation.fct(functionTest_) != null) {
+            StringList title_ = new StringList();
+            title_.addAllElts(getCoversFoundReport(_in, _vars, _curOp, _cov));
+            addParts(_vars, functionTest_,begin_,1, _parentOp.getErrs(),title_);
+            begin_++;
+            len_--;
+            if (StringUtil.quickEq(par_.getOper(),AbsBk.AND_LOG_EQ_SHORT)
+                    || StringUtil.quickEq(par_.getOper(),AbsBk.OR_LOG_EQ_SHORT)){
+                begin_++;
+                len_--;
+            }
+        } else if (StringUtil.quickEq(par_.getOper(), AbsBk.AND_LOG_EQ)
+                || StringUtil.quickEq(par_.getOper(), AbsBk.OR_LOG_EQ)
+                || StringUtil.quickEq(par_.getOper(), AbsBk.NULL_EQ)){
+            safeReport(_in, _vars, _curOp, _cov, begin_, 1);
+            begin_++;
+            len_--;
+        } else if (StringUtil.quickEq(par_.getOper(),AbsBk.AND_LOG_EQ_SHORT)
+                || StringUtil.quickEq(par_.getOper(),AbsBk.OR_LOG_EQ_SHORT)
+                ||StringUtil.quickEq(par_.getOper(),AbsBk.NULL_EQ_SHORT)){
+            safeReport(_in, _vars, _curOp, _cov, begin_, 1);
+            begin_+=2;
+            len_-=2;
+        }
+        if (LambdaOperation.fct(function_) != null) {
+            addParts(_vars, function_,begin_,len_,_parentOp.getErrs(),_parentOp.getErrs());
+        } else if (hasToCallStringConver(_vars, _nextSiblingOp)){
+            _vars.addPart(new PartOffset(ExportCst.HEAD_ITALIC, begin_));
+            _vars.addPart(new PartOffset(ExportCst.FOOT_ITALIC,begin_+len_));
+        } else if (par_.isNullSafe()||par_.isRightBool()) {
+            safeReport(_in, _vars, _nextSiblingOp, _cov, begin_, 1);
+        }
+    }

@@ -1,0 +1,110 @@
+{
+    "sha": "39c23ffd18f58203356e0f220b8265ca1772b00c",
+    "node_id": "C_kwDOItcOAdoAKDM5YzIzZmZkMThmNTgyMDMzNTZlMGYyMjBiODI2NWNhMTc3MmIwMGM",
+    "commit": {
+        "author": {
+            "name": "Artur Oliveira",
+            "email": "artur@tartigrado.com",
+            "date": "2024-01-17T13:27:15Z"
+        },
+        "committer": {
+            "name": "Artur Oliveira",
+            "email": "artur@tartigrado.com",
+            "date": "2024-01-17T13:27:15Z"
+        },
+        "message": "fix: fixed null pointer exception",
+        "tree": {
+            "sha": "02a4352707b3d01add276f7270c4072710448156",
+            "url": "https://api.github.com/repos/artur-oliveira/dfe/git/trees/02a4352707b3d01add276f7270c4072710448156"
+        },
+        "url": "https://api.github.com/repos/artur-oliveira/dfe/git/commits/39c23ffd18f58203356e0f220b8265ca1772b00c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/artur-oliveira/dfe/commits/39c23ffd18f58203356e0f220b8265ca1772b00c",
+    "html_url": "https://github.com/artur-oliveira/dfe/commit/39c23ffd18f58203356e0f220b8265ca1772b00c",
+    "comments_url": "https://api.github.com/repos/artur-oliveira/dfe/commits/39c23ffd18f58203356e0f220b8265ca1772b00c/comments",
+    "author": {
+        "login": "artur-oliveira-carvalho",
+        "id": 85961696,
+        "node_id": "MDQ6VXNlcjg1OTYxNjk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85961696?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/artur-oliveira-carvalho",
+        "html_url": "https://github.com/artur-oliveira-carvalho",
+        "followers_url": "https://api.github.com/users/artur-oliveira-carvalho/followers",
+        "following_url": "https://api.github.com/users/artur-oliveira-carvalho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/artur-oliveira-carvalho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/artur-oliveira-carvalho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/artur-oliveira-carvalho/subscriptions",
+        "organizations_url": "https://api.github.com/users/artur-oliveira-carvalho/orgs",
+        "repos_url": "https://api.github.com/users/artur-oliveira-carvalho/repos",
+        "events_url": "https://api.github.com/users/artur-oliveira-carvalho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/artur-oliveira-carvalho/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "artur-oliveira-carvalho",
+        "id": 85961696,
+        "node_id": "MDQ6VXNlcjg1OTYxNjk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85961696?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/artur-oliveira-carvalho",
+        "html_url": "https://github.com/artur-oliveira-carvalho",
+        "followers_url": "https://api.github.com/users/artur-oliveira-carvalho/followers",
+        "following_url": "https://api.github.com/users/artur-oliveira-carvalho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/artur-oliveira-carvalho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/artur-oliveira-carvalho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/artur-oliveira-carvalho/subscriptions",
+        "organizations_url": "https://api.github.com/users/artur-oliveira-carvalho/orgs",
+        "repos_url": "https://api.github.com/users/artur-oliveira-carvalho/repos",
+        "events_url": "https://api.github.com/users/artur-oliveira-carvalho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/artur-oliveira-carvalho/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0a19eec8d7b52e33c00532dbd6ce0e86aec63665",
+            "url": "https://api.github.com/repos/artur-oliveira/dfe/commits/0a19eec8d7b52e33c00532dbd6ce0e86aec63665",
+            "html_url": "https://github.com/artur-oliveira/dfe/commit/0a19eec8d7b52e33c00532dbd6ce0e86aec63665"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 9,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "656cb9624379b74b334230d19c01b5693068b7c1",
+            "filename": "dfe-core/src/main/java/org/dfe/components/validation/cte/XSDReceptionCteValidator.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/artur-oliveira/dfe/blob/39c23ffd18f58203356e0f220b8265ca1772b00c/dfe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fdfe%2Fcomponents%2Fvalidation%2Fcte%2FXSDReceptionCteValidator.java",
+            "raw_url": "https://github.com/artur-oliveira/dfe/raw/39c23ffd18f58203356e0f220b8265ca1772b00c/dfe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fdfe%2Fcomponents%2Fvalidation%2Fcte%2FXSDReceptionCteValidator.java",
+            "contents_url": "https://api.github.com/repos/artur-oliveira/dfe/contents/dfe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fdfe%2Fcomponents%2Fvalidation%2Fcte%2FXSDReceptionCteValidator.java?ref=39c23ffd18f58203356e0f220b8265ca1772b00c",
+            "patch": "@@ -18,9 +18,14 @@ public final class XSDReceptionCteValidator implements CteReceptionCteValidator\n     public void valid(Validation<TEnviCTe> o) throws ValidationException {\n         CteVersion eventVersion = CteVersion.valueOfVersion(o.value().getVersao());\n         XMLValidatorFactory.getInstance().validateXML(new XMLValidation(eventVersion.getXsdPath(\"enviCTe_v\"), o.xml()));\n+\n         if (Objects.equals(eventVersion, CteVersion.VERSION_400)) {\n \n             for (TCTe it : o.value().getCTe()) {\n+                if (Objects.isNull(it.getInfCte().getInfCTeNorm()) || Objects.isNull(it.getInfCte().getInfCTeNorm().getInfModal())) {\n+                    continue;\n+                }\n+\n                 switch (CteModal.valueOfCode(it.getInfCte().getIde().getModal())) {\n                     case AEREO ->\n                             XMLValidatorFactory.getInstance().validateXML(new XMLValidation(eventVersion.getXsdPath(\"cteModalAereo_v\"), CteMarshallerFactory.getInstance().any400(it.getInfCte().getInfCTeNorm().getInfModal().getAny())));"
+        },
+        {
+            "sha": "a60540b41f0caac42937ea89923e21627f694e1a",
+            "filename": "dfe-core/src/main/java/org/dfe/components/validation/cte4/XSDReceptionCteSyncValidator.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/artur-oliveira/dfe/blob/39c23ffd18f58203356e0f220b8265ca1772b00c/dfe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fdfe%2Fcomponents%2Fvalidation%2Fcte4%2FXSDReceptionCteSyncValidator.java",
+            "raw_url": "https://github.com/artur-oliveira/dfe/raw/39c23ffd18f58203356e0f220b8265ca1772b00c/dfe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fdfe%2Fcomponents%2Fvalidation%2Fcte4%2FXSDReceptionCteSyncValidator.java",
+            "contents_url": "https://api.github.com/repos/artur-oliveira/dfe/contents/dfe-core%2Fsrc%2Fmain%2Fjava%2Forg%2Fdfe%2Fcomponents%2Fvalidation%2Fcte4%2FXSDReceptionCteSyncValidator.java?ref=39c23ffd18f58203356e0f220b8265ca1772b00c",
+            "patch": "@@ -18,6 +18,10 @@ public void valid(Validation<TCTe> o) throws ValidationException {\n         CteVersion eventVersion = CteVersion.valueOfVersion(o.value().getInfCte().getVersao());\n         XMLValidatorFactory.getInstance().validateXML(new XMLValidation(eventVersion.getXsdPath(\"cte_v\"), o.xml()));\n \n+        if (Objects.isNull(o.value().getInfCte().getInfCTeNorm()) || Objects.isNull(o.value().getInfCte().getInfCTeNorm().getInfModal())) {\n+            return;\n+        }\n+\n         if (Objects.equals(eventVersion, CteVersion.VERSION_400)) {\n             switch (CteModal.valueOfCode(o.value().getInfCte().getIde().getModal())) {\n                 case AEREO ->"
+        }
+    ]
+}

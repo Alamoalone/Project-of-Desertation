@@ -1,0 +1,10 @@
+@@ -24,7 +24,8 @@ public List<Customer> list() {
+     }
+ 
+     public Customer find(String id) {
+-        return customerRepository.findById(id).orElse(null).to();
++        CustomerModel customer = customerRepository.findById(id).orElse(null);
++        return customer == null ? null : customer.to();
+     }
+ 
+     public void delete(String id) {

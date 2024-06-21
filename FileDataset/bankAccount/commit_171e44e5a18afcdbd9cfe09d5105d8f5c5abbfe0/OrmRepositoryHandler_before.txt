@@ -1,0 +1,60 @@
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        if (method.getName().startsWith("find")) {
+            Query query = method.getAnnotation(Query.class);
+            if (query == null) {
+                throw new RuntimeException("Method " + method.getName() + " of repository for " + entityClass.getName() + " must be annotated with @Query.");
+            }
+            String sql = query.value();
+            Connection connection = ormConnectionWrapper.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+            for (int i = 1; args != null && i <= args.length; i++) {
+                Object value = null;
+                if (args[i - 1].getClass().isAnnotationPresent(Table.class)) {
+                    value = ((EntityWithUUID) args[i - 1]).getUuid();
+                } else {
+                    value = args[i - 1];
+                }
+                preparedStatement.setObject(i, value);
+            }
+
+            preparedStatement.execute();
+            ResultSet resultSet = preparedStatement.getResultSet();
+
+            if (method.getReturnType().equals(Optional.class)) {
+                boolean hasResult = resultSet.next();
+                return Optional.ofNullable(hasResult ? relationToObject(entityClass, resultSet) : null);
+            } else if (method.getReturnType().equals(List.class)) {
+                List<Object> result = new ArrayList<>();
+                while (resultSet.next()) {
+                    result.add(relationToObject(entityClass, resultSet));
+                }
+                return result;
+            } else {
+                return null;
+            }
+
+        } else if (method.getName().startsWith("save")) {
+            InsertMappingBy insertMappingBy = entityClass.getAnnotation(InsertMappingBy.class);
+            if (insertMappingBy == null) {
+                throw new RuntimeException("Insert mapping must be declared for " + entityClass.getName() + ".");
+            }
+
+            Function<Object, InsertMappingInfo> insertMapper = (Function<Object, InsertMappingInfo>) insertMappingBy.value().getConstructor().newInstance();
+            InsertMappingInfo insertMappingInfo = insertMapper.apply(args[0]);
+
+            Connection connection = ormConnectionWrapper.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(insertMappingInfo.sql());
+
+            int i = 1;
+            for (Object value : insertMappingInfo.values()) {
+                preparedStatement.setObject(i++, value);
+            }
+            preparedStatement.executeUpdate();
+            return args[0];
+        } else {
+            System.out.println("unknown method type: " + method.getName());
+        }
+        return null;
+    }
+

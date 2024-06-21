@@ -1,0 +1,5 @@
+	public Model getResult(final Repository repo) throws TripleStoreException {
+		reset = false;
+		result = SPARQLUtil.getNamedGraph(SPARQLUtil.queryRepository(repo, sparql));
+		return result;
+	}

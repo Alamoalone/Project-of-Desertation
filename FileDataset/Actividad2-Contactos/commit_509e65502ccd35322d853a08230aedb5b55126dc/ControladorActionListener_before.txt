@@ -1,0 +1,10 @@
+	public void eliminarContacto() {
+		int filaSeleccionada = vistaPrincipal.obtenerFilaSeleccionada();
+
+		if (filaSeleccionada >= 0) {
+			DefaultTableModel tableModel = vistaPrincipal.getTableModel();
+			tableModel.removeRow(filaSeleccionada);
+		}
+		
+	}
+

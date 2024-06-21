@@ -1,0 +1,260 @@
+{
+    "sha": "5c1694144007d7e5b796d61dc4f380db92e8cf23",
+    "node_id": "C_kwDOJzyCP9oAKDVjMTY5NDE0NDAwN2Q3ZTViNzk2ZDYxZGM0ZjM4MGRiOTJlOGNmMjM",
+    "commit": {
+        "author": {
+            "name": "sunilkumargupta",
+            "email": "62325742+Sunil-731820@users.noreply.github.com",
+            "date": "2023-07-30T11:29:49Z"
+        },
+        "committer": {
+            "name": "sunilkumargupta",
+            "email": "62325742+Sunil-731820@users.noreply.github.com",
+            "date": "2023-07-30T11:29:49Z"
+        },
+        "message": "Null Pointer Exceptions",
+        "tree": {
+            "sha": "c5654692715902dfee441dce892597e92d64e886",
+            "url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/git/trees/c5654692715902dfee441dce892597e92d64e886"
+        },
+        "url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/git/commits/5c1694144007d7e5b796d61dc4f380db92e8cf23",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/commits/5c1694144007d7e5b796d61dc4f380db92e8cf23",
+    "html_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/commit/5c1694144007d7e5b796d61dc4f380db92e8cf23",
+    "comments_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/commits/5c1694144007d7e5b796d61dc4f380db92e8cf23/comments",
+    "author": {
+        "login": "Sunil-731820",
+        "id": 62325742,
+        "node_id": "MDQ6VXNlcjYyMzI1NzQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/62325742?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sunil-731820",
+        "html_url": "https://github.com/Sunil-731820",
+        "followers_url": "https://api.github.com/users/Sunil-731820/followers",
+        "following_url": "https://api.github.com/users/Sunil-731820/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sunil-731820/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sunil-731820/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sunil-731820/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sunil-731820/orgs",
+        "repos_url": "https://api.github.com/users/Sunil-731820/repos",
+        "events_url": "https://api.github.com/users/Sunil-731820/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sunil-731820/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Sunil-731820",
+        "id": 62325742,
+        "node_id": "MDQ6VXNlcjYyMzI1NzQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/62325742?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sunil-731820",
+        "html_url": "https://github.com/Sunil-731820",
+        "followers_url": "https://api.github.com/users/Sunil-731820/followers",
+        "following_url": "https://api.github.com/users/Sunil-731820/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sunil-731820/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sunil-731820/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sunil-731820/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sunil-731820/orgs",
+        "repos_url": "https://api.github.com/users/Sunil-731820/repos",
+        "events_url": "https://api.github.com/users/Sunil-731820/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sunil-731820/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "eaf66592b6d57a6f108408a1236861b7a2fd671e",
+            "url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/commits/eaf66592b6d57a6f108408a1236861b7a2fd671e",
+            "html_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/commit/eaf66592b6d57a6f108408a1236861b7a2fd671e"
+        }
+    ],
+    "stats": {
+        "total": 115,
+        "additions": 111,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "98a3bc37077c21e616610042323d1393277459e8",
+            "filename": "pom.xml",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/pom.xml",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/pom.xml",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/pom.xml?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -38,6 +38,10 @@\n     </dependencyManagement>\n \n     <dependencies>\n+    <!-- https://mvnrepository.com/artifact/com.orhanobut/logger -->\n+\n+   \n+    \n         <dependency>\n             <groupId>org.glassfish.jersey.containers</groupId>\n             <artifactId>jersey-container-servlet-core</artifactId>"
+        },
+        {
+            "sha": "0f59b2a8dc0227439098fd7f1bc46c076726f3c6",
+            "filename": "src/main/java/com/java/DesignAndAnalysisOfAlgorithms/CompetitiveProgramming/HI.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 3,
+            "changes": 3,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FCompetitiveProgramming%2FHI.java",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FCompetitiveProgramming%2FHI.java",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FCompetitiveProgramming%2FHI.java?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -1,9 +1,6 @@\n package com.java.DesignAndAnalysisOfAlgorithms.CompetitiveProgramming;\n \n public class HI {\n-\t\n-\t\n-\t\n \tpublic static void main(String[] args) {\n \t\tSystem.out.println(\"This is The Example Of The Competative programming \");\n \t}"
+        },
+        {
+            "sha": "3b6e06c21b6b105aadc1242e6a49541e1db97b41",
+            "filename": "src/main/java/com/java/DesignAndAnalysisOfAlgorithms/EXample.java",
+            "status": "added",
+            "additions": 40,
+            "deletions": 0,
+            "changes": 40,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FEXample.java",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FEXample.java",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FEXample.java?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -0,0 +1,40 @@\n+package com.java.DesignAndAnalysisOfAlgorithms;\n+\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+public class EXample {\n+\t\n+\tstatic final ArrayList getResultsMethod() {\n+\t\tArrayList list = new ArrayList<>();\n+//\t\tlist.add(null);\n+\t\tSystem.out.println(\"The Size Of The Array List is : \"+ list.size());\n+\t\tif(list ==null || (list !=null && list.isEmpty())) {\n+\t\t\tSystem.out.println(\"Inside the if Block : \"+ list.size());\n+\t\t\treturn list;\n+\t\t}\n+\t\telse {\n+\t\t\tSystem.out.println(\"Inside The Else Block : \"+ list.size());\n+\t\t\treturn new ArrayList<>();\n+\t\t}\n+\t\t\n+\t}\n+\n+\tpublic static void main(String[] args) {\n+//\t\tSystem.out.println(\"The Main Method is Srtart \");\n+\t\ttry {\n+\t\t\tSystem.out.println(\"Inside The Try \");\n+\t\t\tif(getResultsMethod()!=null) {\n+\t\t\t\tSystem.out.println(\"The List is Empty : \");\n+\t\t\t}else {\n+\t\t\t\tSystem.out.println(\"The List Is Not EMpty : \"+getResultsMethod());\n+\t\t\t}\n+\t\t} catch (Exception e) {\n+\t\t\t// TODO: handle exception\n+\t\t\tSystem.out.println(\"Inside The catch Block : \");\n+\t\t\tSystem.out.println(e);\n+\t\t}\n+\t\t\n+\t}\n+\n+}"
+        },
+        {
+            "sha": "ddc34423c0f7456106fcab8f4cd3e1cfe5b63a3b",
+            "filename": "src/main/java/com/java/DesignAndAnalysisOfAlgorithms/HIIIIII.java",
+            "status": "added",
+            "additions": 8,
+            "deletions": 0,
+            "changes": 8,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FHIIIIII.java",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FHIIIIII.java",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FHIIIIII.java?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -0,0 +1,8 @@\n+package com.java.DesignAndAnalysisOfAlgorithms;\n+\n+public class HIIIIII {\n+\tpublic static void main(String[] args) {\n+\t\tSystem.out.println(\"HIIIIIIIIIIIIIII\");\n+\t}\n+\n+}"
+        },
+        {
+            "sha": "1b2843b3b20d70fb4dddfbb57476f0b684857174",
+            "filename": "src/main/java/com/java/DesignAndAnalysisOfAlgorithms/MyResource.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FMyResource.java",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FMyResource.java",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FMyResource.java?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -10,6 +10,7 @@\n  */\n @Path(\"myresource\")\n public class MyResource {\n+\t\n \n     /**\n      * Method handling HTTP GET requests. The returned object will be sent"
+        },
+        {
+            "sha": "ebabc4f413cedc13364e972ff1616b16c1a09773",
+            "filename": "src/main/java/com/java/DesignAndAnalysisOfAlgorithms/NullPointerExaceptionOfArrayListReturnType.java",
+            "status": "added",
+            "additions": 27,
+            "deletions": 0,
+            "changes": 27,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExaceptionOfArrayListReturnType.java",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExaceptionOfArrayListReturnType.java",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExaceptionOfArrayListReturnType.java?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -0,0 +1,27 @@\n+package com.java.DesignAndAnalysisOfAlgorithms;\n+import java.util.ArrayList;\n+import java.util.List;\n+\n+public class NullPointerExaceptionOfArrayListReturnType {\n+\n+\n+\tstatic final ArrayList getResultList() {\n+\t    // Some logic to generate the list\n+\t\tArrayList resultList = null; // Some computation or initialization\n+\n+\t    if (resultList != null) {\n+\t    \tSystem.out.println(\"Inside The if Block : \");\n+\t        return (ArrayList) resultList;\n+\t    } else {\n+\t        // Handle the case when the ArrayList is null\n+\t        // For example, you can return an empty ArrayList or throw an exception\n+\t    \tSystem.out.println(\"Inside The Else Block Of The \");\n+\t        return new ArrayList<>(); // Return an empty ArrayList\n+\t    }\n+\t}\n+\n+\tpublic static void main(String[] args) {\n+\t\tSystem.out.println(getResultList());\n+\t}\n+\n+}"
+        },
+        {
+            "sha": "91b56cb0fbc82cd74ea4d6db623c062fe5006d20",
+            "filename": "src/main/java/com/java/DesignAndAnalysisOfAlgorithms/NullPointerExceptionsExample.java",
+            "status": "added",
+            "additions": 26,
+            "deletions": 0,
+            "changes": 26,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExceptionsExample.java",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExceptionsExample.java",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/src%2Fmain%2Fjava%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExceptionsExample.java?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -0,0 +1,26 @@\n+package com.java.DesignAndAnalysisOfAlgorithms;\n+\n+public class NullPointerExceptionsExample {\n+\tstatic int[] getResultArray() {\n+\t    int[] resultArray = null;\n+//\t    System.out.println(\"the size of The Array is : \"+resultArray.length);\n+\t    if (resultArray != null) {\n+\t    \tSystem.out.println(\"The Value Inside The if Block is : \"+resultArray[0]);\n+\t    \tSystem.out.println(\"Inside The if Blocks : \");\n+\t        return resultArray;\n+\t    } else {\n+\t    \tSystem.out.println(\"Inside The else  Blocks : \");\n+//\t    \tSystem.out.println(\"The Value Inside The else Block is : \"+resultArray[0]);\n+\t        return new int[0];\n+\t    }\n+\t}\n+public static void main(String[] args) {\n+\t int[] array = new int[0];\n+\t System.out.println(\"The Method Is Called \");\n+\t array = getResultArray();\n+\t System.out.println(\"After method Called \");\n+\t System.out.println(array);\n+\t\n+}\n+\n+}"
+        },
+        {
+            "sha": "e05c825bc190324c07f1fdaf87ac15e4771fb5ec",
+            "filename": "target/classes/com/java/DesignAndAnalysisOfAlgorithms/CompetitiveProgramming/HI.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FCompetitiveProgramming%2FHI.class",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FCompetitiveProgramming%2FHI.class",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FCompetitiveProgramming%2FHI.class?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23"
+        },
+        {
+            "sha": "2cdc69a1a6ecfddb211affdd2e60be27f2c94b6a",
+            "filename": "target/classes/com/java/DesignAndAnalysisOfAlgorithms/EXample.class",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FEXample.class",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FEXample.class",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FEXample.class?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23"
+        },
+        {
+            "sha": "4de176361a6aa222630e56a074fe627dd58ca4fa",
+            "filename": "target/classes/com/java/DesignAndAnalysisOfAlgorithms/HIIIIII.class",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FHIIIIII.class",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FHIIIIII.class",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FHIIIIII.class?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23"
+        },
+        {
+            "sha": "ffe32e9d3cd412aeb442a68e8f270bd8f0d2bdd9",
+            "filename": "target/classes/com/java/DesignAndAnalysisOfAlgorithms/MyResource.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FMyResource.class",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FMyResource.class",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FMyResource.class?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23"
+        },
+        {
+            "sha": "787222bf6361d888792f35f36f9d41eabd7a0251",
+            "filename": "target/classes/com/java/DesignAndAnalysisOfAlgorithms/NullPointerExaceptionOfArrayListReturnType.class",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExaceptionOfArrayListReturnType.class",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExaceptionOfArrayListReturnType.class",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExaceptionOfArrayListReturnType.class?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23"
+        },
+        {
+            "sha": "6c870ae3109756c53d3f47924056264ac5637075",
+            "filename": "target/classes/com/java/DesignAndAnalysisOfAlgorithms/NullPointerExceptionsExample.class",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExceptionsExample.class",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExceptionsExample.class",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fclasses%2Fcom%2Fjava%2FDesignAndAnalysisOfAlgorithms%2FNullPointerExceptionsExample.class?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23"
+        },
+        {
+            "sha": "ea4340f279a26437b93c97939d6e03443fa5de26",
+            "filename": "target/m2e-wtp/web-resources/META-INF/maven/Infinite/Design-And-Analysis-Of-Algorithms-From-Scratch/pom.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2FInfinite%2FDesign-And-Analysis-Of-Algorithms-From-Scratch%2Fpom.properties",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2FInfinite%2FDesign-And-Analysis-Of-Algorithms-From-Scratch%2Fpom.properties",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2FInfinite%2FDesign-And-Analysis-Of-Algorithms-From-Scratch%2Fpom.properties?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -1,5 +1,5 @@\n #Generated by Maven Integration for Eclipse\n-#Tue Jul 25 00:11:31 IST 2023\n+#Sun Jul 30 16:30:45 IST 2023\n m2e.projectLocation=C\\:\\\\Users\\\\sunil\\\\eclipse-workspace\\\\Design-And-Analysis-Of-Algorithms-From-Scratch\n m2e.projectName=Design-And-Analysis-Of-Algorithms-From-Scratch\n groupId=Infinite"
+        },
+        {
+            "sha": "98a3bc37077c21e616610042323d1393277459e8",
+            "filename": "target/m2e-wtp/web-resources/META-INF/maven/Infinite/Design-And-Analysis-Of-Algorithms-From-Scratch/pom.xml",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/blob/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2FInfinite%2FDesign-And-Analysis-Of-Algorithms-From-Scratch%2Fpom.xml",
+            "raw_url": "https://github.com/Sunil-731820/Design-And-Analysis-Of-Algorithms/raw/5c1694144007d7e5b796d61dc4f380db92e8cf23/target%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2FInfinite%2FDesign-And-Analysis-Of-Algorithms-From-Scratch%2Fpom.xml",
+            "contents_url": "https://api.github.com/repos/Sunil-731820/Design-And-Analysis-Of-Algorithms/contents/target%2Fm2e-wtp%2Fweb-resources%2FMETA-INF%2Fmaven%2FInfinite%2FDesign-And-Analysis-Of-Algorithms-From-Scratch%2Fpom.xml?ref=5c1694144007d7e5b796d61dc4f380db92e8cf23",
+            "patch": "@@ -38,6 +38,10 @@\n     </dependencyManagement>\n \n     <dependencies>\n+    <!-- https://mvnrepository.com/artifact/com.orhanobut/logger -->\n+\n+   \n+    \n         <dependency>\n             <groupId>org.glassfish.jersey.containers</groupId>\n             <artifactId>jersey-container-servlet-core</artifactId>"
+        }
+    ]
+}

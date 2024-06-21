@@ -1,0 +1,103 @@
+    public boolean open(Player player, int index, boolean animated) {
+        if (pages.size() - 1 < index || index < 0)
+            return false;
+        Inventory openInventory = pages.get(index);
+
+        player.openInventory(openInventory);
+        registrar.register(player, this, openInventory);
+
+        ObjectMap<Integer, Integer> slotFrame = ObjectMap.newConcurrentObjectMap();
+
+        if (player.getOpenInventory().getTopInventory().equals(openInventory)) {
+            for (int slot = 0; slot < openInventory.getSize(); ++slot) {
+                ItemStack itemStack = openInventory.getItem(slot);
+
+                if (itemStack == null) continue;
+
+                NBTItem nbtItem = new NBTItem(itemStack);
+
+                if (!nbtItem.hasKey("frames")) continue;
+
+                slotFrame.append(slot, 0);
+            }
+        }
+        playerSchedulerFramesMap.append(player, minecraftScheduler.createRepeatingTask(registrar.getPlugin(), () -> {
+            if (player.getOpenInventory().getTopInventory().equals(openInventory)) {
+                for (int i = 0; i < openInventory.getSize(); ++i) {
+
+                    ItemStack itemStack = openInventory.getItem(i);
+
+                    if (itemStack == null) continue;
+
+                    NBTItem nbtItem = new NBTItem(itemStack);
+
+                    if (!nbtItem.hasKey("frames")) continue;
+
+                    List<ItemStack> itemStacks = BukkitMinecraftUtils.itemStackListFromBase64(nbtItem.getString("frames"));
+
+                    int size = 0;
+                    if (itemStacks != null) {
+                        size = itemStacks.size() - 1;
+                    }
+                    if (size > 0 & slotFrame.get(i) <= size) {
+                        ItemStack item = itemStacks.get(slotFrame.get(i));
+                        item.setItemMeta(itemStack.getItemMeta());
+                        NBTItem newNBTItem = new NBTItem(item, true);
+                        newNBTItem.setString("frames", nbtItem.getString("frames"));
+                        openInventory.setItem(i, item);
+                        if (slotFrame.get(i) < size) {
+                            slotFrame.append(i, slotFrame.get(i) + 1);
+                        } else if (slotFrame.get(i) >= size) {
+                            slotFrame.append(i, 0);
+                        }
+                    }
+                }
+            }
+        }, 1L, 20L));
+        if (animated) {
+            playerSchedulerAnimatedMap.append(player, minecraftScheduler.createRepeatingTask(registrar.getPlugin(), () -> {
+                if (player.getOpenInventory().getTopInventory().equals(openInventory)) {
+                    for (int i = 0; i < openInventory.getSize(); i++) {
+                        ItemStack itemStack = openInventory.getItem(i);
+
+                        if (itemStack == null || !itemStack.hasItemMeta()) {
+                            continue;
+                        }
+
+                        ItemMeta itemMeta = itemStack.getItemMeta();
+
+                        NBTItem nbtItem = new NBTItem(itemStack);
+
+                        if (!nbtItem.hasKey("colors") & !nbtItem.hasKey("animation")) continue;
+
+                        List<String> color;
+                        if (registrar.kryo()) {
+                            color = KryoUtils.deserialize(nbtItem.getByteArray("colors"));
+                        } else {
+                            try {
+                                color = (List<String>) Utils.deserializeObjectFromString(nbtItem.getString("colors"));
+                            } catch (IOException | ClassNotFoundException e) {
+                                registrar.getPlugin().getLogger().log(Level.SEVERE, "Error: ", e);
+                                color = Lists.newArrayList();
+                            }
+                        }
+
+                        if (color.isEmpty()) continue;
+                        List<Color> colorsList = Lists.newArrayList();
+                        for (String s : color) {
+                            colorsList.add(Color.from(s));
+                        }
+
+                        itemMeta.setDisplayName(nbtItem.getString("animation").equalsIgnoreCase("wave") ? Animation.wave(BukkitMinecraftUtils.stripColor(itemMeta.getDisplayName()), colorsList) : Animation.fading(BukkitMinecraftUtils.stripColor(itemMeta.getDisplayName()), colorsList));
+                        itemStack.setItemMeta(itemMeta);
+                        openInventory.setItem(i, itemStack);
+
+                    }
+
+                    player.updateInventory();
+                }
+            }, 1L, 1L));
+        }
+        return true;
+    }
+

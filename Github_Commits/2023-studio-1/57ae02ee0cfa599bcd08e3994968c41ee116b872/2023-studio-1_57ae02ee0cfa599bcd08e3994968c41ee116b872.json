@@ -1,0 +1,98 @@
+{
+    "sha": "57ae02ee0cfa599bcd08e3994968c41ee116b872",
+    "node_id": "C_kwDOJ-fa1toAKDU3YWUwMmVlMGNmYTU5OWJjZDA4ZTM5OTQ5NjhjNDFlZTExNmI4NzI",
+    "commit": {
+        "author": {
+            "name": "Arjun Singh",
+            "email": "141088828+arj-sng@users.noreply.github.com",
+            "date": "2023-09-12T00:15:01Z"
+        },
+        "committer": {
+            "name": "Arjun Singh",
+            "email": "141088828+arj-sng@users.noreply.github.com",
+            "date": "2023-09-12T00:15:01Z"
+        },
+        "message": "Fix potential null pointer exception in the switch statement",
+        "tree": {
+            "sha": "0dd07c8c94f5755dd1fc7cedb9937e6e8a1a0e36",
+            "url": "https://api.github.com/repos/UQcsse3200/2023-studio-1/git/trees/0dd07c8c94f5755dd1fc7cedb9937e6e8a1a0e36"
+        },
+        "url": "https://api.github.com/repos/UQcsse3200/2023-studio-1/git/commits/57ae02ee0cfa599bcd08e3994968c41ee116b872",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/UQcsse3200/2023-studio-1/commits/57ae02ee0cfa599bcd08e3994968c41ee116b872",
+    "html_url": "https://github.com/UQcsse3200/2023-studio-1/commit/57ae02ee0cfa599bcd08e3994968c41ee116b872",
+    "comments_url": "https://api.github.com/repos/UQcsse3200/2023-studio-1/commits/57ae02ee0cfa599bcd08e3994968c41ee116b872/comments",
+    "author": {
+        "login": "arj-sng",
+        "id": 141088828,
+        "node_id": "U_kgDOCGjYPA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/141088828?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/arj-sng",
+        "html_url": "https://github.com/arj-sng",
+        "followers_url": "https://api.github.com/users/arj-sng/followers",
+        "following_url": "https://api.github.com/users/arj-sng/following{/other_user}",
+        "gists_url": "https://api.github.com/users/arj-sng/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/arj-sng/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/arj-sng/subscriptions",
+        "organizations_url": "https://api.github.com/users/arj-sng/orgs",
+        "repos_url": "https://api.github.com/users/arj-sng/repos",
+        "events_url": "https://api.github.com/users/arj-sng/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/arj-sng/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "arj-sng",
+        "id": 141088828,
+        "node_id": "U_kgDOCGjYPA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/141088828?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/arj-sng",
+        "html_url": "https://github.com/arj-sng",
+        "followers_url": "https://api.github.com/users/arj-sng/followers",
+        "following_url": "https://api.github.com/users/arj-sng/following{/other_user}",
+        "gists_url": "https://api.github.com/users/arj-sng/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/arj-sng/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/arj-sng/subscriptions",
+        "organizations_url": "https://api.github.com/users/arj-sng/orgs",
+        "repos_url": "https://api.github.com/users/arj-sng/repos",
+        "events_url": "https://api.github.com/users/arj-sng/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/arj-sng/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a0d4c579396b2bfb3625e2b3c420b56553862816",
+            "url": "https://api.github.com/repos/UQcsse3200/2023-studio-1/commits/a0d4c579396b2bfb3625e2b3c420b56553862816",
+            "html_url": "https://github.com/UQcsse3200/2023-studio-1/commit/a0d4c579396b2bfb3625e2b3c420b56553862816"
+        }
+    ],
+    "stats": {
+        "total": 115,
+        "additions": 59,
+        "deletions": 56
+    },
+    "files": [
+        {
+            "sha": "35a28f558a5125e077db10f587c2df2d7e75d241",
+            "filename": "source/core/src/main/com/csse3200/game/entities/Entity.java",
+            "status": "modified",
+            "additions": 59,
+            "deletions": 56,
+            "changes": 115,
+            "blob_url": "https://github.com/UQcsse3200/2023-studio-1/blob/57ae02ee0cfa599bcd08e3994968c41ee116b872/source%2Fcore%2Fsrc%2Fmain%2Fcom%2Fcsse3200%2Fgame%2Fentities%2FEntity.java",
+            "raw_url": "https://github.com/UQcsse3200/2023-studio-1/raw/57ae02ee0cfa599bcd08e3994968c41ee116b872/source%2Fcore%2Fsrc%2Fmain%2Fcom%2Fcsse3200%2Fgame%2Fentities%2FEntity.java",
+            "contents_url": "https://api.github.com/repos/UQcsse3200/2023-studio-1/contents/source%2Fcore%2Fsrc%2Fmain%2Fcom%2Fcsse3200%2Fgame%2Fentities%2FEntity.java?ref=57ae02ee0cfa599bcd08e3994968c41ee116b872",
+            "patch": "@@ -387,63 +387,66 @@ public void read(Json json, JsonValue jsonMap) {\n     } catch (IllegalArgumentException e) {\n       type = null;\n     }\n-    switch (type) {\n-      case Tractor:\n-        jsonMap = jsonMap.get(\"components\").get(\"TractorActions\");\n-        TractorActions tractorActions = new TractorActions();\n-        // Update the tractor 'muted' variable based on the info in the json file\n-        tractorActions.setMuted(jsonMap.getBoolean(\"isMuted\"));\n-        this.addComponent(tractorActions);\n-        break;\n-      case Tile:\n-        jsonMap = jsonMap.get(\"components\").get(\"CropTileComponent\");\n-        CropTileComponent c = new CropTileComponent(jsonMap.getFloat(\"waterContent\"), jsonMap.getFloat(\"soilQuality\"));\n-        c.setFertilised(jsonMap.getBoolean(\"isFertilised\"));\n-        JsonValue plantData = jsonMap.get(\"plant\");\n-        if (plantData.get(\"Entity\") != null) {\n-          // Has a plant\n-          plantData = plantData.get(\"components\").get(\"PlantComponent\");\n-          c.setPlant(\n-              new Entity().addComponent(new PlantComponent(plantData.getInt(\"health\"), plantData.getString(\"name\"),\n-                  \"bleh\", \"bleh\", 1f, 999, 999, this.getComponent(CropTileComponent.class))));\n-          c.getPlant().getComponent(PlantComponent.class).setCurrentAge(plantData.getFloat(\"age\"));\n-          c.getPlant().getComponent(PlantComponent.class).setGrowthStage(plantData.getInt(\"growth\"));\n-        }\n-        this.addComponent(c);\n-        break;\n-      case Cow:\n-      case Astrolotl:\n-      case Chicken:\n-        jsonMap = jsonMap.get(\"components\").get(\"TamableComponent\");\n-        // Does not need actual values here as it is just used to store the tamed value;\n-        Entity emptyPlayer = new Entity(); // empty player, as the real player is not needed for reading in the\n-                                           // component\n-        TamableComponent tamableComponent = new TamableComponent(emptyPlayer, 1, 1, null);\n-        tamableComponent.setTame(jsonMap.getBoolean(\"Tamed\"));\n-        this.addComponent(tamableComponent);\n-        break;\n-      case Player:\n-        InventoryComponent inventoryComponent = new InventoryComponent(null);\n-        HashMap<Entity, Integer> items = new HashMap<>();\n-        HashMap<Entity, Point> itemPositions = new HashMap<>();\n-        ArrayList inventory = new ArrayList();\n-        JsonValue inv = jsonMap.get(\"components\").get(\"InventoryComponent\").get(\"inventory\");\n-        inv.forEach(jsonValue -> {\n-          Entity item = FactoryService.getItemFactories().get(jsonValue.getString(\"name\")).get();\n-          ItemType itemType = item.getComponent(ItemComponent.class).getItemType();\n-          switch (itemType) {\n-            case WATERING_CAN ->\n-              item.getComponent(WateringCanLevelComponent.class).setCurrentLevel(jsonValue.getFloat(\"level\"));\n+\n+    if (type != null) { // Line 388 may break the switch statement otherwise\n+      switch (type) {\n+        case Tractor:\n+          jsonMap = jsonMap.get(\"components\").get(\"TractorActions\");\n+          TractorActions tractorActions = new TractorActions();\n+          // Update the tractor 'muted' variable based on the info in the json file\n+          tractorActions.setMuted(jsonMap.getBoolean(\"isMuted\"));\n+          this.addComponent(tractorActions);\n+          break;\n+        case Tile:\n+          jsonMap = jsonMap.get(\"components\").get(\"CropTileComponent\");\n+          CropTileComponent c = new CropTileComponent(jsonMap.getFloat(\"waterContent\"), jsonMap.getFloat(\"soilQuality\"));\n+          c.setFertilised(jsonMap.getBoolean(\"isFertilised\"));\n+          JsonValue plantData = jsonMap.get(\"plant\");\n+          if (plantData.get(\"Entity\") != null) {\n+            // Has a plant\n+            plantData = plantData.get(\"components\").get(\"PlantComponent\");\n+            c.setPlant(\n+                new Entity().addComponent(new PlantComponent(plantData.getInt(\"health\"), plantData.getString(\"name\"),\n+                    \"bleh\", \"bleh\", 1f, 999, 999, this.getComponent(CropTileComponent.class))));\n+            c.getPlant().getComponent(PlantComponent.class).setCurrentAge(plantData.getFloat(\"age\"));\n+            c.getPlant().getComponent(PlantComponent.class).setGrowthStage(plantData.getInt(\"growth\"));\n           }\n-          items.put(item, jsonValue.getInt(\"count\"));\n-          itemPositions.put(item, new Point(jsonValue.getInt(\"X\"), jsonValue.getInt(\"Y\")));\n-          inventory.add(item);\n-        });\n-        inventoryComponent.setInventory(items, itemPositions, inventory);\n-        this.addComponent(inventoryComponent);\n-\n-      default:\n-        // Nothing\n+          this.addComponent(c);\n+          break;\n+        case Cow:\n+        case Astrolotl:\n+        case Chicken:\n+          jsonMap = jsonMap.get(\"components\").get(\"TamableComponent\");\n+          // Does not need actual values here as it is just used to store the tamed value;\n+          Entity emptyPlayer = new Entity(); // empty player, as the real player is not needed for reading in the\n+                                             // component\n+          TamableComponent tamableComponent = new TamableComponent(emptyPlayer, 1, 1, null);\n+          tamableComponent.setTame(jsonMap.getBoolean(\"Tamed\"));\n+          this.addComponent(tamableComponent);\n+          break;\n+        case Player:\n+          InventoryComponent inventoryComponent = new InventoryComponent(null);\n+          HashMap<Entity, Integer> items = new HashMap<>();\n+          HashMap<Entity, Point> itemPositions = new HashMap<>();\n+          ArrayList inventory = new ArrayList();\n+          JsonValue inv = jsonMap.get(\"components\").get(\"InventoryComponent\").get(\"inventory\");\n+          inv.forEach(jsonValue -> {\n+            Entity item = FactoryService.getItemFactories().get(jsonValue.getString(\"name\")).get();\n+            ItemType itemType = item.getComponent(ItemComponent.class).getItemType();\n+            switch (itemType) {\n+              case WATERING_CAN ->\n+                item.getComponent(WateringCanLevelComponent.class).setCurrentLevel(jsonValue.getFloat(\"level\"));\n+            }\n+            items.put(item, jsonValue.getInt(\"count\"));\n+            itemPositions.put(item, new Point(jsonValue.getInt(\"X\"), jsonValue.getInt(\"Y\")));\n+            inventory.add(item);\n+          });\n+          inventoryComponent.setInventory(items, itemPositions, inventory);\n+          this.addComponent(inventoryComponent);\n+\n+        default:\n+          // Nothing\n+      }\n     }\n   }\n "
+        }
+    ]
+}

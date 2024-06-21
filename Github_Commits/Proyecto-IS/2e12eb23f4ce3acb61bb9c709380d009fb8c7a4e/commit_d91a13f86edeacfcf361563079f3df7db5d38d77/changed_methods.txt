@@ -1,0 +1,4 @@
+getUsuarioSesion()
+setUsuarioSesion(Usuario usuarioSesion)
+getUsuarioSession()
+setUsuarioSession(Usuario usuarioSession)

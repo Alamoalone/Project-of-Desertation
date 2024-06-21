@@ -1,0 +1,39 @@
+@@ -122,22 +122,34 @@ public void start()
+ 		    this.serverSocket = new ServerSocket(this.config.getPort());
+ 		    
+ 		    System.out.println(
+-		    		TextProperties.getMessageText(TextProperties.ServerStarted(Integer.toString(this.config.getPort()))));
++		    		TextProperties.getMessageText(
++		    				TextProperties.ServerStarted(
++		    						this.config.getUrl(),
++		    						Integer.toString(this.config.getPort()))));
+ 		    
+ 		    this.log.logMessage(
+ 					LogEventId.G1,
+ 					LogLevel.General,
+-					TextProperties.getMessageText(TextProperties.ServerStarted(Integer.toString(this.config.getPort()))));
++					TextProperties.getMessageText(
++							TextProperties.ServerStarted(
++									this.config.getUrl(),
++									Integer.toString(this.config.getPort()))));
+ 		}
+ 		catch (Exception x)
+ 		{
+ 			System.out.println(
+-					TextProperties.getMessageText(TextProperties.ServerNotStarted(Integer.toString(this.config.getPort()))));
++					TextProperties.getMessageText(
++							TextProperties.ServerNotStarted(
++									this.config.getUrl(),
++									Integer.toString(this.config.getPort()))));
+ 			
+ 			this.log.logMessage(
+ 					LogEventId.C1,
+ 					LogLevel.Critical,
+-					TextProperties.getMessageText(TextProperties.ServerNotStarted(Integer.toString(this.config.getPort()))));
++					TextProperties.getMessageText(
++							TextProperties.ServerNotStarted(
++									this.config.getUrl(),
++									Integer.toString(this.config.getPort()))));
+ 			return;
+ 		}
+ 		

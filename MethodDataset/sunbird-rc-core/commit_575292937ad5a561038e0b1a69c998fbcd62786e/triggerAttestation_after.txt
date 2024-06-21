@@ -1,0 +1,29 @@
+    public String triggerAttestation(AttestationRequest attestationRequest, AttestationPolicy attestationPolicy) throws Exception {
+        addAttestationProperty(attestationRequest);
+        //TODO: remove reading the entity after update
+        String attestationOSID = getAttestationOSID(attestationRequest);
+
+        String condition = "";
+        if (attestationPolicy.isInternal()) {
+            // Resolve condition for REQUESTER
+            condition = conditionResolverService.resolve(attestationRequest.getPropertyData(), REQUESTER,
+                    attestationPolicy.getConditions(), Collections.emptyList());
+        }
+
+        updateGetFileUrl(attestationRequest.getAdditionalInput());
+
+        String propertyData = null;
+        if (attestationRequest.getPropertyData() != null) {
+            propertyData = attestationRequest.getPropertyData().toString();
+        }
+
+        PluginRequestMessage message = PluginRequestMessageCreator.create(
+                propertyData, condition, attestationOSID, attestationRequest.getEntityName(),
+                attestationRequest.getEmailId(), attestationRequest.getEntityId(), attestationRequest.getAdditionalInput(),
+                Action.RAISE_CLAIM.name(), attestationPolicy.getName(), attestationPolicy.getAttestorPlugin(),
+                attestationPolicy.getAttestorEntity(), attestationPolicy.getAttestorSignin(),
+                attestationRequest.getPropertiesOSID(), attestationRequest.getEmailId());
+
+        PluginRouter.route(message);
+        return attestationOSID;
+    }

@@ -1,0 +1,4 @@
+  public void testGetLatestOnLegacyRows() throws Exception {
+    super.testGetLatestOnLegacyRows();
+  }
+

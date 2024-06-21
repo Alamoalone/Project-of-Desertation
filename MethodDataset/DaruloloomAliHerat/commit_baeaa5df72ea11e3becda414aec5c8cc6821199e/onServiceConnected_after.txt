@@ -1,0 +1,5 @@
+    public void onServiceConnected(ComponentName name, IBinder service) {
+        AudioService.MyBinder myBinder = (AudioService.MyBinder) service;
+        audioService = myBinder.getService();
+        audioService.setCallBack(this);
+    }

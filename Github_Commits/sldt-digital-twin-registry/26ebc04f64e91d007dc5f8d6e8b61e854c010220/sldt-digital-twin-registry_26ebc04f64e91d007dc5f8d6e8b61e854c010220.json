@@ -1,0 +1,98 @@
+{
+    "sha": "26ebc04f64e91d007dc5f8d6e8b61e854c010220",
+    "node_id": "C_kwDOHGrjH9oAKDI2ZWJjMDRmNjRlOTFkMDA3ZGM1ZjhkNmU4YjYxZTg1NGMwMTAyMjA",
+    "commit": {
+        "author": {
+            "name": "RHJ5FE",
+            "email": "shijin.raj@de.bosch.com",
+            "date": "2024-01-10T10:42:37Z"
+        },
+        "committer": {
+            "name": "RHJ5FE",
+            "email": "shijin.raj@de.bosch.com",
+            "date": "2024-01-10T10:42:37Z"
+        },
+        "message": "fixed idshort null pointer exception",
+        "tree": {
+            "sha": "d51a9c3d6270fd4e8258b00d1f06156c4d96ad7e",
+            "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/git/trees/d51a9c3d6270fd4e8258b00d1f06156c4d96ad7e"
+        },
+        "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/git/commits/26ebc04f64e91d007dc5f8d6e8b61e854c010220",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/commits/26ebc04f64e91d007dc5f8d6e8b61e854c010220",
+    "html_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/commit/26ebc04f64e91d007dc5f8d6e8b61e854c010220",
+    "comments_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/commits/26ebc04f64e91d007dc5f8d6e8b61e854c010220/comments",
+    "author": {
+        "login": "shijinrajbosch",
+        "id": 136349699,
+        "node_id": "U_kgDOCCCIAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/136349699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shijinrajbosch",
+        "html_url": "https://github.com/shijinrajbosch",
+        "followers_url": "https://api.github.com/users/shijinrajbosch/followers",
+        "following_url": "https://api.github.com/users/shijinrajbosch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shijinrajbosch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shijinrajbosch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shijinrajbosch/subscriptions",
+        "organizations_url": "https://api.github.com/users/shijinrajbosch/orgs",
+        "repos_url": "https://api.github.com/users/shijinrajbosch/repos",
+        "events_url": "https://api.github.com/users/shijinrajbosch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shijinrajbosch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "shijinrajbosch",
+        "id": 136349699,
+        "node_id": "U_kgDOCCCIAw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/136349699?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/shijinrajbosch",
+        "html_url": "https://github.com/shijinrajbosch",
+        "followers_url": "https://api.github.com/users/shijinrajbosch/followers",
+        "following_url": "https://api.github.com/users/shijinrajbosch/following{/other_user}",
+        "gists_url": "https://api.github.com/users/shijinrajbosch/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/shijinrajbosch/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/shijinrajbosch/subscriptions",
+        "organizations_url": "https://api.github.com/users/shijinrajbosch/orgs",
+        "repos_url": "https://api.github.com/users/shijinrajbosch/repos",
+        "events_url": "https://api.github.com/users/shijinrajbosch/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/shijinrajbosch/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a2f84edb8e2f6e15656740a32297b7c5f37cff47",
+            "url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/commits/a2f84edb8e2f6e15656740a32297b7c5f37cff47",
+            "html_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/commit/a2f84edb8e2f6e15656740a32297b7c5f37cff47"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "039a162fc85ae234729be696ab532bdf79d848d4",
+            "filename": "backend/src/main/java/org/eclipse/tractusx/semantics/registry/service/ShellService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/blob/26ebc04f64e91d007dc5f8d6e8b61e854c010220/backend%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2Fservice%2FShellService.java",
+            "raw_url": "https://github.com/eclipse-tractusx/sldt-digital-twin-registry/raw/26ebc04f64e91d007dc5f8d6e8b61e854c010220/backend%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2Fservice%2FShellService.java",
+            "contents_url": "https://api.github.com/repos/eclipse-tractusx/sldt-digital-twin-registry/contents/backend%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Ftractusx%2Fsemantics%2Fregistry%2Fservice%2FShellService.java?ref=26ebc04f64e91d007dc5f8d6e8b61e854c010220",
+            "patch": "@@ -109,7 +109,7 @@ public Shell save(Shell shell) {\n     */\n    private void validateIdShort( Shell shell ) {\n       //Check uniqueness of IdShort in shell level\n-      Optional.of( shell.getIdShort() ).map( shellRepository::existsByIdShort ).filter( BooleanUtils::isFalse )\n+      Optional.ofNullable( shell.getIdShort() ).map( shellRepository::existsByIdShort ).filter( BooleanUtils::isFalse )\n             .orElseThrow( () -> new DuplicateKeyException( \"An AssetAdministrationShell for the given IdShort already exists.\" ) );\n \n       checkForDuplicateIdShortWithInSubModels( shell );"
+        }
+    ]
+}

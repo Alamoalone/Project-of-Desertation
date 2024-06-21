@@ -1,0 +1,8 @@
+	public ResponseEntity<?> getOneMedicalRecord(@PathVariable String id) {
+		MedicalRecord medicalRecordFoundById = medicalRecordService.getOneMedicalRecordById(id);
+		ResponseEntity<?> responseEmpty = returnResponseEntityEmptyAndCode404();
+		if (medicalRecordFoundById == null) {
+			return responseEmpty;
+		}
+		return ResponseEntity.status(HttpStatus.OK).body(medicalRecordFoundById);
+	}

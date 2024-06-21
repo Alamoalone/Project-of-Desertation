@@ -1,0 +1,45 @@
+  public void testRuntimeArgsDeletion() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    ApplicationId appId = new ApplicationId("testDeleteRuntimeArgs", spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    Assert.assertNotNull(store.getApplication(appId));
+
+    ProgramId mapreduceProgramId = appId.mr("NoOpMR");
+    ProgramId workflowProgramId = appId.workflow("NoOpWorkflow");
+
+    long nowMillis = System.currentTimeMillis();
+    String mapreduceRunId = RunIds.generate(nowMillis).getId();
+    String workflowRunId = RunIds.generate(nowMillis).getId();
+
+    ArtifactId artifactId = appId.getNamespaceId().artifact("testArtifact", "1.0").toApiArtifactId();
+
+    setStartAndRunning(mapreduceProgramId.run(mapreduceRunId),
+                       ImmutableMap.of("path", "/data"), new HashMap<>(), artifactId);
+    setStartAndRunning(workflowProgramId.run(workflowRunId),
+                       ImmutableMap.of("whitelist", "cask"), new HashMap<>(), artifactId);
+
+    ProgramRunId mapreduceProgramRunId = mapreduceProgramId.run(mapreduceRunId);
+    ProgramRunId workflowProgramRunId = workflowProgramId.run(workflowRunId);
+
+    Map<String, String> args = store.getRuntimeArguments(mapreduceProgramRunId);
+    Assert.assertEquals(1, args.size());
+    Assert.assertEquals("/data", args.get("path"));
+
+    args = store.getRuntimeArguments(workflowProgramRunId);
+    Assert.assertEquals(1, args.size());
+    Assert.assertEquals("cask", args.get("whitelist"));
+
+    // removing application
+    store.removeApplication(appId);
+
+    //Check if args are deleted.
+    args = store.getRuntimeArguments(mapreduceProgramRunId);
+    Assert.assertEquals(0, args.size());
+
+    args = store.getRuntimeArguments(workflowProgramRunId);
+    Assert.assertEquals(0, args.size());
+  }

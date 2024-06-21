@@ -1,0 +1,98 @@
+{
+    "sha": "ec54d9b218e316d225c22526a9016ed83b33b803",
+    "node_id": "C_kwDOAmOz79oAKGVjNTRkOWIyMThlMzE2ZDIyNWMyMjUyNmE5MDE2ZWQ4M2IzM2I4MDM",
+    "commit": {
+        "author": {
+            "name": "Jordan Irwin",
+            "email": "antumdeluge@gmail.com",
+            "date": "2023-02-09T15:07:03Z"
+        },
+        "committer": {
+            "name": "Jordan Irwin",
+            "email": "antumdeluge@gmail.com",
+            "date": "2023-02-09T15:07:03Z"
+        },
+        "message": "Fix null pointer exception",
+        "tree": {
+            "sha": "7a7ebf4fd133e5d5b40dd373867e2703bbab8499",
+            "url": "https://api.github.com/repos/arianne/stendhal/git/trees/7a7ebf4fd133e5d5b40dd373867e2703bbab8499"
+        },
+        "url": "https://api.github.com/repos/arianne/stendhal/git/commits/ec54d9b218e316d225c22526a9016ed83b33b803",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/arianne/stendhal/commits/ec54d9b218e316d225c22526a9016ed83b33b803",
+    "html_url": "https://github.com/arianne/stendhal/commit/ec54d9b218e316d225c22526a9016ed83b33b803",
+    "comments_url": "https://api.github.com/repos/arianne/stendhal/commits/ec54d9b218e316d225c22526a9016ed83b33b803/comments",
+    "author": {
+        "login": "AntumDeluge",
+        "id": 3631473,
+        "node_id": "MDQ6VXNlcjM2MzE0NzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3631473?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AntumDeluge",
+        "html_url": "https://github.com/AntumDeluge",
+        "followers_url": "https://api.github.com/users/AntumDeluge/followers",
+        "following_url": "https://api.github.com/users/AntumDeluge/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AntumDeluge/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AntumDeluge/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AntumDeluge/subscriptions",
+        "organizations_url": "https://api.github.com/users/AntumDeluge/orgs",
+        "repos_url": "https://api.github.com/users/AntumDeluge/repos",
+        "events_url": "https://api.github.com/users/AntumDeluge/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AntumDeluge/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "AntumDeluge",
+        "id": 3631473,
+        "node_id": "MDQ6VXNlcjM2MzE0NzM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3631473?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AntumDeluge",
+        "html_url": "https://github.com/AntumDeluge",
+        "followers_url": "https://api.github.com/users/AntumDeluge/followers",
+        "following_url": "https://api.github.com/users/AntumDeluge/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AntumDeluge/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AntumDeluge/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AntumDeluge/subscriptions",
+        "organizations_url": "https://api.github.com/users/AntumDeluge/orgs",
+        "repos_url": "https://api.github.com/users/AntumDeluge/repos",
+        "events_url": "https://api.github.com/users/AntumDeluge/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AntumDeluge/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e0d5086e9745304d132d1823cf7c51e5e50cc17e",
+            "url": "https://api.github.com/repos/arianne/stendhal/commits/e0d5086e9745304d132d1823cf7c51e5e50cc17e",
+            "html_url": "https://github.com/arianne/stendhal/commit/e0d5086e9745304d132d1823cf7c51e5e50cc17e"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "4d00b3ebdee3c2ef319b5300897a7de4a24bab48",
+            "filename": "src/games/stendhal/server/entity/npc/ShopList.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/arianne/stendhal/blob/ec54d9b218e316d225c22526a9016ed83b33b803/src%2Fgames%2Fstendhal%2Fserver%2Fentity%2Fnpc%2FShopList.java",
+            "raw_url": "https://github.com/arianne/stendhal/raw/ec54d9b218e316d225c22526a9016ed83b33b803/src%2Fgames%2Fstendhal%2Fserver%2Fentity%2Fnpc%2FShopList.java",
+            "contents_url": "https://api.github.com/repos/arianne/stendhal/contents/src%2Fgames%2Fstendhal%2Fserver%2Fentity%2Fnpc%2FShopList.java?ref=ec54d9b218e316d225c22526a9016ed83b33b803",
+            "patch": "@@ -269,12 +269,12 @@ public void configureNPC(final SpeakerNPC npc, final String shopname,\n \t\t\tstype = \"buy\";\n \t\t}\n \n-\t\tfinal String npcname = npc.getName();\n \t\tif (npc == null) {\n \t\t\tlogger.error(\"Cannot configure \" + stype + \"er shop \\\"\"\n-\t\t\t\t\t+ shopname + \"\\\" for non-existing NPC \" + npcname);\n+\t\t\t\t\t+ shopname + \"\\\" for non-existing NPC\");\n \t\t\treturn;\n \t\t}\n+\t\tfinal String npcname = npc.getName();\n \t\tfinal Map<String, Integer> shoplist = get(seller, shopname);\n \t\tif (shoplist == null) {\n \t\t\tlogger.error(\"Cannot configure non-existing \" + stype"
+        }
+    ]
+}

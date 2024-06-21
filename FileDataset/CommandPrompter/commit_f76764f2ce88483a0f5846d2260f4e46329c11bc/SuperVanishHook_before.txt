@@ -1,0 +1,4 @@
+    public void onVisibilityStateChange(PlayerVanishStateChangeEvent e) {
+        onStateChange(Bukkit.getPlayer(e.getUUID()), e::isVanishing);
+    }
+

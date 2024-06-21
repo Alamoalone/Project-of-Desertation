@@ -1,0 +1,10 @@
+    public Component[] getDescription() {
+        return new Component[] {
+            ServerHelper.formattedText(LanguageFile.getForKey("guis.permissions.OpenBlocks.desc"), ChatFormatting.GRAY),
+            ServerHelper.formattedText("\n\n", ChatFormatting.ITALIC),
+            ServerHelper.combineComponents(
+                ServerHelper.formattedText("\u2666 Allowed: ", ChatFormatting.GRAY),
+                ServerHelper.formattedText((state ? "TRUE" : "FALSE"), (state ? ChatFormatting.GREEN : ChatFormatting.RED))
+            )
+        };
+    }

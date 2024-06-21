@@ -1,0 +1,8 @@
+	static void create(Adresse adresse) {
+		String[] tableColumns = {"idAdresse"};
+		for (String column : TABLE_COLUMNS) tableColumns = Main.addStringToArray(tableColumns, column);
+		if (!Main.sql.createPrepareStatement(TABLE_NAME, tableColumns,
+						new Object[]{adresse.id, adresse.rue, adresse.ville, adresse.codePostal}))
+			org.SAE.Main.Logger.log("Create failed");
+		getFromDatabase();
+	}

@@ -1,0 +1,9 @@
+@@ -360,7 +360,7 @@ private void setupReportAsSpinner() {
+         reportAsIds.add(-1);
+ 
+         // report as organization
+-        if (user != null) {
++        if (user != null && user.getOrganizations() != null) {
+             for (Organization organization : user.getOrganizations()) {
+                 reportAsLabels.add(organization.getName());
+                 reportAsIds.add(organization.getId());

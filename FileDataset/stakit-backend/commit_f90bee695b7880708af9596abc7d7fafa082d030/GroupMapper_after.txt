@@ -1,0 +1,8 @@
+    public static GroupModel mapUpdateGroup(UUID uuid, GroupInput from) {
+        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());
+    }
+
+    public static GroupModel mapCreateGroup(GroupInput from) {
+        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null ? false : from.getExpanded());
+    }
+

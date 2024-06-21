@@ -1,0 +1,165 @@
+    public void confirmMovieEdit() {
+        if(validEntryChecker()) {
+            boolean dbUpdateSuccessful = Utility.UpdateMovieInDB(currentMovieId,
+                    changedName,
+                    changedYear,
+                    changedLength,
+                    changedFsk,
+                    changedRating,
+                    changedGenres,
+                    changedDirectors,
+                    changedCount,
+                    changedStudio,
+                    changedActors,
+                    changedLinkToCover,
+                    changedComment);
+            if (dbUpdateSuccessful) {
+                lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_SUCCESSFUL);
+                lbl_movieEditSaveFeedback.setStyle("-fx-text-fill: #518E21");
+                lbl_movieEditSaveFeedback.setVisible(true);
+            } else {
+                lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_WENT_WRONG);
+                lbl_movieEditSaveFeedback.setStyle("-fx-text-fill: #FF4040");
+                lbl_movieEditSaveFeedback.setVisible(true);
+            }
+        } else {
+            lbl_movieEditSaveFeedback.setText(MOVIE_SAVE_FAILED);
+            lbl_movieEditSaveFeedback.setStyle("-fx-text-fill: #FF4040");
+            lbl_movieEditSaveFeedback.setVisible(true);
+        }
+    }
+
+    private void checkIfCheckBoxesChanged() {
+        if(currentMovieType.equals("DVD") && !cbx_movieEditSelDVD.isSelected()) {
+            cbx_movieEditSelDVD.setStyle("-fx-text-fill: #FF4040");
+            cbx_movieEditSelBluRay.setStyle("-fx-text-fill: #FF4040");
+        } else if(currentMovieType.equals("Blu-Ray") && !cbx_movieEditSelBluRay.isSelected()) {
+            cbx_movieEditSelBluRay.setStyle("-fx-fill: #FF4040");
+            cbx_movieEditSelDVD.setStyle("-fx-text-fill: #FF4040");
+        } else {
+            cbx_movieEditSelBluRay.setStyle("-fx-fill: #FFF");
+            cbx_movieEditSelDVD.setStyle("-fx-text-fill: #FFF");
+        }
+    }
+
+    private boolean validEntryChecker() {
+        boolean entriesAreValid = true;
+        saveInfosAsNeededDataTypes();
+        if(changedName.isEmpty()) {
+            lbl_movieEditNameTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditNameTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(changedYear < 1920 || changedYear > 2024) {
+            lbl_movieEditYearTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditYearTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(changedFsk != 0 && changedFsk != 6 && changedFsk != 12 && changedFsk != 16 && changedFsk != 18) {
+            lbl_movieEditFskTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditFskTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(!txf_movieEditRating.getText().matches("^\\d\\.\\d$")) {//changedRating.doubleValue() < MIN_RATING || changedRating.doubleValue() >= MAX_RATING
+            lbl_movieEditRatingTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditRatingTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditGenre1.getText().isEmpty() && (!txf_movieEditGenre2.getText().isEmpty() || !txf_movieEditGenre3.getText().isEmpty())){
+            lbl_movieEditGenre1Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditGenre1Title.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditGenre2.getText().isEmpty() && !txf_movieEditGenre3.getText().isEmpty()) {
+            lbl_movieEditGenre2Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditGenre2Title.setStyle("-fx-text-fill: #949494");}
+
+        if(!changedActors.matches("^(\\w+\\.?\\w*( \\w+\\.?\\w*)*(, \\w+\\.?\\w*( \\w+\\.?\\w*)*)*)+$")) {//^(\w+( \w+)*(, \w+( \w+)*)*)+$
+            lbl_movieEditActorsTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditActorsTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditDirector1.getText().isEmpty() && (!txf_movieEditDirector2.getText().isEmpty() || !txf_movieEditDirector3.getText().isEmpty())){
+            lbl_movieEditDirector1Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditDirector1Title.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditDirector2.getText().isEmpty() && !txf_movieEditDirector3.getText().isEmpty()){
+            lbl_movieEditDirector2Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditDirector2Title.setStyle("-fx-text-fill: #949494");}
+
+        if(!changedLinkToCover.isEmpty() && !changedLinkToCover.matches("^(http://|https://)[-a-zA-Z0-9@:%._+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_+.~#?&/=]*((\\.jpg)|(\\.png)))$")) {
+            lbl_movieEditLinkToCoverTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditLinkToCoverTitle.setStyle("-fx-text-fill: #949494");}
+
+        return entriesAreValid;
+    }
+
+    private void insertMovieData() {
+        txf_movieEditID.setText(valueOf(currentMovieId));
+        txf_movieEditName.setText(currentMovieName);
+        txf_movieEditYear.setText(valueOf(currentMovieYear));
+        txf_movieEditLength.setText(valueOf(currentMovieDuration));
+        txf_movieEditFSK.setText(valueOf(currentMovieFSK));
+        txf_movieEditRating.setText(valueOf(currentMovieRating));
+
+        if(currentMovieGenres != null) {
+            txf_movieEditGenre1.setText(genreArray[0]);
+            if(genreArray.length > 1) {
+                txf_movieEditGenre2.setText(genreArray[1]);
+                if (genreArray.length > 2) {
+                    txf_movieEditGenre3.setText(genreArray[2]);
+                }
+            }
+        }
+
+        if(currentMovieDirectors != null) {
+            txf_movieEditDirector1.setText(directorsArray[0]);
+            if(directorsArray.length > 1) {
+                txf_movieEditDirector2.setText(directorsArray[1]);
+                if (directorsArray.length > 2) {
+                    txf_movieEditDirector3.setText(directorsArray[2]);
+                }
+            }
+        }
+
+        txf_movieEditCount.setText(valueOf(currentMovieCount));
+        txf_movieEditStudio.setText(currentMovieStudio);
+        txf_movieEditActors.setText(currentMovieActors);
+        txf_movieEditLinkToCover.setText(currentLinkToCover);               //TODO akzeptierende Regx für URL
+        txa_movieEditComment.setText(currentMovieComment);
+        txa_movieEditComment.setWrapText(true);
+        if(currentMovieType.equals("DVD")) {cbx_movieEditSelDVD.setSelected(true);}
+        if(currentMovieType.equals("Blu-Ray")) {cbx_movieEditSelBluRay.setSelected(true);}
+    }
+
+    private void saveInfosAsNeededDataTypes() {
+        this.changedName = txf_movieEditName.getText();
+        this.changedYear = Integer.parseInt(txf_movieEditYear.getText());
+        this.changedLength = Integer.parseInt(txf_movieEditLength.getText());
+        this.changedFsk = Integer.parseInt(txf_movieEditFSK.getText());
+        this.changedRating = BigDecimal.valueOf(Double.parseDouble(txf_movieEditRating.getText()));
+        this.changedGenres = txf_movieEditGenre1.getText();
+        if(!txf_movieEditGenre1.getText().isEmpty() && !txf_movieEditGenre2.getText().isEmpty()) {
+            this.changedGenres = this.changedGenres + ", " + txf_movieEditGenre2.getText();
+            if (!txf_movieEditGenre3.getText().isEmpty()) {
+                this.changedGenres = this.changedGenres + ", " + txf_movieEditGenre3.getText();
+            }
+        }
+        this.changedDirectors = txf_movieEditDirector1.getText();
+        if(!txf_movieEditDirector1.getText().isEmpty() && !txf_movieEditDirector2.getText().isEmpty()) {
+            this.changedDirectors = this.changedDirectors + ", " + txf_movieEditDirector2.getText();
+            if (!txf_movieEditDirector3.getText().isEmpty()) {
+                this.changedDirectors = this.changedDirectors + ", " + txf_movieEditDirector3.getText();
+            }
+        }
+        this.changedCount = Integer.parseInt(txf_movieEditCount.getText());
+        this.changedStudio = txf_movieEditStudio.getText();
+        this.changedActors = txf_movieEditActors.getText();
+        this.changedLinkToCover = txf_movieEditLinkToCover.getText();
+        this.changedComment = txa_movieEditComment.getText();
+    }
+

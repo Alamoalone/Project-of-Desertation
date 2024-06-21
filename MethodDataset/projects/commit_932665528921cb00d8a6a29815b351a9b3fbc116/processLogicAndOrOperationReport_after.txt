@@ -1,0 +1,26 @@
+    private static void processLogicAndOrOperationReport(LinkageStackElementIn _in, VariablesOffsets _vars, OperationNode _curOp, OperationNode _nextSiblingOp, MethodOperation _parentOp, Coverage _cov) {
+        if (!(_parentOp instanceof QuickOperation)) {
+            return;
+        }
+        QuickOperation q_ = (QuickOperation) _parentOp;
+        int sum_ = _in.getBeginBlock() + _parentOp.getIndexInEl();
+        int begin_ = sum_+q_.getOpOff();
+        StringList errs_ = q_.getErrs();
+        AnaTypeFct functionTest_ = q_.getFunctionTest();
+        if (functionTest_ != null) {
+            StringList title_ = new StringList();
+            title_.addAllElts(getCoversFoundReport(_in, _vars, _curOp, _cov));
+            addParts(_vars, functionTest_,begin_,1, errs_,title_);
+        } else {
+            safeReport(_in,_vars,_curOp,_cov, begin_, 1);
+        }
+        AnaTypeFct function_ = q_.getFct().getFunction();
+        if (LambdaOperation.fct(function_) != null) {
+            StringList title_ = new StringList();
+            title_.addAllElts(getCoversFoundReport(_in, _vars, _nextSiblingOp, _cov));
+            addParts(_vars, function_,begin_+1,1, errs_,title_);
+        } else {
+            safeReport(_in,_vars,_nextSiblingOp,_cov, begin_+1, 1);
+        }
+        tryAddMergedParts(_vars, q_.getConvert(), begin_+2, new StringList(), new StringList());
+    }

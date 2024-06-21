@@ -1,0 +1,52 @@
+	public void align(boolean endParagraph, LayoutContext context) {
+		assert (parent instanceof BlockContainerArea);
+		CSSValue align = ((BlockContainerArea) parent).getTextAlign();
+
+		// bidi_hcg: handle empty and justify align in RTL direction as right
+		// alignment
+		boolean isRightAligned = BidiAlignmentResolver.isRightAligned(parent.content, align, endParagraph);
+		boolean isCentered = CSSValueConstants.CENTER_VALUE.equals(align);
+		boolean isJustified = CSSValueConstants.JUSTIFY_VALUE.equals(align) && !endParagraph;
+
+		// single line
+		int spacing = width - currentIP;
+		spacing -= adjustSpacingForSoftHyphen();
+		int adjustLeftWhiteSpace = ignoreLeftMostWhiteSpace();
+		int adjustRightWhiteSpace = ignoreRightMostWhiteSpace();
+		if ((isRightAligned)) {
+			Iterator<IArea> iter = getChildren();
+			while (iter.hasNext()) {
+				AbstractArea area = (AbstractArea) iter.next();
+				if (parent.content.isDirectionRTL()) {
+					area.setPosition(spacing + area.getX(), area.getY());
+				} else {
+					area.setPosition(spacing + area.getX() + adjustRightWhiteSpace, area.getY());
+				}
+			}
+		} else if (isCentered) {
+			Iterator<IArea> iter = getChildren();
+			while (iter.hasNext()) {
+				AbstractArea area = (AbstractArea) iter.next();
+				area.setPosition(spacing / 2 + area.getX() - adjustLeftWhiteSpace + adjustRightWhiteSpace,
+						area.getY());
+			}
+		} else if (isJustified) {
+			justify(spacing, adjustLeftWhiteSpace, adjustRightWhiteSpace);
+		} else {
+			// is left aligned
+			if (!parent.content.isDirectionRTL()) {
+				if (adjustLeftWhiteSpace != 0) {
+					Iterator<IArea> iter = getChildren();
+					while (iter.hasNext()) {
+						AbstractArea area = (AbstractArea) iter.next();
+						area.setPosition(area.getX() - adjustLeftWhiteSpace, area.getY());
+					}
+				}
+			}
+		}
+		if (context.getBidiProcessing()) {
+			reorderVisually(this);
+		}
+		verticalAlign();
+	}
+

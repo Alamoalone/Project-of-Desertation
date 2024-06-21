@@ -1,0 +1,4 @@
+    public void modificaProfiloGiocatore(String oldGiocatore, Object newGiocatore) {
+        giocatoreHandler.modifica(oldGiocatore, newGiocatore);
+    }
+

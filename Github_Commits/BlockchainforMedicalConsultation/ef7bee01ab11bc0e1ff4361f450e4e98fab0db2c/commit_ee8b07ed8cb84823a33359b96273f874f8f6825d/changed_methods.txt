@@ -1,0 +1,2 @@
+Block(String originalMessage)
+main(String args)

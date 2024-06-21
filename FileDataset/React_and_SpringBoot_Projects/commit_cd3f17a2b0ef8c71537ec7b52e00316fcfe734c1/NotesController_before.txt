@@ -1,0 +1,50 @@
+    public ResponseEntity<?> getNoteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " REQUESTED");
+        Notes note = notesService.findByNoteId(id);
+        if(note == null){
+            return ResponseEntity.status(204).header("msg", "NO NOTE FOUND WITH THIS ID").build();
+        }
+        return ResponseEntity.ok(notesService.findByNoteId(id));
+    }
+
+    public ResponseEntity<?> getAllNotes() {
+        Loggers.info("ALL NOTE FETCHED");
+        List<Notes> notesList = notesService.notesList();
+        if(notesList.isEmpty()){
+            return ResponseEntity.status(204).header("msg", "NOTES LIST IS EMPTY").build();
+        }
+        return ResponseEntity.ok(notesList);
+    }
+
+    public ResponseEntity<?> createNote(@RequestBody Notes note) throws Exception {
+        Loggers.info("NOTE CREATED");
+        System.out.println(note);
+        Notes notes = notesService.createNote(note);
+        if (notes == null) {
+            return ResponseEntity.status(500).header("msg", "SOMETHING WENT WRONG").build();
+        }
+        return ResponseEntity.ok(notesService.createNote(note));
+    }
+
+    public ResponseEntity<?> findByTitle(@PathVariable String title) {
+        Loggers.info("NOTE WITH TITLE " + title + " REQUESTED");
+        if (notesService.findByTitle(title) == null) {
+            return ResponseEntity.status(204).header("msg", "NO NOTES FOUND WITH THIS TITLE").build();
+        }
+        return ResponseEntity.ok(notesService.findByTitle(title));
+    }
+
+    public ResponseEntity<?> deleteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " DELETED");
+        notesService.deleteById(id);
+        return ResponseEntity.ok().build();
+    }
+
+    public ResponseEntity<?> updateNoteById(@PathVariable Integer id, @RequestBody Notes notes) {
+        Loggers.info("NOTE WITH ID " + id + " UPDATED");
+        if(notesService.updateNoteById(id, notes) == null){
+            return ResponseEntity.status(400).header("msg", "BAD REQUEST").build();
+        }
+        return ResponseEntity.ok(notesService.updateNoteById(id, notes));
+    }
+

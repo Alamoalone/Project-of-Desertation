@@ -1,0 +1,13 @@
+    public static void main(String[] args) throws IOException {
+
+            String srcFolder = "";
+            String dstFolder = "";
+
+            ConvertToThisFormats dstFormat;
+
+            JFrame frame = new JFrame("My GUI Form");
+            frame.setContentPane(new GUIForm().getRootPanel());
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setSize(new Dimension(600, 700)); // Установите желаемый размер окна
+            frame.setVisible(true);
+        }

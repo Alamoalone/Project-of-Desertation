@@ -1,0 +1,7 @@
+    public void sign(Ed25519PublicKeyParameters pubKey, Ed25519PrivateKeyParameters signingKey) {
+        SHA256Hash sha256 = new SHA256Hash();
+        sha256.hash = getHash();
+        byte[] transactionSignature = signWithPrivateKey(sha256.hash, pubKey, signingKey);
+
+        this.signature.signature = transactionSignature;
+    }

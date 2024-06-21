@@ -1,0 +1,47 @@
+  public void paintBoundingBox(Graphics2D graphics, Viewport viewport)
+  {
+    boundingBox.transform(rotation);
+
+    Int2D p = new Int2D();
+    Int2D s = new Int2D();
+    if (getBoundingBoxInScreenSpace(viewport, p, s))
+    {
+      viewport.paintRectangle(graphics, p.x, p.y, s.x, s.y, viewport.getAbsoluteStroke(1), null, Color.ORANGE);
+    }
+  }
+
+  public boolean getSelectionBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+  {
+    if (selectionBox != null && !selectionBox.isNull())
+    {
+      getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, selectionBox);
+      return true;
+    }
+    return false;
+  }
+
+  public boolean getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)
+  {
+    if (boundingBox != null && !boundingBox.isNull())
+    {
+      getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, boundingBox);
+      return true;
+    }
+    return false;
+  }
+
+  public void paintSelected(Graphics2D graphics, Viewport viewport, Color color)
+  {
+    Int2D p = new Int2D();
+    Int2D s = new Int2D();
+
+    if (getSelectionBoxInScreenSpace(viewport, p, s))
+    {
+      graphics.setStroke(viewport.getZoomableStroke());
+      paintSelectionRectangle(graphics, viewport, p.x, p.y, color);
+      paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y, color);
+      paintSelectionRectangle(graphics, viewport, p.x, p.y + s.y, color);
+      paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y + s.y, color);
+    }
+  }
+

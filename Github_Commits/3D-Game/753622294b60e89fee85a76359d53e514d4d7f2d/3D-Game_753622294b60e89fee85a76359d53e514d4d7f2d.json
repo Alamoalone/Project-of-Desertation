@@ -1,0 +1,110 @@
+{
+    "sha": "753622294b60e89fee85a76359d53e514d4d7f2d",
+    "node_id": "C_kwDOKJAAINoAKDc1MzYyMjI5NGI2MGU4OWZlZTg1YTc2MzU5ZDUzZTUxNGQ0ZDdmMmQ",
+    "commit": {
+        "author": {
+            "name": "Raymond",
+            "email": "yuhongweng0501@gmail.com",
+            "date": "2023-08-02T03:15:39Z"
+        },
+        "committer": {
+            "name": "Raymond",
+            "email": "yuhongweng0501@gmail.com",
+            "date": "2023-08-02T03:15:39Z"
+        },
+        "message": "fix null pointer exception of the hitbox tracker",
+        "tree": {
+            "sha": "95dc799c94eab6990c8c37ca5a34ea60c9fcfbb4",
+            "url": "https://api.github.com/repos/Raymond-Weng/3D-Game/git/trees/95dc799c94eab6990c8c37ca5a34ea60c9fcfbb4"
+        },
+        "url": "https://api.github.com/repos/Raymond-Weng/3D-Game/git/commits/753622294b60e89fee85a76359d53e514d4d7f2d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Raymond-Weng/3D-Game/commits/753622294b60e89fee85a76359d53e514d4d7f2d",
+    "html_url": "https://github.com/Raymond-Weng/3D-Game/commit/753622294b60e89fee85a76359d53e514d4d7f2d",
+    "comments_url": "https://api.github.com/repos/Raymond-Weng/3D-Game/commits/753622294b60e89fee85a76359d53e514d4d7f2d/comments",
+    "author": {
+        "login": "Raymond-Weng",
+        "id": 87399369,
+        "node_id": "MDQ6VXNlcjg3Mzk5MzY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/87399369?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Raymond-Weng",
+        "html_url": "https://github.com/Raymond-Weng",
+        "followers_url": "https://api.github.com/users/Raymond-Weng/followers",
+        "following_url": "https://api.github.com/users/Raymond-Weng/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Raymond-Weng/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Raymond-Weng/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Raymond-Weng/subscriptions",
+        "organizations_url": "https://api.github.com/users/Raymond-Weng/orgs",
+        "repos_url": "https://api.github.com/users/Raymond-Weng/repos",
+        "events_url": "https://api.github.com/users/Raymond-Weng/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Raymond-Weng/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Raymond-Weng",
+        "id": 87399369,
+        "node_id": "MDQ6VXNlcjg3Mzk5MzY5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/87399369?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Raymond-Weng",
+        "html_url": "https://github.com/Raymond-Weng",
+        "followers_url": "https://api.github.com/users/Raymond-Weng/followers",
+        "following_url": "https://api.github.com/users/Raymond-Weng/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Raymond-Weng/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Raymond-Weng/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Raymond-Weng/subscriptions",
+        "organizations_url": "https://api.github.com/users/Raymond-Weng/orgs",
+        "repos_url": "https://api.github.com/users/Raymond-Weng/repos",
+        "events_url": "https://api.github.com/users/Raymond-Weng/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Raymond-Weng/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0a6821ef6ee219dfeb30f12f093ee2fc52d2a752",
+            "url": "https://api.github.com/repos/Raymond-Weng/3D-Game/commits/0a6821ef6ee219dfeb30f12f093ee2fc52d2a752",
+            "html_url": "https://github.com/Raymond-Weng/3D-Game/commit/0a6821ef6ee219dfeb30f12f093ee2fc52d2a752"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 4,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "ac6e9ba257680c17670720f977d4ca4e27ede05b",
+            "filename": "src/main/java/jGame/gameObject/hitbox/HitboxTracker.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/Raymond-Weng/3D-Game/blob/753622294b60e89fee85a76359d53e514d4d7f2d/src%2Fmain%2Fjava%2FjGame%2FgameObject%2Fhitbox%2FHitboxTracker.java",
+            "raw_url": "https://github.com/Raymond-Weng/3D-Game/raw/753622294b60e89fee85a76359d53e514d4d7f2d/src%2Fmain%2Fjava%2FjGame%2FgameObject%2Fhitbox%2FHitboxTracker.java",
+            "contents_url": "https://api.github.com/repos/Raymond-Weng/3D-Game/contents/src%2Fmain%2Fjava%2FjGame%2FgameObject%2Fhitbox%2FHitboxTracker.java?ref=753622294b60e89fee85a76359d53e514d4d7f2d",
+            "patch": "@@ -77,6 +77,8 @@ public Size getSize() {\n     }\n \n     public void track(GameObject gameObject) {\n-        this.gameObjects.add(gameObject);\n+        if(this.work){\n+            this.gameObjects.add(gameObject);\n+        }\n     }\n }"
+        },
+        {
+            "sha": "4777662d836c14d962b6c606ce0559de0ad3d5af",
+            "filename": "src/main/java/jGame/main/Game.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Raymond-Weng/3D-Game/blob/753622294b60e89fee85a76359d53e514d4d7f2d/src%2Fmain%2Fjava%2FjGame%2Fmain%2FGame.java",
+            "raw_url": "https://github.com/Raymond-Weng/3D-Game/raw/753622294b60e89fee85a76359d53e514d4d7f2d/src%2Fmain%2Fjava%2FjGame%2Fmain%2FGame.java",
+            "contents_url": "https://api.github.com/repos/Raymond-Weng/3D-Game/contents/src%2Fmain%2Fjava%2FjGame%2Fmain%2FGame.java?ref=753622294b60e89fee85a76359d53e514d4d7f2d",
+            "patch": "@@ -534,7 +534,7 @@ public void cleanToBeAddedList() {\n                 int finalI = i;\n                 synchronized (objectsToBeAdded.get(i)) {\n                     objectsToBeAdded.get(i).forEach(gameObject -> objects.get(finalI).add(gameObject));\n-                    objectsToBeAddedq.set(i, new ArrayList<>());\n+                    objectsToBeAdded.set(i, new ArrayList<>());\n                 }\n                 System.gc();\n             }"
+        }
+    ]
+}

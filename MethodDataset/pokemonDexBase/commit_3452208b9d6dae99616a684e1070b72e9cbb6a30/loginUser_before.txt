@@ -1,0 +1,5 @@
+	public ResponseEntity<?> loginUser(@RequestBody UserDto userDto, Authentication authentication) {
+	    // Can use 'authentication' to access the currently authenticated user's details
+	    // Implement any additional logic needed post-authentication
+	    return ResponseEntity.ok().body("User logged in successfully");
+	}

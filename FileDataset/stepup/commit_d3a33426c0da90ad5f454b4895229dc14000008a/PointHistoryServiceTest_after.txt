@@ -1,0 +1,31 @@
+    public void init() {
+        makePointPolicy();
+        makeUser();
+        makePointHistory();
+        makePointUpdateReqeustDto();
+        makeRandomDance();
+    }
+
+    private void makeRandomDance() {
+        randomDance = RandomDance.builder()
+                .id(1L)
+                .title("title")
+                .content("content")
+                .danceType(DanceType.RANKING)
+                .build();
+    }
+
+    private List<PointHistory> makePointHistories() {
+        pointHistories = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            PointHistory tmp = PointHistory.builder()
+                    .user(user)
+                    .randomDance(randomDance)
+                    .pointPolicy(pointPolicy)
+                    .count(0)
+                    .build();
+            pointHistories.add(tmp);
+        }
+        return pointHistories;
+    }
+

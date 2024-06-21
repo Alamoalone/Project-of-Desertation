@@ -1,0 +1,10 @@
+
+
+    TypeEnv enterMethod(Method m) {
+        return new TypeEnv(m.params, classList, currClass);
+    }
+
+    TypeEnv enterClass(Class c) {
+        return new TypeEnv(List.nul(), classList, Optional.of(c));
+    }
+

@@ -1,0 +1,98 @@
+{
+    "sha": "2f7301c169074cd5ce30b2e6787d3e908922ea60",
+    "node_id": "C_kwDOFzOYw9oAKDJmNzMwMWMxNjkwNzRjZDVjZTMwYjJlNjc4N2QzZTkwODkyMmVhNjA",
+    "commit": {
+        "author": {
+            "name": "Harsh",
+            "email": "iamhp2k@gmail.com",
+            "date": "2023-03-01T19:22:29Z"
+        },
+        "committer": {
+            "name": "StudioKeys",
+            "email": "studiokeys@blissroms.org",
+            "date": "2023-06-26T13:47:33Z"
+        },
+        "message": "Launcher3: PageIndicatorDots: null pointer Exception",
+        "tree": {
+            "sha": "c1f2b5dadaba262a8f021c1d9e0aaab6e91d5c1c",
+            "url": "https://api.github.com/repos/BlissOS/platform_packages_apps_Launcher3/git/trees/c1f2b5dadaba262a8f021c1d9e0aaab6e91d5c1c"
+        },
+        "url": "https://api.github.com/repos/BlissOS/platform_packages_apps_Launcher3/git/commits/2f7301c169074cd5ce30b2e6787d3e908922ea60",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/BlissOS/platform_packages_apps_Launcher3/commits/2f7301c169074cd5ce30b2e6787d3e908922ea60",
+    "html_url": "https://github.com/BlissOS/platform_packages_apps_Launcher3/commit/2f7301c169074cd5ce30b2e6787d3e908922ea60",
+    "comments_url": "https://api.github.com/repos/BlissOS/platform_packages_apps_Launcher3/commits/2f7301c169074cd5ce30b2e6787d3e908922ea60/comments",
+    "author": {
+        "login": "hpnightowl",
+        "id": 48650798,
+        "node_id": "MDQ6VXNlcjQ4NjUwNzk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/48650798?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/hpnightowl",
+        "html_url": "https://github.com/hpnightowl",
+        "followers_url": "https://api.github.com/users/hpnightowl/followers",
+        "following_url": "https://api.github.com/users/hpnightowl/following{/other_user}",
+        "gists_url": "https://api.github.com/users/hpnightowl/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/hpnightowl/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/hpnightowl/subscriptions",
+        "organizations_url": "https://api.github.com/users/hpnightowl/orgs",
+        "repos_url": "https://api.github.com/users/hpnightowl/repos",
+        "events_url": "https://api.github.com/users/hpnightowl/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/hpnightowl/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "StudioKeys",
+        "id": 86867971,
+        "node_id": "MDQ6VXNlcjg2ODY3OTcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/86867971?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/StudioKeys",
+        "html_url": "https://github.com/StudioKeys",
+        "followers_url": "https://api.github.com/users/StudioKeys/followers",
+        "following_url": "https://api.github.com/users/StudioKeys/following{/other_user}",
+        "gists_url": "https://api.github.com/users/StudioKeys/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/StudioKeys/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/StudioKeys/subscriptions",
+        "organizations_url": "https://api.github.com/users/StudioKeys/orgs",
+        "repos_url": "https://api.github.com/users/StudioKeys/repos",
+        "events_url": "https://api.github.com/users/StudioKeys/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/StudioKeys/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6131d0d312367851380afb960a3cd82bcd86b773",
+            "url": "https://api.github.com/repos/BlissOS/platform_packages_apps_Launcher3/commits/6131d0d312367851380afb960a3cd82bcd86b773",
+            "html_url": "https://github.com/BlissOS/platform_packages_apps_Launcher3/commit/6131d0d312367851380afb960a3cd82bcd86b773"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "2de71f9a8dec62dda6fcd30af9bb32004fafcbbc",
+            "filename": "src/com/android/launcher3/pageindicators/PageIndicatorDots.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/BlissOS/platform_packages_apps_Launcher3/blob/2f7301c169074cd5ce30b2e6787d3e908922ea60/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "raw_url": "https://github.com/BlissOS/platform_packages_apps_Launcher3/raw/2f7301c169074cd5ce30b2e6787d3e908922ea60/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java",
+            "contents_url": "https://api.github.com/repos/BlissOS/platform_packages_apps_Launcher3/contents/src%2Fcom%2Fandroid%2Flauncher3%2Fpageindicators%2FPageIndicatorDots.java?ref=2f7301c169074cd5ce30b2e6787d3e908922ea60",
+            "patch": "@@ -183,6 +183,10 @@ public void setScroll(int currentScroll, int totalScroll) {\n         mTotalScroll = totalScroll;\n \n         int scrollPerPage = totalScroll / (mNumPages - 1);\n+        if (scrollPerPage == 0) {\n+            return;\n+        }\n+\n         int pageToLeft = scrollPerPage == 0 ? 0 : currentScroll / scrollPerPage;\n         int pageToLeftScroll = pageToLeft * scrollPerPage;\n         int pageToRightScroll = pageToLeftScroll + scrollPerPage;"
+        }
+    ]
+}

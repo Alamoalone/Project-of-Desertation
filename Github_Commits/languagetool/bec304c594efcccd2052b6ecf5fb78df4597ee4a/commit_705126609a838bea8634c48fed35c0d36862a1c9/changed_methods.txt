@@ -1,0 +1,2 @@
+setDocumentCacheForTests(List paragraphs, List textParagraphs, List footnotes, List chapterBegins, Locale locale)
+setDokumentListener(XComponent xComponent)

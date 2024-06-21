@@ -1,0 +1,30 @@
+	protected JPanel createListPanel(Tournee t) {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(1, 2));
+		JLabel label = new JLabel(t.toString());
+		UButton editButton = new UButton("Modifier");
+		editButton.addActionListener(e -> {
+			displayView(true);
+			clear();
+			mainPanel.add(createEditPanel(t));
+			refresh();
+		});
+		UButton deleteButton = new UButton("Supprimer");
+		deleteButton.addActionListener(e -> {
+			t.delete();
+			t.loadFromDatabase();
+			displayView(false);
+		});
+		UButton visualiserButton = new UButton("Visualiser");
+		visualiserButton.addActionListener(e -> {
+			TourneeVisualisation visu = new TourneeVisualisation();
+			for (Depot depot : t.depots) {
+				double[] geo = TourneeVisualisation.getGeo(depot.adresse.toString());
+				visu.addMarker(geo[0], geo[1]);
+			}
+		});
+		panel.add(label);
+		panel.add(editButton);
+		panel.add(deleteButton);
+		return panel;
+	}

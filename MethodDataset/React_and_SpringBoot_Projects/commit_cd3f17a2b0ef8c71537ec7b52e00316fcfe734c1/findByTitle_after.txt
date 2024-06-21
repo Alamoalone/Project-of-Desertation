@@ -1,0 +1,8 @@
+    public ResponseEntity<?> findByTitle(@PathVariable String title) {
+        Loggers.info("NOTE WITH TITLE " + title + " REQUESTED");
+        List<Notes> notesList = notesService.findByTitle(title);
+        if (notesList == null) {
+            return ResponseEntity.status(204).header("msg", "NO NOTES FOUND WITH THIS TITLE").build();
+        }
+        return ResponseEntity.ok(notesList);
+    }

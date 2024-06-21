@@ -1,0 +1,2 @@
+wireConnect(CircuitSimulation simulation, TraceLoader traceLoader, WireView wireView, long traceIds)
+wireConnect(SubcircuitEditor subcircuitEditor, CircuitSimulation simulation, TraceLoader traceLoader, WireView wireView, long traceIds, boolean selected)

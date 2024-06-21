@@ -1,0 +1,22 @@
+	protected JPanel createListPanel(T t) {
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(1, 2));
+		JLabel label = new JLabel(t.toString());
+		UButton editButton = new UButton("Détailler");
+		editButton.addActionListener(e -> {
+			displayView(true);
+			clear();
+			mainPanel.add(createEditPanel(t));
+			refresh();
+		});
+		UButton deleteButton = new UButton("Supprimer");
+		deleteButton.addActionListener(e -> {
+			t.delete();
+			t.loadFromDatabase();
+			displayView(false);
+		});
+		panel.add(label);
+		panel.add(editButton);
+		panel.add(deleteButton);
+		return panel;
+	}

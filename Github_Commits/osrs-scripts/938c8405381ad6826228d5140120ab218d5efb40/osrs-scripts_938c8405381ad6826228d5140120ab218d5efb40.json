@@ -1,0 +1,98 @@
+{
+    "sha": "938c8405381ad6826228d5140120ab218d5efb40",
+    "node_id": "C_kwDOJ-ddp9oAKDkzOGM4NDA1MzgxYWQ2ODI2MjI4ZDUxNDAxMjBhYjIxOGQ1ZWZiNDA",
+    "commit": {
+        "author": {
+            "name": "Sergi Martínez",
+            "email": "sergimartinezrodriguez@gmail.com",
+            "date": "2023-07-24T19:29:24Z"
+        },
+        "committer": {
+            "name": "Sergi Martínez",
+            "email": "sergimartinezrodriguez@gmail.com",
+            "date": "2023-07-24T19:29:24Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "7acb747c7b12cd0e491fc280fc8f388b76fd1b64",
+            "url": "https://api.github.com/repos/lmeullibre/osrs-scripts/git/trees/7acb747c7b12cd0e491fc280fc8f388b76fd1b64"
+        },
+        "url": "https://api.github.com/repos/lmeullibre/osrs-scripts/git/commits/938c8405381ad6826228d5140120ab218d5efb40",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/lmeullibre/osrs-scripts/commits/938c8405381ad6826228d5140120ab218d5efb40",
+    "html_url": "https://github.com/lmeullibre/osrs-scripts/commit/938c8405381ad6826228d5140120ab218d5efb40",
+    "comments_url": "https://api.github.com/repos/lmeullibre/osrs-scripts/commits/938c8405381ad6826228d5140120ab218d5efb40/comments",
+    "author": {
+        "login": "lmeullibre",
+        "id": 32779308,
+        "node_id": "MDQ6VXNlcjMyNzc5MzA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/32779308?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lmeullibre",
+        "html_url": "https://github.com/lmeullibre",
+        "followers_url": "https://api.github.com/users/lmeullibre/followers",
+        "following_url": "https://api.github.com/users/lmeullibre/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lmeullibre/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lmeullibre/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lmeullibre/subscriptions",
+        "organizations_url": "https://api.github.com/users/lmeullibre/orgs",
+        "repos_url": "https://api.github.com/users/lmeullibre/repos",
+        "events_url": "https://api.github.com/users/lmeullibre/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lmeullibre/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "lmeullibre",
+        "id": 32779308,
+        "node_id": "MDQ6VXNlcjMyNzc5MzA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/32779308?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lmeullibre",
+        "html_url": "https://github.com/lmeullibre",
+        "followers_url": "https://api.github.com/users/lmeullibre/followers",
+        "following_url": "https://api.github.com/users/lmeullibre/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lmeullibre/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lmeullibre/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lmeullibre/subscriptions",
+        "organizations_url": "https://api.github.com/users/lmeullibre/orgs",
+        "repos_url": "https://api.github.com/users/lmeullibre/repos",
+        "events_url": "https://api.github.com/users/lmeullibre/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lmeullibre/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5aa9cfd1ee23e0a7488dde7f3e01dc7bed289d09",
+            "url": "https://api.github.com/repos/lmeullibre/osrs-scripts/commits/5aa9cfd1ee23e0a7488dde7f3e01dc7bed289d09",
+            "html_url": "https://github.com/lmeullibre/osrs-scripts/commit/5aa9cfd1ee23e0a7488dde7f3e01dc7bed289d09"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "983653be4630be1da5b1539daea2e40287716c9b",
+            "filename": "DWAlcherLite/src/Alcher/Utils.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/lmeullibre/osrs-scripts/blob/938c8405381ad6826228d5140120ab218d5efb40/DWAlcherLite%2Fsrc%2FAlcher%2FUtils.java",
+            "raw_url": "https://github.com/lmeullibre/osrs-scripts/raw/938c8405381ad6826228d5140120ab218d5efb40/DWAlcherLite%2Fsrc%2FAlcher%2FUtils.java",
+            "contents_url": "https://api.github.com/repos/lmeullibre/osrs-scripts/contents/DWAlcherLite%2Fsrc%2FAlcher%2FUtils.java?ref=938c8405381ad6826228d5140120ab218d5efb40",
+            "patch": "@@ -123,6 +123,10 @@ public void incrementProfit(int coins){\n     }\n \n     public double getAlchsPerHour() {\n+        if (startTime == null) {\n+            return 0;\n+        }\n+\n         Instant now = Instant.now();\n         Duration timeElapsed = Duration.between(startTime, now);\n         double hoursElapsed = timeElapsed.toMillis() / 1000.0 / 60.0 / 60.0;"
+        }
+    ]
+}

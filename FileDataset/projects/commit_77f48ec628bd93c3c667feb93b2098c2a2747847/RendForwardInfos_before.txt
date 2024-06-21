@@ -1,0 +1,8 @@
+    private static ExecFormattedRootBlock fwdType(AnaRendDocumentBlock _ana, Forwards _forwards) {
+        AnaFormattedRootBlock declClass_ = _ana.getDeclClass();
+        if (declClass_.getRootBlock() == null) {
+            return ExecFormattedRootBlock.defValue();
+        }
+        return FetchMemberUtil.fwdFormatType(declClass_, _forwards);
+    }
+

@@ -1,0 +1,29 @@
+  public void testCheckDeletedWorkflow() throws ConflictException {
+    //Deploy program with all types of programs.
+    ApplicationSpecification spec = Specifications.from(new AllProgramsApp());
+    ApplicationId appId = NamespaceId.DEFAULT.app(spec.getName());
+    ApplicationMeta appMeta = new ApplicationMeta(spec.getName(), spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    Set<String> specsToBeDeleted = Sets.newHashSet();
+    specsToBeDeleted.addAll(spec.getWorkflows().keySet());
+
+    Assert.assertEquals(1, specsToBeDeleted.size());
+
+    //Get the spec for app that contains only flow and mapreduce - removing workflows.
+    spec = Specifications.from(new DefaultStoreTestApp());
+
+    //Get the deleted program specs by sending a spec with same name as AllProgramsApp but with no programs
+    List<ProgramSpecification> deletedSpecs = store.getDeletedProgramSpecifications(appId.getAppReference(), spec);
+    Assert.assertEquals(2, deletedSpecs.size());
+
+    for (ProgramSpecification specification : deletedSpecs) {
+      //Remove the spec that is verified, to check the count later.
+      specsToBeDeleted.remove(specification.getName());
+    }
+
+    //2 specs should have been deleted and 0 should be remaining.
+    Assert.assertEquals(0, specsToBeDeleted.size());
+  }

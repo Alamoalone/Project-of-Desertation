@@ -1,0 +1,146 @@
+{
+    "sha": "c83fa65614b7e20717543973d765460e134a76ad",
+    "node_id": "C_kwDOAKPJ0toAKGM4M2ZhNjU2MTRiN2UyMDcxNzU0Mzk3M2Q3NjU0NjBlMTM0YTc2YWQ",
+    "commit": {
+        "author": {
+            "name": "Ritesh Zaveri",
+            "email": "rzaveri@appnexus.com",
+            "date": "2023-03-01T14:20:23Z"
+        },
+        "committer": {
+            "name": "Ritesh Zaveri",
+            "email": "rzaveri@appnexus.com",
+            "date": "2023-03-01T14:20:23Z"
+        },
+        "message": "handle null pointer exception",
+        "tree": {
+            "sha": "f84e325474821400ff901b06dec06e3ecb39c43f",
+            "url": "https://api.github.com/repos/appnexus/mobile-sdk-android/git/trees/f84e325474821400ff901b06dec06e3ecb39c43f"
+        },
+        "url": "https://api.github.com/repos/appnexus/mobile-sdk-android/git/commits/c83fa65614b7e20717543973d765460e134a76ad",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/appnexus/mobile-sdk-android/commits/c83fa65614b7e20717543973d765460e134a76ad",
+    "html_url": "https://github.com/appnexus/mobile-sdk-android/commit/c83fa65614b7e20717543973d765460e134a76ad",
+    "comments_url": "https://api.github.com/repos/appnexus/mobile-sdk-android/commits/c83fa65614b7e20717543973d765460e134a76ad/comments",
+    "author": {
+        "login": "rzaverii",
+        "id": 121119963,
+        "node_id": "U_kgDOBzgk2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/121119963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rzaverii",
+        "html_url": "https://github.com/rzaverii",
+        "followers_url": "https://api.github.com/users/rzaverii/followers",
+        "following_url": "https://api.github.com/users/rzaverii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rzaverii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rzaverii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rzaverii/subscriptions",
+        "organizations_url": "https://api.github.com/users/rzaverii/orgs",
+        "repos_url": "https://api.github.com/users/rzaverii/repos",
+        "events_url": "https://api.github.com/users/rzaverii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rzaverii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "rzaverii",
+        "id": 121119963,
+        "node_id": "U_kgDOBzgk2w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/121119963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rzaverii",
+        "html_url": "https://github.com/rzaverii",
+        "followers_url": "https://api.github.com/users/rzaverii/followers",
+        "following_url": "https://api.github.com/users/rzaverii/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rzaverii/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rzaverii/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rzaverii/subscriptions",
+        "organizations_url": "https://api.github.com/users/rzaverii/orgs",
+        "repos_url": "https://api.github.com/users/rzaverii/repos",
+        "events_url": "https://api.github.com/users/rzaverii/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rzaverii/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5471fbb3854832f48d009a9f3af9911f6dd1346d",
+            "url": "https://api.github.com/repos/appnexus/mobile-sdk-android/commits/5471fbb3854832f48d009a9f3af9911f6dd1346d",
+            "html_url": "https://github.com/appnexus/mobile-sdk-android/commit/5471fbb3854832f48d009a9f3af9911f6dd1346d"
+        }
+    ],
+    "stats": {
+        "total": 26,
+        "additions": 13,
+        "deletions": 13
+    },
+    "files": [
+        {
+            "sha": "bc38b38973e3f1a9de7801f5773b442c7fe18f3e",
+            "filename": "sdk/src/com/appnexus/opensdk/AdView.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 6,
+            "changes": 12,
+            "blob_url": "https://github.com/appnexus/mobile-sdk-android/blob/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdView.java",
+            "raw_url": "https://github.com/appnexus/mobile-sdk-android/raw/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdView.java",
+            "contents_url": "https://api.github.com/repos/appnexus/mobile-sdk-android/contents/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdView.java?ref=c83fa65614b7e20717543973d765460e134a76ad",
+            "patch": "@@ -448,7 +448,7 @@ protected void close(int w, int h, MRAIDImplementation caller) {\n             }\n \n             // Reset the context of MutableContext wrapper for banner expand and close case.\n-            if (getMediaType().equals(MediaType.BANNER) && (caller.owner.getContext() instanceof MutableContextWrapper)) {\n+            if (getMediaType() == MediaType.BANNER && (caller.owner.getContext() instanceof MutableContextWrapper)) {\n                 ((MutableContextWrapper) caller.owner.getContext()).setBaseContext(getContext());\n             }\n         }\n@@ -604,7 +604,7 @@ public void onLayout(boolean changed, int left, int top, int right, int bottom)\n                 }\n \n                 int adviewLoc[] = new int[2];\n-                if (getMediaType().equals(MediaType.INTERSTITIAL)) {\n+                if (getMediaType() == MediaType.INTERSTITIAL) {\n                     InterstitialAdView.INTERSTITIALADVIEW_TO_USE.measure(MeasureSpec.UNSPECIFIED, MeasureSpec.UNSPECIFIED);\n                     InterstitialAdView.INTERSTITIALADVIEW_TO_USE.getLocationOnScreen(adviewLoc);\n                     container_size = new Point(InterstitialAdView.INTERSTITIALADVIEW_TO_USE.getMeasuredWidth(),\n@@ -1056,9 +1056,9 @@ public void run() {\n \n         private void processAdLoaded(AdResponse ad) {\n             isFetching = false;\n-            if (ad.getMediaType().equals(MediaType.BANNER) || ad.getMediaType().equals(MediaType.INTERSTITIAL)) {\n+            if (ad.getMediaType() == MediaType.BANNER || ad.getMediaType() == MediaType.INTERSTITIAL) {\n                 handleBannerOrInterstitialAd(ad);\n-            } else if (ad.getMediaType().equals(MediaType.NATIVE)) {\n+            } else if (ad.getMediaType() == MediaType.NATIVE) {\n                 handleNativeAd(ad);\n             } else {\n                 Clog.e(Clog.baseLogTag, \"UNKNOWN media type::\" + ad.getMediaType());\n@@ -1148,7 +1148,7 @@ public void run() {\n \n         @Override\n         public void toggleAutoRefresh() {\n-            if (getMediaType().equals(MediaType.BANNER) && mAdFetcher.getState() == AdFetcher.STATE.STOPPED) {\n+            if (getMediaType() == MediaType.BANNER && mAdFetcher.getState() == AdFetcher.STATE.STOPPED) {\n                 mAdFetcher.start();\n             }\n         }\n@@ -1209,7 +1209,7 @@ public void run() {\n                             if (baseAdResponse.getImpressionURLs() != null && baseAdResponse.getImpressionURLs().size() > 0) {\n                                 setImpressionTrackerVariables(baseAdResponse);\n                             }\n-                        } else if (ImpressionType.VIEWABLE_IMPRESSION == impressionType && ad.getMediaType().equals(MediaType.BANNER)) {\n+                        } else if (ImpressionType.VIEWABLE_IMPRESSION == impressionType && ad.getMediaType() == MediaType.BANNER) {\n                             if (baseAdResponse.getImpressionURLs() != null && baseAdResponse.getImpressionURLs().size() > 0) {\n                                 setImpressionTrackerVariables(baseAdResponse);\n                             }"
+        },
+        {
+            "sha": "a2d3c236b0b99dd7374ccbce41a65f2f3018fd86",
+            "filename": "sdk/src/com/appnexus/opensdk/AdViewRequestManager.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/appnexus/mobile-sdk-android/blob/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdViewRequestManager.java",
+            "raw_url": "https://github.com/appnexus/mobile-sdk-android/raw/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdViewRequestManager.java",
+            "contents_url": "https://api.github.com/repos/appnexus/mobile-sdk-android/contents/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdViewRequestManager.java?ref=c83fa65614b7e20717543973d765460e134a76ad",
+            "patch": "@@ -156,7 +156,7 @@ public void onReceiveAd(AdResponse ad) {\n         }\n         Ad owner = this.owner.get();\n         if (owner != null) {\n-            if (ad.getMediaType().equals(MediaType.BANNER)) {\n+            if (ad.getMediaType() == MediaType.BANNER) {\n                 BannerAdView bav = (BannerAdView) owner;\n                 if (bav.getExpandsToFitScreenWidth() || bav.getResizeAdToFitContainer()) {\n                     int width = ad.getResponseData().getWidth() <= 1 ? bav.getRequestParameters().getPrimarySize().width() : ad.getResponseData().getWidth();\n@@ -389,14 +389,14 @@ private void handleCSMResponse(Ad ownerAd, final CSMSDKAdResponse csmSdkAdRespon\n \n         } else {\n             AdView owner = (AdView) ownerAd;\n-            if (owner.getMediaType().equals(MediaType.BANNER)) {\n+            if (owner.getMediaType() == MediaType.BANNER) {\n                 controller = MediatedBannerAdViewController.create(\n                         (Activity) owner.getContext(),\n                         AdViewRequestManager.this,\n                         csmSdkAdResponse,\n                         owner.getAdDispatcher());\n \n-            } else if (owner.getMediaType().equals(MediaType.INTERSTITIAL)) {\n+            } else if (owner.getMediaType() == MediaType.INTERSTITIAL) {\n                 controller = MediatedInterstitialAdViewController.create(\n                         (Activity) owner.getContext(),\n                         AdViewRequestManager.this,"
+        },
+        {
+            "sha": "d21ff0e875a9996d74409e08f878df77427e70e1",
+            "filename": "sdk/src/com/appnexus/opensdk/AdWebView.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/appnexus/mobile-sdk-android/blob/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdWebView.java",
+            "raw_url": "https://github.com/appnexus/mobile-sdk-android/raw/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdWebView.java",
+            "contents_url": "https://api.github.com/repos/appnexus/mobile-sdk-android/contents/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FAdWebView.java?ref=c83fa65614b7e20717543973d765460e134a76ad",
+            "patch": "@@ -701,7 +701,7 @@ private AdResponse getAdResponse() {\n         return new AdResponse() {\n             @Override\n             public MediaType getMediaType() {\n-                return adView.getMediaType();\n+                return adView != null ? adView.getMediaType() : null;\n             }\n \n             @Override"
+        },
+        {
+            "sha": "07eb126baa224756bfabf47c653f0199290f89a7",
+            "filename": "sdk/src/com/appnexus/opensdk/MRAIDImplementation.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/appnexus/mobile-sdk-android/blob/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FMRAIDImplementation.java",
+            "raw_url": "https://github.com/appnexus/mobile-sdk-android/raw/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FMRAIDImplementation.java",
+            "contents_url": "https://api.github.com/repos/appnexus/mobile-sdk-android/contents/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FMRAIDImplementation.java?ref=c83fa65614b7e20717543973d765460e134a76ad",
+            "patch": "@@ -131,7 +131,7 @@ public void run() {\n                 }\n             });\n \n-            if (owner.adView.getMediaType().equals(MediaType.BANNER)) {\n+            if (owner.adView.getMediaType() == MediaType.BANNER) {\n                 default_gravity = ((FrameLayout.LayoutParams) owner.getLayoutParams()).gravity;\n             }\n \n@@ -269,7 +269,7 @@ void close() {\n                     owner.getLayoutParams());\n             lp.height = default_height;\n             lp.width = default_width;\n-            if (owner.adView.getMediaType().equals(MediaType.BANNER)) {\n+            if (owner.adView.getMediaType() == MediaType.BANNER) {\n                 lp.gravity = default_gravity;\n             } else {\n                 lp.gravity = Gravity.CENTER;"
+        },
+        {
+            "sha": "3af9c7ce9e9c457bf0363a5c95b60d5558ae4c36",
+            "filename": "sdk/src/com/appnexus/opensdk/NativeAdRequest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/appnexus/mobile-sdk-android/blob/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FNativeAdRequest.java",
+            "raw_url": "https://github.com/appnexus/mobile-sdk-android/raw/c83fa65614b7e20717543973d765460e134a76ad/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FNativeAdRequest.java",
+            "contents_url": "https://api.github.com/repos/appnexus/mobile-sdk-android/contents/sdk%2Fsrc%2Fcom%2Fappnexus%2Fopensdk%2FNativeAdRequest.java?ref=c83fa65614b7e20717543973d765460e134a76ad",
+            "patch": "@@ -464,7 +464,7 @@ public void onAdLoaded(final AdResponse ad) {\n         }\n \n         private void processAdLoaded(AdResponse ad) {\n-            if (!ad.getMediaType().equals(MediaType.NATIVE)) {\n+            if (ad.getMediaType() != MediaType.NATIVE) {\n                 onAdFailed(ResultCode.getNewInstance(ResultCode.INTERNAL_ERROR), null);\n             } else {\n                 final String IMAGE_URL = \"image\", ICON_URL = \"icon\";"
+        }
+    ]
+}

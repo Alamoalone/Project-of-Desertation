@@ -1,0 +1,4 @@
+  public static boolean isPartitionUnderReplicated(Cluster cluster, TopicPartition tp) {
+    PartitionInfo partitionInfo = cluster.partition(tp);
+    return partitionInfo.inSyncReplicas().length != partitionInfo.replicas().length;
+  }

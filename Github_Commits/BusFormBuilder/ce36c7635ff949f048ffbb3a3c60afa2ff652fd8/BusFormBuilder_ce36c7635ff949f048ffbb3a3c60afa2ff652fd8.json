@@ -1,0 +1,144 @@
+{
+    "sha": "ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+    "node_id": "C_kwDOKWTIttoAKGNlMzZjNzYzNWZmOTQ5ZjA0OGZmYmIzYTNjNjBhZmEyZmY2NTJmZDg",
+    "commit": {
+        "author": {
+            "name": "Hadi Shaheryar",
+            "email": "140560253+HadiS05@users.noreply.github.com",
+            "date": "2023-10-01T21:26:28Z"
+        },
+        "committer": {
+            "name": "Hadi Shaheryar",
+            "email": "140560253+HadiS05@users.noreply.github.com",
+            "date": "2023-10-01T21:26:28Z"
+        },
+        "message": "Fixed the null pointer exception when searching for the end date",
+        "tree": {
+            "sha": "efc7814f297d1f3a35bb7eb40963f18ac9246870",
+            "url": "https://api.github.com/repos/HadiS05/BusFormBuilder/git/trees/efc7814f297d1f3a35bb7eb40963f18ac9246870"
+        },
+        "url": "https://api.github.com/repos/HadiS05/BusFormBuilder/git/commits/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/HadiS05/BusFormBuilder/commits/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+    "html_url": "https://github.com/HadiS05/BusFormBuilder/commit/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+    "comments_url": "https://api.github.com/repos/HadiS05/BusFormBuilder/commits/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/comments",
+    "author": {
+        "login": "HadiS05",
+        "id": 140560253,
+        "node_id": "U_kgDOCGDHfQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/140560253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadiS05",
+        "html_url": "https://github.com/HadiS05",
+        "followers_url": "https://api.github.com/users/HadiS05/followers",
+        "following_url": "https://api.github.com/users/HadiS05/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadiS05/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadiS05/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadiS05/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadiS05/orgs",
+        "repos_url": "https://api.github.com/users/HadiS05/repos",
+        "events_url": "https://api.github.com/users/HadiS05/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadiS05/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "HadiS05",
+        "id": 140560253,
+        "node_id": "U_kgDOCGDHfQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/140560253?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HadiS05",
+        "html_url": "https://github.com/HadiS05",
+        "followers_url": "https://api.github.com/users/HadiS05/followers",
+        "following_url": "https://api.github.com/users/HadiS05/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HadiS05/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HadiS05/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HadiS05/subscriptions",
+        "organizations_url": "https://api.github.com/users/HadiS05/orgs",
+        "repos_url": "https://api.github.com/users/HadiS05/repos",
+        "events_url": "https://api.github.com/users/HadiS05/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HadiS05/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1a59e6dd8fa0b71c59cfeae4805b383cecc1a32a",
+            "url": "https://api.github.com/repos/HadiS05/BusFormBuilder/commits/1a59e6dd8fa0b71c59cfeae4805b383cecc1a32a",
+            "html_url": "https://github.com/HadiS05/BusFormBuilder/commit/1a59e6dd8fa0b71c59cfeae4805b383cecc1a32a"
+        }
+    ],
+    "stats": {
+        "total": 30,
+        "additions": 16,
+        "deletions": 14
+    },
+    "files": [
+        {
+            "sha": "c31656e137e0a6c6ac591ca4f73ecf74e7ee2848",
+            "filename": "src/main/java/busformfiller/BusFormFiller.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 12,
+            "changes": 26,
+            "blob_url": "https://github.com/HadiS05/BusFormBuilder/blob/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/src%2Fmain%2Fjava%2Fbusformfiller%2FBusFormFiller.java",
+            "raw_url": "https://github.com/HadiS05/BusFormBuilder/raw/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/src%2Fmain%2Fjava%2Fbusformfiller%2FBusFormFiller.java",
+            "contents_url": "https://api.github.com/repos/HadiS05/BusFormBuilder/contents/src%2Fmain%2Fjava%2Fbusformfiller%2FBusFormFiller.java?ref=ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+            "patch": "@@ -189,27 +189,29 @@ public static int findLine(File file, LocalDate startDate, LocalDate endDate, Da\n \t\t\t\t// If there is no such date in the report, then it must not exist even after incrementing till the end date\n \t\t\t\treturn lineCount; // In all cases return the lineCount\n \t\t\tcase \"end\":\n-\t\t\t\ttry (ReversedLinesFileReader r = ReversedLinesFileReader.builder().setPath(path).get()){\n-\t\t\t\t\tint endLineCount = 0; // Meant to count how many lines it takes to get to the required end date\n+\t\t\t\tint endLineCount = 0; // Meant to count how many lines it takes to get to the required end date\n \t\t\t\t\tint endDateCount = 0; // Increments the date by 1 each time\n \t\t\t\t\tString end = \"\"; // String variable to store the changing dates\n-\t\t\t\t\tString line;\n+\t\t\t\t\tString line; // Holds the current line of the file\n \t\t\t\t\tdo{\n-\t\t\t\t\t\tend = endDate.minusDays(endDateCount).format(format);\n-\t\t\t\t\t\tendLineCount = 0;\n-\t\t\t\t\t\twhile(r != null) {\n-\t\t\t\t\t\t\tline = r.readLine();\n-\t\t\t\t\t\t\tif(line.contains(end)) {\n-\t\t\t\t\t\t\t\treturn getTotalLines(path) - endLineCount;\n+\t\t\t\t\t\t// Initiates fresh ReversedLinesFileReader\n+\t\t\t\t\t\tReversedLinesFileReader r = ReversedLinesFileReader.builder().setPath(path).get();\n+\t\t\t\t\t\tend = endDate.minusDays(endDateCount).format(format); // Decrement dates\n+\t\t\t\t\t\tendLineCount = 0; // Start a fresh line count\n+\t\t\t\t\t\twhile(r != null) { // As long as ReversedLinesFileReader is not null\n+\t\t\t\t\t\t\tline = r.readLine(); // Get the last line of the file\n+\t\t\t\t\t\t\tif(line == null){ // If line is null\n+\t\t\t\t\t\t\t\tbreak; // Break the inner loop\n+\t\t\t\t\t\t\t}else if(line.contains(end)) { // If line has the end date\n+\t\t\t\t\t\t\t\treturn (getTotalLines(path) - endLineCount); // Return the necessary amount of lines to skip\n \t\t\t\t\t\t\t}\n-\t\t\t\t\t\t\tendLineCount++;\n+\t\t\t\t\t\t\tendLineCount++; // If there is no match, move on to the next date and increment\n \t\t\t\t\t\t}\n-\t\t\t\t\t\tendDateCount++;\n+\t\t\t\t\t\tendDateCount++; // If the previous date doesn't work, then increase the subtraction\n \t\t\t\t\t}while(!end.equals(startDate.format(format))); // Ensure that the end date does not equal the start date\n \t\t\t\t\tSystem.out.println(\"It seems this date does not exist. Please make sure it is included in the presto report. Date: \" + startDate.format(format));\n \t\t\t\t\t// If there is no such date in the report, then it must not exist even after incrementing till the end date\n \t\t\t\t\treturn endLineCount; // In all cases return the lineCount\n-\t\t\t\t}\n \t\t\tdefault:\n \t\t\t\tSystem.out.println(\"Error: The value for 'direction' must be 'start' or 'end'\");\n \t\t\t\tbreak;"
+        },
+        {
+            "sha": "11be4206f6a0ea6641d2ec21392ae695aa9b74a4",
+            "filename": "src/test/java/BusFormFillerTest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/HadiS05/BusFormBuilder/blob/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/src%2Ftest%2Fjava%2FBusFormFillerTest.java",
+            "raw_url": "https://github.com/HadiS05/BusFormBuilder/raw/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/src%2Ftest%2Fjava%2FBusFormFillerTest.java",
+            "contents_url": "https://api.github.com/repos/HadiS05/BusFormBuilder/contents/src%2Ftest%2Fjava%2FBusFormFillerTest.java?ref=ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+            "patch": "@@ -81,7 +81,7 @@ public void startTest6() throws IOException {\n \tpublic void endTest1() throws IOException {\n \t\tvar filler = new BusFormFiller();\n \t\tLocalDate start = LocalDate.parse(\"2023-01-09\");\n-\t\tLocalDate end = LocalDate.parse(\"2023-10-17\");\n+\t\tLocalDate end = LocalDate.parse(\"2023-12-31\");\n \t\tDateTimeFormatter format = DateTimeFormatter.ofPattern(\"M/d/yyyy\");\n \t\tint actual = filler.findLine(new File(\"src/test/testreport.csv\"),start, end, format, \"src/test/testreport.csv\", \"end\");\n \t\tint expected = 281;"
+        },
+        {
+            "sha": "964f45aa9f6a26287bdb79df1c8c03faefc1a010",
+            "filename": "target/classes/META-INF/maven/com.hadi.busformfiller/BusFormFiller/pom.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/HadiS05/BusFormBuilder/blob/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/target%2Fclasses%2FMETA-INF%2Fmaven%2Fcom.hadi.busformfiller%2FBusFormFiller%2Fpom.properties",
+            "raw_url": "https://github.com/HadiS05/BusFormBuilder/raw/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/target%2Fclasses%2FMETA-INF%2Fmaven%2Fcom.hadi.busformfiller%2FBusFormFiller%2Fpom.properties",
+            "contents_url": "https://api.github.com/repos/HadiS05/BusFormBuilder/contents/target%2Fclasses%2FMETA-INF%2Fmaven%2Fcom.hadi.busformfiller%2FBusFormFiller%2Fpom.properties?ref=ce36c7635ff949f048ffbb3a3c60afa2ff652fd8",
+            "patch": "@@ -1,5 +1,5 @@\n #Generated by Maven Integration for Eclipse\n-#Sun Oct 01 12:05:46 EDT 2023\n+#Sun Oct 01 17:05:19 EDT 2023\n m2e.projectLocation=C\\:\\\\Users\\\\hadis\\\\eclipse-workspace\\\\BusFormFiller\n m2e.projectName=BusFormFiller\n groupId=com.hadi.busformfiller"
+        },
+        {
+            "sha": "7323a51696f73673842a06093bc3179c63902d48",
+            "filename": "target/classes/busformfiller/BusFormFiller.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/HadiS05/BusFormBuilder/blob/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/target%2Fclasses%2Fbusformfiller%2FBusFormFiller.class",
+            "raw_url": "https://github.com/HadiS05/BusFormBuilder/raw/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/target%2Fclasses%2Fbusformfiller%2FBusFormFiller.class",
+            "contents_url": "https://api.github.com/repos/HadiS05/BusFormBuilder/contents/target%2Fclasses%2Fbusformfiller%2FBusFormFiller.class?ref=ce36c7635ff949f048ffbb3a3c60afa2ff652fd8"
+        },
+        {
+            "sha": "94e62bc93b1709da65d0a6cf8b88dae9e676a538",
+            "filename": "target/test-classes/BusFormFillerTest.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/HadiS05/BusFormBuilder/blob/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/target%2Ftest-classes%2FBusFormFillerTest.class",
+            "raw_url": "https://github.com/HadiS05/BusFormBuilder/raw/ce36c7635ff949f048ffbb3a3c60afa2ff652fd8/target%2Ftest-classes%2FBusFormFillerTest.class",
+            "contents_url": "https://api.github.com/repos/HadiS05/BusFormBuilder/contents/target%2Ftest-classes%2FBusFormFillerTest.class?ref=ce36c7635ff949f048ffbb3a3c60afa2ff652fd8"
+        }
+    ]
+}

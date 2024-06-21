@@ -1,0 +1,12 @@
+  void testReplaceFilterNullInput() throws PebbleException, IOException {
+    PebbleEngine pebble = new PebbleEngine.Builder().loader(new StringLoader())
+            .strictVariables(false).build();
+
+    PebbleTemplate template = pebble
+            .getTemplate(
+                    "{{ null |replace({'%this%': foo, '%that%': \"bar\"}) }}");
+
+    Writer writer = new StringWriter();
+    assertDoesNotThrow(() -> template.evaluate(writer, new HashMap<>()));
+  }
+

@@ -1,0 +1,138 @@
+    private void checkForOperationParameterChanges(DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity,
+                                                   List<Refactoring> refactorings) {
+        MethodDeclaration removedOperation = (MethodDeclaration) oldEntity.getDeclaration();
+        MethodDeclaration addedOperation = (MethodDeclaration) newEntity.getDeclaration();
+        List<SingleVariableDeclaration> addedParameters = new ArrayList<>();
+        List<SingleVariableDeclaration> removedParameters = new ArrayList<>();
+        List<AbstractMap.SimpleEntry<SingleVariableDeclaration, SingleVariableDeclaration>> matchedParameters = new ArrayList<>();
+        List<Pair<SingleVariableDeclaration, SingleVariableDeclaration>> parameterDiffList = new ArrayList<>();
+        for (Object obj1 : removedOperation.parameters()) {
+            SingleVariableDeclaration parameter1 = (SingleVariableDeclaration) obj1;
+            boolean found = false;
+            for (Object obj2 : addedOperation.parameters()) {
+                SingleVariableDeclaration parameter2 = (SingleVariableDeclaration) obj2;
+                if (equalsIncludingName(parameter1, parameter2)) {
+                    matchedParameters.add(new AbstractMap.SimpleEntry<>(parameter1, parameter2));
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                removedParameters.add(parameter1);
+            }
+        }
+        for (Object obj1 : addedOperation.parameters()) {
+            SingleVariableDeclaration parameter1 = (SingleVariableDeclaration) obj1;
+            boolean found = false;
+            for (Object obj2 : removedOperation.parameters()) {
+                SingleVariableDeclaration parameter2 = (SingleVariableDeclaration) obj2;
+                if (equalsIncludingName(parameter1, parameter2)) {
+                    matchedParameters.add(new AbstractMap.SimpleEntry<>(parameter2, parameter1));
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                addedParameters.add(parameter1);
+            }
+        }
+        for (AbstractMap.SimpleEntry<SingleVariableDeclaration, SingleVariableDeclaration> matchedParameter : matchedParameters) {
+            SingleVariableDeclaration parameter1 = matchedParameter.getKey();
+            SingleVariableDeclaration parameter2 = matchedParameter.getValue();
+            parameterDiffList.add(Pair.of(parameter1, parameter2));
+        }
+        int matchedParameterCount = matchedParameters.size() / 2;
+        List<String> parameterNames1 = new ArrayList<>();
+        List<SingleVariableDeclaration> parameters1 = removedOperation.parameters();
+        for (SingleVariableDeclaration singleVariableDeclaration : parameters1) {
+            String identifier = singleVariableDeclaration.getName().getIdentifier();
+            parameterNames1.add(identifier);
+        }
+        for (SingleVariableDeclaration removedParameter : removedParameters) {
+            parameterNames1.remove(removedParameter.getName().getIdentifier());
+        }
+        List<String> parameterNames2 = new ArrayList<>();
+        List<SingleVariableDeclaration> parameters2 = addedOperation.parameters();
+        for (SingleVariableDeclaration parameter : parameters2) {
+            String identifier = parameter.getName().getIdentifier();
+            parameterNames2.add(identifier);
+        }
+        for (SingleVariableDeclaration addedParameter : addedParameters) {
+            parameterNames2.remove(addedParameter.getName().getIdentifier());
+        }
+        if (matchedParameterCount == parameterNames1.size() && matchedParameterCount == parameterNames2.size() &&
+                parameterNames1.size() > 1 && !parameterNames1.equals(parameterNames2)) {
+            ReorderParameterRefactoring refactoring = new ReorderParameterRefactoring(oldEntity, newEntity);
+            refactorings.add(refactoring);
+        }
+        //first round match parameters with the same name
+        for (Iterator<SingleVariableDeclaration> removedParameterIterator = removedParameters.iterator(); removedParameterIterator.hasNext(); ) {
+            SingleVariableDeclaration removedParameter = removedParameterIterator.next();
+            for (Iterator<SingleVariableDeclaration> addedParameterIterator = addedParameters.iterator(); addedParameterIterator.hasNext(); ) {
+                SingleVariableDeclaration addedParameter = addedParameterIterator.next();
+                if (removedParameter.getName().getIdentifier().equals(addedParameter.getName().getIdentifier())) {
+                    parameterDiffList.add(Pair.of(removedParameter, addedParameter));
+                    addedParameterIterator.remove();
+                    removedParameterIterator.remove();
+                    break;
+                }
+            }
+        }
+        //second round match parameters with the same type
+        for (Iterator<SingleVariableDeclaration> removedParameterIterator = removedParameters.iterator(); removedParameterIterator.hasNext(); ) {
+            SingleVariableDeclaration removedParameter = removedParameterIterator.next();
+            for (Iterator<SingleVariableDeclaration> addedParameterIterator = addedParameters.iterator(); addedParameterIterator.hasNext(); ) {
+                SingleVariableDeclaration addedParameter = addedParameterIterator.next();
+                if (removedParameter.getType().toString().equals(addedParameter.getType().toString()) &&
+                        !existsAnotherAddedParameterWithTheSameType(removedOperation, addedOperation, addedParameters, addedParameter)) {
+                    parameterDiffList.add(Pair.of(removedParameter, addedParameter));
+                    addedParameterIterator.remove();
+                    removedParameterIterator.remove();
+                    break;
+                }
+            }
+        }
+        //third round match parameters with different type and name
+        List<SingleVariableDeclaration> removedParametersWithoutReturnType = removedOperation.parameters();
+        List<SingleVariableDeclaration> addedParametersWithoutReturnType = addedOperation.parameters();
+        if (matchedParameterCount == removedParametersWithoutReturnType.size() - 1 && matchedParameterCount == addedParametersWithoutReturnType.size() - 1) {
+            for (Iterator<SingleVariableDeclaration> removedParameterIterator = removedParameters.iterator(); removedParameterIterator.hasNext(); ) {
+                SingleVariableDeclaration removedParameter = removedParameterIterator.next();
+                int indexOfRemovedParameter = indexOfParameter(removedParametersWithoutReturnType, removedParameter);
+                for (Iterator<SingleVariableDeclaration> addedParameterIterator = addedParameters.iterator(); addedParameterIterator.hasNext(); ) {
+                    SingleVariableDeclaration addedParameter = addedParameterIterator.next();
+                    int indexOfAddedParameter = indexOfParameter(addedParametersWithoutReturnType, addedParameter);
+                    if (indexOfRemovedParameter == indexOfAddedParameter &&
+                            usedParameters(removedOperation, addedOperation, removedParameter, addedParameter)) {
+                        parameterDiffList.add(Pair.of(removedParameter, addedParameter));
+                        addedParameterIterator.remove();
+                        removedParameterIterator.remove();
+                        break;
+                    }
+                }
+            }
+        }
+
+        //fourth round match parameters with the same type
+        if (removedParameters.size() == addedParameters.size()) {
+            boolean sameType = true;
+            for (int i = 0; i < removedParameters.size(); i++) {
+                SingleVariableDeclaration removedParameter = removedParameters.get(i);
+                SingleVariableDeclaration addedParameter = addedParameters.get(i);
+                if (!removedParameter.getType().toString().equals(addedParameter.getType().toString())) {
+                    sameType = false;
+                    break;
+                }
+            }
+            if (sameType) {
+                for (int i = 0; i < removedParameters.size(); i++) {
+                    SingleVariableDeclaration removedParameter = removedParameters.get(i);
+                    SingleVariableDeclaration addedParameter = addedParameters.get(i);
+                    parameterDiffList.add(Pair.of(removedParameter, addedParameter));
+                }
+                removedParameters.clear();
+                addedParameters.clear();
+            }
+        }
+        getParameterRefactorings(parameterDiffList, addedParameters, removedParameters, oldEntity, newEntity, refactorings);
+    }

@@ -1,0 +1,98 @@
+{
+    "sha": "cccf2a46a308e122f8cbcae36dfacdfccd6cad51",
+    "node_id": "C_kwDOJH7b5NoAKGNjY2YyYTQ2YTMwOGUxMjJmOGNiY2FlMzZkZmFjZGZjY2Q2Y2FkNTE",
+    "commit": {
+        "author": {
+            "name": "Zvi Grinberg",
+            "email": "zgrinber@redhat.com",
+            "date": "2024-02-29T22:26:46Z"
+        },
+        "committer": {
+            "name": "Zvi Grinberg",
+            "email": "zgrinber@redhat.com",
+            "date": "2024-03-06T14:24:30Z"
+        },
+        "message": "fix: prevent null pointer exception\n\nSigned-off-by: Zvi Grinberg <zgrinber@redhat.com>",
+        "tree": {
+            "sha": "c767dfbbd979c455f762c20d852964fcde610920",
+            "url": "https://api.github.com/repos/RHEcosystemAppEng/exhort/git/trees/c767dfbbd979c455f762c20d852964fcde610920"
+        },
+        "url": "https://api.github.com/repos/RHEcosystemAppEng/exhort/git/commits/cccf2a46a308e122f8cbcae36dfacdfccd6cad51",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/RHEcosystemAppEng/exhort/commits/cccf2a46a308e122f8cbcae36dfacdfccd6cad51",
+    "html_url": "https://github.com/RHEcosystemAppEng/exhort/commit/cccf2a46a308e122f8cbcae36dfacdfccd6cad51",
+    "comments_url": "https://api.github.com/repos/RHEcosystemAppEng/exhort/commits/cccf2a46a308e122f8cbcae36dfacdfccd6cad51/comments",
+    "author": {
+        "login": "zvigrinberg",
+        "id": 75700623,
+        "node_id": "MDQ6VXNlcjc1NzAwNjIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75700623?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zvigrinberg",
+        "html_url": "https://github.com/zvigrinberg",
+        "followers_url": "https://api.github.com/users/zvigrinberg/followers",
+        "following_url": "https://api.github.com/users/zvigrinberg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zvigrinberg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zvigrinberg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zvigrinberg/subscriptions",
+        "organizations_url": "https://api.github.com/users/zvigrinberg/orgs",
+        "repos_url": "https://api.github.com/users/zvigrinberg/repos",
+        "events_url": "https://api.github.com/users/zvigrinberg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zvigrinberg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "zvigrinberg",
+        "id": 75700623,
+        "node_id": "MDQ6VXNlcjc1NzAwNjIz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75700623?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zvigrinberg",
+        "html_url": "https://github.com/zvigrinberg",
+        "followers_url": "https://api.github.com/users/zvigrinberg/followers",
+        "following_url": "https://api.github.com/users/zvigrinberg/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zvigrinberg/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zvigrinberg/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zvigrinberg/subscriptions",
+        "organizations_url": "https://api.github.com/users/zvigrinberg/orgs",
+        "repos_url": "https://api.github.com/users/zvigrinberg/repos",
+        "events_url": "https://api.github.com/users/zvigrinberg/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zvigrinberg/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e75168fdc31379a5e3a52043193608dd57bf71f9",
+            "url": "https://api.github.com/repos/RHEcosystemAppEng/exhort/commits/e75168fdc31379a5e3a52043193608dd57bf71f9",
+            "html_url": "https://github.com/RHEcosystemAppEng/exhort/commit/e75168fdc31379a5e3a52043193608dd57bf71f9"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "acaa451b3e3a604bd6f5e42f56721178f6071ad3",
+            "filename": "src/main/java/com/redhat/exhort/integration/providers/ProviderHealthCheck.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/RHEcosystemAppEng/exhort/blob/cccf2a46a308e122f8cbcae36dfacdfccd6cad51/src%2Fmain%2Fjava%2Fcom%2Fredhat%2Fexhort%2Fintegration%2Fproviders%2FProviderHealthCheck.java",
+            "raw_url": "https://github.com/RHEcosystemAppEng/exhort/raw/cccf2a46a308e122f8cbcae36dfacdfccd6cad51/src%2Fmain%2Fjava%2Fcom%2Fredhat%2Fexhort%2Fintegration%2Fproviders%2FProviderHealthCheck.java",
+            "contents_url": "https://api.github.com/repos/RHEcosystemAppEng/exhort/contents/src%2Fmain%2Fjava%2Fcom%2Fredhat%2Fexhort%2Fintegration%2Fproviders%2FProviderHealthCheck.java?ref=cccf2a46a308e122f8cbcae36dfacdfccd6cad51",
+            "patch": "@@ -69,6 +69,7 @@ protected void doCall(HealthCheckResultBuilder builder, Map<String, Object> opti\n     if (httpResponseBodiesAndStatuses.stream()\n         .map(Map::values)\n         .flatMap(Collection::stream)\n+        .filter(providerStatus -> Objects.nonNull(providerStatus.getCode()))\n         .anyMatch(providerDetails -> providerDetails.getCode() < 400 && providerDetails.getOk())) {\n       builder.up();\n "
+        }
+    ]
+}

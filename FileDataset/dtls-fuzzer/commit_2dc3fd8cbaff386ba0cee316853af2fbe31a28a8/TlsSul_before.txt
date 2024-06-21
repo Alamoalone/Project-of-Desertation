@@ -1,0 +1,63 @@
+    private AbstractOutput doStep(TlsInput in) {
+        context.addStepContext();
+        Mapper executor = in.getPreferredMapper(delegate);
+        if (executor == null) {
+            executor = defaultExecutor;
+        }
+
+        if (server && !receivedClientHello) {
+            receiveClientHello();
+        }
+
+        if (!context.isExecutionEnabled()) {
+            return outputMapper.disabled();
+        }
+
+        AbstractOutput output = null;
+        try {
+            if (state == null) {
+                throw new RuntimeException("TLS-Attacker state is not initialized");
+            } else if (state.getTlsContext().getTransportHandler().isClosed() || closed) {
+                closed = true;
+                return outputMapper.socketClosed();
+            }
+
+            output = executeInput(in, executor, role);
+
+            if (output == AbstractOutput.disabled() || context.getStepContext().isDisabled()) {
+                // this should lead to a disabled sink state
+                context.disableExecution();
+            }
+
+            if (state.getTlsContext().isReceivedTransportHandlerException()) {
+                closed = true;
+            }
+            return output;
+        } catch (IOException | NullPointerException ex) {
+            ex.printStackTrace();
+            closed = true;
+            return outputMapper.socketClosed();
+        }
+    }
+
+    public void post() {
+        try {
+            if (server && !receivedClientHello) {
+                receiveClientHello();
+            }
+            state.getTlsContext().getTransportHandler().closeConnection();
+            if (resetWait > 0) {
+                Thread.sleep(resetWait);
+            }
+        } catch (IOException e) {
+            LOGGER.error("Could not close connections");
+            LOGGER.error(e, null);
+        } catch (InterruptedException e) {
+            LOGGER.error("Could not sleep thread");
+            LOGGER.error(e, null);
+        } catch (NullPointerException e) {
+            LOGGER.error("Transport handler is null");
+            LOGGER.error(e, null);
+        }
+    }
+

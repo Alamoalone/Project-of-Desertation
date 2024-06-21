@@ -1,0 +1,8 @@
+@@ -10,6 +10,7 @@
+  */
+ @Path("myresource")
+ public class MyResource {
++	
+ 
+     /**
+      * Method handling HTTP GET requests. The returned object will be sent

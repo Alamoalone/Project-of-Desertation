@@ -1,0 +1,3 @@
+    private static String recursive(AnotherClass c) {
+        return c.getValue();
+    }

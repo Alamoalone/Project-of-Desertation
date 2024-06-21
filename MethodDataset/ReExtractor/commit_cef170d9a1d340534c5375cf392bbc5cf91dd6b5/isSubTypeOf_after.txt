@@ -1,0 +1,16 @@
+    private boolean isSubTypeOf(Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities, DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity) {
+        DeclarationNodeTree oldParent = oldEntity.getParent();
+        DeclarationNodeTree newParent = newEntity.getParent();
+        if ((oldParent.getType() == EntityType.CLASS || oldParent.getType() == EntityType.INTERFACE) &&
+                (newParent.getType() == EntityType.CLASS || newParent.getType() == EntityType.INTERFACE)) {
+            TypeDeclaration removedClass = (TypeDeclaration) oldParent.getDeclaration();
+            TypeDeclaration addedClass = (TypeDeclaration) newParent.getDeclaration();
+            DeclarationNodeTree matchedAddedEntity = findMatchedEntity(matchedEntities, newParent);
+            TypeDeclaration matchedAddedClass = matchedAddedEntity == null ? null : (TypeDeclaration) (matchedAddedEntity.getDeclaration());
+            DeclarationNodeTree matchedDeletedEntity = findMatchedEntity(matchedEntities, oldParent);
+            TypeDeclaration matchedDeletedClass = matchedDeletedEntity == null ? null : (TypeDeclaration) (matchedDeletedEntity.getDeclaration());
+            return (matchedAddedClass != null && isSubTypeOf(removedClass, matchedAddedClass))
+                    || (matchedDeletedClass != null && isSubTypeOf(matchedDeletedClass, addedClass));
+        }
+        return false;
+    }

@@ -1,0 +1,30 @@
+    public Collection<ChessMove> validMoves(ChessPosition startPosition){
+        ChessPiece piece = this.board.getPiece(startPosition);
+        ChessBoard copyBoard = null;
+        if(piece == null){
+            return null;
+        }
+        Collection<ChessMove> moves = piece.pieceMoves(this.board, startPosition);
+        Collection<ChessMove> reMoves = new HashSet<>();
+        for (ChessMove move : moves) {
+            try {
+                copyBoard = (ChessBoard) this.board.clone();
+            } catch (CloneNotSupportedException ex) {
+                System.out.println("Board not cloneable");
+            }
+            if(copyBoard != null) {
+                this.board.addPiece(move.getEndPosition(), this.board.getPiece(move.getStartPosition()));
+                this.board.addPiece(move.getStartPosition(), null);
+                if (this.isInCheck(this.getTeamTurn())) {
+                    reMoves.add(move);
+                }
+                this.board = copyBoard;
+            }
+        }
+
+        for(ChessMove reMove : reMoves){
+            moves.remove(reMove);
+        }
+
+        return moves;
+    }

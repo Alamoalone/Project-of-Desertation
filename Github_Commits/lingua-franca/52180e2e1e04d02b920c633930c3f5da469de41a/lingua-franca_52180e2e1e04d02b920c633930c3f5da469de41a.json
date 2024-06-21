@@ -1,0 +1,98 @@
+{
+    "sha": "52180e2e1e04d02b920c633930c3f5da469de41a",
+    "node_id": "C_kwDOCVVGGNoAKDUyMTgwZTJlMWUwNGQwMmI5MjBjNjMzOTMwYzNmNWRhNDY5ZGU0MWE",
+    "commit": {
+        "author": {
+            "name": "Christian Menard",
+            "email": "christian.menard@tu-dresden.de",
+            "date": "2023-09-22T15:11:38Z"
+        },
+        "committer": {
+            "name": "Christian Menard",
+            "email": "christian.menard@tu-dresden.de",
+            "date": "2023-09-22T15:11:38Z"
+        },
+        "message": "Avoid null pointer exception in diagrams with bodyless reactions",
+        "tree": {
+            "sha": "faaab7a9668750e479f16f5811460ec9691a6d41",
+            "url": "https://api.github.com/repos/lf-lang/lingua-franca/git/trees/faaab7a9668750e479f16f5811460ec9691a6d41"
+        },
+        "url": "https://api.github.com/repos/lf-lang/lingua-franca/git/commits/52180e2e1e04d02b920c633930c3f5da469de41a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/lf-lang/lingua-franca/commits/52180e2e1e04d02b920c633930c3f5da469de41a",
+    "html_url": "https://github.com/lf-lang/lingua-franca/commit/52180e2e1e04d02b920c633930c3f5da469de41a",
+    "comments_url": "https://api.github.com/repos/lf-lang/lingua-franca/commits/52180e2e1e04d02b920c633930c3f5da469de41a/comments",
+    "author": {
+        "login": "cmnrd",
+        "id": 6460123,
+        "node_id": "MDQ6VXNlcjY0NjAxMjM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6460123?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cmnrd",
+        "html_url": "https://github.com/cmnrd",
+        "followers_url": "https://api.github.com/users/cmnrd/followers",
+        "following_url": "https://api.github.com/users/cmnrd/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cmnrd/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cmnrd/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cmnrd/subscriptions",
+        "organizations_url": "https://api.github.com/users/cmnrd/orgs",
+        "repos_url": "https://api.github.com/users/cmnrd/repos",
+        "events_url": "https://api.github.com/users/cmnrd/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cmnrd/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "cmnrd",
+        "id": 6460123,
+        "node_id": "MDQ6VXNlcjY0NjAxMjM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6460123?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cmnrd",
+        "html_url": "https://github.com/cmnrd",
+        "followers_url": "https://api.github.com/users/cmnrd/followers",
+        "following_url": "https://api.github.com/users/cmnrd/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cmnrd/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cmnrd/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cmnrd/subscriptions",
+        "organizations_url": "https://api.github.com/users/cmnrd/orgs",
+        "repos_url": "https://api.github.com/users/cmnrd/repos",
+        "events_url": "https://api.github.com/users/cmnrd/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cmnrd/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4aa386da34dacaabc557036355183f29aabf0dbb",
+            "url": "https://api.github.com/repos/lf-lang/lingua-franca/commits/4aa386da34dacaabc557036355183f29aabf0dbb",
+            "html_url": "https://github.com/lf-lang/lingua-franca/commit/4aa386da34dacaabc557036355183f29aabf0dbb"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "893d7df47b39731ab1575eef969f315d066ee90f",
+            "filename": "core/src/main/java/org/lflang/diagram/synthesis/styles/LinguaFrancaShapeExtensions.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/lf-lang/lingua-franca/blob/52180e2e1e04d02b920c633930c3f5da469de41a/core%2Fsrc%2Fmain%2Fjava%2Forg%2Flflang%2Fdiagram%2Fsynthesis%2Fstyles%2FLinguaFrancaShapeExtensions.java",
+            "raw_url": "https://github.com/lf-lang/lingua-franca/raw/52180e2e1e04d02b920c633930c3f5da469de41a/core%2Fsrc%2Fmain%2Fjava%2Forg%2Flflang%2Fdiagram%2Fsynthesis%2Fstyles%2FLinguaFrancaShapeExtensions.java",
+            "contents_url": "https://api.github.com/repos/lf-lang/lingua-franca/contents/core%2Fsrc%2Fmain%2Fjava%2Forg%2Flflang%2Fdiagram%2Fsynthesis%2Fstyles%2FLinguaFrancaShapeExtensions.java?ref=52180e2e1e04d02b920c633930c3f5da469de41a",
+            "patch": "@@ -444,6 +444,7 @@ public KPolygon addReactionFigure(KNode node, ReactionInstance reaction) {\n     // optional code content\n     boolean hasCode =\n         getBooleanValue(LinguaFrancaSynthesis.SHOW_REACTION_CODE)\n+            && reaction.getDefinition().getCode() != null\n             && !StringExtensions.isNullOrEmpty(reaction.getDefinition().getCode().getBody());\n     if (hasCode) {\n       KText hasCodeText ="
+        }
+    ]
+}

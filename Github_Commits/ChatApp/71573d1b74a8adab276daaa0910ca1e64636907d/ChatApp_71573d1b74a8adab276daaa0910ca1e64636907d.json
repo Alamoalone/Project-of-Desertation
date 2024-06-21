@@ -1,0 +1,122 @@
+{
+    "sha": "71573d1b74a8adab276daaa0910ca1e64636907d",
+    "node_id": "C_kwDOKlnG59oAKDcxNTczZDFiNzRhOGFkYWIyNzZkYWFhMDkxMGNhMWU2NDYzNjkwN2Q",
+    "commit": {
+        "author": {
+            "name": "BourSuorcdey",
+            "email": "suorcdeybour@gmail.com",
+            "date": "2023-11-03T08:42:40Z"
+        },
+        "committer": {
+            "name": "BourSuorcdey",
+            "email": "suorcdeybour@gmail.com",
+            "date": "2023-11-03T08:42:40Z"
+        },
+        "message": "fix null pointer exception in users adapter\nchange some logic code without using if statement",
+        "tree": {
+            "sha": "08b1900e282fb31ca137e1a8960f365f8013371d",
+            "url": "https://api.github.com/repos/BourSuorcdey/ChatApp/git/trees/08b1900e282fb31ca137e1a8960f365f8013371d"
+        },
+        "url": "https://api.github.com/repos/BourSuorcdey/ChatApp/git/commits/71573d1b74a8adab276daaa0910ca1e64636907d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/BourSuorcdey/ChatApp/commits/71573d1b74a8adab276daaa0910ca1e64636907d",
+    "html_url": "https://github.com/BourSuorcdey/ChatApp/commit/71573d1b74a8adab276daaa0910ca1e64636907d",
+    "comments_url": "https://api.github.com/repos/BourSuorcdey/ChatApp/commits/71573d1b74a8adab276daaa0910ca1e64636907d/comments",
+    "author": {
+        "login": "BourSuorcdey",
+        "id": 115515295,
+        "node_id": "U_kgDOBuKfnw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115515295?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BourSuorcdey",
+        "html_url": "https://github.com/BourSuorcdey",
+        "followers_url": "https://api.github.com/users/BourSuorcdey/followers",
+        "following_url": "https://api.github.com/users/BourSuorcdey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BourSuorcdey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BourSuorcdey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BourSuorcdey/subscriptions",
+        "organizations_url": "https://api.github.com/users/BourSuorcdey/orgs",
+        "repos_url": "https://api.github.com/users/BourSuorcdey/repos",
+        "events_url": "https://api.github.com/users/BourSuorcdey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BourSuorcdey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "BourSuorcdey",
+        "id": 115515295,
+        "node_id": "U_kgDOBuKfnw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/115515295?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/BourSuorcdey",
+        "html_url": "https://github.com/BourSuorcdey",
+        "followers_url": "https://api.github.com/users/BourSuorcdey/followers",
+        "following_url": "https://api.github.com/users/BourSuorcdey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/BourSuorcdey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/BourSuorcdey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/BourSuorcdey/subscriptions",
+        "organizations_url": "https://api.github.com/users/BourSuorcdey/orgs",
+        "repos_url": "https://api.github.com/users/BourSuorcdey/repos",
+        "events_url": "https://api.github.com/users/BourSuorcdey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/BourSuorcdey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a486b3df17b422c06fff6d23270b9a583eb51427",
+            "url": "https://api.github.com/repos/BourSuorcdey/ChatApp/commits/a486b3df17b422c06fff6d23270b9a583eb51427",
+            "html_url": "https://github.com/BourSuorcdey/ChatApp/commit/a486b3df17b422c06fff6d23270b9a583eb51427"
+        }
+    ],
+    "stats": {
+        "total": 23,
+        "additions": 9,
+        "deletions": 14
+    },
+    "files": [
+        {
+            "sha": "3f2e68c6cf28532e435d6315f7533d3f273c7e00",
+            "filename": "app/src/main/java/com/example/chatapp/activities/MainActivity.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 12,
+            "changes": 17,
+            "blob_url": "https://github.com/BourSuorcdey/ChatApp/blob/71573d1b74a8adab276daaa0910ca1e64636907d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Factivities%2FMainActivity.java",
+            "raw_url": "https://github.com/BourSuorcdey/ChatApp/raw/71573d1b74a8adab276daaa0910ca1e64636907d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Factivities%2FMainActivity.java",
+            "contents_url": "https://api.github.com/repos/BourSuorcdey/ChatApp/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Factivities%2FMainActivity.java?ref=71573d1b74a8adab276daaa0910ca1e64636907d",
+            "patch": "@@ -43,19 +43,12 @@ private void setListeners() {\n \n     private void loadUserDetail() {\n         String userName = preferenceManager.getString(Constants.KEY_NAME);\n-        if (userName != null) {\n-            binding.textName.setText(userName);\n-        }\n+            binding.textName.setText(userName != null ? userName : \"\");\n+\n         String userImage = preferenceManager.getString(Constants.KEY_IMAGE);\n-        if (userImage != null) {\n-            byte[] bytes = Base64.decode(userImage, Base64.DEFAULT);\n-            if (bytes != null) {\n-                Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);\n-                if (bitmap != null) {\n-                    binding.imageProfile.setImageBitmap(bitmap);\n-                }\n-            }\n-        }\n+        byte[] bytes = userImage != null ? Base64.decode(userImage, Base64.DEFAULT) : new byte[0];\n+        Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);\n+        binding.imageProfile.setImageBitmap(bitmap);\n     }\n \n     private void showToast(String massage) {"
+        },
+        {
+            "sha": "b6edd1228bba5d4661abeacdb26aaf4a76ddd180",
+            "filename": "app/src/main/java/com/example/chatapp/activities/UsersActivity.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/BourSuorcdey/ChatApp/blob/71573d1b74a8adab276daaa0910ca1e64636907d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Factivities%2FUsersActivity.java",
+            "raw_url": "https://github.com/BourSuorcdey/ChatApp/raw/71573d1b74a8adab276daaa0910ca1e64636907d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Factivities%2FUsersActivity.java",
+            "contents_url": "https://api.github.com/repos/BourSuorcdey/ChatApp/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Factivities%2FUsersActivity.java?ref=71573d1b74a8adab276daaa0910ca1e64636907d",
+            "patch": "@@ -3,6 +3,7 @@\n import androidx.appcompat.app.AppCompatActivity;\n \n import android.os.Bundle;\n+import android.util.Log;\n import android.view.View;\n \n import com.example.chatapp.adapters.UsersAdapter;\n@@ -53,6 +54,7 @@ private void getUser() {\n                             user.email = queryDocumentSnapshot.getString(Constants.KEY_EMAIL);\n                             user.image = queryDocumentSnapshot.getString(Constants.KEY_IMAGE);\n                             user.token = queryDocumentSnapshot.getString(Constants.KEY_FCM_TOKEN);\n+                            Log.d(\"FCM\", \"message: \" +user.name);\n                             users.add(user);\n                         }\n                         if (users.size() > 0) {"
+        },
+        {
+            "sha": "10b034a217ba845540eee3c7f7b63ac9c6e42e3d",
+            "filename": "app/src/main/java/com/example/chatapp/adapters/UsersAdapter.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/BourSuorcdey/ChatApp/blob/71573d1b74a8adab276daaa0910ca1e64636907d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Fadapters%2FUsersAdapter.java",
+            "raw_url": "https://github.com/BourSuorcdey/ChatApp/raw/71573d1b74a8adab276daaa0910ca1e64636907d/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Fadapters%2FUsersAdapter.java",
+            "contents_url": "https://api.github.com/repos/BourSuorcdey/ChatApp/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fchatapp%2Fadapters%2FUsersAdapter.java?ref=71573d1b74a8adab276daaa0910ca1e64636907d",
+            "patch": "@@ -59,7 +59,7 @@ public void setUserDate(User user) {\n     }\n \n     private Bitmap getUserImage(String encodeImage) {\n-        byte[] bytes = Base64.decode(encodeImage, Base64.DEFAULT);\n-        return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);\n+            byte[] bytes = (encodeImage != null && !encodeImage.isEmpty()) ? Base64.decode(encodeImage, Base64.DEFAULT) : new byte[0];\n+            return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);\n     }\n }"
+        }
+    ]
+}

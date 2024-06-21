@@ -1,0 +1,98 @@
+{
+    "sha": "fed65442963b32bc1fd61f019122a1788684bb82",
+    "node_id": "C_kwDOKbKkGdoAKGZlZDY1NDQyOTYzYjMyYmMxZmQ2MWYwMTkxMjJhMTc4ODY4NGJiODI",
+    "commit": {
+        "author": {
+            "name": "Lauren Ciha",
+            "email": "lciha45@gmail.com",
+            "date": "2023-12-07T22:57:42Z"
+        },
+        "committer": {
+            "name": "Lauren Ciha",
+            "email": "lciha45@gmail.com",
+            "date": "2023-12-07T22:57:42Z"
+        },
+        "message": "Update studentHomePage for location null pointer exceptions",
+        "tree": {
+            "sha": "4a8a1735675da53424719ebe49a56af1cbb3ff84",
+            "url": "https://api.github.com/repos/fboelter/AttendanceApp/git/trees/4a8a1735675da53424719ebe49a56af1cbb3ff84"
+        },
+        "url": "https://api.github.com/repos/fboelter/AttendanceApp/git/commits/fed65442963b32bc1fd61f019122a1788684bb82",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/fboelter/AttendanceApp/commits/fed65442963b32bc1fd61f019122a1788684bb82",
+    "html_url": "https://github.com/fboelter/AttendanceApp/commit/fed65442963b32bc1fd61f019122a1788684bb82",
+    "comments_url": "https://api.github.com/repos/fboelter/AttendanceApp/commits/fed65442963b32bc1fd61f019122a1788684bb82/comments",
+    "author": {
+        "login": "lauren-ciha",
+        "id": 64796985,
+        "node_id": "MDQ6VXNlcjY0Nzk2OTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/64796985?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lauren-ciha",
+        "html_url": "https://github.com/lauren-ciha",
+        "followers_url": "https://api.github.com/users/lauren-ciha/followers",
+        "following_url": "https://api.github.com/users/lauren-ciha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lauren-ciha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lauren-ciha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lauren-ciha/subscriptions",
+        "organizations_url": "https://api.github.com/users/lauren-ciha/orgs",
+        "repos_url": "https://api.github.com/users/lauren-ciha/repos",
+        "events_url": "https://api.github.com/users/lauren-ciha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lauren-ciha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "lauren-ciha",
+        "id": 64796985,
+        "node_id": "MDQ6VXNlcjY0Nzk2OTg1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/64796985?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lauren-ciha",
+        "html_url": "https://github.com/lauren-ciha",
+        "followers_url": "https://api.github.com/users/lauren-ciha/followers",
+        "following_url": "https://api.github.com/users/lauren-ciha/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lauren-ciha/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lauren-ciha/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lauren-ciha/subscriptions",
+        "organizations_url": "https://api.github.com/users/lauren-ciha/orgs",
+        "repos_url": "https://api.github.com/users/lauren-ciha/repos",
+        "events_url": "https://api.github.com/users/lauren-ciha/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lauren-ciha/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bc049a027f2370cf60d5ccbcec88713aedb710ee",
+            "url": "https://api.github.com/repos/fboelter/AttendanceApp/commits/bc049a027f2370cf60d5ccbcec88713aedb710ee",
+            "html_url": "https://github.com/fboelter/AttendanceApp/commit/bc049a027f2370cf60d5ccbcec88713aedb710ee"
+        }
+    ],
+    "stats": {
+        "total": 22,
+        "additions": 19,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "442dec8fdaa08951da64b24df8cc726f3a1993c8",
+            "filename": "app/src/main/java/com/cs407/attendanceapp/StudentHomePage.java",
+            "status": "modified",
+            "additions": 19,
+            "deletions": 3,
+            "changes": 22,
+            "blob_url": "https://github.com/fboelter/AttendanceApp/blob/fed65442963b32bc1fd61f019122a1788684bb82/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fcs407%2Fattendanceapp%2FStudentHomePage.java",
+            "raw_url": "https://github.com/fboelter/AttendanceApp/raw/fed65442963b32bc1fd61f019122a1788684bb82/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fcs407%2Fattendanceapp%2FStudentHomePage.java",
+            "contents_url": "https://api.github.com/repos/fboelter/AttendanceApp/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fcs407%2Fattendanceapp%2FStudentHomePage.java?ref=fed65442963b32bc1fd61f019122a1788684bb82",
+            "patch": "@@ -182,13 +182,12 @@ public void onComplete(@NonNull Task<QuerySnapshot> studentTask) {\n \n                                                     // Check if the class is scheduled for the current day\n                                                     if (course.isCourseScheduledToday()) {\n-                                                            classList.add(course));\n+                                                            classList.add(course);\n                                                             adapter.notifyDataSetChanged(); // Notify the adapter that data has changed\n                                                         }\n                                                 }\n                                               }\n                                             }\n-                                        }\n                                     });\n                         }\n                     } else {\n@@ -341,7 +340,24 @@ public void onComplete(@NonNull Task<QuerySnapshot> task) {\n                                     professorLocation.setLatitude(latitude);\n                                     professorLocation.setLongitude(longitude);\n \n-                                    double rangeInMeters = document.getDouble(\"location_range\");\n+                                    double rangeInMeters;\n+\n+                                    try {\n+                                        // Try to retrieve the value from the document\n+                                        Double rangeFromDocument = document.getDouble(\"location_range\");\n+\n+                                        // Check if the value is not null\n+                                        if (rangeFromDocument != null) {\n+                                            rangeInMeters = rangeFromDocument;\n+                                        } else {\n+                                            // If the value is null, set a default value of 10\n+                                            rangeInMeters = 10;\n+                                        }\n+                                    } catch (NullPointerException npe) {\n+                                        // Handle any potential NullPointerException\n+                                        npe.printStackTrace();\n+                                        rangeInMeters = 10; // Set a default value if an exception occurs\n+                                    }\n \n                                     float distance = studentLocation.distanceTo(professorLocation);\n                                     Log.i(\"INFO\", \"Distance: \" + distance);"
+        }
+    ]
+}

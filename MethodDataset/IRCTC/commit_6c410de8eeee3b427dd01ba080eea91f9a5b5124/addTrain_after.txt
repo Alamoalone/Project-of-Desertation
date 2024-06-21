@@ -1,0 +1,15 @@
+    public void addTrain(Train newTrain) {
+        // Check if a train with the same trainId already exists
+        Optional<Train> existingTrain = trainList.stream()
+                .filter(train -> train.getTrainId().equalsIgnoreCase(newTrain.getTrainId()))
+                .findFirst();
+
+        if (existingTrain.isPresent()) {
+            // If a train with the same trainId exists, update it instead of adding a new one
+            updateTrain(newTrain);
+        } else {
+            // Otherwise, add the new train to the list
+            trainList.add(newTrain);
+            saveTrainListToFile();
+        }
+    }

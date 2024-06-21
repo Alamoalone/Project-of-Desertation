@@ -1,0 +1,23 @@
+    private void compressImage(File file, String format, String fileName) {
+        String pathOfNewFile = ""; // for logger
+        try {
+            long size = file.length();
+            double buffer = (double) compressionRate / 100;
+            Long newSize = size - (int) (size * buffer);
+            int targetSize = newSize.intValue() / 1024;
+
+            image = ImageIO.read(file);
+            Scalr.resize(image, targetSize);
+
+            File newFile = new File(dstFolder + "\\" + file.getName());
+            newFile = escapeDuplicateFiles(newFile, dstFolder, fileName);
+            pathOfNewFile = newFile.getPath();
+            ImageIO.write(image, format, newFile);
+            Main.logger.info("обработали файл " + newFile.getName());
+
+        } catch (Exception e) {
+            copyErrorFile(file, format, fileName);
+            Main.logger.error("Не удалось сохранить файл " + file.getName() + " Путь = " + pathOfNewFile);
+        }
+
+    }

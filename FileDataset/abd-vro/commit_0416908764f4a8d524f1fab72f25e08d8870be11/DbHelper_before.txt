@@ -1,0 +1,30 @@
+  public ContentionEventEntity saveContentionEvent(final BieMessagePayload bieMessagePayload) {
+    final ContentionEventEntity contentionEventEntity = new ContentionEventEntity();
+    contentionEventEntity.setClaimId(bieMessagePayload.getClaimId());
+    contentionEventEntity.setContentionId(bieMessagePayload.getContentionId());
+    contentionEventEntity.setEventType(bieMessagePayload.getEventType().toString());
+    contentionEventEntity.setNotifiedAt(convertTime(bieMessagePayload.getNotifiedAt()));
+    contentionEventEntity.setContentionTypeCode(bieMessagePayload.getContentionTypeCode());
+    contentionEventEntity.setDiagnosticTypeCode(bieMessagePayload.getDiagnosticTypeCode());
+    contentionEventEntity.setContentionClassificationName(
+        bieMessagePayload.getContentionClassificationName());
+    contentionEventEntity.setOccurredAt(convertTime(bieMessagePayload.getEventTime()));
+    contentionEventEntity.setDateAdded(convertTime(bieMessagePayload.getDateAdded()));
+    contentionEventEntity.setDateCompleted(convertTime(bieMessagePayload.getDateCompleted()));
+    contentionEventEntity.setDateUpdated(convertTime(bieMessagePayload.getDateUpdated()));
+    contentionEventEntity.setActorStation(bieMessagePayload.getActorStation());
+    contentionEventEntity.setAutomationIndicator(bieMessagePayload.getAutomationIndicator());
+    contentionEventEntity.setBenefitClaimTypeCode(bieMessagePayload.getBenefitClaimTypeCode());
+    contentionEventEntity.setContentionStatusTypeCode(
+        bieMessagePayload.getContentionStatusTypeCode());
+    contentionEventEntity.setCurrentLifecycleStatus(bieMessagePayload.getCurrentLifecycleStatus());
+    contentionEventEntity.setDetails(bieMessagePayload.getDetails());
+    contentionEventEntity.setEventTime(convertTime(bieMessagePayload.getEventTime()));
+    contentionEventEntity.setJournalStatusTypeCode(bieMessagePayload.getJournalStatusTypeCode());
+    contentionEventEntity.setVeteranParticipantId(bieMessagePayload.getVeteranParticipantId());
+    contentionEventEntity.setActionName(bieMessagePayload.getActionName());
+    contentionEventEntity.setActionResultName(bieMessagePayload.getActionResultName());
+
+    return contentionEventRepository.save(contentionEventEntity);
+  }
+

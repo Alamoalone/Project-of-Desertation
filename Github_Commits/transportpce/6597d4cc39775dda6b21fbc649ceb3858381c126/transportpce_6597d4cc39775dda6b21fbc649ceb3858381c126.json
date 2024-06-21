@@ -1,0 +1,98 @@
+{
+    "sha": "6597d4cc39775dda6b21fbc649ceb3858381c126",
+    "node_id": "C_kwDOBS2zEtoAKDY1OTdkNGNjMzk3NzVkZGE2YjIxZmJjNjQ5Y2ViMzg1ODM4MWMxMjY",
+    "commit": {
+        "author": {
+            "name": "Jonas Mårtensson",
+            "email": "jonas.martensson@smartoptics.com",
+            "date": "2023-05-22T13:59:37Z"
+        },
+        "committer": {
+            "name": "Guillaume Lambert",
+            "email": "guillaume.lambert@orange.com",
+            "date": "2024-02-15T15:14:08Z"
+        },
+        "message": "Fix OLM rollback\n\nThe OLM rollback task did not correctly set spectral slot numbers,\ncausing a null pointer exception.\n\nJIRA: TRNSPRTPCE-786\nChange-Id: I8cdaa109b718d47c8d5b620b9d686903f19c08d3\nSigned-off-by: Jonas Mårtensson <jonas.martensson@smartoptics.com>",
+        "tree": {
+            "sha": "4d343d677728b9b3c32e36a79a485cf295988df1",
+            "url": "https://api.github.com/repos/opendaylight/transportpce/git/trees/4d343d677728b9b3c32e36a79a485cf295988df1"
+        },
+        "url": "https://api.github.com/repos/opendaylight/transportpce/git/commits/6597d4cc39775dda6b21fbc649ceb3858381c126",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/opendaylight/transportpce/commits/6597d4cc39775dda6b21fbc649ceb3858381c126",
+    "html_url": "https://github.com/opendaylight/transportpce/commit/6597d4cc39775dda6b21fbc649ceb3858381c126",
+    "comments_url": "https://api.github.com/repos/opendaylight/transportpce/commits/6597d4cc39775dda6b21fbc649ceb3858381c126/comments",
+    "author": {
+        "login": "ojnas",
+        "id": 8775347,
+        "node_id": "MDQ6VXNlcjg3NzUzNDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8775347?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ojnas",
+        "html_url": "https://github.com/ojnas",
+        "followers_url": "https://api.github.com/users/ojnas/followers",
+        "following_url": "https://api.github.com/users/ojnas/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ojnas/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ojnas/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ojnas/subscriptions",
+        "organizations_url": "https://api.github.com/users/ojnas/orgs",
+        "repos_url": "https://api.github.com/users/ojnas/repos",
+        "events_url": "https://api.github.com/users/ojnas/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ojnas/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "guillaumelambert",
+        "id": 22078181,
+        "node_id": "MDQ6VXNlcjIyMDc4MTgx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22078181?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/guillaumelambert",
+        "html_url": "https://github.com/guillaumelambert",
+        "followers_url": "https://api.github.com/users/guillaumelambert/followers",
+        "following_url": "https://api.github.com/users/guillaumelambert/following{/other_user}",
+        "gists_url": "https://api.github.com/users/guillaumelambert/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/guillaumelambert/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/guillaumelambert/subscriptions",
+        "organizations_url": "https://api.github.com/users/guillaumelambert/orgs",
+        "repos_url": "https://api.github.com/users/guillaumelambert/repos",
+        "events_url": "https://api.github.com/users/guillaumelambert/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/guillaumelambert/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "350dc88e662ec6c9abe2431fd02b9746abc9fee6",
+            "url": "https://api.github.com/repos/opendaylight/transportpce/commits/350dc88e662ec6c9abe2431fd02b9746abc9fee6",
+            "html_url": "https://github.com/opendaylight/transportpce/commit/350dc88e662ec6c9abe2431fd02b9746abc9fee6"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 2,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "fbd70782e1bc1c62919fbcd1ac7e1cb3a29984c4",
+            "filename": "renderer/src/main/java/org/opendaylight/transportpce/renderer/provisiondevice/tasks/OlmPowerSetupRollbackTask.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 0,
+            "changes": 2,
+            "blob_url": "https://github.com/opendaylight/transportpce/blob/6597d4cc39775dda6b21fbc649ceb3858381c126/renderer%2Fsrc%2Fmain%2Fjava%2Forg%2Fopendaylight%2Ftransportpce%2Frenderer%2Fprovisiondevice%2Ftasks%2FOlmPowerSetupRollbackTask.java",
+            "raw_url": "https://github.com/opendaylight/transportpce/raw/6597d4cc39775dda6b21fbc649ceb3858381c126/renderer%2Fsrc%2Fmain%2Fjava%2Forg%2Fopendaylight%2Ftransportpce%2Frenderer%2Fprovisiondevice%2Ftasks%2FOlmPowerSetupRollbackTask.java",
+            "contents_url": "https://api.github.com/repos/opendaylight/transportpce/contents/renderer%2Fsrc%2Fmain%2Fjava%2Forg%2Fopendaylight%2Ftransportpce%2Frenderer%2Fprovisiondevice%2Ftasks%2FOlmPowerSetupRollbackTask.java?ref=6597d4cc39775dda6b21fbc649ceb3858381c126",
+            "patch": "@@ -44,6 +44,8 @@ public Void call() throws Exception {\n                 .setNodes(this.powerSetupInput.getNodes())\n                 .setServiceName(this.powerSetupInput.getServiceName())\n                 .setWaveNumber(this.powerSetupInput.getWaveNumber())\n+                .setLowerSpectralSlotNumber(this.powerSetupInput.getLowerSpectralSlotNumber())\n+                .setHigherSpectralSlotNumber(this.powerSetupInput.getHigherSpectralSlotNumber())\n                 .build();\n \n         Future<RpcResult<ServicePowerTurndownOutput>> powerTurndownResultFuture ="
+        }
+    ]
+}

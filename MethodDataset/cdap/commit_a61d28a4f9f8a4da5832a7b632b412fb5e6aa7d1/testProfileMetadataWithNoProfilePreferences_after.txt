@@ -1,0 +1,51 @@
+  public void testProfileMetadataWithNoProfilePreferences() throws Exception {
+    Injector injector = getInjector();
+
+    // add a new profile in default namespace
+    ProfileService profileService = injector.getInstance(ProfileService.class);
+    ProfileId myProfile = new ProfileId(NamespaceId.DEFAULT.getNamespace(), "MyProfile");
+    Profile profile1 = new Profile("MyProfile", Profile.NATIVE.getLabel(), Profile.NATIVE.getDescription(),
+                                   Profile.NATIVE.getScope(), Profile.NATIVE.getProvisioner());
+    profileService.saveProfile(myProfile, profile1);
+
+    // add a app with workflow to app meta store
+    ApplicationSpecification appSpec = Specifications.from(new AppWithWorkflow());
+    ApplicationId appId = NamespaceId.DEFAULT.app(appSpec.getName());
+    ProgramId workflowId = appId.workflow("SampleWorkflow");
+
+    // get the metadata - should be empty since we haven't deployed the app
+    MetadataStorage mds = injector.getInstance(MetadataStorage.class);
+    Assert.assertEquals(Collections.emptyMap(), mds.read(new Read(workflowId.toMetadataEntity())).getProperties());
+
+    Store store = injector.getInstance(DefaultStore.class);
+    ApplicationMeta meta = new ApplicationMeta(appSpec.getName(), appSpec,
+                                               new ChangeDetail(null, null, null,
+                                                                System.currentTimeMillis()));
+    store.addLatestApplication(appId, meta);
+
+    // set default namespace to use the profile, since now MetadataSubscriberService is not started,
+    // it should not affect the mds
+    PreferencesService preferencesService = injector.getInstance(PreferencesService.class);
+    preferencesService.setProperties(NamespaceId.DEFAULT,
+                                     Collections.singletonMap(SystemArguments.PROFILE_NAME, "USER:MyProfile"));
+
+    try {
+      // Verify the workflow profile metadata is updated to my profile
+      Tasks.waitFor(myProfile.getScopedName(), () -> getProfileProperty(mds, workflowId),
+                    10, TimeUnit.SECONDS, 100, TimeUnit.MILLISECONDS);
+
+      // Set the property without profile is a replacement of the preference, so it is same as deletion of the profile
+      preferencesService.setProperties(NamespaceId.DEFAULT, Collections.emptyMap());
+
+      // Verify the workflow profile metadata is updated to default profile
+      Tasks.waitFor(ProfileId.NATIVE.getScopedName(), () -> getProfileProperty(mds, workflowId),
+                    10, TimeUnit.SECONDS, 100, TimeUnit.MILLISECONDS);
+    } finally {
+      // stop and clean up the store
+      preferencesService.deleteProperties(NamespaceId.DEFAULT);
+      store.removeAll(NamespaceId.DEFAULT);
+      profileService.disableProfile(myProfile);
+      profileService.deleteProfile(myProfile);
+      mds.apply(new MetadataMutation.Drop(workflowId.toMetadataEntity()), MutationOptions.DEFAULT);
+    }
+  }

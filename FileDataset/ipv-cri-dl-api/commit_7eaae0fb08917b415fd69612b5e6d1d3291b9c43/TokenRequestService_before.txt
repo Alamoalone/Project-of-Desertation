@@ -1,0 +1,102 @@
+    private TokenResponse performNewTokenRequest() throws OAuthErrorResponseException {
+
+        final String requestId = UUID.randomUUID().toString();
+        LOGGER.info("{} Request Id {}", REQUEST_NAME, requestId);
+
+        // Token Request is posted as if via a form
+        final HttpPost request = new HttpPost();
+        request.setURI(requestURI);
+        request.addHeader(HEADER_CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType());
+
+        // Enforce connection timeout values
+        request.setConfig(requestConfig);
+
+        String requestBody;
+        try {
+            TokenRequestPayload tokenRequestPayload =
+                    TokenRequestPayload.builder().userName(username).password(password).build();
+
+            requestBody = objectMapper.writeValueAsString(tokenRequestPayload);
+        } catch (JsonProcessingException e) {
+            LOGGER.error("JsonProcessingException creating request body");
+            LOGGER.debug(e.getMessage());
+            throw new OAuthErrorResponseException(
+                    HttpStatusCode.INTERNAL_SERVER_ERROR,
+                    ErrorResponse.FAILED_TO_PREPARE_TOKEN_REQUEST_PAYLOAD);
+        }
+
+        LOGGER.debug(
+                "{} request headers : {}",
+                ENDPOINT_NAME,
+                LOGGER.isDebugEnabled() ? (Arrays.toString(request.getAllHeaders())) : "");
+        LOGGER.debug("{} request body : {}", REQUEST_NAME, requestBody);
+
+        request.setEntity(new StringEntity(requestBody, ContentType.APPLICATION_JSON));
+
+        eventProbe.counterMetric(DVLA_TOKEN_REQUEST_CREATED.withEndpointPrefix());
+
+        final HTTPReply httpReply;
+        String requestURIString = requestURI.toString();
+        LOGGER.debug("{} request endpoint is {}", REQUEST_NAME, requestURIString);
+        LOGGER.info("Submitting {} request to third party...", REQUEST_NAME);
+        try (CloseableHttpResponse response =
+                httpRetryer.sendHTTPRequestRetryIfAllowed(request, httpRetryStatusConfig)) {
+            eventProbe.counterMetric(DVLA_TOKEN_REQUEST_SEND_OK.withEndpointPrefix());
+
+            // throws OAuthErrorResponseException on error
+            httpReply = HTTPReplyHelper.retrieveResponse(response, ENDPOINT_NAME);
+        } catch (IOException e) {
+
+            LOGGER.error("IOException executing {} request - {}", REQUEST_NAME, e.getMessage());
+
+            eventProbe.counterMetric(
+                    DVLA_TOKEN_REQUEST_SEND_ERROR.withEndpointPrefixAndExceptionName(e));
+
+            throw new OAuthErrorResponseException(
+                    HttpStatusCode.INTERNAL_SERVER_ERROR,
+                    ErrorResponse.ERROR_INVOKING_THIRD_PARTY_API_TOKEN_ENDPOINT);
+        }
+
+        if (httpReply.statusCode == 200) {
+            LOGGER.info("{} status code {}", REQUEST_NAME, httpReply.statusCode);
+
+            eventProbe.counterMetric(
+                    DVLA_TOKEN_RESPONSE_TYPE_EXPECTED_HTTP_STATUS.withEndpointPrefix());
+
+            try {
+                LOGGER.debug("{} headers {}", REQUEST_NAME, httpReply.responseHeaders);
+                LOGGER.debug("{} response {}", REQUEST_NAME, httpReply.responseBody);
+
+                TokenResponse response =
+                        objectMapper.readValue(httpReply.responseBody, TokenResponse.class);
+
+                eventProbe.counterMetric(DVLA_TOKEN_RESPONSE_TYPE_VALID.withEndpointPrefix());
+
+                return response;
+            } catch (JsonProcessingException e) {
+                LOGGER.error("JsonProcessingException mapping {} response", REQUEST_NAME);
+                LOGGER.debug(e.getMessage());
+
+                eventProbe.counterMetric(DVLA_TOKEN_RESPONSE_TYPE_INVALID.withEndpointPrefix());
+
+                throw new OAuthErrorResponseException(
+                        HttpStatusCode.INTERNAL_SERVER_ERROR,
+                        ErrorResponse.FAILED_TO_MAP_TOKEN_ENDPOINT_RESPONSE_BODY);
+            }
+        } else {
+            // The token request responded but with an unexpected status code
+            LOGGER.error(
+                    "{} response status code {} content - {}",
+                    REQUEST_NAME,
+                    httpReply.statusCode,
+                    httpReply.responseBody);
+
+            eventProbe.counterMetric(
+                    DVLA_TOKEN_RESPONSE_TYPE_UNEXPECTED_HTTP_STATUS.withEndpointPrefix());
+
+            throw new OAuthErrorResponseException(
+                    HttpStatusCode.INTERNAL_SERVER_ERROR,
+                    ErrorResponse.ERROR_TOKEN_ENDPOINT_RETURNED_UNEXPECTED_HTTP_STATUS_CODE);
+        }
+    }
+

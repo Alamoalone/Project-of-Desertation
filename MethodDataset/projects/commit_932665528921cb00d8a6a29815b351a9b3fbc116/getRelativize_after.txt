@@ -1,0 +1,10 @@
+    private static String getRelativize(FileBlock _block, AnaTypeFct _id) {
+        NamedFunctionBlock function_ = LambdaOperation.fct(_id);
+        if (function_ == null) {
+            return EMPTY;
+        }
+        if (!ContextUtil.isFromCustFile(function_.getFile())) {
+            return EMPTY;
+        }
+        return ExportCst.href(_block, function_.getFile(), function_.getNameOffset());
+    }

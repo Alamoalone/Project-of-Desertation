@@ -1,0 +1,110 @@
+{
+    "sha": "cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950",
+    "node_id": "C_kwDOAD5UrNoAKGNlZTEwYWU2YTIyOTA2ZTRlMjFiMWVhMDBmMTlhYjJhM2Q1Yjk5NTA",
+    "commit": {
+        "author": {
+            "name": "clementetb",
+            "email": "clementetb@users.noreply.github.com",
+            "date": "2023-07-10T09:08:23Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-07-10T09:08:23Z"
+        },
+        "message": "Fix null pointer exception when proxy is enabled. (#7833)",
+        "tree": {
+            "sha": "62dbc758737955b8c65acf5c5351e2a791661881",
+            "url": "https://api.github.com/repos/realm/realm-java/git/trees/62dbc758737955b8c65acf5c5351e2a791661881"
+        },
+        "url": "https://api.github.com/repos/realm/realm-java/git/commits/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkq8qHCRBK7hj4Ov3rIwAApDcIAAkLrJ0vBJHaj7pd93oKQn0Q\n3hPHQd+Hca3DaZRvhYtgxx+AV+wX8YW8HuGoUPEZuPVJdOoz6oQ0ZZdfkMB5xZmE\nemm/tMgYQkoaFyYGMI+crVWdDva6frHEX3mvlgqxq31Dnoewlp3ZHfyKcE1416wD\n9WvOZ50gg4Hre4KaMy9F5p0RW7wPTkrVMg8fqOHAszscCD/FP/YNntD5/U1yHxXk\nvqjH9+GTIGVM4j26TaAFk6EtDQdNN+cigjS17lDc+SOBZCjA5BTaYu7bfwzX2RCN\nKmrryu1xImt+VfjrjnATld7csUBeN8sjucXgeUYWRuky5dy3tGm7N6VICmVu/u4=\n=nxjG\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 62dbc758737955b8c65acf5c5351e2a791661881\nparent 19d6628710bd9c0b7607a8704de8966856746815\nauthor clementetb <clementetb@users.noreply.github.com> 1688980103 +0200\ncommitter GitHub <noreply@github.com> 1688980103 +0200\n\nFix null pointer exception when proxy is enabled. (#7833)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/realm/realm-java/commits/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950",
+    "html_url": "https://github.com/realm/realm-java/commit/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950",
+    "comments_url": "https://api.github.com/repos/realm/realm-java/commits/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950/comments",
+    "author": {
+        "login": "clementetb",
+        "id": 2242574,
+        "node_id": "MDQ6VXNlcjIyNDI1NzQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2242574?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/clementetb",
+        "html_url": "https://github.com/clementetb",
+        "followers_url": "https://api.github.com/users/clementetb/followers",
+        "following_url": "https://api.github.com/users/clementetb/following{/other_user}",
+        "gists_url": "https://api.github.com/users/clementetb/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/clementetb/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/clementetb/subscriptions",
+        "organizations_url": "https://api.github.com/users/clementetb/orgs",
+        "repos_url": "https://api.github.com/users/clementetb/repos",
+        "events_url": "https://api.github.com/users/clementetb/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/clementetb/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "19d6628710bd9c0b7607a8704de8966856746815",
+            "url": "https://api.github.com/repos/realm/realm-java/commits/19d6628710bd9c0b7607a8704de8966856746815",
+            "html_url": "https://github.com/realm/realm-java/commit/19d6628710bd9c0b7607a8704de8966856746815"
+        }
+    ],
+    "stats": {
+        "total": 65,
+        "additions": 51,
+        "deletions": 14
+    },
+    "files": [
+        {
+            "sha": "d247c01c061704bf345446727f0512197a216422",
+            "filename": "CHANGELOG.md",
+            "status": "modified",
+            "additions": 22,
+            "deletions": 0,
+            "changes": 22,
+            "blob_url": "https://github.com/realm/realm-java/blob/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950/CHANGELOG.md",
+            "raw_url": "https://github.com/realm/realm-java/raw/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950/CHANGELOG.md",
+            "contents_url": "https://api.github.com/repos/realm/realm-java/contents/CHANGELOG.md?ref=cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950",
+            "patch": "@@ -1,3 +1,25 @@\n+## 10.16.2 (YYYY-MM-DD)\n+\n+### Breaking Changes\n+* None.\n+\n+### Enhancements\n+* None.\n+\n+### Fixed\n+* [RealmApp] Crash when opening a Realm with a proxy enabled. (Issue [#7828](https://github.com/realm/realm-java/issues/7828))\n+\n+### Compatibility\n+* File format: Generates Realms with format v23. Unsynced Realms will be upgraded from Realm Java 2.0 and later. Synced Realms can only be read and upgraded if created with Realm Java v10.0.0-BETA.1.\n+* APIs are backwards compatible with all previous release of realm-java in the 10.6.y series.\n+* Realm Studio 13.0.0 or above is required to open Realms created by this version.\n+* Gradle 7.5 and above.\n+* Android Gradle Plugin 7.4.0 and above.\n+\n+### Internal\n+* None.\n+\n+\n ## 10.16.1 (2023-06-26)\n \n ### Breaking Changes"
+        },
+        {
+            "sha": "93abd243b4f5f141dba5f781587919c83d0b41d3",
+            "filename": "realm/realm-library/src/main/java/io/realm/internal/OsRealmConfig.java",
+            "status": "modified",
+            "additions": 29,
+            "deletions": 14,
+            "changes": 43,
+            "blob_url": "https://github.com/realm/realm-java/blob/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950/realm%2Frealm-library%2Fsrc%2Fmain%2Fjava%2Fio%2Frealm%2Finternal%2FOsRealmConfig.java",
+            "raw_url": "https://github.com/realm/realm-java/raw/cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950/realm%2Frealm-library%2Fsrc%2Fmain%2Fjava%2Fio%2Frealm%2Finternal%2FOsRealmConfig.java",
+            "contents_url": "https://api.github.com/repos/realm/realm-java/contents/realm%2Frealm-library%2Fsrc%2Fmain%2Fjava%2Fio%2Frealm%2Finternal%2FOsRealmConfig.java?ref=cee10ae6a22906e4e21b1ea00f19ab2a3d5b9950",
+            "patch": "@@ -355,13 +355,17 @@ private OsRealmConfig(final RealmConfiguration config,\n                             SocketAddress address = proxy.address();\n                             if (address instanceof InetSocketAddress) {\n                                 InetSocketAddress inetAddress = (InetSocketAddress) address;\n-\n-                                nativeSetSyncConfigProxySettings(\n-                                        nativePtr,\n-                                        proxyType,\n-                                        getHostString(inetAddress),\n-                                        inetAddress.getPort()\n-                                );\n+                                String hostname = getHostString(inetAddress);\n+                                if (hostname != null) {\n+                                    nativeSetSyncConfigProxySettings(\n+                                            nativePtr,\n+                                            proxyType,\n+                                            hostname,\n+                                            inetAddress.getPort()\n+                                    );\n+                                } else {\n+                                    RealmLog.error(\"Could not retrieve proxy's hostname.\");\n+                                }\n                             } else {\n                                 RealmLog.error(\"Unsupported proxy socket address type: \" + address.getClass().getName());\n                             }\n@@ -378,15 +382,26 @@ private OsRealmConfig(final RealmConfiguration config,\n         this.resolvedRealmURI = resolvedRealmURI;\n     }\n \n-    // Backport the behavior from InetSocketAddress.getHostString, a function that is only available\n-    // on SDK>=19 (KITKAT)\n+    /**\n+     * Backport the behavior from <a href=\"https://github.com/openjdk-mirror/jdk7u-jdk/blob/f4d80957e89a19a29bb9f9807d2a28351ed7f7df/src/share/classes/java/net/InetSocketAddress.java#L242\">InetSocketAddress.getHostString</a>, a function that is only available\n+     * from SDK 19 (KITKAT)\n+     *\n+     * @param socketAddress address to extract the hostname from.\n+     * @return hostname or the String form of the address.\n+     */\n     private String getHostString(InetSocketAddress socketAddress) {\n-        InetAddress address = socketAddress.getAddress();\n+        if (socketAddress.getHostName() != null) {\n+            return socketAddress.getHostName();\n+        }\n+        if (socketAddress.getAddress() != null) {\n+            InetAddress address = socketAddress.getAddress();\n \n-        if (address.getHostName() != null)\n-            return address.getHostName();\n-        else\n-            return address.getHostAddress();\n+            if (address.getHostName() != null) {\n+                return address.getHostName();\n+            } else\n+                return address.getHostAddress();\n+        }\n+        return null;\n     }\n \n     @Override"
+        }
+    ]
+}

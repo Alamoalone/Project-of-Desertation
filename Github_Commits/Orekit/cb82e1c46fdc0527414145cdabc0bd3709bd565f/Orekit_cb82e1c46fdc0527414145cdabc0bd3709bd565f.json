@@ -1,0 +1,98 @@
+{
+    "sha": "cb82e1c46fdc0527414145cdabc0bd3709bd565f",
+    "node_id": "C_kwDOAVywy9oAKGNiODJlMWM0NmZkYzA1Mjc0MTQxNDVjZGFiYzBiZDM3MDliZDU2NWY",
+    "commit": {
+        "author": {
+            "name": "Luc Maisonobe",
+            "email": "luc@orekit.org",
+            "date": "2023-04-10T16:20:18Z"
+        },
+        "committer": {
+            "name": "Luc Maisonobe",
+            "email": "luc@orekit.org",
+            "date": "2023-04-10T16:20:18Z"
+        },
+        "message": "Prevent null pointer exception.",
+        "tree": {
+            "sha": "ab6d664a6ab3f8a6335a86e8fe829bc99378de53",
+            "url": "https://api.github.com/repos/CS-SI/Orekit/git/trees/ab6d664a6ab3f8a6335a86e8fe829bc99378de53"
+        },
+        "url": "https://api.github.com/repos/CS-SI/Orekit/git/commits/cb82e1c46fdc0527414145cdabc0bd3709bd565f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/CS-SI/Orekit/commits/cb82e1c46fdc0527414145cdabc0bd3709bd565f",
+    "html_url": "https://github.com/CS-SI/Orekit/commit/cb82e1c46fdc0527414145cdabc0bd3709bd565f",
+    "comments_url": "https://api.github.com/repos/CS-SI/Orekit/commits/cb82e1c46fdc0527414145cdabc0bd3709bd565f/comments",
+    "author": {
+        "login": "maisonobe",
+        "id": 3736196,
+        "node_id": "MDQ6VXNlcjM3MzYxOTY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3736196?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maisonobe",
+        "html_url": "https://github.com/maisonobe",
+        "followers_url": "https://api.github.com/users/maisonobe/followers",
+        "following_url": "https://api.github.com/users/maisonobe/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maisonobe/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maisonobe/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maisonobe/subscriptions",
+        "organizations_url": "https://api.github.com/users/maisonobe/orgs",
+        "repos_url": "https://api.github.com/users/maisonobe/repos",
+        "events_url": "https://api.github.com/users/maisonobe/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maisonobe/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "maisonobe",
+        "id": 3736196,
+        "node_id": "MDQ6VXNlcjM3MzYxOTY=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3736196?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/maisonobe",
+        "html_url": "https://github.com/maisonobe",
+        "followers_url": "https://api.github.com/users/maisonobe/followers",
+        "following_url": "https://api.github.com/users/maisonobe/following{/other_user}",
+        "gists_url": "https://api.github.com/users/maisonobe/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/maisonobe/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/maisonobe/subscriptions",
+        "organizations_url": "https://api.github.com/users/maisonobe/orgs",
+        "repos_url": "https://api.github.com/users/maisonobe/repos",
+        "events_url": "https://api.github.com/users/maisonobe/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/maisonobe/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "295538529016d6bb4830f90cd4ed69ef510254c4",
+            "url": "https://api.github.com/repos/CS-SI/Orekit/commits/295538529016d6bb4830f90cd4ed69ef510254c4",
+            "html_url": "https://github.com/CS-SI/Orekit/commit/295538529016d6bb4830f90cd4ed69ef510254c4"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "a173aa9f21ccd7b611a0784a0eb89bb96eec1c09",
+            "filename": "src/main/java/org/orekit/files/ccsds/ndm/adm/apm/Euler.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/CS-SI/Orekit/blob/cb82e1c46fdc0527414145cdabc0bd3709bd565f/src%2Fmain%2Fjava%2Forg%2Forekit%2Ffiles%2Fccsds%2Fndm%2Fadm%2Fapm%2FEuler.java",
+            "raw_url": "https://github.com/CS-SI/Orekit/raw/cb82e1c46fdc0527414145cdabc0bd3709bd565f/src%2Fmain%2Fjava%2Forg%2Forekit%2Ffiles%2Fccsds%2Fndm%2Fadm%2Fapm%2FEuler.java",
+            "contents_url": "https://api.github.com/repos/CS-SI/Orekit/contents/src%2Fmain%2Fjava%2Forg%2Forekit%2Ffiles%2Fccsds%2Fndm%2Fadm%2Fapm%2FEuler.java?ref=cb82e1c46fdc0527414145cdabc0bd3709bd565f",
+            "patch": "@@ -183,7 +183,7 @@ public void setRateFrameIsA(final boolean rateFrameIsA) {\n      * @return true if rates are specified in spacecraft body frame\n      */\n     public boolean isSpacecraftBodyRate() {\n-        return rateFrameIsA ^ endpoints.getFrameA().asSpacecraftBodyFrame() == null;\n+        return rateFrameIsA() ^ endpoints.getFrameA().asSpacecraftBodyFrame() == null;\n     }\n \n     /**"
+        }
+    ]
+}

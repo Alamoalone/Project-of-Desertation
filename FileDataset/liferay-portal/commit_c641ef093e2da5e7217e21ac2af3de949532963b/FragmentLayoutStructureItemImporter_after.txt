@@ -1,0 +1,56 @@
+	private JSONObject _toBackgroundImageFragmentEntryProcessorJSONObject(
+		LayoutStructureItemImporterContext layoutStructureItemImporterContext,
+		List<Object> fragmentFields) {
+
+		if (fragmentFields == null) {
+			return _jsonFactory.createJSONObject();
+		}
+
+		JSONObject backgroundImageFragmentEntryProcessorValuesJSONObject =
+			_jsonFactory.createJSONObject();
+
+		for (Object fragmentField : fragmentFields) {
+			Map<String, Object> fragmentFieldMap =
+				(Map<String, Object>)fragmentField;
+
+			Map<String, Object> fragmentFieldValueMap =
+				(Map<String, Object>)fragmentFieldMap.get("value");
+
+			Map<String, Object> backgroundFragmentImageMap =
+				(Map<String, Object>)fragmentFieldValueMap.get(
+					"backgroundFragmentImage");
+
+			if (MapUtil.isEmpty(backgroundFragmentImageMap)) {
+				backgroundFragmentImageMap =
+					(Map<String, Object>)fragmentFieldValueMap.get(
+						"backgroundImage");
+			}
+
+			if (backgroundFragmentImageMap == null) {
+				continue;
+			}
+
+			Map<String, Object> urlMap =
+				(Map<String, Object>)backgroundFragmentImageMap.get("url");
+
+			JSONObject fragmentFieldValueJSONObject =
+				_createBaseFragmentFieldJSONObject(
+					layoutStructureItemImporterContext, urlMap);
+
+			Map<String, Object> titleMap =
+				(Map<String, Object>)backgroundFragmentImageMap.get("title");
+
+			if (titleMap != null) {
+				fragmentFieldValueJSONObject.put(
+					"config",
+					JSONUtil.put("imageTitle", titleMap.get("value")));
+			}
+
+			backgroundImageFragmentEntryProcessorValuesJSONObject.put(
+				(String)fragmentFieldMap.get("id"),
+				fragmentFieldValueJSONObject);
+		}
+
+		return backgroundImageFragmentEntryProcessorValuesJSONObject;
+	}
+

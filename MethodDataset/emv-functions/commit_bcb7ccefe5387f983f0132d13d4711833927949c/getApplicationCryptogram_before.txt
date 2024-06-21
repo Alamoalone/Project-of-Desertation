@@ -1,0 +1,26 @@
+    public CryptogramResponse getApplicationCryptogram(GenerateApplicationCryptogramCommand command) {
+        final String CVN_NAME = "CVN";
+        final String CVR_NAME = "CVR";
+        // Log command object
+        debugLog(command);
+        // Map command to domain
+        CryptogramRequest cryptogramRequest = commandToDomainMapper.mapGenerateACCommandToDomain(command);
+        // Log domain request object
+        debugLog(cryptogramRequest);
+        // Parse IAD
+        VisaIADParser visaIADParser = new VisaIADParser(cryptogramRequest.getIssuerApplicationData());
+        Map<String, String> parsedVisaIad =  visaIADParser.parseIad();
+        log.debug("Parsed IAD ----> {}.", parsedVisaIad);
+        // Set Cryptogram Version Number
+        CryptogramVersionNumber cryptogramVersionNumber = CryptogramVersionNumber.valueOf(parsedVisaIad.get(CVN_NAME));
+        String cardVerificationResults = parsedVisaIad.get(CVR_NAME);
+        // Extract to a method which will throw runtime exception for unsupported CVN
+        //IADStaticData visaIADParser = new IADStaticData(cryptogramRequest.getIssuerApplicationData()).parseIad();
+        // Generate UDK
+        String uniqueDerivationKey = getUniqueDerivationKey(cryptogramRequest.getIssuerMasterKey(), cryptogramRequest.getPan(),
+                cryptogramRequest.getPanSequenceNumber(), cryptogramVersionNumber);
+        // Generate SK
+        String sessionKey = getSessionKey(uniqueDerivationKey, cryptogramRequest.getApplicationTransactionCounter(),
+                cryptogramVersionNumber);
+        return buildResponseObjectFromDomain(generateCryptogram(cryptogramRequest, sessionKey, cryptogramVersionNumber, cardVerificationResults));
+    }

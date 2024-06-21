@@ -1,0 +1,1 @@
+searchApi_whenNoSearchParameter_thenReturnAllData()

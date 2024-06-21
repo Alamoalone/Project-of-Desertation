@@ -1,0 +1,86 @@
+    public boolean delete(long xid, long uid) throws Exception {
+        Transaction transaction = activeTransaction.get(xid);
+        if (transaction == null) throw Error.InvalidCommandException;
+        if (transaction.err != null) throw transaction.err;
+
+
+        Entry entry = null;
+        try {
+            entry = super.get(uid);
+        } catch (Exception e) {
+            if (e == NullEntryException) {
+                return false;
+            } else throw e;
+        }
+
+        try {
+            if (!Visibility.isVisible(tm, transaction, entry)) {
+                return false;
+            }
+
+            Lock l = null;
+            try {
+                l = lt.add(xid, uid); // try to delete it
+            } catch (Exception e) {
+                transaction.err = Error.ConcurrentUpdateException;
+                internAbort(xid, true);
+                transaction.autoAborted = true;
+                throw transaction.err;
+            }
+
+            if (l != null) {
+                l.lock();
+                l.unlock();
+            }
+
+            if (entry.getXmax() == xid) { // has been deleted
+                return false;
+            }
+
+            if (Visibility.isVersionSkip(tm, transaction, entry)) { // version skip, do rollback
+                transaction.err = Error.ConcurrentUpdateException;
+                internAbort(xid, true);
+                transaction.autoAborted = true;
+                throw transaction.err;
+            }
+
+            entry.setXmax(xid); // signal entry as deleted
+            return true;
+
+        } finally {
+            entry.release();
+        }
+    }
+
+    public long insert(long xid, byte[] data) throws Exception {
+        Transaction transaction = activeTransaction.get(xid);
+        if (transaction == null) throw Error.InvalidCommandException;
+        if (transaction.err != null) throw transaction.err;
+
+        byte[] raw = Entry.wrapEntryRaw(xid, data);
+        return dm.insert(xid, raw);
+    }
+
+    public byte[] read(long xid, long uid) throws Exception {
+        Transaction transaction = activeTransaction.get(xid);
+        if (transaction == null) return null;
+        if (transaction.err != null) throw transaction.err;
+
+        Entry entry = null;
+        try {
+            entry = super.get(uid);
+        } catch (Exception e) {
+            if (e == NullEntryException) {
+                return null;
+            } else throw e;
+        }
+
+        try {
+            if (Visibility.isVisible(tm, transaction, entry)) {
+                return entry.data();
+            } else return null;
+        } finally {
+            entry.release();
+        }
+    }
+

@@ -1,0 +1,21 @@
+@@ -63,6 +63,10 @@ public void addContrastControls(String channelName) {
+       cpMagellan_.addContrastControls(channelName);
+    }
+ 
++   public void removeContrastControls(String channelName) {
++      cpMagellan_.removeContrastControls(channelName);
++   }
++
+    public MetadataPanel getMetadataPanelMagellan() {
+       return metadataPanelMagellan_;
+    }
+@@ -325,6 +329,8 @@ private void zPositiionCheckBox_ActionPerformed(java.awt.event.ActionEvent evt)
+    private javax.swing.JCheckBox timeCheckBox_;
+    private javax.swing.JPanel topControlPanel_;
+    private javax.swing.JCheckBox zPositiionCheckBox_;
++
++
+    // End of variables declaration//GEN-END:variables
+ 
+ }
+\ No newline at end of file

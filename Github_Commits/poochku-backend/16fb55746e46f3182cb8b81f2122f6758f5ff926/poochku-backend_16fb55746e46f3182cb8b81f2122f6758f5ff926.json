@@ -1,0 +1,110 @@
+{
+    "sha": "16fb55746e46f3182cb8b81f2122f6758f5ff926",
+    "node_id": "C_kwDOJmKNjNoAKDE2ZmI1NTc0NmU0NmYzMTgyY2I4YjgxZjIxMjJmNjc1OGY1ZmY5MjY",
+    "commit": {
+        "author": {
+            "name": "Namish pruthi",
+            "email": "namishpruthi800@gmail.com",
+            "date": "2023-08-17T21:33:46Z"
+        },
+        "committer": {
+            "name": "Namish pruthi",
+            "email": "namishpruthi800@gmail.com",
+            "date": "2023-08-17T21:33:46Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "8fa115f5953b6c725ab81702f8c188d171e99d75",
+            "url": "https://api.github.com/repos/namish800/poochku-backend/git/trees/8fa115f5953b6c725ab81702f8c188d171e99d75"
+        },
+        "url": "https://api.github.com/repos/namish800/poochku-backend/git/commits/16fb55746e46f3182cb8b81f2122f6758f5ff926",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/namish800/poochku-backend/commits/16fb55746e46f3182cb8b81f2122f6758f5ff926",
+    "html_url": "https://github.com/namish800/poochku-backend/commit/16fb55746e46f3182cb8b81f2122f6758f5ff926",
+    "comments_url": "https://api.github.com/repos/namish800/poochku-backend/commits/16fb55746e46f3182cb8b81f2122f6758f5ff926/comments",
+    "author": {
+        "login": "namish800",
+        "id": 25436663,
+        "node_id": "MDQ6VXNlcjI1NDM2NjYz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25436663?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namish800",
+        "html_url": "https://github.com/namish800",
+        "followers_url": "https://api.github.com/users/namish800/followers",
+        "following_url": "https://api.github.com/users/namish800/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namish800/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namish800/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namish800/subscriptions",
+        "organizations_url": "https://api.github.com/users/namish800/orgs",
+        "repos_url": "https://api.github.com/users/namish800/repos",
+        "events_url": "https://api.github.com/users/namish800/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namish800/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "namish800",
+        "id": 25436663,
+        "node_id": "MDQ6VXNlcjI1NDM2NjYz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25436663?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/namish800",
+        "html_url": "https://github.com/namish800",
+        "followers_url": "https://api.github.com/users/namish800/followers",
+        "following_url": "https://api.github.com/users/namish800/following{/other_user}",
+        "gists_url": "https://api.github.com/users/namish800/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/namish800/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/namish800/subscriptions",
+        "organizations_url": "https://api.github.com/users/namish800/orgs",
+        "repos_url": "https://api.github.com/users/namish800/repos",
+        "events_url": "https://api.github.com/users/namish800/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/namish800/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "619e4fa332b47c2c05654eee813c27800b01793e",
+            "url": "https://api.github.com/repos/namish800/poochku-backend/commits/619e4fa332b47c2c05654eee813c27800b01793e",
+            "html_url": "https://github.com/namish800/poochku-backend/commit/619e4fa332b47c2c05654eee813c27800b01793e"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "0b23782604f8d11844aef78fbaf985e5aeef5e38",
+            "filename": "src/main/java/com/puchku/pet/service/PetServiceImpl.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/namish800/poochku-backend/blob/16fb55746e46f3182cb8b81f2122f6758f5ff926/src%2Fmain%2Fjava%2Fcom%2Fpuchku%2Fpet%2Fservice%2FPetServiceImpl.java",
+            "raw_url": "https://github.com/namish800/poochku-backend/raw/16fb55746e46f3182cb8b81f2122f6758f5ff926/src%2Fmain%2Fjava%2Fcom%2Fpuchku%2Fpet%2Fservice%2FPetServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/namish800/poochku-backend/contents/src%2Fmain%2Fjava%2Fcom%2Fpuchku%2Fpet%2Fservice%2FPetServiceImpl.java?ref=16fb55746e46f3182cb8b81f2122f6758f5ff926",
+            "patch": "@@ -88,7 +88,9 @@ private Pet mapPetEntitytoPetResponse(PetEntity petEntity) {\n         UserDto owner = mapSellerEntitytoUserDto(petEntity.getSeller());\n         petResponse.setOwner(owner);\n         petResponse.setService(mapPetServiceEntityToPetService(petEntity.getService()));\n-        petResponse.setImageUrls(petEntity.getPetImageEntity().getImageUrls());\n+        if(petEntity.getPetImageEntity()!=null) {\n+            petResponse.setImageUrls(petEntity.getPetImageEntity().getImageUrls());\n+        }\n         return petResponse;\n     }\n "
+        },
+        {
+            "sha": "b5acc3119da298b42f8319d8ddcccc41ad5512e1",
+            "filename": "src/main/java/com/puchku/pet/service/UserService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/namish800/poochku-backend/blob/16fb55746e46f3182cb8b81f2122f6758f5ff926/src%2Fmain%2Fjava%2Fcom%2Fpuchku%2Fpet%2Fservice%2FUserService.java",
+            "raw_url": "https://github.com/namish800/poochku-backend/raw/16fb55746e46f3182cb8b81f2122f6758f5ff926/src%2Fmain%2Fjava%2Fcom%2Fpuchku%2Fpet%2Fservice%2FUserService.java",
+            "contents_url": "https://api.github.com/repos/namish800/poochku-backend/contents/src%2Fmain%2Fjava%2Fcom%2Fpuchku%2Fpet%2Fservice%2FUserService.java?ref=16fb55746e46f3182cb8b81f2122f6758f5ff926",
+            "patch": "@@ -30,6 +30,7 @@ public ResponseEntity<UserDto> createUserAccount(UserDto userDto) {\n         if(userDto!=null && (StringUtils.isEmpty(userDto.getPhoneNo()) || StringUtils.isEmpty(userDto.getEmail()))) {\n             throw new BadRequestException(\"Missing phone no. or email\");\n         }\n+\n         SellerEntity sellerEntity = new SellerEntity();\n         createSellerEntityFromSellerDto(sellerEntity, userDto);\n "
+        }
+    ]
+}

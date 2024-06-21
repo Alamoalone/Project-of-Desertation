@@ -1,0 +1,6 @@
+    private static void impls(ImplicitMethods _implicits, Forwards _forwards, MemberId _id, String _f) {
+        ExecTypeFunction convTest_ = conv(_f, _id, _forwards);
+        if (convTest_ != null) {
+            update(_implicits, convTest_, _f);
+        }
+    }

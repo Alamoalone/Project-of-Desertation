@@ -1,0 +1,6 @@
+getPersonsByAddress(String address)
+deleteOnePersonById(String id)
+getOnePersonById(String id)
+getPersonsByCity(String city)
+getPersonsLastName(String lastName)
+getAllPersons()

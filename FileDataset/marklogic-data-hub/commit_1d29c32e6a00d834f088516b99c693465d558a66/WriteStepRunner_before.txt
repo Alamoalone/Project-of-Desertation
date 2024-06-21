@@ -1,0 +1,130 @@
+    private RunStepResponse runIngester(RunStepResponse runStepResponse, Collection<String> uris) {
+        stepStatusListeners.forEach((StepStatusListener listener) -> {
+            listener.onStatusChange(runStepResponse.getJobId(), 0, JobStatus.RUNNING_PREFIX + step, 0, 0, "starting step execution");
+        });
+
+        if (uris == null || uris.isEmpty()) {
+            JsonNode jobDoc;
+            final String stepStatus;
+            if(isStopped.get()) {
+                stepStatus = JobStatus.CANCELED_PREFIX + step;
+            }
+            else {
+                stepStatus = JobStatus.COMPLETED_PREFIX + step;
+            }
+
+            stepStatusListeners.forEach((StepStatusListener listener) -> {
+                listener.onStatusChange(runStepResponse.getJobId(), 100, stepStatus, 0, 0,
+                    (stepStatus.contains(JobStatus.COMPLETED_PREFIX) ? "provided file path returned 0 items" : "job was stopped"));
+            });
+            runStepResponse.setCounts(0,0,0,0,0);
+            runStepResponse.withStatus(stepStatus);
+
+            if (jobOutputIsEnabled()) {
+                jobDoc = JobService.on(hubClient.getJobsClient()).finishStep(jobId, step, stepStatus, runStepResponse.toObjectNode());
+                try {
+                    return StepRunnerUtil.getResponse(jobDoc, step);
+                }
+                catch (Exception ex) {
+                    return runStepResponse;
+                }
+            } else {
+                return runStepResponse;
+            }
+        }
+        int inputCount = uris.size();
+        StepMetrics stepMetrics = new StepMetrics(inputCount, (int) Math.ceil(inputCount/(double)batchSize));
+        // Optimize for Hub databases associated with Hub app servers, but allow other values
+        DatabaseClient client = destinationDatabase.equals(hubClient.getDbName(DatabaseKind.FINAL)) ?
+            hubClient.getFinalClient() :
+            hubClient.getStagingClient();
+
+        String apiPath = "ml-modules/root/data-hub/data-services/stepRunner/processIngestBatch.api";
+        ObjectNode endpointConstants = new ObjectMapper().createObjectNode();
+        endpointConstants.put("jobId", jobId);
+        endpointConstants.put("stepNumber", step);
+        endpointConstants.put("flowName", flow.getName());
+        JsonNode optionsNode = jsonToNode(combinedOptions);
+        endpointConstants.set("options", optionsNode);
+        ErrorListener errorListener = new ErrorListener(this, stepMetrics, stopOnFailure, optionsNode.path("retryLimit").asInt(0));
+        switch (inputFileType.toLowerCase()) {
+            case "xml":
+                inputMimeType = "application/xml";
+                break;
+            case "json":
+            case "csv":
+                inputMimeType = "application/json";
+                break;
+            case "text":
+                inputMimeType = "text/plain";
+                break;
+            default:
+                inputMimeType = "application/octet-stream";
+        }
+        runningThread = new Thread(() -> {
+            InputCaller.BulkInputCaller<InputStreamHandle> bulkCaller = BulkUtil.runInputCaller(client, apiPath, endpointConstants, runStepResponse.toObjectNode(), threadCount, batchSize, errorListener);
+            AtomicLong count = new AtomicLong(0);
+            Stream<InputStreamHandle> inputHandles = uris.stream().map(uri -> toInputStreamHandleList(new File(uri))).flatMap(List::stream);
+            Collection<List<InputStreamHandle>> resultingBatches = inputHandles
+                    .collect(Collectors.groupingByConcurrent(inputStreamHandle -> count.getAndIncrement() / batchSize))
+                    .values();
+            InputStreamHandle[] handleArray = new InputStreamHandle[0];
+            for (List<InputStreamHandle> batch: resultingBatches) {
+                bulkCaller.acceptAll(batch.toArray(handleArray));
+                stepMetrics.getSuccessfulBatches().incrementAndGet();
+                stepMetrics.getSuccessfulEvents().addAndGet(batch.size());
+                runStatusListener(stepMetrics);
+            }
+            bulkCaller.awaitCompletion();
+            String stepStatus;
+            stepMetrics.getSuccessfulBatches().set((long)Math.ceil(inputCount/(double) batchSize) - stepMetrics.getFailedBatchesCount());
+            stepMetrics.getSuccessfulEvents().set(inputCount - Math.min(stepMetrics.getFailedEventsCount(), inputCount));
+            if (stepMetrics.getFailedEventsCount() > 0 && stopOnFailure) {
+                stepStatus = JobStatus.STOP_ON_ERROR_PREFIX + step;
+            } else if (isStopped.get()){
+                stepStatus = JobStatus.CANCELED_PREFIX + step;
+            } else if (stepMetrics.getFailedEventsCount() > 0 && stepMetrics.getSuccessfulEventsCount() > 0) {
+                stepStatus = JobStatus.COMPLETED_WITH_ERRORS_PREFIX + step;
+            } else if (stepMetrics.getFailedEventsCount() == 0 && stepMetrics.getSuccessfulEventsCount() > 0)  {
+                stepStatus = JobStatus.COMPLETED_PREFIX + step ;
+            } else {
+                stepStatus = JobStatus.FAILED_PREFIX + step;
+            }
+            stepStatusListeners.forEach((StepStatusListener listener) -> {
+                listener.onStatusChange(runStepResponse.getJobId(), 100, stepStatus, stepMetrics.getSuccessfulEventsCount(), stepMetrics.getFailedEventsCount(), "Ingestion completed");
+            });
+
+            runStepResponse.setCounts(stepMetrics.getSuccessfulEventsCount() + stepMetrics.getFailedEventsCount(),stepMetrics.getSuccessfulEventsCount(), stepMetrics.getFailedEventsCount(), stepMetrics.getSuccessfulBatchesCount(), stepMetrics.getFailedBatchesCount());
+            runStepResponse.withStatus(stepStatus);
+            if (!errorListener.getThrowables().isEmpty()) {
+                runStepResponse.withStepOutput(
+                        errorListener
+                                .getThrowables().stream()
+                                .map(Throwable::toString)
+                                .collect(Collectors.toList())
+                );
+                errorListener.getThrowables().clear();
+            }
+
+            if (jobOutputIsEnabled()) {
+                JsonNode jobDoc = null;
+                try {
+                    jobDoc = JobService.on(hubClient.getJobsClient()).finishStep(jobId, step, stepStatus, runStepResponse.toObjectNode());
+                } catch (Exception e) {
+                    logger.error("Unable to update job document, cause: " + e.getMessage());
+                }
+                if (jobDoc != null) {
+                    try {
+                        RunStepResponse tempResp = StepRunnerUtil.getResponse(jobDoc, step);
+                        runStepResponse.setStepStartTime(tempResp.getStepStartTime());
+                        runStepResponse.setStepEndTime(tempResp.getStepEndTime());
+                    } catch (Exception ex) {
+                        logger.error("Unable to update step response, cause: " + ex.getMessage());
+                    }
+                }
+            }
+        });
+        runningThread.start();
+        return runStepResponse;
+    }
+

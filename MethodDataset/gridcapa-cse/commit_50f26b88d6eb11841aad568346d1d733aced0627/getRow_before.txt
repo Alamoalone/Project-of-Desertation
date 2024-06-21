@@ -1,0 +1,8 @@
+    private static HSSFRow getRow(HSSFSheet worksheet, String vulcanusTime) {
+        for (int rowIndex = 0; rowIndex < worksheet.getPhysicalNumberOfRows(); rowIndex++) {
+            if (worksheet.getRow(rowIndex) != null && worksheet.getRow(rowIndex).getCell(TIME_COL).getStringCellValue().equals(vulcanusTime)) {
+                return worksheet.getRow(rowIndex);
+            }
+        }
+        throw new IllegalStateException(String.format("Impossible to find the following time in the file : %s. Format error.", vulcanusTime));
+    }

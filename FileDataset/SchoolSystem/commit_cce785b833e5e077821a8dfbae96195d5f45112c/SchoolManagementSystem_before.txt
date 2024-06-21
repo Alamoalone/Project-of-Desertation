@@ -1,0 +1,125 @@
+    public void modifyCourseTeacher(String teacherId, String courseId) {
+
+        Teacher teacherFound = findTeacher(teacherId);
+        Course courseFound = findCourse(courseId);
+        for (Teacher teacher : teachers) {
+            if (teacher != null && teacher.getTeacherId().equals(teacherId)) {
+                System.out.println("Teacher modified");
+                break;
+            }
+        }
+        for (Course course : courses) {
+            if (course != null && course.getId().equals(courseId)) {
+                System.out.println("Course modified.");
+                break;
+            }
+        }
+        if (teacherFound == null && courseFound == null) {
+            System.out.println("Can't find teacher and course.");
+        }
+    }
+
+    public Course findCourse(String courseId){
+        for(Course course : courses){
+            if((courseId != null) && course.getId() != null && course.getId().equals(courseId)){
+
+                return course;
+            }else if(course == null){
+                System.out.println("Course might be null.");
+            }
+        }
+        System.out.println("Course is not found !");
+        return null;
+    }
+
+    public void printDepartment() {
+        for (Department department : departments) {
+            if (department != null) {
+                System.out.printf("id: %s, department name : %s ", department.getId(), department.getDepartmentName());
+            }
+        }
+    }
+
+    public Student findStudent(String studentId){
+        for(Student student : students){
+            if(student != null && student.getStudentId().equals(studentId)){
+                System.out.println(student);
+                return student;
+            }
+        }
+        System.out.println("Student can't be found!");
+        return null;
+    }
+
+    public boolean hasRegisteredForThisCourse(String studentId, String courseId) {
+        Student student = findStudent(studentId);
+        Course course = findCourse(courseId);
+        if (student != null && course != null) {
+            for (Course registeredCourse : student.getCourses()) {
+                if (registeredCourse != null && registeredCourse.getId().equals(courseId)) {
+
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void addStudent(String lname, String name, String departmentId) {
+        if (studentCount < MAX_STUDENTS) {
+
+            Department department = findDepartment(departmentId);
+
+            if(department != null) {
+
+                Student newStudent = new Student(lname, name, department);
+                students[studentCount++] = newStudent;
+                System.out.println(newStudent);
+            }
+            else{
+                System.out.println("Department was not found, enter proper department");
+            }
+        }
+        else {
+            System.out.println("Student max has been reach.");
+        }
+    }
+
+    public Teacher findTeacher(String teacherId) {
+        for (Teacher teacher : teachers) {
+            if (teacher != null && teacher.getTeacherId().equals(teacherId)) {
+
+                System.out.println(teacher);
+                return teacher;
+            }
+        }
+        System.out.println("Teacher can't be found !");
+        return null;
+    }
+
+    public void registerCourse(String studentId, String courseId) {
+        Student student = findStudent(studentId);
+        Course course = findCourse(courseId);
+
+        if (student != null && course != null) {
+            if (!hasRegisteredForThisCourse(studentId, courseId)) {
+                if (student.getCourseNum() < MAX_REGISTERED_COURSES) {
+                    if (student.getCourses() == null) {
+                        student.setCourses(new Course[MAX_REGISTERED_COURSES]);
+                    }
+
+                    student.getCourses()[student.getCourseNum()] = course;
+                    student.setCourseNum(student.getCourseNum() + 1);
+                    System.out.printf(course.toString());
+
+                } else {
+                    System.out.println("Max registered Course");
+                }
+            } else {
+                System.out.printf("Student %s is already in the course %s", student.getStudentId(), course.getCourseName());
+             }
+                } else {
+                    System.out.println("Student or department was not found : input again");
+        }
+    }
+

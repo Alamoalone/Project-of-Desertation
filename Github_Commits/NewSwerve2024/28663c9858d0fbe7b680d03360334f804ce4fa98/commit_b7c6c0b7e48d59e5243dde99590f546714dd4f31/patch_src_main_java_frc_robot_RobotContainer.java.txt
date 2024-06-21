@@ -1,0 +1,43 @@
+@@ -15,16 +15,17 @@
+ import frc.robot.commands.ShootMech;
+ import frc.robot.commands.auto.DriveToDistance;
+ import frc.robot.commands.auto.ShootAndMove;
++import frc.robot.commands.auto.MoveandAmp;
+ import frc.robot.commands.auto.TurnToAngle;
+ import frc.robot.commands.drive.DriveWithJoysticks;
+ import frc.robot.subsystems.PneumaticsSubsystem;
+-import frc.robot.subsystems.Swerve;
++import frc.robot.subsystems.Swerve; 
+ import frc.robot.subsystems.Winch;
+ import frc.robot.subsystems.Shooter;
+ import frc.robot.subsystems.Intake;
+ 
+ 
+-public class RobotContainer {
++public class RobotContainer{
+ 
+   private final SendableChooser<Command> chooser = new SendableChooser<Command>();
+   private Swerve m_swerve = new Swerve();
+@@ -76,9 +77,10 @@ private void configureButtonBindings() {
+     // m_operatorController.a().onTrue(new MoveToGoal(m_arm, Row.BOTTOM))
+     // .or(m_operatorController.b().onTrue(new MoveToGoal(m_arm, Row.MIDDLE)))
+     // .or(m_operatorController.y().onTrue(new MoveToGoal(m_arm, Row.TOP)));
+-
+     m_winch.setDefaultCommand(new RunCommand(() -> m_winch.winchExtend(m_operatorController)));
++      
+     
++   
+     //onTrue() can be changed to whileTrue() if we were to hold the button to shoot
+     m_operatorController.a().onTrue(new ShootMech(m_shooter));
+     
+@@ -96,8 +98,9 @@ private void addCommandDropdown()
+   {
+     chooser.setDefaultOption("Drive To Distance", new DriveToDistance(Units.feetToMeters(12), m_swerve));
+     chooser.addOption("Turn To Angle", new TurnToAngle(90, m_swerve));
+-    chooser.addOption("Shoot and Move", new ShootAndMove());
++    chooser.addOption("Shoot and Move", new ShootAndMove(m_shooter, m_swerve));
+     chooser.addOption("Shoot", new ShootMech(m_shooter));
++    chooser.addOption("Move and Amp", new MoveandAmp(m_intake, m_swerve)); 
+ 
+     SmartDashboard.putData(chooser);
+   }

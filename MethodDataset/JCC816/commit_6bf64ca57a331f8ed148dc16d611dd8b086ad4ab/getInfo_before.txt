@@ -1,0 +1,13 @@
+	public List<DeclaratorInfo> getInfo()
+	{
+		List<DeclaratorInfo> info = directDeclarator.getInfo();
+		for (Set<String> set : pointerQualifiers)
+		{
+			DeclaratorInfo newInfo = new DeclaratorInfo(DeclaratorType.pointer);
+			newInfo.pointerQualifiers = new HashSet<String>();
+			newInfo.pointerQualifiers.addAll(set);
+			info.add(0, newInfo);
+		}
+		
+		return info;
+	}

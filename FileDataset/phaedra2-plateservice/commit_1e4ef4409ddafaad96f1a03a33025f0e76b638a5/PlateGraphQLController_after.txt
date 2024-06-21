@@ -1,0 +1,58 @@
+
+
+
+
+
+
+    public PlateDTO getPlateById(@Argument Long plateId) {
+        PlateDTO result = ObjectUtils.isNotEmpty(plateId) ? plateService.getPlateById(plateId) : null;
+        if (result != null) {
+            List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, result.getId());
+            result.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+        }
+        return result;
+    }
+
+    public List<PlateMeasurementDTO> getPlateMeasurements(@Argument Long plateId, @Argument boolean active) {
+        List<PlateMeasurementDTO> result = new ArrayList<>();
+        if (ObjectUtils.isNotEmpty(plateId)) {
+            if (active) {
+                result.add(plateMeasurementService.getActivePlateMeasurement(plateId));
+            } else {
+                result.addAll(plateMeasurementService.getPlateMeasurements(plateId));
+            }
+        }
+        return result;
+    }
+
+
+
+    public List<WellDTO> getPlateWells(@Argument Long plateId) {
+        List<WellDTO> result = ObjectUtils.isNotEmpty(plateId) ? wellService.getWellsByPlateId(plateId) : new ArrayList<>();
+        return result;
+    }
+
+    public List<PlateDTO> getPlatesByBarcode(@Argument String barcode) {
+        List<PlateDTO> result = StringUtils.isNotEmpty(barcode) ? plateService.getPlatesByBarcode(barcode) : new ArrayList<>();
+        if (CollectionUtils.isNotEmpty(result)) {
+            // Add tags
+            result.stream().forEach(plateDTO -> {
+                List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, plateDTO.getId());
+                plateDTO.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+            });
+        }
+        return result;
+    }
+
+    public List<PlateDTO> getPlatesByExperimentId(@Argument Long experimentId) {
+        List<PlateDTO> result = ObjectUtils.isNotEmpty(experimentId) ? plateService.getPlatesByExperimentId(experimentId) : new ArrayList<>();
+        if (CollectionUtils.isNotEmpty(result)) {
+            // Add tags
+            result.stream().forEach(plateDTO -> {
+                List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, plateDTO.getId());
+                plateDTO.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+            });
+        }
+        return result;
+    }
+

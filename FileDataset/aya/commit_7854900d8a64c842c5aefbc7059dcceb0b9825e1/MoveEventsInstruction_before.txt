@@ -1,0 +1,8 @@
+	protected void doCanvasCommand(Canvas cvs, Block block) {
+		block.push(
+				cvs.getCursorListener().getMoveHistory().stream()
+						.map(CanvasCursorListener.MoveInfo::toDict)
+						.collect(new ListCollector())
+		);
+	}
+

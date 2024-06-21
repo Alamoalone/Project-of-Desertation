@@ -1,0 +1,50 @@
+    public void validatePhotoChecksumExist(MultipartFile file) {
+
+        final String checksum;
+
+        try {
+            checksum = calculateMD5(file.getBytes());
+        } catch (IOException e) {
+            throw new PhotoException(PhotoErrorResult.PHOTO_HASH_FAILED);
+        }
+
+        if (photoChecksumRepository.existsByChecksum(checksum)) {
+            PhotoChecksum photoChecksum = photoChecksumRepository.findByChecksum(checksum).get();
+
+            throw new CopyrightException(
+                    "이미 업로드된 이미지는 등록할 수 없습니다.",
+                    photoChecksum.getPhoto() != null ? photoChecksum.getPhoto().getPhotoId().toString() : ""
+            );
+        }
+    }
+
+    public void testValidatePhotoChecksumExist(MultipartFile file) {
+
+        final String checksum;
+
+        try {
+            checksum = calculateMD5(file.getBytes());
+        } catch (IOException e) {
+            throw new PhotoException(PhotoErrorResult.PHOTO_HASH_FAILED);
+        }
+
+        if (photoChecksumRepository.existsByChecksum(checksum)) {
+
+            final PhotoChecksum photoChecksum;
+
+            try {
+                photoChecksum = photoChecksumRepository.findByChecksum(checksum).get();
+
+                photoChecksumRepository.delete(photoChecksum);
+            } catch (Exception e) {
+                log.error("error on photo checksum delete", e);
+                throw new RuntimeException(e.getMessage());
+            }
+
+            throw new CopyrightException(
+                    "이미 업로드된 이미지는 등록할 수 없습니다.",
+                    photoChecksum.getPhoto() != null ? photoChecksum.getPhoto().getPhotoId().toString() : "test:"+UUID.randomUUID().toString()
+            );
+        }
+    }
+

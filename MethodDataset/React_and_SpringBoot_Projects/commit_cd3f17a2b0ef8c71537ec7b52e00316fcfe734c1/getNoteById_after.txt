@@ -1,0 +1,8 @@
+    public ResponseEntity<?> getNoteById(@PathVariable Integer id) {
+        Loggers.info("NOTE WITH ID " + id + " REQUESTED");
+        Notes note = notesService.findByNoteId(id);
+        if(note == null){
+            return ResponseEntity.noContent().header("msg", "NO NOTE FOUND WITH THIS ID").build();
+        }
+        return ResponseEntity.ok(note);
+    }

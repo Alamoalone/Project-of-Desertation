@@ -1,0 +1,10 @@
+@@ -77,6 +77,8 @@ public Size getSize() {
+     }
+ 
+     public void track(GameObject gameObject) {
+-        this.gameObjects.add(gameObject);
++        if(this.work){
++            this.gameObjects.add(gameObject);
++        }
+     }
+ }

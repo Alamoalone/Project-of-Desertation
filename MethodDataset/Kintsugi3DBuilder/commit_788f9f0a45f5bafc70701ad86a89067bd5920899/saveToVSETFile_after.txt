@@ -1,0 +1,4 @@
+    public void saveToVSETFile(File vsetFile) throws IOException
+    {
+        ViewSetWriterToVSET.getInstance().writeToFile(ibrInstance.getActiveViewSet(), vsetFile);
+    }

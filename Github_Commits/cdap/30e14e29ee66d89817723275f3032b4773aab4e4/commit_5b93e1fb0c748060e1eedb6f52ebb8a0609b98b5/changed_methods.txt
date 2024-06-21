@@ -1,0 +1,6 @@
+decodeRow(StructuredRow row)
+getApplicationPrimaryKeys(String namespaceId, String appId, String versionId)
+createApplicationVersion(ApplicationId id, ApplicationMeta appMeta, boolean markAsLatest)
+createLatestApplicationVersion(ApplicationId id, ApplicationMeta appMeta)
+createApplicationVersion(ApplicationId id, ApplicationMeta appMeta)
+writeApplication(String namespaceId, String appId, String versionId, ApplicationSpecification spec, ChangeDetail change, SourceControlMeta sourceControlMeta, boolean markAsLatest)

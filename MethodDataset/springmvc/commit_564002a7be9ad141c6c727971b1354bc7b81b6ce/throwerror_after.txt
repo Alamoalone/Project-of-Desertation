@@ -1,0 +1,5 @@
+	public String throwerror() {
+		String str=null;
+		System.out.println(str.charAt(0));
+		return "fileform";
+	}

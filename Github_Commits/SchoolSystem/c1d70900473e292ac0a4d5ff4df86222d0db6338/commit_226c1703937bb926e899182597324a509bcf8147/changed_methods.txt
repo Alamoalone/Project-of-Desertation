@@ -1,0 +1,2 @@
+findCourse(String courseId)
+hasRegisteredForThisCourse(String studentId, String courseId)

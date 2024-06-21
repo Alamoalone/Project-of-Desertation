@@ -1,0 +1,79 @@
+{
+    "sha": "f6dd94908983454bfa30171519b6a1fd6ed1040b",
+    "node_id": "C_kwDOGJuL9doAKGY2ZGQ5NDkwODk4MzQ1NGJmYTMwMTcxNTE5YjZhMWZkNmVkMTA0MGI",
+    "commit": {
+        "author": {
+            "name": "Niraj kumar Mishra",
+            "email": "nmishr@codeaurora.org",
+            "date": "2017-10-06T12:12:30Z"
+        },
+        "committer": {
+            "name": "NurKeinNeid",
+            "email": "mralexman3000@gmail.com",
+            "date": "2024-04-07T14:35:01Z"
+        },
+        "message": "Crash occured due to null pointer exception.\n\nReason: Trying to access remote device\nobject (mobjectdevice)which have been set to NULL before.\n\nFix:Avoid handling state changes for invalid devices(NULL)\n\nCRs-Fixed: 2121814\n\nChange-Id: Ib6429bac9b72e933850e6a0f7f670f1f5b2313f8\nPS2: Kill log spam\nSigned-off-by: Pranav Vashi <neobuddy89@gmail.com>",
+        "tree": {
+            "sha": "537b9d39d515a73f0b609fd8337d2093d7f18e23",
+            "url": "https://api.github.com/repos/DerpFest-AOSP/frameworks_base/git/trees/537b9d39d515a73f0b609fd8337d2093d7f18e23"
+        },
+        "url": "https://api.github.com/repos/DerpFest-AOSP/frameworks_base/git/commits/f6dd94908983454bfa30171519b6a1fd6ed1040b",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/DerpFest-AOSP/frameworks_base/commits/f6dd94908983454bfa30171519b6a1fd6ed1040b",
+    "html_url": "https://github.com/DerpFest-AOSP/frameworks_base/commit/f6dd94908983454bfa30171519b6a1fd6ed1040b",
+    "comments_url": "https://api.github.com/repos/DerpFest-AOSP/frameworks_base/commits/f6dd94908983454bfa30171519b6a1fd6ed1040b/comments",
+    "author": null,
+    "committer": {
+        "login": "NurKeinNeid",
+        "id": 11174462,
+        "node_id": "MDQ6VXNlcjExMTc0NDYy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11174462?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/NurKeinNeid",
+        "html_url": "https://github.com/NurKeinNeid",
+        "followers_url": "https://api.github.com/users/NurKeinNeid/followers",
+        "following_url": "https://api.github.com/users/NurKeinNeid/following{/other_user}",
+        "gists_url": "https://api.github.com/users/NurKeinNeid/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/NurKeinNeid/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/NurKeinNeid/subscriptions",
+        "organizations_url": "https://api.github.com/users/NurKeinNeid/orgs",
+        "repos_url": "https://api.github.com/users/NurKeinNeid/repos",
+        "events_url": "https://api.github.com/users/NurKeinNeid/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/NurKeinNeid/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8da3a3fe5d8d918af4a35a5ca0f69ed261a6f16a",
+            "url": "https://api.github.com/repos/DerpFest-AOSP/frameworks_base/commits/8da3a3fe5d8d918af4a35a5ca0f69ed261a6f16a",
+            "html_url": "https://github.com/DerpFest-AOSP/frameworks_base/commit/8da3a3fe5d8d918af4a35a5ca0f69ed261a6f16a"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 5,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "38b5eb78fbb1453a96a4550d65ed2da643c82570",
+            "filename": "packages/SettingsLib/src/com/android/settingslib/bluetooth/LocalBluetoothProfileManager.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/DerpFest-AOSP/frameworks_base/blob/f6dd94908983454bfa30171519b6a1fd6ed1040b/packages%2FSettingsLib%2Fsrc%2Fcom%2Fandroid%2Fsettingslib%2Fbluetooth%2FLocalBluetoothProfileManager.java",
+            "raw_url": "https://github.com/DerpFest-AOSP/frameworks_base/raw/f6dd94908983454bfa30171519b6a1fd6ed1040b/packages%2FSettingsLib%2Fsrc%2Fcom%2Fandroid%2Fsettingslib%2Fbluetooth%2FLocalBluetoothProfileManager.java",
+            "contents_url": "https://api.github.com/repos/DerpFest-AOSP/frameworks_base/contents/packages%2FSettingsLib%2Fsrc%2Fcom%2Fandroid%2Fsettingslib%2Fbluetooth%2FLocalBluetoothProfileManager.java?ref=f6dd94908983454bfa30171519b6a1fd6ed1040b",
+            "patch": "@@ -330,6 +330,11 @@ private class StateChangedHandler implements BluetoothEventManager.Handler {\n         }\n \n         public void onReceive(Context context, Intent intent, BluetoothDevice device) {\n+            if (device == null) {\n+                if(DEBUG) Log.d(TAG, \"StateChangedHandler receives state-change for invalid device\");\n+                return;\n+            }\n+\n             CachedBluetoothDevice cachedDevice = mDeviceManager.findDevice(device);\n             if (cachedDevice == null) {\n                 Log.w(TAG, \"StateChangedHandler found new device: \" + device);"
+        }
+    ]
+}

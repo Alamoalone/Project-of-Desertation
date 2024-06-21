@@ -1,0 +1,98 @@
+{
+    "sha": "6048599c8fe467b9dfe25f4d182efb201bef55cd",
+    "node_id": "C_kwDOAATZv9oAKDYwNDg1OTljOGZlNDY3YjlkZmUyNWY0ZDE4MmVmYjIwMWJlZjU1Y2Q",
+    "commit": {
+        "author": {
+            "name": "Eudaldo Alonso",
+            "email": "eudaldo.alonso@liferay.com",
+            "date": "2023-08-01T08:43:42Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-08-01T18:26:57Z"
+        },
+        "message": "LPS-192263 Prevent null pointer exception",
+        "tree": {
+            "sha": "0a536e74855f3e5a0d1c000825627aa35b2d4574",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/0a536e74855f3e5a0d1c000825627aa35b2d4574"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/6048599c8fe467b9dfe25f4d182efb201bef55cd",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/6048599c8fe467b9dfe25f4d182efb201bef55cd",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/6048599c8fe467b9dfe25f4d182efb201bef55cd",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/6048599c8fe467b9dfe25f4d182efb201bef55cd/comments",
+    "author": {
+        "login": "ealonso",
+        "id": 922631,
+        "node_id": "MDQ6VXNlcjkyMjYzMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/922631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ealonso",
+        "html_url": "https://github.com/ealonso",
+        "followers_url": "https://api.github.com/users/ealonso/followers",
+        "following_url": "https://api.github.com/users/ealonso/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ealonso/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ealonso/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ealonso/subscriptions",
+        "organizations_url": "https://api.github.com/users/ealonso/orgs",
+        "repos_url": "https://api.github.com/users/ealonso/repos",
+        "events_url": "https://api.github.com/users/ealonso/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ealonso/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "15d5e62c5aa783077b1d13c7b9340c2597ce278c",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/15d5e62c5aa783077b1d13c7b9340c2597ce278c",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/15d5e62c5aa783077b1d13c7b9340c2597ce278c"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "0800da915960a0dc1f01eaead0c3d05594d3714e",
+            "filename": "modules/apps/fragment/fragment-api/src/main/java/com/liferay/fragment/input/template/parser/FragmentEntryInputTemplateNodeContextHelper.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/6048599c8fe467b9dfe25f4d182efb201bef55cd/modules%2Fapps%2Ffragment%2Ffragment-api%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finput%2Ftemplate%2Fparser%2FFragmentEntryInputTemplateNodeContextHelper.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/6048599c8fe467b9dfe25f4d182efb201bef55cd/modules%2Fapps%2Ffragment%2Ffragment-api%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finput%2Ftemplate%2Fparser%2FFragmentEntryInputTemplateNodeContextHelper.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Ffragment%2Ffragment-api%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finput%2Ftemplate%2Fparser%2FFragmentEntryInputTemplateNodeContextHelper.java?ref=6048599c8fe467b9dfe25f4d182efb201bef55cd",
+            "patch": "@@ -596,6 +596,10 @@ private String _getValue(\n \t\tInfoFieldValue<?> infoFieldValue =\n \t\t\tinfoItemFieldValues.getInfoFieldValue(infoField.getName());\n \n+\t\tif (infoFieldValue == null) {\n+\t\t\treturn StringPool.BLANK;\n+\t\t}\n+\n \t\tif (infoField.getInfoFieldType() == DateInfoFieldType.INSTANCE) {\n \t\t\tSimpleDateFormat simpleDateFormat = new SimpleDateFormat(\n \t\t\t\t\"yyyy-MM-dd\");"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+@@ -35,7 +35,7 @@ protected JPanel createListPanel(Panier panier) {
+ 		JPanel panel = new JPanel();
+ 		panel.setLayout(new GridLayout(1, 3));
+ 		JLabel label = new JLabel(panier.toString());
+-		UButton editButton = new UButton("Modifier");
++		UButton editButton = new UButton("Détailler");
+ 		editButton.addActionListener(e -> {
+ 			displayView(true);
+ 			clear();

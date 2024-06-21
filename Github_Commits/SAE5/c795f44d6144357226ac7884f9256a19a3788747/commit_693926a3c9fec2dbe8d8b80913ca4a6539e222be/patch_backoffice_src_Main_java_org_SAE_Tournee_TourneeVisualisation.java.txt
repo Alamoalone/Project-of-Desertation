@@ -1,0 +1,52 @@
+@@ -33,7 +33,6 @@ public class TourneeVisualisation extends JXMapViewer {
+ 	public TourneeVisualisation() {
+ 		super();
+ 		JFrame frame = new JFrame("JXMapviewer2 Example 1");
+-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ 
+ 		frame.add(this, BorderLayout.CENTER);
+ 		setTileFactory(new DefaultTileFactory(new OSMTileFactoryInfo()));
+@@ -56,34 +55,6 @@ public TourneeVisualisation() {
+ 	}
+ 
+ 
+-	public TourneeVisualisation(double lat, double lon) {
+-		this();
+-		// Set the focus
+-		GeoPosition geoPosition = new GeoPosition(lat, lon);
+-		setZoom(5);
+-		setAddressLocation(geoPosition);
+-
+-		UButton button = new UButton("Save as image");
+-		button.addActionListener(e -> {
+-			try {
+-				Image image = createImage(getWidth(), getHeight());
+-				Graphics g = image.getGraphics();
+-				paint(g);
+-				ImageIO.write((RenderedImage) image, "png", new File("map.png"));
+-			} catch (IOException ex) {
+-				ex.printStackTrace();
+-			}
+-		});
+-		repaint();
+-	}
+-
+-	public TourneeVisualisation(Adresse address) {
+-		this(Objects.requireNonNull(getGeo(String.valueOf(address))));
+-	}
+-
+-	public TourneeVisualisation(double[] geo) {
+-		this(geo[0], geo[1]);
+-	}
+ 	public static double[] getGeo(String address) {
+ 		try {
+ 			String apiURL = "https://nominatim.openstreetmap.org/search?format=json&q=" + address.replace(" ", "+");
+@@ -163,7 +134,7 @@ public void addMarker(){
+ 		latCenter /= points.size();
+ 		lonCenter /= points.size();
+ 		setAddressLocation(new GeoPosition(latCenter, lonCenter));
+-		setZoom((int) (Math.log10(maxDistance) * 2.5));
++		setZoom((int) (Math.log10(maxDistance) * 2));
+ 		repaint();
+ 	}
+ 	public void addMarker(double lat, double lon) {

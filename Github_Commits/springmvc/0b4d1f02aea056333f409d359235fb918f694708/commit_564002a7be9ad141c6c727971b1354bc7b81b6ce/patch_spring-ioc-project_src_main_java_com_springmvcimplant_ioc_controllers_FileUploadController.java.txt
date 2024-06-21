@@ -1,0 +1,14 @@
+@@ -21,6 +21,13 @@ public class FileUploadController {
+ 	public String showUploadForm() {
+ 		return "fileform";
+ 	}
++	
++	@RequestMapping("/throwerror")
++	public String throwerror() {
++		String str=null;
++		System.out.println(str.charAt(0));
++		return "fileform";
++	}
+ 
+ 	@RequestMapping(value = "/uploadimage", method = RequestMethod.POST)
+ 	public String uploadImage(@RequestParam("profile") CommonsMultipartFile file, HttpSession s,Model m) {

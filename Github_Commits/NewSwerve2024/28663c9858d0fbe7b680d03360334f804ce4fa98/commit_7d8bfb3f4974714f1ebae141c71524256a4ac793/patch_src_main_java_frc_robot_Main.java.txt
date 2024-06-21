@@ -1,0 +1,13 @@
+@@ -11,6 +11,12 @@ public final class Main {
+   private Main() {}
+ 
+   public static void main(String... args) {
++
++    try{
+     RobotBase.startRobot(Robot::new);
++    }
++    catch(IllegalArgumentException e){
++    }
++    
+   }
+ }

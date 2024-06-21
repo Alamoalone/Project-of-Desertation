@@ -1,0 +1,7 @@
+	public List<Person> getAllPersons() {
+		if(persons ==null) {
+    		return null;
+    	}
+		System.out.println("Retrieving all persons" + persons);
+		return persons;
+	}

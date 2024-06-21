@@ -1,0 +1,98 @@
+{
+    "sha": "1b6e828aeb6a3812a55aa891398d68a84ee681ad",
+    "node_id": "C_kwDOJI6vwtoAKDFiNmU4MjhhZWI2YTM4MTJhNTVhYTg5MTM5OGQ2OGE4NGVlNjgxYWQ",
+    "commit": {
+        "author": {
+            "name": "gimhanul",
+            "email": "gimhanuly@gmail.com",
+            "date": "2023-09-14T15:27:26Z"
+        },
+        "committer": {
+            "name": "gimhanul",
+            "email": "gimhanuly@gmail.com",
+            "date": "2023-09-14T15:27:26Z"
+        },
+        "message": "fix: null pointer exception",
+        "tree": {
+            "sha": "a3ef6838ba1a4ce5bc6a15661d38d8bbea456ea3",
+            "url": "https://api.github.com/repos/Bamdoliro/marubase/git/trees/a3ef6838ba1a4ce5bc6a15661d38d8bbea456ea3"
+        },
+        "url": "https://api.github.com/repos/Bamdoliro/marubase/git/commits/1b6e828aeb6a3812a55aa891398d68a84ee681ad",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Bamdoliro/marubase/commits/1b6e828aeb6a3812a55aa891398d68a84ee681ad",
+    "html_url": "https://github.com/Bamdoliro/marubase/commit/1b6e828aeb6a3812a55aa891398d68a84ee681ad",
+    "comments_url": "https://api.github.com/repos/Bamdoliro/marubase/commits/1b6e828aeb6a3812a55aa891398d68a84ee681ad/comments",
+    "author": {
+        "login": "gimhanul",
+        "id": 80656733,
+        "node_id": "MDQ6VXNlcjgwNjU2NzMz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/80656733?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gimhanul",
+        "html_url": "https://github.com/gimhanul",
+        "followers_url": "https://api.github.com/users/gimhanul/followers",
+        "following_url": "https://api.github.com/users/gimhanul/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gimhanul/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gimhanul/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gimhanul/subscriptions",
+        "organizations_url": "https://api.github.com/users/gimhanul/orgs",
+        "repos_url": "https://api.github.com/users/gimhanul/repos",
+        "events_url": "https://api.github.com/users/gimhanul/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gimhanul/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "gimhanul",
+        "id": 80656733,
+        "node_id": "MDQ6VXNlcjgwNjU2NzMz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/80656733?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/gimhanul",
+        "html_url": "https://github.com/gimhanul",
+        "followers_url": "https://api.github.com/users/gimhanul/followers",
+        "following_url": "https://api.github.com/users/gimhanul/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gimhanul/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/gimhanul/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gimhanul/subscriptions",
+        "organizations_url": "https://api.github.com/users/gimhanul/orgs",
+        "repos_url": "https://api.github.com/users/gimhanul/repos",
+        "events_url": "https://api.github.com/users/gimhanul/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/gimhanul/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4eb5d795c1a88ec3b9832ab2b4e9a5322fbaff49",
+            "url": "https://api.github.com/repos/Bamdoliro/marubase/commits/4eb5d795c1a88ec3b9832ab2b4e9a5322fbaff49",
+            "html_url": "https://github.com/Bamdoliro/marubase/commit/4eb5d795c1a88ec3b9832ab2b4e9a5322fbaff49"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "01838fe2e59ff7a6bc8115682eff1c17a055454d",
+            "filename": "src/test/java/com/bamdoliro/maru/shared/fixture/FormFixture.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/Bamdoliro/marubase/blob/1b6e828aeb6a3812a55aa891398d68a84ee681ad/src%2Ftest%2Fjava%2Fcom%2Fbamdoliro%2Fmaru%2Fshared%2Ffixture%2FFormFixture.java",
+            "raw_url": "https://github.com/Bamdoliro/marubase/raw/1b6e828aeb6a3812a55aa891398d68a84ee681ad/src%2Ftest%2Fjava%2Fcom%2Fbamdoliro%2Fmaru%2Fshared%2Ffixture%2FFormFixture.java",
+            "contents_url": "https://api.github.com/repos/Bamdoliro/marubase/contents/src%2Ftest%2Fjava%2Fcom%2Fbamdoliro%2Fmaru%2Fshared%2Ffixture%2FFormFixture.java?ref=1b6e828aeb6a3812a55aa891398d68a84ee681ad",
+            "patch": "@@ -17,6 +17,7 @@\n import com.bamdoliro.maru.domain.form.domain.value.Parent;\n import com.bamdoliro.maru.domain.form.domain.value.PhoneNumber;\n import com.bamdoliro.maru.domain.form.domain.value.School;\n+import com.bamdoliro.maru.domain.form.domain.value.Score;\n import com.bamdoliro.maru.domain.form.domain.value.Subject;\n import com.bamdoliro.maru.domain.form.domain.value.SubjectList;\n import com.bamdoliro.maru.domain.form.domain.value.Teacher;\n@@ -48,7 +49,7 @@\n public class FormFixture {\n \n     public static Form createForm(FormType type) {\n-        return new Form(\n+        Form form = new Form(\n                 new Applicant(\n                         \"https://maru.com/photo.png\",\n                         \"김밤돌\",\n@@ -109,6 +110,8 @@ public static Form createForm(FormType type) {\n                 type,\n                 UserFixture.createUser()\n         );\n+        form.updateScore(new Score(1.0, 2, 3, 4));\n+        return form;\n     }\n \n     public static Form createRandomForm(User user) {"
+        }
+    ]
+}

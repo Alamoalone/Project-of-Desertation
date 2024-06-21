@@ -1,0 +1,1 @@
+setCharacteristics(String name, String description)

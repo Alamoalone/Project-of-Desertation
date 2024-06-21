@@ -1,0 +1,98 @@
+{
+    "sha": "d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb",
+    "node_id": "C_kwDOLQwPo9oAKGQ0Y2UyNjkyZjk4Y2NjNGI0YzdjNzNmNjg0NGE2YTFkYTk2Njg0ZmI",
+    "commit": {
+        "author": {
+            "name": "Sayan Malik",
+            "email": "smalik.sm2020@gmail.com",
+            "date": "2024-02-19T23:30:39Z"
+        },
+        "committer": {
+            "name": "Sayan Malik",
+            "email": "smalik.sm2020@gmail.com",
+            "date": "2024-02-19T23:30:39Z"
+        },
+        "message": "today's work 2/19/24\n\ngot rid of color change because of errors\nnull pointer exception not our fault - java fx just cannot handle all the values",
+        "tree": {
+            "sha": "592ac9e3bca961488dd84ff7ad7ddb3d13ffb407",
+            "url": "https://api.github.com/repos/sayando2024/SortingAlgos/git/trees/592ac9e3bca961488dd84ff7ad7ddb3d13ffb407"
+        },
+        "url": "https://api.github.com/repos/sayando2024/SortingAlgos/git/commits/d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/sayando2024/SortingAlgos/commits/d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb",
+    "html_url": "https://github.com/sayando2024/SortingAlgos/commit/d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb",
+    "comments_url": "https://api.github.com/repos/sayando2024/SortingAlgos/commits/d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb/comments",
+    "author": {
+        "login": "sayando2024",
+        "id": 159667706,
+        "node_id": "U_kgDOCYRV-g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/159667706?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sayando2024",
+        "html_url": "https://github.com/sayando2024",
+        "followers_url": "https://api.github.com/users/sayando2024/followers",
+        "following_url": "https://api.github.com/users/sayando2024/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sayando2024/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sayando2024/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sayando2024/subscriptions",
+        "organizations_url": "https://api.github.com/users/sayando2024/orgs",
+        "repos_url": "https://api.github.com/users/sayando2024/repos",
+        "events_url": "https://api.github.com/users/sayando2024/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sayando2024/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "sayando2024",
+        "id": 159667706,
+        "node_id": "U_kgDOCYRV-g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/159667706?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/sayando2024",
+        "html_url": "https://github.com/sayando2024",
+        "followers_url": "https://api.github.com/users/sayando2024/followers",
+        "following_url": "https://api.github.com/users/sayando2024/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sayando2024/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/sayando2024/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sayando2024/subscriptions",
+        "organizations_url": "https://api.github.com/users/sayando2024/orgs",
+        "repos_url": "https://api.github.com/users/sayando2024/repos",
+        "events_url": "https://api.github.com/users/sayando2024/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/sayando2024/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "e715766c1d254e21d092731ec3d0f4ac1013bee7",
+            "url": "https://api.github.com/repos/sayando2024/SortingAlgos/commits/e715766c1d254e21d092731ec3d0f4ac1013bee7",
+            "html_url": "https://github.com/sayando2024/SortingAlgos/commit/e715766c1d254e21d092731ec3d0f4ac1013bee7"
+        }
+    ],
+    "stats": {
+        "total": 61,
+        "additions": 41,
+        "deletions": 20
+    },
+    "files": [
+        {
+            "sha": "1ea9f9863d500e95a58f507e4ce4f9f0654c9247",
+            "filename": "src/graphics/SimpleBarPanel.java",
+            "status": "modified",
+            "additions": 41,
+            "deletions": 20,
+            "changes": 61,
+            "blob_url": "https://github.com/sayando2024/SortingAlgos/blob/d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb/src%2Fgraphics%2FSimpleBarPanel.java",
+            "raw_url": "https://github.com/sayando2024/SortingAlgos/raw/d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb/src%2Fgraphics%2FSimpleBarPanel.java",
+            "contents_url": "https://api.github.com/repos/sayando2024/SortingAlgos/contents/src%2Fgraphics%2FSimpleBarPanel.java?ref=d4ce2692f98ccc4b4c7c73f6844a6a1da96684fb",
+            "patch": "@@ -145,8 +145,8 @@ protected Void call() throws Exception {\n                         Data<String, Number> second = data.get(j + 1);\n \n \n-                       first.getNode().setStyle(\"-fx-background-color: green ;\");\n-                       second.getNode().setStyle(\"-fx-background-color: green ;\");\n+//                       first.getNode().setStyle(\"-fx-background-color: green ;\");\n+//                       second.getNode().setStyle(\"-fx-background-color: green ;\");\n                        \n                         if (first.getYValue().doubleValue() > second.getYValue().doubleValue()) {\n                             Number temp = first.getYValue().doubleValue();\n@@ -155,8 +155,8 @@ protected Void call() throws Exception {\n                         }\n                         Thread.sleep(75);\n                         \n-                        first.getNode().setStyle(\"-fx-background-color: red ;\");\n-                        second.getNode().setStyle(\"-fx-background-color: red ;\");\n+  //                      first.getNode().setStyle(\"-fx-background-color: red ;\");\n+  //                      second.getNode().setStyle(\"-fx-background-color: red ;\");\n \n                     }\n                 }\n@@ -182,12 +182,12 @@ protected Void call() throws Exception {\n \n                    Thread.sleep(50);\n \n-                   first.getNode().setStyle(\"-fx-background-color: green ;\");\n+     //              first.getNode().setStyle(\"-fx-background-color: green ;\");\n                    //second.getNode().setStyle(\"-fx-background-color: green ;\");\n                    \n                     while ( (i > -1) && (data.get(i).getYValue().doubleValue() > key ) ) { \n                     \tData<String, Number> currentFirst = data.get(i);\n-                    \tcurrentFirst.getNode().setStyle(\"-fx-background-color: green ;\");\n+     //               \tcurrentFirst.getNode().setStyle(\"-fx-background-color: green ;\");\n                     \tdata.get(i+1).setYValue(data.get(i).getYValue());  \n                         i--;  \n                     }  \n@@ -216,30 +216,42 @@ protected Void call() throws Exception {\n \n                 for (int i = 0; i < n; i++) {\n                     //Double smallestNum = Double.MAX_VALUE;\n-                    Data<String, Number> key = data.get(i);\n+       //             data.get(i).getNode().setStyle(\"-fx-background-color: green ;\");\n+                    //Data<String, Number> key = data.get(i);\n                     for (int j = i+1; j < n; j++) {\n                         Double temp;\n+                        try {\n+         //                   data.get(j).getNode().setStyle(\"-fx-background-color: black ;\");\n+          //                  Thread.sleep(75);\n \n-                        data.get(j).getNode().setStyle(\"-fx-background-color: green ;\");\n-                        data.get(i).getNode().setStyle(\"-fx-background-color: green ;\");\n-                        Thread.sleep(75);\n+                            //                      System.out.println(data.get(i));\n+                            //                    System.out.println(data.get(j));\n \n \n-                        if ( key.getYValue().doubleValue() > data.get(j).getYValue().doubleValue() )  {\n+                            if (data.get(i).getYValue().doubleValue() > data.get(j).getYValue().doubleValue()) {\n //                            System.out.println(data.get(i));\n //                            System.out.println(data.get(j));\n \n-                            temp = key.getYValue().doubleValue();\n-                            key.setYValue(data.get(j).getYValue());\n-                            data.get(j).setYValue(temp);\n-                        }\n+                                temp = data.get(i).getYValue().doubleValue();\n+                                data.get(i).setYValue(data.get(j).getYValue());\n+                                data.get(j).setYValue(temp);\n \n-                        data.get(i).getNode().setStyle(\"-fx-background-color: red ;\");\n-                        data.get(j).getNode().setStyle(\"-fx-background-color: red ;\");\n+                                //                      System.out.println(seriesCur.getData());\n+                            }\n \n+            //                data.get(j).getNode().setStyle(\"-fx-background-color: red ;\");\n+                            Thread.sleep(75);\n+                        }\n+                        catch(Exception e)\n+                        {\n+                            e.printStackTrace();\n+                            data.get(j).getNode().setStyle(\"-fx-background-color: red ;\");\n+                        }\n                     }\n-                    data.get(i).getNode().setStyle(\"-fx-background-color: purple ;\");\n-                    System.out.println(data.get(i));\n+\n+               //     data.get(i).getNode().setStyle(\"-fx-background-color: purple ;\");\n+                    Thread.sleep(75);\n+//                    System.out.println(data.get(i));\n                 }\n \n                 return null;\n@@ -256,7 +268,16 @@ public static Series<String,Number> createSeries() {\n             Number randomNumber = (int) (Math.random() * 1000);\n             seriesL.getData().add(new Data<>(\"\" + i, randomNumber));\n         }\n-\n+//        seriesL.getData().get(0).setYValue(206);\n+//        seriesL.getData().get(1).setYValue(931);\n+//        seriesL.getData().get(2).setYValue(950);\n+//        seriesL.getData().get(3).setYValue(707);\n+//        seriesL.getData().get(4).setYValue(131);\n+//        seriesL.getData().get(5).setYValue(320);\n+//        seriesL.getData().get(6).setYValue(6);\n+//        seriesL.getData().get(7).setYValue(835);\n+//        seriesL.getData().get(8).setYValue(306);\n+//        seriesL.getData().get(9).setYValue(940);\n         return seriesL;\n     }\n "
+        }
+    ]
+}

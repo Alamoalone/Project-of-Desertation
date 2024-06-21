@@ -1,0 +1,3 @@
+unmarshal(java buff)
+setLayer2(IFFLayer2 layer2)
+getMarshalledSize()

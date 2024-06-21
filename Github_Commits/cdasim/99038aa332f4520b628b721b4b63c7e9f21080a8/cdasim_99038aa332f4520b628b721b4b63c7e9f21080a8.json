@@ -1,0 +1,98 @@
+{
+    "sha": "99038aa332f4520b628b721b4b63c7e9f21080a8",
+    "node_id": "C_kwDOD4Q3edoAKDk5MDM4YWEzMzJmNDUyMGI2MjhiNzIxYjRiNjNjN2U5ZjIxMDgwYTg",
+    "commit": {
+        "author": {
+            "name": "dev",
+            "email": "paul.k.bourelly@leidos.com",
+            "date": "2023-08-08T14:25:02Z"
+        },
+        "committer": {
+            "name": "dev",
+            "email": "paul.k.bourelly@leidos.com",
+            "date": "2023-08-08T14:25:02Z"
+        },
+        "message": "Added null check for null pointer exception",
+        "tree": {
+            "sha": "d4a8f177e55a930dfc9607d923753ad764144531",
+            "url": "https://api.github.com/repos/usdot-fhwa-stol/cdasim/git/trees/d4a8f177e55a930dfc9607d923753ad764144531"
+        },
+        "url": "https://api.github.com/repos/usdot-fhwa-stol/cdasim/git/commits/99038aa332f4520b628b721b4b63c7e9f21080a8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/usdot-fhwa-stol/cdasim/commits/99038aa332f4520b628b721b4b63c7e9f21080a8",
+    "html_url": "https://github.com/usdot-fhwa-stol/cdasim/commit/99038aa332f4520b628b721b4b63c7e9f21080a8",
+    "comments_url": "https://api.github.com/repos/usdot-fhwa-stol/cdasim/commits/99038aa332f4520b628b721b4b63c7e9f21080a8/comments",
+    "author": {
+        "login": "paulbourelly999",
+        "id": 77466294,
+        "node_id": "MDQ6VXNlcjc3NDY2Mjk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/77466294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulbourelly999",
+        "html_url": "https://github.com/paulbourelly999",
+        "followers_url": "https://api.github.com/users/paulbourelly999/followers",
+        "following_url": "https://api.github.com/users/paulbourelly999/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulbourelly999/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulbourelly999/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulbourelly999/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulbourelly999/orgs",
+        "repos_url": "https://api.github.com/users/paulbourelly999/repos",
+        "events_url": "https://api.github.com/users/paulbourelly999/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulbourelly999/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "paulbourelly999",
+        "id": 77466294,
+        "node_id": "MDQ6VXNlcjc3NDY2Mjk0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/77466294?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paulbourelly999",
+        "html_url": "https://github.com/paulbourelly999",
+        "followers_url": "https://api.github.com/users/paulbourelly999/followers",
+        "following_url": "https://api.github.com/users/paulbourelly999/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paulbourelly999/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paulbourelly999/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paulbourelly999/subscriptions",
+        "organizations_url": "https://api.github.com/users/paulbourelly999/orgs",
+        "repos_url": "https://api.github.com/users/paulbourelly999/repos",
+        "events_url": "https://api.github.com/users/paulbourelly999/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paulbourelly999/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d3276a978967a477b3308cfc4cae53d15b06a532",
+            "url": "https://api.github.com/repos/usdot-fhwa-stol/cdasim/commits/d3276a978967a477b3308cfc4cae53d15b06a532",
+            "html_url": "https://github.com/usdot-fhwa-stol/cdasim/commit/d3276a978967a477b3308cfc4cae53d15b06a532"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "7db5cfd1b46587e6f2ff793e1047b4ed60dad796",
+            "filename": "co-simulation/fed/mosaic-infrastructure/src/main/java/org/eclipse/mosaic/fed/infrastructure/ambassador/InfrastructureMessageAmbassador.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/usdot-fhwa-stol/cdasim/blob/99038aa332f4520b628b721b4b63c7e9f21080a8/co-simulation%2Ffed%2Fmosaic-infrastructure%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fmosaic%2Ffed%2Finfrastructure%2Fambassador%2FInfrastructureMessageAmbassador.java",
+            "raw_url": "https://github.com/usdot-fhwa-stol/cdasim/raw/99038aa332f4520b628b721b4b63c7e9f21080a8/co-simulation%2Ffed%2Fmosaic-infrastructure%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fmosaic%2Ffed%2Finfrastructure%2Fambassador%2FInfrastructureMessageAmbassador.java",
+            "contents_url": "https://api.github.com/repos/usdot-fhwa-stol/cdasim/contents/co-simulation%2Ffed%2Fmosaic-infrastructure%2Fsrc%2Fmain%2Fjava%2Forg%2Feclipse%2Fmosaic%2Ffed%2Finfrastructure%2Fambassador%2FInfrastructureMessageAmbassador.java?ref=99038aa332f4520b628b721b4b63c7e9f21080a8",
+            "patch": "@@ -302,7 +302,10 @@ public synchronized void processTimeAdvanceGrant(long time) throws InternalFeder\n                 onRsuRegistrationRequest(reg.getInfrastructureId(), reg.getLocation().toGeo());\n                 log.info(\"RSU Registration for \"+ reg.getInfrastructureId() + \" @ x, y, z: (\" + reg.getLocation().getX() + \", \" + reg.getLocation().getY() + \", \" + reg.getLocation().getZ() + \")\");\n                 onDsrcRegistrationRequest(reg.getInfrastructureId());\n-                log.debug(\"Sending SensorRegistration interactions for sensor : {}\", reg.getSensors());\n+                // Check for empty list of sensors which is valid\n+                if (reg.getSensors() != null ) {\n+                    log.debug(\"Sending SensorRegistration interactions for sensor : {}\", reg.getSensors());\n+                }\n                 for (Detector sensor : reg.getSensors()) {\n                     // Trigger Sensor registrations for all listed sensors.\n                     this.rti.triggerInteraction(new DetectorRegistration(time,sensor));"
+        }
+    ]
+}

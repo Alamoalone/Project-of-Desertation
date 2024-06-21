@@ -1,0 +1,110 @@
+{
+    "sha": "131b99cb7cd1d2b08e76c9373722b07eb937f6e0",
+    "node_id": "C_kwDOBBbrTdoAKDEzMWI5OWNiN2NkMWQyYjA4ZTc2YzkzNzM3MjJiMDdlYjkzN2Y2ZTA",
+    "commit": {
+        "author": {
+            "name": "leonevalentina",
+            "email": "valentina.leone@wasdi.cloud",
+            "date": "2023-07-18T14:06:04Z"
+        },
+        "committer": {
+            "name": "leonevalentina",
+            "email": "valentina.leone@wasdi.cloud",
+            "date": "2023-07-18T14:06:04Z"
+        },
+        "message": "fix issues in retrieving the file size in the provider adapter and fix null pointer exception in headers",
+        "tree": {
+            "sha": "1e5b77210f4eb289a58ed18d993c272ca20f0acb",
+            "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/git/trees/1e5b77210f4eb289a58ed18d993c272ca20f0acb"
+        },
+        "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/git/commits/131b99cb7cd1d2b08e76c9373722b07eb937f6e0",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/commits/131b99cb7cd1d2b08e76c9373722b07eb937f6e0",
+    "html_url": "https://github.com/fadeoutsoftware/WASDI/commit/131b99cb7cd1d2b08e76c9373722b07eb937f6e0",
+    "comments_url": "https://api.github.com/repos/fadeoutsoftware/WASDI/commits/131b99cb7cd1d2b08e76c9373722b07eb937f6e0/comments",
+    "author": {
+        "login": "leonevalentina",
+        "id": 135051102,
+        "node_id": "U_kgDOCAy3Xg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/135051102?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/leonevalentina",
+        "html_url": "https://github.com/leonevalentina",
+        "followers_url": "https://api.github.com/users/leonevalentina/followers",
+        "following_url": "https://api.github.com/users/leonevalentina/following{/other_user}",
+        "gists_url": "https://api.github.com/users/leonevalentina/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/leonevalentina/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/leonevalentina/subscriptions",
+        "organizations_url": "https://api.github.com/users/leonevalentina/orgs",
+        "repos_url": "https://api.github.com/users/leonevalentina/repos",
+        "events_url": "https://api.github.com/users/leonevalentina/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/leonevalentina/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "leonevalentina",
+        "id": 135051102,
+        "node_id": "U_kgDOCAy3Xg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/135051102?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/leonevalentina",
+        "html_url": "https://github.com/leonevalentina",
+        "followers_url": "https://api.github.com/users/leonevalentina/followers",
+        "following_url": "https://api.github.com/users/leonevalentina/following{/other_user}",
+        "gists_url": "https://api.github.com/users/leonevalentina/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/leonevalentina/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/leonevalentina/subscriptions",
+        "organizations_url": "https://api.github.com/users/leonevalentina/orgs",
+        "repos_url": "https://api.github.com/users/leonevalentina/repos",
+        "events_url": "https://api.github.com/users/leonevalentina/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/leonevalentina/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ee88df1e219ef3c9e0691683fb87453892ba0c5b",
+            "url": "https://api.github.com/repos/fadeoutsoftware/WASDI/commits/ee88df1e219ef3c9e0691683fb87453892ba0c5b",
+            "html_url": "https://github.com/fadeoutsoftware/WASDI/commit/ee88df1e219ef3c9e0691683fb87453892ba0c5b"
+        }
+    ],
+    "stats": {
+        "total": 71,
+        "additions": 34,
+        "deletions": 37
+    },
+    "files": [
+        {
+            "sha": "74352711c6b355e85dac66fd4a19f5ec2a96b653",
+            "filename": "wrappersnap/launcher/src/main/java/wasdi/dataproviders/CreoDias2ProviderAdapter.java",
+            "status": "modified",
+            "additions": 33,
+            "deletions": 36,
+            "changes": 69,
+            "blob_url": "https://github.com/fadeoutsoftware/WASDI/blob/131b99cb7cd1d2b08e76c9373722b07eb937f6e0/wrappersnap%2Flauncher%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fdataproviders%2FCreoDias2ProviderAdapter.java",
+            "raw_url": "https://github.com/fadeoutsoftware/WASDI/raw/131b99cb7cd1d2b08e76c9373722b07eb937f6e0/wrappersnap%2Flauncher%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fdataproviders%2FCreoDias2ProviderAdapter.java",
+            "contents_url": "https://api.github.com/repos/fadeoutsoftware/WASDI/contents/wrappersnap%2Flauncher%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fdataproviders%2FCreoDias2ProviderAdapter.java?ref=131b99cb7cd1d2b08e76c9373722b07eb937f6e0",
+            "patch": "@@ -3,14 +3,21 @@\n import java.io.File;\n import java.io.FileOutputStream;\n import java.net.HttpURLConnection;\n+import java.net.IDN;\n import java.net.URL;\n+import java.net.URLEncoder;\n+import java.nio.charset.StandardCharsets;\n import java.security.SecureRandom;\n+import java.util.Collections;\n import java.util.concurrent.TimeUnit;\n import java.util.zip.ZipOutputStream;\n \n import org.json.JSONArray;\n import org.json.JSONObject;\n \n+import java.net.URI;\n+\n+\n import com.google.common.base.Preconditions;\n \n import wasdi.shared.business.ProcessWorkspace;\n@@ -28,7 +35,6 @@ public class CreoDias2ProviderAdapter extends ProviderAdapter {\n \tprivate static final String SODATA_ATTRIBUTES = \"Attributes\";\n \tprivate static final String SODATA_NAME = \"Name\";\n \tprivate static final String SODATA_VALUE = \"Value\";\n-\tprivate static final String SODATA_SIZE = \"ContentLength\";\n \t\n \tprivate static final String SAUTHENTICATION_URL = \"https://identity.cloudferro.com/auth/realms/wekeo-elasticity/protocol/openid-connect/token\";\n \tprivate static final String SDOWNLOAD_URL_START = \"https://zipper.dataspace.copernicus.eu/odata/v1/Products(\";\n@@ -89,13 +95,17 @@ public long getDownloadFileSize(String sFileURL) throws Exception {\n \t\t\n \n \t\tif (isHttpsProtocol(sFileURL)) {\n+\t\t\t\n \t\t\tString sDownloadUrl = getODataDownloadUrl(sFileURL);\n \t\t\tString sProductId = getProductIdFromURL(sDownloadUrl);\n \t\t\tString sUrl = SCREODIAS_BASE_URL + \"$filter=Id eq '\" + sProductId + \"'&$expand=Attributes\";\n+\t\t\tURL oURL = new URL(sUrl);\n+\t\t\tURI oURI = new URI(oURL.getProtocol(), oURL.getUserInfo(), IDN.toASCII(oURL.getHost()), oURL.getPort(), oURL.getPath(), oURL.getQuery(), oURL.getRef());\n+\t\t\t\n \t\t\tHttpCallResponse sResponse = null;\n \t\t\t\n \t\t\ttry {\n-\t\t\t\tsResponse = HttpUtils.httpGet(sUrl);\n+\t\t\t\tsResponse = HttpUtils.httpGet(oURI.toASCIIString());\n \t\t\t\tif (sResponse == null || sResponse.getResponseCode() < 200 || sResponse.getResponseCode() > 299 || Utils.isNullOrEmpty(sResponse.getResponseBody())) {\n \t\t\t\t\tWasdiLog.debugLog(\"CreoDias2ProviderAdaper.getDownloadFileSize. Error retrieving the information about the product from the provider. \" + sUrl);\n \t\t\t\t\treturn -1L;\n@@ -107,18 +117,32 @@ public long getDownloadFileSize(String sFileURL) throws Exception {\n \t\t\t\n \t\t\tWasdiLog.debugLog(\"CreoDias2ProviderAdaper.getDownloadFileSize. Anwer well received from the provider\");\n \t\t\t\n+\t\t\t\n+\t\t\tJSONObject jsonO = new JSONObject(sResponse.getResponseBody());\n+\t\t\tJSONArray arr = jsonO.getJSONArray(\"value\");\n+\t\t\tSystem.out.println(arr.length());\n+\t\t\tJSONObject jsonObject = (JSONObject) arr.get(0);\n+\t\t\tSystem.out.println(jsonObject.optString(\"ContentLength\"));\t\n+\t\t\t\n+\t\t\t\n \t\t\tJSONObject oJsonBody = new JSONObject(sResponse.getResponseBody());\n-\t\t\tJSONArray aoJsonAttributes = oJsonBody.optJSONArray(SODATA_ATTRIBUTES);\n+\t\t\tJSONArray aoValues = oJsonBody.optJSONArray(\"value\");\n+\t\t\tif (aoValues == null || aoValues.length() != 1) {\n+\t\t\t\tWasdiLog.debugLog(\"CreoDias2ProviderAdaper.getDownloadFileSize. Array of attributes not found on CreoDias\");\n+\t\t\t\treturn 0;\n+\t\t\t}\n \t\t\t\n-\t\t\tif (aoJsonAttributes == null) \n-\t\t\t\tWasdiLog.debugLog(\"CreoDias2ProviderAdaper.getDownloadFileSize. Array of attributes not found for key \" + SODATA_ATTRIBUTES);\n+\t\t\tJSONObject oValue = (JSONObject) aoValues.get(0);\n+\t\t\tString sFileSize = oValue.optString(ResponseTranslatorCreoDias2.SODATA_SIZE, \"0\");\n \t\t\t\n-\t\t\tlSizeInBytes = Long.parseLong(getAttribute(aoJsonAttributes, SODATA_SIZE));\n \t\t\t\n+\t\t\tif (Utils.isNullOrEmpty(sFileSize)) {\n+\t\t\t\tWasdiLog.debugLog(\"CreoDias2ProviderAdaper.getDownloadFileSize. Array of attributes not found for key \" + ResponseTranslatorCreoDias2.SODATA_SIZE);\n+\t\t\t}\n \t\t\t\n+\t\t\tlSizeInBytes = Long.parseLong(sFileSize);\n \t\t\tWasdiLog.debugLog(\"CreoDias2ProviderAdaper.getDownloadFileSize. File size: \" + lSizeInBytes);\n-\t\n-\t\t\t\n+\n \t\t}\n \n \t\treturn lSizeInBytes;\n@@ -279,7 +303,7 @@ public String executeDownloadFile(String sFileURL, String sDownloadUser, String\n \t\n \t\t\t\t\n \t\t\t\t// TODO: understand if I should also pass the name of the file - I think no. The method already parses the \"File-disposition\" attribute in the header. Should also work for Creodias2\n-\t\t\t\tString sDownloadedFilePath = downloadViaHttp(sDownloadUrl, null, sSaveDirOnServer);\n+\t\t\t\tString sDownloadedFilePath = downloadViaHttp(sDownloadUrl, Collections.emptyMap(), sSaveDirOnServer);\n \t\t\t\t\n \t\t\t\tif(Utils.isNullOrEmpty(sDownloadedFilePath)) {\n \t\t\t\t\t// we will try again\n@@ -515,32 +539,5 @@ else if (sPlatformType.equals(Platforms.SENTINEL3) || sPlatformType.equals(Platf\n \t\t\n \t\treturn 0;\n \t}\n-\n-\t\n-\tpublic static void main(String[]args) throws Exception {\n-\t\tString sUrl = \"https://identity.cloudferro.com/auth/realms/wekeo-elasticity/protocol/openid-connect/token\";\n-\t\tURL oURL = new URL(sUrl);\n-\n-\t\tHttpURLConnection oConnection = (HttpURLConnection) oURL.openConnection();\n-\t\toConnection.setRequestMethod(\"POST\");\n-\t\toConnection.setRequestProperty(\"Content-Type\", \"application/x-www-form-urlencoded\");\n-\t\toConnection.setDoOutput(true);\n-\t\tString sDownloadPassword = \"******\";\n-\t\tString sDownloadUser = \"******\";\n-\t\tString sPayload = \"client_id=CLOUDFERRO_PUBLIC&password=\" + sDownloadPassword + \"&username=\" + sDownloadUser + \"&grant_type=password\";\n-\n-\t\tHttpCallResponse oResponse = HttpUtils.httpPost(sUrl, sPayload);\n-\t\tSystem.out.println(oResponse.getResponseBody());\n-\t\tJSONObject oResponseBody = new JSONObject(oResponse.getResponseBody());\n-\t\tString sAccessToken = oResponseBody.optString(\"access_token\");\n-\t\t\n-\t\tString otherUrl = \"https://zipper.dataspace.copernicus.eu/odata/v1/Products(702b4faf-16d5-4450-9f61-4d0a13f96794)/$value?token=\" + sAccessToken;\n-\t\t\n-\t\tHttpCallResponse oResponse2 = HttpUtils.httpGet(otherUrl);\n-\t\t\n-\t\tSystem.out.println(oResponse2);\n-\n-\n-\t}\n \t\n }"
+        },
+        {
+            "sha": "8ffa6b44b3744a44ca11d266c319e1e94a4d7b9f",
+            "filename": "wrappersnap/wasdishared/src/main/java/wasdi/shared/queryexecutors/creodias2/ResponseTranslatorCreoDias2.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/fadeoutsoftware/WASDI/blob/131b99cb7cd1d2b08e76c9373722b07eb937f6e0/wrappersnap%2Fwasdishared%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fshared%2Fqueryexecutors%2Fcreodias2%2FResponseTranslatorCreoDias2.java",
+            "raw_url": "https://github.com/fadeoutsoftware/WASDI/raw/131b99cb7cd1d2b08e76c9373722b07eb937f6e0/wrappersnap%2Fwasdishared%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fshared%2Fqueryexecutors%2Fcreodias2%2FResponseTranslatorCreoDias2.java",
+            "contents_url": "https://api.github.com/repos/fadeoutsoftware/WASDI/contents/wrappersnap%2Fwasdishared%2Fsrc%2Fmain%2Fjava%2Fwasdi%2Fshared%2Fqueryexecutors%2Fcreodias2%2FResponseTranslatorCreoDias2.java?ref=131b99cb7cd1d2b08e76c9373722b07eb937f6e0",
+            "patch": "@@ -39,7 +39,7 @@ public class ResponseTranslatorCreoDias2 extends ResponseTranslator {\n \tprivate static final String SODATA_PRODUCT_TYPE = \"productType\";\n \tprivate static final String SODATA_RELATIVE_ORBIT = \"relativeOrbitNumber\";\n \tprivate static final String SODATA_S3_PATH = \"S3Path\";\n-\tprivate static final String SODATA_SIZE = \"ContentLength\";\n+\tpublic static final String  SODATA_SIZE = \"ContentLength\";\n \tprivate static final String SODATA_TYPE = \"type\";\n \tprivate static final String SODATA_VALUE = \"Value\";\n \t"
+        }
+    ]
+}

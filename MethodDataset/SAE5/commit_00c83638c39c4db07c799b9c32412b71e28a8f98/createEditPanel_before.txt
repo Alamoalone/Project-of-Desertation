@@ -1,0 +1,64 @@
+	protected JPanel createEditPanel(Depot depotToEdit) {
+		DepotFormComponents depotFormComponents = prepareDepotPanelData(depotToEdit);
+		// add fields to the panel
+		populateFields(depotToEdit, depotFormComponents.fieldPanels, depotFormComponents.panel);
+		depotFormComponents.panel.setLayout(new GridLayout(depotFormComponents.fieldPanels.length / 2 + 1, 2));
+		// Periode non disponible
+		depotFormComponents.panel.add(new Label("Periode non disponible"));
+		// liste des periodes non livrables
+		JPanel periodesNonLivrables = new JPanel();
+		periodesNonLivrables.setLayout(new BoxLayout(periodesNonLivrables, BoxLayout.Y_AXIS));
+		JScrollPane scrollPane = new JScrollPane(periodesNonLivrables);
+		depotFormComponents.panel.add(scrollPane);
+		scrollPane.setPreferredSize(new Dimension(300, 50));
+		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		// add button
+		UButton addPeriode = new UButton("Add");
+		addPeriode.addActionListener(e -> {
+			displayView(true);
+			clear();
+			mainPanel.add(createPeriodeNonLivrablePanel(depotToEdit));
+			refresh();
+		});
+		for (PeriodeNonLivrable periodeNonLivrable : PeriodeNonLivrable.periodesNonLivrables) {
+			if (periodeNonLivrable.depot.id == depotToEdit.id) {
+				JPanel periodePanel = new JPanel();
+				periodePanel.setLayout(new GridLayout(1, 2));
+				periodePanel.add(new Label(periodeNonLivrable.toString()));
+				UButton deleteButton = new UButton("Supprimer");
+				deleteButton.addActionListener(e -> {
+					periodesNonLivrables.remove(periodePanel);
+					periodeNonLivrable.delete();
+					refresh();
+				});
+				periodePanel.add(deleteButton);
+				periodesNonLivrables.add(periodePanel);
+			}
+		}
+		periodesNonLivrables.add(addPeriode);
+		UButton createButton = new UButton("Modifier");
+		createButton.addActionListener(e -> {
+			String[] values = getValues(depotFormComponents.fieldPanels(), depotFormComponents.addressChoice(), depotFormComponents.referentChoice());
+			if (values.length == 0) return;
+			depotToEdit.jourLivraison = depotFormComponents.joursLivraisons().toArray(new JourSemaine[0]);
+			if (depotToEdit.jourLivraison.length == 0) {
+				Logger.error("No delivery day selected");
+				return;
+			}
+			depotToEdit.adresse = Adresse.getAdresseById(Integer.parseInt(values[0]));
+			depotToEdit.referentIdReferent = Integer.parseInt(values[1]);
+			depotToEdit.nom = values[2];
+			depotToEdit.telephone = values[3];
+			depotToEdit.presentation = values[4];
+			depotToEdit.commentaire = values[5];
+			depotToEdit.mail = values[6];
+			depotToEdit.website = values[7];
+			depotToEdit.image = depotFormComponents.image().get();
+			depotToEdit.jourLivraison = depotFormComponents.joursLivraisons().toArray(new JourSemaine[0]);
+			Depot.update(depotToEdit);
+			Logger.log("Depot edited");
+			displayView(false);
+		});
+		depotFormComponents.panel().add(createButton);
+		return depotFormComponents.panel();
+	}

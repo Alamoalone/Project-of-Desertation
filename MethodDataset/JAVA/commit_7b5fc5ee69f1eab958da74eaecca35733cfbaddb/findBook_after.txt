@@ -1,0 +1,8 @@
+    private void findBook() {
+        printer.printLine("Podaj tytuł publikacji:");
+        String title = dataReader.getString();
+        String notFoundMessage = "Brak publikacji o podanym tytule";
+        library.findPublicationByTitle(title)
+                .map(Publication::toString)
+                .ifPresentOrElse(System.out::println, () -> System.out.println(notFoundMessage));
+    }

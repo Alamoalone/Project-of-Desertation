@@ -1,0 +1,143 @@
+{
+    "sha": "d42e1d2fa0c747163d52cc1aae017534f2246651",
+    "node_id": "C_kwDOCjbdPdoAKGQ0MmUxZDJmYTBjNzQ3MTYzZDUyY2MxYWFlMDE3NTM0ZjIyNDY2NTE",
+    "commit": {
+        "author": {
+            "name": "DaisukeHohjoh",
+            "email": "dyhojo0816",
+            "date": "2023-03-13T16:58:45Z"
+        },
+        "committer": {
+            "name": "DaisukeHohjoh",
+            "email": "dyhojo0816",
+            "date": "2023-03-13T16:58:45Z"
+        },
+        "message": "avoid null pointer exception for onPreviewFrame",
+        "tree": {
+            "sha": "e1f2aa3f038140793c0ac3050f4acb59b4770540",
+            "url": "https://api.github.com/repos/ricohapi/theta-plugin-library/git/trees/e1f2aa3f038140793c0ac3050f4acb59b4770540"
+        },
+        "url": "https://api.github.com/repos/ricohapi/theta-plugin-library/git/commits/d42e1d2fa0c747163d52cc1aae017534f2246651",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ricohapi/theta-plugin-library/commits/d42e1d2fa0c747163d52cc1aae017534f2246651",
+    "html_url": "https://github.com/ricohapi/theta-plugin-library/commit/d42e1d2fa0c747163d52cc1aae017534f2246651",
+    "comments_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/commits/d42e1d2fa0c747163d52cc1aae017534f2246651/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "c71d79ed66004f6895b2e2d050ed86209eb81c80",
+            "url": "https://api.github.com/repos/ricohapi/theta-plugin-library/commits/c71d79ed66004f6895b2e2d050ed86209eb81c80",
+            "html_url": "https://github.com/ricohapi/theta-plugin-library/commit/c71d79ed66004f6895b2e2d050ed86209eb81c80"
+        }
+    ],
+    "stats": {
+        "total": 18,
+        "additions": 11,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "a9452e277d8e20edd7df9b96b7edbefee99760c3",
+            "filename": "library/src/main/java/com/theta360/pluginlibrary/factory/VCamera.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheta360%2Fpluginlibrary%2Ffactory%2FVCamera.java",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheta360%2Fpluginlibrary%2Ffactory%2FVCamera.java",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheta360%2Fpluginlibrary%2Ffactory%2FVCamera.java?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -246,7 +246,9 @@ public void onPictureTaken(byte[] data, android.hardware.Camera camera) {\n     private android.hardware.Camera.PreviewCallback previewCallback = new android.hardware.Camera.PreviewCallback() {\n         @Override\n         public void onPreviewFrame(byte[] data, android.hardware.Camera camera) {\n-            prCallback.onPreviewFrame(data, camera);\n+            if (prCallback != null) {\n+                prCallback.onPreviewFrame(data, camera);\n+            }\n         }\n     };\n "
+        },
+        {
+            "sha": "b5ab55e26058692c881e877b0581c88074345b9a",
+            "filename": "library/src/main/java/com/theta360/pluginlibrary/factory/XCamera.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheta360%2Fpluginlibrary%2Ffactory%2FXCamera.java",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheta360%2Fpluginlibrary%2Ffactory%2FXCamera.java",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/library%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheta360%2Fpluginlibrary%2Ffactory%2FXCamera.java?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -235,7 +235,9 @@ public void onPictureTaken(byte[] data, theta360.hardware.Camera camera) {\n     private theta360.hardware.Camera.PreviewCallback previewCallback = new theta360.hardware.Camera.PreviewCallback() {\n         @Override\n         public void onPreviewFrame(byte[] data, theta360.hardware.Camera camera) {\n-            prCallback.onPreviewFrame(data, camera);\n+            if (prCallback != null) {\n+                prCallback.onPreviewFrame(data, camera);\n+            }\n         }\n     };\n "
+        },
+        {
+            "sha": "76d77f588df2929762655887ae5ddaf37c67f437",
+            "filename": "repository/com/theta360/pluginlibrary/3.0.5/pluginlibrary-3.0.5.aar",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar?ref=d42e1d2fa0c747163d52cc1aae017534f2246651"
+        },
+        {
+            "sha": "df124972e8d8152cdb84c86207c4a5b8ab08b8ed",
+            "filename": "repository/com/theta360/pluginlibrary/3.0.5/pluginlibrary-3.0.5.aar.md5",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar.md5",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar.md5",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar.md5?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -1 +1 @@\n-476c92d786208c53d22bfc8b422e9303\n\\ No newline at end of file\n+f44791a9c549087edf5b08270dfcfacf\n\\ No newline at end of file"
+        },
+        {
+            "sha": "dedc8f4c8a876e8625762a863263be4f31aab363",
+            "filename": "repository/com/theta360/pluginlibrary/3.0.5/pluginlibrary-3.0.5.aar.sha1",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar.sha1",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar.sha1",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2F3.0.5%2Fpluginlibrary-3.0.5.aar.sha1?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -1 +1 @@\n-0592ed097f0677f7651865da798e51d393bb2e34\n\\ No newline at end of file\n+c7ddd2d26bbf0cb9304e34edad0566f7f499a124\n\\ No newline at end of file"
+        },
+        {
+            "sha": "135c8b4a7b86f83c29ec36d84e474593b8a84a23",
+            "filename": "repository/com/theta360/pluginlibrary/maven-metadata.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -14,6 +14,6 @@\n       <version>3.0.4</version>\n       <version>3.0.5</version>\n     </versions>\n-    <lastUpdated>20230310163550</lastUpdated>\n+    <lastUpdated>20230313165727</lastUpdated>\n   </versioning>\n </metadata>"
+        },
+        {
+            "sha": "fbb0e391866e03c7ec8ddf5a5b54e7986ffb0891",
+            "filename": "repository/com/theta360/pluginlibrary/maven-metadata.xml.md5",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml.md5",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml.md5",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml.md5?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -1 +1 @@\n-4afd37fade043c4c14059265aa49f3a8\n\\ No newline at end of file\n+3f704763ca195e114507c63d05691bab\n\\ No newline at end of file"
+        },
+        {
+            "sha": "e0374e64c8f57a2e8dd100ef76d597d9b174bd29",
+            "filename": "repository/com/theta360/pluginlibrary/maven-metadata.xml.sha1",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/ricohapi/theta-plugin-library/blob/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml.sha1",
+            "raw_url": "https://github.com/ricohapi/theta-plugin-library/raw/d42e1d2fa0c747163d52cc1aae017534f2246651/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml.sha1",
+            "contents_url": "https://api.github.com/repos/ricohapi/theta-plugin-library/contents/repository%2Fcom%2Ftheta360%2Fpluginlibrary%2Fmaven-metadata.xml.sha1?ref=d42e1d2fa0c747163d52cc1aae017534f2246651",
+            "patch": "@@ -1 +1 @@\n-fd05867a8adb7f7dbe847b3be0abe9ce18a85118\n\\ No newline at end of file\n+ea5aec5178e0aee0742e2b19fdb812170817815f\n\\ No newline at end of file"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+  protected void testScanApplications(Store store) throws ConflictException {
+    ApplicationSpecification appSpec = Specifications.from(new AllProgramsApp());
+
+    int count = 100;
+    for (int i = 0; i < count; i++) {
+      String appName = "test" + i;
+      ApplicationMeta appMeta = new ApplicationMeta(appName, appSpec,
+                                                    new ChangeDetail(null, null, null,
+                                                                     System.currentTimeMillis()));
+      store.addApplication(new ApplicationId(NamespaceId.DEFAULT.getNamespace(), appName), appMeta);
+    }
+
+    // Mimicking editing the first count / 2 apps
+    for (int i = 0; i < count / 2; i++) {
+      String appName = "test" + i;
+      String version = "version" + i;
+      ApplicationMeta appMeta = new ApplicationMeta(appName, appSpec,
+          new ChangeDetail("edited" + i, null, null,
+              System.currentTimeMillis()));
+      store.addApplication(new ApplicationId(NamespaceId.DEFAULT.getNamespace(), appName, version), appMeta);
+    }
+
+    List<ApplicationId> allAppsVersion = new ArrayList<>();
+    store.scanApplications(ScanApplicationsRequest.builder().build(),
+        20, (appId, spec) -> allAppsVersion.add(appId));
+
+    Assert.assertEquals(count + count / 2, allAppsVersion.size());
+
+    List<ApplicationId> latestApps = new ArrayList<>();
+    store.scanApplications(20, (appId, spec) -> latestApps.add(appId));
+
+    Assert.assertEquals(count, latestApps.size());
+
+    //Reverse
+    List<ApplicationId> reverseApps = new ArrayList<>();
+    Assert.assertFalse(store.scanApplications(ScanApplicationsRequest.builder()
+        .setSortOrder(SortOrder.DESC)
+        .setLatestOnly(true)
+        .build(), 20, (appId, spec) -> reverseApps.add(appId)));
+    Assert.assertEquals(Lists.reverse(latestApps), reverseApps);
+
+    //Second page
+    int firstPageSize = 10;
+    List<ApplicationId> restartApps = new ArrayList<>();
+    Assert.assertFalse(store.scanApplications(ScanApplicationsRequest.builder()
+        .setScanFrom(latestApps.get(firstPageSize - 1)).setLatestOnly(true)
+        .build(), 20, (appId, spec) -> restartApps.add(appId)));
+    Assert.assertEquals(latestApps.subList(firstPageSize, latestApps.size()), restartApps);
+  }

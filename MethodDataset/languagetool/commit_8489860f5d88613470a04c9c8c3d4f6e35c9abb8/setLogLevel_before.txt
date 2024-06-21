@@ -1,0 +1,85 @@
+  static void setLogLevel(String logLevel) {
+    if (logLevel != null) {
+      String[] levels = logLevel.split(LOG_DELIMITER);
+      for (String level : levels) {
+        if (level.equals("1") || level.equals("2") || level.equals("3") || level.startsWith("all:")) {
+          int numLevel;
+          if (level.startsWith("all:")) {
+            String[] levelAll = level.split(":");
+            if (levelAll.length != 2) {
+              continue;
+            }
+            numLevel = Integer.parseInt(levelAll[1]);
+          } else {
+            numLevel = Integer.parseInt(level);
+          }
+          if (numLevel > 0) {
+            DEBUG_MODE_MD = true;
+            DEBUG_MODE_TQ = true;
+            if (DEBUG_MODE_SD == 0) {
+              DEBUG_MODE_SD = numLevel;
+            }
+            if (DEBUG_MODE_SC == 0) {
+              DEBUG_MODE_SC = numLevel;
+            }
+            if (DEBUG_MODE_CR == 0) {
+              DEBUG_MODE_CR = numLevel;
+            }
+          }
+          if (numLevel > 1) {
+            DEBUG_MODE_DC = true;
+            DEBUG_MODE_LM = true;
+          }
+          if (numLevel > 2) {
+            DEBUG_MODE_FP = true;
+          }
+        } else if (level.startsWith("sd:") || level.startsWith("sc:") || level.startsWith("cr:")) {
+          String[] levelSD = level.split(":");
+          if (levelSD.length != 2) {
+            continue;
+          }
+          int numLevel = Integer.parseInt(levelSD[1]);
+          if (numLevel > 0) {
+            if (levelSD[0].equals("sd")) {
+              DEBUG_MODE_SD = numLevel;
+            } else if (levelSD[0].equals("sc")) {
+              DEBUG_MODE_SC = numLevel;
+            } else if (levelSD[0].equals("cr")) {
+              DEBUG_MODE_CR = numLevel;
+            }
+          }
+        } else if (level.equals("md")) {
+          DEBUG_MODE_MD = true;
+        } else if (level.equals("dc")) {
+          DEBUG_MODE_DC = true;
+        } else if (level.equals("fp")) {
+          DEBUG_MODE_FP = true;
+        } else if (level.equals("lm")) {
+          DEBUG_MODE_LM = true;
+        } else if (level.equals("tq")) {
+          DEBUG_MODE_TQ = true;
+        } else if (level.equals("ld")) {
+          DEBUG_MODE_LD = true;
+        } else if (level.equals("cd")) {
+          DEBUG_MODE_CD = true;
+        } else if (level.equals("io")) {
+          DEBUG_MODE_IO = true;
+        } else if (level.equals("sr")) {
+          DEBUG_MODE_SR = true;
+        } else if (level.startsWith("tm")) {
+          String[] levelTm = level.split(":");
+          if (levelTm[0].equals("tm")) {
+            DEBUG_MODE_TM = true;
+            if(levelTm.length > 1) {
+              int time = Integer.parseInt(levelTm[1]);
+              if (time >= 0) {
+                TIME_TOLERANCE = time;
+              }
+            }
+          }
+        } else if (level.equals("dev")) {
+          DEVELOP_MODE = true;
+        }
+      }
+    }
+  }

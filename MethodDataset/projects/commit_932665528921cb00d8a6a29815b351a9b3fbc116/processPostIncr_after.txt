@@ -1,0 +1,27 @@
+    private static void processPostIncr(LinkageStackElementIn _in, VariablesOffsets _vars, OperationNode _curOp, MethodOperation _parent) {
+        if (_curOp.getIndexChild() == 0&&_parent instanceof SemiAffectationOperation) {
+            SemiAffectationOperation par_ = (SemiAffectationOperation) _parent;
+            int beginBlock_ = _in.getBeginBlock();
+            int sum_ = beginBlock_ + par_.getIndexInEl();
+            int opOff_ = sum_+par_.getOpOffset();
+            if(par_.isPost()) {
+                tryAddMergedParts(_vars,par_.getFunctionTo(), opOff_, new StringList(), new StringList());
+                boolean err_ = true;
+                AnaTypeFct function_ = par_.getFct().getFunction();
+                if (LambdaOperation.fct(function_) != null) {
+                    addParts(_vars, function_,opOff_,1,_parent.getErrs(),_parent.getErrs());
+                    err_ = false;
+                }
+                SettableElResult settable_ = par_.getSettable();
+                if (settable_ instanceof ArrOperation && ((ArrOperation) settable_).getFunctionSet() != null) {
+                    ArrOperation parArr_ = (ArrOperation) settable_;
+                    addParts(_vars, parArr_.getFunctionSet(),opOff_+1,1,_parent.getErrs(),_parent.getErrs());
+                    err_ = false;
+                }
+                if (err_ && !_parent.getErrs().isEmpty()) {
+                    _vars.addPart(new PartOffset(ExportCst.anchorErr(StringUtil.join(_parent.getErrs(), ExportCst.JOIN_ERR)), opOff_));
+                    _vars.addPart(new PartOffset(ExportCst.END_ANCHOR, opOff_ + 2));
+                }
+            }
+        }
+    }

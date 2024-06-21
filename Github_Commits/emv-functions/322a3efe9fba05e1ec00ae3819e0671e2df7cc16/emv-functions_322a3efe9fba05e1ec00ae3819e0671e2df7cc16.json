@@ -1,0 +1,110 @@
+{
+    "sha": "322a3efe9fba05e1ec00ae3819e0671e2df7cc16",
+    "node_id": "C_kwDOLLRrwtoAKDMyMmEzZWZlOWZiYTA1ZTFlYzAwYWUzODE5ZTA2NzFlMmRmN2NjMTY",
+    "commit": {
+        "author": {
+            "name": "new-to-java",
+            "email": "bijumoncpavanajan@gmail.com",
+            "date": "2024-02-17T18:26:23Z"
+        },
+        "committer": {
+            "name": "new-to-java",
+            "email": "bijumoncpavanajan@gmail.com",
+            "date": "2024-02-17T18:26:23Z"
+        },
+        "message": "Fixed a bug in Visa Cryptogram Service Implementation class, where the IAD parser was retrieving the CVN key from Map, without calling the parseIad method, resulting in null pointer exception.",
+        "tree": {
+            "sha": "32e77b1f6492898a0ca60a6118128889fc429c3f",
+            "url": "https://api.github.com/repos/new-to-java/emv-functions/git/trees/32e77b1f6492898a0ca60a6118128889fc429c3f"
+        },
+        "url": "https://api.github.com/repos/new-to-java/emv-functions/git/commits/322a3efe9fba05e1ec00ae3819e0671e2df7cc16",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/new-to-java/emv-functions/commits/322a3efe9fba05e1ec00ae3819e0671e2df7cc16",
+    "html_url": "https://github.com/new-to-java/emv-functions/commit/322a3efe9fba05e1ec00ae3819e0671e2df7cc16",
+    "comments_url": "https://api.github.com/repos/new-to-java/emv-functions/commits/322a3efe9fba05e1ec00ae3819e0671e2df7cc16/comments",
+    "author": {
+        "login": "new-to-java",
+        "id": 106712556,
+        "node_id": "U_kgDOBlxN7A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106712556?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/new-to-java",
+        "html_url": "https://github.com/new-to-java",
+        "followers_url": "https://api.github.com/users/new-to-java/followers",
+        "following_url": "https://api.github.com/users/new-to-java/following{/other_user}",
+        "gists_url": "https://api.github.com/users/new-to-java/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/new-to-java/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/new-to-java/subscriptions",
+        "organizations_url": "https://api.github.com/users/new-to-java/orgs",
+        "repos_url": "https://api.github.com/users/new-to-java/repos",
+        "events_url": "https://api.github.com/users/new-to-java/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/new-to-java/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "new-to-java",
+        "id": 106712556,
+        "node_id": "U_kgDOBlxN7A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106712556?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/new-to-java",
+        "html_url": "https://github.com/new-to-java",
+        "followers_url": "https://api.github.com/users/new-to-java/followers",
+        "following_url": "https://api.github.com/users/new-to-java/following{/other_user}",
+        "gists_url": "https://api.github.com/users/new-to-java/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/new-to-java/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/new-to-java/subscriptions",
+        "organizations_url": "https://api.github.com/users/new-to-java/orgs",
+        "repos_url": "https://api.github.com/users/new-to-java/repos",
+        "events_url": "https://api.github.com/users/new-to-java/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/new-to-java/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1498fe3ce834d72fa81a0585b4904e126441808f",
+            "url": "https://api.github.com/repos/new-to-java/emv-functions/commits/1498fe3ce834d72fa81a0585b4904e126441808f",
+            "html_url": "https://github.com/new-to-java/emv-functions/commit/1498fe3ce834d72fa81a0585b4904e126441808f"
+        }
+    ],
+    "stats": {
+        "total": 55,
+        "additions": 5,
+        "deletions": 50
+    },
+    "files": [
+        {
+            "sha": "470d9b78aacc9138db08a91a783b88ee553903cc",
+            "filename": "src/main/java/com/bc/exception/ClassValidationException.java",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 50,
+            "changes": 50,
+            "blob_url": "https://github.com/new-to-java/emv-functions/blob/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fexception%2FClassValidationException.java",
+            "raw_url": "https://github.com/new-to-java/emv-functions/raw/1498fe3ce834d72fa81a0585b4904e126441808f/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fexception%2FClassValidationException.java",
+            "contents_url": "https://api.github.com/repos/new-to-java/emv-functions/contents/src%2Fmain%2Fjava%2Fcom%2Fbc%2Fexception%2FClassValidationException.java?ref=1498fe3ce834d72fa81a0585b4904e126441808f",
+            "patch": "@@ -1,50 +0,0 @@\n-package com.bc.exception;\n-\n-/**\n- * Custom runtime exception class which extends IllegalStateException subclass of the Exception class.\n- */\n-public class ClassValidationException extends IllegalStateException {\n-    public String errorCode;\n-    /**\n-     * No argument constructor\n-     */\n-    public ClassValidationException(){\n-        super();\n-    }\n-    /**\n-     * Error message constructor\n-     * @param message Error message to be included in the exception\n-     */\n-    public ClassValidationException(String message){\n-        super(message);\n-    }\n-\n-    /**\n-     * Error message and cause constructor\n-     * @param message Error message to be included in the exception\n-     * @param cause A \"Throwable\" type cause of the error\n-     */\n-    public ClassValidationException(String message, Throwable cause){\n-        super(message, cause);\n-    }\n-\n-    /**\n-     * Error message, cause and custom error code constructor\n-     * @param message Error message to be included in the exception\n-     * @param cause A \"Throwable\" type cause of the error\n-     * @param errorCode Custom error code associated with the exception\n-     */\n-    public ClassValidationException(String message, Throwable cause, String errorCode){\n-        super(message, cause);\n-        this.errorCode = errorCode;\n-    }\n-\n-    /**\n-     * Getter method to be used to retrieve custom error code\n-     * @return Custom error code associated with the exception\n-     */\n-    public String getErrorCode(){\n-        return this.errorCode;\n-    }\n-\n-}\n\\ No newline at end of file"
+        },
+        {
+            "sha": "fe79a8dcf52010ebd0fe5a84331ca8d464dc93e4",
+            "filename": "src/main/java/com/bc/utilities/ISOIEC97971Padding.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/new-to-java/emv-functions/blob/322a3efe9fba05e1ec00ae3819e0671e2df7cc16/src%2Fmain%2Fjava%2Fcom%2Fbc%2Futilities%2FISOIEC97971Padding.java",
+            "raw_url": "https://github.com/new-to-java/emv-functions/raw/322a3efe9fba05e1ec00ae3819e0671e2df7cc16/src%2Fmain%2Fjava%2Fcom%2Fbc%2Futilities%2FISOIEC97971Padding.java",
+            "contents_url": "https://api.github.com/repos/new-to-java/emv-functions/contents/src%2Fmain%2Fjava%2Fcom%2Fbc%2Futilities%2FISOIEC97971Padding.java?ref=322a3efe9fba05e1ec00ae3819e0671e2df7cc16",
+            "patch": "@@ -1,8 +1,11 @@\n package com.bc.utilities;\n \n+import lombok.extern.slf4j.Slf4j;\n+\n /**\n  * Class implementing methods as defined by ISO/IEC 9797-1 Padding.\n  */\n+@Slf4j\n public class ISOIEC97971Padding {\n \n     /**\n@@ -28,6 +31,7 @@ public static String performIsoIec97971Method1Padding(String inputData){\n                         BLOCK_SIZE)\n                 * BLOCK_SIZE\n         );\n+        log.debug(\"ISO 97971 Padding Method 1, input data: {}.\", inputData);\n         // Check if transaction data is multiple of 16, else pad with x\"0\" chars till the length is a multiple of 16.\n         if (inputDataLength  == requiredInputDataLength){\n             return inputData;\n@@ -66,6 +70,7 @@ public static String performIsoIec97971Method2Padding(String inputData){\n                         BLOCK_SIZE)\n                 * BLOCK_SIZE\n         );\n+        log.debug(\"ISO 97971 Padding Method 2, input data: {}.\", inputData);\n         // Check if transaction data is multiple of 16, else pad with x\"0\" chars till the length is a multiple of 16.\n         if (inputDataLength  == requiredInputDataLength){\n             return inputData;"
+        }
+    ]
+}

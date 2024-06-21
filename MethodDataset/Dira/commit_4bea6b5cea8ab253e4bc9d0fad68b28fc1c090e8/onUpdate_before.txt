@@ -1,0 +1,84 @@
+    public void onUpdate(Update update) {
+        if (update.getUpdateType() == UpdateType.NEW_MESSAGE_UPDATE) {
+            NewMessageUpdate newMessageUpdate = (NewMessageUpdate) update;
+            if (!newMessageUpdate.getMessage().getRoomSecret().equals(roomSecret)) return;
+
+            Message message = newMessageUpdate.getMessage();
+
+            boolean needUpdateList = true;
+            if (room.getLastMessageId() != null) {
+                if (messageList.size() > 0) {
+                    needUpdateList = messageList.get(0).getId().
+                            equals(room.getLastMessageId());
+                }
+            }
+
+            if (needUpdateList) {
+                messageList.add(0, message);
+            }
+
+            room.setLastMessageId(message.getId());
+
+            view.notifyRecyclerMessage(newMessageUpdate.getMessage(), needUpdateList);
+
+            if (message.hasAuthor()) {
+                if (message.getAuthorId().equals(selfId)) return;
+
+                room.getUnreadMessagesIds().add(message.getId());
+                view.updateScrollArrowIndicator();
+
+            }
+        } else if (update.getUpdateType() == UpdateType.ROOM_UPDATE) {
+            initRoomInfo();
+        } else if (update.getUpdateType() == UpdateType.MEMBER_UPDATE) {
+            view.runBackground(this::initMembers);
+        } else if (update.getUpdateType() == UpdateType.READ_UPDATE) {
+            if (!update.getRoomSecret().equals(roomSecret)) return;
+
+            MessageReadUpdate readUpdate = (MessageReadUpdate) update;
+
+            Message thisMessage = null;
+            int index = 0;
+
+            for (int i = 0; i < messageList.size(); i++) {
+                Message message = messageList.get(i);
+                if (message.getId().equals(readUpdate.getMessageId())) {
+                    thisMessage = message;
+                    index = i;
+                    break;
+                }
+            }
+            if (thisMessage == null) return;
+            if (((MessageReadUpdate) update).getUserId().equals(selfId)) {
+
+                if (lastReadMessage == null) lastReadMessage = thisMessage;
+                else if (thisMessage.getTime() > lastReadMessage.getTime()) {
+                    lastReadMessage = thisMessage;
+                }
+
+                int pos = room.getUnreadMessagesIds().indexOf(thisMessage.getId());
+
+                ArrayList<String> toDelete = new ArrayList<>();
+                if (pos != -1) {
+                    for (int i = 0; i <= pos; i++) {
+                        toDelete.add(room.getUnreadMessagesIds().get(i));
+                    }
+                    room.removeFromUnreadMessages(toDelete);
+                }
+
+                view.updateScrollArrowIndicator();
+                return;
+            }
+
+            MessageReading thisReading = new MessageReading(readUpdate.getUserId(),
+                    readUpdate.getReadTime());
+
+            for (MessageReading reading : thisMessage.getMessageReadingList()) {
+                if (reading.getUserId().equals(thisReading.getUserId())) return;
+            }
+
+            thisMessage.getMessageReadingList().add(thisReading);
+
+            view.notifyRecyclerMessageRead(thisMessage, index);
+        }
+    }

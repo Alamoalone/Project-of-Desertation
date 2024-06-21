@@ -1,0 +1,122 @@
+{
+    "sha": "395150c1a277e51d7dce9ff856c830305aa9dd63",
+    "node_id": "C_kwDOLTTywNoAKDM5NTE1MGMxYTI3N2U1MWQ3ZGNlOWZmODU2YzgzMDMwNWFhOWRkNjM",
+    "commit": {
+        "author": {
+            "name": "mayankch283",
+            "email": "mayankch283@gmail.com",
+            "date": "2024-02-20T14:26:40Z"
+        },
+        "committer": {
+            "name": "mayankch283",
+            "email": "mayankch283@gmail.com",
+            "date": "2024-02-20T14:26:40Z"
+        },
+        "message": "<refactor>: removed station timings feature for now. ( getting null pointer exceptions)",
+        "tree": {
+            "sha": "136fecbbdac9c1d82835c92f7f2feb52befba81b",
+            "url": "https://api.github.com/repos/mayankch283/IRCTC/git/trees/136fecbbdac9c1d82835c92f7f2feb52befba81b"
+        },
+        "url": "https://api.github.com/repos/mayankch283/IRCTC/git/commits/395150c1a277e51d7dce9ff856c830305aa9dd63",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/mayankch283/IRCTC/commits/395150c1a277e51d7dce9ff856c830305aa9dd63",
+    "html_url": "https://github.com/mayankch283/IRCTC/commit/395150c1a277e51d7dce9ff856c830305aa9dd63",
+    "comments_url": "https://api.github.com/repos/mayankch283/IRCTC/commits/395150c1a277e51d7dce9ff856c830305aa9dd63/comments",
+    "author": {
+        "login": "mayankch283",
+        "id": 110242411,
+        "node_id": "U_kgDOBpIqaw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/110242411?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mayankch283",
+        "html_url": "https://github.com/mayankch283",
+        "followers_url": "https://api.github.com/users/mayankch283/followers",
+        "following_url": "https://api.github.com/users/mayankch283/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mayankch283/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mayankch283/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mayankch283/subscriptions",
+        "organizations_url": "https://api.github.com/users/mayankch283/orgs",
+        "repos_url": "https://api.github.com/users/mayankch283/repos",
+        "events_url": "https://api.github.com/users/mayankch283/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mayankch283/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "mayankch283",
+        "id": 110242411,
+        "node_id": "U_kgDOBpIqaw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/110242411?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mayankch283",
+        "html_url": "https://github.com/mayankch283",
+        "followers_url": "https://api.github.com/users/mayankch283/followers",
+        "following_url": "https://api.github.com/users/mayankch283/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mayankch283/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mayankch283/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mayankch283/subscriptions",
+        "organizations_url": "https://api.github.com/users/mayankch283/orgs",
+        "repos_url": "https://api.github.com/users/mayankch283/repos",
+        "events_url": "https://api.github.com/users/mayankch283/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mayankch283/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1a0c3c3325025d3f46ff2459580406d7910077e4",
+            "url": "https://api.github.com/repos/mayankch283/IRCTC/commits/1a0c3c3325025d3f46ff2459580406d7910077e4",
+            "html_url": "https://github.com/mayankch283/IRCTC/commit/1a0c3c3325025d3f46ff2459580406d7910077e4"
+        }
+    ],
+    "stats": {
+        "total": 113,
+        "additions": 90,
+        "deletions": 23
+    },
+    "files": [
+        {
+            "sha": "306726abe6ac9b99f9d79d7c6d01efa9556f5a02",
+            "filename": "app/src/main/java/ticket/booking/entities/Train.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 9,
+            "changes": 18,
+            "blob_url": "https://github.com/mayankch283/IRCTC/blob/395150c1a277e51d7dce9ff856c830305aa9dd63/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2Fentities%2FTrain.java",
+            "raw_url": "https://github.com/mayankch283/IRCTC/raw/395150c1a277e51d7dce9ff856c830305aa9dd63/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2Fentities%2FTrain.java",
+            "contents_url": "https://api.github.com/repos/mayankch283/IRCTC/contents/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2Fentities%2FTrain.java?ref=395150c1a277e51d7dce9ff856c830305aa9dd63",
+            "patch": "@@ -14,7 +14,7 @@\n \n @JsonIgnoreProperties(ignoreUnknown = true)\n @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)\n-@Builder\n+\n public class Train {\n \n     private String trainId;\n@@ -23,7 +23,7 @@ public class Train {\n \n     private List<List<Integer>> seats;\n \n-    private Map<String, String> stationTimes;\n+//    private Map<String, String> stationTimes;\n \n     private List<String> stations;\n \n@@ -33,7 +33,7 @@ public Train(String trainId, String trainNo, List<List<Integer>> seats, Map<Stri\n         this.trainId = trainId;\n         this.trainNo = trainNo;\n         this.seats = seats;\n-        this.stationTimes = stationTimes;\n+//        this.stationTimes = stationTimes;\n         this.stations = stations;\n     }\n \n@@ -53,9 +53,9 @@ public String getTrainId(){\n         return trainId;\n     }\n \n-    public Map<String, String> getStationTimes(){\n-        return stationTimes;\n-    }\n+//    public Map<String, String> getStationTimes(){\n+//        return stationTimes;\n+//    }\n \n     public String getTrainNo(){\n         return trainNo;\n@@ -69,9 +69,9 @@ public void setTrainId(String trainId){\n         this.trainId = trainId;\n     }\n \n-    public void setStationTimes(Map<String, String> stationTimes){\n-        this.stationTimes = stationTimes;\n-    }\n+//    public void setStationTimes(Map<String, String> stationTimes){\n+//        this.stationTimes = stationTimes;\n+//    }\n \n     public void setStations(List<String> stations){\n         this.stations = stations;"
+        },
+        {
+            "sha": "6df348b010e70df19c547e28dc88e7af5ea685c9",
+            "filename": "app/src/main/java/ticket/booking/localDb/trains.json",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 14,
+            "changes": 20,
+            "blob_url": "https://github.com/mayankch283/IRCTC/blob/395150c1a277e51d7dce9ff856c830305aa9dd63/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2FlocalDb%2Ftrains.json",
+            "raw_url": "https://github.com/mayankch283/IRCTC/raw/395150c1a277e51d7dce9ff856c830305aa9dd63/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2FlocalDb%2Ftrains.json",
+            "contents_url": "https://api.github.com/repos/mayankch283/IRCTC/contents/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2FlocalDb%2Ftrains.json?ref=395150c1a277e51d7dce9ff856c830305aa9dd63",
+            "patch": "@@ -1,23 +1,19 @@\n [\n   {\n \n-    \"train_id\": \"bacs\",\n-    \"train_no.\": 12345,\n+    \"train_id\": \"abc\",\n+    \"train_no.\": 123,\n     \"seats\": [\n       [0, 0, 0, 0, 0, 0],\n       [0, 0, 0, 0, 0, 0],\n       [0, 0, 0, 0, 0, 0],\n       [0, 0, 0, 0, 0, 0]\n     ],\n-    \"stations\": {\n-      \"Bangalore\": \"13:50:00\",\n-      \"Jaipur\": \"13:50:00\",\n-      \"Delhi\": \"13:50:00\"\n-    }\n+    \"stations\": [\"bangalore\", \"jaipur\", \"delhi\"]\n   },\n   {\n-    \"train_id\": \"bacs\",\n-    \"train_no.\": 12345,\n+    \"train_id\": \"xyz\",\n+    \"train_no.\": 124,\n     \"seats\": [\n       [\n         0,\n@@ -52,11 +48,7 @@\n         0\n       ]\n     ],\n-    \"stations\": {\n-      \"Bangalore\": \"13:50:00\",\n-      \"Jaipur\": \"13:50:00\",\n-      \"Delhi\": \"13:50:00\"\n-    }\n+    \"stations\": [\"mumbai\", \"lucknow\", \"kolkata\"]\n   }\n \n ]\n\\ No newline at end of file"
+        },
+        {
+            "sha": "6c410de8eeee3b427dd01ba080eea91f9a5b5124",
+            "filename": "app/src/main/java/ticket/booking/services/TrainService.java",
+            "status": "modified",
+            "additions": 75,
+            "deletions": 0,
+            "changes": 75,
+            "blob_url": "https://github.com/mayankch283/IRCTC/blob/395150c1a277e51d7dce9ff856c830305aa9dd63/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2Fservices%2FTrainService.java",
+            "raw_url": "https://github.com/mayankch283/IRCTC/raw/395150c1a277e51d7dce9ff856c830305aa9dd63/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2Fservices%2FTrainService.java",
+            "contents_url": "https://api.github.com/repos/mayankch283/IRCTC/contents/app%2Fsrc%2Fmain%2Fjava%2Fticket%2Fbooking%2Fservices%2FTrainService.java?ref=395150c1a277e51d7dce9ff856c830305aa9dd63",
+            "patch": "@@ -1,4 +1,79 @@\n package ticket.booking.services;\n \n+import com.fasterxml.jackson.core.type.TypeReference;\n+import com.fasterxml.jackson.databind.ObjectMapper;\n+import ticket.booking.entities.Train;\n+\n+import java.io.File;\n+import java.io.IOException;\n+import java.util.List;\n+import java.util.Optional;\n+import java.util.OptionalInt;\n+import java.util.stream.Collectors;\n+import java.util.stream.IntStream;\n+\n public class TrainService {\n+\n+    private List<Train> trainList;\n+    private ObjectMapper objectMapper = new ObjectMapper();\n+    private static final String TRAIN_DB_PATH = \"/home/mayankch283/IdeaProjects/IRCTC/app/src/main/java/ticket/booking/localDb/trains.json\";\n+\n+    public TrainService() throws IOException {\n+        File trains = new File(TRAIN_DB_PATH);\n+        trainList = objectMapper.readValue(trains, new TypeReference<List<Train>>() {});\n+    }\n+\n+    public List<Train> searchTrains(String source, String destination) {\n+        return trainList.stream()\n+                .filter(train -> validTrain(train, source, destination))\n+                .collect(Collectors.toList());\n+    }\n+\n+    public void addTrain(Train newTrain) {\n+        // Check if a train with the same trainId already exists\n+        Optional<Train> existingTrain = trainList.stream()\n+                .filter(train -> train.getTrainId().equalsIgnoreCase(newTrain.getTrainId()))\n+                .findFirst();\n+\n+        if (existingTrain.isPresent()) {\n+            // If a train with the same trainId exists, update it instead of adding a new one\n+            updateTrain(newTrain);\n+        } else {\n+            // Otherwise, add the new train to the list\n+            trainList.add(newTrain);\n+            saveTrainListToFile();\n+        }\n+    }\n+\n+    public void updateTrain(Train updatedTrain) {\n+        // Find the index of the train with the same trainId\n+        OptionalInt index = IntStream.range(0, trainList.size())\n+                .filter(i -> trainList.get(i).getTrainId().equalsIgnoreCase(updatedTrain.getTrainId()))\n+                .findFirst();\n+\n+        if (index.isPresent()) {\n+            // If found, replace the existing train with the updated one\n+            trainList.set(index.getAsInt(), updatedTrain);\n+            saveTrainListToFile();\n+        } else {\n+            // If not found, treat it as adding a new train\n+            addTrain(updatedTrain);\n+        }\n+    }\n+\n+    private void saveTrainListToFile() {\n+        try {\n+            objectMapper.writeValue(new File(TRAIN_DB_PATH), trainList);\n+        } catch (IOException e) {\n+            e.printStackTrace(); // Handle the exception based on your application's requirements\n+        }\n+    }\n+\n+    private boolean validTrain(Train train, String source, String destination) {\n+        List<String> stationOrder = train.getStations();\n+\n+        int sourceIndex = stationOrder.indexOf(source.toLowerCase());\n+        int destinationIndex = stationOrder.indexOf(destination.toLowerCase());\n+        return sourceIndex != -1 && destinationIndex != -1 && sourceIndex < destinationIndex;\n+    }\n }"
+        }
+    ]
+}

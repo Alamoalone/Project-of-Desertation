@@ -1,0 +1,4 @@
+ public void addTimestampedVisionPose(Optional<TimestampedVisionPose> visionPose) {
+    visionPose.ifPresent(this.visionPoseConsumer);
+    
+}

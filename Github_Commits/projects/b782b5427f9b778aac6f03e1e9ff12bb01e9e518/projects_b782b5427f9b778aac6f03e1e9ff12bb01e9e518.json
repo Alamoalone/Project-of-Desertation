@@ -1,0 +1,290 @@
+{
+    "sha": "b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+    "node_id": "C_kwDOAhHbBdoAKGI3ODJiNTQyN2Y5Yjc3OGFhYzZmMDNlMWU5ZmYxMmJiMDFlOWU1MTg",
+    "commit": {
+        "author": {
+            "name": "Cardman",
+            "email": "f.desrochettes@gmail.com",
+            "date": "2023-12-04T11:02:29Z"
+        },
+        "committer": {
+            "name": "Cardman",
+            "email": "f.desrochettes@gmail.com",
+            "date": "2023-12-04T11:02:29Z"
+        },
+        "message": "fix null pointer exception when retrieving errors",
+        "tree": {
+            "sha": "c7008db4d12ab6c45d811e4baf1d0c62ba26baf4",
+            "url": "https://api.github.com/repos/Cardman/projects/git/trees/c7008db4d12ab6c45d811e4baf1d0c62ba26baf4"
+        },
+        "url": "https://api.github.com/repos/Cardman/projects/git/commits/b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Cardman/projects/commits/b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+    "html_url": "https://github.com/Cardman/projects/commit/b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+    "comments_url": "https://api.github.com/repos/Cardman/projects/commits/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/comments",
+    "author": {
+        "login": "Cardman",
+        "id": 12151671,
+        "node_id": "MDQ6VXNlcjEyMTUxNjcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12151671?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cardman",
+        "html_url": "https://github.com/Cardman",
+        "followers_url": "https://api.github.com/users/Cardman/followers",
+        "following_url": "https://api.github.com/users/Cardman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cardman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cardman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cardman/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cardman/orgs",
+        "repos_url": "https://api.github.com/users/Cardman/repos",
+        "events_url": "https://api.github.com/users/Cardman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cardman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Cardman",
+        "id": 12151671,
+        "node_id": "MDQ6VXNlcjEyMTUxNjcx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12151671?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cardman",
+        "html_url": "https://github.com/Cardman",
+        "followers_url": "https://api.github.com/users/Cardman/followers",
+        "following_url": "https://api.github.com/users/Cardman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cardman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cardman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cardman/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cardman/orgs",
+        "repos_url": "https://api.github.com/users/Cardman/repos",
+        "events_url": "https://api.github.com/users/Cardman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cardman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f51cd288c62e477353d0735709c282c67b9c78fd",
+            "url": "https://api.github.com/repos/Cardman/projects/commits/f51cd288c62e477353d0735709c282c67b9c78fd",
+            "html_url": "https://github.com/Cardman/projects/commit/f51cd288c62e477353d0735709c282c67b9c78fd"
+        }
+    ],
+    "stats": {
+        "total": 81,
+        "additions": 42,
+        "deletions": 39
+    },
+    "files": [
+        {
+            "sha": "7a85910d8454c95782544c4287ae14941d3f0b4d",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/analyze/opers/util/AbsPossibleVarArg.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FAbsPossibleVarArg.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FAbsPossibleVarArg.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FAbsPossibleVarArg.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -5,7 +5,7 @@\n \n public abstract class AbsPossibleVarArg {\n     private final ParametrableContent parametrableContent = new ParametrableContent();\n-    private AnaFormattedRootBlock formattedType;\n+    private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n \n     public AnaTypeFct getPair() {\n         return getParametrableContent().getPair();"
+        },
+        {
+            "sha": "d2bd99745fe9b0df5819242581d66c807ff6c0c9",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/analyze/opers/util/ClassMethodIdMemberIdTypeFct.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FClassMethodIdMemberIdTypeFct.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FClassMethodIdMemberIdTypeFct.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FClassMethodIdMemberIdTypeFct.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -5,7 +5,7 @@\n import code.expressionlanguage.common.symbol.CommonOperSymbol;\n \n public final class ClassMethodIdMemberIdTypeFct {\n-    private AnaFormattedRootBlock implicit;\n+    private AnaFormattedRootBlock implicit = AnaFormattedRootBlock.defValue();\n     private MemberId memberId = new MemberId();\n     private AnaTypeFct function;\n     private CommonOperSymbol symbol;"
+        },
+        {
+            "sha": "d40cabf1256c5b865fe766de5efe7698a1a50dd1",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/analyze/opers/util/FieldResult.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FFieldResult.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FFieldResult.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Fanalyze%2Fopers%2Futil%2FFieldResult.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -10,7 +10,7 @@ public final class FieldResult {\n     private SearchingMemberStatus status;\n     private final AnaSettableOperationContent content = new AnaSettableOperationContent();\n     private String type;\n-    private AnaFormattedRootBlock formattedType;\n+    private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n     private String fileName;\n     private MemberId memberId = new MemberId();\n     private CstFieldInfo cstFieldInfo;"
+        },
+        {
+            "sha": "ff93afc948f5d47adec36b7afe3c887ad8f2aea0",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/blocks/FetchMemberUtil.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 8,
+            "changes": 15,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FFetchMemberUtil.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FFetchMemberUtil.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FFetchMemberUtil.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -2,8 +2,8 @@\n \n import code.expressionlanguage.analyze.blocks.RootBlock;\n import code.expressionlanguage.analyze.inherits.AnaInherits;\n-import code.expressionlanguage.analyze.opers.util.MemberId;\n import code.expressionlanguage.analyze.opers.util.ClassMethodIdMemberIdTypeFct;\n+import code.expressionlanguage.analyze.opers.util.MemberId;\n import code.expressionlanguage.analyze.types.AnaClassArgumentMatching;\n import code.expressionlanguage.analyze.util.AnaFormattedRootBlock;\n import code.expressionlanguage.exec.blocks.*;\n@@ -15,6 +15,7 @@\n import code.expressionlanguage.fwd.Members;\n import code.expressionlanguage.fwd.opers.AnaNamedFieldContent;\n import code.expressionlanguage.fwd.opers.ExecNamedFieldContent;\n+import code.expressionlanguage.fwd.opers.ExecStaticEltContent;\n import code.util.CustList;\n \n public final class FetchMemberUtil {\n@@ -26,7 +27,7 @@ public static void setImplicits(AnaClassArgumentMatching _ana, ImplicitMethods _\n         ExecTypeFunction conv_ = null;\n         ExecFormattedRootBlock formattedType_ = null;\n         if (!implicits_.isEmpty()) {\n-            formattedType_ = fwdFormatType(implicits_.first(), _forwards);\n+            formattedType_ = ExecStaticEltContent.build(implicits_.first(), _forwards);\n             conv_ = fetchOvTypeFunction(_ana.getMemberId(), _forwards);\n         }\n         if (conv_ != null) {\n@@ -37,7 +38,7 @@ public static void setImplicits(AnaClassArgumentMatching _ana, ImplicitMethods _\n         ExecTypeFunction convTest_ = null;\n         ExecFormattedRootBlock formattedTypeTest_ = null;\n         if (!implicitsTest_.isEmpty()) {\n-            formattedTypeTest_ = fwdFormatType(implicitsTest_.first(), _forwards);\n+            formattedTypeTest_ = ExecStaticEltContent.build(implicitsTest_.first(), _forwards);\n             convTest_ = fetchOvTypeFunction(_ana.getMemberIdTest(), _forwards);\n         }\n         if (convTest_ != null) {\n@@ -51,15 +52,13 @@ public static ImplicitMethods fetchImplicits(ClassMethodIdMemberIdTypeFct _id, F\n     }\n     public static ImplicitMethods fetchImplicits(AnaFormattedRootBlock _clMet, MemberId _id, Forwards _forwards) {\n         ExecTypeFunction conv_ = null;\n-        ExecFormattedRootBlock formattedType_ = null;\n-        if (_clMet != null) {\n-            formattedType_ = fwdFormatType(_clMet, _forwards);\n+        if (!_clMet.getFormatted().isEmpty()) {\n             conv_ = fetchOvTypeFunction(_id, _forwards);\n         }\n         if (conv_ != null) {\n             ImplicitMethods converter_ = new ImplicitMethods();\n             converter_.getConverter().add(conv_);\n-            converter_.setOwnerClass(formattedType_);\n+            converter_.setOwnerClass(new ExecFormattedRootBlock(conv_.getType(),_clMet.getFormatted()));\n             return converter_;\n         }\n         return null;\n@@ -81,7 +80,7 @@ public static MethodId formatType(AnaFormattedRootBlock _format, MethodId _dest)\n     public static CustList<ExecFormattedRootBlock> fwdFormatTypes(CustList<AnaFormattedRootBlock> _in,Forwards _forwards) {\n         CustList<ExecFormattedRootBlock> l_ = new CustList<ExecFormattedRootBlock>();\n         for (AnaFormattedRootBlock s: _in) {\n-            l_.add(FetchMemberUtil.fwdFormatType(s, _forwards));\n+            l_.add(ExecStaticEltContent.build(s, _forwards));\n         }\n         return l_;\n     }"
+        },
+        {
+            "sha": "370f7d7978eac5a3c2a486dca53d08943813398d",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/blocks/ForwardInfos.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 4,
+            "changes": 14,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FForwardInfos.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FForwardInfos.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fblocks%2FForwardInfos.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -13,14 +13,20 @@\n import code.expressionlanguage.analyze.types.GeneStringOverridable;\n import code.expressionlanguage.analyze.util.AnaFormattedRootBlock;\n import code.expressionlanguage.analyze.util.ClassMethodIdReturn;\n-import code.expressionlanguage.common.*;\n-import code.expressionlanguage.common.symbol.*;\n+import code.expressionlanguage.common.ClassField;\n+import code.expressionlanguage.common.ConstType;\n+import code.expressionlanguage.common.StringExpUtil;\n+import code.expressionlanguage.common.symbol.CommonOperNullSafe;\n+import code.expressionlanguage.common.symbol.SymbolConstants;\n import code.expressionlanguage.exec.Classes;\n import code.expressionlanguage.exec.blocks.*;\n import code.expressionlanguage.exec.coverage.Coverage;\n import code.expressionlanguage.exec.dbg.DebugMapping;\n import code.expressionlanguage.exec.opers.*;\n-import code.expressionlanguage.exec.symbols.*;\n+import code.expressionlanguage.exec.symbols.ExecOperCat;\n+import code.expressionlanguage.exec.symbols.ExecOperDir;\n+import code.expressionlanguage.exec.symbols.ExecOperNull;\n+import code.expressionlanguage.exec.symbols.ExecOperSymbol;\n import code.expressionlanguage.exec.util.*;\n import code.expressionlanguage.functionid.MethodAccessKind;\n import code.expressionlanguage.fwd.*;\n@@ -217,7 +223,7 @@ private static void feedInherits(Forwards _forwards) {\n             if (i instanceof UniqueRootedBlock && genericClasses_.size() > 1) {\n                 AnaFormattedRootBlock anaFormattedRootBlock_ = genericClasses_.get(1);\n                 mem_.getRootBlock().setUniqueType(FetchMemberUtil.fetchType(anaFormattedRootBlock_.getRootBlock().getNumberAll(), _forwards));\n-                formattedType_ = FetchMemberUtil.fwdFormatType(anaFormattedRootBlock_, _forwards);\n+                formattedType_ = ExecStaticEltContent.build(anaFormattedRootBlock_, _forwards);\n             }\n             ConstructorBlock emptyCtor_ = i.getEmptyCtor();\n             ExecNamedFunctionBlock fct_ = null;"
+        },
+        {
+            "sha": "3c2ed29c122356aa92d0286d6f11e1dc5b1cc3db",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaExplicitContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaExplicitContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaExplicitContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaExplicitContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -5,7 +5,7 @@\n \n public final class AnaExplicitContent {\n     private String className;\n-    private AnaFormattedRootBlock formattedTypeOwner;\n+    private AnaFormattedRootBlock formattedTypeOwner = AnaFormattedRootBlock.defValue();\n     private int offset;\n     private MemberId memberId = new MemberId();\n "
+        },
+        {
+            "sha": "cc025443a9cd34b6b56be552898405479528d34a",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaInstancingAnnotContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInstancingAnnotContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInstancingAnnotContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInstancingAnnotContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -7,7 +7,7 @@\n public final class AnaInstancingAnnotContent {\n     private String methodName;\n \n-    private AnaFormattedRootBlock formattedType;\n+    private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n     private String className;\n     private final StringMap<AnnotationTypeInfo> fieldNames = new StringMap<AnnotationTypeInfo>();\n "
+        },
+        {
+            "sha": "e975858ea9d831436b225cfb2fea13bc5f42f2e7",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaInstancingCommonContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInstancingCommonContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInstancingCommonContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInstancingCommonContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -9,7 +9,7 @@\n public final class AnaInstancingCommonContent {\n     private final String methodName;\n \n-    private AnaFormattedRootBlock formattedType;\n+    private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n \n     private int naturalVararg = -1;\n "
+        },
+        {
+            "sha": "1c2dc105baf2943918ba2af438cf7379a0647d6c",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/AnaInvokingConstructorContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInvokingConstructorContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInvokingConstructorContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FAnaInvokingConstructorContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -3,7 +3,7 @@\n import code.expressionlanguage.analyze.util.AnaFormattedRootBlock;\n \n public final class AnaInvokingConstructorContent {\n-    private AnaFormattedRootBlock formattedType;\n+    private AnaFormattedRootBlock formattedType = AnaFormattedRootBlock.defValue();\n \n     private String lastType = \"\";\n "
+        },
+        {
+            "sha": "4d1cfc67879a2d57336d14ed608387f7b72f473d",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecExplicitContent.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 3,
+            "changes": 5,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecExplicitContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecExplicitContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecExplicitContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -3,7 +3,6 @@\n import code.expressionlanguage.analyze.util.AnaFormattedRootBlock;\n import code.expressionlanguage.exec.util.ExecFormattedRootBlock;\n import code.expressionlanguage.fwd.Forwards;\n-import code.expressionlanguage.fwd.blocks.FetchMemberUtil;\n import code.util.core.StringUtil;\n \n public final class ExecExplicitContent {\n@@ -13,11 +12,11 @@ public final class ExecExplicitContent {\n     public ExecExplicitContent(AnaExplicitContent _cont, Forwards _fwd) {\n         offset = _cont.getOffset();\n         AnaFormattedRootBlock implicit_ = _cont.getFormattedTypeOwner();\n-        formattedType = FetchMemberUtil.fwdFormatType(implicit_, _fwd);\n+        formattedType = ExecStaticEltContent.build(implicit_, _fwd);\n     }\n     public ExecExplicitContent(AnaCallFctContent _cont, Forwards _fwd) {\n         offset = StringUtil.getFirstPrintableCharIndex(_cont.getMethodName());\n-        formattedType = FetchMemberUtil.fwdFormatType(_cont.getFormattedType(),_fwd);\n+        formattedType = ExecStaticEltContent.build(_cont.getFormattedType(),_fwd);\n     }\n \n     public ExecFormattedRootBlock getFormattedType() {"
+        },
+        {
+            "sha": "6c6acffd9f09c3d0f0cd0044363ab2dde470d46b",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecInstFctContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 2,
+            "changes": 3,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstFctContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstFctContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstFctContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -3,7 +3,6 @@\n import code.expressionlanguage.common.StringExpUtil;\n import code.expressionlanguage.exec.util.ExecFormattedRootBlock;\n import code.expressionlanguage.fwd.Forwards;\n-import code.expressionlanguage.fwd.blocks.FetchMemberUtil;\n \n public final class ExecInstFctContent {\n \n@@ -18,7 +17,7 @@ public final class ExecInstFctContent {\n     private final boolean staticChoiceMethod;\n     private final ExecFormattedRootBlock formattedType;\n     public ExecInstFctContent(AnaCallFctContent _cont, int _anc, boolean _staticChoiceMethod, Forwards _fwd) {\n-        this(_anc,_staticChoiceMethod, StringExpUtil.getOffset(_cont.getMethodName()), _cont.getLastType(), _cont.getNaturalVararg(), FetchMemberUtil.fwdFormatType(_cont.getFormattedType(),_fwd));\n+        this(_anc,_staticChoiceMethod, StringExpUtil.getOffset(_cont.getMethodName()), _cont.getLastType(), _cont.getNaturalVararg(), ExecStaticEltContent.build(_cont.getFormattedType(),_fwd));\n     }\n     public ExecInstFctContent(ExecFormattedRootBlock _formattedType) {\n         this(0, false, 0, \"\", -1, _formattedType);"
+        },
+        {
+            "sha": "bd717195584139b0765d26a5d5dc60880db1664e",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecInstancingAnnotContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 2,
+            "changes": 3,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstancingAnnotContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstancingAnnotContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstancingAnnotContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -4,7 +4,6 @@\n import code.expressionlanguage.common.AnnotationTypeInfo;\n import code.expressionlanguage.exec.util.ExecFormattedRootBlock;\n import code.expressionlanguage.fwd.Forwards;\n-import code.expressionlanguage.fwd.blocks.FetchMemberUtil;\n import code.util.StringMap;\n \n public final class ExecInstancingAnnotContent {\n@@ -16,7 +15,7 @@ public ExecInstancingAnnotContent(AnaInstancingAnnotContent _cont, Forwards _fwd\n         methodName = _cont.getMethodName();\n         fieldNames = _cont.getFieldNames();\n         AnaFormattedRootBlock formattedType_ = _cont.getFormattedType();\n-        formattedType = FetchMemberUtil.fwdFormatType(formattedType_,_fwd);\n+        formattedType = ExecStaticEltContent.build(formattedType_,_fwd);\n     }\n \n     public StringMap<AnnotationTypeInfo> getFieldNames() {"
+        },
+        {
+            "sha": "a3b4873dae5065c51463374ac67f175525eb36f7",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecInstancingCustContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 2,
+            "changes": 3,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstancingCustContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstancingCustContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInstancingCustContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -4,15 +4,14 @@\n import code.expressionlanguage.exec.util.ExecFormattedRootBlock;\n import code.expressionlanguage.fwd.Forwards;\n import code.expressionlanguage.fwd.blocks.ExecTypeFunction;\n-import code.expressionlanguage.fwd.blocks.FetchMemberUtil;\n \n public final class ExecInstancingCustContent extends ExecInstancingCommonContent {\n \n     private final ExecFormattedRootBlock formattedType;\n     private final ExecTypeFunction pair;\n \n     public ExecInstancingCustContent(AnaInstancingCommonContent _cont,ExecTypeFunction _pair, Forwards _fwd) {\n-        this(_cont,_pair, FetchMemberUtil.fwdFormatType(_cont.getFormattedType(),_fwd));\n+        this(_cont,_pair, ExecStaticEltContent.build(_cont.getFormattedType(),_fwd));\n     }\n     public ExecInstancingCustContent(AnaInstancingCommonContent _cont,ExecTypeFunction _pair, ExecFormattedRootBlock _formattedType) {\n         super(_cont);"
+        },
+        {
+            "sha": "a32c035398e6dbe593fb00fee0a5bbc3e68d737a",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecInvokingConstructorContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 2,
+            "changes": 3,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInvokingConstructorContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInvokingConstructorContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecInvokingConstructorContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -2,7 +2,6 @@\n \n import code.expressionlanguage.exec.util.ExecFormattedRootBlock;\n import code.expressionlanguage.fwd.Forwards;\n-import code.expressionlanguage.fwd.blocks.FetchMemberUtil;\n \n public final class ExecInvokingConstructorContent {\n     private final ExecFormattedRootBlock formattedType;\n@@ -16,7 +15,7 @@ public ExecInvokingConstructorContent(AnaInvokingConstructorContent _cont, Forwa\n         lastType = _cont.getLastType();\n         naturalVararg = _cont.getNaturalVararg();\n         offsetOper = _cont.getOffsetOper();\n-        formattedType = FetchMemberUtil.fwdFormatType(_cont.getFormattedType(),_fwd);\n+        formattedType = ExecStaticEltContent.build(_cont.getFormattedType(),_fwd);\n     }\n     public String getLastType() {\n         return lastType;"
+        },
+        {
+            "sha": "870d17f5f234e1fa1390375eabd5abbd7622b3b2",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecLambdaCommonContent.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecLambdaCommonContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecLambdaCommonContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecLambdaCommonContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -15,7 +15,7 @@ public final class ExecLambdaCommonContent {\n     private final String result;\n \n     public ExecLambdaCommonContent(AnaLambdaCommonContent _cont, Forwards _fwd) {\n-        this(_cont,ExecStaticEltContent.build(_fwd,_cont.getFoundFormatted()));\n+        this(_cont,ExecStaticEltContent.build(_cont.getFoundFormatted(), _fwd));\n     }\n \n     public ExecLambdaCommonContent(AnaLambdaCommonContent _cont, ExecFormattedRootBlock _fwd) {"
+        },
+        {
+            "sha": "9def144e356cd90806a0dbb152481c2904cfc81e",
+            "filename": "desktop/applis/apps/core/common/expressionlanguage/src/main/java/code/expressionlanguage/fwd/opers/ExecStaticEltContent.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 4,
+            "changes": 8,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecStaticEltContent.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecStaticEltContent.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fexpressionlanguage%2Fsrc%2Fmain%2Fjava%2Fcode%2Fexpressionlanguage%2Ffwd%2Fopers%2FExecStaticEltContent.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -17,22 +17,22 @@ public final class ExecStaticEltContent {\n     private final ExecFormattedRootBlock formattedType;\n \n     public ExecStaticEltContent(AnaCallFctContent _className, Forwards _fwd) {\n-        this(kind(_className.getFunction().getFunction()),build(_fwd,_className.getFormattedType()));\n+        this(kind(_className.getFunction().getFunction()),build(_className.getFormattedType(), _fwd));\n     }\n \n     public ExecStaticEltContent(ClassMethodIdMemberIdTypeFct _id, Forwards _fwd) {\n-        this(kind(_id.getFunction().getFunction()),build(_fwd, _id.getImplicit()));\n+        this(kind(_id.getFunction().getFunction()),build(_id.getImplicit(), _fwd));\n     }\n \n     private ExecStaticEltContent(MethodAccessKind _k, ExecFormattedRootBlock _f) {\n         kind = _k;\n         formattedType = _f;\n     }\n     public static ExecStaticEltContent initByNotNull(AnaCallFctContent _className, Forwards _fwd) {\n-        return new ExecStaticEltContent(MethodId.getKind(((NamedCalledFunctionBlock)_className.getFunction().getFunction()).getModifier()),FetchMemberUtil.fwdFormatType(_className.getFormattedType(), _fwd));\n+        return new ExecStaticEltContent(MethodId.getKind(((NamedCalledFunctionBlock)_className.getFunction().getFunction()).getModifier()),ExecStaticEltContent.build(_className.getFormattedType(), _fwd));\n     }\n \n-    static ExecFormattedRootBlock build(Forwards _fwd, AnaFormattedRootBlock _implicit) {\n+    public static ExecFormattedRootBlock build(AnaFormattedRootBlock _implicit, Forwards _fwd) {\n         if (_implicit.getRootBlock() == null) {\n             return new ExecFormattedRootBlock((ExecRootBlock)null, _implicit.getFormatted());\n         }"
+        },
+        {
+            "sha": "77f48ec628bd93c3c667feb93b2098c2a2747847",
+            "filename": "desktop/applis/apps/core/common/formathtml/src/main/java/code/formathtml/fwd/RendForwardInfos.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 4,
+            "changes": 11,
+            "blob_url": "https://github.com/Cardman/projects/blob/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fformathtml%2Fsrc%2Fmain%2Fjava%2Fcode%2Fformathtml%2Ffwd%2FRendForwardInfos.java",
+            "raw_url": "https://github.com/Cardman/projects/raw/b782b5427f9b778aac6f03e1e9ff12bb01e9e518/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fformathtml%2Fsrc%2Fmain%2Fjava%2Fcode%2Fformathtml%2Ffwd%2FRendForwardInfos.java",
+            "contents_url": "https://api.github.com/repos/Cardman/projects/contents/desktop%2Fapplis%2Fapps%2Fcore%2Fcommon%2Fformathtml%2Fsrc%2Fmain%2Fjava%2Fcode%2Fformathtml%2Ffwd%2FRendForwardInfos.java?ref=b782b5427f9b778aac6f03e1e9ff12bb01e9e518",
+            "patch": "@@ -9,11 +9,14 @@\n import code.expressionlanguage.analyze.types.AnaClassArgumentMatching;\n import code.expressionlanguage.analyze.util.AnaFormattedRootBlock;\n import code.expressionlanguage.analyze.util.ClassMethodIdReturn;\n-import code.expressionlanguage.common.*;\n-import code.expressionlanguage.common.symbol.*;\n+import code.expressionlanguage.common.ClassField;\n+import code.expressionlanguage.common.ConstType;\n+import code.expressionlanguage.common.StringExpUtil;\n+import code.expressionlanguage.common.symbol.CommonOperNullSafe;\n import code.expressionlanguage.exec.blocks.*;\n import code.expressionlanguage.exec.opers.ExecExplicitOperation;\n-import code.expressionlanguage.exec.symbols.*;\n+import code.expressionlanguage.exec.symbols.ExecOperDir;\n+import code.expressionlanguage.exec.symbols.ExecOperNull;\n import code.expressionlanguage.exec.types.ExecClassArgumentMatching;\n import code.expressionlanguage.exec.util.ExecFormattedRootBlock;\n import code.expressionlanguage.exec.util.ImplicitMethods;\n@@ -58,7 +61,7 @@ private static ExecFormattedRootBlock fwdType(AnaRendDocumentBlock _ana, Forward\n         if (declClass_.getRootBlock() == null) {\n             return ExecFormattedRootBlock.defValue();\n         }\n-        return FetchMemberUtil.fwdFormatType(declClass_, _forwards);\n+        return ExecStaticEltContent.build(declClass_, _forwards);\n     }\n \n     public static void nextPair(RendAnaExec _pair) {"
+        }
+    ]
+}

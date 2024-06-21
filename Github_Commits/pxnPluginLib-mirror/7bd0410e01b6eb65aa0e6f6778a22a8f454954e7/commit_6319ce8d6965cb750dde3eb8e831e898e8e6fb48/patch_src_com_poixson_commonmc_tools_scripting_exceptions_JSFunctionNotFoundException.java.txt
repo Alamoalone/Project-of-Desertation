@@ -1,0 +1,16 @@
+@@ -6,13 +6,12 @@ public class JSFunctionNotFoundException extends NullPointerException {
+ 
+ 
+ 
+-	public JSFunctionNotFoundException(final String fileName, final String funcName,
+-			final Object funcObj) {
++	public JSFunctionNotFoundException(final String fileName, final String funcName, final Object funcObj) {
+ 		super(
+ 			String.format(
+ 				"Function '%s' not found in script '%s' actual: %s",
+ 				funcName, fileName,
+-				funcObj.getClass().toString()
++				(funcObj == null ? "<null>" : funcObj.getClass().toString())
+ 			)
+ 		);
+ 	}

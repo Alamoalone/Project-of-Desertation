@@ -1,0 +1,98 @@
+{
+    "sha": "558a7f25f6d1c1e5765a9f88a87e023591a9f726",
+    "node_id": "C_kwDOJgEgk9oAKDU1OGE3ZjI1ZjZkMWMxZTU3NjVhOWY4OGE4N2UwMjM1OTFhOWY3MjY",
+    "commit": {
+        "author": {
+            "name": "Barnaby",
+            "email": "22575741+barnabwhy@users.noreply.github.com",
+            "date": "2023-07-28T20:28:52Z"
+        },
+        "committer": {
+            "name": "Barnaby",
+            "email": "22575741+barnabwhy@users.noreply.github.com",
+            "date": "2023-07-28T20:28:52Z"
+        },
+        "message": "fix null pointer exception in save dialog creation",
+        "tree": {
+            "sha": "5e294e29dded3b0004ace53e27d0e697be277403",
+            "url": "https://api.github.com/repos/barnabwhy/PicoZen/git/trees/5e294e29dded3b0004ace53e27d0e697be277403"
+        },
+        "url": "https://api.github.com/repos/barnabwhy/PicoZen/git/commits/558a7f25f6d1c1e5765a9f88a87e023591a9f726",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/barnabwhy/PicoZen/commits/558a7f25f6d1c1e5765a9f88a87e023591a9f726",
+    "html_url": "https://github.com/barnabwhy/PicoZen/commit/558a7f25f6d1c1e5765a9f88a87e023591a9f726",
+    "comments_url": "https://api.github.com/repos/barnabwhy/PicoZen/commits/558a7f25f6d1c1e5765a9f88a87e023591a9f726/comments",
+    "author": {
+        "login": "barnabwhy",
+        "id": 22575741,
+        "node_id": "MDQ6VXNlcjIyNTc1NzQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22575741?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/barnabwhy",
+        "html_url": "https://github.com/barnabwhy",
+        "followers_url": "https://api.github.com/users/barnabwhy/followers",
+        "following_url": "https://api.github.com/users/barnabwhy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/barnabwhy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/barnabwhy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/barnabwhy/subscriptions",
+        "organizations_url": "https://api.github.com/users/barnabwhy/orgs",
+        "repos_url": "https://api.github.com/users/barnabwhy/repos",
+        "events_url": "https://api.github.com/users/barnabwhy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/barnabwhy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "barnabwhy",
+        "id": 22575741,
+        "node_id": "MDQ6VXNlcjIyNTc1NzQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22575741?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/barnabwhy",
+        "html_url": "https://github.com/barnabwhy",
+        "followers_url": "https://api.github.com/users/barnabwhy/followers",
+        "following_url": "https://api.github.com/users/barnabwhy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/barnabwhy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/barnabwhy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/barnabwhy/subscriptions",
+        "organizations_url": "https://api.github.com/users/barnabwhy/orgs",
+        "repos_url": "https://api.github.com/users/barnabwhy/repos",
+        "events_url": "https://api.github.com/users/barnabwhy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/barnabwhy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "52344802fcaae0c2a39e782d68d36ac03013530f",
+            "url": "https://api.github.com/repos/barnabwhy/PicoZen/commits/52344802fcaae0c2a39e782d68d36ac03013530f",
+            "html_url": "https://github.com/barnabwhy/PicoZen/commit/52344802fcaae0c2a39e782d68d36ac03013530f"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "cedec8c0e840a2b7cdb63af145f607baf70030a8",
+            "filename": "app/src/main/java/com/barnabwhy/picozen/SavesAdapter.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/barnabwhy/PicoZen/blob/558a7f25f6d1c1e5765a9f88a87e023591a9f726/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbarnabwhy%2Fpicozen%2FSavesAdapter.java",
+            "raw_url": "https://github.com/barnabwhy/PicoZen/raw/558a7f25f6d1c1e5765a9f88a87e023591a9f726/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbarnabwhy%2Fpicozen%2FSavesAdapter.java",
+            "contents_url": "https://api.github.com/repos/barnabwhy/PicoZen/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbarnabwhy%2Fpicozen%2FSavesAdapter.java?ref=558a7f25f6d1c1e5765a9f88a87e023591a9f726",
+            "patch": "@@ -270,6 +270,9 @@ public boolean accept(File current, String name) {\n             }\n         });\n \n+        if(backups == null)\n+            backups = new String[]{};\n+\n         if(backupAdapterReset || ((GridView) dialog.findViewById(R.id.backups_list)).getAdapter() == null)\n             ((GridView) dialog.findViewById(R.id.backups_list)).setAdapter(new BackupsAdapter(mainActivityContext, this, backupsPath, app, dialog, backups));\n "
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+createSelectionSortingTask(Series seriesCur)
+call()
+createBubbleSortingTask(Series seriesCur)
+createInsertionSortingTask(Series seriesCur)
+createSeries()

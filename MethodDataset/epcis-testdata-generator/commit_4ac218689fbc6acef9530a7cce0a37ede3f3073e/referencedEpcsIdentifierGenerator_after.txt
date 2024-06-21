@@ -1,0 +1,59 @@
+  public List<String> referencedEpcsIdentifierGenerator(
+      final List<EventIdentifierTracker> parentTracker) {
+    // Create a List to store all the values associated Instance Identifiers
+    final List<String> epcList = new ArrayList<>();
+
+    // Loop through all the referenceIdentifiers and get the matching identifiers based on
+    // IdentifiersList and Reference Identifiers
+    for (ReferencedIdentifier epc : typeInfo.getReferencedIdentifier()) {
+
+      // If the EventNode is directly connected to the IdentifiersNode then create the class
+      // identifiers based on the provided identifiers info
+      if (epc.getIdentifierId() != 0 && epc.getEpcCount() != null && epc.getEpcCount() > 0) {
+        // Get the matching identifiers
+        var matchingIdentifier =
+            identifiers.stream()
+                .filter(identifier -> identifier.getIdentifierId() == epc.getIdentifierId())
+                .findFirst()
+                .orElse(null);
+
+        // If the Instance-data has been provided then create them and add it to the List
+        if (matchingIdentifier != null && matchingIdentifier.getInstanceData() != null) {
+          // Append all instance identifiers values onto the Instance-Identifiers List
+          epcList.addAll(
+              matchingIdentifier
+                  .getInstanceData()
+                  .format(matchingIdentifier.getObjectIdentifierSyntax(), epc.getEpcCount()));
+        }
+      } else if (epc.getParentNodeId() != 0 && epc.getEpcCount() != null && epc.getEpcCount() > 0) {
+        // If referenced identifier contains the parent node id then obtain the identifiers from its
+        // parent event and add it
+
+        // Obtain the matching parentTracker from the List of Tracker and if present based on it get
+        // the Instance identifiers from parent node and append to current event based on the
+        // Instance count
+        parentTracker.stream()
+            .filter(i -> i.getEventTypeInfo().getNodeId() == epc.getParentNodeId())
+            .findFirst()
+            .ifPresent(
+                t -> epcList.addAll(EventModelUtil.instanceIdentifiers(t, epc.getEpcCount())));
+      }
+
+      if (epc.getParentNodeId() != 0 && epc.getInheritParentCount() != null && epc.getInheritParentCount() > 0) {
+        // When user wants to inherit Parent-Ids from parent node into child node get the matching
+        // Parent Identifiers. (AggregationEvent -> ObjectEvent)
+        parentTracker.stream()
+                .forEach(
+                        parent -> {
+                          epcList.addAll(
+                                  EventModelUtil.parentIdentifiers(parent, epc.getInheritParentCount()));
+                        });
+      }
+    }
+
+    // If user is importing the existing events into the design and if it contains instance
+    // identifiers then add them to the event
+    Optional.ofNullable(typeInfo.getEpcList()).ifPresent(epcList::addAll);
+
+    return epcList;
+  }

@@ -1,0 +1,7 @@
+    public void decreaseBalance(int amount){
+        this.balance = this.balance - amount;
+        
+        bankaccountImage.clear();
+        bankaccountImage.drawString("Account Balance: \n          $"+ this.balance, 0, 20);
+        setImage(bankaccountImage);
+    }

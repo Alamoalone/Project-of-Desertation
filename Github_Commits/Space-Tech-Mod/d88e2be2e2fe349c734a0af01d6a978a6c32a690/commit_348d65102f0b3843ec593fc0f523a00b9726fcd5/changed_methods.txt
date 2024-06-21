@@ -1,0 +1,2 @@
+getMobEffect()
+tick(Level level, BlockPos pos, BlockState state, SculkHeartBlockEntity entity)

@@ -1,0 +1,109 @@
+{
+    "sha": "8f8e2b66c8be3fca89d54575cc4fabd5a71996fc",
+    "node_id": "C_kwDOKyQQWtoAKDhmOGUyYjY2YzhiZTNmY2E4OWQ1NDU3NWNjNGZhYmQ1YTcxOTk2ZmM",
+    "commit": {
+        "author": {
+            "name": "josue",
+            "email": "6257586@edu.vaniercollege.qc.ca",
+            "date": "2023-12-10T23:30:55Z"
+        },
+        "committer": {
+            "name": "josue",
+            "email": "6257586@edu.vaniercollege.qc.ca",
+            "date": "2023-12-10T23:30:55Z"
+        },
+        "message": "Attempting to fix null pointer exception it's fixed now.",
+        "tree": {
+            "sha": "ed660bf0aaa345c2402bc775ea45401cd8739f96",
+            "url": "https://api.github.com/repos/josuevanier/SchoolSystem/git/trees/ed660bf0aaa345c2402bc775ea45401cd8739f96"
+        },
+        "url": "https://api.github.com/repos/josuevanier/SchoolSystem/git/commits/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/josuevanier/SchoolSystem/commits/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc",
+    "html_url": "https://github.com/josuevanier/SchoolSystem/commit/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc",
+    "comments_url": "https://api.github.com/repos/josuevanier/SchoolSystem/commits/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc/comments",
+    "author": {
+        "login": "josuevanier",
+        "id": 150824779,
+        "node_id": "U_kgDOCP1nSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150824779?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/josuevanier",
+        "html_url": "https://github.com/josuevanier",
+        "followers_url": "https://api.github.com/users/josuevanier/followers",
+        "following_url": "https://api.github.com/users/josuevanier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/josuevanier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/josuevanier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/josuevanier/subscriptions",
+        "organizations_url": "https://api.github.com/users/josuevanier/orgs",
+        "repos_url": "https://api.github.com/users/josuevanier/repos",
+        "events_url": "https://api.github.com/users/josuevanier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/josuevanier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "josuevanier",
+        "id": 150824779,
+        "node_id": "U_kgDOCP1nSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150824779?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/josuevanier",
+        "html_url": "https://github.com/josuevanier",
+        "followers_url": "https://api.github.com/users/josuevanier/followers",
+        "following_url": "https://api.github.com/users/josuevanier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/josuevanier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/josuevanier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/josuevanier/subscriptions",
+        "organizations_url": "https://api.github.com/users/josuevanier/orgs",
+        "repos_url": "https://api.github.com/users/josuevanier/repos",
+        "events_url": "https://api.github.com/users/josuevanier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/josuevanier/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a4da7a8b3fb8625e24bd9ad0890284ed8cb04374",
+            "url": "https://api.github.com/repos/josuevanier/SchoolSystem/commits/a4da7a8b3fb8625e24bd9ad0890284ed8cb04374",
+            "html_url": "https://github.com/josuevanier/SchoolSystem/commit/a4da7a8b3fb8625e24bd9ad0890284ed8cb04374"
+        }
+    ],
+    "stats": {
+        "total": 59,
+        "additions": 26,
+        "deletions": 33
+    },
+    "files": [
+        {
+            "sha": "cce785b833e5e077821a8dfbae96195d5f45112c",
+            "filename": "src/main/java/org/example/dto/SchoolManagementSystem.java",
+            "status": "modified",
+            "additions": 26,
+            "deletions": 33,
+            "changes": 59,
+            "blob_url": "https://github.com/josuevanier/SchoolSystem/blob/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc/src%2Fmain%2Fjava%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.java",
+            "raw_url": "https://github.com/josuevanier/SchoolSystem/raw/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc/src%2Fmain%2Fjava%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.java",
+            "contents_url": "https://api.github.com/repos/josuevanier/SchoolSystem/contents/src%2Fmain%2Fjava%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.java?ref=8f8e2b66c8be3fca89d54575cc4fabd5a71996fc",
+            "patch": "@@ -40,7 +40,7 @@ public class SchoolManagementSystem {\n    @Getter\n     private int courseCount;\n \n-    public SchoolManagementSystem(){\n+    public SchoolManagementSystem(String name){\n         this.departments= new Department[MAX_DEPARTMENTS];\n         this.students = new Student[MAX_STUDENTS];\n         this.teachers = new  Teacher[MAX_TEACHERS];\n@@ -53,7 +53,7 @@ public SchoolManagementSystem(){\n         this.courseCount = 0;\n \n     }\n-// .equals (departmentid)\n+\n     /**\n      * Find department\n      * @param departementId the id of the department\n@@ -88,23 +88,21 @@ public void printTeacher(){\n      * @param courseId the course id\n      */\n     public void modifyCourseTeacher(String teacherId, String courseId) {\n-\n+        // Find teacher and course\n         Teacher teacherFound = findTeacher(teacherId);\n         Course courseFound = findCourse(courseId);\n-        for (Teacher teacher : teachers) {\n-            if (teacher != null && teacher.getTeacherId().equals(teacherId)) {\n-                System.out.println(\"Teacher modified\");\n-                break;\n-            }\n+\n+        if(teacherFound !=null){\n+            System.out.println(\"Teache modified\");\n+        }else {\n+            System.out.println(\"Can't find teacher\");\n         }\n-        for (Course course : courses) {\n-            if (course != null && course.getId().equals(courseId)) {\n-                System.out.println(\"Course modified.\");\n-                break;\n-            }\n+        if(courseFound != null){\n+            System.out.println(\"Course modified\");\n+            courseFound.setTeacher(teacherFound);\n         }\n-        if (teacherFound == null && courseFound == null) {\n-            System.out.println(\"Can't find teacher and course.\");\n+        else{\n+            System.out.println(\"Can't find course\");\n         }\n     }\n \n@@ -160,40 +158,35 @@ public void addCourse(String courseName, double credit, String departmentId){\n     public void registerCourse(String studentId, String courseId) {\n         Student student = findStudent(studentId);\n         Course course = findCourse(courseId);\n-\n         if (student != null && course != null) {\n             if (!hasRegisteredForThisCourse(studentId, courseId)) {\n                 if (student.getCourseNum() < MAX_REGISTERED_COURSES) {\n                     if (student.getCourses() == null) {\n                         student.setCourses(new Course[MAX_REGISTERED_COURSES]);\n                     }\n-\n                     student.getCourses()[student.getCourseNum()] = course;\n                     student.setCourseNum(student.getCourseNum() + 1);\n                     System.out.printf(course.toString());\n-\n                 } else {\n                     System.out.println(\"Max registered Course\");\n                 }\n             } else {\n-                System.out.printf(\"Student %s is already in the course %s\", student.getStudentId(), course.getCourseName());\n+                System.out.printf(\"Student %s is already in the course \\'%s\\'\", student.getStudentId(), course.getCourseName());\n              }\n-                } else {\n-                    System.out.println(\"Student or department was not found : input again\");\n+        } else {\n+            System.out.println(\"Student or department was not found : input again\");\n         }\n     }\n+\n     /**\n      * find the course\n      * @param courseId based on the course id\n      * @return\n      */\n     public Course findCourse(String courseId){\n         for(Course course : courses){\n-            if((courseId != null) && course.getId() != null && course.getId().equals(courseId)){\n-\n+            if( course != null && course.getId() != null && course.getId().equals(courseId)){\n                 return course;\n-            }else if(course == null){\n-                System.out.println(\"Course might be null.\");\n             }\n         }\n         System.out.println(\"Course is not found !\");\n@@ -209,21 +202,19 @@ public void printDepartment() {\n                 System.out.printf(\"id: %s, department name : %s \", department.getId(), department.getDepartmentName());\n             }\n         }\n+        System.out.println(\"Can't find department\");\n     }\n \n     /**\n      *\n      * @param lname last name of the student\n      * @param name name of the student\n-     * @param departmentId department Id for student\n+     * @param departmentId department id for student\n      */\n     public void addStudent(String lname, String name, String departmentId) {\n         if (studentCount < MAX_STUDENTS) {\n-\n             Department department = findDepartment(departmentId);\n-\n             if(department != null) {\n-\n                 Student newStudent = new Student(lname, name, department);\n                 students[studentCount++] = newStudent;\n                 System.out.println(newStudent);\n@@ -237,10 +228,14 @@ public void addStudent(String lname, String name, String departmentId) {\n         }\n     }\n \n+    /**\n+     * Find student\n+     * @param studentId the student id\n+     * @return student\n+     */\n     public Student findStudent(String studentId){\n         for(Student student : students){\n             if(student != null && student.getStudentId().equals(studentId)){\n-                System.out.println(student);\n                 return student;\n             }\n         }\n@@ -256,8 +251,6 @@ public Student findStudent(String studentId){\n     public Teacher findTeacher(String teacherId) {\n         for (Teacher teacher : teachers) {\n             if (teacher != null && teacher.getTeacherId().equals(teacherId)) {\n-\n-                System.out.println(teacher);\n                 return teacher;\n             }\n         }\n@@ -286,6 +279,7 @@ public void addTeacher(String lname, String fname, String departmentId) {\n             System.out.printf(\"No more teachers can't be added. Max teachers: %d\", getMAX_TEACHERS());\n         }\n     }\n+\n     /**\n      * Print the courses\n      */\n@@ -309,7 +303,6 @@ public boolean hasRegisteredForThisCourse(String studentId, String courseId) {\n         if (student != null && course != null) {\n             for (Course registeredCourse : student.getCourses()) {\n                 if (registeredCourse != null && registeredCourse.getId().equals(courseId)) {\n-\n                     return true;\n                 }\n             }"
+        },
+        {
+            "sha": "1521c7cc12a4ba3d20689220f7c89d69ec4c87c6",
+            "filename": "target/classes/org/example/dto/SchoolManagementSystem.class",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/josuevanier/SchoolSystem/blob/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc/target%2Fclasses%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.class",
+            "raw_url": "https://github.com/josuevanier/SchoolSystem/raw/8f8e2b66c8be3fca89d54575cc4fabd5a71996fc/target%2Fclasses%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.class",
+            "contents_url": "https://api.github.com/repos/josuevanier/SchoolSystem/contents/target%2Fclasses%2Forg%2Fexample%2Fdto%2FSchoolManagementSystem.class?ref=8f8e2b66c8be3fca89d54575cc4fabd5a71996fc"
+        }
+    ]
+}

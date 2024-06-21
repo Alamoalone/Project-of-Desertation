@@ -1,0 +1,2 @@
+status()
+isPathValid(String d, int entry, int exit)

@@ -1,0 +1,1 @@
+addRatingChecker(TextField textField)

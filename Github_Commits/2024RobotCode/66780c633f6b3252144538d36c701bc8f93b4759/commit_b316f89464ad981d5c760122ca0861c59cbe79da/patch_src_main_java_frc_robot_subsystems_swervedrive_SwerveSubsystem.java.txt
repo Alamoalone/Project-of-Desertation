@@ -1,0 +1,83 @@
+@@ -17,6 +17,7 @@
+ import edu.wpi.first.math.kinematics.SwerveModulePosition;
+ import edu.wpi.first.math.trajectory.Trajectory;
+ import edu.wpi.first.math.util.Units;
++import edu.wpi.first.networktables.TimeSyncEventData;
+ import edu.wpi.first.wpilibj.DriverStation;
+ import edu.wpi.first.wpilibj.Timer;
+ 
+@@ -51,6 +52,8 @@ public class SwerveSubsystem extends SubsystemBase {
+    * Swerve drive object.
+    */
+   private final SwerveDrive swerveDrive;
++
++  public AprilTagVision aprilTagVision;
+   /**
+    * Maximum speed of the robot in meters per second, used to limit acceleration.
+    */
+@@ -61,12 +64,13 @@ public class SwerveSubsystem extends SubsystemBase {
+    */
+   //private SwerveAutoBuilder autoBuilder  = null;
+ 
+-  private SwerveDrivePoseEstimator poseEstimator;
++  private static SwerveDrivePoseEstimator poseEstimator;
+ 
+   //private SwerveModule[] swerveModules;
+ 
+   private Rotation2d rawGyroRotation = new Rotation2d();
+-  private Consumer<TimestampedVisionPose> visionPoseConsumer;
++  private Consumer<TimestampedVisionPose> visionPoseConsumer = SwerveSubsystem::updatePose;
++  
+ 
+   
+   /**
+@@ -89,6 +93,8 @@ public SwerveSubsystem(File directory) {
+     System.out.println("\t\"drive\": " + driveConversionFactor);
+     System.out.println("}");
+ 
++    
++    //Consumer<TimestampedVisionPose> poseConsumer;
+ 
+     // Configure the Telemetry before creating the SwerveDrive to avoid unnecessary objects being created.
+     SwerveDriveTelemetry.verbosity = TelemetryVerbosity.HIGH;
+@@ -105,9 +111,9 @@ public SwerveSubsystem(File directory) {
+ 
+     //swerveModules = swerveDrive.getModules();
+ 
+-    AprilTagVision aprilTagVision = AprilTagVision.createAprilTagVision(
++    aprilTagVision = AprilTagVision.createAprilTagVision(
+     visionPoseConsumer,
+-    new VisionPoseAcceptor(swerveDrive::getRobotVelocity)
++    new VisionPoseAcceptor(swerveDrive::getFieldVelocity)
+   );
+ 
+     AutoBuilder.configureHolonomic(
+@@ -193,7 +199,7 @@ public void periodic() {
+ 
+     poseEstimator.update(rawGyroRotation, getModulePositions());
+ 
+-    addTimestampedVisionPose(aprilTagVision.latestPose);
++    addTimestampedVisionPose(AprilTagVision.latestPose);
+     
+   }
+ 
+@@ -385,14 +391,13 @@ public void addFakeVisionReading() {
+     swerveDrive.addVisionMeasurement(new Pose2d(3, 3, Rotation2d.fromDegrees(65)), Timer.getFPGATimestamp());
+   }
+ 
+- public void addTimestampedVisionPose(Optional<TimestampedVisionPose> visionPose) {
+-  if (visionPose.isPresent()) {
+-    TimestampedVisionPose realVisionPose = visionPose.get();
+-    poseEstimator.addVisionMeasurement(realVisionPose.poseMeters(), realVisionPose.timestampSecs()); 
++  public static void updatePose(TimestampedVisionPose visionpose) {
++    poseEstimator.addVisionMeasurement(visionpose.poseMeters(), visionpose.timestampSecs());
+   }
+-  else {
++
++ public void addTimestampedVisionPose(Optional<TimestampedVisionPose> visionPose) {
++    visionPose.ifPresent(this.visionPoseConsumer);
+     
+-  }
+ }
+ 
+   /**

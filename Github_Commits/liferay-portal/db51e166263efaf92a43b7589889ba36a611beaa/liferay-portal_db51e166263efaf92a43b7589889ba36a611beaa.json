@@ -1,0 +1,98 @@
+{
+    "sha": "db51e166263efaf92a43b7589889ba36a611beaa",
+    "node_id": "C_kwDOAATZv9oAKGRiNTFlMTY2MjYzZWZhZjkyYTQzYjc1ODk4ODliYTM2YTYxMWJlYWE",
+    "commit": {
+        "author": {
+            "name": "Eudaldo Alonso",
+            "email": "eudaldo.alonso@liferay.com",
+            "date": "2023-03-17T08:27:53Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-03-20T17:24:29Z"
+        },
+        "message": "LPS-178527 Prevent null pointer exception if fragment entry is not registered",
+        "tree": {
+            "sha": "6b3c36e768058cc3343c479de970d05c65b546f0",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/6b3c36e768058cc3343c479de970d05c65b546f0"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/db51e166263efaf92a43b7589889ba36a611beaa",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/db51e166263efaf92a43b7589889ba36a611beaa",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/db51e166263efaf92a43b7589889ba36a611beaa",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/db51e166263efaf92a43b7589889ba36a611beaa/comments",
+    "author": {
+        "login": "ealonso",
+        "id": 922631,
+        "node_id": "MDQ6VXNlcjkyMjYzMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/922631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ealonso",
+        "html_url": "https://github.com/ealonso",
+        "followers_url": "https://api.github.com/users/ealonso/followers",
+        "following_url": "https://api.github.com/users/ealonso/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ealonso/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ealonso/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ealonso/subscriptions",
+        "organizations_url": "https://api.github.com/users/ealonso/orgs",
+        "repos_url": "https://api.github.com/users/ealonso/repos",
+        "events_url": "https://api.github.com/users/ealonso/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ealonso/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0100ed2f770718e4567e98bf6093cf5017559f37",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/0100ed2f770718e4567e98bf6093cf5017559f37",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/0100ed2f770718e4567e98bf6093cf5017559f37"
+        }
+    ],
+    "stats": {
+        "total": 11,
+        "additions": 8,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "ca1a0172f97eb7f4b4e501c400b1c7f35aa3ed6f",
+            "filename": "modules/apps/fragment/fragment-impl/src/main/java/com/liferay/fragment/internal/contributor/FragmentCollectionContributorRegistryImpl.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 3,
+            "changes": 11,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/db51e166263efaf92a43b7589889ba36a611beaa/modules%2Fapps%2Ffragment%2Ffragment-impl%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finternal%2Fcontributor%2FFragmentCollectionContributorRegistryImpl.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/db51e166263efaf92a43b7589889ba36a611beaa/modules%2Fapps%2Ffragment%2Ffragment-impl%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finternal%2Fcontributor%2FFragmentCollectionContributorRegistryImpl.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Ffragment%2Ffragment-impl%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finternal%2Fcontributor%2FFragmentCollectionContributorRegistryImpl.java?ref=db51e166263efaf92a43b7589889ba36a611beaa",
+            "patch": "@@ -313,11 +313,16 @@ private void _updateFragmentEntryLinks(\n \t\t\t\t\t\tfragmentEntriesSet.toArray(new String[0]));\n \n \t\t\t\tfor (FragmentEntryLink fragmentEntryLink : fragmentEntryLinks) {\n+\t\t\t\t\tFragmentEntry fragmentEntry = fragmentEntries.get(\n+\t\t\t\t\t\tfragmentEntryLink.getRendererKey());\n+\n+\t\t\t\t\tif (fragmentEntry == null) {\n+\t\t\t\t\t\tcontinue;\n+\t\t\t\t\t}\n+\n \t\t\t\t\ttry {\n \t\t\t\t\t\t_fragmentEntryLinkLocalService.updateLatestChanges(\n-\t\t\t\t\t\t\tfragmentEntries.get(\n-\t\t\t\t\t\t\t\tfragmentEntryLink.getRendererKey()),\n-\t\t\t\t\t\t\tfragmentEntryLink);\n+\t\t\t\t\t\t\tfragmentEntry, fragmentEntryLink);\n \t\t\t\t\t}\n \t\t\t\t\tcatch (PortalException portalException) {\n \t\t\t\t\t\t_log.error(portalException);"
+        }
+    ]
+}

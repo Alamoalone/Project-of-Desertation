@@ -1,0 +1,110 @@
+{
+    "sha": "ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c",
+    "node_id": "C_kwDOKgZAvNoAKGVmN2JlZTAxYWIxMWJjMGUxZmY0MzYxZjQ1MGU0ZTk4ZmFiMGRiMmM",
+    "commit": {
+        "author": {
+            "name": "Desai",
+            "email": "param-ridham.desai.167@my.csun.edu",
+            "date": "2023-11-10T23:19:06Z"
+        },
+        "committer": {
+            "name": "Desai",
+            "email": "param-ridham.desai.167@my.csun.edu",
+            "date": "2023-11-10T23:19:06Z"
+        },
+        "message": "fixed the signum null pointer exception",
+        "tree": {
+            "sha": "57b8648a8701ae9da9be57324450c75eabc71276",
+            "url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/git/trees/57b8648a8701ae9da9be57324450c75eabc71276"
+        },
+        "url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/git/commits/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/commits/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c",
+    "html_url": "https://github.com/paramdesai321/BlockchainforMedicalConsultation/commit/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c",
+    "comments_url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/commits/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c/comments",
+    "author": {
+        "login": "paramdesai321",
+        "id": 123131116,
+        "node_id": "U_kgDOB1bU7A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123131116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paramdesai321",
+        "html_url": "https://github.com/paramdesai321",
+        "followers_url": "https://api.github.com/users/paramdesai321/followers",
+        "following_url": "https://api.github.com/users/paramdesai321/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paramdesai321/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paramdesai321/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paramdesai321/subscriptions",
+        "organizations_url": "https://api.github.com/users/paramdesai321/orgs",
+        "repos_url": "https://api.github.com/users/paramdesai321/repos",
+        "events_url": "https://api.github.com/users/paramdesai321/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paramdesai321/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "paramdesai321",
+        "id": 123131116,
+        "node_id": "U_kgDOB1bU7A",
+        "avatar_url": "https://avatars.githubusercontent.com/u/123131116?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/paramdesai321",
+        "html_url": "https://github.com/paramdesai321",
+        "followers_url": "https://api.github.com/users/paramdesai321/followers",
+        "following_url": "https://api.github.com/users/paramdesai321/following{/other_user}",
+        "gists_url": "https://api.github.com/users/paramdesai321/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/paramdesai321/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/paramdesai321/subscriptions",
+        "organizations_url": "https://api.github.com/users/paramdesai321/orgs",
+        "repos_url": "https://api.github.com/users/paramdesai321/repos",
+        "events_url": "https://api.github.com/users/paramdesai321/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/paramdesai321/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f12c0eacfce61c8007e06d67654b6d054655404a",
+            "url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/commits/f12c0eacfce61c8007e06d67654b6d054655404a",
+            "html_url": "https://github.com/paramdesai321/BlockchainforMedicalConsultation/commit/f12c0eacfce61c8007e06d67654b6d054655404a"
+        }
+    ],
+    "stats": {
+        "total": 61,
+        "additions": 48,
+        "deletions": 13
+    },
+    "files": [
+        {
+            "sha": "404f33ec47b7b5cc285f577f5075318b266b8909",
+            "filename": "src/trying/basic/Cell.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 3,
+            "changes": 8,
+            "blob_url": "https://github.com/paramdesai321/BlockchainforMedicalConsultation/blob/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c/src%2Ftrying%2Fbasic%2FCell.java",
+            "raw_url": "https://github.com/paramdesai321/BlockchainforMedicalConsultation/raw/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c/src%2Ftrying%2Fbasic%2FCell.java",
+            "contents_url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/contents/src%2Ftrying%2Fbasic%2FCell.java?ref=ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c",
+            "patch": "@@ -10,7 +10,6 @@ public class Cell {\n \n     public Cell(String message) {\n         this.message = message;\n-        this.previousHash = null;\n         this.cellHash = hash(message);\n         System.out.println(cellHash);\n     }\n@@ -42,6 +41,9 @@ public static void main(String[] args) {\n \n         System.out.println(\"Public Key (e, n): \" + e + \", \" + n);\n         System.out.println(\"Private Key (d, n): \" + d + \", \" + n);\n-    }\n-}\n \n+\n+      \n+\n+    }\n+} \n\\ No newline at end of file"
+        },
+        {
+            "sha": "ee8b07ed8cb84823a33359b96273f874f8f6825d",
+            "filename": "src/trying/basic/RSA.java",
+            "status": "modified",
+            "additions": 43,
+            "deletions": 10,
+            "changes": 53,
+            "blob_url": "https://github.com/paramdesai321/BlockchainforMedicalConsultation/blob/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c/src%2Ftrying%2Fbasic%2FRSA.java",
+            "raw_url": "https://github.com/paramdesai321/BlockchainforMedicalConsultation/raw/ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c/src%2Ftrying%2Fbasic%2FRSA.java",
+            "contents_url": "https://api.github.com/repos/paramdesai321/BlockchainforMedicalConsultation/contents/src%2Ftrying%2Fbasic%2FRSA.java?ref=ef7bee01ab11bc0e1ff4361f450e4e98fab0db2c",
+            "patch": "@@ -1,11 +1,14 @@\n import java.math.BigInteger;\n import java.security.SecureRandom;\n-\n+import java.util.Arrays;\n public class RSA {\n     public BigInteger privateKey;\n     public BigInteger publicKey;\n     public BigInteger modulus;\n-\n+    public FileIO file;\n+    public static int counter=0;\n+    public static int j=0;\n+    public static BigInteger[] PreviousHash = new  BigInteger[5];\n     // Generate key pair\n     public void generateKeyPair(int bitLength) {\n         SecureRandom random = new SecureRandom();\n@@ -33,22 +36,52 @@ public String decrypt(BigInteger ciphertext) {\n         return new String(bytes);\n     }\n \n-    public static void main(String[] args) {\n-        RSA rsa = new RSA();\n+    public static  void Block(String originalMessage){\n \n-        // Generate key pair with 2048-bit length\n-        rsa.generateKeyPair(2048);\n+        RSA rsa = new RSA();\n+          rsa.generateKeyPair(2048);\n+         \n \n-        // Example usage with string\n-        String originalMessage = \"Hello, RSA!\";\n+        System.out.println(\"Block #\"+ counter);\n+        if(counter ==0) System.out.println(\"Previous Hash:null\");\n+       // if(counter!=0) System.out.println(\"Previous Hash:\"); \n         System.out.println(\"Original message: \" + originalMessage);\n \n+\n+\n         // Encryption\n         BigInteger encryptedMessage = rsa.encrypt(originalMessage);\n-        System.out.println(\"Encrypted message: \" + encryptedMessage);\n+        System.out.println(\"Hash: \" + encryptedMessage);\n+\n+         PreviousHash[j] = encryptedMessage;\n+         \n+        if (counter !=0){\n+            \n+            System.out.println(\"Previous Hash:\"+PreviousHash[j-1]);\n+\n+        }\n+\n \n         // Decryption\n         String decryptedMessage = rsa.decrypt(encryptedMessage);\n         System.out.println(\"Decrypted message: \" + decryptedMessage);\n+        counter++;\n+        j++;\n+        }\n+    \n+\n+    public static void main(String[] args) {\n+        RSA rsa = new RSA();\n+\n+        // Generate key pair with 2048-bit length\n+        rsa.generateKeyPair(2048);\n+        String[] arr = FileIO.getPatientMessage();\n+        Block(arr[0]);\n+        Block(arr[1]);\n+        Block(arr[2]);\n+        Block(arr[3]);\n+        Block(arr[4]);\n+    }\n+\n+\n     }\n-}"
+        }
+    ]
+}

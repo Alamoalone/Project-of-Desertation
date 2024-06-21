@@ -1,0 +1,98 @@
+{
+    "sha": "c388cb8a93d2d3eae4dda6206be921b2c7c290ab",
+    "node_id": "C_kwDOBgxC5doAKGMzODhjYjhhOTNkMmQzZWFlNGRkYTYyMDZiZTkyMWIyYzdjMjkwYWI",
+    "commit": {
+        "author": {
+            "name": "Dan Vasilescu",
+            "email": "vasilescu@uchc.edu",
+            "date": "2022-11-15T21:51:38Z"
+        },
+        "committer": {
+            "name": "moraru",
+            "email": "moraru@uchc.edu",
+            "date": "2022-11-18T01:32:31Z"
+        },
+        "message": "Null pointer exception fix",
+        "tree": {
+            "sha": "12963665126dc5d833c1b929b7fa7f29dd085191",
+            "url": "https://api.github.com/repos/virtualcell/vcell/git/trees/12963665126dc5d833c1b929b7fa7f29dd085191"
+        },
+        "url": "https://api.github.com/repos/virtualcell/vcell/git/commits/c388cb8a93d2d3eae4dda6206be921b2c7c290ab",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/virtualcell/vcell/commits/c388cb8a93d2d3eae4dda6206be921b2c7c290ab",
+    "html_url": "https://github.com/virtualcell/vcell/commit/c388cb8a93d2d3eae4dda6206be921b2c7c290ab",
+    "comments_url": "https://api.github.com/repos/virtualcell/vcell/commits/c388cb8a93d2d3eae4dda6206be921b2c7c290ab/comments",
+    "author": {
+        "login": "danv61",
+        "id": 29076329,
+        "node_id": "MDQ6VXNlcjI5MDc2MzI5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29076329?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danv61",
+        "html_url": "https://github.com/danv61",
+        "followers_url": "https://api.github.com/users/danv61/followers",
+        "following_url": "https://api.github.com/users/danv61/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danv61/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danv61/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danv61/subscriptions",
+        "organizations_url": "https://api.github.com/users/danv61/orgs",
+        "repos_url": "https://api.github.com/users/danv61/repos",
+        "events_url": "https://api.github.com/users/danv61/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danv61/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "moraru",
+        "id": 7397814,
+        "node_id": "MDQ6VXNlcjczOTc4MTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7397814?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/moraru",
+        "html_url": "https://github.com/moraru",
+        "followers_url": "https://api.github.com/users/moraru/followers",
+        "following_url": "https://api.github.com/users/moraru/following{/other_user}",
+        "gists_url": "https://api.github.com/users/moraru/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/moraru/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/moraru/subscriptions",
+        "organizations_url": "https://api.github.com/users/moraru/orgs",
+        "repos_url": "https://api.github.com/users/moraru/repos",
+        "events_url": "https://api.github.com/users/moraru/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/moraru/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f74125ffa664727b3db84d0b61249650babe1dc8",
+            "url": "https://api.github.com/repos/virtualcell/vcell/commits/f74125ffa664727b3db84d0b61249650babe1dc8",
+            "html_url": "https://github.com/virtualcell/vcell/commit/f74125ffa664727b3db84d0b61249650babe1dc8"
+        }
+    ],
+    "stats": {
+        "total": 51,
+        "additions": 26,
+        "deletions": 25
+    },
+    "files": [
+        {
+            "sha": "63b15b89901355528aa56ac646403378c2f9f76b",
+            "filename": "vcell-core/src/main/java/cbit/vcell/xml/XmlReader.java",
+            "status": "modified",
+            "additions": 26,
+            "deletions": 25,
+            "changes": 51,
+            "blob_url": "https://github.com/virtualcell/vcell/blob/c388cb8a93d2d3eae4dda6206be921b2c7c290ab/vcell-core%2Fsrc%2Fmain%2Fjava%2Fcbit%2Fvcell%2Fxml%2FXmlReader.java",
+            "raw_url": "https://github.com/virtualcell/vcell/raw/c388cb8a93d2d3eae4dda6206be921b2c7c290ab/vcell-core%2Fsrc%2Fmain%2Fjava%2Fcbit%2Fvcell%2Fxml%2FXmlReader.java",
+            "contents_url": "https://api.github.com/repos/virtualcell/vcell/contents/vcell-core%2Fsrc%2Fmain%2Fjava%2Fcbit%2Fvcell%2Fxml%2FXmlReader.java?ref=c388cb8a93d2d3eae4dda6206be921b2c7c290ab",
+            "patch": "@@ -4041,32 +4041,33 @@ private MembraneMapping getMembraneMapping(Element param, SimulationContext simu\n \r\n \t//Set Boundary conditions\r\n \tElement tempElement = param.getChild(XMLTags.BoundariesTypesTag, vcNamespace);\r\n+\tif(tempElement != null) {\r\n+\t\t//Xm\r\n+\t\tString temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueXm);\r\n+\t\tBoundaryConditionType bct = new BoundaryConditionType(temp);\r\n+\t\tmemmap.setBoundaryConditionTypeXm(bct);\r\n+\t\t//Xp\r\n+\t\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueXp);\r\n+\t\tbct = new BoundaryConditionType(temp);\r\n+\t\tmemmap.setBoundaryConditionTypeXp(bct);\r\n+\t\t//Ym\r\n+\t\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueYm);\r\n+\t\tbct = new BoundaryConditionType(temp);\r\n+\t\tmemmap.setBoundaryConditionTypeYm(bct);\r\n+\t\t//Yp\r\n+\t\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueYp);\r\n+\t\tbct = new BoundaryConditionType(temp);\r\n+\t\tmemmap.setBoundaryConditionTypeYp(bct);\r\n+\t\t//Zm\r\n+\t\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueZm);\r\n+\t\tbct = new BoundaryConditionType(temp);\r\n+\t\tmemmap.setBoundaryConditionTypeZm(bct);\r\n+\t\t//Zp\r\n+\t\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueZp);\r\n+\t\tbct = new BoundaryConditionType(temp);\r\n+\t\tmemmap.setBoundaryConditionTypeZp(bct);\r\n+\t}\r\n \t\r\n-\t//Xm\r\n-\tString temp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueXm);\r\n-\tBoundaryConditionType bct = new BoundaryConditionType(temp);\r\n-\tmemmap.setBoundaryConditionTypeXm(bct);\r\n-\t//Xp\r\n-\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueXp);\r\n-\tbct = new BoundaryConditionType(temp);\r\n-\tmemmap.setBoundaryConditionTypeXp(bct);\r\n-\t//Ym\r\n-\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueYm);\r\n-\tbct = new BoundaryConditionType(temp);\r\n-\tmemmap.setBoundaryConditionTypeYm(bct);\r\n-\t//Yp\r\n-\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueYp);\r\n-\tbct = new BoundaryConditionType(temp);\r\n-\tmemmap.setBoundaryConditionTypeYp(bct);\r\n-\t//Zm\r\n-\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueZm);\r\n-\tbct = new BoundaryConditionType(temp);\r\n-\tmemmap.setBoundaryConditionTypeZm(bct);\r\n-\t//Zp\r\n-\ttemp = tempElement.getAttributeValue(XMLTags.BoundaryAttrValueZp);\r\n-\tbct = new BoundaryConditionType(temp);\r\n-\tmemmap.setBoundaryConditionTypeZp(bct);\r\n-\r\n \treturn memmap;\r\n }\r\n \r"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+  public void testMarkApplicationsLatestWithNewApps()
+      throws ApplicationNotFoundException, ConflictException, IOException {
+    long creationTime = System.currentTimeMillis();
+    // Add 2 new applications without marking them latest
+    ApplicationId appId1 = new ApplicationId("account1", "newApp1");
+    ApplicationMeta appMeta1 = new ApplicationMeta("newApp1", Specifications.from(new FooApp()),
+        new ChangeDetail(null, null, null, creationTime), null, false);
+    store.addApplication(appId1, appMeta1);
+
+    ApplicationId appId2 = new ApplicationId("account1", "newApp2");
+    ApplicationMeta appMeta2 = new ApplicationMeta("newApp2", Specifications.from(new FooApp()),
+        new ChangeDetail(null, null, null, creationTime), null, false);
+    store.addApplication(appId2, appMeta2);
+
+    // Now mark them as latest in bulk
+    store.markApplicationsLatest(Arrays.asList(appId1, appId2));
+
+    ApplicationMeta storedMeta1 = store.getApplicationMetadata(appId1);
+    Assert.assertEquals("newApp1", storedMeta1.getId());
+    Assert.assertEquals(creationTime, storedMeta1.getChange().getCreationTimeMillis());
+    Assert.assertTrue(storedMeta1.getIsLatest());
+
+    ApplicationMeta storedMeta2 = store.getApplicationMetadata(appId2);
+    Assert.assertEquals("newApp2", storedMeta2.getId());
+    Assert.assertEquals(creationTime, storedMeta2.getChange().getCreationTimeMillis());
+    Assert.assertTrue(storedMeta2.getIsLatest());
+  }

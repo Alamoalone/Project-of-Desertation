@@ -1,0 +1,6 @@
+    public void onAttachedToActivity(ActivityPluginBinding binding) {
+        activity = binding.getActivity();
+        mIntent = binding.getActivity().getIntent();
+        mApplication = binding.getActivity().getApplication();
+        binding.addOnNewIntentListener(onNewIntentListener);
+    }

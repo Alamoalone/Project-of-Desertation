@@ -1,0 +1,28 @@
+  protected void cleanExistingProduct()
+  {
+    if (this.progressTask != null)
+    {
+      try
+      {
+
+        if (this.progressTask.getProcessDem())
+        {
+          this.collection.removeArtifacts(ImageryComponent.DEM, false);
+        }
+
+        if (this.progressTask.getProcessOrtho())
+        {
+          this.collection.removeArtifacts(ImageryComponent.ORTHO, false);
+        }
+
+        if (this.progressTask.getProcessPtcloud())
+        {
+          this.collection.removeArtifacts(ImageryComponent.PTCLOUD, false);
+        }
+      }
+      finally
+      {
+        new GenerateMetadataCommand(this.collection).doIt();
+      }
+    }
+  }

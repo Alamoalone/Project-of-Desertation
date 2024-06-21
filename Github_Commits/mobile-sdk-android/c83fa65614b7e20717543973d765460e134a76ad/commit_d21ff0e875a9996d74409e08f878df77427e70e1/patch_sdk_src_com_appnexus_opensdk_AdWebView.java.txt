@@ -1,0 +1,9 @@
+@@ -701,7 +701,7 @@ private AdResponse getAdResponse() {
+         return new AdResponse() {
+             @Override
+             public MediaType getMediaType() {
+-                return adView.getMediaType();
++                return adView != null ? adView.getMediaType() : null;
+             }
+ 
+             @Override

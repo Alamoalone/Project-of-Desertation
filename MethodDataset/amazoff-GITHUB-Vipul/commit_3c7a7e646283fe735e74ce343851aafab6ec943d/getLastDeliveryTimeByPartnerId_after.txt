@@ -1,0 +1,3 @@
+    public String getLastDeliveryTimeByPartnerId(String partnerId) {
+        return orderrepository.getLastDeliveryTimeByPartnerId(partnerId);
+    }

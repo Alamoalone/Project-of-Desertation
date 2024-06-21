@@ -1,0 +1,98 @@
+{
+    "sha": "89a7f20b0863640d3199b124bb8a89dd103e206a",
+    "node_id": "C_kwDOIRShudoAKDg5YTdmMjBiMDg2MzY0MGQzMTk5YjEyNGJiOGE4OWRkMTAzZTIwNmE",
+    "commit": {
+        "author": {
+            "name": "Ivan Yourshaw",
+            "email": "39739503+iyourshaw@users.noreply.github.com",
+            "date": "2023-03-13T22:17:06Z"
+        },
+        "committer": {
+            "name": "Ivan Yourshaw",
+            "email": "39739503+iyourshaw@users.noreply.github.com",
+            "date": "2023-03-13T22:17:06Z"
+        },
+        "message": "Fix null pointer exceptions in SpatTimeChangeDetailsState, with regression test",
+        "tree": {
+            "sha": "65ba22962e8a2c836537f45b83a5cd35f80f64c2",
+            "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/git/trees/65ba22962e8a2c836537f45b83a5cd35f80f64c2"
+        },
+        "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/git/commits/89a7f20b0863640d3199b124bb8a89dd103e206a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/commits/89a7f20b0863640d3199b124bb8a89dd103e206a",
+    "html_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/commit/89a7f20b0863640d3199b124bb8a89dd103e206a",
+    "comments_url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/commits/89a7f20b0863640d3199b124bb8a89dd103e206a/comments",
+    "author": {
+        "login": "iyourshaw",
+        "id": 39739503,
+        "node_id": "MDQ6VXNlcjM5NzM5NTAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39739503?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iyourshaw",
+        "html_url": "https://github.com/iyourshaw",
+        "followers_url": "https://api.github.com/users/iyourshaw/followers",
+        "following_url": "https://api.github.com/users/iyourshaw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iyourshaw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iyourshaw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iyourshaw/subscriptions",
+        "organizations_url": "https://api.github.com/users/iyourshaw/orgs",
+        "repos_url": "https://api.github.com/users/iyourshaw/repos",
+        "events_url": "https://api.github.com/users/iyourshaw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iyourshaw/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "iyourshaw",
+        "id": 39739503,
+        "node_id": "MDQ6VXNlcjM5NzM5NTAz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39739503?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/iyourshaw",
+        "html_url": "https://github.com/iyourshaw",
+        "followers_url": "https://api.github.com/users/iyourshaw/followers",
+        "following_url": "https://api.github.com/users/iyourshaw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/iyourshaw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/iyourshaw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/iyourshaw/subscriptions",
+        "organizations_url": "https://api.github.com/users/iyourshaw/orgs",
+        "repos_url": "https://api.github.com/users/iyourshaw/repos",
+        "events_url": "https://api.github.com/users/iyourshaw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/iyourshaw/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6f2552273a7381b9618a40bf12651552268a4378",
+            "url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/commits/6f2552273a7381b9618a40bf12651552268a4378",
+            "html_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/commit/6f2552273a7381b9618a40bf12651552268a4378"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "3ec93a108a263edc9be1c4c17983462636c01480",
+            "filename": "jpo-conflictmonitor/src/test/java/us/dot/its/jpo/conflictmonitor/monitor/models/spat/SpatTimeChangeDetailStateTest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/blob/89a7f20b0863640d3199b124bb8a89dd103e206a/jpo-conflictmonitor%2Fsrc%2Ftest%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailStateTest.java",
+            "raw_url": "https://github.com/usdot-jpo-ode/jpo-conflictmonitor/raw/89a7f20b0863640d3199b124bb8a89dd103e206a/jpo-conflictmonitor%2Fsrc%2Ftest%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailStateTest.java",
+            "contents_url": "https://api.github.com/repos/usdot-jpo-ode/jpo-conflictmonitor/contents/jpo-conflictmonitor%2Fsrc%2Ftest%2Fjava%2Fus%2Fdot%2Fits%2Fjpo%2Fconflictmonitor%2Fmonitor%2Fmodels%2Fspat%2FSpatTimeChangeDetailStateTest.java?ref=89a7f20b0863640d3199b124bb8a89dd103e206a",
+            "patch": "@@ -66,7 +66,7 @@ public static Object[] state(ZonedDateTime maxTime, ZonedDateTime minTime,\n         event.setEventState(eventState);\n         state.setStateTimeSpeed(Collections.singletonList(event));\n \n-        // Consturct expected SpatTimeChangeDetailState\n+        // Construct expected SpatTimeChangeDetailState\n         SpatTimeChangeDetailState expectedResult = new SpatTimeChangeDetailState();\n         if (signalGroup != null) {\n             expectedResult.setSignalGroup(signalGroup.intValue());"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+onServiceDisconnected(ComponentName name)
+onPause()
+onSaveInstanceState(Bundle outState)
+onResume()
+onServiceConnected(ComponentName name, IBinder service)

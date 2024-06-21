@@ -1,0 +1,10 @@
+@@ -270,6 +270,9 @@ public boolean accept(File current, String name) {
+             }
+         });
+ 
++        if(backups == null)
++            backups = new String[]{};
++
+         if(backupAdapterReset || ((GridView) dialog.findViewById(R.id.backups_list)).getAdapter() == null)
+             ((GridView) dialog.findViewById(R.id.backups_list)).setAdapter(new BackupsAdapter(mainActivityContext, this, backupsPath, app, dialog, backups));
+ 

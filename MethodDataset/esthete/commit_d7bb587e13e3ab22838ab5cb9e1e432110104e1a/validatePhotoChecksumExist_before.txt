@@ -1,0 +1,19 @@
+    public void validatePhotoChecksumExist(MultipartFile file) {
+
+        final String checksum;
+
+        try {
+            checksum = calculateMD5(file.getBytes());
+        } catch (IOException e) {
+            throw new PhotoException(PhotoErrorResult.PHOTO_HASH_FAILED);
+        }
+
+        if (photoChecksumRepository.existsByChecksum(checksum)) {
+            PhotoChecksum photoChecksum = photoChecksumRepository.findByChecksum(checksum).get();
+
+            throw new CopyrightException(
+                    "이미 업로드된 이미지는 등록할 수 없습니다.",
+                    photoChecksum.getPhoto().getPhotoId().toString()
+            );
+        }
+    }

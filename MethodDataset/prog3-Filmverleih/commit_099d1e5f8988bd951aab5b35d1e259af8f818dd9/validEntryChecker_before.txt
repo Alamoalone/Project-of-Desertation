@@ -1,0 +1,55 @@
+    private boolean validEntryChecker() {
+        boolean entriesAreValid = true;
+        saveInfosAsNeededDataTypes();
+        if(changedName.isEmpty()) {
+            lbl_movieEditNameTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditNameTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(changedYear < 1920 || changedYear > 2024) {
+            lbl_movieEditYearTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditYearTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(changedFsk != 0 && changedFsk != 6 && changedFsk != 12 && changedFsk != 16 && changedFsk != 18) {
+            lbl_movieEditFskTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditFskTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(!txf_movieEditRating.getText().matches("^\\d\\.\\d$")) {//changedRating.doubleValue() < MIN_RATING || changedRating.doubleValue() >= MAX_RATING
+            lbl_movieEditRatingTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditRatingTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditGenre1.getText().isEmpty() && (!txf_movieEditGenre2.getText().isEmpty() || !txf_movieEditGenre3.getText().isEmpty())){
+            lbl_movieEditGenre1Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditGenre1Title.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditGenre2.getText().isEmpty() && !txf_movieEditGenre3.getText().isEmpty()) {
+            lbl_movieEditGenre2Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditGenre2Title.setStyle("-fx-text-fill: #949494");}
+
+        if(!changedActors.matches("^(\\w+\\.?\\w*( \\w+\\.?\\w*)*(, \\w+\\.?\\w*( \\w+\\.?\\w*)*)*)+$")) {//^(\w+( \w+)*(, \w+( \w+)*)*)+$
+            lbl_movieEditActorsTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditActorsTitle.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditDirector1.getText().isEmpty() && (!txf_movieEditDirector2.getText().isEmpty() || !txf_movieEditDirector3.getText().isEmpty())){
+            lbl_movieEditDirector1Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditDirector1Title.setStyle("-fx-text-fill: #949494");}
+
+        if(txf_movieEditDirector2.getText().isEmpty() && !txf_movieEditDirector3.getText().isEmpty()){
+            lbl_movieEditDirector2Title.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditDirector2Title.setStyle("-fx-text-fill: #949494");}
+
+        if(!changedLinkToCover.isEmpty() && !changedLinkToCover.matches("^(http://|https://)[-a-zA-Z0-9@:%._+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_+.~#?&/=]*((\\.jpg)|(\\.png)))$")) {
+            lbl_movieEditLinkToCoverTitle.setStyle("-fx-text-fill: #FF4040");
+            entriesAreValid = false;
+        } else {lbl_movieEditLinkToCoverTitle.setStyle("-fx-text-fill: #949494");}
+
+        return entriesAreValid;
+    }

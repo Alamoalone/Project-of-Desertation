@@ -1,0 +1,48 @@
+@@ -291,6 +291,47 @@ public void testGetServicesInGroupNotFound() {
+         assertNotNull(expectedException);
+         assertEquals("Group with uuid %s not found".formatted(input), expectedException.getMessage());
+         assertEquals(HttpStatus.NOT_FOUND, expectedException.getHttpStatus());
++    }
+ 
++    @Test
++    public void testCreateGroupNullValue() {
++        var input = new GroupInput();
++        input.setName("name");
++        input.setDisplayOrder(10);
++        input.setDescription("description");
++        input.setServices(Collections.singletonList(UUID.randomUUID()));
++        input.display(null);
++        input.setExpanded(null);
++
++        var expectedUuid = UUID.randomUUID();
++
++        Mockito.when(groupService.createGroup(GroupModel.createInstance(input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(expectedUuid);
++
++        var result = groupManagementController.v1GroupsPost(input);
++        assertNotNull(result);
++        assertEquals(201, result.getStatusCode().value());
++        assertEquals(expectedUuid.toString(), result.getHeaders().get("location").stream().findFirst().get());
++        assertEquals(expectedUuid, result.getBody().getUuid());
++    }
++
++    @Test
++    public void testUpdateGroupNullValue() {
++        var uuid = UUID.randomUUID();
++
++        var input = new GroupInput();
++        input.setName("name");
++        input.setDisplayOrder(10);
++        input.setDescription("description");
++        input.setServices(Collections.singletonList(UUID.randomUUID()));
++        input.display(null);
++        input.setExpanded(null);
++
++        var expectedUuid = UUID.randomUUID();
++
++        Mockito.when(groupService.updateGroup(GroupModel.createInstance(input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(true);
++
++        var result = groupManagementController.v1GroupsUuidPut(uuid, input);
++        assertNotNull(result);
++        assertEquals(201, result.getStatusCode().value());
+     }
+ }

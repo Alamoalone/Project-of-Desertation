@@ -1,0 +1,9 @@
+    private static File[] getResourceFolderFiles(String folder) {
+        URL url = ClassLoader.getSystemResource(folder);
+        if (url != null) {
+            var path = url.getPath();
+            return new File(path).listFiles();
+        }
+        return new File[0];
+    }
+

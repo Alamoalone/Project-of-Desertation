@@ -1,0 +1,110 @@
+{
+    "sha": "20981300fb7f30b31d818e4f62348a90828ea19c",
+    "node_id": "C_kwDOB5-0Q9oAKDIwOTgxMzAwZmI3ZjMwYjMxZDgxOGU0ZjYyMzQ4YTkwODI4ZWExOWM",
+    "commit": {
+        "author": {
+            "name": "libailin",
+            "email": "bailin_li@163.com",
+            "date": "2023-05-15T07:25:49Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-05-15T07:25:49Z"
+        },
+        "message": "[Hotfix-#1667][connector][starrocks] fixed get routings null pointer exception (#1668)",
+        "tree": {
+            "sha": "acdb04485b095fc684e143824604d39a46702cf2",
+            "url": "https://api.github.com/repos/DTStack/chunjun/git/trees/acdb04485b095fc684e143824604d39a46702cf2"
+        },
+        "url": "https://api.github.com/repos/DTStack/chunjun/git/commits/20981300fb7f30b31d818e4f62348a90828ea19c",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkYd59CRBK7hj4Ov3rIwAA2fwIAGLpbxKfhIb/gt0qPw+Y/Zxz\nwCR8PZvqxAk07nS25JD3pDAMWaNI/rYTHS542aTlFFhqaTQmXleG1wTyAuKtVW43\ndXWG7EKQB5WXvvvkcGDwY6FCjpKtI6YbY5sH0Lj10on4LSF0kCYxon78m5GyPbvI\nY02+0isK69ye3yN8tTg/BSNd2xx6S6nLoF0u202IPqW66Vh21kPBkl1DtsiDskdW\nTqRmm4aLFn0iXmGwz8VYPhPgbgZokRi6SoZydlind4RdfObVeQwYhF9onPfUsl5r\nScxiept+dN4eCk57+kiMj4Y2WDE8sSk7pTz9Yw1cb77g9cKDvEXkpLUvETx4fLs=\n=7q2O\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree acdb04485b095fc684e143824604d39a46702cf2\nparent ff56a5b1e73bceb74925934f4b45e13bb9a0627b\nauthor libailin <bailin_li@163.com> 1684135549 +0800\ncommitter GitHub <noreply@github.com> 1684135549 +0800\n\n[Hotfix-#1667][connector][starrocks] fixed get routings null pointer exception (#1668)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/DTStack/chunjun/commits/20981300fb7f30b31d818e4f62348a90828ea19c",
+    "html_url": "https://github.com/DTStack/chunjun/commit/20981300fb7f30b31d818e4f62348a90828ea19c",
+    "comments_url": "https://api.github.com/repos/DTStack/chunjun/commits/20981300fb7f30b31d818e4f62348a90828ea19c/comments",
+    "author": {
+        "login": "libailin",
+        "id": 3014381,
+        "node_id": "MDQ6VXNlcjMwMTQzODE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3014381?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/libailin",
+        "html_url": "https://github.com/libailin",
+        "followers_url": "https://api.github.com/users/libailin/followers",
+        "following_url": "https://api.github.com/users/libailin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/libailin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/libailin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/libailin/subscriptions",
+        "organizations_url": "https://api.github.com/users/libailin/orgs",
+        "repos_url": "https://api.github.com/users/libailin/repos",
+        "events_url": "https://api.github.com/users/libailin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/libailin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ff56a5b1e73bceb74925934f4b45e13bb9a0627b",
+            "url": "https://api.github.com/repos/DTStack/chunjun/commits/ff56a5b1e73bceb74925934f4b45e13bb9a0627b",
+            "html_url": "https://github.com/DTStack/chunjun/commit/ff56a5b1e73bceb74925934f4b45e13bb9a0627b"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "f5e3475f0e464773387b2846f913d0a9468bef9a",
+            "filename": "chunjun-connectors/chunjun-connector-starrocks/src/main/java/com/dtstack/chunjun/connector/starrocks/source/be/StarRocksQueryPlanVisitor.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/DTStack/chunjun/blob/20981300fb7f30b31d818e4f62348a90828ea19c/chunjun-connectors%2Fchunjun-connector-starrocks%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdtstack%2Fchunjun%2Fconnector%2Fstarrocks%2Fsource%2Fbe%2FStarRocksQueryPlanVisitor.java",
+            "raw_url": "https://github.com/DTStack/chunjun/raw/20981300fb7f30b31d818e4f62348a90828ea19c/chunjun-connectors%2Fchunjun-connector-starrocks%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdtstack%2Fchunjun%2Fconnector%2Fstarrocks%2Fsource%2Fbe%2FStarRocksQueryPlanVisitor.java",
+            "contents_url": "https://api.github.com/repos/DTStack/chunjun/contents/chunjun-connectors%2Fchunjun-connector-starrocks%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdtstack%2Fchunjun%2Fconnector%2Fstarrocks%2Fsource%2Fbe%2FStarRocksQueryPlanVisitor.java?ref=20981300fb7f30b31d818e4f62348a90828ea19c",
+            "patch": "@@ -86,7 +86,7 @@ private static void allocateTabletsEqually(\n         int tabletCount = Integer.MAX_VALUE;\n         String currentBeNode = \"\";\n         // Allocate tablets equally for all BeNodes\n-        for (String beNode : tablet.getRouting()) {\n+        for (String beNode : tablet.getRoutings()) {\n             if (!beXTablets.containsKey(beNode)) {\n                 beXTablets.put(beNode, new HashSet<>());\n                 currentBeNode = beNode;"
+        },
+        {
+            "sha": "edf67bb549f30000f279db28defc1f03f2908f9e",
+            "filename": "chunjun-connectors/chunjun-connector-starrocks/src/main/java/com/dtstack/chunjun/connector/starrocks/source/be/entity/Tablet.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/DTStack/chunjun/blob/20981300fb7f30b31d818e4f62348a90828ea19c/chunjun-connectors%2Fchunjun-connector-starrocks%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdtstack%2Fchunjun%2Fconnector%2Fstarrocks%2Fsource%2Fbe%2Fentity%2FTablet.java",
+            "raw_url": "https://github.com/DTStack/chunjun/raw/20981300fb7f30b31d818e4f62348a90828ea19c/chunjun-connectors%2Fchunjun-connector-starrocks%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdtstack%2Fchunjun%2Fconnector%2Fstarrocks%2Fsource%2Fbe%2Fentity%2FTablet.java",
+            "contents_url": "https://api.github.com/repos/DTStack/chunjun/contents/chunjun-connectors%2Fchunjun-connector-starrocks%2Fsrc%2Fmain%2Fjava%2Fcom%2Fdtstack%2Fchunjun%2Fconnector%2Fstarrocks%2Fsource%2Fbe%2Fentity%2FTablet.java?ref=20981300fb7f30b31d818e4f62348a90828ea19c",
+            "patch": "@@ -28,7 +28,7 @@ public class Tablet implements Serializable {\n \n     private static final long serialVersionUID = 8313899328024578523L;\n \n-    private List<String> routing;\n+    private List<String> routings;\n     private int version;\n     private long versionHash;\n     private long schemaHash;"
+        }
+    ]
+}

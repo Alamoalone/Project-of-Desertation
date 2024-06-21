@@ -1,0 +1,4 @@
+    public void invalidate(Player player) {
+        HEAD_CACHE.invalidate(player);
+    }
+

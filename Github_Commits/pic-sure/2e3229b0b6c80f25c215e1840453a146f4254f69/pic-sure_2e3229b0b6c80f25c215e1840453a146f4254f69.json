@@ -1,0 +1,98 @@
+{
+    "sha": "2e3229b0b6c80f25c215e1840453a146f4254f69",
+    "node_id": "C_kwDOB2VLa9oAKDJlMzIyOWIwYjZjODBmMjVjMjE1ZTE4NDA0NTNhMTQ2ZjQyNTRmNjk",
+    "commit": {
+        "author": {
+            "name": "James",
+            "email": "Jamestp19@gmail.com",
+            "date": "2023-07-06T18:26:57Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-07-06T18:26:57Z"
+        },
+        "message": "Avoid null pointer exceptions",
+        "tree": {
+            "sha": "1a09891c29e5d529592026120e23b0ff87d94f83",
+            "url": "https://api.github.com/repos/hms-dbmi/pic-sure/git/trees/1a09891c29e5d529592026120e23b0ff87d94f83"
+        },
+        "url": "https://api.github.com/repos/hms-dbmi/pic-sure/git/commits/2e3229b0b6c80f25c215e1840453a146f4254f69",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkpwdxCRBK7hj4Ov3rIwAA3PYIAEEs/Y11QumGq81u30yUkdJi\nbbOMUUmIcECpt+33oPTevYftRwd5grXSWgO5zCfdZ+irpTvehX0ix8CwHVN+AkLi\nyzQ/PZ2gwJ8SHeev4lv2KJJPxcygilmGLyx3SsvelHj8eX2fRfZyXtiyHnBPXR4V\nqL9vZkWAO+PPRaWhBcxmgSnlp7ovquQSkKDHzSQjQsuILXkuP5KGQ7jUpiUUKbbo\npKG7ZsQHKS2Mbttq++yWT3Q1aH4z3kS9k5F1QxF6SXBURfBJrECnKk+zoZaD8/Pd\nnWFajbhQC6lk09rmWVrPGY/3nXTj5VX6CLhrBp6CAUHTDSIq0dfth/M7wBtWsUY=\n=+yVK\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 1a09891c29e5d529592026120e23b0ff87d94f83\nparent f741d42941352da292452fd051c18b68094b785b\nauthor James <Jamestp19@gmail.com> 1688668017 -0400\ncommitter GitHub <noreply@github.com> 1688668017 -0400\n\nAvoid null pointer exceptions"
+        }
+    },
+    "url": "https://api.github.com/repos/hms-dbmi/pic-sure/commits/2e3229b0b6c80f25c215e1840453a146f4254f69",
+    "html_url": "https://github.com/hms-dbmi/pic-sure/commit/2e3229b0b6c80f25c215e1840453a146f4254f69",
+    "comments_url": "https://api.github.com/repos/hms-dbmi/pic-sure/commits/2e3229b0b6c80f25c215e1840453a146f4254f69/comments",
+    "author": {
+        "login": "JamesPeck",
+        "id": 1392220,
+        "node_id": "MDQ6VXNlcjEzOTIyMjA=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1392220?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JamesPeck",
+        "html_url": "https://github.com/JamesPeck",
+        "followers_url": "https://api.github.com/users/JamesPeck/followers",
+        "following_url": "https://api.github.com/users/JamesPeck/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JamesPeck/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JamesPeck/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JamesPeck/subscriptions",
+        "organizations_url": "https://api.github.com/users/JamesPeck/orgs",
+        "repos_url": "https://api.github.com/users/JamesPeck/repos",
+        "events_url": "https://api.github.com/users/JamesPeck/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JamesPeck/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f741d42941352da292452fd051c18b68094b785b",
+            "url": "https://api.github.com/repos/hms-dbmi/pic-sure/commits/f741d42941352da292452fd051c18b68094b785b",
+            "html_url": "https://github.com/hms-dbmi/pic-sure/commit/f741d42941352da292452fd051c18b68094b785b"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "59288f47532926945598ee4760140f658dfb5d01",
+            "filename": "pic-sure-resources/pic-sure-resource-api/src/main/java/edu/harvard/dbmi/avillach/domain/ResourceInfo.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/hms-dbmi/pic-sure/blob/2e3229b0b6c80f25c215e1840453a146f4254f69/pic-sure-resources%2Fpic-sure-resource-api%2Fsrc%2Fmain%2Fjava%2Fedu%2Fharvard%2Fdbmi%2Favillach%2Fdomain%2FResourceInfo.java",
+            "raw_url": "https://github.com/hms-dbmi/pic-sure/raw/2e3229b0b6c80f25c215e1840453a146f4254f69/pic-sure-resources%2Fpic-sure-resource-api%2Fsrc%2Fmain%2Fjava%2Fedu%2Fharvard%2Fdbmi%2Favillach%2Fdomain%2FResourceInfo.java",
+            "contents_url": "https://api.github.com/repos/hms-dbmi/pic-sure/contents/pic-sure-resources%2Fpic-sure-resource-api%2Fsrc%2Fmain%2Fjava%2Fedu%2Fharvard%2Fdbmi%2Favillach%2Fdomain%2FResourceInfo.java?ref=2e3229b0b6c80f25c215e1840453a146f4254f69",
+            "patch": "@@ -3,6 +3,7 @@\n import com.fasterxml.jackson.annotation.JsonInclude;\n import io.swagger.v3.oas.annotations.media.Schema;\n \n+import java.util.ArrayList;\n import java.util.List;\n import java.util.UUID;\n \n@@ -37,6 +38,9 @@ public ResourceInfo setName(String name) {\n \t\treturn this;\n \t}\n \tpublic List<QueryFormat> getQueryFormats() {\n+\t\tif(queryFormats == null) {\n+\t\t\tqueryFormats = new ArrayList<>();\n+\t\t}\n \t\treturn queryFormats;\n \t}\n \tpublic ResourceInfo setQueryFormats(List<QueryFormat> queryFormats) {"
+        }
+    ]
+}

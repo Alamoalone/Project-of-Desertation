@@ -1,0 +1,25 @@
+    public static void check(Context ctx) throws SQLException {
+        var urlId = ctx.pathParamAsClass("id", Long.class).getOrDefault(null);
+        var url = UrlsRepository.findById(urlId)
+                .orElseThrow(() -> new NotFoundResponse("Page not found")); // TODO mb create not found page?
+        try {
+            var response = Unirest.get(url.getName()).asString();
+            var code = response.getStatus();
+
+            var doc = Jsoup.parse(response.getBody());
+            var title = doc.title();
+            var h1 = doc.selectFirst("h1").text();
+            var description = doc.selectFirst("meta[name=description]").attr("content");
+
+            var urlCheck = new UrlCheck(code, title, h1, description, urlId);
+            UrlChecksRepository.save(urlCheck);
+            ctx.sessionAttribute("flash", "Проверка успешно выполнена"); // TODO check message
+            ctx.sessionAttribute("flashType", "success");
+
+        } catch (UnirestException e) {
+            ctx.sessionAttribute("flash", "Не удалось выполнить проверку"); // TODO check message
+            ctx.sessionAttribute("flashType", "danger");
+        }
+
+        ctx.redirect(Routes.urlPath(urlId));
+    }

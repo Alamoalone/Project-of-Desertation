@@ -1,0 +1,17 @@
+	public List<FireStation> getFireStationsById(String id) throws NullPointerException {
+		List<FireStation> fireStationsFoundById = new ArrayList<>();
+		Iterator<FireStation> itrFireStations = fireStations.listIterator();
+		while (itrFireStations.hasNext()) {
+			FireStation itrFireStation = itrFireStations.next();
+			if (itrFireStation.getId().equals(id)) {
+				fireStationsFoundById.add(itrFireStation);
+			}
+		}
+
+		if (fireStationsFoundById.isEmpty()) {
+			throw new NullPointerException("firestation not found");
+		}
+		System.out.println("fireStationsFoundById" + fireStationsFoundById);
+		return fireStationsFoundById;
+
+	}

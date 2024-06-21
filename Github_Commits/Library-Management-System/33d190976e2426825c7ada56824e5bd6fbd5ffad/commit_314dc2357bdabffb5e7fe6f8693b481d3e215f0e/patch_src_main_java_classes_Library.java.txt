@@ -1,0 +1,34 @@
+@@ -15,23 +15,23 @@ public Library() {
+ 
+ 
+ 
+-        Librarian l0= new Librarian("ab", "Lib", "a", "a", "1", 1, "email1" );
+-        Librarian l1= new Librarian("aa", "Lib", "b", "b", "2", 2, "email2" );
+-        Librarian l4= new Librarian("ac", "Lib", "E", "e", "5", 6, "email5" );
+-        Librarian l3= new Librarian("ac", "Lib", "D", "d", "4", 5, "email4" );
+-        Librarian l2= new Librarian("ac", "Lib", "c", "c", "3", 4, "email3" );
++        Librarian l0= new Librarian("pass", "Lib", "a", "a", "1", 1, "email1@librarian.com" );
++        Librarian l1= new Librarian("pass", "Lib", "b", "b", "2", 2, "email2@librarian.com" );
++        Librarian l4= new Librarian("pass", "Lib", "E", "e", "5", 6, "email5@librarian.com" );
++        Librarian l3= new Librarian("pass", "Lib", "D", "d", "4", 5, "email4@librarian.com" );
++        Librarian l2= new Librarian("pass", "Lib", "c", "c", "3", 4, "email3@librarian.com" );
+         persons.add(l0);
+         persons.add(l1);
+         persons.add(l2);
+         persons.add(l3);
+         persons.add(l4);
+ 
+ 
+-        Reader R0= new Reader("ab", "Read", "a", "a", "1", 1, "email11" );
+-        Reader R1= new Reader("aa", "Read", "b", "b", "2", 2, "email2" );
+-        Reader R2= new Reader("ac", "Read", "E", "e", "5", 6, "email5" );
+-        Reader R3= new Reader("ac", "Read", "D", "d", "4", 5, "email4" );
+-        Reader R4= new Reader("ac", "Read", "c", "c", "3", 4, "email3" );
++        Reader R0= new Reader("pass", "Read", "a", "a", "1", 1, "email1@reader.com" );
++        Reader R1= new Reader("pass", "Read", "b", "b", "2", 2, "email2@reader.com" );
++        Reader R2= new Reader("pass", "Read", "E", "e", "5", 6, "email5@reader.com" );
++        Reader R3= new Reader("pass", "Read", "D", "d", "4", 5, "email4@reader.com" );
++        Reader R4= new Reader("pass", "Read", "c", "c", "3", 4, "email3@reader.com" );
+         persons.add(R0);
+         persons.add(R1);
+         persons.add(R2);

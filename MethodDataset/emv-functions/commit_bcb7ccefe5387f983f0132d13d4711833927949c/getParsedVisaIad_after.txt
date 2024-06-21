@@ -1,0 +1,5 @@
+    private Map<String, String> getParsedVisaIad(String issuerApplicationData){
+        return new VisaIADParser(
+                issuerApplicationData)
+                .parseIad();
+    }

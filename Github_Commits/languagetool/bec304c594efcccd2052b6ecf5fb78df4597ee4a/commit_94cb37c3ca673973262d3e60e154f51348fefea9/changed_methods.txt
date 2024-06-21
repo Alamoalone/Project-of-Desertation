@@ -1,0 +1,3 @@
+resetSortedTextRules(SwJLanguageTool lt)
+resetSortedTextRules()
+run()

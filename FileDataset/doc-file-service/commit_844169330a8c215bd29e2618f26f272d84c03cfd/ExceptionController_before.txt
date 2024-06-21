@@ -1,0 +1,9 @@
+
+
+  public ResponseEntity<ExceptionDto> handleInternalErrorException(Throwable throwable) {
+    log.error(throwable.getMessage());
+    return ResponseEntity
+        .internalServerError()
+        .body(new ExceptionDto(INTERNAL_SERVER_ERROR));
+  }
+

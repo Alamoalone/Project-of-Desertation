@@ -1,0 +1,10 @@
+	public ResponseEntity<?> getOnePerson(@PathVariable String id) {
+		Person personFoundById;
+		try {
+			personFoundById = personService.getOnePersonById(id);
+			return ResponseEntity.status(HttpStatus.OK).body(personFoundById);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}

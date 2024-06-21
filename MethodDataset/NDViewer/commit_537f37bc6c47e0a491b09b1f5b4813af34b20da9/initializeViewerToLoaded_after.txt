@@ -1,0 +1,29 @@
+   public void initializeViewerToLoaded(List<String> channelNames, JSONObject dispSettings,
+           HashMap<String, Object> axisMins, HashMap<String, Object> axisMaxs) {
+      // remove the defaut one added as a placeholder
+      displayWindow_.removeContrastControls("");
+      imageMaker_.removeImageProcessor("");
+      displaySettings_ = new DisplaySettings(dispSettings, getPreferences());
+      if (channelNames.size() != 0) {
+         stringAxes_.put("channel", new LinkedList<String>());
+         for (int c = 0; c < channelNames.size(); c++) {
+            stringAxes_.get("channel").add(channelNames.get(c));
+            displayWindow_.addContrastControls(channelNames.get(c), true);
+            if (c == 0) {
+               axisMins.put("channel", channelNames.get(c));
+            } else if (c == channelNames.size() - 1) {
+               axisMaxs.put("channel", channelNames.get(c));
+            }
+         }
+      }
+      if (!displayWindow_.contrastControlsInitialized()) {
+         // no channels have been added, so make a default one for monochrome display
+//         displaySettings_.addChannel("");
+         displayWindow_.addContrastControls("", true);
+      }
+      //maximum scrollbar extents
+      edtRunnablePool_.invokeLaterWithCoalescence(
+              new NDViewer.ExpandDisplayRangeCoalescentRunnable(axisMaxs));
+      edtRunnablePool_.invokeLaterWithCoalescence(
+              new NDViewer.ExpandDisplayRangeCoalescentRunnable(axisMins));
+   }

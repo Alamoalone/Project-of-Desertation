@@ -1,0 +1,107 @@
+@@ -1,11 +1,13 @@
+ package com.fitstir.fitstirapp.ui.settings.fragments;
+ 
+ import android.os.Bundle;
++import android.util.Log;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.view.ViewGroup;
+ import android.widget.ImageView;
+ import android.widget.TextView;
++import android.widget.Toast;
+ 
+ import androidx.annotation.NonNull;
+ import androidx.cardview.widget.CardView;
+@@ -61,47 +63,55 @@ public View onCreateView(@NonNull LayoutInflater inflater,
+         weight.setText(tWeight);
+         email.setText(settingsViewModel.getEmail().getValue());
+ 
+-        auth = FirebaseAuth.getInstance();
+-        String user = auth.getCurrentUser().getUid();
+-        reference =  FirebaseDatabase.getInstance().getReference("Users");
+-        reference.child(user).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+-            @Override
+-            public void onComplete(@NonNull Task<DataSnapshot> task) {
+ 
+-                if(task.isSuccessful())
+-                {
+-                    if(task.getResult().exists())
+-                    {
+-                        DataSnapshot snapshot = task.getResult();
+-                        String fullName = String.valueOf(snapshot.child("fullname").getValue());
+-                        String email = String.valueOf(snapshot.child("email").getValue());
+-                        String age = String.valueOf(snapshot.child("age").getValue());
+-                        String height_ft = String.valueOf(snapshot.child("height_ft").getValue());
+-                        String height_in = String.valueOf(snapshot.child("height_in").getValue());
+-                        String weight = String.valueOf(snapshot.child("_Weight").getValue());
+-
+-                        settingsViewModel.setName(fullName);
+-                        settingsViewModel.setEmail(email);
+-                        settingsViewModel.setAge(Integer.parseInt(age));
+-                        settingsViewModel.setHeightInFeet(Integer.parseInt(height_ft));
+-                        settingsViewModel.setHeightInInches(Integer.parseInt(height_in));
+-                        settingsViewModel.setWeight(Integer.parseInt(weight));
+-
+-                        binding.textName.setText(fullName);
+-                        binding.textEmail.setText(email);
+-                        String tAge = settingsViewModel.getAge().getValue() + " years old";
+-                        binding.textAge.setText(tAge);
+-                        String tHeightFeet = settingsViewModel.getHeightInFeet().getValue() + " feet ";
+-                        binding.textHeightFt.setText(tHeightFeet);
+-                        String tHeightInches = settingsViewModel.getHeightInInches().getValue() + " inches";
+-                        binding.textHeightIn.setText(tHeightInches);
+-                        String tWeight = settingsViewModel.getWeight().getValue() + " lbs";
+-                        binding.textWeight.setText(tWeight);
++        
++        try {
++            auth = FirebaseAuth.getInstance();
++            String user = auth.getCurrentUser().getUid();
++            reference =  FirebaseDatabase.getInstance().getReference("Users");
++            reference.child(user).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
++                @Override
++                public void onComplete(@NonNull Task<DataSnapshot> task) {
+ 
++                    if(task.isSuccessful())
++                    {
++                        if(task.getResult().exists())
++                        {
++                            DataSnapshot snapshot = task.getResult();
++                            String fullName = String.valueOf(snapshot.child("fullname").getValue());
++                            String email = String.valueOf(snapshot.child("email").getValue());
++                            String age = String.valueOf(snapshot.child("age").getValue());
++                            String height_ft = String.valueOf(snapshot.child("height_ft").getValue());
++                            String height_in = String.valueOf(snapshot.child("height_in").getValue());
++                            String weight = String.valueOf(snapshot.child("_Weight").getValue());
++
++                            settingsViewModel.setName(fullName);
++                            settingsViewModel.setEmail(email);
++                            settingsViewModel.setAge(Integer.parseInt(age));
++                            settingsViewModel.setHeightInFeet(Integer.parseInt(height_ft));
++                            settingsViewModel.setHeightInInches(Integer.parseInt(height_in));
++                            settingsViewModel.setWeight(Integer.parseInt(weight));
++
++                            binding.textName.setText(fullName);
++                            binding.textEmail.setText(email);
++                            String tAge = settingsViewModel.getAge().getValue() + " years old";
++                            binding.textAge.setText(tAge);
++                            String tHeightFeet = settingsViewModel.getHeightInFeet().getValue() + " feet ";
++                            binding.textHeightFt.setText(tHeightFeet);
++                            String tHeightInches = settingsViewModel.getHeightInInches().getValue() + " inches";
++                            binding.textHeightIn.setText(tHeightInches);
++                            String tWeight = settingsViewModel.getWeight().getValue() + " lbs";
++                            binding.textWeight.setText(tWeight);
++
++                        }
+                     }
+                 }
+-            }
+-        });
++            });
++        }
++        catch(Exception NullPointerException) {
++            Toast.makeText(requireActivity(), "Refer to Google Account for Profile Details", Toast.LENGTH_SHORT).show();
++        }
++       
+ 
+ 
+         CardView editButton = binding.editbuttonCardViewProfile;

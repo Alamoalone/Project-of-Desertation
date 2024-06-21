@@ -1,0 +1,5 @@
+checkForOperationParameterChanges(DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity, List refactorings)
+processTryStatement(StatementNodeTree oldStatement, StatementNodeTree newStatement, DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity, List refactorings)
+processOperations(boolean isMove, Set matchedEntities, DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity, List refactorings)
+isSubTypeOf(Set matchedEntities, DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity)
+detectRefactoringsBetweenMatchedAndExtractedEntities(Set matchedEntities, Set extractedEntities, Set addedEntities, List refactorings)

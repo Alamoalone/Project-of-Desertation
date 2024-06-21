@@ -1,0 +1,98 @@
+{
+    "sha": "823cff2e9bb776690eb5e29429c60f56de1771a8",
+    "node_id": "C_kwDOJIS9y9oAKDgyM2NmZjJlOWJiNzc2NjkwZWI1ZTI5NDI5YzYwZjU2ZGUxNzcxYTg",
+    "commit": {
+        "author": {
+            "name": "Aria",
+            "email": "tarapiccari@gmail.com",
+            "date": "2023-06-16T09:22:47Z"
+        },
+        "committer": {
+            "name": "Aria",
+            "email": "tarapiccari@gmail.com",
+            "date": "2023-06-16T09:22:47Z"
+        },
+        "message": "Fix null pointer exception on subfolders",
+        "tree": {
+            "sha": "eb1339587fb0b3c9315e901cf13b6ac95da0c3ba",
+            "url": "https://api.github.com/repos/AriasCreations/Harbinger/git/trees/eb1339587fb0b3c9315e901cf13b6ac95da0c3ba"
+        },
+        "url": "https://api.github.com/repos/AriasCreations/Harbinger/git/commits/823cff2e9bb776690eb5e29429c60f56de1771a8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AriasCreations/Harbinger/commits/823cff2e9bb776690eb5e29429c60f56de1771a8",
+    "html_url": "https://github.com/AriasCreations/Harbinger/commit/823cff2e9bb776690eb5e29429c60f56de1771a8",
+    "comments_url": "https://api.github.com/repos/AriasCreations/Harbinger/commits/823cff2e9bb776690eb5e29429c60f56de1771a8/comments",
+    "author": {
+        "login": "zontreck",
+        "id": 1643882,
+        "node_id": "MDQ6VXNlcjE2NDM4ODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1643882?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zontreck",
+        "html_url": "https://github.com/zontreck",
+        "followers_url": "https://api.github.com/users/zontreck/followers",
+        "following_url": "https://api.github.com/users/zontreck/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zontreck/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zontreck/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zontreck/subscriptions",
+        "organizations_url": "https://api.github.com/users/zontreck/orgs",
+        "repos_url": "https://api.github.com/users/zontreck/repos",
+        "events_url": "https://api.github.com/users/zontreck/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zontreck/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "zontreck",
+        "id": 1643882,
+        "node_id": "MDQ6VXNlcjE2NDM4ODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1643882?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/zontreck",
+        "html_url": "https://github.com/zontreck",
+        "followers_url": "https://api.github.com/users/zontreck/followers",
+        "following_url": "https://api.github.com/users/zontreck/following{/other_user}",
+        "gists_url": "https://api.github.com/users/zontreck/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/zontreck/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/zontreck/subscriptions",
+        "organizations_url": "https://api.github.com/users/zontreck/orgs",
+        "repos_url": "https://api.github.com/users/zontreck/repos",
+        "events_url": "https://api.github.com/users/zontreck/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/zontreck/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4a692ec06d4092a0c8a4f44230c568f4f697f1cf",
+            "url": "https://api.github.com/repos/AriasCreations/Harbinger/commits/4a692ec06d4092a0c8a4f44230c568f4f697f1cf",
+            "html_url": "https://github.com/AriasCreations/Harbinger/commit/4a692ec06d4092a0c8a4f44230c568f4f697f1cf"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "9b8fb1812f25a194261abf39cc6d5f8cf3b8b02c",
+            "filename": "server/src/main/java/dev/zontreck/harbinger/simulator/types/inventory/InventoryFolder.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/AriasCreations/Harbinger/blob/823cff2e9bb776690eb5e29429c60f56de1771a8/server%2Fsrc%2Fmain%2Fjava%2Fdev%2Fzontreck%2Fharbinger%2Fsimulator%2Ftypes%2Finventory%2FInventoryFolder.java",
+            "raw_url": "https://github.com/AriasCreations/Harbinger/raw/823cff2e9bb776690eb5e29429c60f56de1771a8/server%2Fsrc%2Fmain%2Fjava%2Fdev%2Fzontreck%2Fharbinger%2Fsimulator%2Ftypes%2Finventory%2FInventoryFolder.java",
+            "contents_url": "https://api.github.com/repos/AriasCreations/Harbinger/contents/server%2Fsrc%2Fmain%2Fjava%2Fdev%2Fzontreck%2Fharbinger%2Fsimulator%2Ftypes%2Finventory%2FInventoryFolder.java?ref=823cff2e9bb776690eb5e29429c60f56de1771a8",
+            "patch": "@@ -108,8 +108,11 @@ public void AssertAllChildren ( ) {\n \n \t@Completed\n \tpublic void completed ( boolean deserial ) {\n-\t\tif ( deserial )\n+\t\tif ( deserial ) {\n \t\t\tfinishLoad ( );\n+\n+\t\t\tif(subFolders==null)subFolders=new HashMap<> (  );\n+\t\t}\n \t}\n \n \tpublic boolean needsReSave = false;"
+        }
+    ]
+}

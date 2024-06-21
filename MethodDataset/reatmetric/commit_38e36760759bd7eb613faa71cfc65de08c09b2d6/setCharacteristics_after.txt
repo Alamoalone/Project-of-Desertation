@@ -1,0 +1,5 @@
+    protected void setCharacteristics(String name, String description) {
+        this.name = name;
+        this.description = description;
+        this.lastTransportStatus = new TransportStatus(name, connectionStatus, lastTxRate, lastRxRate, lastAlarmState, autoReconnect);;
+    }

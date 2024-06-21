@@ -1,0 +1,72 @@
+	public long getDownloadFileSize(String sFileURL) throws Exception {
+		// receives the file URI and must return the size of the file. Useful to give progress to the user
+		// TODO: are we are talking about the overall file size? or just the size has been downloaded until a certain point?
+		
+		WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Retrieving information for product: " + sFileURL);
+		
+		// create a creodias query like: https://datahub.creodias.eu/odata/v1/Products?$filter=Id eq '79d7807b-66e5-41d2-a586-1628eb82c3e0'&$expand=Attributes
+		
+		
+		long lSizeInBytes = 0L;
+
+		
+		if (isFileProtocol(m_sDefaultProtocol)) {
+			String sPath = null;
+			if (isFileProtocol(sFileURL)) {
+				sPath = removePrefixFile(sFileURL);
+				WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: file protocol detected. File path " + sFileURL);
+			} else if(isHttpsProtocol(sFileURL)) {
+				sPath = extractFilePathFromHttpsUrl(sFileURL);
+				WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: http protocol detected. File path " + sFileURL);
+			} else {
+				WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: unknown protocol " + sFileURL);
+			}
+
+			if (sPath != null) {
+				File oSourceFile = new File(sPath);
+
+				if (oSourceFile != null && oSourceFile.exists()) {
+					lSizeInBytes = getSourceFileLength(oSourceFile);
+					WasdiLog.debugLog("CREODIASProviderAdapter.getDownloadFileSize: detected file size: " + lSizeInBytes);
+					return lSizeInBytes;
+				}
+			}
+		}
+		
+
+		if (isHttpsProtocol(sFileURL)) {
+			String sDownloadUrl = getODataDownloadUrl(sFileURL);
+			String sProductId = getProductIdFromURL(sDownloadUrl);
+			String sUrl = SCREODIAS_BASE_URL + "$filter=Id eq '" + sProductId + "'&$expand=Attributes";
+			HttpCallResponse sResponse = null;
+			
+			try {
+				sResponse = HttpUtils.httpGet(sUrl);
+				if (sResponse == null || sResponse.getResponseCode() < 200 || sResponse.getResponseCode() > 299 || Utils.isNullOrEmpty(sResponse.getResponseBody())) {
+					WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Error retrieving the information about the product from the provider. " + sUrl);
+					return -1L;
+				}
+			} catch (Exception oEx) {
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. An exception occurred while retrieving the product information from the provider. " + oEx.getMessage());
+				return -1L;
+			}
+			
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Anwer well received from the provider");
+			
+			JSONObject oJsonBody = new JSONObject(sResponse.getResponseBody());
+			JSONArray aoJsonAttributes = oJsonBody.optJSONArray(SODATA_ATTRIBUTES);
+			
+			if (aoJsonAttributes == null) 
+				WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. Array of attributes not found for key " + SODATA_ATTRIBUTES);
+			
+			lSizeInBytes = Long.parseLong(getAttribute(aoJsonAttributes, SODATA_SIZE));
+			
+			
+			WasdiLog.debugLog("CreoDias2ProviderAdaper.getDownloadFileSize. File size: " + lSizeInBytes);
+	
+			
+		}
+
+		return lSizeInBytes;
+		
+	}

@@ -1,0 +1,16 @@
+  protected static void wireConnect(SubcircuitEditor subcircuitEditor,
+                                    CircuitSimulation simulation,
+                                    TraceLoader traceLoader,
+                                    WireView wireView,
+                                    long[] traceIds,
+                                    boolean selected)
+  {
+    List<Trace> traces = new ArrayList<>(traceIds.length);
+    for (long id : traceIds)
+    {
+      Trace trace = traceLoader.create(id);
+      traces.add(trace);
+    }
+    wireView.connectTraces(simulation, traces);
+    wireView.enable();
+  }

@@ -1,0 +1,9 @@
+	public Pet findPet(@PathVariable("ownerId") int ownerId,
+			@PathVariable(name = "petId", required = false) Integer petId) {
+		return petId == null ? new Pet() : this.owners.findById(ownerId).getPet(petId);
+	}
+
+	public Owner findOwner(@PathVariable("ownerId") int ownerId) {
+		return this.owners.findById(ownerId);
+	}
+

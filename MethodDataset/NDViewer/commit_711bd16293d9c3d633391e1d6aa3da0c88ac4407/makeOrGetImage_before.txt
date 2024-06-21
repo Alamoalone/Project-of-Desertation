@@ -1,0 +1,150 @@
+   public Image makeOrGetImage(DataViewCoords viewCoords) {
+      boolean remakeDisplayImage = false; //remake the actual Iamge object if size has changed, otherwise just set pixels
+      if (((int) viewCoords.getSourceImageSizeAtResLevel().x) != imageWidth_
+              || ((int)viewCoords.getSourceImageSizeAtResLevel().y) != imageHeight_) {
+         imageWidth_ = (int) viewCoords.getSourceImageSizeAtResLevel().x;
+         imageHeight_ = (int) viewCoords.getSourceImageSizeAtResLevel().y;
+         rgbPixels_ = new int[imageWidth_ * imageHeight_];
+         remakeDisplayImage = true;
+      }
+
+//      List<String> channels = new LinkedList<String>();
+//      channels.addAll(display_.getChannels());
+//      // Needed so that a blank image is shown before what channels ar
+//      if (channels.size() == 0) {
+//         channels.add(null);
+//      }
+      //update pixels
+      if (display_.getChannels() != null) {
+         for (String channel : display_.getChannels()) {
+            //create channel processors as needed
+            synchronized (this) {
+               if (!channelProcessors_.containsKey(channel)) {
+                  channelProcessors_.put(channel, viewCoords.isRGB() ? new NDVImageProcessorRGB(imageWidth_, imageHeight_, channel) :
+                          new NDVImageProcessor(imageWidth_, imageHeight_, channel));
+               }
+            }
+            if (!display_.getDisplaySettingsObject().isActive(channel)) {
+               continue;
+            }
+
+            int imagePixelWidth = (int) (viewCoords.getFullResSourceDataSize().x / viewCoords.getDownsampleFactor());
+            int imagePixelHeight = (int) (viewCoords.getFullResSourceDataSize().y / viewCoords.getDownsampleFactor());
+            long viewOffsetAtResX = (long) (viewCoords.getViewOffset().x / viewCoords.getDownsampleFactor());
+            long viewOffsetAtResY = (long) (viewCoords.getViewOffset().y / viewCoords.getDownsampleFactor());
+
+            HashMap<String, Object> axes = new HashMap<String, Object>(viewCoords.getAxesPositions());
+            //replace channel axis position with the specific channel, because channels are overlayed despite only
+            // one being selected at a time. Unless channel is "", in which case there actually are no channels
+            if (!channel.equals("")) {
+               axes.put("channel", channel);
+            }
+            TaggedImage imageForDisplay = getDisplayImage(axes, viewCoords.getResolutionIndex(),
+                    viewOffsetAtResX, viewOffsetAtResY, imagePixelWidth, imagePixelHeight);
+
+            if (viewCoords.getActiveChannel().equals(channel)) {
+               latestTags_ = imageForDisplay.tags;
+            }
+            channelProcessors_.get(channel).changePixels(imageForDisplay.pix, imageWidth_, imageHeight_);
+
+         }
+      }
+
+      try {
+         boolean firstActive = true;
+         Arrays.fill(rgbPixels_, 0);
+         int redValue, greenValue, blueValue;
+         for (String c : channelProcessors_.keySet()) {
+            if (!display_.getDisplaySettingsObject().isActive(c)) {
+               continue;
+            }
+            String channelName = c;
+            if (display_.getDisplaySettingsObject().isActive(channelName)) {
+               //get the appropriate pixels from the data view
+
+               //recompute 8 bit image
+               channelProcessors_.get(c).recompute();
+               if (firstActive) {
+                  if (channelProcessors_.get(c) instanceof NDVImageProcessorRGB) {
+                     byte[] bytesR = ((NDVImageProcessorRGB) channelProcessors_.get(c)).rProcessor_.eightBitImage;
+                     byte[] bytesG = ((NDVImageProcessorRGB) channelProcessors_.get(c)).gProcessor_.eightBitImage;
+                     byte[] bytesB = ((NDVImageProcessorRGB) channelProcessors_.get(c)).bProcessor_.eightBitImage;
+                     for (int p = 0; p < imageWidth_ * imageHeight_; p++) {
+                        redValue = ((NDVImageProcessorRGB) channelProcessors_.get(c)).rProcessor_.reds[bytesR[p] & 0xff];
+                        greenValue = ((NDVImageProcessorRGB) channelProcessors_.get(c)).gProcessor_.greens[bytesG[p] & 0xff];
+                        blueValue = ((NDVImageProcessorRGB) channelProcessors_.get(c)).bProcessor_.blues[bytesB[p] & 0xff];
+                        rgbPixels_[p] = redValue | greenValue | blueValue;
+                     }
+                  } else {
+                     byte[] bytes = channelProcessors_.get(c).eightBitImage;
+                     for (int p = 0; p < imageWidth_ * imageHeight_; p++) {
+                        redValue = channelProcessors_.get(c).reds[bytes[p] & 0xff];
+                        greenValue = channelProcessors_.get(c).greens[bytes[p] & 0xff];
+                        blueValue = channelProcessors_.get(c).blues[bytes[p] & 0xff];
+                        rgbPixels_[p] = redValue | greenValue | blueValue;
+                     }
+                  }
+                  firstActive = false;
+               } else {
+                  //add subsequent channels onto the first one
+                  int pixel;
+                  if (channelProcessors_.get(c) instanceof NDVImageProcessorRGB) {
+                     byte[] bytesR = ((NDVImageProcessorRGB) channelProcessors_.get(c)).rProcessor_.eightBitImage;
+                     byte[] bytesG = ((NDVImageProcessorRGB) channelProcessors_.get(c)).gProcessor_.eightBitImage;
+                     byte[] bytesB = ((NDVImageProcessorRGB) channelProcessors_.get(c)).bProcessor_.eightBitImage;
+                     for (int p = 0; p < imageWidth_ * imageHeight_; p++) {
+                        pixel = rgbPixels_[p];
+                        redValue = (pixel & 0x00ff0000) + ((NDVImageProcessorRGB) channelProcessors_.get(c)).rProcessor_.reds[bytesR[p] & 0xff];
+                        greenValue = (pixel & 0x0000ff00) + ((NDVImageProcessorRGB) channelProcessors_.get(c)).gProcessor_.greens[bytesG[p] & 0xff];
+                        blueValue = (pixel & 0x000000ff) + ((NDVImageProcessorRGB) channelProcessors_.get(c)).bProcessor_.blues[bytesB[p] & 0xff];
+
+                        if (redValue > 16711680) {
+                           redValue = 16711680;
+                        }
+                        if (greenValue > 65280) {
+                           greenValue = 65280;
+                        }
+                        if (blueValue > 255) {
+                           blueValue = 255;
+                        }
+                        rgbPixels_[p] = redValue | greenValue | blueValue;
+                     }
+                  } else {
+                     byte[] bytes = channelProcessors_.get(c).eightBitImage;
+                     for (int p = 0; p < imageWidth_ * imageHeight_; p++) {
+                        pixel = rgbPixels_[p];
+                        redValue = (pixel & 0x00ff0000) + channelProcessors_.get(c).reds[bytes[p] & 0xff];
+                        greenValue = (pixel & 0x0000ff00) + channelProcessors_.get(c).greens[bytes[p] & 0xff];
+                        blueValue = (pixel & 0x000000ff) + channelProcessors_.get(c).blues[bytes[p] & 0xff];
+
+                        if (redValue > 16711680) {
+                           redValue = 16711680;
+                        }
+                        if (greenValue > 65280) {
+                           greenValue = 65280;
+                        }
+                        if (blueValue > 255) {
+                           blueValue = 255;
+                        }
+                        rgbPixels_[p] = redValue | greenValue | blueValue;
+                     }
+                  }
+               }
+            }
+
+         }
+      } catch (Exception e) {
+         e.printStackTrace();
+         throw new RuntimeException(e);
+      }
+
+      if (imageSource_ == null || remakeDisplayImage) {
+         imageSource_ = new MemoryImageSource(imageWidth_, imageHeight_, rgbCM_, rgbPixels_, 0, imageWidth_);
+         imageSource_.setAnimated(true);
+         imageSource_.setFullBufferUpdates(true);
+         displayImage_ = Toolkit.getDefaultToolkit().createImage(imageSource_);
+      } else {
+         imageSource_.newPixels(rgbPixels_, rgbCM_, 0, imageWidth_);
+      }
+      return displayImage_;
+   }

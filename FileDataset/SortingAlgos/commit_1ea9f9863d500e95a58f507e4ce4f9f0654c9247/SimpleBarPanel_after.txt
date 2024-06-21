@@ -1,0 +1,198 @@
+    public static Series<String,Number> createSeries() {
+        Series<String, Number> seriesL = new Series<>();
+        seriesL.setName("Index");
+        for (int i = 0; i < 15; i++) {
+//            xAxis.setCategories(FXCollections.<String>
+//                    observableArrayList(Arrays.asList("Order")));
+            Number randomNumber = (int) (Math.random() * 1000);
+            seriesL.getData().add(new Data<>("" + i, randomNumber));
+        }
+//        seriesL.getData().get(0).setYValue(206);
+//        seriesL.getData().get(1).setYValue(931);
+//        seriesL.getData().get(2).setYValue(950);
+//        seriesL.getData().get(3).setYValue(707);
+//        seriesL.getData().get(4).setYValue(131);
+//        seriesL.getData().get(5).setYValue(320);
+//        seriesL.getData().get(6).setYValue(6);
+//        seriesL.getData().get(7).setYValue(835);
+//        seriesL.getData().get(8).setYValue(306);
+//        seriesL.getData().get(9).setYValue(940);
+        return seriesL;
+    }
+
+    private Task<Void> createBubbleSortingTask(Series<String, Number> seriesCur) {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+
+                ObservableList<Data<String, Number>> data = seriesCur.getData();
+                for (int i = data.size() - 1; i >= 0; i--) {
+                    for (int j = 0 ; j < i; j++) {
+
+                        Data<String, Number> first = data.get(j);
+                        Data<String, Number> second = data.get(j + 1);
+
+
+//                       first.getNode().setStyle("-fx-background-color: green ;");
+//                       second.getNode().setStyle("-fx-background-color: green ;");
+                       
+                        if (first.getYValue().doubleValue() > second.getYValue().doubleValue()) {
+                            Number temp = first.getYValue().doubleValue();
+                            first.setYValue(second.getYValue().doubleValue());
+                            second.setYValue(temp);
+                        }
+                        Thread.sleep(75);
+                        
+  //                      first.getNode().setStyle("-fx-background-color: red ;");
+  //                      second.getNode().setStyle("-fx-background-color: red ;");
+
+                    }
+                }
+                return null;
+            }
+        };
+    }
+
+            protected Void call() throws Exception {
+
+                ObservableList<Data<String, Number>> data = seriesCur.getData();
+
+                int n = data.size();
+
+                for (int i = 0; i < n; i++) {
+                    //Double smallestNum = Double.MAX_VALUE;
+       //             data.get(i).getNode().setStyle("-fx-background-color: green ;");
+                    //Data<String, Number> key = data.get(i);
+                    for (int j = i+1; j < n; j++) {
+                        Double temp;
+                        try {
+         //                   data.get(j).getNode().setStyle("-fx-background-color: black ;");
+          //                  Thread.sleep(75);
+
+                            //                      System.out.println(data.get(i));
+                            //                    System.out.println(data.get(j));
+
+
+                            if (data.get(i).getYValue().doubleValue() > data.get(j).getYValue().doubleValue()) {
+//                            System.out.println(data.get(i));
+//                            System.out.println(data.get(j));
+
+                                temp = data.get(i).getYValue().doubleValue();
+                                data.get(i).setYValue(data.get(j).getYValue());
+                                data.get(j).setYValue(temp);
+
+                                //                      System.out.println(seriesCur.getData());
+                            }
+
+            //                data.get(j).getNode().setStyle("-fx-background-color: red ;");
+                            Thread.sleep(75);
+                        }
+                        catch(Exception e)
+                        {
+                            e.printStackTrace();
+                            data.get(j).getNode().setStyle("-fx-background-color: red ;");
+                        }
+                    }
+
+               //     data.get(i).getNode().setStyle("-fx-background-color: purple ;");
+                    Thread.sleep(75);
+//                    System.out.println(data.get(i));
+                }
+
+                return null;
+            }
+
+    private Task<Void> createInsertionSortingTask(Series<String, Number> seriesCur) {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+
+                ObservableList<Data<String, Number>> data = seriesCur.getData();
+                
+                int n = data.size();  
+                for (int j = 1; j < n; j++) {  
+                    Double key = data.get(j).getYValue().doubleValue(); 
+                    int i = j-1; 
+                    
+                    Data<String, Number> first = data.get(j);
+                    Data<String, Number> second = data.get(j - 1);
+
+                   Thread.sleep(50);
+
+     //              first.getNode().setStyle("-fx-background-color: green ;");
+                   //second.getNode().setStyle("-fx-background-color: green ;");
+                   
+                    while ( (i > -1) && (data.get(i).getYValue().doubleValue() > key ) ) { 
+                    	Data<String, Number> currentFirst = data.get(i);
+     //               	currentFirst.getNode().setStyle("-fx-background-color: green ;");
+                    	data.get(i+1).setYValue(data.get(i).getYValue());  
+                        i--;  
+                    }  
+                    
+                    data.get(i+1).setYValue(key);
+                    
+                    Thread.sleep(75);
+                    
+
+                   // second.getNode().setStyle("-fx-background-color: red ;");
+                }  
+                
+                return null;
+            }
+        };
+    }
+
+    private Task<Void> createSelectionSortingTask(Series<String, Number> seriesCur) {
+        return new Task<Void>() {
+            @Override
+            protected Void call() throws Exception {
+
+                ObservableList<Data<String, Number>> data = seriesCur.getData();
+
+                int n = data.size();
+
+                for (int i = 0; i < n; i++) {
+                    //Double smallestNum = Double.MAX_VALUE;
+       //             data.get(i).getNode().setStyle("-fx-background-color: green ;");
+                    //Data<String, Number> key = data.get(i);
+                    for (int j = i+1; j < n; j++) {
+                        Double temp;
+                        try {
+         //                   data.get(j).getNode().setStyle("-fx-background-color: black ;");
+          //                  Thread.sleep(75);
+
+                            //                      System.out.println(data.get(i));
+                            //                    System.out.println(data.get(j));
+
+
+                            if (data.get(i).getYValue().doubleValue() > data.get(j).getYValue().doubleValue()) {
+//                            System.out.println(data.get(i));
+//                            System.out.println(data.get(j));
+
+                                temp = data.get(i).getYValue().doubleValue();
+                                data.get(i).setYValue(data.get(j).getYValue());
+                                data.get(j).setYValue(temp);
+
+                                //                      System.out.println(seriesCur.getData());
+                            }
+
+            //                data.get(j).getNode().setStyle("-fx-background-color: red ;");
+                            Thread.sleep(75);
+                        }
+                        catch(Exception e)
+                        {
+                            e.printStackTrace();
+                            data.get(j).getNode().setStyle("-fx-background-color: red ;");
+                        }
+                    }
+
+               //     data.get(i).getNode().setStyle("-fx-background-color: purple ;");
+                    Thread.sleep(75);
+//                    System.out.println(data.get(i));
+                }
+
+                return null;
+            }
+        };
+    }
+

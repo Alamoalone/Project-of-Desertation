@@ -1,0 +1,110 @@
+{
+    "sha": "5f25b251c0c976c949122e873c412703ed4b06f9",
+    "node_id": "C_kwDODSS3g9oAKDVmMjViMjUxYzBjOTc2Yzk0OTEyMmU4NzNjNDEyNzAzZWQ0YjA2Zjk",
+    "commit": {
+        "author": {
+            "name": "Dario Lucia",
+            "email": "dario.lucia@gmail.com",
+            "date": "2023-12-19T14:44:34Z"
+        },
+        "committer": {
+            "name": "Dario Lucia",
+            "email": "dario.lucia@gmail.com",
+            "date": "2023-12-19T14:44:34Z"
+        },
+        "message": "Fixed null pointer exception for transport status not initialised",
+        "tree": {
+            "sha": "fbe5965df099b58529f6e4d5f920c53d2a825f70",
+            "url": "https://api.github.com/repos/dariol83/reatmetric/git/trees/fbe5965df099b58529f6e4d5f920c53d2a825f70"
+        },
+        "url": "https://api.github.com/repos/dariol83/reatmetric/git/commits/5f25b251c0c976c949122e873c412703ed4b06f9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/dariol83/reatmetric/commits/5f25b251c0c976c949122e873c412703ed4b06f9",
+    "html_url": "https://github.com/dariol83/reatmetric/commit/5f25b251c0c976c949122e873c412703ed4b06f9",
+    "comments_url": "https://api.github.com/repos/dariol83/reatmetric/commits/5f25b251c0c976c949122e873c412703ed4b06f9/comments",
+    "author": {
+        "login": "dariol83",
+        "id": 50966020,
+        "node_id": "MDQ6VXNlcjUwOTY2MDIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50966020?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dariol83",
+        "html_url": "https://github.com/dariol83",
+        "followers_url": "https://api.github.com/users/dariol83/followers",
+        "following_url": "https://api.github.com/users/dariol83/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dariol83/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dariol83/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dariol83/subscriptions",
+        "organizations_url": "https://api.github.com/users/dariol83/orgs",
+        "repos_url": "https://api.github.com/users/dariol83/repos",
+        "events_url": "https://api.github.com/users/dariol83/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dariol83/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "dariol83",
+        "id": 50966020,
+        "node_id": "MDQ6VXNlcjUwOTY2MDIw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50966020?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/dariol83",
+        "html_url": "https://github.com/dariol83",
+        "followers_url": "https://api.github.com/users/dariol83/followers",
+        "following_url": "https://api.github.com/users/dariol83/following{/other_user}",
+        "gists_url": "https://api.github.com/users/dariol83/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/dariol83/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/dariol83/subscriptions",
+        "organizations_url": "https://api.github.com/users/dariol83/orgs",
+        "repos_url": "https://api.github.com/users/dariol83/repos",
+        "events_url": "https://api.github.com/users/dariol83/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/dariol83/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f820c4b7b075a0624c4854eeb8fcfaad68a7e22c",
+            "url": "https://api.github.com/repos/dariol83/reatmetric/commits/f820c4b7b075a0624c4854eeb8fcfaad68a7e22c",
+            "html_url": "https://github.com/dariol83/reatmetric/commit/f820c4b7b075a0624c4854eeb8fcfaad68a7e22c"
+        }
+    ],
+    "stats": {
+        "total": 16,
+        "additions": 9,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "38e36760759bd7eb613faa71cfc65de08c09b2d6",
+            "filename": "eu.dariolucia.reatmetric.api/src/main/java/eu/dariolucia/reatmetric/api/transport/AbstractTransportConnector.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/dariol83/reatmetric/blob/5f25b251c0c976c949122e873c412703ed4b06f9/eu.dariolucia.reatmetric.api%2Fsrc%2Fmain%2Fjava%2Feu%2Fdariolucia%2Freatmetric%2Fapi%2Ftransport%2FAbstractTransportConnector.java",
+            "raw_url": "https://github.com/dariol83/reatmetric/raw/5f25b251c0c976c949122e873c412703ed4b06f9/eu.dariolucia.reatmetric.api%2Fsrc%2Fmain%2Fjava%2Feu%2Fdariolucia%2Freatmetric%2Fapi%2Ftransport%2FAbstractTransportConnector.java",
+            "contents_url": "https://api.github.com/repos/dariol83/reatmetric/contents/eu.dariolucia.reatmetric.api%2Fsrc%2Fmain%2Fjava%2Feu%2Fdariolucia%2Freatmetric%2Fapi%2Ftransport%2FAbstractTransportConnector.java?ref=5f25b251c0c976c949122e873c412703ed4b06f9",
+            "patch": "@@ -21,7 +21,6 @@\n import eu.dariolucia.reatmetric.api.transport.exceptions.TransportException;\n import eu.dariolucia.reatmetric.api.value.ValueTypeEnum;\n \n-import java.rmi.RemoteException;\n import java.util.*;\n import java.util.concurrent.CopyOnWriteArrayList;\n import java.util.logging.Level;\n@@ -83,6 +82,7 @@ public void run() {\n     protected void setCharacteristics(String name, String description) {\n         this.name = name;\n         this.description = description;\n+        this.lastTransportStatus = new TransportStatus(name, connectionStatus, lastTxRate, lastRxRate, lastAlarmState, autoReconnect);;\n     }\n \n     /**"
+        },
+        {
+            "sha": "32932d2f84f2030935945ba876f42754b9ceff73",
+            "filename": "eu.dariolucia.reatmetric.ui/src/main/java/eu/dariolucia/reatmetric/ui/controller/ConnectorsBrowserViewController.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 6,
+            "changes": 14,
+            "blob_url": "https://github.com/dariol83/reatmetric/blob/5f25b251c0c976c949122e873c412703ed4b06f9/eu.dariolucia.reatmetric.ui%2Fsrc%2Fmain%2Fjava%2Feu%2Fdariolucia%2Freatmetric%2Fui%2Fcontroller%2FConnectorsBrowserViewController.java",
+            "raw_url": "https://github.com/dariol83/reatmetric/raw/5f25b251c0c976c949122e873c412703ed4b06f9/eu.dariolucia.reatmetric.ui%2Fsrc%2Fmain%2Fjava%2Feu%2Fdariolucia%2Freatmetric%2Fui%2Fcontroller%2FConnectorsBrowserViewController.java",
+            "contents_url": "https://api.github.com/repos/dariol83/reatmetric/contents/eu.dariolucia.reatmetric.ui%2Fsrc%2Fmain%2Fjava%2Feu%2Fdariolucia%2Freatmetric%2Fui%2Fcontroller%2FConnectorsBrowserViewController.java?ref=5f25b251c0c976c949122e873c412703ed4b06f9",
+            "patch": "@@ -162,11 +162,13 @@ private ConnectorStatusWidgetController buildConnectorController() {\n \n     @Override\n     public void status(TransportStatus status) {\n-        FxUtils.runLater(() -> {\n-            ConnectorStatusWidgetController controller = connector2controller.get(status.getName());\n-            if(controller != null) {\n-                controller.updateStatus(status);\n-            }\n-        });\n+        if(status != null) {\n+            FxUtils.runLater(() -> {\n+                ConnectorStatusWidgetController controller = connector2controller.get(status.getName());\n+                if (controller != null) {\n+                    controller.updateStatus(status);\n+                }\n+            });\n+        }\n     }\n }"
+        }
+    ]
+}

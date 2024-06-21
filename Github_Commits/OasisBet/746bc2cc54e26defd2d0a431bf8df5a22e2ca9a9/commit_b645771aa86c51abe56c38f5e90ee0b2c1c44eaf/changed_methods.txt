@@ -1,0 +1,2 @@
+retrieveBetEventByCompType(String compType)
+updateCurrBetEvents(String compType, OddsApiResponse results)

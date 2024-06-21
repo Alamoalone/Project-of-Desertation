@@ -1,0 +1,20 @@
+                            public Boolean apply(GenericMessageResponse response) {
+                                if (response != null && (response.getMeta() != null && response.getMeta().getCode() != null && response.getMeta().getCode().equals("200"))
+                                        && (response.getData() != null && response.getData().getAnswers() != null && response.getData().getAnswers().length > 0)) {
+                                    XMessagePayload payload = msg.getPayload();
+                                    for (String answer : response.getData().getAnswers()) {
+                                        payload.setMedia(null);
+                                        payload.setText(answer);
+                                        msg.setPayload(payload);
+                                        try {
+                                            kafkaProducer.send(processOutbound, msg.toXML());
+                                        } catch (JAXBException e) {
+                                            throw new RuntimeException(e);
+                                        }
+                                    }
+                                    return true;
+                                } else {
+                                    log.error("Doubtnut Api - Error Resposne : " + response.getMessage());
+                                    return false;
+                                }
+                            }

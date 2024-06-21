@@ -1,0 +1,12 @@
+  private boolean shouldSkipOperationOnURP(TopicPartition tp, String operation) {
+    // Return true if the partition is under replicated and the flag to skip URP demotion is set.
+    // Return false otherwise.
+    // If the partition doesn't exist, return true.
+    // Operation string is solely for logging purpose in case of partition not found.
+    try {
+      return _skipUrpDemotion && isPartitionUnderReplicated(_kafkaCluster, tp);
+    } catch (PartitionNotExistsException ex) {
+      LOG.warn("Skip {} operation for partition {} due to exception: {}", operation, tp, ex);
+      return true;
+    }
+  }

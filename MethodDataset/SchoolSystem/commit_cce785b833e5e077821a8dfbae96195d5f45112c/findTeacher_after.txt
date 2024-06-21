@@ -1,0 +1,9 @@
+    public Teacher findTeacher(String teacherId) {
+        for (Teacher teacher : teachers) {
+            if (teacher != null && teacher.getTeacherId().equals(teacherId)) {
+                return teacher;
+            }
+        }
+        System.out.println("Teacher can't be found !");
+        return null;
+    }

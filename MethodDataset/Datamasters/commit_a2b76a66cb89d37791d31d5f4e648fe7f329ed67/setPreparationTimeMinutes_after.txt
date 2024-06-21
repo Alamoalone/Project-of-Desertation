@@ -1,0 +1,3 @@
+    public void setPreparationTimeMinutes(int preparationTimeMinutes) {
+        this.preparationTimeMinutes = preparationTimeMinutes;
+    }

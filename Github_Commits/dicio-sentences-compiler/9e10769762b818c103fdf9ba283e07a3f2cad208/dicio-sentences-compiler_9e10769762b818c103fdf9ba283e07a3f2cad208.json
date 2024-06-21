@@ -1,0 +1,122 @@
+{
+    "sha": "9e10769762b818c103fdf9ba283e07a3f2cad208",
+    "node_id": "C_kwDOC6lUL9oAKDllMTA3Njk3NjJiODE4YzEwM2ZkZjliYTI4M2UwN2EzZjJjYWQyMDg",
+    "commit": {
+        "author": {
+            "name": "Stypox",
+            "email": "stypox@pm.me",
+            "date": "2024-02-19T11:20:27Z"
+        },
+        "committer": {
+            "name": "Stypox",
+            "email": "stypox@pm.me",
+            "date": "2024-02-19T11:20:27Z"
+        },
+        "message": "Fix null pointer exceptions for dataset generation",
+        "tree": {
+            "sha": "2a9aa29a7f5f267dd358c7a42a0ab5ef318a862e",
+            "url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/git/trees/2a9aa29a7f5f267dd358c7a42a0ab5ef318a862e"
+        },
+        "url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/git/commits/9e10769762b818c103fdf9ba283e07a3f2cad208",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEQVCnMj2DjIj3Myq/S98bQKSf3SMFAmXTOXsACgkQS98bQKSf\n3SOF4g/+JRlTqFN8a+oscJsanOgFTazE6eWKO6ZpzgpgSY+T536HrxJaIlzUxsH8\nYbmqK/o9LjujquU0wSNOQDlBrllUQUpPtpocjlu2/PgNXO11Ma6hkGEntPLrqhAK\nrHuY+hRC+lHDVQUGqv4YOqF6uEIYAgDPbXr5JI8NL39uIDuuzlVwA/VEMYtDli5u\njKcivnGYm3d0QjBsdqPzwy+/x9YLWkDmJC0NQE0xHy0w83fEsO+3+FSPoe/f6X0B\njfbOpTUbTgutw/l37R1BPJch+ShCeBvvEoJdAeEzgy3FguhfzGmdC+/X6VpEGrUl\nXzyAU+0uTXYG72AzEdLI+LsjJ8FXtXLWeAAXXMnUghxnDmDQSQtfZgsFY9qqQ96G\nrYE98zYN6HWDz18x6xzUrzfvI/PznV4Nw9rQp7yF5IUnB2R5TovrK2QwwxKoNBDK\nZWiiRo+fJkJSO1D2nRankW4maPFtgpp7ZT17TM9QqpaVDg6m0k6EKG59DVaPh+YI\npShzfrdrNxaLnfyZAkALSar4y17ok8jN2iJ54kUnJWfgerslp/v0FR7WnnVDI/lj\n+WWpabjJmqW+Ht7rjkbH8CjYzPt9uga6r191e7kCZnry8eSS3uUzuTg4R/IMbBn8\nGq8KyDBDsIA0kEbcW72U/0shn6umhyXUJaSgCDQoti4mrx8whzo=\n=b6wv\n-----END PGP SIGNATURE-----",
+            "payload": "tree 2a9aa29a7f5f267dd358c7a42a0ab5ef318a862e\nparent b4e529d7294a2aaba25739e8c3361c9422c82155\nauthor Stypox <stypox@pm.me> 1708341627 +0100\ncommitter Stypox <stypox@pm.me> 1708341627 +0100\n\nFix null pointer exceptions for dataset generation\n"
+        }
+    },
+    "url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/commits/9e10769762b818c103fdf9ba283e07a3f2cad208",
+    "html_url": "https://github.com/Stypox/dicio-sentences-compiler/commit/9e10769762b818c103fdf9ba283e07a3f2cad208",
+    "comments_url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/commits/9e10769762b818c103fdf9ba283e07a3f2cad208/comments",
+    "author": {
+        "login": "Stypox",
+        "id": 36421898,
+        "node_id": "MDQ6VXNlcjM2NDIxODk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36421898?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Stypox",
+        "html_url": "https://github.com/Stypox",
+        "followers_url": "https://api.github.com/users/Stypox/followers",
+        "following_url": "https://api.github.com/users/Stypox/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Stypox/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Stypox/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Stypox/subscriptions",
+        "organizations_url": "https://api.github.com/users/Stypox/orgs",
+        "repos_url": "https://api.github.com/users/Stypox/repos",
+        "events_url": "https://api.github.com/users/Stypox/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Stypox/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Stypox",
+        "id": 36421898,
+        "node_id": "MDQ6VXNlcjM2NDIxODk4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36421898?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Stypox",
+        "html_url": "https://github.com/Stypox",
+        "followers_url": "https://api.github.com/users/Stypox/followers",
+        "following_url": "https://api.github.com/users/Stypox/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Stypox/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Stypox/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Stypox/subscriptions",
+        "organizations_url": "https://api.github.com/users/Stypox/orgs",
+        "repos_url": "https://api.github.com/users/Stypox/repos",
+        "events_url": "https://api.github.com/users/Stypox/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Stypox/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b4e529d7294a2aaba25739e8c3361c9422c82155",
+            "url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/commits/b4e529d7294a2aaba25739e8c3361c9422c82155",
+            "html_url": "https://github.com/Stypox/dicio-sentences-compiler/commit/b4e529d7294a2aaba25739e8c3361c9422c82155"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 9,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "3ae4df8556bf3f3251c4c9d3d3d44160b385b519",
+            "filename": "sentences_compiler/src/main/java/org/dicio/sentences_compiler/compiler/CompilerToDataset.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 2,
+            "changes": 5,
+            "blob_url": "https://github.com/Stypox/dicio-sentences-compiler/blob/9e10769762b818c103fdf9ba283e07a3f2cad208/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fcompiler%2FCompilerToDataset.java",
+            "raw_url": "https://github.com/Stypox/dicio-sentences-compiler/raw/9e10769762b818c103fdf9ba283e07a3f2cad208/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fcompiler%2FCompilerToDataset.java",
+            "contents_url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/contents/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fcompiler%2FCompilerToDataset.java?ref=9e10769762b818c103fdf9ba283e07a3f2cad208",
+            "patch": "@@ -17,11 +17,12 @@ public void compile(final OutputStreamWriter output, final OutputStreamWriter se\n         super.compile(output, sectionIdsOutput);\n \n         final Map<String, JSONObject> results = new HashMap<>();\n-        for (final Section section : sections) {\n+        for (final Section section : getSections()) {\n             results.putAll(section.compileToDataset());\n         }\n \n+        System.out.println(\"HERE\" + results);\n         new JSONObject(results)\n-                .write(output);\n+                .write(output).close();\n     }\n }"
+        },
+        {
+            "sha": "d826ecf6859b2b745165481f021975b343487df1",
+            "filename": "sentences_compiler/src/main/java/org/dicio/sentences_compiler/compiler/RepeatedList.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Stypox/dicio-sentences-compiler/blob/9e10769762b818c103fdf9ba283e07a3f2cad208/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fcompiler%2FRepeatedList.java",
+            "raw_url": "https://github.com/Stypox/dicio-sentences-compiler/raw/9e10769762b818c103fdf9ba283e07a3f2cad208/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fcompiler%2FRepeatedList.java",
+            "contents_url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/contents/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fcompiler%2FRepeatedList.java?ref=9e10769762b818c103fdf9ba283e07a3f2cad208",
+            "patch": "@@ -8,7 +8,7 @@ public class RepeatedList {\n \n     public RepeatedList(final List<String> alternatives) {\n         if (alternatives.isEmpty()) {\n-            throw new IndexOutOfBoundsException(\"alternatives is empty\");\n+            throw new IndexOutOfBoundsException(\"Alternatives is empty\");\n         }\n         this.alternatives = alternatives;\n     }"
+        },
+        {
+            "sha": "3aacb33b6e826f5b9daccca17bbc0366edff583c",
+            "filename": "sentences_compiler/src/main/java/org/dicio/sentences_compiler/construct/CapturingGroup.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/Stypox/dicio-sentences-compiler/blob/9e10769762b818c103fdf9ba283e07a3f2cad208/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fconstruct%2FCapturingGroup.java",
+            "raw_url": "https://github.com/Stypox/dicio-sentences-compiler/raw/9e10769762b818c103fdf9ba283e07a3f2cad208/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fconstruct%2FCapturingGroup.java",
+            "contents_url": "https://api.github.com/repos/Stypox/dicio-sentences-compiler/contents/sentences_compiler%2Fsrc%2Fmain%2Fjava%2Forg%2Fdicio%2Fsentences_compiler%2Fconstruct%2FCapturingGroup.java?ref=9e10769762b818c103fdf9ba283e07a3f2cad208",
+            "patch": "@@ -45,6 +45,11 @@ public Set<String> getCapturingGroupNames() {\n     @Override\n     public List<Alternative> buildAlternatives(\n             final Map<String, RepeatedList> capturingGroupSubstitutions) {\n+        if (!capturingGroupSubstitutions.containsKey(name)) {\n+            throw new IndexOutOfBoundsException(\n+                    \"No alternatives were specified for capturing group \\\"\" + name + \"\\\", you can\" +\n+                    \" specify some with a special sentence like \\\"[.\" + name + \".] a|b|c;\\\"\");\n+        }\n         final String alternative = capturingGroupSubstitutions.get(name).get();\n         return Collections.singletonList(\n                 new Alternative(alternative, Collections.singletonMap(name, alternative)));"
+        }
+    ]
+}

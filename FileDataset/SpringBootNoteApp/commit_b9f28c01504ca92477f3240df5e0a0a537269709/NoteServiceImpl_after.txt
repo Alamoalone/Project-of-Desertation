@@ -1,0 +1,8 @@
+	public List<NoteDto> getNotes() {
+		return noteDao
+				.getNotes()
+				.stream()
+				.map(n -> modelMapper.map(n, NoteDto.class))
+				.collect(Collectors.toList());
+	}
+

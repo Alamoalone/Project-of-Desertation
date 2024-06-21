@@ -1,0 +1,9 @@
+@@ -341,7 +341,7 @@ else if (view instanceof TraceView)
+       {
+         TraceView traceView = (TraceView) view;
+         TraceData traceData = (TraceData) data;
+-        traceData.createAndConnectComponent(this, circuitSimulation, traceLoader, traceView);
++        traceData.createAndConnectComponent(circuitSimulation, traceLoader, traceView);
+       }
+       else
+       {

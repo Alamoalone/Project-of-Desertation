@@ -1,0 +1,35 @@
+                public void onComplete(@NonNull Task<DataSnapshot> task) {
+
+                    if(task.isSuccessful())
+                    {
+                        if(task.getResult().exists())
+                        {
+                            DataSnapshot snapshot = task.getResult();
+                            String fullName = String.valueOf(snapshot.child("fullname").getValue());
+                            String email = String.valueOf(snapshot.child("email").getValue());
+                            String age = String.valueOf(snapshot.child("age").getValue());
+                            String height_ft = String.valueOf(snapshot.child("height_ft").getValue());
+                            String height_in = String.valueOf(snapshot.child("height_in").getValue());
+                            String weight = String.valueOf(snapshot.child("_Weight").getValue());
+
+                            settingsViewModel.setName(fullName);
+                            settingsViewModel.setEmail(email);
+                            settingsViewModel.setAge(Integer.parseInt(age));
+                            settingsViewModel.setHeightInFeet(Integer.parseInt(height_ft));
+                            settingsViewModel.setHeightInInches(Integer.parseInt(height_in));
+                            settingsViewModel.setWeight(Integer.parseInt(weight));
+
+                            binding.textName.setText(fullName);
+                            binding.textEmail.setText(email);
+                            String tAge = settingsViewModel.getAge().getValue() + " years old";
+                            binding.textAge.setText(tAge);
+                            String tHeightFeet = settingsViewModel.getHeightInFeet().getValue() + " feet ";
+                            binding.textHeightFt.setText(tHeightFeet);
+                            String tHeightInches = settingsViewModel.getHeightInInches().getValue() + " inches";
+                            binding.textHeightIn.setText(tHeightInches);
+                            String tWeight = settingsViewModel.getWeight().getValue() + " lbs";
+                            binding.textWeight.setText(tWeight);
+
+                        }
+                    }
+                }

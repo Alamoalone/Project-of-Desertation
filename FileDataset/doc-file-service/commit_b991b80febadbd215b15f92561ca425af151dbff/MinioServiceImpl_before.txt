@@ -1,0 +1,19 @@
+  public GetObjectResponse getFile(String key)
+      throws ServerException, InsufficientDataException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
+    GetObjectArgs objectArgs = GetObjectArgs.builder()
+        .bucket(minioBucketName)
+        .object(key)
+        .build();
+
+    GetObjectResponse response = null;
+    try {
+      response = minioClient.getObject(objectArgs);
+    } catch (ErrorResponseException e) {
+      if (e.response().code() == HttpStatus.NOT_FOUND.value()) {
+        throw new AttachmentNotFoundException("Attachment not found");
+      }
+    }
+
+    return response;
+  }
+

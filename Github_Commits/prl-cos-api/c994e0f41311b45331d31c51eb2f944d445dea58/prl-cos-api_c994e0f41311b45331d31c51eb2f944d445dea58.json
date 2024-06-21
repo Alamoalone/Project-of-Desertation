@@ -1,0 +1,60 @@
+{
+    "sha": "c994e0f41311b45331d31c51eb2f944d445dea58",
+    "node_id": "C_kwDOGQmqvtoAKGM5OTRlMGY0MTMxMWI0NTMzMWQzMWM1MWViMmY5NDRkNDQ1ZGVhNTg",
+    "commit": {
+        "author": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-16T17:00:57Z"
+        },
+        "committer": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-16T17:00:57Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "56d20c4143ef72733a15c1856deb08050291c7dd",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/56d20c4143ef72733a15c1856deb08050291c7dd"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/c994e0f41311b45331d31c51eb2f944d445dea58",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/c994e0f41311b45331d31c51eb2f944d445dea58",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/c994e0f41311b45331d31c51eb2f944d445dea58",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/c994e0f41311b45331d31c51eb2f944d445dea58/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/a5d4f8c36a821ca3a155506d4c78349a76a65a59"
+        }
+    ],
+    "stats": {
+        "total": 13,
+        "additions": 7,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "c745a4f5f7b54d4c785abc1f7faff665b5fff2bc",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/services/c100respondentsolicitor/C100RespondentSolicitorService.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 6,
+            "changes": 13,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/c994e0f41311b45331d31c51eb2f944d445dea58/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/c994e0f41311b45331d31c51eb2f944d445dea58/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java?ref=c994e0f41311b45331d31c51eb2f944d445dea58",
+            "patch": "@@ -583,14 +583,15 @@ public Map<String, Object> generateDraftDocumentsForRespondent(CallbackRequest c\n         dataMap.put(\"repEmail\", solicitorRepresentedRespondent.getValue().getSolicitorEmail());\n         if (solicitorRepresentedRespondent.getValue().getDxNumber() != null) {\n             dataMap.put(\"dxNumber\", solicitorRepresentedRespondent.getValue().getDxNumber());\n-        } else {\n-            if (solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation() != null) {\n-                for (ContactInformation contactInformation : solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation()) {\n-                    for (DxAddress dxAddress : contactInformation.getDxAddress()) {\n-                        dataMap.put(\"dxNumber\", dxAddress.getDxNumber());\n-                    }\n+        } else if (solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation() != null) {\n+            log.info(\"swanky {}\", solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation());\n+            for (ContactInformation contactInformation : solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation()) {\n+                for (DxAddress dxAddress : contactInformation.getDxAddress()) {\n+                    dataMap.put(\"dxNumber\", dxAddress.getDxNumber());\n                 }\n             }\n+        } else {\n+            dataMap.put(\"dxNumber\", \" \");\n         }\n         dataMap.put(\"repReference\", solicitorRepresentedRespondent.getValue().getSolicitorReference());\n "
+        }
+    ]
+}

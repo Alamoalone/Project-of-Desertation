@@ -1,0 +1,90 @@
+	public List<QueryResultViewModel> executeAndRetrieve(PaginatedQuery oQuery, boolean bFullViewModel) {
+
+		try {
+			List<QueryResultViewModel> aoResults = new ArrayList<>();
+
+			int iActualElement = 0;
+
+			// Parse the query
+			QueryViewModel oCDSQuery = m_oQueryTranslator.parseWasdiClientQuery(oQuery.getQuery());
+
+			if (!m_asSupportedPlatforms.contains(oCDSQuery.platformName)) {
+				return aoResults;
+			}
+
+			long lStart = TimeEpochUtils.fromDateStringToEpoch(oCDSQuery.startFromDate);
+
+			String sOffset = oQuery.getOffset();
+			String sLimit = oQuery.getLimit();
+
+			int iOffset = 0;
+			int iLimit = 10;
+
+			try {
+				iOffset = Integer.parseInt(sOffset);
+			} catch (Exception oE) {
+				WasdiLog.debugLog("QueryExecutorCDS.executeAndRetrieve: " + oE.toString());
+			}
+
+			try {
+				iLimit = Integer.parseInt(sLimit);
+			} catch (Exception oE) {
+				WasdiLog.debugLog("QueryExecutorCDS.executeAndRetrieve: " + oE.toString());
+			}
+
+			String sDataset = oCDSQuery.productName;
+			String sProductType = oCDSQuery.productType;
+			String sPresureLevels = oCDSQuery.productLevel;
+			String sVariables = oCDSQuery.sensorMode;
+			String sFormat = oCDSQuery.timeliness;
+			String sVersion = oCDSQuery.instrument;
+			String sBoundingBox = oCDSQuery.north + ", " + oCDSQuery.west + ", " + oCDSQuery.south + ", " + oCDSQuery.east;
+			String sFootPrint = extractFootprint(oQuery.getQuery());
+
+			// we use the "startToDate" parameter to decide if the data should be aggregated monthly
+			boolean bIsMonthlyAggregation = oCDSQuery.startToDate.equals("monthly");
+
+			if (bIsMonthlyAggregation) {
+				Date oStartDate = TimeEpochUtils.fromEpochToDateObject(lStart);
+				Date oEndDate = TimeEpochUtils.fromEpochToDateObject(TimeEpochUtils.fromDateStringToEpoch(oCDSQuery.endToDate));
+				
+				List<Date[]> aaoIntervals = Utils.splitTimeRangeInMonthlyIntervals(oStartDate, oEndDate, iOffset, iLimit);
+				
+				for (Date[] aoInterval : aaoIntervals) {
+					Date oStartIntervalDate = aoInterval[0];
+					Date oEndIntervalDate = aoInterval[1];
+					String sStartDate = Utils.formatToYyyyMMdd(oStartIntervalDate);
+					String sEndDate = Utils.formatToYyyyMMdd(oEndIntervalDate);
+					
+					String sPayload = prepareLinkJsonPayload(sDataset, sProductType, sVariables, sPresureLevels, sStartDate, sEndDate, sBoundingBox, sFormat, sVersion);
+					QueryResultViewModel oResult = getQueryResultViewModel(oCDSQuery, sPayload, sFootPrint, oStartIntervalDate, oEndIntervalDate);
+					aoResults.add(oResult);
+				}
+				
+			} else {
+				int iDays = TimeEpochUtils.countDaysIncluding(oCDSQuery.startFromDate, oCDSQuery.endToDate);
+				for (int i = 0; i < iDays; i++) {
+					Date oActualDay = TimeEpochUtils.getLaterDate(lStart, i);
+
+					if (iActualElement >= iOffset && iActualElement < iOffset + iLimit) {
+						String sDate = Utils.formatToYyyyMMdd(oActualDay);
+						String sPayload = prepareLinkJsonPayload(sDataset, sProductType, sVariables, sPresureLevels, sDate, null, sBoundingBox, sFormat, sVersion);
+
+						QueryResultViewModel oResult = getQueryResultViewModel(oCDSQuery, sPayload, sFootPrint, oActualDay, null);
+						aoResults.add(oResult);
+					}
+
+					iActualElement++;
+
+					if (iActualElement > iOffset + iLimit)
+						break;
+				}
+			}
+
+			return aoResults;
+		} catch (Exception oEx) {
+			WasdiLog.debugLog("QueryExecutorCDS.executeAndRetrieve: error " + oEx.toString());
+		}
+
+		return null;
+	}

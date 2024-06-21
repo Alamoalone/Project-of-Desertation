@@ -1,0 +1,35 @@
+    private Object buildSpecificationForMethod(ProceedingJoinPoint joinPoint, SearchApi searchApi) throws Throwable {
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+        String queryParameter = request.getParameter(searchApi.queryString()) != null ?
+                URLDecoder.decode(request.getParameter(searchApi.queryString()), "UTF-8") : request.getParameter(searchApi.queryString());
+        if ((queryParameter == null || queryParameter.isEmpty()) && searchApi.failOnMissingQueryString()) {
+            throw new SearchKeyValidationException("The required query parameter \"" + searchApi.queryString() + "\" is missing");
+        }
+        logger.debug("Got query string {}", queryParameter);
+        String join = Joiner.on("|").join(SearchOperation.SIMPLE_OPERATION_SET.keySet());
+        Pattern pattern = Pattern.compile("(\\w+?)(" + join + ")(\\*|\\[?)([\\w\\s-.@]+?)(\\*|]?),");
+        Matcher matcher = pattern.matcher(queryParameter + searchApi.keySeparator().getValue());
+        Object[] args = joinPoint.getArgs();
+
+        SearchConfigurer first = searchConfigurers.stream()
+                .filter(b -> b.getType() == searchApi.entity())
+                .findFirst()
+                .orElseThrow(() -> new SearchApiConfigurationException("Could not find a configuration bean of " + SearchConfigurer.class.getName() + "<\"" + searchApi.entity() + "\">"));
+
+        //rework to use a single instance of all classes except the configurer
+        SpecificationsBuilder builder = new SpecificationsBuilder(new SearchKeyConfigurerService(first));
+        while (matcher.find()) {
+            builder.with(
+                    matcher.group(1),
+                    matcher.group(2),
+                    matcher.group(4),
+                    matcher.group(3),
+                    matcher.group(5)
+            );
+        }
+        Specification build = builder.build();
+        Specification specification = build == null ? new EntitySpecification<>() : build;
+        IntStream.range(0, args.length).filter(i -> args[i].getClass() == SearchBuilder.class).findFirst().ifPresent(i -> args[i] = new SearchBuilder<>(specification));
+        return joinPoint.proceed(args);
+    }
+

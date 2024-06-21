@@ -1,0 +1,1 @@
+getTableCellRendererComponent(JTable jTable, Object o, boolean sel, boolean b1, int row, int i1)

@@ -1,0 +1,19 @@
+@@ -386,12 +386,15 @@ public void deleteQuestionnaireStepInfo(
+                 ? ""
+                 : request.getParameter("questionnaireId");
+         //getting groupId by sending stepId
++        List<GroupMappingBo> groupMappingBo = null;
+         Integer groupId = studyQuestionnaireService.getGroupId(stepId);
+-        //getting noOfstepsCount by sending groupId
+-        List<GroupMappingBo> groupMappingBo = studyQuestionnaireService.getStepId(String.valueOf(groupId),questionnaireId);
++        if(groupId != null) {
++          //getting noOfstepsCount by sending groupId
++          groupMappingBo = studyQuestionnaireService.getStepId(String.valueOf(groupId), questionnaireId);
++        }
+         //writing conditon for checking the count
+         if (!stepId.isEmpty() && !questionnaireId.isEmpty() && !stepType.isEmpty()) {
+-          if(groupMappingBo.size() > 2 || groupMappingBo.size() == 0){
++          if(groupMappingBo == null || groupMappingBo.size() > 2){
+           String msgg = studyQuestionnaireService.deleteStepBasedOnStepId(stepId);
+           message =
+               studyQuestionnaireService.deleteQuestionnaireStep(

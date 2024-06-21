@@ -1,0 +1,29 @@
+	private void closed() {
+		logMethod();
+		Roi.removeRoiListener(this);
+        if (updateNoiseTask != null)
+            updateNoiseTask.cancel();
+        if (updatePointsTask != null)
+            updatePointsTask.cancel();
+		if (previewImage != null && previewImage.getWindow() != null)
+			previewImage.getWindow().dispose();
+		if (plot != null && plot.getImagePlus() != null && plot.getImagePlus().getWindow() != null)
+			plot.getImagePlus().getWindow().dispose();
+		if (profilePlot != null && profilePlot.getImagePlus() != null && profilePlot.getImagePlus().getWindow() != null)
+			profilePlot.getImagePlus().getWindow().dispose();
+		if (guiWindow != null)
+			guiWindow.dispose();
+        updateNoiseTask = null;
+        updatePointsTask = null;
+		previewImage = null;
+		plot = null;
+		profilePlot = null;
+		guiWindow = null;
+		pixels = null;
+		indexUp = null;
+		indexDown = null;
+		weightUp = null;
+		weightDown = null;
+		hist = null;
+		System.gc();
+	}

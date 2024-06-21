@@ -1,0 +1,98 @@
+{
+    "sha": "55c0cbbafbe44d81a61ea089aeb6b3436584e218",
+    "node_id": "C_kwDOKcpZJNoAKDU1YzBjYmJhZmJlNDRkODFhNjFlYTA4OWFlYjZiMzQzNjU4NGUyMTg",
+    "commit": {
+        "author": {
+            "name": "ethanman102",
+            "email": "107374579+ethanman102@users.noreply.github.com",
+            "date": "2023-12-04T02:16:40Z"
+        },
+        "committer": {
+            "name": "ethanman102",
+            "email": "107374579+ethanman102@users.noreply.github.com",
+            "date": "2023-12-04T02:16:40Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "89a2eb3eba0e52a87379b04aae4802d9dcaf2c82",
+            "url": "https://api.github.com/repos/CMPUT301F23T33/Dwelventory/git/trees/89a2eb3eba0e52a87379b04aae4802d9dcaf2c82"
+        },
+        "url": "https://api.github.com/repos/CMPUT301F23T33/Dwelventory/git/commits/55c0cbbafbe44d81a61ea089aeb6b3436584e218",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/CMPUT301F23T33/Dwelventory/commits/55c0cbbafbe44d81a61ea089aeb6b3436584e218",
+    "html_url": "https://github.com/CMPUT301F23T33/Dwelventory/commit/55c0cbbafbe44d81a61ea089aeb6b3436584e218",
+    "comments_url": "https://api.github.com/repos/CMPUT301F23T33/Dwelventory/commits/55c0cbbafbe44d81a61ea089aeb6b3436584e218/comments",
+    "author": {
+        "login": "ethanman102",
+        "id": 107374579,
+        "node_id": "U_kgDOBmZn8w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107374579?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ethanman102",
+        "html_url": "https://github.com/ethanman102",
+        "followers_url": "https://api.github.com/users/ethanman102/followers",
+        "following_url": "https://api.github.com/users/ethanman102/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ethanman102/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ethanman102/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ethanman102/subscriptions",
+        "organizations_url": "https://api.github.com/users/ethanman102/orgs",
+        "repos_url": "https://api.github.com/users/ethanman102/repos",
+        "events_url": "https://api.github.com/users/ethanman102/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ethanman102/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ethanman102",
+        "id": 107374579,
+        "node_id": "U_kgDOBmZn8w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107374579?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ethanman102",
+        "html_url": "https://github.com/ethanman102",
+        "followers_url": "https://api.github.com/users/ethanman102/followers",
+        "following_url": "https://api.github.com/users/ethanman102/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ethanman102/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ethanman102/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ethanman102/subscriptions",
+        "organizations_url": "https://api.github.com/users/ethanman102/orgs",
+        "repos_url": "https://api.github.com/users/ethanman102/repos",
+        "events_url": "https://api.github.com/users/ethanman102/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ethanman102/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ba086457fb2e344a582e7e050545dbbf10476884",
+            "url": "https://api.github.com/repos/CMPUT301F23T33/Dwelventory/commits/ba086457fb2e344a582e7e050545dbbf10476884",
+            "html_url": "https://github.com/CMPUT301F23T33/Dwelventory/commit/ba086457fb2e344a582e7e050545dbbf10476884"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 4,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "948693f5fd8cefc070eaa4d50bda7d8d0b208d08",
+            "filename": "app/src/main/java/com/example/dwelventory/AddEditActivity.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/CMPUT301F23T33/Dwelventory/blob/55c0cbbafbe44d81a61ea089aeb6b3436584e218/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fdwelventory%2FAddEditActivity.java",
+            "raw_url": "https://github.com/CMPUT301F23T33/Dwelventory/raw/55c0cbbafbe44d81a61ea089aeb6b3436584e218/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fdwelventory%2FAddEditActivity.java",
+            "contents_url": "https://api.github.com/repos/CMPUT301F23T33/Dwelventory/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fdwelventory%2FAddEditActivity.java?ref=55c0cbbafbe44d81a61ea089aeb6b3436584e218",
+            "patch": "@@ -265,9 +265,12 @@ public void onClick(View v) {\n         confirmButton.setOnClickListener(v -> {\n             // check for valid inputs\n             if (reqInputsValid()){\n+                ArrayList<String> unedittedPhotos = new ArrayList<>();\n                 // take info and make item object\n                 Log.d(\"editTag\", \"before making the new item, date is \" + date);\n-                ArrayList<String> unedittedPhotos = item.getPhotos();\n+                if (mode.equals(\"edit\")) {\n+                    unedittedPhotos = item.getPhotos();\n+                }\n                 Item item = new Item(name, date, make, model, estValue);\n                 if ( tagsToApply == null){\n                     tagsToApply = new ArrayList<>();"
+        }
+    ]
+}

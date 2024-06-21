@@ -1,0 +1,98 @@
+{
+    "sha": "b7a52f58095234c677d4ef3d34bfa858c94893ce",
+    "node_id": "C_kwDOKV_dwtoAKGI3YTUyZjU4MDk1MjM0YzY3N2Q0ZWYzZDM0YmZhODU4Yzk0ODkzY2U",
+    "commit": {
+        "author": {
+            "name": "tahsinchoudhury",
+            "email": "tahsinbd247@gmail.com",
+            "date": "2023-11-01T17:49:11Z"
+        },
+        "committer": {
+            "name": "tahsinchoudhury",
+            "email": "tahsinbd247@gmail.com",
+            "date": "2023-11-01T17:49:11Z"
+        },
+        "message": "null pointer exception probable fix",
+        "tree": {
+            "sha": "1bc588a4f7d7652cf49cc19cac6a145bf9874747",
+            "url": "https://api.github.com/repos/sheldor944/CoRide/git/trees/1bc588a4f7d7652cf49cc19cac6a145bf9874747"
+        },
+        "url": "https://api.github.com/repos/sheldor944/CoRide/git/commits/b7a52f58095234c677d4ef3d34bfa858c94893ce",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/sheldor944/CoRide/commits/b7a52f58095234c677d4ef3d34bfa858c94893ce",
+    "html_url": "https://github.com/sheldor944/CoRide/commit/b7a52f58095234c677d4ef3d34bfa858c94893ce",
+    "comments_url": "https://api.github.com/repos/sheldor944/CoRide/commits/b7a52f58095234c677d4ef3d34bfa858c94893ce/comments",
+    "author": {
+        "login": "tahsinchoudhury",
+        "id": 89151965,
+        "node_id": "MDQ6VXNlcjg5MTUxOTY1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89151965?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tahsinchoudhury",
+        "html_url": "https://github.com/tahsinchoudhury",
+        "followers_url": "https://api.github.com/users/tahsinchoudhury/followers",
+        "following_url": "https://api.github.com/users/tahsinchoudhury/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tahsinchoudhury/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tahsinchoudhury/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tahsinchoudhury/subscriptions",
+        "organizations_url": "https://api.github.com/users/tahsinchoudhury/orgs",
+        "repos_url": "https://api.github.com/users/tahsinchoudhury/repos",
+        "events_url": "https://api.github.com/users/tahsinchoudhury/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tahsinchoudhury/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "tahsinchoudhury",
+        "id": 89151965,
+        "node_id": "MDQ6VXNlcjg5MTUxOTY1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89151965?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/tahsinchoudhury",
+        "html_url": "https://github.com/tahsinchoudhury",
+        "followers_url": "https://api.github.com/users/tahsinchoudhury/followers",
+        "following_url": "https://api.github.com/users/tahsinchoudhury/following{/other_user}",
+        "gists_url": "https://api.github.com/users/tahsinchoudhury/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/tahsinchoudhury/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/tahsinchoudhury/subscriptions",
+        "organizations_url": "https://api.github.com/users/tahsinchoudhury/orgs",
+        "repos_url": "https://api.github.com/users/tahsinchoudhury/repos",
+        "events_url": "https://api.github.com/users/tahsinchoudhury/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/tahsinchoudhury/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7506df17daa7ee6a2e74e6da41bdbd22792a6602",
+            "url": "https://api.github.com/repos/sheldor944/CoRide/commits/7506df17daa7ee6a2e74e6da41bdbd22792a6602",
+            "html_url": "https://github.com/sheldor944/CoRide/commit/7506df17daa7ee6a2e74e6da41bdbd22792a6602"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 8,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "f1feb6711a2effdb0d999b5171d2873fa720e48d",
+            "filename": "app/src/main/java/com/example/myapplication/LocationDB.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 0,
+            "changes": 8,
+            "blob_url": "https://github.com/sheldor944/CoRide/blob/b7a52f58095234c677d4ef3d34bfa858c94893ce/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fmyapplication%2FLocationDB.java",
+            "raw_url": "https://github.com/sheldor944/CoRide/raw/b7a52f58095234c677d4ef3d34bfa858c94893ce/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fmyapplication%2FLocationDB.java",
+            "contents_url": "https://api.github.com/repos/sheldor944/CoRide/contents/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fexample%2Fmyapplication%2FLocationDB.java?ref=b7a52f58095234c677d4ef3d34bfa858c94893ce",
+            "patch": "@@ -630,6 +630,14 @@ public void getPickupStatus(String riderId, Callback <Boolean> callback) {\n         String UID = riderId;\n         Log.d(TAG, \"getBookedPassenger: \"+UID);\n \n+        try {\n+            if(database.getReference(\"bookedPassengerRider\") == null) return;\n+            Log.d(TAG, \"getPickupStatus: bookedPassengerRider exists\");\n+        } catch (Exception e) {\n+            Log.d(TAG, \"getPickupStatus: error: \" + e);\n+            return;\n+        }\n+\n         database.getReference(\"bookedPassengerRider\").addListenerForSingleValueEvent(new ValueEventListener() {\n             @Override\n             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {"
+        }
+    ]
+}

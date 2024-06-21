@@ -1,0 +1,98 @@
+{
+    "sha": "e12d57852006d636c9ece96a51c70aab5cb115cc",
+    "node_id": "C_kwDOJJw7CdoAKGUxMmQ1Nzg1MjAwNmQ2MzZjOWVjZTk2YTUxYzcwYWFiNWNiMTE1Y2M",
+    "commit": {
+        "author": {
+            "name": "Jose Carvajal",
+            "email": "josecarvajalhilario@gmail.com",
+            "date": "2024-01-09T09:52:40Z"
+        },
+        "committer": {
+            "name": "Jose Carvajal",
+            "email": "josecarvajalhilario@gmail.com",
+            "date": "2024-01-09T09:52:40Z"
+        },
+        "message": "Fix null pointer exception when parsing csv dates",
+        "tree": {
+            "sha": "afec2151b0c06609bd5b54c46684c261a4d77e36",
+            "url": "https://api.github.com/repos/Sgitario/account-manager/git/trees/afec2151b0c06609bd5b54c46684c261a4d77e36"
+        },
+        "url": "https://api.github.com/repos/Sgitario/account-manager/git/commits/e12d57852006d636c9ece96a51c70aab5cb115cc",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Sgitario/account-manager/commits/e12d57852006d636c9ece96a51c70aab5cb115cc",
+    "html_url": "https://github.com/Sgitario/account-manager/commit/e12d57852006d636c9ece96a51c70aab5cb115cc",
+    "comments_url": "https://api.github.com/repos/Sgitario/account-manager/commits/e12d57852006d636c9ece96a51c70aab5cb115cc/comments",
+    "author": {
+        "login": "Sgitario",
+        "id": 6310047,
+        "node_id": "MDQ6VXNlcjYzMTAwNDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6310047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sgitario",
+        "html_url": "https://github.com/Sgitario",
+        "followers_url": "https://api.github.com/users/Sgitario/followers",
+        "following_url": "https://api.github.com/users/Sgitario/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sgitario/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sgitario/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sgitario/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sgitario/orgs",
+        "repos_url": "https://api.github.com/users/Sgitario/repos",
+        "events_url": "https://api.github.com/users/Sgitario/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sgitario/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Sgitario",
+        "id": 6310047,
+        "node_id": "MDQ6VXNlcjYzMTAwNDc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6310047?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Sgitario",
+        "html_url": "https://github.com/Sgitario",
+        "followers_url": "https://api.github.com/users/Sgitario/followers",
+        "following_url": "https://api.github.com/users/Sgitario/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Sgitario/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Sgitario/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Sgitario/subscriptions",
+        "organizations_url": "https://api.github.com/users/Sgitario/orgs",
+        "repos_url": "https://api.github.com/users/Sgitario/repos",
+        "events_url": "https://api.github.com/users/Sgitario/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Sgitario/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cded8b9ad7025dc0863375008f7fe3a4839c0fde",
+            "url": "https://api.github.com/repos/Sgitario/account-manager/commits/cded8b9ad7025dc0863375008f7fe3a4839c0fde",
+            "html_url": "https://github.com/Sgitario/account-manager/commit/cded8b9ad7025dc0863375008f7fe3a4839c0fde"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 9,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "7c2d32e7f852ca7e58806a1dda5474d48dfb6763",
+            "filename": "src/main/java/org/sgitario/accountmanager/services/CsvMovementsFileReader.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 1,
+            "changes": 10,
+            "blob_url": "https://github.com/Sgitario/account-manager/blob/e12d57852006d636c9ece96a51c70aab5cb115cc/src%2Fmain%2Fjava%2Forg%2Fsgitario%2Faccountmanager%2Fservices%2FCsvMovementsFileReader.java",
+            "raw_url": "https://github.com/Sgitario/account-manager/raw/e12d57852006d636c9ece96a51c70aab5cb115cc/src%2Fmain%2Fjava%2Forg%2Fsgitario%2Faccountmanager%2Fservices%2FCsvMovementsFileReader.java",
+            "contents_url": "https://api.github.com/repos/Sgitario/account-manager/contents/src%2Fmain%2Fjava%2Forg%2Fsgitario%2Faccountmanager%2Fservices%2FCsvMovementsFileReader.java?ref=e12d57852006d636c9ece96a51c70aab5cb115cc",
+            "patch": "@@ -54,12 +54,20 @@ public Movement next() {\n         Movement movement = new Movement();\n         movement.subject = subject;\n         movement.accountingDate = parseDate(row.get(profile.columnAccountingDate));\n-        movement.valueDate = parseDate(row.get(profile.columnValueDate));\n+        movement.valueDate = parseDate(row.get(profile.columnValueDate), movement.accountingDate);\n         movement.quantity = Double.parseDouble(row.get(profile.columnQuantity));\n         movement.profile = profile;\n         return movement;\n     }\n \n+    private Date parseDate(String value, Date defaultValue) {\n+        if (value == null || value.isEmpty()) {\n+            return defaultValue;\n+        }\n+\n+        return parseDate(value);\n+    }\n+\n     private Date parseDate(String value) {\n         try {\n             return DATE_FORMATTER.parse(value);"
+        }
+    ]
+}

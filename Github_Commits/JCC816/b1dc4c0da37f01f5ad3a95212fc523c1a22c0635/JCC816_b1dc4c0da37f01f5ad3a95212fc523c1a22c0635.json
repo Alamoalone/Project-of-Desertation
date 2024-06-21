@@ -1,0 +1,98 @@
+{
+    "sha": "b1dc4c0da37f01f5ad3a95212fc523c1a22c0635",
+    "node_id": "C_kwDOGzi07toAKGIxZGM0YzBkYTM3ZjAxZjVhZDNhOTUyMTJmYzUyM2MxYTIyYzA2MzU",
+    "commit": {
+        "author": {
+            "name": "Iacon1",
+            "email": "vos6mya@gmail.com",
+            "date": "2024-01-25T03:02:19Z"
+        },
+        "committer": {
+            "name": "Iacon1",
+            "email": "61331411+Iacon1@users.noreply.github.com",
+            "date": "2024-02-20T17:45:54Z"
+        },
+        "message": "Fixed problem with declarators sometimes giving null pointer exceptions",
+        "tree": {
+            "sha": "cd2970d26ab7518d8c80560ce77dcbf16a14a481",
+            "url": "https://api.github.com/repos/Iacon1/JCC816/git/trees/cd2970d26ab7518d8c80560ce77dcbf16a14a481"
+        },
+        "url": "https://api.github.com/repos/Iacon1/JCC816/git/commits/b1dc4c0da37f01f5ad3a95212fc523c1a22c0635",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Iacon1/JCC816/commits/b1dc4c0da37f01f5ad3a95212fc523c1a22c0635",
+    "html_url": "https://github.com/Iacon1/JCC816/commit/b1dc4c0da37f01f5ad3a95212fc523c1a22c0635",
+    "comments_url": "https://api.github.com/repos/Iacon1/JCC816/commits/b1dc4c0da37f01f5ad3a95212fc523c1a22c0635/comments",
+    "author": {
+        "login": "Iacon1",
+        "id": 61331411,
+        "node_id": "MDQ6VXNlcjYxMzMxNDEx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61331411?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Iacon1",
+        "html_url": "https://github.com/Iacon1",
+        "followers_url": "https://api.github.com/users/Iacon1/followers",
+        "following_url": "https://api.github.com/users/Iacon1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Iacon1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Iacon1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Iacon1/subscriptions",
+        "organizations_url": "https://api.github.com/users/Iacon1/orgs",
+        "repos_url": "https://api.github.com/users/Iacon1/repos",
+        "events_url": "https://api.github.com/users/Iacon1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Iacon1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Iacon1",
+        "id": 61331411,
+        "node_id": "MDQ6VXNlcjYxMzMxNDEx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61331411?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Iacon1",
+        "html_url": "https://github.com/Iacon1",
+        "followers_url": "https://api.github.com/users/Iacon1/followers",
+        "following_url": "https://api.github.com/users/Iacon1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Iacon1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Iacon1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Iacon1/subscriptions",
+        "organizations_url": "https://api.github.com/users/Iacon1/orgs",
+        "repos_url": "https://api.github.com/users/Iacon1/repos",
+        "events_url": "https://api.github.com/users/Iacon1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Iacon1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "3d6643ce810903f45bf8c81ff232f4c601e67946",
+            "url": "https://api.github.com/repos/Iacon1/JCC816/commits/3d6643ce810903f45bf8c81ff232f4c601e67946",
+            "html_url": "https://github.com/Iacon1/JCC816/commit/3d6643ce810903f45bf8c81ff232f4c601e67946"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 9,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "6bf64ca57a331f8ed148dc16d611dd8b086ad4ab",
+            "filename": "src/C99Compiler/CompilerNodes/Declarations/DeclaratorNode.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 3,
+            "changes": 12,
+            "blob_url": "https://github.com/Iacon1/JCC816/blob/b1dc4c0da37f01f5ad3a95212fc523c1a22c0635/src%2FC99Compiler%2FCompilerNodes%2FDeclarations%2FDeclaratorNode.java",
+            "raw_url": "https://github.com/Iacon1/JCC816/raw/b1dc4c0da37f01f5ad3a95212fc523c1a22c0635/src%2FC99Compiler%2FCompilerNodes%2FDeclarations%2FDeclaratorNode.java",
+            "contents_url": "https://api.github.com/repos/Iacon1/JCC816/contents/src%2FC99Compiler%2FCompilerNodes%2FDeclarations%2FDeclaratorNode.java?ref=b1dc4c0da37f01f5ad3a95212fc523c1a22c0635",
+            "patch": "@@ -108,13 +108,16 @@ public DeclaratorNode interpret(Abstract_declaratorContext node) throws Exceptio\n \t\t\t}\n \t\t}\n \t\t\n-\t\tdirectDeclarator = new DirectDeclaratorNode(this, scopeOverride).interpret(node.direct_abstract_declarator());\n+\t\tif (node.direct_abstract_declarator() != null)\n+\t\t\tdirectDeclarator = new DirectDeclaratorNode(this, scopeOverride).interpret(node.direct_abstract_declarator());\n \t\t\n \t\treturn this;\n \t}\n \tpublic String getIdentifier()\n \t{\n-\t\treturn directDeclarator.getIdentifier();\n+\t\tif (directDeclarator != null)\n+\t\t\treturn directDeclarator.getIdentifier();\n+\t\telse return null;\n \t}\n \n \tpublic List<Set<String>> pointerQualifiers()\n@@ -127,7 +130,10 @@ public List<Set<String>> pointerQualifiers()\n \t}\n \tpublic List<DeclaratorInfo> getInfo()\n \t{\n-\t\tList<DeclaratorInfo> info = directDeclarator.getInfo();\n+\t\tList<DeclaratorInfo> info;\n+\t\tif (directDeclarator != null)\n+\t\t\tinfo = directDeclarator.getInfo();\n+\t\telse  info = new LinkedList<DeclaratorInfo>();\n \t\tfor (Set<String> set : pointerQualifiers)\n \t\t{\n \t\t\tDeclaratorInfo newInfo = new DeclaratorInfo(DeclaratorType.pointer);"
+        }
+    ]
+}

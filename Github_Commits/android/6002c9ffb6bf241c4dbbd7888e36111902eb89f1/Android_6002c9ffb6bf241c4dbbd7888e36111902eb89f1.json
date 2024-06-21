@@ -1,0 +1,98 @@
+{
+    "sha": "6002c9ffb6bf241c4dbbd7888e36111902eb89f1",
+    "node_id": "C_kwDOBCWshdoAKDYwMDJjOWZmYjZiZjI0MWM0ZGJiZDc4ODhlMzYxMTE5MDJlYjg5ZjE",
+    "commit": {
+        "author": {
+            "name": "Jozef Liška",
+            "email": "jozef.liska@mall.cz",
+            "date": "2023-08-25T05:56:11Z"
+        },
+        "committer": {
+            "name": "Jozef Liška",
+            "email": "jozef.liska@mall.cz",
+            "date": "2023-08-25T05:56:11Z"
+        },
+        "message": "Fix null pointer exception for user.getOrganizations()",
+        "tree": {
+            "sha": "0ac4dbb068b756fc1a65bc98aefa99d70e279038",
+            "url": "https://api.github.com/repos/TrashOut/Android/git/trees/0ac4dbb068b756fc1a65bc98aefa99d70e279038"
+        },
+        "url": "https://api.github.com/repos/TrashOut/Android/git/commits/6002c9ffb6bf241c4dbbd7888e36111902eb89f1",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/TrashOut/Android/commits/6002c9ffb6bf241c4dbbd7888e36111902eb89f1",
+    "html_url": "https://github.com/TrashOut/Android/commit/6002c9ffb6bf241c4dbbd7888e36111902eb89f1",
+    "comments_url": "https://api.github.com/repos/TrashOut/Android/commits/6002c9ffb6bf241c4dbbd7888e36111902eb89f1/comments",
+    "author": {
+        "login": "JFox-sk",
+        "id": 2402129,
+        "node_id": "MDQ6VXNlcjI0MDIxMjk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2402129?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JFox-sk",
+        "html_url": "https://github.com/JFox-sk",
+        "followers_url": "https://api.github.com/users/JFox-sk/followers",
+        "following_url": "https://api.github.com/users/JFox-sk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JFox-sk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JFox-sk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JFox-sk/subscriptions",
+        "organizations_url": "https://api.github.com/users/JFox-sk/orgs",
+        "repos_url": "https://api.github.com/users/JFox-sk/repos",
+        "events_url": "https://api.github.com/users/JFox-sk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JFox-sk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "JFox-sk",
+        "id": 2402129,
+        "node_id": "MDQ6VXNlcjI0MDIxMjk=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2402129?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JFox-sk",
+        "html_url": "https://github.com/JFox-sk",
+        "followers_url": "https://api.github.com/users/JFox-sk/followers",
+        "following_url": "https://api.github.com/users/JFox-sk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JFox-sk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JFox-sk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JFox-sk/subscriptions",
+        "organizations_url": "https://api.github.com/users/JFox-sk/orgs",
+        "repos_url": "https://api.github.com/users/JFox-sk/repos",
+        "events_url": "https://api.github.com/users/JFox-sk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JFox-sk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2c2cf142974deaa73eb11589a0f88dfa51ce5989",
+            "url": "https://api.github.com/repos/TrashOut/Android/commits/2c2cf142974deaa73eb11589a0f88dfa51ce5989",
+            "html_url": "https://github.com/TrashOut/Android/commit/2c2cf142974deaa73eb11589a0f88dfa51ce5989"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "9bf635c43f59329c3d63f7161dd9e52d10c22aad",
+            "filename": "app/src/main/java/me/trashout/fragment/TrashReportOrEditFragment.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/TrashOut/Android/blob/6002c9ffb6bf241c4dbbd7888e36111902eb89f1/app%2Fsrc%2Fmain%2Fjava%2Fme%2Ftrashout%2Ffragment%2FTrashReportOrEditFragment.java",
+            "raw_url": "https://github.com/TrashOut/Android/raw/6002c9ffb6bf241c4dbbd7888e36111902eb89f1/app%2Fsrc%2Fmain%2Fjava%2Fme%2Ftrashout%2Ffragment%2FTrashReportOrEditFragment.java",
+            "contents_url": "https://api.github.com/repos/TrashOut/Android/contents/app%2Fsrc%2Fmain%2Fjava%2Fme%2Ftrashout%2Ffragment%2FTrashReportOrEditFragment.java?ref=6002c9ffb6bf241c4dbbd7888e36111902eb89f1",
+            "patch": "@@ -360,7 +360,7 @@ private void setupReportAsSpinner() {\n         reportAsIds.add(-1);\n \n         // report as organization\n-        if (user != null) {\n+        if (user != null && user.getOrganizations() != null) {\n             for (Organization organization : user.getOrganizations()) {\n                 reportAsLabels.add(organization.getName());\n                 reportAsIds.add(organization.getId());"
+        }
+    ]
+}

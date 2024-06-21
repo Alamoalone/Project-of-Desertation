@@ -1,0 +1,14 @@
+    public byte[] getHash() {
+        SHA256Digest digest = new SHA256Digest();
+        byte[] ret = new byte[32];
+        digest.update(to.address, 0, to.address.length);
+        if (!isTransactionFee) {
+            digest.update(from.address, 0, from.address.length);
+        }
+        digest.update(longToBytes(fee.amount()), 0, 8);
+        digest.update(longToBytes(amount.amount()), 0, 8);
+        digest.update(longToBytes(timestamp), 0, 8);
+        digest.doFinal(ret, 0);
+
+        return ret;
+    }

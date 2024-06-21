@@ -1,0 +1,1 @@
+getMembraneMapping(Element param, SimulationContext simulationContext)

@@ -1,0 +1,98 @@
+{
+    "sha": "99e933b184e9a55eeb1a756f04a4a335489164fb",
+    "node_id": "C_kwDOKM0tBdoAKDk5ZTkzM2IxODRlOWE1NWVlYjFhNzU2ZjA0YTRhMzM1NDg5MTY0ZmI",
+    "commit": {
+        "author": {
+            "name": "茶茶",
+            "email": "chachakko@outlook.com",
+            "date": "2023-09-21T03:36:24Z"
+        },
+        "committer": {
+            "name": "茶茶",
+            "email": "chachakko@outlook.com",
+            "date": "2023-09-21T03:36:24Z"
+        },
+        "message": "fix(dm): restore conditional check to avoid null pointer exception\n\nRelated: 7e0aa37c30a902c57ef979d95a8f31930615c480",
+        "tree": {
+            "sha": "abbb8994677af28d7d8839d80a970cc6879b515c",
+            "url": "https://api.github.com/repos/meowool/cradle/git/trees/abbb8994677af28d7d8839d80a970cc6879b515c"
+        },
+        "url": "https://api.github.com/repos/meowool/cradle/git/commits/99e933b184e9a55eeb1a756f04a4a335489164fb",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCAAdFiEEzK4fZk3KAfbo1kpYjc2SxSko25oFAmULujgACgkQjc2SxSko\n25o6gQv+L1BLqlKTRgtzoQFH+R8U0J6nke3zX9VcS44Vhej7CoiHgRDPIsw6jugG\n+6tcl4hnAOWvQEPEnJwd5/2jo2lSzAO8hR+Rf0q486UEW8Th8/cyS5sWLwyJCN7b\nNiTGdYS1LXWr/fk2exFmYRCuZgrTsDLMgKFu6fS/51cgxbSSowhfR1lQWOmkjoO1\nD1clPB7eTR48HsqSSomh+88DQdyOrYZGTHgWCgWTQC4ULYMGuj9AYGjf+JWq9GOP\nplrc9eUbMWB3eBKObwdKn+8kQjH5FwfeLT8l1fyV9ZLbacQEy7wnqszNL2frsrM+\n5aPeVYBAdLaoHzTwDOhJefX09Xq7bW+DpjPdwc8kn+WCOT5Ej6X77cVk433CgSAY\nr5VM62LrLElSyh1oqpaTe+lZVZf/57QQe+4s8V7CHu4JtzhcRf+wC+0Wa4qSsU8a\nkGrw8EqPTopyaVgK+oT6iNiZK35NkDV4TtPMewXF0xd58NYckVnV+pfbtcg5XuiU\nnUm2Y2Mb\n=ZkEk\n-----END PGP SIGNATURE-----",
+            "payload": "tree abbb8994677af28d7d8839d80a970cc6879b515c\nparent 93fa215e88268b3d17787b84e5524f4a61f6091b\nauthor 茶茶 <chachakko@outlook.com> 1695267384 +0800\ncommitter 茶茶 <chachakko@outlook.com> 1695267384 +0800\n\nfix(dm): restore conditional check to avoid null pointer exception\n\nRelated: 7e0aa37c30a902c57ef979d95a8f31930615c480\n"
+        }
+    },
+    "url": "https://api.github.com/repos/meowool/cradle/commits/99e933b184e9a55eeb1a756f04a4a335489164fb",
+    "html_url": "https://github.com/meowool/cradle/commit/99e933b184e9a55eeb1a756f04a4a335489164fb",
+    "comments_url": "https://api.github.com/repos/meowool/cradle/commits/99e933b184e9a55eeb1a756f04a4a335489164fb/comments",
+    "author": {
+        "login": "chachako",
+        "id": 58068445,
+        "node_id": "MDQ6VXNlcjU4MDY4NDQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58068445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chachako",
+        "html_url": "https://github.com/chachako",
+        "followers_url": "https://api.github.com/users/chachako/followers",
+        "following_url": "https://api.github.com/users/chachako/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chachako/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chachako/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chachako/subscriptions",
+        "organizations_url": "https://api.github.com/users/chachako/orgs",
+        "repos_url": "https://api.github.com/users/chachako/repos",
+        "events_url": "https://api.github.com/users/chachako/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chachako/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "chachako",
+        "id": 58068445,
+        "node_id": "MDQ6VXNlcjU4MDY4NDQ1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/58068445?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chachako",
+        "html_url": "https://github.com/chachako",
+        "followers_url": "https://api.github.com/users/chachako/followers",
+        "following_url": "https://api.github.com/users/chachako/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chachako/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chachako/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chachako/subscriptions",
+        "organizations_url": "https://api.github.com/users/chachako/orgs",
+        "repos_url": "https://api.github.com/users/chachako/repos",
+        "events_url": "https://api.github.com/users/chachako/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chachako/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "93fa215e88268b3d17787b84e5524f4a61f6091b",
+            "url": "https://api.github.com/repos/meowool/cradle/commits/93fa215e88268b3d17787b84e5524f4a61f6091b",
+            "html_url": "https://github.com/meowool/cradle/commit/93fa215e88268b3d17787b84e5524f4a61f6091b"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 4,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "50d7e77489f40369af36292d816e0c07da8e0a27",
+            "filename": "subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/DefaultDependencyFactory.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/meowool/cradle/blob/99e933b184e9a55eeb1a756f04a4a335489164fb/subprojects%2Fdependency-management%2Fsrc%2Fmain%2Fjava%2Forg%2Fgradle%2Fapi%2Finternal%2Fartifacts%2FDefaultDependencyFactory.java",
+            "raw_url": "https://github.com/meowool/cradle/raw/99e933b184e9a55eeb1a756f04a4a335489164fb/subprojects%2Fdependency-management%2Fsrc%2Fmain%2Fjava%2Forg%2Fgradle%2Fapi%2Finternal%2Fartifacts%2FDefaultDependencyFactory.java",
+            "contents_url": "https://api.github.com/repos/meowool/cradle/contents/subprojects%2Fdependency-management%2Fsrc%2Fmain%2Fjava%2Forg%2Fgradle%2Fapi%2Finternal%2Fartifacts%2FDefaultDependencyFactory.java?ref=99e933b184e9a55eeb1a756f04a4a335489164fb",
+            "patch": "@@ -121,9 +121,11 @@ private void injectServices(DependencyConstraint dependency) {\n     @Override\n     @Deprecated\n     @SuppressWarnings(\"rawtypes\")\n-    public org.gradle.api.artifacts.ClientModule createModule(Object dependencyNotation, Closure configureClosure) {\n+    public org.gradle.api.artifacts.ClientModule createModule(Object dependencyNotation, @Nullable Closure configureClosure) {\n         org.gradle.api.artifacts.ClientModule clientModule = clientModuleNotationParser.parseNotation(dependencyNotation);\n-        configureModule(clientModule, configureClosure);\n+        if (configureClosure != null) {\n+            configureModule(clientModule, configureClosure);\n+        }\n         return clientModule;\n     }\n "
+        }
+    ]
+}

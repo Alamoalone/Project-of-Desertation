@@ -1,0 +1,8 @@
+    private static RendCompoundAffectationOperation semi(SemiAffectationOperation _anaNode, Forwards _forwards) {
+        StringList names_ = _anaNode.getResultClass().getNames();
+        ExecTypeFunction pair_ = FetchMemberUtil.fetchFunctionOpPair(_anaNode.getFct(), _forwards);
+        if (pair_.getFct() == null) {
+            return new RendCompoundAffectationStringOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(_anaNode.getOperatorContent()),names_,new ExecOperDir(_anaNode.getSymbol()),FetchMemberUtil.fetchImplicits(_anaNode.getConvTo(), _forwards), _anaNode.isPost());
+        }
+        return new RendCompoundAffectationExplicitCustOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(_anaNode.getOperatorContent()), new ExecStaticFctContent(new ExecStaticFctCommonContent("","",-1),new ExecStaticEltContent(_anaNode.getFct(), _forwards)), pair_, FetchMemberUtil.fetchImplicits(_anaNode.getConvTo(), _forwards), names_, _anaNode.isPost());
+    }

@@ -1,0 +1,12 @@
+    private static void processCompareReport(LinkageStackElementIn _in, VariablesOffsets _vars,
+                                             MethodOperation _parent, Coverage _cov) {
+        if (isWideCmp(_parent)) {
+
+            int sum_ = _in.getBeginBlock() + _parent.getIndexInEl();
+            int begin_ = sum_+((SymbolOperation)_parent).getOperatorContent().getOpOffset();
+            int length_ = ((SymbolOperation)_parent).getOperatorContent().getOper().length();
+            if (LambdaOperation.fct(((SymbolOperation)_parent).getFct().getFunction()) == null) {
+                safeReport(_in, _vars, _parent, _cov, begin_, length_);
+            }
+        }
+    }

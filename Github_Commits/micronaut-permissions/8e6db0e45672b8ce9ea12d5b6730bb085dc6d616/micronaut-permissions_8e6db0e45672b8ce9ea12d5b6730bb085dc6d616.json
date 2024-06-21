@@ -1,0 +1,146 @@
+{
+    "sha": "8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+    "node_id": "C_kwDOG5s8Q9oAKDhlNmRiMGU0NTY3MmI4Y2U5ZWExMmQ1YjY3MzBiYjA4NWRjNmQ2MTY",
+    "commit": {
+        "author": {
+            "name": "Karim Dibo",
+            "email": "karim@agorapulse.com",
+            "date": "2023-03-21T19:41:04Z"
+        },
+        "committer": {
+            "name": "Karim Dibo",
+            "email": "karim@agorapulse.com",
+            "date": "2023-03-21T19:41:04Z"
+        },
+        "message": "Fix null pointer exception on null iterable",
+        "tree": {
+            "sha": "6a8dfc16d44a21e80b3bc4093f26184fcd381c21",
+            "url": "https://api.github.com/repos/agorapulse/micronaut-permissions/git/trees/6a8dfc16d44a21e80b3bc4093f26184fcd381c21"
+        },
+        "url": "https://api.github.com/repos/agorapulse/micronaut-permissions/git/commits/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/agorapulse/micronaut-permissions/commits/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+    "html_url": "https://github.com/agorapulse/micronaut-permissions/commit/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+    "comments_url": "https://api.github.com/repos/agorapulse/micronaut-permissions/commits/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/comments",
+    "author": {
+        "login": "DKarim",
+        "id": 2690343,
+        "node_id": "MDQ6VXNlcjI2OTAzNDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2690343?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DKarim",
+        "html_url": "https://github.com/DKarim",
+        "followers_url": "https://api.github.com/users/DKarim/followers",
+        "following_url": "https://api.github.com/users/DKarim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DKarim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DKarim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DKarim/subscriptions",
+        "organizations_url": "https://api.github.com/users/DKarim/orgs",
+        "repos_url": "https://api.github.com/users/DKarim/repos",
+        "events_url": "https://api.github.com/users/DKarim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DKarim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "DKarim",
+        "id": 2690343,
+        "node_id": "MDQ6VXNlcjI2OTAzNDM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2690343?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/DKarim",
+        "html_url": "https://github.com/DKarim",
+        "followers_url": "https://api.github.com/users/DKarim/followers",
+        "following_url": "https://api.github.com/users/DKarim/following{/other_user}",
+        "gists_url": "https://api.github.com/users/DKarim/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/DKarim/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/DKarim/subscriptions",
+        "organizations_url": "https://api.github.com/users/DKarim/orgs",
+        "repos_url": "https://api.github.com/users/DKarim/repos",
+        "events_url": "https://api.github.com/users/DKarim/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/DKarim/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7896ade235964d9f130719a42d9253907ab3db3d",
+            "url": "https://api.github.com/repos/agorapulse/micronaut-permissions/commits/7896ade235964d9f130719a42d9253907ab3db3d",
+            "html_url": "https://github.com/agorapulse/micronaut-permissions/commit/7896ade235964d9f130719a42d9253907ab3db3d"
+        }
+    ],
+    "stats": {
+        "total": 106,
+        "additions": 105,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "2bcb56e4f04573cd38ff740aa36f7d1a20b9e9cd",
+            "filename": "libs/micronaut-permissions/src/main/groovy/com/agorapulse/permissions/DefaultPermissionChecker.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/agorapulse/micronaut-permissions/blob/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Fmain%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FDefaultPermissionChecker.java",
+            "raw_url": "https://github.com/agorapulse/micronaut-permissions/raw/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Fmain%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FDefaultPermissionChecker.java",
+            "contents_url": "https://api.github.com/repos/agorapulse/micronaut-permissions/contents/libs%2Fmicronaut-permissions%2Fsrc%2Fmain%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FDefaultPermissionChecker.java?ref=8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+            "patch": "@@ -62,6 +62,9 @@ public <T> PermissionCheckResult checkPermission(String permissionDefinition, T\n \n     @SuppressWarnings(\"unchecked\")\n     public <T> PermissionCheckResult checkPermissionOnContainer(String permissionDefinition, Iterable<T> value, Argument<Iterable<T>> valueType) {\n+        if (value == null) {\n+            return PermissionCheckResult.ALLOW;\n+        }\n         for (T item : value) {\n             switch (checkPermission(permissionDefinition, item, valueType.getTypeParameters()[0])) {\n                 case DENY:"
+        },
+        {
+            "sha": "74daee94357d47d51928d3a764d23d296b19e0d8",
+            "filename": "libs/micronaut-permissions/src/test/groovy/com/agorapulse/permissions/HandleCollectionRequest.java",
+            "status": "added",
+            "additions": 32,
+            "deletions": 0,
+            "changes": 32,
+            "blob_url": "https://github.com/agorapulse/micronaut-permissions/blob/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FHandleCollectionRequest.java",
+            "raw_url": "https://github.com/agorapulse/micronaut-permissions/raw/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FHandleCollectionRequest.java",
+            "contents_url": "https://api.github.com/repos/agorapulse/micronaut-permissions/contents/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FHandleCollectionRequest.java?ref=8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+            "patch": "@@ -0,0 +1,32 @@\n+/*\n+ * SPDX-License-Identifier: Apache-2.0\n+ *\n+ * Copyright 2023 Agorapulse.\n+ *\n+ * Licensed under the Apache License, Version 2.0 (the \"License\");\n+ * you may not use this file except in compliance with the License.\n+ * You may obtain a copy of the License at\n+ *\n+ *     https://www.apache.org/licenses/LICENSE-2.0\n+ *\n+ * Unless required by applicable law or agreed to in writing, software\n+ * distributed under the License is distributed on an \"AS IS\" BASIS,\n+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+ * See the License for the specific language governing permissions and\n+ * limitations under the License.\n+ */\n+package com.agorapulse.permissions;\n+\n+import java.util.Collection;\n+\n+public class HandleCollectionRequest {\n+    private Collection<Long> ids;\n+\n+    public Collection<Long> getIds() {\n+        return ids;\n+    }\n+\n+    public void setIds(Collection<Long> ids) {\n+        this.ids = ids;\n+    }\n+}"
+        },
+        {
+            "sha": "28122794e3637f8054c33430feef0fcf5042d0a2",
+            "filename": "libs/micronaut-permissions/src/test/groovy/com/agorapulse/permissions/PostController.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 1,
+            "changes": 14,
+            "blob_url": "https://github.com/agorapulse/micronaut-permissions/blob/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostController.java",
+            "raw_url": "https://github.com/agorapulse/micronaut-permissions/raw/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostController.java",
+            "contents_url": "https://api.github.com/repos/agorapulse/micronaut-permissions/contents/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostController.java?ref=8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+            "patch": "@@ -24,6 +24,9 @@\n import io.micronaut.http.hateoas.JsonError;\n \n import javax.annotation.Nullable;\n+import java.util.Collection;\n+import java.util.List;\n+import java.util.stream.Collectors;\n \n @Controller(\"/post\")\n public class PostController {\n@@ -54,13 +57,22 @@ public Post publish(Long id) {\n \n     @Status(HttpStatus.CREATED)\n     @io.micronaut.http.annotation.Post(\"/merge\")\n-    public Post compare(@Nullable @Header(\"X-User-Id\") Long userId, @Body PostMergeRequest postMergeRequest) {\n+    public Post merge(@Nullable @Header(\"X-User-Id\") Long userId, @Body PostMergeRequest postMergeRequest) {\n         Post mergedPost = postService.merge(userId,\n             postRepository.get(postMergeRequest.getId1()),\n             postRepository.get(postMergeRequest.getId2()));\n         return postRepository.save(mergedPost);\n     }\n \n+    @io.micronaut.http.annotation.Post(\"/handle-collection\")\n+    public void handleCollection(@Body HandleCollectionRequest handleCollectionRequest) {\n+        List<Post> posts = handleCollectionRequest.getIds() != null ? handleCollectionRequest.getIds()\n+            .stream()\n+            .map(postRepository::get)\n+            .collect(Collectors.toList()) : null;\n+        postService.handleCollection(posts);\n+    }\n+\n     // tag::error[]\n     @Error(PermissionException.class)\n     public HttpResponse<JsonError> permissionException(PermissionException ex) {"
+        },
+        {
+            "sha": "8f561fa67e7cf578b53804aad53da49d3e0831e7",
+            "filename": "libs/micronaut-permissions/src/test/groovy/com/agorapulse/permissions/PostControllerSpec.groovy",
+            "status": "modified",
+            "additions": 52,
+            "deletions": 0,
+            "changes": 52,
+            "blob_url": "https://github.com/agorapulse/micronaut-permissions/blob/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostControllerSpec.groovy",
+            "raw_url": "https://github.com/agorapulse/micronaut-permissions/raw/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostControllerSpec.groovy",
+            "contents_url": "https://api.github.com/repos/agorapulse/micronaut-permissions/contents/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostControllerSpec.groovy?ref=8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+            "patch": "@@ -177,4 +177,56 @@ class PostControllerSpec extends Specification {\n             }\n     }\n \n+    void 'handle null collection'() {\n+        expect:\n+            gru.test {\n+                post '/post/handle-collection', {\n+                    headers 'X-User-Id': '1'\n+                    json ids: null\n+                }\n+                expect {\n+                    status OK\n+                }\n+            }\n+    }\n+\n+    void 'handle empty collection'() {\n+        expect:\n+            gru.test {\n+                post '/post/handle-collection', {\n+                    headers 'X-User-Id': '1'\n+                    json ids: []\n+                }\n+                expect {\n+                    status OK\n+                }\n+            }\n+    }\n+\n+    void 'handle collection containing one not allowed'() {\n+        expect:\n+            gru.test {\n+                post '/post/handle-collection', {\n+                    headers 'X-User-Id': '1'\n+                    json ids: [1, 3]\n+                }\n+                expect {\n+                    status UNAUTHORIZED\n+                }\n+            }\n+    }\n+\n+    void 'handle collection containing only allowed'() {\n+        expect:\n+            gru.test {\n+                post '/post/handle-collection', {\n+                    headers 'X-User-Id': '1'\n+                    json ids: [1, 2]\n+                }\n+                expect {\n+                    status OK\n+                }\n+            }\n+    }\n+\n }"
+        },
+        {
+            "sha": "4bfde9fc031c0d08c39757e0813ddb2ff9ed5054",
+            "filename": "libs/micronaut-permissions/src/test/groovy/com/agorapulse/permissions/PostService.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/agorapulse/micronaut-permissions/blob/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostService.java",
+            "raw_url": "https://github.com/agorapulse/micronaut-permissions/raw/8e6db0e45672b8ce9ea12d5b6730bb085dc6d616/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostService.java",
+            "contents_url": "https://api.github.com/repos/agorapulse/micronaut-permissions/contents/libs%2Fmicronaut-permissions%2Fsrc%2Ftest%2Fgroovy%2Fcom%2Fagorapulse%2Fpermissions%2FPostService.java?ref=8e6db0e45672b8ce9ea12d5b6730bb085dc6d616",
+            "patch": "@@ -18,6 +18,7 @@\n package com.agorapulse.permissions;\n \n import javax.inject.Singleton;\n+import java.util.Collection;\n \n @Singleton\n public class PostService {\n@@ -34,6 +35,10 @@ public Post archive(Post post) {\n         return post.archive();\n     }\n \n+    @RequiresPermission(\"edit\")\n+    public void handleCollection(Collection<Post> posts) {\n+    }\n+\n     @RequiresPermission(\"edit\")\n     public Post publish(Post post) {\n         return post.publish();"
+        }
+    ]
+}

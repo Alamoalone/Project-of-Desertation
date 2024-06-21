@@ -1,0 +1,14 @@
+	public ResponseEntity<List<EmployeeEntity>> findByNameMobilePosition(@RequestParam(required=false) String filter){
+		
+		if(filter!=null && filter.trim().length()!=0) {
+			String filter1=filter;
+			String filter2=filter;
+			String filter3=filter;
+			try {return new ResponseEntity<>(employeeEntityService.findByNameMobilePositionContaining(filter1,filter2,filter3),HttpStatus.OK);
+			}catch(Exception ex) {return new ResponseEntity<>(HttpStatus.NOT_FOUND);}
+		}else {
+			try {
+				return new ResponseEntity<>(employeeEntityService.getAllEmployeeEntity(),HttpStatus.OK);
+				} catch(Exception ex) {return new ResponseEntity<>(HttpStatus.NOT_FOUND);}			
+		}
+	}

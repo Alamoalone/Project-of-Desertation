@@ -1,0 +1,7 @@
+    private static Line getLineOrThrow(Network network, String id) {
+        Line line = network.getLine(id);
+        if (line == null) {
+            throw new SweInvalidDataException(String.format("Line with id: %s needed for HVDC link modelling does not exist in network ", id));
+        }
+        return line;
+    }

@@ -1,0 +1,9 @@
+@@ -839,7 +839,7 @@ public double getSamplingRate() {
+             return samplingRate;
+         }
+ 
+-        public void setRequestedDuration(double requestedDuration) {
++        public void setRequestedDuration(Double requestedDuration) {
+             this.requestedDuration = requestedDuration;
+         }
+ 

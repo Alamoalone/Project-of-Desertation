@@ -1,0 +1,110 @@
+{
+    "sha": "e726b5064de3e46460b48d99c82c84eae740e5ee",
+    "node_id": "C_kwDOKbJFHdoAKGU3MjZiNTA2NGRlM2U0NjQ2MGI0OGQ5OWM4MmM4NGVhZTc0MGU1ZWU",
+    "commit": {
+        "author": {
+            "name": "york-Andy",
+            "email": "daryork43@gmail.com",
+            "date": "2023-10-24T03:11:55Z"
+        },
+        "committer": {
+            "name": "york-Andy",
+            "email": "daryork43@gmail.com",
+            "date": "2023-10-24T03:11:55Z"
+        },
+        "message": "arregle siniestros\n\nnull pointer exception",
+        "tree": {
+            "sha": "3a0a6fc02f6a46f0dfcdc5883fb0d8693ce7a653",
+            "url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/git/trees/3a0a6fc02f6a46f0dfcdc5883fb0d8693ce7a653"
+        },
+        "url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/git/commits/e726b5064de3e46460b48d99c82c84eae740e5ee",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/commits/e726b5064de3e46460b48d99c82c84eae740e5ee",
+    "html_url": "https://github.com/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/commit/e726b5064de3e46460b48d99c82c84eae740e5ee",
+    "comments_url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/commits/e726b5064de3e46460b48d99c82c84eae740e5ee/comments",
+    "author": {
+        "login": "York-Andy",
+        "id": 141681158,
+        "node_id": "U_kgDOCHHiBg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/141681158?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/York-Andy",
+        "html_url": "https://github.com/York-Andy",
+        "followers_url": "https://api.github.com/users/York-Andy/followers",
+        "following_url": "https://api.github.com/users/York-Andy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/York-Andy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/York-Andy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/York-Andy/subscriptions",
+        "organizations_url": "https://api.github.com/users/York-Andy/orgs",
+        "repos_url": "https://api.github.com/users/York-Andy/repos",
+        "events_url": "https://api.github.com/users/York-Andy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/York-Andy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "York-Andy",
+        "id": 141681158,
+        "node_id": "U_kgDOCHHiBg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/141681158?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/York-Andy",
+        "html_url": "https://github.com/York-Andy",
+        "followers_url": "https://api.github.com/users/York-Andy/followers",
+        "following_url": "https://api.github.com/users/York-Andy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/York-Andy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/York-Andy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/York-Andy/subscriptions",
+        "organizations_url": "https://api.github.com/users/York-Andy/orgs",
+        "repos_url": "https://api.github.com/users/York-Andy/repos",
+        "events_url": "https://api.github.com/users/York-Andy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/York-Andy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "017870818ebfad3ccc6ea37424be5bebab1110ff",
+            "url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/commits/017870818ebfad3ccc6ea37424be5bebab1110ff",
+            "html_url": "https://github.com/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/commit/017870818ebfad3ccc6ea37424be5bebab1110ff"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 6,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "12089c80484637a27b68817e41884bf7dd136f55",
+            "filename": "nbproject/private/private.properties",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/blob/e726b5064de3e46460b48d99c82c84eae740e5ee/nbproject%2Fprivate%2Fprivate.properties",
+            "raw_url": "https://github.com/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/raw/e726b5064de3e46460b48d99c82c84eae740e5ee/nbproject%2Fprivate%2Fprivate.properties",
+            "contents_url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/contents/nbproject%2Fprivate%2Fprivate.properties?ref=e726b5064de3e46460b48d99c82c84eae740e5ee",
+            "patch": "@@ -5,4 +5,4 @@ do.jlink=false\n javac.debug=true\n javadoc.preview=true\n jlink.strip=false\n-user.properties.file=C:\\\\Users\\\\jero\\\\AppData\\\\Roaming\\\\NetBeans\\\\8.2\\\\build.properties\n+user.properties.file=C:\\\\Users\\\\Lenovo\\\\AppData\\\\Roaming\\\\NetBeans\\\\16\\\\build.properties"
+        },
+        {
+            "sha": "25e0aa9993aff4253c074a99f87b871c10d172b5",
+            "filename": "src/bomberos/Vistas/Siniestros.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 2,
+            "changes": 7,
+            "blob_url": "https://github.com/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/blob/e726b5064de3e46460b48d99c82c84eae740e5ee/src%2Fbomberos%2FVistas%2FSiniestros.java",
+            "raw_url": "https://github.com/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/raw/e726b5064de3e46460b48d99c82c84eae740e5ee/src%2Fbomberos%2FVistas%2FSiniestros.java",
+            "contents_url": "https://api.github.com/repos/Jerommz/AppBomberos-ProyectoFinal-ARGPrograma/contents/src%2Fbomberos%2FVistas%2FSiniestros.java?ref=e726b5064de3e46460b48d99c82c84eae740e5ee",
+            "patch": "@@ -38,9 +38,12 @@ public class Siniestros extends javax.swing.JPanel {\n     SiniestroData siniestroDB = new SiniestroData();\n     CuartelData cuartelDB = new CuartelData();\n     BrigadaData brigadaDB = new BrigadaData();\n+    Cuartel cuartel =new Cuartel();\n+    Brigada brigada =new Brigada();\n+    Siniestro accidente =new Siniestro();\n+    \n \n-    private Siniestro accidente;\n-    private Brigada brigada;\n+   \n     private ImageIcon icono;\n     private Conexion con;\n     private List<Brigada> brigadas = new ArrayList<>();"
+        }
+    ]
+}

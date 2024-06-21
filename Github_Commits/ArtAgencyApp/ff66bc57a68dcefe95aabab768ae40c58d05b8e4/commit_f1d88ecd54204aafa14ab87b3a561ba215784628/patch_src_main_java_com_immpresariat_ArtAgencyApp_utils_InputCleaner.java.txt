@@ -1,0 +1,24 @@
+@@ -35,10 +35,19 @@ public ContactPerson clean(ContactPerson contactPerson){
+ 
+     public Contact clean(Contact contact){
+         contact.setTitle(contact.getTitle().trim());
+-        contact.setDescription(contact.getDescription().trim());
+-        contact.setEmail(contact.getEmail().trim());
+-        contact.setPhone(contact.getPhone().trim());
+-        contact.setWebPage(contact.getWebPage().trim());
++
++        if(contact.getDescription() != null){
++            contact.setDescription(contact.getDescription().trim());
++        }
++        if(contact.getEmail() != null){
++            contact.setEmail(contact.getEmail().trim());
++        }
++        if(contact.getPhone() != null){
++            contact.setPhone(contact.getPhone().trim());
++        }
++        if(contact.getWebPage() != null){
++            contact.setWebPage(contact.getWebPage().trim());
++        }
+         return contact;
+     }
+ 

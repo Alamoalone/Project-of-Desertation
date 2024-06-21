@@ -1,0 +1,98 @@
+{
+    "sha": "04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9",
+    "node_id": "C_kwDOACS_QNoAKDA0YmNiMDU3ZWRmM2UxNzdjMGM5YTNjZmM1N2ZhMWIwMGE0OTVlYTk",
+    "commit": {
+        "author": {
+            "name": "Mark Waite",
+            "email": "mark.earl.waite@gmail.com",
+            "date": "2022-12-23T00:51:34Z"
+        },
+        "committer": {
+            "name": "Mark Waite",
+            "email": "mark.earl.waite@gmail.com",
+            "date": "2022-12-23T00:51:34Z"
+        },
+        "message": "Prevent null pointer exception in SetupConfig",
+        "tree": {
+            "sha": "beaca472fe20ab09a9d9d2ea4a5437cfc9d235df",
+            "url": "https://api.github.com/repos/jenkinsci/agent-setup-plugin/git/trees/beaca472fe20ab09a9d9d2ea4a5437cfc9d235df"
+        },
+        "url": "https://api.github.com/repos/jenkinsci/agent-setup-plugin/git/commits/04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jenkinsci/agent-setup-plugin/commits/04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9",
+    "html_url": "https://github.com/jenkinsci/agent-setup-plugin/commit/04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9",
+    "comments_url": "https://api.github.com/repos/jenkinsci/agent-setup-plugin/commits/04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9/comments",
+    "author": {
+        "login": "MarkEWaite",
+        "id": 156685,
+        "node_id": "MDQ6VXNlcjE1NjY4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/156685?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MarkEWaite",
+        "html_url": "https://github.com/MarkEWaite",
+        "followers_url": "https://api.github.com/users/MarkEWaite/followers",
+        "following_url": "https://api.github.com/users/MarkEWaite/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MarkEWaite/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MarkEWaite/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MarkEWaite/subscriptions",
+        "organizations_url": "https://api.github.com/users/MarkEWaite/orgs",
+        "repos_url": "https://api.github.com/users/MarkEWaite/repos",
+        "events_url": "https://api.github.com/users/MarkEWaite/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MarkEWaite/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "MarkEWaite",
+        "id": 156685,
+        "node_id": "MDQ6VXNlcjE1NjY4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/156685?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MarkEWaite",
+        "html_url": "https://github.com/MarkEWaite",
+        "followers_url": "https://api.github.com/users/MarkEWaite/followers",
+        "following_url": "https://api.github.com/users/MarkEWaite/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MarkEWaite/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MarkEWaite/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MarkEWaite/subscriptions",
+        "organizations_url": "https://api.github.com/users/MarkEWaite/orgs",
+        "repos_url": "https://api.github.com/users/MarkEWaite/repos",
+        "events_url": "https://api.github.com/users/MarkEWaite/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MarkEWaite/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fd399a3785501ea1839f19878f0d68d8f00d6923",
+            "url": "https://api.github.com/repos/jenkinsci/agent-setup-plugin/commits/fd399a3785501ea1839f19878f0d68d8f00d6923",
+            "html_url": "https://github.com/jenkinsci/agent-setup-plugin/commit/fd399a3785501ea1839f19878f0d68d8f00d6923"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "5c1e4ccf6a65166b7b34ed6f3e4f4d8799feb09b",
+            "filename": "src/main/java/org/jenkinsci/plugins/slave_setup/SetupConfig.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/jenkinsci/agent-setup-plugin/blob/04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9/src%2Fmain%2Fjava%2Forg%2Fjenkinsci%2Fplugins%2Fslave_setup%2FSetupConfig.java",
+            "raw_url": "https://github.com/jenkinsci/agent-setup-plugin/raw/04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9/src%2Fmain%2Fjava%2Forg%2Fjenkinsci%2Fplugins%2Fslave_setup%2FSetupConfig.java",
+            "contents_url": "https://api.github.com/repos/jenkinsci/agent-setup-plugin/contents/src%2Fmain%2Fjava%2Forg%2Fjenkinsci%2Fplugins%2Fslave_setup%2FSetupConfig.java?ref=04bcb057edf3e177c0c9a3cfc57fa1b00a495ea9",
+            "patch": "@@ -123,7 +123,7 @@ public FormValidation doCheckAssignedLabelString(@QueryParameter String value) {\n \n         Label l = Jenkins.getInstance().getLabel(value);\n \n-        if (l.isEmpty()) {\n+        if (l != null && l.isEmpty()) {\n             for (LabelAtom a : l.listAtoms()) {\n                 if (a.isEmpty()) {\n                     LabelAtom nearest = LabelAtom.findNearest(a.getName());"
+        }
+    ]
+}

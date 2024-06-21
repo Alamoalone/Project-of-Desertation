@@ -1,0 +1,28 @@
+    public ReadonlyNativeVectorBuffer getCameraProjectionData()
+    {
+        // Store the camera projections in a uniform buffer
+        if (!cameraProjectionList.isEmpty())
+        {
+            // Flatten the camera projection matrices into 16-component vectors and store them in the vertex list data structure.
+            NativeVectorBuffer cameraProjectionData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 16, cameraProjectionList.size());
+
+            for (int k = 0; k < cameraProjectionList.size(); k++)
+            {
+                int d = 0;
+                for (int col = 0; col < 4; col++) // column
+                {
+                    for (int row = 0; row < 4; row++) // row
+                    {
+                        Matrix4 projection = cameraProjectionList.get(k).getProjectionMatrix(recommendedNearPlane, recommendedFarPlane);
+                        cameraProjectionData.set(k, d, projection.get(row, col));
+                        d++;
+                    }
+                }
+            }
+            return cameraProjectionData;
+        }
+        else
+        {
+            return null;
+        }
+    }

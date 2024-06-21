@@ -1,0 +1,60 @@
+{
+    "sha": "4f717731cee6096f72946d5f6677626fdd0a2b54",
+    "node_id": "C_kwDOATFj2toAKDRmNzE3NzMxY2VlNjA5NmY3Mjk0NmQ1ZjY2Nzc2MjZmZGQwYTJiNTQ",
+    "commit": {
+        "author": {
+            "name": "Gabriel Buades",
+            "email": "gbuades@soffid.com",
+            "date": "2022-11-28T14:42:08Z"
+        },
+        "committer": {
+            "name": "Gabriel Buades",
+            "email": "gbuades@soffid.com",
+            "date": "2022-11-28T14:42:08Z"
+        },
+        "message": "Fix null pointer exception",
+        "tree": {
+            "sha": "8a3a3a713538a65fd716eb715a4759b593f57a42",
+            "url": "https://api.github.com/repos/SoffidIAM/addon-backup/git/trees/8a3a3a713538a65fd716eb715a4759b593f57a42"
+        },
+        "url": "https://api.github.com/repos/SoffidIAM/addon-backup/git/commits/4f717731cee6096f72946d5f6677626fdd0a2b54",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SoffidIAM/addon-backup/commits/4f717731cee6096f72946d5f6677626fdd0a2b54",
+    "html_url": "https://github.com/SoffidIAM/addon-backup/commit/4f717731cee6096f72946d5f6677626fdd0a2b54",
+    "comments_url": "https://api.github.com/repos/SoffidIAM/addon-backup/commits/4f717731cee6096f72946d5f6677626fdd0a2b54/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "e7a8eb80a66b4ac42fd9a33219106d358106e10f",
+            "url": "https://api.github.com/repos/SoffidIAM/addon-backup/commits/e7a8eb80a66b4ac42fd9a33219106d358106e10f",
+            "html_url": "https://github.com/SoffidIAM/addon-backup/commit/e7a8eb80a66b4ac42fd9a33219106d358106e10f"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "fa978053f33141f53129da04bc449e146ba9cb86",
+            "filename": "web/src/main/java/com/soffid/iam/addons/backup/web/AccountDatatable.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/SoffidIAM/addon-backup/blob/4f717731cee6096f72946d5f6677626fdd0a2b54/web%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Faddons%2Fbackup%2Fweb%2FAccountDatatable.java",
+            "raw_url": "https://github.com/SoffidIAM/addon-backup/raw/4f717731cee6096f72946d5f6677626fdd0a2b54/web%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Faddons%2Fbackup%2Fweb%2FAccountDatatable.java",
+            "contents_url": "https://api.github.com/repos/SoffidIAM/addon-backup/contents/web%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsoffid%2Fiam%2Faddons%2Fbackup%2Fweb%2FAccountDatatable.java?ref=4f717731cee6096f72946d5f6677626fdd0a2b54",
+            "patch": "@@ -95,7 +95,7 @@ public String[] getDefaultColumns() throws Exception {\n \tprotected JSONObject getClientValue(Object element) throws JSONException {\n \t\tJSONObject s = super.getClientValue(element);\n \t\tAccountHistory gu = (AccountHistory) ((DataNode)element).getInstance();\n-\t\tif (new Date().after(gu.getEnd()))\n+\t\tif (gu.getEnd() != null && new Date().after(gu.getEnd()))\n \t\t\ts.put(\"$class\", \"dashed\");\n \t\treturn s;\n \t}"
+        }
+    ]
+}

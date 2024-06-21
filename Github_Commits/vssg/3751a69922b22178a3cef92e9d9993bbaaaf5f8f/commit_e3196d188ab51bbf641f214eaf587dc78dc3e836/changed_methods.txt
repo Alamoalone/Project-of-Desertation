@@ -1,0 +1,2 @@
+checkObjects(float deltaTime)
+handleInput()

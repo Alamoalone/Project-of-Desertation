@@ -1,0 +1,44 @@
+    public static void setImplicits(AnaClassArgumentMatching _ana, ImplicitMethods _implicitsOp, ImplicitMethods _implicitsTestOp, Forwards _forwards) {
+        impls(_implicitsOp, _forwards, _ana.getImplicits(), _ana.getMemberId());
+        impls(_implicitsTestOp, _forwards, _ana.getImplicitsTest(), _ana.getMemberIdTest());
+    }
+
+    private static ExecTypeFunction conv(String _formatted, MemberId _id, Forwards _forwards) {
+        ExecTypeFunction conv_ = null;
+        if (!_formatted.isEmpty()) {
+            conv_ = fetchOvTypeFunction(_id, _forwards);
+        }
+        return conv_;
+    }
+
+    public static void impls(ClassMethodIdMemberIdTypeFct _f,ImplicitMethods _implicits, Forwards _forwards) {
+        impls(_implicits,_forwards, _f.getMemberId(), _f.getImplicit().getFormatted());
+    }
+
+    private static void impls(ImplicitMethods _implicits, Forwards _forwards, MemberId _id, String _f) {
+        ExecTypeFunction convTest_ = conv(_f, _id, _forwards);
+        if (convTest_ != null) {
+            update(_implicits, convTest_, _f);
+        }
+    }
+
+    private static void impls(ImplicitMethods _implicits, Forwards _forwards, CustList<AnaFormattedRootBlock> _impl, MemberId _id) {
+        impls(_implicits, _forwards, _id, formatted(_impl));
+    }
+
+    private static String formatted(CustList<AnaFormattedRootBlock> _i) {
+        if (_i.isEmpty()) {
+            return "";
+        }
+        return _i.first().getFormatted();
+    }
+
+
+
+    private static void update(ImplicitMethods _converter, ExecTypeFunction _fct, String _formatted) {
+        _converter.getConverter().add(_fct);
+        _converter.setOwnerClass(new ExecFormattedRootBlock(_fct.getType(), _formatted));
+    }
+
+
+

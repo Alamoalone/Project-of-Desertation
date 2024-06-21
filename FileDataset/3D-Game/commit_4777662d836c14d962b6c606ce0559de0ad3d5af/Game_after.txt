@@ -1,0 +1,13 @@
+    public void cleanToBeAddedList() {
+        for (int i = 0; i < objectsToBeAdded.size(); i++) {
+            if (!objectsToBeAdded.get(i).isEmpty()) {
+                int finalI = i;
+                synchronized (objectsToBeAdded.get(i)) {
+                    objectsToBeAdded.get(i).forEach(gameObject -> objects.get(finalI).add(gameObject));
+                    objectsToBeAdded.set(i, new ArrayList<>());
+                }
+                System.gc();
+            }
+        }
+    }
+

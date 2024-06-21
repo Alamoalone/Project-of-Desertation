@@ -1,0 +1,11 @@
+@@ -72,8 +72,8 @@ public static final class Arm {
+     public static final class Winches {
+     
+     //TODO: Update the motorID with the correct ones in the winches
+-    public static final int kRightWinchMotorID = 4;
+-    public static final int kLeftWinchMotorID = 5;
++     public static final int kRightWinchMotorID = 10;
++    public static final int kLeftWinchMotorID = 9;
+     
+     //TODO: The inches is just a placeholder, need to measure how much it should realistically extend after robot is built
+     public static final double kWinchLength = Units.inchesToMeters(30);

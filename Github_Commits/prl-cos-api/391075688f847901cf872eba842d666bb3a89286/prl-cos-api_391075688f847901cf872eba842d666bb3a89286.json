@@ -1,0 +1,72 @@
+{
+    "sha": "391075688f847901cf872eba842d666bb3a89286",
+    "node_id": "C_kwDOGQmqvtoAKDM5MTA3NTY4OGY4NDc5MDFjZjg3MmViYTg0MmQ2NjZiYjNhODkyODY",
+    "commit": {
+        "author": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-17T08:24:53Z"
+        },
+        "committer": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-17T08:24:53Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "a87f59a488bc2f6be674b41e676a18c7641723a7",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/a87f59a488bc2f6be674b41e676a18c7641723a7"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/391075688f847901cf872eba842d666bb3a89286",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/391075688f847901cf872eba842d666bb3a89286",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/391075688f847901cf872eba842d666bb3a89286",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/391075688f847901cf872eba842d666bb3a89286/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "c994e0f41311b45331d31c51eb2f944d445dea58",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/c994e0f41311b45331d31c51eb2f944d445dea58",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/c994e0f41311b45331d31c51eb2f944d445dea58"
+        }
+    ],
+    "stats": {
+        "total": 32,
+        "additions": 16,
+        "deletions": 16
+    },
+    "files": [
+        {
+            "sha": "4758d9d6d3fea18211672b6de1420bff1850c234",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/services/c100respondentsolicitor/C100RespondentSolicitorService.java",
+            "status": "modified",
+            "additions": 15,
+            "deletions": 15,
+            "changes": 30,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/391075688f847901cf872eba842d666bb3a89286/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/391075688f847901cf872eba842d666bb3a89286/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java?ref=391075688f847901cf872eba842d666bb3a89286",
+            "patch": "@@ -40,6 +40,7 @@\n import java.util.Map;\n import java.util.Optional;\n \n+import static java.util.Optional.ofNullable;\n import static uk.gov.hmcts.reform.prl.constants.PrlAppsConstants.COURT_NAME;\n import static uk.gov.hmcts.reform.prl.constants.PrlAppsConstants.SOLICITOR_C1A_DRAFT_DOCUMENT;\n import static uk.gov.hmcts.reform.prl.constants.PrlAppsConstants.SOLICITOR_C7_DRAFT_DOCUMENT;\n@@ -111,22 +112,22 @@ private void retrieveExistingResponseForSolicitor(CallbackRequest callbackReques\n                     caseDataUpdated.put(\n                         event.getCaseFieldName(),\n                         CitizenDetails.builder()\n-                            .address(Optional.ofNullable(citizenDetails.getAddress()).orElse(partyDetails.getAddress()))\n-                            .addressHistory(Optional.ofNullable(citizenDetails.getAddressHistory()).orElse(\n+                            .address(ofNullable(citizenDetails.getAddress()).orElse(partyDetails.getAddress()))\n+                            .addressHistory(ofNullable(citizenDetails.getAddressHistory()).orElse(\n                                 AddressHistory.builder().isAtAddressLessThan5Years(partyDetails.getIsAtAddressLessThan5Years())\n                                     .build()\n                             ))\n-                            .contact(Optional.ofNullable(citizenDetails.getContact()).orElse(Contact.builder()\n+                            .contact(ofNullable(citizenDetails.getContact()).orElse(Contact.builder()\n                                                                                                  .phoneNumber(\n                                                                                                      partyDetails\n                                                                                                          .getPhoneNumber())\n                                                                                                  .email(partyDetails.getEmail())\n                                                                                                  .build()))\n-                            .dateOfBirth(Optional.ofNullable(citizenDetails.getDateOfBirth()).orElse(partyDetails.getDateOfBirth()))\n-                            .firstName(Optional.ofNullable(citizenDetails.getFirstName()).orElse(partyDetails.getFirstName()))\n-                            .lastName(Optional.ofNullable(citizenDetails.getLastName()).orElse(partyDetails.getLastName()))\n-                            .placeOfBirth(Optional.ofNullable(citizenDetails.getPlaceOfBirth()).orElse(partyDetails.getPlaceOfBirth()))\n-                            .previousName(Optional.ofNullable(citizenDetails.getPreviousName()).orElse(partyDetails.getPreviousName()))\n+                            .dateOfBirth(ofNullable(citizenDetails.getDateOfBirth()).orElse(partyDetails.getDateOfBirth()))\n+                            .firstName(ofNullable(citizenDetails.getFirstName()).orElse(partyDetails.getFirstName()))\n+                            .lastName(ofNullable(citizenDetails.getLastName()).orElse(partyDetails.getLastName()))\n+                            .placeOfBirth(ofNullable(citizenDetails.getPlaceOfBirth()).orElse(partyDetails.getPlaceOfBirth()))\n+                            .previousName(ofNullable(citizenDetails.getPreviousName()).orElse(partyDetails.getPreviousName()))\n                             .build()\n                     );\n                     break;\n@@ -583,15 +584,14 @@ public Map<String, Object> generateDraftDocumentsForRespondent(CallbackRequest c\n         dataMap.put(\"repEmail\", solicitorRepresentedRespondent.getValue().getSolicitorEmail());\n         if (solicitorRepresentedRespondent.getValue().getDxNumber() != null) {\n             dataMap.put(\"dxNumber\", solicitorRepresentedRespondent.getValue().getDxNumber());\n-        } else if (solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation() != null) {\n-            log.info(\"swanky {}\", solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation());\n-            for (ContactInformation contactInformation : solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation()) {\n-                for (DxAddress dxAddress : contactInformation.getDxAddress()) {\n-                    dataMap.put(\"dxNumber\", dxAddress.getDxNumber());\n+        } else {\n+            if (solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation() != null) {\n+                for (ContactInformation contactInformationLoop : solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation()) {\n+                    for (DxAddress dxAddress : contactInformationLoop.getDxAddress()) {\n+                        dataMap.put(\"dxNumber\", dxAddress.getDxNumber());\n+                    }\n                 }\n             }\n-        } else {\n-            dataMap.put(\"dxNumber\", \" \");\n         }\n         dataMap.put(\"repReference\", solicitorRepresentedRespondent.getValue().getSolicitorReference());\n "
+        },
+        {
+            "sha": "f9926825c7bfdb5b171b8e97f36dacd893568497",
+            "filename": "src/test/java/uk/gov/hmcts/reform/prl/services/c100respondentsolicitor/C100RespondentSolicitorServiceTest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/391075688f847901cf872eba842d666bb3a89286/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorServiceTest.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/391075688f847901cf872eba842d666bb3a89286/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorServiceTest.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorServiceTest.java?ref=391075688f847901cf872eba842d666bb3a89286",
+            "patch": "@@ -214,7 +214,7 @@ public void setUp() {\n             .solicitorReference(\"test\")\n             .build();\n \n-        List<ContactInformation> contactInformation = new ArrayList<>();\n+        List<ContactInformation> contactInformation = null;\n         List<DxAddress> dxAddress = new ArrayList<>();\n         dxAddress.add(DxAddress.builder().dxNumber(\"dxNumber\").build());\n         contactInformation.add(ContactInformation.builder()"
+        }
+    ]
+}

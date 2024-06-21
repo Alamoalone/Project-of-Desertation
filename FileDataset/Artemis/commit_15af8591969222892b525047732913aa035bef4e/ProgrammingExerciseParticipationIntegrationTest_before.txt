@@ -1,0 +1,125 @@
+    void testGetParticipationWithAllResults(ZonedDateTime startDate, AssessmentType assessmentType, ZonedDateTime completionDate, ZonedDateTime assessmentDueDate,
+            boolean expectLastCreatedResult) throws Exception {
+        programmingExercise.setStartDate(startDate);
+        // Add an automatic result first
+        var firstResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        // Add another automatic result
+        var secondResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        // Add a parameterized third result
+        var thirdResult = participationUtilService.addResultToParticipation(assessmentType, completionDate, programmingExerciseParticipation);
+        StudentParticipation participation = (StudentParticipation) thirdResult.getParticipation();
+
+        // Expect the request to always be ok because it should at least return the first automatic result
+        var requestedParticipation = request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-all-results", HttpStatus.OK,
+                ProgrammingExerciseStudentParticipation.class);
+
+        if (expectLastCreatedResult) {
+            assertThat(requestedParticipation.getResults()).hasSize(3);
+        }
+        else {
+            assertThat(requestedParticipation.getResults()).hasSize(2);
+        }
+        for (var result : requestedParticipation.getResults()) {
+            assertThat(result.getFeedbacks()).noneMatch(Feedback::isInvisible);
+            assertThat(result.getFeedbacks()).noneMatch(Feedback::isAfterDueDate);
+        }
+        firstResult.filterSensitiveInformation();
+        firstResult.filterSensitiveFeedbacks(true);
+        assertThat(requestedParticipation.getResults()).contains(firstResult);
+        secondResult.filterSensitiveInformation();
+        secondResult.filterSensitiveFeedbacks(true);
+        assertThat(requestedParticipation.getResults()).contains(secondResult);
+
+        // Depending on the parameters we expect to get the third result too
+        if (expectLastCreatedResult) {
+            thirdResult.filterSensitiveInformation();
+            thirdResult.filterSensitiveFeedbacks(true);
+            assertThat(requestedParticipation.getResults()).contains(thirdResult);
+        }
+    }
+
+    private static Stream<Arguments> argumentsForGetParticipationResults() {
+        ZonedDateTime startDate = ZonedDateTime.now().minusDays(3);
+        ZonedDateTime someDate = ZonedDateTime.now();
+        ZonedDateTime futureDate = ZonedDateTime.now().plusDays(3);
+        ZonedDateTime pastDate = ZonedDateTime.now().minusDays(1);
+        return Stream.of(
+                // No assessmentType and no completionDate -> notFound
+                Arguments.of(startDate, null, null, null, false),
+                // Automatic result is always returned
+                Arguments.of(startDate, AssessmentType.AUTOMATIC, null, null, true), Arguments.of(startDate, AssessmentType.AUTOMATIC, someDate, null, true),
+                Arguments.of(startDate, AssessmentType.AUTOMATIC, someDate, futureDate, true), Arguments.of(startDate, AssessmentType.AUTOMATIC, someDate, pastDate, true),
+                Arguments.of(startDate, AssessmentType.AUTOMATIC, null, futureDate, true), Arguments.of(startDate, AssessmentType.AUTOMATIC, null, pastDate, true),
+                // Manual result without completion date (assessment was only saved but no submitted) is not returned
+                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, null, null, false), Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, null, futureDate, false),
+                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, null, pastDate, false),
+                // Manual result is not returned if completed and assessment due date has not passed
+                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, someDate, futureDate, false),
+                // Manual result is returned if completed and assessmentDue date has passed
+                Arguments.of(startDate, AssessmentType.SEMI_AUTOMATIC, someDate, pastDate, true));
+    }
+
+    void testGetParticipationWithLatestResultAsAStudent(ZonedDateTime startDate, AssessmentType assessmentType, ZonedDateTime completionDate, ZonedDateTime assessmentDueDate,
+            boolean expectLastCreatedResult) throws Exception {
+        programmingExercise.setStartDate(startDate);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        var result = addStudentParticipationWithResult(assessmentType, completionDate);
+        StudentParticipation participation = (StudentParticipation) result.getParticipation();
+        var expectedStatus = expectLastCreatedResult ? HttpStatus.OK : HttpStatus.NOT_FOUND;
+        var requestedParticipation = request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-latest-result-and-feedbacks", expectedStatus,
+                ProgrammingExerciseStudentParticipation.class);
+
+        if (expectedStatus == HttpStatus.OK) {
+            assertThat(requestedParticipation.getResults()).hasSize(1);
+            var requestedResult = requestedParticipation.getResults().iterator().next();
+            assertThat(requestedResult.getFeedbacks()).noneMatch(Feedback::isInvisible);
+        }
+    }
+
+
+
+
+
+
+
+    void testGetParticipationWithLatestResult_multipleResultsAvailable(ZonedDateTime startDate, AssessmentType assessmentType, ZonedDateTime completionDate,
+            ZonedDateTime assessmentDueDate, boolean expectLastCreatedResult) throws Exception {
+        programmingExercise.setStartDate(startDate);
+        // Add an automatic result first
+        var firstResult = addStudentParticipationWithResult(AssessmentType.AUTOMATIC, null);
+        programmingExercise.setAssessmentDueDate(assessmentDueDate);
+        programmingExerciseRepository.save(programmingExercise);
+        // Add a parameterized second result
+        var secondResult = participationUtilService.addResultToParticipation(assessmentType, completionDate, programmingExerciseParticipation);
+        StudentParticipation participation = (StudentParticipation) secondResult.getParticipation();
+
+        // Expect the request to always be ok because it should at least return the first automatic result
+        var requestedParticipation = request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-latest-result-and-feedbacks", HttpStatus.OK,
+                ProgrammingExerciseStudentParticipation.class);
+
+        assertThat(requestedParticipation.getResults()).hasSize(1);
+        var requestedResult = requestedParticipation.getResults().iterator().next();
+
+        assertThat(requestedResult.getFeedbacks()).noneMatch(Feedback::isInvisible);
+        assertThat(requestedResult.getFeedbacks()).noneMatch(Feedback::isAfterDueDate);
+
+        // Depending on the parameters we expect to get the first or the second created result from the server
+        if (expectLastCreatedResult) {
+            secondResult.filterSensitiveInformation();
+            secondResult.filterSensitiveFeedbacks(true);
+            assertThat(requestedResult).isEqualTo(secondResult);
+        }
+        else {
+            firstResult.filterSensitiveInformation();
+            firstResult.filterSensitiveFeedbacks(true);
+            assertThat(requestedResult).isEqualTo(firstResult);
+        }
+    }
+
+
+

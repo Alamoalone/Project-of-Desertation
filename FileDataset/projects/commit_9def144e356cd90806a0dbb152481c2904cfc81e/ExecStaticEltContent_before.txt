@@ -1,0 +1,13 @@
+    static ExecFormattedRootBlock build(Forwards _fwd, AnaFormattedRootBlock _implicit) {
+        if (_implicit.getRootBlock() == null) {
+            return new ExecFormattedRootBlock((ExecRootBlock)null, _implicit.getFormatted());
+        }
+        return FetchMemberUtil.fwdFormatType(_implicit, _fwd);
+    }
+
+
+
+    public static ExecStaticEltContent initByNotNull(AnaCallFctContent _className, Forwards _fwd) {
+        return new ExecStaticEltContent(MethodId.getKind(((NamedCalledFunctionBlock)_className.getFunction().getFunction()).getModifier()),FetchMemberUtil.fwdFormatType(_className.getFormattedType(), _fwd));
+    }
+

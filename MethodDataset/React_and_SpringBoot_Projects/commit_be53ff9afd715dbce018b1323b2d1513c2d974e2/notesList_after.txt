@@ -1,0 +1,17 @@
+    public List<Notes> notesList() {
+        List<Notes> notesList = notesRepository.findAll();
+        List<Notes> collected = new ArrayList<>();
+
+        try {
+            collected = notesList.stream()
+                    .peek(note -> {
+                        note.setTitle(encryptionUtil.decrypt(note.getTitle()));
+                        note.setDescription(encryptionUtil.decrypt(note.getDescription()));
+                    })
+                    .toList();
+        } catch (NullPointerException e) {
+            throw new NullPointerException("LIST IS EMPTY");
+        }
+
+        return collected;
+    }

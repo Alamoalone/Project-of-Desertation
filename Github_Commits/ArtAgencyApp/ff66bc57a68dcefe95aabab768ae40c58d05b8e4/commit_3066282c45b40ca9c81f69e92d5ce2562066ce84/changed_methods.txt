@@ -1,0 +1,2 @@
+givenContactObject_whenTrim_thenReturnCleanedContactObject()
+givenContactObjectWithTitleOnly_whenTrim_thenReturnCleanedContactObject()

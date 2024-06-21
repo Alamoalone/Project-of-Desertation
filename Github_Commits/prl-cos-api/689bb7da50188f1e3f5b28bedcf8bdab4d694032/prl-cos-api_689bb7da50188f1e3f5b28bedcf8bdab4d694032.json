@@ -1,0 +1,60 @@
+{
+    "sha": "689bb7da50188f1e3f5b28bedcf8bdab4d694032",
+    "node_id": "C_kwDOGQmqvtoAKDY4OWJiN2RhNTAxODhmMWUzZjViMjhiZWRjZjhiZGFiNGQ2OTQwMzI",
+    "commit": {
+        "author": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-24T11:53:54Z"
+        },
+        "committer": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-24T11:53:54Z"
+        },
+        "message": "Fix to null pointer exception",
+        "tree": {
+            "sha": "46d41cebc7a9baa53dc9317e074e9dc8300c467e",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/46d41cebc7a9baa53dc9317e074e9dc8300c467e"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/689bb7da50188f1e3f5b28bedcf8bdab4d694032",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/689bb7da50188f1e3f5b28bedcf8bdab4d694032",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/689bb7da50188f1e3f5b28bedcf8bdab4d694032",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/689bb7da50188f1e3f5b28bedcf8bdab4d694032/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "1ddeda5dd67c5fae74e6dc704357f629ec2cd6af",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/1ddeda5dd67c5fae74e6dc704357f629ec2cd6af",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/1ddeda5dd67c5fae74e6dc704357f629ec2cd6af"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "7e9f20d21af39cf56d17769d9c24a784dc7b2344",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/services/c100respondentsolicitor/C100RespondentSolicitorService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/689bb7da50188f1e3f5b28bedcf8bdab4d694032/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/689bb7da50188f1e3f5b28bedcf8bdab4d694032/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java?ref=689bb7da50188f1e3f5b28bedcf8bdab4d694032",
+            "patch": "@@ -613,7 +613,7 @@ public Map<String, Object> populateDataMap(CallbackRequest callbackRequest) {\n         dataMap.put(\"applicationReceivedDate\", response.getConsent().getApplicationReceivedDate());\n         List<Element<RespondentProceedingDetails>> proceedingsList = response.getRespondentExistingProceedings();\n         dataMap.put(\"respondentsExistingProceedings\", proceedingsList);\n-        if (response.getRespondentAllegationsOfHarmData() != null) {\n+        if (response.getRespondentAllegationsOfHarmData().getRespAllegationsOfHarmInfo() != null) {\n             dataMap.put(\"nonMolestationOrderIssueDate\", response.getRespondentAllegationsOfHarmData()\n                 .getRespAllegationsOfHarmInfo().getRespondentNonMolestationOrderIssueDate());\n             dataMap.put(\"nonMolestationOrderEndDate\", response.getRespondentAllegationsOfHarmData()"
+        }
+    ]
+}

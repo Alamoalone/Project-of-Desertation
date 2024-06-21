@@ -1,0 +1,7 @@
+	private String formatDate(Instant date)
+	{
+		if (date == null)
+			return "Invalid Date";
+
+		return date.atZone(ZoneId.systemDefault()).toString().replace("T", " ").substring(0,16);
+	}

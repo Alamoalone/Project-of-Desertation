@@ -1,0 +1,9 @@
+@@ -208,7 +208,7 @@ public void onEntityInteract(PlayerInteractEvent.EntityInteract event) {
+                 IslandData island = SkyblockAddon.CheckOnIsland(player);
+                 if (island == null)
+                     return; //Ignore events not on an island
+-                if (island.getPermission(Permissions.InteractWithBlocks, player.getUUID()).isAllowed())
++                if(island.isOwner(player.getUUID()) || island.getPermission(Permissions.InteractWithBlocks, player.getUUID()).isAllowed())
+                     return; //Player is allowed to interact with blocks
+ 
+                 player.displayClientMessage(ServerHelper.formattedText(LanguageFile.getForKey("toolbar.overlay.nothere"), ChatFormatting.DARK_RED), true);

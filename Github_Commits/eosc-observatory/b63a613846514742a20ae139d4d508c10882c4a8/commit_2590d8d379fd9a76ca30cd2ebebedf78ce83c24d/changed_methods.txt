@@ -1,0 +1,3 @@
+setEmail(String email)
+getId()
+of(Authentication auth)

@@ -1,0 +1,27 @@
+  private void setDokumentListener(XComponent xComponent) {
+    if (xComponent != null && eventListener == null) {
+      eventListener = new LTDokumentEventListener();
+      XDocumentEventBroadcaster broadcaster = UnoRuntime.queryInterface(XDocumentEventBroadcaster.class, xComponent);
+      if (broadcaster != null) {
+        broadcaster.addDocumentEventListener(eventListener);
+      } else {
+        MessageHandler.printToLogFile("SingleDocument: setDokumentListener: Could not add document event listener!");
+      }
+      XModel xModel = UnoRuntime.queryInterface(XModel.class, xComponent);
+      if (xModel == null) {
+        MessageHandler.printToLogFile("SingleDocument: setDokumentListener: XModel not found!");
+        return;
+      }
+      XController xController = xModel.getCurrentController();
+      if (xController == null) {
+        MessageHandler.printToLogFile("SingleDocument: setDokumentListener: XController not found!");
+        return;
+      }
+      XUserInputInterception xUserInputInterception = UnoRuntime.queryInterface(XUserInputInterception.class, xController);
+      if (xUserInputInterception == null) {
+        MessageHandler.printToLogFile("SingleDocument: setDokumentListener: XUserInputInterception not found!");
+        return;
+      }
+      xUserInputInterception.addMouseClickHandler(eventListener);
+    }
+  }

@@ -1,0 +1,205 @@
+{
+    "sha": "b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+    "node_id": "C_kwDOLejhBdoAKGIyZDY1OGQxOWExMDZkZjZmZTIxMzFiMGUyMWI0NjQyY2RkMWRkZmU",
+    "commit": {
+        "author": {
+            "name": "Flintpop",
+            "email": "tanguy.legoff2@gmail.com",
+            "date": "2024-03-13T18:16:19Z"
+        },
+        "committer": {
+            "name": "Flintpop",
+            "email": "tanguy.legoff2@gmail.com",
+            "date": "2024-03-13T18:16:19Z"
+        },
+        "message": "feat: added MovieForm et MovieEditForm for put and post. Post works, not put.\n\nfix: attempt to fix bad error messages, or null pointer exception",
+        "tree": {
+            "sha": "5e950e30cdd844045f3a20e46fdefe9745356699",
+            "url": "https://api.github.com/repos/Flintpop/CineRentalHub/git/trees/5e950e30cdd844045f3a20e46fdefe9745356699"
+        },
+        "url": "https://api.github.com/repos/Flintpop/CineRentalHub/git/commits/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Flintpop/CineRentalHub/commits/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+    "html_url": "https://github.com/Flintpop/CineRentalHub/commit/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+    "comments_url": "https://api.github.com/repos/Flintpop/CineRentalHub/commits/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/comments",
+    "author": {
+        "login": "Flintpop",
+        "id": 79105055,
+        "node_id": "MDQ6VXNlcjc5MTA1MDU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79105055?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Flintpop",
+        "html_url": "https://github.com/Flintpop",
+        "followers_url": "https://api.github.com/users/Flintpop/followers",
+        "following_url": "https://api.github.com/users/Flintpop/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Flintpop/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Flintpop/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Flintpop/subscriptions",
+        "organizations_url": "https://api.github.com/users/Flintpop/orgs",
+        "repos_url": "https://api.github.com/users/Flintpop/repos",
+        "events_url": "https://api.github.com/users/Flintpop/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Flintpop/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Flintpop",
+        "id": 79105055,
+        "node_id": "MDQ6VXNlcjc5MTA1MDU1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79105055?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Flintpop",
+        "html_url": "https://github.com/Flintpop",
+        "followers_url": "https://api.github.com/users/Flintpop/followers",
+        "following_url": "https://api.github.com/users/Flintpop/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Flintpop/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Flintpop/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Flintpop/subscriptions",
+        "organizations_url": "https://api.github.com/users/Flintpop/orgs",
+        "repos_url": "https://api.github.com/users/Flintpop/repos",
+        "events_url": "https://api.github.com/users/Flintpop/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Flintpop/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8c1f46553d2615f8552f3fe3b24cc89efa6e203f",
+            "url": "https://api.github.com/repos/Flintpop/CineRentalHub/commits/8c1f46553d2615f8552f3fe3b24cc89efa6e203f",
+            "html_url": "https://github.com/Flintpop/CineRentalHub/commit/8c1f46553d2615f8552f3fe3b24cc89efa6e203f"
+        }
+    ],
+    "stats": {
+        "total": 365,
+        "additions": 343,
+        "deletions": 22
+    },
+    "files": [
+        {
+            "sha": "4b439fd317a937ae5edc9d50deeb6241ee76f92f",
+            "filename": "back/api/movie/src/main/java/model/ModelUtils.java",
+            "status": "added",
+            "additions": 15,
+            "deletions": 0,
+            "changes": 15,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fjava%2Fmodel%2FModelUtils.java",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fjava%2Fmodel%2FModelUtils.java",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fjava%2Fmodel%2FModelUtils.java?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -0,0 +1,15 @@\n+package model;\n+\n+public class ModelUtils {\n+  public static void generateException(Exception e) throws Exception {\n+    if (e.getCause() != null) {\n+      if (e.getCause().getCause() != null) {\n+        throw new Exception(e.getCause().getCause().getMessage());\n+      } else {\n+        throw new Exception(e.getCause().getMessage());\n+      }\n+    } else {\n+      throw new Exception(e.getMessage());\n+    }\n+  }\n+}"
+        },
+        {
+            "sha": "c100df1a76212d6baa24273947903bbcd531184a",
+            "filename": "back/api/movie/src/main/java/model/Movie.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 7,
+            "changes": 17,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fjava%2Fmodel%2FMovie.java",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fjava%2Fmodel%2FMovie.java",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fjava%2Fmodel%2FMovie.java?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -60,7 +60,8 @@ public static MoviePostPutDTO addMovie(MoviePostPutDTO movieDTO) throws Exceptio\n       if (em.getTransaction().isActive()) {\n         em.getTransaction().rollback();\n       }\n-      throw new Exception(e.getCause().getCause().getMessage());\n+      ModelUtils.generateException(e);\n+      return null;\n     } finally {\n       em.close();\n     }\n@@ -95,13 +96,14 @@ public static dto.MovieDTO updateMovie(Integer movieId, MoviePostPutDTO movieDTO\n       if (em.getTransaction().isActive()) {\n         em.getTransaction().rollback();\n       }\n-      throw new Exception(e.getCause().getCause().getMessage());\n+      ModelUtils.generateException(e);\n+      return null;\n     } finally {\n       em.close();\n     }\n   }\n \n-  public static ImageDTO getMainImage(Integer movieId) throws PersistenceException {\n+  public static ImageDTO getMainImage(Integer movieId) throws Exception {\n     EntityManager em = MariaDB.getEntityManager();\n \n     try {\n@@ -120,18 +122,19 @@ public static ImageDTO getMainImage(Integer movieId) throws PersistenceException\n         return new ImageDTO((Integer) row[0], (Integer) row[1], (String) row[2], isMain);\n       }\n \n-      throw new PersistenceException(\"No main image found for movie with id \" + movieId);\n+      throw new Exception(\"No main image found for movie with id \" + movieId);\n     } catch (PersistenceException e) {\n       if (em.getTransaction().isActive()) {\n         em.getTransaction().rollback();\n       }\n-      throw new PersistenceException(e.getCause().getCause().getMessage());\n+      ModelUtils.generateException(e);\n+      return null;\n     } finally {\n       em.close();\n     }\n   }\n \n-  public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws PersistenceException {\n+  public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws Exception {\n     EntityManager em = MariaDB.getEntityManager();\n     try {\n       StoredProcedureQuery query = em.createStoredProcedureQuery(\"get_images_by_movie_id\")\n@@ -145,7 +148,7 @@ public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws Persiste\n       if (em.getTransaction().isActive()) {\n         em.getTransaction().rollback();\n       }\n-      throw new PersistenceException(e.getCause().getCause().getMessage());\n+      throw new Exception(e.getCause().getCause().getMessage());\n     } finally {\n       em.close();\n     }"
+        },
+        {
+            "sha": "a0dca31c48e29ef730b23ad35e9c14894a6c258c",
+            "filename": "back/api/movie/src/main/resources/META-INF/persistence.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fresources%2FMETA-INF%2Fpersistence.xml",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fresources%2FMETA-INF%2Fpersistence.xml",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/back%2Fapi%2Fmovie%2Fsrc%2Fmain%2Fresources%2FMETA-INF%2Fpersistence.xml?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -22,7 +22,7 @@\n             <property name=\"hibernate.show_sql\" value=\"true\"/>\n             <property name=\"hibernate.format_sql\" value=\"true\"/>\n             <property name=\"hibernate.c3p0.min_size\" value=\"5\"/>\n-            <property name=\"hibernate.c3p0.max_size\" value=\"150\"/>\n+            <property name=\"hibernate.c3p0.max_size\" value=\"150000\"/>\n             <property name=\"hibernate.c3p0.timeout\" value=\"300\"/>\n             <property name=\"hibernate.c3p0.max_statements\" value=\"50\"/>\n             <property name=\"hibernate.c3p0.idle_test_period\" value=\"3000\"/>"
+        },
+        {
+            "sha": "8bab5fedabd9f3d59fa54f53ddc291ffc1baa9ce",
+            "filename": "back/api/movie/target/movie-1.0.war",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Ftarget%2Fmovie-1.0.war",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/back%2Fapi%2Fmovie%2Ftarget%2Fmovie-1.0.war",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/back%2Fapi%2Fmovie%2Ftarget%2Fmovie-1.0.war?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe"
+        },
+        {
+            "sha": "1063256ca9e4d07871e4006e201555bd14bb69aa",
+            "filename": "front/package-lock.json",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 0,
+            "changes": 9,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fpackage-lock.json",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fpackage-lock.json",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/front%2Fpackage-lock.json?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -10,6 +10,7 @@\n       \"dependencies\": {\n         \"axios\": \"^1.6.7\",\n         \"leaflet\": \"^1.9.4\",\n+        \"moment\": \"^2.30.1\",\n         \"vue\": \"^3.4.19\",\n         \"vue-router\": \"^4.3.0\"\n       },\n@@ -859,6 +860,14 @@\n         \"node\": \">= 0.6\"\n       }\n     },\n+    \"node_modules/moment\": {\n+      \"version\": \"2.30.1\",\n+      \"resolved\": \"https://registry.npmjs.org/moment/-/moment-2.30.1.tgz\",\n+      \"integrity\": \"sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==\",\n+      \"engines\": {\n+        \"node\": \"*\"\n+      }\n+    },\n     \"node_modules/nanoid\": {\n       \"version\": \"3.3.7\",\n       \"resolved\": \"https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz\","
+        },
+        {
+            "sha": "cee1cfbfc9a748778f9f647235af60db4c89fe74",
+            "filename": "front/package.json",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fpackage.json",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fpackage.json",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/front%2Fpackage.json?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -11,6 +11,7 @@\n   \"dependencies\": {\n     \"axios\": \"^1.6.7\",\n     \"leaflet\": \"^1.9.4\",\n+    \"moment\": \"^2.30.1\",\n     \"vue\": \"^3.4.19\",\n     \"vue-router\": \"^4.3.0\"\n   },"
+        },
+        {
+            "sha": "2afd119924ddc452228e6d85c967c986e7d5e8d2",
+            "filename": "front/src/components/MovieEditForm.vue",
+            "status": "added",
+            "additions": 136,
+            "deletions": 0,
+            "changes": 136,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fcomponents%2FMovieEditForm.vue",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fcomponents%2FMovieEditForm.vue",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/front%2Fsrc%2Fcomponents%2FMovieEditForm.vue?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -0,0 +1,136 @@\n+<template>\n+  <form @submit.prevent=\"submitForm\" class=\"movie-form\">\n+    <h3>Movie id : {{ movie.id }}</h3>\n+    <div class=\"form-group\">\n+      <label for=\"title\">Titre</label>\n+      <input type=\"text\" id=\"title\" v-model=\"movie.title\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"release_date\">Date de sortie</label>\n+      <input type=\"date\" id=\"release_date\" v-model=\"movie.release_date\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"daily_rental_price\">Prix de location quotidien</label>\n+      <input type=\"number\" step=\"0.01\" id=\"daily_rental_price\" v-model=\"movie.daily_rental_price\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"purchase_price\">Prix d'achat</label>\n+      <input type=\"number\" step=\"0.01\" id=\"purchase_price\" v-model=\"movie.purchase_price\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"description\">Description</label>\n+      <textarea id=\"description\" v-model=\"movie.description\" required></textarea>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"link\">Lien de l'image</label>\n+      <input type=\"text\" id=\"link\" v-model=\"movie.link\">\n+    </div>\n+    <button type=\"submit\" class=\"submit-button\">Modifier le film</button>\n+  </form>\n+</template>\n+\n+<script>\n+import axios from \"axios\";\n+import moment from 'moment';\n+\n+export default {\n+  props: {\n+    movieId: {\n+      type: String,\n+      required: false,\n+      default: null\n+    },\n+    movie: {\n+      type: Object,\n+      required: true\n+    }\n+  },\n+  data() {\n+  },\n+  methods: {\n+    async submitForm() {\n+      try {\n+        this.movie.release_date = moment(this.movie.release_date).format('YYYY-MM-DD');\n+        console.log(\"Body de la requête : \", this.movie);\n+        const url = 'http://localhost:3000/movies/' + this.movieId;\n+        const method = 'put';\n+\n+        await axios({\n+          method: method,\n+          url: url,\n+          data: this.movie\n+        });\n+        alert(`Film modifié avec succès !`);\n+        this.resetForm();\n+        this.$emit('movie-added');\n+      } catch (error) {\n+        console.error(`Erreur lors de l'${this.movieId ? 'modification' : 'ajout'} du film :`);\n+        console.error(error.response.data);\n+        alert(`Erreur lors de l'${this.movieId ? 'modification' : 'ajout'} du film. Veuillez réessayer.`);\n+      }\n+    },\n+    resetForm() {\n+      this.movie = {\n+        title: '',\n+        release_date: '',\n+        daily_rental_price: null,\n+        purchase_price: null,\n+        description: '',\n+        link: ''\n+      };\n+    }\n+  }\n+};\n+</script>\n+\n+<style scoped>\n+.movie-form {\n+  position: relative;\n+  max-width: 500px;\n+  margin: auto;\n+  padding: 20px;\n+  background: #f9f9f9;\n+  border-radius: 10px;\n+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n+}\n+\n+.form-group {\n+  margin-bottom: 20px;\n+}\n+\n+.form-group label {\n+  display: block;\n+  margin-bottom: 5px;\n+}\n+\n+.form-group input,\n+.form-group textarea,\n+.form-group select {\n+  width: 100%;\n+  padding: 10px;\n+  border-radius: 5px;\n+  border: 1px solid #ddd;\n+}\n+\n+button {\n+  padding: 10px 15px;\n+  background-color: #5cb85c;\n+  color: white;\n+  border: none;\n+  border-radius: 5px;\n+  cursor: pointer;\n+}\n+\n+.container {\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+  height: 100vh; /* Adjust this value according to your needs */\n+}\n+\n+.movie-form input {\n+  display: block;\n+  margin-left: auto;\n+  margin-right: auto;\n+}\n+</style>"
+        },
+        {
+            "sha": "92dac4de9bfec4bf89c9a013c815d3318bda7498",
+            "filename": "front/src/components/MovieForm.vue",
+            "status": "added",
+            "additions": 139,
+            "deletions": 0,
+            "changes": 139,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fcomponents%2FMovieForm.vue",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fcomponents%2FMovieForm.vue",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/front%2Fsrc%2Fcomponents%2FMovieForm.vue?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -0,0 +1,139 @@\n+<template>\n+  <form @submit.prevent=\"submitForm\" class=\"movie-form\">\n+    <div class=\"form-group\">\n+      <label for=\"title\">Titre</label>\n+      <input type=\"text\" id=\"title\" v-model=\"movie.title\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"release_date\">Date de sortie</label>\n+      <input type=\"date\" id=\"release_date\" v-model=\"movie.release_date\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"daily_rental_price\">Prix de location quotidien</label>\n+      <input type=\"number\" step=\"0.01\" id=\"daily_rental_price\" v-model=\"movie.daily_rental_price\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"purchase_price\">Prix d'achat</label>\n+      <input type=\"number\" step=\"0.01\" id=\"purchase_price\" v-model=\"movie.purchase_price\" required>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"description\">Description</label>\n+      <textarea id=\"description\" v-model=\"movie.description\" required></textarea>\n+    </div>\n+    <div class=\"form-group\">\n+      <label for=\"link\">Lien de l'image</label>\n+      <input type=\"text\" id=\"link\" v-model=\"movie.link\">\n+    </div>\n+    <button type=\"submit\" class=\"submit-button\">Ajouter le film</button>\n+  </form>\n+</template>\n+\n+<script>\n+import axios from \"axios\";\n+import moment from 'moment';\n+\n+export default {\n+  movieId: {\n+    type: String,\n+    required: false,\n+    default: null\n+  },\n+  data() {\n+    return {\n+      movie: {\n+        title: 'Titre du film',\n+        release_date: '2023-01-01',\n+        daily_rental_price: 10.00,\n+        purchase_price: 20.00,\n+        description: 'Description du film',\n+        link: 'https://example.com/image.jpg'\n+      }\n+    };\n+  },\n+  methods: {\n+    async submitForm() {\n+      try {\n+        this.movie.release_date = moment(this.movie.release_date).format('YYYY-MM-DD');\n+        console.log(\"Body de la requête : \", this.movie);\n+        const url = `http://localhost:3000/movies${this.movieId ? `/${this.movieId}` : ''}`;\n+        const method = this.movieId ? 'put' : 'post';\n+\n+        await axios({\n+          method: method,\n+          url: url,\n+          data: this.movie\n+        });\n+        alert(`Film ${this.movieId ? 'modifié' : 'ajouté'} avec succès !`);\n+        this.resetForm();\n+        this.$emit('movie-added');\n+      } catch (error) {\n+        console.error(`Erreur lors de l'${this.movieId ? 'modification' : 'ajout'} du film :`);\n+        console.error(error.response.data);\n+        alert(`Erreur lors de l'${this.movieId ? 'modification' : 'ajout'} du film. Veuillez réessayer.`);\n+      }\n+    },\n+    resetForm() {\n+      this.movie = {\n+        title: '',\n+        release_date: '',\n+        daily_rental_price: null,\n+        purchase_price: null,\n+        description: '',\n+        link: ''\n+      };\n+    }\n+  }\n+};\n+</script>\n+\n+<style scoped>\n+.movie-form {\n+  position: relative;\n+  max-width: 500px;\n+  margin: auto;\n+  padding: 20px;\n+  background: #f9f9f9;\n+  border-radius: 10px;\n+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n+}\n+\n+.form-group {\n+  margin-bottom: 20px;\n+}\n+\n+.form-group label {\n+  display: block;\n+  margin-bottom: 5px;\n+}\n+\n+.form-group input,\n+.form-group textarea,\n+.form-group select {\n+  width: 100%;\n+  padding: 10px;\n+  border-radius: 5px;\n+  border: 1px solid #ddd;\n+}\n+\n+button {\n+  padding: 10px 15px;\n+  background-color: #5cb85c;\n+  color: white;\n+  border: none;\n+  border-radius: 5px;\n+  cursor: pointer;\n+}\n+\n+.container {\n+  display: flex;\n+  justify-content: center;\n+  align-items: center;\n+  height: 100vh; /* Adjust this value according to your needs */\n+}\n+\n+.movie-form input {\n+  display: block;\n+  margin-left: auto;\n+  margin-right: auto;\n+}\n+</style>"
+        },
+        {
+            "sha": "5d4ead4402bf59def8354700b82205ea18c118e9",
+            "filename": "front/src/components/movies_list.vue",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 10,
+            "changes": 16,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fcomponents%2Fmovies_list.vue",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fcomponents%2Fmovies_list.vue",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/front%2Fsrc%2Fcomponents%2Fmovies_list.vue?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -10,6 +10,7 @@\n         <p>Rental Price: {{ movie.daily_rental_price }} €</p>\n         <p>Purchase Price: {{ movie.purchase_price }} €</p>\n         <button @click=\"showMoreInfo(movie)\" class=\"info-button\">Plus d'informations</button>\n+        <button @click=\"editMovie(movie.id)\" class=\"info-button\">Modifier</button>\n       </div>\n     </div>\n   </div>\n@@ -52,24 +53,18 @@ export default {\n               this.movies[i].main_image_url = response.data.imageUrl;\n             })\n             .catch(error => {\n-              console.log(error);\n+              console.log(error.response.data);\n             });\n       }\n-    }\n-  },\n-  filters: {\n-    formatDate(value) {\n-      if (value) {\n-        return new Date(value).toLocaleDateString();\n-      }\n+    },\n+    editMovie(movieId) {\n+      this.$emit('edit-movie', movieId);\n     },\n   },\n };\n </script>\n \n \n-\n-\n <style scoped>\n .movie-card-grid {\n   display: grid;\n@@ -114,6 +109,7 @@ export default {\n h3 {\n   margin: 10px 0;\n }\n+\n .info-button {\n   padding: 10px 20px;\n   margin-top: 10px;"
+        },
+        {
+            "sha": "b149d2541338f569a9deda07354762f00ba375cd",
+            "filename": "front/src/views/Home.vue",
+            "status": "modified",
+            "additions": 26,
+            "deletions": 4,
+            "changes": 30,
+            "blob_url": "https://github.com/Flintpop/CineRentalHub/blob/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fviews%2FHome.vue",
+            "raw_url": "https://github.com/Flintpop/CineRentalHub/raw/b2d658d19a106df6fe2131b0e21b4642cdd1ddfe/front%2Fsrc%2Fviews%2FHome.vue",
+            "contents_url": "https://api.github.com/repos/Flintpop/CineRentalHub/contents/front%2Fsrc%2Fviews%2FHome.vue?ref=b2d658d19a106df6fe2131b0e21b4642cdd1ddfe",
+            "patch": "@@ -11,9 +11,13 @@\n \n     <!-- Section Films -->\n     <section class=\"films\">\n+      <section class=\"add-movie\">\n+        <MovieForm v-if=\"!this.selectedMovieId\" @movie-added=\"fetchMovies\"/>\n+        <MovieEditForm v-if=\"this.selectedMovieId\" :movie=\"selectedMovie\" @movie-added=\"fetchMovies\"/>\n+      </section>\n       <h2>Nos Films</h2>\n       <div class=\"film-list\">\n-        <movies_list v-if=\"movies.length > 0\" :movies=\"movies\"></movies_list>\n+        <movies_list :movies=\"movies\" @edit-movie=\"handleEditMovie\"></movies_list>\n       </div>\n     </section>\n \n@@ -24,7 +28,6 @@\n         films, louez vos favoris et partagez vos avis !</p>\n     </section>\n \n-    <!-- Section Contact -->\n     <!-- Section Contact -->\n     <section class=\"contact\">\n       <h2>Contactez-nous</h2>\n@@ -41,14 +44,20 @@\n import Navbar from '../components/Navbar.vue';\n import Footer from \"../components/Footer.vue\";\n import movies_list from \"../components/movies_list.vue\";\n+import MovieForm from '../components/MovieForm.vue';\n import axios from \"axios\";\n+import EditMemberForm from \"../components/EditMemberForm.vue\";\n+import MovieEditForm from \"../components/MovieEditForm.vue\";\n \n export default {\n   name: 'Home',\n   components: {\n+    MovieEditForm,\n+    EditMemberForm,\n     Footer,\n     Navbar,\n-    movies_list\n+    movies_list,\n+    MovieForm\n   },\n \n   mounted() {\n@@ -82,12 +91,25 @@ export default {\n       //   link: \"https://m.media-amazon.com/images/I/51EUk47IF8L._AC_SL1080_.jpg\"\n       // },\n       // ];\n-    }\n+    },\n+    handleEditMovie(movieId) {\n+      this.selectedMovieId = movieId;\n+      // Trouver le film par son ID\n+      const movieToEdit = this.movies.find(movie => movie.id === movieId);\n+      if (movieToEdit) {\n+        this.selectedMovie = movieToEdit;\n+      } else {\n+        console.error(\"Film non trouvé\");\n+        this.selectedMovie = null;\n+      }\n+    },\n   },\n \n   data() {\n     return {\n       movies: [],\n+      selectedMovieId: null, // Ajoutez ceci\n+      selectedMovie: null\n     };\n   },\n };"
+        }
+    ]
+}

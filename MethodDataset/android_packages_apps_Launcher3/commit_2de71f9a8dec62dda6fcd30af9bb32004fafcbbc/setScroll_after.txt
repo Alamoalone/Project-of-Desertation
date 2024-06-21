@@ -1,0 +1,50 @@
+    public void setScroll(int currentScroll, int totalScroll) {
+        if (SHOW_DOT_PAGINATION.get() && mActivePage != 0 && currentScroll == 0) {
+            CURRENT_POSITION.set(this, (float) mActivePage);
+            return;
+        }
+
+        if (mNumPages <= 1) {
+            return;
+        }
+
+        if (mShouldAutoHide) {
+            animatePaginationToAlpha(VISIBLE_ALPHA);
+        }
+
+        if (mIsRtl) {
+            currentScroll = totalScroll - currentScroll;
+        }
+
+        mTotalScroll = totalScroll;
+
+        int scrollPerPage = totalScroll / (mNumPages - 1);
+        if (scrollPerPage == 0) {
+            return;
+        }
+
+        int pageToLeft = scrollPerPage == 0 ? 0 : currentScroll / scrollPerPage;
+        int pageToLeftScroll = pageToLeft * scrollPerPage;
+        int pageToRightScroll = pageToLeftScroll + scrollPerPage;
+
+        float scrollThreshold = SHIFT_THRESHOLD * scrollPerPage;
+        if (currentScroll < pageToLeftScroll + scrollThreshold) {
+            // scroll is within the left page's threshold
+            animateToPosition(pageToLeft);
+            if (mShouldAutoHide) {
+                hideAfterDelay();
+            }
+        } else if (currentScroll > pageToRightScroll - scrollThreshold) {
+            // scroll is far enough from left page to go to the right page
+            animateToPosition(pageToLeft + 1);
+            if (mShouldAutoHide) {
+                hideAfterDelay();
+            }
+        } else {
+            // scroll is between left and right page
+            animateToPosition(pageToLeft + SHIFT_PER_ANIMATION);
+            if (mShouldAutoHide) {
+                mDelayedPaginationFadeHandler.removeCallbacksAndMessages(null);
+            }
+        }
+    }

@@ -1,0 +1,35 @@
+    private static String logMessage(String traceId, String database, String tableName,
+                                     String methodName, String endpoint, Object[] rowKeys,
+                                     ObTableOperationResult result, long routeTableTime,
+                                     long executeTime) {
+        if (org.apache.commons.lang.StringUtils.isNotBlank(endpoint)) {
+            endpoint = endpoint.replaceAll(",", "#");
+        }
+        // if rowkeys is empty point, then append "rowKeys:null" into log message
+        String argsValue = (rowKeys == null || rowKeys.length == 0) ? "rowKeys:null"
+            : buildParamsString(Arrays.asList(rowKeys));
+
+        ResultCodes resultCode = ResultCodes.valueOf(result.getHeader().getErrno());
+        String res = "";
+        if (resultCode == ResultCodes.OB_SUCCESS) {
+            switch (result.getOperationType()) {
+                case GET:
+                case INCREMENT:
+                case APPEND:
+                    res = String.valueOf(result.getEntity().getSimpleProperties().size());
+                    break;
+                default:
+                    res = String.valueOf(result.getAffectedRows());
+            }
+        }
+        String errorCodeStringValue = resultCode.toString();
+
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(traceId).append(" - ").append(database).append(",").append(tableName)
+            .append(",").append(methodName).append(",").append(endpoint).append(",")
+            .append(argsValue).append(",").append(errorCodeStringValue).append(",").append(res)
+            .append(",").append(routeTableTime).append(",").append(executeTime).append(",")
+            .append(executeTime + routeTableTime);
+        return stringBuilder.toString();
+    }
+

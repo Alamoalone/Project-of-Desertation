@@ -1,0 +1,43 @@
+	public ResponseEntity<?> logout(HttpServletRequest request, Authentication authentication) {
+		// Retrieve all sessions for the current user
+	    List<SessionInformation> userSessions = sessionRegistry.getAllSessions(authentication.getPrincipal(), false);
+
+	    // Expire all sessions
+	    for (SessionInformation session : userSessions) {
+	        session.expireNow();
+	        sessionRegistry.removeSessionInformation(session.getSessionId());
+	    }
+	    
+	    String sessionId = request.getSession().getId();
+	    String username = (String) request.getSession().getAttribute("username");
+	    request.getSession().invalidate();
+	    SecurityContextHolder.clearContext();
+	    CustomAuthenticationSuccessHandler.removeActiveSession(sessionId);
+	    return ResponseEntity.ok().body("User: " + username + " logged out");
+	}
+
+	public ResponseEntity<?> loginUser(@RequestBody UserDto userDto, Authentication authentication) {
+	    // Can use 'authentication' to access the currently authenticated user's details
+	    // Implement any additional logic needed post-authentication
+	    return ResponseEntity.ok().body("User logged in successfully");
+	}
+
+	private UserDto convertToDto(User user) {
+		UserDto userDto = UserDto.builder()
+				.id(user.getId())
+				.username(user.getUsername())
+				.build();
+        return userDto;
+    }
+
+    public ResponseEntity<?> registerUser(@RequestBody UserDto userDto) {
+        try {
+            User user = userService.registerNewUser(userDto);
+            UserDto responseDto = convertToDto(user);
+            return new ResponseEntity<>(responseDto, HttpStatus.CREATED);
+        } catch (UserAlreadyExistsException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+        // Include more exception handling as needed
+    }
+

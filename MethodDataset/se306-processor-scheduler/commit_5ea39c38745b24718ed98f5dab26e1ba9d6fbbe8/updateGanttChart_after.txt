@@ -1,0 +1,31 @@
+    public void updateGanttChart(ScheduleNode scheduleNode, int numProcessors) {
+        int blockHeight = 150/numProcessors;
+        if(blockHeight > 50) {
+            blockHeight = 50;
+        }
+
+        ganttChart.setBlockHeight(blockHeight);
+
+        XYChart.Series[] rows = new XYChart.Series[numProcessors];
+        for (int i = 0; i < numProcessors; i++) {
+            rows[i] = new XYChart.Series();
+        }
+
+        for (Map.Entry<String, Pair<Integer,Integer>> entry : scheduleNode.GetVisited().entrySet()) {
+            String taskId = entry.getKey();
+            Integer taskProcessor = entry.getValue().getKey();
+            Integer taskWeight = GraphVisualisationHelper.instance().getTaskGraph().getNode(taskId).getAttribute("Weight", Double.class).intValue();
+            Integer taskStartTime = entry.getValue().getValue() - taskWeight;
+            int processorIdDisplay = taskProcessor+1;
+            int styleCode = taskProcessor % 5;
+
+            GanttChart.ExtraData taskData = new GanttChart.ExtraData(taskWeight, "ganttchart"+styleCode);
+            XYChart.Data data = new XYChart.Data(taskStartTime, "Processor " + processorIdDisplay, taskData);
+            rows[taskProcessor].getData().add(data);
+        }
+
+        ganttChart.getData().clear();
+        for (int i = 0; i < numProcessors; i++) {
+            ganttChart.getData().add(rows[i]);
+        }
+    }

@@ -1,0 +1,18 @@
+    public static Move giveMove(Board board, Options options) {
+        for (var moveProvider : moveProviderHierarchy) {
+            logger.info("Requesting moves from: [" + moveProvider.getClass().getName() + "]");
+            var moves = moveProvider.getRecommendedMoves(board);
+            if (moves != null && !moves.isEmpty()){
+                logger.info("Received: [" + moves.size() + " moves]");
+                return moves.get((int) Math.floor(
+                        // Squaring the random number to control which items are more probable.
+                        // A higher exponent makes the front items of the list more probable.
+                        // Because the front moves should be the better ones, this makes the engine more difficult.
+                        Math.pow(Math.random(), DIFFICULTY) * moves.size())
+                );
+            }
+        }
+        logger.warning("No possible moves were found.");
+        return null;
+    }
+

@@ -1,0 +1,44 @@
+    private static ExecOperationNode procOperands(OperationNode _anaNode, Forwards _forwards) {
+        if (_anaNode instanceof SettableAbstractFieldOperation) {
+            return procUseField((SettableAbstractFieldOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof ArrayFieldOperation) {
+            ArrayFieldOperation s_ = (ArrayFieldOperation) _anaNode;
+            return new ExecArrayFieldOperation(new ExecOperationContent(s_.getContent()), new ExecFieldOperationContent(s_.getFieldContent()));
+        }
+        if (_anaNode instanceof VariableOperation) {
+            VariableOperation m_ = (VariableOperation) _anaNode;
+            return new ExecStdRefVariableOperation(new ExecOperationContent(m_.getContent()), new ExecVariableContent(m_.getVariableContent()),m_.getType() == ConstType.REF_LOC_VAR);
+        }
+        if (_anaNode instanceof VariableOperationUse) {
+            VariableOperationUse m_ = (VariableOperationUse) _anaNode;
+            return new ExecStdRefVariableOperation(new ExecOperationContent(m_.getContent()), new ExecVariableContent(m_.getVariableContent()));
+        }
+        if (_anaNode instanceof FinalVariableOperation) {
+            return finalVariable((FinalVariableOperation) _anaNode);
+        }
+        if (_anaNode instanceof DotOperation) {
+            DotOperation m_ = (DotOperation) _anaNode;
+            return new ExecDotOperation(new ExecOperationContent(m_.getContent()));
+        }
+        if (_anaNode instanceof SafeDotOperation) {
+            SafeDotOperation m_ = (SafeDotOperation) _anaNode;
+            StringList names_ = _anaNode.getResultClass().getNames();
+            return new ExecSafeDotOperation(new ExecOperationContent(m_.getContent()), names_);
+        }
+        if (_anaNode instanceof ExplicitOperatorOperation) {
+            return explicitOperator(_anaNode, _forwards);
+        }
+        if (_anaNode instanceof SemiAffectationOperation) {
+            return semi((SemiAffectationOperation) _anaNode, _forwards);
+        }
+        if (_anaNode instanceof SymbolOperation) {
+            SymbolOperation n_ = (SymbolOperation) _anaNode;
+            ClassMethodIdMemberIdTypeFct fct_ = n_.getFct();
+            AnaTypeFct pair_ = fct_.getFunction();
+            if (pair_ != null) {
+                return new ExecExplicitOperatorOperation(new ExecOperationContent(_anaNode.getContent()),false, new ExecStaticFctContent(new ExecStaticFctCommonContent("","",-1), new ExecStaticEltContent(fct_, _forwards)), FetchMemberUtil.fetchFunctionOpPair(fct_, _forwards), new ExecArrContent(false), null, new ExecOperatorContent(n_.getOperatorContent()));
+            }
+        }
+        return procGeneOperators(_anaNode, _forwards);
+    }

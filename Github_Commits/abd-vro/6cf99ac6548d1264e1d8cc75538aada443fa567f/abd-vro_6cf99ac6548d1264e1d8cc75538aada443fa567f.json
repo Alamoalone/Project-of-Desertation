@@ -1,0 +1,98 @@
+{
+    "sha": "6cf99ac6548d1264e1d8cc75538aada443fa567f",
+    "node_id": "C_kwDOHQdbKNoAKDZjZjk5YWM2NTQ4ZDEyNjRlMWQ4Y2M3NTUzOGFhZGE0NDNmYTU2N2Y",
+    "commit": {
+        "author": {
+            "name": "Cheng",
+            "email": "89034346+chengjie8@users.noreply.github.com",
+            "date": "2023-12-15T16:59:54Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-12-15T16:59:54Z"
+        },
+        "message": "fix xample-workflow unit test null pointer exception (#2362)\n\n* fix xample-workflow unit test null pointer exception\r\n\r\n* lint",
+        "tree": {
+            "sha": "e0314aa27a91135e56f382a49175e4d67880a3c7",
+            "url": "https://api.github.com/repos/department-of-veterans-affairs/abd-vro/git/trees/e0314aa27a91135e56f382a49175e4d67880a3c7"
+        },
+        "url": "https://api.github.com/repos/department-of-veterans-affairs/abd-vro/git/commits/6cf99ac6548d1264e1d8cc75538aada443fa567f",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlfIYKCRBK7hj4Ov3rIwAAb/YIAJBC+nE38mthGTdJv/P3TzGF\nY1VKTFOOUqqfZFqj8yAG2PJOO4T+MgDUvubo2Ru9U5Ly9inbXIVQkpHU25FaM/Tg\nSiWN1zc1LbDTCsFeBGjQP4lbX4kU09xrPWi+AMcK/VLqAfX1tz+lXxKp+WtPilwf\nFVR4DK8EANbvw0fp1d9V4uqj0mdWk78LbTyxipx2shEj2zgDJQ7+6LppRXd+bsG0\nLLqU3M9cwzsC1ni/u042exH3fYp57peM5wFG1BD+5iu3DuNjB9bMaEB3JJZmuPxq\nJaWByyP03OilMbbOPfrxFuPZjOrCLUYnfEM2dwXMmsG1GZTDAbqB5UCnKKrHbso=\n=c0+K\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e0314aa27a91135e56f382a49175e4d67880a3c7\nparent cf126b509e29616e26acc8ba6c04b86b42ddc043\nauthor Cheng <89034346+chengjie8@users.noreply.github.com> 1702659594 -0500\ncommitter GitHub <noreply@github.com> 1702659594 -0500\n\nfix xample-workflow unit test null pointer exception (#2362)\n\n* fix xample-workflow unit test null pointer exception\r\n\r\n* lint"
+        }
+    },
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/abd-vro/commits/6cf99ac6548d1264e1d8cc75538aada443fa567f",
+    "html_url": "https://github.com/department-of-veterans-affairs/abd-vro/commit/6cf99ac6548d1264e1d8cc75538aada443fa567f",
+    "comments_url": "https://api.github.com/repos/department-of-veterans-affairs/abd-vro/commits/6cf99ac6548d1264e1d8cc75538aada443fa567f/comments",
+    "author": {
+        "login": "chengjie8",
+        "id": 89034346,
+        "node_id": "MDQ6VXNlcjg5MDM0MzQ2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89034346?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/chengjie8",
+        "html_url": "https://github.com/chengjie8",
+        "followers_url": "https://api.github.com/users/chengjie8/followers",
+        "following_url": "https://api.github.com/users/chengjie8/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chengjie8/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/chengjie8/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chengjie8/subscriptions",
+        "organizations_url": "https://api.github.com/users/chengjie8/orgs",
+        "repos_url": "https://api.github.com/users/chengjie8/repos",
+        "events_url": "https://api.github.com/users/chengjie8/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/chengjie8/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cf126b509e29616e26acc8ba6c04b86b42ddc043",
+            "url": "https://api.github.com/repos/department-of-veterans-affairs/abd-vro/commits/cf126b509e29616e26acc8ba6c04b86b42ddc043",
+            "html_url": "https://github.com/department-of-veterans-affairs/abd-vro/commit/cf126b509e29616e26acc8ba6c04b86b42ddc043"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "0416908764f4a8d524f1fab72f25e08d8870be11",
+            "filename": "domain-xample/xample-workflows/src/main/java/gov/va/vro/routes/xample/DbHelper.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/department-of-veterans-affairs/abd-vro/blob/6cf99ac6548d1264e1d8cc75538aada443fa567f/domain-xample%2Fxample-workflows%2Fsrc%2Fmain%2Fjava%2Fgov%2Fva%2Fvro%2Froutes%2Fxample%2FDbHelper.java",
+            "raw_url": "https://github.com/department-of-veterans-affairs/abd-vro/raw/6cf99ac6548d1264e1d8cc75538aada443fa567f/domain-xample%2Fxample-workflows%2Fsrc%2Fmain%2Fjava%2Fgov%2Fva%2Fvro%2Froutes%2Fxample%2FDbHelper.java",
+            "contents_url": "https://api.github.com/repos/department-of-veterans-affairs/abd-vro/contents/domain-xample%2Fxample-workflows%2Fsrc%2Fmain%2Fjava%2Fgov%2Fva%2Fvro%2Froutes%2Fxample%2FDbHelper.java?ref=6cf99ac6548d1264e1d8cc75538aada443fa567f",
+            "patch": "@@ -17,6 +17,7 @@\n import java.time.Instant;\n import java.time.LocalDateTime;\n import java.time.ZoneId;\n+import java.util.Optional;\n \n @Slf4j\n @Component\n@@ -65,7 +66,8 @@ public ContentionEventEntity saveContentionEvent(final BieMessagePayload bieMess\n     contentionEventEntity.setDateCompleted(convertTime(bieMessagePayload.getDateCompleted()));\n     contentionEventEntity.setDateUpdated(convertTime(bieMessagePayload.getDateUpdated()));\n     contentionEventEntity.setActorStation(bieMessagePayload.getActorStation());\n-    contentionEventEntity.setAutomationIndicator(bieMessagePayload.getAutomationIndicator());\n+    contentionEventEntity.setAutomationIndicator(\n+        Optional.ofNullable(bieMessagePayload.getAutomationIndicator()).orElse(false));\n     contentionEventEntity.setBenefitClaimTypeCode(bieMessagePayload.getBenefitClaimTypeCode());\n     contentionEventEntity.setContentionStatusTypeCode(\n         bieMessagePayload.getContentionStatusTypeCode());"
+        }
+    ]
+}

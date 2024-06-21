@@ -1,0 +1,9 @@
+	public WaveBuilder resetAcceleration() {
+		buildingMotionConstants = new MecanumMotionConstants(
+				buildingMotionConstants.getMaxTranslationalVelocity(),
+				buildingMotionConstants.getMaxRotationalVelocity(),
+				motionConstants.getMaxTranslationalAcceleration(),
+				buildingMotionConstants.getMaxRotationalAcceleration());
+		builder.setMotionConstants(buildingMotionConstants);
+		return this;
+	}

@@ -1,0 +1,3 @@
+removeContrastControls(String channelName)
+addContrastControls(String channelName, boolean markInitialized)
+addContrastControls(String channelName)

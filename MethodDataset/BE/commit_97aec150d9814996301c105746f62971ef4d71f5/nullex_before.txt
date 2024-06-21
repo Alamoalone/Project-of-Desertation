@@ -1,0 +1,5 @@
+    public ResponseEntity<Object> nullex(final NullPointerException e) {
+        Map<String, String> responeMap = new HashMap<>();
+        responeMap.put("message", "Can't Find Data, Check Your Request. -By DevRun");
+        return ResponseEntity.badRequest().body(responeMap);
+    }

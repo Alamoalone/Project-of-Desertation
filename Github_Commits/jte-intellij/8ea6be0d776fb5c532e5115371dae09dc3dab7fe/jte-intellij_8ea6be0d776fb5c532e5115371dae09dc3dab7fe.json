@@ -1,0 +1,110 @@
+{
+    "sha": "8ea6be0d776fb5c532e5115371dae09dc3dab7fe",
+    "node_id": "C_kwDOD1k7_doAKDhlYTZiZTBkNzc2ZmI1YzUzMmU1MTE1MzcxZGFlMDlkYzNkYWI3ZmU",
+    "commit": {
+        "author": {
+            "name": "casid",
+            "email": "andy@mazebert.com",
+            "date": "2024-02-02T13:18:06Z"
+        },
+        "committer": {
+            "name": "casid",
+            "email": "andy@mazebert.com",
+            "date": "2024-02-02T13:18:06Z"
+        },
+        "message": "#34 prevent null pointer exception",
+        "tree": {
+            "sha": "046b4a9c38c5ef3faf115edab487d3c3ee826d53",
+            "url": "https://api.github.com/repos/casid/jte-intellij/git/trees/046b4a9c38c5ef3faf115edab487d3c3ee826d53"
+        },
+        "url": "https://api.github.com/repos/casid/jte-intellij/git/commits/8ea6be0d776fb5c532e5115371dae09dc3dab7fe",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/casid/jte-intellij/commits/8ea6be0d776fb5c532e5115371dae09dc3dab7fe",
+    "html_url": "https://github.com/casid/jte-intellij/commit/8ea6be0d776fb5c532e5115371dae09dc3dab7fe",
+    "comments_url": "https://api.github.com/repos/casid/jte-intellij/commits/8ea6be0d776fb5c532e5115371dae09dc3dab7fe/comments",
+    "author": {
+        "login": "casid",
+        "id": 4077354,
+        "node_id": "MDQ6VXNlcjQwNzczNTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4077354?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/casid",
+        "html_url": "https://github.com/casid",
+        "followers_url": "https://api.github.com/users/casid/followers",
+        "following_url": "https://api.github.com/users/casid/following{/other_user}",
+        "gists_url": "https://api.github.com/users/casid/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/casid/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/casid/subscriptions",
+        "organizations_url": "https://api.github.com/users/casid/orgs",
+        "repos_url": "https://api.github.com/users/casid/repos",
+        "events_url": "https://api.github.com/users/casid/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/casid/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "casid",
+        "id": 4077354,
+        "node_id": "MDQ6VXNlcjQwNzczNTQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4077354?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/casid",
+        "html_url": "https://github.com/casid",
+        "followers_url": "https://api.github.com/users/casid/followers",
+        "following_url": "https://api.github.com/users/casid/following{/other_user}",
+        "gists_url": "https://api.github.com/users/casid/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/casid/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/casid/subscriptions",
+        "organizations_url": "https://api.github.com/users/casid/orgs",
+        "repos_url": "https://api.github.com/users/casid/repos",
+        "events_url": "https://api.github.com/users/casid/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/casid/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bd8e6ac037c7b9a5e105dc49dd2ad63fb3dd37f1",
+            "url": "https://api.github.com/repos/casid/jte-intellij/commits/bd8e6ac037c7b9a5e105dc49dd2ad63fb3dd37f1",
+            "html_url": "https://github.com/casid/jte-intellij/commit/bd8e6ac037c7b9a5e105dc49dd2ad63fb3dd37f1"
+        }
+    ],
+    "stats": {
+        "total": 18,
+        "additions": 16,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "aebd6efc9ac0780d19efa306bebb3798861a77ef",
+            "filename": "src/main/java/org/jusecase/jte/intellij/language/JteJavaContentManipulator.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 1,
+            "changes": 9,
+            "blob_url": "https://github.com/casid/jte-intellij/blob/8ea6be0d776fb5c532e5115371dae09dc3dab7fe/src%2Fmain%2Fjava%2Forg%2Fjusecase%2Fjte%2Fintellij%2Flanguage%2FJteJavaContentManipulator.java",
+            "raw_url": "https://github.com/casid/jte-intellij/raw/8ea6be0d776fb5c532e5115371dae09dc3dab7fe/src%2Fmain%2Fjava%2Forg%2Fjusecase%2Fjte%2Fintellij%2Flanguage%2FJteJavaContentManipulator.java",
+            "contents_url": "https://api.github.com/repos/casid/jte-intellij/contents/src%2Fmain%2Fjava%2Forg%2Fjusecase%2Fjte%2Fintellij%2Flanguage%2FJteJavaContentManipulator.java?ref=8ea6be0d776fb5c532e5115371dae09dc3dab7fe",
+            "patch": "@@ -5,6 +5,7 @@\n import com.intellij.openapi.editor.Document;\n import com.intellij.openapi.fileEditor.FileDocumentManager;\n import com.intellij.openapi.util.TextRange;\n+import com.intellij.openapi.vfs.VirtualFile;\n import com.intellij.psi.AbstractElementManipulator;\n import com.intellij.psi.PsiDocumentManager;\n import com.intellij.util.IncorrectOperationException;\n@@ -16,7 +17,13 @@ public class JteJavaContentManipulator extends AbstractElementManipulator<JtePsi\n     @Nullable\n     @Override\n     public JtePsiJavaContent handleContentChange(@NotNull JtePsiJavaContent element, @NotNull TextRange range, String newContent) throws IncorrectOperationException {\n-        Document document = FileDocumentManager.getInstance().getDocument(element.getContainingFile().getVirtualFile());\n+\n+        VirtualFile virtualFile = element.getContainingFile().getVirtualFile();\n+        if (virtualFile == null) {\n+            return element;\n+        }\n+\n+        Document document = FileDocumentManager.getInstance().getDocument(virtualFile);\n         if (document != null) {\n             PsiDocumentManager documentManager = PsiDocumentManager.getInstance(element.getProject());\n             if (documentManager.isDocumentBlockedByPsi(document)) {"
+        },
+        {
+            "sha": "1f5eb49aa54b5b8cbd0fd0425dc2c7c54554a92f",
+            "filename": "src/main/java/org/jusecase/jte/intellij/language/KteKotlinContentManipulator.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 1,
+            "changes": 9,
+            "blob_url": "https://github.com/casid/jte-intellij/blob/8ea6be0d776fb5c532e5115371dae09dc3dab7fe/src%2Fmain%2Fjava%2Forg%2Fjusecase%2Fjte%2Fintellij%2Flanguage%2FKteKotlinContentManipulator.java",
+            "raw_url": "https://github.com/casid/jte-intellij/raw/8ea6be0d776fb5c532e5115371dae09dc3dab7fe/src%2Fmain%2Fjava%2Forg%2Fjusecase%2Fjte%2Fintellij%2Flanguage%2FKteKotlinContentManipulator.java",
+            "contents_url": "https://api.github.com/repos/casid/jte-intellij/contents/src%2Fmain%2Fjava%2Forg%2Fjusecase%2Fjte%2Fintellij%2Flanguage%2FKteKotlinContentManipulator.java?ref=8ea6be0d776fb5c532e5115371dae09dc3dab7fe",
+            "patch": "@@ -5,6 +5,7 @@\n import com.intellij.openapi.editor.Document;\n import com.intellij.openapi.fileEditor.FileDocumentManager;\n import com.intellij.openapi.util.TextRange;\n+import com.intellij.openapi.vfs.VirtualFile;\n import com.intellij.psi.AbstractElementManipulator;\n import com.intellij.psi.PsiDocumentManager;\n import com.intellij.util.IncorrectOperationException;\n@@ -22,7 +23,13 @@ public class KteKotlinContentManipulator extends AbstractElementManipulator<KteP\n     @Nullable\n     @Override\n     public KtePsiJavaContent handleContentChange(@NotNull KtePsiJavaContent element, @NotNull TextRange range, String newContent) throws IncorrectOperationException {\n-        Document document = FileDocumentManager.getInstance().getDocument(element.getContainingFile().getVirtualFile());\n+\n+        VirtualFile virtualFile = element.getContainingFile().getVirtualFile();\n+        if (virtualFile == null) {\n+            return element;\n+        }\n+\n+        Document document = FileDocumentManager.getInstance().getDocument(virtualFile);\n         if (document != null) {\n             PsiDocumentManager documentManager = PsiDocumentManager.getInstance(element.getProject());\n             if (documentManager.isDocumentBlockedByPsi(document)) {"
+        }
+    ]
+}

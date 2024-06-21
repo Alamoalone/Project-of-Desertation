@@ -1,0 +1,48 @@
+@@ -113,18 +113,19 @@ public static Boolean DeleteMovieInDB(int movDelID) {
+     }
+ 
+     public static Boolean UpdateMovieInDB(int movieid,
+-                                   String name,
+-                                   int year,
+-                                   int length,
+-                                   int fsk,
+-                                   BigDecimal rating,
+-                                   String genres,
+-                                   String directors,
+-                                   int count,
+-                                   String studio,
+-                                   String actors,
+-                                   String cover,
+-                                   String comment) {
++                                    String name,
++                                    int year,
++                                    int length,
++                                    int fsk,
++                                    BigDecimal rating,
++                                    String genres,
++                                    String directors,
++                                    int count,
++                                    String studio,
++                                    String actors,
++                                    String cover,
++                                    String comment,
++                                    String type) {
+         try (SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+              Session session = sessionFactory.openSession()) {
+             Transaction transaction = null;
+@@ -143,6 +144,7 @@ public static Boolean UpdateMovieInDB(int movieid,
+                         ", actors = :actors" +
+                         ", cover = :cover" +
+                         ", comment = :comment" +
++                        ", type = :type" +
+                         " WHERE movieid = :movieid");
+ 
+                 query.setParameter("name", name);
+@@ -157,6 +159,7 @@ public static Boolean UpdateMovieInDB(int movieid,
+                 query.setParameter("actors", actors);
+                 query.setParameter("cover", cover);
+                 query.setParameter("comment", comment);
++                query.setParameter("type", type);
+                 query.setParameter("movieid", movieid);
+ 
+                 query.executeUpdate();

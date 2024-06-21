@@ -1,0 +1,13 @@
+    public Notes updateNoteById(Integer id, Notes notes) {
+        Notes oldNote = notesRepository.findByNoteId(id);
+        if(oldNote == null){
+            return null;
+        }
+//        oldNote.setColor(notes.getColor());
+        oldNote.setDate(FormatDateTime.parseStandardDate(notes.getDate()));
+        oldNote.setTitle(notes.getTitle());
+        oldNote.setDescription(notes.getDescription());
+        oldNote.setCompleted(notes.isCompleted());
+        notesRepository.save(oldNote);
+        return oldNote;
+    }

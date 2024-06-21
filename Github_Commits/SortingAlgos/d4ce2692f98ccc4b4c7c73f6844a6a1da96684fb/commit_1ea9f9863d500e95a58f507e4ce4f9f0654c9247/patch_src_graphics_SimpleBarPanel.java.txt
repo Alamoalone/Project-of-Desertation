@@ -1,0 +1,111 @@
+@@ -145,8 +145,8 @@ protected Void call() throws Exception {
+                         Data<String, Number> second = data.get(j + 1);
+ 
+ 
+-                       first.getNode().setStyle("-fx-background-color: green ;");
+-                       second.getNode().setStyle("-fx-background-color: green ;");
++//                       first.getNode().setStyle("-fx-background-color: green ;");
++//                       second.getNode().setStyle("-fx-background-color: green ;");
+                        
+                         if (first.getYValue().doubleValue() > second.getYValue().doubleValue()) {
+                             Number temp = first.getYValue().doubleValue();
+@@ -155,8 +155,8 @@ protected Void call() throws Exception {
+                         }
+                         Thread.sleep(75);
+                         
+-                        first.getNode().setStyle("-fx-background-color: red ;");
+-                        second.getNode().setStyle("-fx-background-color: red ;");
++  //                      first.getNode().setStyle("-fx-background-color: red ;");
++  //                      second.getNode().setStyle("-fx-background-color: red ;");
+ 
+                     }
+                 }
+@@ -182,12 +182,12 @@ protected Void call() throws Exception {
+ 
+                    Thread.sleep(50);
+ 
+-                   first.getNode().setStyle("-fx-background-color: green ;");
++     //              first.getNode().setStyle("-fx-background-color: green ;");
+                    //second.getNode().setStyle("-fx-background-color: green ;");
+                    
+                     while ( (i > -1) && (data.get(i).getYValue().doubleValue() > key ) ) { 
+                     	Data<String, Number> currentFirst = data.get(i);
+-                    	currentFirst.getNode().setStyle("-fx-background-color: green ;");
++     //               	currentFirst.getNode().setStyle("-fx-background-color: green ;");
+                     	data.get(i+1).setYValue(data.get(i).getYValue());  
+                         i--;  
+                     }  
+@@ -216,30 +216,42 @@ protected Void call() throws Exception {
+ 
+                 for (int i = 0; i < n; i++) {
+                     //Double smallestNum = Double.MAX_VALUE;
+-                    Data<String, Number> key = data.get(i);
++       //             data.get(i).getNode().setStyle("-fx-background-color: green ;");
++                    //Data<String, Number> key = data.get(i);
+                     for (int j = i+1; j < n; j++) {
+                         Double temp;
++                        try {
++         //                   data.get(j).getNode().setStyle("-fx-background-color: black ;");
++          //                  Thread.sleep(75);
+ 
+-                        data.get(j).getNode().setStyle("-fx-background-color: green ;");
+-                        data.get(i).getNode().setStyle("-fx-background-color: green ;");
+-                        Thread.sleep(75);
++                            //                      System.out.println(data.get(i));
++                            //                    System.out.println(data.get(j));
+ 
+ 
+-                        if ( key.getYValue().doubleValue() > data.get(j).getYValue().doubleValue() )  {
++                            if (data.get(i).getYValue().doubleValue() > data.get(j).getYValue().doubleValue()) {
+ //                            System.out.println(data.get(i));
+ //                            System.out.println(data.get(j));
+ 
+-                            temp = key.getYValue().doubleValue();
+-                            key.setYValue(data.get(j).getYValue());
+-                            data.get(j).setYValue(temp);
+-                        }
++                                temp = data.get(i).getYValue().doubleValue();
++                                data.get(i).setYValue(data.get(j).getYValue());
++                                data.get(j).setYValue(temp);
+ 
+-                        data.get(i).getNode().setStyle("-fx-background-color: red ;");
+-                        data.get(j).getNode().setStyle("-fx-background-color: red ;");
++                                //                      System.out.println(seriesCur.getData());
++                            }
+ 
++            //                data.get(j).getNode().setStyle("-fx-background-color: red ;");
++                            Thread.sleep(75);
++                        }
++                        catch(Exception e)
++                        {
++                            e.printStackTrace();
++                            data.get(j).getNode().setStyle("-fx-background-color: red ;");
++                        }
+                     }
+-                    data.get(i).getNode().setStyle("-fx-background-color: purple ;");
+-                    System.out.println(data.get(i));
++
++               //     data.get(i).getNode().setStyle("-fx-background-color: purple ;");
++                    Thread.sleep(75);
++//                    System.out.println(data.get(i));
+                 }
+ 
+                 return null;
+@@ -256,7 +268,16 @@ public static Series<String,Number> createSeries() {
+             Number randomNumber = (int) (Math.random() * 1000);
+             seriesL.getData().add(new Data<>("" + i, randomNumber));
+         }
+-
++//        seriesL.getData().get(0).setYValue(206);
++//        seriesL.getData().get(1).setYValue(931);
++//        seriesL.getData().get(2).setYValue(950);
++//        seriesL.getData().get(3).setYValue(707);
++//        seriesL.getData().get(4).setYValue(131);
++//        seriesL.getData().get(5).setYValue(320);
++//        seriesL.getData().get(6).setYValue(6);
++//        seriesL.getData().get(7).setYValue(835);
++//        seriesL.getData().get(8).setYValue(306);
++//        seriesL.getData().get(9).setYValue(940);
+         return seriesL;
+     }
+ 

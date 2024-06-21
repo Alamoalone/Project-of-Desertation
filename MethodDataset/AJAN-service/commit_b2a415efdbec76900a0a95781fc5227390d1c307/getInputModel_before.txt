@@ -1,0 +1,7 @@
+	public static InputModel getInputModel(final List<BehaviorQuery> inputs, final Repository repo) {
+		InputModel inputModel = new InputModel();
+		for (BehaviorQuery input: inputs) {
+			inputModel = ACTNUtil.addInputToModel(repo, input, inputModel);
+		}
+		return inputModel;
+	}

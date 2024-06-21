@@ -1,0 +1,158 @@
+{
+    "sha": "d4e149b8e2af62633d67d1db10412c7b20ea1159",
+    "node_id": "C_kwDOK_ZzoNoAKGQ0ZTE0OWI4ZTJhZjYyNjMzZDY3ZDFkYjEwNDEyYzdiMjBlYTExNTk",
+    "commit": {
+        "author": {
+            "name": "ilariagolluscio",
+            "email": "ilaria.golluscio@studio.unibo.it",
+            "date": "2024-02-05T19:42:34Z"
+        },
+        "committer": {
+            "name": "ilariagolluscio",
+            "email": "ilaria.golluscio@studio.unibo.it",
+            "date": "2024-02-05T19:42:34Z"
+        },
+        "message": "Aggiunta gestione Eccezioni  (part 1)\n\nAggiunta ovunque:\nFileNotFoundException\n\ne aggiustamento eccezzione di null pointer exception per l'eliminazione",
+        "tree": {
+            "sha": "b9a71101976e00ecaf9fd4659d8b85b67bc04bc2",
+            "url": "https://api.github.com/repos/Samoggino/SPACCA/git/trees/b9a71101976e00ecaf9fd4659d8b85b67bc04bc2"
+        },
+        "url": "https://api.github.com/repos/Samoggino/SPACCA/git/commits/d4e149b8e2af62633d67d1db10412c7b20ea1159",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Samoggino/SPACCA/commits/d4e149b8e2af62633d67d1db10412c7b20ea1159",
+    "html_url": "https://github.com/Samoggino/SPACCA/commit/d4e149b8e2af62633d67d1db10412c7b20ea1159",
+    "comments_url": "https://api.github.com/repos/Samoggino/SPACCA/commits/d4e149b8e2af62633d67d1db10412c7b20ea1159/comments",
+    "author": {
+        "login": "ilariagolluscio",
+        "id": 126014817,
+        "node_id": "U_kgDOB4LVYQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/126014817?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ilariagolluscio",
+        "html_url": "https://github.com/ilariagolluscio",
+        "followers_url": "https://api.github.com/users/ilariagolluscio/followers",
+        "following_url": "https://api.github.com/users/ilariagolluscio/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ilariagolluscio/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ilariagolluscio/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ilariagolluscio/subscriptions",
+        "organizations_url": "https://api.github.com/users/ilariagolluscio/orgs",
+        "repos_url": "https://api.github.com/users/ilariagolluscio/repos",
+        "events_url": "https://api.github.com/users/ilariagolluscio/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ilariagolluscio/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ilariagolluscio",
+        "id": 126014817,
+        "node_id": "U_kgDOB4LVYQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/126014817?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ilariagolluscio",
+        "html_url": "https://github.com/ilariagolluscio",
+        "followers_url": "https://api.github.com/users/ilariagolluscio/followers",
+        "following_url": "https://api.github.com/users/ilariagolluscio/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ilariagolluscio/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ilariagolluscio/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ilariagolluscio/subscriptions",
+        "organizations_url": "https://api.github.com/users/ilariagolluscio/orgs",
+        "repos_url": "https://api.github.com/users/ilariagolluscio/repos",
+        "events_url": "https://api.github.com/users/ilariagolluscio/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ilariagolluscio/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "d3962e124064b36f18c2ffb699be0c95adc93388",
+            "url": "https://api.github.com/repos/Samoggino/SPACCA/commits/d3962e124064b36f18c2ffb699be0c95adc93388",
+            "html_url": "https://github.com/Samoggino/SPACCA/commit/d3962e124064b36f18c2ffb699be0c95adc93388"
+        }
+    ],
+    "stats": {
+        "total": 95,
+        "additions": 60,
+        "deletions": 35
+    },
+    "files": [
+        {
+            "sha": "e56faecfeff53e386fbcbc9475a77e3be73c1837",
+            "filename": "src/main/java/com/spacca/asset/match/Partita.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Samoggino/SPACCA/blob/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fasset%2Fmatch%2FPartita.java",
+            "raw_url": "https://github.com/Samoggino/SPACCA/raw/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fasset%2Fmatch%2FPartita.java",
+            "contents_url": "https://api.github.com/repos/Samoggino/SPACCA/contents/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fasset%2Fmatch%2FPartita.java?ref=d4e149b8e2af62633d67d1db10412c7b20ea1159",
+            "patch": "@@ -1,5 +1,6 @@\n package com.spacca.asset.match;\n \n+import java.io.FileNotFoundException;\n import java.util.ArrayList;\n import java.util.Collections;\n import java.util.HashMap;\n@@ -111,7 +112,7 @@ public void salvaPartita() {\n         }\n     }\n \n-    public void fine() {\n+    public void fine() throws FileNotFoundException {\n         this.handlerPartita.elimina(this.codice);\n     }\n "
+        },
+        {
+            "sha": "f690153628f55d907a417a23232daad715615b7b",
+            "filename": "src/main/java/com/spacca/asset/utente/Amministratore.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Samoggino/SPACCA/blob/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fasset%2Futente%2FAmministratore.java",
+            "raw_url": "https://github.com/Samoggino/SPACCA/raw/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fasset%2Futente%2FAmministratore.java",
+            "contents_url": "https://api.github.com/repos/Samoggino/SPACCA/contents/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fasset%2Futente%2FAmministratore.java?ref=d4e149b8e2af62633d67d1db10412c7b20ea1159",
+            "patch": "@@ -1,5 +1,6 @@\n package com.spacca.asset.utente;\n \n+import java.io.FileNotFoundException;\n import java.io.IOException;\n import java.util.ArrayList;\n import java.util.List;\n@@ -42,7 +43,7 @@ public void eliminaTorneo(String codice) {\n         torneoHandler.elimina(codice);\n     }\n \n-    public void modificaProfiloGiocatore(String oldGiocatore, Object newGiocatore) {\n+    public void modificaProfiloGiocatore(String oldGiocatore, Object newGiocatore) throws FileNotFoundException {\n         giocatoreHandler.modifica(oldGiocatore, newGiocatore);\n     }\n "
+        },
+        {
+            "sha": "58966388320c0ff130470df39c0097c335b6c236",
+            "filename": "src/main/java/com/spacca/controller/ModificaUtenteController.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Samoggino/SPACCA/blob/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fcontroller%2FModificaUtenteController.java",
+            "raw_url": "https://github.com/Samoggino/SPACCA/raw/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fcontroller%2FModificaUtenteController.java",
+            "contents_url": "https://api.github.com/repos/Samoggino/SPACCA/contents/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fcontroller%2FModificaUtenteController.java?ref=d4e149b8e2af62633d67d1db10412c7b20ea1159",
+            "patch": "@@ -1,5 +1,6 @@\n package com.spacca.controller;\n \n+import java.io.FileNotFoundException;\n import java.io.IOException;\n \n import com.spacca.App;\n@@ -57,7 +58,7 @@ public class ModificaUtenteController {\n     transient private GiocatoreHandler handler = new GiocatoreHandler();\n \n     @FXML\n-    private void procediModifica() {\n+    private void procediModifica() throws FileNotFoundException {\n \n         System.out.println(\"\\n PROCEDI MODIFICA \\n \");\n         System.out.println(\"Utente corrente \" + giocatoreScelto);"
+        },
+        {
+            "sha": "d7c4fc2a7fef51b0d13d7f42b238ce4e4ebd9a81",
+            "filename": "src/main/java/com/spacca/controller/TavoloController.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/Samoggino/SPACCA/blob/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fcontroller%2FTavoloController.java",
+            "raw_url": "https://github.com/Samoggino/SPACCA/raw/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fcontroller%2FTavoloController.java",
+            "contents_url": "https://api.github.com/repos/Samoggino/SPACCA/contents/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fcontroller%2FTavoloController.java?ref=d4e149b8e2af62633d67d1db10412c7b20ea1159",
+            "patch": "@@ -1,5 +1,6 @@\n package com.spacca.controller;\n \n+import java.io.FileNotFoundException;\n import java.util.ArrayList;\n import java.util.List;\n \n@@ -269,7 +270,7 @@ void buildOverlay() {\n     }\n \n     @FXML\n-    public void eliminaPartita() {\n+    public void eliminaPartita() throws FileNotFoundException {\n         partita.fine();\n         eliminaPartitaButton.setVisible(false);\n     }"
+        },
+        {
+            "sha": "238a246ae6ee48cbae3c6e5f53c2b5c3325035a7",
+            "filename": "src/main/java/com/spacca/database/GiocatoreHandler.java",
+            "status": "modified",
+            "additions": 47,
+            "deletions": 28,
+            "changes": 75,
+            "blob_url": "https://github.com/Samoggino/SPACCA/blob/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fdatabase%2FGiocatoreHandler.java",
+            "raw_url": "https://github.com/Samoggino/SPACCA/raw/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fdatabase%2FGiocatoreHandler.java",
+            "contents_url": "https://api.github.com/repos/Samoggino/SPACCA/contents/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fdatabase%2FGiocatoreHandler.java?ref=d4e149b8e2af62633d67d1db10412c7b20ea1159",
+            "patch": "@@ -102,45 +102,64 @@ public AbstractGiocatore carica(String username) {\n     }\n \n     @Override\n-    public boolean elimina(String username) {\n+    public boolean elimina(String username) throws FileNotFoundException {\n         String path = \"src/main/resources/com/spacca/database/giocatori/user-\" + username + \".json\";\n+        try {\n \n-        File file = new File(path);\n+            File file = new File(path);\n \n-        Giocatore giocatoreEliminato = (Giocatore) this.carica(username);\n+            Giocatore giocatoreEliminato = (Giocatore) this.carica(username);\n \n-        List<String> listaCodici = giocatoreEliminato.getListaCodiciPartite();\n+            List<String> listaCodici = giocatoreEliminato.getListaCodiciPartite();\n \n-        if (file.exists() && file.isFile()) {\n-            if (file.delete()) {\n+            if (file.exists() && file.isFile()) {\n+                if (file.delete()) {\n \n-                for (String codice : listaCodici) {\n-                    Handler handlerPartita = new PartitaHandler();\n-                    // carico la partita con il codice presente nella lista per eliminare il\n-                    // giocatore\n-                    Partita partita = (Partita) handlerPartita.carica(codice);\n-                    // rimuovo il giocatore nella lista dei giocatori della partita\n-                    int posizioneVecchioUtente = partita.getListaDeiGiocatori().indexOf(username);\n+                    for (String codice : listaCodici) {\n+                        Handler handlerPartita = new PartitaHandler();\n+                        // carico la partita con il codice presente nella lista per eliminare il\n+                        // giocatore\n+                        Partita partita = (Partita) handlerPartita.carica(codice);\n+                        // rimuovo il giocatore nella lista dei giocatori della partita\n+                        int posizioneVecchioUtente = partita.getListaDeiGiocatori().indexOf(username);\n \n-                    // creo un nuovo giocatore stupido e lo sostituisco con un giocatore robot\n-                    // stupido\n-                    GiocatoreHandler handlerGiocatore = new GiocatoreHandler();\n-                    String usernameStupid = \"RS-\" + username;\n-                    AbstractGiocatore giocatoreSostituto = new StupidCPU(usernameStupid);\n+                        // creo un nuovo giocatore stupido e lo sostituisco con un giocatore robot\n+                        // stupido\n+                        GiocatoreHandler handlerGiocatore = new GiocatoreHandler();\n+                        String usernameStupid = \"RS-\" + username;\n+                        AbstractGiocatore giocatoreSostituto = new StupidCPU(usernameStupid);\n \n-                    partita.getListaDeiGiocatori().set(posizioneVecchioUtente, usernameStupid);\n-                    // salvo su file il nuovo giocatore stupido\n-                    handlerGiocatore.salva(giocatoreSostituto, usernameStupid);\n+                        partita.getListaDeiGiocatori().set(posizioneVecchioUtente, usernameStupid);\n+                        // salvo su file il nuovo giocatore stupido\n+                        handlerGiocatore.salva(giocatoreSostituto, usernameStupid);\n \n-                    // salvo la partita modificata\n-                    handlerPartita.salva(partita, codice);\n+                        // salvo la partita modificata\n+                        handlerPartita.salva(partita, codice);\n+                    }\n+                    return true;\n+                } else {\n+                    System.err.println(\"Errore durante l'eliminazione del giocatore  \" + username);\n                 }\n-                return true;\n             } else {\n-                System.err.println(\"Errore durante l'eliminazione del giocatore  \" + username);\n+                System.err.println(\"Il giocatore con username \" + username + \" non esiste o non è un file.\");\n             }\n-        } else {\n-            System.err.println(\"Il giocatore con username \" + username + \" non esiste o non è un file.\");\n+        } catch (IOException e) {\n+            System.err.println(\"Errore di I/O durante l'operazione di eliminazione per il giocatore \" + username + \": \"\n+                    + e.getMessage());\n+        } catch (NullPointerException e) {\n+            System.err.println(\"Eccezione di puntatore nullo durante l'operazione di eliminazione per il giocatore \"\n+                    + username + \": \" + e.getMessage());\n+        } catch (SecurityException e) {\n+            System.err.println(\"Permesso negato per accedere al file: \" + e.getMessage());\n+        } catch (ClassCastException e) {\n+            System.err.println(\"Errore durante il cast dell'oggetto caricato: \" + e.getMessage());\n+        } catch (UnsupportedOperationException e) {\n+            System.err.println(\"Operazione non supportata: \" + e.getMessage());\n+        } catch (IndexOutOfBoundsException e) {\n+            System.err.println(\"Indice fuori dai limiti: \" + e.getMessage());\n+        } catch (Exception e) {\n+            System.err.println(\"Errore sconosciuto durante l'operazione di eliminazione per il giocatore \" + username\n+                    + \": \" + e.getMessage());\n         }\n         return false;\n     }\n@@ -160,7 +179,7 @@ public Boolean VerificaEsistenzaFile(String username) {\n     }\n \n     @Override\n-    public void modifica(String oldGiocatore, Object newObject) {\n+    public void modifica(String oldGiocatore, Object newObject) throws FileNotFoundException {\n         Giocatore newGiocatore = (Giocatore) newObject;\n         // Percorso del file JSON dell'oldGiocatore\n         String path = \"src/main/resources/com/spacca/database/giocatori/user-\" + oldGiocatore + \".json\";"
+        },
+        {
+            "sha": "08f8079f4f70e87c8e327ee0f58b8f0d2926319a",
+            "filename": "src/main/java/com/spacca/database/Handler.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 3,
+            "changes": 8,
+            "blob_url": "https://github.com/Samoggino/SPACCA/blob/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fdatabase%2FHandler.java",
+            "raw_url": "https://github.com/Samoggino/SPACCA/raw/d4e149b8e2af62633d67d1db10412c7b20ea1159/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fdatabase%2FHandler.java",
+            "contents_url": "https://api.github.com/repos/Samoggino/SPACCA/contents/src%2Fmain%2Fjava%2Fcom%2Fspacca%2Fdatabase%2FHandler.java?ref=d4e149b8e2af62633d67d1db10412c7b20ea1159",
+            "patch": "@@ -1,15 +1,17 @@\n package com.spacca.database;\n \n+import java.io.FileNotFoundException;\n+\n public interface Handler {\n \n     boolean salva(Object object, String pathOrFileName);\n \n-    boolean elimina(String codice);\n+    boolean elimina(String codice) throws FileNotFoundException;\n \n-    Object carica(String codice);\n+    Object carica(String codice) throws FileNotFoundException;\n \n     Boolean VerificaEsistenzaFile(String codice);\n \n-    void modifica(String oldFileName, Object newObject);\n+    void modifica(String oldFileName, Object newObject) throws FileNotFoundException;\n \n }\n\\ No newline at end of file"
+        }
+    ]
+}

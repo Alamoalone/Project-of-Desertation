@@ -1,0 +1,60 @@
+{
+    "sha": "a88dfd8f696d4a0221b24a8050ca4578624cb377",
+    "node_id": "C_kwDOH8R8gNoAKGE4OGRmZDhmNjk2ZDRhMDIyMWIyNGE4MDUwY2E0NTc4NjI0Y2IzNzc",
+    "commit": {
+        "author": {
+            "name": "Aravinda Baliga B",
+            "email": "aravinda.baliga@benelog.com",
+            "date": "2023-08-11T10:02:08Z"
+        },
+        "committer": {
+            "name": "Aravinda Baliga B",
+            "email": "aravinda.baliga@benelog.com",
+            "date": "2023-08-11T10:02:08Z"
+        },
+        "message": "fix null pointer exception during the creation of quantity.",
+        "tree": {
+            "sha": "73e01b94076471c15ef31c8ad2025e6bc26c26ff",
+            "url": "https://api.github.com/repos/openepcis/epcis-testdata-generator/git/trees/73e01b94076471c15ef31c8ad2025e6bc26c26ff"
+        },
+        "url": "https://api.github.com/repos/openepcis/epcis-testdata-generator/git/commits/a88dfd8f696d4a0221b24a8050ca4578624cb377",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/openepcis/epcis-testdata-generator/commits/a88dfd8f696d4a0221b24a8050ca4578624cb377",
+    "html_url": "https://github.com/openepcis/epcis-testdata-generator/commit/a88dfd8f696d4a0221b24a8050ca4578624cb377",
+    "comments_url": "https://api.github.com/repos/openepcis/epcis-testdata-generator/commits/a88dfd8f696d4a0221b24a8050ca4578624cb377/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "8faabfbaa295835e6c20c605345f1d1428daefdd",
+            "url": "https://api.github.com/repos/openepcis/epcis-testdata-generator/commits/8faabfbaa295835e6c20c605345f1d1428daefdd",
+            "html_url": "https://github.com/openepcis/epcis-testdata-generator/commit/8faabfbaa295835e6c20c605345f1d1428daefdd"
+        }
+    ],
+    "stats": {
+        "total": 18,
+        "additions": 10,
+        "deletions": 8
+    },
+    "files": [
+        {
+            "sha": "4ac218689fbc6acef9530a7cce0a37ede3f3073e",
+            "filename": "testdata-generator-common/src/main/java/io/openepcis/testdata/generator/model/AbstractEventCreationModel.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 8,
+            "changes": 18,
+            "blob_url": "https://github.com/openepcis/epcis-testdata-generator/blob/a88dfd8f696d4a0221b24a8050ca4578624cb377/testdata-generator-common%2Fsrc%2Fmain%2Fjava%2Fio%2Fopenepcis%2Ftestdata%2Fgenerator%2Fmodel%2FAbstractEventCreationModel.java",
+            "raw_url": "https://github.com/openepcis/epcis-testdata-generator/raw/a88dfd8f696d4a0221b24a8050ca4578624cb377/testdata-generator-common%2Fsrc%2Fmain%2Fjava%2Fio%2Fopenepcis%2Ftestdata%2Fgenerator%2Fmodel%2FAbstractEventCreationModel.java",
+            "contents_url": "https://api.github.com/repos/openepcis/epcis-testdata-generator/contents/testdata-generator-common%2Fsrc%2Fmain%2Fjava%2Fio%2Fopenepcis%2Ftestdata%2Fgenerator%2Fmodel%2FAbstractEventCreationModel.java?ref=a88dfd8f696d4a0221b24a8050ca4578624cb377",
+            "patch": "@@ -307,15 +307,17 @@ public List<String> referencedEpcsIdentifierGenerator(\n             .findFirst()\n             .ifPresent(\n                 t -> epcList.addAll(EventModelUtil.instanceIdentifiers(t, epc.getEpcCount())));\n-      }else if (epc.getParentNodeId() != 0 && epc.getInheritParentCount() != null && epc.getInheritParentCount() > 0) {\n+      }\n+\n+      if (epc.getParentNodeId() != 0 && epc.getInheritParentCount() != null && epc.getInheritParentCount() > 0) {\n         // When user wants to inherit Parent-Ids from parent node into child node get the matching\n         // Parent Identifiers. (AggregationEvent -> ObjectEvent)\n         parentTracker.stream()\n-            .forEach(\n-                parent -> {\n-                  epcList.addAll(\n-                      EventModelUtil.parentIdentifiers(parent, epc.getInheritParentCount()));\n-                });\n+                .forEach(\n+                        parent -> {\n+                          epcList.addAll(\n+                                  EventModelUtil.parentIdentifiers(parent, epc.getInheritParentCount()));\n+                        });\n       }\n     }\n \n@@ -339,7 +341,7 @@ public List<QuantityList> referencedClassIdentifierGenerator(\n \n       // If the EventNode is directly connected to the IdentifiersNode then create the class\n       // identifiers based on the provided identifiers info\n-      if (quantity.getIdentifierId() != 0) {\n+      if (quantity.getIdentifierId() != 0 && quantity.getClassCount() != null && quantity.getClassCount() > 0) {\n \n         // Get the matching identifiers from the IdentifiersList based on the Identifiers present in\n         // the ReferencedIdentifier\n@@ -362,7 +364,7 @@ public List<QuantityList> referencedClassIdentifierGenerator(\n                       quantity.getClassCount(),\n                       quantity.getQuantity()));\n         }\n-      } else if (quantity.getParentNodeId() != 0) {\n+      } else if (quantity.getParentNodeId() != 0  && quantity.getClassCount() != null && quantity.getClassCount() > 0) {\n         // If referenced identifier contains the parent node id then obtain the identifiers from its\n         // parent event and add it\n "
+        }
+    ]
+}

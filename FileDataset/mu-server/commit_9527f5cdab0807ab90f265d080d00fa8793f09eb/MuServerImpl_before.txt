@@ -1,0 +1,4 @@
+    public List<RateLimiter> rateLimiters() {
+        return settings.rateLimiters.stream().map(RateLimiter.class::cast).collect(Collectors.toList());
+    }
+

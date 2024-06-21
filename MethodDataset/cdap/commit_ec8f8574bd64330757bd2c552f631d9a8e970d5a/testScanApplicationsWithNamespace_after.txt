@@ -1,0 +1,67 @@
+  public void testScanApplicationsWithNamespace(Store store) throws ConflictException {
+    ApplicationSpecification appSpec = Specifications.from(new AllProgramsApp());
+
+    int count = 100;
+    for (int i = 0; i < count / 2; i++) {
+      String appName = "test" + (2 * i);
+      ApplicationMeta appMeta = new ApplicationMeta(appName, appSpec,
+                                                    new ChangeDetail(null, null, null,
+                                                                     System.currentTimeMillis()));
+      store.addLatestApplication(new ApplicationId(NamespaceId.DEFAULT.getNamespace(), appName), appMeta);
+      appName = "test" + (2 * i + 1);
+      store.addLatestApplication(new ApplicationId(NamespaceId.CDAP.getNamespace(), appName), appMeta);
+    }
+
+    List<ApplicationId> apps = new ArrayList<ApplicationId>();
+
+    ScanApplicationsRequest request = ScanApplicationsRequest.builder()
+      .setNamespaceId(NamespaceId.CDAP).build();
+
+    Assert.assertFalse(store.scanApplications(request, 20, (appId, spec) -> {
+      apps.add(appId);
+    }));
+
+    Assert.assertEquals(count / 2, apps.size());
+
+    //Reverse
+    List<ApplicationId> reverseApps = new ArrayList<>();
+    request = ScanApplicationsRequest.builder()
+      .setNamespaceId(NamespaceId.CDAP)
+      .setSortOrder(SortOrder.DESC)
+      .build();
+    Assert.assertFalse(store.scanApplications(request, 20, (appId, spec) -> reverseApps.add(appId)));
+    Assert.assertEquals(Lists.reverse(apps), reverseApps);
+
+    int firstPageSize = 10;
+    //First page - DESC
+    {
+      List<ApplicationId> firstPageApps = new ArrayList<>();
+      request = ScanApplicationsRequest.builder()
+        .setNamespaceId(NamespaceId.CDAP)
+        .setSortOrder(SortOrder.DESC)
+        .setLimit(firstPageSize)
+        .build();
+      Assert.assertTrue(store.scanApplications(request, 20, (appId, spec) -> firstPageApps.add(appId)));
+      Assert.assertEquals(Lists.reverse(apps).subList(0, firstPageSize), firstPageApps);
+    }
+
+    //First page - ASC
+    {
+      List<ApplicationId> firstPageApps = new ArrayList<>();
+      request = ScanApplicationsRequest.builder()
+        .setNamespaceId(NamespaceId.CDAP)
+        .setLimit(firstPageSize)
+        .build();
+      Assert.assertTrue(store.scanApplications(request, 20, (appId, spec) -> firstPageApps.add(appId)));
+      Assert.assertEquals(apps.subList(0, firstPageSize), firstPageApps);
+    }
+
+    //Remaining items
+    List<ApplicationId> restartApps = new ArrayList<>();
+    request = ScanApplicationsRequest.builder()
+      .setNamespaceId(NamespaceId.CDAP)
+      .setScanFrom(apps.get(firstPageSize - 1))
+      .build();
+    Assert.assertFalse(store.scanApplications(request, 20, (appId, spec) -> restartApps.add(appId)));
+    Assert.assertEquals(apps.subList(firstPageSize, apps.size()), restartApps);
+  }

@@ -1,0 +1,110 @@
+{
+    "sha": "be10be1571130ae22a2609f3e9ddad0adbd1b8a9",
+    "node_id": "C_kwDOBr8I6toAKGJlMTBiZTE1NzExMzBhZTIyYTI2MDlmM2U5ZGRhZDBhZGJkMWI4YTk",
+    "commit": {
+        "author": {
+            "name": "Daniel Flower",
+            "email": "git@danielflower.com",
+            "date": "2023-06-23T10:53:56Z"
+        },
+        "committer": {
+            "name": "Daniel Flower",
+            "email": "git@danielflower.com",
+            "date": "2023-06-23T10:53:56Z"
+        },
+        "message": "Bug fix: `MuServer.rateLimiters()` was throwing a null pointer exception when there are no rate limiters, but now returns an empty list.",
+        "tree": {
+            "sha": "2d73f11d1cf7288b042b4be4704984a9944a270f",
+            "url": "https://api.github.com/repos/3redronin/mu-server/git/trees/2d73f11d1cf7288b042b4be4704984a9944a270f"
+        },
+        "url": "https://api.github.com/repos/3redronin/mu-server/git/commits/be10be1571130ae22a2609f3e9ddad0adbd1b8a9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/3redronin/mu-server/commits/be10be1571130ae22a2609f3e9ddad0adbd1b8a9",
+    "html_url": "https://github.com/3redronin/mu-server/commit/be10be1571130ae22a2609f3e9ddad0adbd1b8a9",
+    "comments_url": "https://api.github.com/repos/3redronin/mu-server/commits/be10be1571130ae22a2609f3e9ddad0adbd1b8a9/comments",
+    "author": {
+        "login": "danielflower",
+        "id": 1056441,
+        "node_id": "MDQ6VXNlcjEwNTY0NDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1056441?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danielflower",
+        "html_url": "https://github.com/danielflower",
+        "followers_url": "https://api.github.com/users/danielflower/followers",
+        "following_url": "https://api.github.com/users/danielflower/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danielflower/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danielflower/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danielflower/subscriptions",
+        "organizations_url": "https://api.github.com/users/danielflower/orgs",
+        "repos_url": "https://api.github.com/users/danielflower/repos",
+        "events_url": "https://api.github.com/users/danielflower/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danielflower/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "danielflower",
+        "id": 1056441,
+        "node_id": "MDQ6VXNlcjEwNTY0NDE=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1056441?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/danielflower",
+        "html_url": "https://github.com/danielflower",
+        "followers_url": "https://api.github.com/users/danielflower/followers",
+        "following_url": "https://api.github.com/users/danielflower/following{/other_user}",
+        "gists_url": "https://api.github.com/users/danielflower/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/danielflower/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/danielflower/subscriptions",
+        "organizations_url": "https://api.github.com/users/danielflower/orgs",
+        "repos_url": "https://api.github.com/users/danielflower/repos",
+        "events_url": "https://api.github.com/users/danielflower/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/danielflower/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "59c00b9f8581da4ac08948e1c61dae981b7c95eb",
+            "url": "https://api.github.com/repos/3redronin/mu-server/commits/59c00b9f8581da4ac08948e1c61dae981b7c95eb",
+            "html_url": "https://github.com/3redronin/mu-server/commit/59c00b9f8581da4ac08948e1c61dae981b7c95eb"
+        }
+    ],
+    "stats": {
+        "total": 25,
+        "additions": 24,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "9527f5cdab0807ab90f265d080d00fa8793f09eb",
+            "filename": "src/main/java/io/muserver/MuServerImpl.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 1,
+            "changes": 3,
+            "blob_url": "https://github.com/3redronin/mu-server/blob/be10be1571130ae22a2609f3e9ddad0adbd1b8a9/src%2Fmain%2Fjava%2Fio%2Fmuserver%2FMuServerImpl.java",
+            "raw_url": "https://github.com/3redronin/mu-server/raw/be10be1571130ae22a2609f3e9ddad0adbd1b8a9/src%2Fmain%2Fjava%2Fio%2Fmuserver%2FMuServerImpl.java",
+            "contents_url": "https://api.github.com/repos/3redronin/mu-server/contents/src%2Fmain%2Fjava%2Fio%2Fmuserver%2FMuServerImpl.java?ref=be10be1571130ae22a2609f3e9ddad0adbd1b8a9",
+            "patch": "@@ -139,7 +139,8 @@ public SSLInfo sslInfo() {\n \n     @Override\n     public List<RateLimiter> rateLimiters() {\n-        return settings.rateLimiters.stream().map(RateLimiter.class::cast).collect(Collectors.toList());\n+        List<RateLimiterImpl> rateLimiters = settings.rateLimiters;\n+        return rateLimiters == null ? Collections.emptyList() : rateLimiters.stream().map(RateLimiter.class::cast).collect(Collectors.toList());\n     }\n \n     @Override"
+        },
+        {
+            "sha": "d227d2a96e8bf40ae07160b4ad8475d6e4ddeba7",
+            "filename": "src/test/java/io/muserver/RateLimiterTest.java",
+            "status": "modified",
+            "additions": 22,
+            "deletions": 0,
+            "changes": 22,
+            "blob_url": "https://github.com/3redronin/mu-server/blob/be10be1571130ae22a2609f3e9ddad0adbd1b8a9/src%2Ftest%2Fjava%2Fio%2Fmuserver%2FRateLimiterTest.java",
+            "raw_url": "https://github.com/3redronin/mu-server/raw/be10be1571130ae22a2609f3e9ddad0adbd1b8a9/src%2Ftest%2Fjava%2Fio%2Fmuserver%2FRateLimiterTest.java",
+            "contents_url": "https://api.github.com/repos/3redronin/mu-server/contents/src%2Ftest%2Fjava%2Fio%2Fmuserver%2FRateLimiterTest.java?ref=be10be1571130ae22a2609f3e9ddad0adbd1b8a9",
+            "patch": "@@ -53,6 +53,28 @@ public void ignoreActionDoesNotBlock() throws InterruptedException {\n         assertEventually(() -> limiter.currentBuckets().keySet(), is(empty()));\n     }\n \n+    @Test\n+    public void emptyListReturnedWhenNoLimiters() throws Exception {\n+        MuServer server = ServerUtils.httpsServerForTest()\n+            .addHandler(Method.GET, \"/\", (request, response, pathParams) -> response.write(\"hi\"))\n+            .start();\n+        for (int i = 0; i < 2; i++) {\n+            try (Response resp = call(request(server.uri()))) {\n+                assertThat(\"req \" + i, resp.code(), is(200));\n+                assertThat(\"req \" + i, resp.body().string(), is(\"hi\"));\n+            }\n+        }\n+        for (int i = 0; i < 3; i++) {\n+            try (Response resp = call(request(server.uri()))) {\n+                assertThat(resp.code(), is(200));\n+                assertThat(resp.body().string(), is(\"hi\"));\n+            }\n+        }\n+        assertThat(server.stats().rejectedDueToOverload(), is(0L));\n+        assertThat(server.rateLimiters().size(), is(0));\n+    }\n+\n+\n     @Test\n     public void multipleLimitersCanBeAddedToTheServer() throws Exception {\n         MuServer server = ServerUtils.httpsServerForTest()"
+        }
+    ]
+}

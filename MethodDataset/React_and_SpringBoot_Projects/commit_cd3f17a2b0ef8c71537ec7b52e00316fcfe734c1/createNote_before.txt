@@ -1,0 +1,9 @@
+    public ResponseEntity<?> createNote(@RequestBody Notes note) throws Exception {
+        Loggers.info("NOTE CREATED");
+        System.out.println(note);
+        Notes notes = notesService.createNote(note);
+        if (notes == null) {
+            return ResponseEntity.status(500).header("msg", "SOMETHING WENT WRONG").build();
+        }
+        return ResponseEntity.ok(notesService.createNote(note));
+    }

@@ -1,0 +1,4 @@
+    public String handleBadRequest(NullPointerException ex){
+        log.error("Null pointer encountered, went wrong", ex);
+        return ex.getMessage();
+    }

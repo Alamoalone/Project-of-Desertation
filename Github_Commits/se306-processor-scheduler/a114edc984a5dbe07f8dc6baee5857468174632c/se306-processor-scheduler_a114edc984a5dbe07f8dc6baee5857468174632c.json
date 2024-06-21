@@ -1,0 +1,98 @@
+{
+    "sha": "a114edc984a5dbe07f8dc6baee5857468174632c",
+    "node_id": "C_kwDOLZifo9oAKGExMTRlZGM5ODRhNWRiZTA3ZjhkYzZiYWVlNTg1NzQ2ODE3NDYzMmM",
+    "commit": {
+        "author": {
+            "name": "Ben Zhou",
+            "email": "benzhou2597@gmail.com",
+            "date": "2023-10-15T15:33:52Z"
+        },
+        "committer": {
+            "name": "Ben Zhou",
+            "email": "benzhou2597@gmail.com",
+            "date": "2023-10-15T15:33:52Z"
+        },
+        "message": "fix: fixed null pointer exception when schedulenode is not loaded in yet in visualisation",
+        "tree": {
+            "sha": "835732ec69881f6a8e0a820fb146db6933fb25d2",
+            "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/git/trees/835732ec69881f6a8e0a820fb146db6933fb25d2"
+        },
+        "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/git/commits/a114edc984a5dbe07f8dc6baee5857468174632c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/commits/a114edc984a5dbe07f8dc6baee5857468174632c",
+    "html_url": "https://github.com/KW781/se306-processor-scheduler/commit/a114edc984a5dbe07f8dc6baee5857468174632c",
+    "comments_url": "https://api.github.com/repos/KW781/se306-processor-scheduler/commits/a114edc984a5dbe07f8dc6baee5857468174632c/comments",
+    "author": {
+        "login": "biz3e",
+        "id": 93026803,
+        "node_id": "U_kgDOBYt58w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/93026803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/biz3e",
+        "html_url": "https://github.com/biz3e",
+        "followers_url": "https://api.github.com/users/biz3e/followers",
+        "following_url": "https://api.github.com/users/biz3e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/biz3e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/biz3e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/biz3e/subscriptions",
+        "organizations_url": "https://api.github.com/users/biz3e/orgs",
+        "repos_url": "https://api.github.com/users/biz3e/repos",
+        "events_url": "https://api.github.com/users/biz3e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/biz3e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "biz3e",
+        "id": 93026803,
+        "node_id": "U_kgDOBYt58w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/93026803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/biz3e",
+        "html_url": "https://github.com/biz3e",
+        "followers_url": "https://api.github.com/users/biz3e/followers",
+        "following_url": "https://api.github.com/users/biz3e/following{/other_user}",
+        "gists_url": "https://api.github.com/users/biz3e/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/biz3e/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/biz3e/subscriptions",
+        "organizations_url": "https://api.github.com/users/biz3e/orgs",
+        "repos_url": "https://api.github.com/users/biz3e/repos",
+        "events_url": "https://api.github.com/users/biz3e/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/biz3e/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "008308ef4b011e29860d547554fed6f7533f14df",
+            "url": "https://api.github.com/repos/KW781/se306-processor-scheduler/commits/008308ef4b011e29860d547554fed6f7533f14df",
+            "html_url": "https://github.com/KW781/se306-processor-scheduler/commit/008308ef4b011e29860d547554fed6f7533f14df"
+        }
+    ],
+    "stats": {
+        "total": 29,
+        "additions": 17,
+        "deletions": 12
+    },
+    "files": [
+        {
+            "sha": "86afb0f855fd54b7d8203a12292e2ed035ed48d8",
+            "filename": "src/main/java/com/example/project2project2team16/controllers/MainVisualisationController.java",
+            "status": "modified",
+            "additions": 17,
+            "deletions": 12,
+            "changes": 29,
+            "blob_url": "https://github.com/KW781/se306-processor-scheduler/blob/a114edc984a5dbe07f8dc6baee5857468174632c/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject2project2team16%2Fcontrollers%2FMainVisualisationController.java",
+            "raw_url": "https://github.com/KW781/se306-processor-scheduler/raw/a114edc984a5dbe07f8dc6baee5857468174632c/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject2project2team16%2Fcontrollers%2FMainVisualisationController.java",
+            "contents_url": "https://api.github.com/repos/KW781/se306-processor-scheduler/contents/src%2Fmain%2Fjava%2Fcom%2Fexample%2Fproject2project2team16%2Fcontrollers%2FMainVisualisationController.java?ref=a114edc984a5dbe07f8dc6baee5857468174632c",
+            "patch": "@@ -312,18 +312,23 @@ public void updateGanttChart(ScheduleNode scheduleNode, int numProcessors) {\n             rows[i] = new XYChart.Series();\n         }\n \n-        for (Map.Entry<String, Pair<Integer, Integer>> entry : scheduleNode.getVisited().entrySet()) {\n-            String taskId = entry.getKey();\n-            Integer taskProcessor = entry.getValue().getKey();\n-            Integer taskWeight = GraphVisualisationHelper.instance().getTaskGraph().getNode(taskId).getAttribute(\"Weight\", Double.class).intValue();\n-            Integer taskStartTime = entry.getValue().getValue() - taskWeight;\n-            int processorIdDisplay = taskProcessor + 1;\n-            int styleCode = taskProcessor % 5;\n-\n-            GanttChart.ExtraData taskData = new GanttChart.ExtraData(taskWeight, \"ganttchart\" + styleCode);\n-            XYChart.Data data = new XYChart.Data(taskStartTime, \"P\" + processorIdDisplay, taskData);\n-            rows[taskProcessor].getData().add(data);\n-        }\n+        // Tries to update graph before the schedule has been loaded.\n+        // So we catch and ignore the exception.\n+        try {\n+            for (Map.Entry<String, Pair<Integer, Integer>> entry : scheduleNode.getVisited().entrySet()) {\n+                String taskId = entry.getKey();\n+                Integer taskProcessor = entry.getValue().getKey();\n+                Integer taskWeight = GraphVisualisationHelper.instance().getTaskGraph().getNode(taskId).getAttribute(\"Weight\", Double.class).intValue();\n+                Integer taskStartTime = entry.getValue().getValue() - taskWeight;\n+                int processorIdDisplay = taskProcessor + 1;\n+                int styleCode = taskProcessor % 5;\n+\n+                GanttChart.ExtraData taskData = new GanttChart.ExtraData(taskWeight, \"ganttchart\" + styleCode);\n+                XYChart.Data data = new XYChart.Data(taskStartTime, \"P\" + processorIdDisplay, taskData);\n+                rows[taskProcessor].getData().add(data);\n+            }\n+        } catch (NullPointerException ignored) {}\n+\n \n         ganttChart.getData().clear();\n         for (int i = 0; i < numProcessors; i++) {"
+        }
+    ]
+}

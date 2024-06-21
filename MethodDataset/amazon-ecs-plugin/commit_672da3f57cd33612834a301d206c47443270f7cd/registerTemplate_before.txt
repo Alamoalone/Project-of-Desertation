@@ -1,0 +1,186 @@
+    TaskDefinition registerTemplate(final String cloudName, final ECSTaskTemplate template) {
+        if (template.getTaskDefinitionOverride() != null){
+            TaskDefinition overrideTaskDefinition = findTaskDefinition(template.getTaskDefinitionOverride());
+            if (overrideTaskDefinition == null) {
+                LOGGER.log(Level.SEVERE, "Could not find task definition override: {0} for template: {1}", new Object[] {template.getTaskDefinitionOverride(), template.getDisplayName()});
+                throw new RuntimeException("Could not find task definition override family or ARN: " + template.getTaskDefinitionOverride());
+            }
+
+            LOGGER.log(Level.FINE, "Found task definition override: {0}", new Object[] {overrideTaskDefinition.getTaskDefinitionArn()});
+            return overrideTaskDefinition;
+        }
+
+        if (template.getDynamicTaskDefinition() != null){
+            TaskDefinition overrideTaskDefinition = findTaskDefinition(template.getDynamicTaskDefinition());
+            if (overrideTaskDefinition != null) {
+                LOGGER.log(Level.FINE, "Found dynamic agent task definition: {0}", new Object[] {overrideTaskDefinition.getTaskDefinitionArn()});
+                return overrideTaskDefinition;
+            }
+
+            LOGGER.log(Level.WARNING, "Could not find dynamic agent's task definition family or ARN: {0}, creating a new one.", new Object[] {template.getDynamicTaskDefinition()});
+        }
+
+        final AmazonECS client = clientSupplier.get();
+
+        String familyName = fullQualifiedTemplateName(cloudName, template);
+        final ContainerDefinition def = new ContainerDefinition()
+                .withName(familyName)
+                .withImage(template.getImage())
+                .withEnvironment(template.getEnvironmentKeyValuePairs())
+                .withExtraHosts(template.getExtraHostEntries())
+                .withMountPoints(template.getMountPointEntries())
+                .withPortMappings(template.getPortMappingEntries())
+                .withCpu(template.getCpu())
+                .withPrivileged(template.getPrivileged())
+                .withEssential(true);
+
+        /*
+            at least one of memory or memoryReservation has to be set
+            the form validation will highlight if the settings are inappropriate
+        */
+        if (template.getMemoryReservation() > 0) /* this is the soft limit */
+            def.withMemoryReservation(template.getMemoryReservation());
+
+        if (template.getMemory() > 0) /* this is the hard limit */
+            def.withMemory(template.getMemory());
+
+        if (template.getDnsSearchDomains() != null)
+            def.withDnsSearchDomains(StringUtils.split(template.getDnsSearchDomains()));
+
+        if (template.getEntrypoint() != null)
+            def.withEntryPoint(StringUtils.split(template.getEntrypoint()));
+
+        if (template.getJvmArgs() != null)
+            def.withEnvironment(new KeyValuePair()
+                    .withName("JAVA_OPTS").withValue(template.getJvmArgs()))
+                    .withEssential(true);
+
+        if (template.getContainerUser() != null)
+            def.withUser(template.getContainerUser());
+
+        if (template.getKernelCapabilities() != null) {
+            def.withLinuxParameters(new LinuxParameters().withCapabilities(new KernelCapabilities().withAdd(Arrays.asList(template.getKernelCapabilities().split(",")))));
+        }
+
+        if (template.getRepositoryCredentials() != null)
+            def.withRepositoryCredentials(new RepositoryCredentials().withCredentialsParameter(template.getRepositoryCredentials()));
+
+        if (template.getLogDriver() != null) {
+            LogConfiguration logConfig = new LogConfiguration();
+            logConfig.setLogDriver(template.getLogDriver());
+            logConfig.setOptions(template.getLogDriverOptionsMap());
+            def.withLogConfiguration(logConfig);
+        }
+
+        if (template.getSharedMemorySize() > 0) {
+            def.withLinuxParameters(new LinuxParameters().withSharedMemorySize(template.getSharedMemorySize()));
+        }
+
+        TaskDefinition currentTaskDefinition = findTaskDefinition(familyName);
+
+        boolean templateTagsMatchesExistingTags = false;
+        boolean templateMatchesExistingContainerDefinition = false;
+        boolean templateMatchesExistingVolumes = false;
+        boolean templateMatchesExistingTaskRole = false;
+        boolean templateMatchesExistingExecutionRole = false;
+        boolean templateMatchesExistingNetworkMode = false;
+
+        if (currentTaskDefinition != null) {
+            final ContainerDefinition currentContainerDefinition = currentTaskDefinition.getContainerDefinitions().get(0);
+            final List<Tag> tags = getTaskDefinitionTags(currentTaskDefinition.getTaskDefinitionArn());
+
+            templateTagsMatchesExistingTags = ObjectUtils.equals(template.getTags(), tags);
+            LOGGER.log(Level.INFO, "Match on tags: {0}", new Object[]{templateTagsMatchesExistingTags});
+            LOGGER.log(Level.FINE, "Match on tags: {0}; template={1}; last={2}", new Object[]{templateTagsMatchesExistingTags, template.getTags(), tags});
+
+            templateMatchesExistingContainerDefinition = def.equals(currentContainerDefinition);
+            LOGGER.log(Level.INFO, "Match on container definition: {0}", new Object[]{templateMatchesExistingContainerDefinition});
+            LOGGER.log(Level.FINE, "Match on container definition: {0}; template={1}; last={2}", new Object[]{templateMatchesExistingContainerDefinition, def, currentContainerDefinition});
+
+            templateMatchesExistingVolumes = ObjectUtils.equals(template.getVolumeEntries(), currentTaskDefinition.getVolumes());
+            LOGGER.log(Level.INFO, "Match on volumes: {0}", new Object[]{templateMatchesExistingVolumes});
+            LOGGER.log(Level.FINE, "Match on volumes: {0}; template={1}; last={2}", new Object[]{templateMatchesExistingVolumes, template.getVolumeEntries(), currentTaskDefinition.getVolumes()});
+
+            templateMatchesExistingTaskRole = StringUtils.equals(StringUtils.defaultString(template.getTaskrole()), StringUtils.defaultString(currentTaskDefinition.getTaskRoleArn()));
+            LOGGER.log(Level.INFO, "Match on task role: {0}", new Object[]{templateMatchesExistingTaskRole});
+            LOGGER.log(Level.FINE, "Match on task role: {0}; template={1}; last={2}", new Object[]{templateMatchesExistingTaskRole, template.getTaskrole(), currentTaskDefinition.getTaskRoleArn()});
+
+            templateMatchesExistingExecutionRole = StringUtils.equals(StringUtils.defaultString(template.getExecutionRole()), StringUtils.defaultString(currentTaskDefinition.getExecutionRoleArn()));
+            LOGGER.log(Level.INFO, "Match on execution role: {0}", new Object[]{templateMatchesExistingExecutionRole});
+            LOGGER.log(Level.FINE, "Match on execution role: {0}; template={1}; last={2}", new Object[]{templateMatchesExistingExecutionRole, template.getExecutionRole(), currentTaskDefinition.getExecutionRoleArn()});
+
+            //Compare to null if it is default network mode is selected
+            String templateNetworkMode = "";
+            if (StringUtils.equals(StringUtils.defaultString(template.getNetworkMode()), "default")) {
+                templateMatchesExistingNetworkMode = null == currentTaskDefinition.getNetworkMode();
+                templateNetworkMode = "null";
+            } else {
+                templateMatchesExistingNetworkMode = StringUtils.equals(StringUtils.defaultString(template.getNetworkMode()), StringUtils.defaultString(currentTaskDefinition.getNetworkMode()));
+                templateNetworkMode = template.getNetworkMode();
+            }
+
+            LOGGER.log(Level.INFO, "Match on network mode: {0}", new Object[]{templateMatchesExistingNetworkMode});
+            LOGGER.log(Level.FINE, "Match on network mode: {0}; template={1}; last={2}", new Object[]{templateMatchesExistingNetworkMode, templateNetworkMode, currentTaskDefinition.getNetworkMode()});
+        }
+
+        if (templateMatchesExistingContainerDefinition && templateMatchesExistingVolumes && templateMatchesExistingTaskRole && templateMatchesExistingExecutionRole && templateMatchesExistingNetworkMode) {
+            LOGGER.log(Level.FINE, "Task Definition already exists: {0}", new Object[]{currentTaskDefinition.getTaskDefinitionArn()});
+            return currentTaskDefinition;
+        } else {
+            Tag jenkinsLabelTag = new Tag().withKey(AWS_TAG_JENKINS_LABEL_KEY).withValue(template.getLabel());
+            Tag jenkinsTemplateNameTag =
+                    new Tag().withKey(AWS_TAG_JENKINS_TEMPLATENAME_KEY).withValue(template.getTemplateName());
+            List<Tag> taskDefinitionTags = new ArrayList<>();
+            taskDefinitionTags.add(jenkinsLabelTag);
+            taskDefinitionTags.add(jenkinsTemplateNameTag);
+            for (ECSTaskTemplate.Tag tag: template.getTags()) {
+                taskDefinitionTags.add(new Tag().withKey(tag.name).withValue(tag.value));
+            }
+
+            final RegisterTaskDefinitionRequest request = new RegisterTaskDefinitionRequest()
+                    .withFamily(familyName)
+                    .withVolumes(template.getVolumeEntries())
+                    .withTags(taskDefinitionTags)
+                    .withContainerDefinitions(def);
+
+            //If network mode is default, that means Null in the request, so do not set.
+            if (!StringUtils.equals(StringUtils.defaultString(template.getNetworkMode()), "default")) {
+                request.withNetworkMode(template.getNetworkMode());
+            }
+
+            if (!StringUtils.isEmpty(template.getExecutionRole())) {
+                request.withExecutionRoleArn(template.getExecutionRole());
+            }
+
+            if (!StringUtils.isEmpty(template.getTaskrole())) {
+                request.withTaskRoleArn(template.getTaskrole());
+            }
+
+            if (template.isFargate()) {
+                request
+                        .withRuntimePlatform(new RuntimePlatform()
+                                .withOperatingSystemFamily(template.getOperatingSystemFamily())
+                                .withCpuArchitecture(template.getCpuArchitecture()))
+                        .withRequiresCompatibilities(LaunchType.FARGATE.toString())
+                        .withNetworkMode(NetworkMode.Awsvpc.toString())
+                        .withMemory(String.valueOf(template.getMemoryConstraint()))
+                        .withCpu(String.valueOf(template.getCpu()));
+                if (template.getEphemeralStorageSizeInGiB() != null && template.getEphemeralStorageSizeInGiB() > 0) {
+                    request.withEphemeralStorage(new EphemeralStorage()
+                            .withSizeInGiB(template.getEphemeralStorageSizeInGiB())
+                    );
+                }
+            }
+
+            final RegisterTaskDefinitionResult result = client.registerTaskDefinition(request);
+            LOGGER.log(Level.FINE, "Created Task Definition {0}: {1}", new Object[]{result.getTaskDefinition(), request});
+            LOGGER.log(Level.INFO, "Created Task Definition: {0}", new Object[]{result.getTaskDefinition()});
+
+            if (template.getDynamicTaskDefinition() != null){
+                // if we couldn't find the the dynamic task definition earlier, we'll set it
+                // again here so it gets cleaned up once the task is finished
+                template.setDynamicTaskDefinition(result.getTaskDefinition().getTaskDefinitionArn());
+            }
+            return result.getTaskDefinition();
+        }
+    }

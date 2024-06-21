@@ -1,0 +1,122 @@
+{
+    "sha": "5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+    "node_id": "C_kwDOI38B3toAKDViNzM2Yzk5MDdmMjJiZDM2MTYwOGI2MmVjOGY0NGNkNmQxZjcwNWM",
+    "commit": {
+        "author": {
+            "name": "Ark2307",
+            "email": "kr.aryan2307@gmail.com",
+            "date": "2023-12-16T08:36:21Z"
+        },
+        "committer": {
+            "name": "Ark2307",
+            "email": "kr.aryan2307@gmail.com",
+            "date": "2023-12-16T08:36:21Z"
+        },
+        "message": "Fixed the null pointer exception in vulnerable request in editor",
+        "tree": {
+            "sha": "c2044e103275c83143b5c5ea0a72cc278b82338a",
+            "url": "https://api.github.com/repos/akto-api-security/akto/git/trees/c2044e103275c83143b5c5ea0a72cc278b82338a"
+        },
+        "url": "https://api.github.com/repos/akto-api-security/akto/git/commits/5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/akto-api-security/akto/commits/5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+    "html_url": "https://github.com/akto-api-security/akto/commit/5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+    "comments_url": "https://api.github.com/repos/akto-api-security/akto/commits/5b736c9907f22bd361608b62ec8f44cd6d1f705c/comments",
+    "author": {
+        "login": "Ark2307",
+        "id": 60040654,
+        "node_id": "MDQ6VXNlcjYwMDQwNjU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/60040654?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ark2307",
+        "html_url": "https://github.com/Ark2307",
+        "followers_url": "https://api.github.com/users/Ark2307/followers",
+        "following_url": "https://api.github.com/users/Ark2307/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ark2307/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ark2307/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ark2307/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ark2307/orgs",
+        "repos_url": "https://api.github.com/users/Ark2307/repos",
+        "events_url": "https://api.github.com/users/Ark2307/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ark2307/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Ark2307",
+        "id": 60040654,
+        "node_id": "MDQ6VXNlcjYwMDQwNjU0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/60040654?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ark2307",
+        "html_url": "https://github.com/Ark2307",
+        "followers_url": "https://api.github.com/users/Ark2307/followers",
+        "following_url": "https://api.github.com/users/Ark2307/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ark2307/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ark2307/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ark2307/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ark2307/orgs",
+        "repos_url": "https://api.github.com/users/Ark2307/repos",
+        "events_url": "https://api.github.com/users/Ark2307/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ark2307/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a9dbe96ec3e09309568feadd23eb35fcb4b59d97",
+            "url": "https://api.github.com/repos/akto-api-security/akto/commits/a9dbe96ec3e09309568feadd23eb35fcb4b59d97",
+            "html_url": "https://github.com/akto-api-security/akto/commit/a9dbe96ec3e09309568feadd23eb35fcb4b59d97"
+        }
+    ],
+    "stats": {
+        "total": 42,
+        "additions": 24,
+        "deletions": 18
+    },
+    "files": [
+        {
+            "sha": "4c17ab772eb5bb1908f9abdafd52b6ac015f037e",
+            "filename": "apps/dashboard/src/main/java/com/akto/action/testing_issues/IssuesAction.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/akto-api-security/akto/blob/5b736c9907f22bd361608b62ec8f44cd6d1f705c/apps%2Fdashboard%2Fsrc%2Fmain%2Fjava%2Fcom%2Fakto%2Faction%2Ftesting_issues%2FIssuesAction.java",
+            "raw_url": "https://github.com/akto-api-security/akto/raw/5b736c9907f22bd361608b62ec8f44cd6d1f705c/apps%2Fdashboard%2Fsrc%2Fmain%2Fjava%2Fcom%2Fakto%2Faction%2Ftesting_issues%2FIssuesAction.java",
+            "contents_url": "https://api.github.com/repos/akto-api-security/akto/contents/apps%2Fdashboard%2Fsrc%2Fmain%2Fjava%2Fcom%2Fakto%2Faction%2Ftesting_issues%2FIssuesAction.java?ref=5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+            "patch": "@@ -240,7 +240,7 @@ public String fetchAllSubCategories() {\n \n         this.categories = GlobalEnums.TestCategory.values();\n         this.testSourceConfigs = TestSourceConfigsDao.instance.findAll(Filters.empty());\n-        this.vulnerableRequests = VulnerableRequestForTemplateDao.instance.findAll(Filters.empty());\n+        // this.vulnerableRequests = VulnerableRequestForTemplateDao.instance.findAll(Filters.empty());\n         return SUCCESS.toUpperCase();\n     }\n "
+        },
+        {
+            "sha": "03f5a0df35708af938c166744405b433325c62cb",
+            "filename": "apps/dashboard/web/polaris_web/web/src/apps/dashboard/pages/test_editor/TestEditor.jsx",
+            "status": "modified",
+            "additions": 22,
+            "deletions": 16,
+            "changes": 38,
+            "blob_url": "https://github.com/akto-api-security/akto/blob/5b736c9907f22bd361608b62ec8f44cd6d1f705c/apps%2Fdashboard%2Fweb%2Fpolaris_web%2Fweb%2Fsrc%2Fapps%2Fdashboard%2Fpages%2Ftest_editor%2FTestEditor.jsx",
+            "raw_url": "https://github.com/akto-api-security/akto/raw/5b736c9907f22bd361608b62ec8f44cd6d1f705c/apps%2Fdashboard%2Fweb%2Fpolaris_web%2Fweb%2Fsrc%2Fapps%2Fdashboard%2Fpages%2Ftest_editor%2FTestEditor.jsx",
+            "contents_url": "https://api.github.com/repos/akto-api-security/akto/contents/apps%2Fdashboard%2Fweb%2Fpolaris_web%2Fweb%2Fsrc%2Fapps%2Fdashboard%2Fpages%2Ftest_editor%2FTestEditor.jsx?ref=5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+            "patch": "@@ -39,23 +39,29 @@ const TestEditor = () => {\n \n         const allSubCategoriesResponse = await testEditorRequests.fetchAllSubCategories()\n         if (allSubCategoriesResponse) {\n-            const obj = convertFunc.mapCategoryToSubcategory(allSubCategoriesResponse.subCategories)\n-            setTestsObj(obj)\n-\n-            const testName = obj.mapIdtoTest[testId]\n-            const selectedTestObj = {\n-                label: testName,\n-                value: testId,\n-                category: obj.mapTestToData[testName].category,\n-                inactive: obj.mapTestToData[testName].inactive\n+            try {\n+                const obj = convertFunc.mapCategoryToSubcategory(allSubCategoriesResponse.subCategories)\n+                setTestsObj(obj)\n+    \n+                const testName = obj.mapIdtoTest[testId]\n+                const selectedTestObj = {\n+                    label: testName,\n+                    value: testId,\n+                    category: obj.mapTestToData[testName].category,\n+                    inactive: obj.mapTestToData[testName].inactive\n+                }\n+                setSelectedTest(selectedTestObj)\n+    \n+                const requestObj = convertFunc.mapVulnerableRequests(allSubCategoriesResponse.vulnerableRequests)\n+                setVulnerableRequestMap(requestObj)\n+                const vulnerableRequest = allSubCategoriesResponse?.vulnerableRequests?.length > 0 ? allSubCategoriesResponse?.vulnerableRequests[0]?.id : {}\n+                setDefaultRequest(vulnerableRequest)\n+    \n+                setLoading(false) \n+            } catch (error) {\n+                setLoading(false)\n             }\n-            setSelectedTest(selectedTestObj)\n-\n-            const requestObj = convertFunc.mapVulnerableRequests(allSubCategoriesResponse.vulnerableRequests)\n-            setVulnerableRequestMap(requestObj)\n-            setDefaultRequest(allSubCategoriesResponse.vulnerableRequests[0].id)\n-\n-            setLoading(false)\n+            \n         }\n     }\n "
+        },
+        {
+            "sha": "237c3678833ba474646ee749c7fffc844532e748",
+            "filename": "apps/dashboard/web/polaris_web/web/src/apps/dashboard/pages/test_editor/transform.js",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/akto-api-security/akto/blob/5b736c9907f22bd361608b62ec8f44cd6d1f705c/apps%2Fdashboard%2Fweb%2Fpolaris_web%2Fweb%2Fsrc%2Fapps%2Fdashboard%2Fpages%2Ftest_editor%2Ftransform.js",
+            "raw_url": "https://github.com/akto-api-security/akto/raw/5b736c9907f22bd361608b62ec8f44cd6d1f705c/apps%2Fdashboard%2Fweb%2Fpolaris_web%2Fweb%2Fsrc%2Fapps%2Fdashboard%2Fpages%2Ftest_editor%2Ftransform.js",
+            "contents_url": "https://api.github.com/repos/akto-api-security/akto/contents/apps%2Fdashboard%2Fweb%2Fpolaris_web%2Fweb%2Fsrc%2Fapps%2Fdashboard%2Fpages%2Ftest_editor%2Ftransform.js?ref=5b736c9907f22bd361608b62ec8f44cd6d1f705c",
+            "patch": "@@ -124,7 +124,7 @@ const convertFunc = {\n \n     mapVulnerableRequests(vulnerableRequests){\n         let mapRequestsToId = {}\n-        vulnerableRequests.forEach((x)=>{\n+        vulnerableRequests?.length > 0 && vulnerableRequests.forEach((x)=>{\n             let methodArr = x.templateIds\n             methodArr.forEach((method) => {\n                 if (!mapRequestsToId[method]) {"
+        }
+    ]
+}

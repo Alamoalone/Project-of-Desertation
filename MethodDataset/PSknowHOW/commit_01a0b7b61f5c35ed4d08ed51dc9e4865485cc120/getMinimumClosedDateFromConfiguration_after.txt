@@ -1,0 +1,59 @@
+	public Map<ObjectId, Map<String, List<LocalDateTime>>> getMinimumClosedDateFromConfiguration(
+			Map<ObjectId, Set<String>> duplicateIssues, Map<ObjectId, List<String>> customFieldMapping) {
+		Map<ObjectId, Map<String, List<LocalDateTime>>> pair = new HashMap<>();
+		Map<String, List<String>> mapOfFilters = new LinkedHashMap<>();
+		mapOfFilters.put(JiraFeatureHistory.STORY_ID.getFieldValueInFeature(),
+				duplicateIssues.values().stream().flatMap(Collection::stream).collect(Collectors.toList()));
+		mapOfFilters.put(JiraFeatureHistory.BASIC_PROJECT_CONFIG_ID.getFieldValueInFeature(),
+				duplicateIssues.keySet().stream().map(ObjectId::toString).collect(Collectors.toList()));
+		List<JiraIssueCustomHistory> jiraIssueCustomHistoryList = jiraIssueCustomHistoryRepository
+				.findByFilterAndFromStatusMap(mapOfFilters, new HashMap<>());
+
+		duplicateIssues.forEach((objectId, issues) -> {
+			List<String> customFields = customFieldMapping.getOrDefault(objectId, Collections.emptyList());
+			if (!customFields.isEmpty()) {
+				Map<String, List<LocalDateTime>> issueWiseMinDateTime = new HashMap<>();
+				for (String issue : issues) {
+					List<JiraHistoryChangeLog> statusUpdationLog = jiraIssueCustomHistoryList.stream()
+							.filter(history -> history.getStoryID().equalsIgnoreCase(issue)
+									&& objectId.toString().equalsIgnoreCase(history.getBasicProjectConfigId()))
+							.flatMap(history -> history.getStatusUpdationLog().stream())
+							.sorted(Comparator.comparing(JiraHistoryChangeLog::getUpdatedOn))
+							.collect(Collectors.toList());
+
+					if (!statusUpdationLog.isEmpty()) {
+						Map<String, LocalDateTime> minimumCompletedStatusWiseMap = new HashMap<>();
+						List<LocalDateTime> minimumDate = new ArrayList<>();
+
+						for (JiraHistoryChangeLog log : statusUpdationLog) {
+							String changedTo = log.getChangedTo();
+							if (customFields.contains(changedTo)) {
+								LocalDateTime updatedOn = log.getUpdatedOn();
+								minimumCompletedStatusWiseMap.putIfAbsent(changedTo, updatedOn);
+							} else if (!minimumCompletedStatusWiseMap.isEmpty()) {
+								LocalDateTime minDate = minimumCompletedStatusWiseMap.values().stream()
+										.min(LocalDateTime::compareTo).orElse(null);
+								if (minDate != null) {
+									minimumDate.add(minDate);
+									minimumCompletedStatusWiseMap.clear();
+								}
+							}
+						}
+
+						//if some status is lifet in the last cycle then that has to added in the minimum set
+						if (MapUtils.isNotEmpty(minimumCompletedStatusWiseMap)) {
+							LocalDateTime minDate = minimumCompletedStatusWiseMap.values().stream()
+									.min(LocalDateTime::compareTo).orElse(null);
+							if (minDate != null) {
+								minimumDate.add(minDate);
+								minimumCompletedStatusWiseMap.clear();
+							}
+						}
+						issueWiseMinDateTime.put(issue, minimumDate);
+					}
+				}
+				pair.put(objectId, issueWiseMinDateTime);
+			}
+		});
+		return pair;
+	}

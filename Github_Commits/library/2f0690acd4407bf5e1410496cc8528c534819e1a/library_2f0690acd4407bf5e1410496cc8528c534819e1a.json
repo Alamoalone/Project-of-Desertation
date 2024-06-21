@@ -1,0 +1,110 @@
+{
+    "sha": "2f0690acd4407bf5e1410496cc8528c534819e1a",
+    "node_id": "C_kwDOD_UCodoAKDJmMDY5MGFjZDQ0MDdiZjVlMTQxMDQ5NmNjODUyOGM1MzQ4MTllMWE",
+    "commit": {
+        "author": {
+            "name": "Torben",
+            "email": "git@letorbi.com",
+            "date": "2023-05-25T11:06:44Z"
+        },
+        "committer": {
+            "name": "Torben",
+            "email": "git@letorbi.com",
+            "date": "2023-05-25T11:06:44Z"
+        },
+        "message": "Fix some null-pointer exceptions in command classes",
+        "tree": {
+            "sha": "a4bba51c0e4c0f90b52787d7b41d60bb109deba0",
+            "url": "https://api.github.com/repos/lokibt/library/git/trees/a4bba51c0e4c0f90b52787d7b41d60bb109deba0"
+        },
+        "url": "https://api.github.com/repos/lokibt/library/git/commits/2f0690acd4407bf5e1410496cc8528c534819e1a",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/lokibt/library/commits/2f0690acd4407bf5e1410496cc8528c534819e1a",
+    "html_url": "https://github.com/lokibt/library/commit/2f0690acd4407bf5e1410496cc8528c534819e1a",
+    "comments_url": "https://api.github.com/repos/lokibt/library/commits/2f0690acd4407bf5e1410496cc8528c534819e1a/comments",
+    "author": {
+        "login": "letorbi",
+        "id": 1268015,
+        "node_id": "MDQ6VXNlcjEyNjgwMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1268015?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/letorbi",
+        "html_url": "https://github.com/letorbi",
+        "followers_url": "https://api.github.com/users/letorbi/followers",
+        "following_url": "https://api.github.com/users/letorbi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/letorbi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/letorbi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/letorbi/subscriptions",
+        "organizations_url": "https://api.github.com/users/letorbi/orgs",
+        "repos_url": "https://api.github.com/users/letorbi/repos",
+        "events_url": "https://api.github.com/users/letorbi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/letorbi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "letorbi",
+        "id": 1268015,
+        "node_id": "MDQ6VXNlcjEyNjgwMTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1268015?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/letorbi",
+        "html_url": "https://github.com/letorbi",
+        "followers_url": "https://api.github.com/users/letorbi/followers",
+        "following_url": "https://api.github.com/users/letorbi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/letorbi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/letorbi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/letorbi/subscriptions",
+        "organizations_url": "https://api.github.com/users/letorbi/orgs",
+        "repos_url": "https://api.github.com/users/letorbi/repos",
+        "events_url": "https://api.github.com/users/letorbi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/letorbi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1b97f1a9661bb3e6c348fe696228325a4692dd33",
+            "url": "https://api.github.com/repos/lokibt/library/commits/1b97f1a9661bb3e6c348fe696228325a4692dd33",
+            "html_url": "https://github.com/lokibt/library/commit/1b97f1a9661bb3e6c348fe696228325a4692dd33"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 10,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "141d7d51bbf7c78b4a3ef69ae636c95798ae8d4a",
+            "filename": "lib/src/main/java/com/lokibt/bluetooth/emulation/cmd/Command.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 3,
+            "changes": 9,
+            "blob_url": "https://github.com/lokibt/library/blob/2f0690acd4407bf5e1410496cc8528c534819e1a/lib%2Fsrc%2Fmain%2Fjava%2Fcom%2Flokibt%2Fbluetooth%2Femulation%2Fcmd%2FCommand.java",
+            "raw_url": "https://github.com/lokibt/library/raw/2f0690acd4407bf5e1410496cc8528c534819e1a/lib%2Fsrc%2Fmain%2Fjava%2Fcom%2Flokibt%2Fbluetooth%2Femulation%2Fcmd%2FCommand.java",
+            "contents_url": "https://api.github.com/repos/lokibt/library/contents/lib%2Fsrc%2Fmain%2Fjava%2Fcom%2Flokibt%2Fbluetooth%2Femulation%2Fcmd%2FCommand.java?ref=2f0690acd4407bf5e1410496cc8528c534819e1a",
+            "patch": "@@ -64,9 +64,12 @@ public void execute() throws IOException {\n     }\n \n     public void close() throws IOException {\n-        this.out.close();\n-        this.in.close();\n-        this.socket.close();\n+        if (this.out != null)\n+            this.out.close();\n+        if (this.in != null)\n+            this.in.close();\n+        if (this.socket != null)\n+            this.socket.close();\n         Log.d(TAG, \"socket and streams closed\");\n         // TODO Can finish and close callbacks be merged? Check join command.\n         if (this.callback != null) {"
+        },
+        {
+            "sha": "8cc3d375ba7e828c042fd58b35ddee8b84b4b110",
+            "filename": "lib/src/main/java/com/lokibt/bluetooth/emulation/cmd/Join.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/lokibt/library/blob/2f0690acd4407bf5e1410496cc8528c534819e1a/lib%2Fsrc%2Fmain%2Fjava%2Fcom%2Flokibt%2Fbluetooth%2Femulation%2Fcmd%2FJoin.java",
+            "raw_url": "https://github.com/lokibt/library/raw/2f0690acd4407bf5e1410496cc8528c534819e1a/lib%2Fsrc%2Fmain%2Fjava%2Fcom%2Flokibt%2Fbluetooth%2Femulation%2Fcmd%2FJoin.java",
+            "contents_url": "https://api.github.com/repos/lokibt/library/contents/lib%2Fsrc%2Fmain%2Fjava%2Fcom%2Flokibt%2Fbluetooth%2Femulation%2Fcmd%2FJoin.java?ref=2f0690acd4407bf5e1410496cc8528c534819e1a",
+            "patch": "@@ -52,7 +52,8 @@ public void run() {\n     }\n \n     public void closeImmediately() throws IOException {\n-        timer.cancel();\n+        if (timer != null)\n+            timer.cancel();\n         active = null;\n         super.close();\n     }\n@@ -67,7 +68,8 @@ protected void sendParameters() throws IOException {\n \n     private void update(int d) {\n         duration = d;\n-        timer.cancel();\n+        if (timer != null)\n+            timer.cancel();\n         close();\n     }\n }"
+        }
+    ]
+}

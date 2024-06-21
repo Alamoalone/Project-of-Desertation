@@ -1,0 +1,8 @@
+	public static InputModel addInputToModel(final Repository repo, final BehaviorQuery input, final InputModel inputModel) {
+		Model result = (Model) input.getResult(repo);
+		Iterator<Statement> itr = result.iterator();
+		while (itr.hasNext()) {
+			inputModel.add(itr.next());
+		}
+		return inputModel;
+	}

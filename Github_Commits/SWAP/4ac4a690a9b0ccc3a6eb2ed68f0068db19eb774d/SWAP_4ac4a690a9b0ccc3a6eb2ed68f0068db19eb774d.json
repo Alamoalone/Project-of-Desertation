@@ -1,0 +1,98 @@
+{
+    "sha": "4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d",
+    "node_id": "C_kwDOKco9qNoAKDRhYzRhNjkwYTliMGNjYzNhNmViMmVkNjhmMDA2OGRiMTllYjc3NGQ",
+    "commit": {
+        "author": {
+            "name": "Ishaan Das",
+            "email": "95513685+isba1@users.noreply.github.com",
+            "date": "2023-11-20T20:37:59Z"
+        },
+        "committer": {
+            "name": "Ishaan Das",
+            "email": "95513685+isba1@users.noreply.github.com",
+            "date": "2023-11-20T20:37:59Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "87a03941fbfb4cee0a144f198a68a8a19790d77a",
+            "url": "https://api.github.com/repos/isba1/SWAP/git/trees/87a03941fbfb4cee0a144f198a68a8a19790d77a"
+        },
+        "url": "https://api.github.com/repos/isba1/SWAP/git/commits/4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/isba1/SWAP/commits/4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d",
+    "html_url": "https://github.com/isba1/SWAP/commit/4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d",
+    "comments_url": "https://api.github.com/repos/isba1/SWAP/commits/4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d/comments",
+    "author": {
+        "login": "isba1",
+        "id": 95513685,
+        "node_id": "U_kgDOBbFsVQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95513685?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/isba1",
+        "html_url": "https://github.com/isba1",
+        "followers_url": "https://api.github.com/users/isba1/followers",
+        "following_url": "https://api.github.com/users/isba1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/isba1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/isba1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/isba1/subscriptions",
+        "organizations_url": "https://api.github.com/users/isba1/orgs",
+        "repos_url": "https://api.github.com/users/isba1/repos",
+        "events_url": "https://api.github.com/users/isba1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/isba1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "isba1",
+        "id": 95513685,
+        "node_id": "U_kgDOBbFsVQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95513685?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/isba1",
+        "html_url": "https://github.com/isba1",
+        "followers_url": "https://api.github.com/users/isba1/followers",
+        "following_url": "https://api.github.com/users/isba1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/isba1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/isba1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/isba1/subscriptions",
+        "organizations_url": "https://api.github.com/users/isba1/orgs",
+        "repos_url": "https://api.github.com/users/isba1/repos",
+        "events_url": "https://api.github.com/users/isba1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/isba1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "94a81af9b875eca45eeb4ec360315dbc7951aa9a",
+            "url": "https://api.github.com/repos/isba1/SWAP/commits/94a81af9b875eca45eeb4ec360315dbc7951aa9a",
+            "html_url": "https://github.com/isba1/SWAP/commit/94a81af9b875eca45eeb4ec360315dbc7951aa9a"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 6,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "01f9be4c4f1d05c6e44e4a7d8352486204fa1131",
+            "filename": "Server/src/main/java/com/SwapToSustain/Server/Service/SearchService.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 3,
+            "changes": 9,
+            "blob_url": "https://github.com/isba1/SWAP/blob/4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d/Server%2Fsrc%2Fmain%2Fjava%2Fcom%2FSwapToSustain%2FServer%2FService%2FSearchService.java",
+            "raw_url": "https://github.com/isba1/SWAP/raw/4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d/Server%2Fsrc%2Fmain%2Fjava%2Fcom%2FSwapToSustain%2FServer%2FService%2FSearchService.java",
+            "contents_url": "https://api.github.com/repos/isba1/SWAP/contents/Server%2Fsrc%2Fmain%2Fjava%2Fcom%2FSwapToSustain%2FServer%2FService%2FSearchService.java?ref=4ac4a690a9b0ccc3a6eb2ed68f0068db19eb774d",
+            "patch": "@@ -39,10 +39,13 @@ public List<UserProfileCompact> findUsers(UserSearchCriteria userSearchCriteria)\n         if (!Objects.equals(userSearchCriteria.getUserName(), \"null\")) {\n \n             UserAccountInfoModel userAccountInfoModel = userInfoRepository.findByUserName(userSearchCriteria.getUserName());\n-            List<UserAccountInfoModel> userAccountInfoModelList = new ArrayList<>();\n-            userAccountInfoModelList.add(userAccountInfoModel);\n \n-            dtoConverter.convertDTOForCompactProfile(userProfileCompacts, userAccountInfoModelList);\n+            if (userAccountInfoModel != null) {\n+                List<UserAccountInfoModel> userAccountInfoModelList = new ArrayList<>();\n+                userAccountInfoModelList.add(userAccountInfoModel);\n+\n+                dtoConverter.convertDTOForCompactProfile(userProfileCompacts, userAccountInfoModelList);\n+            }\n \n         } else {\n "
+        }
+    ]
+}

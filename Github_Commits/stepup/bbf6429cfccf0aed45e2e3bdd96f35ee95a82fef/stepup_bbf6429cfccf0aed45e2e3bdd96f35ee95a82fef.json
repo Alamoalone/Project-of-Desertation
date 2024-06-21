@@ -1,0 +1,98 @@
+{
+    "sha": "bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef",
+    "node_id": "C_kwDOKR_8F9oAKGJiZjY0MjljZmNjZjBhZWQ0NWUyZTNiZGQ5NmYzNWVlOTVhODJmZWY",
+    "commit": {
+        "author": {
+            "name": "이가경",
+            "email": "rabbit1999k@naver.com",
+            "date": "2023-07-26T13:28:31Z"
+        },
+        "committer": {
+            "name": "이가경",
+            "email": "rabbit1999k@naver.com",
+            "date": "2023-07-26T13:28:31Z"
+        },
+        "message": "✅ Test(rank/pointHistory): 포인트 적립 내역 service 테스트 코드 버그 수정 (#500)\n\n- random dance null pointer exception 해결",
+        "tree": {
+            "sha": "534237736f79f64b9cf8ad79f6d2a1278846b31b",
+            "url": "https://api.github.com/repos/PI-StepUp/stepup/git/trees/534237736f79f64b9cf8ad79f6d2a1278846b31b"
+        },
+        "url": "https://api.github.com/repos/PI-StepUp/stepup/git/commits/bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/PI-StepUp/stepup/commits/bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef",
+    "html_url": "https://github.com/PI-StepUp/stepup/commit/bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef",
+    "comments_url": "https://api.github.com/repos/PI-StepUp/stepup/commits/bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef/comments",
+    "author": {
+        "login": "rabbit0216",
+        "id": 67730991,
+        "node_id": "MDQ6VXNlcjY3NzMwOTkx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67730991?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rabbit0216",
+        "html_url": "https://github.com/rabbit0216",
+        "followers_url": "https://api.github.com/users/rabbit0216/followers",
+        "following_url": "https://api.github.com/users/rabbit0216/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rabbit0216/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rabbit0216/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rabbit0216/subscriptions",
+        "organizations_url": "https://api.github.com/users/rabbit0216/orgs",
+        "repos_url": "https://api.github.com/users/rabbit0216/repos",
+        "events_url": "https://api.github.com/users/rabbit0216/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rabbit0216/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "rabbit0216",
+        "id": 67730991,
+        "node_id": "MDQ6VXNlcjY3NzMwOTkx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67730991?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rabbit0216",
+        "html_url": "https://github.com/rabbit0216",
+        "followers_url": "https://api.github.com/users/rabbit0216/followers",
+        "following_url": "https://api.github.com/users/rabbit0216/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rabbit0216/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rabbit0216/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rabbit0216/subscriptions",
+        "organizations_url": "https://api.github.com/users/rabbit0216/orgs",
+        "repos_url": "https://api.github.com/users/rabbit0216/repos",
+        "events_url": "https://api.github.com/users/rabbit0216/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rabbit0216/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9be23fa0eefba0468520934c734e743af8b8ca5a",
+            "url": "https://api.github.com/repos/PI-StepUp/stepup/commits/9be23fa0eefba0468520934c734e743af8b8ca5a",
+            "html_url": "https://github.com/PI-StepUp/stepup/commit/9be23fa0eefba0468520934c734e743af8b8ca5a"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 3,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "d3a33426c0da90ad5f454b4895229dc14000008a",
+            "filename": "backend/src/test/java/com/pi/stepup/domain/rank/service/PointHistoryServiceTest.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/PI-StepUp/stepup/blob/bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fpi%2Fstepup%2Fdomain%2Frank%2Fservice%2FPointHistoryServiceTest.java",
+            "raw_url": "https://github.com/PI-StepUp/stepup/raw/bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fpi%2Fstepup%2Fdomain%2Frank%2Fservice%2FPointHistoryServiceTest.java",
+            "contents_url": "https://api.github.com/repos/PI-StepUp/stepup/contents/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fpi%2Fstepup%2Fdomain%2Frank%2Fservice%2FPointHistoryServiceTest.java?ref=bbf6429cfccf0aed45e2e3bdd96f35ee95a82fef",
+            "patch": "@@ -55,7 +55,7 @@ public void init() {\n         makeUser();\n         makePointHistory();\n         makePointUpdateReqeustDto();\n-\n+        makeRandomDance();\n     }\n \n     @Test\n@@ -111,6 +111,7 @@ private void makePointUpdateReqeustDto() {\n \n     private void makeRandomDance() {\n         randomDance = RandomDance.builder()\n+                .id(1L)\n                 .title(\"title\")\n                 .content(\"content\")\n                 .danceType(DanceType.RANKING)\n@@ -123,6 +124,7 @@ private List<PointHistory> makePointHistories() {\n             PointHistory tmp = PointHistory.builder()\n                     .user(user)\n                     .randomDance(randomDance)\n+                    .pointPolicy(pointPolicy)\n                     .count(0)\n                     .build();\n             pointHistories.add(tmp);"
+        }
+    ]
+}

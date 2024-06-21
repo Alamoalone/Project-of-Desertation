@@ -1,0 +1,110 @@
+{
+    "sha": "81905754c468095812bb6ecb842e6740a12b5708",
+    "node_id": "C_kwDOG7cRtdoAKDgxOTA1NzU0YzQ2ODA5NTgxMmJiNmVjYjg0MmU2NzQwYTEyYjU3MDg",
+    "commit": {
+        "author": {
+            "name": "QDIBYS",
+            "email": "alexis.szmundy@insee.fr",
+            "date": "2023-11-24T14:42:24Z"
+        },
+        "committer": {
+            "name": "QDIBYS",
+            "email": "alexis.szmundy@insee.fr",
+            "date": "2023-11-24T14:42:24Z"
+        },
+        "message": "Fix reporting data unit test null pointer exception",
+        "tree": {
+            "sha": "d4cce88dea5af2b0467f8beeff734e9a1f876c86",
+            "url": "https://api.github.com/repos/InseeFr/Kraftwerk/git/trees/d4cce88dea5af2b0467f8beeff734e9a1f876c86"
+        },
+        "url": "https://api.github.com/repos/InseeFr/Kraftwerk/git/commits/81905754c468095812bb6ecb842e6740a12b5708",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/InseeFr/Kraftwerk/commits/81905754c468095812bb6ecb842e6740a12b5708",
+    "html_url": "https://github.com/InseeFr/Kraftwerk/commit/81905754c468095812bb6ecb842e6740a12b5708",
+    "comments_url": "https://api.github.com/repos/InseeFr/Kraftwerk/commits/81905754c468095812bb6ecb842e6740a12b5708/comments",
+    "author": {
+        "login": "alexisszmundy",
+        "id": 150004193,
+        "node_id": "U_kgDOCPDh4Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150004193?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alexisszmundy",
+        "html_url": "https://github.com/alexisszmundy",
+        "followers_url": "https://api.github.com/users/alexisszmundy/followers",
+        "following_url": "https://api.github.com/users/alexisszmundy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alexisszmundy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alexisszmundy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alexisszmundy/subscriptions",
+        "organizations_url": "https://api.github.com/users/alexisszmundy/orgs",
+        "repos_url": "https://api.github.com/users/alexisszmundy/repos",
+        "events_url": "https://api.github.com/users/alexisszmundy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alexisszmundy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "alexisszmundy",
+        "id": 150004193,
+        "node_id": "U_kgDOCPDh4Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150004193?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/alexisszmundy",
+        "html_url": "https://github.com/alexisszmundy",
+        "followers_url": "https://api.github.com/users/alexisszmundy/followers",
+        "following_url": "https://api.github.com/users/alexisszmundy/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alexisszmundy/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/alexisszmundy/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alexisszmundy/subscriptions",
+        "organizations_url": "https://api.github.com/users/alexisszmundy/orgs",
+        "repos_url": "https://api.github.com/users/alexisszmundy/repos",
+        "events_url": "https://api.github.com/users/alexisszmundy/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/alexisszmundy/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2167da0a6da22859e58c6e84b04a57f7b7b365ba",
+            "url": "https://api.github.com/repos/InseeFr/Kraftwerk/commits/2167da0a6da22859e58c6e84b04a57f7b7b365ba",
+            "html_url": "https://github.com/InseeFr/Kraftwerk/commit/2167da0a6da22859e58c6e84b04a57f7b7b365ba"
+        }
+    ],
+    "stats": {
+        "total": 33,
+        "additions": 13,
+        "deletions": 20
+    },
+    "files": [
+        {
+            "sha": "96c8a49fbc99726476f97ec8a4c5d498e6f7e36a",
+            "filename": "kraftwerk-core/src/main/java/fr/insee/kraftwerk/core/extradata/reportingdata/ReportingDataParser.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 9,
+            "changes": 10,
+            "blob_url": "https://github.com/InseeFr/Kraftwerk/blob/81905754c468095812bb6ecb842e6740a12b5708/kraftwerk-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Finsee%2Fkraftwerk%2Fcore%2Fextradata%2Freportingdata%2FReportingDataParser.java",
+            "raw_url": "https://github.com/InseeFr/Kraftwerk/raw/81905754c468095812bb6ecb842e6740a12b5708/kraftwerk-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Finsee%2Fkraftwerk%2Fcore%2Fextradata%2Freportingdata%2FReportingDataParser.java",
+            "contents_url": "https://api.github.com/repos/InseeFr/Kraftwerk/contents/kraftwerk-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Finsee%2Fkraftwerk%2Fcore%2Fextradata%2Freportingdata%2FReportingDataParser.java?ref=81905754c468095812bb6ecb842e6740a12b5708",
+            "patch": "@@ -140,19 +140,11 @@ private void addReportingDataUEToQuestionnaire(SurveyRawData surveyRawData, Repo\n \t\tif (!reportingDataUE.getContactAttempts().isEmpty()) {\n \t\t\taddContactAttempts(reportingDataUE, questionnaire);\n \t\t}\n-\t\tif (reportingDataUE.getIdentification().getIdentification() != null){\n+\t\tif (reportingDataUE.getIdentification() != null){\n \t\t\tquestionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.IDENTIFICATION_NAME, reportingDataUE.getIdentification().getIdentification());\n-\t\t}\n-\t\tif (reportingDataUE.getIdentification().getAccess() != null){\n \t\t\tquestionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ACCESS_NAME, reportingDataUE.getIdentification().getAccess());\n-\t\t}\n-\t\tif (reportingDataUE.getIdentification().getSituation() != null){\n \t\t\tquestionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.SITUATION_NAME, reportingDataUE.getIdentification().getSituation());\n-\t\t}\n-\t\tif (reportingDataUE.getIdentification().getCategory() != null){\n \t\t\tquestionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.CATEGORY_NAME, reportingDataUE.getIdentification().getCategory());\n-\t\t}\n-\t\tif (reportingDataUE.getIdentification().getOccupant() != null){\n \t\t\tquestionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.OCCUPANT_NAME, reportingDataUE.getIdentification().getOccupant());\n \t\t}\n \t}"
+        },
+        {
+            "sha": "51df936093e3a787e19e6b5383ed66803f29bb74",
+            "filename": "kraftwerk-core/src/main/java/fr/insee/kraftwerk/core/extradata/reportingdata/XMLReportingDataParser.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 11,
+            "changes": 23,
+            "blob_url": "https://github.com/InseeFr/Kraftwerk/blob/81905754c468095812bb6ecb842e6740a12b5708/kraftwerk-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Finsee%2Fkraftwerk%2Fcore%2Fextradata%2Freportingdata%2FXMLReportingDataParser.java",
+            "raw_url": "https://github.com/InseeFr/Kraftwerk/raw/81905754c468095812bb6ecb842e6740a12b5708/kraftwerk-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Finsee%2Fkraftwerk%2Fcore%2Fextradata%2Freportingdata%2FXMLReportingDataParser.java",
+            "contents_url": "https://api.github.com/repos/InseeFr/Kraftwerk/contents/kraftwerk-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Finsee%2Fkraftwerk%2Fcore%2Fextradata%2Freportingdata%2FXMLReportingDataParser.java?ref=81905754c468095812bb6ecb842e6740a12b5708",
+            "patch": "@@ -86,17 +86,18 @@ public void parseReportingData(ReportingData reportingData, SurveyRawData data,\n       //Get identification\n       Element identificationElement = surveyUnitElement.getFirstChildElement(\"Identification\");\n       reportingDataUE.setIdentification(new Identification());\n-      if(identificationElement.getFirstChildElement(Constants.IDENTIFICATION_NAME) != null)\n-        reportingDataUE.getIdentification().setIdentification(identificationElement.getFirstChildElement(Constants.IDENTIFICATION_NAME).getValue());\n-      if(identificationElement.getFirstChildElement(Constants.ACCESS_NAME)!= null)\n-        reportingDataUE.getIdentification().setAccess(identificationElement.getFirstChildElement(Constants.ACCESS_NAME).getValue());\n-      if(identificationElement.getFirstChildElement(Constants.SITUATION_NAME) != null)\n-        reportingDataUE.getIdentification().setSituation(identificationElement.getFirstChildElement(Constants.SITUATION_NAME).getValue());\n-      if(identificationElement.getFirstChildElement(Constants.CATEGORY_NAME) != null)\n-        reportingDataUE.getIdentification().setCategory(identificationElement.getFirstChildElement(Constants.CATEGORY_NAME).getValue());\n-      if(identificationElement.getFirstChildElement(Constants.OCCUPANT_NAME) != null)\n-        reportingDataUE.getIdentification().setOccupant(identificationElement.getFirstChildElement(Constants.OCCUPANT_NAME).getValue());\n-\n+      if (identificationElement != null) {\n+        if (identificationElement.getFirstChildElement(Constants.IDENTIFICATION_NAME) != null)\n+          reportingDataUE.getIdentification().setIdentification(identificationElement.getFirstChildElement(Constants.IDENTIFICATION_NAME).getValue());\n+        if (identificationElement.getFirstChildElement(Constants.ACCESS_NAME) != null)\n+          reportingDataUE.getIdentification().setAccess(identificationElement.getFirstChildElement(Constants.ACCESS_NAME).getValue());\n+        if (identificationElement.getFirstChildElement(Constants.SITUATION_NAME) != null)\n+          reportingDataUE.getIdentification().setSituation(identificationElement.getFirstChildElement(Constants.SITUATION_NAME).getValue());\n+        if (identificationElement.getFirstChildElement(Constants.CATEGORY_NAME) != null)\n+          reportingDataUE.getIdentification().setCategory(identificationElement.getFirstChildElement(Constants.CATEGORY_NAME).getValue());\n+        if (identificationElement.getFirstChildElement(Constants.OCCUPANT_NAME) != null)\n+          reportingDataUE.getIdentification().setOccupant(identificationElement.getFirstChildElement(Constants.OCCUPANT_NAME).getValue());\n+      }\n       reportingData.addReportingDataUE(reportingDataUE);\n     } \n     integrateReportingDataIntoUE(data, reportingData, withAllReportingData);"
+        }
+    ]
+}

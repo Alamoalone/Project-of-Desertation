@@ -1,0 +1,8 @@
+    public String toString(){
+        StringBuilder builder = new StringBuilder();
+        for (String name : scores.keySet()){
+            double score = scores.get(name);
+            builder.append(name + "," + score);
+        }
+        return builder.toString();
+    }

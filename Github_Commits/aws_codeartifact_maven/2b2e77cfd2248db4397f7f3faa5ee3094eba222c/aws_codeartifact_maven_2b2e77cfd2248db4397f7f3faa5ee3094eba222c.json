@@ -1,0 +1,98 @@
+{
+    "sha": "2b2e77cfd2248db4397f7f3faa5ee3094eba222c",
+    "node_id": "C_kwDOFctn8toAKDJiMmU3N2NmZDIyNDhkYjQzOTdmN2YzZmFhNWVlMzA5NGViYTIyMmM",
+    "commit": {
+        "author": {
+            "name": "lu-coderazzi",
+            "email": "lu@coderazzi.net",
+            "date": "2023-07-06T07:52:02Z"
+        },
+        "committer": {
+            "name": "lu-coderazzi",
+            "email": "lu@coderazzi.net",
+            "date": "2023-07-06T07:52:02Z"
+        },
+        "message": "Avoid null pointer exception",
+        "tree": {
+            "sha": "556a4c92e63e48fd2cf3c8fa2263b1bad234330f",
+            "url": "https://api.github.com/repos/coderazzi/aws_codeartifact_maven/git/trees/556a4c92e63e48fd2cf3c8fa2263b1bad234330f"
+        },
+        "url": "https://api.github.com/repos/coderazzi/aws_codeartifact_maven/git/commits/2b2e77cfd2248db4397f7f3faa5ee3094eba222c",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/coderazzi/aws_codeartifact_maven/commits/2b2e77cfd2248db4397f7f3faa5ee3094eba222c",
+    "html_url": "https://github.com/coderazzi/aws_codeartifact_maven/commit/2b2e77cfd2248db4397f7f3faa5ee3094eba222c",
+    "comments_url": "https://api.github.com/repos/coderazzi/aws_codeartifact_maven/commits/2b2e77cfd2248db4397f7f3faa5ee3094eba222c/comments",
+    "author": {
+        "login": "coderazzi",
+        "id": 1039905,
+        "node_id": "MDQ6VXNlcjEwMzk5MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1039905?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/coderazzi",
+        "html_url": "https://github.com/coderazzi",
+        "followers_url": "https://api.github.com/users/coderazzi/followers",
+        "following_url": "https://api.github.com/users/coderazzi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/coderazzi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/coderazzi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/coderazzi/subscriptions",
+        "organizations_url": "https://api.github.com/users/coderazzi/orgs",
+        "repos_url": "https://api.github.com/users/coderazzi/repos",
+        "events_url": "https://api.github.com/users/coderazzi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/coderazzi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "coderazzi",
+        "id": 1039905,
+        "node_id": "MDQ6VXNlcjEwMzk5MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1039905?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/coderazzi",
+        "html_url": "https://github.com/coderazzi",
+        "followers_url": "https://api.github.com/users/coderazzi/followers",
+        "following_url": "https://api.github.com/users/coderazzi/following{/other_user}",
+        "gists_url": "https://api.github.com/users/coderazzi/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/coderazzi/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/coderazzi/subscriptions",
+        "organizations_url": "https://api.github.com/users/coderazzi/orgs",
+        "repos_url": "https://api.github.com/users/coderazzi/repos",
+        "events_url": "https://api.github.com/users/coderazzi/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/coderazzi/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "dc54f603dd610cd5d2925d5275a444abf3df43b2",
+            "url": "https://api.github.com/repos/coderazzi/aws_codeartifact_maven/commits/dc54f603dd610cd5d2925d5275a444abf3df43b2",
+            "html_url": "https://github.com/coderazzi/aws_codeartifact_maven/commit/dc54f603dd610cd5d2925d5275a444abf3df43b2"
+        }
+    ],
+    "stats": {
+        "total": 13,
+        "additions": 10,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "f823b3f9e95905837eccf242d067b219d816e6f7",
+            "filename": "src/net/coderazzi/aws_codeartifact_maven/AWSInvoker.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 3,
+            "changes": 13,
+            "blob_url": "https://github.com/coderazzi/aws_codeartifact_maven/blob/2b2e77cfd2248db4397f7f3faa5ee3094eba222c/src%2Fnet%2Fcoderazzi%2Faws_codeartifact_maven%2FAWSInvoker.java",
+            "raw_url": "https://github.com/coderazzi/aws_codeartifact_maven/raw/2b2e77cfd2248db4397f7f3faa5ee3094eba222c/src%2Fnet%2Fcoderazzi%2Faws_codeartifact_maven%2FAWSInvoker.java",
+            "contents_url": "https://api.github.com/repos/coderazzi/aws_codeartifact_maven/contents/src%2Fnet%2Fcoderazzi%2Faws_codeartifact_maven%2FAWSInvoker.java?ref=2b2e77cfd2248db4397f7f3faa5ee3094eba222c",
+            "patch": "@@ -14,8 +14,12 @@ public interface Cancellable {\n         boolean isCancelled();\n     }\n \n-    public static OperationOutput getCredentials(String domain, String domainOwner, String awsPath, String awsProfile,\n-                                                 String awsRegion, Cancellable cancellable) {\n+    public static OperationOutput getCredentials(String domain,\n+                                                 String domainOwner,\n+                                                 String awsPath,\n+                                                 String awsProfile,\n+                                                 String awsRegion,\n+                                                 Cancellable cancellable) {\n         // Do not send the profile if awsProfile is null or default\n         String profile = awsProfile == null || awsProfile.equals(AWSProfileHandler.DEFAULT_PROFILE) ? \"\" :\n                 String.format(\"--profile %s \", awsProfile);\n@@ -54,7 +58,10 @@ public static OperationOutput getCredentials(String domain, String domainOwner,\n                     ret.ok = true;\n                 }\n             } else {\n-                ret.output = outputReader.getOutput().trim();\n+                ret.output = outputReader.getOutput();\n+                if (ret.output != null) {\n+                    ret.output = ret.output.trim();\n+                }\n             }\n         } catch (InvocationTargetException ex){\n             LOGGER.error(ex);"
+        }
+    ]
+}

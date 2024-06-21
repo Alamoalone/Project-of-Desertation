@@ -1,0 +1,14 @@
+    public static void main(String[] args) throws RarException, IOException {
+        // new thread that print all numbers up to 100
+        new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                printNumber(i);
+            }
+        }).start();
+
+        AnotherClass foo = new AnotherClass("Foo");
+        foo.getValue();
+        String x = foo.toString();
+
+        Junrar.extract("/tmp/foo.rar", "/tmp");
+    }

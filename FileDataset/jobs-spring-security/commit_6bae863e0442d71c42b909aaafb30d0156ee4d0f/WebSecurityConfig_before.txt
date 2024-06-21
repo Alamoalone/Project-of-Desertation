@@ -1,0 +1,33 @@
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
+        /**
+         * Spring Security 6 버전에선,
+         */
+        // csrf 비활성화 (사이트 요청 위조) ---> csrf 토큰이 없어도 서버는 응답
+        // 스프링에서는 csrf 기본은 활성화 (보안 목적) ---> csrf 토큰을 url에 포함해야 서버는 응답
+       /* http.csrf((csrf) -> csrf.disable())
+                .authorizeHttpRequests((requests)->requests
+                        .requestMatchers("/", "/signup").permitAll()
+                        .requestMatchers("/user/**").hasRole("USER")
+                        .anyRequest().authenticated()
+                )
+                .authenticationManager(authenticationManager())
+                .formLogin(Customizer.withDefaults())
+                .httpBasic(Customizer.withDefaults());
+        */
+
+        http.csrf().disable()
+                .authorizeHttpRequests()
+                .antMatchers("/", "/signup/**").permitAll() // permitAll을 한다고 해서 전체 필터가 제외되는 것은 아님, 전체 필터 제외는 web ignoring
+                .antMatchers("/user/**").hasAuthority("USER") // hasAuthority
+                .antMatchers("/admin/**").hasAuthority("ADMIN") // hasAuthority
+                //.antMatchers("/user/**").hasRole("USER") // hasRole에서는 DB저장 시 ROLE_ prefix 붙여서 저장
+                .anyRequest().authenticated()
+                .and()
+                .authenticationManager(authenticationManager())
+                .exceptionHandling().accessDeniedPage("/access-denied")
+                .and()
+                .formLogin(Customizer.withDefaults())
+                .httpBasic(Customizer.withDefaults());
+        return http.build();
+    }
+

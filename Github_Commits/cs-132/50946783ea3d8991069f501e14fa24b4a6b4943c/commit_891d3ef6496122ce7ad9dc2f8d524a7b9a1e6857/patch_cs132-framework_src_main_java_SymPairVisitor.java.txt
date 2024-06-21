@@ -1,0 +1,10 @@
+@@ -15,4 +15,9 @@ public SymPair visit(FormalParameter n, TypeEnv argu) {
+         final var type = n.f0.accept(new TypeVisitor(), argu);
+         return new SymPair(sym, type);
+     }
++
++    @Override
++    public SymPair visit(FormalParameterRest n, TypeEnv argu) {
++        return n.f1.accept(this, argu);
++    }
+ }

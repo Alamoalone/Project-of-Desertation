@@ -1,0 +1,2 @@
+UpdateMovieInDB(int movieid, String name, int year, int length, int fsk, BigDecimal rating, String genres, String directors, int count, String studio, String actors, String cover, String comment)
+UpdateMovieInDB(int movieid, String name, int year, int length, int fsk, BigDecimal rating, String genres, String directors, int count, String studio, String actors, String cover, String comment, String type)

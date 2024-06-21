@@ -1,0 +1,12 @@
+    public String toString() {
+        return classList.fold("", (str, c) -> String.format("%s---\n%s\n%s", str, c, c.get()));
+    }
+
+    TypeEnv enterMethod(Method m) {
+        return new TypeEnv(m.params, classList, currClass, Optional.of(m));
+    }
+
+    TypeEnv enterClass(Class c) {
+        return new TypeEnv(List.nul(), classList, Optional.of(c), Optional.empty());
+    }
+

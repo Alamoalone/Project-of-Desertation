@@ -1,0 +1,1 @@
+handleFire(Ship ship, Texture greenLaserTexture, Texture blueLaserTexture, Texture redLaserTexture, ObjectSet lasers, Sound laserBlast)

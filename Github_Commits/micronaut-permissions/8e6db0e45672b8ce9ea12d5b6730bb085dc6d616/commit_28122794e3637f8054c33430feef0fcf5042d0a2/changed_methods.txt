@@ -1,0 +1,3 @@
+handleCollection(HandleCollectionRequest handleCollectionRequest)
+compare(Long userId, PostMergeRequest postMergeRequest)
+merge(Long userId, PostMergeRequest postMergeRequest)

@@ -1,0 +1,1 @@
+createCatalog(String catalogName, ReadonlyConfig options)

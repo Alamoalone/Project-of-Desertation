@@ -1,0 +1,98 @@
+{
+    "sha": "45d3d602e0323313dcfbf834413177f2d58a168d",
+    "node_id": "C_kwDOLiSIKNoAKDQ1ZDNkNjAyZTAzMjMzMTNkY2ZiZjgzNDQxMzE3N2YyZDU4YTE2OGQ",
+    "commit": {
+        "author": {
+            "name": "Tim Rühsen",
+            "email": "tim.ruehsen@gmx.de",
+            "date": "2023-11-30T11:40:42Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-11-30T11:40:42Z"
+        },
+        "message": "[Profiling] Fix null_pointer_exception on missing requested_duration (#102772)",
+        "tree": {
+            "sha": "6ecd1822c0e8ff85aedd057e2658108a3d9b4921",
+            "url": "https://api.github.com/repos/samq-research/elasticsearch-monorepo/git/trees/6ecd1822c0e8ff85aedd057e2658108a3d9b4921"
+        },
+        "url": "https://api.github.com/repos/samq-research/elasticsearch-monorepo/git/commits/45d3d602e0323313dcfbf834413177f2d58a168d",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlaHS6CRBK7hj4Ov3rIwAAkfcIAKbZkfSez4q32uNSU1dpScn7\nrm6tdul1mi4TUgyl1WMdhv7e9dOzlDeVXzp+jK9QoQ5XSmkhP4j4bClGmOkzMdQy\nP1M2xYM4lgp5BSvOMkgbemALrjF/Jrf+3eRokOMgDuLAyJoYWR6mtMn4eTN9vuBW\nEtabUklUkMjrF6YfWsq+bSWexyiXp3mF/wPZIED8ChlN8sVedy8T9UURI8V2OfKe\nj181ZdyvwEo3ItJ1nlWNrdLLSdIrPl6cgGl3RRevOmJahpZIq1wGxt4vsaYE6DAo\nDzTehKfO1dvqF7Ohz6eUg9ud4OhulMLpogXDPxVgZaD/s+grgG0L/34iRrRndMU=\n=PAdJ\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 6ecd1822c0e8ff85aedd057e2658108a3d9b4921\nparent 91df20b6132b41f34268b933f883f340821d572b\nauthor Tim Rühsen <tim.ruehsen@gmx.de> 1701344442 +0100\ncommitter GitHub <noreply@github.com> 1701344442 +0100\n\n[Profiling] Fix null_pointer_exception on missing requested_duration (#102772)\n\n"
+        }
+    },
+    "url": "https://api.github.com/repos/samq-research/elasticsearch-monorepo/commits/45d3d602e0323313dcfbf834413177f2d58a168d",
+    "html_url": "https://github.com/samq-research/elasticsearch-monorepo/commit/45d3d602e0323313dcfbf834413177f2d58a168d",
+    "comments_url": "https://api.github.com/repos/samq-research/elasticsearch-monorepo/commits/45d3d602e0323313dcfbf834413177f2d58a168d/comments",
+    "author": {
+        "login": "rockdaboot",
+        "id": 2087964,
+        "node_id": "MDQ6VXNlcjIwODc5NjQ=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2087964?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rockdaboot",
+        "html_url": "https://github.com/rockdaboot",
+        "followers_url": "https://api.github.com/users/rockdaboot/followers",
+        "following_url": "https://api.github.com/users/rockdaboot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rockdaboot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rockdaboot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rockdaboot/subscriptions",
+        "organizations_url": "https://api.github.com/users/rockdaboot/orgs",
+        "repos_url": "https://api.github.com/users/rockdaboot/repos",
+        "events_url": "https://api.github.com/users/rockdaboot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rockdaboot/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "91df20b6132b41f34268b933f883f340821d572b",
+            "url": "https://api.github.com/repos/samq-research/elasticsearch-monorepo/commits/91df20b6132b41f34268b933f883f340821d572b",
+            "html_url": "https://github.com/samq-research/elasticsearch-monorepo/commit/91df20b6132b41f34268b933f883f340821d572b"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "801ed012de0ee72d22c0e8d32b0945600638ecff",
+            "filename": "x-pack/plugin/profiling/src/main/java/org/elasticsearch/xpack/profiling/TransportGetStackTracesAction.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/samq-research/elasticsearch-monorepo/blob/45d3d602e0323313dcfbf834413177f2d58a168d/x-pack%2Fplugin%2Fprofiling%2Fsrc%2Fmain%2Fjava%2Forg%2Felasticsearch%2Fxpack%2Fprofiling%2FTransportGetStackTracesAction.java",
+            "raw_url": "https://github.com/samq-research/elasticsearch-monorepo/raw/45d3d602e0323313dcfbf834413177f2d58a168d/x-pack%2Fplugin%2Fprofiling%2Fsrc%2Fmain%2Fjava%2Forg%2Felasticsearch%2Fxpack%2Fprofiling%2FTransportGetStackTracesAction.java",
+            "contents_url": "https://api.github.com/repos/samq-research/elasticsearch-monorepo/contents/x-pack%2Fplugin%2Fprofiling%2Fsrc%2Fmain%2Fjava%2Forg%2Felasticsearch%2Fxpack%2Fprofiling%2FTransportGetStackTracesAction.java?ref=45d3d602e0323313dcfbf834413177f2d58a168d",
+            "patch": "@@ -839,7 +839,7 @@ public double getSamplingRate() {\n             return samplingRate;\n         }\n \n-        public void setRequestedDuration(double requestedDuration) {\n+        public void setRequestedDuration(Double requestedDuration) {\n             this.requestedDuration = requestedDuration;\n         }\n "
+        }
+    ]
+}

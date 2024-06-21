@@ -1,0 +1,32 @@
+    public static  void Block(String originalMessage){
+
+        RSA rsa = new RSA();
+          rsa.generateKeyPair(2048);
+         
+
+        System.out.println("Block #"+ counter);
+        if(counter ==0) System.out.println("Previous Hash:null");
+       // if(counter!=0) System.out.println("Previous Hash:"); 
+        System.out.println("Original message: " + originalMessage);
+
+
+
+        // Encryption
+        BigInteger encryptedMessage = rsa.encrypt(originalMessage);
+        System.out.println("Hash: " + encryptedMessage);
+
+         PreviousHash[j] = encryptedMessage;
+         
+        if (counter !=0){
+            
+            System.out.println("Previous Hash:"+PreviousHash[j-1]);
+
+        }
+
+
+        // Decryption
+        String decryptedMessage = rsa.decrypt(encryptedMessage);
+        System.out.println("Decrypted message: " + decryptedMessage);
+        counter++;
+        j++;
+        }

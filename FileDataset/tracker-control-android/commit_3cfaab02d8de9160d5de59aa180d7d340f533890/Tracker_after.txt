@@ -1,0 +1,10 @@
+    public String getName() {
+        if (name != null && name.equals("Alphabet"))
+            return "Google";
+
+        if (name != null && name.equals("Adobe Systems"))
+            return "Adobe";
+
+        return name;
+    }
+

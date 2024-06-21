@@ -1,0 +1,98 @@
+{
+    "sha": "6ab43d751e79a40f29f5a563de1a57fec8307e1f",
+    "node_id": "C_kwDOK_9gC9oAKDZhYjQzZDc1MWU3OWE0MGYyOWY1YTU2M2RlMWE1N2ZlYzgzMDdlMWY",
+    "commit": {
+        "author": {
+            "name": "Arjunagi A Rehman",
+            "email": "abdul123arj@gmail.com",
+            "date": "2024-01-02T16:35:58Z"
+        },
+        "committer": {
+            "name": "Arjunagi A Rehman",
+            "email": "abdul123arj@gmail.com",
+            "date": "2024-01-02T16:35:58Z"
+        },
+        "message": "re arraged the test cases and resolved null pointer exception",
+        "tree": {
+            "sha": "48ebe44b63efadc402cc724ed245a3babf1ab5cc",
+            "url": "https://api.github.com/repos/arjunagi-a-rehman/customer_details_management_service/git/trees/48ebe44b63efadc402cc724ed245a3babf1ab5cc"
+        },
+        "url": "https://api.github.com/repos/arjunagi-a-rehman/customer_details_management_service/git/commits/6ab43d751e79a40f29f5a563de1a57fec8307e1f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/arjunagi-a-rehman/customer_details_management_service/commits/6ab43d751e79a40f29f5a563de1a57fec8307e1f",
+    "html_url": "https://github.com/arjunagi-a-rehman/customer_details_management_service/commit/6ab43d751e79a40f29f5a563de1a57fec8307e1f",
+    "comments_url": "https://api.github.com/repos/arjunagi-a-rehman/customer_details_management_service/commits/6ab43d751e79a40f29f5a563de1a57fec8307e1f/comments",
+    "author": {
+        "login": "arjunagi-a-rehman",
+        "id": 67909096,
+        "node_id": "MDQ6VXNlcjY3OTA5MDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67909096?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/arjunagi-a-rehman",
+        "html_url": "https://github.com/arjunagi-a-rehman",
+        "followers_url": "https://api.github.com/users/arjunagi-a-rehman/followers",
+        "following_url": "https://api.github.com/users/arjunagi-a-rehman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/arjunagi-a-rehman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/arjunagi-a-rehman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/arjunagi-a-rehman/subscriptions",
+        "organizations_url": "https://api.github.com/users/arjunagi-a-rehman/orgs",
+        "repos_url": "https://api.github.com/users/arjunagi-a-rehman/repos",
+        "events_url": "https://api.github.com/users/arjunagi-a-rehman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/arjunagi-a-rehman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "arjunagi-a-rehman",
+        "id": 67909096,
+        "node_id": "MDQ6VXNlcjY3OTA5MDk2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/67909096?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/arjunagi-a-rehman",
+        "html_url": "https://github.com/arjunagi-a-rehman",
+        "followers_url": "https://api.github.com/users/arjunagi-a-rehman/followers",
+        "following_url": "https://api.github.com/users/arjunagi-a-rehman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/arjunagi-a-rehman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/arjunagi-a-rehman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/arjunagi-a-rehman/subscriptions",
+        "organizations_url": "https://api.github.com/users/arjunagi-a-rehman/orgs",
+        "repos_url": "https://api.github.com/users/arjunagi-a-rehman/repos",
+        "events_url": "https://api.github.com/users/arjunagi-a-rehman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/arjunagi-a-rehman/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "52d4058efbf89da1954c3a8e226b7cc3eb35d8e0",
+            "url": "https://api.github.com/repos/arjunagi-a-rehman/customer_details_management_service/commits/52d4058efbf89da1954c3a8e226b7cc3eb35d8e0",
+            "html_url": "https://github.com/arjunagi-a-rehman/customer_details_management_service/commit/52d4058efbf89da1954c3a8e226b7cc3eb35d8e0"
+        }
+    ],
+    "stats": {
+        "total": 30,
+        "additions": 4,
+        "deletions": 26
+    },
+    "files": [
+        {
+            "sha": "0ab49a87b89ed1c8c804361177a9bd60cad57f10",
+            "filename": "src/test/java/com/arjunagi/customer_details_management_service/controller/CustomerDetailsControllerTest.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 26,
+            "changes": 30,
+            "blob_url": "https://github.com/arjunagi-a-rehman/customer_details_management_service/blob/6ab43d751e79a40f29f5a563de1a57fec8307e1f/src%2Ftest%2Fjava%2Fcom%2Farjunagi%2Fcustomer_details_management_service%2Fcontroller%2FCustomerDetailsControllerTest.java",
+            "raw_url": "https://github.com/arjunagi-a-rehman/customer_details_management_service/raw/6ab43d751e79a40f29f5a563de1a57fec8307e1f/src%2Ftest%2Fjava%2Fcom%2Farjunagi%2Fcustomer_details_management_service%2Fcontroller%2FCustomerDetailsControllerTest.java",
+            "contents_url": "https://api.github.com/repos/arjunagi-a-rehman/customer_details_management_service/contents/src%2Ftest%2Fjava%2Fcom%2Farjunagi%2Fcustomer_details_management_service%2Fcontroller%2FCustomerDetailsControllerTest.java?ref=6ab43d751e79a40f29f5a563de1a57fec8307e1f",
+            "patch": "@@ -37,101 +37,79 @@ void setUp() {\n     }\n     @Test\n     void testCreateCustomerDetails_Success() {\n-        // Arrange\n         CustomerRequestDto requestDto = new CustomerRequestDto(\"zander\",\"zander@gmail.com\", LocalDate.of(2000,4,2), Occupation.Developer);\n         doNothing().when(customerDetailService).createCustomerDetailsRecord(requestDto);\n \n-        // Act\n         ResponseEntity<?> responseEntity = customerDetailsController.createCustomerDetails(requestDto);\n \n-        // Assert\n         assertEquals(HttpStatus.CREATED, responseEntity.getStatusCode());\n     }\n \n     @Test\n     void testCreateCustomerDetails_AlreadyExists() {\n-        // Arrange\n         CustomerRequestDto requestDto = new CustomerRequestDto();\n         doThrow(new CustomerDetailsAlreadyExistsException(\"\")).when(customerDetailService).createCustomerDetailsRecord(requestDto);\n \n-        // Act and Assert\n         assertThrows(CustomerDetailsAlreadyExistsException.class, () -> customerDetailsController.createCustomerDetails(requestDto));\n     }\n \n     @Test\n     void testGetCustomerDetailsByEmail_Success() {\n-        // Arrange\n-        String email = \"test@example.com\";\n+        String email = \"test@gmail.com\";\n         CustomerResponseDto responseDto = new CustomerResponseDto();\n         when(customerDetailService.getCustomerDetailsByEmail(email)).thenReturn(responseDto);\n \n-        // Act\n         ResponseEntity<CustomerResponseDto> responseEntity = customerDetailsController.getCustomerDetailsByEmail(email);\n \n-        // Assert\n         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());\n         assertNotNull(responseEntity.getBody());\n     }\n \n     @Test\n     void testGetCustomerDetailsByEmail_NotFound() {\n-        // Arrange\n-        String email = \"nonexistent@example.com\";\n+        String email = \"nonexistent@gamil.com\";\n         when(customerDetailService.getCustomerDetailsByEmail(email)).thenThrow(new ResourceNotFoundException(\"\", \"\", \"\"));\n \n-        // Act and Assert\n         assertThrows(ResourceNotFoundException.class, () -> customerDetailsController.getCustomerDetailsByEmail(email));\n     }\n \n     @Test\n     void testUpdateCustomerDetails_Success() {\n-        // Arrange\n         CustomerRequestDto requestDto = new CustomerRequestDto();\n         when(customerDetailService.updateCustomerDetailsRecord(requestDto)).thenReturn(true);\n \n-        // Act\n         ResponseEntity<?> responseEntity = customerDetailsController.updateCustomerDetails(requestDto);\n \n-        // Assert\n         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());\n     }\n \n     @Test\n     void testUpdateCustomerDetails_Failure() {\n-        // Arrange\n         CustomerRequestDto requestDto = new CustomerRequestDto();\n         when(customerDetailService.updateCustomerDetailsRecord(requestDto)).thenReturn(false);\n \n-        // Act\n         ResponseEntity<?> responseEntity = customerDetailsController.updateCustomerDetails(requestDto);\n \n-        // Assert\n         assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());\n     }\n \n     @Test\n     void testDeleteCustomerByEmail_Success() {\n-        // Arrange\n-        String email = \"test@example.com\";\n+        String email = \"test@gmail.com\";\n         when(customerDetailService.deleteCustomerDetailsByEmail(email)).thenReturn(true);\n \n-        // Act\n         ResponseEntity<?> responseEntity = customerDetailsController.deleteCustomerByEmail(email);\n \n-        // Assert\n         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());\n     }\n \n     @Test\n     void testDeleteCustomerByEmail_Failure() {\n-        // Arrange\n-        String email = \"test@example.com\";\n+        String email = \"test@gmail.com\";\n         when(customerDetailService.deleteCustomerDetailsByEmail(email)).thenReturn(false);\n \n-        // Act\n         ResponseEntity<?> responseEntity = customerDetailsController.deleteCustomerByEmail(email);\n \n-        // Assert\n         assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, responseEntity.getStatusCode());\n     }\n }"
+        }
+    ]
+}

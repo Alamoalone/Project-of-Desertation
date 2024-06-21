@@ -1,0 +1,19 @@
+    private void listenForLocation(Course course) {
+        if (!locationObtained) {
+            if (Build.VERSION.SDK_INT < 23) {
+                startListening();
+            } else {
+                if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+                } else {
+                    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+                    Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                    if (location != null & !locationObtained) {
+                        updateLocationInfo(location);
+                        locationObtained = true; // Set the flag to true after obtaining the location
+                        takeAttendance(course, location);
+                    }
+                }
+            }
+        }
+    }

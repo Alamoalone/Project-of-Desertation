@@ -1,0 +1,11 @@
+@@ -16,6 +16,10 @@ public Collection<Publication> getSortedPublications(Comparator<Publication> com
+         return list;
+     }
+ 
++    public Optional<Publication> findPublicationByTitle(String title) {
++        return Optional.ofNullable(publications.get(title));
++    }
++
+     public Map<String, Publication> getPublications() {
+         return publications;
+     }

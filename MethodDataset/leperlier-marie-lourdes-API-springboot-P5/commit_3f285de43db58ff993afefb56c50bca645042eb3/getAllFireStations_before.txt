@@ -1,0 +1,12 @@
+	public @ResponseBody ResponseEntity<?> getAllFireStations() {
+		List<FireStation> allFireStations;
+		try {
+			allFireStations= fireStationService.getAllFireStations();
+			return ResponseEntity.status(HttpStatus.OK).body( allFireStations);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+		
+		
+	}

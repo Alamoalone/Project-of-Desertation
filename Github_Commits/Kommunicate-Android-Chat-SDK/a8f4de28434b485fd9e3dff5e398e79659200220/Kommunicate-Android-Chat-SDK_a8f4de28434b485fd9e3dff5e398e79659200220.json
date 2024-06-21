@@ -1,0 +1,110 @@
+{
+    "sha": "a8f4de28434b485fd9e3dff5e398e79659200220",
+    "node_id": "C_kwDOBxI10NoAKGE4ZjRkZTI4NDM0YjQ4NWZkOWUzZGZmNWUzOThlNzk2NTkyMDAyMjA",
+    "commit": {
+        "author": {
+            "name": "pranaysaini04",
+            "email": "128575315+pranaysaini04@users.noreply.github.com",
+            "date": "2023-04-12T07:07:04Z"
+        },
+        "committer": {
+            "name": "pranaysaini04",
+            "email": "128575315+pranaysaini04@users.noreply.github.com",
+            "date": "2023-04-12T07:07:04Z"
+        },
+        "message": "Fixed Null pointer exception",
+        "tree": {
+            "sha": "4fdf3cf69e22840088b562ad8ac45cd4c340b3a4",
+            "url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/git/trees/4fdf3cf69e22840088b562ad8ac45cd4c340b3a4"
+        },
+        "url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/git/commits/a8f4de28434b485fd9e3dff5e398e79659200220",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/commits/a8f4de28434b485fd9e3dff5e398e79659200220",
+    "html_url": "https://github.com/Kommunicate-io/Kommunicate-Android-Chat-SDK/commit/a8f4de28434b485fd9e3dff5e398e79659200220",
+    "comments_url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/commits/a8f4de28434b485fd9e3dff5e398e79659200220/comments",
+    "author": {
+        "login": "pranaysaini04",
+        "id": 128575315,
+        "node_id": "U_kgDOB6nnUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/128575315?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pranaysaini04",
+        "html_url": "https://github.com/pranaysaini04",
+        "followers_url": "https://api.github.com/users/pranaysaini04/followers",
+        "following_url": "https://api.github.com/users/pranaysaini04/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pranaysaini04/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pranaysaini04/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pranaysaini04/subscriptions",
+        "organizations_url": "https://api.github.com/users/pranaysaini04/orgs",
+        "repos_url": "https://api.github.com/users/pranaysaini04/repos",
+        "events_url": "https://api.github.com/users/pranaysaini04/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pranaysaini04/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "pranaysaini04",
+        "id": 128575315,
+        "node_id": "U_kgDOB6nnUw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/128575315?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pranaysaini04",
+        "html_url": "https://github.com/pranaysaini04",
+        "followers_url": "https://api.github.com/users/pranaysaini04/followers",
+        "following_url": "https://api.github.com/users/pranaysaini04/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pranaysaini04/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pranaysaini04/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pranaysaini04/subscriptions",
+        "organizations_url": "https://api.github.com/users/pranaysaini04/orgs",
+        "repos_url": "https://api.github.com/users/pranaysaini04/repos",
+        "events_url": "https://api.github.com/users/pranaysaini04/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pranaysaini04/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7f32b1685a96d6e92320e609d4169f529369e5bc",
+            "url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/commits/7f32b1685a96d6e92320e609d4169f529369e5bc",
+            "html_url": "https://github.com/Kommunicate-io/Kommunicate-Android-Chat-SDK/commit/7f32b1685a96d6e92320e609d4169f529369e5bc"
+        }
+    ],
+    "stats": {
+        "total": 23,
+        "additions": 12,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "2829bb67648e6fddb18974a41703735917b9d2b6",
+            "filename": "kommunicate/src/main/java/io/kommunicate/preference/KmConversationInfoSetting.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/Kommunicate-io/Kommunicate-Android-Chat-SDK/blob/a8f4de28434b485fd9e3dff5e398e79659200220/kommunicate%2Fsrc%2Fmain%2Fjava%2Fio%2Fkommunicate%2Fpreference%2FKmConversationInfoSetting.java",
+            "raw_url": "https://github.com/Kommunicate-io/Kommunicate-Android-Chat-SDK/raw/a8f4de28434b485fd9e3dff5e398e79659200220/kommunicate%2Fsrc%2Fmain%2Fjava%2Fio%2Fkommunicate%2Fpreference%2FKmConversationInfoSetting.java",
+            "contents_url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/contents/kommunicate%2Fsrc%2Fmain%2Fjava%2Fio%2Fkommunicate%2Fpreference%2FKmConversationInfoSetting.java?ref=a8f4de28434b485fd9e3dff5e398e79659200220",
+            "patch": "@@ -132,7 +132,7 @@ public KmConversationInfoSetting setToolbarAgentExperience(String experience){\n \n     public String getToolbarAgentExperience() {\n         if (sharedPreferences != null) {\n-            return sharedPreferences.getString(AGENT_EXPERIENCE, null);\n+            return sharedPreferences.getString(AGENT_EXPERIENCE, \"\");\n         }\n         return null;\n     }\n@@ -146,7 +146,7 @@ public KmConversationInfoSetting setToolbarSubtitleRating(Float rating){\n \n     public Float getToolbarSubtitleRating(){\n         if (sharedPreferences != null){\n-            return sharedPreferences.getFloat(AGENT_RATING,0.0F);\n+            return sharedPreferences.getFloat(AGENT_RATING,-1.0F);\n         }\n         return null;\n     }"
+        },
+        {
+            "sha": "6d6c17ce4ac8dd09758e859d6b3254f0fdfe3a74",
+            "filename": "kommunicateui/src/main/java/com/applozic/mobicomkit/uiwidgets/conversation/fragment/MobiComConversationFragment.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 9,
+            "changes": 19,
+            "blob_url": "https://github.com/Kommunicate-io/Kommunicate-Android-Chat-SDK/blob/a8f4de28434b485fd9e3dff5e398e79659200220/kommunicateui%2Fsrc%2Fmain%2Fjava%2Fcom%2Fapplozic%2Fmobicomkit%2Fuiwidgets%2Fconversation%2Ffragment%2FMobiComConversationFragment.java",
+            "raw_url": "https://github.com/Kommunicate-io/Kommunicate-Android-Chat-SDK/raw/a8f4de28434b485fd9e3dff5e398e79659200220/kommunicateui%2Fsrc%2Fmain%2Fjava%2Fcom%2Fapplozic%2Fmobicomkit%2Fuiwidgets%2Fconversation%2Ffragment%2FMobiComConversationFragment.java",
+            "contents_url": "https://api.github.com/repos/Kommunicate-io/Kommunicate-Android-Chat-SDK/contents/kommunicateui%2Fsrc%2Fmain%2Fjava%2Fcom%2Fapplozic%2Fmobicomkit%2Fuiwidgets%2Fconversation%2Ffragment%2FMobiComConversationFragment.java?ref=a8f4de28434b485fd9e3dff5e398e79659200220",
+            "patch": "@@ -1004,23 +1004,24 @@ public void newCustomToolbarDesign(){\n         if(isCustomToolbarSubtitleDesign){\n             TextView ratingTextview = customToolbarLayout.findViewById(R.id.toolbar_agent_rating);\n             TextView experienceTextview = customToolbarLayout.findViewById(R.id.toolbar_agent_experience);\n-            ratingTextview.setVisibility(VISIBLE);\n-            experienceTextview.setVisibility(VISIBLE);\n             Drawable starDrawable = getResources().getDrawable(R.drawable.star);\n             starDrawable.setBounds(0,0,40,40);\n             ratingTextview.setCompoundDrawables(starDrawable,null,null,null);\n-            String experienceText  = KmConversationInfoSetting.getInstance(getContext()).getToolbarAgentExperience().trim();\n-            StringBuilder stringBuilder = new StringBuilder(experienceText);\n-            stringBuilder.append(\" | \");\n-            experienceText = stringBuilder.toString();\n+            String experienceText  = KmConversationInfoSetting.getInstance(getContext()).getToolbarAgentExperience();\n+            String agentRating = KmConversationInfoSetting.getInstance(getContext()).getToolbarSubtitleRating().toString();\n             if(!TextUtils.isEmpty(experienceText)){\n+                experienceTextview.setVisibility(VISIBLE);\n+                StringBuilder stringBuilder = new StringBuilder(experienceText.trim());\n+                stringBuilder.append(\" | \");\n+                experienceText = stringBuilder.toString();\n                 experienceTextview.setText(experienceText);\n             }\n-            String agentRating = KmConversationInfoSetting.getInstance(getContext()).getToolbarSubtitleRating().toString();\n-            ratingTextview.setText(agentRating);\n+            if(!TextUtils.isEmpty(agentRating)){\n+                ratingTextview.setVisibility(VISIBLE);\n+                ratingTextview.setText(agentRating);\n+            }\n         }\n     }\n-\n     public void handleSendAndRecordButtonView(boolean isSendButtonVisible) {\n         boolean showRecordButton = (alCustomizationSettings != null\n                 && alCustomizationSettings.getAttachmentOptions() != null"
+        }
+    ]
+}

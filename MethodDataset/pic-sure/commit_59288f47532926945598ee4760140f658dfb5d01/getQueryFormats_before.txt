@@ -1,0 +1,3 @@
+	public List<QueryFormat> getQueryFormats() {
+		return queryFormats;
+	}

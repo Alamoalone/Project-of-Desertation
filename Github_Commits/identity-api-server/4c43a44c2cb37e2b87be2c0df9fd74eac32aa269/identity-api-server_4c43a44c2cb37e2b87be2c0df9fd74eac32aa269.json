@@ -1,0 +1,98 @@
+{
+    "sha": "4c43a44c2cb37e2b87be2c0df9fd74eac32aa269",
+    "node_id": "C_kwDOC5EeGNoAKDRjNDNhNDRjMmNiMzdlMmI4N2JlMmMwZGY5ZmQ3NGVhYzMyYWEyNjk",
+    "commit": {
+        "author": {
+            "name": "Hasini Samarathunga",
+            "email": "hasinis@wso2.com",
+            "date": "2023-06-08T04:22:34Z"
+        },
+        "committer": {
+            "name": "Hasini Samarathunga",
+            "email": "hasinis@wso2.com",
+            "date": "2023-06-08T04:22:34Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "972f97efd5ffa7cd21c28879d3f98d7c8021c103",
+            "url": "https://api.github.com/repos/wso2/identity-api-server/git/trees/972f97efd5ffa7cd21c28879d3f98d7c8021c103"
+        },
+        "url": "https://api.github.com/repos/wso2/identity-api-server/git/commits/4c43a44c2cb37e2b87be2c0df9fd74eac32aa269",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/wso2/identity-api-server/commits/4c43a44c2cb37e2b87be2c0df9fd74eac32aa269",
+    "html_url": "https://github.com/wso2/identity-api-server/commit/4c43a44c2cb37e2b87be2c0df9fd74eac32aa269",
+    "comments_url": "https://api.github.com/repos/wso2/identity-api-server/commits/4c43a44c2cb37e2b87be2c0df9fd74eac32aa269/comments",
+    "author": {
+        "login": "HasiniSama",
+        "id": 65800949,
+        "node_id": "MDQ6VXNlcjY1ODAwOTQ5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65800949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HasiniSama",
+        "html_url": "https://github.com/HasiniSama",
+        "followers_url": "https://api.github.com/users/HasiniSama/followers",
+        "following_url": "https://api.github.com/users/HasiniSama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HasiniSama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HasiniSama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HasiniSama/subscriptions",
+        "organizations_url": "https://api.github.com/users/HasiniSama/orgs",
+        "repos_url": "https://api.github.com/users/HasiniSama/repos",
+        "events_url": "https://api.github.com/users/HasiniSama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HasiniSama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "HasiniSama",
+        "id": 65800949,
+        "node_id": "MDQ6VXNlcjY1ODAwOTQ5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/65800949?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/HasiniSama",
+        "html_url": "https://github.com/HasiniSama",
+        "followers_url": "https://api.github.com/users/HasiniSama/followers",
+        "following_url": "https://api.github.com/users/HasiniSama/following{/other_user}",
+        "gists_url": "https://api.github.com/users/HasiniSama/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/HasiniSama/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/HasiniSama/subscriptions",
+        "organizations_url": "https://api.github.com/users/HasiniSama/orgs",
+        "repos_url": "https://api.github.com/users/HasiniSama/repos",
+        "events_url": "https://api.github.com/users/HasiniSama/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/HasiniSama/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "159e7b69f91668ea33c5ba3fdefeef4f1f6665eb",
+            "url": "https://api.github.com/repos/wso2/identity-api-server/commits/159e7b69f91668ea33c5ba3fdefeef4f1f6665eb",
+            "html_url": "https://github.com/wso2/identity-api-server/commit/159e7b69f91668ea33c5ba3fdefeef4f1f6665eb"
+        }
+    ],
+    "stats": {
+        "total": 15,
+        "additions": 12,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "005c0b6539fa2bbf9e13992d926abc3b96c4ef50",
+            "filename": "components/org.wso2.carbon.identity.api.server.claim.management/org.wso2.carbon.identity.rest.api.server.claim.management.v1/src/main/java/org/wso2/carbon/identity/rest/api/server/claim/management/v1/core/ServerClaimManagementService.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 3,
+            "changes": 15,
+            "blob_url": "https://github.com/wso2/identity-api-server/blob/4c43a44c2cb37e2b87be2c0df9fd74eac32aa269/components%2Forg.wso2.carbon.identity.api.server.claim.management%2Forg.wso2.carbon.identity.rest.api.server.claim.management.v1%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fcarbon%2Fidentity%2Frest%2Fapi%2Fserver%2Fclaim%2Fmanagement%2Fv1%2Fcore%2FServerClaimManagementService.java",
+            "raw_url": "https://github.com/wso2/identity-api-server/raw/4c43a44c2cb37e2b87be2c0df9fd74eac32aa269/components%2Forg.wso2.carbon.identity.api.server.claim.management%2Forg.wso2.carbon.identity.rest.api.server.claim.management.v1%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fcarbon%2Fidentity%2Frest%2Fapi%2Fserver%2Fclaim%2Fmanagement%2Fv1%2Fcore%2FServerClaimManagementService.java",
+            "contents_url": "https://api.github.com/repos/wso2/identity-api-server/contents/components%2Forg.wso2.carbon.identity.api.server.claim.management%2Forg.wso2.carbon.identity.rest.api.server.claim.management.v1%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fcarbon%2Fidentity%2Frest%2Fapi%2Fserver%2Fclaim%2Fmanagement%2Fv1%2Fcore%2FServerClaimManagementService.java?ref=4c43a44c2cb37e2b87be2c0df9fd74eac32aa269",
+            "patch": "@@ -85,8 +85,11 @@\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.CMT_PATH_COMPONENT;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_ATTRIBUTE_FILTERING_NOT_IMPLEMENTED;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_CLAIMS_NOT_FOUND_FOR_DIALECT;\n+import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_CLAIM_URI_NOT_SPECIFIED;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_DIALECT_NOT_FOUND;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_EMPTY_ATTRIBUTE_MAPPINGS;\n+import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_EMPTY_EXTERNAL_CLAIM_URI;\n+import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_EMPTY_LOCAL_CLAIM_URI;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_EMPTY_MAPPED_ATTRIBUTES_IN_LOCAL_CLAIM;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_ERROR_ADDING_DIALECT;\n import static org.wso2.carbon.identity.api.server.claim.management.common.Constant.ErrorMessage.ERROR_CODE_ERROR_ADDING_EXTERNAL_CLAIM;\n@@ -318,7 +321,7 @@ public String addLocalClaim(LocalClaimReqDTO localClaimReqDTO) {\n \n         // Validate mandatory attributes.\n         if (StringUtils.isBlank(localClaimReqDTO.getClaimURI())) {\n-            throw handleClaimManagementClientError(Constant.ErrorMessage.ERROR_CODE_CLAIM_URI_NOT_SPECIFIED,\n+            throw handleClaimManagementClientError(ERROR_CODE_CLAIM_URI_NOT_SPECIFIED,\n                     BAD_REQUEST);\n         }\n         if (StringUtils.isBlank(localClaimReqDTO.getDisplayName())) {\n@@ -488,8 +491,11 @@ private void updateLocalClaims(List<LocalClaimReqDTO> localClaimReqDTOList, Bool\n         List<ClaimErrorDTO> errors = new ArrayList<>();\n \n         for (LocalClaimReqDTO localClaimReqDTO : localClaimReqDTOList) {\n-            String claimId = getResourceId(localClaimReqDTO.getClaimURI());\n             try {\n+                if (StringUtils.isBlank(localClaimReqDTO.getClaimURI())) {\n+                    throw handleClaimManagementClientError(ERROR_CODE_EMPTY_LOCAL_CLAIM_URI, BAD_REQUEST);\n+                }\n+                String claimId = getResourceId(localClaimReqDTO.getClaimURI());\n                 if (isLocalClaimExist(claimId)) {\n                     updateLocalClaim(claimId, localClaimReqDTO);\n                 } else {\n@@ -544,8 +550,11 @@ private void updateExternalClaims(String dialectId, List<ExternalClaimReqDTO> ex\n         List<ClaimErrorDTO> errors = new ArrayList<>();\n \n         for (ExternalClaimReqDTO externalClaimReqDTO : externalClaimReqDTOList) {\n-            String claimId = getResourceId(externalClaimReqDTO.getClaimURI());\n             try {\n+                if (StringUtils.isBlank(externalClaimReqDTO.getClaimURI())) {\n+                    throw handleClaimManagementClientError(ERROR_CODE_EMPTY_EXTERNAL_CLAIM_URI, BAD_REQUEST);\n+                }\n+                String claimId = getResourceId(externalClaimReqDTO.getClaimURI());\n                 if (isExternalClaimExist(dialectId, claimId)) {\n                     updateExternalClaim(dialectId, claimId, externalClaimReqDTO);\n                 } else {"
+        }
+    ]
+}

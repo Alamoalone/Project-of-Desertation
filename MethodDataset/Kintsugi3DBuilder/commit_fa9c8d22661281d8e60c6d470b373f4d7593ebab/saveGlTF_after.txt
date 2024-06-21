@@ -1,0 +1,7 @@
+    public void saveGlTF(File outputDirectory, ExportSettings settings)
+    {
+        if (ibrInstance != null)
+        {
+            ibrInstance.saveGlTF(outputDirectory, settings);
+        }
+    }

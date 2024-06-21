@@ -1,0 +1,98 @@
+{
+    "sha": "b225c44c93db6e986e83acb04ec12c9872f80213",
+    "node_id": "C_kwDOJt0R8doAKGIyMjVjNDRjOTNkYjZlOTg2ZTgzYWNiMDRlYzEyYzk4NzJmODAyMTM",
+    "commit": {
+        "author": {
+            "name": "SHOKHZODJURAEV",
+            "email": "85317197+SHOKHZODJURAEV@users.noreply.github.com",
+            "date": "2023-06-24T01:24:48Z"
+        },
+        "committer": {
+            "name": "SHOKHZODJURAEV",
+            "email": "85317197+SHOKHZODJURAEV@users.noreply.github.com",
+            "date": "2023-06-24T01:24:48Z"
+        },
+        "message": "second task done. Added null pointer exception",
+        "tree": {
+            "sha": "d5fe72c71ef0819b118b91f1b772c619d5428f36",
+            "url": "https://api.github.com/repos/SHOKHZODJURAEV/Dev_Interview_Pre/git/trees/d5fe72c71ef0819b118b91f1b772c619d5428f36"
+        },
+        "url": "https://api.github.com/repos/SHOKHZODJURAEV/Dev_Interview_Pre/git/commits/b225c44c93db6e986e83acb04ec12c9872f80213",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SHOKHZODJURAEV/Dev_Interview_Pre/commits/b225c44c93db6e986e83acb04ec12c9872f80213",
+    "html_url": "https://github.com/SHOKHZODJURAEV/Dev_Interview_Pre/commit/b225c44c93db6e986e83acb04ec12c9872f80213",
+    "comments_url": "https://api.github.com/repos/SHOKHZODJURAEV/Dev_Interview_Pre/commits/b225c44c93db6e986e83acb04ec12c9872f80213/comments",
+    "author": {
+        "login": "SHOKHZODJURAEV",
+        "id": 85317197,
+        "node_id": "MDQ6VXNlcjg1MzE3MTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85317197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SHOKHZODJURAEV",
+        "html_url": "https://github.com/SHOKHZODJURAEV",
+        "followers_url": "https://api.github.com/users/SHOKHZODJURAEV/followers",
+        "following_url": "https://api.github.com/users/SHOKHZODJURAEV/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SHOKHZODJURAEV/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SHOKHZODJURAEV/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SHOKHZODJURAEV/subscriptions",
+        "organizations_url": "https://api.github.com/users/SHOKHZODJURAEV/orgs",
+        "repos_url": "https://api.github.com/users/SHOKHZODJURAEV/repos",
+        "events_url": "https://api.github.com/users/SHOKHZODJURAEV/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SHOKHZODJURAEV/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "SHOKHZODJURAEV",
+        "id": 85317197,
+        "node_id": "MDQ6VXNlcjg1MzE3MTk3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/85317197?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SHOKHZODJURAEV",
+        "html_url": "https://github.com/SHOKHZODJURAEV",
+        "followers_url": "https://api.github.com/users/SHOKHZODJURAEV/followers",
+        "following_url": "https://api.github.com/users/SHOKHZODJURAEV/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SHOKHZODJURAEV/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SHOKHZODJURAEV/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SHOKHZODJURAEV/subscriptions",
+        "organizations_url": "https://api.github.com/users/SHOKHZODJURAEV/orgs",
+        "repos_url": "https://api.github.com/users/SHOKHZODJURAEV/repos",
+        "events_url": "https://api.github.com/users/SHOKHZODJURAEV/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SHOKHZODJURAEV/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "02b27912fad485da08dcc69c7d8ccdd6feae1c90",
+            "url": "https://api.github.com/repos/SHOKHZODJURAEV/Dev_Interview_Pre/commits/02b27912fad485da08dcc69c7d8ccdd6feae1c90",
+            "html_url": "https://github.com/SHOKHZODJURAEV/Dev_Interview_Pre/commit/02b27912fad485da08dcc69c7d8ccdd6feae1c90"
+        }
+    ],
+    "stats": {
+        "total": 27,
+        "additions": 16,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "1b31060923989a1d296f7fa7ee0825c7c7738e8b",
+            "filename": "JavaCodingTasks/TaskNumberTwo/JadenCasingStrings.java",
+            "status": "modified",
+            "additions": 16,
+            "deletions": 11,
+            "changes": 27,
+            "blob_url": "https://github.com/SHOKHZODJURAEV/Dev_Interview_Pre/blob/b225c44c93db6e986e83acb04ec12c9872f80213/JavaCodingTasks%2FTaskNumberTwo%2FJadenCasingStrings.java",
+            "raw_url": "https://github.com/SHOKHZODJURAEV/Dev_Interview_Pre/raw/b225c44c93db6e986e83acb04ec12c9872f80213/JavaCodingTasks%2FTaskNumberTwo%2FJadenCasingStrings.java",
+            "contents_url": "https://api.github.com/repos/SHOKHZODJURAEV/Dev_Interview_Pre/contents/JavaCodingTasks%2FTaskNumberTwo%2FJadenCasingStrings.java?ref=b225c44c93db6e986e83acb04ec12c9872f80213",
+            "patch": "@@ -6,20 +6,25 @@ public class JadenCasingStrings {\n \n     public static void main(String[] args) {\n \n-        String sentence = \"     how can   mirrors    be real if    our eyes   aren't   real     \";\n+        String sentence = null;\n \n-       // System.out.println(jadenSmithWritingStyle(sentence));\n+        System.out.println(jadenSmithWritingStyle(sentence));\n     }\n     public static String jadenSmithWritingStyle(String words){\n-        if(words.isEmpty()) return null;\n-       // StringBuilder result = new StringBuilder();\n-        String result = \"\";\n-        String[] arrayWords = words.toLowerCase().trim().split(\" \");\n-        for (String word : arrayWords){if (word.isEmpty()) continue;\n-           //result.append(word.toUpperCase().charAt(0)).append(word.substring(1)).append(\" \");\n-            result += word.toUpperCase().charAt(0) + word.substring(1)+\" \";\n+        try {\n+            if (words.isEmpty()) return null;\n+            // StringBuilder result = new StringBuilder();\n+            String result = \"\";\n+            String[] arrayWords = words.toLowerCase().trim().split(\" \");\n+            for (String word : arrayWords) {\n+                if (word.isEmpty()) continue;\n+                //result.append(word.toUpperCase().charAt(0)).append(word.substring(1)).append(\" \");\n+                result += word.toUpperCase().charAt(0) + word.substring(1) + \" \";\n+            }\n+            //return result.toString().trim();\n+            return result.trim();\n+        }catch(NullPointerException e){\n+            return  \"NullPointer Exception\";\n         }\n-        //return result.toString().trim();\n-        return result.trim();\n     }\n }"
+        }
+    ]
+}

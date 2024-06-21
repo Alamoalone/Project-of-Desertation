@@ -1,0 +1,11 @@
+	public @ResponseBody ResponseEntity<?> getAllPersons() {
+		List<Person> allPersons;
+
+		try {
+			allPersons = personService.getAllPersons();
+			return ResponseEntity.status(HttpStatus.OK).body(allPersons);
+		} catch (NullPointerException e) {
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}

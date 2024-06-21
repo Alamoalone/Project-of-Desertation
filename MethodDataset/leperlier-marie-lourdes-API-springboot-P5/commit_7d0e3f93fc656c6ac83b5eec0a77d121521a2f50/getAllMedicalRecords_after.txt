@@ -1,0 +1,8 @@
+	public @ResponseBody ResponseEntity<?> getAllMedicalRecords() {
+		List<MedicalRecord> allMedicalRecords = medicalRecordService.getAllMedicalRecords();
+		if (allMedicalRecords == null) {
+			return returnResponseEntityEmptyAndCode404();
+
+		}
+		return ResponseEntity.status(HttpStatus.OK).body(allMedicalRecords);
+	}

@@ -1,0 +1,98 @@
+{
+    "sha": "975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34",
+    "node_id": "C_kwDOA3W9c9oAKDk3NWUyYTNmYjg5ZmFiZjA3ZGVkY2JmMmQyNTMwM2RkYmNiYjZhMzQ",
+    "commit": {
+        "author": {
+            "name": "Pau Dominkovics",
+            "email": "pau@mega.co.nz",
+            "date": "2023-06-06T08:29:33Z"
+        },
+        "committer": {
+            "name": "Pau Dominkovics Coll",
+            "email": "pau@mega.co.nz",
+            "date": "2023-06-06T09:53:41Z"
+        },
+        "message": "AND-16467: Null pointer exception in EmojiManagerShortcodes",
+        "tree": {
+            "sha": "a66e236853323328f9fb816548e5ca2e3b5c350f",
+            "url": "https://api.github.com/repos/meganz/android/git/trees/a66e236853323328f9fb816548e5ca2e3b5c350f"
+        },
+        "url": "https://api.github.com/repos/meganz/android/git/commits/975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/meganz/android/commits/975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34",
+    "html_url": "https://github.com/meganz/android/commit/975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34",
+    "comments_url": "https://api.github.com/repos/meganz/android/commits/975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34/comments",
+    "author": {
+        "login": "pauminku",
+        "id": 24522576,
+        "node_id": "MDQ6VXNlcjI0NTIyNTc2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24522576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pauminku",
+        "html_url": "https://github.com/pauminku",
+        "followers_url": "https://api.github.com/users/pauminku/followers",
+        "following_url": "https://api.github.com/users/pauminku/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pauminku/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pauminku/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pauminku/subscriptions",
+        "organizations_url": "https://api.github.com/users/pauminku/orgs",
+        "repos_url": "https://api.github.com/users/pauminku/repos",
+        "events_url": "https://api.github.com/users/pauminku/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pauminku/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "pauminku",
+        "id": 24522576,
+        "node_id": "MDQ6VXNlcjI0NTIyNTc2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24522576?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/pauminku",
+        "html_url": "https://github.com/pauminku",
+        "followers_url": "https://api.github.com/users/pauminku/followers",
+        "following_url": "https://api.github.com/users/pauminku/following{/other_user}",
+        "gists_url": "https://api.github.com/users/pauminku/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/pauminku/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/pauminku/subscriptions",
+        "organizations_url": "https://api.github.com/users/pauminku/orgs",
+        "repos_url": "https://api.github.com/users/pauminku/repos",
+        "events_url": "https://api.github.com/users/pauminku/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/pauminku/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "4781ddb3b3b42b09f9c92fbe13976b4cf11223d2",
+            "url": "https://api.github.com/repos/meganz/android/commits/4781ddb3b3b42b09f9c92fbe13976b4cf11223d2",
+            "html_url": "https://github.com/meganz/android/commit/4781ddb3b3b42b09f9c92fbe13976b4cf11223d2"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 6,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "07d69b69b50ec066b80fbe269797878e7fdedb8b",
+            "filename": "app/src/main/java/mega/privacy/android/app/components/twemoji/EmojiManagerShortcodes.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 4,
+            "changes": 10,
+            "blob_url": "https://github.com/meganz/android/blob/975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34/app%2Fsrc%2Fmain%2Fjava%2Fmega%2Fprivacy%2Fandroid%2Fapp%2Fcomponents%2Ftwemoji%2FEmojiManagerShortcodes.java",
+            "raw_url": "https://github.com/meganz/android/raw/975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34/app%2Fsrc%2Fmain%2Fjava%2Fmega%2Fprivacy%2Fandroid%2Fapp%2Fcomponents%2Ftwemoji%2FEmojiManagerShortcodes.java",
+            "contents_url": "https://api.github.com/repos/meganz/android/contents/app%2Fsrc%2Fmain%2Fjava%2Fmega%2Fprivacy%2Fandroid%2Fapp%2Fcomponents%2Ftwemoji%2FEmojiManagerShortcodes.java?ref=975e2a3fb89fabf07dedcbf2d25303ddbcbb6a34",
+            "patch": "@@ -12,6 +12,8 @@\n import java.util.ArrayList;\n import java.util.List;\n \n+import timber.log.Timber;\n+\n public final class EmojiManagerShortcodes {\n     private static final String EMOJI_SHORTCODES = \"emojisshortcodes/emoji.json\";\n     static List<EmojiShortcodes> emojiData;\n@@ -24,15 +26,15 @@ public static void initEmojiData(Context context) {\n                 reader = new BufferedReader(new InputStreamReader(context.getAssets().open(EMOJI_SHORTCODES)));\n                 emojiData = gson.fromJson(reader, new TypeToken<ArrayList<EmojiShortcodes>>() {\n                 }.getType());\n-            } catch (IOException e) {\n-                e.printStackTrace();\n+            } catch (IOException | NullPointerException e) {\n+                Timber.e(e);\n             } finally {\n                 try {\n-                    if(reader != null) {\n+                    if (reader != null) {\n                         reader.close();\n                     }\n                 } catch (IOException e) {\n-                    e.printStackTrace();\n+                    Timber.e(e);\n                 }\n             }\n         }"
+        }
+    ]
+}

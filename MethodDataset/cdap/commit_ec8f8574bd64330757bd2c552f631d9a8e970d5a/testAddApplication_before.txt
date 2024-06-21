@@ -1,0 +1,12 @@
+  public void testAddApplication() throws ConflictException {
+    ApplicationSpecification spec = Specifications.from(new FooApp());
+    ApplicationId appId = new ApplicationId("account1", "application1");
+    ApplicationMeta appMeta = new ApplicationMeta("application1", spec,
+                                                  new ChangeDetail(null, null, null,
+                                                                   System.currentTimeMillis()));
+    store.addApplication(appId, appMeta);
+
+    spec = store.getApplication(appId);
+    Assert.assertNotNull(spec);
+    Assert.assertEquals(FooMapReduceJob.class.getName(), spec.getMapReduce().get("mrJob1").getClassName());
+  }

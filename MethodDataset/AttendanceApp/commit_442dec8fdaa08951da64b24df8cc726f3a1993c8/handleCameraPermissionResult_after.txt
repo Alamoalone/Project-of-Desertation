@@ -1,0 +1,10 @@
+    private void handleCameraPermissionResult(int[] grantResults) {
+        if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            // Camera permission granted, proceed with camera-related operations
+            Log.i("INFO", "Camera permission granted, starting camera");
+            scanBarcode(); // Replace with your camera-related operation
+        } else {
+            // Camera permission denied. You may want to show a message or take alternative actions.
+            Toast.makeText(this, "Camera permission denied", Toast.LENGTH_SHORT).show();
+        }
+    }

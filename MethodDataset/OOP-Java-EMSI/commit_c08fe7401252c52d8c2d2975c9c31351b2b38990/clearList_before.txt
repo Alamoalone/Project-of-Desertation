@@ -1,0 +1,3 @@
+	    public void clearList() {
+	        phoneList.clear();
+	    }

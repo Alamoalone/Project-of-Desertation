@@ -1,0 +1,134 @@
+{
+    "sha": "25bca3efea56e882a40a8dca9f1800ef5eacf428",
+    "node_id": "C_kwDOF22kQ9oAKDI1YmNhM2VmZWE1NmU4ODJhNDBhOGRjYTlmMTgwMGVmNWVhY2Y0Mjg",
+    "commit": {
+        "author": {
+            "name": "Andrew Paterson",
+            "email": "andrew.ian.paterson@gmail.com",
+            "date": "2023-01-21T09:32:03Z"
+        },
+        "committer": {
+            "name": "Andrew Paterson",
+            "email": "andrew.ian.paterson@gmail.com",
+            "date": "2023-01-21T09:32:03Z"
+        },
+        "message": "Fixed bounding box null pointer exceptions.",
+        "tree": {
+            "sha": "208c7edf361cda87ea42e992a7d25d2ad0d5ac2d",
+            "url": "https://api.github.com/repos/andrewpaterson/658-Computer/git/trees/208c7edf361cda87ea42e992a7d25d2ad0d5ac2d"
+        },
+        "url": "https://api.github.com/repos/andrewpaterson/658-Computer/git/commits/25bca3efea56e882a40a8dca9f1800ef5eacf428",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/andrewpaterson/658-Computer/commits/25bca3efea56e882a40a8dca9f1800ef5eacf428",
+    "html_url": "https://github.com/andrewpaterson/658-Computer/commit/25bca3efea56e882a40a8dca9f1800ef5eacf428",
+    "comments_url": "https://api.github.com/repos/andrewpaterson/658-Computer/commits/25bca3efea56e882a40a8dca9f1800ef5eacf428/comments",
+    "author": {
+        "login": "andrewpaterson",
+        "id": 769629,
+        "node_id": "MDQ6VXNlcjc2OTYyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/769629?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/andrewpaterson",
+        "html_url": "https://github.com/andrewpaterson",
+        "followers_url": "https://api.github.com/users/andrewpaterson/followers",
+        "following_url": "https://api.github.com/users/andrewpaterson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/andrewpaterson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/andrewpaterson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/andrewpaterson/subscriptions",
+        "organizations_url": "https://api.github.com/users/andrewpaterson/orgs",
+        "repos_url": "https://api.github.com/users/andrewpaterson/repos",
+        "events_url": "https://api.github.com/users/andrewpaterson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/andrewpaterson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "andrewpaterson",
+        "id": 769629,
+        "node_id": "MDQ6VXNlcjc2OTYyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/769629?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/andrewpaterson",
+        "html_url": "https://github.com/andrewpaterson",
+        "followers_url": "https://api.github.com/users/andrewpaterson/followers",
+        "following_url": "https://api.github.com/users/andrewpaterson/following{/other_user}",
+        "gists_url": "https://api.github.com/users/andrewpaterson/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/andrewpaterson/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/andrewpaterson/subscriptions",
+        "organizations_url": "https://api.github.com/users/andrewpaterson/orgs",
+        "repos_url": "https://api.github.com/users/andrewpaterson/repos",
+        "events_url": "https://api.github.com/users/andrewpaterson/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/andrewpaterson/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "004d64d1d3af926bb75a6f8e23da5ce623dae9b4",
+            "url": "https://api.github.com/repos/andrewpaterson/658-Computer/commits/004d64d1d3af926bb75a6f8e23da5ce623dae9b4",
+            "html_url": "https://github.com/andrewpaterson/658-Computer/commit/004d64d1d3af926bb75a6f8e23da5ce623dae9b4"
+        }
+    ],
+    "stats": {
+        "total": 64,
+        "additions": 39,
+        "deletions": 25
+    },
+    "files": [
+        {
+            "sha": "31b9ef65c433a5d01c1223cb50e1e218397a26f3",
+            "filename": "Logicim/src/net/logicim/ui/common/integratedcircuit/StaticView.java",
+            "status": "modified",
+            "additions": 26,
+            "deletions": 13,
+            "changes": 39,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fcommon%2Fintegratedcircuit%2FStaticView.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fcommon%2Fintegratedcircuit%2FStaticView.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fcommon%2Fintegratedcircuit%2FStaticView.java?ref=25bca3efea56e882a40a8dca9f1800ef5eacf428",
+            "patch": "@@ -90,13 +90,14 @@ public void paintSelected(Graphics2D graphics, Viewport viewport, Color color)\n     Int2D p = new Int2D();\n     Int2D s = new Int2D();\n \n-    getSelectionBoxInScreenSpace(viewport, p, s);\n-\n-    graphics.setStroke(viewport.getZoomableStroke());\n-    paintSelectionRectangle(graphics, viewport, p.x, p.y, color);\n-    paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y, color);\n-    paintSelectionRectangle(graphics, viewport, p.x, p.y + s.y, color);\n-    paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y + s.y, color);\n+    if (getSelectionBoxInScreenSpace(viewport, p, s))\n+    {\n+      graphics.setStroke(viewport.getZoomableStroke());\n+      paintSelectionRectangle(graphics, viewport, p.x, p.y, color);\n+      paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y, color);\n+      paintSelectionRectangle(graphics, viewport, p.x, p.y + s.y, color);\n+      paintSelectionRectangle(graphics, viewport, p.x + s.x, p.y + s.y, color);\n+    }\n   }\n \n   @Override\n@@ -116,18 +117,30 @@ public void paintBoundingBox(Graphics2D graphics, Viewport viewport)\n \n     Int2D p = new Int2D();\n     Int2D s = new Int2D();\n-    getBoundingBoxInScreenSpace(viewport, p, s);\n-    viewport.paintRectangle(graphics, p.x, p.y, s.x, s.y, viewport.getAbsoluteStroke(1), null, Color.ORANGE);\n+    if (getBoundingBoxInScreenSpace(viewport, p, s))\n+    {\n+      viewport.paintRectangle(graphics, p.x, p.y, s.x, s.y, viewport.getAbsoluteStroke(1), null, Color.ORANGE);\n+    }\n   }\n \n-  public void getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)\n+  public boolean getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)\n   {\n-    getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, boundingBox);\n+    if (boundingBox != null && !boundingBox.isNull())\n+    {\n+      getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, boundingBox);\n+      return true;\n+    }\n+    return false;\n   }\n \n-  public void getSelectionBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)\n+  public boolean getSelectionBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension)\n   {\n-    getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, selectionBox);\n+    if (selectionBox != null && !selectionBox.isNull())\n+    {\n+      getBoundingBoxInScreenSpace(viewport, destPosition, destDimension, selectionBox);\n+      return true;\n+    }\n+    return false;\n   }\n \n   private void getBoundingBoxInScreenSpace(Viewport viewport, Int2D destPosition, Int2D destDimension, BoundingBox boundingBox)"
+        },
+        {
+            "sha": "05052b396fb1c53703c9be2177df0f0a31780eca",
+            "filename": "Logicim/src/net/logicim/ui/shape/common/BoundingBox.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 0,
+            "changes": 5,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fshape%2Fcommon%2FBoundingBox.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fshape%2Fcommon%2FBoundingBox.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fshape%2Fcommon%2FBoundingBox.java?ref=25bca3efea56e882a40a8dca9f1800ef5eacf428",
+            "patch": "@@ -223,5 +223,10 @@ public void copy(BoundingBox source)\n       this.bottomRight.set(source.getBottomRight());\n     }\n   }\n+\n+  public boolean isNull()\n+  {\n+    return (topLeft == null) || (bottomRight == null);\n+  }\n }\n "
+        },
+        {
+            "sha": "5dc13119de7fef45ad7a859c7247915c1d8c9a84",
+            "filename": "Logicim/src/net/logicim/ui/simulation/CircuitEditor.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 6,
+            "changes": 14,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2FCircuitEditor.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2FCircuitEditor.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2FCircuitEditor.java?ref=25bca3efea56e882a40a8dca9f1800ef5eacf428",
+            "patch": "@@ -326,13 +326,15 @@ else if (selectedViews.size() == 0)\n       StaticView<?> closestView = null;\n       for (StaticView<?> view : selectedViews)\n       {\n-        view.getBoundingBoxInScreenSpace(viewport, boundBoxPosition, boundBoxDimension);\n-        boundBoxPosition.add(boundBoxDimension.x / 2, boundBoxDimension.y / 2);\n-        float distance = BoundingBox.calculateDistance(screenPosition, boundBoxPosition);\n-        if (distance < shortestDistance)\n+        if (view.getBoundingBoxInScreenSpace(viewport, boundBoxPosition, boundBoxDimension))\n         {\n-          closestView = view;\n-          shortestDistance = distance;\n+          boundBoxPosition.add(boundBoxDimension.x / 2, boundBoxDimension.y / 2);\n+          float distance = BoundingBox.calculateDistance(screenPosition, boundBoxPosition);\n+          if (distance < shortestDistance)\n+          {\n+            closestView = view;\n+            shortestDistance = distance;\n+          }\n         }\n       }\n       return closestView;"
+        },
+        {
+            "sha": "87501a9d9883c6b4c8385a3d2c7cee568eba0fc7",
+            "filename": "Logicim/src/net/logicim/ui/simulation/component/decorative/label/LabelView.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 6,
+            "changes": 6,
+            "blob_url": "https://github.com/andrewpaterson/658-Computer/blob/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2Fcomponent%2Fdecorative%2Flabel%2FLabelView.java",
+            "raw_url": "https://github.com/andrewpaterson/658-Computer/raw/25bca3efea56e882a40a8dca9f1800ef5eacf428/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2Fcomponent%2Fdecorative%2Flabel%2FLabelView.java",
+            "contents_url": "https://api.github.com/repos/andrewpaterson/658-Computer/contents/Logicim%2Fsrc%2Fnet%2Flogicim%2Fui%2Fsimulation%2Fcomponent%2Fdecorative%2Flabel%2FLabelView.java?ref=25bca3efea56e882a40a8dca9f1800ef5eacf428",
+            "patch": "@@ -13,7 +13,6 @@\n import net.logicim.ui.simulation.component.decorative.common.DecorativeView;\n \n import java.awt.*;\n-import java.awt.geom.AffineTransform;\n \n public class LabelView\n     extends DecorativeView<LabelProperties>\n@@ -83,11 +82,6 @@ public void paint(Graphics2D graphics, Viewport viewport, long time)\n       createGraphics(graphics, viewport);\n     }\n \n-    if (rectangleView != null)\n-    {\n-      rectangleView.paint(graphics, viewport);\n-    }\n-\n     if (textView != null)\n     {\n       graphics.setColor(Color.BLACK);"
+        }
+    ]
+}

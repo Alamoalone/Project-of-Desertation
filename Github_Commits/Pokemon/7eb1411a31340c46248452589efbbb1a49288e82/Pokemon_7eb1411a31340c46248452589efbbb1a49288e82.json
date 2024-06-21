@@ -1,0 +1,134 @@
+{
+    "sha": "7eb1411a31340c46248452589efbbb1a49288e82",
+    "node_id": "C_kwDOKislGtoAKDdlYjE0MTFhMzEzNDBjNDYyNDg0NTI1ODllZmJiYjFhNDkyODhlODI",
+    "commit": {
+        "author": {
+            "name": "Aayush Mengane",
+            "email": "aayush7m@icloud.com",
+            "date": "2023-10-22T21:34:28Z"
+        },
+        "committer": {
+            "name": "Aayush Mengane",
+            "email": "aayush7m@icloud.com",
+            "date": "2023-10-22T21:34:28Z"
+        },
+        "message": "- bug fixes! null pointer exceptions fixed\n- edit attack flow optimized",
+        "tree": {
+            "sha": "76dcb87f26345f485ed1c2a7c57d959935532a8d",
+            "url": "https://api.github.com/repos/Aayush7M/Pokemon/git/trees/76dcb87f26345f485ed1c2a7c57d959935532a8d"
+        },
+        "url": "https://api.github.com/repos/Aayush7M/Pokemon/git/commits/7eb1411a31340c46248452589efbbb1a49288e82",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Aayush7M/Pokemon/commits/7eb1411a31340c46248452589efbbb1a49288e82",
+    "html_url": "https://github.com/Aayush7M/Pokemon/commit/7eb1411a31340c46248452589efbbb1a49288e82",
+    "comments_url": "https://api.github.com/repos/Aayush7M/Pokemon/commits/7eb1411a31340c46248452589efbbb1a49288e82/comments",
+    "author": {
+        "login": "Aayush7M",
+        "id": 118385017,
+        "node_id": "U_kgDOBw5peQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/118385017?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Aayush7M",
+        "html_url": "https://github.com/Aayush7M",
+        "followers_url": "https://api.github.com/users/Aayush7M/followers",
+        "following_url": "https://api.github.com/users/Aayush7M/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Aayush7M/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Aayush7M/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Aayush7M/subscriptions",
+        "organizations_url": "https://api.github.com/users/Aayush7M/orgs",
+        "repos_url": "https://api.github.com/users/Aayush7M/repos",
+        "events_url": "https://api.github.com/users/Aayush7M/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Aayush7M/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Aayush7M",
+        "id": 118385017,
+        "node_id": "U_kgDOBw5peQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/118385017?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Aayush7M",
+        "html_url": "https://github.com/Aayush7M",
+        "followers_url": "https://api.github.com/users/Aayush7M/followers",
+        "following_url": "https://api.github.com/users/Aayush7M/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Aayush7M/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Aayush7M/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Aayush7M/subscriptions",
+        "organizations_url": "https://api.github.com/users/Aayush7M/orgs",
+        "repos_url": "https://api.github.com/users/Aayush7M/repos",
+        "events_url": "https://api.github.com/users/Aayush7M/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Aayush7M/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c382672dc5af5491a5103a1b2a8b7c247d11e6e0",
+            "url": "https://api.github.com/repos/Aayush7M/Pokemon/commits/c382672dc5af5491a5103a1b2a8b7c247d11e6e0",
+            "html_url": "https://github.com/Aayush7M/Pokemon/commit/c382672dc5af5491a5103a1b2a8b7c247d11e6e0"
+        }
+    ],
+    "stats": {
+        "total": 90,
+        "additions": 32,
+        "deletions": 58
+    },
+    "files": [
+        {
+            "sha": "e6b45af7ff981db221ca3bdb62cee438797f595b",
+            "filename": "src/Album.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 5,
+            "changes": 19,
+            "blob_url": "https://github.com/Aayush7M/Pokemon/blob/7eb1411a31340c46248452589efbbb1a49288e82/src%2FAlbum.java",
+            "raw_url": "https://github.com/Aayush7M/Pokemon/raw/7eb1411a31340c46248452589efbbb1a49288e82/src%2FAlbum.java",
+            "contents_url": "https://api.github.com/repos/Aayush7M/Pokemon/contents/src%2FAlbum.java?ref=7eb1411a31340c46248452589efbbb1a49288e82",
+            "patch": "@@ -73,10 +73,15 @@ public void removeCard (int index) {\n         cards.remove(index);\n     }\n     public void removeCards (int startIndex, int endIndex) {\n-        cards.subList(startIndex, endIndex+1).clear();\n+        cards.subList(startIndex, endIndex).clear();\n     }\n-    public int findCardGivenName (String name) {\n-        return Collections.binarySearch(cards, new Card(name));\n+    public int getCardOfName (String name, boolean firstCard) {\n+        if (firstCard) {\n+            return cards.indexOf(new Card(name));\n+        } else {\n+            return cards.lastIndexOf(new Card(name));\n+        }\n+\n     }\n     public Card getCard (int index) {\n         return cards.get(index);\n@@ -97,8 +102,12 @@ public int getCardsSize () {\n     public boolean atMaxCapacity () {\n         return cards.size() == maxCapacity;\n     }\n-    public int findCardGivenHP (int hp) {\n-        return Collections.binarySearch(cards, new Card (hp), new SortByHP());\n+    public int getCardOfHP (int hp, boolean firstCard) {\n+        if (firstCard) {\n+            return cards.indexOf(new Card(hp));\n+        } else {\n+            return cards.lastIndexOf(new Card(hp));\n+        }\n     }\n     public String nameDateToString () {\n         return String.format (\"Album Number: %d%nDate: %s%n\",albumNum,date);"
+        },
+        {
+            "sha": "db3ef5e3599465cc56bff63b601e887e7d5e2991",
+            "filename": "src/Driver.java",
+            "status": "modified",
+            "additions": 14,
+            "deletions": 52,
+            "changes": 66,
+            "blob_url": "https://github.com/Aayush7M/Pokemon/blob/7eb1411a31340c46248452589efbbb1a49288e82/src%2FDriver.java",
+            "raw_url": "https://github.com/Aayush7M/Pokemon/raw/7eb1411a31340c46248452589efbbb1a49288e82/src%2FDriver.java",
+            "contents_url": "https://api.github.com/repos/Aayush7M/Pokemon/contents/src%2FDriver.java?ref=7eb1411a31340c46248452589efbbb1a49288e82",
+            "patch": "@@ -144,7 +144,7 @@ public static void subMenuTwo (Scanner in, ArrayList <Album> albums) {\n                     removeCard(displayMenu(in, 3),in,currentAlbum);\n                     break;\n                 case 5: // Edit attack\n-                    editAttack(displayMenu(in,4),in,getCard(in,currentAlbum));\n+                    editAttack(in,getCard(in,currentAlbum));\n                     break;\n                 case 6: // Sort cards (3 options)\n                     sortCards(displayMenu(in,5),currentAlbum);\n@@ -160,8 +160,10 @@ public static void subMenuTwo (Scanner in, ArrayList <Album> albums) {\n                     break;\n                 case 10: // remove only card\n                     currentAlbum.removeCard(0);\n+                    break;\n                 case 11:\n-                    editAttack(displayMenu(in,4),in,currentAlbum.getCard(0));\n+                    editAttack(in,currentAlbum.getCard(0));\n+                    break;\n                 case 12:\n                     System.out.println(\"Since there is only one card, output will the same no matter which method of sorting\" +\n                             \"is chosen. Here is the card: \");\n@@ -271,68 +273,28 @@ public static String addCard (Scanner in, Album currentAlbum) {\n         }\n     }\n     public static void removeCard (int choice, Scanner in, Album currentAlbum) {\n-        ArrayList <Card> cards = currentAlbum.getCards();\n         switch (choice) {\n             case 1: // sort by name, remove\n                 currentAlbum.sortCardsByName();\n-                int indexOfName;\n+                int firstIndexOfName;\n                 String name;\n                 do {\n                     name = getString(in, \"Please give the name of the card you want to remove\",\n                             true);\n-                } while ((indexOfName = currentAlbum.findCardGivenName(name)) < 0);\n-                int firstIndexOfName = indexOfName;\n-                for (int i = indexOfName-1; i > -1; i--) {\n-                    if (cards.get(i).getName().equalsIgnoreCase(name)) {\n-                        firstIndexOfName--;\n-                    } else {\n-                        break;\n-                    }\n-                }\n-                int lastIndexOfName = indexOfName;\n-                for (int i = indexOfName+1; i < cards.size(); i++) {\n-                    if (cards.get(i).getName().equalsIgnoreCase(name)) {\n-                        lastIndexOfName++;\n-                    } else {\n-                        break;\n-                    }\n-                }\n-                if (firstIndexOfName == lastIndexOfName) {\n-                    currentAlbum.removeCard(indexOfName);\n-                } else {\n-                    currentAlbum.removeCards(firstIndexOfName,lastIndexOfName);\n-                }\n+                } while ((firstIndexOfName = currentAlbum.getCardOfName(name,true)) < 0);\n+                int lastIndexOfName = currentAlbum.getCardOfName(name,false);\n+                currentAlbum.removeCards(firstIndexOfName,lastIndexOfName+1);\n                 break;\n             case 2: // sort by HP, remove\n                 currentAlbum.sortCardsByHP();\n-                int indexOfHP;\n+                int firstIndexOfHP;\n                 int hp;\n                 do {\n                     hp = getInt(in, \"Please give the hp of the card you want to remove\",\n                             1,Integer.MAX_VALUE);\n-                } while ((indexOfHP = currentAlbum.findCardGivenHP(hp)) < 0);\n-                int firstIndexOfHP = indexOfHP;\n-                cards = currentAlbum.getCards();\n-                for (int i = indexOfHP-1; i > -1; i--) {\n-                    if (cards.get(i).getHP() == hp) {\n-                        firstIndexOfHP--;\n-                    } else {\n-                        break;\n-                    }\n-                }\n-                int lastIndexOfHP = indexOfHP;\n-                for (int i = indexOfHP+1; i < cards.size(); i++) {\n-                    if (cards.get(i).getHP() == hp) {\n-                        lastIndexOfHP++;\n-                    } else {\n-                        break;\n-                    }\n-                }\n-                if (firstIndexOfHP == lastIndexOfHP) {\n-                    currentAlbum.removeCard(indexOfHP);\n-                } else {\n-                    currentAlbum.removeCards(firstIndexOfHP,lastIndexOfHP);\n-                }\n+                } while ((firstIndexOfHP = currentAlbum.getCardOfHP(hp,true)) < 0);\n+                int lastIndexOfHP = currentAlbum.getCardOfHP(hp,false);\n+                currentAlbum.removeCards(firstIndexOfHP,lastIndexOfHP+1);\n                 break;\n             case 3:\n                 currentAlbum.removeCard(0);\n@@ -341,7 +303,7 @@ public static void removeCard (int choice, Scanner in, Album currentAlbum) {\n                 currentAlbum.removeCard(currentAlbum.getCardsSize() - 1);\n         }\n     }\n-    public static void editAttack (int choice, Scanner in, Card card) {\n+    public static void editAttack (Scanner in, Card card) {\n         Attack[] attacks = card.getAttacks();\n         Attack attack;\n         if (attacks.length == 1) {\n@@ -354,7 +316,7 @@ public static void editAttack (int choice, Scanner in, Card card) {\n             }\n             attack = attacks[getInt (in, \"Which attack would you like to edit?\", 1,attacks.length)];\n         }\n-\n+        int choice = displayMenu(in,4);\n         switch (choice) {\n             case 1: // name\n                 attack.edit(\"name\",getString(in,\"Enter new name: \",true));"
+        },
+        {
+            "sha": "21f2be91c6b2b8d8940ce4e4ba1b0fbb35d0a2b7",
+            "filename": "src/SortByDate.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/Aayush7M/Pokemon/blob/7eb1411a31340c46248452589efbbb1a49288e82/src%2FSortByDate.java",
+            "raw_url": "https://github.com/Aayush7M/Pokemon/raw/7eb1411a31340c46248452589efbbb1a49288e82/src%2FSortByDate.java",
+            "contents_url": "https://api.github.com/repos/Aayush7M/Pokemon/contents/src%2FSortByDate.java?ref=7eb1411a31340c46248452589efbbb1a49288e82",
+            "patch": "@@ -2,6 +2,9 @@\n \n public class SortByDate implements Comparator <Card> {\n     public int compare (Card a, Card b) {\n+        if (a.getDate() == null || b.getDate() == null) {\n+            return 0;\n+        }\n         int yearDifference;\n         if ((yearDifference = a.getDate().getYear()-b.getDate().getYear())==0) {\n             int monthDifference;"
+        },
+        {
+            "sha": "110a60f153dd4c15ba2284d6db6671732f9e0eb5",
+            "filename": "src/SortByHP.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Aayush7M/Pokemon/blob/7eb1411a31340c46248452589efbbb1a49288e82/src%2FSortByHP.java",
+            "raw_url": "https://github.com/Aayush7M/Pokemon/raw/7eb1411a31340c46248452589efbbb1a49288e82/src%2FSortByHP.java",
+            "contents_url": "https://api.github.com/repos/Aayush7M/Pokemon/contents/src%2FSortByHP.java?ref=7eb1411a31340c46248452589efbbb1a49288e82",
+            "patch": "@@ -6,7 +6,7 @@ public int compare (Card a, Card b) {\n         if ((hpDifference = a.getHP()-b.getHP()) == 0) {// same hp\n             int nameDifference;\n             if ((nameDifference = a.getName().compareToIgnoreCase(b.getName())) == 0) { // same name\n-                return new SortByDate().compare(a,b);\n+                return a.getName().compareToIgnoreCase(b.getName());\n             } else {\n                 return nameDifference;\n             }"
+        }
+    ]
+}

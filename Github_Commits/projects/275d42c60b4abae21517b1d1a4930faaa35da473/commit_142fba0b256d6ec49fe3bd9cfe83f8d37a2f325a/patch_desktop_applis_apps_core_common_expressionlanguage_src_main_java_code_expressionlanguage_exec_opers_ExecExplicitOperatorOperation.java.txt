@@ -1,0 +1,30 @@
+@@ -17,16 +17,15 @@
+ 
+ public final class ExecExplicitOperatorOperation extends ExecSettableCallFctOperation implements CallExecSimpleOperation,CompoundedOperator{
+ 
+-    private final ImplicitMethods converter;
++    private final ImplicitMethods converter = new ImplicitMethods();
+     private final ExecTypeFunction pair;
+     private final ExecStaticFctContent staticFctContent;
+ 
+     private final ExecOperatorContent operatorContent;
+-    public ExecExplicitOperatorOperation(ExecOperationContent _opCont, boolean _intermediateDottedOperation, ExecStaticFctContent _staticFctContent, ExecTypeFunction _pair, ExecArrContent _exArr, ImplicitMethods _conv, ExecOperatorContent _operCont) {
++    public ExecExplicitOperatorOperation(ExecOperationContent _opCont, boolean _intermediateDottedOperation, ExecStaticFctContent _staticFctContent, ExecTypeFunction _pair, ExecArrContent _exArr, ExecOperatorContent _operCont) {
+         super(_opCont, _intermediateDottedOperation,_exArr);
+         staticFctContent = _staticFctContent;
+         pair = _pair;
+-        converter = _conv;
+         operatorContent = _operCont;
+     }
+ 
+@@ -57,6 +56,10 @@ public void endCalculate(ContextEl _conf, IdMap<ExecOperationNode, ArgumentsPair
+         ExecQuickOperation.end(this,_conf,_nodes,_right,_stack,converter);
+     }
+ 
++    public ImplicitMethods getConverter() {
++        return converter;
++    }
++
+     public int getOffsetOper() {
+         return operatorContent.getOpOffset();
+     }

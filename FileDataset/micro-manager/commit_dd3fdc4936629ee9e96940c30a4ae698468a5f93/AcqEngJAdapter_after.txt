@@ -1,0 +1,37 @@
+   protected AcquisitionHook autofocusHookBefore(int skipFrames) {
+      return new AcquisitionHook() {
+
+         @Override
+         public AcquisitionEvent run(AcquisitionEvent event) {
+            if (!event.isAcquisitionFinishedEvent()
+                  && (event.getZIndex() == null || event.getZIndex() == 0)
+                  && (event.getAxisPosition(MDAAcqEventModules.POSITION_AXIS) == null
+                        || (Integer) event.getAxisPosition(MDAAcqEventModules.POSITION_AXIS) == 0)
+                  && (event.getAxisPosition(AcqEngMetadata.CHANNEL_AXIS) == null
+                        || (Integer) event.getAxisPosition(AcqEngMetadata.CHANNEL_AXIS) == 0)) {
+               if (event.getTIndex() != null && skipFrames != 0
+                       && event.getTIndex() % skipFrames != 0) {
+                  return event;
+               }
+               try {
+                  // this hook is called before the engine changes the hardware
+                  // since we want to leave the system in a focussed state, first
+                  // move the XY stage to where we want to image, then autofocus.
+                  if (event.getXPosition() != null && event.getYPosition() != null) {
+                     studio_.core().setXYPosition(event.getXPosition(), event.getYPosition());
+                  }
+                  studio_.getAutofocusManager().getAutofocusMethod().fullFocus();
+               } catch (Exception ex) {
+                  studio_.logs().logError(ex, "Failed to autofocus.");
+               }
+            }
+            return event;
+         }
+
+         @Override
+         public void close() {
+            // nothing to do here
+         }
+      };
+   }
+

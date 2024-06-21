@@ -1,0 +1,98 @@
+{
+    "sha": "37362aee1878aec3b2245d7c90e3b7ec56834191",
+    "node_id": "C_kwDOLUfcytoAKDM3MzYyYWVlMTg3OGFlYzNiMjI0NWQ3YzkwZTNiN2VjNTY4MzQxOTE",
+    "commit": {
+        "author": {
+            "name": "김회창",
+            "email": "khc9812121@gmail.com",
+            "date": "2024-02-12T09:27:07Z"
+        },
+        "committer": {
+            "name": "김회창",
+            "email": "khc9812121@gmail.com",
+            "date": "2024-02-12T09:27:07Z"
+        },
+        "message": "[fix] QUERY 메시지 전송시 선택한 언어 null pointer exception 수정",
+        "tree": {
+            "sha": "3ef7c8f239554ab210fec3248dc4b2ab14bbd29b",
+            "url": "https://api.github.com/repos/YangGeoun/CodeArena/git/trees/3ef7c8f239554ab210fec3248dc4b2ab14bbd29b"
+        },
+        "url": "https://api.github.com/repos/YangGeoun/CodeArena/git/commits/37362aee1878aec3b2245d7c90e3b7ec56834191",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/YangGeoun/CodeArena/commits/37362aee1878aec3b2245d7c90e3b7ec56834191",
+    "html_url": "https://github.com/YangGeoun/CodeArena/commit/37362aee1878aec3b2245d7c90e3b7ec56834191",
+    "comments_url": "https://api.github.com/repos/YangGeoun/CodeArena/commits/37362aee1878aec3b2245d7c90e3b7ec56834191/comments",
+    "author": {
+        "login": "kimhaechang1",
+        "id": 81299056,
+        "node_id": "MDQ6VXNlcjgxMjk5MDU2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/81299056?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kimhaechang1",
+        "html_url": "https://github.com/kimhaechang1",
+        "followers_url": "https://api.github.com/users/kimhaechang1/followers",
+        "following_url": "https://api.github.com/users/kimhaechang1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kimhaechang1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kimhaechang1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kimhaechang1/subscriptions",
+        "organizations_url": "https://api.github.com/users/kimhaechang1/orgs",
+        "repos_url": "https://api.github.com/users/kimhaechang1/repos",
+        "events_url": "https://api.github.com/users/kimhaechang1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kimhaechang1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "kimhaechang1",
+        "id": 81299056,
+        "node_id": "MDQ6VXNlcjgxMjk5MDU2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/81299056?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kimhaechang1",
+        "html_url": "https://github.com/kimhaechang1",
+        "followers_url": "https://api.github.com/users/kimhaechang1/followers",
+        "following_url": "https://api.github.com/users/kimhaechang1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kimhaechang1/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kimhaechang1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kimhaechang1/subscriptions",
+        "organizations_url": "https://api.github.com/users/kimhaechang1/orgs",
+        "repos_url": "https://api.github.com/users/kimhaechang1/repos",
+        "events_url": "https://api.github.com/users/kimhaechang1/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kimhaechang1/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2622b75a25a85d4abfefd7138137703907b80c16",
+            "url": "https://api.github.com/repos/YangGeoun/CodeArena/commits/2622b75a25a85d4abfefd7138137703907b80c16",
+            "html_url": "https://github.com/YangGeoun/CodeArena/commit/2622b75a25a85d4abfefd7138137703907b80c16"
+        }
+    ],
+    "stats": {
+        "total": 1,
+        "additions": 1,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "1f8ddc101658e3f0d9f3549b0e52b91c54eaf493",
+            "filename": "back-end/match/src/main/java/com/ssafy/match/WebSocketHandler.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/YangGeoun/CodeArena/blob/37362aee1878aec3b2245d7c90e3b7ec56834191/back-end%2Fmatch%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fmatch%2FWebSocketHandler.java",
+            "raw_url": "https://github.com/YangGeoun/CodeArena/raw/37362aee1878aec3b2245d7c90e3b7ec56834191/back-end%2Fmatch%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fmatch%2FWebSocketHandler.java",
+            "contents_url": "https://api.github.com/repos/YangGeoun/CodeArena/contents/back-end%2Fmatch%2Fsrc%2Fmain%2Fjava%2Fcom%2Fssafy%2Fmatch%2FWebSocketHandler.java?ref=37362aee1878aec3b2245d7c90e3b7ec56834191",
+            "patch": "@@ -110,6 +110,7 @@ protected void handleTextMessage(WebSocketSession session, TextMessage message)\n                             serverMsg.put(\"matchId\", uuid.toString());\n                             serverMsg.put(\"userId\", player1userId);\n                             serverMsg.put(\"userNickname\", player1userNickname);\n+                            serverMsg.put(\"lang\", receive.getLang());\n                             serverMsg.put(\"enemyId\", player2userId);\n                             serverMsg.put(\"enemyNickname\", player2userNickname);\n                             serverMsg.put(\"queueKey\", key);"
+        }
+    ]
+}

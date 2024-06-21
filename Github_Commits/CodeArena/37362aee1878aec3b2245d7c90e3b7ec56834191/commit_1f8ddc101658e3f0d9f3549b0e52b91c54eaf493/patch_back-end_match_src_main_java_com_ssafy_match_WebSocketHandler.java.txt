@@ -1,0 +1,8 @@
+@@ -110,6 +110,7 @@ protected void handleTextMessage(WebSocketSession session, TextMessage message)
+                             serverMsg.put("matchId", uuid.toString());
+                             serverMsg.put("userId", player1userId);
+                             serverMsg.put("userNickname", player1userNickname);
++                            serverMsg.put("lang", receive.getLang());
+                             serverMsg.put("enemyId", player2userId);
+                             serverMsg.put("enemyNickname", player2userNickname);
+                             serverMsg.put("queueKey", key);

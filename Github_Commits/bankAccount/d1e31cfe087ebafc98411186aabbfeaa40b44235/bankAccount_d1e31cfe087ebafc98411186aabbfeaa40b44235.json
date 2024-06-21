@@ -1,0 +1,122 @@
+{
+    "sha": "d1e31cfe087ebafc98411186aabbfeaa40b44235",
+    "node_id": "C_kwDOKSrnudoAKGQxZTMxY2ZlMDg3ZWJhZmM5ODQxMTE4NmFhYmJmZWFhNDBiNDQyMzU",
+    "commit": {
+        "author": {
+            "name": "Putin Pavel Alexandrovich",
+            "email": "pavelputin2003@yandex.ru",
+            "date": "2023-12-14T09:30:23Z"
+        },
+        "committer": {
+            "name": "Putin Pavel Alexandrovich",
+            "email": "pavelputin2003@yandex.ru",
+            "date": "2023-12-14T09:30:23Z"
+        },
+        "message": "fix: fix null pointer exception from List.of",
+        "tree": {
+            "sha": "197cf3aa06d4b63fef102ad57ea9bd273b144877",
+            "url": "https://api.github.com/repos/PavelPutin/bankAccount/git/trees/197cf3aa06d4b63fef102ad57ea9bd273b144877"
+        },
+        "url": "https://api.github.com/repos/PavelPutin/bankAccount/git/commits/d1e31cfe087ebafc98411186aabbfeaa40b44235",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/PavelPutin/bankAccount/commits/d1e31cfe087ebafc98411186aabbfeaa40b44235",
+    "html_url": "https://github.com/PavelPutin/bankAccount/commit/d1e31cfe087ebafc98411186aabbfeaa40b44235",
+    "comments_url": "https://api.github.com/repos/PavelPutin/bankAccount/commits/d1e31cfe087ebafc98411186aabbfeaa40b44235/comments",
+    "author": {
+        "login": "PavelPutin",
+        "id": 49764506,
+        "node_id": "MDQ6VXNlcjQ5NzY0NTA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49764506?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/PavelPutin",
+        "html_url": "https://github.com/PavelPutin",
+        "followers_url": "https://api.github.com/users/PavelPutin/followers",
+        "following_url": "https://api.github.com/users/PavelPutin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/PavelPutin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/PavelPutin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/PavelPutin/subscriptions",
+        "organizations_url": "https://api.github.com/users/PavelPutin/orgs",
+        "repos_url": "https://api.github.com/users/PavelPutin/repos",
+        "events_url": "https://api.github.com/users/PavelPutin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/PavelPutin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "PavelPutin",
+        "id": 49764506,
+        "node_id": "MDQ6VXNlcjQ5NzY0NTA2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49764506?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/PavelPutin",
+        "html_url": "https://github.com/PavelPutin",
+        "followers_url": "https://api.github.com/users/PavelPutin/followers",
+        "following_url": "https://api.github.com/users/PavelPutin/following{/other_user}",
+        "gists_url": "https://api.github.com/users/PavelPutin/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/PavelPutin/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/PavelPutin/subscriptions",
+        "organizations_url": "https://api.github.com/users/PavelPutin/orgs",
+        "repos_url": "https://api.github.com/users/PavelPutin/repos",
+        "events_url": "https://api.github.com/users/PavelPutin/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/PavelPutin/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2f54be2e3417503607707bae09ee8e98a3bc9561",
+            "url": "https://api.github.com/repos/PavelPutin/bankAccount/commits/2f54be2e3417503607707bae09ee8e98a3bc9561",
+            "html_url": "https://github.com/PavelPutin/bankAccount/commit/2f54be2e3417503607707bae09ee8e98a3bc9561"
+        }
+    ],
+    "stats": {
+        "total": 36,
+        "additions": 25,
+        "deletions": 11
+    },
+    "files": [
+        {
+            "sha": "b58c4249eb8ad2ffa2f9dd3cf673b89322c20214",
+            "filename": "src/main/java/edu/vsu/putinpa/application/mapper/AccountInsertMapper.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 4,
+            "changes": 16,
+            "blob_url": "https://github.com/PavelPutin/bankAccount/blob/d1e31cfe087ebafc98411186aabbfeaa40b44235/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Fapplication%2Fmapper%2FAccountInsertMapper.java",
+            "raw_url": "https://github.com/PavelPutin/bankAccount/raw/d1e31cfe087ebafc98411186aabbfeaa40b44235/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Fapplication%2Fmapper%2FAccountInsertMapper.java",
+            "contents_url": "https://api.github.com/repos/PavelPutin/bankAccount/contents/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Fapplication%2Fmapper%2FAccountInsertMapper.java?ref=d1e31cfe087ebafc98411186aabbfeaa40b44235",
+            "patch": "@@ -4,6 +4,7 @@\n import edu.vsu.putinpa.infrastructure.orm.InsertMappingInfo;\n \n import java.sql.Timestamp;\n+import java.util.ArrayList;\n import java.util.List;\n import java.util.function.Function;\n \n@@ -21,10 +22,17 @@ on conflict (id) do update set\n \n         Timestamp whenOpened = instantToTimestamp(account.getWhenOpened());\n         Timestamp whenClosed = instantToTimestamp(account.getWhenClosed());\n-        List<Object> values = List.of(\n-                account.getUuid(), account.getName(), whenOpened, whenClosed, account.getCreator().getUuid(), account.getBalance().value(), account.getBalance().currency(),\n-                                   account.getName(), whenOpened, whenClosed, account.getCreator().getUuid(), account.getBalance().value(), account.getBalance().currency()\n-        );\n+        List<Object> values = new ArrayList<>();\n+        values.add(account.getUuid());\n+        for (int i = 0; i < 2; i++) {\n+            values.add(account.getName());\n+            values.add(whenOpened);\n+            values.add(whenClosed);\n+            values.add(account.getCreator().getUuid());\n+            values.add(account.getBalance().value());\n+            values.add(account.getBalance().currency());\n+            values.add(account.getName());\n+        }\n         return new InsertMappingInfo(sql, values);\n     }\n }"
+        },
+        {
+            "sha": "12febf773fed09adff56a04fc2a4bad2428c374a",
+            "filename": "src/main/java/edu/vsu/putinpa/application/mapper/JournalOperationInsertMapper.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 6,
+            "changes": 18,
+            "blob_url": "https://github.com/PavelPutin/bankAccount/blob/d1e31cfe087ebafc98411186aabbfeaa40b44235/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Fapplication%2Fmapper%2FJournalOperationInsertMapper.java",
+            "raw_url": "https://github.com/PavelPutin/bankAccount/raw/d1e31cfe087ebafc98411186aabbfeaa40b44235/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Fapplication%2Fmapper%2FJournalOperationInsertMapper.java",
+            "contents_url": "https://api.github.com/repos/PavelPutin/bankAccount/contents/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Fapplication%2Fmapper%2FJournalOperationInsertMapper.java?ref=d1e31cfe087ebafc98411186aabbfeaa40b44235",
+            "patch": "@@ -4,6 +4,7 @@\n import edu.vsu.putinpa.infrastructure.orm.InsertMappingInfo;\n \n import java.sql.Timestamp;\n+import java.util.ArrayList;\n import java.util.List;\n import java.util.function.Function;\n \n@@ -20,12 +21,17 @@ on conflict (id) do update set\n                 whencreated=?, client_id=?, sender_id=?, recipient_id=?, currency_id=?, balance=?, type=?;\"\"\";\n \n         Timestamp whenCreated = instantToTimestamp(journalOperation.getWhenCreated());\n-        List<Object> values = List.of(\n-                journalOperation.getUuid(), whenCreated, journalOperation.getClient().getUuid(), journalOperation.getSender().getUuid(),\n-                                            journalOperation.getRecipient().getUuid(), journalOperation.getMoney().currency(), journalOperation.getMoney().value(), journalOperation.getType(),\n-                                            whenCreated, journalOperation.getClient().getUuid(), journalOperation.getSender().getUuid(),\n-                                            journalOperation.getRecipient().getUuid(), journalOperation.getMoney().currency(), journalOperation.getMoney().value(), journalOperation.getType()\n-        );\n+        List<Object> values = new ArrayList<>();\n+        values.add(journalOperation.getUuid());\n+        for (int i = 0; i < 2; i++) {\n+            values.add(whenCreated);\n+            values.add(journalOperation.getClient().getUuid());\n+            values.add(journalOperation.getSender().getUuid());\n+            values.add(journalOperation.getRecipient().getUuid());\n+            values.add(journalOperation.getMoney().currency());\n+            values.add(journalOperation.getMoney().value());\n+            values.add(journalOperation.getType());\n+        }\n         return new InsertMappingInfo(sql, values);\n     }\n }"
+        },
+        {
+            "sha": "171e44e5a18afcdbd9cfe09d5105d8f5c5abbfe0",
+            "filename": "src/main/java/edu/vsu/putinpa/infrastructure/orm/OrmRepositoryHandler.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/PavelPutin/bankAccount/blob/d1e31cfe087ebafc98411186aabbfeaa40b44235/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Finfrastructure%2Form%2FOrmRepositoryHandler.java",
+            "raw_url": "https://github.com/PavelPutin/bankAccount/raw/d1e31cfe087ebafc98411186aabbfeaa40b44235/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Finfrastructure%2Form%2FOrmRepositoryHandler.java",
+            "contents_url": "https://api.github.com/repos/PavelPutin/bankAccount/contents/src%2Fmain%2Fjava%2Fedu%2Fvsu%2Fputinpa%2Finfrastructure%2Form%2FOrmRepositoryHandler.java?ref=d1e31cfe087ebafc98411186aabbfeaa40b44235",
+            "patch": "@@ -48,7 +48,7 @@ public OrmRepositoryHandler(OrmConnectionWrapper ormConnectionWrapper, Class<?>\n     }\n \n     @Override\n-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {\n+    public Object invoke(Object proxy, Method method, Object[] args) throws Exception {\n         if (method.getName().startsWith(\"find\")) {\n             Query query = method.getAnnotation(Query.class);\n             if (query == null) {"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb",
+    "node_id": "C_kwDOKZQ9ndoAKDRkMjE2NDBjMWViMGEyY2EyMjQ1OGI0YWI2ODJmNWNkMmI2Zjg0YmI",
+    "commit": {
+        "author": {
+            "name": "jacksonfernando",
+            "email": "jacksonfernando51@gmail.com",
+            "date": "2023-10-13T15:45:03Z"
+        },
+        "committer": {
+            "name": "jacksonfernando",
+            "email": "jacksonfernando51@gmail.com",
+            "date": "2023-10-13T15:45:03Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "0ad23b41765cc976b30e4e9f547cf3333f14fe80",
+            "url": "https://api.github.com/repos/jacksonfernando/dynamic-complain-app/git/trees/0ad23b41765cc976b30e4e9f547cf3333f14fe80"
+        },
+        "url": "https://api.github.com/repos/jacksonfernando/dynamic-complain-app/git/commits/4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jacksonfernando/dynamic-complain-app/commits/4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb",
+    "html_url": "https://github.com/jacksonfernando/dynamic-complain-app/commit/4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb",
+    "comments_url": "https://api.github.com/repos/jacksonfernando/dynamic-complain-app/commits/4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb/comments",
+    "author": {
+        "login": "jacksonfernando",
+        "id": 33139248,
+        "node_id": "MDQ6VXNlcjMzMTM5MjQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33139248?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jacksonfernando",
+        "html_url": "https://github.com/jacksonfernando",
+        "followers_url": "https://api.github.com/users/jacksonfernando/followers",
+        "following_url": "https://api.github.com/users/jacksonfernando/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jacksonfernando/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jacksonfernando/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jacksonfernando/subscriptions",
+        "organizations_url": "https://api.github.com/users/jacksonfernando/orgs",
+        "repos_url": "https://api.github.com/users/jacksonfernando/repos",
+        "events_url": "https://api.github.com/users/jacksonfernando/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jacksonfernando/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jacksonfernando",
+        "id": 33139248,
+        "node_id": "MDQ6VXNlcjMzMTM5MjQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33139248?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jacksonfernando",
+        "html_url": "https://github.com/jacksonfernando",
+        "followers_url": "https://api.github.com/users/jacksonfernando/followers",
+        "following_url": "https://api.github.com/users/jacksonfernando/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jacksonfernando/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jacksonfernando/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jacksonfernando/subscriptions",
+        "organizations_url": "https://api.github.com/users/jacksonfernando/orgs",
+        "repos_url": "https://api.github.com/users/jacksonfernando/repos",
+        "events_url": "https://api.github.com/users/jacksonfernando/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jacksonfernando/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "0e8119beadc7d00c2efed810933b02206263c972",
+            "url": "https://api.github.com/repos/jacksonfernando/dynamic-complain-app/commits/0e8119beadc7d00c2efed810933b02206263c972",
+            "html_url": "https://github.com/jacksonfernando/dynamic-complain-app/commit/0e8119beadc7d00c2efed810933b02206263c972"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 1,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "77ad5d1701c0e8d77d02ad80f6a10501ed6d8b5d",
+            "filename": "backend/src/test/java/com/example/complain/controller/CategoryControllerTest.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 5,
+            "changes": 6,
+            "blob_url": "https://github.com/jacksonfernando/dynamic-complain-app/blob/4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fexample%2Fcomplain%2Fcontroller%2FCategoryControllerTest.java",
+            "raw_url": "https://github.com/jacksonfernando/dynamic-complain-app/raw/4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fexample%2Fcomplain%2Fcontroller%2FCategoryControllerTest.java",
+            "contents_url": "https://api.github.com/repos/jacksonfernando/dynamic-complain-app/contents/backend%2Fsrc%2Ftest%2Fjava%2Fcom%2Fexample%2Fcomplain%2Fcontroller%2FCategoryControllerTest.java?ref=4d21640c1eb0a2ca22458b4ab682f5cd2b6f84bb",
+            "patch": "@@ -22,7 +22,7 @@\n \n @SpringBootTest\n public class CategoryControllerTest {\n-    private Category category;\n+    private Category category = new Category(1, \"title\", \"label\", \"text\");\n \n     private MockMvc mockMvc;\n \n@@ -39,10 +39,6 @@ public class CategoryControllerTest {\n     public void setup() {\n         objectMapper = new ObjectMapper();\n         mockMvc = MockMvcBuilders.standaloneSetup(this.categoryController).build();\n-        category.setId(1);\n-        category.setLabel(\"label\");\n-        category.setType(\"text\");\n-        category.setValue(null);\n     }\n \n     // @Test"
+        }
+    ]
+}

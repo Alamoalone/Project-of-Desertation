@@ -1,0 +1,8 @@
+    void testGetParticipationAllResults_studentCanAccessIfNoStartDateSet() throws Exception {
+        programmingExercise.setStartDate(null);
+        programmingExercise.setReleaseDate(null);
+        programmingExerciseRepository.save(programmingExercise);
+        ProgrammingExerciseStudentParticipation participation = participationUtilService.addStudentParticipationForProgrammingExercise(programmingExercise,
+                TEST_PREFIX + "student1");
+        request.get(participationsBaseUrl + participation.getId() + "/student-participation-with-all-results", HttpStatus.OK, ProgrammingExerciseStudentParticipation.class);
+    }

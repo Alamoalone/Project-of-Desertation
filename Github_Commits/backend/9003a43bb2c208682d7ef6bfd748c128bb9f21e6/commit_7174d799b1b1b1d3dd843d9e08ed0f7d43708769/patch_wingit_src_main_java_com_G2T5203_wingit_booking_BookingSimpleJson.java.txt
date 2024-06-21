@@ -1,0 +1,13 @@
+@@ -60,9 +60,9 @@ public BookingSimpleJson(Booking booking) {
+                 booking.getOutboundRouteListing().getRouteListingPk().getRoute().getRouteId(),
+                 booking.getOutboundRouteListing().getRouteListingPk().getDepartureDatetime(),
+ 
+-                booking.getInboundRouteListing().getRouteListingPk().getPlane().getPlaneId(),
+-                booking.getInboundRouteListing().getRouteListingPk().getRoute().getRouteId(),
+-                booking.getInboundRouteListing().getRouteListingPk().getDepartureDatetime(),
++                booking.hasInboundRouteListing() ? booking.getInboundRouteListing().getRouteListingPk().getPlane().getPlaneId() : null,
++                booking.hasInboundRouteListing() ? booking.getInboundRouteListing().getRouteListingPk().getRoute().getRouteId() : -1,
++                booking.hasInboundRouteListing() ? booking.getInboundRouteListing().getRouteListingPk().getDepartureDatetime() : null,
+ 
+                 booking.getStartBookingDatetime(),
+                 booking.getPartySize(),

@@ -1,0 +1,28 @@
+    public void updateSaveManagerDialog(AlertDialog dialog, ApplicationInfo app, boolean backupAdapterReset) {
+        String filesPath = Environment.getExternalStorageDirectory().getPath() + "/Android/data/" + app.packageName + "/files";
+        String backupPath = Environment.getExternalStorageDirectory().getPath() + "/Android/data/" + mainActivityContext.getPackageName() + "/files/backups/" + app.packageName;
+        String backupsPath = Environment.getExternalStorageDirectory().getPath() + "/Android/data/" + mainActivityContext.getPackageName() + "/files/backups/";
+        File file = new File(backupsPath);
+        String[] backups = file.list(new FilenameFilter() {
+            @Override
+            public boolean accept(File current, String name) {
+                return name.startsWith(app.packageName) && new File(current, name).isDirectory();
+            }
+        });
+
+        if(backupAdapterReset || ((GridView) dialog.findViewById(R.id.backups_list)).getAdapter() == null)
+            ((GridView) dialog.findViewById(R.id.backups_list)).setAdapter(new BackupsAdapter(mainActivityContext, this, backupsPath, app, dialog, backups));
+
+        ((TextView) dialog.findViewById(R.id.app_name)).setText(app.loadLabel(mainActivityContext.getPackageManager()));
+        ((TextView) dialog.findViewById(R.id.package_name)).setText(app.packageName);
+        ((TextView) dialog.findViewById(R.id.files_size)).setText(String.format(mainActivityContext.getResources().getString(R.string.files_size), bytesReadable(getDirectorySize(Paths.get(filesPath)))));
+
+        dialog.findViewById(R.id.backup_btn).setOnClickListener(view -> {
+            dialog.findViewById(R.id.backup_btn).setOnClickListener(null);
+            ((TextView)dialog.findViewById(R.id.backup_btn)).setText(R.string.backing_up);
+            new Thread(() -> backupSave(app, success -> mainActivityContext.runOnUiThread(() -> {
+                ((TextView)dialog.findViewById(R.id.backup_btn)).setText(success ? R.string.backup_success : R.string.backup_fail);
+                updateSaveManagerDialog(dialog, app, true);
+            }))).start();
+        });
+    }

@@ -1,0 +1,170 @@
+{
+    "sha": "d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+    "node_id": "C_kwDOHYmFSdoAKGQ4OGUyYmUyZTJmZTM0OWM3MzRhMGFmMDFkNmE5NzhhNmMzMmE2OTA",
+    "commit": {
+        "author": {
+            "name": "SteelingCow437",
+            "email": "davidandmatt2@yahoo.com",
+            "date": "2023-08-05T17:49:52Z"
+        },
+        "committer": {
+            "name": "SteelingCow437",
+            "email": "davidandmatt2@yahoo.com",
+            "date": "2023-08-05T17:49:52Z"
+        },
+        "message": "Null pointer exception, my favorite!",
+        "tree": {
+            "sha": "fd293cdae5088da5cb893182e9d10db3ea55ddba",
+            "url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/git/trees/fd293cdae5088da5cb893182e9d10db3ea55ddba"
+        },
+        "url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/git/commits/d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/commits/d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+    "html_url": "https://github.com/SteelingCow437/Space-Tech-Mod/commit/d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+    "comments_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/commits/d88e2be2e2fe349c734a0af01d6a978a6c32a690/comments",
+    "author": {
+        "login": "SteelingCow437",
+        "id": 79171525,
+        "node_id": "MDQ6VXNlcjc5MTcxNTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79171525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SteelingCow437",
+        "html_url": "https://github.com/SteelingCow437",
+        "followers_url": "https://api.github.com/users/SteelingCow437/followers",
+        "following_url": "https://api.github.com/users/SteelingCow437/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SteelingCow437/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SteelingCow437/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SteelingCow437/subscriptions",
+        "organizations_url": "https://api.github.com/users/SteelingCow437/orgs",
+        "repos_url": "https://api.github.com/users/SteelingCow437/repos",
+        "events_url": "https://api.github.com/users/SteelingCow437/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SteelingCow437/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "SteelingCow437",
+        "id": 79171525,
+        "node_id": "MDQ6VXNlcjc5MTcxNTI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79171525?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/SteelingCow437",
+        "html_url": "https://github.com/SteelingCow437",
+        "followers_url": "https://api.github.com/users/SteelingCow437/followers",
+        "following_url": "https://api.github.com/users/SteelingCow437/following{/other_user}",
+        "gists_url": "https://api.github.com/users/SteelingCow437/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/SteelingCow437/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/SteelingCow437/subscriptions",
+        "organizations_url": "https://api.github.com/users/SteelingCow437/orgs",
+        "repos_url": "https://api.github.com/users/SteelingCow437/repos",
+        "events_url": "https://api.github.com/users/SteelingCow437/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/SteelingCow437/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "676bcd73447b51ebc9a7d739f1964faba34b0ff3",
+            "url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/commits/676bcd73447b51ebc9a7d739f1964faba34b0ff3",
+            "html_url": "https://github.com/SteelingCow437/Space-Tech-Mod/commit/676bcd73447b51ebc9a7d739f1964faba34b0ff3"
+        }
+    ],
+    "stats": {
+        "total": 129,
+        "additions": 109,
+        "deletions": 20
+    },
+    "files": [
+        {
+            "sha": "ea378e12e1bc66456a311a9f4b3d788b5d25d090",
+            "filename": "build.gradle",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/build.gradle",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/build.gradle",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/build.gradle?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'\n apply plugin: 'org.spongepowered.mixin'\n \n group = 'com.david.stm'\n-version = '47.0.0.130'\n+version = '47.0.0.131'\n java {\n     archivesBaseName = 'stm'\n     toolchain.languageVersion = JavaLanguageVersion.of(17)"
+        },
+        {
+            "sha": "bf268d6f4d57217af3910be24066554afc1b7e72",
+            "filename": "src/generated/resources/.cache/103d9f3f36b01595f1aa5172191e60eff02e6924",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fgenerated%2Fresources%2F.cache%2F103d9f3f36b01595f1aa5172191e60eff02e6924",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fgenerated%2Fresources%2F.cache%2F103d9f3f36b01595f1aa5172191e60eff02e6924",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/src%2Fgenerated%2Fresources%2F.cache%2F103d9f3f36b01595f1aa5172191e60eff02e6924?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -1,7 +1,9 @@\n-// 1.19.4\t2023-04-19T13:15:32.428932\tRegistries\n+// 1.20.1\t2023-08-05T13:31:57.9312533\tRegistries\n 37a69dffb088021acfdb289ae94131131c04351c data/spacetechmod/worldgen/configured_feature/aquamarine_ore.json\n+750a0e7cd12f205fe205e4c040ea4e6b155cb2c8 data/spacetechmod/worldgen/configured_feature/sculk_tree.json\n 4088f34f3af785ad2780bdfbdb67566735be47ea data/spacetechmod/worldgen/configured_feature/tin_ore.json\n 793869123b8e8a757a24d1c6b25e1c236b91ab54 data/spacetechmod/worldgen/configured_feature/titanium_ore.json\n ab8df16bc5fa86fc37f712622129a5f9225a3d30 data/spacetechmod/worldgen/placed_feature/aquamarine_placed.json\n+662d3b90d578f06e4bc8aba000e11e18cea6e128 data/spacetechmod/worldgen/placed_feature/sculk_tree_placed.json\n 3a15eb24318ecbdb5ec1296291b9d3402f455ab6 data/spacetechmod/worldgen/placed_feature/tin_placed.json\n f37a69d175126c562134cb53bf3a203d5fe3aa3f data/spacetechmod/worldgen/placed_feature/titanium_placed.json"
+        },
+        {
+            "sha": "fdd32608be11a75290aa6505aaf0d75545d3aeae",
+            "filename": "src/generated/resources/data/spacetechmod/worldgen/configured_feature/sculk_tree.json",
+            "status": "added",
+            "additions": 47,
+            "deletions": 0,
+            "changes": 47,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fgenerated%2Fresources%2Fdata%2Fspacetechmod%2Fworldgen%2Fconfigured_feature%2Fsculk_tree.json",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fgenerated%2Fresources%2Fdata%2Fspacetechmod%2Fworldgen%2Fconfigured_feature%2Fsculk_tree.json",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/src%2Fgenerated%2Fresources%2Fdata%2Fspacetechmod%2Fworldgen%2Fconfigured_feature%2Fsculk_tree.json?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -0,0 +1,47 @@\n+{\n+  \"type\": \"minecraft:tree\",\n+  \"config\": {\n+    \"decorators\": [],\n+    \"dirt_provider\": {\n+      \"type\": \"minecraft:simple_state_provider\",\n+      \"state\": {\n+        \"Name\": \"minecraft:dirt\"\n+      }\n+    },\n+    \"foliage_placer\": {\n+      \"type\": \"minecraft:blob_foliage_placer\",\n+      \"height\": 4,\n+      \"offset\": 0,\n+      \"radius\": 2\n+    },\n+    \"foliage_provider\": {\n+      \"type\": \"minecraft:simple_state_provider\",\n+      \"state\": {\n+        \"Name\": \"minecraft:sculk\"\n+      }\n+    },\n+    \"force_dirt\": false,\n+    \"ignore_vines\": false,\n+    \"minimum_size\": {\n+      \"type\": \"minecraft:two_layers_feature_size\",\n+      \"limit\": 1,\n+      \"lower_size\": 0,\n+      \"upper_size\": 2\n+    },\n+    \"trunk_placer\": {\n+      \"type\": \"minecraft:straight_trunk_placer\",\n+      \"base_height\": 5,\n+      \"height_rand_a\": 6,\n+      \"height_rand_b\": 3\n+    },\n+    \"trunk_provider\": {\n+      \"type\": \"minecraft:simple_state_provider\",\n+      \"state\": {\n+        \"Name\": \"minecraft:bone_block\",\n+        \"Properties\": {\n+          \"axis\": \"y\"\n+        }\n+      }\n+    }\n+  }\n+}\n\\ No newline at end of file"
+        },
+        {
+            "sha": "0e42db3d505c044f4b74d10ccbd2dd861fc2ae65",
+            "filename": "src/generated/resources/data/spacetechmod/worldgen/placed_feature/sculk_tree_placed.json",
+            "status": "added",
+            "additions": 35,
+            "deletions": 0,
+            "changes": 35,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fgenerated%2Fresources%2Fdata%2Fspacetechmod%2Fworldgen%2Fplaced_feature%2Fsculk_tree_placed.json",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fgenerated%2Fresources%2Fdata%2Fspacetechmod%2Fworldgen%2Fplaced_feature%2Fsculk_tree_placed.json",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/src%2Fgenerated%2Fresources%2Fdata%2Fspacetechmod%2Fworldgen%2Fplaced_feature%2Fsculk_tree_placed.json?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -0,0 +1,35 @@\n+{\n+  \"feature\": \"spacetechmod:sculk_tree\",\n+  \"placement\": [\n+    {\n+      \"type\": \"minecraft:count\",\n+      \"count\": {\n+        \"type\": \"minecraft:weighted_list\",\n+        \"distribution\": [\n+          {\n+            \"data\": 3,\n+            \"weight\": 9\n+          },\n+          {\n+            \"data\": 5,\n+            \"weight\": 1\n+          }\n+        ]\n+      }\n+    },\n+    {\n+      \"type\": \"minecraft:in_square\"\n+    },\n+    {\n+      \"type\": \"minecraft:surface_water_depth_filter\",\n+      \"max_water_depth\": 0\n+    },\n+    {\n+      \"type\": \"minecraft:heightmap\",\n+      \"heightmap\": \"OCEAN_FLOOR\"\n+    },\n+    {\n+      \"type\": \"minecraft:biome\"\n+    }\n+  ]\n+}\n\\ No newline at end of file"
+        },
+        {
+            "sha": "6ba230792333ba6c411ceec05e4cd9e0a6d1eba8",
+            "filename": "src/main/java/com/net/spacetechmod/block/custom/sculk/SculkAltarBlock.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 9,
+            "changes": 21,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Fblock%2Fcustom%2Fsculk%2FSculkAltarBlock.java",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Fblock%2Fcustom%2Fsculk%2FSculkAltarBlock.java",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Fblock%2Fcustom%2Fsculk%2FSculkAltarBlock.java?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -1,11 +1,14 @@\n package com.net.spacetechmod.block.custom.sculk;\n \n+import com.net.spacetechmod.enchantment.ModEnchantments;\n import com.net.spacetechmod.item.ModItems;\n import com.net.spacetechmod.util.ModLists;\n import net.minecraft.core.BlockPos;\n import net.minecraft.world.InteractionHand;\n import net.minecraft.world.InteractionResult;\n import net.minecraft.world.entity.player.Player;\n+import net.minecraft.world.item.EnchantedBookItem;\n+import net.minecraft.world.item.Item;\n import net.minecraft.world.item.ItemStack;\n import net.minecraft.world.item.Items;\n import net.minecraft.world.level.Level;\n@@ -33,11 +36,13 @@ public InteractionResult use(BlockState state, Level level, BlockPos pos, Player\n                 }\n                 case 1 -> {\n                     if(player.experienceLevel >= 250) {\n-                        stack = ModItems.SOUL_BOTTLE.get().getDefaultInstance();\n-                        player.addItem(stack);\n-                        player.getMainHandItem().shrink(1);\n-                        player.getOffhandItem().shrink(1);\n-                        player.experienceLevel -= 250;\n+                        if(player.getOffhandItem() == ModItems.SOUL_CRYSTAL.get().getDefaultInstance()) {\n+                            stack = ModItems.SOUL_BOTTLE.get().getDefaultInstance();\n+                            player.addItem(stack);\n+                            player.getMainHandItem().shrink(1);\n+                            player.getOffhandItem().shrink(1);\n+                            player.experienceLevel -= 250;\n+                        }\n                     }\n                 }\n                 case 2 -> {\n@@ -50,10 +55,8 @@ public InteractionResult use(BlockState state, Level level, BlockPos pos, Player\n                 }\n                 case 3 -> {\n                     if(player.experienceLevel >= 100) {\n-                        ItemStack stack = Items.ECHO_SHARD.getDefaultInstance();\n-                        player.getMainHandItem().shrink(1);\n-                        player.addItem(stack);\n-                        player.experienceLevel -= 20;\n+                        player.getMainHandItem().enchant(ModEnchantments.MAGIC_REPAIR.get(), 0);\n+                        player.experienceLevel -= 100;\n                     }\n                 }\n             }"
+        },
+        {
+            "sha": "348d65102f0b3843ec593fc0f523a00b9726fcd5",
+            "filename": "src/main/java/com/net/spacetechmod/block/entity/sculk/SculkHeartBlockEntity.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 7,
+            "changes": 14,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Fblock%2Fentity%2Fsculk%2FSculkHeartBlockEntity.java",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Fblock%2Fentity%2Fsculk%2FSculkHeartBlockEntity.java",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Fblock%2Fentity%2Fsculk%2FSculkHeartBlockEntity.java?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -37,17 +37,17 @@ public SculkHeartBlockEntity(BlockPos pos, BlockState state) {\n     }\n \n     public static void tick(Level level, BlockPos pos, BlockState state, SculkHeartBlockEntity entity) {\n-        if(timer >= 40) {\n-            level.playSound(level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z), entity.x, entity.y, entity.z, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 2.0f, 2.0f);\n+        entity.targetPlayer = level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z);\n+        if(timer >= 40 && entity.targetPlayer != null) {\n+            level.playSound(entity.targetPlayer, entity.x, entity.y, entity.z, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 2.0f, 2.0f);\n         }\n-        if(timer >= 80) {\n-            entity.targetPlayer = level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z);\n-            level.playSound(level.getNearestPlayer(TargetingConditions.DEFAULT, entity.x, entity.y, entity.z), entity.x, entity.y, entity.z, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 2.0f, 2.0f);\n+        if(timer >= 80 && entity.targetPlayer != null) {\n+            level.playSound(entity.targetPlayer, entity.x, entity.y, entity.z, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 2.0f, 2.0f);\n             entity.targetPlayer.addEffect(new MobEffectInstance(entity.getMobEffect(), 200, 1));\n             timer = 0;\n         }\n         else {\n-            timer++;\n+            ++timer;\n         }\n     }\n     public void summonWarden(ServerLevel level) {\n@@ -60,6 +60,6 @@ public void summonWarden(ServerLevel level) {\n     }\n \n     private MobEffect getMobEffect() {\n-        return ModLists.SCULK_HEART_EFFECT_LIST.get(random.nextInt(0, 8));\n+        return ModLists.SCULK_HEART_EFFECT_LIST.get(random.nextInt(0, 7));\n     }\n }\n\\ No newline at end of file"
+        },
+        {
+            "sha": "9dbec48fac16bd100bd655a78c4d5b68206d9fb5",
+            "filename": "src/main/java/com/net/spacetechmod/util/ModLists.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/SteelingCow437/Space-Tech-Mod/blob/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Futil%2FModLists.java",
+            "raw_url": "https://github.com/SteelingCow437/Space-Tech-Mod/raw/d88e2be2e2fe349c734a0af01d6a978a6c32a690/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Futil%2FModLists.java",
+            "contents_url": "https://api.github.com/repos/SteelingCow437/Space-Tech-Mod/contents/src%2Fmain%2Fjava%2Fcom%2Fnet%2Fspacetechmod%2Futil%2FModLists.java?ref=d88e2be2e2fe349c734a0af01d6a978a6c32a690",
+            "patch": "@@ -19,7 +19,9 @@ public class ModLists {\n \n     //A class that contains the lists of things that I use to improve the performance of things\n     //that benefit from using switches, such as barrels and the hammer. These lists didn't\n-    //want to play nice in any other class, so here they are.\n+    //want to play nice in any other class, so here they are. Consider this to be the backbone of\n+    //the mod's \"API\" I guess. I don't feel like learning how to make an API/implement a proper Forge\n+    //one, so here this is.\n \n     public static final ArrayList<Item> BUCKET_LIST = new ArrayList<Item>(\n             Arrays.asList(ModItems.OIL_BUCKET.get()));\n@@ -42,7 +44,7 @@ public class ModLists {\n \n     public static final ArrayList<MobEffect> SCULK_HEART_EFFECT_LIST = new ArrayList<MobEffect>(\n             Arrays.asList(MobEffects.DARKNESS, MobEffects.CONFUSION, MobEffects.DIG_SLOWDOWN, MobEffects.MOVEMENT_SLOWDOWN,\n-                    MobEffects.POISON, MobEffects.HARM, MobEffects.HUNGER, MobEffects.WEAKNESS, MobEffects.WITHER));\n+                    MobEffects.POISON, MobEffects.HUNGER, MobEffects.WEAKNESS, MobEffects.WITHER));\n \n     public static final ArrayList<MobEffect> CALIBRATED_SCULK_HEART_EFFECT_LIST = new ArrayList<MobEffect>(\n             Arrays.asList(MobEffects.REGENERATION, MobEffects.FIRE_RESISTANCE, MobEffects.DAMAGE_BOOST, MobEffects.DAMAGE_RESISTANCE,"
+        }
+    ]
+}

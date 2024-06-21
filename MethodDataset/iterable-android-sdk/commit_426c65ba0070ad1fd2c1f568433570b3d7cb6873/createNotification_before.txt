@@ -1,0 +1,123 @@
+        public IterableNotificationBuilder createNotification(Context context, Bundle extras) {
+            String applicationName = context.getApplicationInfo().loadLabel(context.getPackageManager()).toString();
+            String title = null;
+            String notificationBody = null;
+            String soundName = null;
+            String messageId = null;
+            String pushImage = null;
+            int soundResourceId = 0;
+            //TODO: When backend supports channels, these strings needs to change (channelName, channelId, channelDescription).
+            String channelDescription = "";
+
+            if (!extras.containsKey(IterableConstants.ITERABLE_DATA_KEY)) {
+                IterableLogger.w(IterableNotificationBuilder.TAG, "Notification doesn't have an Iterable payload. Skipping.");
+                return null;
+            }
+
+            if (isGhostPush(extras)) {
+                IterableLogger.w(IterableNotificationBuilder.TAG, "Received a ghost push notification. Skipping.");
+                return null;
+            }
+
+            JSONObject iterableJson = null;
+            title = extras.getString(IterableConstants.ITERABLE_DATA_TITLE, applicationName);
+            notificationBody = extras.getString(IterableConstants.ITERABLE_DATA_BODY);
+            soundName = extras.getString(IterableConstants.ITERABLE_DATA_SOUND);
+
+            if (soundName.contains(".") && soundName.charAt(0) != '.') {
+                String[] soundFile = soundName.split("\\.");
+                soundName = soundFile[0];
+                soundResourceId = context.getResources().getIdentifier(soundFile[0], "raw", context.getPackageName());
+            }
+
+            String channelName = getChannelName(context, soundName, soundResourceId);
+            IterableNotificationBuilder notificationBuilder = new IterableNotificationBuilder(context, getChannelId(context, soundName, soundResourceId));
+
+            String iterableData = extras.getString(IterableConstants.ITERABLE_DATA_KEY);
+
+            try {
+                iterableJson = new JSONObject(iterableData);
+
+                if (iterableJson.has(IterableConstants.ITERABLE_DATA_PUSH_IMAGE)) {
+                    pushImage = iterableJson.getString(IterableConstants.ITERABLE_DATA_PUSH_IMAGE);
+                }
+            } catch (JSONException e) {
+                IterableLogger.w(IterableNotificationBuilder.TAG, e.toString());
+            }
+
+            IterableNotificationData notificationData = new IterableNotificationData(iterableData);
+            notificationBuilder.iterableNotificationData = notificationData;
+            messageId = notificationBuilder.iterableNotificationData.getMessageId();
+
+            Notification notifPermissions = new Notification();
+            notifPermissions.defaults |= Notification.DEFAULT_LIGHTS;
+
+            notificationBuilder
+                    .setSmallIcon(getIconId(context))
+                    .setTicker(applicationName)
+                    .setAutoCancel(true)
+                    .setContentTitle(title)
+                    .setPriority(NotificationCompat.PRIORITY_HIGH)
+                    .setContentText(notificationBody);
+            if (Build.VERSION.SDK_INT >= 17) {
+                notificationBuilder.setShowWhen(true);
+            }
+            notificationBuilder.setImageUrl(pushImage);
+            notificationBuilder.setExpandedContent(notificationBody);
+
+            // The notification doesn't cancel properly if requestCode is negative
+            notificationBuilder.requestCode = Math.abs((int) System.currentTimeMillis());
+            IterableLogger.d(IterableNotificationBuilder.TAG, "Request code = " + notificationBuilder.requestCode);
+            if (messageId != null) {
+                notificationBuilder.requestCode = Math.abs(messageId.hashCode());
+                IterableLogger.d(IterableNotificationBuilder.TAG, "Request code = " + notificationBuilder.requestCode);
+            }
+
+            //Create an intent for TrampolineActivity instead of BroadcastReceiver
+            Intent trampolineActivityIntent = new Intent(IterableConstants.ACTION_PUSH_ACTION);
+            trampolineActivityIntent.setClass(context, IterableTrampolineActivity.class);
+            trampolineActivityIntent.putExtras(extras);
+            trampolineActivityIntent.putExtra(IterableConstants.ITERABLE_DATA_ACTION_IDENTIFIER, IterableConstants.ITERABLE_ACTION_DEFAULT);
+            trampolineActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+            // Action buttons
+            if (notificationData.getActionButtons() != null) {
+                int buttonCount = 0;
+                for (IterableNotificationData.Button button : notificationData.getActionButtons()) {
+                    notificationBuilder.createNotificationActionButton(context, button, extras);
+                    if (++buttonCount == 3)
+                        break;
+                }
+            }
+
+            PendingIntent notificationClickedIntent = PendingIntent.getActivity(context, notificationBuilder.requestCode,
+                    trampolineActivityIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+            notificationBuilder.setContentIntent(notificationClickedIntent);
+            notificationBuilder.setIsGhostPush(isGhostPush(extras));
+
+            try {
+                ApplicationInfo info = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
+                if (info.metaData != null) {
+                    int color = info.metaData.getInt(IterableConstants.NOTIFICATION_COLOR);
+                    try {
+                        color = context.getResources().getColor(color);
+                    } catch (Resources.NotFoundException ignored) {}
+                    notificationBuilder.setColor(color);
+                }
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+
+            PackageManager pm = context.getPackageManager();
+            if (pm.checkPermission(android.Manifest.permission.VIBRATE, context.getPackageName()) == PackageManager.PERMISSION_GRANTED) {
+                notifPermissions.defaults |= Notification.DEFAULT_VIBRATE;
+            }
+
+            notificationBuilder.setDefaults(notifPermissions.defaults);
+
+            removeUnusedChannel(context, soundName, soundResourceId);
+            registerChannelIfEmpty(context, getChannelId(context, soundName, soundResourceId), channelName, channelDescription, soundName, soundResourceId);
+
+            return notificationBuilder;
+        }

@@ -1,0 +1,150 @@
+    private void handleInput() {
+
+        float cameraSpeed = camera.zoom * 2048;
+
+        //System.out.println("Zoom: "+camera.zoom);
+
+        // Rotate the sprite with left arrow key
+        if (InputManager.isAPressed()) {
+            for (Ship ship : playerShips) {
+                ship.rotate(+0.3f);
+            }
+        }
+
+        // Rotate the sprite with right arrow key
+        if (InputManager.isDPressed()) {
+            for (Ship ship : playerShips) {
+                ship.rotate(-0.3f);
+            }
+        }
+
+        // Shoot lasers
+        if (InputManager.isSpacePressed()) {
+            if (!laserSpawnTimeout) {
+                for (Ship ship : playerShips) {
+
+                    Laser laser = ship.fireLaser(blueLaserTexture, ship);
+                    laser.setShip(ship);
+                    lasers.add(laser);
+
+                    laserBlast2.play(2.0f);
+                    laserSpawnTimeout = true;
+                    laserSpawnCounter = 0;
+
+
+                }
+            }
+        }
+//attack player
+        if (InputManager.isRightMousePressed()) {
+            for (CpuShip cpuShip : cpuShips) {
+
+                cpuShip.setActionState(Ship.ActionState.ATTACK, cpuShip.getActionState());
+
+            }
+
+        }
+
+        if (shipSpawnTimeout) {
+            if (shipSpawnCounter >= 90) {
+
+                shipSpawnTimeout = false;
+            } else {
+                shipSpawnCounter++;
+            }
+        }
+// For player ship only during runtime. CpuShip laser timing is handled differently.
+        if (laserSpawnTimeout) {
+            if (laserSpawnCounter >= 200) {
+
+                laserSpawnTimeout = false;
+            } else {
+                laserSpawnCounter++;
+            }
+        }
+
+        int actionCounter = 0;
+
+        if (InputManager.isLeftMousePressed()) {
+            if (!shipSpawnTimeout) {
+                Vector2 position = new Vector2(camera.position.x, camera.position.y);
+                CpuShip.ActionState actionState = Ship.ActionState.IDLE;
+                Rectangle hitBox = new Rectangle();
+                ObjectSet<Ship> targets = new ObjectSet<>();
+                CpuShip cpuShip = new CpuShip(greenShipTexture, position, 400f, actionState, Ship.ActionState.IDLE, hitBox, actionCounter, Ship.Faction.TEAL, targets);
+                cpuShip.setPosition(position.x, position.y);
+                cpuShip.setScale(shipScale);
+                cpuShips.add(cpuShip);
+                copiedSet.add(cpuShip);
+
+
+                shipSpawnTimeout = true;
+                shipSpawnCounter = 0;
+            }
+        }
+
+
+        float speedLimit = 500f;
+        // Speed up.
+        if (InputManager.isWPressed()) {
+
+            for (PlayerShip playerShip : playerShips) {
+
+                if (playerShip.getSpeed() < speedLimit && playerShip.getSpeed() >= 0) {
+                    playerShip.setSpeed(playerShip.getSpeed() + 1);
+                }
+
+            }
+        }
+
+        // Slow down.
+        if (InputManager.isSPressed()) {
+            for (PlayerShip playerShip : playerShips) {
+                if (playerShip.getSpeed() <= speedLimit && playerShip.getSpeed() > 0) {
+                    playerShip.setSpeed(playerShip.getSpeed() - 1);
+                }
+            }
+        }
+
+        if (InputManager.isEscPressed()) {
+            Gdx.app.exit();
+        }
+
+        if (InputManager.isLeftPressed()) {
+            camera.translate(-cameraSpeed * Gdx.graphics.getDeltaTime(), 0);
+        }
+        if (InputManager.isRightPressed()) {
+            camera.translate(cameraSpeed * Gdx.graphics.getDeltaTime(), 0);
+        }
+        if (InputManager.isUpPressed()) {
+            camera.translate(0, cameraSpeed * Gdx.graphics.getDeltaTime());
+        }
+        if (InputManager.isDownPressed()) {
+            camera.translate(0, -cameraSpeed * Gdx.graphics.getDeltaTime());
+
+            if (!shipSpawnTimeout) {
+                Vector2 position = new Vector2(camera.position.x, camera.position.y);
+                CpuShip.ActionState actionState = Ship.ActionState.IDLE;
+                Rectangle hitBox = new Rectangle();
+                ObjectSet<Ship> targets = new ObjectSet<>();
+                CpuShip cpuShip = new CpuShip(otherShipTexture, position, 400f, actionState, Ship.ActionState.IDLE, hitBox, actionCounter, Ship.Faction.PURPLE, targets);
+                cpuShip.setPosition(position.x, position.y);
+                cpuShip.setScale(shipScale);
+                cpuShips.add(cpuShip);
+
+
+                shipSpawnTimeout = true;
+                shipSpawnCounter = 0;
+            }
+
+        }
+
+        if (InputManager.isQPressed()) {
+            zoomIn();
+        }
+
+        if (InputManager.isEPressed()) {
+            zoomOut();
+        }
+
+    }

@@ -1,0 +1,4 @@
+    public File findPrimaryImageFile() throws FileNotFoundException
+    {
+        return findImageFile(primaryViewIndex);
+    }

@@ -1,0 +1,20 @@
+    public ReadonlyNativeVectorBuffer getLightIntensityData()
+    {
+        // Store the light positions in a uniform buffer
+        if (!lightIntensityList.isEmpty())
+        {
+            NativeVectorBuffer lightIntensityData = NativeVectorBufferFactory.getInstance().createEmpty(NativeDataType.FLOAT, 4, lightIntensityList.size());
+            for (int k = 0; k < lightPositionList.size(); k++)
+            {
+                lightIntensityData.set(k, 0, lightIntensityList.get(k).x);
+                lightIntensityData.set(k, 1, lightIntensityList.get(k).y);
+                lightIntensityData.set(k, 2, lightIntensityList.get(k).z);
+                lightIntensityData.set(k, 3, 1.0f);
+            }
+            return lightIntensityData;
+        }
+        else
+        {
+            return null;
+        }
+    }

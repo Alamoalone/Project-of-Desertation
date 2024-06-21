@@ -1,0 +1,98 @@
+{
+    "sha": "626dd43a3474daad095bb65481a4d3476d914b98",
+    "node_id": "C_kwDOHkuvsNoAKDYyNmRkNDNhMzQ3NGRhYWQwOTViYjY1NDgxYTRkMzQ3NmQ5MTRiOTg",
+    "commit": {
+        "author": {
+            "name": "panagiotis",
+            "email": "panagiotisdrakatos@gmail.com",
+            "date": "2023-11-11T19:17:23Z"
+        },
+        "committer": {
+            "name": "panagiotis",
+            "email": "panagiotisdrakatos@gmail.com",
+            "date": "2023-11-11T19:17:23Z"
+        },
+        "message": "Fixing a bug in receipt server task causes null pointer exception",
+        "tree": {
+            "sha": "6383fc725860bcc7028c507a6c67fffe4ec8c63e",
+            "url": "https://api.github.com/repos/Adrestus-net/Adrestus/git/trees/6383fc725860bcc7028c507a6c67fffe4ec8c63e"
+        },
+        "url": "https://api.github.com/repos/Adrestus-net/Adrestus/git/commits/626dd43a3474daad095bb65481a4d3476d914b98",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Adrestus-net/Adrestus/commits/626dd43a3474daad095bb65481a4d3476d914b98",
+    "html_url": "https://github.com/Adrestus-net/Adrestus/commit/626dd43a3474daad095bb65481a4d3476d914b98",
+    "comments_url": "https://api.github.com/repos/Adrestus-net/Adrestus/commits/626dd43a3474daad095bb65481a4d3476d914b98/comments",
+    "author": {
+        "login": "PanagiotisDrakatos",
+        "id": 11703704,
+        "node_id": "MDQ6VXNlcjExNzAzNzA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11703704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/PanagiotisDrakatos",
+        "html_url": "https://github.com/PanagiotisDrakatos",
+        "followers_url": "https://api.github.com/users/PanagiotisDrakatos/followers",
+        "following_url": "https://api.github.com/users/PanagiotisDrakatos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/PanagiotisDrakatos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/PanagiotisDrakatos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/PanagiotisDrakatos/subscriptions",
+        "organizations_url": "https://api.github.com/users/PanagiotisDrakatos/orgs",
+        "repos_url": "https://api.github.com/users/PanagiotisDrakatos/repos",
+        "events_url": "https://api.github.com/users/PanagiotisDrakatos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/PanagiotisDrakatos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "PanagiotisDrakatos",
+        "id": 11703704,
+        "node_id": "MDQ6VXNlcjExNzAzNzA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11703704?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/PanagiotisDrakatos",
+        "html_url": "https://github.com/PanagiotisDrakatos",
+        "followers_url": "https://api.github.com/users/PanagiotisDrakatos/followers",
+        "following_url": "https://api.github.com/users/PanagiotisDrakatos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/PanagiotisDrakatos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/PanagiotisDrakatos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/PanagiotisDrakatos/subscriptions",
+        "organizations_url": "https://api.github.com/users/PanagiotisDrakatos/orgs",
+        "repos_url": "https://api.github.com/users/PanagiotisDrakatos/repos",
+        "events_url": "https://api.github.com/users/PanagiotisDrakatos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/PanagiotisDrakatos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b64bd4d07b3929994f2e0bb31dac270ad9b7c0e1",
+            "url": "https://api.github.com/repos/Adrestus-net/Adrestus/commits/b64bd4d07b3929994f2e0bb31dac270ad9b7c0e1",
+            "html_url": "https://github.com/Adrestus-net/Adrestus/commit/b64bd4d07b3929994f2e0bb31dac270ad9b7c0e1"
+        }
+    ],
+    "stats": {
+        "total": 46,
+        "additions": 31,
+        "deletions": 15
+    },
+    "files": [
+        {
+            "sha": "192cdb786a3b7bed2b886c6f08b1150ee18c01f7",
+            "filename": "adrestus-protocol/src/main/java/io/Adrestus/protocol/BindServerReceiptTask.java",
+            "status": "modified",
+            "additions": 31,
+            "deletions": 15,
+            "changes": 46,
+            "blob_url": "https://github.com/Adrestus-net/Adrestus/blob/626dd43a3474daad095bb65481a4d3476d914b98/adrestus-protocol%2Fsrc%2Fmain%2Fjava%2Fio%2FAdrestus%2Fprotocol%2FBindServerReceiptTask.java",
+            "raw_url": "https://github.com/Adrestus-net/Adrestus/raw/626dd43a3474daad095bb65481a4d3476d914b98/adrestus-protocol%2Fsrc%2Fmain%2Fjava%2Fio%2FAdrestus%2Fprotocol%2FBindServerReceiptTask.java",
+            "contents_url": "https://api.github.com/repos/Adrestus-net/Adrestus/contents/adrestus-protocol%2Fsrc%2Fmain%2Fjava%2Fio%2FAdrestus%2Fprotocol%2FBindServerReceiptTask.java?ref=626dd43a3474daad095bb65481a4d3476d914b98",
+            "patch": "@@ -3,6 +3,7 @@\n import io.Adrestus.config.SocketConfigOptions;\n import io.Adrestus.core.*;\n import io.Adrestus.core.Resourses.CachedLatestBlocks;\n+import io.Adrestus.core.Resourses.CachedReceiptSemaphore;\n import io.Adrestus.core.Resourses.CachedZoneIndex;\n import io.Adrestus.core.RingBuffer.publisher.ReceiptEventPublisher;\n import io.Adrestus.crypto.elliptic.mapper.BigIntegerSerializer;\n@@ -63,11 +64,14 @@ public BindServerReceiptTask() {\n \n     public void callBackReceive() {\n         this.receive = x -> {\n+            CachedReceiptSemaphore.getInstance().getSemaphore().acquire();\n             Receipt receipt = recep.decode(x);\n-            if(receipt.getReceiptBlock()==null){\n+            if (receipt.getReceiptBlock() == null) {\n+                CachedReceiptSemaphore.getInstance().getSemaphore().release();\n                 return \"\";\n             }\n-            if(receipt.getReceiptBlock().getBlock_hash().equals(\"\")){\n+            if (receipt.getReceiptBlock().getBlock_hash().equals(\"\")) {\n+                CachedReceiptSemaphore.getInstance().getSemaphore().release();\n                 return \"\";\n             }\n             List<String> ips = CachedLatestBlocks.getInstance().getCommitteeBlock().getStructureMap().get(receipt.getZoneFrom()).values().stream().collect(Collectors.toList());\n@@ -81,26 +85,38 @@ public void callBackReceive() {\n                     throw new RuntimeException(e);\n                 }\n             });\n-            RpcAdrestusClient client = new RpcAdrestusClient(new TransactionBlock(), toConnectTransaction, CachedEventLoop.getInstance().getEventloop());\n-            client.connect();\n+            RpcAdrestusClient client = null;\n+            try {\n+                client = new RpcAdrestusClient(new TransactionBlock(), toConnectTransaction, CachedEventLoop.getInstance().getEventloop());\n+                client.connect();\n \n-            ArrayList<String> to_search = new ArrayList<>();\n-            to_search.add(String.valueOf(receipt.getReceiptBlock().getHeight()));\n+                ArrayList<String> to_search = new ArrayList<>();\n+                to_search.add(String.valueOf(receipt.getReceiptBlock().getHeight()));\n \n-            List<TransactionBlock> currentblock = client.getBlock(to_search);\n-            if (currentblock.isEmpty()) {\n-                return \"\";\n-            }\n+                List<TransactionBlock> currentblock = client.getBlock(to_search);\n+                if (currentblock.isEmpty()) {\n+                    CachedReceiptSemaphore.getInstance().getSemaphore().release();\n+                    return \"\";\n+                }\n \n-            int index = Collections.binarySearch(currentblock.get(currentblock.size() - 1).getTransactionList(), receipt.getTransaction());\n-            Transaction trx = currentblock.get(currentblock.size() - 1).getTransactionList().get(index);\n+                int index = Collections.binarySearch(currentblock.get(currentblock.size() - 1).getTransactionList(), receipt.getTransaction());\n+                Transaction trx = currentblock.get(currentblock.size() - 1).getTransactionList().get(index);\n \n-            ReceiptBlock receiptBlock1 = new ReceiptBlock(StatusType.PENDING, receipt, currentblock.get(currentblock.size() - 1), trx);\n+                ReceiptBlock receiptBlock1 = new ReceiptBlock(StatusType.PENDING, receipt, currentblock.get(currentblock.size() - 1), trx);\n \n \n-            publisher.publish(receiptBlock1);\n+                publisher.publish(receiptBlock1);\n+            } catch (Exception e) {\n \n-            return \"\";\n+            }\n+            finally {\n+                if (client != null) {\n+                    client.close();\n+                    client=null;\n+                }\n+                CachedReceiptSemaphore.getInstance().getSemaphore().release();\n+                return \"\";\n+            }\n         };\n     }\n "
+        }
+    ]
+}

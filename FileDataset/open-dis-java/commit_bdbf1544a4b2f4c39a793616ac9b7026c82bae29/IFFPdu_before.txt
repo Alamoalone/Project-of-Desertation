@@ -1,0 +1,22 @@
+    public void setLayer2(IFFLayer2 layer2) {
+        this.layer2 = layer2;
+    }
+
+    public int getMarshalledSize() {
+        int marshalSize = 0;
+        marshalSize = super.getMarshalledSize();
+        marshalSize = marshalSize + layer1.getMarshalledSize();//emittingEntityId
+        if (layer2 != null) {
+            marshalSize = marshalSize + layer2.getMarshalledSize();
+        }
+        return marshalSize;
+    }
+
+    public void unmarshal(java.nio.ByteBuffer buff) {
+        super.unmarshal(buff);
+        layer1.unmarshal(buff);
+        if (isLayerPresent(2)) {
+            layer2.unmarshal(buff);
+        }
+    } // end of unmarshal method  
+

@@ -1,0 +1,4 @@
+    public void onPause() {
+        super.onPause();
+        getActivity().unbindService(this);
+    }

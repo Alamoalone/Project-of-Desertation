@@ -1,0 +1,98 @@
+{
+    "sha": "9b839326cea723762eac8677011399d61eadf444",
+    "node_id": "C_kwDOApAbDNoAKDliODM5MzI2Y2VhNzIzNzYyZWFjODY3NzAxMTM5OWQ2MWVhZGY0NDQ",
+    "commit": {
+        "author": {
+            "name": "Mendel Douek",
+            "email": "mendel.douek@prodege.com",
+            "date": "2022-12-16T23:29:51Z"
+        },
+        "committer": {
+            "name": "Mendel Douek",
+            "email": "mendel.douek@prodege.com",
+            "date": "2022-12-16T23:29:51Z"
+        },
+        "message": "Fix tags null pointer exception by checking if tags are null",
+        "tree": {
+            "sha": "22477a3956517028af50c77e2ebe1124a046f5c9",
+            "url": "https://api.github.com/repos/jenkinsci/amazon-ecs-plugin/git/trees/22477a3956517028af50c77e2ebe1124a046f5c9"
+        },
+        "url": "https://api.github.com/repos/jenkinsci/amazon-ecs-plugin/git/commits/9b839326cea723762eac8677011399d61eadf444",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jenkinsci/amazon-ecs-plugin/commits/9b839326cea723762eac8677011399d61eadf444",
+    "html_url": "https://github.com/jenkinsci/amazon-ecs-plugin/commit/9b839326cea723762eac8677011399d61eadf444",
+    "comments_url": "https://api.github.com/repos/jenkinsci/amazon-ecs-plugin/commits/9b839326cea723762eac8677011399d61eadf444/comments",
+    "author": {
+        "login": "Mmdouek",
+        "id": 131493371,
+        "node_id": "U_kgDOB9Zt-w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/131493371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mmdouek",
+        "html_url": "https://github.com/Mmdouek",
+        "followers_url": "https://api.github.com/users/Mmdouek/followers",
+        "following_url": "https://api.github.com/users/Mmdouek/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mmdouek/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mmdouek/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mmdouek/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mmdouek/orgs",
+        "repos_url": "https://api.github.com/users/Mmdouek/repos",
+        "events_url": "https://api.github.com/users/Mmdouek/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mmdouek/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Mmdouek",
+        "id": 131493371,
+        "node_id": "U_kgDOB9Zt-w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/131493371?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Mmdouek",
+        "html_url": "https://github.com/Mmdouek",
+        "followers_url": "https://api.github.com/users/Mmdouek/followers",
+        "following_url": "https://api.github.com/users/Mmdouek/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Mmdouek/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Mmdouek/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Mmdouek/subscriptions",
+        "organizations_url": "https://api.github.com/users/Mmdouek/orgs",
+        "repos_url": "https://api.github.com/users/Mmdouek/repos",
+        "events_url": "https://api.github.com/users/Mmdouek/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Mmdouek/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "096c9b618d860d73ceec2bdf3878f16bbce7455c",
+            "url": "https://api.github.com/repos/jenkinsci/amazon-ecs-plugin/commits/096c9b618d860d73ceec2bdf3878f16bbce7455c",
+            "html_url": "https://github.com/jenkinsci/amazon-ecs-plugin/commit/096c9b618d860d73ceec2bdf3878f16bbce7455c"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 4,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "672da3f57cd33612834a301d206c47443270f7cd",
+            "filename": "src/main/java/com/cloudbees/jenkins/plugins/amazonecs/ECSService.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 2,
+            "changes": 6,
+            "blob_url": "https://github.com/jenkinsci/amazon-ecs-plugin/blob/9b839326cea723762eac8677011399d61eadf444/src%2Fmain%2Fjava%2Fcom%2Fcloudbees%2Fjenkins%2Fplugins%2Famazonecs%2FECSService.java",
+            "raw_url": "https://github.com/jenkinsci/amazon-ecs-plugin/raw/9b839326cea723762eac8677011399d61eadf444/src%2Fmain%2Fjava%2Fcom%2Fcloudbees%2Fjenkins%2Fplugins%2Famazonecs%2FECSService.java",
+            "contents_url": "https://api.github.com/repos/jenkinsci/amazon-ecs-plugin/contents/src%2Fmain%2Fjava%2Fcom%2Fcloudbees%2Fjenkins%2Fplugins%2Famazonecs%2FECSService.java?ref=9b839326cea723762eac8677011399d61eadf444",
+            "patch": "@@ -307,8 +307,10 @@ TaskDefinition registerTemplate(final String cloudName, final ECSTaskTemplate te\n             List<Tag> taskDefinitionTags = new ArrayList<>();\n             taskDefinitionTags.add(jenkinsLabelTag);\n             taskDefinitionTags.add(jenkinsTemplateNameTag);\n-            for (ECSTaskTemplate.Tag tag: template.getTags()) {\n-                taskDefinitionTags.add(new Tag().withKey(tag.name).withValue(tag.value));\n+            if (template.getTags() != null) {\n+                for (ECSTaskTemplate.Tag tag: template.getTags()) {\n+                    taskDefinitionTags.add(new Tag().withKey(tag.name).withValue(tag.value));\n+                }\n             }\n \n             final RegisterTaskDefinitionRequest request = new RegisterTaskDefinitionRequest()"
+        }
+    ]
+}

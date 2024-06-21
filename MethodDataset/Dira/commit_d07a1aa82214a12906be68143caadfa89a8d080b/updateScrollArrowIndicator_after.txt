@@ -1,0 +1,12 @@
+    public void updateScrollArrowIndicator() {
+        if (getRoom().getUnreadMessagesIds().size() == 0 && isScrollIndicatorShown) {
+            performScaleAnimation(1, 0, binding.scrollArrowUnreadIndicator);
+            isScrollIndicatorShown = false;
+            return;
+        }
+
+        if (getRoom().getUnreadMessagesIds().size() != 0 && !isScrollIndicatorShown) {
+            performScaleAnimation(0, 1, binding.scrollArrowUnreadIndicator);
+            isScrollIndicatorShown = true;
+        }
+    }

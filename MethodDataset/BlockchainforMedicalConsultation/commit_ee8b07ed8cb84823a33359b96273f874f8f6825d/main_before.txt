@@ -1,0 +1,18 @@
+    public static void main(String[] args) {
+        RSA rsa = new RSA();
+
+        // Generate key pair with 2048-bit length
+        rsa.generateKeyPair(2048);
+
+        // Example usage with string
+        String originalMessage = "Hello, RSA!";
+        System.out.println("Original message: " + originalMessage);
+
+        // Encryption
+        BigInteger encryptedMessage = rsa.encrypt(originalMessage);
+        System.out.println("Encrypted message: " + encryptedMessage);
+
+        // Decryption
+        String decryptedMessage = rsa.decrypt(encryptedMessage);
+        System.out.println("Decrypted message: " + decryptedMessage);
+    }

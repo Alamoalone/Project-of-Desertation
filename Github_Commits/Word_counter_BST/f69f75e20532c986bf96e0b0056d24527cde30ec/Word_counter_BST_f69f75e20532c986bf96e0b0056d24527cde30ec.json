@@ -1,0 +1,98 @@
+{
+    "sha": "f69f75e20532c986bf96e0b0056d24527cde30ec",
+    "node_id": "C_kwDOKKD7BtoAKGY2OWY3NWUyMDUzMmM5ODZiZjk2ZTBiMDA1NmQyNDUyN2NkZTMwZWM",
+    "commit": {
+        "author": {
+            "name": "Antony",
+            "email": "antonis132011@hotmail.com",
+            "date": "2023-09-22T12:34:16Z"
+        },
+        "committer": {
+            "name": "Antony",
+            "email": "antonis132011@hotmail.com",
+            "date": "2023-09-22T12:34:16Z"
+        },
+        "message": "added prepositions list, fixed null pointer exception",
+        "tree": {
+            "sha": "18be2df29196a8a706e05700fd731bb5fad9d22e",
+            "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/git/trees/18be2df29196a8a706e05700fd731bb5fad9d22e"
+        },
+        "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/git/commits/f69f75e20532c986bf96e0b0056d24527cde30ec",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/commits/f69f75e20532c986bf96e0b0056d24527cde30ec",
+    "html_url": "https://github.com/AntonisGRENDE/Word_counter_BST/commit/f69f75e20532c986bf96e0b0056d24527cde30ec",
+    "comments_url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/commits/f69f75e20532c986bf96e0b0056d24527cde30ec/comments",
+    "author": {
+        "login": "AntonisGRENDE",
+        "id": 99513059,
+        "node_id": "U_kgDOBe5y4w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99513059?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AntonisGRENDE",
+        "html_url": "https://github.com/AntonisGRENDE",
+        "followers_url": "https://api.github.com/users/AntonisGRENDE/followers",
+        "following_url": "https://api.github.com/users/AntonisGRENDE/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AntonisGRENDE/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AntonisGRENDE/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AntonisGRENDE/subscriptions",
+        "organizations_url": "https://api.github.com/users/AntonisGRENDE/orgs",
+        "repos_url": "https://api.github.com/users/AntonisGRENDE/repos",
+        "events_url": "https://api.github.com/users/AntonisGRENDE/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AntonisGRENDE/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "AntonisGRENDE",
+        "id": 99513059,
+        "node_id": "U_kgDOBe5y4w",
+        "avatar_url": "https://avatars.githubusercontent.com/u/99513059?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AntonisGRENDE",
+        "html_url": "https://github.com/AntonisGRENDE",
+        "followers_url": "https://api.github.com/users/AntonisGRENDE/followers",
+        "following_url": "https://api.github.com/users/AntonisGRENDE/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AntonisGRENDE/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AntonisGRENDE/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AntonisGRENDE/subscriptions",
+        "organizations_url": "https://api.github.com/users/AntonisGRENDE/orgs",
+        "repos_url": "https://api.github.com/users/AntonisGRENDE/repos",
+        "events_url": "https://api.github.com/users/AntonisGRENDE/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AntonisGRENDE/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c6b9ee0de8dd33f70501b80a1f2f1dab22d9b849",
+            "url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/commits/c6b9ee0de8dd33f70501b80a1f2f1dab22d9b849",
+            "html_url": "https://github.com/AntonisGRENDE/Word_counter_BST/commit/c6b9ee0de8dd33f70501b80a1f2f1dab22d9b849"
+        }
+    ],
+    "stats": {
+        "total": 48,
+        "additions": 31,
+        "deletions": 17
+    },
+    "files": [
+        {
+            "sha": "ac8375f0d76135b462ee7ad90f66c9da6991d51c",
+            "filename": "src/WordFreq.java",
+            "status": "modified",
+            "additions": 31,
+            "deletions": 17,
+            "changes": 48,
+            "blob_url": "https://github.com/AntonisGRENDE/Word_counter_BST/blob/f69f75e20532c986bf96e0b0056d24527cde30ec/src%2FWordFreq.java",
+            "raw_url": "https://github.com/AntonisGRENDE/Word_counter_BST/raw/f69f75e20532c986bf96e0b0056d24527cde30ec/src%2FWordFreq.java",
+            "contents_url": "https://api.github.com/repos/AntonisGRENDE/Word_counter_BST/contents/src%2FWordFreq.java?ref=f69f75e20532c986bf96e0b0056d24527cde30ec",
+            "patch": "@@ -4,27 +4,31 @@\n public class WordFreq implements Comparator<WordFreq>{\n     private int frequency;\n     private String word, root, postfix, type[];\n-    private static final MyLinkedList <String> verbPostfix = new MyLinkedList<>(\"ζομαστε\", \"ζοταν\", \"ζεσαι\", \"ζεται\", \"ζεται\", \"ζομαι\", \"νομαστε\", \"θηκαμε\", \"ομαστε\", \"ομασταν\", \"μαστε\", \"ομασταν\" , \"οσασταν\", \"ομουνα\", \"οσουνα\", \"ουσαμε\", \"ουσατε\", \"ουσαν\",\n-                                                                                    \"νησα\", \"νησε\", \"νησαμε\", \"νησατε\", \"νησαν\", \"νουμε\", \"νετε\", \"νουν\", \"ασαμε\", \"ασατε\", \"ασουμε\", \"νουσαμε\", \"ναμε\", \"νας\", \"νησει\",\n-                                                                                    \"ησουμε\", \"ησετε\" , \"ησουν\", \"ηθηκαν\", \"ηθηκε\", \"ησει\", \"ησετε\", \"ησουν\", \"σουμε\",  \"αγαμε\", \"σαστε\", \"ησεις\", \"ησει\",\n-                                                                                    \"ξουμε\", \"χνω\", \"χνεται\", \"σεις\", \"νουν\", \"ουσα\", \"ουσε\", \"ουσες\", \"οτανε\", \"ουνταν\",\"μασταν\", \"ομουν\", \"οσουν\", \"τομαι\", \"νομαι\", \"ομαι\",\n-                                                                                    \"εθηκες\", \"εθηκε\", \"εθηκαμε\", \"εθηκατε\", \"εθηκαν\", \"νθεις\",\"νθω\", \"νομουν\",\n-                                                                                    \"ζονται\", \"ονται\",  \"ωμαστε\", \"ωσαστε\",\"μαστε\", \"σαστε\", \"ζεσαι\", \"στηκε\", \"στει\", \"στηκα\", \"στηκη\", \"ισεις\", \"σισουν\", \"σουμε\", \"ηθουμε\", \"θουμε\", \"ιουμαι\", \"ηκαμε\",\n-                                                                                    \"ζουμε\", \"ιοαταν\", \"ιαιμαι\", \"ιεται\", \"ιετε\", \"εθηκα\", \"εσαι\", \"εται\",\"οντε\", \"εσε\", \"χνω\", \"χνεις\", \"χνει\", \"ζουν\", \"ηθηκα\",\n-                                                                                    \"χνουμε\", \"χναμε\", \"χνατε\", \"χνετε\", \"χνεται\", \"χνουν\", \"χναν\", \"στει\", \"στηκε\", \"νοταν\", \"οταν\", \"ιζουμε\", \"χτω\", \"χτηκα\", \"χτεις\", \"χτουμε\", \"χτειτε\", \"χτουν\", \"τομουν\", \"τει\", \"ηθει\", \"ηθεις\",\n+    private static final MyLinkedList <String> verbPostfix = new MyLinkedList<>(\"ζομαστε\", \"ζοταν\", \"ζεσαι\", \"ζεται\", \"ζεται\", \"ζομαι\", \"νομαστε\", \"ομαστε\", \"ομασταν\", \"ομασταν\", \"οσασταν\", \"ομουνα\", \"οσουνα\", \"ουσαμε\", \"ουσατε\", \"ουσαν\",\n+                                                                                    \"ηθηκαμε\", \"ωμασταν\", \"θηκαμε\",\"νησα\", \"νησε\", \"νησαμε\", \"νησατε\", \"νησαν\", \"νουμε\", \"νετε\", \"νουν\", \"ασαμε\", \"ασατε\", \"ασουμε\", \"νουσαμε\", \"ναμε\", \"νας\", \"νησει\",\n+                                                                                    \"ησουμε\", \"ησετε\" , \"ησουν\", \"ηθηκαν\", \"ηθηκε\", \"ησει\", \"ησετε\", \"ησουν\", \"αγαμε\", \"σαστε\", \"ησεις\", \"ησει\",\n+                                                                                    \"ξουμε\", \"χνω\", \"χνεται\", \"νουν\", \"ουσα\", \"ουσε\", \"ουσες\", \"οτανε\", \"ουνταν\",\"μασταν\", \"ομουν\", \"οσουν\", \"τομαι\", \"νομαι\", \"ομαι\",\n+                                                                                    \"εθηκες\", \"εθηκε\", \"εθηκαμε\", \"εθηκατε\", \"εθηκαν\", \"νθεις\",\"νθω\", \"νομουν\", \"ζονται\", \"ονται\",  \"ωμαστε\", \"ωσαστε\",\"μαστε\", \"σαστε\", \"ζεσαι\",\n+                                                                                    \"στηκε\", \"στει\", \"στηκα\", \"στηκη\", \"ισεις\", \"σισουν\", \"ασουμε\", \"αζουμε\", \"αζετε\", \"αζουν\",\"ηθουμε\", \"θουμε\", \"ιουμαι\", \"ηκαμε\",\n+                                                                                    \"ιοαταν\", \"ιαιμαι\", \"ιεται\", \"ιετε\", \"εθηκα\", \"εσαι\", \"εται\",\"οντε\", \"εσε\", \"χνω\", \"χνεις\", \"χνει\", \"ηθηκα\",\n+                                                                                    \"χνουμε\", \"χναμε\", \"χνατε\", \"χνετε\", \"χνεται\", \"χνουν\", \"χναν\", \"στει\", \"στηκε\", \"νοταν\", \"οταν\",\n+                                                                                    \"χτω\", \"χτηκα\", \"χτεις\", \"χτουμε\", \"χτειτε\", \"χτουν\", \"τομουν\", \"τει\", \"ηθει\", \"ηθεις\",\n                                                                                     \"ψει\", \"ιζετε\", \"σετε\", \"αξουνε\", \"αχνω\",\"αξεις\", \"αξει\", \"αξουμε\", \"αξετε\", \"αξουν\", \"αγμενα\", \"αχνω\", \"θεις\", \"κα\", \"κες\", \"κε\", \"ειται\",\n                                                                                     \"ιεμαι\", \"ουμαι\", \"εμαι\", \"μαι\", \"σαι\", \"ναι\", \"νανε\", \"αζαν\", \"τσε\", \"ευω\", \"ευει\", \"θηκε\", \"αινω\", \"αινεις\", \"αινει\", \"αινουμε\", \"αινετε\", \"αινουν\", \"σουν\",\n-                                                                                    \"ζουνε\", \"ηκε\", \"ηκα\", \"αξα\", \"ζων\", \"ζας\", \"ζης\", \"χτει\", \"ναει\", \"εσε\", \"χνω\", \"ειτε\", \"ετε\", \"ουν\", \"νεται\",\n-                                                                                    \"ασα\", \"αζεται\", \"ασω\", \"ασεις\", \"ασει\", \"ασουμε\", \"ασετε\", \"ασουν\", \"ηνω\", \"ηνεις\", \"ηνει\", \"ηνουμε\", \"ηνετε\", \"ηνουν\", \"αγε\", \"αγες\", \"αγε\",\n-                                                                                    \"αγαμε\", \"αγατε\", \"αγαν\", \"αζω\", \"αζεις\", \"αζει\", \"αζουμε\", \"αζετε\", \"αζουν\", \"αξω\", \"αζα\", \"αζες\", \"αζε\", \"αζαμε\", \"αζατε\", \"αζαν\",\n-                                                                                    \"ησες\", \"ησαμε\",\"ησατε\",\"ησαν\", \"σαμε\", \"σατε\", \"σατε\", \"σεις\", \"ησω\", \"ησα\", \"ησει\", \"ησε\", \"αγα\", \"ασε\", \"εψα\", \"αμε\", \"αω\", \"αει\", \"ησει\",\n-                                                                                    \"στω\", \"ανε\", \"θουν\",\"ουμε\", \"αεις\", \"αξε\", \"ξεις\", \"ζει\", \"ουνε\", \"ζουν\", \"θει\", \"είς\", \"ατε\", \"γα\", \"με\", \"γε\", \"εσει\",\"ησε\", \"σαν\", \"ξα\", \"ξω\",\n+                                                                                    \"ζουνε\", \"ηκε\", \"ηκα\", \"αξα\", \"ζων\", \"ζας\", \"ζης\", \"χτει\", \"ναει\", \"εσε\", \"χνω\", \"ειτε\", \"ετε\", \"νεται\",\n+                                                                                    \"ασα\", \"αζεται\", \"ασω\", \"ασεις\", \"ασει\", \"ζουμε\", \"σουμε\", \"ζουν\", \"ουν\", \"ασετε\", \"ασουν\", \"ηνω\", \"ηνεις\", \"ηνει\", \"ηνουμε\", \"ηνετε\", \"ηνουν\", \"αγε\", \"αγες\", \"αγε\",\n+                                                                                    \"αγαμε\", \"αγατε\", \"αγαν\", \"αζω\", \"αζεις\", \"αζει\",  \"αξω\", \"αζα\", \"αζες\", \"αζε\", \"αζαμε\", \"αζατε\", \"αζαν\", \"ηθω\", \"ωμασταν\",\n+                                                                                    \"ησες\", \"ησαμε\",\"ησατε\",\"ησαν\", \"σαμε\", \"σατε\", \"σατε\", \"ησω\", \"ησα\", \"ησει\", \"ησε\", \"αγα\", \"ασε\", \"εψα\", \"αμε\", \"αω\", \"αει\", \"ησει\",\n+                                                                                    \"στω\", \"ανε\", \"θουν\",\"ουμε\", \"αεις\", \"αξε\", \"ξεις\", \"ζει\", \"ουνε\", \"θει\", \"είς\", \"ατε\", \"γα\", \"με\", \"γε\", \"εσει\",\"ησε\", \"σαν\", \"ξα\", \"ξω\",\n                                                                                     \"ξουνε\", \"ξεις\", \"ξει\", \"ξουμε\", \"ξετε\", \"ξουν\", \"σω\", \"υω\", \"σω\", \"ζεις\", \"νεις\", \"νει\", \"ναμε\", \"νατε\", \"ναν\",\n                                                                                     \"σει\", \"σεο\", \"σες\", \"σα\", \"σε\", \"αν\", \"ας\", \"αι\", \"ές\", \"θω\", \"εις\", \"ει\", \"νε\", \"ον\",  \"ζω\", \"ζα\", \"φα\", \"να\", \"σω\", \"νω\", \"με\", \"τω\", \"φω\", \"ψω\", \"ψα\", \"φε\", \"ψε\", \"ω\", \"ε\");\n     private static final MyLinkedList <String> nounPostfix = new MyLinkedList<>(\"σμενος\", \"σμενη\", \"σμενο\", \"σμενοι\", \"σμενα\", \"ημενος\", \"ημενη\", \"ημενο\", \"ημενοι\", \"ημενα\", \"ημενες\", \"μενος\", \"μενο\", \"μενα\", \"μενοι\", \"μενη\", \"μενες\", \"οτητα\",\n                                                                                     \"οντας\", \"τσες\", \"οτα\", \"στης\", \"ουλα\", \"ατα\", \"ατη\", \"ατο\", \"ατου\", \"ατος\", \"ατες\", \"ατων\", \"κων\", \"ακι\", \"ωση\", \"τσα\", \"ακια\", \"τσικα\",\"ηση\", \"σος\", \"σεων\", \"σεις\", \"ους\", \"κος\", \"κους\",\n-                                                                                    \"ην\", \"κο\", \"ση\", \"ου\", \"κης\", \"κη\", \"οι\", \"ης\", \"ων\", \"ος\", \"ες\", \"s\", \"η\", \"ς\", \"ν\", \"ο\", \"α\");\n+                                                                                    \"ην\", \"κο\", \"αση\", \"ση\", \"ου\", \"κης\", \"τι\", \"τια\", \"κη\", \"οι\", \"ης\", \"ων\", \"ος\", \"ες\", \"s\", \"η\", \"ς\", \"ν\", \"ο\", \"α\");\n     private static final MyLinkedList <String> adverbPostfix = new MyLinkedList<>(\"ως\", \"αια\", \"αιος\", \"ιαια\");\n+    private static final MyLinkedList<String> prepositions = new MyLinkedList<>(\"αντί\", \"από\", \"για\", \"δίχως\", \"εναντίον\", \"εξαιτίας\", \"έως\", \"ίσαμε\", \"κατά\", \"με\", \"μετά\", \"μεταξύ\", \"μέχρι\", \"παρά\", \"πριν\", \"προς\", \"σαν\",\n+                                                                                        \"σε\", \"χωρίς\", \"ανά\", \"άνευ\", \"διά\", \"εις\", \"εκ\", \"εκτός\", \"εν\", \"ένεκα\", \"εντός\", \"επί\", \"κατόπιν\", \"λόγω\", \"μείον\", \"μέσω\", \"περί\", \"πλην\", \"προ\", \"συν\", \"υπέρ\", \"υπό\", \"χάριν\");\n+\n     public static MyLinkedList<String> rootWords = new MyLinkedList<>();\n \n \n@@ -45,6 +49,14 @@ public WordFreq(WordFreq wf) {\n      *  As a result all roots and postfixes are without diacritics */\n     public static void findRootAndPostfix(WordFreq wf) {\n         String NormalizedWord = Normalizer.normalize(wf.word, Normalizer.Form.NFD).replaceAll(\"\\\\p{InCombiningDiacriticalMarks}+\", \"\"); //removes diacritics\n+\n+        for (String prep : prepositions) {\n+            if (NormalizedWord.equals(prep)) {\n+                wf.type = new String[]{\"preposition\"};\n+                return ;\n+            }\n+        }\n+\n         for (String p : verbPostfix) {\n             if (NormalizedWord.endsWith(p) && (NormalizedWord.length() - p.length()) >= 1) { // second condition: is compound word (sintheti leksi)\n                 String stringRoot = NormalizedWord.substring(0, NormalizedWord.length() - p.length());\n@@ -59,8 +71,7 @@ else if (NormalizedWord.endsWith(\"σα\") && NormalizedWord.length() < 4)\n                         wf.type = \"noun or adjective\".split(\" or \");\n                     else if (NormalizedWord.endsWith(\"κες\") || NormalizedWord.endsWith(\"ας\")){\n                         wf.type = \"verb or noun or adjective\".split(\" or \");\n-                    }\n-                    else\n+                    } else\n                         wf.type = new String[]{\"verb\"};\n                     break;\n                 }\n@@ -74,7 +85,10 @@ else if (NormalizedWord.endsWith(\"κες\") || NormalizedWord.endsWith(\"ας\")){\n                     if (wf.postfix == null || p.length() > wf.postfix.length()) {\n                         wf.root = stringRoot;\n                         wf.postfix = p;\n-                        wf.type = \"noun or adjective\".split(\" or \");\n+                        if (NormalizedWord.endsWith(\"σεις\"))\n+                            wf.type = \"verb or noun or adjective\".split(\" or \");\n+                        else\n+                            wf.type = \"noun or adjective\".split(\" or \");\n                         break;\n                     }\n                 }"
+        }
+    ]
+}

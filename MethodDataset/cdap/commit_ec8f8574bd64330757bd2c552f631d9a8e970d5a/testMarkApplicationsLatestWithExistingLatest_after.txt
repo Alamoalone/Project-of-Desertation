@@ -1,0 +1,36 @@
+  public void testMarkApplicationsLatestWithExistingLatest()
+      throws ApplicationNotFoundException, ConflictException, IOException {
+    long creationTime = System.currentTimeMillis();
+    long v2CreationTime = creationTime + 1000;
+    String appName = "testAppWithVersion";
+    String oldVersion = "old-version";
+    String newVersion = "new-version";
+
+    // Add an application as latest
+    ApplicationId appIdV1 = new ApplicationId("account1", appName, oldVersion);
+    ApplicationMeta appMetaV1 = new ApplicationMeta(appName, Specifications.from(new FooApp(), appName, oldVersion),
+        new ChangeDetail(null, null, null, creationTime));
+    store.addLatestApplication(appIdV1, appMetaV1);
+
+    // Add a new version of the application without marking latest
+    ApplicationId appIdV2 = new ApplicationId("account1", appName, newVersion);
+    ApplicationMeta appMetaV2 = new ApplicationMeta(appName, Specifications.from(new FooApp(), appName, newVersion),
+        new ChangeDetail(null, null, null, v2CreationTime), null);
+    store.addApplication(appIdV2, appMetaV2, false);
+
+    // Now mark the new version as latest
+    store.markApplicationsLatest(Collections.singletonList(appIdV2));
+    ApplicationMeta latestMeta = store.getLatest(appIdV1.getAppReference());
+
+    ApplicationMeta storedMetaV1 = store.getApplicationMetadata(appIdV1);
+    Assert.assertEquals(appName, storedMetaV1.getId());
+    Assert.assertEquals(oldVersion, storedMetaV1.getSpec().getAppVersion());
+    Assert.assertEquals(creationTime, storedMetaV1.getChange().getCreationTimeMillis());
+    Assert.assertNotEquals(latestMeta.getSpec().getAppVersion(), storedMetaV1.getSpec().getAppVersion());
+
+    ApplicationMeta storedMetaV2 = store.getApplicationMetadata(appIdV2);
+    Assert.assertEquals(appName, storedMetaV2.getId());
+    Assert.assertEquals(newVersion, storedMetaV2.getSpec().getAppVersion());
+    Assert.assertEquals(v2CreationTime, storedMetaV2.getChange().getCreationTimeMillis());
+    Assert.assertEquals(latestMeta.getSpec().getAppVersion(), storedMetaV2.getSpec().getAppVersion());
+  }

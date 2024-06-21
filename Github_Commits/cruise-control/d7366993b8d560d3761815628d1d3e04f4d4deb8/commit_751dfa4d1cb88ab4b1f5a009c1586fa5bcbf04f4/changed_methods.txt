@@ -1,0 +1,3 @@
+maybeChangeLeadershipForPartition(Set leaderReplicas, Set partitionsToMove)
+maybeMoveReplicaToEndOfReplicaList(Replica replica, ClusterModel clusterModel)
+shouldSkipOperationOnURP(TopicPartition tp, String operation)

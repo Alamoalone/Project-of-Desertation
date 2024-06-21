@@ -1,0 +1,4 @@
+	public void setAdminEmail(String adminEmail)
+	{
+		this.adminEmail = adminEmail;
+	}

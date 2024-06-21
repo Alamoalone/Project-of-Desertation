@@ -1,0 +1,145 @@
+{
+    "sha": "01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+    "node_id": "C_kwDOD2eHftoAKDAxYTM2Zjg5NzFjNjJlZWU0Zjc0YWE1ZGNjZjk5OTNlNDYyNWZlN2U",
+    "commit": {
+        "author": {
+            "name": "Brandon Liu",
+            "email": "bdon@users.noreply.github.com",
+            "date": "2023-07-26T13:43:10Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-07-26T13:43:10Z"
+        },
+        "message": "fix null pointer exceptions (#77)\n\n* fix null pointer exceptions\r\n\r\n* integration test\r\n\r\n* fix assertions related to min/maxzoom",
+        "tree": {
+            "sha": "44cd208814fce7151a7008f97af06af604d28a98",
+            "url": "https://api.github.com/repos/protomaps/basemaps/git/trees/44cd208814fce7151a7008f97af06af604d28a98"
+        },
+        "url": "https://api.github.com/repos/protomaps/basemaps/git/commits/01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkwSLuCRBK7hj4Ov3rIwAAbwIIAADGso/ger+82B2KR8PXsksI\nl4Bt2245lMVTMd3TAxZ7yB/BR96o0Pt1OPb2XXzOnBVHH3bTObzDH7OviS9Vs77+\n2w7/ZKcMbUC1lFPFlT3NrrjzseIaCRLk/EWW57WM0m/obl4Omdwhxd9DhrX60luL\nKljvkMipxe4J+TDvx2VDPZP6YHCQfw537QTYFElE7heWmVdkqi4S1YG8lhKNPZfY\nMsaUAySa+CeVC+Fnn6pEx1Xl3uSVzsIfKrFcm5D3oEtqb/0zYVnTWcGBb6uNKAmi\n3ygI/KOLg+Jb8ctbb3QvF5kTyZK0B8QevGRcfLYAwdn/gN5RDj5g2LM46ai7mRk=\n=rMg4\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 44cd208814fce7151a7008f97af06af604d28a98\nparent 2396d922f90270ce8c47dd166a727461a3243792\nauthor Brandon Liu <bdon@users.noreply.github.com> 1690378990 +0800\ncommitter GitHub <noreply@github.com> 1690378990 +0800\n\nfix null pointer exceptions (#77)\n\n* fix null pointer exceptions\r\n\r\n* integration test\r\n\r\n* fix assertions related to min/maxzoom\r\n"
+        }
+    },
+    "url": "https://api.github.com/repos/protomaps/basemaps/commits/01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+    "html_url": "https://github.com/protomaps/basemaps/commit/01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+    "comments_url": "https://api.github.com/repos/protomaps/basemaps/commits/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/comments",
+    "author": {
+        "login": "bdon",
+        "id": 77501,
+        "node_id": "MDQ6VXNlcjc3NTAx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/77501?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bdon",
+        "html_url": "https://github.com/bdon",
+        "followers_url": "https://api.github.com/users/bdon/followers",
+        "following_url": "https://api.github.com/users/bdon/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bdon/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bdon/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bdon/subscriptions",
+        "organizations_url": "https://api.github.com/users/bdon/orgs",
+        "repos_url": "https://api.github.com/users/bdon/repos",
+        "events_url": "https://api.github.com/users/bdon/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bdon/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2396d922f90270ce8c47dd166a727461a3243792",
+            "url": "https://api.github.com/repos/protomaps/basemaps/commits/2396d922f90270ce8c47dd166a727461a3243792",
+            "html_url": "https://github.com/protomaps/basemaps/commit/2396d922f90270ce8c47dd166a727461a3243792"
+        }
+    ],
+    "stats": {
+        "total": 42,
+        "additions": 37,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "8f23dba293f4b350e7a0134b22e22dd719fd8736",
+            "filename": "tiles/src/main/java/com/protomaps/basemap/layers/Places.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 2,
+            "changes": 12,
+            "blob_url": "https://github.com/protomaps/basemaps/blob/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FPlaces.java",
+            "raw_url": "https://github.com/protomaps/basemaps/raw/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FPlaces.java",
+            "contents_url": "https://api.github.com/repos/protomaps/basemaps/contents/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FPlaces.java?ref=01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+            "patch": "@@ -86,7 +86,8 @@ public void processNe(SourceFeature sf, FeatureCollector features) {\n         .setAttr(\"name\", sf.getString(\"name\"))\n         .setAttr(\"pmap:min_zoom\", sf.getLong(\"min_zoom\"))\n         .setZoomRange(\n-          sf.getString(\"min_zoom\") == null ? themeMinZoom : (int) Double.parseDouble(sf.getString(\"min_zoom\")),\n+          Math.min(themeMaxZoom,\n+            sf.getString(\"min_zoom\") == null ? themeMinZoom : (int) Double.parseDouble(sf.getString(\"min_zoom\"))),\n           themeMaxZoom)\n         .setAttr(\"pmap:kind\", kind)\n         .setAttr(\"pmap:kind_detail\", kindDetail)\n@@ -110,7 +111,14 @@ public void processFeature(SourceFeature sf, FeatureCollector features) {\n       String kind = \"other\";\n       int minZoom = 12;\n       int maxZoom = 15;\n-      long population = sf.getString(\"population\") == null ? 0 : parseIntOrNull(sf.getString(\"population\"));\n+      long population = 0;\n+      if (sf.hasTag(\"population\")) {\n+        Integer parsed = parseIntOrNull(sf.getString(\"population\"));\n+        if (parsed != null) {\n+          population = parsed;\n+        }\n+      }\n+\n       int populationRank = 0;\n       String place = sf.getString(\"place\");\n "
+        },
+        {
+            "sha": "fcbeb12cc2d9949f657c95f03a76a0ee59537607",
+            "filename": "tiles/src/main/java/com/protomaps/basemap/layers/Pois.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/protomaps/basemaps/blob/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FPois.java",
+            "raw_url": "https://github.com/protomaps/basemaps/raw/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FPois.java",
+            "contents_url": "https://api.github.com/repos/protomaps/basemaps/contents/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FPois.java?ref=01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+            "patch": "@@ -395,7 +395,7 @@ public void processFeature(SourceFeature sf, FeatureCollector features) {\n           .setAttr(\"cuisine\", sf.getString(\"cuisine\"))\n           .setAttr(\"religion\", sf.getString(\"religion\"))\n           .setAttr(\"sport\", sf.getString(\"sport\"))\n-          .setZoomRange(minZoom, 15)\n+          .setZoomRange(Math.min(15, minZoom), 15)\n           .setBufferPixels(128);\n \n         // Core Tilezen schema properties"
+        },
+        {
+            "sha": "78e9ca1d61ec7752c6bb8bb437bef357f9a7c9ac",
+            "filename": "tiles/src/main/java/com/protomaps/basemap/layers/Roads.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/protomaps/basemaps/blob/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FRoads.java",
+            "raw_url": "https://github.com/protomaps/basemaps/raw/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FRoads.java",
+            "contents_url": "https://api.github.com/repos/protomaps/basemaps/contents/tiles%2Fsrc%2Fmain%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2Flayers%2FRoads.java?ref=01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+            "patch": "@@ -126,14 +126,14 @@ public void processFeature(SourceFeature sf, FeatureCollector features) {\n         }\n         if (sf.hasTag(\"footway\", \"sidewalk\", \"crossing\")) {\n           minZoom = 14;\n-          kindDetail = sf.getString(\"footway\");\n+          kindDetail = sf.getString(\"footway\", \"\");\n         }\n         if (sf.hasTag(\"highway\", \"corridor\")) {\n           minZoom = 14;\n         }\n       } else {\n         kind = \"other\";\n-        kindDetail = sf.getString(\"service\");\n+        kindDetail = sf.getString(\"service\", \"\");\n         minZoom = 14;\n         minZoomShieldText = 14;\n         minZoomNames = 14;"
+        },
+        {
+            "sha": "b04f137fc6bd6efbfddfc03be2bdd94a52f7a8bd",
+            "filename": "tiles/src/test/java/com/protomaps/basemap/BasemapTest.java",
+            "status": "added",
+            "additions": 24,
+            "deletions": 0,
+            "changes": 24,
+            "blob_url": "https://github.com/protomaps/basemaps/blob/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Ftest%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2FBasemapTest.java",
+            "raw_url": "https://github.com/protomaps/basemaps/raw/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Ftest%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2FBasemapTest.java",
+            "contents_url": "https://api.github.com/repos/protomaps/basemaps/contents/tiles%2Fsrc%2Ftest%2Fjava%2Fcom%2Fprotomaps%2Fbasemap%2FBasemapTest.java?ref=01a36f8971c62eee4f74aa5dccf9993e4625fe7e",
+            "patch": "@@ -0,0 +1,24 @@\n+package com.protomaps.basemap;\n+\n+import com.onthegomap.planetiler.config.Arguments;\n+import java.nio.file.Path;\n+import org.junit.jupiter.api.Test;\n+import org.junit.jupiter.api.io.TempDir;\n+\n+public class BasemapTest {\n+\n+  @Test\n+  void integrationTest(@TempDir Path tmpDir) throws Exception {\n+    Path archivePath = tmpDir.resolve(\"output.pmtiles\");\n+    Path cwd = Path.of(\"\").toAbsolutePath();\n+    Path pathFromRoot = Path.of(\"tiles\", \"src\", \"test\", \"resources\", \"sf-downtown.osm.pbf\");\n+    var osmPath = cwd.resolveSibling(pathFromRoot);\n+\n+    Basemap.run(Arguments.of(\n+      \"osm_path\", osmPath,\n+      \"tmp\", tmpDir.toString(),\n+      \"download\", \"true\",\n+      \"output\", archivePath.toString()\n+    ));\n+  }\n+}"
+        },
+        {
+            "sha": "b54706eaa61ffcdb1627f9fe9732b9ec03cf6fd5",
+            "filename": "tiles/src/test/resources/sf-downtown.osm.pbf",
+            "status": "added",
+            "additions": 0,
+            "deletions": 0,
+            "changes": 0,
+            "blob_url": "https://github.com/protomaps/basemaps/blob/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Ftest%2Fresources%2Fsf-downtown.osm.pbf",
+            "raw_url": "https://github.com/protomaps/basemaps/raw/01a36f8971c62eee4f74aa5dccf9993e4625fe7e/tiles%2Fsrc%2Ftest%2Fresources%2Fsf-downtown.osm.pbf",
+            "contents_url": "https://api.github.com/repos/protomaps/basemaps/contents/tiles%2Fsrc%2Ftest%2Fresources%2Fsf-downtown.osm.pbf?ref=01a36f8971c62eee4f74aa5dccf9993e4625fe7e"
+        }
+    ]
+}

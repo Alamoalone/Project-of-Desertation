@@ -1,0 +1,98 @@
+{
+    "sha": "13d9fc0852b410f4e55367c2a9ed61a1484fa36f",
+    "node_id": "C_kwDOCcxjiNoAKDEzZDlmYzA4NTJiNDEwZjRlNTUzNjdjMmE5ZWQ2MWExNDg0ZmEzNmY",
+    "commit": {
+        "author": {
+            "name": "Ankit Jain",
+            "email": "mejainankit@gmail.com",
+            "date": "2023-05-15T07:48:10Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-05-15T07:48:10Z"
+        },
+        "message": "Update AndroidSmsRetriever.java\n\nnull pointer exception handling",
+        "tree": {
+            "sha": "9ad6ee5d00c117175e0cba4a5013b2340e606f63",
+            "url": "https://api.github.com/repos/hanatharesh2712/ionic-native-sms-retriever-plugin-master/git/trees/9ad6ee5d00c117175e0cba4a5013b2340e606f63"
+        },
+        "url": "https://api.github.com/repos/hanatharesh2712/ionic-native-sms-retriever-plugin-master/git/commits/13d9fc0852b410f4e55367c2a9ed61a1484fa36f",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkYeO6CRBK7hj4Ov3rIwAAZwgIAICpBAc+WwFTRBVxin6EpAKx\n2LgRcwZTZzRgNVVq/ZbrrAAdJBTc8i0nlw48/IqsNR/SqM2yBrwcqcym8VAouD4h\nXqhjoHzk84VOal57FlJn/ehwnkK/L8OWneKfX/Uh48YSZfBcp4sFQVcJGQJaevOg\nL7JnDKa+lJSjbZEpy1aOst7kZjLsqTHD6V4TtpecxFsE4MomEhhkKjq4BgS+tpzl\nAYUGIzq5bOSonyxIN0XnMGunkBofRplfPc/s4KFUpsmO4lFux3m1JPbIi5w66J1l\nPuwKkzEon5tG4j/RuAW0IFA/sGqrh/WBo0gYDLkExX6sJnXSz9e3UykhWXqb+PE=\n=XzQx\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 9ad6ee5d00c117175e0cba4a5013b2340e606f63\nparent b9ecd1477fcc4ff5282f8210fc9cc3080a8a0433\nauthor Ankit Jain <mejainankit@gmail.com> 1684136890 +0530\ncommitter GitHub <noreply@github.com> 1684136890 +0530\n\nUpdate AndroidSmsRetriever.java\n\nnull pointer exception handling"
+        }
+    },
+    "url": "https://api.github.com/repos/hanatharesh2712/ionic-native-sms-retriever-plugin-master/commits/13d9fc0852b410f4e55367c2a9ed61a1484fa36f",
+    "html_url": "https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master/commit/13d9fc0852b410f4e55367c2a9ed61a1484fa36f",
+    "comments_url": "https://api.github.com/repos/hanatharesh2712/ionic-native-sms-retriever-plugin-master/commits/13d9fc0852b410f4e55367c2a9ed61a1484fa36f/comments",
+    "author": {
+        "login": "mejainankit",
+        "id": 7077837,
+        "node_id": "MDQ6VXNlcjcwNzc4Mzc=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/7077837?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/mejainankit",
+        "html_url": "https://github.com/mejainankit",
+        "followers_url": "https://api.github.com/users/mejainankit/followers",
+        "following_url": "https://api.github.com/users/mejainankit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mejainankit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/mejainankit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mejainankit/subscriptions",
+        "organizations_url": "https://api.github.com/users/mejainankit/orgs",
+        "repos_url": "https://api.github.com/users/mejainankit/repos",
+        "events_url": "https://api.github.com/users/mejainankit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/mejainankit/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "b9ecd1477fcc4ff5282f8210fc9cc3080a8a0433",
+            "url": "https://api.github.com/repos/hanatharesh2712/ionic-native-sms-retriever-plugin-master/commits/b9ecd1477fcc4ff5282f8210fc9cc3080a8a0433",
+            "html_url": "https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master/commit/b9ecd1477fcc4ff5282f8210fc9cc3080a8a0433"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 3,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "58b50a9217425db85820fd11941082f8e61d1818",
+            "filename": "src/android/com/codingsans/ionic/smsRetriever/AndroidSmsRetriever.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 2,
+            "changes": 5,
+            "blob_url": "https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master/blob/13d9fc0852b410f4e55367c2a9ed61a1484fa36f/src%2Fandroid%2Fcom%2Fcodingsans%2Fionic%2FsmsRetriever%2FAndroidSmsRetriever.java",
+            "raw_url": "https://github.com/hanatharesh2712/ionic-native-sms-retriever-plugin-master/raw/13d9fc0852b410f4e55367c2a9ed61a1484fa36f/src%2Fandroid%2Fcom%2Fcodingsans%2Fionic%2FsmsRetriever%2FAndroidSmsRetriever.java",
+            "contents_url": "https://api.github.com/repos/hanatharesh2712/ionic-native-sms-retriever-plugin-master/contents/src%2Fandroid%2Fcom%2Fcodingsans%2Fionic%2FsmsRetriever%2FAndroidSmsRetriever.java?ref=13d9fc0852b410f4e55367c2a9ed61a1484fa36f",
+            "patch": "@@ -208,7 +208,8 @@ public void onReceive(Context context, Intent intent) {\n             case CommonStatusCodes.SUCCESS:\n               final String message = extra.getString(SmsRetriever.EXTRA_SMS_MESSAGE);\n               //if (!StringUtils.hasContent(message)) return;\n-\n+              if(message == null) return;\n+              \n               Log.d(TAG, message);\n \n               data = new JSONObject();\n@@ -231,4 +232,4 @@ public void onReceive(Context context, Intent intent) {\n       }\n     };\n   };\n-}\n\\ No newline at end of file\n+}"
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+    public static boolean isValidIndex(ImplicitMethods _impl,int _indexImplicit) {
+        return _impl.isValidIndex(_indexImplicit);
+    }
+

@@ -1,0 +1,110 @@
+{
+    "sha": "796d7cf4c60619dea06aa6d826577d01fc159194",
+    "node_id": "C_kwDOJ_loWdoAKDc5NmQ3Y2Y0YzYwNjE5ZGVhMDZhYTZkODI2NTc3ZDAxZmMxNTkxOTQ",
+    "commit": {
+        "author": {
+            "name": "김승진",
+            "email": "ohksj77@gmail.com",
+            "date": "2024-01-16T05:47:00Z"
+        },
+        "committer": {
+            "name": "김승진",
+            "email": "ohksj77@gmail.com",
+            "date": "2024-01-16T05:47:00Z"
+        },
+        "message": "[FIX] null pointer exception in coordinates",
+        "tree": {
+            "sha": "4f5f9e7df3be93ccb576a93191e65e3f1e7b4d99",
+            "url": "https://api.github.com/repos/HongDam-org/TWTW/git/trees/4f5f9e7df3be93ccb576a93191e65e3f1e7b4d99"
+        },
+        "url": "https://api.github.com/repos/HongDam-org/TWTW/git/commits/796d7cf4c60619dea06aa6d826577d01fc159194",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/HongDam-org/TWTW/commits/796d7cf4c60619dea06aa6d826577d01fc159194",
+    "html_url": "https://github.com/HongDam-org/TWTW/commit/796d7cf4c60619dea06aa6d826577d01fc159194",
+    "comments_url": "https://api.github.com/repos/HongDam-org/TWTW/commits/796d7cf4c60619dea06aa6d826577d01fc159194/comments",
+    "author": {
+        "login": "ohksj77",
+        "id": 89020004,
+        "node_id": "MDQ6VXNlcjg5MDIwMDA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89020004?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ohksj77",
+        "html_url": "https://github.com/ohksj77",
+        "followers_url": "https://api.github.com/users/ohksj77/followers",
+        "following_url": "https://api.github.com/users/ohksj77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ohksj77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ohksj77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ohksj77/subscriptions",
+        "organizations_url": "https://api.github.com/users/ohksj77/orgs",
+        "repos_url": "https://api.github.com/users/ohksj77/repos",
+        "events_url": "https://api.github.com/users/ohksj77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ohksj77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ohksj77",
+        "id": 89020004,
+        "node_id": "MDQ6VXNlcjg5MDIwMDA0",
+        "avatar_url": "https://avatars.githubusercontent.com/u/89020004?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ohksj77",
+        "html_url": "https://github.com/ohksj77",
+        "followers_url": "https://api.github.com/users/ohksj77/followers",
+        "following_url": "https://api.github.com/users/ohksj77/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ohksj77/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ohksj77/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ohksj77/subscriptions",
+        "organizations_url": "https://api.github.com/users/ohksj77/orgs",
+        "repos_url": "https://api.github.com/users/ohksj77/repos",
+        "events_url": "https://api.github.com/users/ohksj77/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ohksj77/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "fc55f7670411db06d5fdffc17231009c3ac7b038",
+            "url": "https://api.github.com/repos/HongDam-org/TWTW/commits/fc55f7670411db06d5fdffc17231009c3ac7b038",
+            "html_url": "https://github.com/HongDam-org/TWTW/commit/fc55f7670411db06d5fdffc17231009c3ac7b038"
+        }
+    ],
+    "stats": {
+        "total": 20,
+        "additions": 13,
+        "deletions": 7
+    },
+    "files": [
+        {
+            "sha": "7a7560ec56d94c8e0b5520667ee188cd18143cec",
+            "filename": "backend/src/main/java/com/twtw/backend/domain/location/dto/collection/MemberDistances.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 2,
+            "changes": 12,
+            "blob_url": "https://github.com/HongDam-org/TWTW/blob/796d7cf4c60619dea06aa6d826577d01fc159194/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftwtw%2Fbackend%2Fdomain%2Flocation%2Fdto%2Fcollection%2FMemberDistances.java",
+            "raw_url": "https://github.com/HongDam-org/TWTW/raw/796d7cf4c60619dea06aa6d826577d01fc159194/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftwtw%2Fbackend%2Fdomain%2Flocation%2Fdto%2Fcollection%2FMemberDistances.java",
+            "contents_url": "https://api.github.com/repos/HongDam-org/TWTW/contents/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftwtw%2Fbackend%2Fdomain%2Flocation%2Fdto%2Fcollection%2FMemberDistances.java?ref=796d7cf4c60619dea06aa6d826577d01fc159194",
+            "patch": "@@ -13,11 +13,19 @@ public class MemberDistances {\n \n     private final List<Point> points;\n \n-    public double averageLongitude() {\n+    private double averageLongitude() {\n         return points.stream().mapToDouble(Point::getX).average().orElse(DEFAULT_VALUE);\n     }\n \n-    public double averageLatitude() {\n+    private double averageLatitude() {\n         return points.stream().mapToDouble(Point::getY).average().orElse(DEFAULT_VALUE);\n     }\n+\n+    public Point getAveragePoint() {\n+        try {\n+            return new Point(averageLongitude(), averageLatitude());\n+        } catch (NullPointerException e) {\n+            return new Point(DEFAULT_VALUE, DEFAULT_VALUE);\n+        }\n+    }\n }"
+        },
+        {
+            "sha": "13ddd1c54853ce99ef1568bfededbfa0eb288744",
+            "filename": "backend/src/main/java/com/twtw/backend/domain/location/service/GeoService.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 5,
+            "changes": 8,
+            "blob_url": "https://github.com/HongDam-org/TWTW/blob/796d7cf4c60619dea06aa6d826577d01fc159194/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftwtw%2Fbackend%2Fdomain%2Flocation%2Fservice%2FGeoService.java",
+            "raw_url": "https://github.com/HongDam-org/TWTW/raw/796d7cf4c60619dea06aa6d826577d01fc159194/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftwtw%2Fbackend%2Fdomain%2Flocation%2Fservice%2FGeoService.java",
+            "contents_url": "https://api.github.com/repos/HongDam-org/TWTW/contents/backend%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftwtw%2Fbackend%2Fdomain%2Flocation%2Fservice%2FGeoService.java?ref=796d7cf4c60619dea06aa6d826577d01fc159194",
+            "patch": "@@ -47,16 +47,14 @@ private MemberDistances collectMemberDistances(final String groupId, final Group\n     private AverageCoordinate calculateAverage(\n             final MemberDistances memberDistances, final String groupId, final String memberId) {\n \n-        final double averageLongitude = memberDistances.averageLongitude();\n-        final double averageLatitude = memberDistances.averageLatitude();\n-\n+        final Point averagePoint = memberDistances.getAveragePoint();\n         redisTemplate\n                 .opsForGeo()\n-                .add(groupId, new Point(averageLongitude, averageLatitude), groupId);\n+                .add(groupId, averagePoint, groupId);\n \n         final Distance distance = distance(groupId, memberId);\n \n-        return new AverageCoordinate(averageLongitude, averageLatitude, distance.getValue());\n+        return new AverageCoordinate(averagePoint.getX(), averagePoint.getY(), distance.getValue());\n     }\n \n     private Distance distance(final String groupId, final String memberId) {"
+        }
+    ]
+}

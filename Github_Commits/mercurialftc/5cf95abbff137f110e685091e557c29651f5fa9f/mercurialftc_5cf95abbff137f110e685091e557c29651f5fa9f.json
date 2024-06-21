@@ -1,0 +1,98 @@
+{
+    "sha": "5cf95abbff137f110e685091e557c29651f5fa9f",
+    "node_id": "C_kwDOKPoBwNoAKDVjZjk1YWJiZmYxMzdmMTEwZTY4NTA5MWU1NTdjMjk2NTFmNWZhOWY",
+    "commit": {
+        "author": {
+            "name": "Froze-N-Milk",
+            "email": "oscar.chevalier@gmail.com",
+            "date": "2023-09-27T23:46:51Z"
+        },
+        "committer": {
+            "name": "Froze-N-Milk",
+            "email": "oscar.chevalier@gmail.com",
+            "date": "2023-09-27T23:46:51Z"
+        },
+        "message": "fixed a null pointer exception error on the wave builder when setting velocities",
+        "tree": {
+            "sha": "9511192e0d0c3fbf221aedfc0f4a3440d1a8251d",
+            "url": "https://api.github.com/repos/Froze-N-Milk/mercurialftc/git/trees/9511192e0d0c3fbf221aedfc0f4a3440d1a8251d"
+        },
+        "url": "https://api.github.com/repos/Froze-N-Milk/mercurialftc/git/commits/5cf95abbff137f110e685091e557c29651f5fa9f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Froze-N-Milk/mercurialftc/commits/5cf95abbff137f110e685091e557c29651f5fa9f",
+    "html_url": "https://github.com/Froze-N-Milk/mercurialftc/commit/5cf95abbff137f110e685091e557c29651f5fa9f",
+    "comments_url": "https://api.github.com/repos/Froze-N-Milk/mercurialftc/commits/5cf95abbff137f110e685091e557c29651f5fa9f/comments",
+    "author": {
+        "login": "Froze-N-Milk",
+        "id": 41995242,
+        "node_id": "MDQ6VXNlcjQxOTk1MjQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/41995242?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Froze-N-Milk",
+        "html_url": "https://github.com/Froze-N-Milk",
+        "followers_url": "https://api.github.com/users/Froze-N-Milk/followers",
+        "following_url": "https://api.github.com/users/Froze-N-Milk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Froze-N-Milk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Froze-N-Milk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Froze-N-Milk/subscriptions",
+        "organizations_url": "https://api.github.com/users/Froze-N-Milk/orgs",
+        "repos_url": "https://api.github.com/users/Froze-N-Milk/repos",
+        "events_url": "https://api.github.com/users/Froze-N-Milk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Froze-N-Milk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Froze-N-Milk",
+        "id": 41995242,
+        "node_id": "MDQ6VXNlcjQxOTk1MjQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/41995242?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Froze-N-Milk",
+        "html_url": "https://github.com/Froze-N-Milk",
+        "followers_url": "https://api.github.com/users/Froze-N-Milk/followers",
+        "following_url": "https://api.github.com/users/Froze-N-Milk/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Froze-N-Milk/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Froze-N-Milk/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Froze-N-Milk/subscriptions",
+        "organizations_url": "https://api.github.com/users/Froze-N-Milk/orgs",
+        "repos_url": "https://api.github.com/users/Froze-N-Milk/repos",
+        "events_url": "https://api.github.com/users/Froze-N-Milk/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Froze-N-Milk/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "166e09a6877577e451645e2c4c105fa4238a92ec",
+            "url": "https://api.github.com/repos/Froze-N-Milk/mercurialftc/commits/166e09a6877577e451645e2c4c105fa4238a92ec",
+            "html_url": "https://github.com/Froze-N-Milk/mercurialftc/commit/166e09a6877577e451645e2c4c105fa4238a92ec"
+        }
+    ],
+    "stats": {
+        "total": 17,
+        "additions": 13,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "857d278419a7c836cdba87a3ea8fa7cd60113234",
+            "filename": "src/main/java/org/mercurialftc/mercurialftc/silversurfer/followable/WaveBuilder.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 4,
+            "changes": 17,
+            "blob_url": "https://github.com/Froze-N-Milk/mercurialftc/blob/5cf95abbff137f110e685091e557c29651f5fa9f/src%2Fmain%2Fjava%2Forg%2Fmercurialftc%2Fmercurialftc%2Fsilversurfer%2Ffollowable%2FWaveBuilder.java",
+            "raw_url": "https://github.com/Froze-N-Milk/mercurialftc/raw/5cf95abbff137f110e685091e557c29651f5fa9f/src%2Fmain%2Fjava%2Forg%2Fmercurialftc%2Fmercurialftc%2Fsilversurfer%2Ffollowable%2FWaveBuilder.java",
+            "contents_url": "https://api.github.com/repos/Froze-N-Milk/mercurialftc/contents/src%2Fmain%2Fjava%2Forg%2Fmercurialftc%2Fmercurialftc%2Fsilversurfer%2Ffollowable%2FWaveBuilder.java?ref=5cf95abbff137f110e685091e557c29651f5fa9f",
+            "patch": "@@ -45,7 +45,9 @@ public WaveBuilder setVelocity(double translationalVelocity) {\n \t\t\t\tbuildingMotionConstants.getMaxRotationalVelocity(),\n \t\t\t\tbuildingMotionConstants.getMaxTranslationalAcceleration(),\n \t\t\t\tbuildingMotionConstants.getMaxRotationalAcceleration());\n-\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\tif (builder != null) {\n+\t\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\t}\n \t\treturn this;\n \t}\n \n@@ -55,7 +57,10 @@ public WaveBuilder resetVelocity() {\n \t\t\t\tbuildingMotionConstants.getMaxRotationalVelocity(),\n \t\t\t\tbuildingMotionConstants.getMaxTranslationalAcceleration(),\n \t\t\t\tbuildingMotionConstants.getMaxRotationalAcceleration());\n-\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\n+\t\tif (builder != null) {\n+\t\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\t}\n \t\treturn this;\n \t}\n \n@@ -70,7 +75,9 @@ public WaveBuilder setAcceleration(double translationalAcceleration) {\n \t\t\t\tbuildingMotionConstants.getMaxRotationalVelocity(),\n \t\t\t\tMath.min(translationalAcceleration, motionConstants.getMaxTranslationalAcceleration()),\n \t\t\t\tbuildingMotionConstants.getMaxRotationalAcceleration());\n-\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\tif (builder != null) {\n+\t\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\t}\n \t\treturn this;\n \t}\n \n@@ -80,7 +87,9 @@ public WaveBuilder resetAcceleration() {\n \t\t\t\tbuildingMotionConstants.getMaxRotationalVelocity(),\n \t\t\t\tmotionConstants.getMaxTranslationalAcceleration(),\n \t\t\t\tbuildingMotionConstants.getMaxRotationalAcceleration());\n-\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\tif (builder != null) {\n+\t\t\tbuilder.setMotionConstants(buildingMotionConstants);\n+\t\t}\n \t\treturn this;\n \t}\n "
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+         public static ArrayList<File> listFiles (ArrayList < File > src) {
+            ArrayList <File> files = new ArrayList<>();
+            for (File file : src) {
+                if (!file.isDirectory()) {
+                    files.add(file);
+                } else {
+                    ArrayList<File> insideFiles = new ArrayList<>(Arrays.asList(file.listFiles()));
+                    files.addAll(listFiles(insideFiles));
+                }
+            }
+            return files;
+        }

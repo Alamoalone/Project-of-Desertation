@@ -1,0 +1,6 @@
+    boolean forAll(Predicate<T> p) {
+        return !exists(p.negate());
+    }
+
+
+

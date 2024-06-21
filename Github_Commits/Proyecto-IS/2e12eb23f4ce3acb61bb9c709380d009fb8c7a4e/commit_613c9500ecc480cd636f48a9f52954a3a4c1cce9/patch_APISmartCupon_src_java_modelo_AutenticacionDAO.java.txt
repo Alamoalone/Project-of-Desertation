@@ -1,0 +1,9 @@
+@@ -35,7 +35,7 @@ public static RespuestaLoginEscritorio verificarSesionEscritorio(String username
+                 if(usuario != null){
+                     respuesta.setError(false);
+                     respuesta.setContenido("Bienvenido al sistema "+ usuario.getNombre());
+-                    respuesta.setUsuarioSession(usuario);
++                    respuesta.setUsuarioSesion(usuario);
+                 }else{
+                     respuesta.setContenido("Email y/o contraseña incorrectos");
+                 }

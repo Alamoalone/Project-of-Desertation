@@ -1,0 +1,11 @@
+@@ -30,6 +30,10 @@ public static void main(String[] args) throws RarException, IOException {
+             }
+         }).start();
+ 
++        AnotherClass foo = new AnotherClass("Foo");
++        foo.getValue();
++        String x = foo.toString();
++
+         Junrar.extract("/tmp/foo.rar", "/tmp");
+     }
+ }

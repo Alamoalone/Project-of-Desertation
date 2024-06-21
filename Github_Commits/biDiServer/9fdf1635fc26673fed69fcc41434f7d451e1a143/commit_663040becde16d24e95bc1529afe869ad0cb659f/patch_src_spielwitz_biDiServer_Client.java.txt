@@ -1,0 +1,26 @@
+@@ -157,7 +157,13 @@ public void disconnect()
+ 		if (this.notificationReceiverThread != null)
+ 		{
+ 			this.sendRequestMessage(RequestMessageType.DISCONNECT, null);
+-			this.notificationReceiverThread.disconnect();
++			
++			if (this.notificationReceiverThread != null)
++			{
++				this.notificationReceiverThread.interrupt();
++				this.notificationReceiverThread.disconnect();
++				this.notificationReceiverThread = null;
++			}
+ 		}
+ 		
+ 		if (this.reconnectThread != null)
+@@ -559,8 +565,8 @@ protected abstract void onNotificationReceived(
+ 	
+ 	private void establishNotificationSocket(Socket kkSocket)
+ 	{
+-		ClientNotificationReceiverThread t = this.new ClientNotificationReceiverThread(kkSocket);
+-		t.start();
++		this.notificationReceiverThread = this.new ClientNotificationReceiverThread(kkSocket);
++		this.notificationReceiverThread.start();
+ 	}
+ 	
+ 	/**

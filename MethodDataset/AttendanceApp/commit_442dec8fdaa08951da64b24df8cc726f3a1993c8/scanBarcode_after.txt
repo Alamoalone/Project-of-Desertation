@@ -1,0 +1,33 @@
+    private void scanBarcode() {
+        GmsBarcodeScannerOptions options = new GmsBarcodeScannerOptions.Builder()
+                .setBarcodeFormats(
+                        Barcode.FORMAT_QR_CODE,
+                        Barcode.FORMAT_AZTEC)
+                .build();
+        GmsBarcodeScanner scanner = GmsBarcodeScanning.getClient(this, options);
+        scanner
+                .startScan()
+                .addOnSuccessListener(
+                        barcode -> {
+                            // Task completed successfully
+                            String rawValue = barcode.getRawValue();
+                            String classId = rawValue.toString();
+                            Log.i("INFO", "Class Id is: " + classId);
+                            FirebaseFirestore db = FirebaseFirestore.getInstance();
+                            CollectionReference classesRef = db.collection("Classes");
+                            FirebaseUser currentUser = mAuth.getCurrentUser();
+                            // classesRef.document(classId).update("student_emails", FieldValue.arrayUnion(currentUser.getEmail()));
+                            Log.i("INFO", "Update call made to Firebase with " + currentUser.getEmail());
+                        })
+                .addOnCanceledListener(
+                        () -> {
+                            Log.i("INFO", "Barcode task cancelled");
+                            // Task canceled
+                        })
+                .addOnFailureListener(
+                        e -> {
+                            Log.e("ERROR", "Barcode task failed: " + e.getMessage());
+                            // Task failed with an exception
+                        });
+
+    }

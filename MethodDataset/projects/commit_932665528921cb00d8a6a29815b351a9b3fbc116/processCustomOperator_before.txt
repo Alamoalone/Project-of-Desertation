@@ -1,0 +1,15 @@
+    private static void processCustomOperator(LinkageStackElementIn _in, VariablesOffsets _vars, OperationNode _curOp,
+                                              OperationNode _nextSiblingOp, MethodOperation _parentOp) {
+        if (!(_parentOp instanceof AbstractUnaryOperation)&&_parentOp instanceof SymbolOperation) {
+            int sum_ = _in.getBeginBlock() + _parentOp.getIndexInEl();
+            SymbolOperation par_ = (SymbolOperation) _parentOp;
+            AnaTypeFct function_ = par_.getFct().getFunction();
+            if (function_ != null) {
+                addParts(_vars, function_,sum_+par_.getOperatorContent().getOpOffset(),par_.getOperatorContent().getOper().length(),_parentOp.getErrs(),_parentOp.getErrs());
+            } else if (_parentOp instanceof NumericOperation && ((NumericOperation)_parentOp).isCatString() && canCallToString(_vars, _curOp, _nextSiblingOp)) {
+                _vars.addPart(new PartOffset(ExportCst.HEAD_ITALIC, sum_+par_.getOperatorContent().getOpOffset()));
+                _vars.addPart(new PartOffset(ExportCst.FOOT_ITALIC, sum_+par_.getOperatorContent().getOpOffset() + par_.getOperatorContent().getOper().length()));
+            }
+
+        }
+    }

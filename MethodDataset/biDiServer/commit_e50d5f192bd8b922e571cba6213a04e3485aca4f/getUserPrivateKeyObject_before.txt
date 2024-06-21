@@ -1,0 +1,3 @@
+	public PrivateKey getUserPrivateKeyObject() {
+		return userPrivateKeyObject;
+	}

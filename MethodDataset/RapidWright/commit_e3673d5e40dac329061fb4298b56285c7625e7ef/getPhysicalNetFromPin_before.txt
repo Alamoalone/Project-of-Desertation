@@ -1,0 +1,42 @@
+    public Net getPhysicalNetFromPin(EDIFHierPortInst p, Design d) {
+        if (p.getHierarchicalInst().isTopLevelInst()) {
+            if (p.getNet().getName().equals(EDIFTools.LOGICAL_GND_NET_NAME)) return d.getGndNet();
+            if (p.getNet().getName().equals(EDIFTools.LOGICAL_VCC_NET_NAME)) return d.getVccNet();
+        }
+
+        Map<EDIFHierNet,EDIFHierNet> parentNetMap = getParentNetMap();
+        EDIFHierNet parentNetName = parentNetMap.get(p.getHierarchicalNet());
+        Net n = d.getNet(parentNetName.getHierarchicalNetName());
+        if (n == null) {
+            if (parentNetName == null) {
+                // Maybe it is GND/VCC
+                List<EDIFPortInst> src = p.getNet().getSourcePortInsts(false);
+                if (src.size() > 0 && src.get(0).getCellInst() != null) {
+                    String cellType = src.get(0).getCellInst().getCellType().getName();
+                    if (cellType.equals("GND")) return d.getGndNet();
+                    if (cellType.equals("VCC")) return d.getVccNet();
+                }
+            }
+            if (parentNetName == null) {
+                System.err.println("WARNING: Could not find parent of net \"" + p.getHierarchicalNet() +
+                        "\", please check that the netlist is fully connected through all levels of "
+                        + "hierarchy for this net.");
+            }
+            EDIFNet logicalNet = parentNetName.getNet();
+            List<EDIFPortInst> eprList = logicalNet.getSourcePortInsts(false);
+            if (eprList.size() > 1) throw new RuntimeException("ERROR: Bad assumption on net, has two sources.");
+            if (eprList.size() == 1) {
+                String cellTypeName = eprList.get(0).getCellInst().getCellType().getName();
+                if (cellTypeName.equals("GND")) {
+                    return d.getGndNet();
+                } else if (cellTypeName.equals("VCC")) {
+                    return d.getVccNet();
+                }
+            }
+            // If size is 0, assume top level port in an OOC design
+
+            n = d.createNet(parentNetName.getHierarchicalNetName());
+            n.setLogicalHierNet(parentNetName);
+        }
+        return n;
+    }

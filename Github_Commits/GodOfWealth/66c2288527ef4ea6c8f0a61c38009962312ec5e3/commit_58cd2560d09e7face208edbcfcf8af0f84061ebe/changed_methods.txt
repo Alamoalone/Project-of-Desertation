@@ -1,0 +1,3 @@
+selectLuckyPlayer()
+broadcastSelectedMessage(OfflinePlayer player)
+run()

@@ -1,0 +1,98 @@
+{
+    "sha": "7bd0410e01b6eb65aa0e6f6778a22a8f454954e7",
+    "node_id": "C_kwDOGzPy69oAKDdiZDA0MTBlMDFiNmViNjVhYTBlNmY2Nzc4YTIyYThmNDU0OTU0ZTc",
+    "commit": {
+        "author": {
+            "name": "lorenzop",
+            "email": "lorenzo@poixson.com",
+            "date": "2023-07-23T20:29:12Z"
+        },
+        "committer": {
+            "name": "lorenzop",
+            "email": "lorenzo@poixson.com",
+            "date": "2023-07-23T20:29:12Z"
+        },
+        "message": "fixed possible null pointer exception in JSFunctionNotFoundException",
+        "tree": {
+            "sha": "5964120eeb5a969d042225a869fbad8869f5bb3a",
+            "url": "https://api.github.com/repos/PoiXson/pxnPluginLib-mirror/git/trees/5964120eeb5a969d042225a869fbad8869f5bb3a"
+        },
+        "url": "https://api.github.com/repos/PoiXson/pxnPluginLib-mirror/git/commits/7bd0410e01b6eb65aa0e6f6778a22a8f454954e7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/PoiXson/pxnPluginLib-mirror/commits/7bd0410e01b6eb65aa0e6f6778a22a8f454954e7",
+    "html_url": "https://github.com/PoiXson/pxnPluginLib-mirror/commit/7bd0410e01b6eb65aa0e6f6778a22a8f454954e7",
+    "comments_url": "https://api.github.com/repos/PoiXson/pxnPluginLib-mirror/commits/7bd0410e01b6eb65aa0e6f6778a22a8f454954e7/comments",
+    "author": {
+        "login": "lorenzop",
+        "id": 1291605,
+        "node_id": "MDQ6VXNlcjEyOTE2MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1291605?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lorenzop",
+        "html_url": "https://github.com/lorenzop",
+        "followers_url": "https://api.github.com/users/lorenzop/followers",
+        "following_url": "https://api.github.com/users/lorenzop/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lorenzop/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lorenzop/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lorenzop/subscriptions",
+        "organizations_url": "https://api.github.com/users/lorenzop/orgs",
+        "repos_url": "https://api.github.com/users/lorenzop/repos",
+        "events_url": "https://api.github.com/users/lorenzop/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lorenzop/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "lorenzop",
+        "id": 1291605,
+        "node_id": "MDQ6VXNlcjEyOTE2MDU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1291605?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lorenzop",
+        "html_url": "https://github.com/lorenzop",
+        "followers_url": "https://api.github.com/users/lorenzop/followers",
+        "following_url": "https://api.github.com/users/lorenzop/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lorenzop/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lorenzop/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lorenzop/subscriptions",
+        "organizations_url": "https://api.github.com/users/lorenzop/orgs",
+        "repos_url": "https://api.github.com/users/lorenzop/repos",
+        "events_url": "https://api.github.com/users/lorenzop/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lorenzop/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f983f913b5e3689d0581b2b0622cc2b5f36630b1",
+            "url": "https://api.github.com/repos/PoiXson/pxnPluginLib-mirror/commits/f983f913b5e3689d0581b2b0622cc2b5f36630b1",
+            "html_url": "https://github.com/PoiXson/pxnPluginLib-mirror/commit/f983f913b5e3689d0581b2b0622cc2b5f36630b1"
+        }
+    ],
+    "stats": {
+        "total": 5,
+        "additions": 2,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "6319ce8d6965cb750dde3eb8e831e898e8e6fb48",
+            "filename": "src/com/poixson/commonmc/tools/scripting/exceptions/JSFunctionNotFoundException.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 3,
+            "changes": 5,
+            "blob_url": "https://github.com/PoiXson/pxnPluginLib-mirror/blob/7bd0410e01b6eb65aa0e6f6778a22a8f454954e7/src%2Fcom%2Fpoixson%2Fcommonmc%2Ftools%2Fscripting%2Fexceptions%2FJSFunctionNotFoundException.java",
+            "raw_url": "https://github.com/PoiXson/pxnPluginLib-mirror/raw/7bd0410e01b6eb65aa0e6f6778a22a8f454954e7/src%2Fcom%2Fpoixson%2Fcommonmc%2Ftools%2Fscripting%2Fexceptions%2FJSFunctionNotFoundException.java",
+            "contents_url": "https://api.github.com/repos/PoiXson/pxnPluginLib-mirror/contents/src%2Fcom%2Fpoixson%2Fcommonmc%2Ftools%2Fscripting%2Fexceptions%2FJSFunctionNotFoundException.java?ref=7bd0410e01b6eb65aa0e6f6778a22a8f454954e7",
+            "patch": "@@ -6,13 +6,12 @@ public class JSFunctionNotFoundException extends NullPointerException {\n \n \n \n-\tpublic JSFunctionNotFoundException(final String fileName, final String funcName,\n-\t\t\tfinal Object funcObj) {\n+\tpublic JSFunctionNotFoundException(final String fileName, final String funcName, final Object funcObj) {\n \t\tsuper(\n \t\t\tString.format(\n \t\t\t\t\"Function '%s' not found in script '%s' actual: %s\",\n \t\t\t\tfuncName, fileName,\n-\t\t\t\tfuncObj.getClass().toString()\n+\t\t\t\t(funcObj == null ? \"<null>\" : funcObj.getClass().toString())\n \t\t\t)\n \t\t);\n \t}"
+        }
+    ]
+}

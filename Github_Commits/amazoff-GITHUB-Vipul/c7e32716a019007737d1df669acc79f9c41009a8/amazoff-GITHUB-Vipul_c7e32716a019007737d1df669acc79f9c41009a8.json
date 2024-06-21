@@ -1,0 +1,122 @@
+{
+    "sha": "c7e32716a019007737d1df669acc79f9c41009a8",
+    "node_id": "C_kwDOKOMrM9oAKGM3ZTMyNzE2YTAxOTAwNzczN2QxZGY2NjlhY2M3OWY5YzQxMDA5YTg",
+    "commit": {
+        "author": {
+            "name": "Vipul_Kumar",
+            "email": "00vipul7@gmail.com",
+            "date": "2023-09-01T19:50:34Z"
+        },
+        "committer": {
+            "name": "Vipul_Kumar",
+            "email": "00vipul7@gmail.com",
+            "date": "2023-09-01T19:50:34Z"
+        },
+        "message": "Null pointer exception corrected 2",
+        "tree": {
+            "sha": "83d52f8b86a41725b073978b7eff3af856333ee3",
+            "url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/git/trees/83d52f8b86a41725b073978b7eff3af856333ee3"
+        },
+        "url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/git/commits/c7e32716a019007737d1df669acc79f9c41009a8",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/commits/c7e32716a019007737d1df669acc79f9c41009a8",
+    "html_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/commit/c7e32716a019007737d1df669acc79f9c41009a8",
+    "comments_url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/commits/c7e32716a019007737d1df669acc79f9c41009a8/comments",
+    "author": {
+        "login": "GITHUB-Vipul",
+        "id": 126069867,
+        "node_id": "U_kgDOB4Osaw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/126069867?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GITHUB-Vipul",
+        "html_url": "https://github.com/GITHUB-Vipul",
+        "followers_url": "https://api.github.com/users/GITHUB-Vipul/followers",
+        "following_url": "https://api.github.com/users/GITHUB-Vipul/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GITHUB-Vipul/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GITHUB-Vipul/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GITHUB-Vipul/subscriptions",
+        "organizations_url": "https://api.github.com/users/GITHUB-Vipul/orgs",
+        "repos_url": "https://api.github.com/users/GITHUB-Vipul/repos",
+        "events_url": "https://api.github.com/users/GITHUB-Vipul/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GITHUB-Vipul/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "GITHUB-Vipul",
+        "id": 126069867,
+        "node_id": "U_kgDOB4Osaw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/126069867?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/GITHUB-Vipul",
+        "html_url": "https://github.com/GITHUB-Vipul",
+        "followers_url": "https://api.github.com/users/GITHUB-Vipul/followers",
+        "following_url": "https://api.github.com/users/GITHUB-Vipul/following{/other_user}",
+        "gists_url": "https://api.github.com/users/GITHUB-Vipul/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/GITHUB-Vipul/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/GITHUB-Vipul/subscriptions",
+        "organizations_url": "https://api.github.com/users/GITHUB-Vipul/orgs",
+        "repos_url": "https://api.github.com/users/GITHUB-Vipul/repos",
+        "events_url": "https://api.github.com/users/GITHUB-Vipul/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/GITHUB-Vipul/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ee5be2bf87aefda87075ff66d66f69a2cef547f3",
+            "url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/commits/ee5be2bf87aefda87075ff66d66f69a2cef547f3",
+            "html_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/commit/ee5be2bf87aefda87075ff66d66f69a2cef547f3"
+        }
+    ],
+    "stats": {
+        "total": 46,
+        "additions": 19,
+        "deletions": 27
+    },
+    "files": [
+        {
+            "sha": "50ef0275e1bc299bebef4ef84fa9a27d43ceb1ba",
+            "filename": "src/main/java/com/driver/OrderController.java",
+            "status": "modified",
+            "additions": 13,
+            "deletions": 19,
+            "changes": 32,
+            "blob_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/blob/c7e32716a019007737d1df669acc79f9c41009a8/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderController.java",
+            "raw_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/raw/c7e32716a019007737d1df669acc79f9c41009a8/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderController.java",
+            "contents_url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/contents/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderController.java?ref=c7e32716a019007737d1df669acc79f9c41009a8",
+            "patch": "@@ -42,18 +42,15 @@ public ResponseEntity<String> addOrderPartnerPair(@RequestParam String orderId,\n     @GetMapping(\"/get-order-by-id/{orderId}\")\n     public ResponseEntity<Order> getOrderById(@PathVariable String orderId){\n \n-        Order order= null;\n-        order=orderservice.getOrderById(orderId);\n-        //order should be returned with an orderId.\n \n+        Order order=orderservice.getOrderById(orderId);\n+        //order should be returned with an orderId.\n         return new ResponseEntity<>(order, HttpStatus.CREATED);\n     }\n \n     @GetMapping(\"/get-partner-by-id/{partnerId}\")\n     public ResponseEntity<DeliveryPartner> getPartnerById(@PathVariable String partnerId){\n-\n-        DeliveryPartner deliveryPartner = null;\n-          deliveryPartner=OrderService.getPartnerById(partnerId);\n+        DeliveryPartner  deliveryPartner=OrderService.getPartnerById(partnerId);\n         //deliveryPartner should contain the value given by partnerId\n \n         return new ResponseEntity<>(deliveryPartner, HttpStatus.CREATED);\n@@ -62,56 +59,53 @@ public ResponseEntity<DeliveryPartner> getPartnerById(@PathVariable String partn\n     @GetMapping(\"/get-order-count-by-partner-id/{partnerId}\")\n     public ResponseEntity<Integer> getOrderCountByPartnerId(@PathVariable String partnerId){\n \n-        Integer orderCount = 0;\n-\n-        orderCount=orderservice.getOrderCountPartnerId(partnerId);\n+       Integer orderCount=orderservice.getOrderCountPartnerId(partnerId);\n         //orderCount should denote the orders given by a partner-id\n \n         return new ResponseEntity<>(orderCount, HttpStatus.CREATED);\n     }\n \n     @GetMapping(\"/get-orders-by-partner-id/{partnerId}\")\n     public ResponseEntity<List<String>> getOrdersByPartnerId(@PathVariable String partnerId){\n-        List<String> orders = null;\n         //orders should contain a list of orders by PartnerId\n-        orders=orderservice.getOrderByPartnerId(partnerId);\n+       List<String> orders=orderservice.getOrderByPartnerId(partnerId);\n         return new ResponseEntity<>(orders, HttpStatus.CREATED);\n     }\n \n     @GetMapping(\"/get-all-orders\")\n     public ResponseEntity<List<String>> getAllOrders(){\n-        List<String> orders = null;\n-          orders=orderservice.getAllOrders();\n+\n+         List<String> orders=orderservice.getAllOrders();\n         //Get all orders\n         return new ResponseEntity<>(orders, HttpStatus.CREATED);\n     }\n \n     @GetMapping(\"/get-count-of-unassigned-orders\")\n     public ResponseEntity<Integer> getCountOfUnassignedOrders(){\n-        Integer countOfOrders = 0;\n+\n \n         //Count of orders that have not been assigned to any DeliveryPartner\n-        countOfOrders=orderservice.getCountOfUnassignedOrders();\n+       Integer countOfOrders=orderservice.getCountOfUnassignedOrders();\n \n         return new ResponseEntity<>(countOfOrders, HttpStatus.CREATED);\n     }\n \n     @GetMapping(\"/get-count-of-orders-left-after-given-time/{partnerId}\")\n     public ResponseEntity<Integer> getOrdersLeftAfterGivenTimeByPartnerId(@PathVariable String time, @PathVariable String partnerId){\n \n-        Integer countOfOrders = 0;\n+\n \n         //countOfOrders that are left after a particular time of a DeliveryPartner\n-        countOfOrders=orderservice.getOrdersLeftAfterGivenTimeByPartnerId(time,partnerId);\n+       Integer countOfOrders=orderservice.getOrdersLeftAfterGivenTimeByPartnerId(time,partnerId);\n \n         return new ResponseEntity<>(countOfOrders, HttpStatus.CREATED);\n     }\n \n     @GetMapping(\"/get-last-delivery-time/{partnerId}\")\n     public ResponseEntity<String> getLastDeliveryTimeByPartnerId(@PathVariable String partnerId){\n-        String time = null;\n \n-        time=orderservice.getLastDeliveryTimeByPartnerId(partnerId);\n+\n+        String time=orderservice.getLastDeliveryTimeByPartnerId(partnerId);\n         //Return the time when that partnerId will deliver his last delivery order.\n \n         return new ResponseEntity<>(time, HttpStatus.CREATED);"
+        },
+        {
+            "sha": "3bfd953a5d26ea0fddcf445600155f7dc2ec1267",
+            "filename": "src/main/java/com/driver/OrderRepository.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 2,
+            "changes": 7,
+            "blob_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/blob/c7e32716a019007737d1df669acc79f9c41009a8/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderRepository.java",
+            "raw_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/raw/c7e32716a019007737d1df669acc79f9c41009a8/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderRepository.java",
+            "contents_url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/contents/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderRepository.java?ref=c7e32716a019007737d1df669acc79f9c41009a8",
+            "patch": "@@ -89,8 +89,11 @@ public Integer getCountOfUnassignedOrders() {\n         return count;\n     }\n \n-    public Integer getOrdersLeftAfterGivenTimeByPartnerId(int total, String partnerId) {\n-\n+    public Integer getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId) {\n+        String[] temp = time.split(\":\");\n+        int hr = Integer.parseInt(temp[0]);\n+        int min = Integer.parseInt(temp[1]);\n+        int total = (hr*60)+min;\n         Integer count = 0;\n         if(OrdersPerDeliveryPartner.containsKey(partnerId)){\n             List<String> or = OrdersPerDeliveryPartner.get(partnerId);"
+        },
+        {
+            "sha": "3c7a7e646283fe735e74ce343851aafab6ec943d",
+            "filename": "src/main/java/com/driver/OrderService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 6,
+            "changes": 7,
+            "blob_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/blob/c7e32716a019007737d1df669acc79f9c41009a8/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderService.java",
+            "raw_url": "https://github.com/acciojob/amazoff-GITHUB-Vipul/raw/c7e32716a019007737d1df669acc79f9c41009a8/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderService.java",
+            "contents_url": "https://api.github.com/repos/acciojob/amazoff-GITHUB-Vipul/contents/src%2Fmain%2Fjava%2Fcom%2Fdriver%2FOrderService.java?ref=c7e32716a019007737d1df669acc79f9c41009a8",
+            "patch": "@@ -50,15 +50,10 @@ public Integer getCountOfUnassignedOrders() {\n     }\n \n     public Integer getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId) {\n-        String[] temp = time.split(\":\");\n-        int hr = Integer.parseInt(temp[0]);\n-        int min = Integer.parseInt(temp[1]);\n-        int total = (hr*60)+min;\n-        return orderrepository.getOrdersLeftAfterGivenTimeByPartnerId(total,partnerId);\n+        return orderrepository.getOrdersLeftAfterGivenTimeByPartnerId(time,partnerId);\n     }\n \n     public String getLastDeliveryTimeByPartnerId(String partnerId) {\n-\n         return orderrepository.getLastDeliveryTimeByPartnerId(partnerId);\n     }\n "
+        }
+    ]
+}

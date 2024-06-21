@@ -1,0 +1,10 @@
+    private static ExecMethodOperation explicitOperator(OperationNode _anaNode, Forwards _forwards) {
+        ExplicitOperatorOperation m_ = (ExplicitOperatorOperation) _anaNode;
+        if (m_.isAffect()) {
+            StringList names_ = _anaNode.getResultClass().getNames();
+            AnaCallFctContent callFctContent_ = m_.getCallFctContent();
+            ExecTypeFunction pair_ = FetchMemberUtil.fetchFunctionOpPair(callFctContent_.getMemberId(), _forwards);
+            return new ExecCompoundAffectationExplicitCustOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(ForwardInfos.syntheticOperator(m_.getSyntheticOperator()),m_.getOffsetOper()), new ExecStaticFctContent(callFctContent_, _forwards), pair_, FetchMemberUtil.fetchImplicits(m_.getConv(), _forwards), names_, m_.isPost());
+        }
+        return new ExecExplicitOperatorOperation(new ExecOperationContent(m_.getContent()), m_.isIntermediateDottedOperation(), new ExecStaticFctContent(m_.getCallFctContent(), _forwards), FetchMemberUtil.fetchFunctionOpPair(m_.getCallFctContent().getMemberId(), _forwards), new ExecArrContent(m_.getArrContent()), FetchMemberUtil.fetchImplicits(m_.getConv(), _forwards), new ExecOperatorContent(ForwardInfos.syntheticOperator(m_.getSyntheticOperator()),m_.getOffsetOper()));
+    }

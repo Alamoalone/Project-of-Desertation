@@ -1,0 +1,17 @@
+	public List<Person> getPersonsLastName(String lastName) throws NullPointerException {
+		List<Person> personsFoundByLastName = new ArrayList<>();
+		Iterator<Person> itrPersons = persons.listIterator();
+		while (itrPersons.hasNext()) {
+			Person itrPerson = itrPersons.next();
+
+			if (itrPerson.getLastName().equals(lastName)) {
+				personsFoundByLastName.add(itrPerson);
+			}
+		}
+
+		if (personsFoundByLastName.isEmpty()) {
+			throw new NullPointerException("person not found with lastName");
+		}
+		System.out.println("personsFoundByLastName" + personsFoundByLastName);
+		return personsFoundByLastName;
+	}

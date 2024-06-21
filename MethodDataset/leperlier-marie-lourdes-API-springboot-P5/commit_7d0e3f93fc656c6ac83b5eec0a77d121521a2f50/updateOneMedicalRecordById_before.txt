@@ -1,0 +1,9 @@
+	public ResponseEntity<?> updateOneMedicalRecordById(@RequestBody MedicalRecord medicalRecord,
+			@PathVariable String id) {
+		MedicalRecord medicalRecordFoundById = medicalRecordService.updateMedicalRecord(id, medicalRecord);
+		if (medicalRecordFoundById != null) {
+			return ResponseEntity.status(HttpStatus.CREATED).body(medicalRecordFoundById);
+		} else {
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}

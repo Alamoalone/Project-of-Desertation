@@ -1,0 +1,32 @@
+    public static Object[] state(ZonedDateTime maxTime, ZonedDateTime minTime,
+            J2735MovementPhaseState eventState, Integer signalGroup) {
+
+        // Construct MovementState
+        MovementState state = new MovementState();
+        state.setSignalGroup(signalGroup);
+        MovementEvent event = new MovementEvent();
+        if (maxTime != null || minTime != null) {
+            TimingChangeDetails timing = new TimingChangeDetails();
+            timing.setMaxEndTime(maxTime);
+            timing.setMinEndTime(minTime);
+            event.setTiming(timing);
+        }
+        event.setEventState(eventState);
+        state.setStateTimeSpeed(Collections.singletonList(event));
+
+        // Consturct expected SpatTimeChangeDetailState
+        SpatTimeChangeDetailState expectedResult = new SpatTimeChangeDetailState();
+        if (signalGroup != null) {
+            expectedResult.setSignalGroup(signalGroup.intValue());
+        }
+        if (maxTime != null) {
+            expectedResult.setMaxEndTime(maxTime.toInstant().toEpochMilli());
+        }
+        if (minTime != null) {
+            expectedResult.setMinEndTime(minTime.toInstant().toEpochMilli());
+        }
+        expectedResult.setEventState(eventState);
+        
+        return new Object[] { state, expectedResult};
+    }
+

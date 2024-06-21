@@ -1,0 +1,110 @@
+{
+    "sha": "c944138d8bff3d3ea266421f1a05db41dc02e773",
+    "node_id": "C_kwDOD5sxF9oAKGM5NDQxMzhkOGJmZjNkM2VhMjY2NDIxZjFhMDVkYjQxZGMwMmU3NzM",
+    "commit": {
+        "author": {
+            "name": "Joseph Sinclair",
+            "email": "121976561+jsync-swirlds@users.noreply.github.com",
+            "date": "2023-11-30T19:55:28Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-11-30T19:55:28Z"
+        },
+        "message": "fix(HapiTest): fixing null pointer exception in hapi in process test node shutdown. (#10156)\n\nSigned-off-by: Joseph Sinclair <joseph.sinclair@swirldslabs.com>",
+        "tree": {
+            "sha": "47437007778c9079217b66cd00da5d1c4c5b25b7",
+            "url": "https://api.github.com/repos/hashgraph/hedera-services/git/trees/47437007778c9079217b66cd00da5d1c4c5b25b7"
+        },
+        "url": "https://api.github.com/repos/hashgraph/hedera-services/git/commits/c944138d8bff3d3ea266421f1a05db41dc02e773",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlaOiwCRBK7hj4Ov3rIwAAh1UIAIt3B48oRvwEZHpC8arX4PGw\nzvIEZcfQ73lq1HIVzAM0unq55rt3532G7IoSP9Ev10q3Au8J64+S5zQZTryGwagB\nOyFMITSI+CT0edJAI0jaSTEgI+NwMUkkpUBYLEoBW0+MitH4LB9zzV4PWe4e/8dC\nX9WnpLEsq8RMFFavn0k01Y05o6lE8NsR0dUaNTnwexe6BHrDfAiahhlI9EmqOIxh\nCZuTMynbiYXYcdiUwy2zLbAfSeMi+AOX8Bvz62N/jDwb7Y+hKsTvrBtZqedL1uSY\nK1RGTt9rLNy3dEOtDaWnwQXlEbpPzk7XlWhmsTK1sEma2mOlSALlkDmN7KqIUC0=\n=8IYr\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 47437007778c9079217b66cd00da5d1c4c5b25b7\nparent f2aac3a73c4150a9ff3d6cbc045348c19691cf41\nauthor Joseph Sinclair <121976561+jsync-swirlds@users.noreply.github.com> 1701374128 -0700\ncommitter GitHub <noreply@github.com> 1701374128 -0700\n\nfix(HapiTest): fixing null pointer exception in hapi in process test node shutdown. (#10156)\n\nSigned-off-by: Joseph Sinclair <joseph.sinclair@swirldslabs.com>"
+        }
+    },
+    "url": "https://api.github.com/repos/hashgraph/hedera-services/commits/c944138d8bff3d3ea266421f1a05db41dc02e773",
+    "html_url": "https://github.com/hashgraph/hedera-services/commit/c944138d8bff3d3ea266421f1a05db41dc02e773",
+    "comments_url": "https://api.github.com/repos/hashgraph/hedera-services/commits/c944138d8bff3d3ea266421f1a05db41dc02e773/comments",
+    "author": {
+        "login": "jsync-swirlds",
+        "id": 121976561,
+        "node_id": "U_kgDOB0U28Q",
+        "avatar_url": "https://avatars.githubusercontent.com/u/121976561?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jsync-swirlds",
+        "html_url": "https://github.com/jsync-swirlds",
+        "followers_url": "https://api.github.com/users/jsync-swirlds/followers",
+        "following_url": "https://api.github.com/users/jsync-swirlds/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jsync-swirlds/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jsync-swirlds/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jsync-swirlds/subscriptions",
+        "organizations_url": "https://api.github.com/users/jsync-swirlds/orgs",
+        "repos_url": "https://api.github.com/users/jsync-swirlds/repos",
+        "events_url": "https://api.github.com/users/jsync-swirlds/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jsync-swirlds/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f2aac3a73c4150a9ff3d6cbc045348c19691cf41",
+            "url": "https://api.github.com/repos/hashgraph/hedera-services/commits/f2aac3a73c4150a9ff3d6cbc045348c19691cf41",
+            "html_url": "https://github.com/hashgraph/hedera-services/commit/f2aac3a73c4150a9ff3d6cbc045348c19691cf41"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 0,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "7cb55385476ce64128700f90b8da5e3996b087a4",
+            "filename": "hedera-node/test-clients/src/main/java/com/hedera/services/bdd/junit/InProcessHapiTestNode.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 2,
+            "changes": 2,
+            "blob_url": "https://github.com/hashgraph/hedera-services/blob/c944138d8bff3d3ea266421f1a05db41dc02e773/hedera-node%2Ftest-clients%2Fsrc%2Fmain%2Fjava%2Fcom%2Fhedera%2Fservices%2Fbdd%2Fjunit%2FInProcessHapiTestNode.java",
+            "raw_url": "https://github.com/hashgraph/hedera-services/raw/c944138d8bff3d3ea266421f1a05db41dc02e773/hedera-node%2Ftest-clients%2Fsrc%2Fmain%2Fjava%2Fcom%2Fhedera%2Fservices%2Fbdd%2Fjunit%2FInProcessHapiTestNode.java",
+            "contents_url": "https://api.github.com/repos/hashgraph/hedera-services/contents/hedera-node%2Ftest-clients%2Fsrc%2Fmain%2Fjava%2Fcom%2Fhedera%2Fservices%2Fbdd%2Fjunit%2FInProcessHapiTestNode.java?ref=c944138d8bff3d3ea266421f1a05db41dc02e773",
+            "patch": "@@ -28,7 +28,6 @@\n import com.swirlds.common.system.NodeId;\n import com.swirlds.common.system.Platform;\n import com.swirlds.config.api.ConfigurationBuilder;\n-import com.swirlds.merkledb.MerkleDb;\n import com.swirlds.platform.PlatformBuilder;\n import com.swirlds.platform.util.BootstrapUtils;\n import edu.umd.cs.findbugs.annotations.NonNull;\n@@ -214,7 +213,6 @@ public void shutdown() {\n             threadsToStop.forEach(Thread::interrupt);\n             threadsToStop.forEach(Thread::stop);\n \n-            MerkleDb.setDefaultPath(null);\n             ConstructableRegistry.getInstance().reset();\n         }\n     }"
+        },
+        {
+            "sha": "dd52a857e302d8948b775fec0d82b5df43113ffe",
+            "filename": "hedera-node/test-clients/src/main/java/module-info.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 1,
+            "changes": 1,
+            "blob_url": "https://github.com/hashgraph/hedera-services/blob/c944138d8bff3d3ea266421f1a05db41dc02e773/hedera-node%2Ftest-clients%2Fsrc%2Fmain%2Fjava%2Fmodule-info.java",
+            "raw_url": "https://github.com/hashgraph/hedera-services/raw/c944138d8bff3d3ea266421f1a05db41dc02e773/hedera-node%2Ftest-clients%2Fsrc%2Fmain%2Fjava%2Fmodule-info.java",
+            "contents_url": "https://api.github.com/repos/hashgraph/hedera-services/contents/hedera-node%2Ftest-clients%2Fsrc%2Fmain%2Fjava%2Fmodule-info.java?ref=c944138d8bff3d3ea266421f1a05db41dc02e773",
+            "patch": "@@ -27,7 +27,6 @@\n     requires com.hedera.pbj.runtime;\n     requires com.swirlds.base;\n     requires com.swirlds.config.api;\n-    requires com.swirlds.merkledb;\n     requires com.swirlds.platform.core;\n     requires com.swirlds.test.framework;\n     requires grpc.netty;"
+        }
+    ]
+}

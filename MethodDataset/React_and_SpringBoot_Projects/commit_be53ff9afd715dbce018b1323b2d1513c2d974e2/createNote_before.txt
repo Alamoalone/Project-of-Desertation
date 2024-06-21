@@ -1,0 +1,12 @@
+    public Notes createNote(Notes note) throws Exception {
+        try{
+            Optional<User> user = userRepository.findById(note.getUser().getUserId());
+            note.setUser(user.get());
+            note.setDate(FormatDateTime.parseStandardDate(note.getDate()));
+            note.setTitle(encryptionUtil.encrypt(note.getTitle()));
+            note.setDescription(encryptionUtil.encrypt(note.getDescription()));
+        }catch (Exception e){
+            throw new Exception(e);
+        }
+        return notesRepository.save(note);
+    }

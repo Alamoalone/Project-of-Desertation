@@ -1,0 +1,39 @@
+    public static void findRootAndPostfix(WordFreq wf) {
+        String NormalizedWord = Normalizer.normalize(wf.word, Normalizer.Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", ""); //removes diacritics
+        for (String p : verbPostfix) {
+            if (NormalizedWord.endsWith(p) && (NormalizedWord.length() - p.length()) >= 1) { // second condition: is compound word (sintheti leksi)
+                String stringRoot = NormalizedWord.substring(0, NormalizedWord.length() - p.length());
+                if (stringRoot.length() >= 2) {
+                    wf.root = stringRoot;
+                    wf.postfix = p;
+                    if (NormalizedWord.endsWith("εις"))
+                        wf.type = "verb or noun or adverb".split(" or ");
+                    else if (NormalizedWord.endsWith("κα") || (NormalizedWord.endsWith("ε") && p.length() == 1))
+                        wf.type = "verb or noun".split(" or ");
+                    else if (NormalizedWord.endsWith("σα") && NormalizedWord.length() < 4)
+                        wf.type = "noun or adjective".split(" or ");
+                    else if (NormalizedWord.endsWith("κες") || NormalizedWord.endsWith("ας")){
+                        wf.type = "verb or noun or adjective".split(" or ");
+                    }
+                    else
+                        wf.type = new String[]{"verb"};
+                    break;
+                }
+            }
+        }
+
+        for (String p : nounPostfix) {
+            if (NormalizedWord.endsWith(p) && (NormalizedWord.length() - p.length()) >= 1) { // second condition: is compound word (sintheti leksi)
+                String stringRoot = NormalizedWord.substring(0, NormalizedWord.length() - p.length());
+                if (stringRoot.length() >= 2) {
+                    if (wf.postfix == null || p.length() > wf.postfix.length()) {
+                        wf.root = stringRoot;
+                        wf.postfix = p;
+                        wf.type = "noun or adjective".split(" or ");
+                        break;
+                    }
+                }
+            }
+        }
+    }
+

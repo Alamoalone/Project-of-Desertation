@@ -1,0 +1,60 @@
+{
+    "sha": "70781e5ab7cb097466f6a6220f2d1aa1e57cecd0",
+    "node_id": "C_kwDOGw_gPNoAKDcwNzgxZTVhYjdjYjA5NzQ2NmY2YTYyMjBmMmQxYWExZTU3Y2VjZDA",
+    "commit": {
+        "author": {
+            "name": "Yang Li",
+            "email": "yali@opennms.com",
+            "date": "2023-02-07T20:48:45Z"
+        },
+        "committer": {
+            "name": "Yang Li",
+            "email": "yali@opennms.com",
+            "date": "2023-02-07T20:48:45Z"
+        },
+        "message": "fixed null pointer exception in node scan",
+        "tree": {
+            "sha": "cf0fbeca0640c7d61fcfa33c914dfa8e197b273c",
+            "url": "https://api.github.com/repos/OpenNMS-Cloud/lokahi/git/trees/cf0fbeca0640c7d61fcfa33c914dfa8e197b273c"
+        },
+        "url": "https://api.github.com/repos/OpenNMS-Cloud/lokahi/git/commits/70781e5ab7cb097466f6a6220f2d1aa1e57cecd0",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/OpenNMS-Cloud/lokahi/commits/70781e5ab7cb097466f6a6220f2d1aa1e57cecd0",
+    "html_url": "https://github.com/OpenNMS-Cloud/lokahi/commit/70781e5ab7cb097466f6a6220f2d1aa1e57cecd0",
+    "comments_url": "https://api.github.com/repos/OpenNMS-Cloud/lokahi/commits/70781e5ab7cb097466f6a6220f2d1aa1e57cecd0/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "1d1d7e5385b2397bbd73f2d2c7d85d9be44bbe8f",
+            "url": "https://api.github.com/repos/OpenNMS-Cloud/lokahi/commits/1d1d7e5385b2397bbd73f2d2c7d85d9be44bbe8f",
+            "html_url": "https://github.com/OpenNMS-Cloud/lokahi/commit/1d1d7e5385b2397bbd73f2d2c7d85d9be44bbe8f"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 6,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "05499d1a9c20e594eb105e7244bccd280492028d",
+            "filename": "minion/plugins/nodescan-plugin/src/main/java/org/opennms/horizon/minion/nodescan/SNMPInterfaceTableTracker.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 4,
+            "changes": 10,
+            "blob_url": "https://github.com/OpenNMS-Cloud/lokahi/blob/70781e5ab7cb097466f6a6220f2d1aa1e57cecd0/minion%2Fplugins%2Fnodescan-plugin%2Fsrc%2Fmain%2Fjava%2Forg%2Fopennms%2Fhorizon%2Fminion%2Fnodescan%2FSNMPInterfaceTableTracker.java",
+            "raw_url": "https://github.com/OpenNMS-Cloud/lokahi/raw/70781e5ab7cb097466f6a6220f2d1aa1e57cecd0/minion%2Fplugins%2Fnodescan-plugin%2Fsrc%2Fmain%2Fjava%2Forg%2Fopennms%2Fhorizon%2Fminion%2Fnodescan%2FSNMPInterfaceTableTracker.java",
+            "contents_url": "https://api.github.com/repos/OpenNMS-Cloud/lokahi/contents/minion%2Fplugins%2Fnodescan-plugin%2Fsrc%2Fmain%2Fjava%2Forg%2Fopennms%2Fhorizon%2Fminion%2Fnodescan%2FSNMPInterfaceTableTracker.java?ref=70781e5ab7cb097466f6a6220f2d1aa1e57cecd0",
+            "patch": "@@ -208,17 +208,19 @@ private String getPhysAddr() {\n         }\n \n         public SnmpInterfaceResult createInterfaceFromRow() {\n-            return SnmpInterfaceResult.newBuilder()\n+            SnmpInterfaceResult.Builder builder = SnmpInterfaceResult.newBuilder()\n                 .setIfIndex(getIfIndex())\n                 .setIfAdminStatus(getIfAdminStatus())\n                 .setIfAlias(getIfAlias())\n                 .setIfDescr(getIfDescr())\n                 .setIfName(getIfName())\n                 .setIfOperatorStatus(getIfOperStatus())\n                 .setIfSpeed(getIfSpeed())\n-                .setIfType(getIfType())\n-                .setPhysicalAddr(getPhysAddr())\n-                .build();\n+                .setIfType(getIfType());\n+            if(getPhysAddr() != null) {\n+                builder.setPhysicalAddr(getPhysAddr());\n+            }\n+            return builder.build();\n         }\n \n     }"
+        }
+    ]
+}

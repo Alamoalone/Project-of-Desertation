@@ -1,0 +1,110 @@
+{
+    "sha": "63bc8fa768fcc3b920816914b826eef60b945155",
+    "node_id": "C_kwDOABHCLdoAKDYzYmM4ZmE3NjhmY2MzYjkyMDgxNjkxNGI4MjZlZWY2MGI5NDUxNTU",
+    "commit": {
+        "author": {
+            "name": "Mark Waite",
+            "email": "mark.earl.waite@gmail.com",
+            "date": "2022-11-18T02:44:06Z"
+        },
+        "committer": {
+            "name": "Mark Waite",
+            "email": "mark.earl.waite@gmail.com",
+            "date": "2022-11-18T02:56:39Z"
+        },
+        "message": "Fix null pointer exception when workinDif is null",
+        "tree": {
+            "sha": "06670832fda144078ab19b0c78c80c063c6322d0",
+            "url": "https://api.github.com/repos/jenkinsci/xshell-plugin/git/trees/06670832fda144078ab19b0c78c80c063c6322d0"
+        },
+        "url": "https://api.github.com/repos/jenkinsci/xshell-plugin/git/commits/63bc8fa768fcc3b920816914b826eef60b945155",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/jenkinsci/xshell-plugin/commits/63bc8fa768fcc3b920816914b826eef60b945155",
+    "html_url": "https://github.com/jenkinsci/xshell-plugin/commit/63bc8fa768fcc3b920816914b826eef60b945155",
+    "comments_url": "https://api.github.com/repos/jenkinsci/xshell-plugin/commits/63bc8fa768fcc3b920816914b826eef60b945155/comments",
+    "author": {
+        "login": "MarkEWaite",
+        "id": 156685,
+        "node_id": "MDQ6VXNlcjE1NjY4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/156685?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MarkEWaite",
+        "html_url": "https://github.com/MarkEWaite",
+        "followers_url": "https://api.github.com/users/MarkEWaite/followers",
+        "following_url": "https://api.github.com/users/MarkEWaite/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MarkEWaite/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MarkEWaite/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MarkEWaite/subscriptions",
+        "organizations_url": "https://api.github.com/users/MarkEWaite/orgs",
+        "repos_url": "https://api.github.com/users/MarkEWaite/repos",
+        "events_url": "https://api.github.com/users/MarkEWaite/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MarkEWaite/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "MarkEWaite",
+        "id": 156685,
+        "node_id": "MDQ6VXNlcjE1NjY4NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/156685?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/MarkEWaite",
+        "html_url": "https://github.com/MarkEWaite",
+        "followers_url": "https://api.github.com/users/MarkEWaite/followers",
+        "following_url": "https://api.github.com/users/MarkEWaite/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MarkEWaite/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/MarkEWaite/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MarkEWaite/subscriptions",
+        "organizations_url": "https://api.github.com/users/MarkEWaite/orgs",
+        "repos_url": "https://api.github.com/users/MarkEWaite/repos",
+        "events_url": "https://api.github.com/users/MarkEWaite/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/MarkEWaite/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "924871629c555ab8baad5999cb02f8dba702387f",
+            "url": "https://api.github.com/repos/jenkinsci/xshell-plugin/commits/924871629c555ab8baad5999cb02f8dba702387f",
+            "html_url": "https://github.com/jenkinsci/xshell-plugin/commit/924871629c555ab8baad5999cb02f8dba702387f"
+        }
+    ],
+    "stats": {
+        "total": 19,
+        "additions": 16,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "d2744bc29d073a972fc1c4c3dcd8694858ab4d71",
+            "filename": "src/main/java/hudson/plugins/xshell/XShellBuilder.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 3,
+            "changes": 7,
+            "blob_url": "https://github.com/jenkinsci/xshell-plugin/blob/63bc8fa768fcc3b920816914b826eef60b945155/src%2Fmain%2Fjava%2Fhudson%2Fplugins%2Fxshell%2FXShellBuilder.java",
+            "raw_url": "https://github.com/jenkinsci/xshell-plugin/raw/63bc8fa768fcc3b920816914b826eef60b945155/src%2Fmain%2Fjava%2Fhudson%2Fplugins%2Fxshell%2FXShellBuilder.java",
+            "contents_url": "https://api.github.com/repos/jenkinsci/xshell-plugin/contents/src%2Fmain%2Fjava%2Fhudson%2Fplugins%2Fxshell%2FXShellBuilder.java?ref=63bc8fa768fcc3b920816914b826eef60b945155",
+            "patch": "@@ -134,10 +134,11 @@ public boolean perform(final AbstractBuild<?, ?> build, final Launcher launcher,\n \r\n     // Determine the correct working directory\r\n     String absWorkingDir;\r\n-    if (new File(workingDir).isAbsolute()) {\r\n-      absWorkingDir = workingDir;\r\n+    String nonNullWorkingDir = workingDir != null ? workingDir : \".\";\r\n+    if (new File(nonNullWorkingDir).isAbsolute()) {\r\n+      absWorkingDir = nonNullWorkingDir;\r\n     } else {\r\n-      absWorkingDir = build.getWorkspace() + (launcher.isUnix() ? UNIX_SEP : WINDOWS_SEP) + workingDir;\r\n+      absWorkingDir = build.getWorkspace() + (launcher.isUnix() ? UNIX_SEP : WINDOWS_SEP) + nonNullWorkingDir;\r\n     }\r\n \r\n     LOG.log(Level.FINEST, \"Environment variables: \" + env.entrySet().toString());\r"
+        },
+        {
+            "sha": "db2847cd86af8dcd8a7dd0b6fca2639934d444e3",
+            "filename": "src/test/java/hudson/plugins/xshell/XShellBuilderTest.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 0,
+            "changes": 12,
+            "blob_url": "https://github.com/jenkinsci/xshell-plugin/blob/63bc8fa768fcc3b920816914b826eef60b945155/src%2Ftest%2Fjava%2Fhudson%2Fplugins%2Fxshell%2FXShellBuilderTest.java",
+            "raw_url": "https://github.com/jenkinsci/xshell-plugin/raw/63bc8fa768fcc3b920816914b826eef60b945155/src%2Ftest%2Fjava%2Fhudson%2Fplugins%2Fxshell%2FXShellBuilderTest.java",
+            "contents_url": "https://api.github.com/repos/jenkinsci/xshell-plugin/contents/src%2Ftest%2Fjava%2Fhudson%2Fplugins%2Fxshell%2FXShellBuilderTest.java?ref=63bc8fa768fcc3b920816914b826eef60b945155",
+            "patch": "@@ -120,6 +120,18 @@ public void testPerformNullWorkingDir() throws Exception {\n         assertTrue(\"Failed in perform\", builder.perform(build, launcher, listener));\n     }\n \n+    @Test\n+    public void testPerformAbsoluteWorkingDir() throws Exception {\n+        FreeStyleProject project = rule.createFreeStyleProject(\"job-\" + testName.getMethodName());\n+        Launcher launcher = rule.createLocalLauncher();\n+        OutputStream outputStream = new ByteArrayOutputStream();\n+        BuildListener listener = new StreamBuildListener(outputStream, Charset.forName(\"UTF-8\"));\n+        AbstractBuild build = project.scheduleBuild2(0).get();\n+        workingDir = System.getProperty(\"java.io.tmpdir\");\n+        builder = new XShellBuilder(commandLine, workingDir, executeFromWorkingDir, regexToKill, timeAllocated);\n+        assertTrue(\"Failed in perform\", builder.perform(build, launcher, listener));\n+    }\n+\n     @Test\n     public void testConvertSeparator() {\n         String newSeparator = \"/\";"
+        }
+    ]
+}

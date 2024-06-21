@@ -1,0 +1,20 @@
+    public void modifyCourseTeacher(String teacherId, String courseId) {
+
+        Teacher teacherFound = findTeacher(teacherId);
+        Course courseFound = findCourse(courseId);
+        for (Teacher teacher : teachers) {
+            if (teacher != null && teacher.getTeacherId().equals(teacherId)) {
+                System.out.println("Teacher modified");
+                break;
+            }
+        }
+        for (Course course : courses) {
+            if (course != null && course.getId().equals(courseId)) {
+                System.out.println("Course modified.");
+                break;
+            }
+        }
+        if (teacherFound == null && courseFound == null) {
+            System.out.println("Can't find teacher and course.");
+        }
+    }

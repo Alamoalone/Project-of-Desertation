@@ -1,0 +1,23 @@
+	public WaterConnectionResponse getWCListFuzzySearch(SearchCriteria criteria, RequestInfo requestInfo) {
+
+		criteria.setName(criteria.getName().trim());
+
+		List<String> idsfromDB = waterDao.getWCListFuzzySearch(criteria);
+
+		if (CollectionUtils.isEmpty(idsfromDB))
+			WaterConnectionResponse.builder().waterConnection(new LinkedList<>());
+
+		validateFuzzySearchCriteria(criteria);
+
+		Object esResponse = elasticSearchRepository.fuzzySearchProperties(criteria, idsfromDB);
+
+		List<Map<String, Object>> data;
+
+		if (!StringUtils.isEmpty(criteria.getTextSearch())) {
+			data = waterConnectionSearch(criteria, esResponse);
+		} else {
+			data = waterConnectionFuzzySearch(criteria, esResponse);
+		}
+
+		return WaterConnectionResponse.builder().waterConnectionData(data).totalCount(data.size()).build();
+	}

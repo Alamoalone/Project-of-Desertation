@@ -1,0 +1,9 @@
+    public Student findStudent(String studentId){
+        for(Student student : students){
+            if(student != null && student.getStudentId().equals(studentId)){
+                return student;
+            }
+        }
+        System.out.println("Student can't be found!");
+        return null;
+    }

@@ -1,0 +1,2 @@
+webViewFinishedLoading(AdWebView view, String startingState)
+close()

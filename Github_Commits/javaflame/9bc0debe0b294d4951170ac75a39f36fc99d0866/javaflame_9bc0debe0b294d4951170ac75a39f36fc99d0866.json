@@ -1,0 +1,146 @@
+{
+    "sha": "9bc0debe0b294d4951170ac75a39f36fc99d0866",
+    "node_id": "C_kwDOKKNICtoAKDliYzBkZWJlMGIyOTRkNDk1MTE3MGFjNzVhMzlmMzZmYzk5ZDA4NjY",
+    "commit": {
+        "author": {
+            "name": "beothorn",
+            "email": "lucass@gmail.com",
+            "date": "2023-10-30T21:19:22Z"
+        },
+        "committer": {
+            "name": "beothorn",
+            "email": "lucass@gmail.com",
+            "date": "2023-10-30T21:19:22Z"
+        },
+        "message": "Fix toString recursiveness, arg null pointer and toString exception",
+        "tree": {
+            "sha": "9e121c3c57dac87072774ac26895861cf121c0ec",
+            "url": "https://api.github.com/repos/beothorn/javaflame/git/trees/9e121c3c57dac87072774ac26895861cf121c0ec"
+        },
+        "url": "https://api.github.com/repos/beothorn/javaflame/git/commits/9bc0debe0b294d4951170ac75a39f36fc99d0866",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/beothorn/javaflame/commits/9bc0debe0b294d4951170ac75a39f36fc99d0866",
+    "html_url": "https://github.com/beothorn/javaflame/commit/9bc0debe0b294d4951170ac75a39f36fc99d0866",
+    "comments_url": "https://api.github.com/repos/beothorn/javaflame/commits/9bc0debe0b294d4951170ac75a39f36fc99d0866/comments",
+    "author": {
+        "login": "beothorn",
+        "id": 410600,
+        "node_id": "MDQ6VXNlcjQxMDYwMA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/410600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/beothorn",
+        "html_url": "https://github.com/beothorn",
+        "followers_url": "https://api.github.com/users/beothorn/followers",
+        "following_url": "https://api.github.com/users/beothorn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/beothorn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/beothorn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/beothorn/subscriptions",
+        "organizations_url": "https://api.github.com/users/beothorn/orgs",
+        "repos_url": "https://api.github.com/users/beothorn/repos",
+        "events_url": "https://api.github.com/users/beothorn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/beothorn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "beothorn",
+        "id": 410600,
+        "node_id": "MDQ6VXNlcjQxMDYwMA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/410600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/beothorn",
+        "html_url": "https://github.com/beothorn",
+        "followers_url": "https://api.github.com/users/beothorn/followers",
+        "following_url": "https://api.github.com/users/beothorn/following{/other_user}",
+        "gists_url": "https://api.github.com/users/beothorn/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/beothorn/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/beothorn/subscriptions",
+        "organizations_url": "https://api.github.com/users/beothorn/orgs",
+        "repos_url": "https://api.github.com/users/beothorn/repos",
+        "events_url": "https://api.github.com/users/beothorn/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/beothorn/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "60b84e0c7ea7715595b5eb366339254d59346ef9",
+            "url": "https://api.github.com/repos/beothorn/javaflame/commits/60b84e0c7ea7715595b5eb366339254d59346ef9",
+            "html_url": "https://github.com/beothorn/javaflame/commit/60b84e0c7ea7715595b5eb366339254d59346ef9"
+        }
+    ],
+    "stats": {
+        "total": 105,
+        "additions": 76,
+        "deletions": 29
+    },
+    "files": [
+        {
+            "sha": "e7181c57a5cee7935fb6dac50e172702abe3dca9",
+            "filename": "javaAgent/src/main/java/com/github/beothorn/agent/MethodInstrumentationAgent.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 2,
+            "changes": 7,
+            "blob_url": "https://github.com/beothorn/javaflame/blob/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaAgent%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2FMethodInstrumentationAgent.java",
+            "raw_url": "https://github.com/beothorn/javaflame/raw/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaAgent%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2FMethodInstrumentationAgent.java",
+            "contents_url": "https://api.github.com/repos/beothorn/javaflame/contents/javaAgent%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2FMethodInstrumentationAgent.java?ref=9bc0debe0b294d4951170ac75a39f36fc99d0866",
+            "patch": "@@ -135,7 +135,7 @@ public static void premain(\n                 + \"<p>Excludes: \" + Arrays.toString(excludes.toArray()) + \"</p>\"\n                 + \"<p>Filters: \" + Arrays.toString(filters.toArray()) + \"</p>\";\n \n-        ElementMatcher.Junction<TypeDescription> argumentsMatcher = getMatcherFromAruments(excludes, filters);\n+        ElementMatcher.Junction<TypeDescription> argumentsMatcher = getMatcherFromArguments(excludes, filters);\n \n         AgentBuilder agentBuilder = new AgentBuilder.Default();\n \n@@ -198,7 +198,10 @@ public static void premain(\n         }\n     }\n \n-    private static ElementMatcher.Junction<TypeDescription> getMatcherFromAruments(List<String> excludes, List<String> filters) {\n+    private static ElementMatcher.Junction<TypeDescription> getMatcherFromArguments(\n+            List<String> excludes,\n+            List<String> filters\n+    ) {\n         ElementMatcher.Junction<TypeDescription> exclusions = nameContains(\"com.github.beothorn.agent\")\n                 .or(nameContains(\"net.bytebuddy\"));\n         for (String exclude: excludes) {"
+        },
+        {
+            "sha": "8299f511b5b9e6a1c18beb4a33e96aaae80554aa",
+            "filename": "javaAgent/src/main/java/com/github/beothorn/agent/SpanCatcherDetailed.java",
+            "status": "modified",
+            "additions": 42,
+            "deletions": 17,
+            "changes": 59,
+            "blob_url": "https://github.com/beothorn/javaflame/blob/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaAgent%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2FSpanCatcherDetailed.java",
+            "raw_url": "https://github.com/beothorn/javaflame/raw/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaAgent%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2FSpanCatcherDetailed.java",
+            "contents_url": "https://api.github.com/repos/beothorn/javaflame/contents/javaAgent%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2FSpanCatcherDetailed.java?ref=9bc0debe0b294d4951170ac75a39f36fc99d0866",
+            "patch": "@@ -5,6 +5,8 @@\n import java.lang.reflect.Method;\n import java.lang.reflect.Parameter;\n import java.util.Arrays;\n+import java.util.Map;\n+import java.util.concurrent.ConcurrentHashMap;\n \n import static com.github.beothorn.agent.MethodInstrumentationAgent.LogLevel.DEBUG;\n import static com.github.beothorn.agent.MethodInstrumentationAgent.log;\n@@ -13,32 +15,55 @@\n \n public class SpanCatcherDetailed {\n \n+    public static final Map<String, Boolean> shouldDetailThread = new ConcurrentHashMap<>();\n+\n     @Advice.OnMethodEnter\n-    public static long enter(@Advice.Origin Method method, @Advice.AllArguments Object[] allArguments) {\n+    public static long enter(\n+        @Advice.Origin Method method,\n+        @Advice.AllArguments Object[] allArguments\n+    ) {\n         try {\n             String methodName = method.getName();\n             String ownerClass = method.getDeclaringClass().getName();\n             StringBuilder prettyCall = new StringBuilder(ownerClass + \".\" + methodName + \"(\");\n             Parameter[] parameters = method.getParameters();\n-            for (int i = 0; i < parameters.length; i++) {\n-                Parameter parameter = parameters[i];\n-                String argToString;\n-                if (allArguments[i].getClass().isArray()) {\n-                    argToString = Arrays.toString((Object[]) allArguments[i]);\n-                } else {\n-                    argToString = allArguments[i].toString();\n-                }\n-                prettyCall.append(parameter.getType().getName())\n-                        .append(\" \")\n-                        .append(parameter.getName())\n-                        .append(\" = \")\n-                        .append(argToString);\n-                if(i < parameters.length-1){\n-                    prettyCall.append(\", \");\n+            final String threadName = Thread.currentThread().getName();\n+\n+            // We avoid extracting detail when executing a toString for a parameter\n+            // or else we risk creating a stack overflow\n+            Boolean createDetails = shouldDetailThread.getOrDefault(threadName, true);\n+            if(createDetails){\n+                shouldDetailThread.put(threadName, false);\n+                for (int i = 0; i < parameters.length; i++) {\n+                    Parameter parameter = parameters[i];\n+                    String argToString;\n+                    if(allArguments[i] == null){\n+                        argToString = \"null\";\n+                    } else {\n+                        try {\n+                            if (allArguments[i].getClass().isArray()) {\n+                                argToString = Arrays.toString((Object[]) allArguments[i]);\n+                            } else {\n+                                argToString = allArguments[i].toString();\n+                            }\n+                        } catch (Exception e) {\n+                            argToString = \"ARG_TOSTRING_EXCEPTION \"+e;\n+                        }\n+                    }\n+                    prettyCall.append(parameter.getType().getName())\n+                            .append(\" \")\n+                            .append(parameter.getName())\n+                            .append(\" = \")\n+                            .append(argToString);\n+                    if(i < parameters.length-1){\n+                        prettyCall.append(\", \");\n+                    }\n                 }\n+                shouldDetailThread.put(threadName, true);\n+            } else {\n+                prettyCall.append(\"JAVAFLAME_DETAILED_TOSTRING\");\n             }\n             prettyCall.append(\")\");\n-            final String threadName = Thread.currentThread().getName();\n             long entryTime = System.currentTimeMillis();\n             onEnter(threadName, prettyCall.toString(), entryTime);\n             return entryTime;"
+        },
+        {
+            "sha": "93fa2431c7e59e2c8e9d11c9e21d1a9bafa196a7",
+            "filename": "javaAgent/src/main/resources/com/github/beothorn/agent/index.html",
+            "status": "modified",
+            "additions": 15,
+            "deletions": 8,
+            "changes": 23,
+            "blob_url": "https://github.com/beothorn/javaflame/blob/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaAgent%2Fsrc%2Fmain%2Fresources%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2Findex.html",
+            "raw_url": "https://github.com/beothorn/javaflame/raw/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaAgent%2Fsrc%2Fmain%2Fresources%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2Findex.html",
+            "contents_url": "https://api.github.com/repos/beothorn/javaflame/contents/javaAgent%2Fsrc%2Fmain%2Fresources%2Fcom%2Fgithub%2Fbeothorn%2Fagent%2Findex.html?ref=9bc0debe0b294d4951170ac75a39f36fc99d0866",
+            "patch": "@@ -9,13 +9,13 @@\n <div id=\"header\" class=\"box\">\n     <img id=\"logo\" width=\"100px\" src=\"./logo.svg\"/>\n     <div id=\"metadata\">\n-        <p>Javaflame v7.1.0</p>\n+        <p>Javaflame v8.0.0</p>\n         <p id=\"arguments\"></p>\n         <p>First snapshot timestamp: <span id=\"startTimestamp\"></span></p>\n         <p>Last snapshot timestamp: &nbsp;<span id=\"finalTimestamp\"></span></p>\n     </div>\n </div>\n-\n+<div id=\"errorOutput\"></div>\n <div id=\"charts\"></div>\n <script type=\"text/javascript\" src=\"d3.v7.js\"></script>\n <script type=\"text/javascript\" src=\"d3-flamegraph.min.js\"></script>\n@@ -29,7 +29,7 @@\n     const firstSnapshot = document.getElementById(\"startTimestamp\");\n     const firstSnapshotTimestamp = data[0][0].snapshotTime;\n     const firstSnapshotDate = new Date(firstSnapshotTimestamp);\n-    const firstSnapshotTimestampFormatted = \n+    const firstSnapshotTimestampFormatted =\n         `${firstSnapshotDate.getFullYear()}-`+\n         `${firstSnapshotDate.getMonth()+1}-`+\n         `${firstSnapshotDate.getDate()} `+\n@@ -41,11 +41,11 @@\n \n     const finalSnapshot = document.getElementById(\"finalTimestamp\");\n     const finalSnapshotTimestamp = data[data.length-1][0].snapshotTime;\n-    \n+\n     const lastSnapshot = document.getElementById(\"finalTimestamp\");\n     const lastSnapshotTimestamp = data[data.length-1][0].snapshotTime;\n     const lastSnapshotDate = new Date(lastSnapshotTimestamp);\n-    const lastSnapshotTimestampFormatted = \n+    const lastSnapshotTimestampFormatted =\n         `${lastSnapshotDate.getFullYear()}-`+\n         `${lastSnapshotDate.getMonth()+1}-`+\n         `${lastSnapshotDate.getDate()} `+\n@@ -74,9 +74,16 @@\n \n         var chart = flamegraph().width(chartsWidth - 10); // minus border\n \n-        d3.select(\"#\"+newDiv.id)\n-            .datum(mergedData[i].span)\n-            .call(chart);\n+        try {\n+            d3.select(\"#\"+newDiv.id)\n+                .datum(mergedData[i].span)\n+                .call(chart);\n+        } catch (e) {\n+            const errorOutput = document.getElementById(\"errorOutput\");\n+            errorOutput.appendChild(document.createTextNode(`There was an error loading the chart.`));\n+            errorOutput.appendChild(document.createTextNode(`You can still open the devtools (F12) and type \"mergedData\" to see the graph as json.`));\n+            errorOutput.appendChild(document.createTextNode(`The exception: ${e}`));\n+        }\n     }\n </script>\n </body>"
+        },
+        {
+            "sha": "64e7117bef0fc319eb9f29b3cc962c4b2797ac86",
+            "filename": "javaExampleApp/src/main/java/com/github/beothorn/AnotherClass.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 2,
+            "changes": 12,
+            "blob_url": "https://github.com/beothorn/javaflame/blob/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaExampleApp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2FAnotherClass.java",
+            "raw_url": "https://github.com/beothorn/javaflame/raw/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaExampleApp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2FAnotherClass.java",
+            "contents_url": "https://api.github.com/repos/beothorn/javaflame/contents/javaExampleApp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2FAnotherClass.java?ref=9bc0debe0b294d4951170ac75a39f36fc99d0866",
+            "patch": "@@ -5,7 +5,6 @@ public class AnotherClass {\n     private final String value;\n \n     public AnotherClass(String value){\n-\n         this.value = value;\n     }\n \n@@ -16,9 +15,18 @@ public String getValue() {\n \n     private int getJ() {\n         int j = 0;\n-        for (int i = 0; i < 100000000; i++) {\n+        for (int i = 0; i < 1000; i++) {\n             j++;\n         }\n         return j;\n     }\n+\n+    @Override\n+    public String toString() {\n+        return recursive(this) + \"xxxxx\";\n+    }\n+\n+    private static String recursive(AnotherClass c) {\n+        return c.getValue();\n+    }\n }"
+        },
+        {
+            "sha": "3ce29d588b65f0867771da335dd399b6db72e983",
+            "filename": "javaExampleApp/src/main/java/com/github/beothorn/App.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/beothorn/javaflame/blob/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaExampleApp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2FApp.java",
+            "raw_url": "https://github.com/beothorn/javaflame/raw/9bc0debe0b294d4951170ac75a39f36fc99d0866/javaExampleApp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2FApp.java",
+            "contents_url": "https://api.github.com/repos/beothorn/javaflame/contents/javaExampleApp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fbeothorn%2FApp.java?ref=9bc0debe0b294d4951170ac75a39f36fc99d0866",
+            "patch": "@@ -30,6 +30,10 @@ public static void main(String[] args) throws RarException, IOException {\n             }\n         }).start();\n \n+        AnotherClass foo = new AnotherClass(\"Foo\");\n+        foo.getValue();\n+        String x = foo.toString();\n+\n         Junrar.extract(\"/tmp/foo.rar\", \"/tmp\");\n     }\n }"
+        }
+    ]
+}

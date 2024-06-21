@@ -1,0 +1,3 @@
+    public void setStationTimes(Map<String, String> stationTimes){
+        this.stationTimes = stationTimes;
+    }

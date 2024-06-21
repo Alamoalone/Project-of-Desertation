@@ -1,0 +1,2 @@
+removeCharacterFromList(Character character)
+addCharacterToList(Character character)

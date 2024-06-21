@@ -1,0 +1,1 @@
+apply(Object input, Map args, PebbleTemplate self, EvaluationContext context, int lineNumber)

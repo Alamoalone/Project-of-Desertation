@@ -1,0 +1,3 @@
+    public PublicWalletAddress toWallet() {
+        return this.to;
+    }

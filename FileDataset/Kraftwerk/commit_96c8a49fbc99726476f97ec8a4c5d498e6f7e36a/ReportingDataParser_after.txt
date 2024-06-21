@@ -1,0 +1,42 @@
+	private void addReportingDataUEToQuestionnaire(SurveyRawData surveyRawData, ReportingDataUE reportingDataUE,
+			QuestionnaireData questionnaire) {
+		if (questionnaire == null) {
+			questionnaire = new QuestionnaireData();
+			questionnaire.setIdentifier(reportingDataUE.getIdentifier());
+			surveyRawData.addQuestionnaire(questionnaire);
+			log.info("Missing questionnaire for reporting data: {}.", reportingDataUE.getIdentifier() );
+		}
+		//TODO Find another way than Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier() to fill the identifier field
+		if (reportingDataUE.getInterviewerId() != null)
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.INTERVIEWER_ID_NAME, reportingDataUE.getInterviewerId());
+		if (reportingDataUE.getOrganizationUnitId() != null)
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ORGANIZATION_UNIT_ID_NAME,
+					reportingDataUE.getOrganizationUnitId());
+		if (reportingDataUE.getInseeSampleIdentifier() != null) {
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_RGES_NAME, reportingDataUE.getInseeSampleIdentifier().getRges());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_NUMFA_NAME, reportingDataUE.getInseeSampleIdentifier().getNumfa());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_SSECH_NAME, reportingDataUE.getInseeSampleIdentifier().getSsech());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_LE_NAME, reportingDataUE.getInseeSampleIdentifier().getLe());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_EC_NAME, reportingDataUE.getInseeSampleIdentifier().getEc());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_BS_NAME, reportingDataUE.getInseeSampleIdentifier().getBs());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_NOI_NAME, reportingDataUE.getInseeSampleIdentifier().getNoi());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ADRESS_ID_STAT_INSEE, reportingDataUE.getInseeSampleIdentifier().getIdStatInsee());
+		}
+		if (!reportingDataUE.getStates().isEmpty()) {
+			addStates(reportingDataUE, questionnaire);
+		}
+		if (reportingDataUE.getContactOutcome() != null) {
+			addContactOutcome(reportingDataUE, questionnaire);
+		}
+		if (!reportingDataUE.getContactAttempts().isEmpty()) {
+			addContactAttempts(reportingDataUE, questionnaire);
+		}
+		if (reportingDataUE.getIdentification() != null){
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.IDENTIFICATION_NAME, reportingDataUE.getIdentification().getIdentification());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.ACCESS_NAME, reportingDataUE.getIdentification().getAccess());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.SITUATION_NAME, reportingDataUE.getIdentification().getSituation());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.CATEGORY_NAME, reportingDataUE.getIdentification().getCategory());
+			questionnaire.getAnswers().getSubGroup(Constants.REPORTING_DATA_GROUP_NAME).getInstance(Constants.REPORTING_DATA_PREFIX_NAME + reportingDataUE.getIdentifier()).putValue(Constants.OCCUPANT_NAME, reportingDataUE.getIdentification().getOccupant());
+		}
+	}
+

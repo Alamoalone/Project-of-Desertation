@@ -1,0 +1,3 @@
+findSizeOfDeletions(boolean excludeSQL)
+findSizeOfModifications(boolean excludeSQL)
+findSizeOfAdditions(boolean excludeSQL)

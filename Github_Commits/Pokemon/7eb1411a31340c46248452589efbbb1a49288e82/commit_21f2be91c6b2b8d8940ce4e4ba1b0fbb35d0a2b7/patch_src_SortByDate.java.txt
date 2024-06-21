@@ -1,0 +1,10 @@
+@@ -2,6 +2,9 @@
+ 
+ public class SortByDate implements Comparator <Card> {
+     public int compare (Card a, Card b) {
++        if (a.getDate() == null || b.getDate() == null) {
++            return 0;
++        }
+         int yearDifference;
+         if ((yearDifference = a.getDate().getYear()-b.getDate().getYear())==0) {
+             int monthDifference;

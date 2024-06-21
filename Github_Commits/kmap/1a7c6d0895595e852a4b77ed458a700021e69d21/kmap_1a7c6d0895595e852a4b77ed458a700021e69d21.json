@@ -1,0 +1,98 @@
+{
+    "sha": "1a7c6d0895595e852a4b77ed458a700021e69d21",
+    "node_id": "C_kwDOC6dvT9oAKDFhN2M2ZDA4OTU1OTVlODUyYTRiNzdlZDQ1OGE3MDAwMjFlNjlkMjE",
+    "commit": {
+        "author": {
+            "name": "holgerengels",
+            "email": "hengels@gmail.com",
+            "date": "2022-12-26T13:02:43Z"
+        },
+        "committer": {
+            "name": "holgerengels",
+            "email": "hengels@gmail.com",
+            "date": "2022-12-26T13:02:43Z"
+        },
+        "message": "fix(server): avoid null pointer exception",
+        "tree": {
+            "sha": "6e482ae5d852e12d0947dae8c3afcea857ac2c2b",
+            "url": "https://api.github.com/repos/holgerengels/kmap/git/trees/6e482ae5d852e12d0947dae8c3afcea857ac2c2b"
+        },
+        "url": "https://api.github.com/repos/holgerengels/kmap/git/commits/1a7c6d0895595e852a4b77ed458a700021e69d21",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/holgerengels/kmap/commits/1a7c6d0895595e852a4b77ed458a700021e69d21",
+    "html_url": "https://github.com/holgerengels/kmap/commit/1a7c6d0895595e852a4b77ed458a700021e69d21",
+    "comments_url": "https://api.github.com/repos/holgerengels/kmap/commits/1a7c6d0895595e852a4b77ed458a700021e69d21/comments",
+    "author": {
+        "login": "holgerengels",
+        "id": 11229725,
+        "node_id": "MDQ6VXNlcjExMjI5NzI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11229725?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/holgerengels",
+        "html_url": "https://github.com/holgerengels",
+        "followers_url": "https://api.github.com/users/holgerengels/followers",
+        "following_url": "https://api.github.com/users/holgerengels/following{/other_user}",
+        "gists_url": "https://api.github.com/users/holgerengels/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/holgerengels/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/holgerengels/subscriptions",
+        "organizations_url": "https://api.github.com/users/holgerengels/orgs",
+        "repos_url": "https://api.github.com/users/holgerengels/repos",
+        "events_url": "https://api.github.com/users/holgerengels/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/holgerengels/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "holgerengels",
+        "id": 11229725,
+        "node_id": "MDQ6VXNlcjExMjI5NzI1",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11229725?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/holgerengels",
+        "html_url": "https://github.com/holgerengels",
+        "followers_url": "https://api.github.com/users/holgerengels/followers",
+        "following_url": "https://api.github.com/users/holgerengels/following{/other_user}",
+        "gists_url": "https://api.github.com/users/holgerengels/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/holgerengels/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/holgerengels/subscriptions",
+        "organizations_url": "https://api.github.com/users/holgerengels/orgs",
+        "repos_url": "https://api.github.com/users/holgerengels/repos",
+        "events_url": "https://api.github.com/users/holgerengels/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/holgerengels/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "5840418737897890cc538b24aeff4fee6b28dce1",
+            "url": "https://api.github.com/repos/holgerengels/kmap/commits/5840418737897890cc538b24aeff4fee6b28dce1",
+            "html_url": "https://github.com/holgerengels/kmap/commit/5840418737897890cc538b24aeff4fee6b28dce1"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "f9e2cfe976f0ec838c7b0d7140e6ca0daf9679c7",
+            "filename": "server/src/main/java/kmap/Couch.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/holgerengels/kmap/blob/1a7c6d0895595e852a4b77ed458a700021e69d21/server%2Fsrc%2Fmain%2Fjava%2Fkmap%2FCouch.java",
+            "raw_url": "https://github.com/holgerengels/kmap/raw/1a7c6d0895595e852a4b77ed458a700021e69d21/server%2Fsrc%2Fmain%2Fjava%2Fkmap%2FCouch.java",
+            "contents_url": "https://api.github.com/repos/holgerengels/kmap/contents/server%2Fsrc%2Fmain%2Fjava%2Fkmap%2FCouch.java?ref=1a7c6d0895595e852a4b77ed458a700021e69d21",
+            "patch": "@@ -3,6 +3,7 @@\n import com.google.gson.*;\n import org.lightcouch.*;\n \n+import java.io.FileNotFoundException;\n import java.io.IOException;\n import java.io.InputStream;\n import java.io.UnsupportedEncodingException;\n@@ -692,6 +693,8 @@ private JsonObject loadTopic(CouchDbClient client, String[] dirs) {\n                 .includeDocs(true);\n         List<JsonObject> objects = view.query(JsonObject.class);\n         JsonObject o = objects.size() == 1 ? objects.get(0) : null;\n+        if (o == null)\n+            return null;\n         JsonArray attachments = o.getAsJsonArray(\"attachments\");\n         JsonObject _attachments = o.getAsJsonObject(\"_attachments\");\n         o.add(\"attachments\", amendAttachments(attachments, _attachments));"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+    public List<UserProfileCompact> findUsers(UserSearchCriteria userSearchCriteria) {
+        List<UserProfileCompact> userProfileCompacts = new ArrayList<>();
+
+        if (!Objects.equals(userSearchCriteria.getUserName(), "null")) {
+
+            UserAccountInfoModel userAccountInfoModel = userInfoRepository.findByUserName(userSearchCriteria.getUserName());
+            List<UserAccountInfoModel> userAccountInfoModelList = new ArrayList<>();
+            userAccountInfoModelList.add(userAccountInfoModel);
+
+            dtoConverter.convertDTOForCompactProfile(userProfileCompacts, userAccountInfoModelList);
+
+        } else {
+
+            List<UserAccountInfoModel> userAccountInfoModelList = customRepository.findByDynamicCriteria(userSearchCriteria);
+            dtoConverter.convertDTOForCompactProfile(userProfileCompacts, userAccountInfoModelList);
+
+        }
+
+        return userProfileCompacts;
+    }
+

@@ -1,0 +1,10 @@
+    private static void connectEquivalentAcLine(Network network, HvdcCreationParameters creationParameters) {
+        HvdcLine hvdcLine = network.getHvdcLine(creationParameters.getId());
+        Line equivalentAcLine = getLineOrThrow(network, creationParameters.getEquivalentAcLineId());
+        if (hvdcLine.getConverterStation1().getTerminal().isConnected()) {
+            equivalentAcLine.getTerminal1().connect();
+        }
+        if (hvdcLine.getConverterStation2().getTerminal().isConnected()) {
+            equivalentAcLine.getTerminal2().connect();
+        }
+    }

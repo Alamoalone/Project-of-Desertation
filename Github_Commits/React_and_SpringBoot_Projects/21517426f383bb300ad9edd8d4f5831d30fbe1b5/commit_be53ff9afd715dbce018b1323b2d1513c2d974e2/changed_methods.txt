@@ -1,0 +1,6 @@
+updateNoteById(Integer id, Notes notes)
+findByTitle(String title)
+createNote(Notes note)
+notesList()
+findByNoteId(Integer id)
+findAllByUserUserId(Integer userId)

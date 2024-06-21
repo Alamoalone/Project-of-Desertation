@@ -1,0 +1,4 @@
+    public boolean isSpacecraftBodyRate() {
+        return rateFrameIsA() ^ endpoints.getFrameA().asSpacecraftBodyFrame() == null;
+    }
+

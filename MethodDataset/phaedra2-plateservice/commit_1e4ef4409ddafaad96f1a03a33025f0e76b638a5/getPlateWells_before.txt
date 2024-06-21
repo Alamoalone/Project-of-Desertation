@@ -1,0 +1,4 @@
+    public List<WellDTO> getPlateWells(@Argument long plateId) {
+        List<WellDTO> result = wellService.getWellsByPlateId(plateId);
+        return result;
+    }

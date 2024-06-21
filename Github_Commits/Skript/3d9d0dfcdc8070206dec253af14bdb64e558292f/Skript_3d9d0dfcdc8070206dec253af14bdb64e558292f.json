@@ -1,0 +1,98 @@
+{
+    "sha": "3d9d0dfcdc8070206dec253af14bdb64e558292f",
+    "node_id": "C_kwDOAy8M79oAKDNkOWQwZGZjZGM4MDcwMjA2ZGVjMjUzYWYxNGJkYjY0ZTU1ODI5MmY",
+    "commit": {
+        "author": {
+            "name": "LimeGlass",
+            "email": "16087552+TheLimeGlass@users.noreply.github.com",
+            "date": "2023-07-27T00:42:44Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-07-27T00:42:44Z"
+        },
+        "message": "[2.7.0 target] Fix null pointer exception in ExprBlocks when using the ExprDirection without a number defined (#5793)\n\nFix null pointer exception in ExprBlocks when using the ExprDirection without a number defined. (#5790)\r\n\r\nUpdate ExprBlocks.java\r\n\r\n(cherry picked from commit 549ebc380b34dd544c760d7a2c23faa8973a12f7)",
+        "tree": {
+            "sha": "c6af8558a7006f73e0719e45d78ca97aad24c707",
+            "url": "https://api.github.com/repos/SkriptLang/Skript/git/trees/c6af8558a7006f73e0719e45d78ca97aad24c707"
+        },
+        "url": "https://api.github.com/repos/SkriptLang/Skript/git/commits/3d9d0dfcdc8070206dec253af14bdb64e558292f",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkwb2ECRBK7hj4Ov3rIwAAj/4IAJa1aFkttINdXyIAnyAR6bYb\n8OpWTCPAxl4zeg6uLCFyqRwRcdPPF8GRwNh6N2SpB7LXRlZFRTTjby7bGuElUp/W\nSdN/dfyNl5DM74Ob7n/DgnFqHoCoEn7+ZCFIMmkTJiuE7neeNlEI52or0Gp2FXIu\njdEjkeu9HpicgVxpPRolQD3+SU2dFooDX+2SKw6ixrgkDm0UEf5O7bYDEcJbLDKE\nAB22B+hKEdSHk8GFn7k8qxRdEbIHXawHISLs4sNlPRBxXc2XQXxF5H24jVyKHgDM\niH2BdFAmOnzerpHbSIeRl53CgLK/YtK19VkbRG0FwOrSweFF4uXVl/Cm8dSaq+g=\n=9NLo\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree c6af8558a7006f73e0719e45d78ca97aad24c707\nparent 7454a8449b66ebf83ce51ba67b15bd99fb28df0a\nauthor LimeGlass <16087552+TheLimeGlass@users.noreply.github.com> 1690418564 -0600\ncommitter GitHub <noreply@github.com> 1690418564 -0600\n\n[2.7.0 target] Fix null pointer exception in ExprBlocks when using the ExprDirection without a number defined (#5793)\n\nFix null pointer exception in ExprBlocks when using the ExprDirection without a number defined. (#5790)\r\n\r\nUpdate ExprBlocks.java\r\n\r\n(cherry picked from commit 549ebc380b34dd544c760d7a2c23faa8973a12f7)"
+        }
+    },
+    "url": "https://api.github.com/repos/SkriptLang/Skript/commits/3d9d0dfcdc8070206dec253af14bdb64e558292f",
+    "html_url": "https://github.com/SkriptLang/Skript/commit/3d9d0dfcdc8070206dec253af14bdb64e558292f",
+    "comments_url": "https://api.github.com/repos/SkriptLang/Skript/commits/3d9d0dfcdc8070206dec253af14bdb64e558292f/comments",
+    "author": {
+        "login": "TheLimeGlass",
+        "id": 16087552,
+        "node_id": "MDQ6VXNlcjE2MDg3NTUy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16087552?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/TheLimeGlass",
+        "html_url": "https://github.com/TheLimeGlass",
+        "followers_url": "https://api.github.com/users/TheLimeGlass/followers",
+        "following_url": "https://api.github.com/users/TheLimeGlass/following{/other_user}",
+        "gists_url": "https://api.github.com/users/TheLimeGlass/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/TheLimeGlass/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/TheLimeGlass/subscriptions",
+        "organizations_url": "https://api.github.com/users/TheLimeGlass/orgs",
+        "repos_url": "https://api.github.com/users/TheLimeGlass/repos",
+        "events_url": "https://api.github.com/users/TheLimeGlass/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/TheLimeGlass/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7454a8449b66ebf83ce51ba67b15bd99fb28df0a",
+            "url": "https://api.github.com/repos/SkriptLang/Skript/commits/7454a8449b66ebf83ce51ba67b15bd99fb28df0a",
+            "html_url": "https://github.com/SkriptLang/Skript/commit/7454a8449b66ebf83ce51ba67b15bd99fb28df0a"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 5,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "5eccfbb027ba16e03c1f7ac188efffc15ecdfc04",
+            "filename": "src/main/java/ch/njol/skript/expressions/ExprBlocks.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 3,
+            "changes": 8,
+            "blob_url": "https://github.com/SkriptLang/Skript/blob/3d9d0dfcdc8070206dec253af14bdb64e558292f/src%2Fmain%2Fjava%2Fch%2Fnjol%2Fskript%2Fexpressions%2FExprBlocks.java",
+            "raw_url": "https://github.com/SkriptLang/Skript/raw/3d9d0dfcdc8070206dec253af14bdb64e558292f/src%2Fmain%2Fjava%2Fch%2Fnjol%2Fskript%2Fexpressions%2FExprBlocks.java",
+            "contents_url": "https://api.github.com/repos/SkriptLang/Skript/contents/src%2Fmain%2Fjava%2Fch%2Fnjol%2Fskript%2Fexpressions%2FExprBlocks.java?ref=3d9d0dfcdc8070206dec253af14bdb64e558292f",
+            "patch": "@@ -151,9 +151,11 @@ public Iterator<Block> iterator(Event event) {\n \t\t\t\tint distance = SkriptConfig.maxTargetBlockDistance.value();\n \t\t\t\tif (this.direction instanceof ExprDirection) {\n \t\t\t\t\tExpression<Number> numberExpression = ((ExprDirection) this.direction).amount;\n-\t\t\t\t\tNumber number = numberExpression.getSingle(event);\n-\t\t\t\t\tif (numberExpression != null && number != null)\n-\t\t\t\t\t\tdistance = number.intValue();\n+\t\t\t\t\tif (numberExpression != null) {\n+\t\t\t\t\t\tNumber number = numberExpression.getSingle(event);\n+\t\t\t\t\t\tif (number != null)\n+\t\t\t\t\t\t\tdistance = number.intValue();\n+\t\t\t\t\t}\n \t\t\t\t}\n \t\t\t\treturn new BlockLineIterator(location, vector, distance);\n \t\t\t} else {"
+        }
+    ]
+}

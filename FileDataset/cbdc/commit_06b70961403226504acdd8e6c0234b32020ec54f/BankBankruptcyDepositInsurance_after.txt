@@ -1,0 +1,176 @@
+	public void bankrupt() {
+		Bank bank = (Bank) getAgent();
+		Population banks = ((MacroPopulation)((SimulationController)this.scheduler).getPopulation()).getPopulation(StaticValues.BANKS_ID);
+		double tot=0;
+		for (Agent b:banks.getAgents()){
+			Bank bank1 = (Bank) b;
+			if (bank1.getAgentId()!=bank.getAgentId())
+			tot+=bank1.getCapitalRatio();
+			}
+		Uniform distribution = new Uniform(0,0.1,prng);
+		//double car=tot/(banks.getSize()-1)+distribution.nextDouble();
+		double car = bank.getTargetedCapitalAdequacyRatio();
+		List<Item> loans=bank.getItemsStockMatrix(true, StaticValues.SM_LOAN);
+		double loansValue=0;
+		for (Item a:loans){
+			Loan loan= (Loan)a;
+			loansValue+=loan.getValue();
+		}
+		double targetNW=car*loansValue;
+		double nw=bank.getNetWealth();
+		bank.setBailoutCost(targetNW-nw);
+		double totDeposits= bank.getNumericBalanceSheet()[1][depositId];
+		
+		
+		
+		// Calculate deposit insurance fund volume and share of each bank in it
+		
+		Population govPop = ((MacroPopulation)((SimulationController)this.scheduler).getPopulation()).getPopulation(StaticValues.GOVERNMENT_ID);
+		
+		GovernmentAntiCyclicalWithInvestmentAndDIFund gov = (GovernmentAntiCyclicalWithInvestmentAndDIFund) govPop.getAgentList().get(0);
+		
+		ArrayList<Map.Entry<Bank, Deposit>> DIFund = gov.getDIFund();
+		
+		double depositInsuranceFundSum = 0;
+		
+		HashMap<Long, Double> sharesOfDIFund = new HashMap<Long, Double>();
+
+		for(Map.Entry<Bank, Deposit> dep: DIFund) {
+			depositInsuranceFundSum+=dep.getValue().getValue();
+		}
+		
+		for(Map.Entry<Bank, Deposit> dep: DIFund) {
+			depositInsuranceFundSum+=dep.getValue().getValue();
+			if(depositInsuranceFundSum==0) {
+				sharesOfDIFund.put(dep.getKey().getAgentId(), (double) 0);
+			}
+			else {
+				sharesOfDIFund.put(dep.getKey().getAgentId(), dep.getValue().getValue()/depositInsuranceFundSum);
+			}
+		}
+		
+		
+		// Transfer deposit insurance contributions from all solvent banks to the defaulted bank
+		
+		Item targetStock = bank.getItemStockMatrix(true, StaticValues.SM_RESERVES);
+		
+		// Cover the negative capital by the deposit insurance reserves first. Bailout by the government if this is not sufficient.
+		
+		Population hhs = ((MacroPopulation)((SimulationController)this.scheduler).getPopulation()).getPopulation(StaticValues.HOUSEHOLDS_ID);
+		Population cFirms = ((MacroPopulation)((SimulationController)this.scheduler).getPopulation()).getPopulation(StaticValues.CONSUMPTIONFIRMS_ID);
+		Population kFirms = ((MacroPopulation)((SimulationController)this.scheduler).getPopulation()).getPopulation(StaticValues.CAPITALFIRMS_ID);
+		
+		// Calculate net wealth of households and firms and raise taxes that net wealth of bank reaches 0
+		double totalNW = 0;
+		for (Agent receiver : hhs.getAgents()) {
+			totalNW += ((MacroAgent) receiver).getNetWealth();
+		}
+		for (Agent receiver : cFirms.getAgents()) {
+			totalNW += ((MacroAgent) receiver).getNetWealth();
+		}
+		for (Agent receiver : kFirms.getAgents()) {
+			totalNW += ((MacroAgent) receiver).getNetWealth();
+		}
+		
+		
+		double fundsToSpend = Math.min(-nw, depositInsuranceFundSum);
+		
+	// Transfer deposit insurance funds to the bankrupt bank proportionally to the banks contribution to the deposit insurance fund
+		
+		for(Map.Entry<Bank, Deposit> dep: DIFund) {
+				Bank receiver = (Bank) dep.getKey();
+			
+				Item payablestock =dep.getValue();
+				
+				double bankShareOfDIFund = sharesOfDIFund.get(receiver.getAgentId());
+				double toPay = bankShareOfDIFund*fundsToSpend;
+
+				LiabilitySupplier libHolder = (LiabilitySupplier) payablestock.getLiabilityHolder();
+
+				libHolder.transfer(payablestock, targetStock, toPay);
+		}
+				
+		double capitalAfterDIRecapitalization = bank.getNetWealth();
+		
+		if(capitalAfterDIRecapitalization<0) {
+			for (Agent rec : hhs.getAgents()) {
+				Households receiver = (Households) rec;
+				double hhnw = receiver.getNetWealth();
+				double toPay = hhnw * (capitalAfterDIRecapitalization) / totalNW * -1;
+
+				Item payablestock = receiver.getPayableStock(StaticValues.MKT_LABOR);
+				List<Item> payingStocks = receiver.getPayingStocks(0, payablestock);
+				receiver.reallocateLiquidity(toPay, payingStocks, payablestock);
+
+				LiabilitySupplier libHolder = (LiabilitySupplier) payablestock.getLiabilityHolder();
+				receiver.setBailoutcost(toPay);
+				
+				libHolder.transfer(payablestock, targetStock, toPay);
+			}
+			
+			for (Agent rec : cFirms.getAgents()) {
+				ConsumptionFirm receiver = (ConsumptionFirm) rec;
+				double hhnw = receiver.getNetWealth();
+				double toPay = hhnw * (capitalAfterDIRecapitalization) / totalNW * -1;
+
+				Item payablestock = receiver.getPayableStock(StaticValues.MKT_CONSGOOD);
+				List<Item> payingStocks = receiver.getPayingStocks(StaticValues.MKT_LABOR, null);
+				receiver.reallocateLiquidity(toPay, payingStocks, payablestock);
+
+				LiabilitySupplier libHolder = (LiabilitySupplier) payablestock.getLiabilityHolder();
+
+				libHolder.transfer(payablestock, targetStock, toPay);
+			}
+			
+			for (Agent rec : kFirms.getAgents()) {
+				CapitalFirm receiver = (CapitalFirm) rec;
+				double hhnw = receiver.getNetWealth();
+				double toPay = hhnw * (capitalAfterDIRecapitalization) / totalNW * -1;
+
+				Item payablestock = receiver.getPayableStock(StaticValues.MKT_CAPGOOD);
+				List<Item> payingStocks = receiver.getPayingStocks(StaticValues.MKT_LABOR, null);
+				receiver.reallocateLiquidity(toPay, payingStocks, payablestock);
+
+				LiabilitySupplier libHolder = (LiabilitySupplier) payablestock.getLiabilityHolder();
+
+				libHolder.transfer(payablestock, targetStock, toPay);
+			}
+		}
+
+		
+		// Recapitalize banks by households ##############################################################################################################################################################
+		
+		totalNW = 0;
+		for (Agent receiver : hhs.getAgents()) {
+			totalNW += ((MacroAgent) receiver).getNetWealth();
+		}
+
+		for (Agent rec : hhs.getAgents()) {
+			Households receiver = (Households) rec;
+			double hhnw = receiver.getNetWealth();
+			double toPay = hhnw * (targetNW) / totalNW;
+
+			Item payablestock = receiver.getPayableStock(StaticValues.MKT_LABOR);
+			List<Item> payingStocks = receiver.getPayingStocks(0, payablestock);
+			receiver.reallocateLiquidity(toPay, payingStocks, payablestock);
+
+			LiabilitySupplier libHolder = (LiabilitySupplier) payablestock.getLiabilityHolder();
+
+			libHolder.transfer(payablestock, targetStock, toPay);
+		}
+		
+		totDeposits = bank.getNumericBalanceSheet()[1][depositId];
+		
+		Expectation exp =bank.getExpectation(depositExpectationId);
+		double[][] expData = exp.getPassedValues();
+		for(int j = 0; j<expData.length; j++){
+			expData[j][0]=totDeposits;
+			expData[j][1]=totDeposits;
+		}
+		exp.setPassedValues(expData);
+		
+		System.out.println("bank "+ bank.getAgentId() +" defaulted");
+		//System.out.println(numberBailouts);
+		
+	}
+

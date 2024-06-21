@@ -1,0 +1,1 @@
+updateMessageReading(Message message, boolean isAnimated)

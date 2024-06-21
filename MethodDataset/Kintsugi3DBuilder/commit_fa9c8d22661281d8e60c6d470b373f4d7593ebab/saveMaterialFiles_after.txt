@@ -1,0 +1,26 @@
+    public void saveMaterialFiles(File materialDirectory, Runnable finishedCallback)
+    {
+        if (ibrInstance == null || ibrInstance.getIBRResources() == null
+            || ibrInstance.getIBRResources().getSpecularMaterialResources() != null)
+        {
+            if (finishedCallback != null)
+            {
+                finishedCallback.run();
+            }
+        }
+        else
+        {
+            SpecularMaterialResources<ContextType> material
+                = ibrInstance.getIBRResources().getSpecularMaterialResources();
+
+            Rendering.runLater(() ->
+            {
+                material.saveAll(materialDirectory);
+
+                if (finishedCallback != null)
+                {
+                    finishedCallback.run();
+                }
+            });
+        }
+    }

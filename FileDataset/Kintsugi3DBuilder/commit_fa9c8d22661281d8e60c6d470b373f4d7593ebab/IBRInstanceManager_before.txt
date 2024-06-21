@@ -1,0 +1,18 @@
+    public void saveMaterialFiles(File materialDirectory, Runnable finishedCallback)
+    {
+        Rendering.runLater(() ->
+        {
+            ibrInstance.getIBRResources().getSpecularMaterialResources().saveAll(materialDirectory);
+
+            if (finishedCallback != null)
+            {
+                finishedCallback.run();
+            }
+        });
+    }
+
+    public void saveGlTF(File outputDirectory, ExportSettings settings)
+    {
+        ibrInstance.saveGlTF(outputDirectory, settings);
+    }
+

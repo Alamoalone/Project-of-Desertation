@@ -1,0 +1,7 @@
+	public List<Person> getAllPersons() throws NullPointerException {
+		if (persons.isEmpty()) {
+			throw new NullPointerException("none person registered!");
+		}
+		System.out.println("Retrieving all persons" + persons);
+		return persons;
+	}

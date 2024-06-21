@@ -1,0 +1,4 @@
+    public void removeCharacterFromList(Character character) {
+        if (Objects.nonNull(character) && this.characters.contains(character))
+            this.getCharacters().remove(character);
+    }

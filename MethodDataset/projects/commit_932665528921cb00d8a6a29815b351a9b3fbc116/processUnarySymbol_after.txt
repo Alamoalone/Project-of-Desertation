@@ -1,0 +1,19 @@
+    private static void processUnarySymbol(VariablesOffsets _vars, int _sum, OperationNode _val) {
+        if (_val instanceof SymbolOperation && _val.getFirstChild().getNextSibling() == null) {
+            SymbolOperation par_ = (SymbolOperation) _val;
+            AnaTypeFct function_ = par_.getFct().getFunction();
+            if (LambdaOperation.fct(function_) != null) {
+                addParts(_vars, function_,
+                        _sum + _val.getIndexInEl() + par_.getOperatorContent().getOpOffset(), function_.getFunction().getName().length(),
+                        _val.getErrs(), _val.getErrs());
+            } else if (!_val.getErrs().isEmpty()){
+                int i_ = _sum + _val.getIndexInEl() + par_.getOperatorContent().getOpOffset();
+                _vars.addPart(new PartOffset(ExportCst.anchorErr(StringUtil.join(_val.getErrs(),ExportCst.JOIN_ERR)),i_));
+                _vars.addPart(new PartOffset(ExportCst.END_ANCHOR,i_+1));
+            } else if (_val instanceof RandCodeOperation && canCallRandeCode(_vars, _val.getFirstChild().getResultClass())) {
+                int i_ = _sum + _val.getIndexInEl() + par_.getOperatorContent().getOpOffset();
+                _vars.addPart(new PartOffset(ExportCst.HEAD_ITALIC, i_));
+                _vars.addPart(new PartOffset(ExportCst.FOOT_ITALIC, i_ + 1));
+            }
+        }
+    }

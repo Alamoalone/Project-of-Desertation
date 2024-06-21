@@ -1,0 +1,98 @@
+{
+    "sha": "12ce481638fba056b40c5ba03cb6cce441ed2b6f",
+    "node_id": "C_kwDOCSXF7toAKDEyY2U0ODE2MzhmYmEwNTZiNDBjNWJhMDNjYjZjY2U0NDFlZDJiNmY",
+    "commit": {
+        "author": {
+            "name": "Richard Rowlands",
+            "email": "rrowlands@terraframe.com",
+            "date": "2023-12-14T19:58:30Z"
+        },
+        "committer": {
+            "name": "Richard Rowlands",
+            "email": "rrowlands@terraframe.com",
+            "date": "2023-12-14T19:58:30Z"
+        },
+        "message": "fix(processing): null pointer exception thrown when uploading data",
+        "tree": {
+            "sha": "ebdddf1dfa878fea92d79181f0b186fe2111f777",
+            "url": "https://api.github.com/repos/terraframe/osmre-uav/git/trees/ebdddf1dfa878fea92d79181f0b186fe2111f777"
+        },
+        "url": "https://api.github.com/repos/terraframe/osmre-uav/git/commits/12ce481638fba056b40c5ba03cb6cce441ed2b6f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/terraframe/osmre-uav/commits/12ce481638fba056b40c5ba03cb6cce441ed2b6f",
+    "html_url": "https://github.com/terraframe/osmre-uav/commit/12ce481638fba056b40c5ba03cb6cce441ed2b6f",
+    "comments_url": "https://api.github.com/repos/terraframe/osmre-uav/commits/12ce481638fba056b40c5ba03cb6cce441ed2b6f/comments",
+    "author": {
+        "login": "rrowlands",
+        "id": 1326328,
+        "node_id": "MDQ6VXNlcjEzMjYzMjg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1326328?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rrowlands",
+        "html_url": "https://github.com/rrowlands",
+        "followers_url": "https://api.github.com/users/rrowlands/followers",
+        "following_url": "https://api.github.com/users/rrowlands/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rrowlands/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rrowlands/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rrowlands/subscriptions",
+        "organizations_url": "https://api.github.com/users/rrowlands/orgs",
+        "repos_url": "https://api.github.com/users/rrowlands/repos",
+        "events_url": "https://api.github.com/users/rrowlands/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rrowlands/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "rrowlands",
+        "id": 1326328,
+        "node_id": "MDQ6VXNlcjEzMjYzMjg=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1326328?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/rrowlands",
+        "html_url": "https://github.com/rrowlands",
+        "followers_url": "https://api.github.com/users/rrowlands/followers",
+        "following_url": "https://api.github.com/users/rrowlands/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rrowlands/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/rrowlands/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rrowlands/subscriptions",
+        "organizations_url": "https://api.github.com/users/rrowlands/orgs",
+        "repos_url": "https://api.github.com/users/rrowlands/repos",
+        "events_url": "https://api.github.com/users/rrowlands/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/rrowlands/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "bd2f8de0d6f67894fb3bcc93bc5ce6c59ec20404",
+            "url": "https://api.github.com/repos/terraframe/osmre-uav/commits/bd2f8de0d6f67894fb3bcc93bc5ce6c59ec20404",
+            "html_url": "https://github.com/terraframe/osmre-uav/commit/bd2f8de0d6f67894fb3bcc93bc5ce6c59ec20404"
+        }
+    ],
+    "stats": {
+        "total": 17,
+        "additions": 11,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "2f321d076c06cd628b8951a8867e4cc448c94f65",
+            "filename": "uasdm-server/src/main/java/gov/geoplatform/uasdm/processing/ODMZipPostProcessor.java",
+            "status": "modified",
+            "additions": 11,
+            "deletions": 6,
+            "changes": 17,
+            "blob_url": "https://github.com/terraframe/osmre-uav/blob/12ce481638fba056b40c5ba03cb6cce441ed2b6f/uasdm-server%2Fsrc%2Fmain%2Fjava%2Fgov%2Fgeoplatform%2Fuasdm%2Fprocessing%2FODMZipPostProcessor.java",
+            "raw_url": "https://github.com/terraframe/osmre-uav/raw/12ce481638fba056b40c5ba03cb6cce441ed2b6f/uasdm-server%2Fsrc%2Fmain%2Fjava%2Fgov%2Fgeoplatform%2Fuasdm%2Fprocessing%2FODMZipPostProcessor.java",
+            "contents_url": "https://api.github.com/repos/terraframe/osmre-uav/contents/uasdm-server%2Fsrc%2Fmain%2Fjava%2Fgov%2Fgeoplatform%2Fuasdm%2Fprocessing%2FODMZipPostProcessor.java?ref=12ce481638fba056b40c5ba03cb6cce441ed2b6f",
+            "patch": "@@ -172,17 +172,17 @@ protected void cleanExistingProduct()\n       try\n       {\n \n-        if (this.progressTask.getProcessDem())\n+        if (truthy(this.progressTask.getProcessDem()))\n         {\n           this.collection.removeArtifacts(ImageryComponent.DEM, false);\n         }\n \n-        if (this.progressTask.getProcessOrtho())\n+        if (truthy(this.progressTask.getProcessOrtho()))\n         {\n           this.collection.removeArtifacts(ImageryComponent.ORTHO, false);\n         }\n \n-        if (this.progressTask.getProcessPtcloud())\n+        if (truthy(this.progressTask.getProcessPtcloud()))\n         {\n           this.collection.removeArtifacts(ImageryComponent.PTCLOUD, false);\n         }\n@@ -196,7 +196,7 @@ protected void cleanExistingProduct()\n \n   protected void processProduct(Product product, StatusMonitorIF monitor, CloseableFile unzippedParentFolder) throws InterruptedException\n   {\n-    if (this.progressTask != null && this.progressTask.getProcessDem())\n+    if (this.progressTask != null && truthy(this.progressTask.getProcessDem()))\n     {\n       this.runProcessor(unzippedParentFolder, \"odm_dem/dsm.tif\", new ManagedDocument(buildS3Path(ImageryComponent.DEM, this.filePrefix, \"dsm\" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor));\n       this.runProcessor(unzippedParentFolder, \"odm_dem/dtm.tif\", new ManagedDocument(buildS3Path(ImageryComponent.DEM, this.filePrefix, \"dtm\" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor));\n@@ -207,7 +207,7 @@ protected void processProduct(Product product, StatusMonitorIF monitor, Closeabl\n       this.runProcessor(unzippedParentFolder, \"odm_report/report.pdf\", new ManagedDocument(buildS3Path(ImageryComponent.DEM, this.filePrefix, \"report.pdf\"), this.product, this.collection, monitor));\n     }\n \n-    if (this.progressTask != null && this.progressTask.getProcessOrtho())\n+    if (this.progressTask != null && truthy(this.progressTask.getProcessOrtho()))\n     {\n       this.runProcessor(unzippedParentFolder, \"odm_orthophoto/odm_orthophoto.png\", new ManagedDocument(buildS3Path(ImageryComponent.ORTHO, this.filePrefix, \"odm_orthophoto.png\"), this.product, this.collection, monitor));\n       this.runProcessor(unzippedParentFolder, \"odm_orthophoto/odm_orthophoto.tif\", new ManagedDocument(buildS3Path(ImageryComponent.ORTHO, this.filePrefix, \"odm_orthophoto\" + CogTifProcessor.COG_EXTENSION), this.product, this.collection, monitor, new DocumentInfo().setOrthoCorrectionModel(\"unknown\")));\n@@ -216,7 +216,7 @@ protected void processProduct(Product product, StatusMonitorIF monitor, Closeabl\n       this.runProcessor(unzippedParentFolder, \"odm_report/report.pdf\", new ManagedDocument(buildS3Path(ImageryComponent.ORTHO, this.filePrefix, \"report.pdf\"), this.product, this.collection, monitor));\n     }\n \n-    if (this.progressTask != null && this.progressTask.getProcessPtcloud())\n+    if (this.progressTask != null && truthy(this.progressTask.getProcessPtcloud()))\n     {\n       EpsgProcessor processor = new EpsgProcessor();\n \n@@ -316,5 +316,10 @@ protected CloseableFile getAllZip()\n       return this.product.downloadAllZip().openNewFile();\n     }\n   }\n+  \n+  private boolean truthy(Boolean b)\n+  {\n+    return Boolean.TRUE.equals(b); // Prevents against throwing NPE if b is null\n+  }\n \n }"
+        }
+    ]
+}

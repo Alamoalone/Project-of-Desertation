@@ -1,0 +1,98 @@
+{
+    "sha": "9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724",
+    "node_id": "C_kwDOAATZv9oAKDlkZThhN2RkZjNkNTk4MjViMGJmYWQ0YzkyNzZlYmNkMGJlZGY3MjQ",
+    "commit": {
+        "author": {
+            "name": "Victor Galan",
+            "email": "victor.galan@liferay.com",
+            "date": "2023-06-29T06:38:17Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2023-06-29T09:07:56Z"
+        },
+        "message": "LPS-188949 Set the company before setting the lookAndFeel otherwise it causes a null pointer exception",
+        "tree": {
+            "sha": "5a2c6dd86d8819992002b9292c7e0dfd39a7b12f",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/5a2c6dd86d8819992002b9292c7e0dfd39a7b12f"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724/comments",
+    "author": {
+        "login": "victorg1991",
+        "id": 11654230,
+        "node_id": "MDQ6VXNlcjExNjU0MjMw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/11654230?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/victorg1991",
+        "html_url": "https://github.com/victorg1991",
+        "followers_url": "https://api.github.com/users/victorg1991/followers",
+        "following_url": "https://api.github.com/users/victorg1991/following{/other_user}",
+        "gists_url": "https://api.github.com/users/victorg1991/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/victorg1991/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/victorg1991/subscriptions",
+        "organizations_url": "https://api.github.com/users/victorg1991/orgs",
+        "repos_url": "https://api.github.com/users/victorg1991/repos",
+        "events_url": "https://api.github.com/users/victorg1991/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/victorg1991/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "65c0faf173d09e877d2016b93843467283c1d663",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/65c0faf173d09e877d2016b93843467283c1d663",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/65c0faf173d09e877d2016b93843467283c1d663"
+        }
+    ],
+    "stats": {
+        "total": 7,
+        "additions": 7,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "37db69f29e2cfc8a85cae4b6a98f352c3e4d8052",
+            "filename": "modules/apps/fragment/fragment-test/src/testIntegration/java/com/liferay/fragment/internal/renderer/test/FragmentEntryFragmentRendererTest.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 0,
+            "changes": 7,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724/modules%2Fapps%2Ffragment%2Ffragment-test%2Fsrc%2FtestIntegration%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finternal%2Frenderer%2Ftest%2FFragmentEntryFragmentRendererTest.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724/modules%2Fapps%2Ffragment%2Ffragment-test%2Fsrc%2FtestIntegration%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finternal%2Frenderer%2Ftest%2FFragmentEntryFragmentRendererTest.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Ffragment%2Ffragment-test%2Fsrc%2FtestIntegration%2Fjava%2Fcom%2Fliferay%2Ffragment%2Finternal%2Frenderer%2Ftest%2FFragmentEntryFragmentRendererTest.java?ref=9de8a7ddf3d59825b0bfad4c9276ebcd0bedf724",
+            "patch": "@@ -33,6 +33,7 @@\n import com.liferay.portal.kernel.model.Layout;\n import com.liferay.portal.kernel.model.LayoutSet;\n import com.liferay.portal.kernel.security.permission.PermissionCheckerFactoryUtil;\n+import com.liferay.portal.kernel.service.CompanyLocalService;\n import com.liferay.portal.kernel.service.ServiceContext;\n import com.liferay.portal.kernel.test.rule.AggregateTestRule;\n import com.liferay.portal.kernel.test.rule.DeleteAfterTestRun;\n@@ -254,6 +255,9 @@ private ThemeDisplay _getThemeDisplay(HttpServletRequest httpServletRequest)\n \n \t\tThemeDisplay themeDisplay = new ThemeDisplay();\n \n+\t\tthemeDisplay.setCompany(\n+\t\t\t_companyLocalService.getCompany(TestPropsValues.getCompanyId()));\n+\n \t\tLayoutSet layoutSet = _group.getPublicLayoutSet();\n \n \t\tthemeDisplay.setLookAndFeel(\n@@ -271,6 +275,9 @@ private ThemeDisplay _getThemeDisplay(HttpServletRequest httpServletRequest)\n \t\treturn themeDisplay;\n \t}\n \n+\t@Inject\n+\tprivate CompanyLocalService _companyLocalService;\n+\n \tprivate long _defaultSegmentsExperienceId;\n \n \t@Inject"
+        }
+    ]
+}

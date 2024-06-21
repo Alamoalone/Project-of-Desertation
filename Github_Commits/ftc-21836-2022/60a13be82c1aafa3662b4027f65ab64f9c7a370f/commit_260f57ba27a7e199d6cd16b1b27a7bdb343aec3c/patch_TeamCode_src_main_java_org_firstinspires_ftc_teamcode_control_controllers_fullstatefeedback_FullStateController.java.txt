@@ -1,0 +1,9 @@
+@@ -7,7 +7,7 @@
+ public class FullStateController implements FeedbackController {
+ 
+     private FullStateGains gains;
+-    private State target, error;
++    private State target, error = new State();
+ 
+     @Override
+     public void setTarget(State target) {

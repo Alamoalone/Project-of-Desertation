@@ -1,0 +1,36 @@
+@@ -328,6 +328,8 @@ else if(newtype.equals("Employee")||newtype.equals("employee")||newtype.equals("
+ 					for(int k=0;k<count_tasks;++k)//nullify assigned tasks
+ 					{
+ 						Task task= Application.taskDataHandler.get(k);
++						if(task.getAssignedEmployee()==null)
++							continue;
+ 						if(task.getAssignedEmployee().getUsername().equals(uname))
+ 						{
+ 							task.setAssignedEmployee(null);
+@@ -337,6 +339,8 @@ else if(newtype.equals("Employee")||newtype.equals("employee")||newtype.equals("
+ 					for(int k=0;k<count_projects;++k)//nullify any assigned projects 
+ 					{
+ 						Project project= Application.projectDataHandler.get(k);
++						if(project.getLeader()==null)
++							continue;
+ 						if(project.getLeader().getUsername().equals(uname))
+ 						{
+ 							project.setLeader(null);
+@@ -647,6 +651,8 @@ public void manageEmployees() throws IOException
+ 					for(int k=0;k<count_tasks;++k)//nullify assigned tasks
+ 					{
+ 						Task task= Application.taskDataHandler.get(k);
++						if(task.getAssignedEmployee()==null)
++							continue;
+ 						if(task.getAssignedEmployee().getUsername().equals(employee.getUsername()))
+ 						{
+ 							task.setAssignedEmployee(null);
+@@ -656,6 +662,8 @@ public void manageEmployees() throws IOException
+ 					for(int k=0;k<count_projects;++k)//nullify any assigned projects 
+ 					{
+ 						Project project= Application.projectDataHandler.get(k);
++						if(project.getLeader()==null)
++							continue;
+ 						if(project.getLeader().getUsername().equals(employee.getUsername()))
+ 						{
+ 							project.setLeader(null);

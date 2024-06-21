@@ -1,0 +1,83 @@
+	private void setOnlineEditor() {
+		comboEditor = new EditableComboBoxCellEditor(srcTableViewer.getTable(), tarSchemaNameArray, SWT.READ_ONLY);
+		
+		CellEditor[] editors = new CellEditor[] {
+				new CheckboxCellEditorFactory().getCellEditor(srcTableViewer.getTable()),
+				null,
+				null,
+				null,
+				comboEditor,
+				null
+		};
+		
+		srcTableViewer.setCellEditors(editors);
+		srcTableViewer.setCellModifier(new ICellModifier() {
+			
+			@Override
+			public void modify(Object element, String property, Object value) {
+				TableItem tabItem = (TableItem) element;
+				SrcTable srcTable = (SrcTable) tabItem.getData();
+				
+				if (property.equals(propertyList[4])) {
+					srcTable.setTarSchema(returnValue((Integer) value, tabItem));
+					addSelectCheckboxValue();
+					srcTableViewer.refresh();
+				} else if (property.equals(propertyList[0])) {
+					tabItem.setImage(CompositeUtils.getCheckImage(!srcTable.isSelected));
+					srcTable.setSelected(!srcTable.isSelected);
+				}
+			}
+			
+			@Override
+			public Object getValue(Object element, String property) {
+				if (property.equals(propertyList[4])) {
+					return returnIndex(element);
+				} else if (property.equals(propertyList[0])) {
+					return true;
+				} else {
+					return null;
+				}
+			}
+			
+			@Override
+			public boolean canModify(Object element, String property) {
+				if (!tarCatalog.isDbHasUserSchema()) {
+					return false;
+				}
+				
+				if (property.equals(propertyList[4]) || property.equals(propertyList[0])) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			
+			public int returnIndex(Object element) {
+				if (element instanceof SrcTable) {
+					SrcTable srcTable = (SrcTable) element;
+					
+					for (int i = 0; i < tarSchemaNameArray.length; i++) {
+						if (tarSchemaNameArray[i].equals(srcTable.getTarSchema())) {						
+							return i;
+						}
+					}
+				}
+				
+				return 0;
+			}
+			public String returnValue(int index, TableItem item) {
+				return tarSchemaNameArray[index];
+			}
+			
+			private void addSelectCheckboxValue() {
+				TableItem[] tableItems = srcTableViewer.getTable().getItems();
+				for (int i = 0; i < tableItems.length; i++) {
+					if (tableItems[i].getImage().equals(CompositeUtils.CHECK_IMAGE)) {
+						srcTableList.get(i).setSelected(true);
+					} else {
+						srcTableList.get(i).setSelected(false);
+					}
+				}
+			}
+		});
+	}

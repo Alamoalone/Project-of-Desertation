@@ -1,0 +1,1 @@
+mapPetEntitytoPetResponse(PetEntity petEntity)

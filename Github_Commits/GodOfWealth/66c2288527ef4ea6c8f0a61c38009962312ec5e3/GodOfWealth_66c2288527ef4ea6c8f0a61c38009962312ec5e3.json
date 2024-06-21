@@ -1,0 +1,98 @@
+{
+    "sha": "66c2288527ef4ea6c8f0a61c38009962312ec5e3",
+    "node_id": "C_kwDOJEb04doAKDY2YzIyODg1MjdlZjRlYTZjOGYwYTYxYzM4MDA5OTYyMzEyZWM1ZTM",
+    "commit": {
+        "author": {
+            "name": "LDS_XiaoYe",
+            "email": "xiaoyecreate@outlook.com",
+            "date": "2023-11-26T05:38:19Z"
+        },
+        "committer": {
+            "name": "LDS_XiaoYe",
+            "email": "xiaoyecreate@outlook.com",
+            "date": "2023-11-26T05:38:19Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "68788ef1824e3d43e7befecdbf1f1469f3628199",
+            "url": "https://api.github.com/repos/mcstaralliance/GodOfWealth/git/trees/68788ef1824e3d43e7befecdbf1f1469f3628199"
+        },
+        "url": "https://api.github.com/repos/mcstaralliance/GodOfWealth/git/commits/66c2288527ef4ea6c8f0a61c38009962312ec5e3",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQGzBAABCAAdFiEE+CcZsO+HudAbKovdoUC654m7mEwFAmVi2csACgkQoUC654m7\nmEwBOQwAmOTKSYoWllr7hKKCXn+Y1vZUjA/xcD5ss1EEuOaXeG10AuADTTiTjLIE\nGPbAVR7dXBuEfgEpuAinTiX6sXzD8cPvhHcpymUUofl5JxC+Modl0LO8ul/iFuDt\n9nbclcTr+kXhB8t2+IK/fk1xou0qalA/IKAqpJPH80OTxNjTqVkvm7oMbD0VUIED\n6fIEqkxTrwPqhe8ZQmEN3BybdVXWUQimXdCojP3+TMsZNGr++xj0vGObul4eLUi6\nOHPjYnBMuOoaiFOYtgX7kOXZOoS/NrkSCKR68I9oRRhCTkEOr+IWlW6ZWG8HYhch\naFRTLRQq+Yypr4N8Q8svw1zelGF9cCtb8C1re2mqGhJEnYROMbLocujPkrF1o28n\nrVM+y0I4bJ8b/k09psoofIlNWG+8EtuIAAHQxjKWU4+DBp47J6fCLQDrXHhtQpgv\n56nAoZ6GAUx27/j7udzoA0M8NRGpsU2oXRc6EOocZaJKkdT1n7YTv3lo+7DDUM5s\nB4Q660vz\n=DBFX\n-----END PGP SIGNATURE-----",
+            "payload": "tree 68788ef1824e3d43e7befecdbf1f1469f3628199\nparent 1bd4edcb675e07e6d9eef2e18bf82f9ff37f90d0\nauthor LDS_XiaoYe <xiaoyecreate@outlook.com> 1700977099 +0800\ncommitter LDS_XiaoYe <xiaoyecreate@outlook.com> 1700977099 +0800\n\nfix null pointer exception\n"
+        }
+    },
+    "url": "https://api.github.com/repos/mcstaralliance/GodOfWealth/commits/66c2288527ef4ea6c8f0a61c38009962312ec5e3",
+    "html_url": "https://github.com/mcstaralliance/GodOfWealth/commit/66c2288527ef4ea6c8f0a61c38009962312ec5e3",
+    "comments_url": "https://api.github.com/repos/mcstaralliance/GodOfWealth/commits/66c2288527ef4ea6c8f0a61c38009962312ec5e3/comments",
+    "author": {
+        "login": "LDS-XiaoYe",
+        "id": 53298022,
+        "node_id": "MDQ6VXNlcjUzMjk4MDIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53298022?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/LDS-XiaoYe",
+        "html_url": "https://github.com/LDS-XiaoYe",
+        "followers_url": "https://api.github.com/users/LDS-XiaoYe/followers",
+        "following_url": "https://api.github.com/users/LDS-XiaoYe/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LDS-XiaoYe/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/LDS-XiaoYe/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LDS-XiaoYe/subscriptions",
+        "organizations_url": "https://api.github.com/users/LDS-XiaoYe/orgs",
+        "repos_url": "https://api.github.com/users/LDS-XiaoYe/repos",
+        "events_url": "https://api.github.com/users/LDS-XiaoYe/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/LDS-XiaoYe/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "LDS-XiaoYe",
+        "id": 53298022,
+        "node_id": "MDQ6VXNlcjUzMjk4MDIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/53298022?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/LDS-XiaoYe",
+        "html_url": "https://github.com/LDS-XiaoYe",
+        "followers_url": "https://api.github.com/users/LDS-XiaoYe/followers",
+        "following_url": "https://api.github.com/users/LDS-XiaoYe/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LDS-XiaoYe/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/LDS-XiaoYe/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LDS-XiaoYe/subscriptions",
+        "organizations_url": "https://api.github.com/users/LDS-XiaoYe/orgs",
+        "repos_url": "https://api.github.com/users/LDS-XiaoYe/repos",
+        "events_url": "https://api.github.com/users/LDS-XiaoYe/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/LDS-XiaoYe/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1bd4edcb675e07e6d9eef2e18bf82f9ff37f90d0",
+            "url": "https://api.github.com/repos/mcstaralliance/GodOfWealth/commits/1bd4edcb675e07e6d9eef2e18bf82f9ff37f90d0",
+            "html_url": "https://github.com/mcstaralliance/GodOfWealth/commit/1bd4edcb675e07e6d9eef2e18bf82f9ff37f90d0"
+        }
+    ],
+    "stats": {
+        "total": 19,
+        "additions": 9,
+        "deletions": 10
+    },
+    "files": [
+        {
+            "sha": "58cd2560d09e7face208edbcfcf8af0f84061ebe",
+            "filename": "src/main/java/com/mcstaralliance/godofwealth/task/CheckRunnable.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 10,
+            "changes": 19,
+            "blob_url": "https://github.com/mcstaralliance/GodOfWealth/blob/66c2288527ef4ea6c8f0a61c38009962312ec5e3/src%2Fmain%2Fjava%2Fcom%2Fmcstaralliance%2Fgodofwealth%2Ftask%2FCheckRunnable.java",
+            "raw_url": "https://github.com/mcstaralliance/GodOfWealth/raw/66c2288527ef4ea6c8f0a61c38009962312ec5e3/src%2Fmain%2Fjava%2Fcom%2Fmcstaralliance%2Fgodofwealth%2Ftask%2FCheckRunnable.java",
+            "contents_url": "https://api.github.com/repos/mcstaralliance/GodOfWealth/contents/src%2Fmain%2Fjava%2Fcom%2Fmcstaralliance%2Fgodofwealth%2Ftask%2FCheckRunnable.java?ref=66c2288527ef4ea6c8f0a61c38009962312ec5e3",
+            "patch": "@@ -9,33 +9,31 @@\n import org.bukkit.scheduler.BukkitRunnable;\n \n import java.time.LocalTime;\n-import java.util.ArrayList;\n-import java.util.List;\n-import java.util.Random;\n-import java.util.UUID;\n+import java.util.*;\n \n public class CheckRunnable extends BukkitRunnable {\n     private static final GodOfWealth plugin = GodOfWealth.getInstance();\n     private boolean hasClearedData = false;\n \n     private void broadcastSelectedMessage(OfflinePlayer player) {\n-        if (plugin.getConfig().getString(\"lucky-player-real-name\").isEmpty()) {\n+        if (Objects.isNull(plugin.getConfig().getString(\"lucky-player-real-name\"))) {\n             return;\n         }\n         String lang = plugin.getConfig().getString(\"lang.broadcast-selected-player\").replaceAll(\"%player%\", player.getName());\n         Bukkit.broadcastMessage(ConfigUtil.color(lang));\n     }\n \n-    private void selectLuckyPlayer() {\n+    private boolean selectLuckyPlayer() {\n         List<Player> players = new ArrayList<>(Bukkit.getOnlinePlayers());\n         if (players.isEmpty()) {\n             ConfigUtil.clearData();\n-            return;\n+            return false;\n         }\n         Random random = new Random();\n         int randomNumber = random.nextInt(players.size());\n         Player player = players.get(randomNumber);\n         ConfigUtil.saveData(player);\n+        return true;\n     }\n \n     @Override\n@@ -71,9 +69,10 @@ public void run() {\n         }\n         if (isSelectionTime) {\n             hasClearedData = false;\n-            selectLuckyPlayer();\n-            player = Bukkit.getOfflinePlayer(UUID.fromString(plugin.getConfig().getString(\"lucky-player\")));\n-            broadcastSelectedMessage(player);\n+            if (selectLuckyPlayer()) {\n+                player = Bukkit.getOfflinePlayer(UUID.fromString(plugin.getConfig().getString(\"lucky-player\")));\n+                broadcastSelectedMessage(player);\n+            }\n         }\n     }\n }"
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "sha": "b96146e523ae49e3933fedde5d2d5b15b8701d37",
+    "node_id": "C_kwDOI9p-ItoAKGI5NjE0NmU1MjNhZTQ5ZTM5MzNmZWRkZTVkMmQ1YjE1Yjg3MDFkMzc",
+    "commit": {
+        "author": {
+            "name": "season",
+            "email": "sionwer4@naver.com",
+            "date": "2023-09-13T12:15:43Z"
+        },
+        "committer": {
+            "name": "season",
+            "email": "sionwer4@naver.com",
+            "date": "2023-09-13T12:15:43Z"
+        },
+        "message": "refactor(customer): Craete basket and menu null pointer exception",
+        "tree": {
+            "sha": "1f57f06deeb6956f460ffaebabeecc520d0072d0",
+            "url": "https://api.github.com/repos/millwheel/delivery-application/git/trees/1f57f06deeb6956f460ffaebabeecc520d0072d0"
+        },
+        "url": "https://api.github.com/repos/millwheel/delivery-application/git/commits/b96146e523ae49e3933fedde5d2d5b15b8701d37",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/millwheel/delivery-application/commits/b96146e523ae49e3933fedde5d2d5b15b8701d37",
+    "html_url": "https://github.com/millwheel/delivery-application/commit/b96146e523ae49e3933fedde5d2d5b15b8701d37",
+    "comments_url": "https://api.github.com/repos/millwheel/delivery-application/commits/b96146e523ae49e3933fedde5d2d5b15b8701d37/comments",
+    "author": {
+        "login": "millwheel",
+        "id": 79843980,
+        "node_id": "MDQ6VXNlcjc5ODQzOTgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79843980?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/millwheel",
+        "html_url": "https://github.com/millwheel",
+        "followers_url": "https://api.github.com/users/millwheel/followers",
+        "following_url": "https://api.github.com/users/millwheel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/millwheel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/millwheel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/millwheel/subscriptions",
+        "organizations_url": "https://api.github.com/users/millwheel/orgs",
+        "repos_url": "https://api.github.com/users/millwheel/repos",
+        "events_url": "https://api.github.com/users/millwheel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/millwheel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "millwheel",
+        "id": 79843980,
+        "node_id": "MDQ6VXNlcjc5ODQzOTgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/79843980?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/millwheel",
+        "html_url": "https://github.com/millwheel",
+        "followers_url": "https://api.github.com/users/millwheel/followers",
+        "following_url": "https://api.github.com/users/millwheel/following{/other_user}",
+        "gists_url": "https://api.github.com/users/millwheel/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/millwheel/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/millwheel/subscriptions",
+        "organizations_url": "https://api.github.com/users/millwheel/orgs",
+        "repos_url": "https://api.github.com/users/millwheel/repos",
+        "events_url": "https://api.github.com/users/millwheel/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/millwheel/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2858dd779f79a79267c0b306f148f2f2eb8bd4de",
+            "url": "https://api.github.com/repos/millwheel/delivery-application/commits/2858dd779f79a79267c0b306f148f2f2eb8bd4de",
+            "html_url": "https://github.com/millwheel/delivery-application/commit/2858dd779f79a79267c0b306f148f2f2eb8bd4de"
+        }
+    ],
+    "stats": {
+        "total": 64,
+        "additions": 31,
+        "deletions": 33
+    },
+    "files": [
+        {
+            "sha": "47102fbb2fce85cde18c8bbd56f170d0f3256db8",
+            "filename": "customer/src/main/java/msa/customer/exception/BasketNullException.java",
+            "status": "added",
+            "additions": 10,
+            "deletions": 0,
+            "changes": 10,
+            "blob_url": "https://github.com/millwheel/delivery-application/blob/b96146e523ae49e3933fedde5d2d5b15b8701d37/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FBasketNullException.java",
+            "raw_url": "https://github.com/millwheel/delivery-application/raw/b96146e523ae49e3933fedde5d2d5b15b8701d37/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FBasketNullException.java",
+            "contents_url": "https://api.github.com/repos/millwheel/delivery-application/contents/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FBasketNullException.java?ref=b96146e523ae49e3933fedde5d2d5b15b8701d37",
+            "patch": "@@ -0,0 +1,10 @@\n+package msa.customer.exception;\n+\n+public class BasketNullException extends NullPointerException{\n+\n+    private static final String NONEXISTENT_BASKET_MESSAGE = \"This menu doesn't exist. (menuId = %s)\";\n+\n+    public BasketNullException(String menuId) {\n+        super(String.format(NONEXISTENT_BASKET_MESSAGE, menuId));\n+    }\n+}"
+        },
+        {
+            "sha": "1f066c6cb8acb148ba68ccb9281cf1133ba35144",
+            "filename": "customer/src/main/java/msa/customer/exception/DeliveryCustomerException.java",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 12,
+            "changes": 12,
+            "blob_url": "https://github.com/millwheel/delivery-application/blob/2858dd779f79a79267c0b306f148f2f2eb8bd4de/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FDeliveryCustomerException.java",
+            "raw_url": "https://github.com/millwheel/delivery-application/raw/2858dd779f79a79267c0b306f148f2f2eb8bd4de/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FDeliveryCustomerException.java",
+            "contents_url": "https://api.github.com/repos/millwheel/delivery-application/contents/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FDeliveryCustomerException.java?ref=2858dd779f79a79267c0b306f148f2f2eb8bd4de",
+            "patch": "@@ -1,12 +0,0 @@\n-package msa.customer.exception;\n-\n-public class DeliveryCustomerException extends RuntimeException{\n-\n-    public DeliveryCustomerException(String message) {\n-        super(message);\n-    }\n-\n-    public DeliveryCustomerException(String message, Throwable cause) {\n-        super(message, cause);\n-    }\n-}"
+        },
+        {
+            "sha": "1b7ccce90f2f512e247465157e8262442f88b1a0",
+            "filename": "customer/src/main/java/msa/customer/exception/MenuEmptyException.java",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 10,
+            "changes": 10,
+            "blob_url": "https://github.com/millwheel/delivery-application/blob/2858dd779f79a79267c0b306f148f2f2eb8bd4de/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FMenuEmptyException.java",
+            "raw_url": "https://github.com/millwheel/delivery-application/raw/2858dd779f79a79267c0b306f148f2f2eb8bd4de/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FMenuEmptyException.java",
+            "contents_url": "https://api.github.com/repos/millwheel/delivery-application/contents/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FMenuEmptyException.java?ref=2858dd779f79a79267c0b306f148f2f2eb8bd4de",
+            "patch": "@@ -1,10 +0,0 @@\n-package msa.customer.exception;\n-\n-public class MenuEmptyException extends RuntimeException{\n-\n-    private static final String EMPTY_MENU_MESSAGE = \"This menu doesn't exist. (menuId = %s)\";\n-\n-    public MenuEmptyException(String menuId) {\n-        super(String.format(EMPTY_MENU_MESSAGE, menuId));\n-    }\n-}"
+        },
+        {
+            "sha": "7cddca743680a5ec87753fd5884616b1ec23b0bd",
+            "filename": "customer/src/main/java/msa/customer/exception/MenuNullException.java",
+            "status": "added",
+            "additions": 10,
+            "deletions": 0,
+            "changes": 10,
+            "blob_url": "https://github.com/millwheel/delivery-application/blob/b96146e523ae49e3933fedde5d2d5b15b8701d37/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FMenuNullException.java",
+            "raw_url": "https://github.com/millwheel/delivery-application/raw/b96146e523ae49e3933fedde5d2d5b15b8701d37/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FMenuNullException.java",
+            "contents_url": "https://api.github.com/repos/millwheel/delivery-application/contents/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FMenuNullException.java?ref=b96146e523ae49e3933fedde5d2d5b15b8701d37",
+            "patch": "@@ -0,0 +1,10 @@\n+package msa.customer.exception;\n+\n+public class MenuNullException extends NullPointerException{\n+\n+    private static final String NONEXISTENT_MENU_MESSAGE = \"This menu doesn't exist. (menuId = %s)\";\n+\n+    public MenuNullException(String menuId) {\n+        super(String.format(NONEXISTENT_MENU_MESSAGE, menuId));\n+    }\n+}"
+        },
+        {
+            "sha": "036468ad78c2dec92dddc0f56d96b88d4d1ffd9e",
+            "filename": "customer/src/main/java/msa/customer/exception/StoreEmptyException.java",
+            "status": "removed",
+            "additions": 0,
+            "deletions": 11,
+            "changes": 11,
+            "blob_url": "https://github.com/millwheel/delivery-application/blob/2858dd779f79a79267c0b306f148f2f2eb8bd4de/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FStoreEmptyException.java",
+            "raw_url": "https://github.com/millwheel/delivery-application/raw/2858dd779f79a79267c0b306f148f2f2eb8bd4de/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FStoreEmptyException.java",
+            "contents_url": "https://api.github.com/repos/millwheel/delivery-application/contents/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FStoreEmptyException.java?ref=2858dd779f79a79267c0b306f148f2f2eb8bd4de",
+            "patch": "@@ -1,11 +0,0 @@\n-package msa.customer.exception;\n-\n-public class StoreEmptyException extends RuntimeException {\n-\n-    private static final String EMPTY_STORE_MESSAGE = \"This store doesn't exist. (storeId = %s)\";\n-\n-    public StoreEmptyException(String storeId) {\n-        super(String.format(EMPTY_STORE_MESSAGE, storeId));\n-    }\n-\n-}\n\\ No newline at end of file"
+        },
+        {
+            "sha": "72d8d42b66dea30031dc5ca59d56d150cb837a49",
+            "filename": "customer/src/main/java/msa/customer/exception/StoreNullException.java",
+            "status": "added",
+            "additions": 11,
+            "deletions": 0,
+            "changes": 11,
+            "blob_url": "https://github.com/millwheel/delivery-application/blob/b96146e523ae49e3933fedde5d2d5b15b8701d37/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FStoreNullException.java",
+            "raw_url": "https://github.com/millwheel/delivery-application/raw/b96146e523ae49e3933fedde5d2d5b15b8701d37/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FStoreNullException.java",
+            "contents_url": "https://api.github.com/repos/millwheel/delivery-application/contents/customer%2Fsrc%2Fmain%2Fjava%2Fmsa%2Fcustomer%2Fexception%2FStoreNullException.java?ref=b96146e523ae49e3933fedde5d2d5b15b8701d37",
+            "patch": "@@ -0,0 +1,11 @@\n+package msa.customer.exception;\n+\n+public class StoreNullException extends RuntimeException {\n+\n+    private static final String NONEXISTENT_STORE_MESSAGE = \"This store doesn't exist. (storeId = %s)\";\n+\n+    public StoreNullException(String storeId) {\n+        super(String.format(NONEXISTENT_STORE_MESSAGE, storeId));\n+    }\n+\n+}\n\\ No newline at end of file"
+        }
+    ]
+}

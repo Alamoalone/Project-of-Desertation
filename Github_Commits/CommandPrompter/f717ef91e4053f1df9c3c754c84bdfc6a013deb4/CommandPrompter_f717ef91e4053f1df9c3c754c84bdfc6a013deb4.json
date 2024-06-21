@@ -1,0 +1,110 @@
+{
+    "sha": "f717ef91e4053f1df9c3c754c84bdfc6a013deb4",
+    "node_id": "C_kwDOBlUhqNoAKGY3MTdlZjkxZTQwNTNmMWRmOWMzYzc1NGM4NGJkZmM2YTAxM2RlYjQ",
+    "commit": {
+        "author": {
+            "name": "CyR1en",
+            "email": "cyrien3519@gmail.com",
+            "date": "2023-12-07T06:51:41Z"
+        },
+        "committer": {
+            "name": "CyR1en",
+            "email": "cyrien3519@gmail.com",
+            "date": "2023-12-07T06:51:41Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "0462a84ddef7a0f9fdc3274c5a8f886a032a4c50",
+            "url": "https://api.github.com/repos/CyR1en/CommandPrompter/git/trees/0462a84ddef7a0f9fdc3274c5a8f886a032a4c50"
+        },
+        "url": "https://api.github.com/repos/CyR1en/CommandPrompter/git/commits/f717ef91e4053f1df9c3c754c84bdfc6a013deb4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/CyR1en/CommandPrompter/commits/f717ef91e4053f1df9c3c754c84bdfc6a013deb4",
+    "html_url": "https://github.com/CyR1en/CommandPrompter/commit/f717ef91e4053f1df9c3c754c84bdfc6a013deb4",
+    "comments_url": "https://api.github.com/repos/CyR1en/CommandPrompter/commits/f717ef91e4053f1df9c3c754c84bdfc6a013deb4/comments",
+    "author": {
+        "login": "CyR1en",
+        "id": 20752426,
+        "node_id": "MDQ6VXNlcjIwNzUyNDI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20752426?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CyR1en",
+        "html_url": "https://github.com/CyR1en",
+        "followers_url": "https://api.github.com/users/CyR1en/followers",
+        "following_url": "https://api.github.com/users/CyR1en/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CyR1en/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CyR1en/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CyR1en/subscriptions",
+        "organizations_url": "https://api.github.com/users/CyR1en/orgs",
+        "repos_url": "https://api.github.com/users/CyR1en/repos",
+        "events_url": "https://api.github.com/users/CyR1en/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CyR1en/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "CyR1en",
+        "id": 20752426,
+        "node_id": "MDQ6VXNlcjIwNzUyNDI2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20752426?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/CyR1en",
+        "html_url": "https://github.com/CyR1en",
+        "followers_url": "https://api.github.com/users/CyR1en/followers",
+        "following_url": "https://api.github.com/users/CyR1en/following{/other_user}",
+        "gists_url": "https://api.github.com/users/CyR1en/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/CyR1en/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/CyR1en/subscriptions",
+        "organizations_url": "https://api.github.com/users/CyR1en/orgs",
+        "repos_url": "https://api.github.com/users/CyR1en/repos",
+        "events_url": "https://api.github.com/users/CyR1en/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/CyR1en/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "9ab3cc357f99315d23af71cda1a6541b11313821",
+            "url": "https://api.github.com/repos/CyR1en/CommandPrompter/commits/9ab3cc357f99315d23af71cda1a6541b11313821",
+            "html_url": "https://github.com/CyR1en/CommandPrompter/commit/9ab3cc357f99315d23af71cda1a6541b11313821"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 7,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "f76764f2ce88483a0f5846d2260f4e46329c11bc",
+            "filename": "src/main/java/com/cyr1en/commandprompter/hook/hooks/SuperVanishHook.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 1,
+            "changes": 4,
+            "blob_url": "https://github.com/CyR1en/CommandPrompter/blob/f717ef91e4053f1df9c3c754c84bdfc6a013deb4/src%2Fmain%2Fjava%2Fcom%2Fcyr1en%2Fcommandprompter%2Fhook%2Fhooks%2FSuperVanishHook.java",
+            "raw_url": "https://github.com/CyR1en/CommandPrompter/raw/f717ef91e4053f1df9c3c754c84bdfc6a013deb4/src%2Fmain%2Fjava%2Fcom%2Fcyr1en%2Fcommandprompter%2Fhook%2Fhooks%2FSuperVanishHook.java",
+            "contents_url": "https://api.github.com/repos/CyR1en/CommandPrompter/contents/src%2Fmain%2Fjava%2Fcom%2Fcyr1en%2Fcommandprompter%2Fhook%2Fhooks%2FSuperVanishHook.java?ref=f717ef91e4053f1df9c3c754c84bdfc6a013deb4",
+            "patch": "@@ -23,6 +23,8 @@ public boolean isInvisible(Player p) {\n \n     @EventHandler(priority = EventPriority.NORMAL)\n     public void onVisibilityStateChange(PlayerVanishStateChangeEvent e) {\n-        onStateChange(Bukkit.getPlayer(e.getUUID()), e::isVanishing);\n+        var player = Bukkit.getPlayer(e.getUUID());\n+        if (player == null) return;\n+        onStateChange(player, e::isVanishing);\n     }\n }"
+        },
+        {
+            "sha": "930a083e8a739f39ff9479c7e54904f9fa7844f7",
+            "filename": "src/main/java/com/cyr1en/commandprompter/prompt/ui/HeadCache.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 1,
+            "changes": 5,
+            "blob_url": "https://github.com/CyR1en/CommandPrompter/blob/f717ef91e4053f1df9c3c754c84bdfc6a013deb4/src%2Fmain%2Fjava%2Fcom%2Fcyr1en%2Fcommandprompter%2Fprompt%2Fui%2FHeadCache.java",
+            "raw_url": "https://github.com/CyR1en/CommandPrompter/raw/f717ef91e4053f1df9c3c754c84bdfc6a013deb4/src%2Fmain%2Fjava%2Fcom%2Fcyr1en%2Fcommandprompter%2Fprompt%2Fui%2FHeadCache.java",
+            "contents_url": "https://api.github.com/repos/CyR1en/CommandPrompter/contents/src%2Fmain%2Fjava%2Fcom%2Fcyr1en%2Fcommandprompter%2Fprompt%2Fui%2FHeadCache.java?ref=f717ef91e4053f1df9c3c754c84bdfc6a013deb4",
+            "patch": "@@ -57,7 +57,10 @@ public Optional<ItemStack> getHeadFor(Player player) {\n     }\n \n     public void invalidate(Player player) {\n-        HEAD_CACHE.invalidate(player);\n+        if (Objects.isNull(player)) return;\n+\n+        if (getHeadFor(player).isPresent())\n+            HEAD_CACHE.invalidate(player);\n     }\n \n     public ImmutableMap<Player, Optional<ItemStack>> getHeadFor(Iterable<? extends Player> key) {"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+	public ResponseEntity<?> logout(HttpServletRequest request, Authentication authentication) {
+		// Retrieve all sessions for the current user
+	    List<SessionInformation> userSessions = sessionRegistry.getAllSessions(authentication.getPrincipal(), false);
+
+	    // Expire all sessions
+	    for (SessionInformation session : userSessions) {
+	        session.expireNow();
+	        sessionRegistry.removeSessionInformation(session.getSessionId());
+	    }
+	    
+	    String sessionId = request.getSession().getId();
+	    String username = (String) request.getSession().getAttribute("username");
+	    request.getSession().invalidate();
+	    SecurityContextHolder.clearContext();
+	    CustomAuthenticationSuccessHandler.removeActiveSession(sessionId);
+	    return ResponseEntity.ok().body("User: " + username + " logged out");
+	}

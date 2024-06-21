@@ -1,0 +1,17 @@
+    public boolean isAscending(String fieldToSortBy) throws InternalServletException{
+        String sortValue = generalQueryParams.getSingleString("sort", null);
+		boolean isAscending = false;
+        if (sortValue != null){
+            try{
+                if(sortIsValidFormat(sortValue)) {
+                    isAscending = getSortDirection(fieldToSortBy,sortValue);
+                }else{
+                throw new Exception();
+                }
+            }catch (Exception e) {
+                ServletError error = new ServletError(GAL5011_SORT_VALUE_NOT_RECOGNIZED,sortValue);
+                throw new InternalServletException(error, HttpServletResponse.SC_BAD_REQUEST);
+            }
+        }
+		return isAscending;
+	}

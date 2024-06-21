@@ -1,0 +1,190 @@
+	private Expression<?> parseSingleExpr(boolean allowUnparsedLiteral, @Nullable LogEntry error, ExprInfo exprInfo) {
+		if (expr.isEmpty()) // Empty expressions return nothing, obviously
+			return null;
+
+		// Command special parsing
+		if (context != ParseContext.COMMAND &&
+					context != ParseContext.PARSE &&
+					expr.startsWith("(") && expr.endsWith(")") &&
+					next(expr, 0, context) == expr.length())
+			return new SkriptParser(this, "" + expr.substring(1, expr.length() - 1)).parseSingleExpr(allowUnparsedLiteral, error, exprInfo);
+		ParseLogHandler log = SkriptLogger.startParseLogHandler();
+		try {
+			// Construct types array which contains all potential classes
+			Class<?>[] types = new Class[exprInfo.classes.length]; // This may contain nulls!
+			boolean hasSingular = false;
+			boolean hasPlural = false;
+
+			// Another array for all potential types, but this time without any nulls
+			// (indexes do not align with other data in ExprInfo)
+			Class<?>[] nonNullTypes = new Class[exprInfo.classes.length];
+
+			int nonNullIndex = 0;
+			for (int i = 0; i < types.length; i++) {
+				if ((flags & exprInfo.flagMask) == 0) { // Flag mask invalidates this, skip it
+					continue;
+				}
+
+				// Plural/singular checks
+				// TODO move them elsewhere, this method needs to be as fast as possible
+				if (exprInfo.isPlural[i])
+					hasPlural = true;
+				else
+					hasSingular = true;
+
+				// Actually put class to types[i]
+				types[i] = exprInfo.classes[i].getC();
+
+				// Handle nonNullTypes data fill
+				nonNullTypes[nonNullIndex] = types[i];
+				nonNullIndex++;
+			}
+
+			boolean onlyPlural = !hasSingular && hasPlural;
+			boolean onlySingular = hasSingular && !hasPlural;
+
+			if (context == ParseContext.DEFAULT || context == ParseContext.EVENT) {
+				// Attempt to parse variable first
+				if (onlySingular || onlyPlural) { // No mixed plurals/singulars possible
+					Variable<?> parsedVariable = parseVariable(expr, nonNullTypes);
+					if (parsedVariable != null) { // Parsing succeeded, we have a variable
+						// If variables cannot be used here, it is now allowed
+						if ((flags & PARSE_EXPRESSIONS) == 0) {
+							Skript.error("Variables cannot be used here.");
+							log.printError();
+							return null;
+						}
+
+						// Plural/singular sanity check
+						if (hasSingular && !parsedVariable.isSingle()) {
+							Skript.error("'" + expr + "' can only accept a single value of any type, not more", ErrorQuality.SEMANTIC_ERROR);
+							return null;
+						}
+
+						log.printLog();
+						return parsedVariable;
+					} else if (log.hasError()) {
+						log.printError();
+						return null;
+					}
+				} else { // Mixed plurals/singulars
+					Variable<?> parsedVariable = parseVariable(expr, types);
+					if (parsedVariable != null) { // Parsing succeeded, we have a variable
+						// If variables cannot be used here, it is now allowed
+						if ((flags & PARSE_EXPRESSIONS) == 0) {
+							Skript.error("Variables cannot be used here.");
+							log.printError();
+							return null;
+						}
+
+						// Plural/singular sanity check
+						//
+						// It's (currently?) not possible to detect this at parse time when there are multiple
+						// acceptable types and only some of them are single, since variables, global especially,
+						// can hold any possible type, and the type used can only be 100% known at runtime
+						//
+						// TODO:
+						// despite of that, we should probably implement a runtime check for this somewhere
+						// before executing the syntax element (perhaps even exceptionally with a console warning,
+						// otherwise users may have some hard time debugging the plurality issues) - currently an
+						// improper use in a script would result in an exception
+						if (((exprInfo.classes.length == 1 && !exprInfo.isPlural[0]) || Booleans.contains(exprInfo.isPlural, true))
+								&& !parsedVariable.isSingle()) {
+							Skript.error("'" + expr + "' can only accept a single "
+									+ Classes.toString(Stream.of(exprInfo.classes).map(classInfo -> classInfo.getName().toString()).toArray(), false)
+									+ ", not more", ErrorQuality.SEMANTIC_ERROR);
+							return null;
+						}
+
+						log.printLog();
+						return parsedVariable;
+					} else if (log.hasError()) {
+						log.printError();
+						return null;
+					}
+				}
+
+				// If it wasn't variable, do same for function call
+				FunctionReference<?> functionReference = parseFunction(types);
+				if (functionReference != null) {
+					log.printLog();
+					return new ExprFunctionCall<>(functionReference);
+				} else if (log.hasError()) {
+					log.printError();
+					return null;
+				}
+			}
+			log.clear();
+			if ((flags & PARSE_EXPRESSIONS) != 0) {
+				Expression<?> parsedExpression = parseExpression(types, expr);
+				if (parsedExpression != null) { // Expression/VariableString parsing success
+					Class<?> returnType = parsedExpression.getReturnType(); // Sometimes getReturnType does non-trivial costly operations
+					for (int i = 0; i < types.length; i++) {
+						Class<?> type = types[i];
+						if (type == null) // Ignore invalid (null) types
+							continue;
+
+						// Check return type against everything that expression accepts
+						if (type.isAssignableFrom(returnType)) {
+							if (!exprInfo.isPlural[i] && !parsedExpression.isSingle()) { // Wrong number of arguments
+								if (context == ParseContext.COMMAND) {
+									Skript.error(Commands.m_too_many_arguments.toString(exprInfo.classes[i].getName().getIndefiniteArticle(), exprInfo.classes[i].getName().toString()), ErrorQuality.SEMANTIC_ERROR);
+								} else {
+									Skript.error("'" + expr + "' can only accept a single " + exprInfo.classes[i].getName() + ", not more", ErrorQuality.SEMANTIC_ERROR);
+								}
+								return null;
+							}
+
+							log.printLog();
+							return parsedExpression;
+						}
+					}
+
+					if (onlySingular && !parsedExpression.isSingle()) {
+						Skript.error("'" + expr + "' can only accept singular expressions, not plural", ErrorQuality.SEMANTIC_ERROR);
+						return null;
+					}
+
+					// No directly same type found
+					Expression<?> convertedExpression = parsedExpression.getConvertedExpression((Class<Object>[]) types);
+					if (convertedExpression != null) {
+						log.printLog();
+						return convertedExpression;
+					}
+
+					// Print errors, if we couldn't get the correct type
+					log.printError(parsedExpression.toString(null, false) + " " + Language.get("is") + " " + notOfType(types), ErrorQuality.NOT_AN_EXPRESSION);
+					return null;
+				}
+				log.clear();
+			}
+			if ((flags & PARSE_LITERALS) == 0) {
+				log.printError();
+				return null;
+			}
+			if (exprInfo.classes[0].getC() == Object.class) {
+				// Do check if a literal with this name actually exists before returning an UnparsedLiteral
+				if (!allowUnparsedLiteral || Classes.parseSimple(expr, Object.class, context) == null) {
+					log.printError();
+					return null;
+				}
+				log.clear();
+				LogEntry logError = log.getError();
+				return new UnparsedLiteral(expr, logError != null && (error == null || logError.quality > error.quality) ? logError : error);
+			}
+			for (ClassInfo<?> classInfo : exprInfo.classes) {
+				log.clear();
+				assert classInfo.getC() != null;
+				Object parsedObject = Classes.parse(expr, classInfo.getC(), context);
+				if (parsedObject != null) {
+					log.printLog();
+					return new SimpleLiteral<>(parsedObject, false, new UnparsedLiteral(expr));
+				}
+			}
+			log.printError();
+			return null;
+		} finally {
+			log.stop();
+		}
+	}
+

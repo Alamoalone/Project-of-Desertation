@@ -1,0 +1,110 @@
+{
+    "sha": "039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4",
+    "node_id": "C_kwDOI1VW2toAKDAzOWQ5ZmVkNjllN2MzY2NiZTRiNjQxMTQzYWI3YWZjMTdhNmE1YTQ",
+    "commit": {
+        "author": {
+            "name": "YorickBM",
+            "email": "yorickblom@hotmail.com",
+            "date": "2023-10-28T21:58:30Z"
+        },
+        "committer": {
+            "name": "YorickBM",
+            "email": "yorickblom@hotmail.com",
+            "date": "2023-10-28T21:58:30Z"
+        },
+        "message": "Fixed hidden null pointer exception on block interaction permission (Uncovered by issue #15)",
+        "tree": {
+            "sha": "ecc31c4126244dc09149f545ae85215fa5bb5727",
+            "url": "https://api.github.com/repos/YorickBM/SkyblockAddon/git/trees/ecc31c4126244dc09149f545ae85215fa5bb5727"
+        },
+        "url": "https://api.github.com/repos/YorickBM/SkyblockAddon/git/commits/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/YorickBM/SkyblockAddon/commits/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4",
+    "html_url": "https://github.com/YorickBM/SkyblockAddon/commit/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4",
+    "comments_url": "https://api.github.com/repos/YorickBM/SkyblockAddon/commits/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4/comments",
+    "author": {
+        "login": "YorickBM",
+        "id": 28260309,
+        "node_id": "MDQ6VXNlcjI4MjYwMzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28260309?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/YorickBM",
+        "html_url": "https://github.com/YorickBM",
+        "followers_url": "https://api.github.com/users/YorickBM/followers",
+        "following_url": "https://api.github.com/users/YorickBM/following{/other_user}",
+        "gists_url": "https://api.github.com/users/YorickBM/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/YorickBM/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/YorickBM/subscriptions",
+        "organizations_url": "https://api.github.com/users/YorickBM/orgs",
+        "repos_url": "https://api.github.com/users/YorickBM/repos",
+        "events_url": "https://api.github.com/users/YorickBM/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/YorickBM/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "YorickBM",
+        "id": 28260309,
+        "node_id": "MDQ6VXNlcjI4MjYwMzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28260309?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/YorickBM",
+        "html_url": "https://github.com/YorickBM",
+        "followers_url": "https://api.github.com/users/YorickBM/followers",
+        "following_url": "https://api.github.com/users/YorickBM/following{/other_user}",
+        "gists_url": "https://api.github.com/users/YorickBM/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/YorickBM/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/YorickBM/subscriptions",
+        "organizations_url": "https://api.github.com/users/YorickBM/orgs",
+        "repos_url": "https://api.github.com/users/YorickBM/repos",
+        "events_url": "https://api.github.com/users/YorickBM/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/YorickBM/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f9abd05a00215462056ab9c74b5c66b7663510d2",
+            "url": "https://api.github.com/repos/YorickBM/SkyblockAddon/commits/f9abd05a00215462056ab9c74b5c66b7663510d2",
+            "html_url": "https://github.com/YorickBM/SkyblockAddon/commit/f9abd05a00215462056ab9c74b5c66b7663510d2"
+        }
+    ],
+    "stats": {
+        "total": 14,
+        "additions": 8,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "43fe53cae7109b819923a5978fdac05acfc910ec",
+            "filename": "src/main/java/yorickbm/skyblockaddon/events/PlayerEvents.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/YorickBM/SkyblockAddon/blob/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4/src%2Fmain%2Fjava%2Fyorickbm%2Fskyblockaddon%2Fevents%2FPlayerEvents.java",
+            "raw_url": "https://github.com/YorickBM/SkyblockAddon/raw/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4/src%2Fmain%2Fjava%2Fyorickbm%2Fskyblockaddon%2Fevents%2FPlayerEvents.java",
+            "contents_url": "https://api.github.com/repos/YorickBM/SkyblockAddon/contents/src%2Fmain%2Fjava%2Fyorickbm%2Fskyblockaddon%2Fevents%2FPlayerEvents.java?ref=039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4",
+            "patch": "@@ -208,7 +208,7 @@ public void onEntityInteract(PlayerInteractEvent.EntityInteract event) {\n                 IslandData island = SkyblockAddon.CheckOnIsland(player);\n                 if (island == null)\n                     return; //Ignore events not on an island\n-                if (island.getPermission(Permissions.InteractWithBlocks, player.getUUID()).isAllowed())\n+                if(island.isOwner(player.getUUID()) || island.getPermission(Permissions.InteractWithBlocks, player.getUUID()).isAllowed())\n                     return; //Player is allowed to interact with blocks\n \n                 player.displayClientMessage(ServerHelper.formattedText(LanguageFile.getForKey(\"toolbar.overlay.nothere\"), ChatFormatting.DARK_RED), true);"
+        },
+        {
+            "sha": "e9d2e3045c3bcf667097d27049caee024d9b5f4a",
+            "filename": "src/main/java/yorickbm/skyblockaddon/islands/permissions/InteractWithBlocks.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 5,
+            "changes": 12,
+            "blob_url": "https://github.com/YorickBM/SkyblockAddon/blob/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4/src%2Fmain%2Fjava%2Fyorickbm%2Fskyblockaddon%2Fislands%2Fpermissions%2FInteractWithBlocks.java",
+            "raw_url": "https://github.com/YorickBM/SkyblockAddon/raw/039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4/src%2Fmain%2Fjava%2Fyorickbm%2Fskyblockaddon%2Fislands%2Fpermissions%2FInteractWithBlocks.java",
+            "contents_url": "https://api.github.com/repos/YorickBM/SkyblockAddon/contents/src%2Fmain%2Fjava%2Fyorickbm%2Fskyblockaddon%2Fislands%2Fpermissions%2FInteractWithBlocks.java?ref=039d9fed69e7c3ccbe4b641143ab7afc17a6a5a4",
+            "patch": "@@ -22,12 +22,14 @@ public InteractWithBlocks(boolean state) {\n \n     @Override\n     public boolean isAllowed(Object ...data) {\n-        Item itemClickedOn = (Item) data[0];\n-\n         if(state) return true; //User is allowed to Interact with Blocks, we can just skip unnecessary checks\n \n-        //Go through filters to know if we can just allow it.\n-        return Allowed_Clickable_Blocks.contains(itemClickedOn);\n+        if(data.length > 0 && data[0] != null) {\n+            //Go through filters to know if we can just allow it.\n+            Item itemClickedOn = (Item) data[0];\n+            return Allowed_Clickable_Blocks.contains(itemClickedOn);\n+        }\n+        return false; //It's not allowed\n     }\n \n     @Override\n@@ -46,7 +48,7 @@ public Component[] getDescription() {\n             ServerHelper.formattedText(LanguageFile.getForKey(\"guis.permissions.OpenBlocks.desc\"), ChatFormatting.GRAY),\n             ServerHelper.formattedText(\"\\n\\n\", ChatFormatting.ITALIC),\n             ServerHelper.combineComponents(\n-                ServerHelper.formattedText(\"\\u2666 Allowed: \", ChatFormatting.GRAY),\n+                ServerHelper.formattedText(\"♦ Allowed: \", ChatFormatting.GRAY),\n                 ServerHelper.formattedText((state ? \"TRUE\" : \"FALSE\"), (state ? ChatFormatting.GREEN : ChatFormatting.RED))\n             )\n         };"
+        }
+    ]
+}

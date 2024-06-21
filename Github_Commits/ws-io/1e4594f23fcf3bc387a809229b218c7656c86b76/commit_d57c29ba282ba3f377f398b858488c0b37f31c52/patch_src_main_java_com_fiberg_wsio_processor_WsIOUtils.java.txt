@@ -1,0 +1,26 @@
+@@ -494,17 +494,18 @@ static WsIOMemberInfo extractMemberInfo(Element element, WsIOQualifierInfo quali
+ 				.filter(List::nonEmpty)
+ 				.getOrNull();
+ 
+-		List<WsIOAdapterInfo> adapterInfos = adapterMirrors.map(adapterMirror -> {
++		List<WsIOAdapterInfo> adapterInfos = Option.of(adapterMirrors)
++				.map(infos -> infos.map(adapterMirror -> {
+ 
+-			/* Get the adapter value of the adapter */
+-			String adapterValue = WsIOUtils.getAnnotationLiteralValue(adapterMirror, "value");
++					/* Get the adapter value of the adapter */
++					String adapterValue = WsIOUtils.getAnnotationLiteralValue(adapterMirror, "value");
+ 
+-			/* Get the adapter type of the adapter */
+-			String adapterType = WsIOUtils.getAnnotationLiteralValue(adapterMirror, "type");
++					/* Get the adapter type of the adapter */
++					String adapterType = WsIOUtils.getAnnotationLiteralValue(adapterMirror, "type");
+ 
+-			return WsIOAdapterInfo.of(adapterValue, adapterType);
++					return WsIOAdapterInfo.of(adapterValue, adapterType);
+ 
+-		});
++				})).getOrNull();
+ 
+ 		/* Get the priority param values */
+ 		String paramName = StringUtils.firstNonBlank(internalParamName, externalParamName);

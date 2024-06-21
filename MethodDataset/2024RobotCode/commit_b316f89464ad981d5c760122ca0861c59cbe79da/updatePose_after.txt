@@ -1,0 +1,3 @@
+  public static void updatePose(TimestampedVisionPose visionpose) {
+    poseEstimator.addVisionMeasurement(visionpose.poseMeters(), visionpose.timestampSecs());
+  }

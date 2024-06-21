@@ -1,0 +1,28 @@
+    private void handleCSMResponse(Ad ownerAd, final CSMSDKAdResponse csmSdkAdResponse) {
+        Clog.logTime(getClass().getSimpleName() + " - handleCSMResponse");
+        Clog.i(Clog.baseLogTag, "Mediation type is CSM, passing it to MediatedAdViewController.");
+        if (csmSdkAdResponse.getAdType().equals(UTConstants.AD_TYPE_NATIVE)) {
+            mediatedNativeAdController = MediatedNativeAdController.create(csmSdkAdResponse,
+                    AdViewRequestManager.this);
+
+        } else {
+            AdView owner = (AdView) ownerAd;
+            if (owner.getMediaType() == MediaType.BANNER) {
+                controller = MediatedBannerAdViewController.create(
+                        (Activity) owner.getContext(),
+                        AdViewRequestManager.this,
+                        csmSdkAdResponse,
+                        owner.getAdDispatcher());
+
+            } else if (owner.getMediaType() == MediaType.INTERSTITIAL) {
+                controller = MediatedInterstitialAdViewController.create(
+                        (Activity) owner.getContext(),
+                        AdViewRequestManager.this,
+                        csmSdkAdResponse,
+                        owner.getAdDispatcher());
+            } else {
+                Clog.e(Clog.baseLogTag, "MediaType type can not be identified.");
+                continueWaterfall(ResultCode.getNewInstance(ResultCode.INVALID_REQUEST));
+            }
+        }
+    }

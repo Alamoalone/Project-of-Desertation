@@ -1,0 +1,98 @@
+{
+    "sha": "ba50508b56f02b4caa65f6c55e1329d138c01720",
+    "node_id": "C_kwDOJOLgXdoAKGJhNTA1MDhiNTZmMDJiNGNhYTY1ZjZjNTVlMTMyOWQxMzhjMDE3MjA",
+    "commit": {
+        "author": {
+            "name": "Vincent Lai",
+            "email": "vincentlai91@hotmail.com",
+            "date": "2023-06-09T03:47:16Z"
+        },
+        "committer": {
+            "name": "Vincent Lai",
+            "email": "vincentlai91@hotmail.com",
+            "date": "2023-06-09T03:47:16Z"
+        },
+        "message": "amended equals method, refactor to prevent null pointer exception",
+        "tree": {
+            "sha": "094694928f556d7774817f39a804ce49766904ee",
+            "url": "https://api.github.com/repos/vincentcalai/OasisBet/git/trees/094694928f556d7774817f39a804ce49766904ee"
+        },
+        "url": "https://api.github.com/repos/vincentcalai/OasisBet/git/commits/ba50508b56f02b4caa65f6c55e1329d138c01720",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/vincentcalai/OasisBet/commits/ba50508b56f02b4caa65f6c55e1329d138c01720",
+    "html_url": "https://github.com/vincentcalai/OasisBet/commit/ba50508b56f02b4caa65f6c55e1329d138c01720",
+    "comments_url": "https://api.github.com/repos/vincentcalai/OasisBet/commits/ba50508b56f02b4caa65f6c55e1329d138c01720/comments",
+    "author": {
+        "login": "vincentcalai",
+        "id": 50108422,
+        "node_id": "MDQ6VXNlcjUwMTA4NDIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50108422?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vincentcalai",
+        "html_url": "https://github.com/vincentcalai",
+        "followers_url": "https://api.github.com/users/vincentcalai/followers",
+        "following_url": "https://api.github.com/users/vincentcalai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vincentcalai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vincentcalai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vincentcalai/subscriptions",
+        "organizations_url": "https://api.github.com/users/vincentcalai/orgs",
+        "repos_url": "https://api.github.com/users/vincentcalai/repos",
+        "events_url": "https://api.github.com/users/vincentcalai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vincentcalai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "vincentcalai",
+        "id": 50108422,
+        "node_id": "MDQ6VXNlcjUwMTA4NDIy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50108422?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/vincentcalai",
+        "html_url": "https://github.com/vincentcalai",
+        "followers_url": "https://api.github.com/users/vincentcalai/followers",
+        "following_url": "https://api.github.com/users/vincentcalai/following{/other_user}",
+        "gists_url": "https://api.github.com/users/vincentcalai/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/vincentcalai/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/vincentcalai/subscriptions",
+        "organizations_url": "https://api.github.com/users/vincentcalai/orgs",
+        "repos_url": "https://api.github.com/users/vincentcalai/repos",
+        "events_url": "https://api.github.com/users/vincentcalai/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/vincentcalai/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cd92019e61ecb1328b0f954d8065f1c0e69dd009",
+            "url": "https://api.github.com/repos/vincentcalai/OasisBet/commits/cd92019e61ecb1328b0f954d8065f1c0e69dd009",
+            "html_url": "https://github.com/vincentcalai/OasisBet/commit/cd92019e61ecb1328b0f954d8065f1c0e69dd009"
+        }
+    ],
+    "stats": {
+        "total": 12,
+        "additions": 6,
+        "deletions": 6
+    },
+    "files": [
+        {
+            "sha": "fa060b4d49cd469fc4c5d76e04d2aad63d82089d",
+            "filename": "account/src/main/java/com/oasisbet/account/service/AccountService.java",
+            "status": "modified",
+            "additions": 6,
+            "deletions": 6,
+            "changes": 12,
+            "blob_url": "https://github.com/vincentcalai/OasisBet/blob/ba50508b56f02b4caa65f6c55e1329d138c01720/account%2Fsrc%2Fmain%2Fjava%2Fcom%2Foasisbet%2Faccount%2Fservice%2FAccountService.java",
+            "raw_url": "https://github.com/vincentcalai/OasisBet/raw/ba50508b56f02b4caa65f6c55e1329d138c01720/account%2Fsrc%2Fmain%2Fjava%2Fcom%2Foasisbet%2Faccount%2Fservice%2FAccountService.java",
+            "contents_url": "https://api.github.com/repos/vincentcalai/OasisBet/contents/account%2Fsrc%2Fmain%2Fjava%2Fcom%2Foasisbet%2Faccount%2Fservice%2FAccountService.java?ref=ba50508b56f02b4caa65f6c55e1329d138c01720",
+            "patch": "@@ -252,13 +252,13 @@ public StatusResponse processBet(Long accId, List<BetSubmissionVO> betSubmission\n \n \tpublic List<TrxHistVO> retrieveTrxHist(Long accId, String type, String period) {\n \t\tString typeCd = \"\";\n-\t\tif (type.equals(Constants.DEPOSIT_CD)) {\n+\t\tif (Constants.DEPOSIT_CD.equals(type)) {\n \t\t\ttypeCd = Constants.TRX_TYPE_DEPOSIT;\n-\t\t} else if (type.equals(Constants.WITHDRAWAL_CD)) {\n+\t\t} else if (Constants.WITHDRAWAL_CD.equals(type)) {\n \t\t\ttypeCd = Constants.TRX_TYPE_WITHDRAWAL;\n-\t\t} else if (type.equals(Constants.FUNDS_CD)) {\n+\t\t} else if (Constants.FUNDS_CD.equals(type)) {\n \t\t\ttypeCd = Constants.TRX_TYPE_ALL_FUNDS;\n-\t\t} else if (type.equals(Constants.SPORTS_BET_CD)) {\n+\t\t} else if (Constants.SPORTS_BET_CD.equals(type)) {\n \t\t\ttypeCd = Constants.TRX_TYPE_SPORTS_BET;\n \t\t}\n \n@@ -269,7 +269,7 @@ public List<TrxHistVO> retrieveTrxHist(Long accId, String type, String period) {\n \t\tList<Object[]> allFundsTrx = null;\n \t\tList<TrxHistVO> trxHistList = new ArrayList<>();\n \n-\t\tif (typeCd.equals(Constants.TRX_TYPE_ALL_FUNDS)) {\n+\t\tif (Constants.TRX_TYPE_ALL_FUNDS.equals(typeCd)) {\n \t\t\tallFundsTrx = this.accountOtherTrxDao.getAllFundsInOutTrx(accId, startDate);\n \n \t\t\tif (allFundsTrx != null && allFundsTrx.size() > 0) {\n@@ -281,7 +281,7 @@ public List<TrxHistVO> retrieveTrxHist(Long accId, String type, String period) {\n \t\t\t\t\ttrxHistList.add(trxHistVo);\n \t\t\t\t});\n \t\t\t}\n-\t\t} else if (typeCd.equals(Constants.TRX_TYPE_SPORTS_BET)) {\n+\t\t} else if (Constants.TRX_TYPE_SPORTS_BET.equals(typeCd)) {\n \t\t\tbetTrxView = this.accountBetTrxDao.getByDateRange(accId, startDate);\n \n \t\t\tif (betTrxView != null && betTrxView.size() > 0) {"
+        }
+    ]
+}

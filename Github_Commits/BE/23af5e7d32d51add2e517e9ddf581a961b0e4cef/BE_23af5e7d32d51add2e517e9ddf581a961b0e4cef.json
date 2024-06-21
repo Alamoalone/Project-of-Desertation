@@ -1,0 +1,98 @@
+{
+    "sha": "23af5e7d32d51add2e517e9ddf581a961b0e4cef",
+    "node_id": "C_kwDOJs7F7NoAKDIzYWY1ZTdkMzJkNTFhZGQyZTUxN2U5ZGRmNTgxYTk2MWIwZTRjZWY",
+    "commit": {
+        "author": {
+            "name": "http1220",
+            "email": "http1220@naver.com",
+            "date": "2023-09-15T13:46:31Z"
+        },
+        "committer": {
+            "name": "http1220",
+            "email": "http1220@naver.com",
+            "date": "2023-09-15T13:46:31Z"
+        },
+        "message": "null pointer exception 발생 시 문제가 발생한 클래스 와 위치만 출력",
+        "tree": {
+            "sha": "3bda305963380bbd08ea6d754574551ac8f9d025",
+            "url": "https://api.github.com/repos/devrunservice/BE/git/trees/3bda305963380bbd08ea6d754574551ac8f9d025"
+        },
+        "url": "https://api.github.com/repos/devrunservice/BE/git/commits/23af5e7d32d51add2e517e9ddf581a961b0e4cef",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/devrunservice/BE/commits/23af5e7d32d51add2e517e9ddf581a961b0e4cef",
+    "html_url": "https://github.com/devrunservice/BE/commit/23af5e7d32d51add2e517e9ddf581a961b0e4cef",
+    "comments_url": "https://api.github.com/repos/devrunservice/BE/commits/23af5e7d32d51add2e517e9ddf581a961b0e4cef/comments",
+    "author": {
+        "login": "http1220",
+        "id": 98459066,
+        "node_id": "U_kgDOBd5dug",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98459066?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/http1220",
+        "html_url": "https://github.com/http1220",
+        "followers_url": "https://api.github.com/users/http1220/followers",
+        "following_url": "https://api.github.com/users/http1220/following{/other_user}",
+        "gists_url": "https://api.github.com/users/http1220/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/http1220/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/http1220/subscriptions",
+        "organizations_url": "https://api.github.com/users/http1220/orgs",
+        "repos_url": "https://api.github.com/users/http1220/repos",
+        "events_url": "https://api.github.com/users/http1220/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/http1220/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "http1220",
+        "id": 98459066,
+        "node_id": "U_kgDOBd5dug",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98459066?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/http1220",
+        "html_url": "https://github.com/http1220",
+        "followers_url": "https://api.github.com/users/http1220/followers",
+        "following_url": "https://api.github.com/users/http1220/following{/other_user}",
+        "gists_url": "https://api.github.com/users/http1220/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/http1220/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/http1220/subscriptions",
+        "organizations_url": "https://api.github.com/users/http1220/orgs",
+        "repos_url": "https://api.github.com/users/http1220/repos",
+        "events_url": "https://api.github.com/users/http1220/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/http1220/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8115c7a77141fbe40ec7c340983567e94d45c1dd",
+            "url": "https://api.github.com/repos/devrunservice/BE/commits/8115c7a77141fbe40ec7c340983567e94d45c1dd",
+            "html_url": "https://github.com/devrunservice/BE/commit/8115c7a77141fbe40ec7c340983567e94d45c1dd"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 4,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "97aec150d9814996301c105746f62971ef4d71f5",
+            "filename": "src/main/java/com/devrun/exception/GlobalExceptionHandler.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/devrunservice/BE/blob/23af5e7d32d51add2e517e9ddf581a961b0e4cef/src%2Fmain%2Fjava%2Fcom%2Fdevrun%2Fexception%2FGlobalExceptionHandler.java",
+            "raw_url": "https://github.com/devrunservice/BE/raw/23af5e7d32d51add2e517e9ddf581a961b0e4cef/src%2Fmain%2Fjava%2Fcom%2Fdevrun%2Fexception%2FGlobalExceptionHandler.java",
+            "contents_url": "https://api.github.com/repos/devrunservice/BE/contents/src%2Fmain%2Fjava%2Fcom%2Fdevrun%2Fexception%2FGlobalExceptionHandler.java?ref=23af5e7d32d51add2e517e9ddf581a961b0e4cef",
+            "patch": "@@ -57,7 +57,11 @@ private ErrorResponse makeErrorResponse(ErrorCode errorCode) {\n     @ExceptionHandler(NullPointerException.class)\r\n     public ResponseEntity<Object> nullex(final NullPointerException e) {\r\n         Map<String, String> responeMap = new HashMap<>();\r\n+        e.printStackTrace();\r\n         responeMap.put(\"message\", \"Can't Find Data, Check Your Request. -By DevRun\");\r\n+        responeMap.put(\"message2\", e.getStackTrace()[0].getClassName() + \":\"+e.getStackTrace()[0].getLineNumber());\r\n+        responeMap.put(\"error\" , e.getMessage());\r\n+        \r\n         return ResponseEntity.badRequest().body(responeMap);\r\n     }\r\n \r"
+        }
+    ]
+}

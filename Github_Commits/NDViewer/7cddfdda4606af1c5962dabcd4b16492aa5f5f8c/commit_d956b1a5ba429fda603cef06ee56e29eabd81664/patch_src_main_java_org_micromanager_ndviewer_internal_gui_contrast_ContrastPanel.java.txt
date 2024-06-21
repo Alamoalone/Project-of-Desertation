@@ -1,0 +1,18 @@
+@@ -88,6 +88,10 @@ public void addContrastControls(String channelName) {
+       histograms_.addContrastControls(channelName);
+    }
+ 
++   public void removeContrastControls(String channelName) {
++      histograms_.removeContrastControls(channelName);
++   }
++
+    private void initializeHistogramDisplayArea() {
+       histDisplayScrollPane_.setHorizontalScrollBarPolicy(
+             ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+@@ -317,4 +321,6 @@ public void updateHistogramData(HashMap<String, int[]> hists) {
+    public void displaySettingsChanged() {
+       histograms_.displaySettingsChanged();
+    }
++
++
+ }

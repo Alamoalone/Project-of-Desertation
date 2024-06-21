@@ -1,0 +1,30 @@
+	public ResponseEntity<Long> deleteOnePersonById(@PathVariable String id) {
+		boolean isPersonRemoved = personService.deleteOnePersonById(id);
+		return isPersonRemoved ? new ResponseEntity<Long>(HttpStatus.NO_CONTENT)
+				: new ResponseEntity<Long>(HttpStatus.NOT_FOUND);
+	}
+
+	public ResponseEntity<?> updateOnePersonById(@RequestBody Person person, @PathVariable String id) {
+		Person personFoundById; 
+		try {
+			 personFoundById= personService.updatePerson(id, person);
+			return ResponseEntity.status(HttpStatus.CREATED).body( personFoundById);
+		} catch (NullPointerException e) {
+			// e.printStackTrace();
+			// ajouter log error
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+
+		}
+	
+	}
+
+	public ResponseEntity<?> getOnePerson(@PathVariable String id) {
+		Person personFoundById = personService.getOnePersonById(id);
+		if (personFoundById != null) {
+			return ResponseEntity.status(HttpStatus.OK).body(personFoundById);
+		} else {
+			return  returnResponseEntityEmptyAndCode404();
+		}
+	}
+

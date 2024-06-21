@@ -1,0 +1,12 @@
+    public boolean handlePictures() {
+        files.forEach(file -> {
+            FileFormat fileFormat = new FileFormat(file.getPath());
+            String format = fileFormat.getFileFormat();
+
+            String fileName = getFileName(file.getName());
+            if (compressionRate > 0) {
+                compressImage(file, format, fileName);
+            } else cutImageByPixels(changeFormat, file, format, fileName);
+        });
+        return true;
+    }

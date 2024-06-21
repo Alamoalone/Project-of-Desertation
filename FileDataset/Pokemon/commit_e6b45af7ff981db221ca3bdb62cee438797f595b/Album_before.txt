@@ -1,0 +1,16 @@
+    public int findCardGivenName (String name) {
+        return Collections.binarySearch(cards, new Card(name));
+    }
+
+
+
+    public int findCardGivenHP (int hp) {
+        return Collections.binarySearch(cards, new Card (hp), new SortByHP());
+    }
+
+    public void removeCards (int startIndex, int endIndex) {
+        cards.subList(startIndex, endIndex+1).clear();
+    }
+
+
+

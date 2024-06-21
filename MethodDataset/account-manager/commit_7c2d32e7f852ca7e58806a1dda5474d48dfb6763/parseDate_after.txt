@@ -1,0 +1,7 @@
+    private Date parseDate(String value, Date defaultValue) {
+        if (value == null || value.isEmpty()) {
+            return defaultValue;
+        }
+
+        return parseDate(value);
+    }

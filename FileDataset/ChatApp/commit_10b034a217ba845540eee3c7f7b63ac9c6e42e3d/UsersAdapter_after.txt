@@ -1,0 +1,5 @@
+    private Bitmap getUserImage(String encodeImage) {
+            byte[] bytes = (encodeImage != null && !encodeImage.isEmpty()) ? Base64.decode(encodeImage, Base64.DEFAULT) : new byte[0];
+            return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+    }
+

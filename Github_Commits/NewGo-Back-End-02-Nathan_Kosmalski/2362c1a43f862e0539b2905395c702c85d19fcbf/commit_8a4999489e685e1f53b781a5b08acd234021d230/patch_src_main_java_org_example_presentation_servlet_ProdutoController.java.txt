@@ -1,0 +1,23 @@
+@@ -71,9 +71,10 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr
+        // produto/ -> POST -> cadastrar produto
+ 
+         response.setContentType("application/json");
+-
+-            String hash = request.getPathInfo().split("/").length > 1 ? request.getPathInfo().split("/")[1] : null;
+-
++        String hash = null;
++        if(request.getPathInfo() != null) {
++             hash = request.getPathInfo().split("/").length > 1 ? request.getPathInfo().split("/")[1] : null;
++        }
+ 
+             ProdutoService service = LocalizadorDeServico.getProdutoService();
+ 
+@@ -114,7 +115,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr
+                 response.getWriter().println(JsonConverter.toJson(responseDTO));
+                 return;
+             }
+-
++            
+             String body = getBodyReqJson(request);
+             try{
+                 Produto produto = CreateProdutoMapper.toProduto(JsonConverter.fromJson(body, CreateProdutoDTO.class));

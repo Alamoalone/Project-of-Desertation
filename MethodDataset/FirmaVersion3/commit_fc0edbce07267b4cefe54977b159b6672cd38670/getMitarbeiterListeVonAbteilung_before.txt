@@ -1,0 +1,8 @@
+	public static Mitarbeiter[] getMitarbeiterListeVonAbteilung(int abt_id) {
+		for (Abteilung dieseAbteilung : abt_liste) {
+			if (dieseAbteilung.getId() == abt_id) {
+				return dieseAbteilung.getMitarb_liste();
+			}
+		}
+		return null;
+	}

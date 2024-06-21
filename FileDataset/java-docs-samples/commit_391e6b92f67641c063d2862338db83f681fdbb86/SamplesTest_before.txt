@@ -1,0 +1,55 @@
+  public void testPollDiscoveryOccurrenceFinished() throws Exception {
+    try {
+      // expect fail on first try
+      PollDiscoveryOccurrenceFinished.pollDiscoveryOccurrenceFinished(imageUrl, PROJECT_ID, 5);
+      Assert.fail("found unexpected discovery occurrence");
+    } catch (TimeoutException e) {
+      // test passes
+    }
+    // create discovery note
+    Note newNote =
+        Note.newBuilder()
+            .setDiscovery(DiscoveryNote.newBuilder().setAnalysisKind(NoteKind.DISCOVERY))
+            .build();
+
+    String discNoteId = "discovery-note-" + (new Date()).getTime();
+    NoteName noteName = NoteName.of(PROJECT_ID, discNoteId);
+    GrafeasClient client = ContainerAnalysisClient.create().getGrafeasClient();
+    client.createNote(ProjectName.format(PROJECT_ID), discNoteId, newNote);
+
+    // create discovery occurrence
+    Occurrence newOcc =
+        Occurrence.newBuilder()
+            .setNoteName(noteName.toString())
+            .setResourceUri(imageUrl)
+            .setDiscovery(
+                DiscoveryOccurrence.newBuilder().setAnalysisStatus(AnalysisStatus.FINISHED_SUCCESS))
+            .build();
+    Occurrence result = client.createOccurrence(ProjectName.format(PROJECT_ID), newOcc);
+
+    // poll again
+    int maxAttempts = 6;
+    int attempt = 1;
+    Occurrence found = null;
+    if (found == null && attempt <= maxAttempts) {
+      try {
+        found =
+            PollDiscoveryOccurrenceFinished.pollDiscoveryOccurrenceFinished(
+                imageUrl, PROJECT_ID, 5);
+      } catch (TimeoutException e) {
+        System.out.printf(
+            "Attempt %d/%d failed with a TimeoutException. Retrying.", attempt, maxAttempts);
+      }
+      attempt += 1;
+      sleep(3 * SLEEP_TIME * Math.round((Math.pow(2, attempt - 1))));
+    }
+    AnalysisStatus foundStatus = found.getDiscovery().getAnalysisStatus();
+    assertEquals(foundStatus, AnalysisStatus.FINISHED_SUCCESS);
+
+    // clean up
+    String[] nameArr = found.getName().split("/");
+    String occId = nameArr[nameArr.length - 1];
+    DeleteOccurrence.deleteOccurrence(occId, PROJECT_ID);
+    DeleteNote.deleteNote(discNoteId, PROJECT_ID);
+  }
+

@@ -1,0 +1,6 @@
+@@ -32,4 +32,5 @@ public int decreaseBalance(int dec) {
+         balance -= dec;
+         return balance;
+     } 
++    
+ }

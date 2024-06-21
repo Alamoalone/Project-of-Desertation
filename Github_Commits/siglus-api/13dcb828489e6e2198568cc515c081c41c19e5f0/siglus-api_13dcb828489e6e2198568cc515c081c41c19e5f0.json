@@ -1,0 +1,98 @@
+{
+    "sha": "13dcb828489e6e2198568cc515c081c41c19e5f0",
+    "node_id": "C_kwDOD9hp5toAKDEzZGNiODI4NDg5ZTZlMjE5ODU2OGNjNTE1YzA4MWM0MWMxOWU1ZjA",
+    "commit": {
+        "author": {
+            "name": "fubo.ding",
+            "email": "fubo.ding@thoughtworks.com",
+            "date": "2023-03-07T02:54:02Z"
+        },
+        "committer": {
+            "name": "fubo.ding",
+            "email": "fubo.ding@thoughtworks.com",
+            "date": "2023-03-07T02:54:02Z"
+        },
+        "message": "[fubo.ding] Ticket #65 fix bug null pointer exception",
+        "tree": {
+            "sha": "a01941552dd8e303ba0b3f913b49194df6b373d2",
+            "url": "https://api.github.com/repos/SIGLUS/siglus-api/git/trees/a01941552dd8e303ba0b3f913b49194df6b373d2"
+        },
+        "url": "https://api.github.com/repos/SIGLUS/siglus-api/git/commits/13dcb828489e6e2198568cc515c081c41c19e5f0",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/SIGLUS/siglus-api/commits/13dcb828489e6e2198568cc515c081c41c19e5f0",
+    "html_url": "https://github.com/SIGLUS/siglus-api/commit/13dcb828489e6e2198568cc515c081c41c19e5f0",
+    "comments_url": "https://api.github.com/repos/SIGLUS/siglus-api/commits/13dcb828489e6e2198568cc515c081c41c19e5f0/comments",
+    "author": {
+        "login": "fubo666",
+        "id": 110376093,
+        "node_id": "U_kgDOBpQ0nQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/110376093?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fubo666",
+        "html_url": "https://github.com/fubo666",
+        "followers_url": "https://api.github.com/users/fubo666/followers",
+        "following_url": "https://api.github.com/users/fubo666/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fubo666/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fubo666/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fubo666/subscriptions",
+        "organizations_url": "https://api.github.com/users/fubo666/orgs",
+        "repos_url": "https://api.github.com/users/fubo666/repos",
+        "events_url": "https://api.github.com/users/fubo666/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fubo666/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "fubo666",
+        "id": 110376093,
+        "node_id": "U_kgDOBpQ0nQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/110376093?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/fubo666",
+        "html_url": "https://github.com/fubo666",
+        "followers_url": "https://api.github.com/users/fubo666/followers",
+        "following_url": "https://api.github.com/users/fubo666/following{/other_user}",
+        "gists_url": "https://api.github.com/users/fubo666/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/fubo666/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/fubo666/subscriptions",
+        "organizations_url": "https://api.github.com/users/fubo666/orgs",
+        "repos_url": "https://api.github.com/users/fubo666/repos",
+        "events_url": "https://api.github.com/users/fubo666/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/fubo666/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "79a033ac766f22eec880640ec3eaa6d1dd8c45c5",
+            "url": "https://api.github.com/repos/SIGLUS/siglus-api/commits/79a033ac766f22eec880640ec3eaa6d1dd8c45c5",
+            "html_url": "https://github.com/SIGLUS/siglus-api/commit/79a033ac766f22eec880640ec3eaa6d1dd8c45c5"
+        }
+    ],
+    "stats": {
+        "total": 2,
+        "additions": 1,
+        "deletions": 1
+    },
+    "files": [
+        {
+            "sha": "5bfb1fe8e121b812790fcbb4a528db25fd1f7b0f",
+            "filename": "src/main/java/org/siglus/siglusapi/service/android/StockCardCreateService.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/SIGLUS/siglus-api/blob/13dcb828489e6e2198568cc515c081c41c19e5f0/src%2Fmain%2Fjava%2Forg%2Fsiglus%2Fsiglusapi%2Fservice%2Fandroid%2FStockCardCreateService.java",
+            "raw_url": "https://github.com/SIGLUS/siglus-api/raw/13dcb828489e6e2198568cc515c081c41c19e5f0/src%2Fmain%2Fjava%2Forg%2Fsiglus%2Fsiglusapi%2Fservice%2Fandroid%2FStockCardCreateService.java",
+            "contents_url": "https://api.github.com/repos/SIGLUS/siglus-api/contents/src%2Fmain%2Fjava%2Forg%2Fsiglus%2Fsiglusapi%2Fservice%2Fandroid%2FStockCardCreateService.java?ref=13dcb828489e6e2198568cc515c081c41c19e5f0",
+            "patch": "@@ -288,7 +288,7 @@ private UUID getNewSourceId(StockCard stockCard) {\n         stockCard.getProgramId(), stockCard.getFacilityId());\n     for (ValidSourceDestinationDto source : sourcesForOneProgram) {\n       Node node = source.getNode();\n-      if (node.isRefDataFacility()) {\n+      if (node != null && node.isRefDataFacility()) {\n         return node.getId();\n       }\n     }"
+        }
+    ]
+}

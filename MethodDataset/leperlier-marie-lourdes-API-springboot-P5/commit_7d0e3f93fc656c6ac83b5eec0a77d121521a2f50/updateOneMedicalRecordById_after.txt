@@ -1,0 +1,14 @@
+	public ResponseEntity<?> updateOneMedicalRecordById(@RequestBody MedicalRecord medicalRecord,
+			@PathVariable String id) {
+		MedicalRecord medicalRecordFoundById;
+
+		try {
+			medicalRecordFoundById = medicalRecordService.updateMedicalRecord(id, medicalRecord);
+			return ResponseEntity.status(HttpStatus.CREATED).body(medicalRecordFoundById);
+		} catch (NullPointerException e) {
+			// e.printStackTrace();
+			// ajouter log error
+			System.out.println(e.getMessage());
+			return returnResponseEntityEmptyAndCode404();
+		}
+	}

@@ -1,0 +1,59 @@
+@@ -60,7 +60,8 @@ public static MoviePostPutDTO addMovie(MoviePostPutDTO movieDTO) throws Exceptio
+       if (em.getTransaction().isActive()) {
+         em.getTransaction().rollback();
+       }
+-      throw new Exception(e.getCause().getCause().getMessage());
++      ModelUtils.generateException(e);
++      return null;
+     } finally {
+       em.close();
+     }
+@@ -95,13 +96,14 @@ public static dto.MovieDTO updateMovie(Integer movieId, MoviePostPutDTO movieDTO
+       if (em.getTransaction().isActive()) {
+         em.getTransaction().rollback();
+       }
+-      throw new Exception(e.getCause().getCause().getMessage());
++      ModelUtils.generateException(e);
++      return null;
+     } finally {
+       em.close();
+     }
+   }
+ 
+-  public static ImageDTO getMainImage(Integer movieId) throws PersistenceException {
++  public static ImageDTO getMainImage(Integer movieId) throws Exception {
+     EntityManager em = MariaDB.getEntityManager();
+ 
+     try {
+@@ -120,18 +122,19 @@ public static ImageDTO getMainImage(Integer movieId) throws PersistenceException
+         return new ImageDTO((Integer) row[0], (Integer) row[1], (String) row[2], isMain);
+       }
+ 
+-      throw new PersistenceException("No main image found for movie with id " + movieId);
++      throw new Exception("No main image found for movie with id " + movieId);
+     } catch (PersistenceException e) {
+       if (em.getTransaction().isActive()) {
+         em.getTransaction().rollback();
+       }
+-      throw new PersistenceException(e.getCause().getCause().getMessage());
++      ModelUtils.generateException(e);
++      return null;
+     } finally {
+       em.close();
+     }
+   }
+ 
+-  public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws PersistenceException {
++  public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws Exception {
+     EntityManager em = MariaDB.getEntityManager();
+     try {
+       StoredProcedureQuery query = em.createStoredProcedureQuery("get_images_by_movie_id")
+@@ -145,7 +148,7 @@ public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws Persiste
+       if (em.getTransaction().isActive()) {
+         em.getTransaction().rollback();
+       }
+-      throw new PersistenceException(e.getCause().getCause().getMessage());
++      throw new Exception(e.getCause().getCause().getMessage());
+     } finally {
+       em.close();
+     }

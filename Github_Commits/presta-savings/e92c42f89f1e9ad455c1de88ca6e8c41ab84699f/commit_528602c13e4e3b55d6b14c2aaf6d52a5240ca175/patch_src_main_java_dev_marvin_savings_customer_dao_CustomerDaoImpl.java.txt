@@ -1,0 +1,26 @@
+@@ -61,13 +61,14 @@ public Optional<Customer> getCustomerByMemberNumber(String memberNumber) {
+     }
+ 
+     @Override
+-    public Customer getCustomerByEmail(String email) {
++    public Optional<Customer> getCustomerByEmail(String email) {
+         String sql = """
+                 SELECT member_number, customer_name, email, password, mobile_no, government_id, created_date
+                 FROM t_customer
+                 WHERE email = ?
+                 """;
+-        return jdbcTemplate.queryForObject(sql, customerRowMapper);
++        List<Customer> customers = jdbcTemplate.query(sql, customerRowMapper, email);
++        return customers.isEmpty() ? Optional.empty() : Optional.of(customers.get(0));
+     }
+ 
+     @Override
+@@ -94,7 +95,7 @@ public Boolean updateCustomer(Customer customer) {
+             log.info("CUSTOMER UPDATE EMAIL RESULT = " + rowsAffected);
+         }
+ 
+-        if(customer.getMobile() != null){
++        if (customer.getMobile() != null) {
+             String sql = """
+                     UPDATE t_customer
+                     SET mobile_no = ?

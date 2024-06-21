@@ -1,0 +1,98 @@
+{
+    "sha": "53ada32383d23e535448f6ee15463d53623f938f",
+    "node_id": "C_kwDOBGgWQdoAKDUzYWRhMzIzODNkMjNlNTM1NDQ4ZjZlZTE1NDYzZDUzNjIzZjkzOGY",
+    "commit": {
+        "author": {
+            "name": "Nadeeshan96",
+            "email": "nadeeshand@wso2.com",
+            "date": "2023-07-28T09:27:41Z"
+        },
+        "committer": {
+            "name": "Nadeeshan96",
+            "email": "nadeeshand@wso2.com",
+            "date": "2023-07-28T09:27:41Z"
+        },
+        "message": "Fix null pointer exception",
+        "tree": {
+            "sha": "dd029f0ecfd6dccafe261bcf913483985f607310",
+            "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/git/trees/dd029f0ecfd6dccafe261bcf913483985f607310"
+        },
+        "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/git/commits/53ada32383d23e535448f6ee15463d53623f938f",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/commits/53ada32383d23e535448f6ee15463d53623f938f",
+    "html_url": "https://github.com/ballerina-platform/ballerina-lang/commit/53ada32383d23e535448f6ee15463d53623f938f",
+    "comments_url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/commits/53ada32383d23e535448f6ee15463d53623f938f/comments",
+    "author": {
+        "login": "Nadeeshan96",
+        "id": 33286289,
+        "node_id": "MDQ6VXNlcjMzMjg2Mjg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33286289?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Nadeeshan96",
+        "html_url": "https://github.com/Nadeeshan96",
+        "followers_url": "https://api.github.com/users/Nadeeshan96/followers",
+        "following_url": "https://api.github.com/users/Nadeeshan96/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Nadeeshan96/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Nadeeshan96/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Nadeeshan96/subscriptions",
+        "organizations_url": "https://api.github.com/users/Nadeeshan96/orgs",
+        "repos_url": "https://api.github.com/users/Nadeeshan96/repos",
+        "events_url": "https://api.github.com/users/Nadeeshan96/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Nadeeshan96/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Nadeeshan96",
+        "id": 33286289,
+        "node_id": "MDQ6VXNlcjMzMjg2Mjg5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/33286289?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Nadeeshan96",
+        "html_url": "https://github.com/Nadeeshan96",
+        "followers_url": "https://api.github.com/users/Nadeeshan96/followers",
+        "following_url": "https://api.github.com/users/Nadeeshan96/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Nadeeshan96/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Nadeeshan96/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Nadeeshan96/subscriptions",
+        "organizations_url": "https://api.github.com/users/Nadeeshan96/orgs",
+        "repos_url": "https://api.github.com/users/Nadeeshan96/repos",
+        "events_url": "https://api.github.com/users/Nadeeshan96/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Nadeeshan96/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "df7367c26d190608f1dbee1b2c7e189950dbef77",
+            "url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/commits/df7367c26d190608f1dbee1b2c7e189950dbef77",
+            "html_url": "https://github.com/ballerina-platform/ballerina-lang/commit/df7367c26d190608f1dbee1b2c7e189950dbef77"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "8cfea06a605e9d480e08d20bcc6eb3981ff0dceb",
+            "filename": "compiler/ballerina-lang/src/main/java/org/wso2/ballerinalang/compiler/bir/codegen/optimizer/LargeMethodOptimizer.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/ballerina-platform/ballerina-lang/blob/53ada32383d23e535448f6ee15463d53623f938f/compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fbir%2Fcodegen%2Foptimizer%2FLargeMethodOptimizer.java",
+            "raw_url": "https://github.com/ballerina-platform/ballerina-lang/raw/53ada32383d23e535448f6ee15463d53623f938f/compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fbir%2Fcodegen%2Foptimizer%2FLargeMethodOptimizer.java",
+            "contents_url": "https://api.github.com/repos/ballerina-platform/ballerina-lang/contents/compiler%2Fballerina-lang%2Fsrc%2Fmain%2Fjava%2Forg%2Fwso2%2Fballerinalang%2Fcompiler%2Fbir%2Fcodegen%2Foptimizer%2FLargeMethodOptimizer.java?ref=53ada32383d23e535448f6ee15463d53623f938f",
+            "patch": "@@ -1079,8 +1079,8 @@ private boolean setMapElementGivenOperand(Map<BIROperand, BIRMappingConstructorE\n                             .keyOp;\n                     if (mapKeyOperandLocations.containsKey(keyOperand)) {\n                         NonTerminatorLocation nonTerminatorLocation = mapKeyOperandLocations.get(keyOperand);\n-                        if ((nonTerminatorLocation.bbNum > bbIndex) ||\n-                                (nonTerminatorLocation.bbNum == bbIndex && nonTerminatorLocation.insNum > insIndex)) {\n+                        if (nonTerminatorLocation != null && (nonTerminatorLocation.bbNum > bbIndex ||\n+                                (nonTerminatorLocation.bbNum == bbIndex && nonTerminatorLocation.insNum > insIndex))) {\n                             splitPointDetails.splitHere = false;\n                             continue;\n                         }"
+        }
+    ]
+}

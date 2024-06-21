@@ -1,0 +1,18 @@
+@@ -48,7 +48,7 @@ protected JPanel createFormPanel() {
+ 	}
+ 
+ 	private UButton getCreateButton(JTextField nomField, JTextField telephoneField, JTextField emailField) {
+-		UButton createButton = new UButton("Create");
++		UButton createButton = new UButton("Créer");
+ 		createButton.addActionListener(e -> {
+ 			Referent r = new Referent(nomField.getText(), telephoneField.getText(), emailField.getText());
+ 			Referent.create(r);
+@@ -77,7 +77,7 @@ protected JPanel createEditPanel(Referent referent) {
+ 		panel.add(emailLabel);
+ 		panel.add(emailField);
+ 		// add a button to create the referent
+-		UButton createButton = new UButton("Modifier");
++		UButton createButton = new UButton("Détailler");
+ 		createButton.addActionListener(e -> {
+ 
+ 			referent.nom = nomField.getText();

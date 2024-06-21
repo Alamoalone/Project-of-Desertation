@@ -1,0 +1,122 @@
+{
+    "sha": "8d8c53973b005492b26e6dccdee16e8ef633d99b",
+    "node_id": "C_kwDOJwMcY9oAKDhkOGM1Mzk3M2IwMDU0OTJiMjZlNmRjY2RlZTE2ZThlZjYzM2Q5OWI",
+    "commit": {
+        "author": {
+            "name": "shivani",
+            "email": "shivani1@publicissapient.com",
+            "date": "2023-07-25T14:12:46Z"
+        },
+        "committer": {
+            "name": "shivani",
+            "email": "shivani1@publicissapient.com",
+            "date": "2023-07-25T14:13:20Z"
+        },
+        "message": "DTS_27105-null pointer exception check",
+        "tree": {
+            "sha": "37826baa0bd95644f3c34244bf7826d525fd39b9",
+            "url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/git/trees/37826baa0bd95644f3c34244bf7826d525fd39b9"
+        },
+        "url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/git/commits/8d8c53973b005492b26e6dccdee16e8ef633d99b",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/commits/8d8c53973b005492b26e6dccdee16e8ef633d99b",
+    "html_url": "https://github.com/PublicisSapient/PSknowHOW/commit/8d8c53973b005492b26e6dccdee16e8ef633d99b",
+    "comments_url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/commits/8d8c53973b005492b26e6dccdee16e8ef633d99b/comments",
+    "author": {
+        "login": "Chittauri",
+        "id": 98313533,
+        "node_id": "U_kgDOBdwlPQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98313533?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chittauri",
+        "html_url": "https://github.com/Chittauri",
+        "followers_url": "https://api.github.com/users/Chittauri/followers",
+        "following_url": "https://api.github.com/users/Chittauri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chittauri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chittauri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chittauri/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chittauri/orgs",
+        "repos_url": "https://api.github.com/users/Chittauri/repos",
+        "events_url": "https://api.github.com/users/Chittauri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chittauri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Chittauri",
+        "id": 98313533,
+        "node_id": "U_kgDOBdwlPQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/98313533?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chittauri",
+        "html_url": "https://github.com/Chittauri",
+        "followers_url": "https://api.github.com/users/Chittauri/followers",
+        "following_url": "https://api.github.com/users/Chittauri/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chittauri/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chittauri/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chittauri/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chittauri/orgs",
+        "repos_url": "https://api.github.com/users/Chittauri/repos",
+        "events_url": "https://api.github.com/users/Chittauri/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chittauri/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "6bca9755f30226fadbdbef8f50fe69ebf408a358",
+            "url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/commits/6bca9755f30226fadbdbef8f50fe69ebf408a358",
+            "html_url": "https://github.com/PublicisSapient/PSknowHOW/commit/6bca9755f30226fadbdbef8f50fe69ebf408a358"
+        }
+    ],
+    "stats": {
+        "total": 40,
+        "additions": 25,
+        "deletions": 15
+    },
+    "files": [
+        {
+            "sha": "01a0b7b61f5c35ed4d08ed51dc9e4865485cc120",
+            "filename": "customapi/src/main/java/com/publicissapient/kpidashboard/apis/common/service/impl/KpiHelperService.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 4,
+            "changes": 11,
+            "blob_url": "https://github.com/PublicisSapient/PSknowHOW/blob/8d8c53973b005492b26e6dccdee16e8ef633d99b/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fcommon%2Fservice%2Fimpl%2FKpiHelperService.java",
+            "raw_url": "https://github.com/PublicisSapient/PSknowHOW/raw/8d8c53973b005492b26e6dccdee16e8ef633d99b/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fcommon%2Fservice%2Fimpl%2FKpiHelperService.java",
+            "contents_url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/contents/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fcommon%2Fservice%2Fimpl%2FKpiHelperService.java?ref=8d8c53973b005492b26e6dccdee16e8ef633d99b",
+            "patch": "@@ -572,9 +572,12 @@ public Map<String, Object> fetchSprintVelocityDataFromDb(KpiRequest kpiRequest,\n \n \t\t\tif (MapUtils.isNotEmpty(fieldMappingMap) && !duplicateIssues.isEmpty()) {\n \t\t\t\tMap<ObjectId, List<String>> customFieldMapping = duplicateIssues.keySet().stream()\n-\t\t\t\t\t\t.filter(fieldMappingMap::containsKey)\n-\t\t\t\t\t\t.collect(Collectors.toMap(Function.identity(), key -> fieldMappingMap\n-\t\t\t\t\t\t\t\t.get(key).getJiraIterationCompletionStatusKpi39()));\n+\t\t\t\t\t\t.filter(fieldMappingMap::containsKey).collect(Collectors.toMap(Function.identity(), key -> {\n+\t\t\t\t\t\t\tFieldMapping fieldMapping = fieldMappingMap.get(key);\n+\t\t\t\t\t\t\treturn Optional.ofNullable(fieldMapping)\n+\t\t\t\t\t\t\t\t\t.map(FieldMapping::getJiraIterationCompletionStatusKpi39)\n+\t\t\t\t\t\t\t\t\t.orElse(Collections.emptyList());\n+\t\t\t\t\t\t}));\n \t\t\t\tprojectWiseDuplicateIssuesWithMinCloseDate = getMinimumClosedDateFromConfiguration(duplicateIssues,\n \t\t\t\t\t\tcustomFieldMapping);\n \t\t\t}\n@@ -1550,7 +1553,7 @@ public Map<ObjectId, Map<String, List<LocalDateTime>>> getMinimumClosedDateFromC\n \t\t\t\t\t\t\tString changedTo = log.getChangedTo();\n \t\t\t\t\t\t\tif (customFields.contains(changedTo)) {\n \t\t\t\t\t\t\t\tLocalDateTime updatedOn = log.getUpdatedOn();\n-\t\t\t\t\t\t\t\tminimumCompletedStatusWiseMap.put(changedTo, updatedOn);\n+\t\t\t\t\t\t\t\tminimumCompletedStatusWiseMap.putIfAbsent(changedTo, updatedOn);\n \t\t\t\t\t\t\t} else if (!minimumCompletedStatusWiseMap.isEmpty()) {\n \t\t\t\t\t\t\t\tLocalDateTime minDate = minimumCompletedStatusWiseMap.values().stream()\n \t\t\t\t\t\t\t\t\t\t.min(LocalDateTime::compareTo).orElse(null);"
+        },
+        {
+            "sha": "f1809d48d6630e86ee0caba64af9704e66882331",
+            "filename": "customapi/src/main/java/com/publicissapient/kpidashboard/apis/jira/scrum/service/CommittmentReliabilityServiceImpl.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 6,
+            "changes": 16,
+            "blob_url": "https://github.com/PublicisSapient/PSknowHOW/blob/8d8c53973b005492b26e6dccdee16e8ef633d99b/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fjira%2Fscrum%2Fservice%2FCommittmentReliabilityServiceImpl.java",
+            "raw_url": "https://github.com/PublicisSapient/PSknowHOW/raw/8d8c53973b005492b26e6dccdee16e8ef633d99b/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fjira%2Fscrum%2Fservice%2FCommittmentReliabilityServiceImpl.java",
+            "contents_url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/contents/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fjira%2Fscrum%2Fservice%2FCommittmentReliabilityServiceImpl.java?ref=8d8c53973b005492b26e6dccdee16e8ef633d99b",
+            "patch": "@@ -10,11 +10,11 @@\n import java.util.List;\n import java.util.Map;\n import java.util.Objects;\n+import java.util.Optional;\n import java.util.Set;\n import java.util.function.Function;\n import java.util.stream.Collectors;\n \n-import com.publicissapient.kpidashboard.apis.common.service.impl.KpiHelperService;\n import org.apache.commons.collections.MapUtils;\n import org.apache.commons.collections4.CollectionUtils;\n import org.apache.commons.lang3.ObjectUtils;\n@@ -25,6 +25,7 @@\n import org.springframework.stereotype.Component;\n \n import com.publicissapient.kpidashboard.apis.appsetting.service.ConfigHelperService;\n+import com.publicissapient.kpidashboard.apis.common.service.impl.KpiHelperService;\n import com.publicissapient.kpidashboard.apis.config.CustomApiConfig;\n import com.publicissapient.kpidashboard.apis.constant.Constant;\n import com.publicissapient.kpidashboard.apis.enums.Filters;\n@@ -284,11 +285,14 @@ public Map<String, Object> fetchKPIDataFromDb(List<Node> leafNodeList, String st\n \n \t\tif (MapUtils.isNotEmpty(fieldMappingMap) && !duplicateIssues.isEmpty()) {\n \t\t\tMap<ObjectId, List<String>> customFieldMapping = duplicateIssues.keySet().stream()\n-\t\t\t\t\t.filter(fieldMappingMap::containsKey)\n-\t\t\t\t\t.collect(Collectors.toMap(Function.identity(), key -> fieldMappingMap\n-\t\t\t\t\t\t\t.get(key).getJiraIterationCompletionStatusKpi72()));\n-\t\t\tprojectWiseDuplicateIssuesWithMinCloseDate = kpiHelperService.getMinimumClosedDateFromConfiguration(duplicateIssues,\n-\t\t\t\t\tcustomFieldMapping);\n+\t\t\t\t\t.filter(fieldMappingMap::containsKey).collect(Collectors.toMap(Function.identity(), key -> {\n+\t\t\t\t\t\tFieldMapping fieldMapping = fieldMappingMap.get(key);\n+\t\t\t\t\t\treturn Optional.ofNullable(fieldMapping)\n+\t\t\t\t\t\t\t\t.map(FieldMapping::getJiraIterationCompletionStatusKpi72)\n+\t\t\t\t\t\t\t\t.orElse(Collections.emptyList());\n+\t\t\t\t\t}));\n+\t\t\tprojectWiseDuplicateIssuesWithMinCloseDate = kpiHelperService\n+\t\t\t\t\t.getMinimumClosedDateFromConfiguration(duplicateIssues, customFieldMapping);\n \t\t}\n \n \t\tMap<ObjectId, Map<String, List<LocalDateTime>>> finalProjectWiseDuplicateIssuesWithMinCloseDate = projectWiseDuplicateIssuesWithMinCloseDate;"
+        },
+        {
+            "sha": "89d3de27715637781e4c9ace1449ec8155eb88f1",
+            "filename": "customapi/src/main/java/com/publicissapient/kpidashboard/apis/jira/scrum/service/SprintPredictabilityImpl.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 5,
+            "changes": 13,
+            "blob_url": "https://github.com/PublicisSapient/PSknowHOW/blob/8d8c53973b005492b26e6dccdee16e8ef633d99b/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fjira%2Fscrum%2Fservice%2FSprintPredictabilityImpl.java",
+            "raw_url": "https://github.com/PublicisSapient/PSknowHOW/raw/8d8c53973b005492b26e6dccdee16e8ef633d99b/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fjira%2Fscrum%2Fservice%2FSprintPredictabilityImpl.java",
+            "contents_url": "https://api.github.com/repos/PublicisSapient/PSknowHOW/contents/customapi%2Fsrc%2Fmain%2Fjava%2Fcom%2Fpublicissapient%2Fkpidashboard%2Fapis%2Fjira%2Fscrum%2Fservice%2FSprintPredictabilityImpl.java?ref=8d8c53973b005492b26e6dccdee16e8ef633d99b",
+            "patch": "@@ -181,11 +181,14 @@ public Map<String, Object> fetchKPIDataFromDb(List<Node> leafNodeList, String st\n \n \t\t\tif (MapUtils.isNotEmpty(fieldMappingMap) && !duplicateIssues.isEmpty()) {\n \t\t\t\tMap<ObjectId, List<String>> customFieldMapping = duplicateIssues.keySet().stream()\n-\t\t\t\t\t\t.filter(fieldMappingMap::containsKey)\n-\t\t\t\t\t\t.collect(Collectors.toMap(Function.identity(), key -> fieldMappingMap\n-\t\t\t\t\t\t\t\t.get(key).getJiraIterationCompletionStatusKpi5()));\n-\t\t\t\tprojectWiseDuplicateIssuesWithMinCloseDate = kpiHelperService.getMinimumClosedDateFromConfiguration(duplicateIssues,\n-\t\t\t\t\t\tcustomFieldMapping);\n+\t\t\t\t\t\t.filter(fieldMappingMap::containsKey).collect(Collectors.toMap(Function.identity(), key -> {\n+\t\t\t\t\t\t\tFieldMapping fieldMapping = fieldMappingMap.get(key);\n+\t\t\t\t\t\t\treturn Optional.ofNullable(fieldMapping)\n+\t\t\t\t\t\t\t\t\t.map(FieldMapping::getJiraIterationCompletionStatusKpi5)\n+\t\t\t\t\t\t\t\t\t.orElse(Collections.emptyList());\n+\t\t\t\t\t\t}));\n+\t\t\t\tprojectWiseDuplicateIssuesWithMinCloseDate = kpiHelperService\n+\t\t\t\t\t\t.getMinimumClosedDateFromConfiguration(duplicateIssues, customFieldMapping);\n \t\t\t}\n \n \t\t\tMap<ObjectId, Map<String, List<LocalDateTime>>> finalProjectWiseDuplicateIssuesWithMinCloseDate = projectWiseDuplicateIssuesWithMinCloseDate;"
+        }
+    ]
+}

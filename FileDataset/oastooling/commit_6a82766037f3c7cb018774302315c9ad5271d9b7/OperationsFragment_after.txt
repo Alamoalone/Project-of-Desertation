@@ -1,0 +1,30 @@
+	private String readPayload(String op, String path, JSONObject config, JSONObject sampleConfig, String requestResponse) {
+		StringBuilder res = new StringBuilder();
+				
+		if(sampleConfig==null) {
+			Out.printOnce("... missing payload examples");
+			return res.toString();
+		}
+		
+		if(sampleConfig.optJSONObject(requestResponse)!=null) {
+			String content = Samples.readPayload(args.workingDirectory, sampleConfig, requestResponse);
+			res.append(content);
+			
+		} else {
+			String source = sampleConfig.optString(requestResponse);
+			
+			LOG.debug("readPayload: op={} path={} source={} ", op, path, source);
+	
+			if(!source.isEmpty()) {
+				source = source.replaceAll("\\$_", "");
+				
+				String request = readOperationDetailsByPattern(config, source);
+				
+				res.append(request);
+				
+			}
+		}
+		
+		return res.toString();
+	}
+

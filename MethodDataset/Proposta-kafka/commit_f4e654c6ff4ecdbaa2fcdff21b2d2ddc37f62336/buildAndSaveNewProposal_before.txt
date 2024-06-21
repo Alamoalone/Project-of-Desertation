@@ -1,0 +1,26 @@
+    private ProposalDTO buildAndSaveNewProposal(ProposalDetailsDTO proposalDetailsDTO) {
+        try {
+
+            ProposalEntity proposal = new ProposalEntity();
+
+            proposal.setCreated(LocalDateTime.now());
+            proposal.setProposalValidityDays(proposalDetailsDTO.getProposalValidityDays());
+            proposal.setCountry(proposalDetailsDTO.getCountry());
+            proposal.setCustomer(proposal.getCustomer());
+            proposal.setPriceTonne(proposalDetailsDTO.getPriceTonne());
+            proposal.setTonnes(proposal.getTonnes());
+
+            proposalRepository.persist(proposal);
+
+            return ProposalDTO.builder()
+                    .proposalId(proposalRepository.findByCustomer(proposal.getCustomer()).get().getId())
+                    .priceTonne(proposal.getPriceTonne())
+                    .customer(proposal.getCustomer())
+                    .build();
+        } catch (Exception e) {
+
+            e.printStackTrace();
+            throw new RuntimeException();
+
+        }
+    }

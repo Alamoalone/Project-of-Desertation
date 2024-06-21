@@ -1,0 +1,3 @@
+    public int findCardGivenHP (int hp) {
+        return Collections.binarySearch(cards, new Card (hp), new SortByHP());
+    }

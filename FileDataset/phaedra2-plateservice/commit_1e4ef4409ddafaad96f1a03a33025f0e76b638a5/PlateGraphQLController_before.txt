@@ -1,0 +1,54 @@
+    public PlateDTO getPlateById(@Argument long plateId) {
+        PlateDTO result = plateService.getPlateById(plateId);
+        if (result != null) {
+            List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, result.getId());
+            result.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+        }
+        return result;
+    }
+
+    public List<PlateMeasurementDTO> getPlateMeasurements(@Argument long plateId, @Argument boolean active) {
+        if (active) {
+            return List.of(plateMeasurementService.getActivePlateMeasurement(plateId));
+        } else {
+            return plateMeasurementService.getPlateMeasurements(plateId);
+        }
+    }
+
+    public List<PlateDTO> getPlatesByExperimentId(@Argument long experimentId) {
+        List<PlateDTO> result = plateService.getPlatesByExperimentId(experimentId);
+        if (CollectionUtils.isNotEmpty(result)) {
+            // Add tags
+            result.stream().forEach(plateDTO -> {
+                List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, plateDTO.getId());
+                plateDTO.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+            });
+        }
+        return result;
+    }
+
+
+
+
+
+    public List<WellDTO> getPlateWells(@Argument long plateId) {
+        List<WellDTO> result = wellService.getWellsByPlateId(plateId);
+        return result;
+    }
+
+
+
+    public List<PlateDTO> getPlatesByBarcode(@Argument String barcode) {
+        List<PlateDTO> result = plateService.getPlatesByBarcode(barcode);
+        if (CollectionUtils.isNotEmpty(result)) {
+            // Add tags
+            result.stream().forEach(plateDTO -> {
+                List<TagDTO> plateTags = metadataServiceClient.getTags(ObjectClass.PLATE, plateDTO.getId());
+                plateDTO.setTags(plateTags.stream().map(tagDTO -> tagDTO.getTag()).collect(Collectors.toList()));
+            });
+        }
+        return result;
+    }
+
+
+

@@ -1,0 +1,3 @@
+    public CreditScore getUserScore(){
+        return userScore;
+    }

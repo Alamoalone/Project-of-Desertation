@@ -1,0 +1,5 @@
+    public List<Train> searchTrains(String source, String destination) {
+        return trainList.stream()
+                .filter(train -> validTrain(train, source, destination))
+                .collect(Collectors.toList());
+    }

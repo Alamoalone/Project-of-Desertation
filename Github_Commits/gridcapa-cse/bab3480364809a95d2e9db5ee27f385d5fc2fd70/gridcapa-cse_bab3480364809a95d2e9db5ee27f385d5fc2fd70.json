@@ -1,0 +1,98 @@
+{
+    "sha": "bab3480364809a95d2e9db5ee27f385d5fc2fd70",
+    "node_id": "C_kwDOFvxR_9oAKGJhYjM0ODAzNjQ4MDlhOTVkMmU5ZGI1ZWUyN2YzODVkNWZjMmZkNzA",
+    "commit": {
+        "author": {
+            "name": "KAHYA Amira",
+            "email": "amira.kahya@rte-france.com",
+            "date": "2023-05-16T09:21:23Z"
+        },
+        "committer": {
+            "name": "KAHYA Amira",
+            "email": "amira.kahya@rte-france.com",
+            "date": "2023-05-16T09:21:23Z"
+        },
+        "message": "fix null pointer exception thrown when extracting reference exchanges from vulcanus file",
+        "tree": {
+            "sha": "3dd0cd72191c7e06266abc95e8bedbb5d6ba4636",
+            "url": "https://api.github.com/repos/farao-community/gridcapa-cse/git/trees/3dd0cd72191c7e06266abc95e8bedbb5d6ba4636"
+        },
+        "url": "https://api.github.com/repos/farao-community/gridcapa-cse/git/commits/bab3480364809a95d2e9db5ee27f385d5fc2fd70",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/farao-community/gridcapa-cse/commits/bab3480364809a95d2e9db5ee27f385d5fc2fd70",
+    "html_url": "https://github.com/farao-community/gridcapa-cse/commit/bab3480364809a95d2e9db5ee27f385d5fc2fd70",
+    "comments_url": "https://api.github.com/repos/farao-community/gridcapa-cse/commits/bab3480364809a95d2e9db5ee27f385d5fc2fd70/comments",
+    "author": {
+        "login": "kahyami",
+        "id": 50823693,
+        "node_id": "MDQ6VXNlcjUwODIzNjkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50823693?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kahyami",
+        "html_url": "https://github.com/kahyami",
+        "followers_url": "https://api.github.com/users/kahyami/followers",
+        "following_url": "https://api.github.com/users/kahyami/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kahyami/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kahyami/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kahyami/subscriptions",
+        "organizations_url": "https://api.github.com/users/kahyami/orgs",
+        "repos_url": "https://api.github.com/users/kahyami/repos",
+        "events_url": "https://api.github.com/users/kahyami/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kahyami/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "kahyami",
+        "id": 50823693,
+        "node_id": "MDQ6VXNlcjUwODIzNjkz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/50823693?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kahyami",
+        "html_url": "https://github.com/kahyami",
+        "followers_url": "https://api.github.com/users/kahyami/followers",
+        "following_url": "https://api.github.com/users/kahyami/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kahyami/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kahyami/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kahyami/subscriptions",
+        "organizations_url": "https://api.github.com/users/kahyami/orgs",
+        "repos_url": "https://api.github.com/users/kahyami/repos",
+        "events_url": "https://api.github.com/users/kahyami/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kahyami/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "c7f665fe5708ea38f12ed169034939205324802c",
+            "url": "https://api.github.com/repos/farao-community/gridcapa-cse/commits/c7f665fe5708ea38f12ed169034939205324802c",
+            "html_url": "https://github.com/farao-community/gridcapa-cse/commit/c7f665fe5708ea38f12ed169034939205324802c"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "50f26b88d6eb11841aad568346d1d733aced0627",
+            "filename": "cse-lib/data/src/main/java/com/farao_community/farao/cse/data/CseReferenceExchanges.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/farao-community/gridcapa-cse/blob/bab3480364809a95d2e9db5ee27f385d5fc2fd70/cse-lib%2Fdata%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffarao_community%2Ffarao%2Fcse%2Fdata%2FCseReferenceExchanges.java",
+            "raw_url": "https://github.com/farao-community/gridcapa-cse/raw/bab3480364809a95d2e9db5ee27f385d5fc2fd70/cse-lib%2Fdata%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffarao_community%2Ffarao%2Fcse%2Fdata%2FCseReferenceExchanges.java",
+            "contents_url": "https://api.github.com/repos/farao-community/gridcapa-cse/contents/cse-lib%2Fdata%2Fsrc%2Fmain%2Fjava%2Fcom%2Ffarao_community%2Ffarao%2Fcse%2Fdata%2FCseReferenceExchanges.java?ref=bab3480364809a95d2e9db5ee27f385d5fc2fd70",
+            "patch": "@@ -72,7 +72,7 @@ public Map<String, Double> getExchanges() {\n \n     private static HSSFRow getRow(HSSFSheet worksheet, String vulcanusTime) {\n         for (int rowIndex = 0; rowIndex < worksheet.getPhysicalNumberOfRows(); rowIndex++) {\n-            if (worksheet.getRow(rowIndex) != null && worksheet.getRow(rowIndex).getCell(TIME_COL).getStringCellValue().equals(vulcanusTime)) {\n+            if (worksheet.getRow(rowIndex) != null && worksheet.getRow(rowIndex).getCell(TIME_COL) != null && worksheet.getRow(rowIndex).getCell(TIME_COL).getStringCellValue().equals(vulcanusTime)) {\n                 return worksheet.getRow(rowIndex);\n             }\n         }\n@@ -82,7 +82,7 @@ private static HSSFRow getRow(HSSFSheet worksheet, String vulcanusTime) {\n     private static Map<String, Double> getExchangesFromRow(HSSFSheet worksheet, HSSFRow row) {\n         Map<String, Double> exchanges = new HashMap<>();\n         for (int colIndex = 0; colIndex < row.getPhysicalNumberOfCells(); colIndex++) {\n-            String exchangeStr = worksheet.getRow(LABEL_ROW).getCell(colIndex).getStringCellValue();\n+            String exchangeStr = worksheet.getRow(LABEL_ROW).getCell(colIndex) != null ? worksheet.getRow(LABEL_ROW).getCell(colIndex).getStringCellValue() : \"\";\n             switch (exchangeStr) {\n                 case \"CH > IT\":\n                     exchanges.put(new EICode(Country.CH).getAreaCode(), row.getCell(colIndex).getNumericCellValue());"
+        }
+    ]
+}

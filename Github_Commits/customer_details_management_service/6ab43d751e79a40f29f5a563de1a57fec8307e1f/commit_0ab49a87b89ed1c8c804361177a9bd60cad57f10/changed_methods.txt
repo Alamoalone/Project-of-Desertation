@@ -1,0 +1,8 @@
+testCreateCustomerDetails_AlreadyExists()
+testCreateCustomerDetails_Success()
+testDeleteCustomerByEmail_Failure()
+testUpdateCustomerDetails_Failure()
+testUpdateCustomerDetails_Success()
+testDeleteCustomerByEmail_Success()
+testGetCustomerDetailsByEmail_NotFound()
+testGetCustomerDetailsByEmail_Success()

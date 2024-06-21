@@ -1,0 +1,79 @@
+{
+    "sha": "1ee88acf9545a452313d28118b9b149d17bd8273",
+    "node_id": "C_kwDOAvldsdoAKDFlZTg4YWNmOTU0NWE0NTIzMTNkMjgxMThiOWIxNDlkMTdiZDgyNzM",
+    "commit": {
+        "author": {
+            "name": "rolonPablo",
+            "email": "pablo.rolon@marklogic.com",
+            "date": "2023-06-08T14:26:58Z"
+        },
+        "committer": {
+            "name": "MarkLogic Builder",
+            "email": "shiva.verma@marklogic.com",
+            "date": "2023-06-08T16:32:59Z"
+        },
+        "message": "DHFPROD-10243: fix null pointer exceptions customstep2e2",
+        "tree": {
+            "sha": "900935305287a253bbdd94056b3a5b7f21e7135a",
+            "url": "https://api.github.com/repos/marklogic/marklogic-data-hub/git/trees/900935305287a253bbdd94056b3a5b7f21e7135a"
+        },
+        "url": "https://api.github.com/repos/marklogic/marklogic-data-hub/git/commits/1ee88acf9545a452313d28118b9b149d17bd8273",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/marklogic/marklogic-data-hub/commits/1ee88acf9545a452313d28118b9b149d17bd8273",
+    "html_url": "https://github.com/marklogic/marklogic-data-hub/commit/1ee88acf9545a452313d28118b9b149d17bd8273",
+    "comments_url": "https://api.github.com/repos/marklogic/marklogic-data-hub/commits/1ee88acf9545a452313d28118b9b149d17bd8273/comments",
+    "author": {
+        "login": "prolonMarkLogic",
+        "id": 92050414,
+        "node_id": "U_kgDOBXyT7g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/92050414?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/prolonMarkLogic",
+        "html_url": "https://github.com/prolonMarkLogic",
+        "followers_url": "https://api.github.com/users/prolonMarkLogic/followers",
+        "following_url": "https://api.github.com/users/prolonMarkLogic/following{/other_user}",
+        "gists_url": "https://api.github.com/users/prolonMarkLogic/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/prolonMarkLogic/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/prolonMarkLogic/subscriptions",
+        "organizations_url": "https://api.github.com/users/prolonMarkLogic/orgs",
+        "repos_url": "https://api.github.com/users/prolonMarkLogic/repos",
+        "events_url": "https://api.github.com/users/prolonMarkLogic/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/prolonMarkLogic/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": null,
+    "parents": [
+        {
+            "sha": "73177dc6bf2c6bc4244f388a6b535dfda9784a45",
+            "url": "https://api.github.com/repos/marklogic/marklogic-data-hub/commits/73177dc6bf2c6bc4244f388a6b535dfda9784a45",
+            "html_url": "https://github.com/marklogic/marklogic-data-hub/commit/73177dc6bf2c6bc4244f388a6b535dfda9784a45"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "additions": 3,
+        "deletions": 0
+    },
+    "files": [
+        {
+            "sha": "1d29c32e6a00d834f088516b99c693465d558a66",
+            "filename": "marklogic-data-hub/src/main/java/com/marklogic/hub/step/impl/WriteStepRunner.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 0,
+            "changes": 3,
+            "blob_url": "https://github.com/marklogic/marklogic-data-hub/blob/1ee88acf9545a452313d28118b9b149d17bd8273/marklogic-data-hub%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmarklogic%2Fhub%2Fstep%2Fimpl%2FWriteStepRunner.java",
+            "raw_url": "https://github.com/marklogic/marklogic-data-hub/raw/1ee88acf9545a452313d28118b9b149d17bd8273/marklogic-data-hub%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmarklogic%2Fhub%2Fstep%2Fimpl%2FWriteStepRunner.java",
+            "contents_url": "https://api.github.com/repos/marklogic/marklogic-data-hub/contents/marklogic-data-hub%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmarklogic%2Fhub%2Fstep%2Fimpl%2FWriteStepRunner.java?ref=1ee88acf9545a452313d28118b9b149d17bd8273",
+            "patch": "@@ -73,6 +73,7 @@\n import java.util.List;\n import java.util.Map;\n import java.util.UUID;\n+import java.util.Objects;\n import java.util.concurrent.TimeUnit;\n import java.util.concurrent.TimeoutException;\n import java.util.concurrent.atomic.AtomicBoolean;\n@@ -509,7 +510,9 @@ private RunStepResponse runIngester(RunStepResponse runStepResponse, Collection<\n                 runStepResponse.withStepOutput(\n                         errorListener\n                                 .getThrowables().stream()\n+                                .filter(Objects::nonNull)\n                                 .map(Throwable::toString)\n+                                .filter(Objects::nonNull)\n                                 .collect(Collectors.toList())\n                 );\n                 errorListener.getThrowables().clear();"
+        }
+    ]
+}

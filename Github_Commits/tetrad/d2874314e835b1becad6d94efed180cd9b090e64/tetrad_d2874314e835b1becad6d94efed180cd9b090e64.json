@@ -1,0 +1,98 @@
+{
+    "sha": "d2874314e835b1becad6d94efed180cd9b090e64",
+    "node_id": "C_kwDOAq-VOdoAKGQyODc0MzE0ZTgzNWIxYmVjYWQ2ZDk0ZWZlZDE4MGNkOWIwOTBlNjQ",
+    "commit": {
+        "author": {
+            "name": "jdramsey",
+            "email": "jdramsey@andrew.cmu.edu",
+            "date": "2024-03-19T00:30:01Z"
+        },
+        "committer": {
+            "name": "jdramsey",
+            "email": "jdramsey@andrew.cmu.edu",
+            "date": "2024-03-19T00:30:01Z"
+        },
+        "message": "Initialize bHat matrix and rename its getter in IcaLingam.\n\nThe bHat matrix is now initialized to a zero-sized matrix instead of null to avoid null pointer exceptions. Moreover, the name of the getter method for this matrix is corrected to follow proper camel case syntax, enhancing code readability.",
+        "tree": {
+            "sha": "d0119f7291c29299cce6d3d19a18635396f322b8",
+            "url": "https://api.github.com/repos/cmu-phil/tetrad/git/trees/d0119f7291c29299cce6d3d19a18635396f322b8"
+        },
+        "url": "https://api.github.com/repos/cmu-phil/tetrad/git/commits/d2874314e835b1becad6d94efed180cd9b090e64",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/cmu-phil/tetrad/commits/d2874314e835b1becad6d94efed180cd9b090e64",
+    "html_url": "https://github.com/cmu-phil/tetrad/commit/d2874314e835b1becad6d94efed180cd9b090e64",
+    "comments_url": "https://api.github.com/repos/cmu-phil/tetrad/commits/d2874314e835b1becad6d94efed180cd9b090e64/comments",
+    "author": {
+        "login": "jdramsey",
+        "id": 9853255,
+        "node_id": "MDQ6VXNlcjk4NTMyNTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9853255?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdramsey",
+        "html_url": "https://github.com/jdramsey",
+        "followers_url": "https://api.github.com/users/jdramsey/followers",
+        "following_url": "https://api.github.com/users/jdramsey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdramsey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdramsey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdramsey/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdramsey/orgs",
+        "repos_url": "https://api.github.com/users/jdramsey/repos",
+        "events_url": "https://api.github.com/users/jdramsey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdramsey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jdramsey",
+        "id": 9853255,
+        "node_id": "MDQ6VXNlcjk4NTMyNTU=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9853255?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jdramsey",
+        "html_url": "https://github.com/jdramsey",
+        "followers_url": "https://api.github.com/users/jdramsey/followers",
+        "following_url": "https://api.github.com/users/jdramsey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jdramsey/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jdramsey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jdramsey/subscriptions",
+        "organizations_url": "https://api.github.com/users/jdramsey/orgs",
+        "repos_url": "https://api.github.com/users/jdramsey/repos",
+        "events_url": "https://api.github.com/users/jdramsey/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jdramsey/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2420ecba0b2171fdd2b8335774e423a3113bac01",
+            "url": "https://api.github.com/repos/cmu-phil/tetrad/commits/2420ecba0b2171fdd2b8335774e423a3113bac01",
+            "html_url": "https://github.com/cmu-phil/tetrad/commit/2420ecba0b2171fdd2b8335774e423a3113bac01"
+        }
+    ],
+    "stats": {
+        "total": 4,
+        "additions": 2,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "0022039a632fee12d8533bf7afda5276ca70d819",
+            "filename": "tetrad-lib/src/main/java/edu/cmu/tetrad/algcomparison/algorithm/continuous/dag/IcaLingam.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/cmu-phil/tetrad/blob/d2874314e835b1becad6d94efed180cd9b090e64/tetrad-lib%2Fsrc%2Fmain%2Fjava%2Fedu%2Fcmu%2Ftetrad%2Falgcomparison%2Falgorithm%2Fcontinuous%2Fdag%2FIcaLingam.java",
+            "raw_url": "https://github.com/cmu-phil/tetrad/raw/d2874314e835b1becad6d94efed180cd9b090e64/tetrad-lib%2Fsrc%2Fmain%2Fjava%2Fedu%2Fcmu%2Ftetrad%2Falgcomparison%2Falgorithm%2Fcontinuous%2Fdag%2FIcaLingam.java",
+            "contents_url": "https://api.github.com/repos/cmu-phil/tetrad/contents/tetrad-lib%2Fsrc%2Fmain%2Fjava%2Fedu%2Fcmu%2Ftetrad%2Falgcomparison%2Falgorithm%2Fcontinuous%2Fdag%2FIcaLingam.java?ref=d2874314e835b1becad6d94efed180cd9b090e64",
+            "patch": "@@ -39,7 +39,7 @@ public class IcaLingam extends AbstractBootstrapAlgorithm implements Algorithm,\n \n     @Serial\n     private static final long serialVersionUID = 23L;\n-    private Matrix bHat = null;\n+    private Matrix bHat = new Matrix(0, 0);\n \n     /**\n      * Constructs a new instance of the IcaLingam algorithm.\n@@ -129,7 +129,7 @@ public List<String> getParameters() {\n      *\n      * @return The bHat matrix.\n      */\n-    public Matrix getbHat() {\n+    public Matrix getBHat() {\n         return bHat;\n     }\n }"
+        }
+    ]
+}

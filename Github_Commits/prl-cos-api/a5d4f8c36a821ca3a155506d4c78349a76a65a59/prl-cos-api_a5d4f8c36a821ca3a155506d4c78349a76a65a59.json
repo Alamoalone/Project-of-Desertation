@@ -1,0 +1,72 @@
+{
+    "sha": "a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+    "node_id": "C_kwDOGQmqvtoAKGE1ZDRmOGMzNmE4MjFjYTNhMTU1NTA2ZDRjNzgzNDlhNzZhNjVhNTk",
+    "commit": {
+        "author": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-16T16:48:23Z"
+        },
+        "committer": {
+            "name": "JamesCutts00",
+            "email": "James.Cutts@HMCTS.ORG",
+            "date": "2023-05-16T16:48:23Z"
+        },
+        "message": "Fixed null pointer exception",
+        "tree": {
+            "sha": "6d6fcbc6a4c0599ef249617c88a4b382f6cf97cf",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/trees/6d6fcbc6a4c0599ef249617c88a4b382f6cf97cf"
+        },
+        "url": "https://api.github.com/repos/hmcts/prl-cos-api/git/commits/a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+    "html_url": "https://github.com/hmcts/prl-cos-api/commit/a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+    "comments_url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/a5d4f8c36a821ca3a155506d4c78349a76a65a59/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+        {
+            "sha": "606b4535844288781b29dde0669250e77bcd180a",
+            "url": "https://api.github.com/repos/hmcts/prl-cos-api/commits/606b4535844288781b29dde0669250e77bcd180a",
+            "html_url": "https://github.com/hmcts/prl-cos-api/commit/606b4535844288781b29dde0669250e77bcd180a"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 5,
+        "deletions": 5
+    },
+    "files": [
+        {
+            "sha": "2c033c4b57140cd0e097d38be2d37e920cfcabb2",
+            "filename": "src/main/java/uk/gov/hmcts/reform/prl/services/c100respondentsolicitor/C100RespondentSolicitorService.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 3,
+            "changes": 8,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/a5d4f8c36a821ca3a155506d4c78349a76a65a59/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/a5d4f8c36a821ca3a155506d4c78349a76a65a59/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Fmain%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorService.java?ref=a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+            "patch": "@@ -584,9 +584,11 @@ public Map<String, Object> generateDraftDocumentsForRespondent(CallbackRequest c\n         if (solicitorRepresentedRespondent.getValue().getDxNumber() != null) {\n             dataMap.put(\"dxNumber\", solicitorRepresentedRespondent.getValue().getDxNumber());\n         } else {\n-            for (ContactInformation contactInformation : solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation()) {\n-                for (DxAddress dxAddress : contactInformation.getDxAddress()) {\n-                    dataMap.put(\"dxNumber\", dxAddress.getDxNumber());\n+            if (solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation() != null) {\n+                for (ContactInformation contactInformation : solicitorRepresentedRespondent.getValue().getOrganisations().getContactInformation()) {\n+                    for (DxAddress dxAddress : contactInformation.getDxAddress()) {\n+                        dataMap.put(\"dxNumber\", dxAddress.getDxNumber());\n+                    }\n                 }\n             }\n         }"
+        },
+        {
+            "sha": "bf6baa09d6b42749773ed9f2ef731e222620fbf6",
+            "filename": "src/test/java/uk/gov/hmcts/reform/prl/services/c100respondentsolicitor/C100RespondentSolicitorServiceTest.java",
+            "status": "modified",
+            "additions": 0,
+            "deletions": 2,
+            "changes": 2,
+            "blob_url": "https://github.com/hmcts/prl-cos-api/blob/a5d4f8c36a821ca3a155506d4c78349a76a65a59/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorServiceTest.java",
+            "raw_url": "https://github.com/hmcts/prl-cos-api/raw/a5d4f8c36a821ca3a155506d4c78349a76a65a59/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorServiceTest.java",
+            "contents_url": "https://api.github.com/repos/hmcts/prl-cos-api/contents/src%2Ftest%2Fjava%2Fuk%2Fgov%2Fhmcts%2Freform%2Fprl%2Fservices%2Fc100respondentsolicitor%2FC100RespondentSolicitorServiceTest.java?ref=a5d4f8c36a821ca3a155506d4c78349a76a65a59",
+            "patch": "@@ -116,7 +116,6 @@ public void setUp() {\n             .email(\"abc@xyz.com\")\n             .phoneNumber(\"1234567890\")\n             .response(Response.builder()\n-                          .consent(Consent.builder().build())\n                           .citizenDetails(CitizenDetails.builder()\n                                               .firstName(\"test\")\n                                               .lastName(\"test\")\n@@ -229,7 +228,6 @@ public void setUp() {\n             .email(\"abc@xyz.com\")\n             .phoneNumber(\"1234567890\")\n             .response(Response.builder()\n-                          .consent(Consent.builder().build())\n                           .citizenDetails(CitizenDetails.builder()\n                                               .firstName(\"test\")\n                                               .lastName(\"test\")"
+        }
+    ]
+}

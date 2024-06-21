@@ -1,0 +1,1 @@
+insert(String string, boolean origin)

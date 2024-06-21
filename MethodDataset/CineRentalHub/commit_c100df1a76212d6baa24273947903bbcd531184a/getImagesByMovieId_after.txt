@@ -1,0 +1,19 @@
+  public static List<ImageDTO> getImagesByMovieId(Integer movieId) throws Exception {
+    EntityManager em = MariaDB.getEntityManager();
+    try {
+      StoredProcedureQuery query = em.createStoredProcedureQuery("get_images_by_movie_id")
+              .registerStoredProcedureParameter("id_movie", Integer.class, ParameterMode.IN)
+              .setParameter("id_movie", movieId);
+
+      @SuppressWarnings("unchecked")
+      List<Object[]> result = query.getResultList();
+      return result.stream().map(row -> new ImageDTO((Integer) row[0], (Integer) row[1], (String) row[2], (Boolean) row[3])).collect(Collectors.toList());
+    } catch (PersistenceException e) {
+      if (em.getTransaction().isActive()) {
+        em.getTransaction().rollback();
+      }
+      throw new Exception(e.getCause().getCause().getMessage());
+    } finally {
+      em.close();
+    }
+  }

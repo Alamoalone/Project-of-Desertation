@@ -1,0 +1,1 @@
+setLangTool(MultiDocumentsHandler documents, Language language)

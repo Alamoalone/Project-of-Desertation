@@ -1,0 +1,3 @@
+getFireStationsById(String id)
+getAllFireStations()
+deleteFireStationById(String id)

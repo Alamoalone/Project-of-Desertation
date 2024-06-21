@@ -1,0 +1,100 @@
+	private JSONObject postV5RecipeAnalysis(RegulatoryContext context, List<String> countries, String usage, Integer moduleId) throws JSONException {
+
+		String recipeAnalysisResult = "";
+
+		JSONObject payload = new JSONObject();
+
+		JSONObject transaction = new JSONObject();
+		payload.put("transaction", transaction);
+
+		JSONObject recipe = new JSONObject();
+		transaction.put("recipe", recipe);
+
+		String code = (String) nodeService.getProperty(context.getProduct().getNodeRef(), BeCPGModel.PROP_CODE);
+		code += Calendar.getInstance().getTimeInMillis();
+
+		recipe.put("spec", code);
+		String name = code + " " + context.getProduct().getName();
+
+		recipe.put(PARAM_NAME, name);
+
+		JSONArray ingredients = new JSONArray();
+		recipe.put("ingredients", ingredients);
+
+		for (IngListDataItem ingListDataItem : context.getProduct().getIngList()) {
+			NodeRef ingType = (NodeRef) nodeService.getProperty(ingListDataItem.getIng(), PLMModel.PROP_ING_TYPE_V2);
+			if (ingType != null) {
+				String functionValue = (String) nodeService.getProperty(ingType, BeCPGModel.PROP_LV_VALUE);
+				String function = null;
+				if (functionValue != null) {
+					function = findFunction(moduleId, functionValue);
+				}
+				if (function == null) {
+					functionValue = (String) nodeService.getProperty(ingType, BeCPGModel.PROP_LV_CODE);
+					if (functionValue != null) {
+						function = findFunction(moduleId, functionValue);
+					}
+				}
+				if (function != null) {
+					String rid = (String) nodeService.getProperty(ingListDataItem.getIng(), PLMModel.PROP_REGULATORY_CODE);
+					if (rid != null && !rid.isBlank()) {
+						String legalName = (String) nodeService.getProperty(ingListDataItem.getIng(), BeCPGModel.PROP_LEGAL_NAME);
+						String ingName = (legalName != null) && !legalName.isEmpty() ? legalName
+								: (String) nodeService.getProperty(ingListDataItem.getIng(), BeCPGModel.PROP_CHARACT_NAME);
+						Double ingQtyPerc = DecernisHelper.truncateDoubleValue(ingListDataItem.getQtyPerc());
+						JSONObject ingredient = new JSONObject();
+						ingredient.put(PARAM_NAME, ingName);
+						ingredient.put("spec", ingName);
+						ingredient.put("idType", "Decernis ID");
+						ingredient.put("idValue", rid);
+						ingredient.put("percentage", ingQtyPerc);
+						ingredient.put("function", function);
+						ingredients.put(ingredient);
+					}
+				} else {
+					context.getRequirements().add(createReqCtrl(ingListDataItem.getIng(),
+							MLTextHelper.getI18NMessage(MESSAGE_FUNCTION_NOT_RECOGNIZED, functionValue), RequirementType.Tolerated));
+				}
+			} else if(logger.isDebugEnabled()) {
+				
+				logger.debug("Ingredient has no type: "+(String) nodeService.getProperty(ingListDataItem.getIng(), BeCPGModel.PROP_CHARACT_NAME));
+			}
+		}
+
+		if (!ingredients.isEmpty()) {
+			JSONObject scope = new JSONObject();
+			transaction.put("scope", scope);
+
+			scope.put(PARAM_NAME, name);
+
+			JSONArray country = new JSONArray();
+			scope.put(PARAM_COUNTRY, country);
+			countries.forEach(country::put);
+
+			JSONArray topics = new JSONArray();
+			scope.put("topic", topics);
+
+			JSONObject topic = new JSONObject();
+			topics.put(topic);
+
+			topic.put(PARAM_NAME, moduleIdMap.get(moduleId));
+			JSONObject scopeDetail = new JSONObject();
+			topic.put("scopeDetail", scopeDetail);
+
+			JSONArray usages = new JSONArray();
+			usages.put(usage);
+
+			scopeDetail.put("usage", usages);
+
+			String url = analysisUrl() + "/recipe-analysis/transaction";
+
+			HttpEntity<String> entity = createEntity(payload.toString());
+
+			recipeAnalysisResult = restTemplate.postForObject(url, entity, String.class, new HashMap<>());
+
+			return new JSONObject(recipeAnalysisResult);
+		}
+
+		return null;
+	}
+

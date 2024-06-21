@@ -1,0 +1,98 @@
+{
+    "sha": "2362c1a43f862e0539b2905395c702c85d19fcbf",
+    "node_id": "C_kwDOKtUaD9oAKDIzNjJjMWE0M2Y4NjJlMDUzOWIyOTA1Mzk1YzcwMmM4NWQxOWZjYmY",
+    "commit": {
+        "author": {
+            "name": "NathanKS",
+            "email": "nathanks0210@gmail.com",
+            "date": "2023-12-08T13:12:57Z"
+        },
+        "committer": {
+            "name": "NathanKS",
+            "email": "nathanks0210@gmail.com",
+            "date": "2023-12-08T13:12:57Z"
+        },
+        "message": "fix: null pointer exception do path concertado",
+        "tree": {
+            "sha": "675f01cabdef2d12a8d0da94390e4ccefb2bfc70",
+            "url": "https://api.github.com/repos/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/git/trees/675f01cabdef2d12a8d0da94390e4ccefb2bfc70"
+        },
+        "url": "https://api.github.com/repos/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/git/commits/2362c1a43f862e0539b2905395c702c85d19fcbf",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/commits/2362c1a43f862e0539b2905395c702c85d19fcbf",
+    "html_url": "https://github.com/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/commit/2362c1a43f862e0539b2905395c702c85d19fcbf",
+    "comments_url": "https://api.github.com/repos/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/commits/2362c1a43f862e0539b2905395c702c85d19fcbf/comments",
+    "author": {
+        "login": "nathan-kos",
+        "id": 83979642,
+        "node_id": "MDQ6VXNlcjgzOTc5NjQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/83979642?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nathan-kos",
+        "html_url": "https://github.com/nathan-kos",
+        "followers_url": "https://api.github.com/users/nathan-kos/followers",
+        "following_url": "https://api.github.com/users/nathan-kos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nathan-kos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nathan-kos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nathan-kos/subscriptions",
+        "organizations_url": "https://api.github.com/users/nathan-kos/orgs",
+        "repos_url": "https://api.github.com/users/nathan-kos/repos",
+        "events_url": "https://api.github.com/users/nathan-kos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nathan-kos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "nathan-kos",
+        "id": 83979642,
+        "node_id": "MDQ6VXNlcjgzOTc5NjQy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/83979642?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/nathan-kos",
+        "html_url": "https://github.com/nathan-kos",
+        "followers_url": "https://api.github.com/users/nathan-kos/followers",
+        "following_url": "https://api.github.com/users/nathan-kos/following{/other_user}",
+        "gists_url": "https://api.github.com/users/nathan-kos/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/nathan-kos/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/nathan-kos/subscriptions",
+        "organizations_url": "https://api.github.com/users/nathan-kos/orgs",
+        "repos_url": "https://api.github.com/users/nathan-kos/repos",
+        "events_url": "https://api.github.com/users/nathan-kos/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/nathan-kos/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "35f6b854d5affe52ce934bab66bfa76a14585e18",
+            "url": "https://api.github.com/repos/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/commits/35f6b854d5affe52ce934bab66bfa76a14585e18",
+            "html_url": "https://github.com/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/commit/35f6b854d5affe52ce934bab66bfa76a14585e18"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 5,
+        "deletions": 4
+    },
+    "files": [
+        {
+            "sha": "8a4999489e685e1f53b781a5b08acd234021d230",
+            "filename": "src/main/java/org/example/presentation/servlet/ProdutoController.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 4,
+            "changes": 9,
+            "blob_url": "https://github.com/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/blob/2362c1a43f862e0539b2905395c702c85d19fcbf/src%2Fmain%2Fjava%2Forg%2Fexample%2Fpresentation%2Fservlet%2FProdutoController.java",
+            "raw_url": "https://github.com/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/raw/2362c1a43f862e0539b2905395c702c85d19fcbf/src%2Fmain%2Fjava%2Forg%2Fexample%2Fpresentation%2Fservlet%2FProdutoController.java",
+            "contents_url": "https://api.github.com/repos/nathan-kos/NewGo-Back-End-02-Nathan_Kosmalski/contents/src%2Fmain%2Fjava%2Forg%2Fexample%2Fpresentation%2Fservlet%2FProdutoController.java?ref=2362c1a43f862e0539b2905395c702c85d19fcbf",
+            "patch": "@@ -71,9 +71,10 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr\n        // produto/ -> POST -> cadastrar produto\n \n         response.setContentType(\"application/json\");\n-\n-            String hash = request.getPathInfo().split(\"/\").length > 1 ? request.getPathInfo().split(\"/\")[1] : null;\n-\n+        String hash = null;\n+        if(request.getPathInfo() != null) {\n+             hash = request.getPathInfo().split(\"/\").length > 1 ? request.getPathInfo().split(\"/\")[1] : null;\n+        }\n \n             ProdutoService service = LocalizadorDeServico.getProdutoService();\n \n@@ -114,7 +115,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response) thr\n                 response.getWriter().println(JsonConverter.toJson(responseDTO));\n                 return;\n             }\n-\n+            \n             String body = getBodyReqJson(request);\n             try{\n                 Produto produto = CreateProdutoMapper.toProduto(JsonConverter.fromJson(body, CreateProdutoDTO.class));"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "sha": "b0bac6f69c5f935496ae934e027785caa0f7cbd9",
+    "node_id": "C_kwDOKowa2NoAKGIwYmFjNmY2OWM1ZjkzNTQ5NmFlOTM0ZTAyNzc4NWNhYTBmN2NiZDk",
+    "commit": {
+        "author": {
+            "name": "Alberto Arroyo",
+            "email": "albertoarroyo@hotmail.es",
+            "date": "2023-11-05T12:47:42Z"
+        },
+        "committer": {
+            "name": "Alberto Arroyo",
+            "email": "albertoarroyo@hotmail.es",
+            "date": "2023-11-05T12:47:42Z"
+        },
+        "message": "e.getSource condicion con vistas a null para evitar null pointer exception",
+        "tree": {
+            "sha": "e3abc3445c23b96806ffa73b596b4bd43bf076d6",
+            "url": "https://api.github.com/repos/AlbertoArroyoS/Actividad2-Contactos/git/trees/e3abc3445c23b96806ffa73b596b4bd43bf076d6"
+        },
+        "url": "https://api.github.com/repos/AlbertoArroyoS/Actividad2-Contactos/git/commits/b0bac6f69c5f935496ae934e027785caa0f7cbd9",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AlbertoArroyoS/Actividad2-Contactos/commits/b0bac6f69c5f935496ae934e027785caa0f7cbd9",
+    "html_url": "https://github.com/AlbertoArroyoS/Actividad2-Contactos/commit/b0bac6f69c5f935496ae934e027785caa0f7cbd9",
+    "comments_url": "https://api.github.com/repos/AlbertoArroyoS/Actividad2-Contactos/commits/b0bac6f69c5f935496ae934e027785caa0f7cbd9/comments",
+    "author": {
+        "login": "AlbertoArroyoS",
+        "id": 122359692,
+        "node_id": "U_kgDOB0sPjA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/122359692?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AlbertoArroyoS",
+        "html_url": "https://github.com/AlbertoArroyoS",
+        "followers_url": "https://api.github.com/users/AlbertoArroyoS/followers",
+        "following_url": "https://api.github.com/users/AlbertoArroyoS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AlbertoArroyoS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AlbertoArroyoS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AlbertoArroyoS/subscriptions",
+        "organizations_url": "https://api.github.com/users/AlbertoArroyoS/orgs",
+        "repos_url": "https://api.github.com/users/AlbertoArroyoS/repos",
+        "events_url": "https://api.github.com/users/AlbertoArroyoS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AlbertoArroyoS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "AlbertoArroyoS",
+        "id": 122359692,
+        "node_id": "U_kgDOB0sPjA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/122359692?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/AlbertoArroyoS",
+        "html_url": "https://github.com/AlbertoArroyoS",
+        "followers_url": "https://api.github.com/users/AlbertoArroyoS/followers",
+        "following_url": "https://api.github.com/users/AlbertoArroyoS/following{/other_user}",
+        "gists_url": "https://api.github.com/users/AlbertoArroyoS/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/AlbertoArroyoS/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/AlbertoArroyoS/subscriptions",
+        "organizations_url": "https://api.github.com/users/AlbertoArroyoS/orgs",
+        "repos_url": "https://api.github.com/users/AlbertoArroyoS/repos",
+        "events_url": "https://api.github.com/users/AlbertoArroyoS/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/AlbertoArroyoS/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "abf0220a64346a0b03e3d59bb64489b6698088de",
+            "url": "https://api.github.com/repos/AlbertoArroyoS/Actividad2-Contactos/commits/abf0220a64346a0b03e3d59bb64489b6698088de",
+            "html_url": "https://github.com/AlbertoArroyoS/Actividad2-Contactos/commit/abf0220a64346a0b03e3d59bb64489b6698088de"
+        }
+    ],
+    "stats": {
+        "total": 30,
+        "additions": 20,
+        "deletions": 10
+    },
+    "files": [
+        {
+            "sha": "509e65502ccd35322d853a08230aedb5b55126dc",
+            "filename": "Actividad2_V2_JFrame/src/controlador/ControladorActionListener.java",
+            "status": "modified",
+            "additions": 20,
+            "deletions": 10,
+            "changes": 30,
+            "blob_url": "https://github.com/AlbertoArroyoS/Actividad2-Contactos/blob/b0bac6f69c5f935496ae934e027785caa0f7cbd9/Actividad2_V2_JFrame%2Fsrc%2Fcontrolador%2FControladorActionListener.java",
+            "raw_url": "https://github.com/AlbertoArroyoS/Actividad2-Contactos/raw/b0bac6f69c5f935496ae934e027785caa0f7cbd9/Actividad2_V2_JFrame%2Fsrc%2Fcontrolador%2FControladorActionListener.java",
+            "contents_url": "https://api.github.com/repos/AlbertoArroyoS/Actividad2-Contactos/contents/Actividad2_V2_JFrame%2Fsrc%2Fcontrolador%2FControladorActionListener.java?ref=b0bac6f69c5f935496ae934e027785caa0f7cbd9",
+            "patch": "@@ -35,51 +35,57 @@ public void actionPerformed(ActionEvent e) {\n             vistaAdd.establecerListeners(this);\n             vistaAdd.getCampoNombre().requestFocus();\n         }\n+\t\t\n \t\t//Al pulsar boton OK de añadir contacto, añade nombre y telefono a la tabla\n \t\t//else if (vistaAdd != null && e.getSource() == vistaAdd.getBotonOk()) {\n-\t\telse if (e.getSource() == vistaAdd.getBotonOk()) {\n+\t\tif (vistaAdd != null && e.getSource() == vistaAdd.getBotonOk()) {\n             addDatosTabla();\n           //  vistaAdd.setVisible(false);\n         }\n+\t\t\n \t\t//Al pulsar cancelar de añadir contacto cierra y queda la principal\n \t\t//else if (vistaAdd != null && e.getSource() == vistaAdd.getBotonCancel()) {\n-\t\telse if (e.getSource() == vistaAdd.getBotonCancel()) {\n+\t\tif (vistaAdd != null && e.getSource() == vistaAdd.getBotonCancel()) {\n            // vistaAdd.setVisible(false);\n             vistaAdd.dispose();\n-        } \n+        }\n+\t\t\n \t\t//Al pulsar el boton editar de la tabla principal\n-\t\telse if (e.getSource() == vistaPrincipal.getBotonEdit()) {\n+\t\tif (e.getSource() == vistaPrincipal.getBotonEdit()) {\n \t\t\t\n             //vistaEditar.getCampoNombre().requestFocus();\n             int selectedRow = vistaPrincipal.obtenerFilaSeleccionada();\n-\n+            \n     \t\tif (selectedRow >= 0) {\n-    \t\t\tvistaEditar = new VistaEditar(this);\n-                vistaEditar.establecerListeners(this);\n+\t\t\t    vistaEditar = new VistaEditar(this);\n+\t\t\t    vistaEditar.establecerListeners(this);\n     \t\t\tponerDatosVistaEditar();\n     \t\t}else {\n     \t\t\tJOptionPane.showMessageDialog(null,\"Tiene que seleccionar una fila\", \"Aviso\", JOptionPane.INFORMATION_MESSAGE);\t\n     \t\t}\n                 \n         }\n+\t\t\n \t\t//Al pulsar boton OK edita contacto, cambia nombre y/o telefono a la tabla\n \t\t//else if (vistaEditar != null && e.getSource() == vistaEditar.getBotonOk()) {\n-\t\telse if (e.getSource() == vistaEditar.getBotonOk()) {\n+\t\tif (vistaEditar != null && e.getSource() == vistaEditar.getBotonOk()) {\n             //metodo editar\n \t\t\tvistaEditar.establecerListeners(this);\n \t\t\teditDatosTabla();\n \t\t\tvistaEditar.setVisible(false);\n         }\n+\t\t\n \t\t//Al pulsar cancelar de la vista editar, añadir contacto cierra y queda la principal\n \t\t//else if (vistaEditar != null && e.getSource() == vistaEditar.getBotonCancel()) {\n-\t\telse if (e.getSource() == vistaEditar.getBotonCancel()) {\n+\t\tif (vistaEditar != null && e.getSource() == vistaEditar.getBotonCancel()) {\n            // vistaAdd.setVisible(false);\n \t\t\tvistaEditar.establecerListeners(this);\n \t\t\tvistaEditar.dispose();\n \t\t\t//vistaAdd.setVisible(false);\n         }\n+\t\t\n \t\t//Al pulsar el boton borrar de la tabla principal\n-\t\telse if (e.getSource() == vistaPrincipal.getBotonDelete()) {\n+\t\tif (e.getSource() == vistaPrincipal.getBotonDelete()) {\n             vistaPrincipal.establecerListeners(this);\n             eliminarContacto();\n         }\n@@ -154,6 +160,10 @@ public void eliminarContacto() {\n \t\t\tDefaultTableModel tableModel = vistaPrincipal.getTableModel();\n \t\t\ttableModel.removeRow(filaSeleccionada);\n \t\t}\n+\t\telse {\n+            // Mostrar un mensaje al usuario indicando que no hay fila seleccionada.\n+            JOptionPane.showMessageDialog(vistaPrincipal, \"Selecciona un contacto para editar.\", \"Sin selección\", JOptionPane.INFORMATION_MESSAGE);\n+        }\n \t\t\n \t}\n \t "
+        }
+    ]
+}

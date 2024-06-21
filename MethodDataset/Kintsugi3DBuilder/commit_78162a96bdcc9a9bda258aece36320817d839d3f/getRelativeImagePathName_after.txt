@@ -1,0 +1,4 @@
+    public String getRelativeImagePathName()
+    {
+        return this.relativeImagePathName;
+    }

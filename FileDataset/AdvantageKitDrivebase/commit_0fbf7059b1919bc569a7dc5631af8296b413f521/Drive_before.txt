@@ -1,0 +1,27 @@
+  public void drive(double driveX, double driveY, double rotate, Translation2d centerOfRotation) {
+    if (Constants.driveEnabled && Constants.gyroEnabled) {
+
+      if (Constants.debug) {
+        driveXTab.setDouble(driveX);
+        driveYTab.setDouble(driveY);
+        rotateTab.setDouble(rotate);
+      }
+
+      // convert to proper units (eventually we should move this up to DriveManual)
+      rotate = rotate * DriveConstants.maxRotationSpeedRadSecond;
+      driveX = driveX * DriveConstants.maxSpeedMetersPerSecond;
+      driveY = driveY * DriveConstants.maxSpeedMetersPerSecond;
+
+      // ready to drive!
+      if ((driveX == 0) && (driveY == 0) && (rotate == 0)) {
+        stop();
+      } else {
+        var swerveModuleStates =
+            DriveLogic.calcModuleStates(driveX, driveY, rotate, centerOfRotation,
+                gyro.getRotation2d(), kinematics);
+
+        setModuleStates(swerveModuleStates);
+      }
+    }
+  }
+

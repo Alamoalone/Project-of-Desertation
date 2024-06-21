@@ -1,0 +1,30 @@
+	private void getSchemaValues() {
+		Catalog targetCatalog = wizard.getTargetCatalog();
+		Catalog sourceCatalog = wizard.getOriginalSourceCatalog();
+		
+		List<Schema> targetSchemaList = targetCatalog.getSchemas();
+		List<Schema> sourceSchemaList = sourceCatalog.getSchemas();
+
+		tarSchemaNameList = new ArrayList<String>();
+		ArrayList<String> dropDownSchemaList = new ArrayList<String>();
+		
+		for (Schema schema : targetSchemaList) {
+			tarSchemaNameList.add(schema.getName());
+			dropDownSchemaList.add(schema.getName());
+		}
+		
+		for (Schema schema : sourceSchemaList) {
+			if (tarSchemaNameList.contains(schema.getName().toUpperCase())) {
+				continue;
+			}
+			
+			dropDownSchemaList.add(schema.getName());
+		}
+		
+		if (targetCatalog.isDBAGroup()) {
+			tarSchemaNameArray = dropDownSchemaList.toArray(new String[] {});
+			
+		} else {
+			tarSchemaNameArray = new String[] {targetCatalog.getConnectionParameters().getConUser()};
+		}
+	}

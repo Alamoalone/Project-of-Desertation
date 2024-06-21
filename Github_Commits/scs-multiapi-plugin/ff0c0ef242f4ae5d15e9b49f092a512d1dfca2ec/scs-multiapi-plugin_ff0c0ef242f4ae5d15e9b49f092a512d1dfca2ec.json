@@ -1,0 +1,254 @@
+{
+    "sha": "ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+    "node_id": "C_kwDOHXik-NoAKGZmMGMwZWYyNDJmNGFlNWQxNWU5YjQ5ZjA5MmE1MTJkMWRmY2EyZWM",
+    "commit": {
+        "author": {
+            "name": "davidgayoso",
+            "email": "126153821+davidgayoso@users.noreply.github.com",
+            "date": "2023-05-15T08:42:23Z"
+        },
+        "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-05-15T08:42:23Z"
+        },
+        "message": "Null Pointer Exception on Build when no operationId is provided (#239)\n\n* added exception when no operationId is provided\r\n\r\n* #151 changed project version\r\n\r\n* #151 added same behaviour for OpenAPI\r\n\r\n* #151 updated exception\r\n\r\n* #151 updated project version",
+        "tree": {
+            "sha": "da79113d8f648af7bbcfc17ea189cce06cd5847a",
+            "url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/git/trees/da79113d8f648af7bbcfc17ea189cce06cd5847a"
+        },
+        "url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/git/commits/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+        "comment_count": 0,
+        "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkYfBvCRBK7hj4Ov3rIwAA4A4IAD6Nea6NiBPoj2YHYsVcfMjV\nUYowJfvxx94gIkWVVu/T9kKBUO0fNIn0iovv9RqOYROEgX3P1W1ssnRoDwDhs06G\nUMD7MKLezh+GbMS/sWvY07buZ3IsdpnuovDqBct1C0cxZiN+a7jIhxXWIJHd4mJi\nG3P34QM/QoX0L47Y+Amz8Rg1LJafmjLg8jD2nYTGqBJwW6rlfyzntagfhct1TCaG\noEpjxn+b4o5LzLa0Y/ZbZ6NiOuSGxFVFXPe62JZWLy8p6CCQEt3oVfWWHmDTqteO\nyHjfcMbJ45oa43M0VUbyUU2pI/phZk+X9+3sA2Ot6zBqHGKXj7Mq6eNCoxPSGYo=\n=dRne\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree da79113d8f648af7bbcfc17ea189cce06cd5847a\nparent 8c2da3049c063007122d4e18d05ef85f8d37594e\nauthor davidgayoso <126153821+davidgayoso@users.noreply.github.com> 1684140143 +0200\ncommitter GitHub <noreply@github.com> 1684140143 +0200\n\nNull Pointer Exception on Build when no operationId is provided (#239)\n\n* added exception when no operationId is provided\r\n\r\n* #151 changed project version\r\n\r\n* #151 added same behaviour for OpenAPI\r\n\r\n* #151 updated exception\r\n\r\n* #151 updated project version"
+        }
+    },
+    "url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/commits/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+    "html_url": "https://github.com/sngular/scs-multiapi-plugin/commit/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+    "comments_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/commits/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/comments",
+    "author": {
+        "login": "davidgayoso",
+        "id": 126153821,
+        "node_id": "U_kgDOB4T0XQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/126153821?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/davidgayoso",
+        "html_url": "https://github.com/davidgayoso",
+        "followers_url": "https://api.github.com/users/davidgayoso/followers",
+        "following_url": "https://api.github.com/users/davidgayoso/following{/other_user}",
+        "gists_url": "https://api.github.com/users/davidgayoso/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/davidgayoso/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/davidgayoso/subscriptions",
+        "organizations_url": "https://api.github.com/users/davidgayoso/orgs",
+        "repos_url": "https://api.github.com/users/davidgayoso/repos",
+        "events_url": "https://api.github.com/users/davidgayoso/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/davidgayoso/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "8c2da3049c063007122d4e18d05ef85f8d37594e",
+            "url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/commits/8c2da3049c063007122d4e18d05ef85f8d37594e",
+            "html_url": "https://github.com/sngular/scs-multiapi-plugin/commit/8c2da3049c063007122d4e18d05ef85f8d37594e"
+        }
+    ],
+    "stats": {
+        "total": 185,
+        "additions": 172,
+        "deletions": 13
+    },
+    "files": [
+        {
+            "sha": "5628b9c8398802aa2f77c6d650be66acba9b8f91",
+            "filename": "multiapi-engine/pom.xml",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fpom.xml",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fpom.xml",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fpom.xml?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -4,7 +4,7 @@\n \n   <groupId>com.sngular</groupId>\n   <artifactId>multiapi-engine</artifactId>\n-  <version>4.8.1</version>\n+  <version>4.8.2</version>\n   <packaging>jar</packaging>\n \n   <properties>"
+        },
+        {
+            "sha": "b43dbf51d66c41ced0483281785810b9162488ba",
+            "filename": "multiapi-engine/src/main/java/com/sngular/api/generator/plugin/asyncapi/AsyncApiGenerator.java",
+            "status": "modified",
+            "additions": 10,
+            "deletions": 5,
+            "changes": 15,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGenerator.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGenerator.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGenerator.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -33,6 +33,7 @@\n import com.sngular.api.generator.plugin.asyncapi.exception.ExternalRefComponentNotFoundException;\n import com.sngular.api.generator.plugin.asyncapi.exception.FileSystemException;\n import com.sngular.api.generator.plugin.asyncapi.exception.NonSupportedSchemaException;\n+import com.sngular.api.generator.plugin.asyncapi.exception.InvalidAsyncAPIException;\n import com.sngular.api.generator.plugin.asyncapi.model.SchemaObject;\n import com.sngular.api.generator.plugin.asyncapi.parameter.OperationParameterObject;\n import com.sngular.api.generator.plugin.asyncapi.parameter.SpecFile;\n@@ -388,13 +389,17 @@ private JsonNode getChannelPayload(final JsonNode channel) {\n   }\n \n   private String getOperationId(final JsonNode channel) {\n-    final String operationId = getChannelPayload(channel).get(OPERATION_ID).asText();\n-    if (processedOperationIds.contains(operationId)) {\n-      throw new DuplicatedOperationException(operationId);\n+    if (Objects.isNull(getChannelPayload(channel).get(OPERATION_ID))) {\n+      throw new InvalidAsyncAPIException();\n     } else {\n-      processedOperationIds.add(operationId);\n+      final String operationId = getChannelPayload(channel).get(OPERATION_ID).asText();\n+      if (processedOperationIds.contains(operationId)) {\n+        throw new DuplicatedOperationException(operationId);\n+      } else {\n+        processedOperationIds.add(operationId);\n+      }\n+      return operationId;\n     }\n-    return operationId;\n   }\n \n   private void setUpTemplate(final SpecFile fileParameter, final Integer springBootVersion) {"
+        },
+        {
+            "sha": "fd2f66ffb803343f96eeaabd85a228061a76911c",
+            "filename": "multiapi-engine/src/main/java/com/sngular/api/generator/plugin/asyncapi/exception/InvalidAsyncAPIException.java",
+            "status": "added",
+            "additions": 19,
+            "deletions": 0,
+            "changes": 19,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2Fexception%2FInvalidAsyncAPIException.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2Fexception%2FInvalidAsyncAPIException.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2Fexception%2FInvalidAsyncAPIException.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -0,0 +1,19 @@\n+/*\n+ *  This Source Code Form is subject to the terms of the Mozilla Public\n+ *  * License, v. 2.0. If a copy of the MPL was not distributed with this\n+ *  * file, You can obtain one at https://mozilla.org/MPL/2.0/.\n+ */\n+\n+package com.sngular.api.generator.plugin.asyncapi.exception;\n+\n+import com.sngular.api.generator.plugin.exception.InvalidAPIException;\n+\n+public class InvalidAsyncAPIException extends InvalidAPIException {\n+\n+  private static final String ERROR_MESSAGE = \"AsyncApi -> There is at least one operation without operationId\";\n+\n+  public InvalidAsyncAPIException() {\n+    super(ERROR_MESSAGE);\n+  }\n+\n+}"
+        },
+        {
+            "sha": "2f2f674c47b6d2b9192fa8b21adb3e2caf899f47",
+            "filename": "multiapi-engine/src/main/java/com/sngular/api/generator/plugin/exception/InvalidAPIException.java",
+            "status": "added",
+            "additions": 9,
+            "deletions": 0,
+            "changes": 9,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fexception%2FInvalidAPIException.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fexception%2FInvalidAPIException.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fexception%2FInvalidAPIException.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -0,0 +1,9 @@\n+package com.sngular.api.generator.plugin.exception;\n+\n+public class InvalidAPIException extends RuntimeException {\n+\n+  public InvalidAPIException(String message) {\n+    super(message);\n+  }\n+\n+}"
+        },
+        {
+            "sha": "7e5889172f531465f3b8d9c4644cb075a3e0d8d4",
+            "filename": "multiapi-engine/src/main/java/com/sngular/api/generator/plugin/openapi/exception/InvalidOpenAPIException.java",
+            "status": "added",
+            "additions": 19,
+            "deletions": 0,
+            "changes": 19,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2Fexception%2FInvalidOpenAPIException.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2Fexception%2FInvalidOpenAPIException.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2Fexception%2FInvalidOpenAPIException.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -0,0 +1,19 @@\n+/*\n+ *  This Source Code Form is subject to the terms of the Mozilla Public\n+ *  * License, v. 2.0. If a copy of the MPL was not distributed with this\n+ *  * file, You can obtain one at https://mozilla.org/MPL/2.0/.\n+ */\n+\n+package com.sngular.api.generator.plugin.openapi.exception;\n+\n+import com.sngular.api.generator.plugin.exception.InvalidAPIException;\n+\n+public class InvalidOpenAPIException extends InvalidAPIException {\n+\n+  private static final String ERROR_MESSAGE = \"OpenApi -> There is at least one operation without operationId\";\n+\n+  public InvalidOpenAPIException() {\n+    super(ERROR_MESSAGE);\n+  }\n+\n+}"
+        },
+        {
+            "sha": "f463b457197858ef68cf7a344d56621d63719893",
+            "filename": "multiapi-engine/src/main/java/com/sngular/api/generator/plugin/openapi/utils/MapperPathUtil.java",
+            "status": "modified",
+            "additions": 4,
+            "deletions": 0,
+            "changes": 4,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2Futils%2FMapperPathUtil.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2Futils%2FMapperPathUtil.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Fmain%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2Futils%2FMapperPathUtil.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -15,6 +15,7 @@\n import java.util.Set;\n \n import com.sngular.api.generator.plugin.openapi.exception.DuplicatedOperationException;\n+import com.sngular.api.generator.plugin.openapi.exception.InvalidOpenAPIException;\n import com.sngular.api.generator.plugin.openapi.model.AuthSchemaObject;\n import com.sngular.api.generator.plugin.openapi.model.ContentObject;\n import com.sngular.api.generator.plugin.openapi.model.GlobalObject;\n@@ -165,6 +166,9 @@ private static List<String> getProducesList(final ApiResponses responses) {\n \n   private static List<RequestObject> mapRequestObject(final SpecFile specFile, final Operation operation, final GlobalObject globalObject) {\n     final List<RequestObject> requestObjects = new ArrayList<>();\n+    if (Objects.isNull(operation.getOperationId())) {\n+      throw new InvalidOpenAPIException();\n+    }\n     final String operationIdWithCap = operation.getOperationId().substring(0, 1).toUpperCase() + operation.getOperationId().substring(1);\n     if (Objects.nonNull(operation.getRequestBody())) {\n       requestObjects.add(RequestObject.builder()"
+        },
+        {
+            "sha": "bcbbb4562006ce9cb704bf75d5d21b54231ae482",
+            "filename": "multiapi-engine/src/test/java/com/sngular/api/generator/plugin/asyncapi/AsyncApiGeneratorFixtures.java",
+            "status": "modified",
+            "additions": 12,
+            "deletions": 0,
+            "changes": 12,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGeneratorFixtures.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGeneratorFixtures.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGeneratorFixtures.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -188,6 +188,18 @@ public class AsyncApiGeneratorFixtures {\n                                             .build())\n           .build());\n \n+  final static List<SpecFile> TEST_GENERATION_WITH_NO_OPERATION_ID = List.of(\n+      SpecFile\n+        .builder()\n+        .filePath(\"src/test/resources/asyncapigenerator/testGenerationWithNoOperationId/event-api.yml\")\n+        .consumer(OperationParameterObject.builder()\n+                                          .modelNameSuffix(\"DTO\")\n+                                          .apiPackage(\"com.sngular.scsplugin.withoutoperationid.model.event.consumer\")\n+                                          .modelPackage(\"com.sngular.scsplugin.withoutoperationid.model.event\")\n+                                          .build())\n+        .build()\n+  );\n+\n   final static List<SpecFile> TEST_NO_SCHEMAS = List.of(\n       SpecFile\n           .builder()"
+        },
+        {
+            "sha": "458e2ece15584fc35beeb957e534c1789030721c",
+            "filename": "multiapi-engine/src/test/java/com/sngular/api/generator/plugin/asyncapi/AsyncApiGeneratorTest.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 1,
+            "changes": 9,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGeneratorTest.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGeneratorTest.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fasyncapi%2FAsyncApiGeneratorTest.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -11,10 +11,11 @@\n import java.util.List;\n import java.util.function.Function;\n import java.util.stream.Stream;\n-\n import com.sngular.api.generator.plugin.asyncapi.parameter.SpecFile;\n+import com.sngular.api.generator.plugin.exception.InvalidAPIException;\n import org.assertj.core.api.Assertions;\n import org.junit.jupiter.api.BeforeAll;\n+import org.junit.jupiter.api.Test;\n import org.junit.jupiter.api.io.TempDir;\n import org.junit.jupiter.params.ParameterizedTest;\n import org.junit.jupiter.params.provider.Arguments;\n@@ -66,4 +67,10 @@ void processFileSpecForTestFileGeneration(final String type, final List<SpecFile\n     Assertions.assertThat(validation.apply(baseDir)).isTrue();\n   }\n \n+  @Test\n+  void testExceptionForTestGenerationWithNoOperationId() {\n+    Assertions.assertThatThrownBy(() -> asyncApiGenerator.processFileSpec(AsyncApiGeneratorFixtures.TEST_GENERATION_WITH_NO_OPERATION_ID))\n+      .isInstanceOf(InvalidAPIException.class);\n+  }\n+\n }"
+        },
+        {
+            "sha": "c8044f4f56c5082752a0b06ce862ffcd786ce059",
+            "filename": "multiapi-engine/src/test/java/com/sngular/api/generator/plugin/openapi/OpenApiGeneratorFixtures.java",
+            "status": "modified",
+            "additions": 9,
+            "deletions": 0,
+            "changes": 9,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2FOpenApiGeneratorFixtures.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2FOpenApiGeneratorFixtures.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2FOpenApiGeneratorFixtures.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -432,6 +432,15 @@ public final class OpenApiGeneratorFixtures {\n           .build()\n   );\n \n+  static final List<SpecFile> TEST_GENERATION_WITH_NO_OPERATION_ID = List.of(\n+      SpecFile\n+          .builder()\n+          .filePath(\"openapigenerator/testGenerationWithNoOperationId/api-test.yml\")\n+          .apiPackage(\"com.sngular.multifileplugin.testGenerationWithNoOperationId\")\n+          .useLombokModelAnnotation(true)\n+          .build()\n+  );\n+\n   static Function<Path, Boolean> validateOneOfInResponse() {\n \n     final String DEFAULT_TARGET_API = \"generated/com/sngular/multifileplugin/testoneofinresponse\";"
+        },
+        {
+            "sha": "e8308f6f5963d1556c187cd3551d6f7df84f26ac",
+            "filename": "multiapi-engine/src/test/java/com/sngular/api/generator/plugin/openapi/OpenApiGeneratorTest.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 1,
+            "changes": 9,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2FOpenApiGeneratorTest.java",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2FOpenApiGeneratorTest.java",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Ftest%2Fjava%2Fcom%2Fsngular%2Fapi%2Fgenerator%2Fplugin%2Fopenapi%2FOpenApiGeneratorTest.java?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -11,10 +11,11 @@\n import java.util.List;\n import java.util.function.Function;\n import java.util.stream.Stream;\n-\n+import com.sngular.api.generator.plugin.exception.InvalidAPIException;\n import com.sngular.api.generator.plugin.openapi.parameter.SpecFile;\n import org.assertj.core.api.Assertions;\n import org.junit.jupiter.api.BeforeAll;\n+import org.junit.jupiter.api.Test;\n import org.junit.jupiter.api.io.TempDir;\n import org.junit.jupiter.params.ParameterizedTest;\n import org.junit.jupiter.params.provider.Arguments;\n@@ -106,4 +107,10 @@ void processFileSpec(final String type, final List<SpecFile> specFileList, final\n     openApiGenerator.processFileSpec(specFileList);\n     Assertions.assertThat(validation.apply(baseDir)).isTrue();\n   }\n+\n+  @Test\n+  void testExceptionForTestGenerationWithNoOperationId() {\n+    Assertions.assertThatThrownBy(() -> openApiGenerator.processFileSpec(OpenApiGeneratorFixtures.TEST_GENERATION_WITH_NO_OPERATION_ID))\n+              .isInstanceOf(InvalidAPIException.class);\n+  }\n }\n\\ No newline at end of file"
+        },
+        {
+            "sha": "b4804641d7a7d5f080cba231bd56c7ad833ec85a",
+            "filename": "multiapi-engine/src/test/resources/asyncapigenerator/testGenerationWithNoOperationId/event-api.yml",
+            "status": "added",
+            "additions": 23,
+            "deletions": 0,
+            "changes": 23,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fresources%2Fasyncapigenerator%2FtestGenerationWithNoOperationId%2Fevent-api.yml",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fresources%2Fasyncapigenerator%2FtestGenerationWithNoOperationId%2Fevent-api.yml",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Ftest%2Fresources%2Fasyncapigenerator%2FtestGenerationWithNoOperationId%2Fevent-api.yml?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -0,0 +1,23 @@\n+asyncapi: '2.5.0'\n+info:\n+  title: Account Service\n+  version: 1.0.0\n+  description: This service is in charge of processing user signups\n+channels:\n+  user/signedup:\n+    subscribe:\n+      message:\n+        $ref: '#/components/messages/UserSignedUp'\n+components:\n+  messages:\n+    UserSignedUp:\n+      payload:\n+        type: object\n+        properties:\n+          displayName:\n+            type: string\n+            description: Name of the user\n+          email:\n+            type: string\n+            format: email\n+            description: Email of the user\n\\ No newline at end of file"
+        },
+        {
+            "sha": "5352bbf531c9d0062deaa175408edd87ca84e873",
+            "filename": "multiapi-engine/src/test/resources/openapigenerator/testGenerationWithNoOperationId/api-test.yml",
+            "status": "added",
+            "additions": 45,
+            "deletions": 0,
+            "changes": 45,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fresources%2Fopenapigenerator%2FtestGenerationWithNoOperationId%2Fapi-test.yml",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/multiapi-engine%2Fsrc%2Ftest%2Fresources%2Fopenapigenerator%2FtestGenerationWithNoOperationId%2Fapi-test.yml",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/multiapi-engine%2Fsrc%2Ftest%2Fresources%2Fopenapigenerator%2FtestGenerationWithNoOperationId%2Fapi-test.yml?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -0,0 +1,45 @@\n+openapi: '3.0.0'\n+info:\n+  version: 1.0.0\n+  title: Sngular Test Api\n+  license:\n+    name: MIT\n+servers:\n+- url: http://localhost:8080/v1\n+paths:\n+  /test:\n+    summary: available test\n+    get:\n+      summary: List all available test\n+      tags:\n+      - test\n+      responses:\n+        '200':\n+          description: A paged array of tests\n+          headers:\n+            x-next:\n+              description: A link to the next page of responses\n+              schema:\n+                type: string\n+          content:\n+            application/json:\n+              schema:\n+                $ref: \"#/components/schemas/Test\"\n+components:\n+  schemas:\n+    Test:\n+      type: object\n+      properties:\n+        id:\n+          type: integer\n+          format: int64\n+        name:\n+          type: string\n+        status:\n+          type: string\n+        tags:\n+          type: array\n+          items:\n+            type: string\n+        test:\n+          $ref: \"#/components/schemas/Test\"\n\\ No newline at end of file"
+        },
+        {
+            "sha": "02fa54cd2e7a9d3a402b16487fe59f32ae5eadf0",
+            "filename": "scs-multiapi-gradle-plugin/build.gradle",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/scs-multiapi-gradle-plugin%2Fbuild.gradle",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/scs-multiapi-gradle-plugin%2Fbuild.gradle",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/scs-multiapi-gradle-plugin%2Fbuild.gradle?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -20,7 +20,7 @@ repositories {\n }\n \n group = 'com.sngular'\n-version = '4.8.1'\n+version = '4.8.2'\n \n def SCSMultiApiPluginGroupId = group\n def SCSMultiApiPluginVersion = version\n@@ -30,7 +30,7 @@ dependencies {\n   shadow localGroovy()\n   shadow gradleApi()\n \n-  implementation 'com.sngular:multiapi-engine:4.8.1'\n+  implementation 'com.sngular:multiapi-engine:4.8.2'\n   testImplementation 'org.assertj:assertj-core:3.23.1'\n   testImplementation 'com.puppycrawl.tools:checkstyle:10.3.1'\n }\n@@ -98,7 +98,7 @@ testing {\n \n     integrationTest(JvmTestSuite) {\n       dependencies {\n-        implementation 'com.sngular:scs-multiapi-gradle-plugin:4.8.1'\n+        implementation 'com.sngular:scs-multiapi-gradle-plugin:4.8.2'\n         implementation 'org.assertj:assertj-core:3.23.1'\n       }\n "
+        },
+        {
+            "sha": "f2618ac8dbd54f05c5653c9218edaab5dbede456",
+            "filename": "scs-multiapi-maven-plugin/pom.xml",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/sngular/scs-multiapi-plugin/blob/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/scs-multiapi-maven-plugin%2Fpom.xml",
+            "raw_url": "https://github.com/sngular/scs-multiapi-plugin/raw/ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec/scs-multiapi-maven-plugin%2Fpom.xml",
+            "contents_url": "https://api.github.com/repos/sngular/scs-multiapi-plugin/contents/scs-multiapi-maven-plugin%2Fpom.xml?ref=ff0c0ef242f4ae5d15e9b49f092a512d1dfca2ec",
+            "patch": "@@ -4,7 +4,7 @@\n \n   <groupId>com.sngular</groupId>\n   <artifactId>scs-multiapi-maven-plugin</artifactId>\n-  <version>4.8.1</version>\n+  <version>4.8.2</version>\n   <packaging>maven-plugin</packaging>\n \n   <name>AsyncApi - OpenApi Code Generator Maven Plugin</name>\n@@ -223,7 +223,7 @@\n     <dependency>\n       <groupId>com.sngular</groupId>\n       <artifactId>multiapi-engine</artifactId>\n-      <version>4.8.1</version>\n+      <version>4.8.2</version>\n     </dependency>\n     <dependency>\n       <groupId>org.apache.maven</groupId>"
+        }
+    ]
+}

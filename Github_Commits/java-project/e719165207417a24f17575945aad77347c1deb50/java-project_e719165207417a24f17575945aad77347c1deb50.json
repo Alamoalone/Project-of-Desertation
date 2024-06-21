@@ -1,0 +1,98 @@
+{
+    "sha": "e719165207417a24f17575945aad77347c1deb50",
+    "node_id": "C_kwDOJSDo79oAKGU3MTkxNjUyMDc0MTdhMjRmMTc1NzU5NDVhYWQ3NzM0N2MxZGViNTA",
+    "commit": {
+        "author": {
+            "name": "frejless",
+            "email": "filipfrey5@gmail.com",
+            "date": "2023-04-16T16:02:06Z"
+        },
+        "committer": {
+            "name": "frejless",
+            "email": "filipfrey5@gmail.com",
+            "date": "2023-04-16T16:02:06Z"
+        },
+        "message": "hodnotenia null pointer exception fixed",
+        "tree": {
+            "sha": "992105fd1abd0d934f1755d23123309e2796ed85",
+            "url": "https://api.github.com/repos/frejless/java-project/git/trees/992105fd1abd0d934f1755d23123309e2796ed85"
+        },
+        "url": "https://api.github.com/repos/frejless/java-project/git/commits/e719165207417a24f17575945aad77347c1deb50",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/frejless/java-project/commits/e719165207417a24f17575945aad77347c1deb50",
+    "html_url": "https://github.com/frejless/java-project/commit/e719165207417a24f17575945aad77347c1deb50",
+    "comments_url": "https://api.github.com/repos/frejless/java-project/commits/e719165207417a24f17575945aad77347c1deb50/comments",
+    "author": {
+        "login": "frejless",
+        "id": 95712948,
+        "node_id": "U_kgDOBbR2tA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95712948?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frejless",
+        "html_url": "https://github.com/frejless",
+        "followers_url": "https://api.github.com/users/frejless/followers",
+        "following_url": "https://api.github.com/users/frejless/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frejless/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frejless/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frejless/subscriptions",
+        "organizations_url": "https://api.github.com/users/frejless/orgs",
+        "repos_url": "https://api.github.com/users/frejless/repos",
+        "events_url": "https://api.github.com/users/frejless/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frejless/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "frejless",
+        "id": 95712948,
+        "node_id": "U_kgDOBbR2tA",
+        "avatar_url": "https://avatars.githubusercontent.com/u/95712948?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/frejless",
+        "html_url": "https://github.com/frejless",
+        "followers_url": "https://api.github.com/users/frejless/followers",
+        "following_url": "https://api.github.com/users/frejless/following{/other_user}",
+        "gists_url": "https://api.github.com/users/frejless/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/frejless/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/frejless/subscriptions",
+        "organizations_url": "https://api.github.com/users/frejless/orgs",
+        "repos_url": "https://api.github.com/users/frejless/repos",
+        "events_url": "https://api.github.com/users/frejless/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/frejless/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "ae2424dbf0a117cebd74a3925abcbb87f9b77985",
+            "url": "https://api.github.com/repos/frejless/java-project/commits/ae2424dbf0a117cebd74a3925abcbb87f9b77985",
+            "html_url": "https://github.com/frejless/java-project/commit/ae2424dbf0a117cebd74a3925abcbb87f9b77985"
+        }
+    ],
+    "stats": {
+        "total": 10,
+        "additions": 7,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "85a2b9ecf34e96fe1329c9eb7c55c09373eaed81",
+            "filename": "Databaze.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 3,
+            "changes": 10,
+            "blob_url": "https://github.com/frejless/java-project/blob/e719165207417a24f17575945aad77347c1deb50/Databaze.java",
+            "raw_url": "https://github.com/frejless/java-project/raw/e719165207417a24f17575945aad77347c1deb50/Databaze.java",
+            "contents_url": "https://api.github.com/repos/frejless/java-project/contents/Databaze.java?ref=e719165207417a24f17575945aad77347c1deb50",
+            "patch": "@@ -53,9 +53,13 @@ else if (prvkyDatabaze.get(nazov) instanceof AnimovanyFilm){\n             System.out.println(\"Nazov: \" + prvkyDatabaze.get(nazov).getNazov() + \" Reziser: \" + prvkyDatabaze.get(nazov).getReziser() + \" Rok: \" + prvkyDatabaze.get(nazov).getRok() + \" Doporuceny Vek: \" + ((AnimovanyFilm) prvkyDatabaze.get(nazov)).getDoporucenyVek() + \" Herci : \" + getActors(nazov));\n         }\n         ArrayList<Hodnotenie> hodnotenia = this.getHodnotenia(nazov);\n-        hodnotenia.sort(Comparator.comparing(Hodnotenie::getHodnotenie).reversed());\n-        for (Hodnotenie hodnotenie : hodnotenia)\n-            System.out.println(\"Hodnotenie: \" + hodnotenie.getHodnotenie() + \" Komentar: \" + hodnotenie.getKomentar());\n+        if (hodnotenia == null || hodnotenia.size() == 0)\n+            System.out.println(\"Film este nemal ziadne hodnotenia\");\n+        else {\n+            hodnotenia.sort(Comparator.comparing(Hodnotenie::getHodnotenie).reversed());\n+            for (Hodnotenie hodnotenie : hodnotenia)\n+                System.out.println(\"Hodnotenie: \" + hodnotenie.getHodnotenie() + \" Komentar: \" + hodnotenie.getKomentar());\n+        }\n     }\n \n     public void typFilmu (String nazov) {"
+        }
+    ]
+}

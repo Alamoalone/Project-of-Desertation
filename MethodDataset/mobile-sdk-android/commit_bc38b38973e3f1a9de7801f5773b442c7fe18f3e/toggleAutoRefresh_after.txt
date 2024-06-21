@@ -1,0 +1,5 @@
+        public void toggleAutoRefresh() {
+            if (getMediaType() == MediaType.BANNER && mAdFetcher.getState() == AdFetcher.STATE.STOPPED) {
+                mAdFetcher.start();
+            }
+        }

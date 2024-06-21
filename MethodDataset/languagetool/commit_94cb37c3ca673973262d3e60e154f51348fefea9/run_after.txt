@@ -1,0 +1,32 @@
+    public void run() {
+      try {
+        SingleDocument currentDocument = null;
+        while (!isHelperDisposed && currentDocument == null) {
+          Thread.sleep(250);
+          if (isHelperDisposed) {
+            return;
+          }
+          currentDocument = getCurrentDocument();
+          if (currentDocument != null && (currentDocument.getDocumentType() == DocumentType.IMPRESS 
+              || currentDocument.getDocumentType() == DocumentType.CALC)) {
+            if (currentDocument.getDocumentType() == DocumentType.IMPRESS) {
+              checkImpressDocument = true;
+              locale = OfficeDrawTools.getDocumentLocale(currentDocument.getXComponent());
+            } else {
+              locale = OfficeSpreadsheetTools.getDocumentLocale(currentDocument.getXComponent());
+            }
+            if (locale == null) {
+              locale = new Locale("en","US","");
+            }
+            MessageHandler.printToLogFile("MultiDocumentsHandler: LtHelper: local: " + OfficeTools.localeToString(locale));
+            langForShortName = getLanguage(locale);
+            docLanguage = langForShortName;
+            lt = initLanguageTool(true);
+            initCheck(lt);
+            initDocuments(false);
+          }
+        }
+      } catch (Throwable e) {
+        MessageHandler.showError(e);
+      }
+    }

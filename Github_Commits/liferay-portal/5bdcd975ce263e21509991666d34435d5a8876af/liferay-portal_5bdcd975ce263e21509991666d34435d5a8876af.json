@@ -1,0 +1,98 @@
+{
+    "sha": "5bdcd975ce263e21509991666d34435d5a8876af",
+    "node_id": "C_kwDOAATZv9oAKDViZGNkOTc1Y2UyNjNlMjE1MDk5OTE2NjZkMzQ0MzVkNWE4ODc2YWY",
+    "commit": {
+        "author": {
+            "name": "Eudaldo Alonso",
+            "email": "eudaldo.alonso@liferay.com",
+            "date": "2024-02-19T18:45:34Z"
+        },
+        "committer": {
+            "name": "Brian Chan",
+            "email": "brian.chan@liferay.com",
+            "date": "2024-02-19T22:48:23Z"
+        },
+        "message": "LPD-18015 Prevent null pointer exception",
+        "tree": {
+            "sha": "944ebe3920f5dca521241f779aef4d4a18d5f3ff",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/git/trees/944ebe3920f5dca521241f779aef4d4a18d5f3ff"
+        },
+        "url": "https://api.github.com/repos/liferay/liferay-portal/git/commits/5bdcd975ce263e21509991666d34435d5a8876af",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/liferay/liferay-portal/commits/5bdcd975ce263e21509991666d34435d5a8876af",
+    "html_url": "https://github.com/liferay/liferay-portal/commit/5bdcd975ce263e21509991666d34435d5a8876af",
+    "comments_url": "https://api.github.com/repos/liferay/liferay-portal/commits/5bdcd975ce263e21509991666d34435d5a8876af/comments",
+    "author": {
+        "login": "ealonso",
+        "id": 922631,
+        "node_id": "MDQ6VXNlcjkyMjYzMQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/922631?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ealonso",
+        "html_url": "https://github.com/ealonso",
+        "followers_url": "https://api.github.com/users/ealonso/followers",
+        "following_url": "https://api.github.com/users/ealonso/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ealonso/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ealonso/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ealonso/subscriptions",
+        "organizations_url": "https://api.github.com/users/ealonso/orgs",
+        "repos_url": "https://api.github.com/users/ealonso/repos",
+        "events_url": "https://api.github.com/users/ealonso/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ealonso/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "brianchandotcom",
+        "id": 282080,
+        "node_id": "MDQ6VXNlcjI4MjA4MA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/282080?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/brianchandotcom",
+        "html_url": "https://github.com/brianchandotcom",
+        "followers_url": "https://api.github.com/users/brianchandotcom/followers",
+        "following_url": "https://api.github.com/users/brianchandotcom/following{/other_user}",
+        "gists_url": "https://api.github.com/users/brianchandotcom/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/brianchandotcom/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/brianchandotcom/subscriptions",
+        "organizations_url": "https://api.github.com/users/brianchandotcom/orgs",
+        "repos_url": "https://api.github.com/users/brianchandotcom/repos",
+        "events_url": "https://api.github.com/users/brianchandotcom/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/brianchandotcom/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "71f6939494207afbc16976ab1f4719df5ab06240",
+            "url": "https://api.github.com/repos/liferay/liferay-portal/commits/71f6939494207afbc16976ab1f4719df5ab06240",
+            "html_url": "https://github.com/liferay/liferay-portal/commit/71f6939494207afbc16976ab1f4719df5ab06240"
+        }
+    ],
+    "stats": {
+        "total": 11,
+        "additions": 8,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "1ae01012a151a9535e134bb9916d856b5b8ed6a9",
+            "filename": "modules/apps/document-library/document-library-service/src/main/java/com/liferay/document/library/internal/view/count/model/listener/DLFileEntryViewCountEntryModelListener.java",
+            "status": "modified",
+            "additions": 8,
+            "deletions": 3,
+            "changes": 11,
+            "blob_url": "https://github.com/liferay/liferay-portal/blob/5bdcd975ce263e21509991666d34435d5a8876af/modules%2Fapps%2Fdocument-library%2Fdocument-library-service%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fdocument%2Flibrary%2Finternal%2Fview%2Fcount%2Fmodel%2Flistener%2FDLFileEntryViewCountEntryModelListener.java",
+            "raw_url": "https://github.com/liferay/liferay-portal/raw/5bdcd975ce263e21509991666d34435d5a8876af/modules%2Fapps%2Fdocument-library%2Fdocument-library-service%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fdocument%2Flibrary%2Finternal%2Fview%2Fcount%2Fmodel%2Flistener%2FDLFileEntryViewCountEntryModelListener.java",
+            "contents_url": "https://api.github.com/repos/liferay/liferay-portal/contents/modules%2Fapps%2Fdocument-library%2Fdocument-library-service%2Fsrc%2Fmain%2Fjava%2Fcom%2Fliferay%2Fdocument%2Flibrary%2Finternal%2Fview%2Fcount%2Fmodel%2Flistener%2FDLFileEntryViewCountEntryModelListener.java?ref=5bdcd975ce263e21509991666d34435d5a8876af",
+            "patch": "@@ -31,13 +31,18 @@ public String getModelClassName() {\n \n \t@Override\n \tpublic void onAfterIncrement(ViewCountEntry viewCountEntry) {\n+\t\tDLFileEntry dlFileEntry = _dlFileEntryLocalService.fetchDLFileEntry(\n+\t\t\tviewCountEntry.getClassPK());\n+\n+\t\tif (dlFileEntry == null) {\n+\t\t\treturn;\n+\t\t}\n+\n \t\ttry {\n \t\t\tIndexer<DLFileEntry> indexer =\n \t\t\t\tIndexerRegistryUtil.nullSafeGetIndexer(DLFileEntry.class);\n \n-\t\t\tindexer.reindex(\n-\t\t\t\t_dlFileEntryLocalService.fetchDLFileEntry(\n-\t\t\t\t\tviewCountEntry.getClassPK()));\n+\t\t\tindexer.reindex(dlFileEntry);\n \t\t}\n \t\tcatch (SearchException searchException) {\n \t\t\tReflectionUtil.throwException(searchException);"
+        }
+    ]
+}

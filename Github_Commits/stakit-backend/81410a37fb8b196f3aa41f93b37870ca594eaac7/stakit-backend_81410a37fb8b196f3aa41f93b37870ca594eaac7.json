@@ -1,0 +1,122 @@
+{
+    "sha": "81410a37fb8b196f3aa41f93b37870ca594eaac7",
+    "node_id": "C_kwDOIf_QHdoAKDgxNDEwYTM3ZmI4YjE5NmYzYWE0MWY5M2IzNzg3MGNhNTk0ZWFhYzc",
+    "commit": {
+        "author": {
+            "name": "Jonas Pedersen",
+            "email": "jpe@kvalitetsit.dk",
+            "date": "2023-05-08T07:10:19Z"
+        },
+        "committer": {
+            "name": "Jonas Pedersen",
+            "email": "jpe@kvalitetsit.dk",
+            "date": "2023-05-08T07:10:19Z"
+        },
+        "message": "Fix null pointer exception in create group.",
+        "tree": {
+            "sha": "e2ce7fa62e1ee7ce655c368091169e8e830c9b3e",
+            "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/git/trees/e2ce7fa62e1ee7ce655c368091169e8e830c9b3e"
+        },
+        "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/git/commits/81410a37fb8b196f3aa41f93b37870ca594eaac7",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/commits/81410a37fb8b196f3aa41f93b37870ca594eaac7",
+    "html_url": "https://github.com/KvalitetsIT/stakit-backend/commit/81410a37fb8b196f3aa41f93b37870ca594eaac7",
+    "comments_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/commits/81410a37fb8b196f3aa41f93b37870ca594eaac7/comments",
+    "author": {
+        "login": "JonasPed",
+        "id": 45563709,
+        "node_id": "MDQ6VXNlcjQ1NTYzNzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45563709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JonasPed",
+        "html_url": "https://github.com/JonasPed",
+        "followers_url": "https://api.github.com/users/JonasPed/followers",
+        "following_url": "https://api.github.com/users/JonasPed/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JonasPed/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JonasPed/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JonasPed/subscriptions",
+        "organizations_url": "https://api.github.com/users/JonasPed/orgs",
+        "repos_url": "https://api.github.com/users/JonasPed/repos",
+        "events_url": "https://api.github.com/users/JonasPed/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JonasPed/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "JonasPed",
+        "id": 45563709,
+        "node_id": "MDQ6VXNlcjQ1NTYzNzA5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/45563709?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JonasPed",
+        "html_url": "https://github.com/JonasPed",
+        "followers_url": "https://api.github.com/users/JonasPed/followers",
+        "following_url": "https://api.github.com/users/JonasPed/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JonasPed/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/JonasPed/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JonasPed/subscriptions",
+        "organizations_url": "https://api.github.com/users/JonasPed/orgs",
+        "repos_url": "https://api.github.com/users/JonasPed/repos",
+        "events_url": "https://api.github.com/users/JonasPed/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/JonasPed/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "7ab919679750c02bd6097725fb6ec30911059349",
+            "url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/commits/7ab919679750c02bd6097725fb6ec30911059349",
+            "html_url": "https://github.com/KvalitetsIT/stakit-backend/commit/7ab919679750c02bd6097725fb6ec30911059349"
+        }
+    ],
+    "stats": {
+        "total": 66,
+        "additions": 64,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "85809ccfdf2da2e5a974cd7f35db5024731e6c78",
+            "filename": "integrationtest/src/test/java/dk/kvalitetsit/stakit/integrationtest/GroupManagementIT.java",
+            "status": "modified",
+            "additions": 21,
+            "deletions": 0,
+            "changes": 21,
+            "blob_url": "https://github.com/KvalitetsIT/stakit-backend/blob/81410a37fb8b196f3aa41f93b37870ca594eaac7/integrationtest%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fintegrationtest%2FGroupManagementIT.java",
+            "raw_url": "https://github.com/KvalitetsIT/stakit-backend/raw/81410a37fb8b196f3aa41f93b37870ca594eaac7/integrationtest%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fintegrationtest%2FGroupManagementIT.java",
+            "contents_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/contents/integrationtest%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fintegrationtest%2FGroupManagementIT.java?ref=81410a37fb8b196f3aa41f93b37870ca594eaac7",
+            "patch": "@@ -267,4 +267,25 @@ public void testGetServicesInGroup() throws ApiException {\n         assertEquals(input2.getGroup(), serv2.getGroup());\n         assertEquals(input2.getDescription(), serv2.getDescription());\n     }\n+\n+    @Test\n+    public void testCreateAndGetGroupNullDisplay() throws ApiException {\n+        var input = new GroupInput();\n+        input.setName(\"name\");\n+        input.setDisplayOrder(20);\n+        input.setDescription(\"description\");\n+        var response = groupManagementApi.v1GroupsPostWithHttpInfo(input);\n+        assertEquals(201, response.getStatusCode());\n+\n+        var uuid = response.getData().getUuid();\n+        assertEquals(uuid.toString(), response.getHeaders().get(\"Location\").get(0));\n+\n+        var result = groupManagementApi.v1GroupsGet();\n+        assertNotNull(result);\n+        assertTrue(result.stream().anyMatch(x ->\n+                input.getDisplayOrder().equals(x.getDisplayOrder()) &&\n+                input.getName().equals(x.getName()) &&\n+                input.getDescription().equals(x.getDescription()) &&\n+                x.getDisplay()));\n+    }\n }"
+        },
+        {
+            "sha": "0c242838ffe9185aea0bbc90a544eb4c289aad1e",
+            "filename": "service/src/main/java/dk/kvalitetsit/stakit/controller/mapper/GroupMapper.java",
+            "status": "modified",
+            "additions": 2,
+            "deletions": 2,
+            "changes": 4,
+            "blob_url": "https://github.com/KvalitetsIT/stakit-backend/blob/81410a37fb8b196f3aa41f93b37870ca594eaac7/service%2Fsrc%2Fmain%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2Fmapper%2FGroupMapper.java",
+            "raw_url": "https://github.com/KvalitetsIT/stakit-backend/raw/81410a37fb8b196f3aa41f93b37870ca594eaac7/service%2Fsrc%2Fmain%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2Fmapper%2FGroupMapper.java",
+            "contents_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/contents/service%2Fsrc%2Fmain%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2Fmapper%2FGroupMapper.java?ref=81410a37fb8b196f3aa41f93b37870ca594eaac7",
+            "patch": "@@ -12,11 +12,11 @@\n \n public class GroupMapper {\n     public static GroupModel mapCreateGroup(GroupInput from) {\n-        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay(), from.getExpanded());\n+        return GroupModel.createInstance(from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null || from.getExpanded());\n     }\n \n     public static GroupModel mapUpdateGroup(UUID uuid, GroupInput from) {\n-        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay(), from.getExpanded());\n+        return new GroupModel(uuid, from.getName(), from.getDisplayOrder(), from.getDescription(), from.getServices(), from.getDisplay() == null || from.getDisplay(), from.getExpanded() == null || from.getExpanded());\n     }\n \n     public static List<org.openapitools.model.Group> mapGetGroups(List<GroupGetModel> from) {"
+        },
+        {
+            "sha": "b2e6fd740242d3844597edeaff8e62d17959a0e7",
+            "filename": "service/src/test/java/dk/kvalitetsit/stakit/controller/GroupManagementControllerTest.java",
+            "status": "modified",
+            "additions": 41,
+            "deletions": 0,
+            "changes": 41,
+            "blob_url": "https://github.com/KvalitetsIT/stakit-backend/blob/81410a37fb8b196f3aa41f93b37870ca594eaac7/service%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2FGroupManagementControllerTest.java",
+            "raw_url": "https://github.com/KvalitetsIT/stakit-backend/raw/81410a37fb8b196f3aa41f93b37870ca594eaac7/service%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2FGroupManagementControllerTest.java",
+            "contents_url": "https://api.github.com/repos/KvalitetsIT/stakit-backend/contents/service%2Fsrc%2Ftest%2Fjava%2Fdk%2Fkvalitetsit%2Fstakit%2Fcontroller%2FGroupManagementControllerTest.java?ref=81410a37fb8b196f3aa41f93b37870ca594eaac7",
+            "patch": "@@ -291,6 +291,47 @@ public void testGetServicesInGroupNotFound() {\n         assertNotNull(expectedException);\n         assertEquals(\"Group with uuid %s not found\".formatted(input), expectedException.getMessage());\n         assertEquals(HttpStatus.NOT_FOUND, expectedException.getHttpStatus());\n+    }\n \n+    @Test\n+    public void testCreateGroupNullValue() {\n+        var input = new GroupInput();\n+        input.setName(\"name\");\n+        input.setDisplayOrder(10);\n+        input.setDescription(\"description\");\n+        input.setServices(Collections.singletonList(UUID.randomUUID()));\n+        input.display(null);\n+        input.setExpanded(null);\n+\n+        var expectedUuid = UUID.randomUUID();\n+\n+        Mockito.when(groupService.createGroup(GroupModel.createInstance(input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(expectedUuid);\n+\n+        var result = groupManagementController.v1GroupsPost(input);\n+        assertNotNull(result);\n+        assertEquals(201, result.getStatusCode().value());\n+        assertEquals(expectedUuid.toString(), result.getHeaders().get(\"location\").stream().findFirst().get());\n+        assertEquals(expectedUuid, result.getBody().getUuid());\n+    }\n+\n+    @Test\n+    public void testUpdateGroupNullValue() {\n+        var uuid = UUID.randomUUID();\n+\n+        var input = new GroupInput();\n+        input.setName(\"name\");\n+        input.setDisplayOrder(10);\n+        input.setDescription(\"description\");\n+        input.setServices(Collections.singletonList(UUID.randomUUID()));\n+        input.display(null);\n+        input.setExpanded(null);\n+\n+        var expectedUuid = UUID.randomUUID();\n+\n+        Mockito.when(groupService.updateGroup(GroupModel.createInstance(input.getName(), input.getDisplayOrder(), input.getDescription(), input.getServices(), true, false))).thenReturn(true);\n+\n+        var result = groupManagementController.v1GroupsUuidPut(uuid, input);\n+        assertNotNull(result);\n+        assertEquals(201, result.getStatusCode().value());\n     }\n }"
+        }
+    ]
+}

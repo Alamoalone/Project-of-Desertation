@@ -1,0 +1,16 @@
+    public void lootjs$setLootConsumer(LootConsumer consumer) {
+        lootjs$lootConsumer = consumer;
+    }
+
+    public ResourceLocation lootjs$getQueriedLootTableId() {
+        return lootjs$queriedLootTableId;
+    }
+
+    public LootConsumer lootjs$getLootConsumer() {
+        return lootjs$lootConsumer;
+    }
+
+    public void lootjs$setQueriedLootTableId(ResourceLocation id) {
+        lootjs$queriedLootTableId = id;
+    }
+

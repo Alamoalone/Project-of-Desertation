@@ -1,0 +1,14 @@
+	protected JPanel createFormPanel() {
+		DepotFormComponents depotFormComponents = prepareDepotPanelData(null);
+		for (int i = 0; i < Depot.fields.length; i++) {
+			depotFormComponents.fieldPanels[i] = createFieldPanel(Depot.fields[i],
+							Depot.requiredFieldsList.contains(Depot.fields[i]));
+			depotFormComponents.panel.add(depotFormComponents.fieldPanels[i]);
+		}
+		depotFormComponents.panel.setLayout(new GridLayout(depotFormComponents.fieldPanels.length / 2 + 2, 2));
+		UButton createButton = new UButton("Créer");
+		createButton.addActionListener(e -> createDepot(depotFormComponents.fieldPanels, depotFormComponents.joursLivraisons, depotFormComponents.image.get(),
+						depotFormComponents.addressChoice, depotFormComponents.referentChoice));
+		depotFormComponents.panel.add(createButton);
+		return depotFormComponents.panel();
+	}

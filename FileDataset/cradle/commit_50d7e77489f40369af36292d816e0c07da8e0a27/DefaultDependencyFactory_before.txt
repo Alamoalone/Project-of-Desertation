@@ -1,0 +1,6 @@
+    public org.gradle.api.artifacts.ClientModule createModule(Object dependencyNotation, Closure configureClosure) {
+        org.gradle.api.artifacts.ClientModule clientModule = clientModuleNotationParser.parseNotation(dependencyNotation);
+        configureModule(clientModule, configureClosure);
+        return clientModule;
+    }
+

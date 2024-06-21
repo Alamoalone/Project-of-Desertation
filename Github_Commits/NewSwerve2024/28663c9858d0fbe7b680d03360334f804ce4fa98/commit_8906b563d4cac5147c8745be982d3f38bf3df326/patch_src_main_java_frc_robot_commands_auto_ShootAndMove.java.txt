@@ -1,0 +1,14 @@
+@@ -8,11 +8,10 @@
+ 
+ public class ShootAndMove extends SequentialCommandGroup {
+ 
+-    private Shooter m_shooter;
+-    private Swerve m_Swerve;
+ 
+-    public ShootAndMove()
++    public ShootAndMove(Shooter m_shooter, Swerve m_Swerve)
+     {
++        
+         addCommands(new ShootMech(m_shooter), new DriveToDistance(-3, m_Swerve));
+     }
+     

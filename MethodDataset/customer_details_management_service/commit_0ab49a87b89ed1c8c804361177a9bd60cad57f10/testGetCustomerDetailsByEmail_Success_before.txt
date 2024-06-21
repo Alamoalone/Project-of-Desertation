@@ -1,0 +1,13 @@
+    void testGetCustomerDetailsByEmail_Success() {
+        // Arrange
+        String email = "test@example.com";
+        CustomerResponseDto responseDto = new CustomerResponseDto();
+        when(customerDetailService.getCustomerDetailsByEmail(email)).thenReturn(responseDto);
+
+        // Act
+        ResponseEntity<CustomerResponseDto> responseEntity = customerDetailsController.getCustomerDetailsByEmail(email);
+
+        // Assert
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+        assertNotNull(responseEntity.getBody());
+    }

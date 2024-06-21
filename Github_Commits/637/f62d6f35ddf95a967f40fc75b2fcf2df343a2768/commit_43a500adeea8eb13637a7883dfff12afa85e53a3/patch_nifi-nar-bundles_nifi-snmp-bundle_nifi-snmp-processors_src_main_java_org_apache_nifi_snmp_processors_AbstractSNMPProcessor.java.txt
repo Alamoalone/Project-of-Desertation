@@ -1,0 +1,9 @@
+@@ -361,6 +361,8 @@ private void buildTargetResource(ProcessContext context) {
+         }
+         if (this.snmpTarget == null) {
+             this.snmpTarget = this.createSnmpTarget(context);
++        }
++        if (this.targetResource == null) {
+             this.targetResource = this.finishBuildingTargetResource(context);
+         }
+     }

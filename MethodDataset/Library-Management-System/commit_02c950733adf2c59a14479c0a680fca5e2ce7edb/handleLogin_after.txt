@@ -1,0 +1,12 @@
+    private void handleLogin() throws IOException {
+
+        Email = usernameField.getText();
+        Password = passwordField.getText();
+        try {
+            t = Library.checkPassword(Email, Password).getTYPE();
+        }
+        catch (NullPointerException e){}
+        Library.loggedIn = Library.checkPassword(Email, Password);
+        System.out.println(t);
+        switchToNextPage(e);
+    }

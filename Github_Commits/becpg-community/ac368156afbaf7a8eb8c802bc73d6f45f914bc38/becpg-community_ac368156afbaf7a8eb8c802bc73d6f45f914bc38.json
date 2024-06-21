@@ -1,0 +1,98 @@
+{
+    "sha": "ac368156afbaf7a8eb8c802bc73d6f45f914bc38",
+    "node_id": "C_kwDOKM2HRNoAKGFjMzY4MTU2YWZiYWY3YThlYjhjODAyYmM3M2Q2ZjQ1ZjkxNGJjMzg",
+    "commit": {
+        "author": {
+            "name": "Valentin Leblanc",
+            "email": "valentin.leblanc@becpg.fr",
+            "date": "2024-01-11T09:32:15Z"
+        },
+        "committer": {
+            "name": "Valentin Leblanc",
+            "email": "valentin.leblanc@becpg.fr",
+            "date": "2024-01-11T09:32:15Z"
+        },
+        "message": "Fix #11965 - [Feature] Fix Decernis null pointer exception",
+        "tree": {
+            "sha": "088f01b211851b39aa39ea3e63daa0700d522598",
+            "url": "https://api.github.com/repos/becpg/becpg-community/git/trees/088f01b211851b39aa39ea3e63daa0700d522598"
+        },
+        "url": "https://api.github.com/repos/becpg/becpg-community/git/commits/ac368156afbaf7a8eb8c802bc73d6f45f914bc38",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/becpg/becpg-community/commits/ac368156afbaf7a8eb8c802bc73d6f45f914bc38",
+    "html_url": "https://github.com/becpg/becpg-community/commit/ac368156afbaf7a8eb8c802bc73d6f45f914bc38",
+    "comments_url": "https://api.github.com/repos/becpg/becpg-community/commits/ac368156afbaf7a8eb8c802bc73d6f45f914bc38/comments",
+    "author": {
+        "login": "ValentinLeblanc",
+        "id": 46529613,
+        "node_id": "MDQ6VXNlcjQ2NTI5NjEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/46529613?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ValentinLeblanc",
+        "html_url": "https://github.com/ValentinLeblanc",
+        "followers_url": "https://api.github.com/users/ValentinLeblanc/followers",
+        "following_url": "https://api.github.com/users/ValentinLeblanc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ValentinLeblanc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ValentinLeblanc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ValentinLeblanc/subscriptions",
+        "organizations_url": "https://api.github.com/users/ValentinLeblanc/orgs",
+        "repos_url": "https://api.github.com/users/ValentinLeblanc/repos",
+        "events_url": "https://api.github.com/users/ValentinLeblanc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ValentinLeblanc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "ValentinLeblanc",
+        "id": 46529613,
+        "node_id": "MDQ6VXNlcjQ2NTI5NjEz",
+        "avatar_url": "https://avatars.githubusercontent.com/u/46529613?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/ValentinLeblanc",
+        "html_url": "https://github.com/ValentinLeblanc",
+        "followers_url": "https://api.github.com/users/ValentinLeblanc/followers",
+        "following_url": "https://api.github.com/users/ValentinLeblanc/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ValentinLeblanc/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/ValentinLeblanc/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ValentinLeblanc/subscriptions",
+        "organizations_url": "https://api.github.com/users/ValentinLeblanc/orgs",
+        "repos_url": "https://api.github.com/users/ValentinLeblanc/repos",
+        "events_url": "https://api.github.com/users/ValentinLeblanc/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/ValentinLeblanc/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "11913c4c6faa35de6e2c6c0efe9aba2310a9d108",
+            "url": "https://api.github.com/repos/becpg/becpg-community/commits/11913c4c6faa35de6e2c6c0efe9aba2310a9d108",
+            "html_url": "https://github.com/becpg/becpg-community/commit/11913c4c6faa35de6e2c6c0efe9aba2310a9d108"
+        }
+    ],
+    "stats": {
+        "total": 9,
+        "additions": 7,
+        "deletions": 2
+    },
+    "files": [
+        {
+            "sha": "ea122b70324ee9f283217dd6b3f1454c282301d3",
+            "filename": "becpg-plm/becpg-plm-core/src/main/java/fr/becpg/repo/decernis/impl/V5DecernisAnalysisPlugin.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 2,
+            "changes": 9,
+            "blob_url": "https://github.com/becpg/becpg-community/blob/ac368156afbaf7a8eb8c802bc73d6f45f914bc38/becpg-plm%2Fbecpg-plm-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Fbecpg%2Frepo%2Fdecernis%2Fimpl%2FV5DecernisAnalysisPlugin.java",
+            "raw_url": "https://github.com/becpg/becpg-community/raw/ac368156afbaf7a8eb8c802bc73d6f45f914bc38/becpg-plm%2Fbecpg-plm-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Fbecpg%2Frepo%2Fdecernis%2Fimpl%2FV5DecernisAnalysisPlugin.java",
+            "contents_url": "https://api.github.com/repos/becpg/becpg-community/contents/becpg-plm%2Fbecpg-plm-core%2Fsrc%2Fmain%2Fjava%2Ffr%2Fbecpg%2Frepo%2Fdecernis%2Fimpl%2FV5DecernisAnalysisPlugin.java?ref=ac368156afbaf7a8eb8c802bc73d6f45f914bc38",
+            "patch": "@@ -111,10 +111,15 @@ private JSONObject postV5RecipeAnalysis(RegulatoryContext context, List<String>\n \t\t\tNodeRef ingType = (NodeRef) nodeService.getProperty(ingListDataItem.getIng(), PLMModel.PROP_ING_TYPE_V2);\n \t\t\tif (ingType != null) {\n \t\t\t\tString functionValue = (String) nodeService.getProperty(ingType, BeCPGModel.PROP_LV_VALUE);\n-\t\t\t\tString function = findFunction(moduleId, functionValue);\n+\t\t\t\tString function = null;\n+\t\t\t\tif (functionValue != null) {\n+\t\t\t\t\tfunction = findFunction(moduleId, functionValue);\n+\t\t\t\t}\n \t\t\t\tif (function == null) {\n \t\t\t\t\tfunctionValue = (String) nodeService.getProperty(ingType, BeCPGModel.PROP_LV_CODE);\n-\t\t\t\t\tfunction = findFunction(moduleId, functionValue);\n+\t\t\t\t\tif (functionValue != null) {\n+\t\t\t\t\t\tfunction = findFunction(moduleId, functionValue);\n+\t\t\t\t\t}\n \t\t\t\t}\n \t\t\t\tif (function != null) {\n \t\t\t\t\tString rid = (String) nodeService.getProperty(ingListDataItem.getIng(), PLMModel.PROP_REGULATORY_CODE);"
+        }
+    ]
+}

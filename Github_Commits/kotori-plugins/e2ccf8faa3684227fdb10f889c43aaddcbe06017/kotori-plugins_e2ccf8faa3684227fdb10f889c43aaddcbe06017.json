@@ -1,0 +1,98 @@
+{
+    "sha": "e2ccf8faa3684227fdb10f889c43aaddcbe06017",
+    "node_id": "C_kwDOI8Gh7toAKGUyY2NmOGZhYTM2ODQyMjdmZGIxMGY4ODljNDNhYWRkY2JlMDYwMTc",
+    "commit": {
+        "author": {
+            "name": "Kotori",
+            "email": "ani6376@gmail.com",
+            "date": "2023-05-07T04:26:49Z"
+        },
+        "committer": {
+            "name": "Kotori",
+            "email": "ani6376@gmail.com",
+            "date": "2023-05-07T04:26:49Z"
+        },
+        "message": "HouseOverlay fix null pointer exception when checking for equipped weapon",
+        "tree": {
+            "sha": "a33c98936f9e938ee540268ab6551529a3773637",
+            "url": "https://api.github.com/repos/OreoCupcakes/kotori-plugins/git/trees/a33c98936f9e938ee540268ab6551529a3773637"
+        },
+        "url": "https://api.github.com/repos/OreoCupcakes/kotori-plugins/git/commits/e2ccf8faa3684227fdb10f889c43aaddcbe06017",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/OreoCupcakes/kotori-plugins/commits/e2ccf8faa3684227fdb10f889c43aaddcbe06017",
+    "html_url": "https://github.com/OreoCupcakes/kotori-plugins/commit/e2ccf8faa3684227fdb10f889c43aaddcbe06017",
+    "comments_url": "https://api.github.com/repos/OreoCupcakes/kotori-plugins/commits/e2ccf8faa3684227fdb10f889c43aaddcbe06017/comments",
+    "author": {
+        "login": "OreoCupcakes",
+        "id": 24533841,
+        "node_id": "MDQ6VXNlcjI0NTMzODQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24533841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/OreoCupcakes",
+        "html_url": "https://github.com/OreoCupcakes",
+        "followers_url": "https://api.github.com/users/OreoCupcakes/followers",
+        "following_url": "https://api.github.com/users/OreoCupcakes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/OreoCupcakes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/OreoCupcakes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/OreoCupcakes/subscriptions",
+        "organizations_url": "https://api.github.com/users/OreoCupcakes/orgs",
+        "repos_url": "https://api.github.com/users/OreoCupcakes/repos",
+        "events_url": "https://api.github.com/users/OreoCupcakes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/OreoCupcakes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "OreoCupcakes",
+        "id": 24533841,
+        "node_id": "MDQ6VXNlcjI0NTMzODQx",
+        "avatar_url": "https://avatars.githubusercontent.com/u/24533841?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/OreoCupcakes",
+        "html_url": "https://github.com/OreoCupcakes",
+        "followers_url": "https://api.github.com/users/OreoCupcakes/followers",
+        "following_url": "https://api.github.com/users/OreoCupcakes/following{/other_user}",
+        "gists_url": "https://api.github.com/users/OreoCupcakes/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/OreoCupcakes/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/OreoCupcakes/subscriptions",
+        "organizations_url": "https://api.github.com/users/OreoCupcakes/orgs",
+        "repos_url": "https://api.github.com/users/OreoCupcakes/repos",
+        "events_url": "https://api.github.com/users/OreoCupcakes/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/OreoCupcakes/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "f184e1f3898a8e92f885df00ab77282794543c35",
+            "url": "https://api.github.com/repos/OreoCupcakes/kotori-plugins/commits/f184e1f3898a8e92f885df00ab77282794543c35",
+            "html_url": "https://github.com/OreoCupcakes/kotori-plugins/commit/f184e1f3898a8e92f885df00ab77282794543c35"
+        }
+    ],
+    "stats": {
+        "total": 6,
+        "additions": 3,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "f72045a0a161003f5855fb426ff19877598993d6",
+            "filename": "houseoverlay/src/main/java/com/theplug/kotori/houseoverlay/HouseOverlayPlugin.java",
+            "status": "modified",
+            "additions": 3,
+            "deletions": 3,
+            "changes": 6,
+            "blob_url": "https://github.com/OreoCupcakes/kotori-plugins/blob/e2ccf8faa3684227fdb10f889c43aaddcbe06017/houseoverlay%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheplug%2Fkotori%2Fhouseoverlay%2FHouseOverlayPlugin.java",
+            "raw_url": "https://github.com/OreoCupcakes/kotori-plugins/raw/e2ccf8faa3684227fdb10f889c43aaddcbe06017/houseoverlay%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheplug%2Fkotori%2Fhouseoverlay%2FHouseOverlayPlugin.java",
+            "contents_url": "https://api.github.com/repos/OreoCupcakes/kotori-plugins/contents/houseoverlay%2Fsrc%2Fmain%2Fjava%2Fcom%2Ftheplug%2Fkotori%2Fhouseoverlay%2FHouseOverlayPlugin.java?ref=e2ccf8faa3684227fdb10f889c43aaddcbe06017",
+            "patch": "@@ -278,8 +278,8 @@ private boolean isInHouse()\n     private void checkWeaponSlot()\n     {\n         ItemContainer itemContainer = client.getItemContainer(InventoryID.EQUIPMENT);\n-        \n-        int currentweapon = itemContainer.getItem(EquipmentInventorySlot.WEAPON.getSlotIdx()).getId();\n-        fairy_ring_has_staff = currentweapon == 772 || currentweapon == 9084;\n+        Item weaponItem = itemContainer == null ? null : itemContainer.getItem(EquipmentInventorySlot.WEAPON.getSlotIdx());\n+        int currentWeapon = weaponItem == null ? -1 : weaponItem.getId();\n+        fairy_ring_has_staff = currentWeapon == 772 || currentWeapon == 9084;\n     }\n }\n\\ No newline at end of file"
+        }
+    ]
+}

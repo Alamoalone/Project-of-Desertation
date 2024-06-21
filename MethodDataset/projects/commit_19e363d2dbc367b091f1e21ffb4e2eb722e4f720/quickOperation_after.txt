@@ -1,0 +1,13 @@
+    private static RendDynOperationNode quickOperation(QuickOperation _anaNode, Forwards _forwards) {
+        ClassMethodIdMemberIdTypeFct fct_ = _anaNode.getFct();
+        ExecTypeFunction pair_ = FetchMemberUtil.fetchFunctionOpPair(fct_, _forwards);
+        AnaOperatorContent cont_ = new AnaOperatorContent();
+        cont_.setOper(ForwardInfos.quickOperator(_anaNode));
+        cont_.setOpOffset(_anaNode.getOpOffset());
+        if (pair_.getFct() != null) {
+            RendExplicitOperatorOperation c_ = new RendExplicitOperatorOperation(new ExecOperationContent(_anaNode.getContent()), false, new ExecStaticFctContent(new ExecStaticFctCommonContent("", "", -1), new ExecStaticEltContent(fct_, _forwards)), pair_, new ExecOperatorContent(cont_), new ExecArrContent(false));
+            return updateConv(_forwards, c_, _anaNode);
+        }
+        RendQuickOperation c_ = new RendQuickOperation(new ExecOperationContent(_anaNode.getContent()), new ExecOperatorContent(cont_), new ExecOperDir(_anaNode.getSymbol()));
+        return updateConv(_forwards, c_, _anaNode);
+    }

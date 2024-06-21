@@ -1,0 +1,98 @@
+{
+    "sha": "8cb28e675f673c57924de3e7aa81fbab3f5c4ebb",
+    "node_id": "C_kwDOG64UPtoAKDhjYjI4ZTY3NWY2NzNjNTc5MjRkZTNlN2FhODFmYmFiM2Y1YzRlYmI",
+    "commit": {
+        "author": {
+            "name": "James Rudolph",
+            "email": "39609802+jamesrudolph@users.noreply.github.com",
+            "date": "2023-12-11T16:00:16Z"
+        },
+        "committer": {
+            "name": "James Rudolph",
+            "email": "39609802+jamesrudolph@users.noreply.github.com",
+            "date": "2023-12-11T16:00:16Z"
+        },
+        "message": "fix null pointer exception",
+        "tree": {
+            "sha": "a115a84035bef22e7c3a1de6dc4568ad55bb8245",
+            "url": "https://api.github.com/repos/AsyncTI4/TI4_map_generator_bot/git/trees/a115a84035bef22e7c3a1de6dc4568ad55bb8245"
+        },
+        "url": "https://api.github.com/repos/AsyncTI4/TI4_map_generator_bot/git/commits/8cb28e675f673c57924de3e7aa81fbab3f5c4ebb",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/AsyncTI4/TI4_map_generator_bot/commits/8cb28e675f673c57924de3e7aa81fbab3f5c4ebb",
+    "html_url": "https://github.com/AsyncTI4/TI4_map_generator_bot/commit/8cb28e675f673c57924de3e7aa81fbab3f5c4ebb",
+    "comments_url": "https://api.github.com/repos/AsyncTI4/TI4_map_generator_bot/commits/8cb28e675f673c57924de3e7aa81fbab3f5c4ebb/comments",
+    "author": {
+        "login": "jamesrudolph",
+        "id": 39609802,
+        "node_id": "MDQ6VXNlcjM5NjA5ODAy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39609802?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jamesrudolph",
+        "html_url": "https://github.com/jamesrudolph",
+        "followers_url": "https://api.github.com/users/jamesrudolph/followers",
+        "following_url": "https://api.github.com/users/jamesrudolph/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jamesrudolph/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jamesrudolph/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jamesrudolph/subscriptions",
+        "organizations_url": "https://api.github.com/users/jamesrudolph/orgs",
+        "repos_url": "https://api.github.com/users/jamesrudolph/repos",
+        "events_url": "https://api.github.com/users/jamesrudolph/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jamesrudolph/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "jamesrudolph",
+        "id": 39609802,
+        "node_id": "MDQ6VXNlcjM5NjA5ODAy",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39609802?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jamesrudolph",
+        "html_url": "https://github.com/jamesrudolph",
+        "followers_url": "https://api.github.com/users/jamesrudolph/followers",
+        "following_url": "https://api.github.com/users/jamesrudolph/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jamesrudolph/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jamesrudolph/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jamesrudolph/subscriptions",
+        "organizations_url": "https://api.github.com/users/jamesrudolph/orgs",
+        "repos_url": "https://api.github.com/users/jamesrudolph/repos",
+        "events_url": "https://api.github.com/users/jamesrudolph/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jamesrudolph/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "a98f0374f0ab45c9faf324738844816d971fd613",
+            "url": "https://api.github.com/repos/AsyncTI4/TI4_map_generator_bot/commits/a98f0374f0ab45c9faf324738844816d971fd613",
+            "html_url": "https://github.com/AsyncTI4/TI4_map_generator_bot/commit/a98f0374f0ab45c9faf324738844816d971fd613"
+        }
+    ],
+    "stats": {
+        "total": 21,
+        "additions": 7,
+        "deletions": 14
+    },
+    "files": [
+        {
+            "sha": "bb23fc0fae0a1247d0f037dbe7e8b175430ee258",
+            "filename": "src/main/java/ti4/map/Tile.java",
+            "status": "modified",
+            "additions": 7,
+            "deletions": 14,
+            "changes": 21,
+            "blob_url": "https://github.com/AsyncTI4/TI4_map_generator_bot/blob/8cb28e675f673c57924de3e7aa81fbab3f5c4ebb/src%2Fmain%2Fjava%2Fti4%2Fmap%2FTile.java",
+            "raw_url": "https://github.com/AsyncTI4/TI4_map_generator_bot/raw/8cb28e675f673c57924de3e7aa81fbab3f5c4ebb/src%2Fmain%2Fjava%2Fti4%2Fmap%2FTile.java",
+            "contents_url": "https://api.github.com/repos/AsyncTI4/TI4_map_generator_bot/contents/src%2Fmain%2Fjava%2Fti4%2Fmap%2FTile.java?ref=8cb28e675f673c57924de3e7aa81fbab3f5c4ebb",
+            "patch": "@@ -408,19 +408,9 @@ public boolean isGravityRift(Game activeGame) {\n \n     @JsonIgnore\n     public boolean hasCabalSpaceDockOrGravRiftToken() {\n-        for (UnitHolder unitHolder : getUnitHolders().values()) {\n-            Set<String> tokenList = unitHolder.getTokenList();\n-            if (CollectionUtils.containsAny(tokenList, \"token_gravityrift.png\")) {\n-                return true;\n-            }\n-            for (UnitKey unit : unitHolder.getUnits().keySet()) {\n-                if (unit.getUnitType() == UnitType.CabalSpacedock) {\n-                    return true;\n-                }\n-            }\n-        }\n-        return false;\n+        return hasCabalSpaceDockOrGravRiftToken(null);\n     }\n+\n     @JsonIgnore\n     public boolean hasCabalSpaceDockOrGravRiftToken(Game activeGame) {\n         for (UnitHolder unitHolder : getUnitHolders().values()) {\n@@ -432,8 +422,11 @@ public boolean hasCabalSpaceDockOrGravRiftToken(Game activeGame) {\n                 if (unit.getUnitType() == UnitType.CabalSpacedock) {\n                     return true;\n                 }\n-                 if (unit.getUnitType() == UnitType.Spacedock && (activeGame.getPlayerFromColorOrFaction(unit.getColor()).ownsUnit(\"cabal_spacedock\") || activeGame.getPlayerFromColorOrFaction(unit.getColor()).ownsUnit(\"cabal_spacedock2\"))) {\n-                    return true;\n+                if (activeGame != null) {\n+                    Player player = activeGame.getPlayerFromColorOrFaction(unit.getColor());\n+                    if (player != null && unit.getUnitType() == UnitType.Spacedock && (player.ownsUnit(\"cabal_spacedock\") || player.ownsUnit(\"cabal_spacedock2\"))) {\n+                        return true;\n+                    }\n                 }\n             }\n         }"
+        }
+    ]
+}

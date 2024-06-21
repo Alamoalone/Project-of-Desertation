@@ -1,0 +1,2 @@
+getOrdersLeftAfterGivenTimeByPartnerId(String time, String partnerId)
+getOrdersLeftAfterGivenTimeByPartnerId(int total, String partnerId)

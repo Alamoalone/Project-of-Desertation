@@ -1,0 +1,146 @@
+{
+    "sha": "e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+    "node_id": "C_kwDOJGoLutoAKGU5ZjBmZjk5OTYxNTA0ZGQ0NzYwYTY4Y2ZjYzY2OGMwZWFjMmFjOTQ",
+    "commit": {
+        "author": {
+            "name": "Braekpo1nt",
+            "email": "braekpo1ntofficial@gmail.com",
+            "date": "2023-05-12T17:23:16Z"
+        },
+        "committer": {
+            "name": "Braekpo1nt",
+            "email": "braekpo1ntofficial@gmail.com",
+            "date": "2023-05-12T17:23:16Z"
+        },
+        "message": "fixed null pointer exception",
+        "tree": {
+            "sha": "4367f03cef11fc2188f0f20aba905805177acc9e",
+            "url": "https://api.github.com/repos/Braekpo1nt/MCTManager/git/trees/4367f03cef11fc2188f0f20aba905805177acc9e"
+        },
+        "url": "https://api.github.com/repos/Braekpo1nt/MCTManager/git/commits/e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/Braekpo1nt/MCTManager/commits/e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+    "html_url": "https://github.com/Braekpo1nt/MCTManager/commit/e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+    "comments_url": "https://api.github.com/repos/Braekpo1nt/MCTManager/commits/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/comments",
+    "author": {
+        "login": "Braekpo1nt",
+        "id": 94723887,
+        "node_id": "U_kgDOBaVfLw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/94723887?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Braekpo1nt",
+        "html_url": "https://github.com/Braekpo1nt",
+        "followers_url": "https://api.github.com/users/Braekpo1nt/followers",
+        "following_url": "https://api.github.com/users/Braekpo1nt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Braekpo1nt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Braekpo1nt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Braekpo1nt/subscriptions",
+        "organizations_url": "https://api.github.com/users/Braekpo1nt/orgs",
+        "repos_url": "https://api.github.com/users/Braekpo1nt/repos",
+        "events_url": "https://api.github.com/users/Braekpo1nt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Braekpo1nt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "Braekpo1nt",
+        "id": 94723887,
+        "node_id": "U_kgDOBaVfLw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/94723887?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Braekpo1nt",
+        "html_url": "https://github.com/Braekpo1nt",
+        "followers_url": "https://api.github.com/users/Braekpo1nt/followers",
+        "following_url": "https://api.github.com/users/Braekpo1nt/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Braekpo1nt/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Braekpo1nt/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Braekpo1nt/subscriptions",
+        "organizations_url": "https://api.github.com/users/Braekpo1nt/orgs",
+        "repos_url": "https://api.github.com/users/Braekpo1nt/repos",
+        "events_url": "https://api.github.com/users/Braekpo1nt/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Braekpo1nt/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "1373eac543a3741ad8455bb1586d4fdce4e43787",
+            "url": "https://api.github.com/repos/Braekpo1nt/MCTManager/commits/1373eac543a3741ad8455bb1586d4fdce4e43787",
+            "html_url": "https://github.com/Braekpo1nt/MCTManager/commit/1373eac543a3741ad8455bb1586d4fdce4e43787"
+        }
+    ],
+    "stats": {
+        "total": 8,
+        "additions": 5,
+        "deletions": 3
+    },
+    "files": [
+        {
+            "sha": "49ee1d1f05085bcb565e7468e5d4451dc537e786",
+            "filename": "src/main/java/org/braekpo1nt/mctmanager/games/GameManager.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Braekpo1nt/MCTManager/blob/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2FGameManager.java",
+            "raw_url": "https://github.com/Braekpo1nt/MCTManager/raw/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2FGameManager.java",
+            "contents_url": "https://api.github.com/repos/Braekpo1nt/MCTManager/contents/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2FGameManager.java?ref=e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+            "patch": "@@ -223,7 +223,7 @@ public void manuallyStartVote(@NotNull CommandSender sender, List<MCTGames> voti\n      * Starts the voting phase for the event\n      */\n     public void startVote() {\n-        if (currentGameNumber < maxGames) {\n+        if (currentGameNumber > maxGames) {\n             eventMaster.sendMessage(Component.text(\"All games have been played. Initiating final game with top two teams.\"));\n             kickOffFinalGame();\n             return;"
+        },
+        {
+            "sha": "a7b2bd2fcb276f8a463af55f659dda61855488f1",
+            "filename": "src/main/java/org/braekpo1nt/mctmanager/games/finalgame/FinalGame.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Braekpo1nt/MCTManager/blob/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Ffinalgame%2FFinalGame.java",
+            "raw_url": "https://github.com/Braekpo1nt/MCTManager/raw/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Ffinalgame%2FFinalGame.java",
+            "contents_url": "https://api.github.com/repos/Braekpo1nt/MCTManager/contents/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Ffinalgame%2FFinalGame.java?ref=e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+            "patch": "@@ -231,7 +231,7 @@ private void finishFinalGame(String winningTeam) {\n         NamedTextColor teamColor = gameManager.getTeamNamedTextColor(winningTeam);\n         Bukkit.getServer().sendMessage(Component.empty()\n                 .append(gameManager.getFormattedTeamDisplayName(winningTeam))\n-                .append(Component.text(\" wins MCT #1!\"))\n+                .append(Component.text(\" wins MCT #2!\"))\n                 .color(teamColor)\n                 .decorate(TextDecoration.BOLD));\n         stop(winningTeam);"
+        },
+        {
+            "sha": "0bb94ccbf74b39bb928f01739e768d3b989e1cef",
+            "filename": "src/main/java/org/braekpo1nt/mctmanager/games/gamestate/GameState.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Braekpo1nt/MCTManager/blob/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Fgamestate%2FGameState.java",
+            "raw_url": "https://github.com/Braekpo1nt/MCTManager/raw/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Fgamestate%2FGameState.java",
+            "contents_url": "https://api.github.com/repos/Braekpo1nt/MCTManager/contents/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Fgamestate%2FGameState.java?ref=e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+            "patch": "@@ -16,6 +16,7 @@ public class GameState {\n     public GameState() {\n         this.players = new HashMap<>();\n         this.teams = new HashMap<>();\n+        this.playedGames = new ArrayList<>();\n     }\n     \n     /**"
+        },
+        {
+            "sha": "2e7b77d2e879c2769bfb1efa4ec15d0c02cde2bb",
+            "filename": "src/main/java/org/braekpo1nt/mctmanager/games/gamestate/GameStateStorageUtil.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 0,
+            "changes": 1,
+            "blob_url": "https://github.com/Braekpo1nt/MCTManager/blob/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Fgamestate%2FGameStateStorageUtil.java",
+            "raw_url": "https://github.com/Braekpo1nt/MCTManager/raw/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Fgamestate%2FGameStateStorageUtil.java",
+            "contents_url": "https://api.github.com/repos/Braekpo1nt/MCTManager/contents/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fgames%2Fgamestate%2FGameStateStorageUtil.java?ref=e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+            "patch": "@@ -12,6 +12,7 @@\n import org.bukkit.OfflinePlayer;\n import org.bukkit.scoreboard.Scoreboard;\n import org.bukkit.scoreboard.Team;\n+import org.jetbrains.annotations.Nullable;\n \n import java.io.*;\n import java.util.*;"
+        },
+        {
+            "sha": "c2313dd4296f9b5616e0d2733442362dffaecc6b",
+            "filename": "src/main/java/org/braekpo1nt/mctmanager/hub/HubManager.java",
+            "status": "modified",
+            "additions": 1,
+            "deletions": 1,
+            "changes": 2,
+            "blob_url": "https://github.com/Braekpo1nt/MCTManager/blob/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fhub%2FHubManager.java",
+            "raw_url": "https://github.com/Braekpo1nt/MCTManager/raw/e9f0ff99961504dd4760a68cfcc668c0eac2ac94/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fhub%2FHubManager.java",
+            "contents_url": "https://api.github.com/repos/Braekpo1nt/MCTManager/contents/src%2Fmain%2Fjava%2Forg%2Fbraekpo1nt%2Fmctmanager%2Fhub%2FHubManager.java?ref=e9f0ff99961504dd4760a68cfcc668c0eac2ac94",
+            "patch": "@@ -90,7 +90,7 @@ public void kickOffHubDelay() {\n             initializeHubDelayCountDown(participant, \"1:00\");\n         }\n         this.hubDelayTaskId = new BukkitRunnable() {\n-            int count = 60;\n+            int count = 20;\n             @Override\n             public void run() {\n                 if (count <= 0) {"
+        }
+    ]
+}

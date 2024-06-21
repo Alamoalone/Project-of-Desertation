@@ -1,0 +1,158 @@
+{
+    "sha": "a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+    "node_id": "C_kwDOKkHO5NoAKGE4YmZjNmI4NGNlYjRjYTA2OWU0M2E3YmMyOWFlMWMyNTUxZGUzMjU",
+    "commit": {
+        "author": {
+            "name": "Teyonna Tucker",
+            "email": "teyonna.tucker@proton.me",
+            "date": "2023-12-02T14:44:02Z"
+        },
+        "committer": {
+            "name": "Teyonna Tucker",
+            "email": "teyonna.tucker@proton.me",
+            "date": "2023-12-02T14:44:02Z"
+        },
+        "message": "I believe these are the changes to make the stat screen update but there is a null pointer exception error",
+        "tree": {
+            "sha": "a9d4b0f5ed33318256a675ff257f8e7d636524cc",
+            "url": "https://api.github.com/repos/murayeeto/Term-Project/git/trees/a9d4b0f5ed33318256a675ff257f8e7d636524cc"
+        },
+        "url": "https://api.github.com/repos/murayeeto/Term-Project/git/commits/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/murayeeto/Term-Project/commits/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+    "html_url": "https://github.com/murayeeto/Term-Project/commit/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+    "comments_url": "https://api.github.com/repos/murayeeto/Term-Project/commits/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/comments",
+    "author": {
+        "login": "TeyonnaTucker",
+        "id": 143749679,
+        "node_id": "U_kgDOCJFyLw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/143749679?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/TeyonnaTucker",
+        "html_url": "https://github.com/TeyonnaTucker",
+        "followers_url": "https://api.github.com/users/TeyonnaTucker/followers",
+        "following_url": "https://api.github.com/users/TeyonnaTucker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/TeyonnaTucker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/TeyonnaTucker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/TeyonnaTucker/subscriptions",
+        "organizations_url": "https://api.github.com/users/TeyonnaTucker/orgs",
+        "repos_url": "https://api.github.com/users/TeyonnaTucker/repos",
+        "events_url": "https://api.github.com/users/TeyonnaTucker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/TeyonnaTucker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "TeyonnaTucker",
+        "id": 143749679,
+        "node_id": "U_kgDOCJFyLw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/143749679?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/TeyonnaTucker",
+        "html_url": "https://github.com/TeyonnaTucker",
+        "followers_url": "https://api.github.com/users/TeyonnaTucker/followers",
+        "following_url": "https://api.github.com/users/TeyonnaTucker/following{/other_user}",
+        "gists_url": "https://api.github.com/users/TeyonnaTucker/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/TeyonnaTucker/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/TeyonnaTucker/subscriptions",
+        "organizations_url": "https://api.github.com/users/TeyonnaTucker/orgs",
+        "repos_url": "https://api.github.com/users/TeyonnaTucker/repos",
+        "events_url": "https://api.github.com/users/TeyonnaTucker/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/TeyonnaTucker/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "2fa8260649f13403349c506b0a6792b996f5cafc",
+            "url": "https://api.github.com/repos/murayeeto/Term-Project/commits/2fa8260649f13403349c506b0a6792b996f5cafc",
+            "html_url": "https://github.com/murayeeto/Term-Project/commit/2fa8260649f13403349c506b0a6792b996f5cafc"
+        }
+    ],
+    "stats": {
+        "total": 293,
+        "additions": 245,
+        "deletions": 48
+    },
+    "files": [
+        {
+            "sha": "e1859b4ee6a393e9ae5f9a4107c1c60a4c23893f",
+            "filename": "BankAccount.java",
+            "status": "modified",
+            "additions": 30,
+            "deletions": 11,
+            "changes": 41,
+            "blob_url": "https://github.com/murayeeto/Term-Project/blob/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/BankAccount.java",
+            "raw_url": "https://github.com/murayeeto/Term-Project/raw/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/BankAccount.java",
+            "contents_url": "https://api.github.com/repos/murayeeto/Term-Project/contents/BankAccount.java?ref=a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+            "patch": "@@ -10,7 +10,7 @@ public class BankAccount extends Actor\n {\n \n     private GreenfootImage bankaccountImage;\n-    private int balance;\n+    public static double balance;\n     // dont really need number\n \n     /**\n@@ -19,8 +19,8 @@ public class BankAccount extends Actor\n      */\n     \n     // creates a bank account image with a balance of 0\n-    public BankAccount(){\n-        balance = 0;\n+    public BankAccount(double balance){\n+        setBalance(balance);\n         Font font = new Font(true, false, 20);\n         bankaccountImage = new GreenfootImage(250, 50);\n         bankaccountImage.setColor(Color.BLACK);\n@@ -33,26 +33,45 @@ public BankAccount(){\n     // updates bank account image\n     public void act()\n     {\n+        \n         bankaccountImage.setColor(Color.BLACK);\n+        //updateBalance();\n         bankaccountImage.clear();\n-        bankaccountImage.drawString(\"Account Balance: \\n          $\"+balance, 0, 20);\n+        bankaccountImage.drawString(\"Account Balance: \\n         $\"+balance, 0, 20);\n         setImage(bankaccountImage);   \n     }\n     \n-    public void increaseBalance(int amount){\n-        this.balance = this.balance + amount;\n+    /*public void updateBalance(){\n+        this.balance = balance+character.getMoney();\n         \n         bankaccountImage.clear();\n-        bankaccountImage.drawString(\"Account Balance: \\n          $\"+ this.balance, 0, 20);\n+        bankaccountImage.drawString(\"Account Balance: \\n          $\"+ balance, 0, 20);\n         setImage(bankaccountImage);\n-    }\n-    \n-    public void decreaseBalance(int amount){\n-        this.balance = this.balance - amount;\n+    }*/\n+    /*public void updateBalance(){\n+        setBalance(character.getMoney());\n+        \n+        bankaccountImage.clear();\n+        bankaccountImage.drawString(\"Account Balance: \\n          $\"+ getBalance(), 0, 20);\n+        setImage(bankaccountImage);\n+    }*/\n+    /*\n+    public void decreaseBalance(double amount){\n+        this.balance = balance - amount;\n         \n         bankaccountImage.clear();\n         bankaccountImage.drawString(\"Account Balance: \\n          $\"+ this.balance, 0, 20);\n         setImage(bankaccountImage);\n+    }*/\n+    public double getBalance(){\n+        return balance;\n+    }\n+    public void setBalance(double balance){\n+        this.balance = balance;\n+    }\n+    \n+    public void updateBalance(double amount){\n+        balance += amount;\n     }\n }\n "
+        },
+        {
+            "sha": "71be968c9f1bc32c09e1f8738ffdb41fee4cfc2d",
+            "filename": "Character.java",
+            "status": "modified",
+            "additions": 29,
+            "deletions": 12,
+            "changes": 41,
+            "blob_url": "https://github.com/murayeeto/Term-Project/blob/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/Character.java",
+            "raw_url": "https://github.com/murayeeto/Term-Project/raw/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/Character.java",
+            "contents_url": "https://api.github.com/repos/murayeeto/Term-Project/contents/Character.java?ref=a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+            "patch": "@@ -13,17 +13,27 @@ public class Character extends Actor\n      * the 'Act' or 'Run' button gets pressed in the environment.\n      */\n     private int Age;\n-    private double StartingMoney = 0.0;\n-    private double Money;\n-    private int StartingCredit = 0;\n-    private int Credit;\n+    //public double StartingMoney = 0.0;\n+    //public static double Money;\n+    private BankAccount bankAccount;\n+    private CreditScore userScore;\n+    private Income income;\n+    //public int StartingCredit = 300;\n+    //public static int Credit;\n+    //private BankAccount bankAccount;\n+    //private CreditScore userCredit;\n     // Constructor\n     public Character() {\n         Age = 18;\n-        Money = StartingMoney;\n-        Credit = StartingCredit;\n+        bankAccount = new BankAccount(100);\n+        userScore = new CreditScore(300);\n+        \n+        //Money = StartingMoney;\n+        //Credit = StartingCredit;\n         String name = NameInput.getName();\n         String career = CareerInput.getCareer();\n+        //bankAccount.setBalance(this.Money);\n+        //userCredit.setScoreNumber(this.Credit);\n \n     }\n     \n@@ -32,21 +42,28 @@ public int getAge() {\n         return Age;\n     }\n \n-    public double getMoney() {\n-        return Money;\n+    public double getBalance() {\n+        return bankAccount.getBalance();\n+    }\n+    \n+    public BankAccount getBankAccount(){\n+        return bankAccount;\n     }\n \n     public int getCredit() {\n-        return Credit;\n+        return userScore.getScoreNumber();\n     }\n     \n+    public CreditScore getUserScore(){\n+        return userScore;\n+    }\n     //setters\n-    public void setCredit(int Credit) {\n-        this.Credit = Credit;\n+    public void setCredit(int credit) {\n+        userScore.setScoreNumber(credit);\n     }\n \n     public void setMoney(double Money) {\n-        this.Money = Money;\n+        bankAccount.setBalance(Money);\n     }\n     \n     public void setAge(int Age) {"
+        },
+        {
+            "sha": "130aa5a27118ecfab59009a73684ad19894776c8",
+            "filename": "CharacterIcon.java",
+            "status": "modified",
+            "additions": 5,
+            "deletions": 1,
+            "changes": 6,
+            "blob_url": "https://github.com/murayeeto/Term-Project/blob/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/CharacterIcon.java",
+            "raw_url": "https://github.com/murayeeto/Term-Project/raw/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/CharacterIcon.java",
+            "contents_url": "https://api.github.com/repos/murayeeto/Term-Project/contents/CharacterIcon.java?ref=a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+            "patch": "@@ -9,6 +9,10 @@\n \n public class CharacterIcon extends Actor\n {\n+    private Character character;\n+    //private BankAccount bankAccount;\n+    //private CreditScore userCredit;\n+    //private Income income;\n     /**\n      * Act - do whatever the PreviousArrow wants to do. This method is called whenever\n      * the 'Act' or 'Run' button gets pressed in the environment.\n@@ -23,7 +27,7 @@ public void act(){\n         boolean clicked = Greenfoot.mouseClicked(this);\n         if (clicked){\n             //Need to change the world to the actual game world\n-           Greenfoot.setWorld(new MyWorld());\n+           Greenfoot.setWorld(new StatScreen(character));\n         }\n     }\n }"
+        },
+        {
+            "sha": "3258763d1993f37debc342b00beefc768dd0ffe4",
+            "filename": "CreditScore.java",
+            "status": "modified",
+            "additions": 24,
+            "deletions": 14,
+            "changes": 38,
+            "blob_url": "https://github.com/murayeeto/Term-Project/blob/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/CreditScore.java",
+            "raw_url": "https://github.com/murayeeto/Term-Project/raw/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/CreditScore.java",
+            "contents_url": "https://api.github.com/repos/murayeeto/Term-Project/contents/CreditScore.java?ref=a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+            "patch": "@@ -11,15 +11,18 @@\n public class CreditScore extends Actor\n {\n     private GreenfootImage creditscoreImage;\n-    private int scoreNumber;\n+    public static int scoreNumber;\n+    //private Character character;\n+    //private int current_score = character.getCredit();\n+    \n     \n     /**\n      * Act - do whatever the CreditScore wants to do. This method is called whenever\n      * the 'Act' or 'Run' button gets pressed in the environment.\n      */\n     //creates credit score image with a value of 300\n-    public CreditScore(){\n-        scoreNumber = 300;\n+    public CreditScore(int scoreNumber){\n+        setScoreNumber(300);\n         Font font = new Font(true, false, 20);\n         creditscoreImage = new GreenfootImage(250, 50);\n         creditscoreImage.setColor(getColor());\n@@ -28,11 +31,14 @@ public CreditScore(){\n         setImage(creditscoreImage);\n     }\n     \n-    public CreditScore(int scoreNumber)\n+    /*public CreditScore(int scoreNumber)\n     {\n-      this.scoreNumber = scoreNumber;  \n-    }\n-    \n+      setScoreNumber(scoreNumber);  \n+    }*/\n+    /*\n+    public CreditScore(CreditScore userCredit){\n+        scoreNumber = userCredit.scoreNumber;\n+    }*/\n     \n     //updates new credit score image with a new score\n     //updates the font color to the value in the getColor method\n@@ -48,22 +54,19 @@ public void act()\n     \n     // method that returns a color based on the scoreNumber value\n     private Color getColor(){\n-        if (300<=scoreNumber && scoreNumber<=579){\n+        if (300<=scoreNumber && scoreNumber<=629){\n             return Color.RED;    \n         }\n-        else if (580<=scoreNumber && scoreNumber<=669){\n+        else if (630<=scoreNumber && scoreNumber<=689){\n             return Color.ORANGE;\n         }\n-        else if (670<=scoreNumber && scoreNumber<=739){\n+        else if (690<=scoreNumber && scoreNumber<=719){\n             return Color.YELLOW;\n         }\n-        else if (740<=scoreNumber && scoreNumber<=799){\n-            return Color.BLUE;\n-        }\n         return Color.GREEN;\n     }\n     \n-    public void increaseScoreNumber(int amount){\n+    /*public void increaseScoreNumber(int amount){\n         this.scoreNumber = this.scoreNumber + amount;\n         \n         creditscoreImage.clear();\n@@ -78,6 +81,13 @@ public void decreaseScoreNumber(int amount){\n         creditscoreImage.clear();\n         creditscoreImage.drawString(\"Credit Score: \\n      \"+ this.scoreNumber, 0, 20);\n         setImage(creditscoreImage);\n+    }*/\n+    public int getScoreNumber(){\n+        return scoreNumber;\n+    }\n+    \n+    public void setScoreNumber(int scoreNumber){\n+        this.scoreNumber = scoreNumber;\n     }\n     \n }\n\\ No newline at end of file"
+        },
+        {
+            "sha": "f3461588d65dcf76dc081f1484151f59275fc7d6",
+            "filename": "MoneyEvent.java",
+            "status": "modified",
+            "additions": 84,
+            "deletions": 10,
+            "changes": 94,
+            "blob_url": "https://github.com/murayeeto/Term-Project/blob/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/MoneyEvent.java",
+            "raw_url": "https://github.com/murayeeto/Term-Project/raw/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/MoneyEvent.java",
+            "contents_url": "https://api.github.com/repos/murayeeto/Term-Project/contents/MoneyEvent.java?ref=a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+            "patch": "@@ -15,19 +15,93 @@ public MoneyEvent(int choice) {\n                 setDescription(\"use getDescription() to retrieve whatevre the constructors message is or just set it to something new with the setter method\" + \"10.00$\"); \n                 break;\n             case 1:\n-                setDescription(\"test 2 \" + \"+ 15.00$\"); \n-                setEventMoney(15.00);\n+                setDescription(\"You got paid \\nBalance: +$1523.67\"); \n+                setEventMoney(1523.67);\n+                setEventCredit(0);\n                 break;\n             case 2:\n-                setDescription(\"test 3 \" + \"+ 30.00$\" + \"+ 20 to your credit score\"); \n-                setEventMoney(30.00);\n-                setEventCredit(10);\n-                break;\n-                \n+                setDescription(\"You were approved for a car loan\\n Credit Score:-30\");\n+                setEventMoney(0);\n+                setEventCredit(-30);\n             case 3:\n-                setDescription(\"HELLO!!!! \" + \"+ 202103981298309123.00$\" + \"+ 20 to your credit score\"); \n-                setEventMoney(202103981298309123.00);\n-                setEventCredit(10);\n+                setDescription(\"You got a bonus\\nBalance: +$1000 \"); \n+                setEventMoney(1000);\n+                setEventCredit(0);\n+                break;\n+            case 4:\n+                setDescription(\"You receive interest\\nBalance: +$5 \"); \n+                setEventMoney(5);\n+                setEventCredit(0);\n+                break;\n+            case 5:\n+                setDescription(\"You got a loan for college\\n Credit Score:-25 \"); \n+                setEventMoney(0);\n+                setEventCredit(-25);\n+                break;\n+            case 6:\n+                setDescription(\"You had a medical expense\\n Balance: -$400 \"); \n+                setEventMoney(400);\n+                setEventCredit(0);\n+                break;\n+            case 7:\n+                setDescription(\"You missed work\\n Balance: +$1200.98 \"); \n+                setEventMoney(1200.98);\n+                setEventCredit(0);\n+                break;\n+            case 8:\n+                setDescription(\"You paid car insurance\\n Balance: -$50.32 \"); \n+                setEventMoney(-50.32);\n+                setEventCredit(0);\n+                break;\n+            case 9:\n+                setDescription(\"You paid health insurance\\n Balance:-$125.25 \"); \n+                setEventMoney(-125.25);\n+                setEventCredit(0);\n+                break;\n+            case 10:\n+                setDescription(\"You got a credit card\\n Credit Score:-20\"); \n+                setEventMoney(0);\n+                setEventCredit(-20);\n+                break;\n+            case 11:\n+                setDescription(\"You paid your credit card balance\\n Credit Score:+20 \"); \n+                setEventMoney(0);\n+                setEventCredit(20);\n+                break;\n+            case 12:\n+                setDescription(\"You have not missed any payments\\n Credit Score:+5 \"); \n+                setEventMoney(0);\n+                setEventCredit(15);\n+                break;\n+            case 13:\n+                setDescription(\"You made a lump sum payment on your loan\\n Credit Score:+10 \"); \n+                setEventMoney(0);\n+                setEventCredit(40);\n+                break;\n+            case 14:\n+                setDescription(\"You became an authorized user on a credit card\\n Credit Score:+12 \"); \n+                setEventMoney(0);\n+                setEventCredit(20);\n+                break;\n+            case 15:\n+                setDescription(\"Your credit limit increased \\n Credit Score:+20 \"); \n+                setEventMoney(0);\n+                setEventCredit(20);\n+                break;\n+            case 16:\n+                setDescription(\"You missed a car payment \\n Credit Score:-30 \"); \n+                setEventMoney(0);\n+                setEventCredit(-20);\n+                break;\n+            case 17:\n+                setDescription(\"You missed a credit card Payment \\n Credit Score:-20 \"); \n+                setEventMoney(0);\n+                setEventCredit(-20);\n+                break;\n+            case 18:\n+                setDescription(\"You missed your rent payment \\n Credit Score:-20 \"); \n+                setEventMoney(0);\n+                setEventCredit(-20);\n                 break;\n         }\n     }"
+        },
+        {
+            "sha": "c42109d4866f8660e7fb55b5164346012e21aaa5",
+            "filename": "StatScreen.java",
+            "status": "added",
+            "additions": 73,
+            "deletions": 0,
+            "changes": 73,
+            "blob_url": "https://github.com/murayeeto/Term-Project/blob/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/StatScreen.java",
+            "raw_url": "https://github.com/murayeeto/Term-Project/raw/a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325/StatScreen.java",
+            "contents_url": "https://api.github.com/repos/murayeeto/Term-Project/contents/StatScreen.java?ref=a8bfc6b84ceb4ca069e43a7bc29ae1c2551de325",
+            "patch": "@@ -0,0 +1,73 @@\n+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)\n+import greenfoot.GreenfootImage;\n+\n+/**\n+ * Write a description of class MyWorld here.\n+ * \n+ * @author (your name) \n+ * @version (a version number or a date)\n+ */\n+public class StatScreen extends World\n+{\n+    private Character character;\n+    //private BankAccount bankAccount;\n+    //private CreditScore userCredit;\n+    //private Income income;\n+    /**\n+     * Constructor for objects of class MyWorld.\n+     * \n+     */\n+    //creates a new world that uses the spawn method\n+    //Character character, BankAccount balance, CreditScore scoreNumber, Income income\n+    \n+    public StatScreen(Character character)\n+    {    \n+        // Create a new world with 500x510 cells with a cell size of 1x1 pixels.\n+        //super(500, 510, 1); \n+        \n+        super(600, 400, 1); \n+        \n+        setBackground(\"images/Backgrounds/cityandtown.PNG\");\n+        this.character = character;\n+        //this.bankAccount = bankAccount;\n+        //this.userCredit = userCredit;\n+        //this.income = income;\n+        spawn();\n+        \n+    }\n+\n+    //creates objects in the world and sets their x and y values\n+    \n+    private void spawn() {\n+        PhoneScreen phone = new PhoneScreen();\n+        addObject(phone,310,195);\n+        StatScreenTitle statTitle = new StatScreenTitle();\n+        \n+        //addObject(statTitle,310,70);\n+        //addObject(bankAccount,350,140);\n+        //addObject(bankAccount(character.getMoney()),350,140);\n+        addObject(character.getBankAccount(),350,140);\n+        addObject(character.getUserScore(),370,300);\n+        \n+        Income income = new Income();\n+        addObject(income,390,220); \n+        \n+        //addObject(userCredit,370,300);\n+        ContinueArrow goBack = new ContinueArrow();\n+        goBack.setImage(\"images/icons/cont_prevArrow.PNG\");\n+        goBack.getImage().scale(80,50);\n+        addObject(goBack, 50, 50);\n+        \n+        if (Greenfoot.mouseClicked(goBack)){\n+            Greenfoot.setWorld(new GameScreen());\n+        }\n+        \n+    }\n+    //spawns the objects if there is less than one object.\n+    public void act(){\n+        if (numberOfObjects()<1){\n+            spawn();\n+        }\n+        \n+    }\n+}"
+        }
+    ]
+}

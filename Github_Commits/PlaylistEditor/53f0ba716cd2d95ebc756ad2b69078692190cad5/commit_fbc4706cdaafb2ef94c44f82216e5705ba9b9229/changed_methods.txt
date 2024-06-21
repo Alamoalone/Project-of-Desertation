@@ -1,0 +1,8 @@
+getTitle()
+getAlbum()
+getArtist()
+isSelected()
+getFileName()
+getFilePath()
+setSelected(boolean selected)
+resizeImageSmooth(Image image, int width, int height)

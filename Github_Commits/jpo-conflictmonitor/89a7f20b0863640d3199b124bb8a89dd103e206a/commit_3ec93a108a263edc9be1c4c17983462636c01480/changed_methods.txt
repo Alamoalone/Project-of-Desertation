@@ -1,0 +1,1 @@
+state(ZonedDateTime maxTime, ZonedDateTime minTime, J2735MovementPhaseState eventState, Integer signalGroup)

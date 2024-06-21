@@ -1,0 +1,31 @@
+  public static MoviePostPutDTO addMovie(MoviePostPutDTO movieDTO) throws Exception {
+    EntityManager em = MariaDB.getEntityManager();
+    try {
+      em.getTransaction().begin();
+
+      StoredProcedureQuery query = em.createStoredProcedureQuery("add_movie")
+              .registerStoredProcedureParameter("title", String.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("release_date", java.sql.Date.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("description", String.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("daily_rental_price", java.math.BigDecimal.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("purchase_price", java.math.BigDecimal.class, ParameterMode.IN)
+              .registerStoredProcedureParameter("link", String.class, ParameterMode.IN)
+              .setParameter("title", movieDTO.getTitle())
+              .setParameter("release_date", movieDTO.getRelease_date())
+              .setParameter("description", movieDTO.getDescription())
+              .setParameter("daily_rental_price", movieDTO.getDaily_rental_price())
+              .setParameter("purchase_price", movieDTO.getPurchase_price())
+              .setParameter("link", movieDTO.getLink());
+
+      query.execute();
+      em.getTransaction().commit();
+      return movieDTO;
+    } catch (PersistenceException e) {
+      if (em.getTransaction().isActive()) {
+        em.getTransaction().rollback();
+      }
+      throw new Exception(e.getCause().getCause().getMessage());
+    } finally {
+      em.close();
+    }
+  }
