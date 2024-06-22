@@ -26,7 +26,7 @@ Our experimental output includes the following information:
 ### Experimental Run
 We conducted experiments on 1000 Java code examples and followed these steps:
 - Used multiple LLM models (LLAMA2, LLAMA3, LLAMA3 (70B), CodeLlama, Phi2, Gemma).
-- Fine-tuning: Used litgpt to fine-tune the Phi2 model at the method level. We used 500 examples for fine-tuning and then ran the remaining 500 examples.
+- Fine-tuning: Used litgpt to fine-tune the Phi2 model at the method level. We used 555 examples for fine-tuning and then ran the remaining 555 examples.
 
 ## Installation Guide
 Follow these steps to set up your development environment:
