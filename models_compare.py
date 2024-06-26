@@ -4,10 +4,10 @@ from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_sc
 
 # Function to compute metrics
 def compute_metrics(df, model_prefix, column):
-    # y_true = df[f'has NPE_{model_prefix}'].map({'Y': 1, 'N': 0, 'UN': 0}).values
-    # y_pred = df[column].apply(lambda x: 1 if 'after' in x else 0).values
-    y_true = df[column].apply(lambda x: 1 if 'before' in x else 0).values
     y_pred = df[f'has NPE_{model_prefix}'].map({'Y': 1, 'N': 0, 'UN': 0}).values
+    y_true = df[column].apply(lambda x: 0 if 'after' in x else (1 if 'before' in x else 0)).values
+    # y_true = df[column].apply(lambda x: 1 if 'before' in x else 0).values
+    # y_pred = df[f'has NPE_{model_prefix}'].map({'Y': 1, 'N': 0, 'UN': 0}).values
     
     precision = precision_score(y_true, y_pred, zero_division=1)
     recall = recall_score(y_true, y_pred, zero_division=1)
@@ -22,30 +22,30 @@ def compute_metrics(df, model_prefix, column):
     return precision, recall, f1, accuracy, false_positive_rate
 
 # Function to process each model's data
-def process_model_data(methods_d, file_df, code_df, model_prefix):
-    methods_metrics = compute_metrics(methods_d, model_prefix, 'before/after function')
+def process_model_data(method_d, file_df, code_df, model_prefix):
+    method_metrics = compute_metrics(method_d, model_prefix, 'before/after file')
     file_metrics = compute_metrics(file_df, model_prefix, 'before/after file')
     code_metrics = compute_metrics(code_df, model_prefix, 'before/after file')
     
     return {
-        f'{model_prefix}_Methods': methods_metrics,
-        f'{model_prefix}_Files': file_metrics,
+        f'{model_prefix}_Method': method_metrics,
+        f'{model_prefix}_File': file_metrics,
         f'{model_prefix}_Code': code_metrics
     }
 
 def main():
     # Load the merged results
-    merged_methods_df = pd.read_excel('merged_model_results.xlsx', sheet_name='Methods')
-    merged_file_df = pd.read_excel('merged_model_results.xlsx', sheet_name='Files')
-    merged_code_df = pd.read_excel('merged_model_results.xlsx', sheet_name='Code')
+    merged_method_df = pd.read_excel('Sheet/merged_model_results.xlsx', sheet_name='Method')
+    merged_file_df = pd.read_excel('Sheet/merged_model_results.xlsx', sheet_name='File')
+    merged_code_df = pd.read_excel('Sheet/merged_model_results.xlsx', sheet_name='Code')
 
     # Process data for each model
-    llama2_metrics = process_model_data(merged_methods_df, merged_file_df, merged_code_df, 'llama2')
-    llama3_metrics = process_model_data(merged_methods_df, merged_file_df, merged_code_df, 'llama3')
-    codellama_metrics = process_model_data(merged_methods_df, merged_file_df, merged_code_df, 'codellama')
-    llama3_70B_metrics = process_model_data(merged_methods_df, merged_file_df, merged_code_df, 'llama3_70B')
-    gemma_metrics = process_model_data(merged_methods_df, merged_file_df, merged_code_df, 'gemma')
-    phi2_metrics = process_model_data(merged_methods_df, merged_file_df, merged_code_df, 'phi2')
+    llama2_metrics = process_model_data(merged_method_df, merged_file_df, merged_code_df, 'llama2')
+    llama3_metrics = process_model_data(merged_method_df, merged_file_df, merged_code_df, 'llama3')
+    codellama_metrics = process_model_data(merged_method_df, merged_file_df, merged_code_df, 'codellama')
+    llama3_70B_metrics = process_model_data(merged_method_df, merged_file_df, merged_code_df, 'llama3_70B')
+    gemma_metrics = process_model_data(merged_method_df, merged_file_df, merged_code_df, 'gemma')
+    phi2_metrics = process_model_data(merged_method_df, merged_file_df, merged_code_df, 'phi2')
 
     # Combine metrics into a single DataFrame
     combined_metrics = {**llama2_metrics, **llama3_metrics, **codellama_metrics, **llama3_70B_metrics, **gemma_metrics, **phi2_metrics}

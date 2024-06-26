@@ -9,21 +9,21 @@ def count_agreements(df):
     return total, agreements, disagreements
 
 # Load the merged results
-merged_methods_df = pd.read_excel('merged_model_results.xlsx', sheet_name='Methods')
-merged_file_df = pd.read_excel('merged_model_results.xlsx', sheet_name='Files')
-merged_code_df = pd.read_excel('merged_model_results.xlsx', sheet_name='Code')
+merged_method_df = pd.read_excel('Sheet/merged_model_results.xlsx', sheet_name='Method')
+merged_file_df = pd.read_excel('Sheet/merged_model_results.xlsx', sheet_name='File')
+merged_code_df = pd.read_excel('Sheet/merged_model_results.xlsx', sheet_name='Code')
 
 # Count agreements and disagreements for each dataset
-methods_total, methods_agreements, methods_disagreements = count_agreements(merged_methods_df)
+method_total, method_agreements, method_disagreements = count_agreements(merged_method_df)
 file_total, file_agreements, file_disagreements = count_agreements(merged_file_df)
 code_total, code_agreements, code_disagreements = count_agreements(merged_code_df)
 
 # Create a summary DataFrame
 summary_df = pd.DataFrame({
-    'Dataset': ['Methods', 'Files', 'Code'],
-    'Total': [methods_total, file_total, code_total],
-    'Agreements': [methods_agreements, file_agreements, code_agreements],
-    'Disagreements': [methods_disagreements, file_disagreements, code_disagreements]
+    'Dataset': ['Method', 'File', 'Code'],
+    'Total': [method_total, file_total, code_total],
+    'Agreements': [method_agreements, file_agreements, code_agreements],
+    'Disagreements': [method_disagreements, file_disagreements, code_disagreements]
 })
 
 # Display the summary
