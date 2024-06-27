@@ -32,8 +32,8 @@ def process_npe_data_with_files(method_data, file_data):
 
             # Handle case when there's only one function group
             repo_name = sub_group['Repo name'].values[0]
-            commit_url = sub_group['commit url'].values[0]
-            message = sub_group['message'].values[0]
+            # commit_url = sub_group['commit url'].values[0]
+            # message = sub_group['message'].values[0]
 
             # Append the result with additional required columns
             result_rows.append({
@@ -41,8 +41,8 @@ def process_npe_data_with_files(method_data, file_data):
                 'commit hash': commit,
                 'before/after file': file_content_combined,
                 'has NPE': has_npe,
-                'commit url': commit_url,
-                'message': message
+                # 'commit url': commit_url,
+                # 'message': message
             })
         
         if not processed:
