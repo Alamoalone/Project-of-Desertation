@@ -4,10 +4,15 @@ from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_sc
 
 # Function to compute metrics
 def compute_metrics(df, column):
-    # y_true = df[f'has NPE_{model_prefix}'].map({'Y': 1, 'N': 0, 'UN': 0}).values
-    # y_pred = df[column].apply(lambda x: 1 if 'after' in x else 0).values
-    y_true = df[column].apply(lambda x: 1 if 'before' in x else 0).values
-    y_pred = df[f'has NPE'].map({'Y': 1, 'N': 0, 'UN': 0}).values
+    y_pred = df['has NPE'].map({'Y': 1, 'N': 0, 'UN': 0}).values
+    y_true = df[column].apply(lambda x: 0 if 'after' in x else (1 if 'before' in x else 0)).values
+    # y_true = df[column].apply(lambda x: 1 if 'before' in x else 0).values
+    # y_pred = df['has NPE'].map({'Y': 1, 'N': 0, 'UN': 0}).values
+
+    # Filter out UN tags
+    valid_indices = df['has NPE'].map({'Y': True, 'N': True, 'UN': False}).values
+    y_true = y_true[valid_indices]
+    y_pred = y_pred[valid_indices]
     
     precision = precision_score(y_true, y_pred, zero_division=1)
     recall = recall_score(y_true, y_pred, zero_division=1)

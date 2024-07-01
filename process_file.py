@@ -207,6 +207,21 @@ def build_new_sheet(output_filename, isGenerateFunction):
     df.to_excel(output_filename, index=False, engine='openpyxl')
     print(f"Spreadsheet '{output_filename}' has been created because it did not exist.")
 
+def remove_empty_folders(folder):
+    for root, dirs, files in os.walk(folder, topdown=False):
+        for name in dirs:
+            current_dir = os.path.join(root, name)
+            if not os.listdir(current_dir):
+                print(f"Deleting empty folder: {current_dir}")
+                os.rmdir(current_dir)
+    
+    for root, dirs, files in os.walk(folder):
+        for name in dirs:
+            current_dir = os.path.join(root, name)
+            if not os.listdir(current_dir):
+                print(f"Deleting empty folder: {current_dir}")
+                os.rmdir(current_dir)
+
 def str2bool(v):
     if isinstance(v, bool):
        return v
@@ -226,7 +241,7 @@ def main():
     parser.add_argument('isGenerateFunction', type=str2bool, help='Flag to determine method of file generation')
     args = parser.parse_args()
     traverse_and_compare(args.github_commits_dir, args.output_filename, args.output_folder, args.isGenerateFunction)
-
+    remove_empty_folders(args.output_folder)
 if __name__ == "__main__":
     main()
 
