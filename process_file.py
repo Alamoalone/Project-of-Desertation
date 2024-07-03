@@ -242,6 +242,7 @@ def main():
     args = parser.parse_args()
     traverse_and_compare(args.github_commits_dir, args.output_filename, args.output_folder, args.isGenerateFunction)
     remove_empty_folders(args.output_folder)
+
 if __name__ == "__main__":
     main()
 

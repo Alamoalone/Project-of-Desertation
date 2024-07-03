@@ -65,8 +65,8 @@ def plot_metrics(metrics_fine_tuned, metrics_non_fine_tuned, model_name):
 
 def main():
     # Load data
-    df_fine_tuned = pd.read_excel('Sheet/method_after.xlsx', engine='openpyxl')
-    df_non_fine_tuned = pd.read_excel('Sheet/phi_method_sheet.xlsx', engine='openpyxl')
+    df_fine_tuned = pd.read_excel('Sheet/file_valid.xlsx', engine='openpyxl')
+    df_non_fine_tuned = pd.read_excel('Sheet/phi_file_sheet.xlsx', engine='openpyxl')
     
     # List of models to evaluate
     model = 'Phi2'

@@ -27,7 +27,9 @@ def load_and_process_files(base_dir):
             for sub_commit_dir in os.listdir(repository_folder):
                 clean_commit_str = sub_commit_dir.replace("commit_", "")
                 commit_sha_folder = os.path.join(repository_folder, sub_commit_dir)
-                if os.path.isdir(commit_sha_folder):                        
+                if os.path.isdir(commit_sha_folder):
+                    if len(os.listdir(commit_sha_folder)) != 2:
+                            continue                        
                     for file in os.listdir(commit_sha_folder):
                         file_path = os.path.join(commit_sha_folder, file)
                         file_content = read_file(file_path)
