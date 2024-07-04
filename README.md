@@ -5,28 +5,44 @@
 ## Project Overview
 This project aims to detect null pointer exceptions (NPE) in code using various large language models (LLM). We used multiple models including LLAMA2, LLAMA3 (70B), CodeLlama, Phi2, and Gemma, and conducted experiments and fine-tuning on a set of Java code examples.
 
-## Experimental Setup
-### Output Table
-Our experimental output includes the following information:
-- Commit hash for each commit
-- Function name
-- Whether there is an NPE before and after the URL
-- Changes before and after the commit URL
+## Workflow
 
-### Experimental Steps
-1. **Function Level Detection**:
-   For each function changed in a commit, ask the LLM if it contains an NPE.
-   
-2. **Method Level Detection**:
-   For each commit, give all changed methods to the LLM and ask if any contains an NPE.
+### Overall Plan
 
-3. **File Level Detection**:
-   For each changed Java file, give the file to the LLM and ask if any method in the file could produce an NPE.
+This project focuses on detecting Null Pointer Exceptions (NPEs) using Large Language Models (LLMs) through two main directions:
 
-### Experimental Run
-We conducted experiments on 1000 Java code examples and followed these steps:
-- Used multiple LLM models (LLAMA2, LLAMA3, LLAMA3 (70B), CodeLlama, Phi2, Gemma).
-- Fine-tuning: Used litgpt to fine-tune the Phi2 model at the method level. We used 555 examples for fine-tuning and then ran the remaining 555 examples.
+1. **Performance Comparison of Non-Finetuned LLMs:** Compare the performance of unfine-tuned LLMs (LLAMA2, LLAMA3, LLAMA3 (70B), CodeLlama, Phi2, Gemma) in NPE detection using various evaluation metrics.
+
+2. **LoRA Fine-Tuning and Performance Comparison:** Select and fine-tune one LLM model using the Low Rank Adaptation (LoRA) technique, comparing its performance before and after fine-tuning.
+
+### Data Collection
+
+**Data Source:** GitHub is used to collect real-world Java code data for training and testing LLMs.
+
+**Dataset Creation:** Three distinct test sets are created to evaluate model generalization across different repositories, ensuring robustness of test results.
+
+## Experimental Methods
+
+### Data Collection
+
+GitHub serves as the primary source, providing diverse and representative datasets crucial for model training and evaluation.
+
+### Data Selection
+
+Supervised learning approach selects data where NPEs exist pre-repair and are resolved post-repair, ensuring effective model training.
+
+### Datasets Creation
+
+Data undergoes parsing and cleaning with javalang, ensuring only valid code fragments are used. The dataset is categorized into MethodDataset and FileDataset for method and file-level analysis.
+
+### Obtaining Non-Finetuned LLM Results with the Ollama LLM Library
+
+**Ollama LLM Library:** Utilized to access pre-trained LLM models (LLAMA2, LLAMA3, etc.) for performance evaluation without local deployment complexities.
+
+### Phi2 Model Fine-Tuning on Google Colab using the Litgpt Library
+
+**Litgpt Library:** Used on Google Colab for Phi2 model fine-tuning, employing LoRA technology to optimize model performance efficiently.
+
 
 ## Installation Guide
 Follow these steps to set up your development environment:
