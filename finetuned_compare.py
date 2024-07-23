@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix, roc_curve, roc_auc_score
 
 # Function to compute metrics
 def compute_metrics(df, column):
@@ -24,7 +24,11 @@ def compute_metrics(df, column):
     tn = cm[0][0]
     false_positive_rate = fp / (fp + tn)
     
-    return precision, recall, f1, accuracy, false_positive_rate
+    # Calculate ROC and AUC
+    fpr, tpr, thresholds = roc_curve(y_true, y_pred)
+    auc = roc_auc_score(y_true, y_pred)
+
+    return precision, recall, f1, accuracy, false_positive_rate, fpr, tpr, auc
 
 # Function to plot metrics
 def plot_metrics(metrics_fine_tuned, metrics_non_fine_tuned, model_name):
@@ -63,6 +67,22 @@ def plot_metrics(metrics_fine_tuned, metrics_non_fine_tuned, model_name):
     plt.legend()
     plt.show()
 
+# Function to plot ROC curves
+def plot_roc_curve(fpr_fine_tuned, tpr_fine_tuned, auc_fine_tuned, fpr_non_fine_tuned, tpr_non_fine_tuned, auc_non_fine_tuned, model_name):
+    plt.figure(figsize=(12, 6))
+    plt.plot(fpr_fine_tuned, tpr_fine_tuned, color='blue', lw=2, label=f'Fine-tuned (AUC = {auc_fine_tuned:.2f})')
+    plt.plot(fpr_non_fine_tuned, tpr_non_fine_tuned, color='orange', lw=2, label=f'Non Fine-tuned (AUC = {auc_non_fine_tuned:.2f})')
+    plt.plot([0, 1], [0, 1], color='gray', lw=2, linestyle='--', label='Random guess')
+    
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title(f'ROC Curve Comparison for {model_name}')
+    plt.legend(loc="lower right")
+    plt.grid()
+    plt.show()
+
 def main():
     # Load data
     df_fine_tuned = pd.read_excel('Sheet/file_valid.xlsx', engine='openpyxl')
@@ -79,7 +99,10 @@ def main():
         'recall': metrics_fine_tuned[1],
         'f1': metrics_fine_tuned[2],
         'accuracy': metrics_fine_tuned[3],
-        'false_positive_rate': metrics_fine_tuned[4]
+        'false_positive_rate': metrics_fine_tuned[4],
+        'fpr': metrics_fine_tuned[5],
+        'tpr': metrics_fine_tuned[6],
+        'auc': metrics_fine_tuned[7]
     }
         
     # Compute metrics for non-fine-tuned model
@@ -89,15 +112,22 @@ def main():
         'recall': metrics_non_fine_tuned[1],
         'f1': metrics_non_fine_tuned[2],
         'accuracy': metrics_non_fine_tuned[3],
-        'false_positive_rate': metrics_non_fine_tuned[4]
+        'false_positive_rate': metrics_non_fine_tuned[4],
+        'fpr': metrics_non_fine_tuned[5],
+        'tpr': metrics_non_fine_tuned[6],
+        'auc': metrics_non_fine_tuned[7]
     }
         
     print(f"Metrics for {model} (Fine-tuned): {metrics_dict_fine_tuned}")
     print(f"Metrics for {model} (Non Fine-tuned): {metrics_dict_non_fine_tuned}")
         
-    # Plot comparison
+    # Plot performance metrics comparison
     plot_metrics(metrics_dict_fine_tuned, metrics_dict_non_fine_tuned, model)
-        
+    
+    # Plot ROC curve comparison
+    plot_roc_curve(metrics_dict_fine_tuned['fpr'], metrics_dict_fine_tuned['tpr'], metrics_dict_fine_tuned['auc'],
+                   metrics_dict_non_fine_tuned['fpr'], metrics_dict_non_fine_tuned['tpr'], metrics_dict_non_fine_tuned['auc'],
+                   model)    
 
 if __name__ == "__main__":
     main()
